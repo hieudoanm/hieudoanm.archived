@@ -6,8 +6,8 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 88.03%
-- `Go` - 4.87%
+- `Jupyter Notebook` - 88.04%
+- `Go` - 4.86%
 - `Python` - 2.16%
 - `TypeScript` - 1.82%
 
@@ -18,20 +18,20 @@
 3. [data.eu](https://github.com/hieudoanm/data.eu)
 4. [data.gh](https://github.com/hieudoanm/data.gh)
 5. [data.kr](https://github.com/hieudoanm/data.kr)
-6. [data.nl](https://github.com/hieudoanm/data.nl)
-7. [data.us](https://github.com/hieudoanm/data.us)
-8. [data.vn](https://github.com/hieudoanm/data.vn)
-9. [data.ws](https://github.com/hieudoanm/data.ws)
-10. [filebase](https://github.com/hieudoanm/filebase)
-11. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
-12. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-13. [minh](https://github.com/hieudoanm/minh)
-14. [starter.c](https://github.com/hieudoanm/starter.c)
-15. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
-16. [starter.cs](https://github.com/hieudoanm/starter.cs)
-17. [starter.dart](https://github.com/hieudoanm/starter.dart)
-18. [starter.go](https://github.com/hieudoanm/starter.go)
-19. [starter.ipynb](https://github.com/hieudoanm/starter.ipynb)
+6. [data.ml](https://github.com/hieudoanm/data.ml)
+7. [data.nl](https://github.com/hieudoanm/data.nl)
+8. [data.us](https://github.com/hieudoanm/data.us)
+9. [data.vn](https://github.com/hieudoanm/data.vn)
+10. [data.ws](https://github.com/hieudoanm/data.ws)
+11. [filebase](https://github.com/hieudoanm/filebase)
+12. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
+13. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
+14. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
+15. [starter.c](https://github.com/hieudoanm/starter.c)
+16. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
+17. [starter.cs](https://github.com/hieudoanm/starter.cs)
+18. [starter.dart](https://github.com/hieudoanm/starter.dart)
+19. [starter.go](https://github.com/hieudoanm/starter.go)
 20. [starter.java](https://github.com/hieudoanm/starter.java)
 21. [starter.js](https://github.com/hieudoanm/starter.js)
 22. [starter.kt](https://github.com/hieudoanm/starter.kt)
