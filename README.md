@@ -6,16 +6,16 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 88.04%
-- `Go` - 4.86%
-- `Python` - 2.16%
-- `TypeScript` - 1.82%
+- `Jupyter Notebook` - 88.41%
+- `Go` - 4.69%
+- `Python` - 2.09%
+- `TypeScript` - 1.75%
 
 ## Projects
 
 1. [data.au](https://github.com/hieudoanm/data.au)
-2. [data.ch](https://github.com/hieudoanm/data.ch)
-3. [data.eu](https://github.com/hieudoanm/data.eu)
+2. [data.eu](https://github.com/hieudoanm/data.eu)
+3. [data.games](https://github.com/hieudoanm/data.games)
 4. [data.gh](https://github.com/hieudoanm/data.gh)
 5. [data.kr](https://github.com/hieudoanm/data.kr)
 6. [data.ml](https://github.com/hieudoanm/data.ml)
@@ -27,13 +27,13 @@
 12. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
 13. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
 14. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-15. [starter.c](https://github.com/hieudoanm/starter.c)
-16. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
-17. [starter.cs](https://github.com/hieudoanm/starter.cs)
-18. [starter.dart](https://github.com/hieudoanm/starter.dart)
-19. [starter.go](https://github.com/hieudoanm/starter.go)
-20. [starter.java](https://github.com/hieudoanm/starter.java)
-21. [starter.js](https://github.com/hieudoanm/starter.js)
+15. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
+16. [starter.c](https://github.com/hieudoanm/starter.c)
+17. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
+18. [starter.cs](https://github.com/hieudoanm/starter.cs)
+19. [starter.dart](https://github.com/hieudoanm/starter.dart)
+20. [starter.go](https://github.com/hieudoanm/starter.go)
+21. [starter.java](https://github.com/hieudoanm/starter.java)
 22. [starter.kt](https://github.com/hieudoanm/starter.kt)
 23. [starter.py](https://github.com/hieudoanm/starter.py)
 24. [starter.rs](https://github.com/hieudoanm/starter.rs)
