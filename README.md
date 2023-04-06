@@ -6,8 +6,8 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 88.41%
-- `Go` - 4.69%
+- `Jupyter Notebook` - 88.55%
+- `Go` - 4.7%
 - `Python` - 2.09%
 - `TypeScript` - 1.75%
 
