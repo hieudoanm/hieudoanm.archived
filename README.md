@@ -6,10 +6,10 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 88.55%
-- `Go` - 4.7%
-- `Python` - 2.09%
-- `TypeScript` - 1.75%
+- `Jupyter Notebook` - 88.97%
+- `Go` - 4.47%
+- `Python` - 1.98%
+- `TypeScript` - 1.72%
 
 ## Projects
 
@@ -23,11 +23,11 @@
 8. [data.us](https://github.com/hieudoanm/data.us)
 9. [data.vn](https://github.com/hieudoanm/data.vn)
 10. [data.ws](https://github.com/hieudoanm/data.ws)
-11. [filebase](https://github.com/hieudoanm/filebase)
-12. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
-13. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
-14. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-15. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
+11. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
+12. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
+13. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
+14. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
+15. [hieudoanm.svg](https://github.com/hieudoanm/hieudoanm.svg)
 16. [starter.c](https://github.com/hieudoanm/starter.c)
 17. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
 18. [starter.cs](https://github.com/hieudoanm/starter.cs)
