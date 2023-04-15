@@ -6,10 +6,10 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 88.97%
-- `Go` - 4.47%
-- `Python` - 1.98%
-- `TypeScript` - 1.72%
+- `Jupyter Notebook` - 88.99%
+- `Go` - 4.31%
+- `TypeScript` - 2.02%
+- `Python` - 1.91%
 
 ## Projects
 
