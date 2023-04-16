@@ -2,14 +2,15 @@
 
 ## Achievements
 
-- 🎖️ I achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
+-   🎖️ I achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
 
 ## Languages
 
-- `Jupyter Notebook` - 88.99%
-- `Go` - 4.31%
-- `TypeScript` - 2.02%
-- `Python` - 1.91%
+- `Jupyter Notebook` - 86.88%
+- `Go` - 4.2%
+- `TypeScript` - 3.53%
+- `Python` - 1.86%
+- `JavaScript` - 1.04%
 
 ## Projects
 
