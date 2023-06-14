@@ -6,17 +6,17 @@
 
 ## Languages
 
-- `Jupyter Notebook` - 84.8%
-- `TypeScript` - 8.39%
-- `Go` - 3.22%
-- `Python` - 1.43%
+- `Jupyter Notebook` - 80.8%
+- `TypeScript` - 12.1%
+- `Go` - 3.02%
+- `Python` - 1.34%
 
 ## Projects
 
-1. [data.asia](https://github.com/hieudoanm/data.asia)
-2. [data.au](https://github.com/hieudoanm/data.au)
-3. [data.cn](https://github.com/hieudoanm/data.cn)
-4. [data.eu](https://github.com/hieudoanm/data.eu)
+1. [app.cafesang](https://github.com/hieudoanm/app.cafesang)
+2. [app.chess](https://github.com/hieudoanm/app.chess)
+3. [app.usa](https://github.com/hieudoanm/app.usa)
+4. [app.world](https://github.com/hieudoanm/app.world)
 5. [data.games](https://github.com/hieudoanm/data.games)
 6. [data.gh](https://github.com/hieudoanm/data.gh)
 7. [data.ml](https://github.com/hieudoanm/data.ml)
