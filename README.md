@@ -2,21 +2,21 @@
 
 ## Achievements
 
-- 🎖️ I achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
+-   🎖️ I achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
 
 ## Languages
 
-- `Jupyter Notebook` - 80.8%
-- `TypeScript` - 12.1%
-- `Go` - 3.02%
-- `Python` - 1.34%
+- `Jupyter Notebook` - 80.28%
+- `TypeScript` - 12.67%
+- `Go` - 3.0%
+- `Python` - 1.33%
 
 ## Projects
 
 1. [app.ai](https://github.com/hieudoanm/app.ai)
-2. [app.cafesang](https://github.com/hieudoanm/app.cafesang)
-3. [app.chess](https://github.com/hieudoanm/app.chess)
-4. [app.usa](https://github.com/hieudoanm/app.usa)
+2. [app.chess](https://github.com/hieudoanm/app.chess)
+3. [app.usa](https://github.com/hieudoanm/app.usa)
+4. [app.vietnam](https://github.com/hieudoanm/app.vietnam)
 5. [app.world](https://github.com/hieudoanm/app.world)
 6. [data.games](https://github.com/hieudoanm/data.games)
 7. [data.gh](https://github.com/hieudoanm/data.gh)
