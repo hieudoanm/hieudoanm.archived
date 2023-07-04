@@ -8,10 +8,12 @@
 
 ### Languages
 
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/typescript-icon.svg" alt="TypeScript" width="32px" height="32px" />
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" alt="Python" width="32px" height="32px" />
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
-<img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
+<p>
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/typescript-icon.svg" alt="TypeScript" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" alt="Python" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
+</p>
 
 ### Development Tools
 
