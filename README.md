@@ -4,9 +4,18 @@
 
 <br/>
 
-## Achievements
+## About
 
-- 🎖️ I achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
+- ♟️ [An amateur chess player](https://www.chess.com/member/thedarkknighttrilogy) and chess programming.
+- 🧠 Computational Neuroscience Enthusiast
+- 🎖️ Achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
+
+## Projects
+
+| Projects | ♟️ Chess           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
+| -------- | ------------------ | ---------------- | -------------------- | ------------------ |
+| Software | [App][app-chess]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
+| Data     | [Data][data-chess] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
 
 ## Techstack
 
@@ -37,12 +46,7 @@
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/aws.svg" alt="AWS" width="32px" height="32px" />
 </p>
 
-## Projects
-
-|          | Chess              | USA              | Vietnam              | World              |
-| -------- | ------------------ | ---------------- | -------------------- | ------------------ |
-| Software | [App][app-chess]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
-| Data     | [Data][data-chess] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
+## Starter
 
 1. [data.games](https://github.com/hieudoanm/data.games)
 2. [data.gh](https://github.com/hieudoanm/data.gh)
