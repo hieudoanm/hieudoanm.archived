@@ -1,8 +1,8 @@
-<img src="./images/cover.jpg" alt="Cover" style="max-width: 100%" />
-
 <div align="center">
     <h1>Good Day from <a href="https://hieudoanm.github.io">me</a></h1>
 </div>
+
+<img src="./images/cover.jpg" alt="Cover" style="max-width: 100%" />
 
 <br/>
 
