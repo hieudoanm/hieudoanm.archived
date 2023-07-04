@@ -4,8 +4,6 @@
 
 <img src="./images/cover.jpg" alt="Cover" style="max-width: 100%" />
 
-<br/>
-
 ## About
 
 - 📊 Build Dashboard
