@@ -1,3 +1,5 @@
+<img src="./images/cover.jpg" alt="Cover" style="max-width: 100%" />
+
 <div align="center">
     <h1>Good Day from <a href="https://hieudoanm.github.io">me</a></h1>
 </div>
@@ -6,6 +8,7 @@
 
 ## About
 
+- 📊 Build Dashboard
 - ♟️ [An amateur chess player](https://www.chess.com/member/thedarkknighttrilogy) and chess programming.
 - 🧠 Computational Neuroscience Enthusiast
 - 🎖️ Achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
