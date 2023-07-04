@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Good Day, <a href="https://hieudoanm.github.io">HIEU</a></h1>
+    <h1>Good Day from <a href="https://hieudoanm.github.io">me</a></h1>
 </div>
 
 <br/>
@@ -10,18 +10,11 @@
 
 ## Techstack
 
-### Languages
-
 <p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/typescript-icon.svg" alt="TypeScript" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" alt="Python" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
-</p>
-
-### Development Tools
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git-icon.svg" alt="Git" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/docker-icon.svg" alt="Docker" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/eslint.svg" alt="eslint" width="32px" height="32px" />
@@ -29,43 +22,18 @@
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/jest.svg" alt="jest" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/webpack.svg" alt="webpack.js" width="32px" height="32px" />
-</p>
-
-### Front-end Development
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/react.svg" alt="React" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nextjs-icon.svg" alt="Next.js" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/material-ui.svg" alt="MUI" width="32px" height="32px" />
-</p>
-
-### Back-end Development
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nodejs-icon.svg" alt="Node.js" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/apollostack.svg" alt="Apollo Stack" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/graphql.svg" alt="GraphQL" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/spring.svg" alt="Spring" width="32px" height="32px" />
-</p>
-
-### Database
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prisma.svg" alt="Prisma" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/mongodb-icon.svg" alt="MongoDB" width="32px" height="32px" />
-</p>
-
-### Data Science
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/numpy-icon.svg" alt="Numpy" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/pandas-icon.svg" alt="Pandas" width="32px" height="32px" />
-</p>
-
-### DevOps
-
-<p>
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/aws.svg" alt="AWS" width="32px" height="32px" />
 </p>
 
