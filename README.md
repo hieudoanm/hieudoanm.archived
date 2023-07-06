@@ -13,10 +13,10 @@
 
 ## Projects
 
-| Projects | ♟️ Chess           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
-| -------- | ------------------ | ------------------- | ---------------- | -------------------- | ------------------ |
-| App      | [App][app-chess]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
-| Data     | [Data][data-chess] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
+| ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
+| ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ------------------ |
+| [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
+| [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
 
 ## Techstack
 
@@ -52,28 +52,28 @@
 
 ## Starter
 
-1. [data.gh](https://github.com/hieudoanm/data.gh)
-2. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
-3. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
-4. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-5. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
-6. [starter.c](https://github.com/hieudoanm/starter.c)
-7. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
-8. [starter.cs](https://github.com/hieudoanm/starter.cs)
-9. [starter.dart](https://github.com/hieudoanm/starter.dart)
-10. [starter.go](https://github.com/hieudoanm/starter.go)
-11. [starter.java](https://github.com/hieudoanm/starter.java)
-12. [starter.kt](https://github.com/hieudoanm/starter.kt)
-13. [starter.py](https://github.com/hieudoanm/starter.py)
-14. [starter.rs](https://github.com/hieudoanm/starter.rs)
-15. [starter.swift](https://github.com/hieudoanm/starter.swift)
+1. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
+2. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
+3. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
+4. [starter.c](https://github.com/hieudoanm/starter.c)
+5. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
+6. [starter.cs](https://github.com/hieudoanm/starter.cs)
+7. [starter.dart](https://github.com/hieudoanm/starter.dart)
+8. [starter.go](https://github.com/hieudoanm/starter.go)
+9. [starter.java](https://github.com/hieudoanm/starter.java)
+10. [starter.kt](https://github.com/hieudoanm/starter.kt)
+11. [starter.py](https://github.com/hieudoanm/starter.py)
+12. [starter.rs](https://github.com/hieudoanm/starter.rs)
+13. [starter.swift](https://github.com/hieudoanm/starter.swift)
 
 [app-chess]: https://github.com/hieudoanm/app.chess
+[app-github]: https://github.com/hieudoanm/app.github
 [app-sports]: https://github.com/hieudoanm/app.sports
 [app-usa]: https://github.com/hieudoanm/app.usa
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
 [app-world]: https://github.com/hieudoanm/app.world
 [data-chess]: https://github.com/hieudoanm/data.chess
+[data-github]: https://github.com/hieudoanm/data.github
 [data-sports]: https://github.com/hieudoanm/data.sports
 [data-usa]: https://github.com/hieudoanm/data.usa
 [data-vietnam]: https://github.com/hieudoanm/data.vietnam
