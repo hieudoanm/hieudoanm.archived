@@ -52,23 +52,21 @@
 
 ## Starter
 
-1. [data.games](https://github.com/hieudoanm/data.games)
-2. [data.gh](https://github.com/hieudoanm/data.gh)
-3. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
-4. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
-5. [hieudoanm.api](https://github.com/hieudoanm/hieudoanm.api)
-6. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-7. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
-8. [starter.c](https://github.com/hieudoanm/starter.c)
-9. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
-10. [starter.cs](https://github.com/hieudoanm/starter.cs)
-11. [starter.dart](https://github.com/hieudoanm/starter.dart)
-12. [starter.go](https://github.com/hieudoanm/starter.go)
-13. [starter.java](https://github.com/hieudoanm/starter.java)
-14. [starter.kt](https://github.com/hieudoanm/starter.kt)
-15. [starter.py](https://github.com/hieudoanm/starter.py)
-16. [starter.rs](https://github.com/hieudoanm/starter.rs)
-17. [starter.swift](https://github.com/hieudoanm/starter.swift)
+1. [data.gh](https://github.com/hieudoanm/data.gh)
+2. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
+3. [hieudoanm.ai](https://github.com/hieudoanm/hieudoanm.ai)
+4. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
+5. [hieudoanm.sh](https://github.com/hieudoanm/hieudoanm.sh)
+6. [starter.c](https://github.com/hieudoanm/starter.c)
+7. [starter.cpp](https://github.com/hieudoanm/starter.cpp)
+8. [starter.cs](https://github.com/hieudoanm/starter.cs)
+9. [starter.dart](https://github.com/hieudoanm/starter.dart)
+10. [starter.go](https://github.com/hieudoanm/starter.go)
+11. [starter.java](https://github.com/hieudoanm/starter.java)
+12. [starter.kt](https://github.com/hieudoanm/starter.kt)
+13. [starter.py](https://github.com/hieudoanm/starter.py)
+14. [starter.rs](https://github.com/hieudoanm/starter.rs)
+15. [starter.swift](https://github.com/hieudoanm/starter.swift)
 
 [app-chess]: https://github.com/hieudoanm/app.chess
 [app-sports]: https://github.com/hieudoanm/app.sports
