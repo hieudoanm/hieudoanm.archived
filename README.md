@@ -13,10 +13,10 @@
 
 ## Projects
 
-| Projects | ♟️ Chess           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
-| -------- | ------------------ | ---------------- | -------------------- | ------------------ |
-| Software | [App][app-chess]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
-| Data     | [Data][data-chess] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
+| Projects | ♟️ Chess           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
+| -------- | ------------------ | ------------------- | ---------------- | -------------------- | ------------------ |
+| App      | [App][app-chess]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
+| Data     | [Data][data-chess] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
 
 ## Techstack
 
@@ -26,11 +26,14 @@
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git-icon.svg" alt="Git" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github-icon.svg" alt="GitHub" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/docker-icon.svg" alt="Docker" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/eslint.svg" alt="eslint" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prettier.svg" alt="prettier" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/jest.svg" alt="jest" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/intellij-idea.svg" alt="IntelliJ IDEA" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/webpack.svg" alt="webpack.js" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/react.svg" alt="React" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nextjs-icon.svg" alt="Next.js" width="32px" height="32px" />
@@ -68,10 +71,12 @@
 17. [starter.swift](https://github.com/hieudoanm/starter.swift)
 
 [app-chess]: https://github.com/hieudoanm/app.chess
+[app-sports]: https://github.com/hieudoanm/app.sports
 [app-usa]: https://github.com/hieudoanm/app.usa
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
 [app-world]: https://github.com/hieudoanm/app.world
 [data-chess]: https://github.com/hieudoanm/data.chess
+[data-sports]: https://github.com/hieudoanm/data.sports
 [data-usa]: https://github.com/hieudoanm/data.usa
 [data-vietnam]: https://github.com/hieudoanm/data.vietnam
 [data-world]: https://github.com/hieudoanm/data.world
