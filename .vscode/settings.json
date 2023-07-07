@@ -1,26 +1,25 @@
 {
-	"workbench.iconTheme": "material-icon-theme",
-	"prettier.singleQuote": true,
-	"editor.formatOnPaste": true,
-	"editor.formatOnSave": true,
-	"eslint.codeActionsOnSave.rules": null,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"redhat.telemetry.enabled": true,
-	"terminal.integrated.scrollback": 1000000000,
-	"liveServer.settings.ChromeDebuggingAttachment": false,
-	"[go]": {
-		"editor.insertSpaces": true,
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "golang.go"
-	},
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.python"
-	},
-	"[dart]": { "editor.defaultFormatter": "Dart-Code.dart-code" },
-	"gopls": {
-		"experimentalWorkspaceModule": true
-	},
-	"python.linting.pylintArgs": ["--load-plugins=pylint_django"],
-	"python.formatting.blackArgs": ["--line-length", "120"],
-	"python.formatting.provider": "autopep8"
+  "workbench.iconTheme": "material-icon-theme",
+  "prettier.singleQuote": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.rules": null,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.scrollback": 1000000000,
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "gopls": {
+    "experimentalWorkspaceModule": true
+  },
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"],
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "autopep8"
 }

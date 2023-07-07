@@ -6,7 +6,7 @@
 
 ## About
 
-- 📊 Build Dashboard
+- 📊 Building Dashboard
 - ♟️ [An amateur chess player](https://www.chess.com/member/thedarkknighttrilogy) and chess programming.
 - 🧠 Computational Neuroscience Enthusiast
 - 🎖️ Achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
@@ -52,17 +52,15 @@
 
 ## Starter
 
-1. [hieudoanm](https://github.com/hieudoanm/hieudoanm)
-2. [hieudoanm.github.io](https://github.com/hieudoanm/hieudoanm.github.io)
-3. [starter.c](https://github.com/hieudoanm/starter.c)
-4. [starter.cs](https://github.com/hieudoanm/starter.cs)
-5. [starter.dart](https://github.com/hieudoanm/starter.dart)
-6. [starter.go](https://github.com/hieudoanm/starter.go)
-7. [starter.java](https://github.com/hieudoanm/starter.java)
-8. [starter.kt](https://github.com/hieudoanm/starter.kt)
-9. [starter.py](https://github.com/hieudoanm/starter.py)
-10. [starter.rs](https://github.com/hieudoanm/starter.rs)
-11. [starter.swift](https://github.com/hieudoanm/starter.swift)
+1. [starter.c](https://github.com/hieudoanm/starter.c)
+2. [starter.cs](https://github.com/hieudoanm/starter.cs)
+3. [starter.dart](https://github.com/hieudoanm/starter.dart)
+4. [starter.go](https://github.com/hieudoanm/starter.go)
+5. [starter.java](https://github.com/hieudoanm/starter.java)
+6. [starter.kt](https://github.com/hieudoanm/starter.kt)
+7. [starter.py](https://github.com/hieudoanm/starter.py)
+8. [starter.rs](https://github.com/hieudoanm/starter.rs)
+9. [starter.swift](https://github.com/hieudoanm/starter.swift)
 
 [app-brain]: https://github.com/hieudoanm/app.brain
 [app-chess]: https://github.com/hieudoanm/app.chess
