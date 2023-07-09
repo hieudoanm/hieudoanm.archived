@@ -7,6 +7,7 @@
 ## About
 
 - 📊 Building Dashboard
+- 👨‍💻 Building Template for [TypeScript][organisation-typescript] and [Python][organisation-python]
 - ♟️ [An amateur chess player](https://www.chess.com/member/thedarkknighttrilogy) and chess programming.
 - 🧠 Computational Neuroscience Enthusiast
 - 🎖️ Achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
@@ -77,3 +78,5 @@
 [data-usa]: https://github.com/hieudoanm/data.usa
 [data-vietnam]: https://github.com/hieudoanm/data.vietnam
 [data-world]: https://github.com/hieudoanm/data.world
+[organisation-python]: https://github.com/houseofpython3
+[organisation-typescript]: https://github.com/houseoftypescript
