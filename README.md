@@ -6,7 +6,8 @@
 
 ## About
 
-- 📊 Building Dashboard
+- 📊 Building Dashboard with [Next.js](https://nextjs.org/) and [Tailwindcss](https://tailwindcss.com)
+- 📟 Building CLI with [Golang](https://go.dev/) and [Cobra](https://cobra.dev/)
 - 👨‍💻 Building Template for [TypeScript][organisation-typescript] and [Python][organisation-python]
 - ♟️ [An amateur chess player](https://www.chess.com/member/thedarkknighttrilogy) and chess programming.
 - 🧠 Computational Neuroscience Enthusiast
@@ -17,7 +18,7 @@
 | 🧠 Brain           | ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World           |
 | ------------------ | ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ------------------ |
 | [App][app-brain]   | [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]   |
-|                    |                    |                     |                     |                  |                      | [CLI][cli-world]   |
+|                    | [CLI][cli-chess]   |                     |                     |                  |                      | [CLI][cli-world]   |
 | [Data][data-brain] | [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world] |
 
 ## Techstack
@@ -61,7 +62,6 @@
 5. [starter.java](https://github.com/hieudoanm/starter.java)
 6. [starter.kt](https://github.com/hieudoanm/starter.kt)
 7. [starter.rs](https://github.com/hieudoanm/starter.rs)
-8. [starter.swift](https://github.com/hieudoanm/starter.swift)
 
 [app-brain]: https://github.com/hieudoanm/app.brain
 [app-chess]: https://github.com/hieudoanm/app.chess
@@ -70,6 +70,7 @@
 [app-usa]: https://github.com/hieudoanm/app.usa
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
 [app-world]: https://github.com/hieudoanm/app.world
+[cli-chess]: https://github.com/hieudoanm/cli.chess
 [cli-world]: https://github.com/hieudoanm/cli.world
 [data-brain]: https://github.com/hieudoanm/data.brain
 [data-chess]: https://github.com/hieudoanm/data.chess
