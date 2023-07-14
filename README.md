@@ -29,11 +29,13 @@
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" alt="Python" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/dart.svg" alt="Dart" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/eslint.svg" alt="eslint" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prettier.svg" alt="prettier" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/jest.svg" alt="jest" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/webpack.svg" alt="webpack.js" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/react.svg" alt="React" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/flutter.svg" alt="Flutter" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nextjs-icon.svg" alt="Next.js" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/material-ui.svg" alt="MUI" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nodejs-icon.svg" alt="Node.js" width="32px" height="32px" />
