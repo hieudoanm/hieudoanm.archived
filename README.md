@@ -18,7 +18,7 @@
 | 🧠 Brain           | ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World               |
 | ------------------ | ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ---------------------- |
 | [App][app-brain]   | [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]       |
-|                    | [CLI][cli-chess]   |                     |                     | [CLI][cli-usa]   | [CLI][cli-vietnam]   | [CLI][cli-world]       |
+|                    | [CLI][cli-chess]   | [CLI][cli-github]   |                     | [CLI][cli-usa]   | [CLI][cli-vietnam]   | [CLI][cli-world]       |
 | [Data][data-brain] | [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world]     |
 |                    |                    |                     |                     |                  |                      | [Mobile][mobile-world] |
 
@@ -56,10 +56,9 @@
 
 ## Starter
 
-1. [starter.c](https://github.com/hieudoanm/starter.c)
-2. [starter.go](https://github.com/hieudoanm/starter.go)
-3. [starter.java](https://github.com/hieudoanm/starter.java)
-4. [starter.kt](https://github.com/hieudoanm/starter.kt)
+1. [starter.go](https://github.com/hieudoanm/starter.go)
+2. [starter.java](https://github.com/hieudoanm/starter.java)
+3. [starter.kt](https://github.com/hieudoanm/starter.kt)
 
 [app-brain]: https://github.com/hieudoanm/app.brain
 [app-chess]: https://github.com/hieudoanm/app.chess
@@ -69,6 +68,7 @@
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
 [app-world]: https://github.com/hieudoanm/app.world
 [cli-chess]: https://github.com/hieudoanm/cli.chess
+[cli-github]: https://github.com/hieudoanm/cli.github
 [cli-usa]: https://github.com/hieudoanm/cli.usa
 [cli-vietnam]: https://github.com/hieudoanm/cli.vietnam
 [cli-world]: https://github.com/hieudoanm/cli.world
