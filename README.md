@@ -29,15 +29,9 @@
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/python.svg" alt="Python" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/java.svg" alt="Java" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/go.svg" alt="Go" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git-icon.svg" alt="Git" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github-icon.svg" alt="GitHub" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/docker-icon.svg" alt="Docker" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/eslint.svg" alt="eslint" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/prettier.svg" alt="prettier" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/jest.svg" alt="jest" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
-    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/intellij-idea.svg" alt="IntelliJ IDEA" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/webpack.svg" alt="webpack.js" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/react.svg" alt="React" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/nextjs-icon.svg" alt="Next.js" width="32px" height="32px" />
@@ -51,6 +45,19 @@
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/mongodb-icon.svg" alt="MongoDB" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/numpy-icon.svg" alt="Numpy" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/pandas-icon.svg" alt="Pandas" width="32px" height="32px" />
+</p>
+
+## DevOps
+
+<p>
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/intellij-idea.svg" alt="IntelliJ IDEA" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postman.svg" alt="Postman" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git-icon.svg" alt="Git" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github-icon.svg" alt="GitHub" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/docker-icon.svg" alt="Docker" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/jenkins.svg" alt="Jenkins" width="32px" height="32px" />
     <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/aws.svg" alt="AWS" width="32px" height="32px" />
 </p>
 
