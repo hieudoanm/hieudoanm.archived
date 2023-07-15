@@ -54,7 +54,6 @@
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/numpy.svg" alt="Numpy" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/pandas.svg" alt="Pandas" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/tensorflow.svg" alt="TensorFlow" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/pandas.svg" alt="Pandas" width="32px" height="32px" />
 </p>
 
 ## DevOps
