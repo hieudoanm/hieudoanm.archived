@@ -18,7 +18,7 @@
 | 🧠 Brain           | ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World               |
 | ------------------ | ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ---------------------- |
 | [App][app-brain]   | [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]       |
-|                    | [CLI][cli-chess]   | [CLI][cli-github]   | [CLI][cli-sports]   | [CLI][cli-usa]   | [CLI][cli-vietnam]   | [CLI][cli-world]       |
+| [CLI][cli-brain]   | [CLI][cli-chess]   | [CLI][cli-github]   | [CLI][cli-sports]   | [CLI][cli-usa]   | [CLI][cli-vietnam]   | [CLI][cli-world]       |
 | [Data][data-brain] | [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world]     |
 |                    |                    |                     |                     |                  |                      | [Mobile][mobile-world] |
 
@@ -71,7 +71,6 @@
 ## Starter
 
 1. [starter.go](https://github.com/hieudoanm/starter.go)
-2. [starter.java](https://github.com/hieudoanm/starter.java)
 
 [app-brain]: https://github.com/hieudoanm/app.brain
 [app-chess]: https://github.com/hieudoanm/app.chess
@@ -80,6 +79,7 @@
 [app-usa]: https://github.com/hieudoanm/app.usa
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
 [app-world]: https://github.com/hieudoanm/app.world
+[cli-brain]: https://github.com/hieudoanm/cli.brain
 [cli-chess]: https://github.com/hieudoanm/cli.chess
 [cli-github]: https://github.com/hieudoanm/cli.github
 [cli-sports]: https://github.com/hieudoanm/cli.sports
