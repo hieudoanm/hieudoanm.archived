@@ -46,7 +46,14 @@
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/redis.svg" alt="Redis" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/mongodb-icon.svg" alt="MongoDB" width="32px" height="32px" />
+</p>
+
+## Data Science
+
+<p>
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/numpy-icon.svg" alt="Numpy" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/pandas-icon.svg" alt="Pandas" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/tensorflow.svg" alt="TensorFlow" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/pandas-icon.svg" alt="Pandas" width="32px" height="32px" />
 </p>
 
