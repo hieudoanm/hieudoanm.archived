@@ -54,6 +54,10 @@
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/numpy.svg" alt="Numpy" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/pandas.svg" alt="Pandas" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/tensorflow.svg" alt="TensorFlow" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/pytorch.svg" alt="PyTorch" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/keras.svg" alt="Keras" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/scipy.svg" alt="SciPy" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/svg/scikit-learn.svg" alt="Scikit-learn" width="32px" height="32px" />
 </p>
 
 ## DevOps
