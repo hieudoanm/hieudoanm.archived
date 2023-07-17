@@ -72,10 +72,10 @@
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/jenkins.svg" alt="Jenkins" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws.svg" alt="AWS" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws-ec2.svg" alt="AWS EC2" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws-lambda.svg" alt="AWS Lambda" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws-rds.svg" alt="AWS RDS" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws-s3.svg" alt="AWS S3" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/ec2.svg" alt="AWS EC2" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/lambda.svg" alt="AWS Lambda" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/rds.svg" alt="AWS RDS" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/s3.svg" alt="AWS S3" width="32px" height="32px" />
 </p>
 
 ## Starter
