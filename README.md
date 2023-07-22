@@ -25,53 +25,53 @@
 ## Techstack
 
 <p>
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/typescript.svg" alt="TypeScript" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/python.svg" alt="Python" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/java.svg" alt="Java" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/go.svg" alt="Go" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/dart.svg" alt="Dart" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/eslint.svg" alt="eslint" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/prettier.svg" alt="prettier" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/jest.svg" alt="jest" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/webpack.svg" alt="webpack.js" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/react.svg" alt="React" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/flutter.svg" alt="Flutter" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/nextjs.svg" alt="Next.js" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/material-ui.svg" alt="MUI" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/nodejs.svg" alt="Node.js" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/apollostack.svg" alt="Apollo Stack" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/graphql.svg" alt="GraphQL" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/spring.svg" alt="Spring" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/prisma.svg" alt="Prisma" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/redis.svg" alt="Redis" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/mongodb.svg" alt="MongoDB" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/typescript.svg" alt="TypeScript" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/python.svg" alt="Python" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/java.svg" alt="Java" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/google/go.svg" alt="Go" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/dart.svg" alt="Dart" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/eslint.svg" alt="eslint" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/prettier.svg" alt="prettier" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/jest.svg" alt="jest" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/webpack.svg" alt="webpack.js" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/react.svg" alt="React" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/flutter.svg" alt="Flutter" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/nextjs.svg" alt="Next.js" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/material-ui.svg" alt="MUI" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/nodejs.svg" alt="Node.js" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/apollostack.svg" alt="Apollo Stack" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/graphql.svg" alt="GraphQL" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/spring.svg" alt="Spring" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/prisma.svg" alt="Prisma" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/redis.svg" alt="Redis" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/mongodb.svg" alt="MongoDB" width="32px" height="32px" />
 </p>
 
 ## Data Science
 
 <p>
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/numpy.svg" alt="Numpy" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/pandas.svg" alt="Pandas" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tensorflow.svg" alt="TensorFlow" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/pytorch.svg" alt="PyTorch" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/keras.svg" alt="Keras" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/scipy.svg" alt="SciPy" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/scikit-learn.svg" alt="Scikit-learn" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/numpy.svg" alt="Numpy" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/pandas.svg" alt="Pandas" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/tensorflow.svg" alt="TensorFlow" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/pytorch.svg" alt="PyTorch" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/keras.svg" alt="Keras" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/scipy.svg" alt="SciPy" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/scikit-learn.svg" alt="Scikit-learn" width="32px" height="32px" />
 </p>
 
 ## DevOps
 
 <p>
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/intellij-idea.svg" alt="IntelliJ IDEA" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/postman.svg" alt="Postman" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/git.svg" alt="Git" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/github.svg" alt="GitHub" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/docker.svg" alt="Docker" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/jenkins.svg" alt="Jenkins" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws.svg" alt="AWS" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/visual-studio-code.svg" alt="Visual Studio Code" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/intellij-idea.svg" alt="IntelliJ IDEA" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/postman.svg" alt="Postman" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/git.svg" alt="Git" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/github.svg" alt="GitHub" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/docker.svg" alt="Docker" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/kubernetes.svg" alt="Kubernetes" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/tech/jenkins.svg" alt="Jenkins" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/aws.svg" alt="AWS" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/ec2.svg" alt="AWS EC2" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/lambda.svg" alt="AWS Lambda" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/rds.svg" alt="AWS RDS" width="32px" height="32px" />
