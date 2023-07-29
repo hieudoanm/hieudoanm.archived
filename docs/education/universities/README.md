@@ -5,8 +5,10 @@
     - [Singapore](#singapore)
   - [Europe](#europe)
     - [United Kingdom](#united-kingdom)
+      - [Master in United Kingdom](#master-in-united-kingdom)
     - [Ireland](#ireland)
     - [Netherlands](#netherlands)
+      - [Master in Netherlands](#master-in-netherlands)
   - [North America](#north-america)
     - [United States](#united-states)
     - [Canada](#canada)
@@ -55,6 +57,13 @@
 | 23  | University of Glasgow           | Russell | Glasgow     | Scotland         |
 | 24  | Cardiff University              | Russell | Cardiff     | Wales            |
 
+#### Master in United Kingdom
+
+- [Computational Neuroscience and Cognitive Robotics MSc](https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx)
+- [Computational Neuroscience, Cognition and AI MSc](https://www.nottingham.ac.uk/pgstudy/course/taught/computational-neuroscience-cognition-and-ai-msc)
+- [Computational Neuroscience and Neuroinformatics MSc](https://www.ncl.ac.uk/postgraduate/degrees/5199f/)
+- [Informatics: ANC: Machine Learning, Computational Neuroscience, Computational Biology](https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489)
+
 ### Ireland
 
 ### Netherlands
@@ -77,6 +86,10 @@
 | 14  | Twente Pathway College                  |          | Twente     |
 | 15  | University of Twente                    | UT       | Twente     |
 | 16  | IHE Delft Institute for Water Education |          | Delft      |
+
+#### Master in Netherlands
+
+- [Neural Computation and Neurotechnology](https://www.ru.nl/courseguides/2020/socsci/research-master/cognitive-neuroscience/programme/specialisations/neural-computation-neurotechnology/)
 
 ## North America
 
