@@ -11,6 +11,7 @@
       - [Master in Netherlands](#master-in-netherlands)
   - [North America](#north-america)
     - [United States](#united-states)
+      - [Master in United States](#master-in-united-states)
     - [Canada](#canada)
   - [Oceania](#oceania)
     - [Australia](#australia)
@@ -59,6 +60,7 @@
 
 #### Master in United Kingdom
 
+- [Gatsby Computational Neuroscience Unit MPhil/PhD](https://www.ucl.ac.uk/prospective-students/graduate/research-degrees/gatsby-computational-neuroscience-unit-mphil-phd)
 - [Computational Neuroscience and Cognitive Robotics MSc](https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx)
 - [Computational Neuroscience, Cognition and AI MSc](https://www.nottingham.ac.uk/pgstudy/course/taught/computational-neuroscience-cognition-and-ai-msc)
 - [Computational Neuroscience and Neuroinformatics MSc](https://www.ncl.ac.uk/postgraduate/degrees/5199f/)
@@ -113,6 +115,10 @@
 | 14  | Johns Hopkins University           | Private School |              |               |
 | 15  | California Institute of Technology | Private School |              |               |
 | 16  | University of Notre Dame           | Private School |              |               |
+
+#### Master in United States
+
+- [Computational Neuroscience](https://mcgovern.mit.edu/research-areas/computational-neuroscience/)
 
 ### Canada
 
