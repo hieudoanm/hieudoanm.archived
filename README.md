@@ -15,12 +15,11 @@
 
 ## Projects
 
-| 🧠 Brain           | ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 🗺️ World               |
-| ------------------ | ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ---------------------- |
-| [App][app-brain]   | [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-world]       |
-| [CLI][cli-brain]   | [CLI][cli-chess]   | [CLI][cli-github]   | [CLI][cli-sports]   | [CLI][cli-usa]   | [CLI][cli-vietnam]   | [CLI][cli-world]       |
-| [Data][data-brain] | [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] | [Data][data-world]     |
-|                    |                    |                     |                     |                  |                      | [Mobile][mobile-world] |
+| 🧠 Brain           | ♟️ Chess           | 💻 GitHub           | 🏅 Sports           | 🇺🇸 USA           | 🇻🇳 Vietnam           | 💰 Wallet         | 🗺️ World           |
+| ------------------ | ------------------ | ------------------- | ------------------- | ---------------- | -------------------- | ----------------- | ------------------ |
+| [App][app-brain]   | [App][app-chess]   | [App][app-github]   | [App][app-sports]   | [App][app-usa]   | [App][app-vietnam]   | [App][app-wallet] | [App][app-world]   |
+| [CLI][cli-brain]   | [CLI][cli-chess]   | [CLI][cli-github]   | [CLI][cli-sports]   | [CLI][cli-usa]   | [CLI][cli-vietnam]   |                   | [CLI][cli-world]   |
+| [Data][data-brain] | [Data][data-chess] | [Data][data-github] | [Data][data-sports] | [Data][data-usa] | [Data][data-vietnam] |                   | [Data][data-world] |
 
 ## Techstack
 
@@ -88,6 +87,7 @@
 [app-sports]: https://github.com/hieudoanm/app.sports
 [app-usa]: https://github.com/hieudoanm/app.usa
 [app-vietnam]: https://github.com/hieudoanm/app.vietnam
+[app-wallet]: https://github.com/hieudoanm/app.walletØ
 [app-world]: https://github.com/hieudoanm/app.world
 [cli-brain]: https://github.com/hieudoanm/cli.brain
 [cli-chess]: https://github.com/hieudoanm/cli.chess
@@ -103,6 +103,5 @@
 [data-usa]: https://github.com/hieudoanm/data.usa
 [data-vietnam]: https://github.com/hieudoanm/data.vietnam
 [data-world]: https://github.com/hieudoanm/data.world
-[mobile-world]: https://github.com/hieudoanm/mobile.world
 [organisation-python]: https://github.com/houseofpython3
 [organisation-typescript]: https://github.com/houseoftypescript
