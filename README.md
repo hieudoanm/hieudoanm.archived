@@ -15,8 +15,10 @@
 
 ## Projects
 
-| 🧠 [Brain][app-brain] | ♟️ [Chess][app-chess] | 💻 [GitHub][app-github] | 🏅 [Sports][app-sports] | 🇺🇸 [USA][app-usa] | 🗺️ [World][app-world] |
-| [Google][app-google] | [Hofstede][app-hofstede] | [Pomodoro][app-pomodoro] | [Status][app-status] | 🇻🇳 [Vietnam][app-vietnam] | 💰 [Wallet][app-wallet] |
+|                         |                             |                             |                         |                           |                         |
+| ----------------------- | --------------------------- | --------------------------- | ----------------------- | ------------------------- | ----------------------- |
+| 🧠 [Brain][app-brain]   | ♟️ [Chess][app-chess]       | 💻 [GitHub][app-github]     | 🏅 [Sports][app-sports] | 🇺🇸 [USA][app-usa]         | 🗺️ [World][app-world]   |
+| 🔍 [Google][app-google] | 🧠 [Hofstede][app-hofstede] | ⏲️ [Pomodoro][app-pomodoro] | 🚩 [Status][app-status] | 🇻🇳 [Vietnam][app-vietnam] | 💰 [Wallet][app-wallet] |
 
 ## Techstack
 
