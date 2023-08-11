@@ -15,10 +15,11 @@
 
 ## Projects
 
-|                         |                             |                             |                         |                           |                         |
-| ----------------------- | --------------------------- | --------------------------- | ----------------------- | ------------------------- | ----------------------- |
-| 🧠 [Brain][app-brain]   | ♟️ [Chess][app-chess]       | 💻 [GitHub][app-github]     | 🏅 [Sports][app-sports] | 🇺🇸 [USA][app-usa]         | 🗺️ [World][app-world]   |
-| 🔍 [Google][app-google] | 🧠 [Hofstede][app-hofstede] | ⏲️ [Pomodoro][app-pomodoro] | 🚩 [Status][app-status] | 🇻🇳 [Vietnam][app-vietnam] | 💰 [Wallet][app-wallet] |
+|                             |                             |                         |                         |                           |                             |
+| --------------------------- | --------------------------- | ----------------------- | ----------------------- | ------------------------- | --------------------------- |
+| 🧠 [Brain][app-brain]       | 📅 [Calendar][app-calendar] | ♟️ [Chess][app-chess]   | 💻 [GitHub][app-github] | 🔍 [Google][app-google]   | 🧠 [Hofstede][app-hofstede] |
+| ⏲️ [Pomodoro][app-pomodoro] | 🏅 [Sports][app-sports]     | 🚩 [Status][app-status] | 🇺🇸 [USA][app-usa]       | 🇻🇳 [Vietnam][app-vietnam] | 🗺️ [World][app-world]       |
+| 💰 [Wallet][app-wallet]     |                             |                         |                         |                           |                             |
 
 ## Techstack
 
@@ -81,6 +82,7 @@
 1. [starter.go](https://github.com/hieudoanm/starter.go)
 
 [app-brain]: https://github.com/hieudoanm/app.brain
+[app-calendar]: https://github.com/hieudoanm/app.calendar
 [app-chess]: https://github.com/hieudoanm/app.chess
 [app-github]: https://github.com/hieudoanm/app.github
 [app-google]: https://github.com/hieudoanm/app.google
