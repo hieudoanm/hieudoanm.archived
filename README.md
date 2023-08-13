@@ -77,10 +77,6 @@
   <img src="https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/aws/s3.svg" alt="AWS S3" width="32px" height="32px" />
 </p>
 
-## Starter
-
-1. [starter.go](https://github.com/hieudoanm/starter.go)
-
 [app-brain]: https://github.com/hieudoanm/app.brain
 [app-calendar]: https://github.com/hieudoanm/app.calendar
 [app-chess]: https://github.com/hieudoanm/app.chess
