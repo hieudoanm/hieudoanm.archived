@@ -1,0 +1,28 @@
+version: '3.9'
+
+volumes:
+  cockroach_data:
+    driver: local
+  mongodb_data:
+    driver: local
+
+services:
+  cockroachdb-database:
+    image: cockroachdb/cockroach:v23.1.11
+    container_name: cockroachdb-database
+    restart: always
+    volumes:
+      - cockroach_data:/cockroach/cockroach-data
+    ports:
+      - 26257:26257
+      - 8080:8080
+    command: start-single-node --insecure
+
+  mongo-database:
+    image: mongo:7-jammy
+    container_name: mongo-database
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - '27017:27017'
