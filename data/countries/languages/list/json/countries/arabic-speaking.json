@@ -1,0 +1,146 @@
+[
+  {
+    "country": "Comoros",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 869595
+  },
+  {
+    "country": "Djibouti",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 988002
+  },
+  {
+    "country": "Eritrea",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 5352000
+  },
+  {
+    "country": "Somalia",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 15893219
+  },
+  {
+    "country": "Chad",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 16425859
+  },
+  {
+    "country": "Algeria",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 44700000
+  },
+  {
+    "country": "Egypt",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 102334403
+  },
+  {
+    "country": "Libya",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 6871287
+  },
+  {
+    "country": "Morocco",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 36910558
+  },
+  {
+    "country": "Sudan",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 43849269
+  },
+  {
+    "country": "Tunisia",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 11818618
+  },
+  {
+    "country": "Mauritania",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 4649660
+  },
+  {
+    "country": "Bahrain",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 1701583
+  },
+  {
+    "country": "Iraq",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 40222503
+  },
+  {
+    "country": "Israel",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 9216900
+  },
+  {
+    "country": "Jordan",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 10203140
+  },
+  {
+    "country": "Kuwait",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 4270563
+  },
+  {
+    "country": "Lebanon",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 6825442
+  },
+  {
+    "country": "Oman",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 5106622
+  },
+  {
+    "country": "Qatar",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 2881060
+  },
+  {
+    "country": "Saudi Arabia",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 34813867
+  },
+  {
+    "country": "Syria",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 17500657
+  },
+  {
+    "country": "United Arab Emirates",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 9890400
+  },
+  {
+    "country": "Yemen",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 29825968
+  }
+]

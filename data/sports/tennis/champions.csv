@@ -1,0 +1,351 @@
+competition,competition_level,competition_country,competition_surface,year,month,champion,champion_country
+Rio Open,ATP 500,Brazil,surface,2014,0,Rafael Nadal,Spain
+Rio Open,ATP 500,Brazil,surface,2015,0,David Ferrer,Spain
+Rio Open,ATP 500,Brazil,surface,2016,0,Pablo Cuevas,Uruguay
+Rio Open,ATP 500,Brazil,surface,2017,0,Dominic Thiem,Austria
+Rio Open,ATP 500,Brazil,surface,2018,0,Diego Schwartzman,Argentina
+Rio Open,ATP 500,Brazil,surface,2019,0,Laslo Đere,Serbia
+Rio Open,ATP 500,Brazil,surface,2020,0,Cristian Garín,Chile
+Rio Open,ATP 500,Brazil,surface,2022,0,Carlos Alcaraz,Spain
+Rio Open,ATP 500,Brazil,surface,2023,0,Cameron Norrie,United Kingdom
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2009,0,Nikolay Davydenko,Russia
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2010,0,Andy Murray,United Kingdom
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2011,0,Andy Murray,United Kingdom
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2012,0,Novak Djokovic,Serbia
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2013,0,Novak Djokovic,Serbia
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2014,0,Roger Federer,Switzerland
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2015,0,Novak Djokovic,Serbia
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2016,0,Andy Murray,United Kingdom
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2017,0,Roger Federer,Switzerland
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2018,0,Novak Djokovic,Serbia
+Shanghai Masters,ATP Tour Masters 1000,China,hard,2019,0,Daniil Medvedev,Russia
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2002,0,Andre Agassi,United States
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2003,0,Juan Carlos Ferrero,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2004,0,Marat Safin,Russia
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2005,0,Rafael Nadal,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2006,0,Roger Federer,Switzerland
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2007,0,David Nalbandian,Argentina
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2008,0,Andy Murray,United Kingdom
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2009,0,Roger Federer,Switzerland
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2010,0,Rafael Nadal,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2011,0,Novak Djokovic,Serbia
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2012,0,Roger Federer,Switzerland
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2013,0,Rafael Nadal,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2014,0,Rafael Nadal,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2015,0,Andy Murray,United Kingdom
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2016,0,Novak Djokovic,Serbia
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2017,0,Rafael Nadal,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2018,0,Alexander Zverev,Germany
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2019,0,Novak Djokovic,Serbia
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2021,0,Alexander Zverev,Germany
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2022,0,Carlos Alcaraz,Spain
+Madrid Open,ATP Tour Masters 1000,Spain,clay,2023,0,Carlos Alcaraz,Spain
+atf-final,,,,1970,0,Stan Smith,United States
+atf-final,,,,1971,0,Ilie Năstase,Romania
+atf-final,,,,1972,0,Ilie Năstase,Romania
+atf-final,,,,1973,0,Ilie Năstase,Romania
+atf-final,,,,1974,0,Guillermo Vilas,Argentina
+atf-final,,,,1975,0,Ilie Năstase,Romania
+atf-final,,,,1976,0,Manuel Orantes,Spain
+atf-final,,,,1977,0,Jimmy Connors,United States
+atf-final,,,,1978,0,John McEnroe,United States
+atf-final,,,,1979,0,Björn Borg,Sweden
+atf-final,,,,1980,0,Björn Borg,Sweden
+atf-final,,,,1981,0,"Ivan Lendl ",Czechoslovakia
+atf-final,,,,1982,0,"Ivan Lendl ",Czechoslovakia
+atf-final,,,,1983,0,John McEnroe,United States
+atf-final,,,,1984,0,John McEnroe,United States
+atf-final,,,,1985,0,Ivan Lendl,Czechoslovakia
+atf-final,,,,1986,0,Ivan Lendl,Czechoslovakia
+atf-final,,,,1987,0,Ivan Lendl,Czechoslovakia
+atf-final,,,,1988,0,Boris Becker,Germany
+atf-final,,,,1989,0,Stefan Edberg,Sweden
+atf-final,,,,1990,0,Andre Agassi,United States
+atf-final,,,,1991,0,Pete Sampras,United States
+atf-final,,,,1992,0,Boris Becker,Germany
+atf-final,,,,1993,0,Michael Stich,Germany
+atf-final,,,,1994,0,Pete Sampras,United States
+atf-final,,,,1995,0,Boris Becker,Germany
+atf-final,,,,1996,0,Pete Sampras,United States
+atf-final,,,,1997,0,Pete Sampras,United States
+atf-final,,,,1998,0,Àlex Corretja,Spain
+atf-final,,,,1999,0,Pete Sampras,United States
+atf-final,,,,2000,0,Gustavo Kuerten,Brazil
+atf-final,,,,2001,0,Lleyton Hewitt,Australia
+atf-final,,,,2002,0,Lleyton Hewitt,Australia
+atf-final,,,,2003,0,Roger Federer,Switzerland
+atf-final,,,,2004,0,Roger Federer,Switzerland
+atf-final,,,,2005,0,David Nalbandian,Argentina
+atf-final,,,,2006,0,Roger Federer,Switzerland
+atf-final,,,,2007,0,Roger Federer,Switzerland
+atf-final,,,,2008,0,Novak Djokovic,Serbia
+atf-final,,,,2009,0,Nikolay Davydenko,Russia
+atf-final,,,,2010,0,Roger Federer,Switzerland
+atf-final,,,,2011,0,Roger Federer,Switzerland
+atf-final,,,,2012,0,Novak Djokovic,Serbia
+atf-final,,,,2013,0,Novak Djokovic,Serbia
+atf-final,,,,2014,0,Novak Djokovic,Serbia
+atf-final,,,,2015,0,Novak Djokovic,Serbia
+atf-final,,,,2016,0,Andy Murray,United Kingdom
+atf-final,,,,2017,0,Grigor Dimitrov,Bulgaria
+atf-final,,,,2018,0,Alexander Zverev,Germany
+atf-final,,,,2019,0,Stefanos Tsitsipas,Greece
+atf-final,,,,2020,0,Daniil Medvedev,Russia
+atf-final,,,,2021,0,Alexander Zverev,Germany
+atf-final,,,,2022,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,1969,0,Rod Laver,Australia
+Australian Open,Grand Slam,Australia,hard,1970,0,Arthur Ashe,United States
+Australian Open,Grand Slam,Australia,hard,1971,0,Ken Rosewall,Australia
+Australian Open,Grand Slam,Australia,hard,1972,0,Ken Rosewall,Australia
+Australian Open,Grand Slam,Australia,hard,1973,0,John Newcombe,Australia
+Australian Open,Grand Slam,Australia,hard,1974,0,Jimmy Connors,United States
+Australian Open,Grand Slam,Australia,hard,1975,0,John Newcombe,Australia
+Australian Open,Grand Slam,Australia,hard,1976,0,Mark Edmondson,Australia
+Australian Open,Grand Slam,Australia,hard,1977,1,Roscoe Tanner,United States
+Australian Open,Grand Slam,Australia,hard,1977,12,Vitas Gerulaitis,United States
+Australian Open,Grand Slam,Australia,hard,1978,0,Guillermo Vilas,Argentina
+Australian Open,Grand Slam,Australia,hard,1979,0,Guillermo Vilas,Argentina
+Australian Open,Grand Slam,Australia,hard,1980,0,Brian Teacher,United States
+Australian Open,Grand Slam,Australia,hard,1981,0,Johan Kriek,South Africa
+Australian Open,Grand Slam,Australia,hard,1982,0,Johan Kriek,United States
+Australian Open,Grand Slam,Australia,hard,1983,0,Mats Wilander,Sweden
+Australian Open,Grand Slam,Australia,hard,1984,0,Mats Wilander,Sweden
+Australian Open,Grand Slam,Australia,hard,1985,0,Stefan Edberg,Sweden
+Australian Open,Grand Slam,Australia,hard,1987,0,Stefan Edberg,Sweden
+Australian Open,Grand Slam,Australia,hard,1988,0,Mats Wilander,Sweden
+Australian Open,Grand Slam,Australia,hard,1989,0,Ivan Lendl,Czechoslovakia
+Australian Open,Grand Slam,Australia,hard,1990,0,Ivan Lendl,Czechoslovakia
+Australian Open,Grand Slam,Australia,hard,1991,0,Boris Becker,Germany
+Australian Open,Grand Slam,Australia,hard,1992,0,Jim Courier,United States
+Australian Open,Grand Slam,Australia,hard,1993,0,Jim Courier,United States
+Australian Open,Grand Slam,Australia,hard,1994,0,Pete Sampras,United States
+Australian Open,Grand Slam,Australia,hard,1995,0,Andre Agassi,United States
+Australian Open,Grand Slam,Australia,hard,1996,0,Boris Becker,Germany
+Australian Open,Grand Slam,Australia,hard,1997,0,Pete Sampras,United States
+Australian Open,Grand Slam,Australia,hard,1998,0,Petr Korda,Czechoslovakia
+Australian Open,Grand Slam,Australia,hard,1999,0,Yevgeny Kafelnikov,Russia
+Australian Open,Grand Slam,Australia,hard,2000,0,Andre Agassi,United States
+Australian Open,Grand Slam,Australia,hard,2001,0,Andre Agassi,United States
+Australian Open,Grand Slam,Australia,hard,2002,0,Thomas Johansson,Sweden
+Australian Open,Grand Slam,Australia,hard,2003,0,Andre Agassi,United States
+Australian Open,Grand Slam,Australia,hard,2004,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2005,0,Marat Safin,Russia
+Australian Open,Grand Slam,Australia,hard,2006,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2007,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2008,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2009,0,Rafael Nadal,Spain
+Australian Open,Grand Slam,Australia,hard,2010,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2011,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2012,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2013,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2014,0,Stan Wawrinka,Switzerland
+Australian Open,Grand Slam,Australia,hard,2015,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2016,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2017,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2018,0,Roger Federer,Switzerland
+Australian Open,Grand Slam,Australia,hard,2019,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2020,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2021,0,Novak Djokovic,Serbia
+Australian Open,Grand Slam,Australia,hard,2022,0,Rafael Nadal,Spain
+Australian Open,Grand Slam,Australia,hard,2023,0,Novak Djokovic,Serbia
+French Open,Grand Slam,France,clay,1968,0,Ken Rosewall,Australia
+French Open,Grand Slam,France,clay,1969,0,Rod Laver,Australia
+French Open,Grand Slam,France,clay,1970,0,Jan Kodeš,Czechoslovakia
+French Open,Grand Slam,France,clay,1971,0,Jan Kodeš,Czechoslovakia
+French Open,Grand Slam,France,clay,1972,0,Andrés Gimeno,Spain
+French Open,Grand Slam,France,clay,1973,0,Ilie Năstase,Romania
+French Open,Grand Slam,France,clay,1974,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1975,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1976,0,Adriano Panatta,Italy
+French Open,Grand Slam,France,clay,1977,0,Guillermo Vilas,Argentina
+French Open,Grand Slam,France,clay,1978,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1979,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1980,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1981,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1982,0,Björn Borg,Sweden
+French Open,Grand Slam,France,clay,1983,0,Yannick Noah,France
+French Open,Grand Slam,France,clay,1984,0,Ivan Lendl,Czechoslovakia
+French Open,Grand Slam,France,clay,1985,0,Mats Wilander,Sweden
+French Open,Grand Slam,France,clay,1986,0,Ivan Lendl,Czechoslovakia
+French Open,Grand Slam,France,clay,1987,0,Ivan Lendl,Czechoslovakia
+French Open,Grand Slam,France,clay,1988,0,Mats Wilander,Sweden
+French Open,Grand Slam,France,clay,1989,0,Michael Chang,United States
+French Open,Grand Slam,France,clay,1990,0,Andrés Gómez,Ecuador
+French Open,Grand Slam,France,clay,1991,0,Jim Courier,United States
+French Open,Grand Slam,France,clay,1992,0,Jim Courier,United States
+French Open,Grand Slam,France,clay,1993,0,Sergi Bruguera,Spain
+French Open,Grand Slam,France,clay,1994,0,Sergi Bruguera,Spain
+French Open,Grand Slam,France,clay,1995,0,Thomas Muster,Austria
+French Open,Grand Slam,France,clay,1996,0,Yevgeny Kafelnikov,Russia
+French Open,Grand Slam,France,clay,1997,0,Gustavo Kuerten,Brazil
+French Open,Grand Slam,France,clay,1998,0,Carlos Moyá,Spain
+French Open,Grand Slam,France,clay,1999,0,Andre Agassi,United States
+French Open,Grand Slam,France,clay,2000,0,Gustavo Kuerten,Brazil
+French Open,Grand Slam,France,clay,2001,0,Gustavo Kuerten,Brazil
+French Open,Grand Slam,France,clay,2002,0,Albert Costa,Spain
+French Open,Grand Slam,France,clay,2003,0,Juan Carlos Ferrero,Spain
+French Open,Grand Slam,France,clay,2004,0,Gastón Gaudio,Argentina
+French Open,Grand Slam,France,clay,2005,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2006,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2007,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2008,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2009,0,Roger Federer,Switzerland
+French Open,Grand Slam,France,clay,2010,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2011,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2012,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2013,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2014,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2015,0,Stan Wawrinka,Switzerland
+French Open,Grand Slam,France,clay,2016,0,Novak Djokovic,Serbia
+French Open,Grand Slam,France,clay,2017,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2018,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2019,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2020,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2021,0,Novak Djokovic,Serbia
+French Open,Grand Slam,France,clay,2022,0,Rafael Nadal,Spain
+French Open,Grand Slam,France,clay,2023,0,Novak Djokovic,Serbia
+US Open,Grand Slam,United States,hard,1968,0,Arthur Ashe,United States
+US Open,Grand Slam,United States,hard,1969,0,Rod Laver,Australia
+US Open,Grand Slam,United States,hard,1970,0,Ken Rosewall,Australia
+US Open,Grand Slam,United States,hard,1971,0,Stan Smith,United States
+US Open,Grand Slam,United States,hard,1972,0,Ilie Năstase,Romania
+US Open,Grand Slam,United States,hard,1973,0,John Newcombe,Australia
+US Open,Grand Slam,United States,hard,1974,0,Jimmy Connors,United States
+US Open,Grand Slam,United States,hard,1975,0,Manuel Orantes,Spain
+US Open,Grand Slam,United States,hard,1976,0,Jimmy Connors,United States
+US Open,Grand Slam,United States,hard,1977,0,Guillermo Vilas,Argentina
+US Open,Grand Slam,United States,hard,1978,0,Jimmy Connors,United States
+US Open,Grand Slam,United States,hard,1979,0,John McEnroe,United States
+US Open,Grand Slam,United States,hard,1980,0,John McEnroe,United States
+US Open,Grand Slam,United States,hard,1981,0,John McEnroe,United States
+US Open,Grand Slam,United States,hard,1982,0,Jimmy Connors,United States
+US Open,Grand Slam,United States,hard,1983,0,Jimmy Connors,United States
+US Open,Grand Slam,United States,hard,1984,0,John McEnroe,United States
+US Open,Grand Slam,United States,hard,1985,0,Ivan Lendl,Czechoslovakia
+US Open,Grand Slam,United States,hard,1986,0,Ivan Lendl,Czechoslovakia
+US Open,Grand Slam,United States,hard,1987,0,Ivan Lendl,Czechoslovakia
+US Open,Grand Slam,United States,hard,1988,0,Mats Wilander,Sweden
+US Open,Grand Slam,United States,hard,1989,0,Boris Becker,Germany
+US Open,Grand Slam,United States,hard,1990,0,Pete Sampras,United States
+US Open,Grand Slam,United States,hard,1991,0,Stefan Edberg,Sweden
+US Open,Grand Slam,United States,hard,1992,0,Stefan Edberg,Sweden
+US Open,Grand Slam,United States,hard,1993,0,Pete Sampras,United States
+US Open,Grand Slam,United States,hard,1994,0,Andre Agassi,United States
+US Open,Grand Slam,United States,hard,1995,0,Pete Sampras,United States
+US Open,Grand Slam,United States,hard,1996,0,Pete Sampras,United States
+US Open,Grand Slam,United States,hard,1997,0,Patrick Rafter,Australia
+US Open,Grand Slam,United States,hard,1998,0,Patrick Rafter,Australia
+US Open,Grand Slam,United States,hard,1999,0,Andre Agassi,United States
+US Open,Grand Slam,United States,hard,2000,0,Marat Safin,Russia
+US Open,Grand Slam,United States,hard,2001,0,Lleyton Hewitt,Australia
+US Open,Grand Slam,United States,hard,2002,0,Pete Sampras,United States
+US Open,Grand Slam,United States,hard,2003,0,Andy Roddick,United States
+US Open,Grand Slam,United States,hard,2004,0,Roger Federer,Switzerland
+US Open,Grand Slam,United States,hard,2005,0,Roger Federer,Switzerland
+US Open,Grand Slam,United States,hard,2006,0,Roger Federer,Switzerland
+US Open,Grand Slam,United States,hard,2007,0,Roger Federer,Switzerland
+US Open,Grand Slam,United States,hard,2008,0,Roger Federer,Switzerland
+US Open,Grand Slam,United States,hard,2009,0,Juan Martín del Potro,Argentina
+US Open,Grand Slam,United States,hard,2010,0,Rafael Nadal,Spain
+US Open,Grand Slam,United States,hard,2011,0,Novak Djokovic,Serbia
+US Open,Grand Slam,United States,hard,2012,0,Andy Murray,United Kingdom
+US Open,Grand Slam,United States,hard,2013,0,Rafael Nadal,Spain
+US Open,Grand Slam,United States,hard,2014,0,Marin Čilić,Croatia
+US Open,Grand Slam,United States,hard,2015,0,Novak Djokovic,Serbia
+US Open,Grand Slam,United States,hard,2016,0,Stan Wawrinka,Switzerland
+US Open,Grand Slam,United States,hard,2017,0,Rafael Nadal,Spain
+US Open,Grand Slam,United States,hard,2018,0,Novak Djokovic,Serbia
+US Open,Grand Slam,United States,hard,2019,0,Rafael Nadal,Spain
+US Open,Grand Slam,United States,hard,2020,0,Dominic Thiem,Austria
+US Open,Grand Slam,United States,hard,2021,0,Daniil Medvedev,Russia
+US Open,Grand Slam,United States,hard,2022,0,Carlos Alcaraz,Spain
+Wimbledon,Grand Slam,United Kingdom,grass,1968,0,Rod Laver,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,1969,0,Rod Laver,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,1970,0,John Newcombe,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,1971,0,John Newcombe,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,1972,0,Stan Smith,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1973,0,Jan Kodeš,Czechoslovakia
+Wimbledon,Grand Slam,United Kingdom,grass,1974,0,Jimmy Connors,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1975,0,Arthur Ashe,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1976,0,Björn Borg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,"1977 ",0,Björn Borg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1978,0,Björn Borg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1979,0,Björn Borg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1980,0,Björn Borg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1981,0,John McEnroe,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1982,0,Jimmy Connors,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1983,0,John McEnroe,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1984,0,John McEnroe,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1985,0,Boris Becker,Germany
+Wimbledon,Grand Slam,United Kingdom,grass,1986,0,Boris Becker,Germany
+Wimbledon,Grand Slam,United Kingdom,grass,1987,0,Pat Cash,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,1988,0,Stefan Edberg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1989,0,Boris Becker,Germany
+Wimbledon,Grand Slam,United Kingdom,grass,1990,0,Stefan Edberg,Sweden
+Wimbledon,Grand Slam,United Kingdom,grass,1991,0,Michael Stich,Germany
+Wimbledon,Grand Slam,United Kingdom,grass,1992,0,Andre Agassi,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1993,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1994,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1995,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1996,0,Richard Krajicek,Netherlands
+Wimbledon,Grand Slam,United Kingdom,grass,1997,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1998,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,1999,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,2000,0,Pete Sampras,United States
+Wimbledon,Grand Slam,United Kingdom,grass,2001,0,Goran Ivanišević,Croatia
+Wimbledon,Grand Slam,United Kingdom,grass,2002,0,Lleyton Hewitt,Australia
+Wimbledon,Grand Slam,United Kingdom,grass,2003,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2004,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2005,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2006,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2007,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2008,0,Rafael Nadal,Spain
+Wimbledon,Grand Slam,United Kingdom,grass,2009,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2010,0,Rafael Nadal,Spain
+Wimbledon,Grand Slam,United Kingdom,grass,2011,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2012,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2013,0,Andy Murray,United Kingdom
+Wimbledon,Grand Slam,United Kingdom,grass,2014,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2015,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2016,0,Andy Murray,United Kingdom
+Wimbledon,Grand Slam,United Kingdom,grass,2017,0,Roger Federer,Switzerland
+Wimbledon,Grand Slam,United Kingdom,grass,2018,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2019,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2021,0,Novak Djokovic,Serbia
+Wimbledon,Grand Slam,United Kingdom,grass,2022,0,Novak Djokovic,Serbia
+Olympics,Olympics,N/A,all,1896,0,John Boland,United Kingdom
+Olympics,Olympics,N/A,all,1900,0,Laurence Doherty,United Kingdom
+Olympics,Olympics,N/A,all,1904,0,St. Louis,United States
+Olympics,Olympics,N/A,all,1908,0,Major Ritchie,United Kingdom
+Olympics,Olympics,N/A,all,1912,0,Charles Winslow,South Africa
+Olympics,Olympics,N/A,all,1920,0,Louis Raymond,South Africa
+Olympics,Olympics,N/A,all,1924,0,Vincent Richards,United States
+Olympics,Olympics,N/A,all,1988,0,Miloslav Mečíř,Czechoslovakia
+Olympics,Olympics,N/A,all,1992,0,Marc Rosset,Switzerland
+Olympics,Olympics,N/A,all,1996,0,Andre Agassi,United States
+Olympics,Olympics,N/A,all,2000,0,Yevgeny Kafelnikov,Russia
+Olympics,Olympics,N/A,all,2004,0,Nicolás Massú,Chile
+Olympics,Olympics,N/A,all,2008,0,Rafael Nadal,Spain
+Olympics,Olympics,N/A,all,2012,0,Andy Murray,United Kingdom
+Olympics,Olympics,N/A,all,2016,0,Andy Murray,United Kingdom
+Olympics,Olympics,N/A,all,2020,0,Alexander Zverev,Germany
+Dubai Tennis Championships,ATP 500,United Arab Emirates,hard,1993,,,
+Mexican Open,ATP 500,Mexico,hard,1993,,,
+Halle Open,ATP 500,Germany,grass,1993,,,
+China Open,ATP 500,China,hard,1993,,,
+Miami Open,ATP Tour Masters 1000,United States,hard,1985,,,
+Indian Wells Masters,ATP Tour Masters 1000,United States,hard,1974,,,
+Vienna Open,ATP 500,Austria,hard,1974,,,
+Rotterdam Open,ATP 500,Netherlands,hard,1972,,,
+Japan Open,ATP 500,Japan,hard,1972,,,
+ATF Final,ATF Final,N/A,hard,1970,,,
+Swiss Indoors,ATP 500,Switzerland,hard,1970,,,
+Paris Masters,ATP Tour Masters 1000,France,hard,1969,,,
+Washington Open,ATP 500,United States,hard,1969,,,
+Barcelona Open,ATP 500,Spain,clay,1953,,,
+Italian Open,ATP Tour Masters 1000,Italy,clay,1930,,,
+Cincinnati Masters,ATP Tour Masters 1000,United States,hard,1899,,,
+Monte-Carlo Masters,ATP Tour Masters 1000,France,clay,1897,,,
+Hamburg European Open,ATP 500,Germany,clay,1892,,,
+Queen's Club Championships,ATP 500,United Kingdom,grass,1890,,,
+Canadian Open,ATP Tour Masters 1000,Canada,hard,1881,,,

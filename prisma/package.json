@@ -1,0 +1,22 @@
+{
+  "name": "@mystery/prisma",
+  "version": "0.0.1",
+  "description": "Prisma",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/HouseOfMystery.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "format": "prisma format",
+    "generate": "prisma format && prisma generate"
+  },
+  "devDependencies": {
+    "@prisma/client": "5.5.2",
+    "prisma": "5.5.2",
+    "prisma-dbml-generator": "0.10.0",
+    "prisma-docs-generator": "0.8.0",
+    "prisma-json-schema-generator": "4.0.0",
+    "prisma-markdown": "1.0.5"
+  }
+}

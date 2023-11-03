@@ -1,0 +1,20 @@
+[
+  {
+    "country": "Argentina",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 45376763
+  },
+  {
+    "country": "Bolivia",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 11673029
+  },
+  {
+    "country": "Paraguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 7132530
+  }
+]

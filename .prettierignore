@@ -1,0 +1,8 @@
+.angular
+.next
+.solid
+.svelte-kit
+build
+coverage
+dist
+node_modules

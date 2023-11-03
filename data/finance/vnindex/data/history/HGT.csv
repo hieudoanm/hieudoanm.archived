@@ -1,0 +1,4 @@
+symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
+HGT,2022,8,1,3,31,1,Monday,2022-08-01,14.0,14.0,14.0,14.0,300.0,1659312000.0,SIDEWAY
+HGT,2022,8,2,3,31,2,Tuesday,2022-08-02,16.1,16.1,16.1,16.1,200.0,1659398400.0,SIDEWAY
+HGT,2022,12,6,4,49,2,Tuesday,2022-12-06,9.7,9.7,9.7,9.7,200.0,1670284800.0,SIDEWAY

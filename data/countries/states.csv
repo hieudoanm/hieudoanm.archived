@@ -1,0 +1,40 @@
+country,province_state,level,capital,largest,region
+Germany,Baden-Württemberg,state,Stuttgart,,West
+Germany,Bavaria,state,Munich,,West
+Germany,Berlin,state,,,East
+Germany,Brandenburg,state,Potsdam,,East
+Germany,Bremen,state,Bremen,,West
+Germany,Hamburg,state,,,West
+Germany,Hesse,state,Wiesbaden,Frankfurt am Main,West
+Germany,Lower Saxony,state,Hanover,,West
+Germany,Mecklenburg-Vorpommern,state,Schwerin,,West
+Germany,North Rhine-Westphalia,state,Düsseldorf,,West
+Germany,Rhineland-Palatinate,state,Mainz,,West
+Germany,Saarland,state,Saarbrücken,,West
+Germany,Saxony,state,Dresden,,East
+Germany,Saxony-Anhalt,state,Magdeburg,,East
+Germany,Schleswig-Holstein,state,Kiel,,West
+Germany,Thuringia,state,Erfurt,,East
+Netherlands,Drenthe,province,Assen,Emmen,
+Netherlands,Flevoland,province,Lelystad,Almere,
+Netherlands,Friesland,province,Leeuwarden,Leeuwarden,
+Netherlands,Gelderland,province,Arnhem,Nijmegen,
+Netherlands,Groningen,province,Groningen,Groningen,
+Netherlands,Limburg,province,Maastricht,Maastricht,
+Netherlands,North Brabant,province,'s-Hertogenbosch,Eindhoven,
+Netherlands,North Holland,province,Haarlem,Amsterdam,
+Netherlands,Overijssel,province,Zwolle,Enschede,
+Netherlands,South Holland,province,The Hague,Rotterdam,
+Netherlands,Utrecht,province,Utrecht,Utrecht,
+Netherlands,Zeeland,province,Middelburg,Terneuzen,
+Belgium,Antwerp,province,Antwerp,,Flanders
+Belgium,East Flanders,province,Ghent,,Flanders
+Belgium,Flemish Brabant,province,Leuven,,Flanders
+Belgium,Limburg,province,Hasselt,,Flanders
+Belgium,West Flanders,province,Bruges,,Flanders
+Belgium,Hainaut,province,Mons,,Wallonia
+Belgium,Liège,province,Liège,,Wallonia
+Belgium,Luxembourg,province,Arlon,,Wallonia
+Belgium,Namur,province,Namur,,Wallonia
+Belgium,Walloon Brabant,province,Wavre,,Wallonia
+Belgium,Brussels Capital Region,province,Brussels City,,Brussels

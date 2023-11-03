@@ -1,0 +1,24 @@
+{
+  "name": "instagram.com",
+  "version": "0.0.1",
+  "description": "instagram.com",
+  "main": "index.js",
+  "repository": "git@github.com:houseoftypescript/addons.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GNU GPL 3.0",
+  "private": true,
+  "devDependencies": {
+    "@types/chrome": "0.0.248",
+    "@types/node": "20.8.10",
+    "@webpack-cli/generators": "3.0.7",
+    "copy-webpack-plugin": "11.0.0",
+    "ts-loader": "9.5.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}

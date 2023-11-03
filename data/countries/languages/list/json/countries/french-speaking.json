@@ -1,0 +1,188 @@
+[
+  {
+    "country": "Burundi",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 11890781
+  },
+  {
+    "country": "Comoros",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 869595
+  },
+  {
+    "country": "Djibouti",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 988002
+  },
+  {
+    "country": "Madagascar",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 27691019
+  },
+  {
+    "country": "Mauritius",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 1265740
+  },
+  {
+    "country": "Rwanda",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 12952209
+  },
+  {
+    "country": "Seychelles",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 98462
+  },
+  {
+    "country": "Cameroon",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 26545864
+  },
+  {
+    "country": "Central African Republic",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 4829764
+  },
+  {
+    "country": "Chad",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 16425859
+  },
+  {
+    "country": "DR Congo",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 89561404
+  },
+  {
+    "country": "Equatorial Guinea",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 1402985
+  },
+  {
+    "country": "Gabon",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 2225728
+  },
+  {
+    "country": "Republic of the Congo",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 89561404
+  },
+  {
+    "country": "Benin",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 12123198
+  },
+  {
+    "country": "Burkina Faso",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 20903278
+  },
+  {
+    "country": "Guinea",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 13132792
+  },
+  {
+    "country": "Ivory Coast",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 26378275
+  },
+  {
+    "country": "Mali",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 20250834
+  },
+  {
+    "country": "Niger",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 24206636
+  },
+  {
+    "country": "Senegal",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 16743930
+  },
+  {
+    "country": "Togo",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 8278737
+  },
+  {
+    "country": "Haiti",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11402533
+  },
+  {
+    "country": "Canada",
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 38005238
+  },
+  {
+    "country": "Lebanon",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 6825442
+  },
+  {
+    "country": "Belgium",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 11555997
+  },
+  {
+    "country": "France",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 67391582
+  },
+  {
+    "country": "Luxembourg",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 632275
+  },
+  {
+    "country": "Monaco",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 39244
+  },
+  {
+    "country": "Switzerland",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 8654622
+  },
+  {
+    "country": "Vanuatu",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 307150
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "@svelte/client",
+  "version": "0.0.1",
+  "description": "Svelte - Template",
+  "main": "index.js",
+  "repository": "git@github.com:houseoftypescript/web-svelte-template.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint . --fix",
+    "test": "echo 'test'"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "2.4.6",
+    "@tsconfig/svelte": "5.0.2",
+    "@typescript-eslint/eslint-plugin": "6.9.1",
+    "@typescript-eslint/parser": "6.9.1",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.52.0",
+    "postcss": "8.4.31",
+    "prettier": "3.0.3",
+    "prettier-plugin-svelte": "3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.6",
+    "sass": "1.69.5",
+    "svelte": "4.2.2",
+    "svelte-check": "3.5.2",
+    "svelte-routing": "2.6.0",
+    "tailwindcss": "3.3.5",
+    "tslib": "2.6.2",
+    "typescript": "5.2.2",
+    "vite": "4.5.0"
+  }
+}
