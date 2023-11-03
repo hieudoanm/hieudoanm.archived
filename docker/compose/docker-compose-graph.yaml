@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  graph-neo4j:
+    restart: unless-stopped
+    image: neo4j:latest
+    container_name: graph-neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
