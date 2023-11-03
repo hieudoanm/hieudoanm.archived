@@ -1,573 +1,573 @@
-type,color,extensions,tm_scope,ace_mode,language_id,language,aliases,codemirror_mode,codemirror_mime_type,interpreters,group,filenames,wrap,fs_name,searchable
-data,#d12127,"['.apacheconf', '.vhost']",source.apache-config,apache_conf,16,ApacheConf,"['aconf', 'apache']",,,,,"['.htaccess', 'apache2.conf', 'httpd.conf']",,,
-data,#244776,['.cson'],source.coffee,coffee,424,CSON,,coffeescript,text/x-coffeescript,,,,,,
-data,#F44D27,,source.gitattributes,gitignore,956324166,Git Attributes,['gitattributes'],shell,text/x-sh,,INI,['.gitattributes'],,,
-data,#000000,['.gitignore'],source.gitignore,gitignore,74444240,Ignore List,"['ignore', 'gitignore', 'git-ignore']",shell,text/x-sh,,INI,"['.atomignore', '.babelignore', '.bzrignore', '.coffeelintignore', '.cvsignore', '.dockerignore', '.eleventyignore', '.eslintignore', '.gitignore', '.markdownlintignore', '.nodemonignore', '.npmignore', '.prettierignore', '.stylelintignore', '.vercelignore', '.vscodeignore', 'gitignore-global', 'gitignore_global']",,,
-data,#483465,['.cabal'],source.cabal,haskell,677095381,Cabal Config,['Cabal'],haskell,text/x-haskell,,,"['cabal.config', 'cabal.project']",,,
-data,#fff1f2,['.editorconfig'],source.editorconfig,ini,96139566,EditorConfig,['editor-config'],properties,text/x-properties,,INI,['.editorconfig'],,,
-data,#F44D27,['.gitconfig'],source.gitconfig,ini,807968997,Git Config,"['gitconfig', 'gitmodules']",properties,text/x-properties,,INI,"['.gitconfig', '.gitmodules']",,,
-data,#A89663,"['.OutJob', '.PcbDoc', '.PrjPCB', '.SchDoc']",source.ini,ini,187772328,Altium Designer,['altium'],,,,,,,,
-data,#d1dbe0,"['.ini', '.cfg', '.cnf', '.dof', '.lektorproject', '.prefs', '.pro', '.properties', '.url']",source.ini,ini,163,INI,['dosini'],properties,text/x-properties,,,"['.coveragerc', '.flake8', '.pylintrc', 'HOSTS', 'buildozer.spec', 'hosts', 'pylintrc', 'vlcrc']",,,
-data,#52d5ff,['.reg'],source.reg,ini,969674868,Windows Registry Entries,,properties,text/x-properties,,,,,,
-data,#C9BFED,['.sfv'],source.sfv,ini,735623761,Simple File Verification,['sfv'],properties,text/x-properties,,Checksums,,,,
-data,#cecfcb,,source.shellcheckrc,ini,687511714,ShellCheck Config,['shellcheckrc'],properties,text/x-properties,,,['.shellcheckrc'],,,
-data,#15c213,['.snap'],source.jest.snap,javascript,774635084,Jest Snapshot,,javascript,application/javascript,,,,,,
-data,#292929,"['.jsonc', '.code-snippets', '.code-workspace', '.sublime-build', '.sublime-commands', '.sublime-completions', '.sublime-keymap', '.sublime-macro', '.sublime-menu', '.sublime-mousemap', '.sublime-project', '.sublime-settings', '.sublime-theme', '.sublime-workspace', '.sublime_metrics', '.sublime_session']",source.js,javascript,423,JSON with Comments,['jsonc'],javascript,text/javascript,,JSON,"['.babelrc', '.devcontainer.json', '.eslintrc.json', '.jscsrc', '.jshintrc', '.jslintrc', '.swcrc', 'api-extractor.json', 'devcontainer.json', 'jsconfig.json', 'language-configuration.json', 'tsconfig.json', 'tslint.json']",,,
-data,#267CB9,['.json5'],source.js,javascript,175,JSON5,,javascript,application/json,,,,,,
-data,#0c479c,['.jsonld'],source.js,javascript,176,JSONLD,,javascript,application/json,,,,,,
-data,#913960,['.epj'],source.json,json,98,Ecere Projects,,javascript,application/json,,JavaScript,,,,
-data,#292929,"['.json', '.4DForm', '.4DProject', '.avsc', '.geojson', '.gltf', '.har', '.ice', '.JSON-tmLanguage', '.jsonl', '.mcmeta', '.tfstate', '.tfstate.backup', '.topojson', '.webapp', '.webmanifest', '.yy', '.yyp']",source.json,json,174,JSON,"['geojson', 'jsonl', 'topojson']",javascript,application/json,,,"['.all-contributorsrc', '.arcconfig', '.auto-changelog', '.c8rc', '.htmlhintrc', '.imgbotconfig', '.nycrc', '.tern-config', '.tern-project', '.watchmanconfig', 'Pipfile.lock', 'composer.lock', 'flake.lock', 'mcmod.info']",,,
-data,#85ea2d,['.json'],source.json,json,834374816,OASv2-json,,javascript,application/json,,OpenAPI Specification v2,,,,
-data,#85ea2d,['.json'],source.json,json,980062566,OASv3-json,,javascript,application/json,,OpenAPI Specification v3,,,,
-data,#FFA000,,source.firestore,less,407996372,Cloud Firestore Security Rules,,css,text/css,,,['firestore.rules'],,,
-data,#2f4aab,"['.kicad_pcb', '.kicad_mod', '.kicad_wks']",source.pcb.sexp,lisp,187,KiCad Layout,['pcbnew'],commonlisp,text/x-common-lisp,,,['fp-lib-table'],,,
-data,#2A6277,['.properties'],source.java-properties,properties,519377561,Java Properties,,properties,text/x-properties,,,,,,
-data,#df66e4,,source.tm-properties,properties,981795023,TextMate Properties,['tm-properties'],properties,text/x-properties,,,['.tm_properties'],,,
-data,#069406,['.eb'],source.python,python,342840477,Easybuild,,python,text/x-python,,Python,,,,
-data,#701516,['.rbs'],source.rbs,ruby,899227493,RBS,,ruby,text/x-ruby,,Ruby,,,,
-data,#476732,,source.opts,sh,723589315,Option List,"['opts', 'ackrc']",shell,text/x-sh,,,"['.ackrc', '.rspec', '.yardopts', 'ackrc', 'mocha.opts']",,,
-data,#e38c00,"['.sql', '.cql', '.ddl', '.inc', '.mysql', '.prc', '.tab', '.udf', '.viw']",source.sql,sql,333,SQL,,sql,text/x-sql,,,,,,
-data,#00ADD8,,go.mod,text,947461016,Go Module,"['go.mod', 'go mod']",,,,,['go.mod'],,,
-data,#00ADD8,,go.mod,text,934546256,Go Workspace,"['go.work', 'go work']",,,,,['go.work'],,,
-data,#00ADD8,,go.sum,text,1054391671,Go Checksums,"['go.sum', 'go sum', 'go.work.sum', 'go work sum']",,,,,"['go.sum', 'go.work.sum']",,,
-data,#237346,['.csv'],none,text,51,CSV,,,,,,,,,
-data,#8eff23,"['.darcspatch', '.dpatch']",none,text,86,Darcs Patch,['dpatch'],,,,,,,,
-data,#aace60,['.x'],none,text,201049282,DirectX 3D File,,,,,,,,,
-data,#85ea2d,,none,text,848295328,OpenAPI Specification v2,['oasv2'],,,,,,,,
-data,#85ea2d,,none,text,557959099,OpenAPI Specification v3,['oasv3'],,,,,,,,
-data,#38761D,['.2da'],source.2da,text,387204628,2-Dimensional Array,,,,,,,,,
-data,#fa0f00,['.afm'],source.afm,text,147198098,Adobe Font Metrics,"['acfm', 'adobe composite font metrics', 'adobe multiple font metrics', 'amfm']",,,,,,,,
-data,#0040FF,['.avdl'],source.avro,text,785497837,Avro IDL,,,,,,,,,
-data,#D70751,['.dsc'],source.deb-control,text,527438264,Debian Package Control File,,,,,,,,,
-data,#2596be,"['.dot', '.gv']",source.dot,text,140,Graphviz (DOT),,,,,,,,,
-data,#e5d559,['.env'],source.dotenv,text,111148035,Dotenv,,,,,,"['.env', '.env.ci', '.env.dev', '.env.development', '.env.development.local', '.env.example', '.env.local', '.env.prod', '.env.production', '.env.staging', '.env.test', '.env.testing']",,,
-data,#FFDDBB,['.flf'],source.figfont,text,686129783,FIGlet Font,['FIGfont'],,,,,,,,
-data,#355570,"['.gdnlib', '.gdns', '.tres', '.tscn']",source.gdresource,text,738107771,Godot Resource,,,,,,['project.godot'],,,
-data,#003058,['.ged'],source.gedcom,text,459577965,GEDCOM,,,,,,,,,
-data,#701516,,source.gemfile-lock,text,907065713,Gemfile.lock,,,,,,['Gemfile.lock'],,,False
-data,#237346,['.tsv'],source.generic-db,text,1035892117,TSV,,,,,,,,,
-data,#d20b00,"['.gbr', '.cmp', '.gbl', '.gbo', '.gbp', '.gbs', '.gko', '.gml', '.gpb', '.gpt', '.gtl', '.gto', '.gtp', '.gts', '.ncl', '.sol']",source.gerber,text,404627610,Gerber Image,['rs-274x'],,,"['gerbv', 'gerbview']",,,,,
-data,#F44D27,,source.git-revlist,text,461881235,Git Revision List,['Git Blame Ignore Revs'],,,,,['.git-blame-ignore-revs'],,,
-data,#e10098,"['.graphql', '.gql', '.graphqls']",source.graphql,text,139,GraphQL,,,,,,,,,
-data,#02303a,['.gradle'],source.groovy.gradle,text,136,Gradle,,,,,,,,,
-data,#106da9,['.cfg'],source.haproxy-config,text,366607477,HAProxy,,,,,,['haproxy.cfg'],,,
-data,#9ff8ee,['.hocon'],source.hocon,text,679725279,HOCON,,,,,,"['.scalafix.conf', '.scalafmt.conf']",,,
-data,#308888,,source.hosts,text,231021894,Hosts File,['hosts'],,,,,"['HOSTS', 'hosts']",,,
-data,#005C9C,['.http'],source.httpspec,text,152,HTTP,,http,message/http,,,,,,
-data,#f68712,['.hxml'],source.hxml,text,786683730,HXML,,,,,,,,,
-data,#cb3837,,source.ini.npmrc,text,685022663,NPM Config,['npmrc'],,,,INI,['.npmrc'],,,
-data,#f26025,['.vdf'],source.keyvalues,text,544060961,Valve Data Format,"['keyvalues', 'vdf']",,,,,,,,
-data,#02303a,['.gradle.kts'],source.kotlin,text,432600901,Gradle Kotlin DSL,,,,,Gradle,,,,
-data,#2980B9,['.lark'],source.lark,text,758480799,Lark,,ebnf,text/x-ebnf,,,,,,
-data,#2d004d,['.nanorc'],source.nanorc,text,775996197,nanorc,,,,,INI,"['.nanorc', 'nanorc']",,,
-data,#009639,"['.nginx', '.nginxconf', '.vhost']",source.nginx,text,248,Nginx,['nginx configuration file'],nginx,text/x-nginx-conf,,,['nginx.conf'],,,
-data,#2f4aab,['.brd'],source.pcb.board,text,140848857,KiCad Legacy Layout,,,,,,,,,
-data,#2f4aab,"['.kicad_sch', '.sch']",source.pcb.schematic,text,622447435,KiCad Schematic,['eeschema schematic'],,,,,,,,
-data,#0c344b,['.prisma'],source.prisma,text,499933428,Prisma,,,,,,,,,
-data,#0673ba,,source.record-jar,text,865765202,Record Jar,,properties,text/x-properties,,,['language-subtag-registry.txt'],,,
-data,#009a00,"['.regexp', '.regex']",source.regexp,text,363378884,Regular Expression,"['regexp', 'regex']",,,,,,,,
-data,#0C4597,"['.sparql', '.rq']",source.sparql,text,331,SPARQL,,sparql,application/sparql-query,,,,,,
-data,#373b5e,['.stl'],source.stl,text,455361735,STL,"['ascii stl', 'stla']",,,,,,,,
-data,#f7e43f,['.toc'],source.toc,text,396,World of Warcraft Addon Data,,,,,,,,,
-data,#6250e7,['.wit'],source.wit,text,134534086,WebAssembly Interface Type,['wit'],webidl,text/x-webidl,,,,,,
-data,#fbbd16,"['.puml', '.iuml', '.plantuml']",source.wsd,text,833504686,PlantUML,,,,,,,,,
-data,#b07219,,source.yaml,text,447261135,JAR Manifest,,,,,,['MANIFEST.MF'],,,
-data,#800000,['.txt'],text.adblock,text,884614762,Adblock Filter List,"['ad block filters', 'ad block', 'adb', 'adblock']",,,,,,,,
-data,#ffd539,,text.browserslist,text,153503348,Browserslist,,,,,,"['.browserslistrc', 'browserslist']",,,
-data,#3572A5,['.pytb'],text.python.traceback,text,304,Python traceback,,,,,Python,,,,
-data,#9e0101,['.srt'],text.srt,text,360,SubRip Text,,,,,,,,,
-data,#9c4221,['.toml'],source.toml,toml,365,TOML,,toml,text/x-toml,,,"['Cargo.lock', 'Gopkg.lock', 'Pipfile', 'pdm.lock', 'poetry.lock']",,,
-data,#F1A42B,['.dae'],text.xml,xml,49,COLLADA,,xml,text/xml,,,,,,
-data,#5b70bd,['.owl'],text.xml,xml,394,Web Ontology Language,,,,,,,,,
-data,#0060ac,"['.xml', '.adml', '.admx', '.ant', '.axaml', '.axml', '.builds', '.ccproj', '.ccxml', '.clixml', '.cproject', '.cscfg', '.csdef', '.csl', '.csproj', '.ct', '.depproj', '.dita', '.ditamap', '.ditaval', '.dll.config', '.dotsettings', '.filters', '.fsproj', '.fxml', '.glade', '.gml', '.gmx', '.grxml', '.gst', '.hzp', '.iml', '.ivy', '.jelly', '.jsproj', '.kml', '.launch', '.mdpolicy', '.mjml', '.mm', '.mod', '.mxml', '.natvis', '.ncl', '.ndproj', '.nproj', '.nuspec', '.odd', '.osm', '.pkgproj', '.pluginspec', '.proj', '.props', '.ps1xml', '.psc1', '.pt', '.qhelp', '.rdf', '.res', '.resx', '.rs', '.rss', '.sch', '.scxml', '.sfproj', '.shproj', '.srdf', '.storyboard', '.sublime-snippet', '.sw', '.targets', '.tml', '.ts', '.tsx', '.typ', '.ui', '.urdf', '.ux', '.vbproj', '.vcxproj', '.vsixmanifest', '.vssettings', '.vstemplate', '.vxml', '.wixproj', '.workflow', '.wsdl', '.wsf', '.wxi', '.wxl', '.wxs', '.x3d', '.xacro', '.xaml', '.xib', '.xlf', '.xliff', '.xmi', '.xml.dist', '.xmp', '.xproj', '.xsd', '.xspec', '.xul', '.zcml']",text.xml,xml,399,XML,"['rss', 'xsd', 'wsdl']",xml,text/xml,,,"['.classpath', '.cproject', '.project', 'App.config', 'NuGet.config', 'Settings.StyleCop', 'Web.Debug.config', 'Web.Release.config', 'Web.config', 'packages.config']",,,
-data,#A9157E,,text.xml.ant,xml,15,Ant Build System,,xml,application/xml,,,"['ant.xml', 'build.xml']",,,
-data,#0060ac,"['.plist', '.stTheme', '.tmCommand', '.tmLanguage', '.tmPreferences', '.tmSnippet', '.tmTheme']",text.xml.plist,xml,75622871,XML Property List,,xml,text/xml,,XML,,,,
-data,#ff9900,['.svg'],text.xml.svg,xml,337,SVG,,xml,text/xml,,,,,,
-data,#ff1111,"['.yaml', '.yml']",source.miniyaml,yaml,4896465,MiniYAML,,yaml,text/x-yaml,,,,,,
-data,#85ea2d,"['.yaml', '.yml']",source.yaml,yaml,105187618,OASv2-yaml,,yaml,text/x-yaml,,OpenAPI Specification v2,,,,
-data,#85ea2d,"['.yaml', '.yml']",source.yaml,yaml,51239111,OASv3-yaml,,yaml,text/x-yaml,,OpenAPI Specification v3,,,,
-data,#222c37,"['.anim', '.asset', '.mask', '.mat', '.meta', '.prefab', '.unity']",source.yaml,yaml,380,Unity3D Asset,,yaml,text/x-yaml,,,,,,
-data,#cb171e,"['.yml', '.mir', '.reek', '.rviz', '.sublime-syntax', '.syntax', '.yaml', '.yaml-tmlanguage', '.yaml.sed', '.yml.mysql']",source.yaml,yaml,407,YAML,['yml'],yaml,text/x-yaml,,,"['.clang-format', '.clang-tidy', '.gemrc', 'CITATION.cff', 'glide.lock', 'yarn.lock']",,,
-markup,#563d7c,['.css'],source.css,css,50,CSS,,css,text/css,,,,,,
-markup,#a52a22,"['.jinja', '.j2', '.jinja2']",text.html.django,django,147,Jinja,"['django', 'html+django', 'html+jinja', 'htmldjango']",django,text/x-django,,,,,,
-markup,#a91e50,"['.ejs', '.ect', '.ejs.t', '.jst']",text.html.js,ejs,95,EJS,,,,,,,,,
-markup,#ece2a9,"['.haml', '.haml.deface']",text.haml,haml,154,Haml,,haml,text/x-haml,,,,,,
-markup,#f7931e,"['.handlebars', '.hbs']",text.html.handlebars,handlebars,155,Handlebars,"['hbs', 'htmlbars']",,,,,,,,
-markup,#ff5a03,['.astro'],source.astro,html,578209015,Astro,,jsx,text/jsx,,,,,,
-markup,#5562ac,['.bs'],source.csswg,html,1055528081,Bikeshed,,htmlmixed,text/html,,,,,,
-markup,#3fb34f,['.st'],source.string-template,html,89855901,StringTemplate,,htmlmixed,text/html,,,,,,
-markup,#ff3e00,['.svelte'],source.svelte,html,928734530,Svelte,,htmlmixed,text/html,,,,,,
-markup,#e34c26,"['.html', '.hta', '.htm', '.html.hl', '.inc', '.xht', '.xhtml']",text.html.basic,html,146,HTML,['xhtml'],htmlmixed,text/html,,,,,,
-markup,#b7e1f4,['.mtml'],text.html.basic,html,218,MTML,,htmlmixed,text/html,,,,,,
-markup,#eb8131,['.html'],text.html.ecmarkup,html,844766630,Ecmarkup,['ecmarkdown'],htmlmixed,text/html,,HTML,,,,
-markup,#A71E49,['.riot'],text.html.riot,html,878396783,Riot,,,,,,,,,
-markup,#41b883,['.vue'],text.html.vue,html,391,Vue,,,,,,,,,
-markup,#a86454,"['.jade', '.pug']",text.jade,jade,179,Pug,,pug,text/x-pug,,,,,,
-markup,#DA5B0B,['.ipynb'],source.json,json,185,Jupyter Notebook,['IPython Notebook'],javascript,application/json,,,['Notebook'],,,
-markup,#1d365d,['.less'],source.css.less,less,198,Less,['less-css'],css,text/css,,,,,,
-markup,#67b8de,['.liquid'],text.html.liquid,liquid,204,Liquid,,,,,,,,,
-markup,#348a34,['.srt'],source.lisp,lisp,335,SRecode Template,,commonlisp,text/x-common-lisp,,,,,,
-markup,#fcb32c,['.mdx'],source.mdx,markdown,512838272,MDX,,gfm,text/x-gfm,,,,True,,
-markup,#2ACCA8,['.apib'],text.html.markdown.source.gfm.apib,markdown,5,API Blueprint,,,,,,,,,
-markup,#f97732,['.mask'],source.mask,mask,223,Mask,,,,,,,,,
-markup,#3d8137,['.njk'],text.html.nunjucks,nunjucks,461856962,Nunjucks,['njk'],,,,,,,,
-markup,#4f5d95,['.phtml'],text.html.php,php,151,HTML+PHP,,php,application/x-httpd-php,,HTML,,,,
-markup,#512be4,"['.cshtml', '.razor']",text.html.cshtml,razor,479039817,HTML+Razor,['razor'],htmlmixed,text/html,,HTML,,,,
-markup,#a53b70,['.sass'],source.sass,sass,340,Sass,,sass,text/x-sass,,,,,,
-markup,#c6538c,['.scss'],source.css.scss,scss,329,SCSS,,css,text/x-scss,,,,,,
-markup,#f2a542,['.latte'],text.html.smarty,smarty,196,Latte,,smarty,text/x-smarty,,,,,,
-markup,#724b3b,['.mustache'],text.html.smarty,smarty,638334590,Mustache,,smarty,text/x-smarty,,,,,,
-markup,#0d948f,['.soy'],text.html.soy,soy_template,357046146,Closure Templates,['soy'],soy,text/x-soy,,,,,,
-markup,#ff6347,['.styl'],source.stylus,stylus,359,Stylus,,,,,,,,,
-markup,#778899,"['.bib', '.bibtex']",text.bibtex,tex,982188347,BibTeX,,stex,text/x-stex,,TeX,,,,
-markup,#3D6117,"['.tex', '.aux', '.bbx', '.cbx', '.cls', '.dtx', '.ins', '.lbx', '.ltx', '.mkii', '.mkiv', '.mkvi', '.sty', '.toc']",text.tex.latex,tex,369,TeX,['latex'],stex,text/x-stex,,,,True,,
-markup,#2fcc9f,['.sss'],source.css.postcss.sugarss,text,826404698,SugarSS,,,,,,,,,
-markup,#526ee8,['.d2'],source.d2,text,37531557,D2,['d2lang'],,,,,,,,
-markup,#d8df39,['.per'],source.genero-forms,text,902995658,Genero Forms,,,,,,,,,
-markup,#ff3670,"['.mmd', '.mermaid']",source.mermaid,text,385992043,Mermaid,['mermaid example'],,,,,,,,
-markup,#dc3a0c,"['.pcss', '.postcss']",source.postcss,text,262764437,PostCSS,,,,,CSS,,,,
-markup,#da291c,"['.ps', '.eps', '.epsi', '.pfa']",source.postscript,text,291,PostScript,['postscr'],,,,,,,,
-markup,#1da6e0,['.kv'],source.python.kivy,text,970675279,kvlang,,,,,,,,,
-markup,#bd181a,['.scaml'],source.scaml,text,342,Scaml,,,,,,,,,
-markup,#199f4b,"['.snip', '.snippet', '.snippets']",source.vim-snippet,text,81265970,Vim Snippet,"['SnipMate', 'UltiSnip', 'UltiSnips', 'NeoSnippet']",,,,,,,,
-markup,#32AB90,['.yasnippet'],source.yasnippet,text,378760102,YASnippet,"['snippet', 'yas']",,,,,,,,
-markup,#2e1052,['.ecr'],text.html.ecr,text,148,HTML+ECR,['ecr'],htmlmixed,text/html,,HTML,,,,
-markup,#6e4a7e,"['.eex', '.html.heex', '.html.leex']",text.html.elixir,text,149,HTML+EEX,"['eex', 'heex', 'leex']",htmlmixed,text/html,,HTML,,,,
-markup,#701516,"['.erb', '.erb.deface', '.rhtml']",text.html.erb,text,150,HTML+ERB,"['erb', 'rhtml', 'html+ruby']",htmlembedded,application/x-erb,,HTML,,,,
-markup,#f7523f,"['.blade', '.blade.php']",text.html.php.blade,text,33,Blade,,,,,,,,,
-markup,#ff269e,"['.antlers.html', '.antlers.php', '.antlers.xml']",text.html.statamic,text,1067292663,Antlers,,,,,,,,,
-markup,#42bff2,['.marko'],text.marko,text,932782397,Marko,['markojs'],htmlmixed,text/html,,,,,,
-markup,#ecdebe,"['.roff', '.1', '.1in', '.1m', '.1x', '.2', '.3', '.3in', '.3m', '.3p', '.3pm', '.3qt', '.3x', '.4', '.5', '.6', '.7', '.8', '.9', '.l', '.man', '.mdoc', '.me', '.ms', '.n', '.nr', '.rno', '.tmac']",text.roff,text,141,Roff,"['groff', 'man', 'manpage', 'man page', 'man-page', 'mdoc', 'nroff', 'troff']",troff,text/troff,,,"['eqnrc', 'mmn', 'mmt', 'troffrc', 'troffrc-end']",True,,
-markup,#ecdebe,"['.1', '.1in', '.1m', '.1x', '.2', '.3', '.3in', '.3m', '.3p', '.3pm', '.3qt', '.3x', '.4', '.5', '.6', '.7', '.8', '.9', '.man', '.mdoc']",text.roff,text,612669833,Roff Manpage,,troff,text/troff,,Roff,,True,,
-markup,#665a4e,"['.rnh', '.rno']",text.runoff,text,315,RUNOFF,,,,,,,True,,
-markup,#2b2b2b,['.slim'],text.slim,text,350,Slim,,slim,text/x-slim,,,,,,
-markup,#c1d026,['.twig'],text.html.twig,twig,377,Twig,,twig,text/x-twig,,,,,,
-markup,#507cff,['.vtl'],source.velocity,velocity,292377326,Velocity Template Language,"['vtl', 'velocity']",velocity,text/velocity,,,,,,
-markup,#77d9fb,['.raml'],source.yaml,yaml,308,RAML,,yaml,text/x-yaml,,,,,,
-programming,#E8274B,['.abap'],source.abap,abap,1,ABAP,,,,,,,,,
-programming,#882B0F,['.as'],source.actionscript.3,actionscript,10,ActionScript,"['actionscript 3', 'actionscript3', 'as3']",,,,,,,,
-programming,#02f88c,"['.adb', '.ada', '.ads']",source.ada,ada,11,Ada,"['ada95', 'ada2005']",,,,,,,,
-programming,#101F1F,"['.applescript', '.scpt']",source.applescript,applescript,19,AppleScript,['osascript'],,,['osascript'],,,,,
-programming,#0B3D91,['.agc'],source.agc,assembly_x86,18,Apollo Guidance Computer,,,,,Assembly,,,,
-programming,#6E4C13,"['.asm', '.a51', '.i', '.inc', '.nas', '.nasm']",source.assembly,assembly_x86,24,Assembly,"['asm', 'nasm']",,,,,,,,
-programming,#005daa,"['.asm', '.i', '.inc', '.s', '.x68']",source.m68k,assembly_x86,477582706,Motorola 68K Assembly,['m68k'],,,,Assembly,,,,
-programming,#6594b9,"['.ahk', '.ahkl']",source.ahk,autohotkey,26,AutoHotkey,['ahk'],,,,,,,,
-programming,#1C3552,['.au3'],source.autoit,autohotkey,27,AutoIt,"['au3', 'AutoIt3', 'AutoItScript']",,,,,,,,
-programming,#C1F12E,"['.bat', '.cmd']",source.batchfile,batchfile,29,Batchfile,"['bat', 'batch', 'dosbatch', 'winbatch']",,,,,,,,
-programming,#3B2F63,,source.procfile,batchfile,305313959,Procfile,,,,,,['Procfile'],,,
-programming,#555555,"['.c', '.cats', '.h', '.idc']",source.c,c_cpp,41,C,,clike,text/x-csrc,['tcc'],,,,,
-programming,#ed2e2d,"['.cl', '.opencl']",source.c,c_cpp,263,OpenCL,,clike,text/x-csrc,,C,,,,
-programming,#4e3617,['.upc'],source.c,c_cpp,379,Unified Parallel C,,clike,text/x-csrc,,C,,,,
-programming,#B9D9FF,"['.asc', '.ash']",source.c++,c_cpp,2,AGS Script,['ags'],clike,text/x-c++src,,,,,,
-programming,#ff0000,['.asy'],source.c++,c_cpp,591605007,Asymptote,,clike,text/x-kotlin,['asy'],,,,,
-programming,#f34b7d,"['.cpp', '.c++', '.cc', '.cp', '.cppm', '.cxx', '.h', '.h++', '.hh', '.hpp', '.hxx', '.inc', '.inl', '.ino', '.ipp', '.ixx', '.re', '.tcc', '.tpp', '.txx']",source.c++,c_cpp,43,C++,['cpp'],clike,text/x-c++src,,,,,,
-programming,#71b417,['.gml'],source.c++,c_cpp,125,Game Maker Language,,clike,text/x-c++src,,,,,,
-programming,#8f14e9,['.metal'],source.c++,c_cpp,230,Metal,,clike,text/x-c++src,,,,,,
-programming,#111522,['.nss'],source.c.nwscript,c_cpp,731233819,NWScript,,clike,text/x-csrc,,,,,,
-programming,#3A4E3A,"['.cu', '.cuh']",source.cuda-c++,c_cpp,77,Cuda,,clike,text/x-c++src,,,,,,
-programming,#447265,['.dm'],source.dm,c_cpp,83,DM,['byond'],,,,,,,,
-programming,#FF6800,"['.gsc', '.csc', '.gsh']",source.gsc,c_cpp,257856279,GSC,,clike,text/x-csrc,,,,,,
-programming,#ffefaf,['.hc'],source.hc,c_cpp,928121743,HolyC,,clike,text/x-csrc,,,,,,
-programming,#8D6747,['.mc'],source.mc,c_cpp,231751931,Monkey C,,clike,text/x-csrc,,,,,,
-programming,#62A8D6,"['.mq4', '.mqh']",source.mql5,c_cpp,426,MQL4,,,,,,,,,
-programming,#4A76B8,"['.mq5', '.mqh']",source.mql5,c_cpp,427,MQL5,,,,,,,,,
-programming,#800000,['.nut'],source.nut,c_cpp,355,Squirrel,,clike,text/x-c++src,,,,,,
-programming,#99DA07,['.xc'],source.xc,c_cpp,398,XC,,clike,text/x-csrc,,,,,,
-programming,#ccccff,['.cirru'],source.cirru,cirru,58,Cirru,,,,,,,,,
-programming,#db5855,"['.clj', '.bb', '.boot', '.cl2', '.cljc', '.cljs', '.cljs.hl', '.cljscm', '.cljx', '.hic']",source.clojure,clojure,62,Clojure,,clojure,text/x-clojure,['bb'],,['riemann.config'],,,
-programming,#cc0088,['.rg'],source.clojure,clojure,325,Rouge,,clojure,text/x-clojure,,,,,,
-programming,#7582D1,['.wisp'],source.clojure,clojure,420,wisp,,clojure,text/x-clojure,,,,,,
-programming,#244776,"['.coffee', '._coffee', '.cake', '.cjsx', '.iced']",source.coffee,coffee,63,CoffeeScript,"['coffee', 'coffee-script']",coffeescript,text/x-coffeescript,['coffee'],,['Cakefile'],,,
-programming,#FFF4F3,"['.em', '.emberscript']",source.coffee,coffee,103,EmberScript,,coffeescript,text/x-coffeescript,,,,,,
-programming,#ed2cd6,['.cfc'],source.cfscript,coldfusion,65,ColdFusion CFC,['cfc'],,,,ColdFusion,,,,
-programming,#ed2cd6,"['.cfm', '.cfml']",text.html.cfm,coldfusion,64,ColdFusion,"['cfm', 'cfml', 'coldfusion html']",,,,,,,,
-programming,#a52f4e,['.bf'],source.cs,csharp,545626333,Beef,,clike,text/x-csharp,,,,,,
-programming,#178600,"['.cs', '.cake', '.csx', '.linq']",source.cs,csharp,42,C#,"['csharp', 'cake', 'cakescript']",clike,text/x-csharp,,,,,,
-programming,#a78649,['.eq'],source.cs,csharp,96,EQ,,clike,text/x-csharp,,,,,,
-programming,#9933cc,['.uno'],source.cs,csharp,381,Uno,,clike,text/x-csharp,,,,,,
-programming,#1a1a1a,['.csd'],source.csound-document,csound_document,74,Csound Document,['csound-csd'],,,,,,,,
-programming,#1a1a1a,"['.orc', '.udo']",source.csound,csound_orchestra,73,Csound,['csound-orc'],,,,,,,,
-programming,#1a1a1a,['.sco'],source.csound-score,csound_score,75,Csound Score,['csound-sco'],,,,,,,,
-programming,#ba595e,"['.d', '.di']",source.d,d,80,D,['Dlang'],d,text/x-d,,,,,,
-programming,#1F1F1F,['.volt'],source.d,d,390,Volt,,d,text/x-d,,,,,,
-programming,#00B4AB,['.dart'],source.dart,dart,87,Dart,,dart,application/dart,['dart'],,,,,
-programming,#384d54,['.dockerfile'],source.dockerfile,dockerfile,89,Dockerfile,['Containerfile'],dockerfile,text/x-dockerfile,,,"['Containerfile', 'Dockerfile']",,,
-programming,#4d6977,['.e'],source.eiffel,eiffel,99,Eiffel,,eiffel,text/x-eiffel,,,,,,
-programming,#6e4a7e,"['.ex', '.exs']",source.elixir,elixir,100,Elixir,,,,['elixir'],,['mix.lock'],,,
-programming,#60B5CC,['.elm'],source.elm,elm,101,Elm,,elm,text/x-elm,,,,,,
-programming,#B83998,"['.erl', '.app', '.app.src', '.es', '.escript', '.hrl', '.xrl', '.yrl']",source.erlang,erlang,104,Erlang,,erlang,text/x-erlang,['escript'],,"['Emakefile', 'rebar.config', 'rebar.config.lock', 'rebar.lock']",,,
-programming,#341708,"['.fth', '.4th', '.f', '.for', '.forth', '.fr', '.frt', '.fs']",source.forth,forth,114,Forth,,forth,text/x-forth,,,,,,
-programming,#0050b2,['.ftl'],text.html.ftl,ftl,115,FreeMarker,['ftl'],,,,,,,,
-programming,#D08CF2,"['.g', '.cnc', '.gco', '.gcode']",source.gcode,gcode,117,G-code,,,,,,,,,
-programming,#5686a5,"['.glsl', '.fp', '.frag', '.frg', '.fs', '.fsh', '.fshader', '.geo', '.geom', '.glslf', '.glslv', '.gs', '.gshader', '.rchit', '.rmiss', '.shader', '.tesc', '.tese', '.vert', '.vrx', '.vs', '.vsh', '.vshader']",source.glsl,glsl,124,GLSL,,,,,,,,,
-programming,#00ADD8,['.go'],source.go,golang,132,Go,['golang'],go,text/x-go,,,,,,
-programming,#4f87c4,['.v'],source.v,golang,603371597,V,['vlang'],go,text/x-go,,,,,,
-programming,#4298b8,"['.groovy', '.grt', '.gtpl', '.gvy']",source.groovy,groovy,142,Groovy,,groovy,text/x-groovy,['groovy'],,['Jenkinsfile'],,,
-programming,#3ac486,['.nf'],source.nextflow,groovy,506780613,Nextflow,,,,['nextflow'],,['nextflow.config'],,,
-programming,#531242,['.curry'],source.curry,haskell,439829048,Curry,,,,,,,,,
-programming,#ff0000,['.gf'],source.gf,haskell,137,Grammatical Framework,['gf'],haskell,text/x-haskell,,,,,,
-programming,#12223c,['.bs'],source.haskell,haskell,641580358,Bluespec BH,"['bh', 'bluespec classic']",haskell,text/x-haskell,,Bluespec,,,,
-programming,#dfafff,['.dhall'],source.haskell,haskell,793969321,Dhall,,haskell,text/x-haskell,,,,,,
-programming,#00cafe,['.fr'],source.haskell,haskell,116,Frege,,,,,,,,,
-programming,#5e5086,"['.hs', '.hs-boot', '.hsc']",source.haskell,haskell,157,Haskell,,haskell,text/x-haskell,"['runghc', 'runhaskell', 'runhugs']",,,,,
-programming,#1D222D,['.purs'],source.purescript,haskell,302,PureScript,,haskell,text/x-haskell,,,,,,
-programming,#df7900,"['.hx', '.hxsl']",source.hx,haxe,158,Haxe,,haxe,text/x-haxe,,,,,,
-programming,#a9188d,['.io'],source.io,io,168,Io,,,,['io'],,,,,
-programming,#1797c0,"['.cls', '.trigger']",source.apex,java,17,Apex,,clike,text/x-java,,,,,,
-programming,#d03600,['.j'],source.jasmin,java,180,Jasmin,,,,,,,,,
-programming,#3f8000,['.ck'],source.java,java,57,ChucK,,clike,text/x-java,,,,,,
-programming,#b07219,"['.java', '.jav', '.jsh']",source.java,java,181,Java,,clike,text/x-java,,,,,,
-programming,#a54c4d,['.uc'],source.java,java,382,UnrealScript,,clike,text/x-java,,,,,,
-programming,#f1e05a,"['.js', '._js', '.bones', '.cjs', '.es', '.es6', '.frag', '.gs', '.jake', '.javascript', '.jsb', '.jscad', '.jsfl', '.jslib', '.jsm', '.jspre', '.jss', '.jsx', '.mjs', '.njs', '.pac', '.sjs', '.ssjs', '.xsjs', '.xsjslib']",source.js,javascript,183,JavaScript,"['js', 'node']",javascript,text/javascript,"['chakra', 'd8', 'gjs', 'js', 'node', 'nodejs', 'qjs', 'rhino', 'v8', 'v8-shell']",,['Jakefile'],,,
-programming,#f1e05a,['.js.erb'],source.js,javascript,914318960,JavaScript+ERB,,javascript,application/javascript,,JavaScript,,,,
-programming,#00b841,['.qs'],source.js,javascript,558193693,Qt Script,,javascript,text/javascript,,,"['installscript.qs', 'toolchain_installscript.qs']",,,
-programming,#234d6b,['.pegjs'],source.pegjs,javascript,81442128,PEG.js,,javascript,text/javascript,,,,,,
-programming,#3178c6,['.tsx'],source.tsx,javascript,94901924,TSX,,jsx,text/jsx,,TypeScript,,,,
-programming,#c4a79c,"['.maxpat', '.maxhelp', '.maxproj', '.mxt', '.pat']",source.json,json,227,Max,"['max/msp', 'maxmsp']",javascript,application/json,,,,,,
-programming,#40d47e,['.jq'],source.jsoniq,jsoniq,177,JSONiq,,javascript,application/json,,,,,,
-programming,#4298b8,['.gsp'],text.html.jsp,jsp,143,Groovy Server Pages,"['gsp', 'java server page']",htmlembedded,application/x-jsp,,Groovy,,,,
-programming,#2A6277,"['.jsp', '.tag']",text.html.jsp,jsp,182,Java Server Pages,['jsp'],htmlembedded,application/x-jsp,,Java,,,,
-programming,#a270ba,['.jl'],source.julia,julia,184,Julia,,julia,text/x-julia,['julia'],,,,,
-programming,#5546ff,['.clar'],source.clar,lisp,91493841,Clarity,,,,,,,,,
-programming,#c065db,"['.el', '.emacs', '.emacs.desktop']",source.emacs.lisp,lisp,102,Emacs Lisp,"['elisp', 'emacs']",commonlisp,text/x-common-lisp,,,"['.abbrev_defs', '.emacs', '.emacs.desktop', '.gnus', '.spacemacs', '.viper', 'Cask', 'Project.ede', '_emacs', 'abbrev_defs']",,,
-programming,#3fb68b,"['.lisp', '.asd', '.cl', '.l', '.lsp', '.ny', '.podsl', '.sexp']",source.lisp,lisp,66,Common Lisp,['lisp'],commonlisp,text/x-common-lisp,"['lisp', 'sbcl', 'ccl', 'clisp', 'ecl']",,,,,
-programming,#FFCFAB,['.md'],source.lisp,lisp,121,GCC Machine Description,,commonlisp,text/x-common-lisp,,,,,,
-programming,#4C3023,['.lfe'],source.lisp,lisp,190,LFE,,commonlisp,text/x-common-lisp,,,,,,
-programming,#ff6375,['.nlogo'],source.lisp,lisp,246,NetLogo,,commonlisp,text/x-common-lisp,,,,,,
-programming,#87AED7,"['.nl', '.lisp', '.lsp']",source.lisp,lisp,247,NewLisp,,commonlisp,text/x-common-lisp,['newlisp'],,,,,
-programming,#6067af,['.l'],source.lisp,lisp,285,PicoLisp,,,,"['picolisp', 'pil']",,,,,
-programming,#3c5caa,"['.rkt', '.rktd', '.rktl', '.scrbl']",source.racket,lisp,316,Racket,,,,['racket'],,,,,
-programming,#04133b,"['.wast', '.wat']",source.webassembly,lisp,956556503,WebAssembly,"['wast', 'wasm']",commonlisp,text/x-common-lisp,,,,,,
-programming,#499886,"['.ls', '._ls']",source.livescript,livescript,208,LiveScript,"['live-script', 'ls']",livescript,text/x-livescript,,,['Slakefile'],,,
-programming,#3d9970,"['.lsl', '.lslp']",source.lsl,lsl,193,LSL,,,,['lsl'],,,,,
-programming,#000080,"['.lua', '.fcgi', '.nse', '.p8', '.pd_lua', '.rbxs', '.rockspec', '.wlua']",source.lua,lua,213,Lua,,lua,text/x-lua,['lua'],,['.luacheckrc'],,,
-programming,#00004c,['.t'],source.terra,lua,371,Terra,,lua,text/x-lua,['lua'],,,,,
-programming,#427819,"['.mak', '.d', '.make', '.makefile', '.mk', '.mkfile']",source.makefile,makefile,220,Makefile,"['bsdmake', 'make', 'mf']",cmake,text/x-cmake,['make'],,"['BSDmakefile', 'GNUmakefile', 'Kbuild', 'Makefile', 'Makefile.am', 'Makefile.boot', 'Makefile.frag', 'Makefile.in', 'Makefile.inc', 'Makefile.wat', 'makefile', 'makefile.sco', 'mkfile']",,,
-programming,#e16737,"['.matlab', '.m']",source.matlab,matlab,225,MATLAB,['octave'],octave,text/x-octave,,,,,,
-programming,#7e7eff,['.nix'],source.nix,nix,252,Nix,['nixos'],,,,,,,,
-programming,#438eff,"['.m', '.h']",source.objc,objectivec,257,Objective-C,"['obj-c', 'objc', 'objectivec']",clike,text/x-objectivec,,,,,,
-programming,#6866fb,['.mm'],source.objc++,objectivec,258,Objective-C++,"['obj-c++', 'objc++', 'objectivec++']",clike,text/x-objectivec,,,,,,
-programming,#1ac620,"['.dats', '.hats', '.sats']",source.ats,ocaml,9,ATS,['ats2'],,,,,,,,
-programming,#3be133,['.mligo'],source.mligo,ocaml,829207807,CameLIGO,,mllike,text/x-ocaml,,LigoLANG,,,,
-programming,#ef7a08,"['.ml', '.eliom', '.eliomi', '.ml4', '.mli', '.mll', '.mly']",source.ocaml,ocaml,255,OCaml,,mllike,text/x-ocaml,"['ocaml', 'ocamlrun', 'ocamlscript']",,,,,
-programming,#0e74ff,['.ligo'],source.ligo,pascal,1040646257,LigoLANG,,pascal,text/x-pascal,,LigoLANG,,,,
-programming,#B0CE4E,"['.cp', '.cps']",source.pascal,pascal,67,Component Pascal,,pascal,text/x-pascal,,,,,,
-programming,#E3F171,"['.pas', '.dfm', '.dpr', '.inc', '.lpr', '.pascal', '.pp']",source.pascal,pascal,281,Pascal,"['delphi', 'objectpascal']",pascal,text/x-pascal,['instantfpc'],,,,,
-programming,#0298c3,"['.pl', '.al', '.cgi', '.fcgi', '.perl', '.ph', '.plx', '.pm', '.psgi', '.t']",source.perl,perl,282,Perl,['cperl'],perl,text/x-perl,"['cperl', 'perl']",,"['.latexmkrc', 'Makefile.PL', 'Rexfile', 'ack', 'cpanfile', 'latexmkrc']",,,
-programming,#0000fb,"['.6pl', '.6pm', '.nqp', '.p6', '.p6l', '.p6m', '.pl', '.pl6', '.pm', '.pm6', '.raku', '.rakumod', '.t']",source.raku,perl,283,Raku,"['perl6', 'perl-6']",perl,text/x-perl,"['perl6', 'raku', 'rakudo']",,,,,
-programming,#336790,"['.pgsql', '.sql']",source.sql,pgsql,274,PLpgSQL,,sql,text/x-sql,,,,,,
-programming,#878787,"['.hack', '.hh', '.hhi', '.php']",source.hack,php,153,Hack,,php,application/x-httpd-php,,,,,,
-programming,#118f9e,['.zep'],source.php.zephir,php,410,Zephir,,,,,,,,,
-programming,#4F5D95,"['.php', '.aw', '.ctp', '.fcgi', '.inc', '.php3', '.php4', '.php5', '.phps', '.phpt']",text.html.php,php,272,PHP,['inc'],php,application/x-httpd-php,['php'],,"['.php', '.php_cs', '.php_cs.dist', 'Phakefile']",,,
-programming,#012456,"['.ps1', '.psd1', '.psm1']",source.powershell,powershell,293,PowerShell,"['posh', 'pwsh']",powershell,application/x-powershell,['pwsh'],,,,,
-programming,#ff2b2b,"['.m', '.moo']",source.mercury,prolog,229,Mercury,,,,['mmi'],,,,,
-programming,#74283c,"['.pl', '.plt', '.pro', '.prolog', '.yap']",source.prolog,prolog,295,Prolog,,,,"['swipl', 'yap']",,,,,
-programming,#001d9d,['.ecl'],source.prolog.eclipse,prolog,94,ECLiPSe,,,,,prolog,,,,
-programming,#ee1e10,['.arr'],source.arr,python,252961827,Pyret,,,,,,,,,
-programming,#3572A5,"['.py', '.cgi', '.fcgi', '.gyp', '.gypi', '.lmi', '.py3', '.pyde', '.pyi', '.pyp', '.pyt', '.pyw', '.rpy', '.spec', '.tac', '.wsgi', '.xpy']",source.python,python,303,Python,"['python3', 'rusthon']",python,text/x-python,"['python', 'python2', 'python3', 'py', 'pypy', 'pypy3']",,"['.gclient', 'DEPS', 'SConscript', 'SConstruct', 'wscript']",,,
-programming,#419179,"['.smk', '.snakefile']",source.python,python,151241392,Snakemake,['snakefile'],python,text/x-python,,Python,['Snakefile'],,,
-programming,#76d275,"['.bzl', '.star']",source.python,python,960266174,Starlark,"['bazel', 'bzl']",python,text/x-python,,,"['BUCK', 'BUILD', 'BUILD.bazel', 'MODULE.bazel', 'Tiltfile', 'WORKSPACE', 'WORKSPACE.bazel']",,,
-programming,#ff7f7f,['.rpy'],source.renpy,python,322,Ren'Py,['renpy'],,,,,,,,
-programming,#198CE7,"['.r', '.rd', '.rsx']",source.r,r,307,R,"['R', 'Rscript', 'splus']",r,text/x-rsrc,['Rscript'],,"['.Rprofile', 'expr-dist']",,,
-programming,#000100,['.cr'],source.crystal,ruby,72,Crystal,,crystal,text/x-crystal,['crystal'],,,,,
-programming,#c7a938,"['.druby', '.duby', '.mirah']",source.ruby,ruby,232,Mirah,,ruby,text/x-ruby,,,,,,
-programming,#701516,"['.rb', '.builder', '.eye', '.fcgi', '.gemspec', '.god', '.jbuilder', '.mspec', '.pluginspec', '.podspec', '.prawn', '.rabl', '.rake', '.rbi', '.rbuild', '.rbw', '.rbx', '.ru', '.ruby', '.spec', '.thor', '.watchr']",source.ruby,ruby,326,Ruby,"['jruby', 'macruby', 'rake', 'rb', 'rbx']",ruby,text/x-ruby,"['ruby', 'macruby', 'rake', 'jruby', 'rbx']",,"['.irbrc', '.pryrc', '.simplecov', 'Appraisals', 'Berksfile', 'Brewfile', 'Buildfile', 'Capfile', 'Dangerfile', 'Deliverfile', 'Fastfile', 'Gemfile', 'Guardfile', 'Jarfile', 'Mavenfile', 'Podfile', 'Puppetfile', 'Rakefile', 'Snapfile', 'Steepfile', 'Thorfile', 'Vagrantfile', 'buildfile']",,,
-programming,#844FBA,"['.hcl', '.nomad', '.tf', '.tfvars', '.workflow']",source.terraform,ruby,144,HCL,"['HashiCorp Configuration Language', 'terraform']",ruby,text/x-ruby,,,,,,
-programming,#ff5847,"['.re', '.rei']",source.reason,rust,869538413,Reason,,rust,text/x-rustsrc,,,,,,
-programming,#ff5847,['.religo'],source.religo,rust,319002153,ReasonLIGO,,rust,text/x-rustsrc,,LigoLANG,,,,
-programming,#ed5051,['.res'],source.rescript,rust,501875647,ReScript,,rust,text/x-rustsrc,['ocaml'],,,,,
-programming,#dea584,"['.rs', '.rs.in']",source.rust,rust,327,Rust,['rs'],rust,text/x-rustsrc,['rust-script'],,,,,
-programming,#dea584,['.sw'],source.sway,rust,271471144,Sway,,rust,text/x-rustsrc,,,,,,
-programming,#e5cd45,['.scad'],source.scad,scad,266,OpenSCAD,,,,,,,,,
-programming,#c22d40,"['.scala', '.kojo', '.sbt', '.sc']",source.scala,scala,341,Scala,,clike,text/x-scala,['scala'],,,,,
-programming,#0886a5,['.janet'],source.janet,scheme,1028705371,Janet,,scheme,text/x-scheme,['janet'],,,,,
-programming,#c9df40,['.nu'],source.nu,scheme,253,Nu,['nush'],scheme,text/x-scheme,['nush'],,['Nukefile'],,,
-programming,#1e4aec,"['.scm', '.sch', '.sld', '.sls', '.sps', '.ss']",source.scheme,scheme,343,Scheme,,scheme,text/x-scheme,"['scheme', 'guile', 'bigloo', 'chicken', 'csi', 'gosh', 'r6rs']",,,,,
-programming,#4E9906,['.nu'],source.nushell,sh,446573572,Nushell,"['nu-script', 'nushell-script']",shell,text/x-sh,['nu'],,,,,
-programming,#0D597F,,source.shell,sh,14,Alpine Abuild,"['abuild', 'apkbuild']",shell,text/x-sh,,Shell,['APKBUILD'],,,
-programming,#9400ff,['.ebuild'],source.shell,sh,127,Gentoo Ebuild,,shell,text/x-sh,,Shell,,,,
-programming,#9400ff,['.eclass'],source.shell,sh,128,Gentoo Eclass,,shell,text/x-sh,,Shell,,,,
-programming,#89e051,"['.sh', '.bash', '.bats', '.cgi', '.command', '.fcgi', '.ksh', '.sh.in', '.tmux', '.tool', '.trigger', '.zsh', '.zsh-theme']",source.shell,sh,346,Shell,"['sh', 'shell-script', 'bash', 'zsh']",shell,text/x-sh,"['ash', 'bash', 'dash', 'ksh', 'mksh', 'pdksh', 'rc', 'sh', 'zsh']",,"['.bash_aliases', '.bash_functions', '.bash_history', '.bash_logout', '.bash_profile', '.bashrc', '.cshrc', '.flaskenv', '.kshrc', '.login', '.profile', '.zlogin', '.zlogout', '.zprofile', '.zshenv', '.zshrc', '9fs', 'PKGBUILD', 'bash_aliases', 'bash_logout', 'bash_profile', 'bashrc', 'cshrc', 'gradlew', 'kshrc', 'login', 'man', 'profile', 'zlogin', 'zlogout', 'zprofile', 'zshenv', 'zshrc']",,,
-programming,#f0c040,['.tpl'],text.html.smarty,smarty,353,Smarty,,smarty,text/x-smarty,,,,,,
-programming,#dad8d8,"['.pls', '.bdy', '.ddl', '.fnc', '.pck', '.pkb', '.pks', '.plb', '.plsql', '.prc', '.spc', '.sql', '.tpb', '.tps', '.trg', '.vw']",none,sql,273,PLSQL,,sql,text/x-plsql,,,,,,
-programming,#dce200,"['.q', '.hql']",source.hql,sql,931814087,HiveQL,,,,,,,,,
-programming,#e38c00,"['.sql', '.db2']",source.sql,sql,334,SQLPL,,sql,text/x-sql,,,,,,
-programming,#e38c00,['.sql'],source.tsql,sql,918334941,TSQL,,,,,,,,,
-programming,#c1ac7f,['.glf'],source.tcl,tcl,130,Glyph,,tcl,text/x-tcl,,,,,,
-programming,#e4cc98,"['.tcl', '.adp', '.sdc', '.tcl.in', '.tm', '.xdc']",source.tcl,tcl,367,Tcl,"['sdc', 'xdc']",tcl,text/x-tcl,"['tclsh', 'wish']",,"['owh', 'starfield']",,,
-programming,#999999,"['.lasso', '.las', '.lasso8', '.lasso9']",file.lasso,text,195,Lasso,['lassoscript'],,,,,,,,
-programming,#aa2afe,['.arc'],none,text,20,Arc,,,,,,,,,
-programming,#9CC134,['.aug'],none,text,25,Augeas,,,,,,,,,
-programming,#00bce4,['.bb'],none,text,32,BitBake,,,,,,,,,
-programming,#00007a,['.w'],none,text,657332628,CWeb,,,,,,,,,
-programming,#cca760,['.djs'],none,text,90,Dogescript,,,,,,,,,
-programming,#ccce35,['.e'],none,text,92,E,,,,['rune'],,,,,
-programming,#88ccff,"['.fx', '.flux']",none,text,106,FLUX,,,,,,,,,
-programming,#F6B900,['.f'],none,text,111,Filebench WML,,,,,,,,,
-programming,#FFC766,['.gaml'],none,text,290345951,GAML,,,,,,,,,
-programming,#f49a22,['.gms'],none,text,118,GAMS,,,,,,,,,
-programming,#fb855d,['.gs'],none,text,792408528,Genie,,,,,,,,,
-programming,#99AAFF,['.ijm'],none,text,575143428,ImageJ Macro,['ijm'],,,,,,,,
-programming,#28430A,['.krl'],none,text,186,KRL,,,,,,,,,
-programming,#315665,['.lagda'],none,text,205,Literate Agda,,,,,Agda,,,,
-programming,#9C8AF9,"['.numpy', '.numpyw', '.numsc']",none,text,254,NumPy,,python,text/x-python,,Python,,,,
-programming,#cabbff,['.omgrofl'],none,text,260,Omgrofl,,,,,,,,,
-programming,#cdd0e3,['.oxygene'],none,text,269,Oxygene,,,,,,,,,
-programming,#f3ca0a,['.parrot'],none,text,278,Parrot,,,,,,,,,
-programming,#8f0f8d,"['.pbt', '.sra', '.sru', '.srw']",none,text,292,PowerBuilder,,,,,,,,,
-programming,#5a6986,"['.pb', '.pbi']",none,text,301,PureBasic,,,,,,,,,
-programming,#9d5200,['.rl'],none,text,317,Ragel,"['ragel-rb', 'ragel-ruby']",,,,,,,,
-programming,#DE3941,['.rsc'],none,text,592853203,RouterOS Script,,,,['RouterOS'],,,,,
-programming,#0579aa,['.self'],none,text,345,Self,,,,,,,,,
-programming,#A0AA87,"['.8xp', '.8xk', '.8xk.txt', '.8xp.txt']",none,text,422,TI Program,,,,,,,,,
-programming,#d67711,"['.zimpl', '.zmpl', '.zpl']",none,text,411,Zimpl,,,,,,,,,
-programming,#004289,['.4dm'],source.4dm,text,577529595,4D,,,,,,,,,
-programming,#555e25,['.asddls'],source.abapcds,text,452681853,ABAP CDS,,,,,,,,,
-programming,#5ce600,"['.p', '.cls', '.w']",source.abl,text,264,OpenEdge ABL,"['progress', 'openedge', 'abl']",,,,,,,,
-programming,#315665,['.agda'],source.agda,text,12,Agda,,,,,,,,,
-programming,#34EB6B,['.aidl'],source.aidl,text,451700185,AIDL,,,,['aidl'],,,,,
-programming,#3AA2B5,['.al'],source.al,text,658971832,AL,,,,,,,,,
-programming,#64C800,['.als'],source.alloy,text,13,Alloy,,,,,,,,,
-programming,#E6EFBB,"['.ampl', '.mod']",source.ampl,text,3,AMPL,,,,,,,,,
-programming,#C7D7DC,"['.as', '.angelscript']",source.angelscript,text,389477596,AngelScript,,clike,text/x-c++src,,,,,,
-programming,#9DC3FF,['.g4'],source.antlr,text,4,ANTLR,,,,,,,,,
-programming,#5A8164,"['.apl', '.dyalog']",source.apl,text,6,APL,,apl,text/apl,"['apl', 'aplx', 'dyalog']",,,,,
-programming,#a957b0,['.aj'],source.aspectj,text,23,AspectJ,,,,,,,,,
-programming,#c30e9b,"['.awk', '.auk', '.gawk', '.mawk', '.nawk']",source.awk,text,28,Awk,,,,"['awk', 'gawk', 'mawk', 'nawk']",,,,,
-programming,#FF5000,['.bal'],source.ballerina,text,720859680,Ballerina,,,,,,,,,
-programming,#ff0000,['.bas'],source.basic,text,28923963,BASIC,,,,,,,,,
-programming,#15A13C,['.be'],source.berry,text,121855308,Berry,['be'],,,,,,,,
-programming,#2F2530,"['.b', '.bf']",source.bf,text,38,Brainfuck,,brainfuck,text/x-brainfuck,,,,,,
-programming,#519aba,['.bicep'],source.bicep,text,321200902,Bicep,,,,,,,,,
-programming,#00FFAE,"['.bb', '.decls']",source.blitzmax,text,34,BlitzBasic,"['b3d', 'blitz3d', 'blitzplus', 'bplus']",,,,,,,,
-programming,#cd6400,['.bmx'],source.blitzmax,text,35,BlitzMax,['bmax'],,,,,,,,
-programming,#d4bec1,['.boo'],source.boo,text,37,Boo,,,,,,,,,
-programming,#c80fa0,['.bpl'],source.boogie,text,955017407,Boogie,,,,['boogie'],,,,,
-programming,#66AABB,['.bs'],source.brs,text,943571030,BrighterScript,,,,,,,,,
-programming,#662D91,['.brs'],source.brs,text,39,Brightscript,,,,,,,,,
-programming,#814CCC,"['.bsl', '.os']",source.bsl,text,0,1C Enterprise,,,,,,,,,
-programming,#913960,"['.ec', '.eh']",source.c.ec,text,413,eC,,,,,,,,,
-programming,#00ef8b,['.cdc'],source.cadence,text,270184138,Cadence,,,,,,,,,
-programming,#ff4a48,['.cairo'],source.cairo,text,620599567,Cairo,,,,,,,,,
-programming,#c42727,['.capnp'],source.capnp,text,52,Cap'n Proto,,,,,,,,,
-programming,#0092d1,['.cds'],source.cds,text,390788699,CAP CDS,['cds'],,,,,,,,
-programming,#dfa535,['.ceylon'],source.ceylon,text,54,Ceylon,,,,,,,,,
-programming,#8dc63f,['.chpl'],source.chapel,text,55,Chapel,['chpl'],,,,,,,,
-programming,#707575,['.circom'],source.circom,text,1042332086,Circom,,,,,,,,,
-programming,#db901e,['.clw'],source.clarion,text,59,Clarion,,,,,,,,,
-programming,#3F85AF,"['.icl', '.dcl']",source.clean,text,60,Clean,,,,,,,,,
-programming,#E4E6F3,['.click'],source.click,text,61,Click,,,,,,,,,
-programming,#00A300,['.clp'],source.clips,text,46,CLIPS,,,,,,,,,
-programming,#DA3434,"['.cmake', '.cmake.in']",source.cmake,text,47,CMake,,cmake,text/x-cmake,,,['CMakeLists.txt'],,,
-programming,#d0b68c,"['.coq', '.v']",source.coq,text,69,Coq,,,,,,,,,
-programming,#5886E1,['.cue'],source.cue,text,356063509,CUE,,,,,,,,,
-programming,#34c0eb,"['.cyp', '.cypher']",source.cypher,text,850806976,Cypher,,,,,,,,,
-programming,#fedf5b,"['.pyx', '.pxd', '.pxi']",source.cython,text,79,Cython,['pyrex'],python,text/x-cython,,,,,,
-programming,#003a52,['.dwl'],source.data-weave,text,974514097,DataWeave,,,,,,,,,
-programming,#6c616e,"['.dylan', '.dyl', '.intr', '.lid']",source.dylan,text,91,Dylan,,dylan,text/x-dylan,,,,,,
-programming,#2af0ff,,source.earthfile,text,963512632,Earthly,['Earthfile'],,,,,['Earthfile'],,,
-programming,#8a1267,"['.ecl', '.eclxml']",source.ecl,text,93,ECL,,ecl,text/x-ecl,,,,,,
-programming,#55BB55,['.elv'],source.elvish,text,570996448,Elvish,,,,['elvish'],,,,,
-programming,#55BB55,,source.elvish-transcript,text,452025714,Elvish Transcript,,,,,Elvish,,,,
-programming,#FF790B,"['.e', '.ex']",source.euphoria,text,880693982,Euphoria,,,,"['eui', 'euiw']",,,,,
-programming,#636746,['.factor'],source.factor,text,108,Factor,,factor,text/x-factor,,,"['.factor-boot-rc', '.factor-rc']",,,
-programming,#14253c,['.fan'],source.fan,text,110,Fantom,,,,,,,,,
-programming,#7b9db4,"['.fy', '.fancypack']",source.fancy,text,109,Fancy,,,,,,['Fakefile'],,,
-programming,#c37240,['.dsp'],source.faust,text,622529198,Faust,,,,,,,,,
-programming,#4aae47,['.fish'],source.fish,text,415,fish,,,,['fish'],Shell,,,,
-programming,#fff3d7,['.fnl'],source.fnl,text,239946126,Fennel,,,,['fennel'],,,,,
-programming,#4d41b1,"['.f', '.f77', '.for', '.fpp']",source.fortran,text,107,Fortran,,fortran,text/x-fortran,,Fortran,,,,
-programming,#4d41b1,"['.f90', '.f03', '.f08', '.f95']",source.fortran.modern,text,761352333,Fortran Free Form,,fortran,text/x-fortran,,Fortran,,,,
-programming,#b845fc,"['.fs', '.fsi', '.fsx']",source.fsharp,text,105,F#,['fsharp'],mllike,text/x-fsharp,,,,,,
-programming,#572e30,"['.fst', '.fsti']",source.fstar,text,336943375,F*,['fstar'],,,,,,,Fstar,
-programming,#ffcc33,['.ftl'],source.ftl,text,206353404,Fluent,,,,,,,,,
-programming,#5f021f,['.fut'],source.futhark,text,97358117,Futhark,,,,,,,,,
-programming,#0000cc,"['.g', '.gap', '.gd', '.gi', '.tst']",source.gap,text,119,GAP,,,,,,,,,
-programming,#355570,['.gd'],source.gdscript,text,123,GDScript,,,,,,,,,
-programming,#63408e,['.4gl'],source.genero,text,986054050,Genero,,,,,,,,,
-programming,#ffaff3,['.gleam'],source.gleam,text,1054258749,Gleam,,,,,,,,,
-programming,#f0a9f0,"['.gp', '.gnu', '.gnuplot', '.p', '.plot', '.plt']",source.gnuplot,text,131,Gnuplot,,,,['gnuplot'],,,,,
-programming,#88562A,['.golo'],source.golo,text,133,Golo,,,,,,,,,
-programming,#82937f,"['.gs', '.gst', '.gsx', '.vark']",source.gosu.2,text,134,Gosu,,,,,,,,,
-programming,#615f8b,['.grace'],source.grace,text,135,Grace,,,,,,,,,
-programming,#0e60e3,['.hb'],source.harbour,text,156,Harbour,,,,,,,,,
-programming,#403a40,"['.prg', '.ch', '.prw']",source.harbour,text,421,xBase,"['advpl', 'clipper', 'foxpro']",,,,,,,,
-programming,#aace60,"['.hlsl', '.cginc', '.fx', '.fxh', '.hlsli']",source.hlsl,text,145,HLSL,,,,,,,,,
-programming,#00b171,['.hoon'],source.hoon,text,560883276,hoon,,,,,,,,,
-programming,#7790B2,['.hy'],source.hy,text,159,Hy,['hylang'],,,['hy'],,,,,
-programming,#a3522f,"['.pro', '.dlm']",source.idl,text,161,IDL,,idl,text/x-idl,,,,,,
-programming,#b30000,"['.idr', '.lidr']",source.idris,text,165,Idris,,,,,,,,,
-programming,#0000cc,['.ipf'],source.igor,text,162,IGOR Pro,"['igor', 'igorpro']",,,,,,,,
-programming,#16cec6,['.imba'],source.imba,text,1057618448,Imba,,,,,,,,,
-programming,#264b99,"['.iss', '.isl']",source.inno,text,167,Inno Setup,,,,,,,,,
-programming,#078193,['.ik'],source.ioke,text,169,Ioke,,,,['ioke'],,,,,
-programming,#FEFE00,,source.isabelle.root,text,171,Isabelle ROOT,,,,,Isabelle,['ROOT'],,,
-programming,#FEFE00,['.thy'],source.isabelle.theory,text,170,Isabelle,,,,,,,,,
-programming,#9EEDFF,['.ijs'],source.j,text,172,J,,,,['jconsole'],,,,,
-programming,#d90e09,['.jcl'],source.jcl,text,316620079,JCL,,,,,,,,,
-programming,#DBCA00,"['.flex', '.jflex']",source.jflex,text,173,JFlex,,,,,Lex,,,,
-programming,#56b3cb,['.jison'],source.jison,text,284531423,Jison,,,,,Yacc,,,,
-programming,#56b3cb,['.jisonlex'],source.jisonlex,text,406395330,Jison Lex,,,,,Lex,,,,
-programming,#843179,"['.ol', '.iol']",source.jolie,text,998078858,Jolie,,,,['jolie'],,,,,
-programming,#c7254e,['.jq'],source.jq,text,905371884,jq,,,,,,,,,
-programming,#ff0c5a,"['.j', '.sj']",source.js.objj,text,259,Objective-J,"['obj-j', 'objectivej', 'objj']",,,,,,,,
-programming,#0064bd,"['.jsonnet', '.libsonnet']",source.jsonnet,text,664885656,Jsonnet,,,,,,,,,
-programming,#384d54,,source.just,text,128447695,Just,['Justfile'],,,,,"['JUSTFILE', 'Justfile', 'justfile']",,,
-programming,#6f8042,['.kak'],source.kakscript,text,603336474,KakouneScript,"['kak', 'kakscript']",,,,,['kakrc'],,,
-programming,#41adf0,['.ks'],source.kerboscript,text,59716426,KerboScript,,,,,,,,,
-programming,#A97BFF,"['.kt', '.ktm', '.kts']",source.kotlin,text,189,Kotlin,,clike,text/x-kotlin,,,,,,
-programming,#DBCA00,"['.l', '.lex']",source.lex,text,199,Lex,['flex'],,,,,"['Lexer.x', 'lexer.x']",,,
-programming,#9ccc7c,"['.ly', '.ily']",source.lilypond,text,200,LilyPond,,,,,,,,,
-programming,#244776,"['.litcoffee', '.coffee.md']",source.litcoffee,text,206,Literate CoffeeScript,['litcoffee'],,,,CoffeeScript,,True,,
-programming,#185619,['.ll'],source.llvm,text,191,LLVM,,,,,,,,,
-programming,#295b9a,"['.lgt', '.logtalk']",source.logtalk,text,210,Logtalk,,,,,,,,,
-programming,#cc9900,['.lol'],source.lolcode,text,192,LOLCODE,,,,,,,,,
-programming,#d8ffff,['.m2'],source.m2,text,34167825,Macaulay2,['m2'],,,['M2'],,,,,
-programming,#dd1100,"['.mathematica', '.cdf', '.m', '.ma', '.mt', '.nb', '.nbp', '.wl', '.wlt']",source.mathematica,text,224,Mathematica,"['mma', 'wolfram', 'wolfram language', 'wolfram lang', 'wl']",mathematica,text/x-mathematica,,,,,,
-programming,#00a6a6,"['.ms', '.mcr']",source.maxscript,text,217,MAXScript,,,,,,,,,
-programming,#E22837,['.mcfunction'],source.mcfunction,text,462488745,mcfunction,,,,,,,,,
-programming,#007800,,source.meson,text,799141244,Meson,,,,,,"['meson.build', 'meson_options.txt']",,,
-programming,#02b046,['.mint'],source.mint,text,968740319,Mint,,,,,,,,,
-programming,#dc566d,"['.ml', '.fun', '.sig', '.sml']",source.ml,text,357,Standard ML,['sml'],mllike,text/x-ocaml,,,,,,
-programming,#5EC8DB,['.mlir'],source.mlir,text,448253929,MLIR,,,,,,,,,
-programming,#fbb03b,['.mo'],source.mo,text,202937027,Motoko,,,,,,,,,
-programming,#de1d31,['.mo'],source.modelica,text,233,Modelica,,modelica,text/x-modelica,,,,,,
-programming,#223388,"['.i3', '.ig', '.m3', '.mg']",source.modula-3,text,564743864,Modula-3,,,,,,,,,
-programming,#10253f,['.mod'],source.modula2,text,234,Modula-2,,,,,,,,,
-programming,#ff4585,['.moon'],source.moonscript,text,238,MoonScript,,,,['moon'],,,,,
-programming,#4a137a,['.move'],source.move,text,638334599,Move,,,,,,,,,
-programming,#3d57c3,['.mrc'],source.msl,text,517654727,mIRC Script,,,,,,,,,
-programming,#244963,['.mu'],source.mupad,text,416,mupad,,,,,,,,,
-programming,#1d2c4e,['.nas'],source.nasal,text,178322513,Nasal,,,,,,,,,
-programming,#28431f,['.ncl'],source.ncl,text,240,NCL,,,,,,,,,
-programming,#990000,"['.ne', '.nearley']",source.ne,text,521429430,Nearley,,,,,,,,,
-programming,#3d3c6e,['.n'],source.nemerle,text,243,Nemerle,,,,,,,,,
-programming,#94B0C7,['.nc'],source.nesc,text,417,nesC,,,,,,,,,
-programming,#0aa0ff,"['.axs', '.axi']",source.netlinx,text,244,NetLinx,,,,,,,,,
-programming,#747faa,"['.axs.erb', '.axi.erb']",source.netlinx.erb,text,245,NetLinx+ERB,,,,,,,,,
-programming,#ffc200,"['.nim', '.nim.cfg', '.nimble', '.nimrod', '.nims']",source.nim,text,249,Nim,,,,,,['nim.cfg'],,,
-programming,#009917,['.nit'],source.nit,text,251,Nit,,,,,,,,,
-programming,#424893,['.cls'],source.objectscript,text,202735509,ObjectScript,,,,,,,,,
-programming,#60AFFE,['.odin'],source.odin,text,889244082,Odin,"['odinlang', 'odin-lang']",,,,,,,,
-programming,#b0b77e,['.ooc'],source.ooc,text,418,ooc,,,,,,,,,
-programming,#f7ede0,['.opal'],source.opal,text,262,Opal,,,,,,,,,
-programming,#fab738,['.oz'],source.oz,text,270,Oz,,oz,text/x-oz,,,,,,
-programming,#7055b5,['.p4'],source.p4,text,348895984,P4,,,,,,,,,
-programming,#F7A8B8,['.pact'],source.pact,text,756774415,Pact,,,,,,,,,
-programming,#cc0000,['.pan'],source.pan,text,276,Pan,,,,,,,,,
-programming,#6600cc,['.psc'],source.papyrus.skyrim,text,277,Papyrus,,,,,,,,,
-programming,#dbb284,"['.pwn', '.inc', '.sma']",source.pawn,text,271,Pawn,,,,,,,,,
-programming,#0d00ff,['.pddl'],source.pddl,text,736235603,PDDL,,,,,,,,,
-programming,#C76F5B,['.pep'],source.pep8,text,840372442,Pep8,,,,,,,,,
-programming,#fcd7de,['.pig'],source.pig_latin,text,286,PigLatin,,,,,,,,,
-programming,#005390,"['.pike', '.pmod']",source.pike,text,287,Pike,,,,['pike'],,,,,
-programming,#d80074,['.pogo'],source.pogoscript,text,289,PogoScript,,,,,,,,,
-programming,#ae81ff,['.polar'],source.polar,text,839112914,Polar,,,,,,,,,
-programming,#f8bd00,['.por'],source.portugol,text,832391833,Portugol,,,,,,,,,
-programming,#6bac65,"['.pov', '.inc']",source.pov-ray sdl,text,275,POV-Ray SDL,"['pov-ray', 'povray']",,,,,,,,
-programming,#0096D8,['.pde'],source.processing,text,294,Processing,,,,,,,,,
-programming,#de0000,['.pml'],source.promela,text,441858312,Promela,,,,,,,,,
-programming,#302B6D,['.pp'],source.puppet,text,299,Puppet,,puppet,text/x-puppet,,,['Modulefile'],,,
-programming,#285EEF,['.xsh'],source.python,text,614078284,Xonsh,,python,text/x-python,,,,,,
-programming,#0040cd,['.q'],source.q,text,970539067,q,,,,,,,,,
-programming,#AA70FF,['.qasm'],source.qasm,text,153739399,OpenQASM,,,,,,,,,
-programming,#140f46,"['.ql', '.qll']",source.ql,text,424259634,CodeQL,['ql'],,,,,,,,
-programming,#44a51c,"['.qml', '.qbs']",source.qml,text,305,QML,,,,,,,,,
-programming,#fed659,['.qs'],source.qsharp,text,697448245,Q#,['qsharp'],,,,,,,,
-programming,#882233,,source.quake,text,375265331,Quake,,,,,,"['m3makefile', 'm3overrides']",,,
-programming,#fffaa0,['.rsc'],source.rascal,text,173616037,Rascal,,,,,,,,,
-programming,#358a5b,"['.reb', '.r', '.r2', '.r3', '.rebol']",source.rebol,text,319,Rebol,,,,,,,,,
-programming,#f50000,"['.red', '.reds']",source.red,text,320,Red,['red/system'],,,,,,,,
-programming,#7d9199,['.rego'],source.rego,text,840483232,Open Policy Agent,,,,,,,,,
-programming,#d90e09,"['.rexx', '.pprx', '.rex']",source.rexx,text,311,REXX,['arexx'],,,"['regina', 'rexx']",,,,,
-programming,#FFDAB3,['.r'],source.rez,text,498022874,Rez,,,,,,,,,
-programming,#2D54CB,['.ring'],source.ring,text,431,Ring,,,,,,,,,
-programming,#2BDE21,"['.rpgle', '.sqlrpgle']",source.rpgle,text,609977990,RPGLE,"['ile rpg', 'sqlrpgle']",,,,,,,,
-programming,#B34936,['.sas'],source.sas,text,328,SAS,,sas,text/x-sas,,,,,,
-programming,#fdc700,['.scenic'],source.scenic,text,619814037,Scenic,,,,['scenic'],,,,,
-programming,#ca0f21,"['.sci', '.sce', '.tst']",source.scilab,text,344,Scilab,,,,,,,,,
-programming,#64b970,['.sed'],source.sed,text,847830017,sed,,,,"['gsed', 'minised', 'sed', 'ssed']",,,,,
-programming,#222c37,['.shader'],source.shaderlab,text,664257356,ShaderLab,,,,,,,,,
-programming,#120F14,['.shen'],source.shen,text,348,Shen,,,,,,,,,
-programming,#64E6AD,,source.singularity,text,987024632,Singularity,,,,,,['Singularity'],,,
-programming,#003fa2,['.ice'],source.slice,text,894641667,Slice,,,,,,,,,
-programming,#596706,"['.st', '.cs']",source.smalltalk,text,352,Smalltalk,['squeak'],smalltalk,text/x-stsrc,,,,,,
-programming,#c44536,['.smithy'],source.smithy,text,1027892786,Smithy,,clike,text/x-csrc,,,,,,
-programming,#c94949,['.cocci'],source.smpl,text,164123055,SmPL,['coccinelle'],,,,,,,,
-programming,#AA6746,['.sol'],source.solidity,text,237469032,Solidity,,,,,,,,,
-programming,#f69e1d,"['.sp', '.inc']",source.sourcepawn,text,354,SourcePawn,['sourcemod'],,,,,,,,
-programming,#7fa2a7,['.spin'],source.spin,text,296,Propeller Spin,,,,,,,,,
-programming,#3F3F3F,"['.sqf', '.hqf']",source.sqf,text,332,SQF,,,,,,,,,
-programming,#b2011d,['.stan'],source.stan,text,356,Stan,,,,,,,,,
-programming,#1a5f91,"['.do', '.ado', '.doh', '.ihlp', '.mata', '.matah', '.sthlp']",source.stata,text,358,Stata,,,,,,,,,
-programming,#46390b,"['.sc', '.scd']",source.supercollider,text,361,SuperCollider,,,,"['sclang', 'scsynth']",,,,,
-programming,#F05138,['.swift'],source.swift,text,362,Swift,,swift,text/x-swift,,,,,,
-programming,#333333,['.talon'],source.talon,text,959889508,Talon,,,,,,,,,
-programming,#D12127,['.thrift'],source.thrift,text,374,Thrift,,,,,,,,,
-programming,#4b0079,['.tla'],source.tla,text,364,TLA,,,,,,,,,
-programming,#cf142b,"['.t', '.tu']",source.turing,text,375,Turing,,,,,,,,,
-programming,#0178b8,['.txl'],source.txl,text,366,TXL,,,,,,,,,
-programming,#239dad,['.typ'],source.typst,text,704730682,Typst,['typ'],,,,,,,,
-programming,#ccccee,"['.ur', '.urs']",source.ur,text,383,UrWeb,"['Ur/Web', 'Ur']",,,,,,,,
-programming,#148AA8,['.vcl'],source.varnish.vcl,text,384,VCL,,,,,,,,,
-programming,#867db1,"['.bas', '.cls', '.frm', '.vba']",source.vba,text,399230729,VBA,['visual basic for applications'],vb,text/x-vb,,,,,,
-programming,#141AC9,"['.bi', '.bas']",source.vbnet,text,472896659,FreeBasic,['fb'],vb,text/x-vb,,,,,,
-programming,#15dcdc,['.vbs'],source.vbnet,text,408016005,VBScript,,vbscript,text/vbscript,,,,,,
-programming,#945db7,"['.vb', '.vbhtml']",source.vbnet,text,389,Visual Basic .NET,"['visual basic', 'vbnet', 'vb .net', 'vb.net']",vb,text/x-vb,,,,,,
-programming,#2c6353,"['.bas', '.cls', '.ctl', '.Dsr', '.frm']",source.vbnet,text,679594952,Visual Basic 6.0,"['vb6', 'vb 6', 'visual basic 6', 'visual basic classic', 'classic visual basic']",vb,text/x-vb,,,,,,
-programming,#199f4b,"['.vim', '.vba', '.vimrc', '.vmb']",source.viml,text,388,Vim Script,"['vim', 'viml', 'nvim']",,,,,"['.exrc', '.gvimrc', '.nvimrc', '.vimrc', '_vimrc', 'gvimrc', 'nvimrc', 'vimrc']",,,
-programming,#2980b9,['.vy'],source.vyper,text,1055641948,Vyper,,,,,,,,,
-programming,#42f1f4,['.wdl'],source.wdl,text,374521672,WDL,['Workflow Description Language'],,,,,,,,
-programming,#1a5e9a,['.wgsl'],source.wgsl,text,836605993,WGSL,,,,,,,,,
-programming,#d5c397,['.whiley'],source.whiley,text,888779559,Whiley,,,,,,,,,
-programming,#ff0000,['.ws'],source.witcherscript,text,686821385,Witcher Script,,,,,,,,,
-programming,#a23738,['.wlk'],source.wollok,text,632745969,Wollok,,,,,,,,,
-programming,#383838,['.wren'],source.wren,text,713580619,Wren,['wrenlang'],,,,,,,,
-programming,#4B6BEF,['.x10'],source.x10,text,397,X10,['xten'],,,,,,,,
-programming,#81bd41,"['.xojo_code', '.xojo_menu', '.xojo_report', '.xojo_script', '.xojo_toolbar', '.xojo_window']",source.xojo,text,405,Xojo,,,,,,,,,
-programming,#24255d,['.xtend'],source.xtend,text,406,Xtend,,,,,,,,,
-programming,#6A463F,['.bison'],source.yacc,text,31,Bison,,,,,Yacc,,,,
-programming,#4B6C4B,"['.y', '.yacc', '.yy']",source.yacc,text,409,Yacc,,,,,,,,,
-programming,#220000,"['.yar', '.yara']",source.yara,text,805122868,YARA,,,,,,,,,
-programming,#794932,['.yul'],source.yul,text,237469033,Yul,,,,,,,,,
-programming,#0d665e,"['.zap', '.xzap']",source.zap,text,952972794,ZAP,,,,,,,,,
-programming,#00BCD1,['.zs'],source.zenscript,text,494938890,ZenScript,,,,,,,,,
-programming,#ec915c,['.zig'],source.zig,text,646424281,Zig,,,,,,,,,
-programming,#dc75e5,"['.zil', '.mud']",source.zil,text,973483626,ZIL,,,,,,,,,
-programming,#FFEC25,['.dfy'],text.dfy.dafny,text,969323346,Dafny,,,,['dafny'],,,,,
-programming,#5B2063,"['.feature', '.story']",text.gherkin.feature,text,76,Gherkin,['cucumber'],,,,,,,,
-programming,#9400ff,"['.asax', '.ascx', '.ashx', '.asmx', '.aspx', '.axd']",text.html.asp,text,564186416,ASP.NET,"['aspx', 'aspx-vb']",htmlembedded,application/x-aspx,,,,,,
-programming,#6a40fd,['.asp'],text.html.asp,text,8,Classic ASP,['asp'],,,,,,,,
-programming,#7e858d,"['.mako', '.mao']",text.html.mako,text,221,Mako,,,,,,,,,
-programming,#007eff,['.sl'],text.html.slash,text,349,Slash,,,,,,,,,
-programming,#3572A5,,text.python.console,text,428,Python console,['pycon'],,,,Python,,,,
-programming,#00c0b5,['.robot'],text.robot,text,324,RobotFramework,,,,,,,,,
-programming,#5e5086,['.lhs'],text.tex.latex.haskell,text,207,Literate Haskell,"['lhaskell', 'lhs']",haskell-literate,text/x-literate-haskell,,Haskell,,,,
-programming,#3178c6,"['.ts', '.cts', '.mts']",source.ts,typescript,378,TypeScript,['ts'],javascript,application/typescript,"['deno', 'ts-node']",,,,,
-programming,#a56de2,"['.vala', '.vapi']",source.vala,vala,386,Vala,,,,,,,,,
-programming,#12223c,['.bsv'],source.bsv,verilog,36,Bluespec,"['bluespec bsv', 'bsv']",verilog,text/x-systemverilog,,,,,,
-programming,#DAE1C2,"['.sv', '.svh', '.vh']",source.systemverilog,verilog,363,SystemVerilog,,verilog,text/x-systemverilog,,,,,,
-programming,#C40023,['.tlv'],source.tlverilog,verilog,118656070,TL-Verilog,,,,,,,,,
-programming,#b2b7f8,"['.v', '.veo']",source.verilog,verilog,387,Verilog,,verilog,text/x-verilog,,,,,,
-programming,#adb2cb,"['.vhdl', '.vhd', '.vhf', '.vhi', '.vho', '.vhs', '.vht', '.vhw']",source.vhdl,vhdl,385,VHDL,,vhdl,text/x-vhdl,,,,,,
-programming,#21D789,"['.mps', '.mpl', '.msd']",none,xml,465165328,JetBrains MPS,['mps'],xml,text/xml,,,,,,
-programming,#fede06,"['.lvproj', '.lvclass', '.lvlib']",text.xml,xml,194,LabVIEW,,xml,text/xml,,,,,,
-programming,#951531,['.kid'],text.xml.genshi,xml,126,Genshi,"['xml+genshi', 'xml+kid']",xml,text/xml,,,,,,
-programming,#EB8CEB,"['.xslt', '.xsl']",text.xml.xsl,xml,404,XSLT,['xsl'],xml,text/xml,,,,,,
-programming,#5232e7,"['.xquery', '.xq', '.xql', '.xqm', '.xqy']",source.xq,xquery,402,XQuery,,xquery,application/xquery,,,,,,
-programming,#B5314C,['.cwl'],source.cwl,yaml,988547172,Common Workflow Language,['cwl'],yaml,text/x-yaml,['cwl-runner'],,,,,
-programming,#FBEE96,['.dsc'],source.denizenscript,yaml,435000929,DenizenScript,,yaml,text/x-yaml,,,,,,
-programming,#773b37,['.ksy'],source.yaml,yaml,818804755,Kaitai Struct,['ksy'],yaml,text/x-yaml,,,,,,
-programming,#652B81,"['.lkml', '.lookml']",source.yaml,yaml,211,LookML,,yaml,text/x-yaml,,,,,,
-programming,#646464,['.sls'],source.yaml.salt,yaml,339,SaltStack,"['saltstate', 'salt']",yaml,text/x-yaml,,,,,,
-prose,#73a0c5,"['.asciidoc', '.adoc', '.asc']",text.html.asciidoc,asciidoc,22,AsciiDoc,,,,,,,True,,
-prose,#083fa1,"['.md', '.livemd', '.markdown', '.mdown', '.mdwn', '.mkd', '.mkdn', '.mkdown', '.ronn', '.scd', '.workbook']",text.md,markdown,222,Markdown,"['md', 'pandoc']",gfm,text/x-gfm,,,['contents.lr'],True,,
-prose,#198ce7,"['.qmd', '.rmd']",text.md,markdown,313,RMarkdown,,gfm,text/x-gfm,,,,True,,
-prose,#701516,['.rdoc'],text.rdoc,rdoc,309,RDoc,,,,,,,True,,
-prose,#198ce7,['.rnw'],text.tex.latex.sweave,tex,558779190,Sweave,,,,,,,,,
-prose,#77aa99,['.org'],none,text,267,Org,,,,,,,True,,
-prose,#ff6900,['.gmi'],source.gemini,text,310828396,Gemini,['gemtext'],,,,,,True,,
-prose,#fc5757,"['.mediawiki', '.wiki', '.wikitext']",text.html.mediawiki,text,228,Wikitext,"['mediawiki', 'wiki']",,,,,,True,,
-prose,#141414,"['.rst', '.rest', '.rest.txt', '.rst.txt']",text.restructuredtext,text,419,reStructuredText,['rst'],rst,text/x-rst,,,,True,,
-prose,#199f4b,['.txt'],text.vim-help,text,508563686,Vim Help File,"['help', 'vimhelp']",,,,,,,,
-prose,#ffe7ac,['.textile'],none,textile,373,Textile,,textile,text/x-textile,,,,True,,
+type,color,ace_mode,tm_scope,language
+data,#d12127,apache_conf,source.apache-config,ApacheConf
+data,#244776,coffee,source.coffee,CSON
+data,#F44D27,gitignore,source.gitattributes,Git Attributes
+data,#000000,gitignore,source.gitignore,Ignore List
+data,#483465,haskell,source.cabal,Cabal Config
+data,#fff1f2,ini,source.editorconfig,EditorConfig
+data,#F44D27,ini,source.gitconfig,Git Config
+data,#A89663,ini,source.ini,Altium Designer
+data,#d1dbe0,ini,source.ini,INI
+data,#52d5ff,ini,source.reg,Windows Registry Entries
+data,#C9BFED,ini,source.sfv,Simple File Verification
+data,#cecfcb,ini,source.shellcheckrc,ShellCheck Config
+data,#15c213,javascript,source.jest.snap,Jest Snapshot
+data,#292929,javascript,source.js,JSON with Comments
+data,#267CB9,javascript,source.js,JSON5
+data,#0c479c,javascript,source.js,JSONLD
+data,#913960,json,source.json,Ecere Projects
+data,#292929,json,source.json,JSON
+data,#85ea2d,json,source.json,OASv2-json
+data,#85ea2d,json,source.json,OASv3-json
+data,#FFA000,less,source.firestore,Cloud Firestore Security Rules
+data,#2f4aab,lisp,source.pcb.sexp,KiCad Layout
+data,#2A6277,properties,source.java-properties,Java Properties
+data,#df66e4,properties,source.tm-properties,TextMate Properties
+data,#069406,python,source.python,Easybuild
+data,#701516,ruby,source.rbs,RBS
+data,#476732,sh,source.opts,Option List
+data,#e38c00,sql,source.sql,SQL
+data,#00ADD8,text,go.mod,Go Module
+data,#00ADD8,text,go.mod,Go Workspace
+data,#00ADD8,text,go.sum,Go Checksums
+data,#237346,text,none,CSV
+data,#8eff23,text,none,Darcs Patch
+data,#aace60,text,none,DirectX 3D File
+data,#85ea2d,text,none,OpenAPI Specification v2
+data,#85ea2d,text,none,OpenAPI Specification v3
+data,#38761D,text,source.2da,2-Dimensional Array
+data,#fa0f00,text,source.afm,Adobe Font Metrics
+data,#0040FF,text,source.avro,Avro IDL
+data,#D70751,text,source.deb-control,Debian Package Control File
+data,#2596be,text,source.dot,Graphviz (DOT)
+data,#e5d559,text,source.dotenv,Dotenv
+data,#FFDDBB,text,source.figfont,FIGlet Font
+data,#355570,text,source.gdresource,Godot Resource
+data,#003058,text,source.gedcom,GEDCOM
+data,#701516,text,source.gemfile-lock,Gemfile.lock
+data,#237346,text,source.generic-db,TSV
+data,#d20b00,text,source.gerber,Gerber Image
+data,#F44D27,text,source.git-revlist,Git Revision List
+data,#e10098,text,source.graphql,GraphQL
+data,#02303a,text,source.groovy.gradle,Gradle
+data,#106da9,text,source.haproxy-config,HAProxy
+data,#9ff8ee,text,source.hocon,HOCON
+data,#308888,text,source.hosts,Hosts File
+data,#005C9C,text,source.httpspec,HTTP
+data,#f68712,text,source.hxml,HXML
+data,#cb3837,text,source.ini.npmrc,NPM Config
+data,#f26025,text,source.keyvalues,Valve Data Format
+data,#02303a,text,source.kotlin,Gradle Kotlin DSL
+data,#2980B9,text,source.lark,Lark
+data,#2d004d,text,source.nanorc,nanorc
+data,#009639,text,source.nginx,Nginx
+data,#2f4aab,text,source.pcb.board,KiCad Legacy Layout
+data,#2f4aab,text,source.pcb.schematic,KiCad Schematic
+data,#0c344b,text,source.prisma,Prisma
+data,#0673ba,text,source.record-jar,Record Jar
+data,#009a00,text,source.regexp,Regular Expression
+data,#0C4597,text,source.sparql,SPARQL
+data,#373b5e,text,source.stl,STL
+data,#f7e43f,text,source.toc,World of Warcraft Addon Data
+data,#6250e7,text,source.wit,WebAssembly Interface Type
+data,#fbbd16,text,source.wsd,PlantUML
+data,#b07219,text,source.yaml,JAR Manifest
+data,#800000,text,text.adblock,Adblock Filter List
+data,#ffd539,text,text.browserslist,Browserslist
+data,#3572A5,text,text.python.traceback,Python traceback
+data,#9e0101,text,text.srt,SubRip Text
+data,#9c4221,toml,source.toml,TOML
+data,#F1A42B,xml,text.xml,COLLADA
+data,#5b70bd,xml,text.xml,Web Ontology Language
+data,#0060ac,xml,text.xml,XML
+data,#A9157E,xml,text.xml.ant,Ant Build System
+data,#0060ac,xml,text.xml.plist,XML Property List
+data,#ff9900,xml,text.xml.svg,SVG
+data,#ff1111,yaml,source.miniyaml,MiniYAML
+data,#85ea2d,yaml,source.yaml,OASv2-yaml
+data,#85ea2d,yaml,source.yaml,OASv3-yaml
+data,#222c37,yaml,source.yaml,Unity3D Asset
+data,#cb171e,yaml,source.yaml,YAML
+markup,#563d7c,css,source.css,CSS
+markup,#a52a22,django,text.html.django,Jinja
+markup,#a91e50,ejs,text.html.js,EJS
+markup,#ece2a9,haml,text.haml,Haml
+markup,#f7931e,handlebars,text.html.handlebars,Handlebars
+markup,#ff5a03,html,source.astro,Astro
+markup,#5562ac,html,source.csswg,Bikeshed
+markup,#3fb34f,html,source.string-template,StringTemplate
+markup,#ff3e00,html,source.svelte,Svelte
+markup,#e34c26,html,text.html.basic,HTML
+markup,#b7e1f4,html,text.html.basic,MTML
+markup,#eb8131,html,text.html.ecmarkup,Ecmarkup
+markup,#A71E49,html,text.html.riot,Riot
+markup,#41b883,html,text.html.vue,Vue
+markup,#a86454,jade,text.jade,Pug
+markup,#DA5B0B,json,source.json,Jupyter Notebook
+markup,#1d365d,less,source.css.less,Less
+markup,#67b8de,liquid,text.html.liquid,Liquid
+markup,#348a34,lisp,source.lisp,SRecode Template
+markup,#fcb32c,markdown,source.mdx,MDX
+markup,#2ACCA8,markdown,text.html.markdown.source.gfm.apib,API Blueprint
+markup,#f97732,mask,source.mask,Mask
+markup,#3d8137,nunjucks,text.html.nunjucks,Nunjucks
+markup,#4f5d95,php,text.html.php,HTML+PHP
+markup,#512be4,razor,text.html.cshtml,HTML+Razor
+markup,#a53b70,sass,source.sass,Sass
+markup,#c6538c,scss,source.css.scss,SCSS
+markup,#f2a542,smarty,text.html.smarty,Latte
+markup,#724b3b,smarty,text.html.smarty,Mustache
+markup,#0d948f,soy_template,text.html.soy,Closure Templates
+markup,#ff6347,stylus,source.stylus,Stylus
+markup,#778899,tex,text.bibtex,BibTeX
+markup,#3D6117,tex,text.tex.latex,TeX
+markup,#2fcc9f,text,source.css.postcss.sugarss,SugarSS
+markup,#526ee8,text,source.d2,D2
+markup,#d8df39,text,source.genero-forms,Genero Forms
+markup,#ff3670,text,source.mermaid,Mermaid
+markup,#dc3a0c,text,source.postcss,PostCSS
+markup,#da291c,text,source.postscript,PostScript
+markup,#1da6e0,text,source.python.kivy,kvlang
+markup,#bd181a,text,source.scaml,Scaml
+markup,#199f4b,text,source.vim-snippet,Vim Snippet
+markup,#32AB90,text,source.yasnippet,YASnippet
+markup,#2e1052,text,text.html.ecr,HTML+ECR
+markup,#6e4a7e,text,text.html.elixir,HTML+EEX
+markup,#701516,text,text.html.erb,HTML+ERB
+markup,#f7523f,text,text.html.php.blade,Blade
+markup,#ff269e,text,text.html.statamic,Antlers
+markup,#42bff2,text,text.marko,Marko
+markup,#ecdebe,text,text.roff,Roff
+markup,#ecdebe,text,text.roff,Roff Manpage
+markup,#665a4e,text,text.runoff,RUNOFF
+markup,#2b2b2b,text,text.slim,Slim
+markup,#c1d026,twig,text.html.twig,Twig
+markup,#507cff,velocity,source.velocity,Velocity Template Language
+markup,#77d9fb,yaml,source.yaml,RAML
+programming,#E8274B,abap,source.abap,ABAP
+programming,#882B0F,actionscript,source.actionscript.3,ActionScript
+programming,#02f88c,ada,source.ada,Ada
+programming,#101F1F,applescript,source.applescript,AppleScript
+programming,#0B3D91,assembly_x86,source.agc,Apollo Guidance Computer
+programming,#6E4C13,assembly_x86,source.assembly,Assembly
+programming,#005daa,assembly_x86,source.m68k,Motorola 68K Assembly
+programming,#6594b9,autohotkey,source.ahk,AutoHotkey
+programming,#1C3552,autohotkey,source.autoit,AutoIt
+programming,#C1F12E,batchfile,source.batchfile,Batchfile
+programming,#3B2F63,batchfile,source.procfile,Procfile
+programming,#555555,c_cpp,source.c,C
+programming,#ed2e2d,c_cpp,source.c,OpenCL
+programming,#4e3617,c_cpp,source.c,Unified Parallel C
+programming,#B9D9FF,c_cpp,source.c++,AGS Script
+programming,#ff0000,c_cpp,source.c++,Asymptote
+programming,#f34b7d,c_cpp,source.c++,C++
+programming,#71b417,c_cpp,source.c++,Game Maker Language
+programming,#8f14e9,c_cpp,source.c++,Metal
+programming,#111522,c_cpp,source.c.nwscript,NWScript
+programming,#3A4E3A,c_cpp,source.cuda-c++,Cuda
+programming,#447265,c_cpp,source.dm,DM
+programming,#FF6800,c_cpp,source.gsc,GSC
+programming,#ffefaf,c_cpp,source.hc,HolyC
+programming,#8D6747,c_cpp,source.mc,Monkey C
+programming,#62A8D6,c_cpp,source.mql5,MQL4
+programming,#4A76B8,c_cpp,source.mql5,MQL5
+programming,#800000,c_cpp,source.nut,Squirrel
+programming,#99DA07,c_cpp,source.xc,XC
+programming,#ccccff,cirru,source.cirru,Cirru
+programming,#db5855,clojure,source.clojure,Clojure
+programming,#cc0088,clojure,source.clojure,Rouge
+programming,#7582D1,clojure,source.clojure,wisp
+programming,#244776,coffee,source.coffee,CoffeeScript
+programming,#FFF4F3,coffee,source.coffee,EmberScript
+programming,#ed2cd6,coldfusion,source.cfscript,ColdFusion CFC
+programming,#ed2cd6,coldfusion,text.html.cfm,ColdFusion
+programming,#a52f4e,csharp,source.cs,Beef
+programming,#178600,csharp,source.cs,C#
+programming,#a78649,csharp,source.cs,EQ
+programming,#9933cc,csharp,source.cs,Uno
+programming,#1a1a1a,csound_document,source.csound-document,Csound Document
+programming,#1a1a1a,csound_orchestra,source.csound,Csound
+programming,#1a1a1a,csound_score,source.csound-score,Csound Score
+programming,#ba595e,d,source.d,D
+programming,#1F1F1F,d,source.d,Volt
+programming,#00B4AB,dart,source.dart,Dart
+programming,#384d54,dockerfile,source.dockerfile,Dockerfile
+programming,#4d6977,eiffel,source.eiffel,Eiffel
+programming,#6e4a7e,elixir,source.elixir,Elixir
+programming,#60B5CC,elm,source.elm,Elm
+programming,#B83998,erlang,source.erlang,Erlang
+programming,#341708,forth,source.forth,Forth
+programming,#0050b2,ftl,text.html.ftl,FreeMarker
+programming,#D08CF2,gcode,source.gcode,G-code
+programming,#5686a5,glsl,source.glsl,GLSL
+programming,#00ADD8,golang,source.go,Go
+programming,#4f87c4,golang,source.v,V
+programming,#4298b8,groovy,source.groovy,Groovy
+programming,#3ac486,groovy,source.nextflow,Nextflow
+programming,#531242,haskell,source.curry,Curry
+programming,#ff0000,haskell,source.gf,Grammatical Framework
+programming,#12223c,haskell,source.haskell,Bluespec BH
+programming,#dfafff,haskell,source.haskell,Dhall
+programming,#00cafe,haskell,source.haskell,Frege
+programming,#5e5086,haskell,source.haskell,Haskell
+programming,#1D222D,haskell,source.purescript,PureScript
+programming,#df7900,haxe,source.hx,Haxe
+programming,#a9188d,io,source.io,Io
+programming,#1797c0,java,source.apex,Apex
+programming,#d03600,java,source.jasmin,Jasmin
+programming,#3f8000,java,source.java,ChucK
+programming,#b07219,java,source.java,Java
+programming,#a54c4d,java,source.java,UnrealScript
+programming,#f1e05a,javascript,source.js,JavaScript
+programming,#f1e05a,javascript,source.js,JavaScript+ERB
+programming,#00b841,javascript,source.js,Qt Script
+programming,#234d6b,javascript,source.pegjs,PEG.js
+programming,#3178c6,javascript,source.tsx,TSX
+programming,#c4a79c,json,source.json,Max
+programming,#40d47e,jsoniq,source.jsoniq,JSONiq
+programming,#4298b8,jsp,text.html.jsp,Groovy Server Pages
+programming,#2A6277,jsp,text.html.jsp,Java Server Pages
+programming,#a270ba,julia,source.julia,Julia
+programming,#5546ff,lisp,source.clar,Clarity
+programming,#c065db,lisp,source.emacs.lisp,Emacs Lisp
+programming,#3fb68b,lisp,source.lisp,Common Lisp
+programming,#FFCFAB,lisp,source.lisp,GCC Machine Description
+programming,#4C3023,lisp,source.lisp,LFE
+programming,#ff6375,lisp,source.lisp,NetLogo
+programming,#87AED7,lisp,source.lisp,NewLisp
+programming,#6067af,lisp,source.lisp,PicoLisp
+programming,#3c5caa,lisp,source.racket,Racket
+programming,#04133b,lisp,source.webassembly,WebAssembly
+programming,#499886,livescript,source.livescript,LiveScript
+programming,#3d9970,lsl,source.lsl,LSL
+programming,#000080,lua,source.lua,Lua
+programming,#00004c,lua,source.terra,Terra
+programming,#427819,makefile,source.makefile,Makefile
+programming,#e16737,matlab,source.matlab,MATLAB
+programming,#7e7eff,nix,source.nix,Nix
+programming,#438eff,objectivec,source.objc,Objective-C
+programming,#6866fb,objectivec,source.objc++,Objective-C++
+programming,#1ac620,ocaml,source.ats,ATS
+programming,#3be133,ocaml,source.mligo,CameLIGO
+programming,#ef7a08,ocaml,source.ocaml,OCaml
+programming,#0e74ff,pascal,source.ligo,LigoLANG
+programming,#B0CE4E,pascal,source.pascal,Component Pascal
+programming,#E3F171,pascal,source.pascal,Pascal
+programming,#0298c3,perl,source.perl,Perl
+programming,#0000fb,perl,source.raku,Raku
+programming,#336790,pgsql,source.sql,PLpgSQL
+programming,#878787,php,source.hack,Hack
+programming,#118f9e,php,source.php.zephir,Zephir
+programming,#4F5D95,php,text.html.php,PHP
+programming,#012456,powershell,source.powershell,PowerShell
+programming,#ff2b2b,prolog,source.mercury,Mercury
+programming,#74283c,prolog,source.prolog,Prolog
+programming,#001d9d,prolog,source.prolog.eclipse,ECLiPSe
+programming,#ee1e10,python,source.arr,Pyret
+programming,#3572A5,python,source.python,Python
+programming,#419179,python,source.python,Snakemake
+programming,#76d275,python,source.python,Starlark
+programming,#ff7f7f,python,source.renpy,Ren'Py
+programming,#198CE7,r,source.r,R
+programming,#000100,ruby,source.crystal,Crystal
+programming,#c7a938,ruby,source.ruby,Mirah
+programming,#701516,ruby,source.ruby,Ruby
+programming,#844FBA,ruby,source.terraform,HCL
+programming,#ff5847,rust,source.reason,Reason
+programming,#ff5847,rust,source.religo,ReasonLIGO
+programming,#ed5051,rust,source.rescript,ReScript
+programming,#dea584,rust,source.rust,Rust
+programming,#dea584,rust,source.sway,Sway
+programming,#e5cd45,scad,source.scad,OpenSCAD
+programming,#c22d40,scala,source.scala,Scala
+programming,#0886a5,scheme,source.janet,Janet
+programming,#c9df40,scheme,source.nu,Nu
+programming,#1e4aec,scheme,source.scheme,Scheme
+programming,#4E9906,sh,source.nushell,Nushell
+programming,#0D597F,sh,source.shell,Alpine Abuild
+programming,#9400ff,sh,source.shell,Gentoo Ebuild
+programming,#9400ff,sh,source.shell,Gentoo Eclass
+programming,#89e051,sh,source.shell,Shell
+programming,#f0c040,smarty,text.html.smarty,Smarty
+programming,#dad8d8,sql,none,PLSQL
+programming,#dce200,sql,source.hql,HiveQL
+programming,#e38c00,sql,source.sql,SQLPL
+programming,#e38c00,sql,source.tsql,TSQL
+programming,#c1ac7f,tcl,source.tcl,Glyph
+programming,#e4cc98,tcl,source.tcl,Tcl
+programming,#999999,text,file.lasso,Lasso
+programming,#aa2afe,text,none,Arc
+programming,#9CC134,text,none,Augeas
+programming,#00bce4,text,none,BitBake
+programming,#00007a,text,none,CWeb
+programming,#cca760,text,none,Dogescript
+programming,#ccce35,text,none,E
+programming,#88ccff,text,none,FLUX
+programming,#F6B900,text,none,Filebench WML
+programming,#FFC766,text,none,GAML
+programming,#f49a22,text,none,GAMS
+programming,#fb855d,text,none,Genie
+programming,#99AAFF,text,none,ImageJ Macro
+programming,#28430A,text,none,KRL
+programming,#315665,text,none,Literate Agda
+programming,#9C8AF9,text,none,NumPy
+programming,#cabbff,text,none,Omgrofl
+programming,#cdd0e3,text,none,Oxygene
+programming,#f3ca0a,text,none,Parrot
+programming,#8f0f8d,text,none,PowerBuilder
+programming,#5a6986,text,none,PureBasic
+programming,#9d5200,text,none,Ragel
+programming,#DE3941,text,none,RouterOS Script
+programming,#0579aa,text,none,Self
+programming,#A0AA87,text,none,TI Program
+programming,#d67711,text,none,Zimpl
+programming,#004289,text,source.4dm,4D
+programming,#555e25,text,source.abapcds,ABAP CDS
+programming,#5ce600,text,source.abl,OpenEdge ABL
+programming,#315665,text,source.agda,Agda
+programming,#34EB6B,text,source.aidl,AIDL
+programming,#3AA2B5,text,source.al,AL
+programming,#64C800,text,source.alloy,Alloy
+programming,#E6EFBB,text,source.ampl,AMPL
+programming,#C7D7DC,text,source.angelscript,AngelScript
+programming,#9DC3FF,text,source.antlr,ANTLR
+programming,#5A8164,text,source.apl,APL
+programming,#a957b0,text,source.aspectj,AspectJ
+programming,#c30e9b,text,source.awk,Awk
+programming,#FF5000,text,source.ballerina,Ballerina
+programming,#ff0000,text,source.basic,BASIC
+programming,#15A13C,text,source.berry,Berry
+programming,#2F2530,text,source.bf,Brainfuck
+programming,#519aba,text,source.bicep,Bicep
+programming,#00FFAE,text,source.blitzmax,BlitzBasic
+programming,#cd6400,text,source.blitzmax,BlitzMax
+programming,#d4bec1,text,source.boo,Boo
+programming,#c80fa0,text,source.boogie,Boogie
+programming,#66AABB,text,source.brs,BrighterScript
+programming,#662D91,text,source.brs,Brightscript
+programming,#814CCC,text,source.bsl,1C Enterprise
+programming,#913960,text,source.c.ec,eC
+programming,#00ef8b,text,source.cadence,Cadence
+programming,#ff4a48,text,source.cairo,Cairo
+programming,#c42727,text,source.capnp,Cap'n Proto
+programming,#0092d1,text,source.cds,CAP CDS
+programming,#dfa535,text,source.ceylon,Ceylon
+programming,#8dc63f,text,source.chapel,Chapel
+programming,#707575,text,source.circom,Circom
+programming,#db901e,text,source.clarion,Clarion
+programming,#3F85AF,text,source.clean,Clean
+programming,#E4E6F3,text,source.click,Click
+programming,#00A300,text,source.clips,CLIPS
+programming,#DA3434,text,source.cmake,CMake
+programming,#d0b68c,text,source.coq,Coq
+programming,#5886E1,text,source.cue,CUE
+programming,#34c0eb,text,source.cypher,Cypher
+programming,#fedf5b,text,source.cython,Cython
+programming,#003a52,text,source.data-weave,DataWeave
+programming,#6c616e,text,source.dylan,Dylan
+programming,#2af0ff,text,source.earthfile,Earthly
+programming,#8a1267,text,source.ecl,ECL
+programming,#55BB55,text,source.elvish,Elvish
+programming,#55BB55,text,source.elvish-transcript,Elvish Transcript
+programming,#FF790B,text,source.euphoria,Euphoria
+programming,#636746,text,source.factor,Factor
+programming,#14253c,text,source.fan,Fantom
+programming,#7b9db4,text,source.fancy,Fancy
+programming,#c37240,text,source.faust,Faust
+programming,#4aae47,text,source.fish,fish
+programming,#fff3d7,text,source.fnl,Fennel
+programming,#4d41b1,text,source.fortran,Fortran
+programming,#4d41b1,text,source.fortran.modern,Fortran Free Form
+programming,#b845fc,text,source.fsharp,F#
+programming,#572e30,text,source.fstar,F*
+programming,#ffcc33,text,source.ftl,Fluent
+programming,#5f021f,text,source.futhark,Futhark
+programming,#0000cc,text,source.gap,GAP
+programming,#355570,text,source.gdscript,GDScript
+programming,#63408e,text,source.genero,Genero
+programming,#ffaff3,text,source.gleam,Gleam
+programming,#f0a9f0,text,source.gnuplot,Gnuplot
+programming,#88562A,text,source.golo,Golo
+programming,#82937f,text,source.gosu.2,Gosu
+programming,#615f8b,text,source.grace,Grace
+programming,#0e60e3,text,source.harbour,Harbour
+programming,#403a40,text,source.harbour,xBase
+programming,#aace60,text,source.hlsl,HLSL
+programming,#00b171,text,source.hoon,hoon
+programming,#7790B2,text,source.hy,Hy
+programming,#a3522f,text,source.idl,IDL
+programming,#b30000,text,source.idris,Idris
+programming,#0000cc,text,source.igor,IGOR Pro
+programming,#16cec6,text,source.imba,Imba
+programming,#264b99,text,source.inno,Inno Setup
+programming,#078193,text,source.ioke,Ioke
+programming,#FEFE00,text,source.isabelle.root,Isabelle ROOT
+programming,#FEFE00,text,source.isabelle.theory,Isabelle
+programming,#9EEDFF,text,source.j,J
+programming,#d90e09,text,source.jcl,JCL
+programming,#DBCA00,text,source.jflex,JFlex
+programming,#56b3cb,text,source.jison,Jison
+programming,#56b3cb,text,source.jisonlex,Jison Lex
+programming,#843179,text,source.jolie,Jolie
+programming,#c7254e,text,source.jq,jq
+programming,#ff0c5a,text,source.js.objj,Objective-J
+programming,#0064bd,text,source.jsonnet,Jsonnet
+programming,#384d54,text,source.just,Just
+programming,#6f8042,text,source.kakscript,KakouneScript
+programming,#41adf0,text,source.kerboscript,KerboScript
+programming,#A97BFF,text,source.kotlin,Kotlin
+programming,#DBCA00,text,source.lex,Lex
+programming,#9ccc7c,text,source.lilypond,LilyPond
+programming,#244776,text,source.litcoffee,Literate CoffeeScript
+programming,#185619,text,source.llvm,LLVM
+programming,#295b9a,text,source.logtalk,Logtalk
+programming,#cc9900,text,source.lolcode,LOLCODE
+programming,#d8ffff,text,source.m2,Macaulay2
+programming,#dd1100,text,source.mathematica,Mathematica
+programming,#00a6a6,text,source.maxscript,MAXScript
+programming,#E22837,text,source.mcfunction,mcfunction
+programming,#007800,text,source.meson,Meson
+programming,#02b046,text,source.mint,Mint
+programming,#dc566d,text,source.ml,Standard ML
+programming,#5EC8DB,text,source.mlir,MLIR
+programming,#fbb03b,text,source.mo,Motoko
+programming,#de1d31,text,source.modelica,Modelica
+programming,#223388,text,source.modula-3,Modula-3
+programming,#10253f,text,source.modula2,Modula-2
+programming,#ff4585,text,source.moonscript,MoonScript
+programming,#4a137a,text,source.move,Move
+programming,#3d57c3,text,source.msl,mIRC Script
+programming,#244963,text,source.mupad,mupad
+programming,#1d2c4e,text,source.nasal,Nasal
+programming,#28431f,text,source.ncl,NCL
+programming,#990000,text,source.ne,Nearley
+programming,#3d3c6e,text,source.nemerle,Nemerle
+programming,#94B0C7,text,source.nesc,nesC
+programming,#0aa0ff,text,source.netlinx,NetLinx
+programming,#747faa,text,source.netlinx.erb,NetLinx+ERB
+programming,#ffc200,text,source.nim,Nim
+programming,#009917,text,source.nit,Nit
+programming,#424893,text,source.objectscript,ObjectScript
+programming,#60AFFE,text,source.odin,Odin
+programming,#b0b77e,text,source.ooc,ooc
+programming,#f7ede0,text,source.opal,Opal
+programming,#fab738,text,source.oz,Oz
+programming,#7055b5,text,source.p4,P4
+programming,#F7A8B8,text,source.pact,Pact
+programming,#cc0000,text,source.pan,Pan
+programming,#6600cc,text,source.papyrus.skyrim,Papyrus
+programming,#dbb284,text,source.pawn,Pawn
+programming,#0d00ff,text,source.pddl,PDDL
+programming,#C76F5B,text,source.pep8,Pep8
+programming,#fcd7de,text,source.pig_latin,PigLatin
+programming,#005390,text,source.pike,Pike
+programming,#d80074,text,source.pogoscript,PogoScript
+programming,#ae81ff,text,source.polar,Polar
+programming,#f8bd00,text,source.portugol,Portugol
+programming,#6bac65,text,source.pov-ray sdl,POV-Ray SDL
+programming,#0096D8,text,source.processing,Processing
+programming,#de0000,text,source.promela,Promela
+programming,#302B6D,text,source.puppet,Puppet
+programming,#285EEF,text,source.python,Xonsh
+programming,#0040cd,text,source.q,q
+programming,#AA70FF,text,source.qasm,OpenQASM
+programming,#140f46,text,source.ql,CodeQL
+programming,#44a51c,text,source.qml,QML
+programming,#fed659,text,source.qsharp,Q#
+programming,#882233,text,source.quake,Quake
+programming,#fffaa0,text,source.rascal,Rascal
+programming,#358a5b,text,source.rebol,Rebol
+programming,#f50000,text,source.red,Red
+programming,#7d9199,text,source.rego,Open Policy Agent
+programming,#d90e09,text,source.rexx,REXX
+programming,#FFDAB3,text,source.rez,Rez
+programming,#2D54CB,text,source.ring,Ring
+programming,#2BDE21,text,source.rpgle,RPGLE
+programming,#B34936,text,source.sas,SAS
+programming,#fdc700,text,source.scenic,Scenic
+programming,#ca0f21,text,source.scilab,Scilab
+programming,#64b970,text,source.sed,sed
+programming,#222c37,text,source.shaderlab,ShaderLab
+programming,#120F14,text,source.shen,Shen
+programming,#64E6AD,text,source.singularity,Singularity
+programming,#003fa2,text,source.slice,Slice
+programming,#596706,text,source.smalltalk,Smalltalk
+programming,#c44536,text,source.smithy,Smithy
+programming,#c94949,text,source.smpl,SmPL
+programming,#AA6746,text,source.solidity,Solidity
+programming,#f69e1d,text,source.sourcepawn,SourcePawn
+programming,#7fa2a7,text,source.spin,Propeller Spin
+programming,#3F3F3F,text,source.sqf,SQF
+programming,#b2011d,text,source.stan,Stan
+programming,#1a5f91,text,source.stata,Stata
+programming,#46390b,text,source.supercollider,SuperCollider
+programming,#F05138,text,source.swift,Swift
+programming,#333333,text,source.talon,Talon
+programming,#D12127,text,source.thrift,Thrift
+programming,#4b0079,text,source.tla,TLA
+programming,#cf142b,text,source.turing,Turing
+programming,#0178b8,text,source.txl,TXL
+programming,#239dad,text,source.typst,Typst
+programming,#ccccee,text,source.ur,UrWeb
+programming,#148AA8,text,source.varnish.vcl,VCL
+programming,#867db1,text,source.vba,VBA
+programming,#141AC9,text,source.vbnet,FreeBasic
+programming,#15dcdc,text,source.vbnet,VBScript
+programming,#945db7,text,source.vbnet,Visual Basic .NET
+programming,#2c6353,text,source.vbnet,Visual Basic 6.0
+programming,#199f4b,text,source.viml,Vim Script
+programming,#2980b9,text,source.vyper,Vyper
+programming,#42f1f4,text,source.wdl,WDL
+programming,#1a5e9a,text,source.wgsl,WGSL
+programming,#d5c397,text,source.whiley,Whiley
+programming,#ff0000,text,source.witcherscript,Witcher Script
+programming,#a23738,text,source.wollok,Wollok
+programming,#383838,text,source.wren,Wren
+programming,#4B6BEF,text,source.x10,X10
+programming,#81bd41,text,source.xojo,Xojo
+programming,#24255d,text,source.xtend,Xtend
+programming,#6A463F,text,source.yacc,Bison
+programming,#4B6C4B,text,source.yacc,Yacc
+programming,#220000,text,source.yara,YARA
+programming,#794932,text,source.yul,Yul
+programming,#0d665e,text,source.zap,ZAP
+programming,#00BCD1,text,source.zenscript,ZenScript
+programming,#ec915c,text,source.zig,Zig
+programming,#dc75e5,text,source.zil,ZIL
+programming,#FFEC25,text,text.dfy.dafny,Dafny
+programming,#5B2063,text,text.gherkin.feature,Gherkin
+programming,#9400ff,text,text.html.asp,ASP.NET
+programming,#6a40fd,text,text.html.asp,Classic ASP
+programming,#7e858d,text,text.html.mako,Mako
+programming,#007eff,text,text.html.slash,Slash
+programming,#3572A5,text,text.python.console,Python console
+programming,#00c0b5,text,text.robot,RobotFramework
+programming,#5e5086,text,text.tex.latex.haskell,Literate Haskell
+programming,#3178c6,typescript,source.ts,TypeScript
+programming,#a56de2,vala,source.vala,Vala
+programming,#12223c,verilog,source.bsv,Bluespec
+programming,#DAE1C2,verilog,source.systemverilog,SystemVerilog
+programming,#C40023,verilog,source.tlverilog,TL-Verilog
+programming,#b2b7f8,verilog,source.verilog,Verilog
+programming,#adb2cb,vhdl,source.vhdl,VHDL
+programming,#21D789,xml,none,JetBrains MPS
+programming,#fede06,xml,text.xml,LabVIEW
+programming,#951531,xml,text.xml.genshi,Genshi
+programming,#EB8CEB,xml,text.xml.xsl,XSLT
+programming,#5232e7,xquery,source.xq,XQuery
+programming,#B5314C,yaml,source.cwl,Common Workflow Language
+programming,#FBEE96,yaml,source.denizenscript,DenizenScript
+programming,#773b37,yaml,source.yaml,Kaitai Struct
+programming,#652B81,yaml,source.yaml,LookML
+programming,#646464,yaml,source.yaml.salt,SaltStack
+prose,#73a0c5,asciidoc,text.html.asciidoc,AsciiDoc
+prose,#083fa1,markdown,text.md,Markdown
+prose,#198ce7,markdown,text.md,RMarkdown
+prose,#701516,rdoc,text.rdoc,RDoc
+prose,#198ce7,tex,text.tex.latex.sweave,Sweave
+prose,#77aa99,text,none,Org
+prose,#ff6900,text,source.gemini,Gemini
+prose,#fc5757,text,text.html.mediawiki,Wikitext
+prose,#141414,text,text.restructuredtext,reStructuredText
+prose,#199f4b,text,text.vim-help,Vim Help File
+prose,#ffe7ac,textile,none,Textile
