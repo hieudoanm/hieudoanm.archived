@@ -1,0 +1,40 @@
+name: Sync Games
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  sync:
+    strategy:
+      matrix:
+        players:
+          - username: hikaru
+          - username: thedarkknighttrilogy
+    name: Sync Games - ${{ matrix.players.username }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: Install Dependencies
+        run: yarn install --network-timeout 86400000
+        working-directory: projects/chess.com/jobs
+      - name: Set Up Prisma
+        run: yarn prisma format && yarn prisma generate
+        working-directory: projects/chess.com/jobs
+        env:
+          POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
+          USERNAME: ${{ matrix.players.username }}
+      - name: Sync Games
+        run: yarn import:games
+        working-directory: projects/chess.com/jobs
+        env:
+          POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
+          USERNAME: ${{ matrix.players.username }}
