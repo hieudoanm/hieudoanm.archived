@@ -8,6 +8,6 @@ numpy==1.26.1
 pandas==2.1.2
 python-dotenv==1.0.0
 requests==2.31.0
-selenium==4.15.1
+selenium==4.15.2
 SQLAlchemy==2.0.23
 tqdm==4.66.1
