@@ -55,7 +55,7 @@
     "@types/graphql-depth-limit": "1.1.5",
     "@types/http-errors": "2.0.3",
     "@types/jest": "29.5.7",
-    "@types/morgan": "1.9.7",
+    "@types/morgan": "1.9.8",
     "@types/node": "20.8.10",
     "@types/webpack-node-externals": "3.0.3",
     "@typescript-eslint/eslint-plugin": "6.9.1",
