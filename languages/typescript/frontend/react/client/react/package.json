@@ -20,7 +20,7 @@
     "@emotion/styled": "11.11.0",
     "@fontsource/roboto": "5.0.8",
     "@mui/icons-material": "5.14.16",
-    "@mui/material": "5.14.16",
+    "@mui/material": "5.14.17",
     "@types/node": "20.8.10",
     "apexcharts": "3.44.0",
     "pino": "8.16.1",
