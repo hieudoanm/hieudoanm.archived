@@ -32,18 +32,18 @@ Paris Sciences et Lettres – PSL Research University Paris,France,24.0,40.0,47.
 Duke University,United States,57.0,31.0,25.0,37.67
 "University of California, San Diego",United States,62.0,21.0,32.0,38.33
 University of British Columbia,Canada,35.0,45.0,40.0,40.0
-Technical University of Munich,Germany,37.0,56.0,30.0,41.0
 King's College London,United Kingdom,40.0,48.0,35.0,41.0
+Technical University of Munich,Germany,37.0,56.0,30.0,41.0
 University of Manchester,United Kingdom,32.0,38.0,54.0,41.33
 University of Sydney,Australia,20.0,60.0,55.0,45.0
 University of Queensland,Australia,43.0,47.0,53.0,47.67
 University of Texas at Austin,United States,58.0,37.0,50.0,48.33
 University of Munich,Germany,54.0,58.0,33.0,48.33
 Zhejiang University,China,44.0,36.0,67.0,49.0
-Nanyang Technological University,Singapore,26.0,88.0,36.0,50.0
 McGill University,Canada,31.0,73.0,46.0,50.0
-University of Hong Kong,Hong Kong,27.0,97.0,31.0,51.67
+Nanyang Technological University,Singapore,26.0,88.0,36.0,50.0
 University of New South Wales,Australia,19.0,64.0,72.0,51.67
+University of Hong Kong,Hong Kong,27.0,97.0,31.0,51.67
 Kyoto University,Japan,46.0,42.0,68.0,52.0
 Shanghai Jiao Tong University,China,51.0,54.0,52.0,52.33
 University of Illinois at Urbana-Champaign,United States,64.0,49.0,48.0,53.67
@@ -57,23 +57,22 @@ London School of Economics and Political Science,United Kingdom,45.0,101.0,37.0,
 Washington University in St. Louis,United States,101.0,27.0,57.0,61.67
 Karolinska Institute,Sweden,101.0,41.0,49.0,63.67
 Sorbonne University,France,59.0,43.0,90.0,64.0
-Chinese University of Hong Kong,Hong Kong,49.0,101.0,45.0,65.0
 Seoul National University,South Korea,41.0,98.0,56.0,65.0
+Chinese University of Hong Kong,Hong Kong,49.0,101.0,45.0,65.0
 KU Leuven,Belgium,61.0,95.0,42.0,66.0
 University of North Carolina at Chapel Hill,United States,101.0,29.0,69.0,66.33
 Universität Heidelberg,Germany,88.0,70.0,43.0,67.0
-University of Bristol,United Kingdom,55.0,81.0,76.0,70.67
 University of Amsterdam,Netherlands,53.0,101.0,60.0,71.33
 University of Wisconsin-Madison,United States,101.0,33.0,81.0,71.67
 Delft University of Technology,Netherlands,47.0,101.0,70.0,72.67
-University of Southern California,United States,101.0,53.0,65.0,73.0
 Hong Kong University of Science and Technology,Hong Kong,60.0,101.0,58.0,73.0
+University of Southern California,United States,101.0,53.0,65.0,73.0
 "University of California, San Francisco",United States,101.0,19.0,101.0,73.67
 Utrecht University,Netherlands,101.0,55.0,66.0,74.0
 "University of California, Santa Barbara",United States,101.0,57.0,64.0,74.0
 Brown University,United States,73.0,99.0,61.0,77.67
-Institut Polytechnique de Paris,France,38.0,101.0,96.0,78.33
 University of Zurich,Switzerland,92.0,59.0,84.0,78.33
+Institut Polytechnique de Paris,France,38.0,101.0,96.0,78.33
 Georgia Institute of Technology,United States,97.0,101.0,38.0,78.67
 University of Science and Technology of China,China,101.0,63.0,74.0,79.33
 University of Copenhagen,Denmark,101.0,39.0,101.0,80.33
@@ -87,56 +86,58 @@ University of Colorado at Boulder,United States,101.0,51.0,101.0,84.33
 University of Texas Southwestern Medical Center at Dallas,United States,101.0,52.0,101.0,84.67
 Yonsei University,South Korea,77.0,101.0,78.0,85.33
 "University of California, Irvine",United States,101.0,61.0,95.0,85.67
+University of Bristol,101,55.0,101.0,101.0,85.67
+University of Bristol,United Kingdom,101.0,81.0,76.0,86.0
 University of Glasgow,United Kingdom,76.0,101.0,83.0,86.67
 Wageningen University & Research,Netherlands,101.0,101.0,59.0,87.0
-University of Geneva,Switzerland,101.0,62.0,101.0,88.0
 Vanderbilt University,United States,101.0,65.0,98.0,88.0
-"University of California, Davis",United States,101.0,101.0,63.0,88.33
+University of Geneva,Switzerland,101.0,62.0,101.0,88.0
 Boston University,United States,93.0,101.0,71.0,88.33
+"University of California, Davis",United States,101.0,101.0,63.0,88.33
 University of Bonn,Germany,101.0,76.0,89.0,88.67
-Universiti Malaya,Malaysia,66.0,101.0,101.0,89.33
 Erasmus University Rotterdam,Netherlands,101.0,87.0,80.0,89.33
+Universiti Malaya,Malaysia,66.0,101.0,101.0,89.33
 University of Warwick,United Kingdom,67.0,101.0,101.0,89.67
-City University of Hong Kong,Hong Kong,70.0,101.0,99.0,90.0
-University of Auckland,New Zealand,68.0,101.0,101.0,90.0
 University of Oslo,Norway,101.0,68.0,101.0,90.0
-National Taiwan University,Taiwan,69.0,101.0,101.0,90.33
+University of Auckland,New Zealand,68.0,101.0,101.0,90.0
+City University of Hong Kong,Hong Kong,70.0,101.0,99.0,90.0
 Aarhus University,Denmark,101.0,69.0,101.0,90.33
+National Taiwan University,Taiwan,69.0,101.0,101.0,90.33
 University of Western Australia,Australia,72.0,100.0,101.0,91.0
 University of Texas M. D. Anderson Cancer Center,United States,101.0,72.0,101.0,91.33
 Charité - Universitätsmedizin Berlin,Germany,101.0,101.0,73.0,91.67
 Ghent University,Belgium,101.0,74.0,101.0,92.0
-McMaster University,Canada,101.0,90.0,85.0,92.0
 KTH Royal Institute of Technology,Sweden,74.0,101.0,101.0,92.0
+McMaster University,Canada,101.0,90.0,85.0,92.0
 University of Leeds,United Kingdom,75.0,101.0,101.0,92.33
 University of Adelaide,Australia,89.0,101.0,88.0,92.67
-Leiden University,Netherlands,101.0,101.0,77.0,93.0
 Hebrew University of Jerusalem,Israel,101.0,77.0,101.0,93.0
+Leiden University,Netherlands,101.0,101.0,77.0,93.0
 Durham University,United Kingdom,78.0,101.0,101.0,93.33
 Université Paris Cité,France,101.0,78.0,101.0,93.33
 Korea University,South Korea,79.0,101.0,101.0,93.67
 Sun Yat-sen University,China,101.0,79.0,101.0,93.67
 Osaka University,Japan,80.0,101.0,101.0,94.0
-Purdue University - West Lafayette,United States,99.0,83.0,101.0,94.33
 Trinity College Dublin,Ireland,81.0,101.0,101.0,94.33
+Purdue University - West Lafayette,United States,99.0,83.0,101.0,94.33
 Emory University,United States,101.0,101.0,82.0,94.67
 University of Pittsburgh,United States,101.0,82.0,101.0,94.67
 University of Southampton,United Kingdom,82.0,101.0,101.0,94.67
 Pennsylvania State University,United States,83.0,101.0,101.0,95.0
 Technion-Israel Institute of Technology,Israel,101.0,84.0,101.0,95.33
 University of Birmingham,United Kingdom,84.0,101.0,101.0,95.33
-University of Basel,Switzerland,101.0,85.0,101.0,95.67
 Lund University,Sweden,85.0,101.0,101.0,95.67
-Universidade de São Paulo,Brazil,86.0,101.0,101.0,96.0
+University of Basel,Switzerland,101.0,85.0,101.0,95.67
 Weizmann Institute of Science,Israel,101.0,86.0,101.0,96.0
+Universidade de São Paulo,Brazil,86.0,101.0,101.0,96.0
 Humboldt University of Berlin,Germany,101.0,101.0,86.0,96.0
-University of Tübingen,Germany,101.0,101.0,87.0,96.33
 Lomonosov Moscow State University,Russia,87.0,101.0,101.0,96.33
+University of Tübingen,Germany,101.0,101.0,87.0,96.33
 Uppsala University,Sweden,101.0,89.0,101.0,97.0
 University of Technology Sydney,Australia,90.0,101.0,101.0,97.33
+Free University of Berlin,Germany,101.0,101.0,91.0,97.67
 Tokyo Institute of Technology,Japan,91.0,101.0,101.0,97.67
 Stockholm University,Sweden,101.0,91.0,101.0,97.67
-Free University of Berlin,Germany,101.0,101.0,91.0,97.67
 University of Alberta,Canada,101.0,92.0,101.0,98.0
 University of Helsinki,Finland,101.0,93.0,101.0,98.33
 University of Florida,United States,101.0,94.0,101.0,98.67

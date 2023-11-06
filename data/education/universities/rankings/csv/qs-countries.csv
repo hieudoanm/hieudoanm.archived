@@ -1,4 +1,5 @@
 university,country,rank_qs
+University of Bristol,,55.0
 Sheffield Hallam University,,1090.0
 California State University - Long Beach,,1221.0
 Yuan Ze University,,1411.0
@@ -64,7 +65,7 @@ Victoria University,Australia,720.0
 Australian Catholic University,Australia,805.0
 Charles Sturt University,Australia,810.0
 University of New England Australia,Australia,996.0
-University of the Sunshine Coast,Australia,1186.0
+University of Sunshine Coast,Australia,1186.0
 "University of Notre Dame, Australia",Australia,1445.0
 University of Vienna,Austria,132.0
 Technische Universität Wien,Austria,185.0
@@ -396,7 +397,7 @@ Université de Lille,France,639.0
 Université de Rennes 1,France,719.0
 Université Côte d'Azur,France,731.0
 Université de Lorraine,France,732.0
-Nantes University,France,781.0
+Nantes Université,France,781.0
 CY Cergy Paris University,France,857.0
 Universite Paris-Pantheon-Assas,France,889.0
 Université Toulouse 1 Capitole,France,1000.0
@@ -460,7 +461,7 @@ Bielefeld University,Germany,953.0
 Universität Siegen,Germany,1191.0
 Technische Universität Bergakademie Freiberg,Germany,1442.0
 Technische Universität Hamburg,Germany,1443.0
-Technische Universität Kaiserslautern,Germany,1444.0
+University of Kaiserslautern-Landau,Germany,1444.0
 University of Ghana,Ghana,994.0
 Kwame Nkrumah University of Science and Technology,Ghana,1427.0
 National Technical University of Athens,Greece,348.0
@@ -695,7 +696,7 @@ Al-Farabi Kazakh National University,Kazakhstan,230.0
 L.N. Gumilyov Eurasian National University,Kazakhstan,356.0
 Satbayev University,Kazakhstan,486.0
 Auezov South Kazakhstan University,Kazakhstan,613.0
-Kazakh National Agrarian University KazNAU,Kazakhstan,642.0
+Kazakh National Agrarian Research University KazNARU,Kazakhstan,642.0
 Abai Kazakh National Pedagogical University,Kazakhstan,681.0
 Khoja Akhmet Yassawi International Kazakh-Turkish University,Kazakhstan,784.0
 Almaty Technological University,Kazakhstan,803.0
@@ -753,7 +754,7 @@ Asia Pacific University of Technology and Innovation,Malaysia,620.0
 Management and Science University,Malaysia,623.0
 International Islamic University Malaysia,Malaysia,712.0
 Universiti Tenaga Nasional,Malaysia,768.0
-Universiti Malaysia Pahang,Malaysia,789.0
+Universiti Malaysia Pahang Al-Sultan Abdullah,Malaysia,789.0
 Universiti Tunku Abdul Rahman,Malaysia,838.0
 Universiti Pendidikan Sultan Idris,Malaysia,990.0
 Multimedia University,Malaysia,1068.0
@@ -788,7 +789,7 @@ Universidad de Monterrey,Mexico,1132.0
 Benemerita Universidad Autonoma de Puebla,Mexico,1215.0
 Universidad Autónoma de Aguascalientes,Mexico,1322.0
 Universidad Autónoma de Baja California,Mexico,1323.0
-Universidad Popular Autonoma del Estado de Puebla,Mexico,1335.0
+Universidad Popular Autónoma del Estado de Puebla,Mexico,1335.0
 Universidad Veracruzana,Mexico,1338.0
 Universidad de Guanajuato,Mexico,1342.0
 Universidad Autonoma de Yucatan,Mexico,1448.0
@@ -870,7 +871,7 @@ Warsaw University of Technology,Poland,575.0
 "Adam Mickiewicz University, Poznań",Poland,733.0
 Poznan University of Life Sciences,Poland,826.0
 Gdańsk University of Technology,Poland,862.0
-AGH University of Science and Technology,Poland,905.0
+AGH University of Krakow,Poland,905.0
 Nicolaus Copernicus University,Poland,921.0
 University of Wroclaw,Poland,949.0
 Wroclaw University of Science and Technology,Poland,952.0
@@ -1202,7 +1203,6 @@ University of Edinburgh,United Kingdom,22.0
 University of Manchester,United Kingdom,32.0
 King's College London,United Kingdom,40.0
 London School of Economics and Political Science,United Kingdom,45.0
-University of Bristol,United Kingdom,55.0
 University of Warwick,United Kingdom,67.0
 University of Leeds,United Kingdom,75.0
 University of Glasgow,United Kingdom,76.0
