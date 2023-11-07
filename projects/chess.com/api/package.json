@@ -54,7 +54,7 @@
     "@types/cookie-parser": "1.4.6",
     "@types/cors": "2.8.15",
     "@types/graphql-depth-limit": "1.1.5",
-    "@types/http-errors": "2.0.3",
+    "@types/http-errors": "2.0.4",
     "@types/jest": "29.5.7",
     "@types/morgan": "1.9.8",
     "@types/node": "20.8.10",
