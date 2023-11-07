@@ -8,6 +8,8 @@ on:
       - feature/**
       - renovate/**
       - dependabot/**
+    paths:
+      - projects/chess.com/**
 
 jobs:
   continuous-integration:
