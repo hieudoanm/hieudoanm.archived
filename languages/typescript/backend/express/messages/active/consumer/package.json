@@ -39,7 +39,7 @@
     "@types/http-errors": "2.0.4",
     "@types/jest": "29.5.7",
     "@types/node": "20.8.10",
-    "@types/stompit": "0.26.5",
+    "@types/stompit": "0.26.6",
     "@types/webpack-node-externals": "3.0.3",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",

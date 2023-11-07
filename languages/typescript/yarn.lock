@@ -8357,10 +8357,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.1.tgz#20f18294f797f2209b5f65c8e3b5c8e8261d127c"
   integrity sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==
 
-"@types/stompit@0.26.5":
-  version "0.26.5"
-  resolved "https://registry.yarnpkg.com/@types/stompit/-/stompit-0.26.5.tgz#bde0818cbaebba1f798f9bafb7e9ed26faad9914"
-  integrity sha512-DVjOd71NwYLJRosgmjiJ7S+fRykc48qnYex7Ehb3SLnNjHEk1Z3HKdpqFWWX2UHOz3cLm629YYUUON44P0xR3g==
+"@types/stompit@0.26.6":
+  version "0.26.6"
+  resolved "https://registry.yarnpkg.com/@types/stompit/-/stompit-0.26.6.tgz#5d54475e0ddbd98f3b1d7ed2920ea753838d407d"
+  integrity sha512-zoEaZ16QpxF0iZCT5pB4EVHbiVC7zqcddfeX7HOrwILkWs5JmL3aYuogaNndG9ow4wOKK/2bE2ISWGxe31MHMA==
   dependencies:
     "@types/node" "*"
 
