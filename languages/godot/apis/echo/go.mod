@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/google/uuid v1.4.0
-	github.com/labstack/echo/v4 v4.11.2
+	github.com/labstack/echo/v4 v4.11.3
 	gorm.io/driver/postgres v1.5.4
 	gorm.io/gorm v1.25.5
 )
