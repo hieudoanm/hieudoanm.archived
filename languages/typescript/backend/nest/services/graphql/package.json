@@ -34,7 +34,7 @@
     "@nestjs/platform-express": "10.2.8",
     "@nestjs/swagger": "7.1.15",
     "graphql": "16.8.1",
-    "helmet": "7.0.0",
+    "helmet": "7.1.0",
     "js-yaml": "4.1.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "7.8.1"
