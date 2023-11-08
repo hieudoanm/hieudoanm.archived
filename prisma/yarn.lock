@@ -2039,10 +2039,10 @@ prisma-json-schema-generator@4.0.0:
     "@prisma/generator-helper" "4.16.2"
     "@prisma/internals" "4.16.2"
 
-prisma-markdown@1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/prisma-markdown/-/prisma-markdown-1.0.6.tgz#3a793050d9d4f7b487553c751d3981df293c47de"
-  integrity sha512-KYehQ+2zvXu3XNd5HH5mz6wvYGT5GtUBjqyeI+uaAN4Y6z8FSQopRxe4Fq1Ai12N81IFF/UIT4X2VwS3HXUNfg==
+prisma-markdown@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/prisma-markdown/-/prisma-markdown-1.0.7.tgz#c927c49107511c635dabdcb24b90944373fccc8a"
+  integrity sha512-YQvnCYpRuu0yjbb9icZLlkETceSjG4gv/KaI7ybcjOhZFVriaHboYXf2fQ11tYsYdshnr7PDjjUnTMmFBuyn/g==
   dependencies:
     "@prisma/client" "^5.2.0"
     "@prisma/generator-helper" "^5.2.0"
