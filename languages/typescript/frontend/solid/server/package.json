@@ -37,7 +37,7 @@
     "eslint-plugin-solid": "0.13.0",
     "postcss": "8.4.31",
     "sass": "1.69.5",
-    "solid-start-node": "0.3.9",
+    "solid-start-node": "0.3.10",
     "tailwindcss": "3.3.5",
     "typescript": "5.2.2",
     "vite": "4.5.0",
