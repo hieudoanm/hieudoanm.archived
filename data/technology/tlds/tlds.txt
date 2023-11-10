@@ -1,7 +1,6 @@
-# version 2023051900, last updated fri may 19 07:07:01 2023 utc
+# version 2023110900, last updated thu nov  9 07:07:01 2023 utc
 aaa
 aarp
-abarth
 abb
 abbott
 abbvie
@@ -36,7 +35,6 @@ airforce
 airtel
 akdn
 al
-alfaromeo
 alibaba
 alipay
 allfinanz
@@ -215,7 +213,6 @@ catholic
 cba
 cbn
 cbre
-cbs
 cc
 cd
 center
@@ -244,7 +241,6 @@ citadel
 citi
 citic
 city
-cityeats
 ck
 cl
 claims
@@ -278,7 +274,6 @@ consulting
 contact
 contractors
 cooking
-cookingchannel
 cool
 coop
 corsica
@@ -410,7 +405,6 @@ feedback
 ferrari
 ferrero
 fi
-fiat
 fidelity
 fido
 film
@@ -436,7 +430,6 @@ fm
 fo
 foo
 food
-foodnetwork
 football
 ford
 forex
@@ -449,7 +442,6 @@ free
 fresenius
 frl
 frogans
-frontdoor
 frontier
 ftr
 fujitsu
@@ -542,7 +534,6 @@ help
 helsinki
 here
 hermes
-hgtv
 hiphop
 hisamitsu
 hitachi
@@ -564,7 +555,6 @@ hospital
 host
 hosting
 hot
-hoteles
 hotels
 hotmail
 house
@@ -652,7 +642,6 @@ ki
 kia
 kids
 kim
-kinder
 kindle
 kitchen
 kiwi
@@ -677,7 +666,6 @@ lacaixa
 lamborghini
 lamer
 lancaster
-lancia
 land
 landrover
 lanxess
@@ -751,7 +739,6 @@ marketing
 markets
 marriott
 marshalls
-maserati
 mattel
 mba
 mc
@@ -811,7 +798,6 @@ mtr
 mu
 museum
 music
-mutual
 mv
 mw
 mx
@@ -852,7 +838,6 @@ nissay
 nl
 no
 nokia
-northwesternmutual
 norton
 now
 nowruz
@@ -898,7 +883,6 @@ pars
 partners
 parts
 party
-passagens
 pay
 pccw
 pe
@@ -999,7 +983,6 @@ ril
 rio
 rip
 ro
-rocher
 rocks
 rodeo
 rogers
@@ -1072,7 +1055,6 @@ shop
 shopping
 shouji
 show
-showtime
 si
 silk
 sina
@@ -1170,7 +1152,6 @@ theatre
 tiaa
 tickets
 tienda
-tiffany
 tips
 tires
 tirol
@@ -1200,7 +1181,6 @@ trade
 trading
 training
 travel
-travelchannel
 travelers
 travelersinsurance
 trust
@@ -1262,7 +1242,6 @@ voting
 voto
 voyage
 vu
-vuelos
 wales
 walmart
 walter
