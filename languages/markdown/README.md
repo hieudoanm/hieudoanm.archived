@@ -56,7 +56,9 @@
       - [Message Broker](#message-broker)
     - [Data Science](#data-science)
       - [Data Science Libraries](#data-science-libraries)
+        - [Data Collection](#data-collection)
         - [Data Manipulation](#data-manipulation)
+        - [Data Visualization](#data-visualization)
         - [Machine Learning](#machine-learning)
     - [DevOps](#devops)
       - [Serverless](#serverless)
@@ -174,11 +176,16 @@ Match these strings
 
 ### Programming
 
-- C/C++
-- [Golang](https://go.dev)
-- [Java](https://www.java.com/en/)
-- [Python](https://www.python.org)
-- [TypeScript](https://www.typescriptlang.org)
+- Data Science
+  - [Python](https://www.python.org)
+  - [R](https://www.r-project.org/)
+- Front-end Development
+  - [TypeScript](https://www.typescriptlang.org)
+- Back-end Developmene
+  - [Golang](https://go.dev)
+  - [Java](https://www.java.com/en/)
+- Hardware Development
+  - C/C++
 
 ### Query Languages
 
@@ -193,14 +200,25 @@ Match these strings
 - [Git](https://git-scm.com/)
   - [GitHub](https://github.com/)
   - [GitLab](https://about.gitlab.com/)
-  -
 
 #### Package Manager
 
+- [Golang](https://go.dev/)
+  - Go Modules
+- [Java](https://www.java.com/en/)
+  - [Gradle](https://gradle.org/)
+  - [JFrog](https://jfrog.com/)
+  - [Maven](https://maven.apache.org/)
 - [Node.js](https://nodejs.org/en)
   - [npm](https://www.npmjs.com/)
   - [yarn](https://yarnpkg.com/)
   - [pnpm](https://pnpm.io/)
+- [Python](https://www.python.org/)
+  - [anaconda](https://www.anaconda.com/)
+  - [conda](https://docs.conda.io/en/latest/)
+  - [pip](https://pypi.org/project/pip/)
+  - [pipenv](https://pipenv.pypa.io/en/latest/)
+  - [virtualenv](https://virtualenv.pypa.io/en/latest/)
 
 #### Linters and Formatters
 
@@ -224,14 +242,19 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 
 #### Documentation
 
-- [docsify](https://docsify.js.org/#/)
-- [storybook](https://storybook.js.org/)
-- [tsoa](https://tsoa-community.github.io/docs/)
+- Markdown to HTML
+  - [docsify](https://docsify.js.org/#/)
+  - [docusaurus](https://docusaurus.io/)
+- Front-end
+  - [storybook](https://storybook.js.org/)
+- Back-end
+  - [tsoa](https://tsoa-community.github.io/docs/)
 
 #### Build Tools
 
-- [vite](https://vitejs.dev/)
-- [webpack](https://webpack.js.org/)
+- [Node.js](https://nodejs.org/en)
+  - [vite](https://vitejs.dev/)
+  - [webpack](https://webpack.js.org/)
 
 #### Testing
 
@@ -420,15 +443,26 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 
 #### Data Science Libraries
 
+##### Data Collection
+
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [scrapy](https://scrapy.org/)
+
 ##### Data Manipulation
 
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 
+##### Data Visualization
+
+- [matplotlib](https://matplotlib.org/)
+
 ##### Machine Learning
 
+- [keras](https://keras.io/)
 - [pytorch](https://pytorch.org/)
 - [scikit-learn](https://scikit-learn.org/stable/)
+- [scipy](https://scipy.org/)
 - [tensorflow](https://www.tensorflow.org/)
 
 ### DevOps
@@ -437,9 +471,13 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 
 #### Serverless
 
+- [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com)
 
 #### PaaS
+
+- [heroku](https://www.heroku.com/)
+- [render](https://render.com/)
 
 #### IaaS (Infrastructure as a Service)
 
