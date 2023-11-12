@@ -387,6 +387,7 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 
 ###### Mobile
 
+- [Flutter](https://flutter.dev/)
 - [Ionic](https://ionicframework.com/)
 - [NativeScript](https://nativescript.org/)
 - [React Native](https://reactnative.dev/) - Meta
