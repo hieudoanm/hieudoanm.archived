@@ -2,7 +2,7 @@
 
 - [Docker](#docker)
   - [Database](#database)
-  - [Languages](#languages)
+  - [Runtimes](#runtimes)
 
 ## Database
 
@@ -23,7 +23,7 @@
 - Multi-Model
   - [faunadb](https://hub.docker.com/r/fauna/faunadb)
 
-## Languages
+## Runtimes
 
 - [Golang](https://hub.docker.com/_/golang/)
 - [Node.js](https://hub.docker.com/_/node/)
