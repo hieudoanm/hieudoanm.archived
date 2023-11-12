@@ -71,6 +71,7 @@
     - [Tools](#tools)
       - [Diagrams](#diagrams)
   - [Hardware Development](#hardware-development)
+    - [Electronics](#electronics)
   - [Resources](#resources)
 
 ## Theory
@@ -505,6 +506,17 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 
 - [Qt](https://www.qt.io/)
 
+### Electronics
+
+- [Arduino](https://www.arduino.cc/)
+- [Raspberry PI](https://www.raspberrypi.com/)
+
 ## Resources
 
-- [Roadmap](https://roadmap.sh)
+- University
+  - [coursera](https://www.coursera.org/)
+  - [harvard](https://pll.harvard.edu/)
+- Blogs
+  - [dev.to](https://dev.to/)
+  - [roadmap](https://roadmap.sh)
+  - [udemy](https://www.udemy.com/)
