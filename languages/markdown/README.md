@@ -1,73 +1,75 @@
 # Encyclopedia
 
 - [Encyclopedia](#encyclopedia)
-  - [Theory](#theory)
-    - [Asymtonic Notation](#asymtonic-notation)
-      - [Big Theta (Θ)](#big-theta-θ)
-      - [Common Runtimes](#common-runtimes)
-      - [Big Omega (Ω) and Big O (O)](#big-omega-ω-and-big-o-o)
-    - [Regular Expression](#regular-expression)
-      - [Literals](#literals)
-      - [Alternation](#alternation)
-      - [Character Sets](#character-sets)
-      - [Wild for Wildcards](#wild-for-wildcards)
-      - [Ranges](#ranges)
-      - [Shorthand Character Classes](#shorthand-character-classes)
-      - [Grouping](#grouping)
-      - [Quantifies](#quantifies)
-        - [Fixed](#fixed)
-        - [Optional](#optional)
-        - [O or More (Kleene Star), 1 or More (Kleene Plus)](#o-or-more-kleene-star-1-or-more-kleene-plus)
-      - [Anchors](#anchors)
-      - [Review](#review)
-  - [Languages](#languages)
-    - [Markup Languages](#markup-languages)
-    - [Programming](#programming)
-    - [Query Languages](#query-languages)
-  - [Software Development](#software-development)
-    - [Development Tools](#development-tools)
-      - [Version Control](#version-control)
-      - [Package Manager](#package-manager)
-      - [Linters and Formatters](#linters-and-formatters)
-      - [Logging](#logging)
-      - [Documentation](#documentation)
-      - [Build Tools](#build-tools)
-      - [Testing](#testing)
-        - [Unit Test](#unit-test)
-        - [End-to-end](#end-to-end)
-    - [Front-end](#front-end)
-      - [Styling](#styling)
-        - [Preprocessors](#preprocessors)
-        - [Frameworks](#frameworks)
-        - [Components](#components)
-      - [Front-end Frameworks](#front-end-frameworks)
-        - [Client-side](#client-side)
-        - [Server-side](#server-side)
-        - [Mobile](#mobile)
-      - [Libraries](#libraries)
-        - [Charts](#charts)
-        - [State Management](#state-management)
-    - [Back-end](#back-end)
-      - [Status Codes](#status-codes)
-      - [Back-end Frameworks](#back-end-frameworks)
-      - [Security](#security)
-      - [Object Relational Mapping (ORM)](#object-relational-mapping-orm)
-      - [Database](#database)
-      - [Message Broker](#message-broker)
-    - [Data Science](#data-science)
-      - [Data Science Libraries](#data-science-libraries)
-        - [Data Collection](#data-collection)
-        - [Data Manipulation](#data-manipulation)
-        - [Data Visualization](#data-visualization)
-        - [Machine Learning](#machine-learning)
-    - [DevOps](#devops)
-      - [Serverless](#serverless)
-      - [PaaS](#paas)
-      - [IaaS (Infrastructure as a Service)](#iaas-infrastructure-as-a-service)
-    - [Tools](#tools)
-      - [Diagrams](#diagrams)
-  - [Hardware Development](#hardware-development)
-    - [Electronics](#electronics)
+  - [Technology](#technology)
+    - [Theory](#theory)
+      - [Asymtonic Notation](#asymtonic-notation)
+        - [Big Theta (Θ)](#big-theta-θ)
+        - [Common Runtimes](#common-runtimes)
+        - [Big Omega (Ω) and Big O (O)](#big-omega-ω-and-big-o-o)
+      - [Regular Expression](#regular-expression)
+        - [Literals](#literals)
+        - [Alternation](#alternation)
+        - [Character Sets](#character-sets)
+        - [Wild for Wildcards](#wild-for-wildcards)
+        - [Ranges](#ranges)
+        - [Shorthand Character Classes](#shorthand-character-classes)
+        - [Grouping](#grouping)
+        - [Quantifies](#quantifies)
+          - [Fixed](#fixed)
+          - [Optional](#optional)
+          - [O or More (Kleene Star), 1 or More (Kleene Plus)](#o-or-more-kleene-star-1-or-more-kleene-plus)
+        - [Anchors](#anchors)
+        - [Review](#review)
+    - [Languages](#languages)
+      - [Markup Languages](#markup-languages)
+      - [Programming](#programming)
+      - [Query Languages](#query-languages)
+    - [Software Development](#software-development)
+      - [Development Tools](#development-tools)
+        - [Version Control](#version-control)
+        - [Package Manager](#package-manager)
+        - [Linters and Formatters](#linters-and-formatters)
+        - [Logging](#logging)
+        - [Documentation](#documentation)
+        - [Build Tools](#build-tools)
+        - [Testing](#testing)
+          - [Unit Test](#unit-test)
+          - [End-to-end](#end-to-end)
+      - [Front-end](#front-end)
+        - [Styling](#styling)
+          - [Preprocessors](#preprocessors)
+          - [Frameworks](#frameworks)
+          - [Components](#components)
+        - [Front-end Frameworks](#front-end-frameworks)
+          - [Client-side](#client-side)
+          - [Server-side](#server-side)
+          - [Mobile](#mobile)
+        - [Libraries](#libraries)
+          - [Charts](#charts)
+          - [State Management](#state-management)
+      - [Back-end](#back-end)
+        - [Status Codes](#status-codes)
+        - [Back-end Frameworks](#back-end-frameworks)
+        - [Security](#security)
+        - [Object Relational Mapping (ORM)](#object-relational-mapping-orm)
+        - [Database](#database)
+        - [Message Broker](#message-broker)
+      - [Data Science](#data-science)
+        - [Data Science Libraries](#data-science-libraries)
+          - [Data Collection](#data-collection)
+          - [Data Manipulation](#data-manipulation)
+          - [Data Visualization](#data-visualization)
+          - [Machine Learning](#machine-learning)
+      - [DevOps](#devops)
+        - [Serverless](#serverless)
+        - [SaaS](#saas)
+        - [PaaS](#paas)
+        - [IaaS (Infrastructure as a Service)](#iaas-infrastructure-as-a-service)
+      - [Tools](#tools)
+        - [Diagrams](#diagrams)
+    - [Hardware Development](#hardware-development)
+      - [Electronics](#electronics)
   - [Education](#education)
     - [Universities](#universities)
       - [Australia](#australia)
@@ -85,15 +87,17 @@
     - [Investment Banking](#investment-banking)
     - [Investment Management](#investment-management)
 
-## Theory
+## Technology
 
-### Asymtonic Notation
+### Theory
 
-#### Big Theta (Θ)
+#### Asymtonic Notation
+
+##### Big Theta (Θ)
 
 - We use big Theta when a program has only one case in term of runtime.
 
-#### Common Runtimes
+##### Common Runtimes
 
 - Θ(1). This is constant runtime. This is the runtime when a program will always do the same thing regardless of the input. For instance, a program that only prints “hello, world” runs in Θ(1) because the program will always just print “hello, world”.
 - Θ(log N). This is logarithmic runtime. You will see this runtime in search algorithms.
@@ -103,33 +107,33 @@
 - Θ(2N). This is exponential runtime. You will often see this runtime in recursive algorithms (Don’t worry if you don’t know what that is yet!).
 - Θ(N!). This is factorial runtime. You will often see this runtime when you have to generate all of the different permutations of something. For instance, a program that generates all the different ways to order the letters “abcd” would run in this runtime.
 
-#### Big Omega (Ω) and Big O (O)
+##### Big Omega (Ω) and Big O (O)
 
 - We use big Omega or Ω to describe the best case and big O or O to describe the worst case.
 
-### Regular Expression
+#### Regular Expression
 
-#### Literals
+##### Literals
 
 In Regular expression, the `literals` are the simplest characters that will match the exact text of the literals. For example, the regex `monkey` will completely match the text `monkey` but will also match `monkey` in text `The monkeys like to eat bananas.`
 
-#### Alternation
+##### Alternation
 
 Alternation indicated by the pipe symbol `|`, allows for the matching of either of two subexpressions. For example, the regex `baboons|gorillas` will match the text baboons as well as the text `gorillas`.
 
-#### Character Sets
+##### Character Sets
 
 Regular expression character sets denoted by a pair of brackets `[]` will match any of the characters included within the brackets. For example, the regular expression `con[sc]en[sc]us` will match any of the spellings `consensus`, `concensus`, `consencus`, and `concencus`.
 
-#### Wild for Wildcards
+##### Wild for Wildcards
 
 In Regular expression, wildcards are denoted with the period `.` and it can match any single character (letter, number, symbol or whitespace) in a piece of text. For example, the regular expression `.........` will match the text `orangutan`, `marsupial`, or any other 9-character text.
 
-#### Ranges
+##### Ranges
 
 Regular expression ranges are used to specify a range of characters that can be matched. Common regular expression ranges include: [A-Z]. : match any uppercase letter [a-z]. : match any lowercase letter [0-9]. : match any digit [A-Za-z] : match any uppercase or lowercase letter.
 
-#### Shorthand Character Classes
+##### Shorthand Character Classes
 
 While character ranges are extremely useful, they can be cumbersome to write out every single time you want to match common ranges such as those that designate alphabetical characters or digits. To alleviate this pain, there are **shorthand character** classes that represent common ranges, and they make writing regular expressions much simpler. These shorthand classes include:
 
@@ -143,31 +147,31 @@ In addition to the shorthand character classes \w, \d, and \s, we also have acce
 - `\D`: the “non-digit character” class represents the regex range `[^0-9]`, matching any character that is not included in the range represented by `\d`
 - `\S`: the “non-whitespace character” class represents the regex range `[^ \t\r\n\f\v]`, matching any character that is not included in the range represented by `\s`
 
-#### Grouping
+##### Grouping
 
 In Regular expressions, grouping is accomplished by open `(` and close parenthesis `)`. Thus the regular expression `I love (baboons|gorillas)` will match the text `I love baboons` as well as `I love gorillas`, as the grouping limits the reach of the | to the text within the parentheses.
 
-#### Quantifies
+##### Quantifies
 
-##### Fixed
+###### Fixed
 
 In Regular expressions, fixed quantifiers are denoted by curly braces `{}`. It contains either the exact quantity or the quantity range of characters to be matched. For example, the regular expression `roa{3}r` will match the text roaaar, while the regular expression `roa{3,6}r` will match `roaaar`, `roaaaar`, `roaaaaar`, or `roaaaaaar`.
 
-##### Optional
+###### Optional
 
 In Regular expressions, optional quantifiers are denoted by a question mark `?`. It indicates that a character can appear either 0 or 1 time. For example, the regular expression `humou?r` will match the text `humour` as well as the text `humor`.
 
-##### O or More (Kleene Star), 1 or More (Kleene Plus)
+###### O or More (Kleene Star), 1 or More (Kleene Plus)
 
 In Regular expressions, the Kleene star(`*`) indicates that the preceding character can occur 0 or more times. For example, `meo*w` will match `mew`, `meow`, `meooow`, and `meoooooooooooow`.
 
 The Kleene plus(`+`) indicates that the preceding character can occur 1 or more times. For example, `meo+w` will match `meow`, `meooow`, and `meoooooooooooow`, but not match `mew`.
 
-#### Anchors
+##### Anchors
 
 Anchors (hat `^` and dollar sign `$`) are used in regular expressions to match text at the start and end of a string, respectively. For example, the regex `^Monkeys: my mortal enemy$` will completely match the text `Monkeys: my mortal enemy` but not match `Spider Monkeys: my mortal enemy` or `Monkeys: my mortal enemy in the wild`. The `^` ensures that the matched text begins with `Monkeys`, and the `$` ensures the matched text ends with `enemy`.
 
-#### Review
+##### Review
 
 `\d*\s*\(*\d{3}\)*(\s|-||\.)*\d{3}(\s|-|\.)*\d{3,4}`
 
@@ -179,14 +183,14 @@ Match these strings
 - (917)5551298
 - 212.555.8731
 
-## Languages
+### Languages
 
-### Markup Languages
+#### Markup Languages
 
 - Markdown
 - SVG (Scalable Vector Graphics)
 
-### Programming
+#### Programming
 
 - Data Science
   - [Python](https://www.python.org)
@@ -199,21 +203,21 @@ Match these strings
 - Hardware Development
   - C/C++
 
-### Query Languages
+#### Query Languages
 
 - SQL (Structured Query Language)
 
-## Software Development
+### Software Development
 
-### Development Tools
+#### Development Tools
 
-#### Version Control
+##### Version Control
 
 - [Git](https://git-scm.com/)
   - [GitHub](https://github.com/)
   - [GitLab](https://about.gitlab.com/)
 
-#### Package Manager
+##### Package Manager
 
 - [Golang](https://go.dev/)
   - Go Modules
@@ -232,7 +236,7 @@ Match these strings
   - [pipenv](https://pipenv.pypa.io/en/latest/)
   - [virtualenv](https://virtualenv.pypa.io/en/latest/)
 
-#### Linters and Formatters
+##### Linters and Formatters
 
 1. [eslint](https://eslint.org) - A pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease
 2. [husky](https://typicode.github.io/husky/#/) - Modern native Git hooks made easy
@@ -245,14 +249,14 @@ yarn husky install
 yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 ```
 
-#### Logging
+##### Logging
 
 - [Node.js](https://nodejs.org/en)
   - [npmlog](https://github.com/npm/npmlog)
   - [pino](https://getpino.io)
   - [winston](https://github.com/winstonjs)
 
-#### Documentation
+##### Documentation
 
 - Markdown to HTML
   - [docsify](https://docsify.js.org/#/)
@@ -262,58 +266,60 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 - Back-end
   - [tsoa](https://tsoa-community.github.io/docs/)
 
-#### Build Tools
+##### Build Tools
 
 - [Node.js](https://nodejs.org/en)
   - [vite](https://vitejs.dev/)
   - [webpack](https://webpack.js.org/)
 
-#### Testing
+##### Testing
 
-##### Unit Test
+###### Unit Test
 
 - [jasmine](https://jasmine.github.io/)
 - [jest](http://jestjs.io/) - Meta
 - [mocha](https://mochajs.org/)
 
-##### End-to-end
+###### End-to-end
 
 - [cypress](https://www.cypress.io/)
 - [karma](https://karma-runner.github.io) - Google
 - [playwright](https://playwright.dev/) - Microsoft
 
-### Front-end
+#### Front-end
 
-#### Styling
+##### Styling
 
-##### Preprocessors
+###### Preprocessors
 
 - CSS
   - [PostCSS](https://postcss.org/)
   - [SASS](https://sass-lang.com/)
 
-##### Frameworks
+###### Frameworks
 
 - [TailwindCSS](https://tailwindcss.com/)
 
-##### Components
+###### Components
 
 - [Ant Design](https://ant.design/)
 - [Chakra UI](https://chakra-ui.com)
 - [Theme UI](https://theme-ui.com/)
 - [MUI](https://mui.com) - Google
 
-#### Front-end Frameworks
+##### Front-end Frameworks
 
-##### Client-side
+###### Client-side
 
-- [Angular](https://angular.io/) - Google
+- Google
+  - [Angular](https://angular.io/)
+  - [AngularJS](https://angularjs.org/)
 - [React](https://react.dev/) - Meta
 - [Solid](https://www.solidjs.com/)
 - [Svelte](https://svelte.dev/) - Vercel
 - [Vue.js](https://vuejs.org/)
 
-##### Server-side
+###### Server-side
 
 - [Gatsby.js](https://gatsbyjs.org) - Netlify
 - [Next.js](https://nextjs.org/) - Vercel
@@ -321,15 +327,15 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 - [SolidStart](https://start.solidjs.com)
 - [SvelteKit](https://kit.svelte.dev/) - Vercel
 
-##### Mobile
+###### Mobile
 
 - [Ionic](https://ionicframework.com/)
 - [NativeScript](https://nativescript.org/)
 - [React Native](https://reactnative.dev/)
 
-#### Libraries
+##### Libraries
 
-##### Charts
+###### Charts
 
 - [Charts.js](https://www.chartjs.org/)
 - [Chartist.js](https://gionkunz.github.io/chartist-js/)
@@ -338,15 +344,15 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 - [Highcharts](https://www.highcharts.com/)
 - [Recharts](https://recharts.org/)
 
-##### State Management
+###### State Management
 
 - [Redux](https://redux.js.org/)
   - [Saga](https://redux-saga.js.org/)
   - [Thunk](https://www.npmjs.com/package/redux-thunk)
 
-### Back-end
+#### Back-end
 
-#### Status Codes
+##### Status Codes
 
 - Information responses
   - 100 - Continue
@@ -417,7 +423,7 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
   - 510 Not Extended
   - 511 Network Authentication Required
 
-#### Back-end Frameworks
+##### Back-end Frameworks
 
 - [Node.js](https://nodejs.org/en)
   - [express.js](https://expressjs.com/)
@@ -425,7 +431,7 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
   - [nest.js](https://nestjs.com/)
   - [Apollo GraphQL](https://www.apollographql.com/docs/apollo-server/)
 
-#### Security
+##### Security
 
 - [Node.js](https://nodejs.org/en)
   - [cors](https://github.com/expressjs/cors)
@@ -434,42 +440,42 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
     - [jsonwebtoken](https://jwt.io/)
     - [passport](https://www.passportjs.org/)
 
-#### Object Relational Mapping (ORM)
+##### Object Relational Mapping (ORM)
 
 - [Mongoose](https://mongoosejs.com/)
 - [Prisma](https://www.prisma.io/) for ORM
 - [Sequelize](https://sequelize.org/)
 - [TypeORM](https://typeorm.io/)
 
-#### Database
+##### Database
 
 - [Redis](https://redis.io/) for Caching
 - [PostgreSQL](https://www.postgresql.org/) for Relational SQL
 - [MongoDB](https://www.mongodb.com/) for NoSQL
 
-#### Message Broker
+##### Message Broker
 
 - [Kafka](https://kafka.apache.org/)
 
-### Data Science
+#### Data Science
 
-#### Data Science Libraries
+##### Data Science Libraries
 
-##### Data Collection
+###### Data Collection
 
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [scrapy](https://scrapy.org/)
 
-##### Data Manipulation
+###### Data Manipulation
 
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 
-##### Data Visualization
+###### Data Visualization
 
 - [matplotlib](https://matplotlib.org/)
 
-##### Machine Learning
+###### Machine Learning
 
 - [keras](https://keras.io/)
 - [pytorch](https://pytorch.org/)
@@ -477,21 +483,23 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 - [scipy](https://scipy.org/)
 - [tensorflow](https://www.tensorflow.org/)
 
-### DevOps
+#### DevOps
 
 - [Docker](https://www.docker.com/)
 
-#### Serverless
+##### Serverless
 
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com)
 
-#### PaaS
+##### SaaS
+
+##### PaaS
 
 - [heroku](https://www.heroku.com/)
 - [render](https://render.com/)
 
-#### IaaS (Infrastructure as a Service)
+##### IaaS (Infrastructure as a Service)
 
 | IaaS            |                                          | Amazon Web Services (AWS)           | Azure                                    | Google Cloud                | Digital Ocean               |
 | --------------- | ---------------------------------------- | ----------------------------------- | ---------------------------------------- | --------------------------- | --------------------------- |
@@ -534,18 +542,18 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 |                 | Integrated Development Environment (IDE) |                                     | Visual Studio                            |                             |                             |
 |                 |                                          |                                     | Visual Studio Code                       |                             |                             |
 
-### Tools
+#### Tools
 
-#### Diagrams
+##### Diagrams
 
 - [Diagrams](https://www.diagrams.net/)
 - [Sequence Diagram](https://sequencediagram.org/)
 
-## Hardware Development
+### Hardware Development
 
 - [Qt](https://www.qt.io/)
 
-### Electronics
+#### Electronics
 
 - [Arduino](https://www.arduino.cc/)
 - [Raspberry PI](https://www.raspberrypi.com/)

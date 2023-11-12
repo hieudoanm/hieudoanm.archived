@@ -2,7 +2,10 @@ name: Docsify
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+    paths:
+      - languages/markdown/**
 
 jobs:
   docsify:
@@ -19,10 +22,11 @@ jobs:
         run: yarn global add docsify-cli
       - name: Bundle Docs
         run: docsify init docs
+        working-directory: languages/markdown
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           token: ${{ secrets.GHP_TOKEN }}
           branch: gh-pages
-          folder: docs
+          folder: languages/markdown/docs
           clean: true
