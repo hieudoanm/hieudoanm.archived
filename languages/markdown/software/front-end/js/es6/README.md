@@ -32,6 +32,32 @@
     - [Asynchronous Iteration](#asynchronous-iteration)
     - [Promise Finally](#promise-finally)
     - [Object Rest Properties](#object-rest-properties)
+  - [2019](#2019)
+    - [Array.flat() \& Array.flatMap()](#arrayflat--arrayflatmap)
+    - [String.trimStart() \& String.trimEnd()](#stringtrimstart--stringtrimend)
+    - [Object.fromEntries()](#objectfromentries)
+  - [2020](#2020)
+    - [BigInt](#bigint)
+    - [String.matchAll()](#stringmatchall)
+    - [The Nullish Coalescing Operator (??)](#the-nullish-coalescing-operator-)
+    - [The Optional Chaining Operator (?.)](#the-optional-chaining-operator-)
+    - [Logical AND Assignment Operator (\&\&=)](#logical-and-assignment-operator-)
+    - [Logical OR Assignment (||=)](#logical-or-assignment-)
+    - [Nullish.Coalescing Assignment (??=)](#nullishcoalescing-assignment-)
+    - [Promise.allSettled()](#promiseallsettled)
+  - [2021](#2021)
+    - [Promise.any()](#promiseany)
+    - [String.replaceAll()](#stringreplaceall)
+    - [Numeric Separators (\_)](#numeric-separators-_)
+  - [2022](#2022)
+    - [Array at()](#array-at)
+    - [String at()](#string-at)
+    - [RegExp /d](#regexp-d)
+    - [Object.hasOwn()](#objecthasown)
+    - [error.cause](#errorcause)
+    - [await import](#await-import)
+    - [Private methods and fields](#private-methods-and-fields)
+    - [Class field declarations](#class-field-declarations)
 
 ## 2015
 
@@ -231,3 +257,57 @@ Object.values(person);
 ### Promise Finally
 
 ### Object Rest Properties
+
+## 2019
+
+### Array.flat() & Array.flatMap()
+
+### String.trimStart() & String.trimEnd()
+
+### Object.fromEntries()
+
+## 2020
+
+### BigInt
+
+### String.matchAll()
+
+### The Nullish Coalescing Operator (??)
+
+### The Optional Chaining Operator (?.)
+
+### Logical AND Assignment Operator (&&=)
+
+### Logical OR Assignment (||=)
+
+### Nullish.Coalescing Assignment (??=)
+
+### Promise.allSettled()
+
+Promise.allSettled([prom1,prom2,prom3]).then {}
+
+## 2021
+
+### Promise.any()
+
+### String.replaceAll()
+
+### Numeric Separators (\_)
+
+## 2022
+
+### Array at()
+
+### String at()
+
+### RegExp /d
+
+### Object.hasOwn()
+
+### error.cause
+
+### await import
+
+### Private methods and fields
+
+### Class field declarations
