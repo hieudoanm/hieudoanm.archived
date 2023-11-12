@@ -5,7 +5,7 @@ author: 'Hieu Doan'
 description: 'Node.js: process.nextTick()'
 ---
 
-```js
+```javascript
 process.nextTick(() => {
   console.log('nextTick');
 });
@@ -16,5 +16,10 @@ setImmediate(() => {
 
 setTimeout(() => {
   console.log('setTimeout');
-});
+}, 0);
+
+// Output:
+// nextTick
+// setTimeout
+// setImmediate
 ```
