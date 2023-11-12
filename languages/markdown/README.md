@@ -1,6 +1,6 @@
-# Encyclopedia of Technology
+# My Encyclopedia
 
-- [Encyclopedia of Technology](#encyclopedia-of-technology)
+- [My Encyclopedia](#my-encyclopedia)
   - [Theory](#theory)
     - [Asymtonic Notation](#asymtonic-notation)
       - [Big Theta (Θ)](#big-theta-θ)
@@ -72,7 +72,17 @@
       - [Diagrams](#diagrams)
   - [Hardware Development](#hardware-development)
     - [Electronics](#electronics)
-  - [Resources](#resources)
+  - [Education](#education)
+    - [Universities](#universities)
+      - [Australia](#australia)
+      - [Canada](#canada)
+      - [Singapore](#singapore)
+      - [United Kingdom](#united-kingdom)
+      - [United States](#united-states)
+    - [Online](#online)
+      - [Blogs](#blogs)
+      - [Coding Exercises](#coding-exercises)
+      - [Courses](#courses)
 
 ## Theory
 
@@ -511,12 +521,122 @@ yarn husky add .husky/pre-commit "yarn lint && yarn prettier --write ."
 - [Arduino](https://www.arduino.cc/)
 - [Raspberry PI](https://www.raspberrypi.com/)
 
-## Resources
+## Education
 
-- University
-  - [coursera](https://www.coursera.org/)
-  - [harvard](https://pll.harvard.edu/)
-- Blogs
-  - [dev.to](https://dev.to/)
-  - [roadmap](https://roadmap.sh)
-  - [udemy](https://www.udemy.com/)
+### Universities
+
+#### Australia
+
+| No  | University                      | Group          | City      | State                        |
+| --- | ------------------------------- | -------------- | --------- | ---------------------------- |
+| 01  | Australian National University  | Group of Eight | Acton     | Australian Capital Territory |
+| 02  | University of New South Wales   | Group of Eight | Sydney    | New South Wales              |
+| 03  | University of Sydney            | Group of Eight | Sydney    | New South Wales              |
+| 04  | University of Queensland        | Group of Eight | Brisbane  | Queensland                   |
+| 05  | University of Adelaide          | Group of Eight | Adelaide  | South Australia              |
+| 06  | University of Melbourne         | Group of Eight | Melbourne | Victoria                     |
+| 07  | Monash University               | Group of Eight | Melbourne | Victoria                     |
+| 08  | University of Western Australia | Group of Eight | Perth     | Western Australia            |
+
+#### Canada
+
+| No  | University                     | Group | City        | State            |
+| --- | ------------------------------ | ----- | ----------- | ---------------- |
+| 01  | University of Alberta          | U15   | Edmonton    | Alberta          |
+| 02  | University of Calgary          | U15   | Calgary     | Alberta          |
+| 03  | University of British Columbia | U15   | Vancouver   | British Columbia |
+| 04  | University of Manitoba         | U15   | Winnipeg    | Manitoba         |
+| 05  | Dalhousie University           | U15   | Halifax     | Nova Scotia      |
+| 06  | McMaster University            | U15   | Hamilton    | Ontario          |
+| 07  | University of Ottawa           | U15   | Ottawa      | Ontario          |
+| 08  | Queen's University             | U15   | Kingston    | Ontario          |
+| 09  | University of Toronto          | U15   | Toronto     | Ontario          |
+| 10  | University of Waterloo         | U15   | Waterloo    | Ontario          |
+| 11  | University of Western Ontario  | U15   | London      | Ontario          |
+| 12  | Université Laval               | U15   | Quebec City | Quebec           |
+| 13  | McGill University              | U15   | Montreal    | Quebec           |
+| 14  | Université de Montréal         | U15   | Montreal    | Quebec           |
+| 15  | University of Saskatchewan     | U15   | Saskatoon   | Saskatchewan     |
+
+#### Singapore
+
+- National University of Singapore
+  - Duke - NUS Medical School
+  - Yale - NUS College
+
+#### United Kingdom
+
+| No  | University                      | Group   | City        | Country          |
+| --- | ------------------------------- | ------- | ----------- | ---------------- |
+| 01  | University of Cambridge         | Russell | Cambridge   | England          |
+| 02  | University of Oxford            | Russell | Oxford      | England          |
+| 03  | Imperial College London         | Russell | London      | England          |
+| 04  | King's College London           | Russell | London      | England          |
+| 05  | London School of Economics      | Russell | London      | England          |
+| 06  | Queen Mary University of London | Russell | London      | England          |
+| 07  | University College London       | Russell | London      | England          |
+| 08  | University of Birmingham        | Russell | Birmingham  | England          |
+| 09  | University of Bristol           | Russell | Bristol     | England          |
+| 10  | Durham University               | Russell | Durham      | England          |
+| 11  | University of Exeter            | Russell | Exeter      | England          |
+| 12  | University of Leeds             | Russell | Leeds       | England          |
+| 13  | University of Liverpool         | Russell | Liverpool   | England          |
+| 14  | University of Manchester        | Russell | Manchester  | England          |
+| 15  | Newcastle University            | Russell | Newcastle   | England          |
+| 16  | University of Nottingham        | Russell | Nottingham  | England          |
+| 17  | University of Sheffield         | Russell | Sheffield   | England          |
+| 18  | University of Southampton       | Russell | Southampton | England          |
+| 19  | University of Warwick           | Russell | Coventry    | England          |
+| 20  | University of York              | Russell | York        | England          |
+| 21  | Queen's University Belfast      | Russell | Belfast     | Northern Ireland |
+| 22  | University of Edinburgh         | Russell | Edinburgh   | Scotland         |
+| 23  | University of Glasgow           | Russell | Glasgow     | Scotland         |
+| 24  | Cardiff University              | Russell | Cardiff     | Wales            |
+
+#### United States
+
+| No  | University                         | Group          | City         | State         |
+| --- | ---------------------------------- | -------------- | ------------ | ------------- |
+| 01  | Brown University                   | Ivy League     | Providence   | Rhode Island  |
+| 02  | Columbia University                | Ivy League     | New York     | New York      |
+| 03  | Cornell University                 | Ivy League     | Ithaca       | New York      |
+| 04  | Dartmouth College                  | Ivy League     | Hanover      | New Hampshire |
+| 05  | Harvard University                 | Ivy League     | Cambridge    | Massachusetts |
+| 06  | University of Pennsylvania         | Ivy League     | Philadelphia | Pennsylvania  |
+| 07  | Princeton University               | Ivy League     | Princeton    | New Jersey    |
+| 08  | Yale University                    | Ivy League     | New Haven    | Connecticut   |
+| 09  | University of California           | Public School  |              | California    |
+| 10  | University of Texas                | Public School  |              | Texas         |
+| 11  | Duke University                    | Private School |              |               |
+| 12  | MIT                                | Private School |              | Massachusetts |
+| 13  | Stanford University                | Private School |              | California    |
+| 14  | Johns Hopkins University           | Private School |              |               |
+| 15  | California Institute of Technology | Private School |              | California    |
+| 16  | University of Notre Dame           | Private School |              |               |
+
+### Online
+
+#### Blogs
+
+- [Baeldung](https://www.baeldung.com/)
+- [dev.to](https://dev.to/)
+- [roadmap](https://roadmap.sh)
+
+#### Coding Exercises
+
+- [CodeWars](https://www.codewars.com/)
+- [HackerRank](https://www.hackerrank.com/)
+- [LeetCode](https://leetcode.com/)
+- [NeetCode](https://neetcode.io/)
+
+#### Courses
+
+- [A Cloud Guru](https://acloudguru.com/)
+- [Codecademy](https://www.codecademy.com/)
+- [Coursera](https://www.coursera.org/)
+- [DataCamp](https://www.datacamp.com/)
+- [FreeCodeCamp](https://www.freecodecamp.org/)
+- [Harvard](https://pll.harvard.edu/)
+- [PluralSight](https://www.pluralsight.com/)
+- [Udacity](https://www.udacity.com/)
+- [Udemy](https://www.udemy.com/)
