@@ -9,7 +9,7 @@ volumes:
 services:
   postgres-express:
     restart: unless-stopped
-    image: postgres:16.0
+    image: postgres:16.1
     container_name: postgres-express
     volumes:
       - postgres_express:/var/lib/postgresql/data

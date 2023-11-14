@@ -7,7 +7,7 @@ volumes:
 services:
   postgres-nest-graphql:
     restart: unless-stopped
-    image: postgres:16.0
+    image: postgres:16.1
     container_name: postgres-nest-graphql
     volumes:
       - postgres_nest:/var/lib/postgresql/data
