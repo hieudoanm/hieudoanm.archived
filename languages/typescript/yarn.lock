@@ -5565,22 +5565,22 @@
     prop-types "^15.8.1"
     react-transition-group "^4.4.5"
 
-"@neo4j/cypher-builder@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@neo4j/cypher-builder/-/cypher-builder-1.4.0.tgz#1cffd01357b54e4147b08d20aadffcc4b08efe8e"
-  integrity sha512-EN0xm/Ic05WWC7063wdtnqSfn5cRGyT8jqbMPnPy+Pw6708TA89xmamotrfhaZKE7KpPJHXQ42OT1tRi9NFAxQ==
+"@neo4j/cypher-builder@^1.7.1":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@neo4j/cypher-builder/-/cypher-builder-1.7.3.tgz#87dfd02489c406dd65f8d473a464806a383d48ce"
+  integrity sha512-8H9c9ZsxWLheubWATSGk/IwNWlf20W8vh5mkHa078vJeswKF2aMZfOh/nW+iKA3L4017oOcN4PbxGu/ebsHhPQ==
 
-"@neo4j/graphql@4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@neo4j/graphql/-/graphql-4.4.1.tgz#60c23070b07715dc8b28bb21b865f23232b883d7"
-  integrity sha512-YImv3+ekAQeF44CshO2h34rEKKVl1OOpx9llwvVGhrOHnoIS/YHKFLj2gIcCoAdN/fWHp6K/j3MWQjunJmL0EQ==
+"@neo4j/graphql@4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@neo4j/graphql/-/graphql-4.4.2.tgz#a9c0c1c32af2a015ccb2c22e686331f61a928759"
+  integrity sha512-TAC3q3TU4P88rHwhbOoqhggXEM993fm4/rL73Lzhh1/Zm9TZ1gJBbRudFlqmItmRRXnEV3uU0sjbK/WjVhckHQ==
   dependencies:
     "@apollo/subgraph" "^2.2.3"
     "@graphql-tools/merge" "^9.0.0"
     "@graphql-tools/resolvers-composition" "^7.0.0"
     "@graphql-tools/schema" "10.0.0"
     "@graphql-tools/utils" "^10.0.0"
-    "@neo4j/cypher-builder" "^1.4.0"
+    "@neo4j/cypher-builder" "^1.7.1"
     camelcase "^6.3.0"
     debug "^4.3.4"
     deep-equal "^2.0.5"
