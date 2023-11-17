@@ -21,42 +21,44 @@
     - [Review](#review)
   - [Node.js](#nodejs)
     - [async/await](#asyncawait)
-    - [Agular vs React](#agular-vs-react)
     - [Status Codes](#status-codes)
     - [API Architectures](#api-architectures)
     - [Servers](#servers)
     - [Docker](#docker)
-  - [JavaScript](#javascript)
     - [Closures](#closures)
-    - [Emulating private methods with closures](#emulating-private-methods-with-closures)
+      - [Emulating private methods with closures](#emulating-private-methods-with-closures)
     - [Imperative vs. Functional Programming](#imperative-vs-functional-programming)
-    - [Functions - Constructors](#functions---constructors)
-    - [Functions - Methods](#functions---methods)
+    - [Functions](#functions)
+      - [Constructors](#constructors)
+      - [Methods](#methods)
     - [`bind`](#bind)
     - [`setTimeout`](#settimeout)
-    - [Solution](#solution)
+      - [Solution](#solution)
     - [`this`](#this)
+      - [Regular](#regular)
+      - [Arrow](#arrow)
     - [`return`](#return)
-    - [Regular](#regular)
-    - [Arrow](#arrow)
+      - [Regular](#regular-1)
+      - [Arrow](#arrow-1)
     - [Code](#code)
-    - [Compose](#compose)
-    - [Find Most Frequent](#find-most-frequent)
-    - [Lodash Get](#lodash-get)
-    - [Maximum Subarray Sum](#maximum-subarray-sum)
-    - [Memorize](#memorize)
-    - [Reverse Linked List](#reverse-linked-list)
-    - [Throttle](#throttle)
+      - [Compose](#compose)
+      - [Find Most Frequent](#find-most-frequent)
+      - [Lodash Get](#lodash-get)
+      - [Maximum Subarray Sum](#maximum-subarray-sum)
+      - [Memorize](#memorize)
+      - [Reverse Linked List](#reverse-linked-list)
+      - [Throttle](#throttle)
     - [React](#react)
-    - [Virtual Dom](#virtual-dom)
-    - [Rendering](#rendering)
+      - [Agular vs React](#agular-vs-react)
+      - [Virtual Dom](#virtual-dom)
+      - [Rendering](#rendering)
       - [Life Cycle](#life-cycle)
       - [Class Component vs. Functional Component](#class-component-vs-functional-component)
       - [`import`](#import)
       - [Best Practices](#best-practices)
-    - [Workers](#workers)
-      - [Service Workers](#service-workers)
-      - [Web Workers](#web-workers)
+  - [Workers](#workers)
+    - [Service Workers](#service-workers)
+    - [Web Workers](#web-workers)
 
 ## Asymtonic Notation
 
@@ -186,7 +188,7 @@ console.log('log');
 // setImmediate
 ```
 
-#### async/await
+### async/await
 
 - History:
   - In the past, we depend on `callbacks` to deal with asynchronous, which results in `callback hell`.
@@ -198,21 +200,6 @@ console.log('log');
   - `async` turns a normal function into a `promise` function and allows the usage of `await`.
   - `await` is placed before a `promise` function and will wait until the `promise` complete.
   - Use `try/catch` to catch the unexpected error.
-
-#### Agular vs React
-
-|                  | [Angular](https://angular.io/) | [React](https://react.dev/) |
-| ---------------- | ------------------------------ | --------------------------- |
-| Languages        | TypeScript                     | TypeScript                  |
-| Type             | Framework                      | Library                     |
-| DOM Manipulation | Traditional DOM                | Virtual DOM                 |
-| Data Binding     | two-way                        | one-way                     |
-| HTML             | HTML with JS                   | JS with HTML (JSX)          |
-| Testing          | Jasmine                        | Jest                        |
-| Developer        | Google                         | Meta                        |
-| Learning Curve   | More Difficult                 | Easier                      |
-
-- ~~[AngularJS](https://angularjs.org/): is JavaScript based. Works on MVC. {{ }} expressions are used for two way binding between view and model. Special methods, ng-bind can also be used to do the same. Prefer a hierarchical dependency injection.~~
 
 ### Status Codes
 
@@ -314,8 +301,6 @@ console.log('log');
   - Cache Gotcha #1: `RUN apt-get update`
   - Using the Cache Well: it is better to update the package management files (`package.json` & `requirements.txt`), you only have to do it once.
 
-## JavaScript
-
 ### Closures
 
 A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
@@ -350,7 +335,7 @@ console.log(add5(2)); // 7
 console.log(add10(2)); // 12
 ```
 
-### Emulating private methods with closures
+#### Emulating private methods with closures
 
 ```js
 var counter = (function () {
@@ -417,7 +402,9 @@ const getOdds3 = (arr) => arr.filter((num) => num % 2 !== 0);
 console.log(getOdds3(arr)); // logs [1, 3, 5, 7, 9]
 ```
 
-### Functions - Constructors
+### Functions
+
+#### Constructors
 
 **Regular** can easily construct objects.
 
@@ -438,7 +425,7 @@ const Car = (color) => {
 const redCar = new Car('red'); // TypeError: Car is not a constructor
 ```
 
-### Functions - Methods
+#### Methods
 
 **Regular** Example
 
@@ -512,7 +499,7 @@ for (let i = 0; i < 5; i++) {
 
 - `let` keyword because it creates a new variable on each iteration but `var` keyword is using the same variable throughout the for loop execution.
 
-### Solution
+#### Solution
 
 ```ts
 for (var i = 0; i < 5; i++) {
@@ -545,7 +532,7 @@ for (var i = 0; i < 5; i++) {
 - `this` value inside a regular function is dynamic and depends on the invocation.
 - But `this` inside the arrow function is bound lexically and equals to `this` of the outer function.
 
-**Regular** Example
+#### Regular
 
 ```js
 function myFunction() {
@@ -581,7 +568,7 @@ function MyFunction() {
 new MyFunction(); // logs an instance of MyFunction
 ```
 
-**Arrow** Example
+#### Arrow
 
 ```js
 const myObject = {
@@ -597,7 +584,7 @@ const myObject = {
 
 ### `return`
 
-### Regular
+#### Regular
 
 ```js
 function myFunction() {
@@ -621,7 +608,7 @@ function myEmptyFunction2() {
 myEmptyFunction2(); // => undefined
 ```
 
-### Arrow
+#### Arrow
 
 ```js
 const increment = (num) => num + 1;
@@ -630,7 +617,7 @@ increment(41); // => 42
 
 ### Code
 
-### Compose
+#### Compose
 
 ```js
 function compose() {
@@ -650,7 +637,7 @@ var number = compose(Math.round, parseFloat);
 number('72.5'); //=> 73
 ```
 
-### Find Most Frequent
+#### Find Most Frequent
 
 ```js
 const a = [1, 2, 3, 4, 5, 1, 1, 2];
@@ -686,7 +673,7 @@ console.log(findKMostFrequent(a, 2));
 // Output => [1, 2]
 ```
 
-### Lodash Get
+#### Lodash Get
 
 ```js
 const getValue = () => {};
@@ -710,7 +697,7 @@ console.log(_.get(object, ['a', '0', 'b', 'c'])); // 3
 console.log(_.get(object, 'a.b.c', 'default')); // default
 ```
 
-### Maximum Subarray Sum
+#### Maximum Subarray Sum
 
 ```ts
 const maximumSubarraySum = (nums) => {
@@ -758,7 +745,7 @@ const arr = [-2, -5, 6, -2, -3, 1, 5, -6];
 maximumSubarraySum(arr);
 ```
 
-### Memorize
+#### Memorize
 
 ```js
 const memorize = (func) => {
@@ -786,7 +773,7 @@ console.log(memorizeAdd(3, 4));
 console.log(memorizeAdd(1, 2));
 ```
 
-### Reverse Linked List
+#### Reverse Linked List
 
 ```js
 class Node {
@@ -856,7 +843,7 @@ ll.reverseList();
 ll.printList();
 ```
 
-### Throttle
+#### Throttle
 
 ```js
 const throttle = (fn, delay) => {
@@ -883,7 +870,22 @@ const throttleLog = throttle(logTimestamp, 1000);
 
 ### React
 
-### Virtual Dom
+#### Agular vs React
+
+|                  | [Angular](https://angular.io/) | [React](https://react.dev/) |
+| ---------------- | ------------------------------ | --------------------------- |
+| Languages        | TypeScript                     | TypeScript                  |
+| Type             | Framework                      | Library                     |
+| DOM Manipulation | Traditional DOM                | Virtual DOM                 |
+| Data Binding     | two-way                        | one-way                     |
+| HTML             | HTML with JS                   | JS with HTML (JSX)          |
+| Testing          | Jasmine                        | Jest                        |
+| Developer        | Google                         | Meta                        |
+| Learning Curve   | More Difficult                 | Easier                      |
+
+- ~~[AngularJS](https://angularjs.org/): is JavaScript based. Works on MVC. {{ }} expressions are used for two way binding between view and model. Special methods, ng-bind can also be used to do the same. Prefer a hierarchical dependency injection.~~
+
+#### Virtual Dom
 
 DOM takes all the HTML elements and wraps them in an object with a tree-structure.
 
@@ -891,7 +893,7 @@ Virtual DOM is an abstraction of your Real DOM but it's pretty light-weight than
 
 Virtual DOM is very easy to understand if you take an example of a lift which has a mirror inside it. Suppose, 4 people enters into the lift. Now, the mirror will reflect its appearance with 4 people. Again people entering into the lift will reflect the object of mirror. And same effect happens when people exit from the lift, the mirror object gets changes (increase, decrease, or even empty). So, in reality mirror has no real object, but it only reflects its presence with outer object.
 
-### Rendering
+#### Rendering
 
 Rendering is a process that is triggered by a change of state in some component of your application, when a state change occurs React.
 
@@ -993,9 +995,9 @@ const App = () => {
     - Memoize React Components (stateless component which will get re-render when parameters are the same)
     - CSS Animations Instead of JS Animations
 
-### Workers
+## Workers
 
-#### Service Workers
+### Service Workers
 
 Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available). They are intended, among other things, to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server. They will also allow access to push notifications and background sync APIs.
 
@@ -1007,6 +1009,6 @@ To summarize, use service workers to:
 
 The advantage of using a Service Worker for push notifications and background sync is, unlike a Web Worker, it isn't connected to the page lifecycle. So a page refresh won't cause the Service Worker task to be interrupted.
 
-#### Web Workers
+### Web Workers
 
 Web Workers makes it possible to run a script operation in a background thread separate from the main execution thread of a web application. The advantage of this is that laborious processing can be performed in a separate thread, allowing the main (usually the UI) thread to run without being blocked/slowed down.
