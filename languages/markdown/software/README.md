@@ -38,8 +38,8 @@
       - [Regular](#regular)
       - [Arrow](#arrow)
     - [`return`](#return)
-      - [Regular](#regular-1)
-      - [Arrow](#arrow-1)
+      - [Regular `return`](#regular-return)
+      - [Arrow `return`](#arrow-return)
     - [Code](#code)
       - [Compose](#compose)
       - [Find Most Frequent](#find-most-frequent)
@@ -584,7 +584,7 @@ const myObject = {
 
 ### `return`
 
-#### Regular
+#### Regular `return`
 
 ```js
 function myFunction() {
@@ -608,7 +608,7 @@ function myEmptyFunction2() {
 myEmptyFunction2(); // => undefined
 ```
 
-#### Arrow
+#### Arrow `return`
 
 ```js
 const increment = (num) => num + 1;
