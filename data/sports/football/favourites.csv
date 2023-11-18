@@ -1,0 +1,32 @@
+Central Forward,CF,South America,Argentina,Messi,10
+Attacking Midfielder,AM,South America,Brazil,Kaká,22
+Goalkeeper,GK,South America,Brazil,Alisson,1
+Left Back,LB,South America,Brazil,Marcelo,12
+Left Winger,LW,South America,Brazil,Ronaldinho,10
+Left Winger,LW,South America,Brazil,Neymar,11
+Right Back,RB,South America,Brazil,Dani Alves,2
+Striker,ST,South America,Brazil,Ronaldo,9
+position,abbreviation,continent,country,name,number
+Right Winger,RW,Africa,Egypt,Mo Salah,11
+Central Midfielder,CM,Europe,England,Steven Gerrard,8
+Centre Back,CB,Europe,England,Rio Ferdinand,5
+Centre Back,CB,Europe,England,John Terry,26
+Left Back,LB,Europe,England,Ashley Cole,3
+Attacking Midfielder,AM,Europe,France,Zinedine Zidane,5
+Left Winger,LW,Europe,France,Thierry Henry,14
+Striker,ST,Europe,France,Karim Benzema,9
+Goalkeeper,GK,Europe,Germany,Manuel Neuer,1
+Right Back,RB,Europe,Germany,Philipp Lahm,21
+Centre Back,CB,Europe,Italy,Fabio Cannavaro,5
+Centre Back,CB,Europe,Italy,Alessandro Nesta,13
+Centre Back,CB,Europe,Italy,Franco Baresi,6
+Left Back,LB,Europe,Italy,Paolo Maldini,3
+Centre Back,CB,Europe,Netherlands,Virgil van Dijk,4
+Right Winger,RW,Europe,Netherlands,Arjen Robben,10
+Striker,ST,Europe,Poland,Robert Lewandowski,9
+Left Winger,LW,Europe,Portugal,Cristiano Ronaldo,7
+Attacking Midfielder,AM,Europe,Spain,Andrés Iniesta,8
+Central Midfielder,CM,Europe,Spain,Xavi,6
+Defensive Midfielder,DM,Europe,Spain,Sergio Busquets,5
+Defensive Midfielder,DM,Europe,Spain,Xabi Alonso,14
+Striker,ST,South America,Uruguay,Luis Suárez,7

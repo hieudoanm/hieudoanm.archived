@@ -1,0 +1,117 @@
+number,name,state,position,president,end
+1,John Jay,New York,Chief Justice,George Washington,none
+2,John Rutledge,South Carolina,Associate Justice,George Washington,none
+3,William Cushing,Massachusetts,Associate Justice,George Washington,none
+4,James Wilson,Pennsylvania,Associate Justice,George Washington,none
+5,John Blair,Virginia,Associate Justice,George Washington,none
+6,James Iredell,North Carolina,Associate Justice,George Washington,none
+7,Thomas Johnson,Maryland,Associate Justice,George Washington,none
+8,William Paterson,New Jersey,Associate Justice,George Washington,none
+9,Samuel Chase,Maryland,Associate Justice,George Washington,none
+10,Oliver Ellsworth,Connecticut,Chief Justice,George Washington,none
+11,Bushrod Washington,Virginia,Associate Justice,John Adams,none
+12,Alfred Moore,North Carolina,Associate Justice,John Adams,none
+13,John Marshall,Virginia,Chief Justice,Thomas Jefferson,none
+14,William Johnson,South Carolina,Associate Justice,Thomas Jefferson,none
+15,Henry Brockholst Livingston,New York,Associate Justice,Thomas Jefferson,none
+16,Thomas Todd,Kentucky,Associate Justice,Thomas Jefferson,none
+17,Gabriel Duvall,Maryland,Associate Justice,James Madison,none
+18,Joseph Story,Massachusetts,Associate Justice,James Madison,none
+19,Smith Thompson,New York,Associate Justice,James Monroe,none
+20,Robert Trimble,Kentucky,Associate Justice,John Quincy Adams,none
+21,John McLean,Ohio,Associate Justice,Andrew Jackson,none
+22,Henry Baldwin,Pennsylvania,Associate Justice,Andrew Jackson,none
+23,James Moore Wayne,Georgia,Associate Justice,Andrew Jackson,none
+24,Roger B. Taney,Maryland,Chief Justice,Andrew Jackson,none
+25,Philip P. Barbour,Virginia,Associate Justice,Andrew Jackson,none
+26,John Catron,Tennessee,Associate Justice,Andrew Jackson,none
+27,John McKinley,Alabama,Associate Justice,Martin Van Buren,none
+28,Peter Vivian Daniel,Virginia,Associate Justice,Martin Van Buren,none
+29,Samuel Nelson,New York,Associate Justice,John Tyler,none
+30,Levi Woodbury,New Hampshire,Associate Justice,James K. Polk,none
+31,Robert Cooper Grier,Pennsylvania,Associate Justice,James K. Polk,none
+32,Benjamin Robbins Curtis,Massachusetts,Associate Justice,Millard Fillmore,none
+33,John Archibald Campbell,Alabama,Associate Justice,Franklin Pierce,none
+34,Nathan Clifford,Maine,Associate Justice,James Buchanan,none
+35,Noah Haynes Swayne,Ohio,Associate Justice,Abraham Lincoln,none
+36,Samuel Freeman Miller,Iowa,Associate Justice,Abraham Lincoln,none
+37,David Davis,Illinois,Associate Justice,Abraham Lincoln,none
+38,Stephen Johnson Field,California,Associate Justice,Abraham Lincoln,none
+39,Salmon P. Chase,Ohio,Chief Justice,Abraham Lincoln,none
+40,William Strong,Pennsylvania,Associate Justice,Ulysses S. Grant,none
+41,Joseph P. Bradley,New Jersey,Associate Justice,Ulysses S. Grant,none
+42,Ward Hunt,New York,Associate Justice,Ulysses S. Grant,none
+43,Morrison Waite,Ohio,Chief Justice,Ulysses S. Grant,none
+44,John Marshall Harlan,Kentucky,Associate Justice,Rutherford B. Hayes,none
+45,William Burnham Woods,Georgia,Associate Justice,Rutherford B. Hayes,none
+46,Stanley Matthews,Ohio,Associate Justice,James A. Garfield,none
+47,Horace Gray,Massachusetts,Associate Justice,Chester A. Arthur,none
+48,Samuel Blatchford,New York,Associate Justice,Chester A. Arthur,none
+49,Lucius Quintus Cincinnatus Lamar,Mississippi,Associate Justice,Grover Cleveland,none
+50,Melville Fuller,Illinois,Chief Justice,Grover Cleveland,none
+51,David J. Brewer,Kansas,Associate Justice,Benjamin Harrison,none
+52,Henry Billings Brown,Michigan,Associate Justice,Benjamin Harrison,none
+53,George Shiras Jr.,Pennsylvania,Associate Justice,Benjamin Harrison,none
+54,Howell Edmunds Jackson,Tennessee,Associate Justice,Benjamin Harrison,none
+55,Edward Douglass White,Louisiana,Associate Justice,Grover Cleveland,none
+56,Rufus W. Peckham,New York,Associate Justice,Grover Cleveland,none
+57,Joseph McKenna,California,Associate Justice,William McKinley,none
+58,Oliver Wendell Holmes Jr.,Massachusetts,Associate Justice,Theodore Roosevelt,none
+59,William R. Day,Ohio,Associate Justice,Theodore Roosevelt,none
+60,William Henry Moody,Massachusetts,Associate Justice,Theodore Roosevelt,none
+61,Horace Harmon Lurton,Tennessee,Associate Justice,William Howard Taft,none
+62,Charles Evans Hughes,New York,Associate Justice,William Howard Taft,none
+63,Willis Van Devanter,Wyoming,Associate Justice,William Howard Taft,none
+64,Joseph Rucker Lamar,Georgia,Associate Justice,William Howard Taft,none
+65,Mahlon Pitney,New Jersey,Associate Justice,William Howard Taft,none
+66,James Clark McReynolds,Tennessee,Associate Justice,Woodrow Wilson,none
+67,Louis Brandeis,Massachusetts,Associate Justice,Woodrow Wilson,none
+68,John Hessin Clarke,Ohio,Associate Justice,Woodrow Wilson,none
+69,William Howard Taft,Connecticut,Chief Justice,Warren G. Harding,none
+70,George Sutherland,Utah,Associate Justice,Warren G. Harding,none
+71,Pierce Butler,Minnesota,Associate Justice,Warren G. Harding,none
+72,Edward Terry Sanford,Tennessee,Associate Justice,Warren G. Harding,none
+73,Harlan F. Stone,New York,Associate Justice,Calvin Coolidge,none
+74,Owen Roberts,Pennsylvania,Associate Justice,Herbert Hoover,none
+75,Benjamin N. Cardozo,New York,Associate Justice,Herbert Hoover,none
+76,Hugo Black,Alabama,Associate Justice,Franklin D. Roosevelt,none
+77,Stanley Forman Reed,Kentucky,Associate Justice,Franklin D. Roosevelt,none
+78,Felix Frankfurter,Massachusetts,Associate Justice,Franklin D. Roosevelt,none
+79,William O. Douglas,Connecticut,Associate Justice,Franklin D. Roosevelt,none
+80,Frank Murphy,Michigan,Associate Justice,Franklin D. Roosevelt,none
+81,James F. Byrnes,South Carolina,Associate Justice,Franklin D. Roosevelt,none
+82,Robert H. Jackson,New York,Associate Justice,Franklin D. Roosevelt,none
+83,Wiley Blount Rutledge,Iowa,Associate Justice,Franklin D. Roosevelt,none
+84,Harold Hitz Burton,Ohio,Associate Justice,Harry S. Truman,none
+85,Fred M. Vinson,Kentucky,Chief Justice,Harry S. Truman,none
+86,Tom C. Clark,Texas,Associate Justice,Harry S. Truman,none
+87,Sherman Minton,Indiana,Associate Justice,Harry S. Truman,none
+88,Earl Warren,California,Chief Justice,Dwight D. Eisenhower,none
+89,John Marshall Harlan II,New York,Associate Justice,Dwight D. Eisenhower,none
+90,William J. Brennan Jr.,New Jersey,Associate Justice,Dwight D. Eisenhower,none
+91,Charles Evans Whittaker,Missouri,Associate Justice,Dwight D. Eisenhower,none
+92,Potter Stewart,Ohio,Associate Justice,Dwight D. Eisenhower,none
+93,Byron White,Colorado,Associate Justice,John F. Kennedy,none
+94,Arthur Goldberg,Illinois,Associate Justice,John F. Kennedy,none
+95,Abe Fortas,Tennessee,Associate Justice,Lyndon B. Johnson,none
+96,Thurgood Marshall,New York,Associate Justice,Lyndon B. Johnson,none
+97,Warren E. Burger,Virginia,Chief Justice,Richard Nixon,none
+98,Harry Blackmun,Minnesota,Associate Justice,Richard Nixon,none
+99,Lewis F. Powell Jr.,Virginia,Associate Justice,Richard Nixon,none
+100,William Rehnquist,Arizona,Associate Justice,Richard Nixon,none
+101,John Paul Stevens,Illinois,Associate Justice,Gerald Ford,none
+102,Sandra Day O'Connor,Arizona,Associate Justice,Ronald Reagan,none
+103,Antonin Scalia,Virginia,Associate Justice,Ronald Reagan,none
+104,Anthony Kennedy,California,Associate Justice,Ronald Reagan,none
+105,David Souter,New Hampshire,Associate Justice,George H. W. Bush,none
+106,Clarence Thomas,Georgia,Associate Justice,George H. W. Bush,Incumbent
+107,Ruth Bader Ginsburg,New York,Associate Justice,Bill Clinton,none
+108,Stephen Breyer,Massachusetts,Associate Justice,Bill Clinton,none
+109,John Roberts,Maryland,Chief Justice,George W. Bush,Incumbent
+110,Samuel Alito,New Jersey,Associate Justice,George W. Bush,Incumbent
+111,Sonia Sotomayor,New York,Associate Justice,Barack Obama,Incumbent
+112,Elena Kagan,Massachusetts,Associate Justice,Barack Obama,Incumbent
+113,Neil Gorsuch,Colorado,Associate Justice,Donald Trump,Incumbent
+114,Brett Kavanaugh,Maryland,Associate Justice,Donald Trump,Incumbent
+115,Amy Coney Barrett,Indiana,Associate Justice,Donald Trump,Incumbent
+116,Ketanji Brown Jackson,"Washington, D.C.",Associate Justice,Joe Biden,Incumbent

@@ -1,0 +1,2 @@
+symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
+X77,2017,2,17,1,7,5,Friday,2017-02-17,0.3,0.3,0.3,0.3,683800.0,1487289600.0,SIDEWAY

@@ -1,0 +1,95 @@
+district_court,district_court_state,district_court_city,court_of_appeal,court_of_appeal_state,court_of_appeal_city
+District of Maine,Maine,Portland,1st,Massachusetts,Boston
+District of Massachusetts,Massachusetts,Boston,1st,Massachusetts,Boston
+District of New Hampshire,New Hampshire,Concord,1st,Massachusetts,Boston
+District of Puerto Rico,Puerto Rico,San Juan,1st,Massachusetts,Boston
+District of Rhode Island,Rhode Island,Providence,1st,Massachusetts,Boston
+District of Connecticut,Connecticut,New Haven,2nd,New York City,New York
+District of Vermont,Vermont,Burlington,2nd,New York City,New York
+Eastern District of New York,New York,Brooklyn,2nd,New York City,New York
+Northern District of New York,New York,Albany,2nd,New York City,New York
+Southern District of New York,New York,Manhattan,2nd,New York City,New York
+Western District of New York,New York,Buffalo,2nd,New York City,New York
+District of Delaware,Delaware,Wilmington,3rd,Philadelphia,Pennsylvania
+District of New Jersey,New Jersey,Newark,3rd,Philadelphia,Pennsylvania
+District of the Virgin Islands,Virgin Islands,Charlotte Amalie,3rd,Philadelphia,Pennsylvania
+Eastern District of Pennsylvania,Pennsylvania,Philadelphia,3rd,Philadelphia,Pennsylvania
+Middle District of Pennsylvania,Pennsylvania,Harrisburg,3rd,Philadelphia,Pennsylvania
+Western District of Pennsylvania,Pennsylvania,Pittsburgh,3rd,Philadelphia,Pennsylvania
+District of Maryland,Maryland,Baltimore,4th,Richmond,Virginia
+District of South Carolina,South Carolina,Charleston,4th,Richmond,Virginia
+Eastern District of Virginia,Virginia,Alexandria,4th,Richmond,Virginia
+Eastern District of North Carolina,North Carolina,Raleigh,4th,Richmond,Virginia
+Middle District of North Carolina,North Carolina,Greensboro,4th,Richmond,Virginia
+Northern District of West Virginia,West Virginia,Martinsburg,4th,Richmond,Virginia
+Southern District of West Virginia,West Virginia,Charleston,4th,Richmond,Virginia
+Western District of Virginia,Virginia,Roanoke,4th,Richmond,Virginia
+Western District of North Carolina,North Carolina,Charlotte,4th,Richmond,Virginia
+Eastern District of Louisiana,Louisiana,New Orleans,5th,New Orleans,Louisiana
+Eastern District of Texas,Texas,Tyler,5th,New Orleans,Louisiana
+Middle District of Louisiana,Louisiana,Baton Rouge,5th,New Orleans,Louisiana
+Northern District of Mississippi,Mississippi,Oxford,5th,New Orleans,Louisiana
+Northern District of Texas,Texas,Dallas,5th,New Orleans,Louisiana
+Southern District of Mississippi,Mississippi,Jackson,5th,New Orleans,Louisiana
+Southern District of Texas,Texas,Houston,5th,New Orleans,Louisiana
+Western District of Louisiana,Louisiana,Shreveport,5th,New Orleans,Louisiana
+Western District of Texas,Texas,San Antonio,5th,New Orleans,Louisiana
+Eastern District of Kentucky,Kentucky,Lexington,6th,Cincinnati,Ohio
+Eastern District of Michigan,Michigan,Detroit,6th,Cincinnati,Ohio
+Eastern District of Tennessee,Tennessee,Knoxville,6th,Cincinnati,Ohio
+Middle District of Tennessee,Tennessee,Nashville,6th,Cincinnati,Ohio
+Northern District of Ohio,Ohio,Cleveland,6th,Cincinnati,Ohio
+Southern District of Ohio,Ohio,Columbus,6th,Cincinnati,Ohio
+Western District of Kentucky,Kentucky,Louisville,6th,Cincinnati,Ohio
+Western District of Michigan,Michigan,Grand Rapids,6th,Cincinnati,Ohio
+Western District of Tennessee,Tennessee,Memphis,6th,Cincinnati,Ohio
+Central District of Illinois,Illinois,Springfield,7th,Chicago,Illinois
+Eastern District of Wisconsin,Wisconsin,Milwaukee,7th,Chicago,Illinois
+Northern District of Illinois,Illinois,Chicago,7th,Chicago,Illinois
+Northern District of Indiana,Indiana,South Bend,7th,Chicago,Illinois
+Southern District of Illinois,Illinois,East St. Louis,7th,Chicago,Illinois
+Southern District of Indiana,Indiana,Indianapolis,7th,Chicago,Illinois
+Western District of Wisconsin,Wisconsin,Madison,7th,Chicago,Illinois
+District of Minnesota,Minnesota,Minneapolis,8th,St. Louis,Missouri
+District of Nebraska,Nebraska,Omaha,8th,St. Louis,Missouri
+District of North Dakota,North Dakota,Bismarck,8th,St. Louis,Missouri
+District of South Dakota,South Dakota,Sioux Falls,8th,St. Louis,Missouri
+Eastern District of Arkansas,Arkansas,Little Rock,8th,St. Louis,Missouri
+Eastern District of Missouri,Missouri,St. Louis,8th,St. Louis,Missouri
+Northern District of Iowa,Iowa,Cedar Rapids,8th,St. Louis,Missouri
+Southern District of Iowa,Iowa,Des Moines,8th,St. Louis,Missouri
+Western District of Arkansas,Arkansas,Fort Smith,8th,St. Louis,Missouri
+Western District of Missouri,Missouri,Kansas City,8th,St. Louis,Missouri
+Central District of California,California,Los Angeles,9th,San Francisco,California
+District of Alaska,Alaska,Anchorage,9th,San Francisco,California
+District of Arizona,Arizona,Phoenix,9th,San Francisco,California
+District of Guam,Guam,Hagåtña,9th,San Francisco,California
+District of Hawaii,Hawaii,Honolulu,9th,San Francisco,California
+District of Idaho,Idaho,Boise,9th,San Francisco,California
+District of Montana,Montana,Missoula,9th,San Francisco,California
+District of Nevada,Nevada,Las Vegas,9th,San Francisco,California
+District of Oregon,Oregon,Portland,9th,San Francisco,California
+District of the Northern Mariana Islands,Northern Mariana Islands,Saipan,9th,San Francisco,California
+Eastern District of California,California,Sacramento,9th,San Francisco,California
+Eastern District of Washington,Washington,Spokane,9th,San Francisco,California
+Northern District of California,California,San Francisco,9th,San Francisco,California
+Southern District of California,California,San Diego,9th,San Francisco,California
+Western District of Washington,Washington,Seattle,9th,San Francisco,California
+District of Colorado,Colorado,Denver,10th,Denver,Colorado
+District of Kansas,Kansas,Kansas City,10th,Denver,Colorado
+District of Utah,Utah,Salt Lake City,10th,Denver,Colorado
+District of Wyoming,Wyoming,Cheyenne,10th,Denver,Colorado
+District of New Mexico,New Mexico,Albuquerque,10th,Denver,Colorado
+Eastern District of Oklahoma,Oklahoma,Muskogee,10th,Denver,Colorado
+Northern District of Oklahoma,Oklahoma,Tulsa,10th,Denver,Colorado
+Western District of Oklahoma,Oklahoma,Oklahoma City,10th,Denver,Colorado
+Middle District of Alabama,Alabama,Montgomery,11th,Atlanta,Georgia
+Middle District of Florida,Florida,Orlando,11th,Atlanta,Georgia
+Middle District of Georgia,Georgia,Macon,11th,Atlanta,Georgia
+Northern District of Alabama,Alabama,Birmingham,11th,Atlanta,Georgia
+Northern District of Florida,Florida,Tallahassee,11th,Atlanta,Georgia
+Northern District of Georgia,Georgia,Atlanta,11th,Atlanta,Georgia
+Southern District of Alabama,Alabama,Mobile,11th,Atlanta,Georgia
+Southern District of Florida,Florida,Miami,11th,Atlanta,Georgia
+Southern District of Georgia,Georgia,Savannah,11th,Atlanta,Georgia
+District of Columbia,Washington D.C.,Washington D.C.,D.C.,Washington D.C.,Washington D.C.

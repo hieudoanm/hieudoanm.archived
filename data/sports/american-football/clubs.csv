@@ -1,0 +1,33 @@
+name,city,state,stadium,division,conference
+Buffalo Bills,Orchard Park,New York,Highmark Stadium,East,American
+Miami Dolphins,Miami Gardens,Florida,Hard Rock Stadium,East,American
+New England Patriots,Foxborough,Massachusetts,Gillette Stadium,East,American
+New York Jets,East Rutherford,New Jersey,MetLife Stadium,East,American
+Baltimore Ravens,Baltimore,Maryland,M&T Bank Stadium,North,American
+Cincinnati Bengals,Cincinnati,Ohio,Paycor Stadium,North,American
+Cleveland Browns,Cleveland,Ohio,Cleveland Browns Stadium,North,American
+Pittsburgh Steelers,Pittsburgh,Pennsylvania,Acrisure Stadium,North,American
+Denver Broncos,Denver,Colorado,Empower Field at Mile High,West,American
+Kansas City Chiefs,Kansas City,Missouri,GEHA Field at Arrowhead Stadium,West,American
+Las Vegas Raiders,Paradise,Nevada,Allegiant Stadium,West,American
+Los Angeles Chargers,Inglewood,California,SoFi Stadium,West,American
+Houston Texans,Houston,Texas,NRG Stadium,South,American
+Indianapolis Colts,Indianapolis,Indiana,Lucas Oil Stadium,South,American
+Jacksonville Jaguars,Jacksonville,Florida,TIAA Bank Field,South,American
+Tennessee Titans,Nashville,Tennessee,Nissan Stadium,South,American
+New York Giants,East Rutherford,New Jersey,MetLife Stadium,East,National
+Philadelphia Eagles,Philadelphia,Pennsylvania,Lincoln Financial Field,East,National
+Dallas Cowboys,Arlington,Texas,AT&T Stadium,East,National
+Washington Commanders,Landover,Maryland,FedExField,East,National
+Detroit Lions,Detroit,Michigan,Ford Field,North,National
+Chicago Bears,Chicago,Illinois,Soldier Field,North,National
+Green Bay Packers,Green Bay,Wisconsin,Lambeau Field,North,National
+Minnesota Vikings,Minneapolis,Minnesota,U.S. Bank Stadium,North,National
+Atlanta Falcons,Atlanta,Georgia,Mercedes-Benz Stadium,South,National
+Carolina Panthers,Charlotte,North Carolina,Bank of America Stadium,South,National
+New Orleans Saints,New Orleans,Louisiana,Caesars Superdome,South,National
+Tampa Bay Buccaneers,Tampa,Florida,Raymond James Stadium,South,National
+Arizona Cardinals,Glendale,Arizona,State Farm Stadium,West,National
+Los Angeles Rams*,Inglewood,California,SoFi Stadium[E],West,National
+San Francisco 49ers,Santa Clara,California,Levi's Stadium,West,National
+Seattle Seahawks,Seattle,Washington,Lumen Field,West,National

@@ -1,0 +1,20 @@
+[
+  {
+    "country": "Suriname",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 586634
+  },
+  {
+    "country": "Belgium",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 11555997
+  },
+  {
+    "country": "Netherlands",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 16655799
+  }
+]

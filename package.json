@@ -1,0 +1,17 @@
+{
+  "name": "house-of-mystery",
+  "version": "0.0.1",
+  "description": "House of Mystery",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/HouseOfMystery.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install || true"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "prettier": "3.1.0"
+  }
+}

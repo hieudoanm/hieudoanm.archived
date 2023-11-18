@@ -1,0 +1,3 @@
+symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
+LCW,2023,3,17,1,11,5,Friday,2023-03-17,14.0,14.0,14.0,14.0,100.0,1679011200.0,SIDEWAY
+LCW,2023,3,24,1,12,5,Friday,2023-03-24,14.0,14.0,14.0,14.0,400.0,1679616000.0,SIDEWAY

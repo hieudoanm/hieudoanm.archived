@@ -1,0 +1,154 @@
+code,name,countries,population
+eng,English,91,2882794269
+fra,French,46,576059992
+ara,Arabic,25,467924444
+spa,Spanish,24,470121545
+por,Portuguese,10,293100592
+rus,Russian,8,238759976
+nld,Dutch,7,29127009
+zho,Chinese,5,1439451198
+deu,German,5,98007850
+swa,Swahili,4,248807917
+tsn,Tswana,4,79064158
+ita,Italian,4,68243034
+tam,Tamil,3,1407609192
+sot,Sotho,3,76313869
+grn,Guaraní,3,64182322
+msa,Malay,3,38489288
+swe,Swedish,3,15913619
+srp,Serbian,3,11964417
+pap,Papiamento,3,287767
+smo,Samoan,3,255018
+kon,Kikongo,2,179122808
+lin,Lingala,2,179122808
+tur,Turkish,2,85546428
+kor,Korean,2,77559394
+tso,Tsonga,2,74171617
+ven,Venda,2,74171617
+xho,Xhosa,2,74171617
+afr,Afrikaans,2,61849606
+ssw,Swazi,2,60468854
+tuk,Turkmen,2,46249421
+aym,Aymara,2,44644875
+que,Quechua,2,44644875
+ber,Berber,2,37421271
+nya,Chewa,2,33992882
+ron,Romanian,2,21903943
+slk,Slovak,2,16157723
+ell,Greek,2,11922910
+hrv,Croatian,2,7328015
+dan,Danish,2,5880269
+sqi,Albanian,2,4613121
+cha,Chamorro,2,226340
+nor,Norwegian,2,2562
+hin,Hindi,1,1380004385
+ind,Indonesian,1,273523621
+urd,Urdu,1,220892331
+ben,Bengali,1,164689383
+jpn,Japanese,1,125836021
+amh,Amharic,1,114963583
+fil,Filipino,1,109581085
+vie,Vietnamese,1,97338583
+lua,Tshiluba,1,89561404
+fas,Persian (Farsi),1,83992953
+tha,Thai,1,69799978
+nbl,Southern Ndebele,1,59308690
+nso,Northern Sotho,1,59308690
+zul,Zulu,1,59308690
+mya,Burmese,1,54409794
+ukr,Ukrainian,1,44134693
+arc,Aramaic,1,40222503
+ckb,Sorani,1,40222503
+prs,Dari,1,40218234
+pus,Pashto,1,40218234
+pol,Polish,1,37950802
+uzb,Uzbek,1,34232050
+nep,Nepali,1,29136808
+mlg,Malagasy,1,27691019
+sin,Sinhala,1,21919000
+kaz,Kazakh,1,18754440
+khm,Khmer,1,16718971
+som,Somali,1,15893219
+bwg,Chibarwe,1,14862927
+kck,Kalanga,1,14862927
+khi,Khoisan,1,14862927
+ndc,Ndau,1,14862927
+nde,Northern Ndebele,1,14862927
+sna,Shona,1,14862927
+toi,Tonga,1,14862927
+zib,Zimbabwean Sign Language,1,14862927
+kin,Kinyarwanda,1,12952209
+run,Kirundi,1,11890781
+hat,Haitian Creole,1,11402533
+ces,Czech,1,10698896
+aze,Azerbaijani,1,10110116
+hun,Hungarian,1,9749763
+tgk,Tajik,1,9537642
+bel,Belarusian,1,9398861
+heb,Hebrew,1,9216900
+hmo,Hiri Motu,1,8947027
+tpi,Tok Pisin,1,8947027
+bar,Austro-Bavarian German,1,8917205
+gsw,Swiss German,1,8654622
+roh,Romansh,1,8654622
+lao,Lao,1,7275556
+bul,Bulgarian,1,6927288
+kir,Kyrgyz,1,6591600
+fin,Finnish,1,5530719
+nno,Norwegian Nynorsk,1,5379475
+nob,Norwegian Bokmål,1,5379475
+smi,Sami,1,5379475
+tir,Tigrinya,1,5352000
+mri,Māori,1,5084300
+nzs,New Zealand Sign Language,1,5084300
+gle,Irish,1,4994724
+sag,Sango,1,4829764
+kat,Georgian,1,3714000
+bos,Bosnian,1,3280815
+mon,Mongolian,1,3278292
+hye,Armenian,1,2963234
+jam,Jamaican Patois,1,2961161
+lit,Lithuanian,1,2794700
+her,Herero,1,2540916
+hgm,Khoekhoe,1,2540916
+kwn,Kwangali,1,2540916
+loz,Lozi,1,2540916
+ndo,Ndonga,1,2540916
+slv,Slovene,1,2100126
+mkd,Macedonian,1,2077132
+pov,Upper Guinea Creole,1,1967998
+lav,Latvian,1,1901548
+est,Estonian,1,1331057
+tet,Tetum,1,1318442
+mfe,Mauritian Creole,1,1265740
+fij,Fijian,1,896444
+hif,Fiji Hindi,1,896444
+zdj,Comorian,1,869595
+dzo,Dzongkha,1,771612
+ltz,Luxembourgish,1,632275
+cnr,Montenegrin,1,621718
+div,Maldivian,1,540542
+mlt,Maltese,1,525285
+mey,Hassaniya,1,510713
+bjz,Belizean Creole,1,397621
+isl,Icelandic,1,366425
+bis,Bislama,1,307150
+gil,Gilbertese,1,119446
+ton,Tongan,1,105697
+nrf,Jèrriais,1,100800
+crs,Seychellois Creole,1,98462
+glv,Manx,1,85032
+cat,Catalan,1,77265
+nfr,Guernésiais,1,62999
+mah,Marshallese,1,59194
+cal,Carolinian,1,57557
+kal,Greenlandic,1,56367
+fao,Faroese,1,48865
+rar,Cook Islands Māori,1,18100
+pau,Palauan,1,18092
+tvl,Tuvaluan,1,11792
+nau,Nauru,1,10834
+pih,Norfuk,1,2302
+niu,Niuean,1,1470
+tkl,Tokelauan,1,1411
+lat,Latin,1,451

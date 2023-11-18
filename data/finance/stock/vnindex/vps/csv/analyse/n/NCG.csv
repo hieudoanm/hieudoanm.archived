@@ -1,0 +1,7 @@
+date,timestamp,open,high,low,close,volume,price_three_days_ago,price_three_days_ago_difference,price_three_days_ago_return,price_two_days_ago,price_yesterday,price_tomorrow,price_tomorrow_difference,price_tomorrow_return,direction,MA5,MA10,MA20,MA50,MA100,MA200,MA50-1,MA200-1,golden-cross-1,golden-cross-0,golden-cross
+2023-11-09,1699488000,38.0,38.0,22.8,22.988,486700,,,,,,20.802,-2.19,-0.1,-1,,,,,,,,,False,False,False
+2023-11-10,1699574400,22.8,23.0,19.8,20.802,457846,,,,,22.988,21.422,0.62,0.03,1,,,,,,,,,False,False,False
+2023-11-13,1699833600,21.0,22.9,21.0,21.422,191915,,,,22.988,20.802,21.566,0.14,0.01,1,,,,,,,,,False,False,False
+2023-11-14,1699920000,21.4,22.4,20.9,21.566,186380,22.988,-1.42,-0.06,20.802,21.422,21.03,-0.54,-0.03,-1,,,,,,,,,False,False,False
+2023-11-15,1700006400,21.5,21.8,20.5,21.03,150400,20.802,0.23,0.01,21.422,21.566,20.264,-0.77,-0.04,-1,21.56,,,,,,,,False,False,False
+2023-11-16,1700092800,20.5,21.1,20.0,20.264,169014,21.422,-1.16,-0.05,21.566,21.03,,,,-1,21.02,,,,,,,,False,False,False

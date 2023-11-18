@@ -1,0 +1,49 @@
+code,name,countries,population
+fra,French,7,88437519
+eng,English,7,73017824
+deu,German,4,95466934
+ita,Italian,4,68243034
+swe,Swedish,3,15913619
+srp,Serbian,3,11964417
+rus,Russian,2,153502941
+nld,Dutch,2,28211796
+ron,Romanian,2,21903943
+slk,Slovak,2,16157723
+ell,Greek,2,11922910
+hrv,Croatian,2,7328015
+dan,Danish,2,5880269
+sqi,Albanian,2,4613121
+spa,Spanish,1,47351567
+ukr,Ukrainian,1,44134693
+pol,Polish,1,37950802
+ces,Czech,1,10698896
+por,Portuguese,1,10305564
+hun,Hungarian,1,9749763
+bel,Belarusian,1,9398861
+bar,Austro-Bavarian German,1,8917205
+gsw,Swiss German,1,8654622
+roh,Romansh,1,8654622
+bul,Bulgarian,1,6927288
+fin,Finnish,1,5530719
+nno,Norwegian Nynorsk,1,5379475
+nob,Norwegian Bokmål,1,5379475
+smi,Sami,1,5379475
+gle,Irish,1,4994724
+bos,Bosnian,1,3280815
+lit,Lithuanian,1,2794700
+slv,Slovene,1,2100126
+mkd,Macedonian,1,2077132
+lav,Latvian,1,1901548
+est,Estonian,1,1331057
+tur,Turkish,1,1207361
+ltz,Luxembourgish,1,632275
+cnr,Montenegrin,1,621718
+mlt,Maltese,1,525285
+isl,Icelandic,1,366425
+nrf,Jèrriais,1,100800
+glv,Manx,1,85032
+cat,Catalan,1,77265
+nfr,Guernésiais,1,62999
+fao,Faroese,1,48865
+nor,Norwegian,1,2562
+lat,Latin,1,451
