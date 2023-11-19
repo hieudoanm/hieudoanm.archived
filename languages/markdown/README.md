@@ -2,7 +2,6 @@
 
 - [Technology](#technology)
   - [Techstack](#techstack)
-  - [Companies](#companies)
   - [Bookmarks](#bookmarks)
 
 ## Techstack
@@ -239,17 +238,6 @@
 |     | Hardware     | Framework                         |                             |                              | [Qt](https://www.qt.io/)                                                            |               |                                         |
 |     | Hardware     | Electronics                       |                             |                              | [Arduino](https://www.arduino.cc/)                                                  |               |                                         |
 |     | Hardware     | Electronics                       |                             |                              | [Raspberry PI](https://www.raspberrypi.com/)                                        |               |                                         |
-
-## Companies
-
-| Category           | Company                                   |     | Product        |
-| ------------------ | ----------------------------------------- | --- | -------------- |
-| Investment Banking | Goldman Sachs                             |     |                |
-| Investment Banking | J.P. Morgan                               |     |                |
-| Investment Banking | Morgan Stanley                            |     |                |
-| Venture Capital    | [BlackRock](https://www.blackrock.com/)   |     | Index Fund     |
-| Venture Capital    | [BlackStone](https://www.blackstone.com/) |     | Private Equity |
-| Venture Capital    | [Vanguard](https://www.vanguard.com)      |     | Index Fund     |
 
 ## Bookmarks
 
