@@ -29,6 +29,7 @@
 
 ---
 
+- 👨‍🎓 **Bachelor of Psychology** at `Royal University of Melbourne (RMIT)`
 - 🇦🇺 **Senior Software Engineer** at `National Australia Bank`
 - 🇩🇪 Ich arbeite seit zwei Jahren in `Deutschland`
 - 🇫🇮 **Bachelor of Business Administration, Business Information Technology** in `Finland`
