@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/houseoftypescript/packages.git"
+    "url": "git+ssh://git@github.com/hieudoanm/hieudoanm.git"
   },
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
@@ -43,9 +43,9 @@
     "@hieudoanm:registry": "https://npm.pkg.github.com"
   },
   "bugs": {
-    "url": "https://github.com/houseoftypescript/packages/issues"
+    "url": "https://github.com/hieudoanm/hieudoanm/issues"
   },
-  "homepage": "https://github.com/houseoftypescript/packages#readme",
+  "homepage": "https://github.com/hieudoanm/hieudoanm#readme",
   "keywords": [
     "logger",
     "pino"
