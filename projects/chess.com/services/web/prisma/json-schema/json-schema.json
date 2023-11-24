@@ -57,10 +57,16 @@
         "status": {
           "type": "string",
           "default": "basic",
-          "enum": ["basic", "premium"]
+          "enum": [
+            "basic",
+            "premium"
+          ]
         },
         "title": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "enum": [
             "GM",
             "WGM",
@@ -79,7 +85,10 @@
           ]
         },
         "league": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "enum": [
             "Wood",
             "Stone",
@@ -194,11 +203,17 @@
           }
         },
         "createdAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "updatedAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         }
       }
@@ -290,11 +305,17 @@
           "default": ""
         },
         "createdAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "updatedAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "moves": {
@@ -325,11 +346,21 @@
         },
         "piece": {
           "type": "string",
-          "enum": ["king", "queen", "rook", "bishop", "knight", "pawn"]
+          "enum": [
+            "king",
+            "queen",
+            "rook",
+            "bishop",
+            "knight",
+            "pawn"
+          ]
         },
         "side": {
           "type": "string",
-          "enum": ["white", "black"]
+          "enum": [
+            "white",
+            "black"
+          ]
         },
         "captured": {
           "type": "boolean",
@@ -344,8 +375,18 @@
           "default": false
         },
         "promoteTo": {
-          "type": ["string", "null"],
-          "enum": ["king", "queen", "rook", "bishop", "knight", "pawn"]
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "king",
+            "queen",
+            "rook",
+            "bishop",
+            "knight",
+            "pawn"
+          ]
         },
         "check": {
           "type": "boolean",
@@ -356,11 +397,17 @@
           "default": false
         },
         "createdAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "updatedAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         }
       }
@@ -393,11 +440,17 @@
           "default": 0
         },
         "createdAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "updatedAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         }
       }
@@ -421,11 +474,17 @@
           "default": ""
         },
         "createdAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         },
         "updatedAt": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "format": "date-time"
         }
       }

@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - projects/chess.com/**
+      - projects/chess.com/services/jobs/**
   schedule:
     - cron: '0 0 * * *'
 

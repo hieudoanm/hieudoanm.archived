@@ -9,7 +9,7 @@ on:
       - renovate/**
       - dependabot/**
     paths:
-      - projects/chess.com/**
+      - projects/chess.com/services/**
 
 jobs:
   continuous-integration:
@@ -18,9 +18,9 @@ jobs:
       matrix:
         services:
           - name: API
-            working-directory: projects/chess.com/api
+            working-directory: projects/chess.com/services/api
           - name: Web
-            working-directory: projects/chess.com/web
+            working-directory: projects/chess.com/services/web
     name: Continuous Integration - ${{ matrix.services.name }}
     runs-on: ubuntu-latest
     steps:

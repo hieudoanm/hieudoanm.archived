@@ -3,11 +3,7 @@
 folders=(
     "hieudoanm"
     "hieudoanm.github.io"
-    "HouseOfApps"
-    "HouseOfBCI"
-    "HouseOfChess"
-    "HouseOfMystery"
-    "HouseOfSecrets"
+    "hieudoanm.private"
 )
 
 for folder in "${folders[@]}"

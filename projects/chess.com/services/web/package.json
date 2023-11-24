@@ -1,9 +1,9 @@
 {
-  "name": "@chess/web",
+  "name": "@chess.com/web",
   "version": "0.0.1",
-  "description": "Chess - Web",
+  "description": "chess.com - web",
   "main": "index.js",
-  "repository": "git@github.com:hieudoanm/app.chess.git",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
   "private": true,

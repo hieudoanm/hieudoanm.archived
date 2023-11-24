@@ -1,7 +1,7 @@
 {
-  "name": "chess.com",
+  "name": "@chess.com/addons",
   "version": "0.0.1",
-  "description": "chess.com",
+  "description": "chess.com - addons",
   "main": "index.js",
   "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",

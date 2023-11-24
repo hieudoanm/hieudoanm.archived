@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "HTTP Socket Starter",
   "main": "main.go",
-  "repository": "git@github.com:hieudoanm/go-starter.git",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
   "private": true,

@@ -1,9 +1,9 @@
 {
-  "name": "@chess/api",
+  "name": "@chess.com/api",
   "version": "0.0.1",
-  "description": "Chess - API",
+  "description": "chess.com - API",
   "main": "dist/server.js",
-  "repository": "git@github.com:hieudoanm/app.chess.git",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
   "private": true,
