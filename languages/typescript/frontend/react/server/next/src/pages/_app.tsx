@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import '../styles/globals.scss';
+import { trpc } from '../utils/trpc';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -28,4 +29,4 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default App;
+export default trpc.withTRPC(App);
