@@ -2275,10 +2275,10 @@ prisma-docs-generator@0.8.0:
     prismjs "^1.29.0"
     ts-toolbelt "^9.6.0"
 
-prisma-json-schema-generator@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/prisma-json-schema-generator/-/prisma-json-schema-generator-4.1.0.tgz#721c4cbe984cd39f31b72cd015ef3d3edcc4a0d0"
-  integrity sha512-rJ1aoLMLa6sFqlCkfDUkuiRalJ6N2VHvtqxajsJVdoTWyBsLUJbuAsAQQguvDMFha/W488tf/bP5HYXO+n15UA==
+prisma-json-schema-generator@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/prisma-json-schema-generator/-/prisma-json-schema-generator-5.0.0.tgz#49d90e57387f5069dd05f9105d09969ac6a5b509"
+  integrity sha512-T5X5yQFxDTcqrnch41FpVsAmAp01hTY1iihi45HuyWMln7ICUiBl/gdm8lQ2tBuaRzyzyx0mFbPtMX+3bsA8+g==
   dependencies:
     "@prisma/generator-helper" "5.6.0"
     "@prisma/internals" "5.6.0"
