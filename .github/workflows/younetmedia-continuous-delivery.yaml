@@ -25,6 +25,7 @@ jobs:
           node-version: 20.x
       - name: Install Dependencies
         run: yarn install --network-timeout 86400000
+        working-directory: ${{ matrix.services.working-directory }}
       - name: Linting
         run: yarn lint --fix
         working-directory: ${{ matrix.services.working-directory }}
