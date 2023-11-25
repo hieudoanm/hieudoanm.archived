@@ -1,16 +1,16 @@
-name: Docsify
+name: hieudoanm - docsify
 
 on:
   push:
     branches:
       - master
     paths:
-      - languages/markdown/**
+      - concepts/markdown/**
 
 jobs:
   docsify:
     runs-on: ubuntu-latest
-    name: Docsify
+    name: hieudoanm - docsify
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,15 +18,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.x
-      - name: Install Docsify CLI
+      - name: Install docsify-cli
         run: yarn global add docsify-cli
       - name: Bundle Docs
         run: docsify init docs
-        working-directory: languages/markdown
+        working-directory: concepts/markdown
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           token: ${{ secrets.GHP_TOKEN }}
           branch: gh-pages
-          folder: languages/markdown/docs
+          folder: concepts/markdown/docs
           clean: true
