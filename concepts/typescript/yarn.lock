@@ -25766,10 +25766,10 @@ svelte-preprocess@^5.1.0:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-routing@2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-2.8.0.tgz#5149c728104d44f027d1d494c3116597d38015fa"
-  integrity sha512-0vnIYYbUWtmGHLLH1nMHw5F+NzPpZIY46opHmTtXvA2LmDfqlWvhB7J/bU8b0vr/Oj6DybVGW+KExPjzMKin5A==
+svelte-routing@2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-2.9.0.tgz#dd7ab8d5836143ce67381c0d637b904c6c3092c5"
+  integrity sha512-Ve0OJ78DnjWhOdKeSZGgcyOiaVSu+fZMWNkKqn13+y15vGk/yVjHDYyJLmC1gorQUSIVeqkwQ2LCplfuStKS4w==
 
 svelte@4.2.7:
   version "4.2.7"
