@@ -1,3 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-NSS,2020,11,17,4,47,2,Tuesday,2020-11-17,2.98,2.98,2.98,2.98,100.0,1605571200.0,SIDEWAY
-NSS,2021,1,27,1,4,3,Wednesday,2021-01-27,3.0,3.0,3.0,3.0,100.0,1611705600.0,SIDEWAY

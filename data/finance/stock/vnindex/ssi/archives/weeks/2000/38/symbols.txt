@@ -1,4 +1,0 @@
-HAP
-REE
-SAM
-TMS

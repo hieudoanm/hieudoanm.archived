@@ -1,4 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-MDA,2022,6,1,2,22,3,Wednesday,2022-06-01,9.0,9.0,9.0,9.0,100.0,1654041600.0,SIDEWAY
-MDA,2022,6,2,2,22,4,Thursday,2022-06-02,9.0,9.0,9.0,9.0,67100.0,1654128000.0,SIDEWAY
-MDA,2022,11,30,4,48,3,Wednesday,2022-11-30,9.0,9.0,9.0,9.0,100.0,1669766400.0,SIDEWAY

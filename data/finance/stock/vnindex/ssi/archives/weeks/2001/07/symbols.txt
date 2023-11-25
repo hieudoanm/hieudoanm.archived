@@ -1,5 +1,0 @@
-HAP
-LAF
-REE
-SAM
-TMS

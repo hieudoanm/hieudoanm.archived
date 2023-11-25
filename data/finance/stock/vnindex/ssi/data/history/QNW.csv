@@ -1,2 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-QNW,2022,9,29,3,39,4,Thursday,2022-09-29,10.1,10.1,10.1,10.1,1000.0,1664409600.0,SIDEWAY

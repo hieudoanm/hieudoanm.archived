@@ -1,3 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-NDW,2022,9,7,3,36,3,Wednesday,2022-09-07,9.5,9.5,9.5,9.5,3800.0,1662508800.0,SIDEWAY
-NDW,2023,3,15,1,11,3,Wednesday,2023-03-15,5.7,5.7,5.7,5.7,99000.0,1678838400.0,SIDEWAY

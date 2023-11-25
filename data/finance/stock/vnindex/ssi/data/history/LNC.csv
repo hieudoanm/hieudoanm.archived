@@ -1,4 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-LNC,2019,12,27,4,52,5,Friday,2019-12-27,9.93,9.93,9.93,9.93,13000.0,1577404800.0,SIDEWAY
-LNC,2021,7,22,3,29,4,Thursday,2021-07-22,9.93,9.93,9.93,9.93,23000.0,1626912000.0,SIDEWAY
-LNC,2022,12,13,4,50,2,Tuesday,2022-12-13,10.0,10.0,10.0,10.0,4000.0,1670889600.0,SIDEWAY

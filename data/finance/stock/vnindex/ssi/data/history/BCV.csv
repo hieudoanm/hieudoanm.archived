@@ -1,2 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-BCV,2021,12,3,4,48,5,Friday,2021-12-03,21.5,21.5,21.5,21.5,1800.0,1638489600.0,SIDEWAY

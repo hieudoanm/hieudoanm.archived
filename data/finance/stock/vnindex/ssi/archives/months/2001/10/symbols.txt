@@ -1,7 +1,0 @@
-CAN
-HAP
-LAF
-REE
-SAM
-SGH
-TMS

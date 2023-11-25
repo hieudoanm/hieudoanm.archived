@@ -1,2 +1,0 @@
-symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
-LDW,2019,9,19,3,38,4,Thursday,2019-09-19,12.67,12.67,12.67,12.67,1000.0,1568851200.0,SIDEWAY
