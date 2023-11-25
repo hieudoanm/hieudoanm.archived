@@ -1,0 +1,109 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 53C18 53 22.6667 47.3333 24.5 44H32.0001V19.9999C31.6667 19.8333 29.8368 17.8995 23.5001 14C17.0001 10 11.0001 11.25 9.50005 14C-2.49995 36 4.5 53 12 53Z" fill="#FFC815"/>
+<path d="M52 53C46 53 41.3334 47.3333 39.5001 44H32.0001V19.9999C32.3334 19.8333 34.1633 17.8995 40.5001 14C47.0001 10 53.0001 11.25 54.5001 14C66.5001 36 59.5 53 52 53Z" fill="#FFC815"/>
+<rect x="44" y="23" width="4" height="4" fill="black"/>
+<rect x="44" y="31" width="4" height="4" fill="black"/>
+<rect x="50" y="27" width="4" height="4" fill="black"/>
+<circle cx="18" cy="29" r="4" fill="#C81519"/>
+<rect x="27" y="16" width="3" height="2" fill="black"/>
+<rect x="24" y="14" width="3" height="2" fill="black"/>
+<rect x="22" y="12" width="3" height="2" fill="black"/>
+<rect x="19" y="11" width="3" height="2" fill="black"/>
+<rect x="10" y="11" width="3" height="2" fill="black"/>
+<rect x="8" y="13" width="3" height="2" fill="black"/>
+<rect x="7" y="15" width="2" height="3" fill="black"/>
+<rect x="6" y="18" width="2" height="4" fill="black"/>
+<rect x="4" y="21" width="2" height="6" fill="black"/>
+<rect x="3" y="27" width="2" height="6" fill="black"/>
+<rect x="2" y="33" width="2" height="6" fill="black"/>
+<rect x="3" y="39" width="2" height="6" fill="black"/>
+<rect x="4" y="45" width="2" height="6" fill="black"/>
+<rect x="6" y="49" width="2" height="4" fill="black"/>
+<rect x="8" y="52" width="8" height="2" fill="black"/>
+<rect x="16" y="51" width="3" height="2" fill="black"/>
+<rect x="18" y="49" width="3" height="2" fill="black"/>
+<rect x="20" y="47" width="3" height="2" fill="black"/>
+<rect x="22" y="45" width="3" height="2" fill="black"/>
+<rect x="12" y="10" width="7" height="2" fill="black"/>
+<rect x="24" y="43" width="8" height="2" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 32 18)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 37 16)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 40 14)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 42 12)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 45 11)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 54 11)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 56 13)" fill="black"/>
+<rect width="2" height="3" transform="matrix(-1 0 0 1 57 15)" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 58 18)" fill="black"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 60 21)" fill="black"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 61 27)" fill="black"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 62 33)" fill="black"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 61 39)" fill="black"/>
+<rect width="2" height="6" transform="matrix(-1 0 0 1 60 45)" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 58 49)" fill="black"/>
+<rect width="8" height="2" transform="matrix(-1 0 0 1 56 52)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 48 51)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 46 49)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 44 47)" fill="black"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 42 45)" fill="black"/>
+<rect width="7" height="2" transform="matrix(-1 0 0 1 52 10)" fill="black"/>
+<rect width="8" height="2" transform="matrix(-1 0 0 1 40 43)" fill="black"/>
+<rect x="32" y="18" width="3" height="2" fill="black"/>
+<rect x="16" y="24" width="4" height="2" fill="black"/>
+<rect x="16" y="32" width="4" height="2" fill="black"/>
+<rect x="20" y="25" width="2" height="2" fill="black"/>
+<rect x="20" y="31" width="2" height="2" fill="black"/>
+<rect x="21" y="27" width="2" height="4" fill="black"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 16 25)" fill="black"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 16 31)" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 15 27)" fill="black"/>
+<rect x="29" y="20" width="6" height="2" fill="#FFF2B4"/>
+<rect x="9" y="15" width="2" height="2" fill="#FFF2B4"/>
+<rect x="11" y="13" width="2" height="2" fill="#FFF2B4"/>
+<rect x="22" y="14" width="2" height="2" fill="#FFF2B4"/>
+<rect x="27" y="18" width="2" height="2" fill="#FFF2B4"/>
+<rect x="19" y="13" width="3" height="2" fill="#FFF2B4"/>
+<rect x="24" y="16" width="3" height="2" fill="#FFF2B4"/>
+<rect x="13" y="12" width="6" height="2" fill="#FFF2B4"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 55 15)" fill="#FFF2B4"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 53 13)" fill="#FFF2B4"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 42 14)" fill="#FFF2B4"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 37 18)" fill="#FFF2B4"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 45 13)" fill="#FFF2B4"/>
+<rect width="3" height="2" transform="matrix(-1 0 0 1 40 16)" fill="#FFF2B4"/>
+<rect width="6" height="2" transform="matrix(-1 0 0 1 51 12)" fill="#FFF2B4"/>
+<rect x="8" y="50" width="8" height="2" fill="#FF7F0D"/>
+<rect x="24" y="41" width="8" height="2" fill="#FF7F0D"/>
+<rect x="16" y="49" width="2" height="2" fill="#FF7F0D"/>
+<rect x="6" y="48" width="2" height="2" fill="#FF7F0D"/>
+<rect x="18" y="47" width="2" height="2" fill="#FF7F0D"/>
+<rect x="20" y="45" width="2" height="2" fill="#FF7F0D"/>
+<rect x="22" y="43" width="2" height="2" fill="#FF7F0D"/>
+<rect width="8" height="2" transform="matrix(-1 0 0 1 56 50)" fill="#FF7F0D"/>
+<rect width="8" height="2" transform="matrix(-1 0 0 1 40 41)" fill="#FF7F0D"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 48 49)" fill="#FF7F0D"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 58 48)" fill="#FF7F0D"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 46 47)" fill="#FF7F0D"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 44 45)" fill="#FF7F0D"/>
+<rect width="2" height="2" transform="matrix(-1 0 0 1 42 43)" fill="#FF7F0D"/>
+<circle cx="40" cy="29" r="2" fill="#C81519"/>
+<rect x="38" y="26" width="4" height="2" fill="black"/>
+<rect x="41" y="27" width="2" height="4" fill="black"/>
+<rect x="38" y="30" width="4" height="2" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 39 27)" fill="black"/>
+<circle cx="46" cy="24" r="2" fill="#C81519"/>
+<rect x="44" y="21" width="4" height="2" fill="black"/>
+<rect x="47" y="22" width="2" height="4" fill="black"/>
+<rect x="44" y="25" width="4" height="2" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 45 22)" fill="black"/>
+<circle cx="52" cy="29" r="2" fill="#C81519"/>
+<rect x="50" y="26" width="4" height="2" fill="black"/>
+<rect x="53" y="27" width="2" height="4" fill="black"/>
+<rect x="50" y="30" width="4" height="2" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 51 27)" fill="black"/>
+<circle cx="46" cy="34" r="2" fill="#C81519"/>
+<rect x="44" y="31" width="4" height="2" fill="black"/>
+<rect x="47" y="32" width="2" height="4" fill="black"/>
+<rect x="44" y="35" width="4" height="2" fill="black"/>
+<rect width="2" height="4" transform="matrix(-1 0 0 1 45 32)" fill="black"/>
+</svg>

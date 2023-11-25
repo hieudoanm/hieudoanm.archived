@@ -1,0 +1,22 @@
+name,moniker,state,venue,active
+Sydney,Swans,New South Wales,Sydney Cricket Ground,True
+Greater Western Sydney,Giants,New South Wales,Sydney Showground Stadium,True
+Brisbane Bears,Bears,Queensland,Carrara Stadium,False
+Gold Coast,Suns,Queensland,Carrara Stadium,True
+Brisbane Lions,Lions,Queensland,The Gabba,True
+Adelaide,Crows,South Australia,Adelaide Oval,True
+Port Adelaide,Power,South Australia,Adelaide Oval,True
+Fitzroy,Lions,Victoria,Brunswick Street Oval,False
+Carlton,Blues,Victoria,Docklands Stadium,True
+Essendon,Bombers,Victoria,Docklands Stadium,True
+North Melbourne,Kangaroos,Victoria,Docklands Stadium,True
+St Kilda,Saints,Victoria,Docklands Stadium,True
+Western Bulldogs,Bulldogs,Victoria,Docklands Stadium,True
+Geelong,Cats,Victoria,Kardinia Park,True
+Collingwood,Magpies,Victoria,Melbourne Cricket Ground,True
+Hawthorn,Hawks,Victoria,Melbourne Cricket Ground,True
+Melbourne,Demons,Victoria,Melbourne Cricket Ground,True
+Richmond,Tigers,Victoria,Melbourne Cricket Ground,True
+University,Students,Victoria,Melbourne Cricket Ground,False
+Fremantle,Dockers,Western Australia,Perth Stadium,True
+West Coast,Eagles,Western Australia,Perth Stadium,True

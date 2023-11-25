@@ -1,0 +1,1846 @@
+{
+  "item": [
+    {
+      "name": "chess",
+      "description": "",
+      "item": [
+        {
+          "name": "analyse",
+          "description": "",
+          "item": [
+            {
+              "id": "a2bb4a2f-4dc2-4296-bfae-43afc67225b6",
+              "name": "Analyse",
+              "request": {
+                "name": "Analyse",
+                "description": {},
+                "url": {
+                  "path": ["chess", "analyse"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "Accept", "value": "application/json" }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"fen\": \"<string>\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                },
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "f3c984f4-b8f6-40ba-b430-1ec727a83ee5",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "analyse"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "application/json" },
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"fen\": \"<string>\"\n}",
+                      "options": {
+                        "raw": { "headerFamily": "json", "language": "json" }
+                      }
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"principalVariationSearch\": [\n    {\n      \"pawn\": \"<double>\",\n      \"centipawn\": \"<double>\",\n      \"nextMoves\": \"<string>\"\n    },\n    {\n      \"pawn\": \"<double>\",\n      \"centipawn\": \"<double>\",\n      \"nextMoves\": \"<string>\"\n    }\n  ],\n  \"depth\": \"<double>\",\n  \"knodes\": \"<double>\",\n  \"fen\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        },
+        {
+          "name": "openings",
+          "description": "",
+          "item": [
+            {
+              "id": "6f190b4a-6545-4c31-89e5-b4c85c9565c8",
+              "name": "Get Openings",
+              "request": {
+                "name": "Get Openings",
+                "description": {},
+                "url": {
+                  "path": ["chess", "openings"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "eco",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "name",
+                      "value": ""
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "firstMove",
+                      "value": ""
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "4a2f1013-dd29-4c21-b0fe-a4585999e0c2",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "openings"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "eco",
+                          "value": ""
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "name",
+                          "value": ""
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "firstMove",
+                          "value": ""
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"openings\": [],\n  \"total\": \"<double>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            },
+            {
+              "name": "ecos",
+              "description": "",
+              "item": [
+                {
+                  "id": "370493ce-0e56-48d3-96fa-1de4d9e1ad79",
+                  "name": "Get EC Os",
+                  "request": {
+                    "name": "Get EC Os",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "openings", "ecos"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "e564bb41-f2fa-4cf5-8562-ad8fb73fb232",
+                      "name": "Ok",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "openings", "ecos"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "body": "{\n  \"ecos\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"total\": \"<double>\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "position",
+          "description": "",
+          "item": [
+            {
+              "id": "70b5acc2-5f2b-4c40-9d30-1fc0f2bc7ba2",
+              "name": "Get Position",
+              "request": {
+                "name": "Get Position",
+                "description": {},
+                "url": {
+                  "path": ["chess", "position"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "fen",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "a47fdb13-bd45-4d1d-a1fc-8c18432bee1f",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "position"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "fen",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            },
+            {
+              "id": "545dd98d-1416-4f23-9680-46f12e566661",
+              "name": "Sync Position",
+              "request": {
+                "name": "Sync Position",
+                "description": {},
+                "url": {
+                  "path": ["chess", "position"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" },
+                  { "key": "Accept", "value": "application/json" }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"fen\": \"<string>\"\n}",
+                  "options": {
+                    "raw": { "headerFamily": "json", "language": "json" }
+                  }
+                },
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "51f6b82f-ceb7-4388-8735-5e58ab412827",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "position"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Content-Type", "value": "application/json" },
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"fen\": \"<string>\"\n}",
+                      "options": {
+                        "raw": { "headerFamily": "json", "language": "json" }
+                      }
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        },
+        {
+          "name": "player",
+          "description": "",
+          "item": [
+            {
+              "name": "{username}",
+              "description": "",
+              "item": [
+                {
+                  "name": "games",
+                  "description": "",
+                  "item": [
+                    {
+                      "id": "ff18e4ce-a2ba-4b61-8f84-2b6e41bc555c",
+                      "name": "Get Games",
+                      "request": {
+                        "name": "Get Games",
+                        "description": {},
+                        "url": {
+                          "path": ["chess", "player", ":username", "games"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "",
+                                "type": "text/plain"
+                              },
+                              "key": "month",
+                              "value": "<double>"
+                            },
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "",
+                                "type": "text/plain"
+                              },
+                              "key": "year",
+                              "value": "<double>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "type": "any",
+                              "value": "<string>",
+                              "key": "username",
+                              "disabled": false
+                            }
+                          ]
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {},
+                        "auth": null
+                      },
+                      "response": [
+                        {
+                          "id": "35176f16-be56-48d2-b0f0-fb188e2a6f77",
+                          "name": "Ok",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["chess", "player", ":username", "games"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [
+                                {
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "",
+                                    "type": "text/plain"
+                                  },
+                                  "key": "month",
+                                  "value": "<double>"
+                                },
+                                {
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "",
+                                    "type": "text/plain"
+                                  },
+                                  "key": "year",
+                                  "value": "<double>"
+                                }
+                              ],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"games\": [],\n  \"total\": \"<double>\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [],
+                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                    },
+                    {
+                      "id": "7cb56394-17e0-46fd-8bb2-325e9e247719",
+                      "name": "Sync Games",
+                      "request": {
+                        "name": "Sync Games",
+                        "description": {},
+                        "url": {
+                          "path": ["chess", "player", ":username", "games"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": [
+                            {
+                              "type": "any",
+                              "value": "<string>",
+                              "key": "username",
+                              "disabled": false
+                            }
+                          ]
+                        },
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          },
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "POST",
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"year\": \"<double>\",\n  \"month\": \"<double>\"\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "auth": null
+                      },
+                      "response": [
+                        {
+                          "id": "963b852b-11c9-4162-be44-e779ca54f1ef",
+                          "name": "Ok",
+                          "originalRequest": {
+                            "url": {
+                              "path": ["chess", "player", ":username", "games"],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                              },
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "POST",
+                            "body": {
+                              "mode": "raw",
+                              "raw": "{\n  \"year\": \"<double>\",\n  \"month\": \"<double>\"\n}",
+                              "options": {
+                                "raw": {
+                                  "headerFamily": "json",
+                                  "language": "json"
+                                }
+                              }
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"existed\": \"<double>\",\n  \"synced\": \"<double>\",\n  \"total\": \"<double>\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [],
+                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                    },
+                    {
+                      "name": "{gameId}",
+                      "description": "",
+                      "item": [
+                        {
+                          "id": "718a5348-85d6-465e-b815-57b5f58c434c",
+                          "name": "Get Game",
+                          "request": {
+                            "name": "Get Game",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "games",
+                                ":gameId"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "username",
+                                  "disabled": false
+                                },
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "gameId",
+                                  "disabled": false
+                                }
+                              ]
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {},
+                            "auth": null
+                          },
+                          "response": [
+                            {
+                              "id": "3c989a5f-dac6-435c-831f-13f8dcb9ad00",
+                              "name": "Ok",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "games",
+                                    ":gameId"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": []
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        },
+                        {
+                          "name": "pgn",
+                          "description": "",
+                          "item": [
+                            {
+                              "id": "9cd34b71-20f4-4d2e-8177-ef5f8c402100",
+                              "name": "Get Game PGN",
+                              "request": {
+                                "name": "Get Game PGN",
+                                "description": {},
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "games",
+                                    ":gameId",
+                                    "pgn"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "username",
+                                      "disabled": false
+                                    },
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "gameId",
+                                      "disabled": false
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {},
+                                "auth": null
+                              },
+                              "response": [
+                                {
+                                  "id": "7848d779-bfc5-4432-b7f2-8c3c014f7266",
+                                  "name": "Ok",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "chess",
+                                        "player",
+                                        ":username",
+                                        "games",
+                                        ":gameId",
+                                        "pgn"
+                                      ],
+                                      "host": ["{{baseUrl}}"],
+                                      "query": [],
+                                      "variable": []
+                                    },
+                                    "header": [
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "GET",
+                                    "body": {}
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "<string>",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                }
+                              ],
+                              "event": [],
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "moves",
+                          "description": "",
+                          "item": [
+                            {
+                              "id": "5679666a-41ad-46b8-978c-a5d347bcd66d",
+                              "name": "Get Game Moves",
+                              "request": {
+                                "name": "Get Game Moves",
+                                "description": {},
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "games",
+                                    ":gameId",
+                                    "moves"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "username",
+                                      "disabled": false
+                                    },
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "gameId",
+                                      "disabled": false
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {},
+                                "auth": null
+                              },
+                              "response": [
+                                {
+                                  "id": "265ce91e-ec6d-43c5-a5ba-6f777deb32bb",
+                                  "name": "Ok",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "chess",
+                                        "player",
+                                        ":username",
+                                        "games",
+                                        ":gameId",
+                                        "moves"
+                                      ],
+                                      "host": ["{{baseUrl}}"],
+                                      "query": [],
+                                      "variable": []
+                                    },
+                                    "header": [
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "GET",
+                                    "body": {}
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "[]",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                }
+                              ],
+                              "event": [],
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              }
+                            },
+                            {
+                              "id": "340ade94-54e6-4cb3-a405-2317e0fcd97f",
+                              "name": "Sync Game Moves",
+                              "request": {
+                                "name": "Sync Game Moves",
+                                "description": {},
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "games",
+                                    ":gameId",
+                                    "moves"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": [
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "username",
+                                      "disabled": false
+                                    },
+                                    {
+                                      "type": "any",
+                                      "value": "<string>",
+                                      "key": "gameId",
+                                      "disabled": false
+                                    }
+                                  ]
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "POST",
+                                "body": {},
+                                "auth": null
+                              },
+                              "response": [
+                                {
+                                  "id": "a43d02a8-4af8-49ce-ae88-deb89225b698",
+                                  "name": "Ok",
+                                  "originalRequest": {
+                                    "url": {
+                                      "path": [
+                                        "chess",
+                                        "player",
+                                        ":username",
+                                        "games",
+                                        ":gameId",
+                                        "moves"
+                                      ],
+                                      "host": ["{{baseUrl}}"],
+                                      "query": [],
+                                      "variable": []
+                                    },
+                                    "header": [
+                                      {
+                                        "key": "Accept",
+                                        "value": "application/json"
+                                      }
+                                    ],
+                                    "method": "POST",
+                                    "body": {}
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "header": [
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "body": "{\n  \"total\": \"<double>\"\n}",
+                                  "cookie": [],
+                                  "_postman_previewlanguage": "json"
+                                }
+                              ],
+                              "event": [],
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "insights",
+                  "description": "",
+                  "item": [
+                    {
+                      "id": "657158f9-1244-41aa-9e49-c8be7c7aebeb",
+                      "name": "Get Insights",
+                      "request": {
+                        "name": "Get Insights",
+                        "description": {},
+                        "url": {
+                          "path": ["chess", "player", ":username", "insights"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": [
+                            {
+                              "type": "any",
+                              "value": "<string>",
+                              "key": "username",
+                              "disabled": false
+                            }
+                          ]
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {},
+                        "auth": null
+                      },
+                      "response": [
+                        {
+                          "id": "f221a5a8-f03a-4809-9741-e6fc9f96400a",
+                          "name": "Ok",
+                          "originalRequest": {
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "insights"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": []
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {}
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "body": "{\n  \"opponents\": [\n    {\n      \"loss\": \"<double>\",\n      \"draw\": \"<double>\",\n      \"win\": \"<double>\",\n      \"games\": \"<double>\",\n      \"opponent\": \"<string>\"\n    },\n    {\n      \"loss\": \"<double>\",\n      \"draw\": \"<double>\",\n      \"win\": \"<double>\",\n      \"games\": \"<double>\",\n      \"opponent\": \"<string>\"\n    }\n  ],\n  \"results\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      }\n    ],\n    \"loss\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ],\n    \"draw\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ],\n    \"win\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ]\n  },\n  \"accuracy\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"periods\": [\n      {\n        \"period\": \"<double>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"period\": \"<double>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"loss\": \"<double>\",\n    \"draw\": \"<double>\",\n    \"win\": \"<double>\",\n    \"average\": \"<double>\"\n  },\n  \"games\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"periods\": [\n      {\n        \"period\": \"<double>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"period\": \"<double>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"loss\": \"<double>\",\n    \"draw\": \"<double>\",\n    \"win\": \"<double>\",\n    \"total\": \"<double>\"\n  },\n  \"username\": \"<string>\"\n}",
+                          "cookie": [],
+                          "_postman_previewlanguage": "json"
+                        }
+                      ],
+                      "event": [],
+                      "protocolProfileBehavior": { "disableBodyPruning": true }
+                    },
+                    {
+                      "name": "games",
+                      "description": "",
+                      "item": [
+                        {
+                          "id": "53b6663c-c2d4-4625-a722-2028c083abfb",
+                          "name": "Get Games Insights",
+                          "request": {
+                            "name": "Get Games Insights",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "insights",
+                                "games"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "username",
+                                  "disabled": false
+                                }
+                              ]
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {},
+                            "auth": null
+                          },
+                          "response": [
+                            {
+                              "id": "071e7e33-9695-4f44-a6a2-c49986975d16",
+                              "name": "Ok",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "insights",
+                                    "games"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": []
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"username\": \"<string>\",\n  \"games\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"periods\": [\n      {\n        \"period\": \"<double>\",\n        \"games\": \"<double>\"\n      },\n      {\n        \"period\": \"<double>\",\n        \"games\": \"<double>\"\n      }\n    ],\n    \"loss\": \"<double>\",\n    \"draw\": \"<double>\",\n    \"win\": \"<double>\",\n    \"total\": \"<double>\"\n  }\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "accuracy",
+                      "description": "",
+                      "item": [
+                        {
+                          "id": "f0e6d6ca-71a1-4c30-92d9-0bb2c3c2ca52",
+                          "name": "Get Accuracy Insights",
+                          "request": {
+                            "name": "Get Accuracy Insights",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "insights",
+                                "accuracy"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "username",
+                                  "disabled": false
+                                }
+                              ]
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {},
+                            "auth": null
+                          },
+                          "response": [
+                            {
+                              "id": "7e2a950e-248d-4e01-b3df-d93123038df1",
+                              "name": "Ok",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "insights",
+                                    "accuracy"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": []
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"username\": \"<string>\",\n  \"accuracy\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"periods\": [\n      {\n        \"period\": \"<double>\",\n        \"average\": \"<double>\"\n      },\n      {\n        \"period\": \"<double>\",\n        \"average\": \"<double>\"\n      }\n    ],\n    \"loss\": \"<double>\",\n    \"draw\": \"<double>\",\n    \"win\": \"<double>\",\n    \"average\": \"<double>\"\n  }\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "results",
+                      "description": "",
+                      "item": [
+                        {
+                          "id": "b9f9e8c5-cf86-40a5-a064-b307209d502c",
+                          "name": "Get Results Insights",
+                          "request": {
+                            "name": "Get Results Insights",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "insights",
+                                "results"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "username",
+                                  "disabled": false
+                                }
+                              ]
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {},
+                            "auth": null
+                          },
+                          "response": [
+                            {
+                              "id": "1ff3cabf-0639-48fa-91d6-4726894d3d5d",
+                              "name": "Ok",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "insights",
+                                    "results"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": []
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"username\": \"<string>\",\n  \"results\": {\n    \"daysOfWeek\": [\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      },\n      {\n        \"dayOfWeek\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      }\n    ],\n    \"timeOfDays\": [\n      {\n        \"timeOfDay\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      },\n      {\n        \"timeOfDay\": \"<string>\",\n        \"loss\": \"<double>\",\n        \"draw\": \"<double>\",\n        \"win\": \"<double>\"\n      }\n    ],\n    \"loss\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ],\n    \"draw\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ],\n    \"win\": [\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      },\n      {\n        \"count\": \"<double>\",\n        \"result\": \"<string>\"\n      }\n    ]\n  }\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "opponents",
+                      "description": "",
+                      "item": [
+                        {
+                          "id": "21d3e9f0-5868-41fd-9057-c626a8f025db",
+                          "name": "Get Results Opponents",
+                          "request": {
+                            "name": "Get Results Opponents",
+                            "description": {},
+                            "url": {
+                              "path": [
+                                "chess",
+                                "player",
+                                ":username",
+                                "insights",
+                                "opponents"
+                              ],
+                              "host": ["{{baseUrl}}"],
+                              "query": [],
+                              "variable": [
+                                {
+                                  "type": "any",
+                                  "value": "<string>",
+                                  "key": "username",
+                                  "disabled": false
+                                }
+                              ]
+                            },
+                            "header": [
+                              { "key": "Accept", "value": "application/json" }
+                            ],
+                            "method": "GET",
+                            "body": {},
+                            "auth": null
+                          },
+                          "response": [
+                            {
+                              "id": "55c1681e-9fb5-4fa9-a879-8104948175c8",
+                              "name": "Ok",
+                              "originalRequest": {
+                                "url": {
+                                  "path": [
+                                    "chess",
+                                    "player",
+                                    ":username",
+                                    "insights",
+                                    "opponents"
+                                  ],
+                                  "host": ["{{baseUrl}}"],
+                                  "query": [],
+                                  "variable": []
+                                },
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "application/json"
+                                  }
+                                ],
+                                "method": "GET",
+                                "body": {}
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "body": "{\n  \"opponents\": [\n    {\n      \"loss\": \"<double>\",\n      \"draw\": \"<double>\",\n      \"win\": \"<double>\",\n      \"games\": \"<double>\",\n      \"opponent\": \"<string>\"\n    },\n    {\n      \"loss\": \"<double>\",\n      \"draw\": \"<double>\",\n      \"win\": \"<double>\",\n      \"games\": \"<double>\",\n      \"opponent\": \"<string>\"\n    }\n  ],\n  \"total\": \"<double>\",\n  \"username\": \"<string>\"\n}",
+                              "cookie": [],
+                              "_postman_previewlanguage": "json"
+                            }
+                          ],
+                          "event": [],
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "d683a201-4ef6-4c87-b865-d097d8838119",
+                  "name": "Get Player",
+                  "request": {
+                    "name": "Get Player",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "player", ":username"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": [
+                        {
+                          "type": "any",
+                          "value": "<string>",
+                          "key": "username",
+                          "disabled": false
+                        }
+                      ]
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "bc107d43-296d-4907-948e-7d8c122d67e9",
+                      "name": "Ok",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "player", ":username"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "body": "{}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                },
+                {
+                  "id": "691d7420-ccdc-47a8-a184-8b6dc6c51ac0",
+                  "name": "Sync Player",
+                  "request": {
+                    "name": "Sync Player",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "player", ":username"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": [
+                        {
+                          "type": "any",
+                          "value": "<string>",
+                          "key": "username",
+                          "disabled": false
+                        }
+                      ]
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "961c9673-9864-43e6-becc-b99f5203db75",
+                      "name": "Ok",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "player", ":username"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "POST",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "body": "{}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "streamers",
+          "description": "",
+          "item": [
+            {
+              "id": "94055d1e-9fd6-47b9-9b4f-5ad5c6aae323",
+              "name": "Get Streamers",
+              "request": {
+                "name": "Get Streamers",
+                "description": {},
+                "url": {
+                  "path": ["chess", "streamers"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "title",
+                      "value": "NM"
+                    },
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "country",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "589a14b4-3f69-47ea-ba3b-4fb0bb7af306",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "streamers"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "title",
+                          "value": "NM"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "country",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"countries\": [\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    },\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    }\n  ],\n  \"players\": [],\n  \"total\": \"<double>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        },
+        {
+          "name": "countries",
+          "description": "",
+          "item": [
+            {
+              "id": "73bf3bc7-9fab-4340-8a40-82ad67cf0467",
+              "name": "Get Countries",
+              "request": {
+                "name": "Get Countries",
+                "description": {},
+                "url": {
+                  "path": ["chess", "countries"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": { "content": "", "type": "text/plain" },
+                      "key": "cache",
+                      "value": "true"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "40c997df-53a4-4530-bcad-bc780441187c",
+                  "name": "Ok",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "countries"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "cache",
+                          "value": "true"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "[\n  {\n    \"total\": \"<string>\",\n    \"country\": \"<string>\",\n    \"countryCode\": \"<string>\"\n  },\n  {\n    \"total\": \"<string>\",\n    \"country\": \"<string>\",\n    \"countryCode\": \"<string>\"\n  }\n]",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            },
+            {
+              "name": "{code}",
+              "description": "",
+              "item": [
+                {
+                  "id": "09e5ce6a-f3f7-4e72-8f53-ef8f3576e158",
+                  "name": "Get Titled Players By Country",
+                  "request": {
+                    "name": "Get Titled Players By Country",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "countries", ":code"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "cache",
+                          "value": "true"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "type": "any",
+                          "value": "<string>",
+                          "key": "code",
+                          "disabled": false
+                        }
+                      ]
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "28ba6329-1efb-473e-a08a-05c8efaaf089",
+                      "name": "Ok",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "countries", ":code"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "",
+                                "type": "text/plain"
+                              },
+                              "key": "cache",
+                              "value": "true"
+                            }
+                          ],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "body": "{\n  \"titles\": [\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    }\n  ],\n  \"players\": [],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "titled",
+          "description": "",
+          "item": [
+            {
+              "name": "{title}",
+              "description": "",
+              "item": [
+                {
+                  "id": "5841ea88-a77c-4618-9bd7-a9823e06accc",
+                  "name": "Get Titled Stats",
+                  "request": {
+                    "name": "Get Titled Stats",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "titled", ":title"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "cache",
+                          "value": "true"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "key": "timeRange",
+                          "value": "YEAR"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "type": "any",
+                          "value": "CM",
+                          "key": "title",
+                          "disabled": false
+                        }
+                      ]
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "aca785da-1dcb-4b74-9fd0-6914b909cb1c",
+                      "name": "Ok",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "titled", ":title"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "",
+                                "type": "text/plain"
+                              },
+                              "key": "cache",
+                              "value": "true"
+                            },
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "",
+                                "type": "text/plain"
+                              },
+                              "key": "timeRange",
+                              "value": "YEAR"
+                            }
+                          ],
+                          "variable": []
+                        },
+                        "header": [
+                          { "key": "Accept", "value": "application/json" }
+                        ],
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [
+                        { "key": "Content-Type", "value": "application/json" }
+                      ],
+                      "body": "{\n  \"players\": [],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
+                      "cookie": [],
+                      "_postman_previewlanguage": "json"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "c2c473dd-9d7a-4dee-a755-c32ccbef6531",
+          "name": "Get Health",
+          "request": {
+            "name": "Get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "54130b0c-40dc-4aa6-ae3b-8bcbefb9ce8e",
+              "name": "Ok",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "body": "{\n  \"status\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:8080/api" }],
+  "info": {
+    "_postman_id": "6335ec11-ee3d-4b27-86cf-02e5528cba71",
+    "name": "@chess/api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Chess - API\n\nContact Support:\n Name: hieudoanm \n Email: hieumdoan@gmail.com",
+      "type": "text/plain"
+    }
+  }
+}

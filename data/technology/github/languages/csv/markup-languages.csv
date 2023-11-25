@@ -1,0 +1,61 @@
+type,color,ace_mode,tm_scope,language
+markup,#563d7c,css,source.css,CSS
+markup,#a52a22,django,text.html.django,Jinja
+markup,#a91e50,ejs,text.html.js,EJS
+markup,#ece2a9,haml,text.haml,Haml
+markup,#f7931e,handlebars,text.html.handlebars,Handlebars
+markup,#ff5a03,html,source.astro,Astro
+markup,#5562ac,html,source.csswg,Bikeshed
+markup,#3fb34f,html,source.string-template,StringTemplate
+markup,#ff3e00,html,source.svelte,Svelte
+markup,#e34c26,html,text.html.basic,HTML
+markup,,html,text.html.basic,Kit
+markup,#b7e1f4,html,text.html.basic,MTML
+markup,#eb8131,html,text.html.ecmarkup,Ecmarkup
+markup,#A71E49,html,text.html.riot,Riot
+markup,#41b883,html,text.html.vue,Vue
+markup,#a86454,jade,text.jade,Pug
+markup,#DA5B0B,json,source.json,Jupyter Notebook
+markup,#1d365d,less,source.css.less,Less
+markup,#67b8de,liquid,text.html.liquid,Liquid
+markup,#348a34,lisp,source.lisp,SRecode Template
+markup,#fcb32c,markdown,source.mdx,MDX
+markup,#2ACCA8,markdown,text.html.markdown.source.gfm.apib,API Blueprint
+markup,#f97732,mask,source.mask,Mask
+markup,#3d8137,nunjucks,text.html.nunjucks,Nunjucks
+markup,#4f5d95,php,text.html.php,HTML+PHP
+markup,#512be4,razor,text.html.cshtml,HTML+Razor
+markup,#a53b70,sass,source.sass,Sass
+markup,#c6538c,scss,source.css.scss,SCSS
+markup,#f2a542,smarty,text.html.smarty,Latte
+markup,#724b3b,smarty,text.html.smarty,Mustache
+markup,#0d948f,soy_template,text.html.soy,Closure Templates
+markup,#ff6347,stylus,source.stylus,Stylus
+markup,#778899,tex,text.bibtex,BibTeX
+markup,#3D6117,tex,text.tex.latex,TeX
+markup,#2fcc9f,text,source.css.postcss.sugarss,SugarSS
+markup,#526ee8,text,source.d2,D2
+markup,#d8df39,text,source.genero-forms,Genero Forms
+markup,#ff3670,text,source.mermaid,Mermaid
+markup,,text,source.pic,Pic
+markup,#dc3a0c,text,source.postcss,PostCSS
+markup,#da291c,text,source.postscript,PostScript
+markup,#1da6e0,text,source.python.kivy,kvlang
+markup,#bd181a,text,source.scaml,Scaml
+markup,,text,source.tea,Tea
+markup,#199f4b,text,source.vim-snippet,Vim Snippet
+markup,#32AB90,text,source.yasnippet,YASnippet
+markup,#2e1052,text,text.html.ecr,HTML+ECR
+markup,#6e4a7e,text,text.html.elixir,HTML+EEX
+markup,#701516,text,text.html.erb,HTML+ERB
+markup,#f7523f,text,text.html.php.blade,Blade
+markup,#ff269e,text,text.html.statamic,Antlers
+markup,#42bff2,text,text.marko,Marko
+markup,#ecdebe,text,text.roff,Roff
+markup,#ecdebe,text,text.roff,Roff Manpage
+markup,,text,text.rtf,Rich Text Format
+markup,#665a4e,text,text.runoff,RUNOFF
+markup,#2b2b2b,text,text.slim,Slim
+markup,#c1d026,twig,text.html.twig,Twig
+markup,#507cff,velocity,source.velocity,Velocity Template Language
+markup,#77d9fb,yaml,source.yaml,RAML

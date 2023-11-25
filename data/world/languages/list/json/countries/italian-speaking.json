@@ -1,0 +1,26 @@
+[
+  {
+    "country": "Italy",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 59554023
+  },
+  {
+    "country": "San Marino",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 33938
+  },
+  {
+    "country": "Vatican City",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 451
+  },
+  {
+    "country": "Switzerland",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 8654622
+  }
+]

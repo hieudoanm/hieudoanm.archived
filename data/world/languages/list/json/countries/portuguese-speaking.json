@@ -1,0 +1,50 @@
+[
+  {
+    "country": "Mozambique",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 31255435
+  },
+  {
+    "country": "Angola",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 32866268
+  },
+  {
+    "country": "Equatorial Guinea",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 1402985
+  },
+  {
+    "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 219161
+  },
+  {
+    "country": "Cape Verde",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 555988
+  },
+  {
+    "country": "Brazil",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 212559409
+  },
+  {
+    "country": "Timor-Leste",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 1318442
+  },
+  {
+    "country": "Portugal",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 10305564
+  }
+]

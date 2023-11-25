@@ -1,0 +1,419 @@
+cca3,name,timeZone,utcOffset
+AND,Andorra,Europe/Andorra,UTC+02:00
+ARE,United Arab Emirates,Asia/Dubai,UTC+04:00
+AFG,Afghanistan,Asia/Kabul,UTC+04:30
+ATG,Antigua and Barbuda,America/Antigua,UTC-04:00
+AIA,Anguilla,America/Anguilla,UTC-04:00
+ALB,Albania,Europe/Tirane,UTC+02:00
+ARM,Armenia,Asia/Yerevan,UTC+04:00
+AGO,Angola,Africa/Luanda,UTC+01:00
+ATA,Antarctica,Antarctica/Casey,UTC+11:00
+ATA,Antarctica,Antarctica/Davis,UTC+07:00
+ATA,Antarctica,Antarctica/DumontDUrville,UTC+10:00
+ATA,Antarctica,Antarctica/Mawson,UTC+05:00
+ATA,Antarctica,Antarctica/McMurdo,UTC+12:00
+ATA,Antarctica,Antarctica/Palmer,UTC-03:00
+ATA,Antarctica,Antarctica/Rothera,UTC-03:00
+ATA,Antarctica,Antarctica/Syowa,UTC+03:00
+ATA,Antarctica,Antarctica/Troll,UTC+02:00
+ATA,Antarctica,Antarctica/Vostok,UTC+06:00
+ARG,Argentina,America/Argentina/Buenos_Aires,UTC-03:00
+ARG,Argentina,America/Argentina/Catamarca,UTC-03:00
+ARG,Argentina,America/Argentina/Cordoba,UTC-03:00
+ARG,Argentina,America/Argentina/Jujuy,UTC-03:00
+ARG,Argentina,America/Argentina/La_Rioja,UTC-03:00
+ARG,Argentina,America/Argentina/Mendoza,UTC-03:00
+ARG,Argentina,America/Argentina/Rio_Gallegos,UTC-03:00
+ARG,Argentina,America/Argentina/Salta,UTC-03:00
+ARG,Argentina,America/Argentina/San_Juan,UTC-03:00
+ARG,Argentina,America/Argentina/San_Luis,UTC-03:00
+ARG,Argentina,America/Argentina/Tucuman,UTC-03:00
+ARG,Argentina,America/Argentina/Ushuaia,UTC-03:00
+ASM,American Samoa,Pacific/Pago_Pago,UTC-11:00
+AUT,Austria,Europe/Vienna,UTC+02:00
+AUS,Australia,Antarctica/Macquarie,UTC+10:00
+AUS,Australia,Australia/Adelaide,UTC+09:30
+AUS,Australia,Australia/Brisbane,UTC+10:00
+AUS,Australia,Australia/Broken_Hill,UTC+09:30
+AUS,Australia,Australia/Darwin,UTC+09:30
+AUS,Australia,Australia/Eucla,UTC+08:45
+AUS,Australia,Australia/Hobart,UTC+10:00
+AUS,Australia,Australia/Lindeman,UTC+10:00
+AUS,Australia,Australia/Lord_Howe,UTC+10:30
+AUS,Australia,Australia/Melbourne,UTC+10:00
+AUS,Australia,Australia/Perth,UTC+08:00
+AUS,Australia,Australia/Sydney,UTC+10:00
+ABW,Aruba,America/Aruba,UTC-04:00
+ALA,Åland Islands,Europe/Mariehamn,UTC+03:00
+AZE,Azerbaijan,Asia/Baku,UTC+04:00
+BIH,Bosnia and Herzegovina,Europe/Sarajevo,UTC+02:00
+BRB,Barbados,America/Barbados,UTC-04:00
+BGD,Bangladesh,Asia/Dhaka,UTC+06:00
+BEL,Belgium,Europe/Brussels,UTC+02:00
+BFA,Burkina Faso,Africa/Ouagadougou,UTC
+BGR,Bulgaria,Europe/Sofia,UTC+03:00
+BHR,Bahrain,Asia/Bahrain,UTC+03:00
+BDI,Burundi,Africa/Bujumbura,UTC+02:00
+BEN,Benin,Africa/Porto-Novo,UTC+01:00
+BLM,Saint Barthélemy,America/St_Barthelemy,UTC-04:00
+BMU,Bermuda,Atlantic/Bermuda,UTC-03:00
+BRN,Brunei Darussalam,Asia/Brunei,UTC+08:00
+BOL,"Bolivia, Plurinational State of",America/La_Paz,UTC-04:00
+BES,"Bonaire, Sint Eustatius and Saba",America/Kralendijk,UTC-04:00
+BRA,Brazil,America/Araguaina,UTC-03:00
+BRA,Brazil,America/Bahia,UTC-03:00
+BRA,Brazil,America/Belem,UTC-03:00
+BRA,Brazil,America/Boa_Vista,UTC-04:00
+BRA,Brazil,America/Campo_Grande,UTC-04:00
+BRA,Brazil,America/Cuiaba,UTC-04:00
+BRA,Brazil,America/Eirunepe,UTC-05:00
+BRA,Brazil,America/Fortaleza,UTC-03:00
+BRA,Brazil,America/Maceio,UTC-03:00
+BRA,Brazil,America/Manaus,UTC-04:00
+BRA,Brazil,America/Noronha,UTC-02:00
+BRA,Brazil,America/Porto_Velho,UTC-04:00
+BRA,Brazil,America/Recife,UTC-03:00
+BRA,Brazil,America/Rio_Branco,UTC-05:00
+BRA,Brazil,America/Santarem,UTC-03:00
+BRA,Brazil,America/Sao_Paulo,UTC-03:00
+BHS,Bahamas,America/Nassau,UTC-04:00
+BTN,Bhutan,Asia/Thimphu,UTC+06:00
+BWA,Botswana,Africa/Gaborone,UTC+02:00
+BLR,Belarus,Europe/Minsk,UTC+03:00
+BLZ,Belize,America/Belize,UTC-06:00
+CAN,Canada,America/Atikokan,UTC-05:00
+CAN,Canada,America/Blanc-Sablon,UTC-04:00
+CAN,Canada,America/Cambridge_Bay,UTC-06:00
+CAN,Canada,America/Creston,UTC-07:00
+CAN,Canada,America/Dawson,UTC-07:00
+CAN,Canada,America/Dawson_Creek,UTC-07:00
+CAN,Canada,America/Edmonton,UTC-06:00
+CAN,Canada,America/Fort_Nelson,UTC-07:00
+CAN,Canada,America/Glace_Bay,UTC-03:00
+CAN,Canada,America/Goose_Bay,UTC-03:00
+CAN,Canada,America/Halifax,UTC-03:00
+CAN,Canada,America/Inuvik,UTC-06:00
+CAN,Canada,America/Iqaluit,UTC-04:00
+CAN,Canada,America/Moncton,UTC-03:00
+CAN,Canada,America/Rankin_Inlet,UTC-05:00
+CAN,Canada,America/Regina,UTC-06:00
+CAN,Canada,America/Resolute,UTC-05:00
+CAN,Canada,America/St_Johns,UTC-02:30
+CAN,Canada,America/Swift_Current,UTC-06:00
+CAN,Canada,America/Toronto,UTC-04:00
+CAN,Canada,America/Vancouver,UTC-07:00
+CAN,Canada,America/Whitehorse,UTC-07:00
+CAN,Canada,America/Winnipeg,UTC-05:00
+CCK,Cocos (Keeling) Islands,Indian/Cocos,UTC+06:30
+COD,"Congo, the Democratic Republic of the",Africa/Kinshasa,UTC+01:00
+COD,"Congo, the Democratic Republic of the",Africa/Lubumbashi,UTC+02:00
+CAF,Central African Republic,Africa/Bangui,UTC+01:00
+COG,Congo,Africa/Brazzaville,UTC+01:00
+CHE,Switzerland,Europe/Zurich,UTC+02:00
+CIV,Côte d'Ivoire,Africa/Abidjan,UTC
+COK,Cook Islands,Pacific/Rarotonga,UTC-10:00
+CHL,Chile,America/Punta_Arenas,UTC-03:00
+CHL,Chile,America/Santiago,UTC-04:00
+CHL,Chile,Pacific/Easter,UTC-06:00
+CMR,Cameroon,Africa/Douala,UTC+01:00
+CHN,China,Asia/Shanghai,UTC+08:00
+CHN,China,Asia/Urumqi,UTC+06:00
+COL,Colombia,America/Bogota,UTC-05:00
+CRI,Costa Rica,America/Costa_Rica,UTC-06:00
+CUB,Cuba,America/Havana,UTC-04:00
+CPV,Cape Verde,Atlantic/Cape_Verde,UTC-01:00
+CUW,Curaçao,America/Curacao,UTC-04:00
+CXR,Christmas Island,Indian/Christmas,UTC+07:00
+CYP,Cyprus,Asia/Famagusta,UTC+03:00
+CYP,Cyprus,Asia/Nicosia,UTC+03:00
+CZE,Czech Republic,Europe/Prague,UTC+02:00
+DEU,Germany,Europe/Berlin,UTC+02:00
+DEU,Germany,Europe/Busingen,UTC+02:00
+DJI,Djibouti,Africa/Djibouti,UTC+03:00
+DNK,Denmark,Europe/Copenhagen,UTC+02:00
+DMA,Dominica,America/Dominica,UTC-04:00
+DOM,Dominican Republic,America/Santo_Domingo,UTC-04:00
+DZA,Algeria,Africa/Algiers,UTC+01:00
+ECU,Ecuador,America/Guayaquil,UTC-05:00
+ECU,Ecuador,Pacific/Galapagos,UTC-06:00
+EST,Estonia,Europe/Tallinn,UTC+03:00
+EGY,Egypt,Africa/Cairo,UTC+03:00
+ERI,Eritrea,Africa/Asmara,UTC+03:00
+ESP,Spain,Africa/Ceuta,UTC+02:00
+ESP,Spain,Atlantic/Canary,UTC+01:00
+ESP,Spain,Europe/Madrid,UTC+02:00
+ETH,Ethiopia,Africa/Addis_Ababa,UTC+03:00
+FIN,Finland,Europe/Helsinki,UTC+03:00
+FJI,Fiji,Pacific/Fiji,UTC+12:00
+FLK,Falkland Islands (Malvinas),Atlantic/Stanley,UTC-03:00
+FSM,"Micronesia, Federated States of",Pacific/Chuuk,UTC+10:00
+FSM,"Micronesia, Federated States of",Pacific/Kosrae,UTC+11:00
+FSM,"Micronesia, Federated States of",Pacific/Pohnpei,UTC+11:00
+FRO,Faroe Islands,Atlantic/Faroe,UTC+01:00
+FRA,France,Europe/Paris,UTC+02:00
+GAB,Gabon,Africa/Libreville,UTC+01:00
+GBR,United Kingdom,Europe/London,UTC+01:00
+GRD,Grenada,America/Grenada,UTC-04:00
+GEO,Georgia,Asia/Tbilisi,UTC+04:00
+GUF,French Guiana,America/Cayenne,UTC-03:00
+GGY,Guernsey,Europe/Guernsey,UTC+01:00
+GHA,Ghana,Africa/Accra,UTC
+GIB,Gibraltar,Europe/Gibraltar,UTC+02:00
+GRL,Greenland,America/Danmarkshavn,UTC
+GRL,Greenland,America/Nuuk,UTC-02:00
+GRL,Greenland,America/Scoresbysund,UTC
+GRL,Greenland,America/Thule,UTC-03:00
+GMB,Gambia,Africa/Banjul,UTC
+GIN,Guinea,Africa/Conakry,UTC
+GLP,Guadeloupe,America/Guadeloupe,UTC-04:00
+GNQ,Equatorial Guinea,Africa/Malabo,UTC+01:00
+GRC,Greece,Europe/Athens,UTC+03:00
+SGS,South Georgia and the South Sandwich Islands,Atlantic/South_Georgia,UTC-02:00
+GTM,Guatemala,America/Guatemala,UTC-06:00
+GUM,Guam,Pacific/Guam,UTC+10:00
+GNB,Guinea-Bissau,Africa/Bissau,UTC
+GUY,Guyana,America/Guyana,UTC-04:00
+HKG,Hong Kong,Asia/Hong_Kong,UTC+08:00
+HND,Honduras,America/Tegucigalpa,UTC-06:00
+HRV,Croatia,Europe/Zagreb,UTC+02:00
+HTI,Haiti,America/Port-au-Prince,UTC-04:00
+HUN,Hungary,Europe/Budapest,UTC+02:00
+IDN,Indonesia,Asia/Jakarta,UTC+07:00
+IDN,Indonesia,Asia/Jayapura,UTC+09:00
+IDN,Indonesia,Asia/Makassar,UTC+08:00
+IDN,Indonesia,Asia/Pontianak,UTC+07:00
+IRL,Ireland,Europe/Dublin,UTC+01:00
+ISR,Israel,Asia/Jerusalem,UTC+03:00
+IMN,Isle of Man,Europe/Isle_of_Man,UTC+01:00
+IND,India,Asia/Kolkata,UTC+05:30
+IOT,British Indian Ocean Territory,Indian/Chagos,UTC+06:00
+IRQ,Iraq,Asia/Baghdad,UTC+03:00
+IRN,"Iran, Islamic Republic of",Asia/Tehran,UTC+03:30
+ISL,Iceland,Atlantic/Reykjavik,UTC
+ITA,Italy,Europe/Rome,UTC+02:00
+JEY,Jersey,Europe/Jersey,UTC+01:00
+JAM,Jamaica,America/Jamaica,UTC-05:00
+JOR,Jordan,Asia/Amman,UTC+03:00
+JPN,Japan,Asia/Tokyo,UTC+09:00
+KEN,Kenya,Africa/Nairobi,UTC+03:00
+KGZ,Kyrgyzstan,Asia/Bishkek,UTC+06:00
+KHM,Cambodia,Asia/Phnom_Penh,UTC+07:00
+KIR,Kiribati,Pacific/Kanton,UTC+13:00
+KIR,Kiribati,Pacific/Kiritimati,UTC+14:00
+KIR,Kiribati,Pacific/Tarawa,UTC+12:00
+COM,Comoros,Indian/Comoro,UTC+03:00
+KNA,Saint Kitts and Nevis,America/St_Kitts,UTC-04:00
+PRK,"Korea, Democratic People's Republic of",Asia/Pyongyang,UTC+09:00
+KOR,"Korea, Republic of",Asia/Seoul,UTC+09:00
+KWT,Kuwait,Asia/Kuwait,UTC+03:00
+CYM,Cayman Islands,America/Cayman,UTC-05:00
+KAZ,Kazakhstan,Asia/Almaty,UTC+06:00
+KAZ,Kazakhstan,Asia/Aqtau,UTC+05:00
+KAZ,Kazakhstan,Asia/Aqtobe,UTC+05:00
+KAZ,Kazakhstan,Asia/Atyrau,UTC+05:00
+KAZ,Kazakhstan,Asia/Oral,UTC+05:00
+KAZ,Kazakhstan,Asia/Qostanay,UTC+06:00
+KAZ,Kazakhstan,Asia/Qyzylorda,UTC+05:00
+LAO,Lao People's Democratic Republic,Asia/Vientiane,UTC+07:00
+LBN,Lebanon,Asia/Beirut,UTC+03:00
+LCA,Saint Lucia,America/St_Lucia,UTC-04:00
+LIE,Liechtenstein,Europe/Vaduz,UTC+02:00
+LKA,Sri Lanka,Asia/Colombo,UTC+05:30
+LBR,Liberia,Africa/Monrovia,UTC
+LSO,Lesotho,Africa/Maseru,UTC+02:00
+LTU,Lithuania,Europe/Vilnius,UTC+03:00
+LUX,Luxembourg,Europe/Luxembourg,UTC+02:00
+LVA,Latvia,Europe/Riga,UTC+03:00
+LBY,Libya,Africa/Tripoli,UTC+02:00
+MAR,Morocco,Africa/Casablanca,UTC+01:00
+MAR,Morocco,Africa/El_Aaiun,UTC+01:00
+MCO,Monaco,Europe/Monaco,UTC+02:00
+MDA,"Moldova, Republic of",Europe/Chisinau,UTC+03:00
+MNE,Montenegro,Europe/Podgorica,UTC+02:00
+MAF,Saint Martin (French part),America/Marigot,UTC-04:00
+MDG,Madagascar,Indian/Antananarivo,UTC+03:00
+MHL,Marshall Islands,Pacific/Kwajalein,UTC+12:00
+MHL,Marshall Islands,Pacific/Majuro,UTC+12:00
+MKD,"Macedonia, the Former Yugoslav Republic of",Europe/Skopje,UTC+02:00
+MLI,Mali,Africa/Bamako,UTC
+MMR,Myanmar,Asia/Yangon,UTC+06:30
+MNG,Mongolia,Asia/Choibalsan,UTC+08:00
+MNG,Mongolia,Asia/Hovd,UTC+07:00
+MNG,Mongolia,Asia/Ulaanbaatar,UTC+08:00
+MAC,Macao,Asia/Macau,UTC+08:00
+MNP,Northern Mariana Islands,Pacific/Saipan,UTC+10:00
+MTQ,Martinique,America/Martinique,UTC-04:00
+MRT,Mauritania,Africa/Nouakchott,UTC
+MSR,Montserrat,America/Montserrat,UTC-04:00
+MLT,Malta,Europe/Malta,UTC+02:00
+MUS,Mauritius,Indian/Mauritius,UTC+04:00
+MDV,Maldives,Indian/Maldives,UTC+05:00
+MWI,Malawi,Africa/Blantyre,UTC+02:00
+MEX,Mexico,America/Bahia_Banderas,UTC-06:00
+MEX,Mexico,America/Cancun,UTC-05:00
+MEX,Mexico,America/Chihuahua,UTC-06:00
+MEX,Mexico,America/Ciudad_Juarez,UTC-06:00
+MEX,Mexico,America/Hermosillo,UTC-07:00
+MEX,Mexico,America/Matamoros,UTC-05:00
+MEX,Mexico,America/Mazatlan,UTC-07:00
+MEX,Mexico,America/Merida,UTC-06:00
+MEX,Mexico,America/Mexico_City,UTC-06:00
+MEX,Mexico,America/Monterrey,UTC-06:00
+MEX,Mexico,America/Ojinaga,UTC-05:00
+MEX,Mexico,America/Tijuana,UTC-07:00
+MYS,Malaysia,Asia/Kuala_Lumpur,UTC+08:00
+MYS,Malaysia,Asia/Kuching,UTC+08:00
+MOZ,Mozambique,Africa/Maputo,UTC+02:00
+,Namibia,Africa/Windhoek,UTC+02:00
+NCL,New Caledonia,Pacific/Noumea,UTC+11:00
+NER,Niger,Africa/Niamey,UTC+01:00
+NFK,Norfolk Island,Pacific/Norfolk,UTC+11:00
+NGA,Nigeria,Africa/Lagos,UTC+01:00
+NIC,Nicaragua,America/Managua,UTC-06:00
+NLD,Netherlands,Europe/Amsterdam,UTC+02:00
+NOR,Norway,Europe/Oslo,UTC+02:00
+NPL,Nepal,Asia/Kathmandu,UTC+05:45
+NRU,Nauru,Pacific/Nauru,UTC+12:00
+NIU,Niue,Pacific/Niue,UTC-11:00
+NZL,New Zealand,Pacific/Auckland,UTC+12:00
+NZL,New Zealand,Pacific/Chatham,UTC+12:45
+OMN,Oman,Asia/Muscat,UTC+04:00
+PAN,Panama,America/Panama,UTC-05:00
+PER,Peru,America/Lima,UTC-05:00
+PYF,French Polynesia,Pacific/Gambier,UTC-09:00
+PYF,French Polynesia,Pacific/Marquesas,UTC-09:30
+PYF,French Polynesia,Pacific/Tahiti,UTC-10:00
+PNG,Papua New Guinea,Pacific/Bougainville,UTC+11:00
+PNG,Papua New Guinea,Pacific/Port_Moresby,UTC+10:00
+PHL,Philippines,Asia/Manila,UTC+08:00
+PAK,Pakistan,Asia/Karachi,UTC+05:00
+POL,Poland,Europe/Warsaw,UTC+02:00
+SPM,Saint Pierre and Miquelon,America/Miquelon,UTC-02:00
+PCN,Pitcairn,Pacific/Pitcairn,UTC-08:00
+PRI,Puerto Rico,America/Puerto_Rico,UTC-04:00
+PSE,"Palestine, State of",Asia/Gaza,UTC+03:00
+PSE,"Palestine, State of",Asia/Hebron,UTC+03:00
+PRT,Portugal,Atlantic/Azores,UTC
+PRT,Portugal,Atlantic/Madeira,UTC+01:00
+PRT,Portugal,Europe/Lisbon,UTC+01:00
+PLW,Palau,Pacific/Palau,UTC+09:00
+PRY,Paraguay,America/Asuncion,UTC-04:00
+QAT,Qatar,Asia/Qatar,UTC+03:00
+REU,Réunion,Indian/Reunion,UTC+04:00
+ROU,Romania,Europe/Bucharest,UTC+03:00
+SRB,Serbia,Europe/Belgrade,UTC+02:00
+RUS,Russian Federation,Asia/Anadyr,UTC+12:00
+RUS,Russian Federation,Asia/Barnaul,UTC+07:00
+RUS,Russian Federation,Asia/Chita,UTC+09:00
+RUS,Russian Federation,Asia/Irkutsk,UTC+08:00
+RUS,Russian Federation,Asia/Kamchatka,UTC+12:00
+RUS,Russian Federation,Asia/Khandyga,UTC+09:00
+RUS,Russian Federation,Asia/Krasnoyarsk,UTC+07:00
+RUS,Russian Federation,Asia/Magadan,UTC+11:00
+RUS,Russian Federation,Asia/Novokuznetsk,UTC+07:00
+RUS,Russian Federation,Asia/Novosibirsk,UTC+07:00
+RUS,Russian Federation,Asia/Omsk,UTC+06:00
+RUS,Russian Federation,Asia/Sakhalin,UTC+11:00
+RUS,Russian Federation,Asia/Srednekolymsk,UTC+11:00
+RUS,Russian Federation,Asia/Tomsk,UTC+07:00
+RUS,Russian Federation,Asia/Ust-Nera,UTC+10:00
+RUS,Russian Federation,Asia/Vladivostok,UTC+10:00
+RUS,Russian Federation,Asia/Yakutsk,UTC+09:00
+RUS,Russian Federation,Asia/Yekaterinburg,UTC+05:00
+RUS,Russian Federation,Europe/Astrakhan,UTC+04:00
+RUS,Russian Federation,Europe/Kaliningrad,UTC+02:00
+RUS,Russian Federation,Europe/Kirov,UTC+03:00
+RUS,Russian Federation,Europe/Moscow,UTC+03:00
+RUS,Russian Federation,Europe/Samara,UTC+04:00
+RUS,Russian Federation,Europe/Saratov,UTC+04:00
+RUS,Russian Federation,Europe/Ulyanovsk,UTC+04:00
+RUS,Russian Federation,Europe/Volgograd,UTC+03:00
+RWA,Rwanda,Africa/Kigali,UTC+02:00
+SAU,Saudi Arabia,Asia/Riyadh,UTC+03:00
+SLB,Solomon Islands,Pacific/Guadalcanal,UTC+11:00
+SYC,Seychelles,Indian/Mahe,UTC+04:00
+SDN,Sudan,Africa/Khartoum,UTC+02:00
+SWE,Sweden,Europe/Stockholm,UTC+02:00
+SGP,Singapore,Asia/Singapore,UTC+08:00
+SHN,"Saint Helena, Ascension and Tristan da Cunha",Atlantic/St_Helena,UTC
+SVN,Slovenia,Europe/Ljubljana,UTC+02:00
+SJM,Svalbard and Jan Mayen,Arctic/Longyearbyen,UTC+02:00
+SVK,Slovakia,Europe/Bratislava,UTC+02:00
+SLE,Sierra Leone,Africa/Freetown,UTC
+SMR,San Marino,Europe/San_Marino,UTC+02:00
+SEN,Senegal,Africa/Dakar,UTC
+SOM,Somalia,Africa/Mogadishu,UTC+03:00
+SUR,Suriname,America/Paramaribo,UTC-03:00
+SSD,South Sudan,Africa/Juba,UTC+02:00
+STP,Sao Tome and Principe,Africa/Sao_Tome,UTC
+SLV,El Salvador,America/El_Salvador,UTC-06:00
+SXM,Sint Maarten (Dutch part),America/Lower_Princes,UTC-04:00
+SYR,Syrian Arab Republic,Asia/Damascus,UTC+03:00
+SWZ,Swaziland,Africa/Mbabane,UTC+02:00
+TCA,Turks and Caicos Islands,America/Grand_Turk,UTC-04:00
+TCD,Chad,Africa/Ndjamena,UTC+01:00
+ATF,French Southern Territories,Indian/Kerguelen,UTC+05:00
+TGO,Togo,Africa/Lome,UTC
+THA,Thailand,Asia/Bangkok,UTC+07:00
+TJK,Tajikistan,Asia/Dushanbe,UTC+05:00
+TKL,Tokelau,Pacific/Fakaofo,UTC+13:00
+TLS,Timor-Leste,Asia/Dili,UTC+09:00
+TKM,Turkmenistan,Asia/Ashgabat,UTC+05:00
+TUN,Tunisia,Africa/Tunis,UTC+01:00
+TON,Tonga,Pacific/Tongatapu,UTC+13:00
+TUR,Turkey,Europe/Istanbul,UTC+03:00
+TTO,Trinidad and Tobago,America/Port_of_Spain,UTC-04:00
+TUV,Tuvalu,Pacific/Funafuti,UTC+12:00
+TWN,"Taiwan, Province of China",Asia/Taipei,UTC+08:00
+TZA,"Tanzania, United Republic of",Africa/Dar_es_Salaam,UTC+03:00
+UKR,Ukraine,Europe/Kyiv,UTC+03:00
+UKR,Ukraine,Europe/Simferopol,UTC+03:00
+UGA,Uganda,Africa/Kampala,UTC+03:00
+UMI,United States Minor Outlying Islands,Pacific/Midway,UTC-11:00
+UMI,United States Minor Outlying Islands,Pacific/Wake,UTC+12:00
+USA,United States,America/Adak,UTC-09:00
+USA,United States,America/Anchorage,UTC-08:00
+USA,United States,America/Boise,UTC-06:00
+USA,United States,America/Chicago,UTC-05:00
+USA,United States,America/Denver,UTC-06:00
+USA,United States,America/Detroit,UTC-04:00
+USA,United States,America/Indiana/Indianapolis,UTC-04:00
+USA,United States,America/Indiana/Knox,UTC-05:00
+USA,United States,America/Indiana/Marengo,UTC-04:00
+USA,United States,America/Indiana/Petersburg,UTC-04:00
+USA,United States,America/Indiana/Tell_City,UTC-05:00
+USA,United States,America/Indiana/Vevay,UTC-04:00
+USA,United States,America/Indiana/Vincennes,UTC-04:00
+USA,United States,America/Indiana/Winamac,UTC-04:00
+USA,United States,America/Juneau,UTC-08:00
+USA,United States,America/Kentucky/Louisville,UTC-04:00
+USA,United States,America/Kentucky/Monticello,UTC-04:00
+USA,United States,America/Los_Angeles,UTC-07:00
+USA,United States,America/Menominee,UTC-05:00
+USA,United States,America/Metlakatla,UTC-08:00
+USA,United States,America/New_York,UTC-04:00
+USA,United States,America/Nome,UTC-08:00
+USA,United States,America/North_Dakota/Beulah,UTC-05:00
+USA,United States,America/North_Dakota/Center,UTC-05:00
+USA,United States,America/North_Dakota/New_Salem,UTC-05:00
+USA,United States,America/Phoenix,UTC-07:00
+USA,United States,America/Sitka,UTC-08:00
+USA,United States,America/Yakutat,UTC-08:00
+USA,United States,Pacific/Honolulu,UTC-10:00
+URY,Uruguay,America/Montevideo,UTC-03:00
+UZB,Uzbekistan,Asia/Samarkand,UTC+05:00
+UZB,Uzbekistan,Asia/Tashkent,UTC+05:00
+VAT,Holy See (Vatican City State),Europe/Vatican,UTC+02:00
+VCT,Saint Vincent and the Grenadines,America/St_Vincent,UTC-04:00
+VEN,"Venezuela, Bolivarian Republic of",America/Caracas,UTC-04:00
+VGB,"Virgin Islands, British",America/Tortola,UTC-04:00
+VIR,"Virgin Islands, U.S.",America/St_Thomas,UTC-04:00
+VNM,Viet Nam,Asia/Ho_Chi_Minh,UTC+07:00
+VUT,Vanuatu,Pacific/Efate,UTC+11:00
+WLF,Wallis and Futuna,Pacific/Wallis,UTC+12:00
+WSM,Samoa,Pacific/Apia,UTC+13:00
+YEM,Yemen,Asia/Aden,UTC+03:00
+MYT,Mayotte,Indian/Mayotte,UTC+03:00
+ZAF,South Africa,Africa/Johannesburg,UTC+02:00
+ZMB,Zambia,Africa/Lusaka,UTC+02:00
+ZWE,Zimbabwe,Africa/Harare,UTC+02:00

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Subheader render default 1`] = `
+<div>
+  <h2
+    class="text-center text-lg text-[#858585] font-abel"
+  >
+    Subheader
+  </h2>
+</div>
+`;

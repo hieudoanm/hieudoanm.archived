@@ -1,0 +1,2 @@
+symbol,year,month,date,quarter,week,weekday_index,weekday,full_date,open,high,low,close,volume,timestamp,trend
+CMK,2022,12,15,4,50,4,Thursday,2022-12-15,9.5,9.5,9.5,9.5,100.0,1671062400.0,SIDEWAY

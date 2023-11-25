@@ -1,0 +1,26 @@
+[
+  {
+    "country": "Kenya",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 53771300
+  },
+  {
+    "country": "Tanzania",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 59734213
+  },
+  {
+    "country": "Uganda",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 45741000
+  },
+  {
+    "country": "DR Congo",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 89561404
+  }
+]

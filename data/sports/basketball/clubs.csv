@@ -1,0 +1,31 @@
+name,city,state,stadium,division,conference
+Boston Celtics,Boston,Massachusetts,TD Garden,Atlantic,Eastern
+Brooklyn Nets,New York City,New York,Barclays Center,Atlantic,Eastern
+New York Knicks,New York City,New York,Madison Square Garden,Atlantic,Eastern
+Philadelphia 76ers,Philadelphia,Pennsylvania,Wells Fargo Center,Atlantic,Eastern
+Toronto Raptors,Toronto,Ontario,Scotiabank Arena,Atlantic,Eastern
+Chicago Bulls,Chicago,Illinois,United Center,Central,Eastern
+Cleveland Cavaliers,Cleveland,Ohio,Rocket Mortgage FieldHouse,Central,Eastern
+Detroit Pistons,Detroit,Michigan,Little Caesars Arena,Central,Eastern
+Indiana Pacers,Indianapolis,Indiana,Gainbridge Fieldhouse,Central,Eastern
+Milwaukee Bucks,Milwaukee,Wisconsin,Fiserv Forum,Central,Eastern
+Atlanta Hawks,Atlanta,Georgia,State Farm Arena,Southeast,Eastern
+Charlotte Hornets,Charlotte,North Carolina,Spectrum Center,Southeast,Eastern
+Miami Heat,Miami,Florida,Kaseya Center,Southeast,Eastern
+Orlando Magic,Orlando,Florida,Amway Center,Southeast,Eastern
+Washington Wizards,Washington,D.C.,Capital One Arena,Southeast,Eastern
+Denver Nuggets,Denver,Colorado,Ball Arena,Northwest,Western
+Minnesota Timberwolves,Minneapolis,Minnesota,Target Center,Northwest,Western
+Oklahoma City Thunder,Oklahoma City,Oklahoma,Paycom Center,Northwest,Western
+Portland Trail Blazers,Portland,Oregon,Moda Center,Northwest,Western
+Utah Jazz,Salt Lake City,Utah,Vivint Arena,Northwest,Western
+Golden State Warriors,San Francisco,California,Chase Center,Pacific,Western
+Los Angeles Clippers,Los Angeles,California,Crypto.com Arena,Pacific,Western
+Los Angeles Lakers,Los Angeles,California,Crypto.com Arena,Pacific,Western
+Phoenix Suns,Phoenix,Arizona,Footprint Center,Pacific,Western
+Sacramento Kings,Sacramento,California,Golden 1 Center,Pacific,Western
+Dallas Mavericks,Dallas,Texas,American Airlines Center,Southwest,Western
+Houston Rockets,Houston,Texas,Toyota Center,Southwest,Western
+Memphis Grizzlies,Memphis,Tennessee,FedExForum,Southwest,Western
+New Orleans Pelicans,New Orleans,Louisiana,Smoothie King Center,Southwest,Western
+San Antonio Spurs,San Antonio,Texas,AT&T Center,Southwest,Western

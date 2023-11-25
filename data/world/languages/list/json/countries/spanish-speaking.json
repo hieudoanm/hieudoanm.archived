@@ -1,0 +1,128 @@
+[
+  {
+    "country": "Equatorial Guinea",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 1402985
+  },
+  {
+    "country": "Cuba",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11326616
+  },
+  {
+    "country": "Dominican Republic",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 10847904
+  },
+  {
+    "country": "Belize",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 397621
+  },
+  {
+    "country": "Costa Rica",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 5094114
+  },
+  {
+    "country": "El Salvador",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6486201
+  },
+  {
+    "country": "Guatemala",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 16858333
+  },
+  {
+    "country": "Honduras",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 9904608
+  },
+  {
+    "country": "Nicaragua",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6624554
+  },
+  {
+    "country": "Panama",
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 4314768
+  },
+  {
+    "country": "Mexico",
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 128932753
+  },
+  {
+    "country": "Argentina",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 45376763
+  },
+  {
+    "country": "Bolivia",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 11673029
+  },
+  {
+    "country": "Chile",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 19116209
+  },
+  {
+    "country": "Colombia",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 50882884
+  },
+  {
+    "country": "Ecuador",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 17643060
+  },
+  {
+    "country": "Paraguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 7132530
+  },
+  {
+    "country": "Peru",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 32971846
+  },
+  {
+    "country": "Uruguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 3473727
+  },
+  {
+    "country": "Venezuela",
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 28435943
+  },
+  {
+    "country": "Spain",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 47351567
+  }
+]

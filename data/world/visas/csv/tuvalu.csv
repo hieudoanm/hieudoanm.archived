@@ -1,0 +1,199 @@
+country,requirement
+South Korea,eTA/30 days
+Sri Lanka,eTA/30 days
+Albania,eVisa
+Australia,eVisa
+Bahrain,eVisa
+Benin,eVisa
+Bhutan,eVisa
+Burkina Faso,eVisa
+Colombia,eVisa
+Djibouti,eVisa
+Georgia,eVisa
+Kazakhstan,eVisa
+Kyrgyzstan,eVisa
+Mongolia,eVisa
+Oman,eVisa
+Pakistan,eVisa
+Sao Tome and Principe,eVisa
+South Sudan,eVisa
+Tajikistan,eVisa
+Uganda,eVisa
+Uzbekistan,eVisa
+Armenia,eVisa/120 days
+India,eVisa/30 days
+Iran,eVisa/30 days
+Papua New Guinea,eVisa/60 days
+Congo (Dem. Rep.),eVisa/90 days
+Ethiopia,eVisa/90 days
+Gabon,eVisa/90 days
+Guinea,eVisa/90 days
+Cote d'Ivoire (Ivory Coast),pre-enrollment/90 days
+Angola,pre-visa on arrival
+Guyana,pre-visa on arrival
+Nigeria,pre-visa on arrival
+Cuba,tourist card/30 days
+Seychelles,tourist registration/90 days
+Jordan,visa on arrival
+Mauritania,visa on arrival
+Nauru,visa on arrival
+Cape Verde,visa on arrival (EASE)
+Cambodia,visa on arrival / eVisa/30 days
+Laos,visa on arrival / eVisa/30 days
+Mozambique,visa on arrival / eVisa/30 days
+Rwanda,visa on arrival / eVisa/30 days
+Bolivia,visa on arrival / eVisa/90 days
+Madagascar,visa on arrival / eVisa/90 days
+Togo,visa on arrival/15 days
+Nepal,visa on arrival/150 days
+Bangladesh,visa on arrival/30 days
+Burundi,visa on arrival/30 days
+Egypt,visa on arrival/30 days
+Macao,visa on arrival/30 days
+Maldives,visa on arrival/30 days
+Palau,visa on arrival/30 days
+Senegal,visa on arrival/30 days
+Sierra Leone,visa on arrival/30 days
+Somalia,visa on arrival/30 days
+Timor-Leste,visa on arrival/30 days
+Tonga,visa on arrival/31 days
+Comoros,visa on arrival/45 days
+Marshall Islands,visa on arrival/90 days
+Samoa,visa on arrival/90 days
+Solomon Islands,visa on arrival/90 days
+Afghanistan,visa required
+Algeria,visa required
+Argentina,visa required
+Azerbaijan,visa required
+Belarus,visa required
+Brazil,visa required
+Brunei,visa required
+Cameroon,visa required
+Canada,visa required
+Central African Republic,visa required
+Chad,visa required
+Chile,visa required
+China,visa required
+Congo,visa required
+Equatorial Guinea,visa required
+Eritrea,visa required
+Ghana,visa required
+Guinea-Bissau,visa required
+Indonesia,visa required
+Iraq,visa required
+Israel,visa required
+Japan,visa required
+Kuwait,visa required
+Lebanon,visa required
+Liberia,visa required
+Libya,visa required
+Mali,visa required
+Mexico,visa required
+Montenegro,visa required
+Morocco,visa required
+Myanmar [Burma],visa required
+Namibia,visa required
+New Zealand,visa required
+Niger,visa required
+North Korea,visa required
+North Macedonia,visa required
+Paraguay,visa required
+Qatar,visa required
+Russian Federation,visa required
+Saudi Arabia,visa required
+Serbia,visa required
+South Africa,visa required
+Sudan,visa required
+Syria,visa required
+Thailand,visa required
+Tunisia,visa required
+Turkmenistan,visa required
+Türkiye,visa required
+Ukraine,visa required
+United Arab Emirates,visa required
+United States of America,visa required
+Uruguay,visa required
+Venezuela,visa required
+Viet Nam,visa required
+Yemen,visa required
+Belize,visa-free
+Dominican Republic,visa-free
+France,visa-free
+Jamaica,visa-free
+Palestinian Territories,visa-free
+Trinidad and Tobago,visa-free
+Fiji,visa-free/120 days
+Kiribati,visa-free/120 days
+Antigua and Barbuda,visa-free/180 days
+Barbados,visa-free/180 days
+Dominica,visa-free/180 days
+Peru,visa-free/180 days
+United Kingdom,visa-free/180 days
+Eswatini,visa-free/30 days
+Malaysia,visa-free/30 days
+Micronesia,visa-free/30 days
+Philippines,visa-free/30 days
+Singapore,visa-free/30 days
+Vanuatu,visa-free/30 days
+Saint Lucia,visa-free/42 days
+Andorra,visa-free/90 days
+Austria,visa-free/90 days
+Bahamas,visa-free/90 days
+Belgium,visa-free/90 days
+Bosnia and Herzegovina,visa-free/90 days
+Botswana,visa-free/90 days
+Bulgaria,visa-free/90 days
+Costa Rica,visa-free/90 days
+Croatia,visa-free/90 days
+Cyprus,visa-free/90 days
+Czech Republic,visa-free/90 days
+Denmark,visa-free/90 days
+Ecuador,visa-free/90 days
+El Salvador,visa-free/90 days
+Estonia,visa-free/90 days
+Finland,visa-free/90 days
+Gambia,visa-free/90 days
+Germany,visa-free/90 days
+Greece,visa-free/90 days
+Grenada,visa-free/90 days
+Guatemala,visa-free/90 days
+Haiti,visa-free/90 days
+Honduras,visa-free/90 days
+Hong Kong,visa-free/90 days
+Hungary,visa-free/90 days
+Iceland,visa-free/90 days
+Ireland,visa-free/90 days
+Italy,visa-free/90 days
+Kenya,visa-free/90 days
+Kosovo,visa-free/90 days
+Latvia,visa-free/90 days
+Lesotho,visa-free/90 days
+Liechtenstein,visa-free/90 days
+Lithuania,visa-free/90 days
+Luxembourg,visa-free/90 days
+Malawi,visa-free/90 days
+Malta,visa-free/90 days
+Mauritius,visa-free/90 days
+Moldova,visa-free/90 days
+Monaco,visa-free/90 days
+Netherlands,visa-free/90 days
+Nicaragua,visa-free/90 days
+Norway,visa-free/90 days
+Panama,visa-free/90 days
+Poland,visa-free/90 days
+Portugal,visa-free/90 days
+Romania,visa-free/90 days
+Saint Kitts and Nevis,visa-free/90 days
+San Marino,visa-free/90 days
+Slovakia,visa-free/90 days
+Slovenia,visa-free/90 days
+Spain,visa-free/90 days
+St. Vincent and the Grenadines,visa-free/90 days
+Suriname,visa-free/90 days
+Sweden,visa-free/90 days
+Switzerland,visa-free/90 days
+Taiwan,visa-free/90 days
+Tanzania,visa-free/90 days
+Vatican City,visa-free/90 days
+Zambia,visa-free/90 days
+Zimbabwe,visa-free/90 days
