@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Steps render default 1`] = `
+<div>
+  <div
+    class="py-4 bg-[#085723] bg-repeat-x bg-bottom"
+    style="background-image: url(/how-to-play/en/images/steps/background.svg);"
+  >
+    <section
+      class="py-16"
+      id=""
+    >
+      <div
+        class="mx-auto px-8 container"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-15 gap-8 md:gap-0"
+        >
+          <div
+            class="col-span-1 md:col-span-3"
+          >
+            <div
+              class="cursor-pointer"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <div
+                  class="sc-eLqIir esJkVs bg-center bg-cover w-16 h-16 mx-auto mb-4"
+                  image="/how-to-play/en/images/steps/create.svg"
+                />
+                <p
+                  class="text-center text-white"
+                >
+                  Create MetaMask Wallet
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div
+              class="rotate-90 md:rotate-0"
+            >
+              <div
+                class="flex item-centers justify-center"
+              >
+                <div
+                  class="sc-eLqIir gCkRbL bg-center bg-contain w-12 h-12 bg-no-repeat rotate-180"
+                  image="/how-to-play/en/images/steps/arrow.gif"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1 md:col-span-3"
+          >
+            <div
+              class="cursor-pointer"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <div
+                  class="sc-eLqIir hiIliI bg-center bg-cover w-16 h-16 mx-auto mb-4"
+                  image="/how-to-play/en/images/steps/stake.svg"
+                />
+                <p
+                  class="text-center text-white"
+                >
+                  Stake Now
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div
+              class="rotate-90 md:rotate-0"
+            >
+              <div
+                class="flex item-centers justify-center"
+              >
+                <div
+                  class="sc-eLqIir gCkRbL bg-center bg-contain w-12 h-12 bg-no-repeat rotate-180"
+                  image="/how-to-play/en/images/steps/arrow.gif"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1 md:col-span-3"
+          >
+            <div
+              class="cursor-pointer"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <div
+                  class="sc-eLqIir bqxslq bg-center bg-cover w-16 h-16 mx-auto mb-4"
+                  image="/how-to-play/en/images/steps/build.svg"
+                />
+                <p
+                  class="text-center text-white"
+                >
+                  Build Dream Team
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div
+              class="rotate-90 md:rotate-0"
+            >
+              <div
+                class="flex item-centers justify-center"
+              >
+                <div
+                  class="sc-eLqIir gCkRbL bg-center bg-contain w-12 h-12 bg-no-repeat rotate-180"
+                  image="/how-to-play/en/images/steps/arrow.gif"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1 md:col-span-3"
+          >
+            <a
+              href="https://marketplace.footballbattle.co/"
+              id="explore-our-game"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <div
+                  class="sc-eLqIir bTUZbF bg-center bg-cover w-16 h-16 mx-auto mb-4"
+                  image="/how-to-play/en/images/steps/explore.svg"
+                />
+                <p
+                  class="text-center text-white"
+                >
+                  Explore Our Game
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
