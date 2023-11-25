@@ -14,8 +14,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --browsers=ChromeHeadless --watch=false ",
     "test:watch": "ng test",
-    "lint": "ng lint --fix",
-    "prepare": "husky install || true"
+    "lint": "ng lint --fix"
   },
   "dependencies": {
     "@angular/animations": "17.0.4",

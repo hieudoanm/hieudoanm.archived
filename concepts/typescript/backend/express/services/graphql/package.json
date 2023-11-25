@@ -23,8 +23,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest.config.ts",
-    "format": "prettier --write .",
-    "prepare": "husky install || true"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@apollo/server": "4.9.5",

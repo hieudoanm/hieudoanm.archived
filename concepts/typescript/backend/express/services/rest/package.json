@@ -25,8 +25,7 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest.config.ts",
     "test:newman": "newman run ./docs/newman/collection.json -e ./docs/newman/environment.json",
-    "prisma:migrate": "prisma format && prisma generate && prisma migrate dev --name init",
-    "prepare": "husky install || true"
+    "prisma:migrate": "prisma format && prisma generate && prisma migrate dev --name init"
   },
   "dependencies": {
     "@apollo/datasource-rest": "6.2.2",

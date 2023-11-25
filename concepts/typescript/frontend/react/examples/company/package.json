@@ -13,7 +13,6 @@
     "start": "next start",
     "lint": "next lint",
     "prebuild": "rimraf .next out",
-    "prepare": "husky install || true",
     "test": "jest"
   },
   "dependencies": {
