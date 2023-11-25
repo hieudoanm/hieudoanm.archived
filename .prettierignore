@@ -1,3 +1,7 @@
+# files
+*.png
+
+# folder
 .angular
 .next
 .solid

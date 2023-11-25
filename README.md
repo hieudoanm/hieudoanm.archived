@@ -25,8 +25,12 @@
 
 ---
 
-- 👨‍🎓 **Bachelor of Psychology** at `Royal Melbourne Institute of Technology (RMIT)`
-- 🇦🇺 **Senior Software Engineer** at `National Australia Bank`
+- 👨‍🎓 **Bachelor of Psychology** at `RMIT`[^1]
+- 🇦🇺 **Senior Software Engineer** at `NAB`[^2]
 - 🇩🇪 Ich arbeite seit zwei Jahren in `Deutschland`
-- 🇫🇮 **Bachelor of Business Administration, Business Information Technology** in `Finland`
+- 🇫🇮 **Bachelor of Business Administration**, **BIT**[^3] in `Finland`
 - 🎖️ Achieved the [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3?source=linked_in_profile) in **2021-09-11**.
+
+[^1]: Royal Melbourne Institute of Technology
+[^2]: National Australia Bank
+[^3]: Business Information Technology
