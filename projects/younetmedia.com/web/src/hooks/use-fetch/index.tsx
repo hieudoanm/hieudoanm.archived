@@ -1,5 +1,5 @@
 import { useEffect, useReducer, useRef } from 'react';
-import fetch, { RequestInit } from 'node-fetch';
+import axios, { AxiosRequestConfig } from 'axios';
 
 interface State<T> {
   data?: T;
@@ -15,7 +15,10 @@ type Action<T> =
   | { type: 'fetched'; payload: T }
   | { type: 'error'; payload: Error };
 
-function useFetch<T = unknown>(url?: string, init?: RequestInit): State<T> {
+function useAxios<T = unknown>(
+  url?: string,
+  init?: AxiosRequestConfig
+): State<T> {
   const cache = useRef<Cache<T>>({});
 
   // Used to prevent state update if the component is unmounted
@@ -63,12 +66,12 @@ function useFetch<T = unknown>(url?: string, init?: RequestInit): State<T> {
       }
 
       try {
-        const response = await fetch(url, init);
-        if (!response.ok) {
+        const response = await axios.get<T>(url, init);
+        if (response.status !== 200) {
           throw new Error(response.statusText);
         }
 
-        const data = (await response.json()) as T;
+        const data: T = response.data;
         cache.current[`${url}`] = data;
         if (cancelRequest.current) return;
 
@@ -93,4 +96,4 @@ function useFetch<T = unknown>(url?: string, init?: RequestInit): State<T> {
   return state;
 }
 
-export default useFetch;
+export default useAxios;

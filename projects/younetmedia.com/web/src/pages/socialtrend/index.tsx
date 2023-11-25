@@ -16,7 +16,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { logger } from '@younetmedia/common/libs/log';
 import { Navbar } from '@younetmedia/components/Navbar';
 import { ERROR_MESSAGE_AUTHENTICATION } from '@younetmedia/common/constants';
-import useFetch from '@younetmedia/hooks/use-fetch';
+import useAxios from '@younetmedia/hooks/use-fetch';
 import dayjs, { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
@@ -77,7 +77,7 @@ const SocialTrendMain: React.FC<{
   urlSearchParameters.set('action', 'showMore');
   const url = `https://api-trend.younetmedia.com/socialtrend/hot-topic-ranking-list?${urlSearchParameters.toString()}`;
 
-  const { loading, error, data } = useFetch<{
+  const { loading, error, data } = useAxios<{
     detailStatistics: { total: any[] };
   }>(url, {
     headers: { Authorization: accessToken },
