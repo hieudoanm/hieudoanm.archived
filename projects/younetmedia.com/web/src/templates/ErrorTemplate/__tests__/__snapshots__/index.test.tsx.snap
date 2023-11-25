@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorTemplate renders correctly 1`] = `
+<div>
+  <main
+    class="flex h-screen w-full items-center justify-center"
+  >
+    <div
+      class="flex flex-col gap-4 text-center uppercase"
+    >
+      <h1
+        class="text-9xl font-bold"
+      >
+        500
+      </h1>
+      <p
+        class="text-4xl"
+      >
+        Error
+      </p>
+      <a
+        href="/"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          Back to Home
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+      </a>
+    </div>
+  </main>
+</div>
+`;

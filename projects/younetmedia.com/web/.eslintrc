@@ -1,0 +1,25 @@
+{
+  "env": { "browser": true, "node": true },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:github/recommended",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:security/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "plugins": [
+    "github",
+    "prettier",
+    "promise",
+    "security",
+    "sonarjs",
+    "unicorn"
+  ],
+  "rules": {
+    "camelcase": "off",
+    "filenames/match-regex": "off",
+    "i18n-text/no-en": "off"
+  }
+}
