@@ -1,5 +1,5 @@
 import { useEffect, useReducer, useRef } from 'react';
-import axios, { AxiosRequestConfig } from 'axios';
+import axios from 'axios';
 
 interface State<T> {
   data?: T;
@@ -15,10 +15,7 @@ type Action<T> =
   | { type: 'fetched'; payload: T }
   | { type: 'error'; payload: Error };
 
-function useAxios<T = unknown>(
-  url?: string,
-  init?: AxiosRequestConfig
-): State<T> {
+function useAxios<T = unknown>(url?: string, config?: any): State<T> {
   const cache = useRef<Cache<T>>({});
 
   // Used to prevent state update if the component is unmounted
@@ -66,7 +63,7 @@ function useAxios<T = unknown>(
       }
 
       try {
-        const response = await axios.get<T>(url, init);
+        const response = await axios.get<T>(url, config);
         if (response.status !== 200) {
           throw new Error(response.statusText);
         }
