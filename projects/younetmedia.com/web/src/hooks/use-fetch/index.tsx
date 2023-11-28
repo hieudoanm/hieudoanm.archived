@@ -7,13 +7,13 @@ interface State<T> {
   loading?: boolean;
 }
 
-type Cache<T> = { [url: string]: T; };
+type Cache<T> = { [url: string]: T };
 
 // discriminated union type
 type Action<T> =
-  | { type: 'loading'; }
-  | { type: 'fetched'; payload: T; }
-  | { type: 'error'; payload: Error; };
+  | { type: 'loading' }
+  | { type: 'fetched'; payload: T }
+  | { type: 'error'; payload: Error };
 
 function useAxios<T = unknown>(url?: string, config?: any): State<T> {
   const cache = useRef<Cache<T>>({});
@@ -49,7 +49,9 @@ function useAxios<T = unknown>(url?: string, config?: any): State<T> {
 
   useEffect(() => {
     // Do nothing if the url is not given
-    if (!url) { return; }
+    if (!url) {
+      return;
+    }
 
     cancelRequest.current = false;
 
@@ -70,11 +72,15 @@ function useAxios<T = unknown>(url?: string, config?: any): State<T> {
 
         const data: T = response.data;
         cache.current[`${url}`] = data;
-        if (cancelRequest.current) { return; }
+        if (cancelRequest.current) {
+          return;
+        }
 
         dispatch({ type: 'fetched', payload: data });
       } catch (error) {
-        if (cancelRequest.current) { return; }
+        if (cancelRequest.current) {
+          return;
+        }
 
         dispatch({ type: 'error', payload: error as Error });
       }

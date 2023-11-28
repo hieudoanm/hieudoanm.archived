@@ -1,6 +1,17 @@
 import { Task } from '@prisma/client';
-import { Body, Controller, Delete, Get, Patch, Path, Post, Route, Security,
-  SuccessResponse, Tags } from 'tsoa';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Patch,
+  Path,
+  Post,
+  Route,
+  Security,
+  SuccessResponse,
+  Tags
+} from 'tsoa';
 import { TASKS_READ, TASKS_WRITE } from '../../common/constants';
 import { TaskRequest, TasksService } from './tasks.service';
 

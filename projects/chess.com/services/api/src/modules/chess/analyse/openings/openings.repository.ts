@@ -16,7 +16,7 @@ export class OpeningsRepository {
     eco: string;
     name: string;
     firstMove: string;
-  }): Promise<{ total: number; openings: Opening[]; }> {
+  }): Promise<{ total: number; openings: Opening[] }> {
     let where: Prisma.OpeningWhereInput = {};
     if (eco !== '') { where = { ...where, eco }; }
     if (firstMove !== '') { where = { ...where, firstMove }; }
@@ -38,7 +38,7 @@ export class OpeningsRepository {
     return { total, openings };
   }
 
-  public async getECOs(): Promise<{ total: number; ecos: string[]; }> {
+  public async getECOs(): Promise<{ total: number; ecos: string[] }> {
     const results = await this.prismaClient.opening.findMany({
       select: { eco: true },
       distinct: ['eco']

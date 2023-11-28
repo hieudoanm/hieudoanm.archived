@@ -9,7 +9,7 @@ import { SolidApexCharts } from 'solid-apexcharts';
 import { Component, createResource, createSignal, For } from 'solid-js';
 import LayoutTemplate from '../../../templates/LayoutTemplate';
 
-type HistoryData = { price: string; timestamp: number; };
+type HistoryData = { price: string; timestamp: number };
 
 type HistoryResponse = {
   status: string;

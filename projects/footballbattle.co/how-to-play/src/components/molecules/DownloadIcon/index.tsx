@@ -1,7 +1,7 @@
 import React from 'react';
 import StyledSprite from '../../atoms/Sprite';
 
-const DownloadIcon: React.FC<{ image: string; }> = ({ image }) => {
+const DownloadIcon: React.FC<{ image: string }> = ({ image }) => {
   return (
     <StyledSprite
       image="/how-to-play/en/images/meta-mask-wallet/box.svg"

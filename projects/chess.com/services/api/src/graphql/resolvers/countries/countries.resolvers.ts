@@ -12,7 +12,7 @@ export const resolvers = {
     },
     country: async (
       _parent: unknown,
-      { code }: { code: string; },
+      { code }: { code: string },
       { chessDataSource }: ChessContext
     ): Promise<Country> => {
       return chessDataSource.getCountry(code);

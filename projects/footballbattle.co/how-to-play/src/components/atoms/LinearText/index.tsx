@@ -21,7 +21,7 @@ export const StyledLinearText = styled.div`
   }
 `;
 
-export const LinearText: React.FC<{ children?: string; }> = ({
+export const LinearText: React.FC<{ children?: string }> = ({
   children = ''
 }) => {
   return (

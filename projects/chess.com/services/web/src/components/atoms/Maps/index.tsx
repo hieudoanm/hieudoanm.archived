@@ -14,7 +14,7 @@ type MapsProperties = {
   paths: Path[];
 };
 
-type Data = { id: string; label: string; value: number; color: string; };
+type Data = { id: string; label: string; value: number; color: string };
 
 type SVGMapsProperties = {
   id?: string;

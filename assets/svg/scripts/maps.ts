@@ -9,7 +9,7 @@ const main = async () => {
     const svgContent: string = readFileSync(`./svg/${fileName}.svg`, 'utf-8');
     const $: CheerioAPI = load(svgContent);
     const svgNode = $('svg');
-    const svgPaths: { d: string; id: string; title: string; }[] = [];
+    const svgPaths: { d: string; id: string; title: string }[] = [];
     $('svg')
       .find('path')
       .map((_index, element) => {

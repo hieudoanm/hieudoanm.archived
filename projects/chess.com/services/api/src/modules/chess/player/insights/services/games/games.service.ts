@@ -1,10 +1,20 @@
 import { Prisma, PrismaClient } from '@prisma/client';
 import { logger } from '../../../../../../common/libs/log';
 import { getPrismaClient } from '../../../../../../common/prisma';
-import { DAYS_OF_WEEK, DRAW_RESULTS, LOSS_RESULTS, RULE, TIME_OF_DAYS,
-  WIN_RESULTS } from '../../insights.constants';
-import { Games, GamesByDayOfWeek, GamesByPeriod,
-  GamesByTimeOfDay } from './games.types';
+import {
+  DAYS_OF_WEEK,
+  DRAW_RESULTS,
+  LOSS_RESULTS,
+  RULE,
+  TIME_OF_DAYS,
+  WIN_RESULTS
+} from '../../insights.constants';
+import {
+  Games,
+  GamesByDayOfWeek,
+  GamesByPeriod,
+  GamesByTimeOfDay
+} from './games.types';
 
 export class GamesService {
   private prismaClient: PrismaClient;
@@ -108,10 +118,10 @@ export class GamesService {
       .prismaClient.$transaction([
         this.prismaClient.$queryRaw<GamesByPeriod[]>(gamesByPeriodsQuery),
         this.prismaClient.$queryRaw<
-          { games: number; timeOfDayIndex: number; }[]
+          { games: number; timeOfDayIndex: number }[]
         >(gamesByTimeOfDaysQuery),
         this.prismaClient.$queryRaw<
-          { games: number; dayOfWeekIndex: number; }[]
+          { games: number; dayOfWeekIndex: number }[]
         >(gamesByDaysOfWeekQuery)
       ]);
     const timeOfDays: GamesByTimeOfDay[] = timeOfDaysList.map(

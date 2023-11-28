@@ -4,7 +4,7 @@ import { Controller, Get, Route, Tags } from 'tsoa';
 @Tags('API - Health')
 export class HealthController extends Controller {
   @Get()
-  getHealth(): { status: string; } {
+  getHealth(): { status: string } {
     return { status: 'OK' };
   }
 }

@@ -1,7 +1,28 @@
 import { gql } from '@apollo/client';
-import { Badge, Box, Card, CardBody, CardHeader, Divider, Heading, Icon, List,
-  ListItem, Stat, StatHelpText, StatLabel, StatNumber, Table, TableContainer,
-  Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Card,
+  CardBody,
+  CardHeader,
+  Divider,
+  Heading,
+  Icon,
+  List,
+  ListItem,
+  Stat,
+  StatHelpText,
+  StatLabel,
+  StatNumber,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react';
 import { GAP, TITLED_ABBREVIATIONS } from '@chess/common/constants';
 import flags from '@chess/common/data/flags.json';
 import { apolloClient } from '@chess/common/graphql';
@@ -14,7 +35,7 @@ import { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 import Link from 'next/link';
 import { FaBolt, FaClock, FaRocket } from 'react-icons/fa';
 
-const RapidHistogramChart: React.FC<{ players: Player[]; }> = ({
+const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -45,7 +66,7 @@ const RapidHistogramChart: React.FC<{ players: Player[]; }> = ({
   return <ChessHistogramChart title="Rapid" data={data} />;
 };
 
-const BlitzHistogramChart: React.FC<{ players: Player[]; }> = ({
+const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -76,7 +97,7 @@ const BlitzHistogramChart: React.FC<{ players: Player[]; }> = ({
   return <ChessHistogramChart title="Blitz" data={data} />;
 };
 
-const BulletHistogramChart: React.FC<{ players: Player[]; }> = ({
+const BulletHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -107,7 +128,7 @@ const BulletHistogramChart: React.FC<{ players: Player[]; }> = ({
   return <ChessHistogramChart title="Bullet" data={data} />;
 };
 
-const PlayersTable: React.FC<{ total: number; players: Player[]; }> = ({
+const PlayersTable: React.FC<{ total: number; players: Player[] }> = ({
   total = 0,
   players = []
 }) => {
@@ -235,7 +256,7 @@ type CountryPageProperties = {
   maxBulletRating: number;
   total: number;
   players: Player[];
-  titles: { title: Title; total: number; }[];
+  titles: { title: Title; total: number }[];
 };
 
 const CountryPage: NextPage<CountryPageProperties> = ({
@@ -413,7 +434,7 @@ export const getServerSideProps: GetServerSideProps<
           titles = []
         }
       }
-    } = await apolloClient.query<{ country: CountryPageProperties; }>({
+    } = await apolloClient.query<{ country: CountryPageProperties }>({
       query,
       variables: { code }
     });

@@ -1,7 +1,26 @@
 import { DocumentNode, gql } from '@apollo/client';
-import { Box, Card, CardBody, CardHeader, Divider, Heading, Tab, Table,
-  TableContainer, TabList, TabPanel, TabPanels, Tabs, Tbody, Td, Text, Th,
-  Thead, Tooltip, Tr } from '@chakra-ui/react';
+import {
+  Box,
+  Card,
+  CardBody,
+  CardHeader,
+  Divider,
+  Heading,
+  Tab,
+  Table,
+  TableContainer,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tooltip,
+  Tr
+} from '@chakra-ui/react';
 import maps from '@chess/common/data/world.json';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
@@ -13,9 +32,9 @@ import { GetServerSideProps, NextPage } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-type Country = { countryCode: string; country: string; total: number; };
+type Country = { countryCode: string; country: string; total: number };
 
-const CountriesTable: React.FC<{ countries: Country[]; }> = ({
+const CountriesTable: React.FC<{ countries: Country[] }> = ({
   countries = []
 }) => {
   return (
@@ -59,7 +78,7 @@ const CountriesTable: React.FC<{ countries: Country[]; }> = ({
   );
 };
 
-const CountriesMaps: React.FC<{ countries: Country[]; }> = ({
+const CountriesMaps: React.FC<{ countries: Country[] }> = ({
   countries = []
 }) => {
   const router = useRouter();
@@ -187,7 +206,7 @@ export const getServerSideProps: GetServerSideProps<
   try {
     const {
       data: { countries = [] }
-    } = await apolloClient.query<{ countries: Country[]; }>({ query });
+    } = await apolloClient.query<{ countries: Country[] }>({ query });
     return { props: { countries } };
   } catch (error) {
     logger.error(`getServerSideProps error=${error}`);

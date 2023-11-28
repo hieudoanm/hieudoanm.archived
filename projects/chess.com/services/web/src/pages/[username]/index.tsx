@@ -7,7 +7,7 @@ import PlayerTemplate from '@chess/templates/PlayerTemplate';
 import { Player } from '@prisma/client';
 import { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 
-const PlayerPage: NextPage<{ player: Player; }> = ({ player }) => {
+const PlayerPage: NextPage<{ player: Player }> = ({ player }) => {
   return (
     <Layout>
       <Container>
@@ -74,7 +74,7 @@ export const getServerSideProps: GetServerSideProps = async (
   try {
     const {
       data: { player }
-    } = await apolloClient.query<{ player: Player; }>({
+    } = await apolloClient.query<{ player: Player }>({
       query,
       variables: { username }
     });

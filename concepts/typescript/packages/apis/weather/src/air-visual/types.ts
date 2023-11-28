@@ -83,9 +83,9 @@ type Pollution = {
 
 export type CountriesResponse = {
   status: string;
-  data: { country: string; }[];
+  data: { country: string }[];
 };
 
-export type StatesResponse = { status: string; data: { state: string; }[]; };
+export type StatesResponse = { status: string; data: { state: string }[] };
 
-export type CitiesResponse = { status: string; data: { city: string; }[]; };
+export type CitiesResponse = { status: string; data: { city: string }[] };

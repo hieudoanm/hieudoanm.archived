@@ -14,6 +14,6 @@ const reason: Reason = {
   ]
 };
 
-export const why: { reasons: Reason[]; } = {
+export const why: { reasons: Reason[] } = {
   reasons: [reason, reason, reason]
 };

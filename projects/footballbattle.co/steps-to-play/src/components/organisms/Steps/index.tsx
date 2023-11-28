@@ -1,6 +1,6 @@
 import Container from '../../atoms/Container';
 
-const Circle: React.FC<{ background?: string; children: string; }> = ({
+const Circle: React.FC<{ background?: string; children: string }> = ({
   background = '',
   children
 }) => {

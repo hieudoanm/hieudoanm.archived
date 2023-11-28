@@ -6,7 +6,7 @@ import { InsightsTemplate } from '@chess/templates/InsightsTemplate';
 import { Insights } from '@chess/types/chess';
 import { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 
-const InsightsPage: NextPage<{ insights: Insights; }> = ({ insights }) => {
+const InsightsPage: NextPage<{ insights: Insights }> = ({ insights }) => {
   return (
     <Layout>
       <Container>

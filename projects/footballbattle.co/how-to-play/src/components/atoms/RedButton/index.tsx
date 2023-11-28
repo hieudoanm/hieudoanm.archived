@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const RedButton: React.FC<{ children: React.ReactNode; }> = ({
+export const RedButton: React.FC<{ children: React.ReactNode }> = ({
   children
 }) => {
   return (

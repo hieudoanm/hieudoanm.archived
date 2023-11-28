@@ -11,14 +11,14 @@ export type TokenRequest = {
   password: string;
 };
 
-export type TokenResponse = { token: string; };
+export type TokenResponse = { token: string };
 
 export class AuthService {
   async signIn({
     email = '',
     username = '',
     password = ''
-  }: TokenRequest): Promise<{ token: string; }> {
+  }: TokenRequest): Promise<{ token: string }> {
     const user: User = await prismaClient.user.findFirstOrThrow({
       where: { OR: [{ username }, { email }] }
     });

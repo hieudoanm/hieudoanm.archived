@@ -1,5 +1,16 @@
-import { Button, Card, CardContent, MenuItem, Select, Table, TableBody,
-  TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import {
+  Button,
+  Card,
+  CardContent,
+  MenuItem,
+  Select,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow
+} from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { ERROR_MESSAGE_AUTHENTICATION } from '@younetmedia/common/constants';
@@ -68,7 +79,7 @@ const SocialTrendMain: React.FC<{
     `https://api-trend.younetmedia.com/socialtrend/hot-topic-ranking-list?${urlSearchParameters.toString()}`;
 
   const { loading, error, data } = useAxios<{
-    detailStatistics: { total: any[]; };
+    detailStatistics: { total: any[] };
   }>(url, {
     headers: { Authorization: accessToken }
   });
@@ -234,9 +245,7 @@ export const SocialTrendPage: NextPage = () => {
             ? (
               <SocialTrendMain
                 accessToken={accessToken}
-                dateFrom={dayjs(
-                  dateRange.date.unix() * 1000 - dateRange.range
-                )}
+                dateFrom={dayjs(dateRange.date.unix() * 1000 - dateRange.range)}
                 dateTo={dateRange.date}
               />
             )

@@ -29,4 +29,4 @@ export type Country = {
   titles: Title[];
 };
 
-export type GamesSynced = { total: number; synced: number; existed: number; };
+export type GamesSynced = { total: number; synced: number; existed: number };

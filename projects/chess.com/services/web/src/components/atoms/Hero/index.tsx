@@ -1,5 +1,16 @@
-import { Button, Card, CardBody, CardFooter, CardHeader, Divider, FormLabel,
-  Heading, Icon, IconButton, Input } from '@chakra-ui/react';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+  FormLabel,
+  Heading,
+  Icon,
+  IconButton,
+  Input
+} from '@chakra-ui/react';
 import hero from '@chess/assets/hero.jpg';
 import { APP_NAME } from '@chess/common/constants';
 import { useRouter } from 'next/router';

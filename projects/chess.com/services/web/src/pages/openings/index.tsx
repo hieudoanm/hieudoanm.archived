@@ -1,8 +1,22 @@
 import { gql } from '@apollo/client';
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Breadcrumb, BreadcrumbItem, Card, CardHeader, Divider, Heading, Link,
-  Table, TableContainer, Tbody, Td, Text, Th, Thead,
-  Tr } from '@chakra-ui/react';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardHeader,
+  Divider,
+  Heading,
+  Link,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
 import { Container } from '@chess/components/atoms/Container';
@@ -109,7 +123,7 @@ export const getServerSideProps: GetServerSideProps<
   try {
     const {
       data: { openings = [] }
-    } = await apolloClient.query<{ openings: Opening[]; }>({ query });
+    } = await apolloClient.query<{ openings: Opening[] }>({ query });
     return { props: { openings } };
   } catch (error) {
     logger.error(`getServerSideProps error=${error}`);

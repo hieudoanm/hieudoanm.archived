@@ -22,7 +22,7 @@ export class RedisClient {
   async setObject<T>(
     key: string,
     value: T,
-    { expiresInSeconds = 60 * 30 }: { expiresInSeconds?: number; }
+    { expiresInSeconds = 60 * 30 }: { expiresInSeconds?: number }
   ): Promise<'OK' | 'ERROR'> {
     try {
       const jsonString = JSON.stringify(value);

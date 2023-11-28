@@ -1,8 +1,13 @@
 import axios from 'axios';
 import { logger } from '../../libs/log';
 import { addZero } from '../../utils/add-zero';
-import { ChessFullPlayer, ChessGame, ChessPlayer, ChessStats,
-  ChessTitle } from './types';
+import {
+  ChessFullPlayer,
+  ChessGame,
+  ChessPlayer,
+  ChessStats,
+  ChessTitle
+} from './types';
 
 const BASE_URL = 'https://api.chess.com/pub';
 
@@ -37,7 +42,7 @@ export class ChessClient {
   async getChessArchives(username: string): Promise<string[]> {
     const url = `${BASE_URL}/player/${username}/games/archives`;
     logger.info(`getChessArchives url=${url}`);
-    const { data } = await axios.get<{ archives: string[]; }>(url);
+    const { data } = await axios.get<{ archives: string[] }>(url);
     return data.archives || [];
   }
 
@@ -50,7 +55,7 @@ export class ChessClient {
     const mm: string = addZero(month);
     const url = `${BASE_URL}/player/${username}/games/${yyyy}/${mm}`;
     logger.info(`getChessGamesByYearAndMonth url=${url}`);
-    const { data } = await axios.get<{ games: ChessGame[]; }>(url);
+    const { data } = await axios.get<{ games: ChessGame[] }>(url);
     return data.games || [];
   }
 
@@ -63,7 +68,7 @@ export class ChessClient {
 
   async getChessGames(
     username: string,
-    { month = 0, year = 0 }: { month: number; year: number; }
+    { month = 0, year = 0 }: { month: number; year: number }
   ): Promise<ChessGame[]> {
     const archives = await this.getChessArchives(username);
     const filterArchives = archives.filter((archive: string) => {
@@ -77,7 +82,7 @@ export class ChessClient {
     logger.info(`filterArchives ${JSON.stringify(filterArchives)}`);
     const promiseArchives = filterArchives.map(async (archive: string) => {
       try {
-        const { data } = await axios.get<{ games: ChessGame[]; }>(archive);
+        const { data } = await axios.get<{ games: ChessGame[] }>(archive);
         const games = data.games || [];
         games.sort((a, b) => (a > b ? 1 : -1));
         return games;
@@ -93,7 +98,7 @@ export class ChessClient {
   async getChessTitledPlayers(title: ChessTitle): Promise<string[]> {
     const url = `${BASE_URL}/titled/${title}`;
     logger.info(`getChessTitledPlayers url=${url}`);
-    const { data } = await axios.get<{ players: string[]; }>(url);
+    const { data } = await axios.get<{ players: string[] }>(url);
     return data.players || [];
   }
 }

@@ -1,7 +1,23 @@
 import { DocumentNode, gql } from '@apollo/client';
-import { Badge, Box, Button, Card, CardHeader, Divider, Heading, Icon, Select,
-  Table, TableContainer, Tbody, Td, Text, Th, Thead,
-  Tr } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Button,
+  Card,
+  CardHeader,
+  Divider,
+  Heading,
+  Icon,
+  Select,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
 import { resolveQuery } from '@chess/common/utils/resolve-query';
@@ -19,7 +35,7 @@ type StreamersPageProperties = {
   title: Title;
   country: string;
   players: Player[];
-  countries: { countryCode: string; country: string; }[];
+  countries: { countryCode: string; country: string }[];
 };
 
 const StreamersPage: NextPage<StreamersPageProperties> = ({
@@ -261,7 +277,7 @@ export const getServerSideProps: GetServerSideProps<
       data: {
         streamers: { total = 0, countries = [], players = [] }
       }
-    } = await apolloClient.query<{ streamers: StreamersPageProperties; }>({
+    } = await apolloClient.query<{ streamers: StreamersPageProperties }>({
       query,
       variables: { title, country }
     });

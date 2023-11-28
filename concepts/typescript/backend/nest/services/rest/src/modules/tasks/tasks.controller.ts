@@ -1,5 +1,13 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post,
-  UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  UseGuards
+} from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Task } from '@prisma/client';
 import { LocalAuthGuard } from '../../common/guards/local.guard';
@@ -28,7 +36,7 @@ export class TasksController {
 
   @Get('{id}')
   @ApiResponse({ type: TaskResponseDto })
-  async getTask(@Param() params: { id: string; }): Promise<Task> {
+  async getTask(@Param() params: { id: string }): Promise<Task> {
     const { id } = params;
     return this.tasksService.getTask(id);
   }
@@ -36,7 +44,7 @@ export class TasksController {
   @Patch('{id}')
   @ApiResponse({ type: TaskResponseDto })
   async updateTask(
-    @Param() params: { id: string; },
+    @Param() params: { id: string },
     @Body() { title, description, completed, listId }: TaskRequest
   ): Promise<Task> {
     const { id } = params;
@@ -50,7 +58,7 @@ export class TasksController {
 
   @Delete('{id}')
   @ApiResponse({ status: 204 })
-  async deleteTask(@Param() params: { id: string; }): Promise<void> {
+  async deleteTask(@Param() params: { id: string }): Promise<void> {
     const { id } = params;
     return this.tasksService.deleteTask(id);
   }

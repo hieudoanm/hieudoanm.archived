@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const Layout: React.FC<{ children: ReactNode; }> = ({ children }) => {
+export const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
       <Loading />

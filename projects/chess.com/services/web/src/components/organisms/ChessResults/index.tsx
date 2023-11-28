@@ -2,8 +2,14 @@ import { Card, CardBody, CardHeader, Divider } from '@chakra-ui/react';
 import { COLORS_MAP } from '@chess/common/constants';
 import { customLabel } from '@chess/common/utils/custom-label';
 import { Insights, Result } from '@chess/types/chess';
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer,
-  Tooltip } from 'recharts';
+import {
+  Cell,
+  Legend,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip
+} from 'recharts';
 
 const ChessResult: React.FC<{
   title: string;
@@ -54,7 +60,7 @@ const ChessResult: React.FC<{
   );
 };
 
-export const ChessResults: React.FC<{ insights: Insights; }> = ({
+export const ChessResults: React.FC<{ insights: Insights }> = ({
   insights
 }) => {
   return (

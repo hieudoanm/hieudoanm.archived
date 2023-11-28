@@ -8,6 +8,6 @@ export type Games = {
   daysOfWeek: GamesByDayOfWeek[];
 };
 
-export type GamesByPeriod = { games: number; period: number; };
-export type GamesByTimeOfDay = { games: number; timeOfDay: string; };
-export type GamesByDayOfWeek = { games: number; dayOfWeek: string; };
+export type GamesByPeriod = { games: number; period: number };
+export type GamesByTimeOfDay = { games: number; timeOfDay: string };
+export type GamesByDayOfWeek = { games: number; dayOfWeek: string };

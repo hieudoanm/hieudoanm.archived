@@ -1,6 +1,6 @@
 import React from 'react';
 
-type PositionProps = { image: string; title: React.ReactNode; };
+type PositionProps = { image: string; title: React.ReactNode };
 
 export const Position: React.FC<PositionProps> = ({ image, title }) => {
   return (

@@ -6,7 +6,7 @@ import banner from '../../../assets/images/hero/banner.png';
 import { Button } from '../../atoms/Button';
 import { Heading } from '../../atoms/Heading';
 
-export const Hero: React.FC<{ title: string; description: string; }> = ({
+export const Hero: React.FC<{ title: string; description: string }> = ({
   title = '',
   description = ''
 }) => {

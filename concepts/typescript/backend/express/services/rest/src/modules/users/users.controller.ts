@@ -1,6 +1,15 @@
 import { User } from '@prisma/client';
-import { Body, Controller, Delete, Get, Patch, Request, Route, Security,
-  Tags } from 'tsoa';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Patch,
+  Request,
+  Route,
+  Security,
+  Tags
+} from 'tsoa';
 import { USER_READ, USER_WRITE } from '../../common/constants';
 import { UserRequest, UsersService } from './users.service';
 
@@ -17,7 +26,7 @@ export class UsersController extends Controller {
   @Security('jwt', [USER_READ])
   @Get()
   async getUser(
-    @Request() request: { userId: string; }
+    @Request() request: { userId: string }
   ): Promise<Pick<User, 'id' | 'username'>> {
     const { userId } = request;
     return this.usersService.getUser(userId);
@@ -26,7 +35,7 @@ export class UsersController extends Controller {
   @Security('jwt', [USER_WRITE])
   @Patch('email')
   async updateEmail(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Body() { email }: UserRequest
   ): Promise<Pick<User, 'id' | 'email' | 'username'>> {
     const { userId } = request;
@@ -36,7 +45,7 @@ export class UsersController extends Controller {
   @Security('jwt', [USER_WRITE])
   @Patch('username')
   async updateUsername(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Body() { username }: UserRequest
   ): Promise<Pick<User, 'id' | 'username'>> {
     const { userId } = request;
@@ -46,7 +55,7 @@ export class UsersController extends Controller {
   @Security('jwt', [USER_WRITE])
   @Patch('password')
   async updatePassword(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Body() { password }: UserRequest
   ): Promise<Pick<User, 'id' | 'username'>> {
     const { userId } = request;
@@ -55,7 +64,7 @@ export class UsersController extends Controller {
 
   @Security('jwt', [USER_WRITE])
   @Delete()
-  async deleteUser(@Request() request: { userId: string; }): Promise<void> {
+  async deleteUser(@Request() request: { userId: string }): Promise<void> {
     const { userId } = request;
     return this.usersService.deleteUser(userId);
   }

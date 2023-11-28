@@ -1,6 +1,9 @@
 import axios from 'axios';
-import { CurrenciesResponse, FrankfurterLatestRequest,
-  FrankfurterLatestResponse } from './types';
+import {
+  CurrenciesResponse,
+  FrankfurterLatestRequest,
+  FrankfurterLatestResponse
+} from './types';
 
 const BASE_URL = 'https://api.frankfurter.app';
 

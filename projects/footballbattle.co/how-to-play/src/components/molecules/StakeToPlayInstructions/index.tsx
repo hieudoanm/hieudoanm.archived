@@ -16,7 +16,7 @@ const ArrowDown: React.FC = () => {
   );
 };
 
-const Circle: React.FC<{ children: React.ReactNode; }> = ({ children }) => {
+const Circle: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Sprite
       image="/how-to-play/en/images/stake-to-play/circle.svg"
@@ -29,7 +29,7 @@ const Circle: React.FC<{ children: React.ReactNode; }> = ({ children }) => {
   );
 };
 
-const Instruction: React.FC<{ step: string; children: React.ReactNode; }> = ({
+const Instruction: React.FC<{ step: string; children: React.ReactNode }> = ({
   step,
   children = <></>
 }) => {

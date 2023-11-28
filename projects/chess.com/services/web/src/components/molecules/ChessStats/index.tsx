@@ -1,5 +1,13 @@
-import { Box, Card, CardBody, Icon, Stat, StatHelpText, StatLabel,
-  StatNumber } from '@chakra-ui/react';
+import {
+  Box,
+  Card,
+  CardBody,
+  Icon,
+  Stat,
+  StatHelpText,
+  StatLabel,
+  StatNumber
+} from '@chakra-ui/react';
 
 export const ChessStats: React.FC<{
   label: string;

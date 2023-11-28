@@ -1,10 +1,23 @@
-import { Button, Paper, Stack, Table, TableBody, TableCell, TableContainer,
-  TableHead, TableRow, TextField, ToggleButton,
-  ToggleButtonGroup } from '@mui/material';
+import {
+  Button,
+  Paper,
+  Stack,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TextField,
+  ToggleButton,
+  ToggleButtonGroup
+} from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { ERROR_MESSAGE_AUTHENTICATION,
-  ERROR_MESSAGE_DATE_RANGE } from '@younetmedia/common/constants';
+import {
+  ERROR_MESSAGE_AUTHENTICATION,
+  ERROR_MESSAGE_DATE_RANGE
+} from '@younetmedia/common/constants';
 import { logger } from '@younetmedia/common/libs/log';
 import { Navbar } from '@younetmedia/components/Navbar';
 import { queryResult } from '@younetmedia/services/younetmedia.service';
@@ -265,11 +278,7 @@ export const SocialHeatPage: NextPage = () => {
                   sx={{ maxHeight: 440 }}
                   className="border"
                 >
-                  <Table
-                    stickyHeader
-                    sx={{ minWidth: 650 }}
-                    aria-label="table"
-                  >
+                  <Table stickyHeader sx={{ minWidth: 650 }} aria-label="table">
                     <TableHead>
                       <TableRow>
                         <TableCell align="center">No.</TableCell>
@@ -297,45 +306,43 @@ export const SocialHeatPage: NextPage = () => {
                           <>
                             {results.length > 0
                               ? (
-                                results.map(
-                                  (result: Result, index: number) => {
-                                    const resultQuery = result.query || '';
-                                    return (
-                                      <TableRow
-                                        key={`result-${
-                                          resultQuery.replaceAll(
-                                            ' ',
-                                            ''
-                                          )
-                                        }`}
-                                        sx={{
-                                          '&:last-child td, &:last-child th': {
-                                            border: 0
-                                          }
-                                        }}
+                                results.map((result: Result, index: number) => {
+                                  const resultQuery = result.query || '';
+                                  return (
+                                    <TableRow
+                                      key={`result-${
+                                        resultQuery.replaceAll(
+                                          ' ',
+                                          ''
+                                        )
+                                      }`}
+                                      sx={{
+                                        '&:last-child td, &:last-child th': {
+                                          border: 0
+                                        }
+                                      }}
+                                    >
+                                      <TableCell align="center">
+                                        {index + 1}
+                                      </TableCell>
+                                      <TableCell
+                                        component="th"
+                                        scope="row"
+                                        sx={{ maxWidth: '300px' }}
                                       >
-                                        <TableCell align="center">
-                                          {index + 1}
-                                        </TableCell>
-                                        <TableCell
-                                          component="th"
-                                          scope="row"
-                                          sx={{ maxWidth: '300px' }}
-                                        >
-                                          <p className="truncate">
-                                            {resultQuery}
-                                          </p>
-                                        </TableCell>
-                                        <TableCell align="right">
-                                          {result.total_collectable_mentions}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                          {result.total_mentions}
-                                        </TableCell>
-                                      </TableRow>
-                                    );
-                                  }
-                                )
+                                        <p className="truncate">
+                                          {resultQuery}
+                                        </p>
+                                      </TableCell>
+                                      <TableCell align="right">
+                                        {result.total_collectable_mentions}
+                                      </TableCell>
+                                      <TableCell align="right">
+                                        {result.total_mentions}
+                                      </TableCell>
+                                    </TableRow>
+                                  );
+                                })
                               )
                               : (
                                 <TableRow className="border-0 border-none">

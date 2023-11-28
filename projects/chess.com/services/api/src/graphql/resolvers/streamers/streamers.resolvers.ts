@@ -6,7 +6,7 @@ export const resolvers = {
   Query: {
     streamers: async (
       _parent: unknown,
-      { title, country }: { title: Title; country: string; },
+      { title, country }: { title: Title; country: string },
       { chessDataSource }: ChessContext
     ): Promise<StreamersResponse> => {
       const {

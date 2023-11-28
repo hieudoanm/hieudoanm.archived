@@ -5,7 +5,7 @@ export const resolvers = {
   Query: {
     openings: async (
       _parent: unknown,
-      { eco = '', name = '' }: { eco: string; name: string; },
+      { eco = '', name = '' }: { eco: string; name: string },
       { chessDataSource }: ChessContext
     ): Promise<Opening[]> => {
       const { openings } = await chessDataSource.getOpenings({ eco, name });

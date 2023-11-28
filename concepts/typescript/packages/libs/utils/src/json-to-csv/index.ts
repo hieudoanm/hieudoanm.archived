@@ -1,4 +1,4 @@
-type Options = { delimiter?: string; headers?: string[]; quote?: string; };
+type Options = { delimiter?: string; headers?: string[]; quote?: string };
 
 const defaultOptions = {
   delimiter: ',',

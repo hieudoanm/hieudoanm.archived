@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const queryResult = async (
   topicId: number,
-  timeRange: { fromDate: string; toDate: string; },
+  timeRange: { fromDate: string; toDate: string },
   query: string
 ): Promise<Result> => {
   const dashboard: number = 16_089;
@@ -36,8 +36,7 @@ export const queryResult = async (
       59
     )
   );
-  const date_to = new Date(dateTo.getTime() - 7 * 60 * 60 * 1000)
-    .toISOString();
+  const date_to = new Date(dateTo.getTime() - 7 * 60 * 60 * 1000).toISOString();
   const batchData = {
     batch: [
       {
@@ -148,7 +147,7 @@ export const queryResult = async (
   };
   try {
     const { data = [] } = await axios.post<
-      { total_mentions: number; total_collectable_mentions: number; }[]
+      { total_mentions: number; total_collectable_mentions: number }[]
     >(url, batchData, { headers: { Authorization: authorization } });
     return {
       query,

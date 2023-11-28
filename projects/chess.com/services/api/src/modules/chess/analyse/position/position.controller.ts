@@ -18,7 +18,7 @@ export class PositionController extends Controller {
   }
 
   @Post('position')
-  async syncPosition(@Body() { fen }: { fen: string; }): Promise<Position> {
+  async syncPosition(@Body() { fen }: { fen: string }): Promise<Position> {
     return this.positionService.syncPosition(fen);
   }
 }

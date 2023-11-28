@@ -1,6 +1,21 @@
-import { Badge, Box, Button, Card, CardHeader, Divider, Heading, Input, Spinner,
-  Table, TableContainer, Tbody, Td, Text, Textarea,
-  Tr } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Button,
+  Card,
+  CardHeader,
+  Divider,
+  Heading,
+  Input,
+  Spinner,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Textarea,
+  Tr
+} from '@chakra-ui/react';
 import { ANALYSE_API } from '@chess/common/environments';
 import { logger } from '@chess/common/libs/logger';
 import { chunk } from '@chess/common/utils/chunk';
@@ -15,7 +30,7 @@ import { Square } from 'react-chessboard/dist/chessboard/types';
 
 type AnalyseResponse = {
   centipawn: number;
-  topMoves: { centipawn: number; moves: string[]; }[];
+  topMoves: { centipawn: number; moves: string[] }[];
 };
 
 const analyse = async (fen: string): Promise<AnalyseResponse> => {
@@ -44,7 +59,7 @@ const AnalysisPage: NextPage = () => {
     pgn: game.pgn()
   });
   const [evaluation, setEvaluation] = useState<
-    AnalyseResponse & { loading: boolean; }
+    AnalyseResponse & { loading: boolean }
   >({
     loading: true,
     centipawn: 0,

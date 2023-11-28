@@ -1,9 +1,19 @@
 import { Prisma, PrismaClient } from '@prisma/client';
 import { getPrismaClient } from '../../../../../../common/prisma';
-import { DAYS_OF_WEEK, DRAW_RESULTS, LOSS_RESULTS, RULE, TIME_OF_DAYS,
-  WIN_RESULTS } from '../../insights.constants';
-import { Accuracy, AccuracyByDayOfWeek, AccuracyByPeriod,
-  AccuracyByTimeOfDay } from './accuracy.types';
+import {
+  DAYS_OF_WEEK,
+  DRAW_RESULTS,
+  LOSS_RESULTS,
+  RULE,
+  TIME_OF_DAYS,
+  WIN_RESULTS
+} from '../../insights.constants';
+import {
+  Accuracy,
+  AccuracyByDayOfWeek,
+  AccuracyByPeriod,
+  AccuracyByTimeOfDay
+} from './accuracy.types';
 
 export class AccuracyService {
   private prismaClient: PrismaClient;
@@ -17,7 +27,7 @@ export class AccuracyService {
       averageClause,
       whereClause,
       username
-    }: { averageClause: string; whereClause: string; username: string; },
+    }: { averageClause: string; whereClause: string; username: string },
     results: string[] = []
   ): Prisma.Sql {
     const list: string = results.map((result) => `'${result}'`).join(',');
@@ -37,7 +47,7 @@ export class AccuracyService {
     averageClause: string;
     whereClause: string;
     username: string;
-  }): Promise<{ win: number; draw: number; loss: number; }> {
+  }): Promise<{ win: number; draw: number; loss: number }> {
     const winQuery = this.buildAccuracyByResultsQuery(
       { averageClause, whereClause, username },
       WIN_RESULTS
@@ -55,9 +65,9 @@ export class AccuracyService {
       [{ average: draw = 0 }],
       [{ average: loss = 0 }]
     ] = await this.prismaClient.$transaction([
-      this.prismaClient.$queryRaw<{ average: number; }[]>(winQuery),
-      this.prismaClient.$queryRaw<{ average: number; }[]>(drawQuery),
-      this.prismaClient.$queryRaw<{ average: number; }[]>(lossQuery)
+      this.prismaClient.$queryRaw<{ average: number }[]>(winQuery),
+      this.prismaClient.$queryRaw<{ average: number }[]>(drawQuery),
+      this.prismaClient.$queryRaw<{ average: number }[]>(lossQuery)
     ]);
 
     return { win, draw, loss };
@@ -158,17 +168,17 @@ export class AccuracyService {
       timeOfDaysList = [],
       daysOfWeekList = []
     ] = await this.prismaClient.$transaction([
-      this.prismaClient.$queryRaw<{ average: number; }[]>(
+      this.prismaClient.$queryRaw<{ average: number }[]>(
         averageAccuracyQuery
       ),
       this.prismaClient.$queryRaw<AccuracyByPeriod[]>(
         averageAccuracyByPeriodsQuery
       ),
       this.prismaClient.$queryRaw<
-        { average: number; timeOfDayIndex: number; }[]
+        { average: number; timeOfDayIndex: number }[]
       >(averageAccuracyByTimeOfDaysQuery),
       this.prismaClient.$queryRaw<
-        { average: number; dayOfWeekIndex: number; }[]
+        { average: number; dayOfWeekIndex: number }[]
       >(averageAccuracyByDaysOfWeekQuery)
     ]);
     return {

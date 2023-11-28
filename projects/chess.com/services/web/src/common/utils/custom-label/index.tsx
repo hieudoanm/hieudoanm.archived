@@ -1,5 +1,5 @@
 export const customLabel =
-  (data: { name: string; value: number; }[], total: number) =>
+  (data: { name: string; value: number }[], total: number) =>
   // eslint-disable-next-line react/display-name
   ({ cx, cy, midAngle, innerRadius, outerRadius, value, index }: any) => {
     const RADIAN = Math.PI / 180;

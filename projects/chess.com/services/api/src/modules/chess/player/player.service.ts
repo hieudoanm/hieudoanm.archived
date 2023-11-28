@@ -1,9 +1,17 @@
-import { League, Player, Prisma, PrismaClient, Status,
-  Title } from '@prisma/client';
+import {
+  League,
+  Player,
+  Prisma,
+  PrismaClient,
+  Status,
+  Title
+} from '@prisma/client';
 import axios from 'axios';
 import { ChessClient } from '../../../common/clients/chess.com';
-import { ChessPlayer,
-  ChessStats } from '../../../common/clients/chess.com/types';
+import {
+  ChessPlayer,
+  ChessStats
+} from '../../../common/clients/chess.com/types';
 import { getPrismaClient } from '../../../common/prisma';
 
 export class PlayerService {

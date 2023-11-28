@@ -1,13 +1,17 @@
 import axios from 'axios';
-import { AirQuality, CitiesResponse, CountriesResponse,
-  StatesResponse } from './types';
+import {
+  AirQuality,
+  CitiesResponse,
+  CountriesResponse,
+  StatesResponse
+} from './types';
 
 const BASE_URL = 'http://api.airvisual.com/v2';
 
 export class AirVisualClient {
   private apiKey = '';
 
-  constructor({ apiKey = '' }: { apiKey: string; }) {
+  constructor({ apiKey = '' }: { apiKey: string }) {
     this.apiKey = apiKey;
   }
 

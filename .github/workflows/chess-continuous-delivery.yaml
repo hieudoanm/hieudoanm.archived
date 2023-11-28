@@ -30,7 +30,7 @@ jobs:
         run: yarn install --network-timeout 86400000
         working-directory: ${{ matrix.services.working-directory }}
       - name: Linting
-        run: yarn lint
+        run: yarn lint --fix
         working-directory: ${{ matrix.services.working-directory }}
       - name: Unit Test
         run: yarn test -u

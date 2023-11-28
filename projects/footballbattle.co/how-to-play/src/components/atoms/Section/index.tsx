@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Section: React.FC<{ id?: string; children?: React.ReactNode; }> = (
+export const Section: React.FC<{ id?: string; children?: React.ReactNode }> = (
   {
     id = '',
     children = <></>

@@ -24,7 +24,7 @@ export class MovesController extends Controller {
   async syncGameMoves(
     @Path('username') username: string,
     @Path('gameId') gameId: string
-  ): Promise<{ total: number; }> {
+  ): Promise<{ total: number }> {
     return this.movesService.syncGameMoves(username, gameId);
   }
 }

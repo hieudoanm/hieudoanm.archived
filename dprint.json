@@ -7,10 +7,10 @@
     "bracePosition": "sameLine",
     "newLineKind": "system",
     "jsx.quoteStyle": "preferDouble",
-    "preferHanging": true,
+    "preferHanging": false,
     "quoteProps": "consistent",
     "quoteStyle": "preferSingle",
-    "semiColons": "always",
+    "semiColons": "prefer",
     "trailingCommas": "never",
     "useBraces": "always"
   },
@@ -19,7 +19,7 @@
   "toml": {},
   "dockerfile": {},
   "jupyter": {},
-  "excludes": ["**/node_modules", "**/*-lock.json"],
+  "excludes": ["**/node_modules", "**/*-lock.json", "*.js"],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.88.5.wasm",
     "https://plugins.dprint.dev/json-0.19.1.wasm",

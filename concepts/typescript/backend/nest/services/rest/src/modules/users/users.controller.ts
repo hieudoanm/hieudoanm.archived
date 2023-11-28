@@ -1,5 +1,13 @@
-import { Body, Controller, Delete, Get, Injectable, Patch, Request,
-  UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Injectable,
+  Patch,
+  Request,
+  UseGuards
+} from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { User } from '@prisma/client';
 import { LocalAuthGuard } from '../../common/guards/local.guard';
@@ -15,14 +23,14 @@ export class UsersController {
 
   @Get()
   @ApiResponse({ type: UserResponseDto })
-  async getUser(@Request() request: { user_id: string; }): Promise<User> {
+  async getUser(@Request() request: { user_id: string }): Promise<User> {
     const { user_id } = request;
     return this.usersService.getUser(user_id);
   }
 
   @Delete()
   @ApiResponse({ status: 204 })
-  async deleteUser(@Request() request: { user_id: string; }): Promise<void> {
+  async deleteUser(@Request() request: { user_id: string }): Promise<void> {
     const { user_id } = request;
     return this.usersService.deleteUser(user_id);
   }
@@ -30,7 +38,7 @@ export class UsersController {
   @Patch('email')
   @ApiResponse({ type: UserResponseDto })
   async updateEmail(
-    @Request() request: { user_id: string; },
+    @Request() request: { user_id: string },
     @Body() { email }: UserRequestDto
   ): Promise<UserResponseDto> {
     const { user_id } = request;
@@ -40,7 +48,7 @@ export class UsersController {
   @Patch('username')
   @ApiResponse({ type: UserResponseDto })
   async updateUsername(
-    @Request() request: { user_id: string; },
+    @Request() request: { user_id: string },
     @Body() { username }: UserRequestDto
   ): Promise<UserResponseDto> {
     const { user_id } = request;
@@ -50,7 +58,7 @@ export class UsersController {
   @Patch('password')
   @ApiResponse({ type: UserResponseDto })
   async updatePassword(
-    @Request() request: { user_id: string; },
+    @Request() request: { user_id: string },
     @Body() { password }: UserRequestDto
   ): Promise<UserResponseDto> {
     const { user_id } = request;

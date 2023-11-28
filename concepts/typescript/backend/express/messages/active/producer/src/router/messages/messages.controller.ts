@@ -8,8 +8,8 @@ import { stomp } from '../../libs/stomp';
 export class MessagesController {
   @Post('produce')
   public async produce(
-    @Body() { message }: { message: string; }
-  ): Promise<{ status: string; }> {
+    @Body() { message }: { message: string }
+  ): Promise<{ status: string }> {
     await stomp.send(ACTIVE_MQ_DESTINATION, message);
     return { status: 'success' };
   }

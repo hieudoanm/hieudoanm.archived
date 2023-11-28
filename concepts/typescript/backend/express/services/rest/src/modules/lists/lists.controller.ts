@@ -1,6 +1,17 @@
 import { List } from '@prisma/client';
-import { Body, Controller, Delete, Get, Patch, Path, Post, Request, Route,
-  Security, Tags } from 'tsoa';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Patch,
+  Path,
+  Post,
+  Request,
+  Route,
+  Security,
+  Tags
+} from 'tsoa';
 import { LISTS_READ, LISTS_WRITE } from '../../common/constants';
 import { ListRequest, ListsService } from './lists.service';
 
@@ -29,7 +40,7 @@ export class ListsController extends Controller {
   @Security('jwt', [LISTS_WRITE])
   @Post()
   async createList(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Body() { title }: ListRequest
   ): Promise<List> {
     const { userId } = request;
@@ -39,7 +50,7 @@ export class ListsController extends Controller {
   @Security('jwt', [LISTS_WRITE])
   @Patch('{id}')
   async updateList(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Path() id: string,
     @Body() { title }: ListRequest
   ): Promise<List> {
@@ -50,7 +61,7 @@ export class ListsController extends Controller {
   @Security('jwt', [LISTS_WRITE])
   @Delete('{id}')
   async deleteList(
-    @Request() request: { userId: string; },
+    @Request() request: { userId: string },
     @Path() id: string
   ): Promise<void> {
     const { userId } = request;

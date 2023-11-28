@@ -11,7 +11,7 @@ class Http {
   public async get<T>(
     url: string,
     config: AxiosRequestConfig = {},
-    { max = 4, time = 1 }: { max?: number; time?: number; } = {
+    { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
       time: 1
     }
@@ -32,7 +32,7 @@ class Http {
     url: string,
     data: D = {} as D,
     config: AxiosRequestConfig = {},
-    { max = 4, time = 1 }: { max?: number; time?: number; } = {
+    { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
       time: 1
     }
@@ -53,7 +53,7 @@ class Http {
     url: string,
     data: D = {} as D,
     config: AxiosRequestConfig = {},
-    { max = 4, time = 1 }: { max?: number; time?: number; } = {
+    { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
       time: 1
     }
@@ -74,7 +74,7 @@ class Http {
     url: string,
     data: D = {} as D,
     config: AxiosRequestConfig = {},
-    { max = 4, time = 1 }: { max?: number; time?: number; } = {
+    { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
       time: 1
     }
@@ -94,7 +94,7 @@ class Http {
   public async delete<T>(
     url: string,
     config: AxiosRequestConfig = {},
-    { max = 4, time = 1 }: { max?: number; time?: number; } = {
+    { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
       time: 1
     }

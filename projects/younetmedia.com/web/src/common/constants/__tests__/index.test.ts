@@ -1,5 +1,8 @@
-import { APP_NAME, ERROR_MESSAGE_AUTHENTICATION,
-  ERROR_MESSAGE_DATE_RANGE } from '..';
+import {
+  APP_NAME,
+  ERROR_MESSAGE_AUTHENTICATION,
+  ERROR_MESSAGE_DATE_RANGE
+} from '..';
 
 describe('constants', () => {
   it('APP_NAME', () => {

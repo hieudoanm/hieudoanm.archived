@@ -1,9 +1,16 @@
 /* tslint:disable */
 /* eslint-disable */
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-import { Controller, fetchMiddlewares, FieldErrors, HttpStatusCodeLiteral,
-  TsoaResponse, TsoaRoute, ValidateError,
-  ValidationService } from '@tsoa/runtime';
+import {
+  Controller,
+  fetchMiddlewares,
+  FieldErrors,
+  HttpStatusCodeLiteral,
+  TsoaResponse,
+  TsoaRoute,
+  ValidateError,
+  ValidationService
+} from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AuthController } from './modules/auth/auth.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

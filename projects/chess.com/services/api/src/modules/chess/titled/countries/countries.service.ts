@@ -1,5 +1,7 @@
-import { getRedisClient,
-  RedisClient } from '../../../../common/databases/redis';
+import {
+  getRedisClient,
+  RedisClient
+} from '../../../../common/databases/redis';
 import { REDIS_URI } from '../../../../common/environments';
 import { CountriesRepository } from './countries.repository';
 import { CountriesResponse, CountryCount } from './countries.types';

@@ -1,7 +1,7 @@
 import React from 'react';
 import Sprite from '../../atoms/Sprite';
 
-export type StepProps = { title: string; image: string; };
+export type StepProps = { title: string; image: string };
 
 export const Arrow: React.FC = () => {
   return (

@@ -6,7 +6,7 @@ export const resolvers = {
   Query: {
     player: (
       _parent: unknown,
-      { username }: { username: string; },
+      { username }: { username: string },
       { chessDataSource }: ChessContext
     ): Promise<Player> => {
       return chessDataSource.getPlayer(username);
@@ -15,7 +15,7 @@ export const resolvers = {
   Mutation: {
     player: (
       _parent: unknown,
-      { username }: { username: string; },
+      { username }: { username: string },
       { chessDataSource }: ChessContext
     ): Promise<Player> => {
       return chessDataSource.syncPlayer(username);
@@ -26,7 +26,7 @@ export const resolvers = {
         username,
         month = new Date().getMonth() + 1,
         year = new Date().getFullYear()
-      }: { username: string; year: number; month: number; },
+      }: { username: string; year: number; month: number },
       { chessDataSource }: ChessContext
     ): Promise<GamesSynced> => {
       return chessDataSource.syncGames(username, { year, month });
@@ -34,7 +34,7 @@ export const resolvers = {
   },
   Player: {
     games: async (
-      { username }: { username: string; },
+      { username }: { username: string },
       _arguments: unknown,
       { chessDataSource }: ChessContext
     ): Promise<Game[]> => {

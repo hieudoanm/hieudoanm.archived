@@ -7,7 +7,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import Sticky from 'react-stickynode';
 import { content } from '../../../content';
 
-export const Navbar: React.FC<{ title?: string; items?: any[]; }> = ({
+export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
   title = '',
   items = []
 }) => {

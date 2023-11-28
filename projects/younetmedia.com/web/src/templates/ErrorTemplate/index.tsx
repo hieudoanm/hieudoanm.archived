@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import React from 'react';
 
-export const ErrorTemplate: React.FC<{ code: number; message: string; }> = ({
+export const ErrorTemplate: React.FC<{ code: number; message: string }> = ({
   code = 200,
   message = ''
 }) => {

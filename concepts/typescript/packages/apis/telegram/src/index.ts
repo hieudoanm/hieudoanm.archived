@@ -1,7 +1,10 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { ParseMode } from './enum';
-import { DeleteWebhookResponse, SetWebhookResponse,
-  WebhookInfo } from './types';
+import {
+  DeleteWebhookResponse,
+  SetWebhookResponse,
+  WebhookInfo
+} from './types';
 
 const BASE_URL = 'https://api.telegram.org/bot';
 
@@ -9,7 +12,7 @@ export class TelegramClient {
   private url = '';
   private token = '';
 
-  constructor({ token }: { token: string; }) {
+  constructor({ token }: { token: string }) {
     this.token = token;
     this.url = `${BASE_URL}${this.token}`;
   }
@@ -52,7 +55,7 @@ export class TelegramClient {
       throw new Error('Invalid url');
     }
     const setWebhookUrl = `${this.url}/setWebhook`;
-    return this.post<SetWebhookResponse, { url: string; }>(setWebhookUrl, {
+    return this.post<SetWebhookResponse, { url: string }>(setWebhookUrl, {
       url
     });
   }
@@ -62,7 +65,7 @@ export class TelegramClient {
       throw new Error('Invalid url');
     }
     const setWebhookUrl = `${this.url}/deleteWebhook`;
-    return this.post<DeleteWebhookResponse, { url: string; }>(setWebhookUrl, {
+    return this.post<DeleteWebhookResponse, { url: string }>(setWebhookUrl, {
       url
     });
   }

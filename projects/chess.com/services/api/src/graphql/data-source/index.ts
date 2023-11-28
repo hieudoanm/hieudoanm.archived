@@ -32,7 +32,7 @@ export class ChessDataSource extends RESTDataSource {
 
   async getGames(
     username: string
-  ): Promise<{ total: number; games: Game[]; }> {
+  ): Promise<{ total: number; games: Game[] }> {
     return this.get(`/api/chess/player/${username}/games`);
   }
 
@@ -41,7 +41,7 @@ export class ChessDataSource extends RESTDataSource {
     {
       month = new Date().getMonth() + 1,
       year = new Date().getFullYear()
-    }: { month: number; year: number; }
+    }: { month: number; year: number }
   ): Promise<GamesSynced> {
     return this.post(`/api/chess/player/${username}/games`, {
       body: { month, year }
@@ -76,7 +76,7 @@ export class ChessDataSource extends RESTDataSource {
   }: {
     eco: string;
     name: string;
-  }): Promise<{ total: number; openings: Opening[]; }> {
+  }): Promise<{ total: number; openings: Opening[] }> {
     const urlSearchParameters: URLSearchParams = new URLSearchParams();
     if (eco !== '') { urlSearchParameters.set('eco', eco); }
     if (name !== '') { urlSearchParameters.set('name', name); }

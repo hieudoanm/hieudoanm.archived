@@ -1,12 +1,27 @@
 import { Card, CardBody, CardHeader, Divider } from '@chakra-ui/react';
-import { GRAY_COLOR, RED_COLOR, TEAL_COLOR,
-  TIME_COLORS } from '@chess/common/constants';
+import {
+  GRAY_COLOR,
+  RED_COLOR,
+  TEAL_COLOR,
+  TIME_COLORS
+} from '@chess/common/constants';
 import { customLabel } from '@chess/common/utils/custom-label';
 import { Insights } from '@chess/types/chess';
-import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart,
-  ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis
+} from 'recharts';
 
-const ChessGamesByTimeOfDays: React.FC<{ insights: Insights; }> = ({
+const ChessGamesByTimeOfDays: React.FC<{ insights: Insights }> = ({
   insights = {} as Insights
 }) => {
   const data = (insights?.games?.timeOfDays || []).map(
@@ -57,7 +72,7 @@ const ChessGamesByTimeOfDays: React.FC<{ insights: Insights; }> = ({
   );
 };
 
-const ChessAccuracyByTimeOfDays: React.FC<{ insights: Insights; }> = ({
+const ChessAccuracyByTimeOfDays: React.FC<{ insights: Insights }> = ({
   insights = {} as Insights
 }) => {
   const data = insights?.accuracy?.timeOfDays || [];
@@ -158,7 +173,7 @@ export const ChessResultsByTimeOfDays: React.FC<{
   );
 };
 
-export const ChessTimeOfDays: React.FC<{ insights: Insights; }> = ({
+export const ChessTimeOfDays: React.FC<{ insights: Insights }> = ({
   insights
 }) => {
   return (

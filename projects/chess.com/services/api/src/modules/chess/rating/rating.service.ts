@@ -8,7 +8,7 @@
 type Result = 0 | 0.5 | 1;
 type DevelopmentCoefficient = 10 | 20 | 40;
 type TimeControl = 'classical' | 'rapid' | 'blitz';
-type Options = { age: number; games: number; timeControl: TimeControl; };
+type Options = { age: number; games: number; timeControl: TimeControl };
 
 export class RatingService {
   private getDevelopmentCoefficient(

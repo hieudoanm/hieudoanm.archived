@@ -1,14 +1,19 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import { Category, Country, Language, SortBy } from './enums';
-import { ArticleResponse, EverythingRequest, SourceRequest, SourceResponse,
-  TopHeadlinesRequest } from './types';
+import {
+  ArticleResponse,
+  EverythingRequest,
+  SourceRequest,
+  SourceResponse,
+  TopHeadlinesRequest
+} from './types';
 
 export const NEWS_V2_URL = 'https://newsapi.org/v2';
 
 export class NewsClient {
   private apiKey: string;
 
-  constructor({ apiKey }: { apiKey: string; }) {
+  constructor({ apiKey }: { apiKey: string }) {
     this.apiKey = apiKey;
   }
 

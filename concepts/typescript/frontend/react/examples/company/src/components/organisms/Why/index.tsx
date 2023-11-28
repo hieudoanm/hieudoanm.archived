@@ -14,7 +14,7 @@ export type Reason = {
   items: string[];
 };
 
-export const Why: React.FC<{ reasons: Reason[]; }> = ({ reasons = [] }) => {
+export const Why: React.FC<{ reasons: Reason[] }> = ({ reasons = [] }) => {
   return (
     <section id="why" className="py-8 md:py-16 why-container">
       <Container>

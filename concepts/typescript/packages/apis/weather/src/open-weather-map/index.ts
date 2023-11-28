@@ -6,7 +6,7 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 export class OpenWeatherMapClient {
   private apiKey = '';
 
-  constructor({ apiKey }: { apiKey: string; }) {
+  constructor({ apiKey }: { apiKey: string }) {
     this.apiKey = apiKey;
   }
 

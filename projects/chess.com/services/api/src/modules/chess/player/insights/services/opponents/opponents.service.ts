@@ -1,8 +1,11 @@
 import { Prisma, PrismaClient } from '@prisma/client';
 import { logger } from '../../../../../../common/libs/log';
 import { getPrismaClient } from '../../../../../../common/prisma';
-import { DRAW_RESULTS, LOSS_RESULTS,
-  WIN_RESULTS } from '../../insights.constants';
+import {
+  DRAW_RESULTS,
+  LOSS_RESULTS,
+  WIN_RESULTS
+} from '../../insights.constants';
 import { Opponent } from './opponents.types';
 
 export class OpponentsService {

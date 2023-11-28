@@ -1,6 +1,6 @@
 import { jsonToCSV } from '.';
 
-type Row = { id: string; name: string; gender?: string; };
+type Row = { id: string; name: string; gender?: string };
 
 describe('csvToJSON', () => {
   it('should convert csv to json', () => {

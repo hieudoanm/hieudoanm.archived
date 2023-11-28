@@ -15,7 +15,7 @@ const ReactApexCharts = dynamic(() => import('react-apexcharts'), {
   ssr: false
 });
 
-type HistoryData = { price: string; timestamp: number; };
+type HistoryData = { price: string; timestamp: number };
 
 type HistoryResponse = {
   status: string;

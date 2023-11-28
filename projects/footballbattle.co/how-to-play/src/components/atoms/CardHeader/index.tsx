@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type CardHeaderProps = { children: React.ReactNode; };
+export type CardHeaderProps = { children: React.ReactNode };
 
 export const CardHeader: React.FC<CardHeaderProps> = (
   { children = <></> }

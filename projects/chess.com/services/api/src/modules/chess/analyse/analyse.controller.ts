@@ -14,7 +14,7 @@ export class AnalyseController extends Controller {
 
   @Post('/analyse')
   async analyse(
-    @Body() { fen }: { fen: string; }
+    @Body() { fen }: { fen: string }
   ): Promise<FullCloudEvaluation> {
     return this.analyseService.getCloudEvaluation(fen);
   }

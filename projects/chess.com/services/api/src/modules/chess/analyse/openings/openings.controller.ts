@@ -17,12 +17,12 @@ export class OpeningsController extends Controller {
     @Query('eco') eco: string = '',
     @Query('name') name: string = '',
     @Query('firstMove') firstMove: string = ''
-  ): Promise<{ total: number; openings: Opening[]; }> {
+  ): Promise<{ total: number; openings: Opening[] }> {
     return this.openingsRepository.getOpenings({ eco, name, firstMove });
   }
 
   @Get('openings/ecos')
-  public async getECOs(): Promise<{ total: number; ecos: string[]; }> {
+  public async getECOs(): Promise<{ total: number; ecos: string[] }> {
     return this.openingsRepository.getECOs();
   }
 }

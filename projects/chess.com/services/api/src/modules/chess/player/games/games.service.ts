@@ -21,8 +21,8 @@ export class GamesService {
     {
       month = new Date().getMonth() + 1,
       year = new Date().getFullYear()
-    }: { month: number; year: number; }
-  ): Promise<{ total: number; games: Game[]; }> {
+    }: { month: number; year: number }
+  ): Promise<{ total: number; games: Game[] }> {
     logger.info(`getGames month=${month} year=${year}`);
     const where: Prisma.GameWhereInput = {
       OR: [{ whiteUsername: username }, { blackUsername: username }],
@@ -185,8 +185,8 @@ export class GamesService {
     {
       month = new Date().getMonth() + 1,
       year = new Date().getFullYear()
-    }: { month: number; year: number; }
-  ): Promise<{ total: number; synced: number; existed: number; }> {
+    }: { month: number; year: number }
+  ): Promise<{ total: number; synced: number; existed: number }> {
     logger.info(`syncGames month=${month} year=${year}`);
     const {
       total = 0,

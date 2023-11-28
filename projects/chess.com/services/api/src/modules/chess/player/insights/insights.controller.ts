@@ -43,7 +43,7 @@ export class InsightsController extends Controller {
   @Get('player/:username/insights/opponents')
   public async getResultsOpponents(
     @Path('username') username: string
-  ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number; }> {
+  ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number }> {
     return this.insightsService.getOpponentsInsights(username);
   }
 }

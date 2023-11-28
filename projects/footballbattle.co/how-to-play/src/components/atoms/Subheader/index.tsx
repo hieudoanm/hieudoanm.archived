@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Subheader: React.FC<{ children?: React.ReactNode; }> = ({
+export const Subheader: React.FC<{ children?: React.ReactNode }> = ({
   children = <></>
 }) => {
   return (

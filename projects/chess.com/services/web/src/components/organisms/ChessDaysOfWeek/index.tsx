@@ -1,12 +1,27 @@
 import { Card, CardBody, CardHeader, Divider } from '@chakra-ui/react';
-import { GRAY_COLOR, RED_COLOR, TEAL_COLOR,
-  TIME_COLORS } from '@chess/common/constants';
+import {
+  GRAY_COLOR,
+  RED_COLOR,
+  TEAL_COLOR,
+  TIME_COLORS
+} from '@chess/common/constants';
 import { customLabel } from '@chess/common/utils/custom-label';
 import { Insights } from '@chess/types/chess';
-import { Bar, BarChart, CartesianGrid, Cell, Legend, Pie, PieChart,
-  ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  Legend,
+  Pie,
+  PieChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis
+} from 'recharts';
 
-const ChessGamesByDaysOfWeek: React.FC<{ insights: Insights; }> = ({
+const ChessGamesByDaysOfWeek: React.FC<{ insights: Insights }> = ({
   insights = {} as Insights
 }) => {
   const pieData = (insights?.games?.daysOfWeek || []).map(
@@ -57,7 +72,7 @@ const ChessGamesByDaysOfWeek: React.FC<{ insights: Insights; }> = ({
   );
 };
 
-const ChessAccuracyByDaysOfWeek: React.FC<{ insights: Insights; }> = ({
+const ChessAccuracyByDaysOfWeek: React.FC<{ insights: Insights }> = ({
   insights = {} as Insights
 }) => {
   const data = insights?.accuracy?.daysOfWeek || [];
@@ -158,7 +173,7 @@ export const ChessResultsByDaysOfWeek: React.FC<{
   );
 };
 
-export const ChessDaysOfWeek: React.FC<{ insights: Insights; }> = ({
+export const ChessDaysOfWeek: React.FC<{ insights: Insights }> = ({
   insights
 }) => {
   return (

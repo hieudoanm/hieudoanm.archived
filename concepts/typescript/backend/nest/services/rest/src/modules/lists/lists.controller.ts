@@ -1,5 +1,14 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post, Request,
-  UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  Request,
+  UseGuards
+} from '@nestjs/common';
 import { ApiBody, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { List } from '@prisma/client';
 import { LocalAuthGuard } from '../../common/guards/local.guard';
@@ -22,7 +31,7 @@ export class ListsController {
   @ApiBody({ type: ListRequestDto })
   @ApiResponse({ type: ListResponseDto })
   async createList(
-    @Request() request: { user_id: string; },
+    @Request() request: { user_id: string },
     @Body() { title }: ListRequest
   ): Promise<List> {
     const { user_id } = request;
@@ -31,7 +40,7 @@ export class ListsController {
 
   @Get(':id')
   @ApiResponse({ type: ListResponseDto })
-  async getList(@Param() params: { id: string; }): Promise<List> {
+  async getList(@Param() params: { id: string }): Promise<List> {
     const { id } = params;
     return this.listsService.getList(id);
   }
@@ -40,8 +49,8 @@ export class ListsController {
   @ApiBody({ type: ListRequestDto })
   @ApiResponse({ type: ListResponseDto })
   async updateList(
-    @Request() request: { user_id: string; },
-    @Param() params: { id: string; },
+    @Request() request: { user_id: string },
+    @Param() params: { id: string },
     @Body() { title }: ListRequest
   ): Promise<List> {
     const { id } = params;
@@ -52,8 +61,8 @@ export class ListsController {
   @Delete(':id')
   @ApiResponse({ status: 204 })
   async deleteList(
-    @Request() request: { user_id: string; },
-    @Param() params: { id: string; }
+    @Request() request: { user_id: string },
+    @Param() params: { id: string }
   ): Promise<void> {
     const { id } = params;
     const { user_id } = request;

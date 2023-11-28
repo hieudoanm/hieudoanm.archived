@@ -10,7 +10,7 @@ import ReactApexCharts from 'react-apexcharts';
 import useFetch from '../../../hooks/use-fetch';
 import LayoutTemplate from '../../../templates/LayoutTemplate';
 
-type HistoryData = { price: string; timestamp: number; };
+type HistoryData = { price: string; timestamp: number };
 
 type HistoryResponse = {
   status: string;

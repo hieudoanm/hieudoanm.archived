@@ -2,8 +2,17 @@ import { Card, CardBody, CardHeader, Divider, Icon } from '@chakra-ui/react';
 import { TEAL_COLOR } from '@chess/common/constants';
 import { Insights } from '@chess/types/chess';
 import { FaMinusSquare, FaPlusSquare, FaSquare } from 'react-icons/fa';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer,
-  Tooltip, XAxis, YAxis } from 'recharts';
+import {
+  Area,
+  AreaChart,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis
+} from 'recharts';
 
 const ChessTotal: React.FC<{
   percentage: number;
@@ -42,7 +51,7 @@ const ChessAccuracy: React.FC<{
   );
 };
 
-export const ChessGames: React.FC<{ insights: Insights; }> = (
+export const ChessGames: React.FC<{ insights: Insights }> = (
   { insights }
 ) => {
   return (

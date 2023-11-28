@@ -1,5 +1,5 @@
 export type Country = {
-  name: { official: string; common: string; };
+  name: { official: string; common: string };
   cca2: string;
   cca3: string;
   region: string;

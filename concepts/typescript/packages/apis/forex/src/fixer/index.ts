@@ -6,7 +6,7 @@ const BASE_URL = 'http://data.fixer.io/api';
 export class FixerClient {
   private accessKey: string;
 
-  constructor({ accessKey }: { accessKey: string; }) {
+  constructor({ accessKey }: { accessKey: string }) {
     this.accessKey = accessKey;
   }
 

@@ -201,7 +201,7 @@ const Day: Component<DayProps> = (props) => {
   );
 };
 
-export type CalendarProps = { events?: CalendarEventProps[]; };
+export type CalendarProps = { events?: CalendarEventProps[] };
 
 export const Calendar: Component<CalendarProps> = (_props) => {
   const props = mergeProps({ events: [] }, _props);

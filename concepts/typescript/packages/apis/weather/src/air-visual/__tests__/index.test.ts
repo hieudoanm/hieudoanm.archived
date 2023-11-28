@@ -1,6 +1,11 @@
 import axios from 'axios';
-import { AirQuality, AirVisualClient, CitiesResponse, CountriesResponse,
-  StatesResponse } from '..';
+import {
+  AirQuality,
+  AirVisualClient,
+  CitiesResponse,
+  CountriesResponse,
+  StatesResponse
+} from '..';
 
 describe('AirVisualClient', () => {
   const airVisualClient = new AirVisualClient({ apiKey: '' });

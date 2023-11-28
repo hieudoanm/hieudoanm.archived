@@ -1,11 +1,16 @@
 import { Card, CardBody, CardHeader, Divider, Heading } from '@chakra-ui/react';
 import { TEAL_COLOR } from '@chess/common/constants';
-import { Bar, ComposedChart, ResponsiveContainer, Tooltip,
-  XAxis } from 'recharts';
+import {
+  Bar,
+  ComposedChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis
+} from 'recharts';
 
 export const ChessHistogramChart: React.FC<{
   title: string;
-  data: { label: string; value: number; }[];
+  data: { label: string; value: number }[];
 }> = ({ title = '', data = [] }) => {
   return (
     <Card className="border border-gray-200 shadow">

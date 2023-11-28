@@ -187,7 +187,7 @@ const Day: React.FC<DayProps> = ({
   );
 };
 
-export type CalendarProps = { events?: CalendarEventProps[]; };
+export type CalendarProps = { events?: CalendarEventProps[] };
 
 export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
   const d = new Date();

@@ -17,7 +17,7 @@ export class GamesController extends Controller {
     @Path('username') username: string,
     @Query('month') month: number = new Date().getMonth() + 1,
     @Query('year') year: number = new Date().getFullYear()
-  ): Promise<{ total: number; games: Game[]; }> {
+  ): Promise<{ total: number; games: Game[] }> {
     return this.gamesService.getGames(username, { month, year });
   }
 
@@ -27,7 +27,7 @@ export class GamesController extends Controller {
     @Body() {
       month = new Date().getMonth() + 1,
       year = new Date().getFullYear()
-    }: { month: number; year: number; }
+    }: { month: number; year: number }
   ): Promise<{
     total: number;
     synced: number;

@@ -43,9 +43,9 @@ export type Games = {
   daysOfWeek?: GamesByDayOfWeek[];
 };
 
-export type GamesByPeriod = { games?: number; period?: number; };
-export type GamesByTimeOfDay = { games?: number; timeOfDay?: string; };
-export type GamesByDayOfWeek = { games?: number; dayOfWeek?: string; };
+export type GamesByPeriod = { games?: number; period?: number };
+export type GamesByTimeOfDay = { games?: number; timeOfDay?: string };
+export type GamesByDayOfWeek = { games?: number; dayOfWeek?: string };
 
 export type Accuracy = {
   average?: number;
@@ -57,9 +57,9 @@ export type Accuracy = {
   daysOfWeek?: AccuracyByDayOfWeek[];
 };
 
-export type AccuracyByPeriod = { average?: number; period?: number; };
-export type AccuracyByTimeOfDay = { average?: number; timeOfDay?: string; };
-export type AccuracyByDayOfWeek = { average?: number; dayOfWeek?: string; };
+export type AccuracyByPeriod = { average?: number; period?: number };
+export type AccuracyByTimeOfDay = { average?: number; timeOfDay?: string };
+export type AccuracyByDayOfWeek = { average?: number; dayOfWeek?: string };
 
 export type Opponent = {
   opponent?: string;

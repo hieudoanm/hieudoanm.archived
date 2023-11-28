@@ -18,7 +18,7 @@ const getCentipawn = async (fen: string): Promise<number> => {
       headers: { 'Content-Type': 'application/json' },
       data: requestData
     };
-    const { data } = await axios.request<{ centipawn: number; }>(config);
+    const { data } = await axios.request<{ centipawn: number }>(config);
     return data.centipawn ?? 0;
   } catch (error) {
     logger.error(`getCentipawn url=${url} error=${error}`);

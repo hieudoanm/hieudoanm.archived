@@ -15,5 +15,5 @@ export type CountriesResponse = {
   maxBulletRating: number;
   total: number;
   players: Player[];
-  titles: { title: string; total: number; }[];
+  titles: { title: string; total: number }[];
 };

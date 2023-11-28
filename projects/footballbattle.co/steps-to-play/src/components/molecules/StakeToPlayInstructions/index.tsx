@@ -11,7 +11,7 @@ const ArrowDown: React.FC = () => {
   );
 };
 
-const Circle: React.FC<{ background?: string; children: React.ReactNode; }> = ({
+const Circle: React.FC<{ background?: string; children: React.ReactNode }> = ({
   children,
   background = ''
 }) => {

@@ -1,5 +1,11 @@
-import { Button, Card, CardFooter, CardHeader, Container,
-  Divider } from '@chakra-ui/react';
+import {
+  Button,
+  Card,
+  CardFooter,
+  CardHeader,
+  Container,
+  Divider
+} from '@chakra-ui/react';
 import { Layout } from '@chess/layout';
 import { NextPage } from 'next';
 

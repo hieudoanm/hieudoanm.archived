@@ -1,8 +1,29 @@
 import { gql } from '@apollo/client';
 import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Box, Button, Card, CardBody, Icon, Menu, MenuButton, MenuItem,
-  MenuList, Select, Stat, StatHelpText, StatLabel, StatNumber, Table,
-  TableContainer, Tbody, Td, Text, Th, Thead, Tr } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Card,
+  CardBody,
+  Icon,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Select,
+  Stat,
+  StatHelpText,
+  StatLabel,
+  StatNumber,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react';
 import { TimeRange } from '@chess/common/@types';
 import { GAP, TITLED_ABBREVIATIONS } from '@chess/common/constants';
 import { apolloClient } from '@chess/common/graphql';
@@ -18,7 +39,7 @@ import { useRouter } from 'next/router';
 import { ChangeEvent, useState } from 'react';
 import { FaBolt, FaClock, FaRocket } from 'react-icons/fa';
 
-const RapidHistogramChart: React.FC<{ players: Player[]; }> = ({
+const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -49,7 +70,7 @@ const RapidHistogramChart: React.FC<{ players: Player[]; }> = ({
   return <ChessHistogramChart title="Rapid" data={data} />;
 };
 
-const BlitzHistogramChart: React.FC<{ players: Player[]; }> = ({
+const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -80,7 +101,7 @@ const BlitzHistogramChart: React.FC<{ players: Player[]; }> = ({
   return <ChessHistogramChart title="Blitz" data={data} />;
 };
 
-const BulletHistogramChart: React.FC<{ players: Player[]; }> = ({
+const BulletHistogramChart: React.FC<{ players: Player[] }> = ({
   players = []
 }) => {
   const ratedPlayers = players.filter(
@@ -145,7 +166,7 @@ const TitledStats: React.FC<{
   );
 };
 
-const PlayersTable: React.FC<{ players: Player[]; }> = ({ players = [] }) => {
+const PlayersTable: React.FC<{ players: Player[] }> = ({ players = [] }) => {
   return (
     <Card className="border border-gray-200 shadow">
       <CardBody className="p-0">
@@ -448,7 +469,7 @@ export const getServerSideProps: GetServerSideProps<
           players = []
         }
       }
-    } = await apolloClient.query<{ titled: TitledPageProperties; }>({
+    } = await apolloClient.query<{ titled: TitledPageProperties }>({
       query,
       variables: { title, timeRange }
     });

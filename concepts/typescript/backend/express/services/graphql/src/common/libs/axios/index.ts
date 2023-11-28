@@ -18,7 +18,7 @@ export const get = async <T>(
 export const retryGet = async <T>(
   url: string,
   requestConfig: AxiosRequestConfig = {},
-  { time = 0, max = 4 }: { time: number; max: number; } = { time: 0, max: 4 }
+  { time = 0, max = 4 }: { time: number; max: number } = { time: 0, max: 4 }
 ): Promise<T> => {
   try {
     return await get<T>(url, requestConfig);

@@ -1,6 +1,10 @@
 import { Stomp } from '../../clients/stomp';
-import { ACTIVE_MQ_HOST, ACTIVE_MQ_PASSWORD, ACTIVE_MQ_PORT,
-  ACTIVE_MQ_USERNAME } from '../../environments';
+import {
+  ACTIVE_MQ_HOST,
+  ACTIVE_MQ_PASSWORD,
+  ACTIVE_MQ_PORT,
+  ACTIVE_MQ_USERNAME
+} from '../../environments';
 
 const connectOptions = {
   host: ACTIVE_MQ_HOST,

@@ -6,7 +6,7 @@ const BASE_URL = 'https://api.football-data.org/v4';
 export class FootballClient {
   private apiKey = '';
 
-  constructor({ apiKey }: { apiKey: string; }) {
+  constructor({ apiKey }: { apiKey: string }) {
     this.apiKey = apiKey;
   }
 
@@ -24,7 +24,7 @@ export class FootballClient {
   }> {
     const url = `${BASE_URL}/competitions`;
     const headers = { 'X-Auth-Token': this.apiKey };
-    return this.get<{ count: number; competitions: Competition[]; }>(url, {
+    return this.get<{ count: number; competitions: Competition[] }>(url, {
       headers
     });
   }
@@ -36,25 +36,25 @@ export class FootballClient {
   }
 
   public async getTeams(
-    { limit = 50, offset = 0 }: { limit?: number; offset?: number; } = {
+    { limit = 50, offset = 0 }: { limit?: number; offset?: number } = {
       limit: 50,
       offset: 0
     }
-  ): Promise<{ count: number; teams: Team[]; }> {
+  ): Promise<{ count: number; teams: Team[] }> {
     const urlSearchParams = new URLSearchParams();
     urlSearchParams.set('limit', limit.toString());
     urlSearchParams.set('offset', offset.toString());
     const url = `${BASE_URL}/teams?${urlSearchParams.toString()}`;
     const headers = { 'X-Auth-Token': this.apiKey };
-    return this.get<{ count: number; teams: Team[]; }>(url, { headers });
+    return this.get<{ count: number; teams: Team[] }>(url, { headers });
   }
 
   public async getTeamsByCompetition(
     id: number
-  ): Promise<{ count: number; teams: Team[]; }> {
+  ): Promise<{ count: number; teams: Team[] }> {
     const url = `${BASE_URL}/competitions/${id}/teams`;
     const headers = { 'X-Auth-Token': this.apiKey };
-    return this.get<{ count: number; teams: Team[]; }>(url, { headers });
+    return this.get<{ count: number; teams: Team[] }>(url, { headers });
   }
 
   public async getTeam(id: number): Promise<Team> {
@@ -65,10 +65,10 @@ export class FootballClient {
 
   public async getMatchesByTeam(
     id: number
-  ): Promise<{ count: number; matches: Match[]; }> {
+  ): Promise<{ count: number; matches: Match[] }> {
     const url = `${BASE_URL}/teams/${id}/matches`;
     const headers = { 'X-Auth-Token': this.apiKey };
-    return this.get<{ count: number; matches: Match[]; }>(url, { headers });
+    return this.get<{ count: number; matches: Match[] }>(url, { headers });
   }
 }
 

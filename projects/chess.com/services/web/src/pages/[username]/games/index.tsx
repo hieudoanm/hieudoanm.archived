@@ -1,8 +1,21 @@
 import { DocumentNode, gql } from '@apollo/client';
-import { Box, Button, Card, CardHeader, Divider, Heading, Icon, List, ListItem,
-  useToast } from '@chakra-ui/react';
-import { DRAW_RESULTS, LOSS_RESULTS,
-  WIN_RESULTS } from '@chess/common/constants';
+import {
+  Box,
+  Button,
+  Card,
+  CardHeader,
+  Divider,
+  Heading,
+  Icon,
+  List,
+  ListItem,
+  useToast
+} from '@chakra-ui/react';
+import {
+  DRAW_RESULTS,
+  LOSS_RESULTS,
+  WIN_RESULTS
+} from '@chess/common/constants';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
 import { Container } from '@chess/components/atoms/Container';
@@ -10,10 +23,15 @@ import { Layout } from '@chess/layout';
 import { Game } from '@prisma/client';
 import { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 import Link from 'next/link';
-import { FaBolt, FaClock, FaRocket, FaSearchengin,
-  FaSync } from 'react-icons/fa';
+import {
+  FaBolt,
+  FaClock,
+  FaRocket,
+  FaSearchengin,
+  FaSync
+} from 'react-icons/fa';
 
-const TimeClassIcon: React.FC<{ timeClass: string; }> = (
+const TimeClassIcon: React.FC<{ timeClass: string }> = (
   { timeClass = '' }
 ) => {
   if (timeClass === 'bullet') { return <Icon as={FaRocket} boxSize={6} />; }
@@ -41,7 +59,7 @@ const mutation = gql`
   }
 `;
 
-const GamesPage: NextPage<{ username: string; games: Game[]; }> = ({
+const GamesPage: NextPage<{ username: string; games: Game[] }> = ({
   username = '',
   games = []
 }) => {
@@ -193,7 +211,7 @@ export const getServerSideProps: GetServerSideProps = async (
         player: { games = [] }
       }
     } = await apolloClient.query<{
-      player: { games: Game[]; };
+      player: { games: Game[] };
     }>({ query, variables: { username } });
     return { props: { username, games } };
   } catch (error) {

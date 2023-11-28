@@ -5,7 +5,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { Observable } from 'rxjs';
 
 interface HeroesService {
-  findOne(data: { id: number; }): Observable<any>;
+  findOne(data: { id: number }): Observable<any>;
 }
 
 type Hero = {

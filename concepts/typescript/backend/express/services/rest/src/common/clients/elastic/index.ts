@@ -1,7 +1,12 @@
 import { Client, ClientOptions } from '@elastic/elasticsearch';
-import { ClusterHealthResponse, IndexResponse, IndicesCreateResponse,
-  IndicesDeleteResponse, QueryDslQueryContainer,
-  SearchResponse } from '@elastic/elasticsearch/lib/api/types';
+import {
+  ClusterHealthResponse,
+  IndexResponse,
+  IndicesCreateResponse,
+  IndicesDeleteResponse,
+  QueryDslQueryContainer,
+  SearchResponse
+} from '@elastic/elasticsearch/lib/api/types';
 import { ELASTICSEARCH_NODE } from '../../environments';
 
 class ElasticSearchClient {

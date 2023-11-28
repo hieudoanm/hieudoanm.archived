@@ -1,8 +1,11 @@
 import { Prisma, PrismaClient } from '@prisma/client';
 import { logger } from '../../../../../../../common/libs/log';
 import { getPrismaClient } from '../../../../../../../common/prisma';
-import { DAYS_OF_WEEK, DRAW_RESULTS,
-  LOSS_RESULTS } from '../../../insights.constants';
+import {
+  DAYS_OF_WEEK,
+  DRAW_RESULTS,
+  LOSS_RESULTS
+} from '../../../insights.constants';
 import { ResultsByDayOfWeek } from '../results.types';
 
 export class DaysOfWeekService {
@@ -66,16 +69,16 @@ export class DaysOfWeekService {
     const lossQuery = this.buildLossResultsByDaysOfWeekQuery(username);
     const [wins = [], draws = [], losses = []] = await this.prismaClient
       .$transaction([
-        this.prismaClient.$queryRaw<{ win: number; dayOfWeekIndex: number; }[]>(
+        this.prismaClient.$queryRaw<{ win: number; dayOfWeekIndex: number }[]>(
           winQuery
         ),
         this.prismaClient.$queryRaw<
-          { draw: number; dayOfWeekIndex: number; }[]
+          { draw: number; dayOfWeekIndex: number }[]
         >(
           drawQuery
         ),
         this.prismaClient.$queryRaw<
-          { loss: number; dayOfWeekIndex: number; }[]
+          { loss: number; dayOfWeekIndex: number }[]
         >(
           lossQuery
         )

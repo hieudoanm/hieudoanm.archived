@@ -17,7 +17,7 @@ const handler = async (
     try {
       const {
         data: { accessToken }
-      } = await axios.post<{ accessToken: string; }>(url, {
+      } = await axios.post<{ accessToken: string }>(url, {
         email: request.body.username || '',
         password: request.body.password || '',
         strategy: 'local'

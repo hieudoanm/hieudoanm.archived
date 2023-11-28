@@ -5,7 +5,7 @@ import React from 'react';
 import Tabs from '../../atoms/Tabs';
 import { Testimonial } from '../../molecules/Testimonial';
 
-export const Testimonials: React.FC<{ testimonials: any[]; }> = ({
+export const Testimonials: React.FC<{ testimonials: any[] }> = ({
   testimonials = []
 }) => {
   return (

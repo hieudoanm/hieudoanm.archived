@@ -6,7 +6,7 @@ const main = async () => {
       console.error(error);
       process.exit(1);
     }
-    const icons: { name: string; url: string; }[] = files.map(
+    const icons: { name: string; url: string }[] = files.map(
       (name: string) => {
         const url =
           `https://raw.githubusercontent.com/houseofsvg/houseofsvg/master/icons/${name}`;

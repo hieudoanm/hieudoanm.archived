@@ -1,5 +1,9 @@
-import { ONE_MONTH, ONE_QUARTER, ONE_WEEK,
-  ONE_YEAR } from '../../common/constants';
+import {
+  ONE_MONTH,
+  ONE_QUARTER,
+  ONE_WEEK,
+  ONE_YEAR
+} from '../../common/constants';
 
 export type TimeRange = 'WEEK' | 'MONTH' | 'QUARTER' | 'YEAR';
 

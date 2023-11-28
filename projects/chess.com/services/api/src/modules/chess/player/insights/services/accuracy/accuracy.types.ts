@@ -8,6 +8,6 @@ export type Accuracy = {
   daysOfWeek: AccuracyByDayOfWeek[];
 };
 
-export type AccuracyByPeriod = { average: number; period: number; };
-export type AccuracyByTimeOfDay = { average: number; timeOfDay: string; };
-export type AccuracyByDayOfWeek = { average: number; dayOfWeek: string; };
+export type AccuracyByPeriod = { average: number; period: number };
+export type AccuracyByTimeOfDay = { average: number; timeOfDay: string };
+export type AccuracyByDayOfWeek = { average: number; dayOfWeek: string };

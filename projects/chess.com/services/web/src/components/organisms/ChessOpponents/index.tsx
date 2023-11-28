@@ -1,13 +1,24 @@
-import { Card, CardBody, CardHeader, Divider, Table, TableContainer, Tbody, Td,
-  Th, Thead, Tr } from '@chakra-ui/react';
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  Divider,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react';
 import { Insights } from '@chess/types/chess';
 import Link from 'next/link';
 import { useState } from 'react';
 
-export const ChessOpponents: React.FC<{ insights: Insights; }> = ({
+export const ChessOpponents: React.FC<{ insights: Insights }> = ({
   insights: { opponents = [] }
 }) => {
-  const [sort, setSort] = useState<{ by: string; }>({ by: 'games' });
+  const [sort, setSort] = useState<{ by: string }>({ by: 'games' });
 
   const data = opponents.map(
     ({ opponent = '', games = 1, win = 0, draw = 0, loss = 0 }) => {

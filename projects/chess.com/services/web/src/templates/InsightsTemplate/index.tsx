@@ -5,7 +5,7 @@ import { ChessResults } from '@chess/components/organisms/ChessResults';
 import { ChessTimeOfDays } from '@chess/components/organisms/ChessTimeOfDays';
 import { Insights } from '@chess/types/chess';
 
-export const InsightsTemplate: React.FC<{ insights: Insights; }> = ({
+export const InsightsTemplate: React.FC<{ insights: Insights }> = ({
   insights = {} as Insights
 }) => {
   return (

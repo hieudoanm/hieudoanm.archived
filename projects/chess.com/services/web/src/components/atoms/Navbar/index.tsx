@@ -1,16 +1,41 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { ChevronDownIcon, HamburgerIcon, Icon } from '@chakra-ui/icons';
-import { Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent,
-  DrawerFooter, DrawerHeader, DrawerOverlay, Menu, MenuButton, MenuItem,
-  MenuList, Text, useDisclosure } from '@chakra-ui/react';
-import { APP_NAME, TITLED_ABBREVIATIONS, TITLES,
-  YEAR } from '@chess/common/constants';
+import {
+  Button,
+  Divider,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Text,
+  useDisclosure
+} from '@chakra-ui/react';
+import {
+  APP_NAME,
+  TITLED_ABBREVIATIONS,
+  TITLES,
+  YEAR
+} from '@chess/common/constants';
 import { Container } from '@chess/components/atoms/Container';
 import Link from 'next/link';
-import { FaChessKnight, FaCog, FaGithub, FaSignInAlt, FaSignOutAlt, FaTools,
-  FaUser } from 'react-icons/fa';
+import {
+  FaChessKnight,
+  FaCog,
+  FaGithub,
+  FaSignInAlt,
+  FaSignOutAlt,
+  FaTools,
+  FaUser
+} from 'react-icons/fa';
 
-const AuthButton: React.FC<{ size: string; }> = ({ size = 'md' }) => {
+const AuthButton: React.FC<{ size: string }> = ({ size = 'md' }) => {
   const { user } = useUser();
 
   return (
@@ -61,7 +86,7 @@ const AuthButton: React.FC<{ size: string; }> = ({ size = 'md' }) => {
   );
 };
 
-const GitHubButton: React.FC<{ size: string; }> = ({ size = 'md' }) => {
+const GitHubButton: React.FC<{ size: string }> = ({ size = 'md' }) => {
   return (
     <Link
       href="https://github.com/hieudoanm/app.chess"

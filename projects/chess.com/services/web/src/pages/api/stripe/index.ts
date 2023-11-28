@@ -1,5 +1,8 @@
-import { NODE_ENV, STRIPE_PRICE_ID,
-  STRIPE_SECRET_KEY } from '@chess/common/environments';
+import {
+  NODE_ENV,
+  STRIPE_PRICE_ID,
+  STRIPE_SECRET_KEY
+} from '@chess/common/environments';
 import { logger } from '@chess/common/libs/logger';
 import { NextApiRequest, NextApiResponse } from 'next';
 import Stripe from 'stripe';

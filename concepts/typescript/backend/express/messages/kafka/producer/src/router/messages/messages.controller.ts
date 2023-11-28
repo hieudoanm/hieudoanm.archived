@@ -7,8 +7,8 @@ import { producer } from '../../common/libs/kafka';
 export class MessagesController {
   @Post('produce')
   public async produce(
-    @Body() { message }: { message: string; }
-  ): Promise<{ status: string; }> {
+    @Body() { message }: { message: string }
+  ): Promise<{ status: string }> {
     await producer.send({
       topic: configs.kafka.topic,
       messages: [{ value: message }]

@@ -2,8 +2,11 @@ import { Player, Prisma, PrismaClient } from '@prisma/client';
 import { ChessTitle } from '../../../common/clients/chess.com/types';
 import { logger } from '../../../common/libs/log';
 import { getPrismaClient } from '../../../common/prisma';
-import { TimeRange, timeRangeInDays,
-  timeRangeInMilliseconds } from '../chess.enum';
+import {
+  TimeRange,
+  timeRangeInDays,
+  timeRangeInMilliseconds
+} from '../chess.enum';
 import { TitledStats } from './titled.types';
 
 export class TitledRepository {
@@ -19,7 +22,7 @@ export class TitledRepository {
   }: {
     title: ChessTitle;
     timeRange: TimeRange;
-  }): Promise<{ total: number; players: Player[]; }> {
+  }): Promise<{ total: number; players: Player[] }> {
     const milliseconds: number = timeRangeInMilliseconds[`${timeRange}`];
     const d = new Date(Date.now() - milliseconds);
     const [date] = d.toISOString().split('T');
@@ -119,18 +122,18 @@ export class TitledRepository {
       [{ average: averageBulletRating = 0 }],
       [{ max: maxBulletRating = 0 }]
     ] = await this.prismaClient.$transaction([
-      this.prismaClient.$queryRaw<{ average: number; }[]>(
+      this.prismaClient.$queryRaw<{ average: number }[]>(
         averageRapidRatingQuery
       ),
-      this.prismaClient.$queryRaw<{ max: number; }[]>(maxRapidRatingQuery),
-      this.prismaClient.$queryRaw<{ average: number; }[]>(
+      this.prismaClient.$queryRaw<{ max: number }[]>(maxRapidRatingQuery),
+      this.prismaClient.$queryRaw<{ average: number }[]>(
         averageBlitzRatingQuery
       ),
-      this.prismaClient.$queryRaw<{ max: number; }[]>(maxBlitzRatingQuery),
-      this.prismaClient.$queryRaw<{ average: number; }[]>(
+      this.prismaClient.$queryRaw<{ max: number }[]>(maxBlitzRatingQuery),
+      this.prismaClient.$queryRaw<{ average: number }[]>(
         averageBulletRatingQuery
       ),
-      this.prismaClient.$queryRaw<{ max: number; }[]>(maxBulletRatingQuery)
+      this.prismaClient.$queryRaw<{ max: number }[]>(maxBulletRatingQuery)
     ]);
     const { total = 0, players = [] } = await this.getTitledPlayers({
       title,

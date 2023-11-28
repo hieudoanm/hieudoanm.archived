@@ -1,6 +1,13 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
-import { Button, Card, CardBody, CardHeader, Divider, Input,
-  Text } from '@chakra-ui/react';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
+  Divider,
+  Input,
+  Text
+} from '@chakra-ui/react';
 import { logger } from '@chess/common/libs/logger';
 import { getStripe } from '@chess/common/libs/stripe';
 import { Container } from '@chess/components/atoms/Container';

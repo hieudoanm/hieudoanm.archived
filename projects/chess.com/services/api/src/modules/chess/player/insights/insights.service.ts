@@ -47,7 +47,7 @@ export class InsightsService {
 
   public async getOpponentsInsights(
     username: string
-  ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number; }> {
+  ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number }> {
     const opponents: Opponent[] = await this.opponentsService.getOpponents(
       username
     );

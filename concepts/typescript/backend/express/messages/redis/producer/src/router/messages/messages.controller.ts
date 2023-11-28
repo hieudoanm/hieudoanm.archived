@@ -7,7 +7,7 @@ import { redis } from '../../libs/redis';
 export class MessagesController {
   @Post('produce')
   public async produce(
-    @Body() { message }: { message: string; }
+    @Body() { message }: { message: string }
   ): Promise<void> {
     redis.publish(configs.redis.channel, message);
     return;

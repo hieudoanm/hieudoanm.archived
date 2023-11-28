@@ -18,11 +18,11 @@ export type ChessPlayer = {
   'league': string;
 };
 
-export type ChessStatsLast = { rating: number; date: number; rd: number; };
-export type ChessStatsBest = { rating: number; date: number; game: string; };
-export type ChessStatsRecord = { win: number; loss: number; draw: number; };
-export type ChessTactic = { rating: number; date: number; };
-export type ChessPuzzleRush = { total_attempts: number; score: number; };
+export type ChessStatsLast = { rating: number; date: number; rd: number };
+export type ChessStatsBest = { rating: number; date: number; game: string };
+export type ChessStatsRecord = { win: number; loss: number; draw: number };
+export type ChessTactic = { rating: number; date: number };
+export type ChessPuzzleRush = { total_attempts: number; score: number };
 
 export type ChessStats = {
   chess_daily: {
@@ -67,7 +67,7 @@ export type ChessStats = {
   };
 };
 
-export type ChessFullPlayer = ChessPlayer & { stats: ChessStats; } & {
+export type ChessFullPlayer = ChessPlayer & { stats: ChessStats } & {
   archives: string[];
 };
 

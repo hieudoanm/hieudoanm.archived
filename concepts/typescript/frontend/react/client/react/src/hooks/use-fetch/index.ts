@@ -8,7 +8,7 @@ type UseFetch<T> = {
 
 export const useFetch = <T>(
   url: string
-): UseFetch<T> & { refetch: () => void; } => {
+): UseFetch<T> & { refetch: () => void } => {
   const [state, setState] = useState<UseFetch<T>>({
     loading: false,
     error: null,

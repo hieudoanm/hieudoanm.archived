@@ -6,7 +6,7 @@ import { Checkbox } from '../../atoms/Checkbox';
 import { Heading } from '../../atoms/Heading';
 import { Input } from '../../atoms/Input';
 
-export const Contact: React.FC<{ title?: string; description?: string; }> = ({
+export const Contact: React.FC<{ title?: string; description?: string }> = ({
   title = '',
   description = ''
 }) => {
