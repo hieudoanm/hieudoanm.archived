@@ -25,18 +25,19 @@
 
 ---
 
-- 👨‍🎓 **Bachelor of Psychology** at [**RMIT**][rmit][^1]
+- 👨‍🎓 [**Bachelor of Psychology** at **RMIT**[^1]][rmit-psychology]
 - 🇦🇺 **Senior Software Engineer** at [**NAB**][nab][^2]
 - 🇩🇪 Ich arbeite seit zwei Jahren in **Deutschland**
-- 🇫🇮 [**Bachelor of Business Administration**, **BIT**][bba-bit][^3] in **Finland**
+- 🇫🇮 [**Bachelor of Business Administration**, **BIT**[^3] at **LAB**[^4]][lab-bba-bit] in **Finland**
 - 🎖️ Achievements
   - **2021-09-11**: [AWS Certified Solutions Architect – Associate][aws-ssa]
 
 [^1]: Royal Melbourne Institute of Technology
 [^2]: National Australia Bank
 [^3]: Business Information Technology
+[^4]: LAB University of Applied Sciences
 
 [aws-ssa]: https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3
-[bba-bit]: https://lab.fi/en/study/bachelor-business-administration-business-information-technology-full-time-studies-lahti-210
+[lab-bba-bit]: https://lab.fi/en/study/bachelor-business-administration-business-information-technology-full-time-studies-lahti-210
 [nab]: https://www.nab.com.au/
-[rmit]: https://www.rmit.edu.vn/
+[rmit-psychology]: https://www.rmit.edu.vn/study-at-rmit/undergraduate-programs/bachelor-of-psychology
