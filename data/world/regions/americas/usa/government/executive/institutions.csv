@@ -1,0 +1,122 @@
+system,district,institution,city,state
+Federal Reserve Bank,1,Federal Reserve Bank of Boston,Boston,Massachusetts
+Federal Reserve Bank,2,Federal Reserve Bank of New York,New York City,New York
+Federal Reserve Bank,3,Federal Reserve Bank of Philadelphia,Philadelphia,Pennsylvania
+Federal Reserve Bank,4,Federal Reserve Bank of Cleveland,Cleveland,Ohio
+Federal Reserve Bank,5,Federal Reserve Bank of Richmond,Richmond,Virginia
+Federal Reserve Bank,6,Federal Reserve Bank of Atlanta,Atlanta,Georgia
+Federal Reserve Bank,7,Federal Reserve Bank of Chicago,Chicago,Illinois
+Federal Reserve Bank,8,Federal Reserve Bank of St. Louis,St. Louis,Missouri
+Federal Reserve Bank,9,Federal Reserve Bank of Minneapolis,Minneapolis,Minnesota
+Federal Reserve Bank,10,Federal Reserve Bank of Kansas City,Kansas City,Missouri
+Federal Reserve Bank,11,Federal Reserve Bank of Dallas,Dallas,Texas
+Federal Reserve Bank,12,Federal Reserve Bank of San Francisco,San Francisco,California
+District Court,1,District of Maine,Portland,Maine
+District Court,1,District of Massachusetts,Boston,Massachusetts
+District Court,1,District of New Hampshire,Concord,New Hampshire
+District Court,1,District of Puerto Rico,San Juan,Puerto Rico
+District Court,1,District of Rhode Island,Providence,Rhode Island
+District Court,2,District of Connecticut,New Haven,Connecticut
+District Court,2,District of Vermont,Burlington,Vermont
+District Court,2,Eastern District of New York,Brooklyn,New York
+District Court,2,Northern District of New York,Albany,New York
+District Court,2,Southern District of New York,Manhattan,New York
+District Court,2,Western District of New York,Buffalo,New York
+District Court,3,District of Delaware,Wilmington,Delaware
+District Court,3,District of New Jersey,Newark,New Jersey
+District Court,3,District of the Virgin Islands,Charlotte Amalie,Virgin Islands
+District Court,3,Eastern District of Pennsylvania,Philadelphia,Pennsylvania
+District Court,3,Middle District of Pennsylvania,Harrisburg,Pennsylvania
+District Court,3,Western District of Pennsylvania,Pittsburgh,Pennsylvania
+District Court,4,District of Maryland,Baltimore,Maryland
+District Court,4,District of South Carolina,Charleston,South Carolina
+District Court,4,Eastern District of Virginia,Alexandria,Virginia
+District Court,4,Eastern District of North Carolina,Raleigh,North Carolina
+District Court,4,Middle District of North Carolina,Greensboro,North Carolina
+District Court,4,Northern District of West Virginia,Martinsburg,West Virginia
+District Court,4,Southern District of West Virginia,Charleston,West Virginia
+District Court,4,Western District of Virginia,Roanoke,Virginia
+District Court,4,Western District of North Carolina,Charlotte,North Carolina
+District Court,5,Eastern District of Louisiana,New Orleans,Louisiana
+District Court,5,Eastern District of Texas,Tyler,Texas
+District Court,5,Middle District of Louisiana,Baton Rouge,Louisiana
+District Court,5,Northern District of Mississippi,Oxford,Mississippi
+District Court,5,Northern District of Texas,Dallas,Texas
+District Court,5,Southern District of Mississippi,Jackson,Mississippi
+District Court,5,Southern District of Texas,Houston,Texas
+District Court,5,Western District of Louisiana,Shreveport,Louisiana
+District Court,5,Western District of Texas,San Antonio,Texas
+District Court,6,Eastern District of Kentucky,Lexington,Kentucky
+District Court,6,Eastern District of Michigan,Detroit,Michigan
+District Court,6,Eastern District of Tennessee,Knoxville,Tennessee
+District Court,6,Middle District of Tennessee,Nashville,Tennessee
+District Court,6,Northern District of Ohio,Cleveland,Ohio
+District Court,6,Southern District of Ohio,Columbus,Ohio
+District Court,6,Western District of Kentucky,Louisville,Kentucky
+District Court,6,Western District of Michigan,Grand Rapids,Michigan
+District Court,6,Western District of Tennessee,Memphis,Tennessee
+District Court,7,Central District of Illinois,Springfield,Illinois
+District Court,7,Eastern District of Wisconsin,Milwaukee,Wisconsin
+District Court,7,Northern District of Illinois,Chicago,Illinois
+District Court,7,Northern District of Indiana,South Bend,Indiana
+District Court,7,Southern District of Illinois,East St. Louis,Illinois
+District Court,7,Southern District of Indiana,Indianapolis,Indiana
+District Court,7,Western District of Wisconsin,Madison,Wisconsin
+District Court,8,District of Minnesota,Minneapolis,Minnesota
+District Court,8,District of Nebraska,Omaha,Nebraska
+District Court,8,District of North Dakota,Bismarck,North Dakota
+District Court,8,District of South Dakota,Sioux Falls,South Dakota
+District Court,8,Eastern District of Arkansas,Little Rock,Arkansas
+District Court,8,Eastern District of Missouri,St. Louis,Missouri
+District Court,8,Northern District of Iowa,Cedar Rapids,Iowa
+District Court,8,Southern District of Iowa,Des Moines,Iowa
+District Court,8,Western District of Arkansas,Fort Smith,Arkansas
+District Court,8,Western District of Missouri,Kansas City,Missouri
+District Court,9,Central District of California,Los Angeles,California
+District Court,9,District of Alaska,Anchorage,Alaska
+District Court,9,District of Arizona,Phoenix,Arizona
+District Court,9,District of Guam,Hagåtña,Guam
+District Court,9,District of Hawaii,Honolulu,Hawaii
+District Court,9,District of Idaho,Boise,Idaho
+District Court,9,District of Montana,Missoula,Montana
+District Court,9,District of Nevada,Las Vegas,Nevada
+District Court,9,District of Oregon,Portland,Oregon
+District Court,9,District of the Northern Mariana Islands,Saipan,Northern Mariana Islands
+District Court,9,Eastern District of California,Sacramento,California
+District Court,9,Eastern District of Washington,Spokane,Washington
+District Court,9,Northern District of California,San Francisco,California
+District Court,9,Southern District of California,San Diego,California
+District Court,9,Western District of Washington,Seattle,Washington
+District Court,10,District of Colorado,Denver,Colorado
+District Court,10,District of Kansas,Kansas City,Kansas
+District Court,10,District of Utah,Salt Lake City,Utah
+District Court,10,District of Wyoming,Cheyenne,Wyoming
+District Court,10,District of New Mexico,Albuquerque,New Mexico
+District Court,10,Eastern District of Oklahoma,Muskogee,Oklahoma
+District Court,10,Northern District of Oklahoma,Tulsa,Oklahoma
+District Court,10,Western District of Oklahoma,Oklahoma City,Oklahoma
+District Court,11,Middle District of Alabama,Montgomery,Alabama
+District Court,11,Middle District of Florida,Orlando,Florida
+District Court,11,Middle District of Georgia,Macon,Georgia
+District Court,11,Northern District of Alabama,Birmingham,Alabama
+District Court,11,Northern District of Florida,Tallahassee,Florida
+District Court,11,Northern District of Georgia,Atlanta,Georgia
+District Court,11,Southern District of Alabama,Mobile,Alabama
+District Court,11,Southern District of Florida,Miami,Florida
+District Court,11,Southern District of Georgia,Savannah,Georgia
+District Court,D.C.,District of Columbia,Washington D.C.,Washington D.C.
+Circuit Court,1,First Circuit,Massachusetts,Boston
+Circuit Court,2,Second Circuit,New York City,New York
+Circuit Court,3,Third Circuit,Philadelphia,Pennsylvania
+Circuit Court,4,Fourth Circuit,Richmond,Virginia
+Circuit Court,5,Fifth Circuit,New Orleans,Louisiana
+Circuit Court,6,Sixth Circuit,Cincinnati,Ohio
+Circuit Court,7,Seventh Circuit,Chicago,Illinois
+Circuit Court,8,Eighth Circuit,St. Louis,Missouri
+Circuit Court,9,Ninth Circuit,San Francisco,California
+Circuit Court,10,Tenth Circuit,Denver,Colorado
+Circuit Court,11,Evelenth Circuit,Atlanta,Georgia
+Circuit Court,D.C.,District of Columbia Circuit,Washington D.C.,Washington D.C.
+Circuit Court,Federal,Court of Appeals for Veterans Claims,Washington D.C.,Washington D.C.
+Circuit Court,Federal,Court of Federal Claims,Washington D.C.,Washington D.C.
+Circuit Court,Federal,Court of International,Washington D.C.,Washington D.C.
