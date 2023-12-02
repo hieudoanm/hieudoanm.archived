@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "6.13.1",
     "autoprefixer": "10.4.16",
     "esbuild": "0.19.8",
-    "eslint": "8.54.0",
+    "eslint": "8.55.0",
     "eslint-plugin-solid": "0.13.0",
     "postcss": "8.4.31",
     "sass": "1.69.5",
