@@ -18,8 +18,6 @@ croatian
 czech
 danish
 dutch
-english
-english
 esperanto
 estonian
 filipino
