@@ -456,9 +456,9 @@ the Free Software Foundation.
     SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
     DAMAGES.
 
-                         END OF TERMS AND CONDITIONS
+                   END OF TERMS AND CONDITIONS
 
-               How to Apply These Terms to Your New Libraries
+         How to Apply These Terms to Your New Libraries
 
 If you develop a new library, and you want it to be of the greatest
 possible use to the public, we recommend making it free software that
