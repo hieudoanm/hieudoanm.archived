@@ -16,7 +16,7 @@
     "prebuild": "prisma generate && rimraf .next out"
   },
   "dependencies": {
-    "@auth0/nextjs-auth0": "3.3.0",
+    "@auth0/nextjs-auth0": "3.4.0",
     "@chakra-ui/icons": "2.1.1",
     "@chakra-ui/next-js": "2.2.0",
     "@chakra-ui/react": "2.8.2",
