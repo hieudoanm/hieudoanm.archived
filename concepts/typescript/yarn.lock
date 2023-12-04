@@ -15417,10 +15417,10 @@ gatsby-sharp@^1.12.1:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@8.12.4:
-  version "8.12.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.12.4.tgz#3326f956d2507b2ccd0d529b3e8cb4d8bfb7d821"
-  integrity sha512-POokmqEWwtnWM8N/0jWXi7HiJqhahkTCkhuo2exS8qBBbPFz0wx1ay9gZsUMYLp8/lCN7x33JXEgNQL6mCUB9Q==
+gatsby-source-contentful@8.12.5:
+  version "8.12.5"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.12.5.tgz#c3170151169a9f7ff6b34e3a53ed6b9a4bce7042"
+  integrity sha512-dfpIrYWO2vG9Dh/+Kj3rpQXDyMehf0vjKy84GZ6lAePK1lsyA0ab5F80SUuUOHikFVtkSbV1aCRO8FmEfIj5JQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@contentful/rich-text-react-renderer" "^15.17.0"
