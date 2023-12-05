@@ -19,8 +19,8 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "3.0.1",
     "@tsconfig/svelte": "5.0.2",
-    "@typescript-eslint/eslint-plugin": "6.13.1",
-    "@typescript-eslint/parser": "6.13.1",
+    "@typescript-eslint/eslint-plugin": "6.13.2",
+    "@typescript-eslint/parser": "6.13.2",
     "autoprefixer": "10.4.16",
     "eslint": "8.55.0",
     "postcss": "8.4.32",
@@ -31,7 +31,7 @@
     "svelte": "4.2.8",
     "svelte-check": "3.6.2",
     "svelte-routing": "2.9.0",
-    "tailwindcss": "3.3.5",
+    "tailwindcss": "3.3.6",
     "tslib": "2.6.2",
     "typescript": "5.3.2",
     "vite": "5.0.5"
