@@ -1,0 +1,33 @@
+openapi: 3.0.0
+paths:
+  /health:
+    get:
+      operationId: HealthController_getHealth
+      parameters: []
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponseDto'
+      tags:
+        - Health
+info:
+  title: Nest.js - RabbitMQ - Template
+  description: Nest.js - RabbitMQ - Template
+  version: '1.0'
+  contact: {}
+tags:
+  - name: RabbitMQ
+    description: ''
+servers: []
+components:
+  schemas:
+    HealthResponseDto:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status

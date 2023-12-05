@@ -1,0 +1,331 @@
+season_start,season_end,position,name,country,club
+1992,1993,GK,Peter Schmeichel,Denmark,Manchester United
+1992,1993,RB,David Bardsley,England,Queens Park Rangers
+1992,1993,CB,Paul McGrath,Ireland,Aston Villa
+1992,1993,CB,Gary Pallister,England,Manchester United
+1992,1993,LB,Tony Dorigo,England,Leeds United
+1992,1993,MF,Roy Keane,Ireland,Nottingham Forest
+1992,1993,MF,Gary Speed,Wales,Leeds United
+1992,1993,MF,Paul Ince,England,Manchester United
+1992,1993,MF,Ryan Giggs,England,Manchester United
+1992,1993,FW,Alan Shearer,England,Blackburn Rovers
+1992,1993,FW,Ian Wright,England,Arsenal
+1993,1994,GK,Tim Flowers,England,Blackburn Rovers
+1993,1994,RB,Gary Kelly,Ireland,Leeds United
+1993,1994,CB,Gary Pallister,England,Manchester United
+1993,1994,CB,Tony Adams,England,Arsenal
+1993,1994,LB,Denis Irwin,Ireland,Manchester United
+1993,1994,MF,Paul Ince,England,Manchester United
+1993,1994,MF,Gary McAllister,Scotland,Leeds United
+1993,1994,MF,David Batty,England,Blackburn Rovers
+1993,1994,FW,Alan Shearer,England,Blackburn Rovers
+1993,1994,FW,Eric Cantona,France,Manchester United
+1993,1994,FW,Peter Beardsley,England,Newcastle United
+1994,1995,GK,Tim Flowers,England,Blackburn Rovers
+1994,1995,RB,Rob Jones,England,Liverpool
+1994,1995,CB,Gary Pallister,England,Manchester United
+1994,1995,CB,Colin Hendry,Scotland,Blackburn Rovers
+1994,1995,LB,Graeme Le Saux,England,Blackburn Rovers
+1994,1995,MF,Tim Sherwood,England,Blackburn Rovers
+1994,1995,MF,Matt Le Tissier,England,Southampton
+1994,1995,MF,Paul Ince,England,Manchester United
+1994,1995,FW,Jürgen Klinsmann,Germany,Tottenham Hotspur
+1994,1995,FW,Chris Sutton,England,Blackburn Rovers
+1994,1995,FW,Alan Shearer,England,Blackburn Rovers
+1995,1996,GK,David James,England,Liverpool
+1995,1996,RB,Gary Neville,England,Manchester United
+1995,1996,CB,Tony Adams,England,Arsenal
+1995,1996,CB,Ugo Ehiogu,England,Aston Villa
+1995,1996,LB,Alan Wright,England,Aston Villa
+1995,1996,MF,Steve Stone,England,Nottingham Forest
+1995,1996,MF,Rob Lee,England,Newcastle United
+1995,1996,MF,Ruud Gullit,Netherlands,Chelsea
+1995,1996,MF,David Ginola,France,Newcastle United
+1995,1996,FW,Les Ferdinand,England,Newcastle United
+1995,1996,FW,Alan Shearer,England,Blackburn Rovers
+1996,1997,GK,David Seaman,England,Arsenal
+1996,1997,RB,Gary Neville,England,Manchester United
+1996,1997,CB,Tony Adams,England,Arsenal
+1996,1997,CB,Mark Wright,England,Liverpool
+1996,1997,LB,Stig Inge Bjørnebye,Norway,Liverpool
+1996,1997,MF,David Beckham,England,Manchester United
+1996,1997,MF,Roy Keane,Ireland,Manchester United
+1996,1997,MF,David Batty,England,Newcastle United
+1996,1997,MF,Steve McManaman,England,Liverpool
+1996,1997,FW,Alan Shearer,England,Newcastle United
+1996,1997,FW,Ian Wright,England,Arsenal
+1997,1998,GK,Nigel Martyn,England,Leeds United
+1997,1998,RB,Gary Neville,England,Manchester United
+1997,1998,CB,Gary Pallister,England,Manchester United
+1997,1998,CB,Colin Hendry,Scotland,Blackburn Rovers
+1997,1998,LB,Graeme Le Saux,England,Chelsea
+1997,1998,MF,David Beckham,England,Manchester United
+1997,1998,MF,Nicky Butt,England,Manchester United
+1997,1998,MF,David Batty,England,Newcastle United
+1997,1998,MF,Ryan Giggs,England,Manchester United
+1997,1998,FW,Michael Owen,England,Liverpool
+1997,1998,FW,Dennis Bergkamp,Netherlands,Arsenal
+1998,1999,GK,Nigel Martyn,England,Leeds United
+1998,1999,RB,Gary Neville,England,Manchester United
+1998,1999,CB,Sol Campbell,England,Tottenham Hotspur
+1998,1999,CB,Jaap Stam,Netherlands,Manchester United
+1998,1999,LB,Denis Irwin,Ireland,Manchester United
+1998,1999,MF,David Beckham,England,Manchester United
+1998,1999,MF,Emmanuel Petit,France,Arsenal
+1998,1999,MF,Patrick Vieira,France,Arsenal
+1998,1999,MF,David Ginola,France,Tottenham Hotspur
+1998,1999,FW,Dwight Yorke,Trinidad and Tobago,Manchester United
+1998,1999,FW,Nicolas Anelka,France,Arsenal
+1999,2000,GK,Nigel Martyn,England,Leeds United
+1999,2000,RB,Gary Kelly,Ireland,Leeds United
+1999,2000,CB,Jaap Stam,Netherlands,Manchester United
+1999,2000,CB,Sami Hyypiä,Finland,Liverpool
+1999,2000,LB,Ian Harte,Ireland,Leeds United
+1999,2000,MF,David Beckham,England,Manchester United
+1999,2000,MF,Roy Keane,Ireland,Manchester United
+1999,2000,MF,Patrick Vieira,France,Arsenal
+1999,2000,MF,Harry Kewell,Australia,Leeds United
+1999,2000,FW,Andy Cole,England,Manchester United
+1999,2000,FW,Kevin Phillips,England,Sunderland
+2000,2001,GK,Fabien Barthez,France,Manchester United
+2000,2001,RB,Stephen Carr,Ireland,Tottenham Hotspur
+2000,2001,CB,Jaap Stam,Netherlands,Manchester United
+2000,2001,CB,Wes Brown,England,Manchester United
+2000,2001,LB,Sylvinho,Brazil,Arsenal
+2000,2001,MF,Steven Gerrard,England,Liverpool
+2000,2001,MF,Roy Keane,Ireland,Manchester United
+2000,2001,MF,Patrick Vieira,France,Arsenal
+2000,2001,MF,Ryan Giggs,England,Manchester United
+2000,2001,FW,Teddy Sheringham,England,Manchester United
+2000,2001,FW,Thierry Henry,France,Arsenal
+2001,2002,GK,Shay Given,Ireland,Newcastle United
+2001,2002,RB,Steve Finnan,Ireland,Fulham
+2001,2002,CB,Rio Ferdinand,England,Leeds United
+2001,2002,CB,Sami Hyypiä,Finland,Liverpool
+2001,2002,LB,Wayne Bridge,England,Southampton
+2001,2002,MF,Robert Pires,France,Arsenal
+2001,2002,MF,Roy Keane,Ireland,Manchester United
+2001,2002,MF,Patrick Vieira,France,Arsenal
+2001,2002,MF,Ryan Giggs,England,Manchester United
+2001,2002,FW,Ruud van Nistelrooy,Netherlands,Manchester United
+2001,2002,FW,Thierry Henry,France,Arsenal
+2002,2003,GK,Brad Friedel,United States,Blackburn Rovers
+2002,2003,RB,Stephen Carr,Ireland,Tottenham Hotspur
+2002,2003,CB,Sol Campbell,England,Arsenal
+2002,2003,CB,William Gallas,France,Chelsea
+2002,2003,LB,Ashley Cole,England,Arsenal
+2002,2003,MF,Robert Pires,France,Arsenal
+2002,2003,MF,Patrick Vieira,France,Arsenal
+2002,2003,MF,Paul Scholes,England,Manchester United
+2002,2003,MF,Kieron Dyer,England,Newcastle United
+2002,2003,FW,Thierry Henry,France,Arsenal
+2002,2003,FW,Alan Shearer,England,Newcastle United
+2003,2004,GK,Tim Howard,United States,Manchester United
+2003,2004,RB,Lauren,Cameroon,Arsenal
+2003,2004,CB,Sol Campbell,England,Arsenal
+2003,2004,CB,John Terry,England,Chelsea
+2003,2004,LB,Ashley Cole,England,Arsenal
+2003,2004,MF,Steven Gerrard,England,Liverpool
+2003,2004,MF,Frank Lampard,England,Chelsea
+2003,2004,MF,Patrick Vieira,France,Arsenal
+2003,2004,MF,Robert Pires,France,Arsenal
+2003,2004,FW,Thierry Henry,France,Arsenal
+2003,2004,FW,Ruud van Nistelrooy,Netherlands,Manchester United
+2004,2005,GK,Petr Čech,Czech Republic,Chelsea
+2004,2005,RB,Gary Neville,England,Manchester United
+2004,2005,CB,John Terry,England,Chelsea
+2004,2005,CB,Rio Ferdinand,England,Manchester United
+2004,2005,LB,Ashley Cole,England,Arsenal
+2004,2005,MF,Shaun Wright-Phillips,England,Manchester City
+2004,2005,MF,Steven Gerrard,England,Liverpool
+2004,2005,MF,Frank Lampard,England,Chelsea
+2004,2005,MF,Arjen Robben,Netherlands,Chelsea
+2004,2005,FW,Andrew Johnson,England,Crystal Palace
+2004,2005,FW,Thierry Henry,France,Arsenal
+2005,2006,GK,Shay Given,Ireland,Newcastle United
+2005,2006,RB,Pascal Chimbonda,France,Wigan Athletic
+2005,2006,CB,John Terry,England,Chelsea
+2005,2006,CB,Jamie Carragher,England,Liverpool
+2005,2006,LB,William Gallas,France,Chelsea
+2005,2006,MF,Cristiano Ronaldo,Portugal,Manchester United
+2005,2006,MF,Steven Gerrard,England,Liverpool
+2005,2006,MF,Frank Lampard,England,Chelsea
+2005,2006,MF,Joe Cole,England,Chelsea
+2005,2006,FW,Thierry Henry,France,Arsenal
+2005,2006,FW,Wayne Rooney,England,Manchester United
+2006,2007,GK,Edwin van der Sar,Netherlands,Manchester United
+2006,2007,RB,Gary Neville,England,Manchester United
+2006,2007,CB,Rio Ferdinand,England,Manchester United
+2006,2007,CB,Nemanja Vidić,Serbia,Manchester United
+2006,2007,LB,Patrice Evra,France,Manchester United
+2006,2007,MF,Cristiano Ronaldo,Portugal,Manchester United
+2006,2007,MF,Steven Gerrard,England,Liverpool
+2006,2007,MF,Paul Scholes,England,Manchester United
+2006,2007,MF,Ryan Giggs,England,Manchester United
+2006,2007,FW,Didier Drogba,Ivory Coast,Chelsea
+2006,2007,FW,Dimitar Berbatov,Bulgaria,Tottenham Hotspur
+2007,2008,GK,David James,England,Portsmouth
+2007,2008,RB,Bacary Sagna,France,Arsenal
+2007,2008,CB,Rio Ferdinand,England,Manchester United
+2007,2008,CB,Nemanja Vidić,Serbia,Manchester United
+2007,2008,LB,Gaël Clichy,France,Arsenal
+2007,2008,MF,Cristiano Ronaldo,Portugal,Manchester United
+2007,2008,MF,Steven Gerrard,England,Liverpool
+2007,2008,MF,Cesc Fàbregas,Spain,Arsenal
+2007,2008,MF,Ashley Young,England,Aston Villa
+2007,2008,FW,Emmanuel Adebayor,Togo,Arsenal
+2007,2008,FW,Fernando Torres,Spain,Liverpool
+2008,2009,GK,Edwin van der Sar,Netherlands,Manchester United
+2008,2009,RB,Glen Johnson,England,Portsmouth
+2008,2009,CB,Rio Ferdinand,England,Manchester United
+2008,2009,CB,Nemanja Vidić,Serbia,Manchester United
+2008,2009,LB,Patrice Evra,France,Manchester United
+2008,2009,MF,Cristiano Ronaldo,Portugal,Manchester United
+2008,2009,MF,Steven Gerrard,England,Liverpool
+2008,2009,MF,Ryan Giggs,England,Manchester United
+2008,2009,MF,Ashley Young,England,Aston Villa
+2008,2009,FW,Nicolas Anelka,France,Chelsea
+2008,2009,FW,Fernando Torres,Spain,Liverpool
+2009,2010,GK,Joe Hart,England,Birmingham City
+2009,2010,RB,Branislav Ivanović,Serbia,Chelsea
+2009,2010,CB,Thomas Vermaelen,Belgium,Arsenal
+2009,2010,CB,Richard Dunne,Ireland,Aston Villa
+2009,2010,LB,Patrice Evra,France,Manchester United
+2009,2010,MF,Antonio Valencia,Ecuador,Manchester United
+2009,2010,MF,Cesc Fàbregas,Spain,Arsenal
+2009,2010,MF,Darren Fletcher,Scotland,Manchester United
+2009,2010,MF,James Milner,England,Aston Villa
+2009,2010,FW,Wayne Rooney,England,Manchester United
+2009,2010,FW,Didier Drogba,Ivory Coast,Chelsea
+2010,2011,GK,Edwin van der Sar,Netherlands,Manchester United
+2010,2011,RB,Bacary Sagna,France,Arsenal
+2010,2011,CB,Nemanja Vidić,Serbia,Manchester United
+2010,2011,CB,Vincent Kompany,Belgium,Manchester City
+2010,2011,LB,Ashley Cole,England,Chelsea
+2010,2011,MF,Nani,Portugal,Manchester United
+2010,2011,MF,Samir Nasri,France,Arsenal
+2010,2011,MF,Jack Wilshere,England,Arsenal
+2010,2011,MF,Gareth Bale,Wales,Tottenham Hotspur
+2010,2011,FW,Carlos Tevez,Argentina,Manchester City
+2010,2011,FW,Dimitar Berbatov,Bulgaria,Manchester United
+2011,2012,GK,Joe Hart,England,Manchester City
+2011,2012,RB,Kyle Walker,England,Tottenham Hotspur
+2011,2012,CB,Vincent Kompany,Belgium,Manchester City
+2011,2012,CB,Fabricio Coloccini,Argentina,Newcastle United
+2011,2012,LB,Leighton Baines,England,Everton
+2011,2012,MF,David Silva,Spain,Manchester City
+2011,2012,MF,Yaya Touré,Ivory Coast,Manchester City
+2011,2012,MF,Scott Parker,England,Tottenham Hotspur
+2011,2012,MF,Gareth Bale,Wales,Tottenham Hotspur
+2011,2012,FW,Robin van Persie,Netherlands,Arsenal
+2011,2012,FW,Wayne Rooney,England,Manchester United
+2012,2013,GK,David de Gea,Spain,Manchester United
+2012,2013,RB,Pablo Zabaleta,Argentina,Manchester City
+2012,2013,CB,Jan Vertonghen,Belgium,Tottenham Hotspur
+2012,2013,CB,Rio Ferdinand,England,Manchester United
+2012,2013,LB,Leighton Baines,England,Everton
+2012,2013,MF,Gareth Bale,Wales,Tottenham Hotspur
+2012,2013,MF,Juan Mata,Spain,Chelsea
+2012,2013,MF,Michael Carrick,England,Manchester United
+2012,2013,MF,Eden Hazard,Belgium,Chelsea
+2012,2013,FW,Robin van Persie,Netherlands,Manchester United
+2012,2013,FW,Luis Suárez,Uruguay,Liverpool
+2013,2014,GK,Petr Čech,Czech Republic,Chelsea
+2013,2014,RB,Séamus Coleman,Ireland,Everton
+2013,2014,CB,Gary Cahill,England,Chelsea
+2013,2014,CB,Vincent Kompany,Belgium,Manchester City
+2013,2014,LB,Luke Shaw,England,Southampton
+2013,2014,MF,Adam Lallana,England,Southampton
+2013,2014,MF,Steven Gerrard,England,Liverpool
+2013,2014,MF,Yaya Touré,Ivory Coast,Manchester City
+2013,2014,MF,Eden Hazard,Belgium,Chelsea
+2013,2014,FW,Daniel Sturridge,England,Liverpool
+2013,2014,FW,Luis Suárez,Uruguay,Liverpool
+2014,2015,GK,David de Gea,Spain,Manchester United
+2014,2015,RB,Branislav Ivanović,Serbia,Chelsea
+2014,2015,CB,John Terry,England,Chelsea
+2014,2015,CB,Gary Cahill,England,Chelsea
+2014,2015,LB,Ryan Bertrand,England,Southampton
+2014,2015,MF,Alexis Sánchez,Chile,Arsenal
+2014,2015,MF,Nemanja Matić,Serbia,Chelsea
+2014,2015,MF,Philippe Coutinho,Brazil,Liverpool
+2014,2015,MF,Eden Hazard,Belgium,Chelsea
+2014,2015,FW,Diego Costa,Spain,Chelsea
+2014,2015,FW,Harry Kane,England,Tottenham Hotspur
+2015,2016,GK,David de Gea,Spain,Manchester United
+2015,2016,RB,Héctor Bellerín,Spain,Arsenal
+2015,2016,CB,Toby Alderweireld,Belgium,Tottenham Hotspur
+2015,2016,CB,Wes Morgan,Jamaica,Leicester City
+2015,2016,LB,Danny Rose,England,Tottenham Hotspur
+2015,2016,MF,Riyad Mahrez,Algeria,Leicester City
+2015,2016,MF,Dele Alli,England,Tottenham Hotspur
+2015,2016,MF,N'Golo Kanté,France,Leicester City
+2015,2016,MF,Dimitri Payet,France,West Ham United
+2015,2016,FW,Jamie Vardy,England,Leicester City
+2015,2016,FW,Harry Kane,England,Tottenham Hotspur
+2016,2017,GK,David de Gea,Spain,Manchester United
+2016,2017,RB,Kyle Walker,England,Tottenham Hotspur
+2016,2017,CB,Gary Cahill,England,Chelsea
+2016,2017,CB,David Luiz,Brazil,Chelsea
+2016,2017,LB,Danny Rose,England,Tottenham Hotspur
+2016,2017,MF,Eden Hazard,Belgium,Chelsea
+2016,2017,MF,Dele Alli,England,Tottenham Hotspur
+2016,2017,MF,N'Golo Kanté,France,Chelsea
+2016,2017,MF,Sadio Mané,Senegal,Liverpool
+2016,2017,FW,Harry Kane,England,Tottenham Hotspur
+2016,2017,FW,Romelu Lukaku,Belgium,Everton
+2017,2018,GK,David de Gea,Spain,Manchester United
+2017,2018,RB,Kyle Walker,England,Manchester City
+2017,2018,CB,Nicolás Otamendi,Argentina,Manchester City
+2017,2018,CB,Jan Vertonghen,Belgium,Tottenham Hotspur
+2017,2018,LB,Marcos Alonso,Spain,Chelsea
+2017,2018,MF,David Silva,Spain,Manchester City
+2017,2018,MF,Christian Eriksen,Denmark,Tottenham Hotspur
+2017,2018,MF,Kevin De Bruyne,Belgium,Manchester City
+2017,2018,FW,Mohamed Salah,Egypt,Liverpool
+2017,2018,FW,Harry Kane,England,Tottenham Hotspur
+2017,2018,FW,Sergio Agüero,Argentina,Manchester City
+2018,2019,GK,Ederson,Brazil,Manchester City
+2018,2019,RB,Trent Alexander-Arnold,England,Liverpool
+2018,2019,CB,Virgil van Dijk,Netherlands,Liverpool
+2018,2019,CB,Aymeric Laporte,Spain,Manchester City
+2018,2019,LB,Andrew Robertson,Scotland,Liverpool
+2018,2019,MF,Bernardo Silva,Portugal,Manchester City
+2018,2019,MF,Fernandinho,Brazil,Manchester City
+2018,2019,MF,Paul Pogba,France,Manchester United
+2018,2019,FW,Raheem Sterling,England,Manchester City
+2018,2019,FW,Sergio Agüero,Argentina,Manchester City
+2018,2019,FW,Sadio Mané,Senegal,Liverpool
+2019,2020,GK,Nick Pope,England,Burnley
+2019,2020,RB,Trent Alexander-Arnold,England,Liverpool
+2019,2020,CB,Virgil van Dijk,Netherlands,Liverpool
+2019,2020,CB,Çağlar Söyüncü,Turkey,Leicester City
+2019,2020,LB,Andrew Robertson,Scotland,Liverpool
+2019,2020,MF,Kevin De Bruyne,Belgium,Manchester City
+2019,2020,MF,David Silva,Spain,Manchester City
+2019,2020,MF,Jordan Henderson,England,Liverpool
+2019,2020,FW,Jamie Vardy,England,Leicester City
+2019,2020,FW,Pierre-Emerick Aubameyang,Gabon,Arsenal
+2019,2020,FW,Sadio Mané,Senegal,Liverpool
+2020,2021,GK,Ederson,Brazil,Manchester City
+2020,2021,RB,João Cancelo,Portugal,Manchester City
+2020,2021,CB,John Stones,England,Manchester City
+2020,2021,CB,Rúben Dias,Portugal,Manchester City
+2020,2021,LB,Luke Shaw,England,Manchester United
+2020,2021,MF,Kevin De Bruyne,Belgium,Manchester City
+2020,2021,MF,İlkay Gündoğan,Germany,Manchester City
+2020,2021,MF,Bruno Fernandes,Portugal,Manchester United
+2020,2021,FW,Harry Kane,England,Tottenham Hotspur
+2020,2021,FW,Mohamed Salah,Egypt,Liverpool
+2020,2021,FW,Son Heung-min,Korea,Tottenham Hotspur
+2021,2022,GK,Alisson,Brazil,Liverpool
+2021,2022,RB,Trent Alexander-Arnold,England,Liverpool
+2021,2022,CB,Virgil van Dijk,Netherlands,Liverpool
+2021,2022,CB,Antonio Rüdiger,Germany,Chelsea
+2021,2022,LB,João Cancelo,Portugal,Manchester City
+2021,2022,MF,Bernardo Silva,Portugal,Manchester City
+2021,2022,MF,Thiago,Spain,Liverpool
+2021,2022,MF,Kevin De Bruyne,Belgium,Manchester City
+2021,2022,FW,Sadio Mané,Senegal,Liverpool
+2021,2022,FW,Cristiano Ronaldo,Portugal,Manchester United
+2021,2022,FW,Mohamed Salah,Egypt,Liverpool

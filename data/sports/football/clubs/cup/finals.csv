@@ -1,0 +1,460 @@
+country,competition,season,champion,champion_country,score,runner_up,runner_up_country,host_venue,host_city,host_state,host_country,attendance
+,UEFA Champions League,1955-56,Real Madrid,Spain,4-3,Reims,France,Parc des Princes,Paris,,France,38239
+,UEFA Champions League,1956-57,Real Madrid,Spain,2-0,Fiorentina,Italy,Santiago Bernabéu,Madrid,,Spain,124000
+,UEFA Champions League,1957-58,Real Madrid,Spain,3-2,Milan,Italy,Heysel Stadium,Brussels,,Belgium,67000
+,UEFA Champions League,1958-59,Real Madrid,Spain,2-0,Reims,France,Neckarstadion,Stuttgart,,West Germany,72000
+,UEFA Champions League,1959-60,Real Madrid,Spain,7-3,Eintracht Frankfurt,West Germany,Hampden Park,Glasgow,,Scotland,127621
+,UEFA Champions League,1960-61,Benfica,Portugal,3-2,Barcelona,Spain,Wankdorf Stadium,Bern,,Switzerland,26732
+,UEFA Champions League,1961-62,Benfica,Portugal,5-3,Real Madrid,Spain,Olympisch Stadion,Amsterdam,,Netherlands,61257
+,UEFA Champions League,1962-63,Milan,Italy,2-1,Benfica,Portugal,Wembley Stadium,London,,England,45715
+,UEFA Champions League,1963-64,Inter Milan,Italy,3-1,Real Madrid,Spain,Praterstadion,Vienna,,Austria,71333
+,UEFA Champions League,1964-65,Inter Milan,Italy,1-0,Benfica,Portugal,San Siro,Milan,,Italy,89000
+,UEFA Champions League,1965-66,Real Madrid,Spain,2-1,Partizan,Yugoslavia,Heysel Stadium,Brussels,,Belgium,46745
+,UEFA Champions League,1966-67,Celtic,Scotland,2-1,Inter Milan,Italy,Estádio Nacional,Lisbon,,Portugal,45000
+,UEFA Champions League,1967-68,Manchester United,England,4-1,Benfica,Portugal,Wembley Stadium,London,,England,92225
+,UEFA Champions League,1968-69,Milan,Italy,4-1,Ajax,Netherlands,Santiago Bernabéu,Madrid,,Spain,31782
+,UEFA Champions League,1969-70,Feyenoord,Netherlands,2-1,Celtic,Scotland,San Siro,Milan,,Italy,53187
+,UEFA Champions League,1970-71,Ajax,Netherlands,2-0,Panathinaikos,Greece,Wembley Stadium,London,,England,83179
+,UEFA Champions League,1971-72,Ajax,Netherlands,2-0,Inter Milan,Italy,De Kuip,Rotterdam,,Netherlands,61354
+,UEFA Champions League,1972-73,Ajax,Netherlands,1-0,Juventus,Italy,Red Star Stadium,Belgrade,,SFR Yugoslavia,89484
+,UEFA Champions League,1973-74,Bayern Munich,West Germany,1-1,Atlético Madrid,Spain,Heysel Stadium,Brussels,,Belgium,48722
+,UEFA Champions League,,,,4-0,,,,,,,23325
+,UEFA Champions League,1974-75,Bayern Munich,West Germany,2-0,Leeds United,England,Parc des Princes,Paris,,France,48374
+,UEFA Champions League,1975-76,Bayern Munich,West Germany,1-0,Saint-Étienne,France,Hampden Park,Glasgow,,Scotland,54864
+,UEFA Champions League,1976-77,Liverpool,England,3-1,Borussia Mönchengladbach,West Germany,Stadio Olimpico,Rome,,Italy,57000
+,UEFA Champions League,1977-78,Liverpool,England,1-0,Club Brugge,Belgium,Wembley Stadium,London,,England,92500
+,UEFA Champions League,1978-79,Nottingham Forest,England,1-0,Malmö FF,Sweden,Olympiastadion,Munich,,West Germany,57500
+,UEFA Champions League,1979-80,Nottingham Forest,England,1-0,Hamburger SV,West Germany,Santiago Bernabéu,Madrid,,Spain,51000
+,UEFA Champions League,1980-81,Liverpool,England,1-0,Real Madrid,Spain,Parc des Princes,Paris,,France,48360
+,UEFA Champions League,1981-82,Aston Villa,England,1-0,Bayern Munich,West Germany,De Kuip,Rotterdam,,Netherlands,46000
+,UEFA Champions League,1982-83,Hamburger SV,West Germany,1-0,Juventus,Italy,Olympic Stadium,Athens,,Greece,73500
+,UEFA Champions League,1983-84,Liverpool,England,1-1,Roma,Italy,Stadio Olimpico,Rome,,Italy,69693
+,UEFA Champions League,1984-85,Juventus,Italy,1-0,Liverpool,England,Heysel Stadium,Brussels,,Belgium,58000
+,UEFA Champions League,1985-86,Steaua București,Romania,0-0,Barcelona,Spain,Ramón Sánchez Pizjuán,Seville,,Spain,70000
+,UEFA Champions League,1986-87,Porto,Portugal,2-1,Bayern Munich,West Germany,Praterstadion,Vienna,,Austria,57500
+,UEFA Champions League,1987-88,PSV Eindhoven,Netherlands,0-0,Benfica,Portugal,Neckarstadion,Stuttgart,,West Germany,68000
+,UEFA Champions League,1988-89,Milan,Italy,4-0,Steaua București,Romania,Camp Nou,Barcelona,,Spain,97000
+,UEFA Champions League,1989-90,Milan,Italy,1-0,Benfica,Portugal,Praterstadion,Vienna,,Austria,57558
+,UEFA Champions League,1990-91,Red Star Belgrade,Yugoslavia,0-0,Marseille,France,Stadio San Nicola,Bari,,Italy,56000
+,UEFA Champions League,1991-92,Barcelona,Spain,1-0,Sampdoria,Italy,Wembley Stadium,London,,England,70827
+,UEFA Champions League,1992-93,Marseille,France,1-0,Milan,Italy,Olympiastadion,Munich,,Germany,64400
+,UEFA Champions League,1993-94,Milan,Italy,4-0,Barcelona,Spain,Olympic Stadium,Athens,,Greece,70000
+,UEFA Champions League,1994-95,Ajax,Netherlands,1-0,Milan,Italy,Ernst-Happel-Stadion,Vienna,,Austria,49730
+,UEFA Champions League,1995-96,Juventus,Italy,1-1,Ajax,Netherlands,Stadio Olimpico,Rome,,Italy,70000
+,UEFA Champions League,1996-97,Borussia Dortmund,Germany,3-1,Juventus,Italy,Olympiastadion,Munich,,Germany,59000
+,UEFA Champions League,1997-98,Real Madrid,Spain,1-0,Juventus,Italy,Amsterdam Arena,Amsterdam,,Netherlands,48500
+,UEFA Champions League,1998-99,Manchester United,England,2-1,Bayern Munich,Germany,Camp Nou,Barcelona,,Spain,90245
+,UEFA Champions League,1999-2000,Real Madrid,Spain,3-0,Valencia,Spain,Stade de France,Saint-Denis,,France,80000
+,UEFA Champions League,2000-01,Bayern Munich,Germany,1-1,Valencia,Spain,San Siro,Milan,,Italy,71500
+,UEFA Champions League,2001-02,Real Madrid,Spain,2-1,Bayer Leverkusen,Germany,Hampden Park,Glasgow,,Scotland,50499
+,UEFA Champions League,2002-03,Milan,Italy,0-0,Juventus,Italy,Old Trafford,Manchester,,England,62315
+,UEFA Champions League,2003-04,Porto,Portugal,3-0,Monaco,France,Arena AufSchalke,Gelsenkirchen,,Germany,53053
+,UEFA Champions League,2004-05,Liverpool,England,3-3,Milan,Italy,Atatürk Olympic Stadium,Istanbul,,Turkey,69000
+,UEFA Champions League,2005-06,Barcelona,Spain,2-1,Arsenal,England,Stade de France,Saint-Denis,,France,79610
+,UEFA Champions League,2006-07,Milan,Italy,2-1,Liverpool,England,Olympic Stadium,Athens,,Greece,63000
+,UEFA Champions League,2007-08,Manchester United,England,1-1,Chelsea,England,Luzhniki Stadium,Moscow,,Russia,67310
+,UEFA Champions League,2008-09,Barcelona,Spain,2-0,Manchester United,England,Stadio Olimpico,Rome,,Italy,62467
+,UEFA Champions League,2009-10,Inter Milan,Italy,2-0,Bayern Munich,Germany,Santiago Bernabéu,Madrid,,Spain,73490
+,UEFA Champions League,2010-11,Barcelona,Spain,3-1,Manchester United,England,Wembley Stadium,London,,England,87695
+,UEFA Champions League,2011-12,Chelsea,England,1-1,Bayern Munich,Germany,Allianz Arena,Munich,,Germany,62500
+,UEFA Champions League,2012-13,Bayern Munich,Germany,2-1,Borussia Dortmund,Germany,Wembley Stadium,London,,England,86298
+,UEFA Champions League,2013-14,Real Madrid,Spain,4-1,Atlético Madrid,Spain,Estádio da Luz,Lisbon,,Portugal,60976
+,UEFA Champions League,2014-15,Barcelona,Spain,3-1,Juventus,Italy,Olympiastadion,Berlin,,Germany,70442
+,UEFA Champions League,2015-16,Real Madrid,Spain,1-1,Atlético Madrid,Spain,San Siro,Milan,,Italy,71942
+,UEFA Champions League,2016-17,Real Madrid,Spain,4-1,Juventus,Italy,Millennium Stadium,Cardiff,,Wales,65842
+,UEFA Champions League,2017-18,Real Madrid,Spain,3-1,Liverpool,England,NSC Olimpiyskiy Stadium,Kyiv,,Ukraine,61561
+,UEFA Champions League,2018-19,Liverpool,England,2-0,Tottenham Hotspur,England,Metropolitano Stadium,Madrid,,Spain,63272
+,UEFA Champions League,2019-20,Bayern Munich,Germany,1-0,Paris Saint-Germain,France,Estádio da Luz,Lisbon,,Portugal,0
+,UEFA Champions League,2020-21,Chelsea,England,1-0,Manchester City,England,Estádio do Dragão,Porto,,Portugal,14110
+,UEFA Champions League,2021-22,Real Madrid,Spain,1-0,Liverpool,England,Stade de France,Saint-Denis,,France,75000
+,UEFA Champions League,2022-23,Manchester City,England,1-0,Inter Milan,Italy,Atatürk Olympic Stadium,Istanbul,,Turkey,71412
+,UEFA Europa League,1971-72,Tottenham Hotspur,England,2-1,Wolverhampton Wanderers,England,Molineux,Wolverhampton,,England,45000
+,UEFA Europa League,,,,1-1,,,London,White Hart Lane,,England,54000
+,UEFA Europa League,1972-73,Liverpool,England,3-0,Borussia Mönchengladbach,West Germany,Anfield,Liverpool,,England,41169
+,UEFA Europa League,,,,0-2,,,Mönchengladbach,Bökelbergstadion,,West Germany,35000
+,UEFA Europa League,1973-74,Feyenoord,Netherlands,2-2,Tottenham Hotspur,England,White Hart Lane,London,,England,46281
+,UEFA Europa League,,,,2-0,,Rotterdam,De Kuip,Netherlands,,,59000
+,UEFA Europa League,1974-75,Borussia Mönchengladbach,West Germany,0-0,Twente,Netherlands,Rheinstadion,Düsseldorf,,West Germany,42000
+,UEFA Europa League,,,,5-1,,Enschede,Diekman Stadion,Netherlands,,,21000
+,UEFA Europa League,1975-76,Liverpool,England,3-2,Club Brugge,Belgium,Anfield,Liverpool,,England,56000
+,UEFA Europa League,,,,1-1,,Bruges,Olympiastadion,Belgium,,,32000
+,UEFA Europa League,1976-77,Juventus#,Italy,1-0,Athletic Bilbao,Spain,Stadio Comunale,Turin,,Italy,75000
+,UEFA Europa League,,,,1-2,,Bilbao,San Mamés,Spain,,,43000
+,UEFA Europa League,1977-78,PSV Eindhoven,Netherlands,0-0,Bastia,France,Stade Armand Cesari,Bastia,,France,15000
+,UEFA Europa League,,,,3-0,,Eindhoven,Philips Stadion,Netherlands,,,27000
+,UEFA Europa League,1978-79,Borussia Mönchengladbach,West Germany,1-1,Red Star Belgrade,Yugoslavia,Stadion Crvena Zvezda,Belgrade,,SFR Yugoslavia,87000
+,UEFA Europa League,,,,1-0,,Düsseldorf,Rheinstadion,West Germany,,,45000
+,UEFA Europa League,1979-80,Eintracht Frankfurt,West Germany,2-3,Borussia Mönchengladbach,West Germany,Bökelbergstadion,Mönchengladbach,,West Germany,25000
+,UEFA Europa League,,,,1-0,,Frankfurt,Waldstadion,West Germany,,,59000
+,UEFA Europa League,1980-81,Ipswich Town,England,3-0,AZ,Netherlands,Portman Road,Ipswich,,England,27532
+,UEFA Europa League,,,,2-4,,Amsterdam,Olympisch Stadion,Netherlands,,,28500
+,UEFA Europa League,1981-82,IFK Göteborg,Sweden,1-0,Hamburger SV,West Germany,Nya Ullevi,Gothenburg,,Sweden,42548
+,UEFA Europa League,,,,3-0,,Hamburg,Volksparkstadion,West Germany,,,60000
+,UEFA Europa League,1982-83,Anderlecht,Belgium,1-0,Benfica,Portugal,Heysel Stadium,Brussels,,Belgium,55000
+,UEFA Europa League,,,,1-1,,Lisbon,Estádio da Luz,Portugal,,,80000
+,UEFA Europa League,1983-84,Tottenham Hotspur,England,1-1,Anderlecht,Belgium,Constant Vanden Stock,Brussels,,Belgium,40000
+,UEFA Europa League,,,,1-1,,London,White Hart Lane,England,,,46205
+,UEFA Europa League,1984-85,Real Madrid,Spain,3-0,Videoton,Hungary,Sóstói Stadion,Székesfehérvár,,Hungary,30000
+,UEFA Europa League,,,,0-1,,Madrid,Santiago Bernabéu,Spain,,,90000
+,UEFA Europa League,1985-86,Real Madrid,Spain,5-1,1. FC Köln,West Germany,Santiago Bernabéu,Madrid,,Spain,85000
+,UEFA Europa League,,,,0-2,,Berlin,Olympiastadion,West Germany,,,15000
+,UEFA Europa League,1986-87,IFK Göteborg,Sweden,1-0,Dundee United,Scotland,Nya Ullevi,Gothenburg,,Sweden,50023
+,UEFA Europa League,,,,1-1,,Dundee,Tannadice Park,Scotland,,,20911
+,UEFA Europa League,1987-88,Bayer Leverkusen,West Germany,0-3,Espanyol,Spain,Estadi de Sarrià,Barcelona,,Spain,42000
+,UEFA Europa League,,,,3-0,,Leverkusen,Ulrich Haberland Stadion,West Germany,,,22000
+,UEFA Europa League,1988-89,Napoli,Italy,2-1,VfB Stuttgart,West Germany,Stadio San Paolo,Naples,,Italy,83000
+,UEFA Europa League,,,,3-3,,Stuttgart,Neckarstadion,West Germany,,,67000
+,UEFA Europa League,1989-90,Juventus,Italy,3-1,Fiorentina,Italy,Stadio Comunale,Turin,,Italy,45000
+,UEFA Europa League,,,,0-0,,Avellino,Stadio Partenio,Italy,,,32000
+,UEFA Europa League,1990-91,Inter Milan,Italy,2-0,Roma,Italy,San Siro,Milan,,Italy,68887
+,UEFA Europa League,,,,0-1,,Rome,Stadio Olimpico,Italy,,,70901
+,UEFA Europa League,1991-92,Ajax#,Netherlands,2-2,Torino,Italy,Stadio delle Alpi,Turin,,Italy,65377
+,UEFA Europa League,,,,0-0,,Amsterdam,Olympisch Stadion,Netherlands,,,42000
+,UEFA Europa League,1992-93,Juventus,Italy,3-1,Borussia Dortmund,Germany,Westfalenstadion,Dortmund,,Germany,37000
+,UEFA Europa League,,,,3-0,,Turin,Stadio delle Alpi,Italy,,,62781
+,UEFA Europa League,1993-94,Inter Milan,Italy,1-0,Austria Salzburg,Austria,Ernst-Happel-Stadion,Vienna,,Austria,47500
+,UEFA Europa League,,,,1-0,,Milan,San Siro,Italy,,,80326
+,UEFA Europa League,1994-95,Parma,Italy,1-0,Juventus,Italy,Stadio Ennio Tardini,Parma,,Italy,22062
+,UEFA Europa League,,,,1-1,,Milan,San Siro,Italy,,,80754
+,UEFA Europa League,1995-96,Bayern Munich,Germany,2-0,Bordeaux,France,Olympiastadion,Munich,,Germany,62000
+,UEFA Europa League,,,,3-1,,Bordeaux,Parc Lescure,France,,,36000
+,UEFA Europa League,1996-97,Schalke 04,Germany,1-0,Inter Milan,Italy,Parkstadion,Gelsenkirchen,,Germany,56000
+,UEFA Europa League,,,,0-1,,Milan,San Siro,Italy,,,83000
+,UEFA Europa League,1997-98,Inter Milan,Italy,3-0,Lazio,Italy,Parc des Princes,Paris,,France,44412
+,UEFA Europa League,1998-99,Parma,Italy,3-0,Marseille,France,Luzhniki Stadium,Moscow,,Russia,61000
+,UEFA Europa League,1999-2000,Galatasaray,Turkey,0-0,Arsenal,England,Parken Stadium,Copenhagen,,Denmark,38919
+,UEFA Europa League,2000-01,Liverpool,England,5-4,Deportivo Alavés,Spain,Westfalenstadion,Dortmund,,Germany,48050
+,UEFA Europa League,2001-02,Feyenoord,Netherlands,3-2,Borussia Dortmund,Germany,De Kuip,Rotterdam,,Netherlands,45611
+,UEFA Europa League,2002-03,Porto,Portugal,3-2,Celtic,Scotland,Estadio Olímpico de Sevilla,Seville,,Spain,52972
+,UEFA Europa League,2003-04,Valencia,Spain,2-0,Marseille,France,Nya Ullevi,Gothenburg,,Sweden,39000
+,UEFA Europa League,2004-05,CSKA Moscow,Russia,3-1,Sporting CP,Portugal,Estádio José Alvalade,Lisbon,,Portugal,47085
+,UEFA Europa League,2005-06,Sevilla,Spain,4-0,Middlesbrough,England,PSV Stadion,Eindhoven,,Netherlands,33100
+,UEFA Europa League,2006-07,Sevilla,Spain,2-2,Espanyol,Spain,Hampden Park,Glasgow,,Scotland,47602
+,UEFA Europa League,2007-08,Zenit Saint Petersburg,Russia,2-0,Rangers,Scotland,City of Manchester Stadium,Manchester,,England,43878
+,UEFA Europa League,2008-09,Shakhtar Donetsk,Ukraine,2-1,Werder Bremen,Germany,Şükrü Saracoğlu Stadium,Istanbul,,Turkey,37357
+,UEFA Europa League,2009-10,Atlético Madrid,Spain,2-1,Fulham,England,Volksparkstadion,Hamburg,,Germany,49000
+,UEFA Europa League,2010-11,Porto,Portugal,1-0,Braga,Portugal,Lansdowne Road Stadium,Dublin,,Ireland,45391
+,UEFA Europa League,2011-12,Atlético Madrid,Spain,3-0,Athletic Bilbao,Spain,Arena Națională,Bucharest,,Romania,52347
+,UEFA Europa League,2012-13,Chelsea,England,2-1,Benfica,Portugal,Amsterdam Arena,Amsterdam,,Netherlands,46163
+,UEFA Europa League,2013-14,Sevilla,Spain,0-0,Benfica,Portugal,Juventus Stadium,Turin,,Italy,33120
+,UEFA Europa League,2014-15,Sevilla,Spain,3-2,Dnipro Dnipropetrovsk,Ukraine,Stadion Narodowy,Warsaw,,Poland,45000
+,UEFA Europa League,2015-16,Sevilla,Spain,3-1,Liverpool,England,St. Jakob-Park,Basel,,Switzerland,34429
+,UEFA Europa League,2016-17,Manchester United,England,2-0,Ajax,Netherlands,Friends Arena,Solna,,Sweden,46961
+,UEFA Europa League,2017-18,Atlético Madrid,Spain,3-0,Marseille,France,Parc Olympique Lyonnais,Décines-Charpieu,,France,55768
+,UEFA Europa League,2018-19,Chelsea,England,4-1,Arsenal,England,Olympic Stadium,Baku,,Azerbaijan,51370
+,UEFA Europa League,2019-20,Sevilla,Spain,3-2,Inter Milan,Italy,Stadion Köln,Cologne,,Germany,0
+,UEFA Europa League,2020-21,Villarreal,Spain,1-1,Manchester United,England,Stadion Gdańsk,Gdańsk,,Poland,9412
+,UEFA Europa League,2021-22,Eintracht Frankfurt,Germany,1-1,Rangers,Scotland,Ramón Sánchez Pizjuán,Seville,,Spain,38842
+,UEFA Europa League,2022-23,Sevilla,Spain,1-1,Roma,Italy,Puskás Aréna,Budapest,,Hungary,61476
+England,EFL Cup,1961,Aston Villa,England,0-2,Rotherham United,England,Millmoor,,,,12226
+England,EFL Cup,,,,3-0,,,Villa Park,,,,31202
+England,EFL Cup,1962,Norwich City,England,3-0,Rochdale,England,Spotland,,,,11123
+England,EFL Cup,,,,1-0,,,Carrow Road,,,,19708
+England,EFL Cup,1963,Birmingham City,England,3-1,Aston Villa,England,St Andrew's,,,,31850
+England,EFL Cup,,,,0-0,,,Villa Park,,,,37921
+England,EFL Cup,1964,Leicester City,England,1-1,Stoke City,England,Victoria Ground,,,,22309
+England,EFL Cup,,,,3-2,,,Filbert Street,,,,25372
+England,EFL Cup,1965,Chelsea,England,3-2,Leicester City,England,Stamford Bridge,,,,20690
+England,EFL Cup,,,,0-0,,,Filbert Street,,,,26958
+England,EFL Cup,1966,West Bromwich Albion,England,1-2,West Ham United,England,Boleyn Ground,,,,28341
+England,EFL Cup,,,,4-1,,,The Hawthorns,,,,31925
+England,EFL Cup,1967,Queens Park Rangers,England,3-2,West Bromwich Albion,England,Wembley Stadium,,,,97952
+England,EFL Cup,1968,Leeds United,England,1-0,Arsenal,England,Wembley Stadium,,,,97887
+England,EFL Cup,1969,Swindon Town,England,3-1,Arsenal,England,Wembley Stadium,,,,98189
+England,EFL Cup,1970,Manchester City,England,2-1,West Bromwich Albion,England,Wembley Stadium,,,,97963
+England,EFL Cup,1971,Tottenham Hotspur,England,2-0,Aston Villa,England,Wembley Stadium,,,,100000
+England,EFL Cup,1972,Stoke City,England,2-1,Chelsea,England,Wembley Stadium,,,,97852
+England,EFL Cup,1973,Tottenham Hotspur,England,1-0,Norwich City,England,Wembley Stadium,,,,100000
+England,EFL Cup,1974,Wolverhampton Wanderers,England,2-1,Manchester City,England,Wembley Stadium,,,,97886
+England,EFL Cup,1975,Aston Villa,England,1-0,Norwich City,England,Wembley Stadium,,,,95946
+England,EFL Cup,1976,Manchester City,England,2-1,Newcastle United,England,Wembley Stadium,,,,100000
+England,EFL Cup,1977,Aston Villa,England,0-0,Everton,England,Wembley Stadium,,,,100000
+England,EFL Cup,,,,1-1,,,Hillsborough Stadium,,,,55000
+England,EFL Cup,,,,3-2,,,Old Trafford,,,,54749
+England,EFL Cup,1978,Nottingham Forest,England,0-0,Liverpool,England,Wembley Stadium,,,,100000
+England,EFL Cup,,,,1-0,,,Old Trafford,,,,54375
+England,EFL Cup,1979,Nottingham Forest,England,3-2,Southampton,England,Wembley Stadium,,,,96952
+England,EFL Cup,1980,Wolverhampton Wanderers,England,1-0,Nottingham Forest,England,Wembley Stadium,,,,96527
+England,EFL Cup,1981,Liverpool,England,1-1,West Ham United,England,Wembley Stadium,,,,100000
+England,EFL Cup,,,,2-1,,,Villa Park,,,,36693
+England,EFL Cup,1982,Liverpool,England,3-1,Tottenham Hotspur,England,Wembley Stadium,,,,100000
+England,EFL Cup,1983,Liverpool,England,2-1,Manchester United,England,Wembley Stadium,,,,99304
+England,EFL Cup,1984,Liverpool,England,0-0,Everton,England,Wembley Stadium,,,,100000
+England,EFL Cup,,,,1-0,,,Maine Road,,,,52089
+England,EFL Cup,1985,Norwich City,England,1-0,Sunderland,England,Wembley Stadium,,,,100000
+England,EFL Cup,1986,Oxford United,England,3-0,Queens Park Rangers,England,Wembley Stadium,,,,90396
+England,EFL Cup,1987,Arsenal,England,2-1,Liverpool,England,Wembley Stadium,,,,96000
+England,EFL Cup,1988,Luton Town,England,3-2,Arsenal,England,Wembley Stadium,,,,95732
+England,EFL Cup,1989,Nottingham Forest,England,3-1,Luton Town,England,Wembley Stadium,,,,76130
+England,EFL Cup,1990,Nottingham Forest,England,1-0,Oldham Athletic,England,Wembley Stadium,,,,74343
+England,EFL Cup,1991,Sheffield Wednesday,England,1-0,Manchester United,England,Wembley Stadium,,,,77612
+England,EFL Cup,1992,Manchester United,England,1-0,Nottingham Forest,England,Wembley Stadium,,,,76810
+England,EFL Cup,1993,Arsenal,England,2-1,Sheffield Wednesday,England,Wembley Stadium,,,,74007
+England,EFL Cup,1994,Aston Villa,England,3-1,Manchester United,England,Wembley Stadium,,,,77231
+England,EFL Cup,1995,Liverpool,England,2-1,Bolton Wanderers,England,Wembley Stadium,,,,75595
+England,EFL Cup,1996,Aston Villa,England,3-0,Leeds United,England,Wembley Stadium,,,,77065
+England,EFL Cup,1997,Leicester City,England,1-1,Middlesbrough,England,Wembley Stadium,,,,76757
+England,EFL Cup,,,England,1-0,,,Hillsborough Stadium,,,,39428
+England,EFL Cup,1998,Chelsea,England,2-0,Middlesbrough,England,Wembley Stadium,,,,77698
+England,EFL Cup,1999,Tottenham Hotspur,England,1-0,Leicester City,England,Wembley Stadium,,,,77892
+England,EFL Cup,2000,Leicester City,England,2-1,Tranmere Rovers,England,Wembley Stadium,,,,74313
+England,EFL Cup,2001,Liverpool,England,1-1,Birmingham City,England,Millennium Stadium,,,,73500
+England,EFL Cup,2002,Blackburn Rovers,England,2-1,Tottenham Hotspur,England,Millennium Stadium,,,,72500
+England,EFL Cup,2003,Liverpool,England,2-0,Manchester United,England,Millennium Stadium,,,,74500
+England,EFL Cup,2004,Middlesbrough,England,2-1,Bolton Wanderers,England,Millennium Stadium,,,,72634
+England,EFL Cup,2005,Chelsea,England,3-2,Liverpool,England,Millennium Stadium,,,,78000
+England,EFL Cup,2006,Manchester United,England,4-0,Wigan Athletic,England,Millennium Stadium,,,,66866
+England,EFL Cup,2007,Chelsea,England,2-1,Arsenal,England,Millennium Stadium,,,,70073
+England,EFL Cup,2008,Tottenham Hotspur,England,2-1,Chelsea,England,Wembley Stadium,,,,87660
+England,EFL Cup,2009,Manchester United,England,0-0,Tottenham Hotspur,England,Wembley Stadium,,,,88217
+England,EFL Cup,2010,Manchester United,England,2-1,Aston Villa,England,Wembley Stadium,,,,88596
+England,EFL Cup,2011,Birmingham City,England,2-1,Arsenal,England,Wembley Stadium,,,,88851
+England,EFL Cup,2012,Liverpool,England,2-2,Cardiff City,Wales,Wembley Stadium,,,,89041
+England,EFL Cup,2013,Swansea City,Wales,5-0,Bradford City,England,Wembley Stadium,,,,82597
+England,EFL Cup,2014,Manchester City,England,3-1,Sunderland,England,Wembley Stadium,,,,84697
+England,EFL Cup,2015,Chelsea,England,2-0,Tottenham Hotspur,England,Wembley Stadium,,,,89294
+England,EFL Cup,2016,Manchester City,England,1-1,Liverpool,England,Wembley Stadium,,,,80626
+England,EFL Cup,2017,Manchester United,England,3-2,Southampton,England,Wembley Stadium,,,,85264
+England,EFL Cup,2018,Manchester City,England,3-0,Arsenal,England,Wembley Stadium,,,,85671
+England,EFL Cup,2019,Manchester City,England,0-0,Chelsea,England,Wembley Stadium,,,,81775
+England,EFL Cup,2020,Manchester City,England,2-1,Aston Villa,England,Wembley Stadium,,,,82145
+England,EFL Cup,2021,Manchester City,England,1-0,Tottenham Hotspur,England,Wembley Stadium,,,,7773
+England,EFL Cup,2022,Liverpool,England,0-0,Chelsea,England,Wembley Stadium,,,,85512
+England,EFL Cup,2023,Manchester United,England,2-0,Newcastle United,England,Wembley Stadium,,,,87306
+England,FA Cup,1871-72,Wanderers,,1-0,Royal Engineers,,Kennington Oval,,,,"2,000"
+England,FA Cup,1872-73,Wanderers,,2-0,Oxford University,,Lillie Bridge,,,,"3,000"
+England,FA Cup,1873-74,Oxford University,,2-0,Royal Engineers,,Kennington Oval,,,,"2,000"
+England,FA Cup,1874-75,Royal Engineers,,1-1,Old Etonians,,Kennington Oval,,,,"2,000"
+England,FA Cup,,,,2-0,,,Kennington Oval,,,,"3,000"
+England,FA Cup,1875-76,Wanderers,,1-1,Old Etonians,,Kennington Oval,,,,"3,500"
+England,FA Cup,,,,3-0,,,Kennington Oval,,,,"1,500"
+England,FA Cup,1876-77,Wanderers,,2-1,Oxford University,,Kennington Oval,,,,"3,000"
+England,FA Cup,1877-78,Wanderers,,3-1,Royal Engineers,,Kennington Oval,,,,"4,500"
+England,FA Cup,1878-79,Old Etonians,,1-0,Clapham Rovers,,Kennington Oval,,,,"5,000"
+England,FA Cup,1879-80,Clapham Rovers,,1-0,Oxford University,,Kennington Oval,,,,"6,000"
+England,FA Cup,1880-81,Old Carthusians,,3-0,Old Etonians,,Kennington Oval,,,,"4,000"
+England,FA Cup,1881-82,Old Etonians,,1-0,Blackburn Rovers,,Kennington Oval,,,,"6,500"
+England,FA Cup,1882-83,Blackburn Olympic,,2-1,Old Etonians,,Kennington Oval,,,,"8,000"
+England,FA Cup,1883-84,Blackburn Rovers,,2-1,Scotland Queen's Park,,Kennington Oval,,,,"4,000"
+England,FA Cup,1884-85,Blackburn Rovers,,2-0,Scotland Queen's Park,,Kennington Oval,,,,"12,500"
+England,FA Cup,1885-86,Blackburn Rovers,,0-0,West Bromwich Albion,,Kennington Oval,,,,"15,000"
+England,FA Cup,,,,2-0,,,Racecourse Ground,,,,"12,000"
+England,FA Cup,1886-87,Aston Villa,,2-0,West Bromwich Albion,,Kennington Oval,,,,"15,500"
+England,FA Cup,1887-88,West Bromwich Albion,,2-1,Preston North End,,Kennington Oval,,,,"19,000"
+England,FA Cup,1888-89,Preston North End,,3-0,Wolverhampton Wanderers,,Kennington Oval,,,,"22,000"
+England,FA Cup,1889-90,Blackburn Rovers,,6-1,The Wednesday,,Kennington Oval,,,,"20,000"
+England,FA Cup,1890-91,Blackburn Rovers,,3-1,Notts County,,Kennington Oval,,,,"23,000"
+England,FA Cup,1891-92,West Bromwich Albion,,3-0,Aston Villa,,Kennington Oval,,,,"32,810"
+England,FA Cup,1892-93,Wolverhampton Wanderers,,1-0,Everton,,Fallowfield Stadium,,,,"45,000"
+England,FA Cup,1893-94,Notts County,,4-1,Bolton Wanderers,,Goodison Park,,,,"37,000"
+England,FA Cup,1894-95,Aston Villa,,1-0,West Bromwich Albion,,Crystal Palace,,,,"42,560"
+England,FA Cup,1895-96,The Wednesday,,2-1,Wolverhampton Wanderers,,Crystal Palace,,,,"48,836"
+England,FA Cup,1896-97,Aston Villa,,3-2,Everton,,Crystal Palace,,,,"65,891"
+England,FA Cup,1897-98,Nottingham Forest,,3-1,Derby County,,Crystal Palace,,,,"62,017"
+England,FA Cup,1898-99,Sheffield United,,4-1,Derby County,,Crystal Palace,,,,"73,833"
+England,FA Cup,1899-1900,Bury,,4-0,Southampton,,Crystal Palace,,,,"68,945"
+England,FA Cup,1900-01,Tottenham Hotspur,,2-2,Sheffield United,,Crystal Palace,,,,"110,820"
+England,FA Cup,,,,3-1,,,Burnden Park,,,,"20,470"
+England,FA Cup,1901-02,Sheffield United,,1-1,Southampton,,Crystal Palace,,,,"76,914"
+England,FA Cup,,,,2-1,,,Crystal Palace,,,,"33,068"
+England,FA Cup,1902-03,Bury,,6-0,Derby County,,Crystal Palace,,,,"63,102"
+England,FA Cup,1903-04,Manchester City,,1-0,Bolton Wanderers,,Crystal Palace,,,,"61,374"
+England,FA Cup,1904-05,Aston Villa,,2-0,Newcastle United,,Crystal Palace,,,,"101,117"
+England,FA Cup,1905-06,Everton,,1-0,Newcastle United,,Crystal Palace,,,,"75,609"
+England,FA Cup,1906-07,The Wednesday,,2-1,Everton,,Crystal Palace,,,,"84,594"
+England,FA Cup,1907-08,Wolverhampton Wanderers,,3-1,Newcastle United,,Crystal Palace,,,,"74,697"
+England,FA Cup,1908-09,Manchester United,,1-0,Bristol City,,Crystal Palace,,,,"71,401"
+England,FA Cup,1909-10,Newcastle United,,1-1,Barnsley,,Crystal Palace,,,,"77,747"
+England,FA Cup,,,,2-0,,,Goodison Park,,,,"69,000"
+England,FA Cup,1910-11,Bradford City,,0-0,Newcastle United,,Crystal Palace,,,,"69,068"
+England,FA Cup,,,,1-0,,,Old Trafford,,,,"58,000"
+England,FA Cup,1911-12,Barnsley,,0-0,West Bromwich Albion,,Crystal Palace,,,,"54,556"
+England,FA Cup,,,,1-0,,,Bramall Lane,,,,"38,555"
+England,FA Cup,1912-13,Aston Villa,,1-0,Sunderland,,Crystal Palace,,,,"121,919"
+England,FA Cup,1913-14,Burnley,,1-0,Liverpool,,Crystal Palace,,,,"72,778"
+England,FA Cup,1914-15,Sheffield United,,3-0,Chelsea,,Old Trafford,,,,"49,557"
+England,FA Cup,1919-20,Aston Villa,,1-0,Huddersfield Town,,Stamford Bridge,,,,"50,018"
+England,FA Cup,1920-21,Tottenham Hotspur,,1-0,Wolverhampton Wanderers,,Stamford Bridge,,,,"72,805"
+England,FA Cup,1921-22,Huddersfield Town,,1-0,Preston North End,,Stamford Bridge,,,,"53,000"
+England,FA Cup,1922-23,Bolton Wanderers,,2-0,West Ham United,,Wembley Stadium (original),,,,"126,047"
+England,FA Cup,1923-24,Newcastle United,,2-0,Aston Villa,,Wembley Stadium (original),,,,"91,695"
+England,FA Cup,1924-25,Sheffield United,,1-0,Wales Cardiff City,,Wembley Stadium (original),,,,"91,763"
+England,FA Cup,1925-26,Bolton Wanderers,,1-0,Manchester City,,Wembley Stadium (original),,,,"91,447"
+England,FA Cup,1926-27,Wales Cardiff City,,1-0,Arsenal,,Wembley Stadium (original),,,,"91,206"
+England,FA Cup,1927-28,Blackburn Rovers,,3-1,Huddersfield Town,,Wembley Stadium (original),,,,"92,041"
+England,FA Cup,1928-29,Bolton Wanderers,,2-0,Portsmouth,,Wembley Stadium (original),,,,"92,576"
+England,FA Cup,1929-30,Arsenal,,2-0,Huddersfield Town,,Wembley Stadium (original),,,,"92,488"
+England,FA Cup,1930-31,West Bromwich Albion,,2-1,Birmingham,,Wembley Stadium (original),,,,"92,406"
+England,FA Cup,1931-32,Newcastle United,,2-1,Arsenal,,Wembley Stadium (original),,,,"92,298"
+England,FA Cup,1932-33,Everton,,3-0,Manchester City,,Wembley Stadium (original),,,,"92,950"
+England,FA Cup,1933-34,Manchester City,,2-1,Portsmouth,,Wembley Stadium (original),,,,"93,258"
+England,FA Cup,1934-35,Sheffield Wednesday,,4-2,West Bromwich Albion,,Wembley Stadium (original),,,,"93,204"
+England,FA Cup,1935-36,Arsenal,,1-0,Sheffield United,,Wembley Stadium (original),,,,"93,384"
+England,FA Cup,1936-37,Sunderland,,3-1,Preston North End,,Wembley Stadium (original),,,,"93,495"
+England,FA Cup,1937-38,Preston North End,,1-0,Huddersfield Town,,Wembley Stadium (original),,,,"93,497"
+England,FA Cup,1938-39,Portsmouth,,4-1,Wolverhampton Wanderers,,Wembley Stadium (original),,,,"99,370"
+England,FA Cup,1945-46,Derby County,,4-1,Charlton Athletic,,Wembley Stadium (original),,,,"98,000"
+England,FA Cup,1946-47,Charlton Athletic,,1-0,Burnley,,Wembley Stadium (original),,,,"99,000"
+England,FA Cup,1947-48,Manchester United,,4-2,Blackpool,,Wembley Stadium (original),,,,"99,000"
+England,FA Cup,1948-49,Wolverhampton Wanderers,,3-1,Leicester City,,Wembley Stadium (original),,,,"99,000"
+England,FA Cup,1949-50,Arsenal,,2-0,Liverpool,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1950-51,Newcastle United,,2-0,Blackpool,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1951-52,Newcastle United,,1-0,Arsenal,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1952-53,Blackpool,,4-3,Bolton Wanderers,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1953-54,West Bromwich Albion,,3-2,Preston North End,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1954-55,Newcastle United,,3-1,Manchester City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1955-56,Manchester City,,3-1,Birmingham City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1956-57,Aston Villa,,2-1,Manchester United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1957-58,Bolton Wanderers,,2-0,Manchester United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1958-59,Nottingham Forest,,2-1,Luton Town,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1959-60,Wolverhampton Wanderers,,3-0,Blackburn Rovers,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1960-61,Tottenham Hotspur,,2-0,Leicester City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1961-62,Tottenham Hotspur,,3-1,Burnley,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1962-63,Manchester United,,3-1,Leicester City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1963-64,West Ham United,,3-2,Preston North End,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1964-65,Liverpool,,2-1,Leeds United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1965-66,Everton,,3-2,Sheffield Wednesday,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1966-67,Tottenham Hotspur,,2-1,Chelsea,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1967-68,West Bromwich Albion,,1-0,Everton,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1968-69,Manchester City,,1-0,Leicester City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1969-70,Chelsea,,2-2,Leeds United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,,,,2-1,,,Old Trafford,,,,"62,078"
+England,FA Cup,1970-71,Arsenal,,2-1,Liverpool,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1971-72,Leeds United,,1-0,Arsenal,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1972-73,Sunderland,,1-0,Leeds United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1973-74,Liverpool,,3-0,Newcastle United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1974-75,West Ham United,,2-0,Fulham,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1975-76,Southampton,,1-0,Manchester United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1976-77,Manchester United,,2-1,Liverpool,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1977-78,Ipswich Town,,1-0,Arsenal,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1978-79,Arsenal,,3-2,Manchester United,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1979-80,West Ham United,,1-0,Arsenal,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1980-81,Tottenham Hotspur,,1-1,Manchester City,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,,,,3-2,,,Wembley Stadium (original),,,,"92,000"
+England,FA Cup,1981-82,Tottenham Hotspur,,1-1,Queens Park Rangers,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,,,,1-0,,,Wembley Stadium (original),,,,"90,000"
+England,FA Cup,1982-83,Manchester United,,2-2,Brighton & Hove Albion,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,,,,4-0,,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1983-84,Everton,,2-0,Watford,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1984-85,Manchester United,,1-0,Everton,,Wembley Stadium (original),,,,"100,000"
+England,FA Cup,1985-86,Liverpool,,3-1,Everton,,Wembley Stadium (original),,,,"98,000"
+England,FA Cup,1986-87,Coventry City,,3-2,Tottenham Hotspur,,Wembley Stadium (original),,,,"98,000"
+England,FA Cup,1987-88,Wimbledon,,1-0,Liverpool,,Wembley Stadium (original),,,,"98,203"
+England,FA Cup,1988-89,Liverpool,,3-2,Everton,,Wembley Stadium (original),,,,"82,500"
+England,FA Cup,1989-90,Manchester United,,3-3,Crystal Palace,,Wembley Stadium (original),,,,"80,000"
+England,FA Cup,,,,1-0,,,Wembley Stadium (original),,,,"80,000"
+England,FA Cup,1990-91,Tottenham Hotspur,,2-1,Nottingham Forest,,Wembley Stadium (original),,,,"80,000"
+England,FA Cup,1991-92,Liverpool,,2-0,Sunderland,,Wembley Stadium (original),,,,"80,000"
+England,FA Cup,1992-93,Arsenal,,1-1,Sheffield Wednesday,,Wembley Stadium (original),,,,"79,347"
+England,FA Cup,,,,2-1,,,Wembley Stadium (original),,,,"62,267"
+England,FA Cup,1993-94,Manchester United,,4-0,Chelsea,,Wembley Stadium (original),,,,"79,634"
+England,FA Cup,1994-95,Everton,,1-0,Manchester United,,Wembley Stadium (original),,,,"79,592"
+England,FA Cup,1995-96,Manchester United,,1-0,Liverpool,,Wembley Stadium (original),,,,"79,007"
+England,FA Cup,1996-97,Chelsea,,2-0,Middlesbrough,,Wembley Stadium (original),,,,"79,160"
+England,FA Cup,1997-98,Arsenal,,2-0,Newcastle United,,Wembley Stadium (original),,,,"79,183"
+England,FA Cup,1998-99,Manchester United,,2-0,Newcastle United,,Wembley Stadium (original),,,,"79,101"
+England,FA Cup,1999-2000,Chelsea,,1-0,Aston Villa,,Wembley Stadium (original),,,,"78,217"
+England,FA Cup,2000-01,Liverpool,,2-1,Arsenal,,Millennium Stadium,,,,"72,500"
+England,FA Cup,2001-02,Arsenal,,2-0,Chelsea,,Millennium Stadium,,,,"73,963"
+England,FA Cup,2002-03,Arsenal,,1-0,Southampton,,Millennium Stadium,,,,"73,726"
+England,FA Cup,2003-04,Manchester United,,3-0,Millwall,,Millennium Stadium,,,,"71,350"
+England,FA Cup,2004-05,Arsenal,,0-0,Manchester United,,Millennium Stadium,,,,"71,876"
+England,FA Cup,2005-06,Liverpool,,3-3,West Ham United,,Millennium Stadium,,,,"71,140"
+England,FA Cup,2006-07,Chelsea,,1-0,Manchester United,,Wembley Stadium,,,,"89,826"
+England,FA Cup,2007-08,Portsmouth,,1-0,Wales Cardiff City,,Wembley Stadium,,,,"89,874"
+England,FA Cup,2008-09,Chelsea,,2-1,Everton,,Wembley Stadium,,,,"89,391"
+England,FA Cup,2009-10,Chelsea,,1-0,Portsmouth,,Wembley Stadium,,,,"88,335"
+England,FA Cup,2010-11,Manchester City,,1-0,Stoke City,,Wembley Stadium,,,,"88,643"
+England,FA Cup,2011-12,Chelsea,,2-1,Liverpool,,Wembley Stadium,,,,"89,041"
+England,FA Cup,2012-13,Wigan Athletic,,1-0,Manchester City,,Wembley Stadium,,,,"86,254"
+England,FA Cup,2013-14,Arsenal,,3-2,Hull City,,Wembley Stadium,,,,"89,345"
+England,FA Cup,2014-15,Arsenal,,4-0,Aston Villa,,Wembley Stadium,,,,"89,283"
+England,FA Cup,2015-16,Manchester United,,2-1,Crystal Palace,,Wembley Stadium,,,,"88,619"
+England,FA Cup,2016-17,Arsenal,,2-1,Chelsea,,Wembley Stadium,,,,"89,472"
+England,FA Cup,2017-18,Chelsea,,1-0,Manchester United,,Wembley Stadium,,,,"87,647"
+England,FA Cup,2018-19,Manchester City,,6-0,Watford,,Wembley Stadium,,,,"85,854"
+England,FA Cup,2019-20,Arsenal,,2-1,Chelsea,,Wembley Stadium,,,,0
+England,FA Cup,2020-21,Leicester City,,1-0,Chelsea,,Wembley Stadium,,,,"20,000"
+England,FA Cup,2021-22,Liverpool,,0-0,Chelsea,,Wembley Stadium,,,,"84,897"
+England,FA Cup,2022-23,Manchester City,,2-1,Manchester United,,Wembley Stadium,,,,"83,179"
+,Leagues Cup,2019,Cruz Azul,Mexico,2-1,UANL,Mexico,Sam Boyd Stadium,Whitney,Nevada,United States,
+,Leagues Cup,2021,León,Mexico,3-2,Seattle Sounders FC,United States,Allegiant Stadium,Paradise,Nevada,United States,
+,Leagues Cup,2023,Inter Miami CF,United States,1-1 (10-9),"Nashville SC ",United States,"Geodis Park ",Nashville,Tennessee,United States,
+United States,U.S. Open Cup,1970,Elizabeth S.C.,,2-1,Los Angeles Croatia,,,,,,
+United States,U.S. Open Cup,1971,New York Hota Bavarian S.C.,,6-4,San Pedro Yugoslavs,,,,,,
+United States,U.S. Open Cup,1972,Elizabeth S.C.,,1-0,San Pedro Yugoslavs,,,,,,
+United States,U.S. Open Cup,1973,Maccabee Los Angeles,,5-3,Cleveland Inter,,,,,,
+United States,U.S. Open Cup,1974,Greek American AA,,2-0,Chicago Croatian,,,,,,
+United States,U.S. Open Cup,1975,Maccabee Los Angeles,,1-0,New York Inter-Giuliana,,,,,,
+United States,U.S. Open Cup,1976,San Francisco I.A.C.,,1-0,New York Inter-Giuliana,,,,,,
+United States,U.S. Open Cup,1977,Maccabee Los Angeles,,5-1,Philadelphia United German-Hungarians,,,,,,
+United States,U.S. Open Cup,1978,Maccabee Los Angeles,,2-0,Bridgeport Vasco da Gama,,,,,,
+United States,U.S. Open Cup,1979,Brooklyn Dodgers S.C.,,2-1,Chicago Croatian,,,,,,
+United States,U.S. Open Cup,1980,New York Pancyprian-Freedoms,,3-2,Maccabee Los Angeles,,,,,,
+United States,U.S. Open Cup,1981,Maccabee Los Angeles,,5-1,Brooklyn Dodgers S.C.,,,,,,
+United States,U.S. Open Cup,1982,New York Pancyprian-Freedoms,,4-3,Maccabee Los Angeles,,,,,,
+United States,U.S. Open Cup,1983,New York Pancyprian-Freedoms,,4-3,St. Louis Kutis S.C.,,,,,,
+United States,U.S. Open Cup,1984,New York AO Krete,,4-2,San Pedro Yugoslavs,,,,,,
+United States,U.S. Open Cup,1985,Greek-American A.C.,,2-1,St. Louis Kutis S.C.,,,,,,
+United States,U.S. Open Cup,1986,St. Louis Kutis S.C.,,1-0,San Pedro Yugoslavs,,,,,,
+United States,U.S. Open Cup,1987,Club España,,0-0,Seattle Mitre Eagles,,,,,,
+United States,U.S. Open Cup,1988,St. Louis Busch Seniors,,2-1,Greek-American A.C.,,,,,,
+United States,U.S. Open Cup,1989,St. Petersburg Kickers,,2-1,Greek American AA,,,,,,
+United States,U.S. Open Cup,1990,A.A.C. Eagles,,2-1,Brooklyn Italians,,,,,,
+United States,U.S. Open Cup,1991,Brooklyn Italians,,1-0,Richardson Rockets,,,,,,
+United States,U.S. Open Cup,1992,San Jose Oaks,,2-1,Bridgeport Vasco da Gama,,,,,,
+United States,U.S. Open Cup,1993,C.D. Mexico,,5-0,Philadelphia United German-Hungarians,,,,,,
+United States,U.S. Open Cup,1994,Greek-American A.C.,,3-0,Bavarian Leinenkugel,,,,,,
+United States,U.S. Open Cup,1995,Richmond Kickers,,1-1,El Paso Patriots,,,,,,
+United States,U.S. Open Cup,1996,D.C. United,,3-0,Rochester Rhinos,,,,,,
+United States,U.S. Open Cup,1997,Dallas Burn,,0-0,D.C. United,,,,,,
+United States,U.S. Open Cup,1998,Chicago Fire,,2-1,Columbus Crew,,,,,,
+United States,U.S. Open Cup,1999,Rochester Rhinos,,2-0,Colorado Rapids,,,,,,
+United States,U.S. Open Cup,2000,Chicago Fire,,2,1,,,,,,
+United States,U.S. Open Cup,2001,Los Angeles Galaxy,,2-1,New England Revolution,,,,,,
+United States,U.S. Open Cup,2002,Columbus Crew,,1-0,Los Angeles Galaxy,,,,,,
+United States,U.S. Open Cup,2003,Chicago Fire,,1-0,MetroStars,,,,,,
+United States,U.S. Open Cup,2004,Kansas City Wizards,,1-0,Chicago Fire,,,,,,
+United States,U.S. Open Cup,2005,Los Angeles Galaxy,,1-0,FC Dallas,,,,,,
+United States,U.S. Open Cup,2006,Chicago Fire,,3-1,Los Angeles Galaxy,,,,,,
+United States,U.S. Open Cup,2007,New England Revolution,,3-2,FC Dallas,,,,,,
+United States,U.S. Open Cup,2008,D.C. United,,2-1,Charleston Battery,,,,,,
+United States,U.S. Open Cup,2009,Seattle Sounders FC,,2-1,D.C. United,,,,,,
+United States,U.S. Open Cup,2010,Seattle Sounders FC,,2-1,Columbus Crew,,,,,,
+United States,U.S. Open Cup,2011,Seattle Sounders FC,,2-0,Chicago Fire,,,,,,
+United States,U.S. Open Cup,2012,Sporting Kansas City,,1-1,Seattle Sounders FC,,,,,,
+United States,U.S. Open Cup,2013,D.C. United,,1-0,Real Salt Lake,,,,,,
+United States,U.S. Open Cup,2014,Seattle Sounders FC,,3-1,Philadelphia Union,,,,,,
+United States,U.S. Open Cup,2015,Sporting Kansas City,,1-1,Philadelphia Union,,,,,,
+United States,U.S. Open Cup,2016,FC Dallas,,4-2,New England Revolution,,,,,,
+United States,U.S. Open Cup,2017,Sporting Kansas City,,1-1,Philadelphia Union,,,,,,
+United States,U.S. Open Cup,2018,Houston Dynamo,,3-0,Philadelphia Union,,,,,,
+United States,U.S. Open Cup,2019,Atlanta United FC,,2-1,Minnesota United FC,,,,,,
+United States,U.S. Open Cup,2022,Orlando City SC,,3-0,Sacramento Republic FC,,,,,,
+United States,MLS Cup,1996,D.C. United,,,Los Angeles Galaxy,,,,,,
+United States,MLS Cup,1997,D.C. United,,,Colorado Rapids,,,,,,
+United States,MLS Cup,1998,Chicago Fire,,,D.C. United,,,,,,
+United States,MLS Cup,1999,D.C. United,,,Los Angeles Galaxy,,,,,,
+United States,MLS Cup,2000,Kansas City Wizards,,,Chicago Fire,,,,,,
+United States,MLS Cup,2001,San Jose Earthquakes,,,Los Angeles Galaxy,,,,,,
+United States,MLS Cup,2002,Los Angeles Galaxy,,,New England Revolution,,,,,,
+United States,MLS Cup,2003,San Jose Earthquakes,,,Chicago Fire,,,,,,
+United States,MLS Cup,2004,D.C. United,,,Kansas City Wizards,,,,,,
+United States,MLS Cup,2005,Los Angeles Galaxy,,,New England Revolution,,,,,,
+United States,MLS Cup,2006,Houston Dynamo,,,New England Revolution,,,,,,
+United States,MLS Cup,2007,Houston Dynamo,,,New England Revolution,,,,,,
+United States,MLS Cup,2008,Columbus Crew SC,,,New York Red Bulls,,,,,,
+United States,MLS Cup,2009,Real Salt Lake,,,Los Angeles Galaxy,,,,,,
+United States,MLS Cup,2010,Colorado Rapids,,,FC Dallas,,,,,,
+United States,MLS Cup,2011,Los Angeles Galaxy,,,Houston Dynamo,,,,,,
+United States,MLS Cup,2012,Los Angeles Galaxy,,,Houston Dynamo,,,,,,
+United States,MLS Cup,2013,Sporting Kansas City,,,Real Salt Lake,,,,,,
+United States,MLS Cup,2014,Los Angeles Galaxy,,,New England Revolution,,,,,,
+United States,MLS Cup,2015,Portland Timbers,,,Columbus Crew SC,,,,,,
+United States,MLS Cup,2016,Seattle Sounders FC,,,Toronto FC,,,,,,
+United States,MLS Cup,2017,Toronto FC,,,Seattle Sounders FC,,,,,,
+United States,MLS Cup,2018,Atlanta United FC,,,Portland Timbers,,,,,,
+United States,MLS Cup,2019,Seattle Sounders FC,,,Toronto FC,,,,,,
+United States,MLS Cup,2020,Columbus Crew SC,,,Seattle Sounders FC,,,,,,
+United States,MLS Cup,2021,New York City FC,,,Portland Timbers,,,,,,
+United States,MLS Cup,2022,Los Angeles FC,,,Philadelphia Union,,,,,,

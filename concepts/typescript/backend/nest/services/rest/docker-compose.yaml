@@ -1,0 +1,19 @@
+version: '3.9'
+
+volumes:
+  postgres_nest_api:
+    driver: local
+
+services:
+  postgres-nest-api:
+    restart: unless-stopped
+    image: postgres:16.1
+    container_name: postgres-nest-api
+    volumes:
+      - postgres_nest_api:/var/lib/postgresql/nest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders correctly 1`] = `
+<div>
+  <div
+    class="hover:p-4 hover:shadow hover:border transition-all duration-100"
+  >
+    <a
+      class="block"
+      href=""
+      target="_blank"
+    >
+      <div
+        class="aspect-video rounded border bg-cover bg-center"
+        style="background-image: url(undefined);"
+      />
+      <h2
+        class="text-lg font-bold mt-4"
+      />
+    </a>
+    <p
+      class="text-gray-500 mt-4"
+    />
+    <div
+      class="mt-4"
+    />
+  </div>
+</div>
+`;

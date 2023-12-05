@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sprite render default 1`] = `
+<div>
+  <div
+    class="sc-eLqIir bAYUve"
+    image=""
+  >
+    Sprite
+  </div>
+</div>
+`;

@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer render default 1`] = `
+<div>
+  <footer
+    class="sc-HzRMQ iDHMWX py-32 bg-cover bg-center bg-gray-900 bg-no-repeat bg-cover bg-bottom-y"
+  >
+    <div
+      class="mx-auto px-8 container"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div
+          class="col-span-1"
+        >
+          <div
+            class="sc-eLqIir kXdItx w-48 h-28 bg-contain bg-center bg-no-repeat"
+            image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/football-battle.svg"
+          />
+        </div>
+        <div
+          class="col-span-1"
+        >
+          <p
+            class="uppercase text-white mb-4 text-sm"
+          >
+            <a
+              href="https://bit.ly/3NTOEJH"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Games
+            </a>
+          </p>
+          <p
+            class="uppercase text-white mb-4 text-sm"
+          >
+            <a
+              href="https://bit.ly/3yMv4La"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Marketplace
+            </a>
+          </p>
+          <p
+            class="uppercase text-white mb-4 text-sm"
+          >
+            <a
+              href="https://bit.ly/3akT9PT"
+              rel="noreferrer"
+              target="_blank"
+            >
+              About
+            </a>
+          </p>
+          <p
+            class="uppercase text-white mb-4 text-sm"
+          >
+            <a
+              href="https://bit.ly/3ArxJvc"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Contact
+            </a>
+          </p>
+        </div>
+        <div
+          class="col-span-1 md:col-span-2"
+        >
+          <div
+            class="mb-4"
+          >
+            <p
+              class="text-yellow uppercase "
+            >
+              Join Our Channel
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4"
+          >
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://www.facebook.com/footballbattle.co"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir bXkqaT w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/facebook.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://www.instagram.com/footballbattle.co/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir jxBktH w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/instagram.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://twitter.com/fbbattleco"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir elxfTK w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/twitter.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://t.me/footballbattleNFT"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir HRJNO w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/telegram.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://discord.com/invite/vqymVPcFSs"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir jToqjT w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/discord.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-eLqIir fNcVVs w-12 h-12 bg-cover bg-no-repeat"
+                image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
+              >
+                <div
+                  class="flex items-center justify-center w-full h-full"
+                >
+                  <a
+                    href="https://www.tiktok.com/@crowdhero.co"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="sc-eLqIir eUylVN w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/tiktok.svg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

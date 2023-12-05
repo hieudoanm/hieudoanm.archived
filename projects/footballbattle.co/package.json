@@ -1,0 +1,15 @@
+{
+  "name": "footballbattle.co",
+  "version": "0.0.1",
+  "description": "Football Battle",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "workspaces": [
+    "how-to-play",
+    "steps-to-play",
+    "welcome-new-players"
+  ]
+}
