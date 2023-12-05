@@ -25882,10 +25882,10 @@ svelte-preprocess@^5.1.0:
     sorcery "^0.11.0"
     strip-indent "^3.0.0"
 
-svelte-routing@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-2.9.0.tgz#dd7ab8d5836143ce67381c0d637b904c6c3092c5"
-  integrity sha512-Ve0OJ78DnjWhOdKeSZGgcyOiaVSu+fZMWNkKqn13+y15vGk/yVjHDYyJLmC1gorQUSIVeqkwQ2LCplfuStKS4w==
+svelte-routing@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/svelte-routing/-/svelte-routing-2.10.0.tgz#c1fbf265446b57d6109788106127a029e2e695fa"
+  integrity sha512-GM30MYs0WkTpWE6VaZV7Bl6bZmWD2vzEK4zrMQej131rpItdnqxfXTqSJFAT1I80C77XZKkjWuJeQKvBnQ2KXA==
 
 svelte@4.2.8:
   version "4.2.8"
@@ -27383,18 +27383,7 @@ vite@4.5.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite@5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.0.5.tgz#3eebe3698e3b32cea36350f58879258fec858a3c"
-  integrity sha512-OekeWqR9Ls56f3zd4CaxzbbS11gqYkEiBtnWFFgYR2WV8oPJRRKq0mpskYy/XaoCL3L7VINDhqqOMNDiYdGvGg==
-  dependencies:
-    esbuild "^0.19.3"
-    postcss "^8.4.32"
-    rollup "^4.2.0"
-  optionalDependencies:
-    fsevents "~2.3.3"
-
-"vite@^5.0.0-beta.15 || ^5.0.0", "vite@^5.0.0-beta.19 || ^5.0.0":
+vite@5.0.5, "vite@^5.0.0-beta.15 || ^5.0.0", "vite@^5.0.0-beta.19 || ^5.0.0":
   version "5.0.5"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.0.5.tgz#3eebe3698e3b32cea36350f58879258fec858a3c"
   integrity sha512-OekeWqR9Ls56f3zd4CaxzbbS11gqYkEiBtnWFFgYR2WV8oPJRRKq0mpskYy/XaoCL3L7VINDhqqOMNDiYdGvGg==
