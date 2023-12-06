@@ -22,7 +22,7 @@
     "@mui/icons-material": "5.14.19",
     "@mui/material": "5.14.19",
     "@types/node": "20.10.3",
-    "apexcharts": "3.44.1",
+    "apexcharts": "3.44.2",
     "pino": "8.16.2",
     "react": "18.2.0",
     "react-apexcharts": "1.4.1",
