@@ -35,7 +35,7 @@
     "prisma-json-schema-generator": "5.1.0",
     "prisma-markdown": "1.0.7",
     "rimraf": "5.0.5",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "typescript": "5.3.3"
   }
 }
