@@ -51,9 +51,7 @@ const ChessAccuracy: React.FC<{
   );
 };
 
-export const ChessGames: React.FC<{ insights: Insights }> = (
-  { insights }
-) => {
+export const ChessGames: React.FC<{ insights: Insights }> = ({ insights }) => {
   return (
     <Card className="border border-gray-200">
       <CardHeader>

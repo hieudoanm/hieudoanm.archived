@@ -8,6 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
+    "format": "dprint fmt",
     "prepare": "husky install || true"
   },
   "devDependencies": {

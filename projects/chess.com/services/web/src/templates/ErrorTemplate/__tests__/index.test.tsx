@@ -4,12 +4,10 @@ import { render } from '@testing-library/react';
 import { ErrorTemplate } from '..';
 
 jest.mock('next/router', () => ({
-  useRouter: jest
-    .fn()
-    .mockReturnValue({
-      asPath: '',
-      events: { on: jest.fn(), off: jest.fn() }
-    })
+  useRouter: jest.fn().mockReturnValue({
+    asPath: '',
+    events: { on: jest.fn(), off: jest.fn() }
+  })
 }));
 
 describe('ErrorTemplate', () => {

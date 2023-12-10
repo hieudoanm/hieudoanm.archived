@@ -54,9 +54,7 @@ const ProfilePage: NextPage = () => {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     };
-    const { data: checkoutSession } = await axios.post<
-      Stripe.Checkout.Session
-    >(
+    const { data: checkoutSession } = await axios.post<Stripe.Checkout.Session>(
       '/api/stripe',
       { headers, data: { amount: 5 } }
     );
@@ -67,7 +65,9 @@ const ProfilePage: NextPage = () => {
     };
     const response = await stripe!.redirectToCheckout(options);
     logger.info(`response`, response);
-    if (error) { alert(response.error.message ?? 'Donate Error'); }
+    if (error) {
+      alert(response.error.message ?? 'Donate Error');
+    }
   };
 
   return (

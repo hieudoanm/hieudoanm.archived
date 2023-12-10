@@ -31,19 +31,29 @@ import {
   FaSync
 } from 'react-icons/fa';
 
-const TimeClassIcon: React.FC<{ timeClass: string }> = (
-  { timeClass = '' }
-) => {
-  if (timeClass === 'bullet') { return <Icon as={FaRocket} boxSize={6} />; }
-  if (timeClass === 'rapid') { return <Icon as={FaClock} boxSize={6} />; }
-  if (timeClass === 'blitz') { return <Icon as={FaBolt} boxSize={6} />; }
+const TimeClassIcon: React.FC<{ timeClass: string }> = ({ timeClass = '' }) => {
+  if (timeClass === 'bullet') {
+    return <Icon as={FaRocket} boxSize={6} />;
+  }
+  if (timeClass === 'rapid') {
+    return <Icon as={FaClock} boxSize={6} />;
+  }
+  if (timeClass === 'blitz') {
+    return <Icon as={FaBolt} boxSize={6} />;
+  }
   return <></>;
 };
 
 const getPoint = (result: string): number => {
-  if (WIN_RESULTS.includes(result)) { return 1; }
-  if (DRAW_RESULTS.includes(result)) { return 0.5; }
-  if (LOSS_RESULTS.includes(result)) { return 0; }
+  if (WIN_RESULTS.includes(result)) {
+    return 1;
+  }
+  if (DRAW_RESULTS.includes(result)) {
+    return 0.5;
+  }
+  if (LOSS_RESULTS.includes(result)) {
+    return 0;
+  }
   return -1;
 };
 

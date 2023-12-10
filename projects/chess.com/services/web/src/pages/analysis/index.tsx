@@ -185,7 +185,9 @@ const AnalysisPage: NextPage = () => {
                               const clonedMoves = JSON.parse(
                                 JSON.stringify(moves)
                               );
-                              if (turn === 'b') { clonedMoves.unshift('...'); }
+                              if (turn === 'b') {
+                                clonedMoves.unshift('...');
+                              }
                               const fullMoves: string[][] = chunk(
                                 clonedMoves,
                                 2

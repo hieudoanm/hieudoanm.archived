@@ -3,32 +3,37 @@ if (!self.define) {
     t = {};
   const i = (i, o) => (
     (i = new URL(i + '.js', o).href),
-      t[i]
-      || new Promise((t) => {
+    t[i] ||
+      new Promise((t) => {
         if ('document' in self) {
           const e = document.createElement('script');
           (e.src = i), (e.onload = t), document.head.appendChild(e);
-        } else { (e = i), importScripts(i), t(); }
+        } else {
+          (e = i), importScripts(i), t();
+        }
       }).then(() => {
         let e = t[i];
-        if (!e) { throw new Error(`Module ${i} didn’t register its module`); }
+        if (!e) {
+          throw new Error(`Module ${i} didn’t register its module`);
+        }
         return e;
       })
   );
   self.define = (o, a) => {
-    const n = e
-      || ('document' in self ? document.currentScript.src : '')
-      || location.href;
-    if (t[n]) { return; }
+    const n =
+      e ||
+      ('document' in self ? document.currentScript.src : '') ||
+      location.href;
+    if (t[n]) {
+      return;
+    }
     let r = {};
     const s = (e) => i(e, n),
       c = { module: { uri: n }, exports: r, require: s };
-    t[n] = Promise.all(o.map((e) => c[e] || s(e))).then((
-      e
-    ) => (a(...e), r));
+    t[n] = Promise.all(o.map((e) => c[e] || s(e))).then((e) => (a(...e), r));
   };
 }
-define(['./workbox-03fb18e6'], function(e) {
+define(['./workbox-03fb18e6'], function (e) {
   'use strict';
   importScripts(),
     self.skipWaiting(),
@@ -152,43 +157,35 @@ define(['./workbox-03fb18e6'], function(e) {
           revision: '258a358e'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-300-normal.cd7c5715.woff2',
+          url: '/_next/static/media/roboto-cyrillic-ext-300-normal.cd7c5715.woff2',
           revision: 'cd7c5715'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-300-normal.de365ce5.woff',
+          url: '/_next/static/media/roboto-cyrillic-ext-300-normal.de365ce5.woff',
           revision: 'de365ce5'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-400-normal.02e18372.woff',
+          url: '/_next/static/media/roboto-cyrillic-ext-400-normal.02e18372.woff',
           revision: '02e18372'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-400-normal.d7827ae3.woff2',
+          url: '/_next/static/media/roboto-cyrillic-ext-400-normal.d7827ae3.woff2',
           revision: 'd7827ae3'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-500-normal.a05054d8.woff',
+          url: '/_next/static/media/roboto-cyrillic-ext-500-normal.a05054d8.woff',
           revision: 'a05054d8'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-500-normal.a1b5c90d.woff2',
+          url: '/_next/static/media/roboto-cyrillic-ext-500-normal.a1b5c90d.woff2',
           revision: 'a1b5c90d'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-700-normal.46ca43b3.woff',
+          url: '/_next/static/media/roboto-cyrillic-ext-700-normal.46ca43b3.woff',
           revision: '46ca43b3'
         },
         {
-          url:
-            '/_next/static/media/roboto-cyrillic-ext-700-normal.dd3651fb.woff2',
+          url: '/_next/static/media/roboto-cyrillic-ext-700-normal.dd3651fb.woff2',
           revision: 'dd3651fb'
         },
         {
@@ -324,8 +321,7 @@ define(['./workbox-03fb18e6'], function(e) {
           revision: '44e9a722'
         },
         {
-          url:
-            '/_next/static/media/roboto-vietnamese-300-normal.b3d3e960.woff2',
+          url: '/_next/static/media/roboto-vietnamese-300-normal.b3d3e960.woff2',
           revision: 'b3d3e960'
         },
         {
@@ -333,8 +329,7 @@ define(['./workbox-03fb18e6'], function(e) {
           revision: 'b339d926'
         },
         {
-          url:
-            '/_next/static/media/roboto-vietnamese-400-normal.c95fc061.woff2',
+          url: '/_next/static/media/roboto-vietnamese-400-normal.c95fc061.woff2',
           revision: 'c95fc061'
         },
         {
@@ -342,13 +337,11 @@ define(['./workbox-03fb18e6'], function(e) {
           revision: '65b57a7f'
         },
         {
-          url:
-            '/_next/static/media/roboto-vietnamese-500-normal.7f8c0554.woff2',
+          url: '/_next/static/media/roboto-vietnamese-500-normal.7f8c0554.woff2',
           revision: '7f8c0554'
         },
         {
-          url:
-            '/_next/static/media/roboto-vietnamese-700-normal.72bf832f.woff2',
+          url: '/_next/static/media/roboto-vietnamese-700-normal.72bf832f.woff2',
           revision: '72bf832f'
         },
         {
@@ -383,10 +376,10 @@ define(['./workbox-03fb18e6'], function(e) {
             }) =>
               t && 'opaqueredirect' === t.type
                 ? new Response(t.body, {
-                  status: 200,
-                  statusText: 'OK',
-                  headers: t.headers
-                })
+                    status: 200,
+                    statusText: 'OK',
+                    headers: t.headers
+                  })
                 : t
           }
         ]
@@ -507,7 +500,9 @@ define(['./workbox-03fb18e6'], function(e) {
     ),
     e.registerRoute(
       ({ url: e }) => {
-        if (!(self.origin === e.origin)) { return !1; }
+        if (!(self.origin === e.origin)) {
+          return !1;
+        }
         const t = e.pathname;
         return !t.startsWith('/api/auth/') && !!t.startsWith('/api/');
       },
@@ -522,7 +517,9 @@ define(['./workbox-03fb18e6'], function(e) {
     ),
     e.registerRoute(
       ({ url: e }) => {
-        if (!(self.origin === e.origin)) { return !1; }
+        if (!(self.origin === e.origin)) {
+          return !1;
+        }
         return !e.pathname.startsWith('/api/');
       },
       new e.NetworkFirst({

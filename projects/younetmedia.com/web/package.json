@@ -13,6 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "prebuild": "rimraf .next out",
+    "format": "prettier . --write",
     "test": "jest"
   },
   "dependencies": {

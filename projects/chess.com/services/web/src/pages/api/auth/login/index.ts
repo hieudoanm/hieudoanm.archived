@@ -12,9 +12,7 @@ const loginHandler = async (
       }
     });
   } catch (error) {
-    response.status((error as any).status || 400).end(
-      (error as Error).message
-    );
+    response.status((error as any).status || 400).end((error as Error).message);
   }
 };
 

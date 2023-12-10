@@ -87,10 +87,8 @@ const CountriesMaps: React.FC<{ countries: Country[] }> = ({
   const numberOfTitlePlayers: number[] = countries
     .map(({ total }) => total)
     .filter((total: number) => total < 1000);
-  const min: number = Math.round(Math.min(...numberOfTitlePlayers) / gap)
-    * gap;
-  const max: number = Math.ceil(Math.max(...numberOfTitlePlayers) / gap)
-    * gap;
+  const min: number = Math.round(Math.min(...numberOfTitlePlayers) / gap) * gap;
+  const max: number = Math.ceil(Math.max(...numberOfTitlePlayers) / gap) * gap;
   const range: number[] = Array.from({ length: (max - min) / gap }).map(
     (_value: unknown, index: number) => min + index * gap
   );

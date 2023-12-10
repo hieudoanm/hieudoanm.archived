@@ -9,9 +9,7 @@ describe('ChessTimeOfDays', () => {
   });
 
   it('to match snapshot', () => {
-    const { container } = render(
-      <ChessTimeOfDays insights={{} as Insights} />
-    );
+    const { container } = render(<ChessTimeOfDays insights={{} as Insights} />);
     expect(container).toMatchSnapshot();
   });
 });

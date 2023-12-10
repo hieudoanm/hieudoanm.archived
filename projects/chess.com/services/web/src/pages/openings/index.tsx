@@ -28,9 +28,7 @@ type OpeningsPageProperties = {
   openings: Opening[];
 };
 
-const OpeningsPage: NextPage<OpeningsPageProperties> = (
-  { openings = [] }
-) => {
+const OpeningsPage: NextPage<OpeningsPageProperties> = ({ openings = [] }) => {
   return (
     <Layout>
       <Container>

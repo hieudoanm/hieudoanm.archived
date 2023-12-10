@@ -6,7 +6,11 @@ export const resolveQuery = <T>(
   fallback: string = ''
 ): string => {
   const value: string | string[] | undefined = query[key];
-  if (!value) { return fallback; }
-  if (typeof value === 'string') { return value; }
+  if (!value) {
+    return fallback;
+  }
+  if (typeof value === 'string') {
+    return value;
+  }
   return value[0];
 };
