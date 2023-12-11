@@ -8,7 +8,7 @@ volumes:
 
 services:
   cockroachdb-database:
-    image: cockroachdb/cockroach:v23.1.12
+    image: cockroachdb/cockroach:v23.1.13
     container_name: cockroachdb-database
     restart: always
     volumes:
