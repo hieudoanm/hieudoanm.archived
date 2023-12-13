@@ -105,6 +105,7 @@
 | [Node.js][node]  | Front-end    | Styling              | CSS Components         | [Theme UI](https://theme-ui.com/)              |                        |
 | [Node.js][node]  | Front-end    | Styling              | CSS Components         | [MUI](https://mui.com)                         | [Alphabet][alphabet]   |
 | [Node.js][node]  | Front-end    | Styling              | CSS Components         | [NextUI](https://nextui.org/)                  | [Vercel][vercel]       |
+| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [shadcn](https://ui.shadcn.com/)               |                        |
 | [Node.js][node]  | Front-end    | Styling              | Documentation          | [storybook](https://storybook.js.org/)         |                        |
 | [Node.js][node]  | Front-end    | Framework            | Client                 | ~~[AngularJS](https://angularjs.org/)~~        | [Alphabet][alphabet]   |
 | [Node.js][node]  | Front-end    | Framework            | Client                 | [Angular](https://angular.io/)                 | [Alphabet][alphabet]   |
@@ -191,7 +192,10 @@
 | [Python][python] | Data Science | Library              | Machine Learning       | [scikit-learn][scikit-learn]                   |                        |
 | [Python][python] | Data Science | Library              | Machine Learning       | [scipy](https://scipy.org/)                    |                        |
 | [Python][python] | Data Science | Library              | Machine Learning       | [tensorflow][tensorflow]                       | [Alphabet][alphabet]   |
-|                  | Data Science | Generative AI        |                        | [DeepAI](https://deepai.org/)                  |                        |
+|                  | Data Science | Tool                 |                        | [DeepAI](https://deepai.org/)                  |                        |
+|                  | Data Science | Tool                 |                        | [QuillBot](https://quillbot.com/)              |                        |
+|                  | Data Science | Tool                 |                        | [JenniAI](https://jenni.ai/)                   |                        |
+|                  | Data Science | Tool                 |                        | [Woebot Health](https://woebothealth.com/)     |                        |
 |                  | Game         |                      |                        | [Photon Engine](https://www.photonengine.com/) |                        |
 |                  | Game         |                      |                        | [Unity](https://unity.com/)                    |                        |
 |                  | Game         |                      |                        | [Unreal Engine](https://www.unrealengine.com/) |                        |

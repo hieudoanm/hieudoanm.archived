@@ -3,6 +3,7 @@
 ## Tools
 
 - [Figma](https://www.figma.com)
+- [Tint & Shade Generator](https://maketintsandshades.com/)
 
 ## Resources
 
