@@ -181,6 +181,7 @@
 |                  | Back-end     | Blockchain           |                        | [Ethereum](https://ethereum.org/)              |                        |
 |                  | Data Science | Datasets             |                        | [huggingface](https://huggingface.co/)         |                        |
 |                  | Data Science | Datasets             |                        | [kaggle](https://www.kaggle.com/)              |                        |
+|                  | Data Science | Datasets             |                        | [statista](https://www.statista.com/)          |                        |
 |                  | Data Science | Language             | Programming            | [R](https://www.r-project.org/)                |                        |
 | [Python][python] | Data Science | Library              | Data Collection        | [BeautifulSoup][beautiful-soup]                |                        |
 | [Python][python] | Data Science | Library              | Data Collection        | [scrapy](https://scrapy.org/)                  |                        |

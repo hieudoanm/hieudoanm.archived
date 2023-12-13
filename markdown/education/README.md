@@ -43,5 +43,6 @@
 
 ### Coures
 
+- [LinkedIn Learning](https://www.linkedin.com/learning/)
 - [Udacity](https://www.udacity.com/)
 - [Udemy](https://www.udemy.com/)
