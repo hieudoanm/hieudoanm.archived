@@ -22,11 +22,11 @@ jobs:
         run: yarn global add docsify-cli
       - name: Bundle Docs
         run: docsify init docs
-        working-directory: concepts/markdown
+        working-directory: markdown/techstack
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           token: ${{ secrets.GHP_TOKEN }}
           branch: gh-pages
-          folder: concepts/markdown/docs
+          folder: markdown/techstack/docs
           clean: true
