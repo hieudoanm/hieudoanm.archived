@@ -2,6 +2,7 @@
 
 | FIDE Title                     |     | FIDE Rating | chess.com rating | lichess.org rating |
 | ------------------------------ | --- | ----------- | ---------------- | ------------------ |
+| Arena Candidate Master         | ACM | 1100        |                  |                    |
 | Arena FIDE Master              | AFM | 1400        |                  |                    |
 | Arena International Master     | AIM | 1700        |                  |                    |
 | Arena Grandmaster              | AGM | 200         |                  |                    |
