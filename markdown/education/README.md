@@ -6,6 +6,7 @@
   - [Online](#online)
     - [University](#university)
     - [Coures](#coures)
+  - [Resources](#resources)
 
 ## Blogs
 
@@ -46,3 +47,11 @@
 - [LinkedIn Learning](https://www.linkedin.com/learning/)
 - [Udacity](https://www.udacity.com/)
 - [Udemy](https://www.udemy.com/)
+
+## Resources
+
+- [American Psychological Association](https://www.apa.org/)
+- [IEEE Xplore](https://ieeexplore.ieee.org)
+- [ProQuest](https://www.proquest.com)
+- [ScienceDirect](https://www.sciencedirect.com/)
+- [Scopus](https://www.scopus.com/)
