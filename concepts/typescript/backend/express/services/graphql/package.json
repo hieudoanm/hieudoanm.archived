@@ -42,7 +42,7 @@
     "http-errors": "2.0.0",
     "morgan": "1.10.0",
     "neo4j-driver": "5.15.0",
-    "pino": "8.16.2",
+    "pino": "8.17.0",
     "pino-pretty": "10.2.3",
     "tsoa": "5.1.1"
   },
