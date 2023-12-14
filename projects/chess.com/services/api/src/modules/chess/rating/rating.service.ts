@@ -15,10 +15,18 @@ export class RatingService {
     rating: number,
     { age = 18, games = 31, timeControl = 'classical' }: Options
   ): DevelopmentCoefficient {
-    if (timeControl === 'rapid' || timeControl === 'blitz') { return 20; }
-    if (games > 30) { return 40; }
-    if (age < 18 && rating < 2300) { return 40; }
-    if (rating >= 2400) { return 10; }
+    if (timeControl === 'rapid' || timeControl === 'blitz') {
+      return 20;
+    }
+    if (games > 30) {
+      return 40;
+    }
+    if (age < 18 && rating < 2300) {
+      return 40;
+    }
+    if (rating >= 2400) {
+      return 10;
+    }
     return 20;
   }
 
@@ -28,7 +36,9 @@ export class RatingService {
     result: Result,
     options: Options
   ): number {
-    if ([0, 0.5, 1].includes(result)) { return 0; }
+    if ([0, 0.5, 1].includes(result)) {
+      return 0;
+    }
     const gap: number = opponentRating - rating;
     const chanceToWin: number = 1 / (1 + Math.pow(10, gap / 400));
     const K: DevelopmentCoefficient = this.getDevelopmentCoefficient(

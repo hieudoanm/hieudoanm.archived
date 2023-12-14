@@ -25,10 +25,12 @@ const main = async () => {
     const swaggerJson = JSON.parse(swaggerString);
     const postmanResult = await convertSync({
       type: 'json',
-      data: { ...swaggerJson, swagger: '2.0' }
+      data: { ...swaggerJson, swagger: '2.0' },
     });
     const { result, output = [] } = postmanResult;
-    if (!result) { return; }
+    if (!result) {
+      return;
+    }
     for (const collection of output) {
       const postmanFilePath = path.join(
         __dirname,

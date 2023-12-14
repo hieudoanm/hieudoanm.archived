@@ -11,19 +11,19 @@ export const team = {
       id: 1,
       avatar: avatar1,
       name: 'Hieu Doan',
-      role: 'Full-stack Engineer'
+      role: 'Full-stack Engineer',
     },
     {
       id: 2,
       avatar: avatar2,
       name: 'Phuong Tran',
-      role: 'Business Analysts'
+      role: 'Business Analysts',
     },
     {
       id: 3,
       avatar: avatar3,
       name: 'Duy Ton',
-      role: 'Data Engineer'
-    }
-  ]
+      role: 'Data Engineer',
+    },
+  ],
 };

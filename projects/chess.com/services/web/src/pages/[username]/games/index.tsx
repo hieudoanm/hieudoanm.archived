@@ -9,12 +9,12 @@ import {
   Icon,
   List,
   ListItem,
-  useToast
+  useToast,
 } from '@chakra-ui/react';
 import {
   DRAW_RESULTS,
   LOSS_RESULTS,
-  WIN_RESULTS
+  WIN_RESULTS,
 } from '@chess/common/constants';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
@@ -28,7 +28,7 @@ import {
   FaClock,
   FaRocket,
   FaSearchengin,
-  FaSync
+  FaSync,
 } from 'react-icons/fa';
 
 const TimeClassIcon: React.FC<{ timeClass: string }> = ({ timeClass = '' }) => {
@@ -71,7 +71,7 @@ const mutation = gql`
 
 const GamesPage: NextPage<{ username: string; games: Game[] }> = ({
   username = '',
-  games = []
+  games = [],
 }) => {
   const toast = useToast();
 
@@ -82,7 +82,7 @@ const GamesPage: NextPage<{ username: string; games: Game[] }> = ({
       description: 'Games are Synced Successfully',
       status: 'success',
       duration: 9000,
-      isClosable: true
+      isClosable: true,
     });
   };
 
@@ -114,7 +114,7 @@ const GamesPage: NextPage<{ username: string; games: Game[] }> = ({
                   whiteRating,
                   blackResult,
                   blackRating,
-                  endTime
+                  endTime,
                 }: Game) => {
                   return (
                     <ListItem key={id} className="border-t p-2 md:p-4">
@@ -145,16 +145,16 @@ const GamesPage: NextPage<{ username: string; games: Game[] }> = ({
                         <div className="flex items-center gap-x-2 md:gap-x-4">
                           <div className="text-right">
                             <p
-                              className={whiteUsername === username
-                                ? FONT_SEMIBOLD
-                                : ''}
+                              className={
+                                whiteUsername === username ? FONT_SEMIBOLD : ''
+                              }
                             >
                               {getPoint(whiteResult)}
                             </p>
                             <p
-                              className={blackUsername === username
-                                ? FONT_SEMIBOLD
-                                : ''}
+                              className={
+                                blackUsername === username ? FONT_SEMIBOLD : ''
+                              }
                             >
                               {getPoint(blackResult)}
                             </p>
@@ -218,8 +218,8 @@ export const getServerSideProps: GetServerSideProps = async (
   try {
     const {
       data: {
-        player: { games = [] }
-      }
+        player: { games = [] },
+      },
     } = await apolloClient.query<{
       player: { games: Game[] };
     }>({ query, variables: { username } });

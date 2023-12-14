@@ -4,7 +4,9 @@ import configs from '../../environments';
 export const createChannel = (connection: Connection): Promise<Channel> => {
   return new Promise((resolve, reject) => {
     connection.createChannel((error, channel) => {
-      if (error) { return reject(error); }
+      if (error) {
+        return reject(error);
+      }
       return resolve(channel);
     });
   });
@@ -27,7 +29,9 @@ export class RabbitClient {
   private async connect(): Promise<Connection> {
     return new Promise((resolve, reject) => {
       amqp.connect(this.url, (error, connection) => {
-        if (error) { return reject(error); }
+        if (error) {
+          return reject(error);
+        }
         return resolve(connection);
       });
     });
@@ -36,7 +40,9 @@ export class RabbitClient {
   private async createChannel(): Promise<Channel> {
     return new Promise((resolve, reject) => {
       this.connection?.createChannel((error, channel) => {
-        if (error) { return reject(error); }
+        if (error) {
+          return reject(error);
+        }
         return resolve(channel);
       });
     });

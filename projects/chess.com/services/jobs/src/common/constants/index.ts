@@ -10,5 +10,5 @@ export const TITLES: Title[] = [
   'WIM',
   'WFM',
   'WCM',
-  'WNM'
+  'WNM',
 ];

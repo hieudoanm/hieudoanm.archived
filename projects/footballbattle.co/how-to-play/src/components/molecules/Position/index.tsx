@@ -9,7 +9,7 @@ export const Position: React.FC<PositionProps> = ({ image, title }) => {
         className="bg-cover bg-center mb-4"
         style={{
           paddingBottom: '130%',
-          backgroundImage: `url(${image})`
+          backgroundImage: `url(${image})`,
         }}
       />
       <div className="text-center text-white font-karma">{title}</div>

@@ -3,7 +3,7 @@ import { expressMiddleware } from '@apollo/server/express4';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import {
   ApolloServerPluginLandingPageLocalDefault,
-  ApolloServerPluginLandingPageProductionDefault
+  ApolloServerPluginLandingPageProductionDefault,
 } from '@apollo/server/plugin/landingPage/default';
 import express from 'express';
 import { GraphQLSchema } from 'graphql';
@@ -39,9 +39,10 @@ const startApolloServer = async (
   const port = normalizePort(PORT);
   app.set('port', port);
   // Apollo Server
-  const landingPage = NODE_ENV === 'production'
-    ? ApolloServerPluginLandingPageProductionDefault()
-    : ApolloServerPluginLandingPageLocalDefault();
+  const landingPage =
+    NODE_ENV === 'production'
+      ? ApolloServerPluginLandingPageProductionDefault()
+      : ApolloServerPluginLandingPageLocalDefault();
   const schema: GraphQLSchema = await neo4jSchema.getSchema();
   const server = new ApolloServer({
     schema,
@@ -50,10 +51,7 @@ const startApolloServer = async (
     csrfPrevention: true,
     validationRules: [graphqlDepthLimit(10)],
     introspection: NODE_ENV !== 'production',
-    plugins: [
-      landingPage,
-      ApolloServerPluginDrainHttpServer({ httpServer })
-    ]
+    plugins: [landingPage, ApolloServerPluginDrainHttpServer({ httpServer })],
   });
   await server.start();
   app.use(expressMiddleware(server));
@@ -61,9 +59,8 @@ const startApolloServer = async (
   httpServer.listen(port);
   httpServer.on('listening', () => {
     const addr = httpServer.address();
-    const bind = typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr?.port;
+    const bind =
+      typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr?.port;
     logger.info(`🚀 Server is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {

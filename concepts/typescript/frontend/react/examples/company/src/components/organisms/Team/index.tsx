@@ -14,7 +14,7 @@ export const Team: React.FC<{
         <div className="mb-16">
           <Heading title={title} description={description} />
         </div>
-        <div className="grid grid-col-1 md:grid-cols-3 gap-8">
+        <div className="grid-col-1 grid gap-8 md:grid-cols-3">
           {members?.map(({ id, avatar, name, role, socialLinks = [] }) => (
             <div key={id} className="col-span-1">
               <Member

@@ -12,12 +12,12 @@ export const resolvers = {
       const {
         total = 0,
         players = [],
-        countries = []
+        countries = [],
       } = await chessDataSource.getStreamers({
         title,
-        country
+        country,
       });
       return { total, players, countries };
-    }
-  }
+    },
+  },
 };

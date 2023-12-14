@@ -12,7 +12,7 @@ export const useFetch = <T>(
   const [state, setState] = useState<UseFetch<T>>({
     loading: false,
     error: null,
-    data: null
+    data: null,
   });
 
   const [refetchIndex, setRefetchIndex] = useState<number>(0);

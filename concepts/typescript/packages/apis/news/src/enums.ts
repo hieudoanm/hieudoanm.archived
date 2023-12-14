@@ -52,7 +52,7 @@ export enum Country {
   UKRAINE = 'ua',
   UNITED_STATES = 'us',
   VENEZUELA = 've',
-  SOUTH_AFRICA = 'za'
+  SOUTH_AFRICA = 'za',
 }
 
 export enum Category {
@@ -62,7 +62,7 @@ export enum Category {
   HEALTH = 'health',
   SCIENCE = 'science',
   SPORTS = 'sports',
-  TECHNOLOGY = 'technology'
+  TECHNOLOGY = 'technology',
 }
 
 export enum Language {
@@ -79,17 +79,17 @@ export enum Language {
   RUSSIAN = 'ru',
   SWEDISH = 'sv',
   UD = 'ud',
-  CHINESE = 'zh'
+  CHINESE = 'zh',
 }
 
 export enum SearchIn {
   CONTENT = 'content',
   DESCRIPTION = 'description',
-  TITLE = 'title'
+  TITLE = 'title',
 }
 
 export enum SortBy {
   POPULARITY = 'popularity',
   PUBLISHED_AT = 'publishedAt',
-  RELEVANCY = 'relevancy'
+  RELEVANCY = 'relevancy',
 }

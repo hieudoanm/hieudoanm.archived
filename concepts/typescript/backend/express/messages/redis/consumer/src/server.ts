@@ -39,9 +39,8 @@ const main = async () => {
   httpServer.listen(port);
   httpServer.on('listening', () => {
     const addr = httpServer.address();
-    const bind = typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr?.port;
+    const bind =
+      typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr?.port;
     log.info(`🚀 APIs is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {

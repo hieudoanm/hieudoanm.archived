@@ -13,7 +13,7 @@ class Http {
     config: AxiosRequestConfig = {},
     { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
-      time: 1
+      time: 1,
     }
   ): Promise<T> {
     try {
@@ -34,7 +34,7 @@ class Http {
     config: AxiosRequestConfig = {},
     { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
-      time: 1
+      time: 1,
     }
   ): Promise<T> {
     try {
@@ -55,7 +55,7 @@ class Http {
     config: AxiosRequestConfig = {},
     { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
-      time: 1
+      time: 1,
     }
   ): Promise<T> {
     try {
@@ -76,7 +76,7 @@ class Http {
     config: AxiosRequestConfig = {},
     { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
-      time: 1
+      time: 1,
     }
   ): Promise<T> {
     try {
@@ -96,7 +96,7 @@ class Http {
     config: AxiosRequestConfig = {},
     { max = 4, time = 1 }: { max?: number; time?: number } = {
       max: 4,
-      time: 1
+      time: 1,
     }
   ): Promise<T> {
     try {

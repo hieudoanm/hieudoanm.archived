@@ -5,6 +5,6 @@ export const resolvers = {
   Query: {
     countries: async (): Promise<Country[]> => {
       return getCountries();
-    }
-  }
+    },
+  },
 };

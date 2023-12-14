@@ -34,13 +34,13 @@ export const trpc = createTRPCNext<AppRouter>({
             return {
               // authorization: getAuthCookie(),
             };
-          }
-        })
-      ]
+          },
+        }),
+      ],
     };
   },
   /**
    * @link https://trpc.io/docs/ssr
    */
-  ssr: false
+  ssr: false,
 });

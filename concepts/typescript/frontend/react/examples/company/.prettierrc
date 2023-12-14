@@ -1,1 +1,11 @@
-/Users/hieudoan/git/github.com/hieudoanm/hieudoanm/concepts/typescript/.prettierrc
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "printWidth": 80,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "plugins": ["prettier-plugin-tailwindcss"]
+}

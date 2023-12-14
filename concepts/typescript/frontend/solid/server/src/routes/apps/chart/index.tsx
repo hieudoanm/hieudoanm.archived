@@ -36,8 +36,7 @@ const fetchHistory = async (uuid: string): Promise<HistoryResponse> => {
   if (!uuid) {
     return { status: '', data: { change: '', history: [] } };
   }
-  const url =
-    `https://api.coinranking.com/v2/coin/${uuid}/history?timePeriod=5y`;
+  const url = `https://api.coinranking.com/v2/coin/${uuid}/history?timePeriod=5y`;
   return new Promise<HistoryResponse>((resolve, reject) => {
     fetch(url)
       .then((res) => res.json())
@@ -111,62 +110,58 @@ export const ChartPage: Component = () => {
                 </For>
               </Select>
             </FormControl>
-            {historyResponse.loading
-              ? (
-                <div class="flex items-center justify-center">
-                  <div class="mx-auto w-16">
-                    <CircularProgress size={'4rem'} class="mx-auto block" />
-                  </div>
+            {historyResponse.loading ? (
+              <div class="flex items-center justify-center">
+                <div class="mx-auto w-16">
+                  <CircularProgress size={'4rem'} class="mx-auto block" />
                 </div>
-              )
-              : (
-                <>
-                  {historyResponse()
-                    ? (
-                      <SolidApexCharts
-                        type="line"
-                        options={{
-                          chart: { animations: { enabled: false } },
-                          noData: {
-                            text: '',
-                            align: 'center',
-                            verticalAlign: 'middle'
-                          },
-                          title: {
-                            text: 'Price by Day',
-                            align: 'left'
-                          },
-                          xaxis: {
-                            categories: (
-                              historyResponse()
-                                ?.data.history.splice(0, 30)
-                                .reverse() || []
-                            ).map(({ timestamp }: HistoryData) => {
-                              return new Date(timestamp * 1000)
-                                .toISOString()
-                                .split('T')[0];
-                            })
-                          }
-                        }}
-                        series={[
-                          {
-                            name: 'Price',
-                            data: (
-                              historyResponse()
-                                ?.data.history.splice(0, 30)
-                                .reverse() || []
-                            ).map(({ price }: HistoryData) => {
-                              return parseFloat(
-                                parseFloat(price).toFixed(2)
-                              );
-                            })
-                          }
-                        ]}
-                      />
-                    )
-                    : <></>}
-                </>
-              )}
+              </div>
+            ) : (
+              <>
+                {historyResponse() ? (
+                  <SolidApexCharts
+                    type="line"
+                    options={{
+                      chart: { animations: { enabled: false } },
+                      noData: {
+                        text: '',
+                        align: 'center',
+                        verticalAlign: 'middle',
+                      },
+                      title: {
+                        text: 'Price by Day',
+                        align: 'left',
+                      },
+                      xaxis: {
+                        categories: (
+                          historyResponse()
+                            ?.data.history.splice(0, 30)
+                            .reverse() || []
+                        ).map(({ timestamp }: HistoryData) => {
+                          return new Date(timestamp * 1000)
+                            .toISOString()
+                            .split('T')[0];
+                        }),
+                      },
+                    }}
+                    series={[
+                      {
+                        name: 'Price',
+                        data: (
+                          historyResponse()
+                            ?.data.history.splice(0, 30)
+                            .reverse() || []
+                        ).map(({ price }: HistoryData) => {
+                          return parseFloat(parseFloat(price).toFixed(2));
+                        }),
+                      },
+                    ]}
+                  />
+                ) : (
+                  <></>
+                )}
+              </>
+            )}
           </div>
         </Paper>
       </Container>

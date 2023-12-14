@@ -19,9 +19,11 @@ export const Checkbox: React.FC<{
         onChange={(event) => setChecked(event.target.checked)}
         className="hidden"
       />
-      {checked
-        ? <CheckBoxIcon className="text-green-700" fontSize="small" />
-        : <div className={`w-5 h-5 rounded border border-2`} />}
+      {checked ? (
+        <CheckBoxIcon className="text-green-700" fontSize="small" />
+      ) : (
+        <div className={`h-5 w-5 rounded border border-2`} />
+      )}
       <span className="text-sm text-gray-500">{label}</span>
     </label>
   );

@@ -2,7 +2,7 @@ import axios from 'axios';
 import {
   CurrenciesResponse,
   FrankfurterLatestRequest,
-  FrankfurterLatestResponse
+  FrankfurterLatestResponse,
 } from './types';
 
 const BASE_URL = 'https://api.frankfurter.app';
@@ -17,13 +17,15 @@ export class FrankfurterClient {
     { amount = 1, base = 'EUR', to = [] }: FrankfurterLatestRequest = {
       amount: 1,
       base: 'EUR',
-      to: []
+      to: [],
     }
   ): Promise<FrankfurterLatestResponse> {
     const urlSearchParams = new URLSearchParams();
     urlSearchParams.set('amount', amount.toString());
     urlSearchParams.set('from', base);
-    if (to.length > 0) { urlSearchParams.set('to', to.join(',')); }
+    if (to.length > 0) {
+      urlSearchParams.set('to', to.join(','));
+    }
     const url = `${BASE_URL}/latest?${urlSearchParams.toString()}`;
     return this.get(url);
   }

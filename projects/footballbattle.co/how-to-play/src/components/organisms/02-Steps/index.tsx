@@ -6,7 +6,7 @@ import Step, { Arrow } from '../../molecules/Step';
 export const Steps: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     document.querySelector(`#${sectionId}`)?.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
@@ -14,7 +14,7 @@ export const Steps: React.FC = () => {
     <div
       className="py-4 bg-[#085723] bg-repeat-x bg-bottom"
       style={{
-        backgroundImage: 'url(/how-to-play/en/images/steps/background.svg)'
+        backgroundImage: 'url(/how-to-play/en/images/steps/background.svg)',
       }}
     >
       <Section>

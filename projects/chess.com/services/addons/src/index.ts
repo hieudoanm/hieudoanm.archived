@@ -15,8 +15,8 @@ const hideRatings = () => {
 };
 
 const observeDOM = (() => {
-  const MutationObserver = window.MutationObserver
-    || (window as any).WebKitMutationObserver;
+  const MutationObserver =
+    window.MutationObserver || (window as any).WebKitMutationObserver;
 
   return (obj: any, callback: any) => {
     // define new observer

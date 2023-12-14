@@ -6,7 +6,7 @@ import { ChessTimeOfDays } from '@chess/components/organisms/ChessTimeOfDays';
 import { Insights } from '@chess/types/chess';
 
 export const InsightsTemplate: React.FC<{ insights: Insights }> = ({
-  insights = {} as Insights
+  insights = {} as Insights,
 }) => {
   return (
     <div className="flex flex-col gap-y-4 md:gap-y-8">

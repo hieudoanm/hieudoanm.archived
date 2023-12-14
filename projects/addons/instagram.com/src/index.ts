@@ -41,7 +41,9 @@ const setUp = (layerClass = '', imageClass = '', zIndex = 0) => {
       const img = imgs[j];
 
       img.style.cursor = 'crosshair';
-      if (zIndex) { img.style.zIndex = zIndex; }
+      if (zIndex) {
+        img.style.zIndex = zIndex;
+      }
 
       img.removeEventListener(
         'click',
@@ -67,8 +69,8 @@ const downGram = () => {
 };
 
 const observeDOM = (() => {
-  const MutationObserver = window.MutationObserver
-    || window.WebKitMutationObserver;
+  const MutationObserver =
+    window.MutationObserver || window.WebKitMutationObserver;
 
   return (obj, callback) => {
     // define new observer

@@ -10,7 +10,7 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  index
+  index,
 }: {
   cx: number;
   cy: number;
@@ -47,7 +47,7 @@ export const ChessRecord: React.FC<{
   const data = [
     { name: 'Win', value: win, color: '#319795' },
     { name: 'Draw', value: draw, color: '#718096' },
-    { name: 'Loss', value: loss, color: '#E53E3E' }
+    { name: 'Loss', value: loss, color: '#E53E3E' },
   ];
 
   return (

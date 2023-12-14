@@ -15,13 +15,13 @@ import {
   MenuItem,
   MenuList,
   Text,
-  useDisclosure
+  useDisclosure,
 } from '@chakra-ui/react';
 import {
   APP_NAME,
   TITLED_ABBREVIATIONS,
   TITLES,
-  YEAR
+  YEAR,
 } from '@chess/common/constants';
 import { Container } from '@chess/components/atoms/Container';
 import Link from 'next/link';
@@ -32,7 +32,7 @@ import {
   FaSignInAlt,
   FaSignOutAlt,
   FaTools,
-  FaUser
+  FaUser,
 } from 'react-icons/fa';
 
 const AuthButton: React.FC<{ size: string }> = ({ size = 'md' }) => {
@@ -40,48 +40,46 @@ const AuthButton: React.FC<{ size: string }> = ({ size = 'md' }) => {
 
   return (
     <>
-      {user
-        ? (
-          <Menu>
-            <MenuButton
-              size={size}
-              as={Button}
-              colorScheme="teal"
-              leftIcon={<Icon as={FaCog} />}
-            >
-              Settings
-            </MenuButton>
-            <MenuList>
-              <MenuItem>
-                <Link href="/profile" className="flex items-center gap-x-2">
-                  <Icon as={FaUser} />
-                  <Text>Profile</Text>
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link
-                  href="/api/auth/logout"
-                  className="flex items-center gap-x-2"
-                >
-                  <Icon as={FaSignOutAlt} />
-                  <Text>Sign Out</Text>
-                </Link>
-              </MenuItem>
-            </MenuList>
-          </Menu>
-        )
-        : (
-          <Link href="/api/auth/login">
-            <Button
-              size={size}
-              colorScheme="teal"
-              className="flex w-full items-center gap-x-2"
-            >
-              <Icon as={FaSignInAlt} />
-              <Text>Sign In</Text>
-            </Button>
-          </Link>
-        )}
+      {user ? (
+        <Menu>
+          <MenuButton
+            size={size}
+            as={Button}
+            colorScheme="teal"
+            leftIcon={<Icon as={FaCog} />}
+          >
+            Settings
+          </MenuButton>
+          <MenuList>
+            <MenuItem>
+              <Link href="/profile" className="flex items-center gap-x-2">
+                <Icon as={FaUser} />
+                <Text>Profile</Text>
+              </Link>
+            </MenuItem>
+            <MenuItem>
+              <Link
+                href="/api/auth/logout"
+                className="flex items-center gap-x-2"
+              >
+                <Icon as={FaSignOutAlt} />
+                <Text>Sign Out</Text>
+              </Link>
+            </MenuItem>
+          </MenuList>
+        </Menu>
+      ) : (
+        <Link href="/api/auth/login">
+          <Button
+            size={size}
+            colorScheme="teal"
+            className="flex w-full items-center gap-x-2"
+          >
+            <Icon as={FaSignInAlt} />
+            <Text>Sign In</Text>
+          </Button>
+        </Link>
+      )}
     </>
   );
 };

@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis
+  YAxis,
 } from 'recharts';
 
 const ChessTotal: React.FC<{
@@ -70,27 +70,33 @@ export const ChessGames: React.FC<{ insights: Insights }> = ({ insights }) => {
             <div className="flex items-center gap-x-2 md:gap-x-4">
               <ChessTotal
                 value={insights?.games?.win ?? 0}
-                percentage={((insights?.games?.win ?? 0)
-                  / (insights?.games?.total ?? 1))
-                  * 100}
+                percentage={
+                  ((insights?.games?.win ?? 0) /
+                    (insights?.games?.total ?? 1)) *
+                  100
+                }
                 label="won"
                 iconAs={FaPlusSquare}
                 iconColor="teal"
               />
               <ChessTotal
                 value={insights?.games?.draw ?? 0}
-                percentage={((insights?.games?.draw ?? 0)
-                  / (insights?.games?.total ?? 1))
-                  * 100}
+                percentage={
+                  ((insights?.games?.draw ?? 0) /
+                    (insights?.games?.total ?? 1)) *
+                  100
+                }
                 label="drawn"
                 iconAs={FaSquare}
                 iconColor="gray"
               />
               <ChessTotal
                 value={insights?.games?.loss ?? 0}
-                percentage={((insights?.games?.loss ?? 0)
-                  / (insights?.games?.total ?? 1))
-                  * 100}
+                percentage={
+                  ((insights?.games?.loss ?? 0) /
+                    (insights?.games?.total ?? 1)) *
+                  100
+                }
                 label="lost"
                 iconAs={FaMinusSquare}
                 iconColor="red"

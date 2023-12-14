@@ -22,7 +22,7 @@ import {
   Text,
   Th,
   Thead,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { TimeRange } from '@chess/common/@types';
 import { GAP, TITLED_ABBREVIATIONS } from '@chess/common/constants';
@@ -40,7 +40,7 @@ import { ChangeEvent, useState } from 'react';
 import { FaBolt, FaClock, FaRocket } from 'react-icons/fa';
 
 const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsRapidRatingLast > 0
@@ -71,7 +71,7 @@ const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
 };
 
 const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsBlitzRatingLast > 0
@@ -102,7 +102,7 @@ const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
 };
 
 const BulletHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsBulletRatingLast > 0
@@ -147,19 +147,15 @@ const TitledStats: React.FC<{
             <StatNumber>{average}</StatNumber>
             <StatHelpText>Highest: {max}</StatHelpText>
           </Stat>
-          {icon
-            ? (
-              <div>
-                <Box
-                  bgColor={'teal.500'}
-                  color={'white'}
-                  className="rounded p-2"
-                >
-                  <Icon as={icon} boxSize={6} />
-                </Box>
-              </div>
-            )
-            : <></>}
+          {icon ? (
+            <div>
+              <Box bgColor={'teal.500'} color={'white'} className="rounded p-2">
+                <Icon as={icon} boxSize={6} />
+              </Box>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -200,7 +196,7 @@ const PlayersTable: React.FC<{ players: Player[] }> = ({ players = [] }) => {
                     countryCode = '',
                     statsRapidRatingLast = 0,
                     statsBlitzRatingLast = 0,
-                    statsBulletRatingLast = 0
+                    statsBulletRatingLast = 0,
                   },
                   index: number
                 ) => {
@@ -212,19 +208,16 @@ const PlayersTable: React.FC<{ players: Player[] }> = ({ players = [] }) => {
                           href={`/${username}`}
                           className="inline-flex items-center gap-2"
                         >
-                          {avatar.length > 0
-                            ? (
-                              <div
-                                className="aspect-square w-8 rounded bg-contain bg-center"
-                                style={{
-                                  backgroundImage: `url(${avatar})`
-                                }}
-                              />
-                            )
-                            : (
-                              <div className="aspect-square w-8 rounded border">
-                              </div>
-                            )}
+                          {avatar.length > 0 ? (
+                            <div
+                              className="aspect-square w-8 rounded bg-contain bg-center"
+                              style={{
+                                backgroundImage: `url(${avatar})`,
+                              }}
+                            />
+                          ) : (
+                            <div className="aspect-square w-8 rounded border"></div>
+                          )}
                           <Text className="inline">{username}</Text>
                         </Link>
                       </Td>
@@ -271,7 +264,7 @@ const TitledPage: NextPage<TitledPageProperties> = ({
   maxBlitzRating = 0,
   maxBulletRating = 0,
   total = 0,
-  players = []
+  players = [],
 }) => {
   const router = useRouter();
   const [timeRange, setTimeRange] = useState<TimeRange>(initialTimeRange);
@@ -304,7 +297,7 @@ const TitledPage: NextPage<TitledPageProperties> = ({
                         onClick={() => {
                           router.push({
                             pathname: router.pathname,
-                            query: { ...router.query, title: key }
+                            query: { ...router.query, title: key },
                           });
                         }}
                       >
@@ -324,7 +317,7 @@ const TitledPage: NextPage<TitledPageProperties> = ({
                     setTimeRange(newTimeRange);
                     router.push({
                       pathname: router.pathname,
-                      query: { ...router.query, timeRange: newTimeRange }
+                      query: { ...router.query, timeRange: newTimeRange },
                     });
                   }}
                 >
@@ -335,51 +328,51 @@ const TitledPage: NextPage<TitledPageProperties> = ({
                 </Select>
               </Box>
             </Box>
-            {players.length > 1
-              ? (
-                <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
-                  <div className="col-span-1">
-                    <TitledStats
-                      title="Rapid"
-                      average={averageRapidRating}
-                      max={maxRapidRating}
-                      icon={FaClock}
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <TitledStats
-                      title="Blitz"
-                      average={averageBlitzRating}
-                      max={maxBlitzRating}
-                      icon={FaBolt}
-                    />
-                  </div>
-                  <div className="col-span-1">
-                    <TitledStats
-                      title="Bullet"
-                      average={averageBulletRating}
-                      max={maxBulletRating}
-                      icon={FaRocket}
-                    />
-                  </div>
+            {players.length > 1 ? (
+              <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
+                <div className="col-span-1">
+                  <TitledStats
+                    title="Rapid"
+                    average={averageRapidRating}
+                    max={maxRapidRating}
+                    icon={FaClock}
+                  />
                 </div>
-              )
-              : <></>}
-            {players.length > 1
-              ? (
-                <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
-                  <div className="col-span-1">
-                    <RapidHistogramChart players={players} />
-                  </div>
-                  <div className="col-span-1">
-                    <BlitzHistogramChart players={players} />
-                  </div>
-                  <div className="col-span-1">
-                    <BulletHistogramChart players={players} />
-                  </div>
+                <div className="col-span-1">
+                  <TitledStats
+                    title="Blitz"
+                    average={averageBlitzRating}
+                    max={maxBlitzRating}
+                    icon={FaBolt}
+                  />
                 </div>
-              )
-              : <></>}
+                <div className="col-span-1">
+                  <TitledStats
+                    title="Bullet"
+                    average={averageBulletRating}
+                    max={maxBulletRating}
+                    icon={FaRocket}
+                  />
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
+            {players.length > 1 ? (
+              <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
+                <div className="col-span-1">
+                  <RapidHistogramChart players={players} />
+                </div>
+                <div className="col-span-1">
+                  <BlitzHistogramChart players={players} />
+                </div>
+                <div className="col-span-1">
+                  <BulletHistogramChart players={players} />
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
             <PlayersTable players={players} />
           </div>
         </div>
@@ -466,12 +459,12 @@ export const getServerSideProps: GetServerSideProps<
           maxBlitzRating = 0,
           maxBulletRating = 0,
           total = 0,
-          players = []
-        }
-      }
+          players = [],
+        },
+      },
     } = await apolloClient.query<{ titled: TitledPageProperties }>({
       query,
-      variables: { title, timeRange }
+      variables: { title, timeRange },
     });
     return {
       props: {
@@ -484,8 +477,8 @@ export const getServerSideProps: GetServerSideProps<
         maxBlitzRating,
         maxBulletRating,
         total,
-        players
-      }
+        players,
+      },
     };
   } catch (error) {
     logger.error(`getServerSideProps title=${title} error=${error}`);
@@ -500,8 +493,8 @@ export const getServerSideProps: GetServerSideProps<
         maxBlitzRating: 0,
         maxBulletRating: 0,
         total: 0,
-        players: []
-      }
+        players: [],
+      },
     };
   }
 };

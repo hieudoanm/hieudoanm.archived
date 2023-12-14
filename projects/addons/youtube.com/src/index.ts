@@ -11,7 +11,7 @@ async function deleteLikedVideos() {
 
   for (let i = 0; i < items.length; i++) {
     (items[i] as HTMLElement).click();
-    out = setTimeout(function() {
+    out = setTimeout(function () {
       if (
         document.querySelector(
           'tp-yt-paper-listbox.style-scope.ytd-menu-popup-renderer'

@@ -8,7 +8,7 @@ export type ErrorTemplateProperties = {
 
 export const ErrorTemplate: React.FC<ErrorTemplateProperties> = ({
   status = 500,
-  message = 'Error'
+  message = 'Error',
 }) => {
   return (
     <Layout>

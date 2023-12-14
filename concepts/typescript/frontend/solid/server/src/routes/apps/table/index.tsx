@@ -46,71 +46,71 @@ export const TablePage: Component = () => {
     <main class="flex min-h-screen flex-col">
       <Navbar />
       <div class="grow">
-        {countries.loading
-          ? (
-            <Container class="py-8">
-              <div class="flex h-full items-center justify-center">
-                <div class="mx-auto w-16">
-                  <CircularProgress size={'4rem'} class="mx-auto block" />
-                </div>
+        {countries.loading ? (
+          <Container class="py-8">
+            <div class="flex h-full items-center justify-center">
+              <div class="mx-auto w-16">
+                <CircularProgress size={'4rem'} class="mx-auto block" />
               </div>
-            </Container>
-          )
-          : <></>}
-        {countries()
-          ? (
-            <section class="py-8">
-              <Container>
-                <Paper class="border">
-                  <TableContainer>
-                    <Table>
-                      <TableHead>
-                        <TableRow>
-                          <TableCell>Name</TableCell>
-                          <TableCell align="center">ISO 3166-1</TableCell>
-                          <TableCell align="right">Region</TableCell>
-                          <TableCell align="right">Subregion</TableCell>
-                        </TableRow>
-                      </TableHead>
-                      <TableBody>
-                        <For
-                          each={countries()?.sort((a, b) => {
-                            if (a.region === b.region) {
-                              if (a.subregion === b.subregion) {
-                                return a.name.common > b.name.common ? 1 : -1;
-                              }
-                              return a.subregion > b.subregion ? 1 : -1;
+            </div>
+          </Container>
+        ) : (
+          <></>
+        )}
+        {countries() ? (
+          <section class="py-8">
+            <Container>
+              <Paper class="border">
+                <TableContainer>
+                  <Table>
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>Name</TableCell>
+                        <TableCell align="center">ISO 3166-1</TableCell>
+                        <TableCell align="right">Region</TableCell>
+                        <TableCell align="right">Subregion</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      <For
+                        each={countries()?.sort((a, b) => {
+                          if (a.region === b.region) {
+                            if (a.subregion === b.subregion) {
+                              return a.name.common > b.name.common ? 1 : -1;
                             }
-                            return a.region > b.region ? 1 : -1;
-                          })}
-                        >
-                          {(country: Country) => {
-                            return (
-                              <TableRow>
-                                <TableCell>
-                                  {country.flag} {country.name.common}
-                                </TableCell>
-                                <TableCell align="center">
-                                  {country.cca2} - {country.cca3}
-                                </TableCell>
-                                <TableCell align="right">
-                                  {country.region}
-                                </TableCell>
-                                <TableCell align="right">
-                                  {country.subregion}
-                                </TableCell>
-                              </TableRow>
-                            );
-                          }}
-                        </For>
-                      </TableBody>
-                    </Table>
-                  </TableContainer>
-                </Paper>
-              </Container>
-            </section>
-          )
-          : <></>}
+                            return a.subregion > b.subregion ? 1 : -1;
+                          }
+                          return a.region > b.region ? 1 : -1;
+                        })}
+                      >
+                        {(country: Country) => {
+                          return (
+                            <TableRow>
+                              <TableCell>
+                                {country.flag} {country.name.common}
+                              </TableCell>
+                              <TableCell align="center">
+                                {country.cca2} - {country.cca3}
+                              </TableCell>
+                              <TableCell align="right">
+                                {country.region}
+                              </TableCell>
+                              <TableCell align="right">
+                                {country.subregion}
+                              </TableCell>
+                            </TableRow>
+                          );
+                        }}
+                      </For>
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </Paper>
+            </Container>
+          </section>
+        ) : (
+          <></>
+        )}
       </div>
       <Footer />
     </main>

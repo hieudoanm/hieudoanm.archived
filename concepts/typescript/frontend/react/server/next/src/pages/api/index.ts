@@ -4,10 +4,7 @@ type Data = {
   status: string;
 };
 
-const handler = (
-  _request: NextApiRequest,
-  response: NextApiResponse<Data>
-) => {
+const handler = (_request: NextApiRequest, response: NextApiResponse<Data>) => {
   response.status(200).json({ status: 'healthy' });
 };
 

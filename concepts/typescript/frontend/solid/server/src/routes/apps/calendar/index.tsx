@@ -15,44 +15,44 @@ export const CalendarPage: Component = () => {
                 type: 'yearly',
                 date: 1,
                 month: 1,
-                description: 'New Year'
+                description: 'New Year',
               },
               {
                 type: 'yearly',
                 date: 30,
                 month: 4,
-                description: 'Reunification Day'
+                description: 'Reunification Day',
               },
               {
                 type: 'yearly',
                 date: 1,
                 month: 5,
-                description: 'Labour Day'
+                description: 'Labour Day',
               },
               {
                 type: 'yearly',
                 date: 2,
                 month: 9,
-                description: 'National Day'
+                description: 'National Day',
               },
               {
                 type: 'yearly',
                 date: 24,
                 month: 12,
-                description: 'Christmas Eve'
+                description: 'Christmas Eve',
               },
               {
                 type: 'yearly',
                 date: 25,
                 month: 12,
-                description: 'Christmas'
+                description: 'Christmas',
               },
               {
                 type: 'yearly',
                 date: 31,
                 month: 12,
-                description: 'New Year Eve'
-              }
+                description: 'New Year Eve',
+              },
             ]}
           />
         </Paper>

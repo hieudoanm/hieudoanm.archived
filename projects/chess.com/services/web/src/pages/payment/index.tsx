@@ -4,7 +4,7 @@ import {
   CardFooter,
   CardHeader,
   Container,
-  Divider
+  Divider,
 } from '@chakra-ui/react';
 import { Layout } from '@chess/layout';
 import { NextPage } from 'next';

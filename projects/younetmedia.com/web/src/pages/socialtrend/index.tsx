@@ -75,8 +75,7 @@ const SocialTrendMain: React.FC<{
   urlSearchParameters.set('limitDowntrend', '30');
   urlSearchParameters.set('selectedOption', 'all');
   urlSearchParameters.set('action', 'showMore');
-  const url =
-    `https://api-trend.younetmedia.com/socialtrend/hot-topic-ranking-list?${urlSearchParameters.toString()}`;
+  const url = `https://api-trend.younetmedia.com/socialtrend/hot-topic-ranking-list?${urlSearchParameters.toString()}`;
 
   const { loading, error, data } = useAxios<{
     detailStatistics: { total: any[] };
@@ -193,8 +192,8 @@ export const SocialTrendPage: NextPage = () => {
   });
 
   useEffect(() => {
-    const cacheAccessToken: string = sessionStorage.getItem('accessToken')
-      ?? '';
+    const cacheAccessToken: string =
+      sessionStorage.getItem('accessToken') ?? '';
     if (!cacheAccessToken) {
       alert(ERROR_MESSAGE_AUTHENTICATION);
       router.push('/auth');
@@ -218,7 +217,8 @@ export const SocialTrendPage: NextPage = () => {
                   setDateRange({
                     ...dateRange,
                     date: newDate ?? dayjs(toTime)
-                  })}
+                  })
+                }
                 className="w-full"
               />
             </div>
@@ -233,7 +233,8 @@ export const SocialTrendPage: NextPage = () => {
                   setDateRange({
                     ...dateRange,
                     range: Number.parseInt(event.target.value.toString(), 10)
-                  })}
+                  })
+                }
               >
                 <MenuItem value={oneDayTime}>24 hours</MenuItem>
                 <MenuItem value={sevenDaysTime}>7 days ago</MenuItem>
@@ -241,15 +242,15 @@ export const SocialTrendPage: NextPage = () => {
               </Select>
             </div>
           </div>
-          {accessToken.length > 0
-            ? (
-              <SocialTrendMain
-                accessToken={accessToken}
-                dateFrom={dayjs(dateRange.date.unix() * 1000 - dateRange.range)}
-                dateTo={dateRange.date}
-              />
-            )
-            : <></>}
+          {accessToken.length > 0 ? (
+            <SocialTrendMain
+              accessToken={accessToken}
+              dateFrom={dayjs(dateRange.date.unix() * 1000 - dateRange.range)}
+              dateTo={dateRange.date}
+            />
+          ) : (
+            <></>
+          )}
         </div>
       </main>
     </LocalizationProvider>

@@ -14,7 +14,9 @@ const main = async () => {
   for (const country of countries) {
     const { cca3 = '', flags = {} } = country;
     const { svg = '' } = flags;
-    if (!cca3 || !svg || !svg.includes('.svg')) { continue; }
+    if (!cca3 || !svg || !svg.includes('.svg')) {
+      continue;
+    }
     const filename = cca3.toLowerCase();
     try {
       const response = await fetch(svg);

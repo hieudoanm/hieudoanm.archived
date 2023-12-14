@@ -5,7 +5,7 @@ import {
   IndicesCreateResponse,
   IndicesDeleteResponse,
   QueryDslQueryContainer,
-  SearchResponse
+  SearchResponse,
 } from '@elastic/elasticsearch/lib/api/types';
 import { ELASTICSEARCH_NODE } from '../../environments';
 
@@ -52,5 +52,5 @@ class ElasticSearchClient {
 }
 
 export const elasticSearchClient = new ElasticSearchClient({
-  node: ELASTICSEARCH_NODE
+  node: ELASTICSEARCH_NODE,
 });

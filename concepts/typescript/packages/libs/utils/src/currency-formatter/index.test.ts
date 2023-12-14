@@ -3,7 +3,7 @@ import {
   eurFormatter,
   gbpFormatter,
   usdFormatter,
-  vndFormatter
+  vndFormatter,
 } from '.';
 
 describe('currencyFormatter', () => {

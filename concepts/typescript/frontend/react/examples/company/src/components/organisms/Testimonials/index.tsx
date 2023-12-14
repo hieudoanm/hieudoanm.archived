@@ -6,10 +6,10 @@ import Tabs from '../../atoms/Tabs';
 import { Testimonial } from '../../molecules/Testimonial';
 
 export const Testimonials: React.FC<{ testimonials: any[] }> = ({
-  testimonials = []
+  testimonials = [],
 }) => {
   return (
-    <section className="bg-[#FFF5ED]/50 py-8 md:py-16 testimonials-container">
+    <section className="testimonials-container bg-[#FFF5ED]/50 py-8 md:py-16">
       <Container>
         <Tabs tabPosition="bottom">
           {testimonials?.map(({ id, logo, quote, author }) => (

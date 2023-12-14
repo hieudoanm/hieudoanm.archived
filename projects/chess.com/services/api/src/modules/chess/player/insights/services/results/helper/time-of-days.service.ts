@@ -3,7 +3,7 @@ import { getPrismaClient } from '../../../../../../../common/prisma';
 import {
   DRAW_RESULTS,
   LOSS_RESULTS,
-  TIME_OF_DAYS
+  TIME_OF_DAYS,
 } from '../../../insights.constants';
 import { ResultsByTimeOfDay } from '../results.types';
 
@@ -17,10 +17,8 @@ export class TimeOfDaysService {
   private buildWinResultsByTimeOfDaysQuery(username: string) {
     const selectClause =
       'SELECT floor(extract(hour from g."endTime") / 6.0)::int as "timeOfDayIndex", COUNT(*) as "win"';
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) = 'win' AND g."rules" = 'chess' AND g."rated" = true`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} GROUP BY "timeOfDayIndex";`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) = 'win' AND g."rules" = 'chess' AND g."rated" = true`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} GROUP BY "timeOfDayIndex";`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -32,11 +30,9 @@ export class TimeOfDaysService {
     const selectClause =
       'SELECT floor(extract(hour from g."endTime") / 6.0)::int as "timeOfDayIndex", COUNT(*) as "draw"';
     const fromClause = 'FROM public."Game" as g';
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${drawList}) AND g."rules" = 'chess' AND g."rated" = true`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${drawList}) AND g."rules" = 'chess' AND g."rated" = true`;
     const groupByClause = 'GROUP BY "timeOfDayIndex"';
-    const query =
-      `${selectClause} ${fromClause} ${whereClause} ${groupByClause};`;
+    const query = `${selectClause} ${fromClause} ${whereClause} ${groupByClause};`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -48,11 +44,9 @@ export class TimeOfDaysService {
     const selectClause =
       'SELECT floor(extract(hour from g."endTime") / 6.0)::int as "timeOfDayIndex", COUNT(*) as "loss"';
     const fromClause = 'FROM public."Game" as g';
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${lossList}) AND g."rules" = 'chess' AND g."rated" = true`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${lossList}) AND g."rules" = 'chess' AND g."rated" = true`;
     const groupByClause = 'GROUP BY "timeOfDayIndex"';
-    const query =
-      `${selectClause} ${fromClause} ${whereClause} ${groupByClause};`;
+    const query = `${selectClause} ${fromClause} ${whereClause} ${groupByClause};`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -63,21 +57,17 @@ export class TimeOfDaysService {
     const winQuery = this.buildWinResultsByTimeOfDaysQuery(username);
     const drawQuery = this.buildDrawResultsByTimeOfDaysQuery(username);
     const lossQuery = this.buildLossResultsByTimeOfDaysQuery(username);
-    const [wins = [], draws = [], losses = []] = await this.prismaClient
-      .$transaction([
+    const [wins = [], draws = [], losses = []] =
+      await this.prismaClient.$transaction([
         this.prismaClient.$queryRaw<{ win: number; timeOfDayIndex: number }[]>(
           winQuery
         ),
-        this.prismaClient.$queryRaw<
-          { draw: number; timeOfDayIndex: number }[]
-        >(
+        this.prismaClient.$queryRaw<{ draw: number; timeOfDayIndex: number }[]>(
           drawQuery
         ),
-        this.prismaClient.$queryRaw<
-          { loss: number; timeOfDayIndex: number }[]
-        >(
+        this.prismaClient.$queryRaw<{ loss: number; timeOfDayIndex: number }[]>(
           lossQuery
-        )
+        ),
       ]);
 
     return wins.map(({ win, timeOfDayIndex: winTimeOfDayIndex }) => {

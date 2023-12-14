@@ -11,11 +11,9 @@ const writeCSV = (infos: any[]) => {
       const cells = headers
         .map((header: string) => {
           if (header === 'query') {
-            return `"${
-              (result[header] || '')
-                .replace(/"/g, "'")
-                .replace(/#/g, '')
-            }"`;
+            return `"${(result[header] || '')
+              .replace(/"/g, "'")
+              .replace(/#/g, '')}"`;
           }
           return result[header];
         })

@@ -4,7 +4,7 @@ export const StakeToPlayComponent = () => <StakeToPlay />;
 
 const Story = {
   title: 'organisms/StakeToPlay',
-  component: StakeToPlay
+  component: StakeToPlay,
 };
 
 export default Story;

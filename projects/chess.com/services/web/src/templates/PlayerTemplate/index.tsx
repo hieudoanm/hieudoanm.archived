@@ -12,7 +12,7 @@ export type PlayerTemplateProperties = {
 };
 
 export const PlayerTemplate: React.FC<PlayerTemplateProperties> = ({
-  player = {} as Player
+  player = {} as Player,
 }) => {
   const options: string[] = (player.archives || []).map((archive: string) => {
     const paths = archive.split('/');

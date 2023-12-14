@@ -4,7 +4,7 @@ import {
   AirVisualClient,
   CitiesResponse,
   CountriesResponse,
-  StatesResponse
+  StatesResponse,
 } from '..';
 
 describe('AirVisualClient', () => {

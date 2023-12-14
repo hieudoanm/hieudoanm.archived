@@ -12,7 +12,7 @@ const syncTitledPlayers = async (title: string) => {
   try {
     const titleUrl = `${CHESS_COM_URL}/titled/${title}`;
     const {
-      data: { players = [] }
+      data: { players = [] },
     } = await axios.get<{
       players: string[];
     }>(titleUrl);

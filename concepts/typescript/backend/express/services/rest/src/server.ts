@@ -29,16 +29,15 @@ const normalizePort = (value: string): string | number | boolean => {
 const main = async () => {
   // Server
   const httpServer: http.Server = http.createServer(app);
-  const apolloServer: ApolloServer<ApolloContext> = createApolloServer(
-    httpServer
-  );
+  const apolloServer: ApolloServer<ApolloContext> =
+    createApolloServer(httpServer);
   await apolloServer.start();
   app.use(
     '/api/graphql',
     cors<cors.CorsRequest>(),
     json(),
     expressMiddleware(apolloServer, {
-      context: async () => ({ dataSources: new DataSources() })
+      context: async () => ({ dataSources: new DataSources() }),
     })
   );
   // Port
@@ -47,9 +46,8 @@ const main = async () => {
   // on
   httpServer.on('listening', () => {
     const address = httpServer.address();
-    const bind: string = typeof address === 'string'
-      ? `pipe ${address}`
-      : `port ${address?.port}`;
+    const bind: string =
+      typeof address === 'string' ? `pipe ${address}` : `port ${address?.port}`;
     logger.info(`🚀 Server is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {

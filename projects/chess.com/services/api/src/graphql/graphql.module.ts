@@ -1,23 +1,23 @@
 import { mergeResolvers } from '@graphql-tools/merge';
 import {
   countriesResolvers,
-  countriesTypeDefs
+  countriesTypeDefs,
 } from './resolvers/countries/countries.schema';
 import {
   openingsResolvers,
-  openingsTypeDefs
+  openingsTypeDefs,
 } from './resolvers/openings/openings.schema';
 import {
   playerResolvers,
-  playerTypeDefs
+  playerTypeDefs,
 } from './resolvers/player/player.schema';
 import {
   streamersResolvers,
-  streamersTypeDefs
+  streamersTypeDefs,
 } from './resolvers/streamers/streamers.schema';
 import {
   titledResolvers,
-  titledTypeDefs
+  titledTypeDefs,
 } from './resolvers/titled/titled.schema';
 
 const rootResolvers = { Query: { status: (): string => 'OK' } };
@@ -38,7 +38,7 @@ export const resolvers = mergeResolvers([
   openingsResolvers,
   playerResolvers,
   streamersResolvers,
-  titledResolvers
+  titledResolvers,
 ]);
 
 export const typeDefs: string[] = [
@@ -47,5 +47,5 @@ export const typeDefs: string[] = [
   openingsTypeDefs,
   playerTypeDefs,
   streamersTypeDefs,
-  titledTypeDefs
+  titledTypeDefs,
 ];

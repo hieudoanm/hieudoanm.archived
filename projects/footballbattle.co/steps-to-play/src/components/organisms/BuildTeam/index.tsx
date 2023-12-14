@@ -42,10 +42,7 @@ const BuildTeam: React.FC = () => {
               <div className="w-1/2 md:w-full mx-auto">
                 <div className="border border-black rounded-xl h-full">
                   <div className="py-4 px-4">
-                    <div
-                      style={{ paddingBottom: '195%' }}
-                      className="relative"
-                    >
+                    <div style={{ paddingBottom: '195%' }} className="relative">
                       <div className="absolute top-0 bottom-0 left-0 right-0 mx-auto">
                         <div className="px-2 h-full">
                           <div className="flex items-center h-full">

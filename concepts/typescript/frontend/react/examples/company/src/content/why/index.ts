@@ -10,10 +10,10 @@ const reason: Reason = {
     'Medical and vision',
     'Life insurance',
     'HSAs and FSAs',
-    'Commuter benefits'
-  ]
+    'Commuter benefits',
+  ],
 };
 
 export const why: { reasons: Reason[] } = {
-  reasons: [reason, reason, reason]
+  reasons: [reason, reason, reason],
 };

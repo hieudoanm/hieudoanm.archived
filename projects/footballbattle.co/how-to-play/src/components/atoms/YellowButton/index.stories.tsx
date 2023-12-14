@@ -6,7 +6,7 @@ export const YellowButtonComponent = () => (
 
 const Story = {
   title: 'atoms/YellowButton',
-  component: YellowButton
+  component: YellowButton,
 };
 
 export default Story;

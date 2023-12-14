@@ -25,7 +25,7 @@ export class FootballClient {
     const url = `${BASE_URL}/competitions`;
     const headers = { 'X-Auth-Token': this.apiKey };
     return this.get<{ count: number; competitions: Competition[] }>(url, {
-      headers
+      headers,
     });
   }
 
@@ -38,7 +38,7 @@ export class FootballClient {
   public async getTeams(
     { limit = 50, offset = 0 }: { limit?: number; offset?: number } = {
       limit: 50,
-      offset: 0
+      offset: 0,
     }
   ): Promise<{ count: number; teams: Team[] }> {
     const urlSearchParams = new URLSearchParams();

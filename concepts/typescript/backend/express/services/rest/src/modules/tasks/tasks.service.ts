@@ -18,18 +18,18 @@ export class TasksService {
   async createTask({
     title,
     description = '',
-    listId
+    listId,
   }: TaskRequest): Promise<Task> {
     const id = v4();
     const task: Task = await prismaClient.task.create({
-      data: { id, title, description, completed: false, listId }
+      data: { id, title, description, completed: false, listId },
     });
     return task;
   }
 
   async getTask(id: string): Promise<Task> {
     const task: Task = await prismaClient.task.findFirstOrThrow({
-      where: { id }
+      where: { id },
     });
     return task;
   }
@@ -40,7 +40,7 @@ export class TasksService {
   ): Promise<Task> {
     const task: Task = await prismaClient.task.update({
       data: { title, description, completed, listId },
-      where: { id }
+      where: { id },
     });
     return task;
   }

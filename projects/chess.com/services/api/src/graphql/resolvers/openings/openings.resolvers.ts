@@ -10,6 +10,6 @@ export const resolvers = {
     ): Promise<Opening[]> => {
       const { openings } = await chessDataSource.getOpenings({ eco, name });
       return openings;
-    }
-  }
+    },
+  },
 };

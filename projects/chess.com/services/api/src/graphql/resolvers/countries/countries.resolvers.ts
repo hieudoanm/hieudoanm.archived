@@ -16,6 +16,6 @@ export const resolvers = {
       { chessDataSource }: ChessContext
     ): Promise<Country> => {
       return chessDataSource.getCountry(code);
-    }
-  }
+    },
+  },
 };

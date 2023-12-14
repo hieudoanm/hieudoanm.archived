@@ -8,18 +8,18 @@ import { Input } from '../../atoms/Input';
 
 export const Contact: React.FC<{ title?: string; description?: string }> = ({
   title = '',
-  description = ''
+  description = '',
 }) => {
   return (
     <section
       id="contact"
-      className="py-0 md:py-16 bg-[#F8F0EA] bg-bottom bg-contain bg-no-repeat"
+      className="bg-[#F8F0EA] bg-contain bg-bottom bg-no-repeat py-0 md:py-16"
       style={{ backgroundImage: `url(${background.src})` }}
     >
       <Container>
-        <div className="bg-white rounded-none md:rounded-2xl">
+        <div className="rounded-none bg-white md:rounded-2xl">
           <div className="px-4 py-8 md:px-8 md:py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
               <div className="col-span-1">
                 <Heading
                   title={title}
@@ -30,7 +30,7 @@ export const Contact: React.FC<{ title?: string; description?: string }> = ({
                 />
               </div>
               <div className="col-span-1">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                   <div className="col-span-1 md:col-span-2">
                     <Input
                       id="email"

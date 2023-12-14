@@ -20,7 +20,7 @@ export class GamesService {
     username: string,
     {
       month = new Date().getMonth() + 1,
-      year = new Date().getFullYear()
+      year = new Date().getFullYear(),
     }: { month: number; year: number }
   ): Promise<{ total: number; games: Game[] }> {
     logger.info(`getGames month=${month} year=${year}`);
@@ -28,15 +28,15 @@ export class GamesService {
       OR: [{ whiteUsername: username }, { blackUsername: username }],
       endTime: {
         gte: new Date(year, month - 1, 1),
-        lt: new Date(year, month, 1)
-      }
+        lt: new Date(year, month, 1),
+      },
     };
     const [total = 0, games = []] = await this.prismaClient.$transaction([
       this.prismaClient.game.count({ where }),
       this.prismaClient.game.findMany({
         where,
-        orderBy: { endTime: 'desc' }
-      })
+        orderBy: { endTime: 'desc' },
+      }),
     ]);
     return { total, games };
   }
@@ -44,10 +44,10 @@ export class GamesService {
   public async getGame(username: string, gameId: string): Promise<Game> {
     const where: Prisma.GameWhereInput = {
       OR: [{ whiteUsername: username }, { blackUsername: username }],
-      id: gameId
+      id: gameId,
     };
     const game: Game = await this.prismaClient.game.findFirstOrThrow({
-      where
+      where,
     });
     return game;
   }
@@ -62,7 +62,7 @@ export class GamesService {
       const upsertArguments = {
         create: game,
         update: game,
-        where: { id: game.id }
+        where: { id: game.id },
       };
       return this.prismaClient.game.upsert(upsertArguments);
     });
@@ -87,26 +87,26 @@ export class GamesService {
           rules = '',
           accuracies: { white: whiteAccuracy = 0, black: blackAccuracy = 0 } = {
             white: 0,
-            black: 0
+            black: 0,
           },
           white: {
             username: whiteUsername = '',
             result: whiteResult = '',
-            rating: whiteRating = 0
+            rating: whiteRating = 0,
           } = {
             username: '',
             result: '',
-            rating: 0
+            rating: 0,
           },
           black: {
             username: blackUsername = '',
             result: blackResult = '',
-            rating: blackRating = 0
+            rating: blackRating = 0,
           } = {
             username: '',
             result: '',
-            rating: 0
-          }
+            rating: 0,
+          },
         } = chessGame;
         const endDate: Date = new Date(endTime * 1000);
         const d: Date = new Date();
@@ -137,7 +137,7 @@ export class GamesService {
           whiteRating,
           blackRating,
           createdAt: d,
-          updatedAt: d
+          updatedAt: d,
         });
       } catch (error) {
         logger.error(`mapGames error=${error}`);
@@ -155,12 +155,12 @@ export class GamesService {
     synced: number;
     existed: number;
   }> {
-    const chessGames: ChessGame[] = await this.chessClient
-      .getChessGamesByYearAndMonth(username, year, month);
+    const chessGames: ChessGame[] =
+      await this.chessClient.getChessGamesByYearAndMonth(username, year, month);
     const chessGameUuids: string[] = chessGames.map(({ uuid }) => uuid);
     const { games: databaseGames = [] } = await this.getGames(username, {
       year,
-      month
+      month,
     });
     const databaseGameIds: Set<string> = new Set(
       databaseGames.map(({ id }) => id)
@@ -176,7 +176,7 @@ export class GamesService {
     return {
       total: chessGames.length,
       existed: databaseGames.length,
-      synced: games.length
+      synced: games.length,
     };
   }
 
@@ -184,14 +184,14 @@ export class GamesService {
     username: string,
     {
       month = new Date().getMonth() + 1,
-      year = new Date().getFullYear()
+      year = new Date().getFullYear(),
     }: { month: number; year: number }
   ): Promise<{ total: number; synced: number; existed: number }> {
     logger.info(`syncGames month=${month} year=${year}`);
     const {
       total = 0,
       synced = 0,
-      existed = 0
+      existed = 0,
     } = await this.syncGamesByYearAndMonth(username, year, month);
     return { total, synced, existed };
   }

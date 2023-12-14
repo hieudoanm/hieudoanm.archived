@@ -8,8 +8,8 @@ const loginHandler = async (
   try {
     await handleLogin(request, response, {
       authorizationParams: {
-        screen_hint: 'login'
-      }
+        screen_hint: 'login',
+      },
     });
   } catch (error) {
     response.status((error as any).status || 400).end((error as Error).message);

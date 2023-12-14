@@ -30,5 +30,5 @@ export const CURRENCIES: Record<string, string> = {
   THB: 'Thai Baht',
   TRY: 'Turkish Lira',
   USD: 'United States Dollar',
-  ZAR: 'South African Rand'
+  ZAR: 'South African Rand',
 };

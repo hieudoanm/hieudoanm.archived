@@ -6,7 +6,7 @@ export const StakeToPlayInstructionsComponent = () => (
 
 const Story = {
   title: 'molecules/StakeToPlayInstructions',
-  component: StakeToPlayInstructions
+  component: StakeToPlayInstructions,
 };
 
 export default Story;

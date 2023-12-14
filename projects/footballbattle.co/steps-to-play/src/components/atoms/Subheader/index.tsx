@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Subheader: React.FC<{ children?: React.ReactNode }> = ({
-  children = <></>
+  children = <></>,
 }) => {
   return (
     <h2 className="text-center text-lg text-[#858585] font-abel">{children}</h2>

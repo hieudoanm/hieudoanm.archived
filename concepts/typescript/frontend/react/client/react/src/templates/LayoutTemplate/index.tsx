@@ -7,7 +7,7 @@ export type LayoutTemplateProps = {
 };
 
 export const LayoutTemplate: React.FC<LayoutTemplateProps> = ({
-  children = <></>
+  children = <></>,
 }) => {
   return (
     <div className="flex min-h-screen flex-col">

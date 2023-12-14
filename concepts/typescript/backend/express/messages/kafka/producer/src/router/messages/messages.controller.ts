@@ -11,7 +11,7 @@ export class MessagesController {
   ): Promise<{ status: string }> {
     await producer.send({
       topic: configs.kafka.topic,
-      messages: [{ value: message }]
+      messages: [{ value: message }],
     });
     return { status: 'success' };
   }

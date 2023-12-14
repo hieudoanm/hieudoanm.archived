@@ -17,10 +17,10 @@ export class AuthService {
   async signIn({
     email = '',
     username = '',
-    password = ''
+    password = '',
   }: TokenRequest): Promise<{ token: string }> {
     const user: User = await prismaClient.user.findFirstOrThrow({
-      where: { OR: [{ username }, { email }] }
+      where: { OR: [{ username }, { email }] },
     });
     const { id: userId, password: hash } = user;
     const isMatch = await bcrypt.compare(password, hash);
@@ -31,7 +31,7 @@ export class AuthService {
         'tasks:read',
         'tasks:write',
         'users:read',
-        'users:write'
+        'users:write',
       ];
       const token: string = jwt.sign({ userId, scopes }, JWT_SECRET);
       return { token };
@@ -42,18 +42,18 @@ export class AuthService {
   async signUp({
     email = '',
     username = '',
-    password = ''
+    password = '',
   }: TokenRequest): Promise<Pick<User, 'id' | 'username'>> {
     const id: string = v4();
     const hash: string = await bcrypt.hash(password, SALT_OR_ROUNDS);
     const user: Pick<User, 'id' | 'username'> = await prismaClient.user.create({
       data: { id, email, username, password: hash },
-      select: { id: true, username: true }
+      select: { id: true, username: true },
     });
     const { id: userId } = user;
     const listId: string = v4();
     await prismaClient.list.create({
-      data: { id: listId, title: 'Tasks', userId, primary: true }
+      data: { id: listId, title: 'Tasks', userId, primary: true },
     });
     return user;
   }

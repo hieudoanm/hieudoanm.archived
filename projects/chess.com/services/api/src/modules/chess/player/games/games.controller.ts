@@ -24,9 +24,10 @@ export class GamesController extends Controller {
   @Post('player/:username/games')
   async syncGames(
     @Path('username') username: string,
-    @Body() {
+    @Body()
+    {
       month = new Date().getMonth() + 1,
-      year = new Date().getFullYear()
+      year = new Date().getFullYear(),
     }: { month: number; year: number }
   ): Promise<{
     total: number;

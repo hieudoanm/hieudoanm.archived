@@ -18,10 +18,10 @@ export class LichessClient {
       const config = {
         method: 'get',
         maxBodyLength: Number.POSITIVE_INFINITY,
-        url
+        url,
       };
       const {
-        data: { fen: fenString = '', knodes = 0, depth = 0, pvs = [] }
+        data: { fen: fenString = '', knodes = 0, depth = 0, pvs = [] },
       } = await axios.request<CloudEvaluation>(config);
       return {
         fen: fenString,
@@ -30,8 +30,8 @@ export class LichessClient {
         principalVariationSearch: pvs.map(({ cp, moves }: PVS) => ({
           nextMoves: moves,
           centipawn: cp,
-          pawn: Number.parseFloat((cp / 100).toFixed(2))
-        }))
+          pawn: Number.parseFloat((cp / 100).toFixed(2)),
+        })),
       };
     } catch (error) {
       logger.error(`getCloudEvaluation error=${error}`);

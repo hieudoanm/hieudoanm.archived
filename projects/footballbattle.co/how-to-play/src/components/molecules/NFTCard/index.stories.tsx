@@ -6,7 +6,7 @@ export const NFTCardComponent = () => (
 
 const Story = {
   title: 'molecules/NFTCard',
-  component: NFTCard
+  component: NFTCard,
 };
 
 export default Story;

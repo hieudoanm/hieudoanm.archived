@@ -7,7 +7,7 @@ describe('csvToJSON', () => {
 2,test2,female`;
     const json = [
       { id: '1', name: 'test1', gender: 'male' },
-      { id: '2', name: 'test2', gender: 'female' }
+      { id: '2', name: 'test2', gender: 'female' },
     ];
     expect(csvToJSON(csv)).toEqual(json);
   });
@@ -18,7 +18,7 @@ describe('csvToJSON', () => {
 "2";"test2";"female"`;
     const json = [
       { id: '1', name: 'test1', gender: 'male' },
-      { id: '2', name: 'test2', gender: 'female' }
+      { id: '2', name: 'test2', gender: 'female' },
     ];
     expect(csvToJSON(csv, { delimiter: ';', quote: '"' })).toEqual(json);
   });

@@ -4,7 +4,7 @@ export const RedButtonComponent = () => <RedButton>RedButton</RedButton>;
 
 const Story = {
   title: 'atoms/RedButton',
-  component: RedButton
+  component: RedButton,
 };
 
 export default Story;

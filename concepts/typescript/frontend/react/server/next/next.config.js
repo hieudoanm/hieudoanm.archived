@@ -6,13 +6,13 @@ const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   skipWaiting: true,
-  disable: !isProd
+  disable: !isProd,
 });
 const nextConfig = {
   reactStrictMode: true,
   basePath: isProd ? '/nextjs-template' : undefined,
   assetPrefix: isProd ? '/nextjs-template/' : undefined,
-  images: { unoptimized: true }
+  images: { unoptimized: true },
 };
 
 module.exports = withPWA(nextConfig);

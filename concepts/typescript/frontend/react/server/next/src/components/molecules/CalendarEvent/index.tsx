@@ -18,11 +18,11 @@ export const CalendarEvent: React.FC<CalendarEventProps> = ({
   iDate,
   iMonth,
   iYear,
-  description = ''
+  description = '',
 }) => {
   if (
-    (type === 'yearly' && month === iMonth && date === iDate)
-    || (year === iYear && month === iMonth && date === iDate)
+    (type === 'yearly' && month === iMonth && date === iDate) ||
+    (year === iYear && month === iMonth && date === iDate)
   ) {
     return (
       <div

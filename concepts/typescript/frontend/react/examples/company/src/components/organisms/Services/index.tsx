@@ -18,13 +18,13 @@ export const Services: React.FC<{
 }> = ({
   title: sectionTitle = '',
   description: sectionDescription = '',
-  services = []
+  services = [],
 }) => {
   return (
     <section id="services" className="bg-[#FFF5ED]/50 py-8 md:py-16">
       <Container>
         <Heading title={sectionTitle} description={sectionDescription} />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {services.map(({ id, image, title, description }: ServiceType) => {
             return (
               <Service

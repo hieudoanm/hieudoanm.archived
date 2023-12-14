@@ -13,7 +13,7 @@ export const Input: React.FC<InputProps> = ({
   onChange = (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
     return;
-  }
+  },
 }) => {
   return <StyledInput value={value} onChange={onChange} />;
 };
@@ -23,7 +23,7 @@ Input.defaultProps = {
   value: '',
   onChange: (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
-  }
+  },
 };
 
 export default Input;

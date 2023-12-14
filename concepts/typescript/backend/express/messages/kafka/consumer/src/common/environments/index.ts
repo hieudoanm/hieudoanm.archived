@@ -12,6 +12,6 @@ export default {
     brokers: KAFKA_BROKERS,
     clientId: KAFKA_CLIENT_ID,
     groupId: KAFKA_GROUP_ID,
-    topic: KAFKA_TOPIC
-  }
+    topic: KAFKA_TOPIC,
+  },
 };

@@ -63,7 +63,7 @@ const SignInPage: React.FC = () => {
                       >
                         {showPassword ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
-                    )
+                    ),
                   }}
                   required
                 />

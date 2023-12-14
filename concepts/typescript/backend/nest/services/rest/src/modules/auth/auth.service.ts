@@ -18,21 +18,23 @@ export class AuthService {
   async signIn({
     email = '',
     username = '',
-    password = ''
+    password = '',
   }: TokenRequestDto): Promise<TokenResponseDto> {
     const user: User = await this.prismaService.user.findFirstOrThrow({
-      where: { OR: [{ email, username }] }
+      where: { OR: [{ email, username }] },
     });
     const { id: user_id, password: hash } = user;
     const isMatch = await bcrypt.compare(password, hash);
-    if (!isMatch) { throw new Error('Login Error'); }
+    if (!isMatch) {
+      throw new Error('Login Error');
+    }
     const scopes = [
       'lists:read',
       'lists:write',
       'tasks:read',
       'tasks:write',
       'users:read',
-      'users:write'
+      'users:write',
     ];
     const token: string = this.jwtService.sign({ user_id, scopes });
     return { token };
@@ -41,21 +43,18 @@ export class AuthService {
   async signUp({
     email,
     username,
-    password
+    password,
   }: UserRequestDto): Promise<TokenResponseDto> {
     const id: string = v4();
-    const hash: string = await bcrypt.hash(
-      password,
-      environments.saltOrRounds
-    );
+    const hash: string = await bcrypt.hash(password, environments.saltOrRounds);
     const user: UserResponseDto = await this.prismaService.user.create({
       data: { id, email, username, password: hash },
-      select: { id: true, email: true, username: true }
+      select: { id: true, email: true, username: true },
     });
     const { id: userId } = user;
     const listId: string = v4();
     await this.prismaService.list.create({
-      data: { id: listId, title: 'Tasks', userId, primary: true }
+      data: { id: listId, title: 'Tasks', userId, primary: true },
     });
     const scopes: string[] = [
       'lists:read',
@@ -63,7 +62,7 @@ export class AuthService {
       'tasks:read',
       'tasks:write',
       'users:read',
-      'users:write'
+      'users:write',
     ];
     const token: string = this.jwtService.sign({ user_id: userId, scopes });
     return { token };

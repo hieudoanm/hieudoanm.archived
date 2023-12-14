@@ -8,8 +8,8 @@ const rootTypeDefs = `#graphql
 
 const rootResolvers = {
   Query: {
-    status: (): string => 'OK'
-  }
+    status: (): string => 'OK',
+  },
 };
 
 export const typeDefs = [rootTypeDefs];

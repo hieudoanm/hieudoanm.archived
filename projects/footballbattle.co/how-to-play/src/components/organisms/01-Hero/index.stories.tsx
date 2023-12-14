@@ -4,7 +4,7 @@ export const HeroComponent = () => <Hero />;
 
 const Story = {
   title: 'organisms/Hero',
-  component: Hero
+  component: Hero,
 };
 
 export default Story;

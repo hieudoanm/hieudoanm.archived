@@ -67,7 +67,7 @@ export const SignUpPage: Component = () => {
                       >
                         {showPassword() ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
-                    )
+                    ),
                   }}
                   required
                 />

@@ -6,7 +6,7 @@ describe('HealthController', () => {
 
   beforeEach(async () => {
     const health: TestingModule = await Test.createTestingModule({
-      controllers: [HealthController]
+      controllers: [HealthController],
     }).compile();
 
     healthController = health.get<HealthController>(HealthController);

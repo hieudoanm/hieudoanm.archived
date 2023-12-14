@@ -5,9 +5,9 @@ const meta = {
   title: 'Components/Input',
   component: Input,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
 } satisfies Meta<typeof Input>;
 
 export default meta;
@@ -15,5 +15,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
-  args: { value: '' }
+  args: { value: '' },
 };

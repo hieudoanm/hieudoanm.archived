@@ -12,21 +12,21 @@ export const services = {
       image: service4,
       title: 'Ultimate development',
       description:
-        'Get your info tests delivered at home collect a sample from the your progress tests.'
+        'Get your info tests delivered at home collect a sample from the your progress tests.',
     },
     {
       id: 'typescript',
       image: typescript,
       title: 'TypeScript',
       description:
-        'JavaScript superset with optional static typing for improved code quality.'
+        'JavaScript superset with optional static typing for improved code quality.',
     },
     {
       id: 'nodejs',
       image: nodejs,
       title: 'Node.js',
       description:
-        'JavaScript runtime for building server-side and network apps.'
-    }
-  ]
+        'JavaScript runtime for building server-side and network apps.',
+    },
+  ],
 };

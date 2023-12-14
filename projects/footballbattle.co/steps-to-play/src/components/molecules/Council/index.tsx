@@ -23,7 +23,7 @@ const Councilor: React.FC<{
             className="bg-cover"
             style={{
               paddingBottom: '100%',
-              backgroundImage: `url(${image})`
+              backgroundImage: `url(${image})`,
             }}
           />
           <div className="px-4 pt-6 pb-4">
@@ -235,7 +235,7 @@ const Council: React.FC = () => {
         <CouncilSwiper
           navigation={{
             nextEl: '.swiper-button-next-mobile',
-            prevEl: '.swiper-button-prev-mobile'
+            prevEl: '.swiper-button-prev-mobile',
           }}
           slidesPerView={1}
         />

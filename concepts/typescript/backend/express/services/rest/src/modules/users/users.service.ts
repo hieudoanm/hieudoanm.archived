@@ -17,7 +17,7 @@ export class UsersService {
     const user: UserResponse = await prismaClient.user.update({
       data: { email },
       where: { id },
-      select
+      select,
     });
     return user;
   }
@@ -27,7 +27,7 @@ export class UsersService {
     const user: UserResponse = await prismaClient.user.update({
       data: { username },
       where: { id },
-      select
+      select,
     });
     return user;
   }
@@ -39,17 +39,17 @@ export class UsersService {
     const user: UserResponse = await prismaClient.user.update({
       data: { password: hash },
       where: { id },
-      select
+      select,
     });
     return user;
   }
 
   async getUser(id: string): Promise<Pick<User, 'id' | 'username'>> {
     const select = { id: true, email: true, username: true };
-    const user: Pick<User, 'id' | 'username'> = await prismaClient.user
-      .findFirstOrThrow({
+    const user: Pick<User, 'id' | 'username'> =
+      await prismaClient.user.findFirstOrThrow({
         where: { id },
-        select
+        select,
       });
     return user;
   }

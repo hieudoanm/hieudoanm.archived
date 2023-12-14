@@ -14,7 +14,7 @@ import {
   Td,
   Text,
   Textarea,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { ANALYSE_API } from '@chess/common/environments';
 import { logger } from '@chess/common/libs/logger';
@@ -42,7 +42,7 @@ const analyse = async (fen: string): Promise<AnalyseResponse> => {
       method: 'POST',
       data: requestData,
       maxBodyLength: Number.POSITIVE_INFINITY,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     };
     const { data } = await axios.request<AnalyseResponse>(config);
     return data;
@@ -56,14 +56,14 @@ const AnalysisPage: NextPage = () => {
   const [game, setGame] = useState(new Chess());
   const [{ fen, pgn }, setBoard] = useState({
     fen: game.fen(),
-    pgn: game.pgn()
+    pgn: game.pgn(),
   });
   const [evaluation, setEvaluation] = useState<
     AnalyseResponse & { loading: boolean }
   >({
     loading: true,
     centipawn: 0,
-    topMoves: []
+    topMoves: [],
   });
 
   const makeAMove = (
@@ -168,66 +168,58 @@ const AnalysisPage: NextPage = () => {
                   </Box>
                 </CardHeader>
                 <Divider />
-                {evaluation.loading
-                  ? (
-                    <Box className="border-b py-2 text-center">
-                      <Spinner size="xs" />
-                    </Box>
-                  )
-                  : (
-                    <TableContainer>
-                      <Table>
-                        <Tbody>
-                          {evaluation.topMoves.map(
-                            ({ centipawn = 0, moves = [] }) => {
-                              const moveNumber: number = game.moveNumber();
-                              const turn: string = game.turn();
-                              const clonedMoves = JSON.parse(
-                                JSON.stringify(moves)
-                              );
-                              if (turn === 'b') {
-                                clonedMoves.unshift('...');
-                              }
-                              const fullMoves: string[][] = chunk(
-                                clonedMoves,
-                                2
-                              );
-                              const movesString = fullMoves
-                                .map(([white, black], index: number) => {
-                                  const nextMoveNumber: number = moveNumber
-                                    + index;
-                                  const whiteMove: string = white ?? '';
-                                  const blackMove: string = black ?? '';
-                                  return `${nextMoveNumber}. ${whiteMove} ${blackMove}`;
-                                })
-                                .join(' ')
-                                .trim();
-                              return (
-                                <Tr key={moves.join('-')}>
-                                  <Td className="w-4 px-2 py-1">
-                                    <Badge
-                                      colorScheme="teal"
-                                      textAlign="center"
-                                    >
-                                      <pre>{(centipawn / 100).toFixed(2)}</pre>
-                                    </Badge>
-                                  </Td>
-                                  <Td className="p-1 pl-0">
-                                    <Text
-                                      className="w-full overflow-hidden truncate"
-                                      dangerouslySetInnerHTML={{
-                                        __html: movesString
-                                      }}
-                                    />
-                                  </Td>
-                                </Tr>
-                              );
+                {evaluation.loading ? (
+                  <Box className="border-b py-2 text-center">
+                    <Spinner size="xs" />
+                  </Box>
+                ) : (
+                  <TableContainer>
+                    <Table>
+                      <Tbody>
+                        {evaluation.topMoves.map(
+                          ({ centipawn = 0, moves = [] }) => {
+                            const moveNumber: number = game.moveNumber();
+                            const turn: string = game.turn();
+                            const clonedMoves = JSON.parse(
+                              JSON.stringify(moves)
+                            );
+                            if (turn === 'b') {
+                              clonedMoves.unshift('...');
                             }
-                          )}
-                        </Tbody>
-                      </Table>
-                    </TableContainer>
-                  )}
+                            const fullMoves: string[][] = chunk(clonedMoves, 2);
+                            const movesString = fullMoves
+                              .map(([white, black], index: number) => {
+                                const nextMoveNumber: number =
+                                  moveNumber + index;
+                                const whiteMove: string = white ?? '';
+                                const blackMove: string = black ?? '';
+                                return `${nextMoveNumber}. ${whiteMove} ${blackMove}`;
+                              })
+                              .join(' ')
+                              .trim();
+                            return (
+                              <Tr key={moves.join('-')}>
+                                <Td className="w-4 px-2 py-1">
+                                  <Badge colorScheme="teal" textAlign="center">
+                                    <pre>{(centipawn / 100).toFixed(2)}</pre>
+                                  </Badge>
+                                </Td>
+                                <Td className="p-1 pl-0">
+                                  <Text
+                                    className="w-full overflow-hidden truncate"
+                                    dangerouslySetInnerHTML={{
+                                      __html: movesString,
+                                    }}
+                                  />
+                                </Td>
+                              </Tr>
+                            );
+                          }
+                        )}
+                      </Tbody>
+                    </Table>
+                  </TableContainer>
+                )}
                 <Table>
                   <Tbody>
                     {chunk(game.history(), 2).map(

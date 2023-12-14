@@ -6,7 +6,7 @@ import { LayoutTemplate } from '..';
 describe('LayoutTemplate', () => {
   it('to match snapshot without children', () => {
     const { container } = render(<LayoutTemplate />, {
-      wrapper: BrowserRouter
+      wrapper: BrowserRouter,
     });
     expect(container).toMatchSnapshot();
   });

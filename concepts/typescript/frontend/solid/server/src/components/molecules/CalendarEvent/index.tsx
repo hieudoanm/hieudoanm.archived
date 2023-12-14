@@ -17,12 +17,12 @@ export const CalendarEvent: Component<CalendarEventProps> = (_props) => {
   console.log(props.type, props.date, props.iDate, props.month, props.iMonth);
 
   if (
-    (props.type === 'yearly'
-      && props.month === props.iMonth
-      && props.date === props.iDate)
-    || (props.year === props.iYear
-      && props.month === props.iMonth
-      && props.date === props.iDate)
+    (props.type === 'yearly' &&
+      props.month === props.iMonth &&
+      props.date === props.iDate) ||
+    (props.year === props.iYear &&
+      props.month === props.iMonth &&
+      props.date === props.iDate)
   ) {
     return (
       <div

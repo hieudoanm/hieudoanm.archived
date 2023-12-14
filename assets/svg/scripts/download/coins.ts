@@ -15,20 +15,19 @@ const main = async () => {
   for (let page = 0; page <= pages; page++) {
     console.log('page', page);
     const offset: number = page * limit;
-    const url: string =
-      `https://api.coinranking.com/v2/coins?limit=${limit}&offset=${offset}`;
+    const url: string = `https://api.coinranking.com/v2/coins?limit=${limit}&offset=${offset}`;
     const response: Response = await fetch(url, {
-      headers: { 'x-access-token': API_KEY_COIN_RANKING }
+      headers: { 'x-access-token': API_KEY_COIN_RANKING },
     });
     const data = await response.json();
     const coins = data?.data?.coins ?? [];
     for (const coin of coins) {
       const { symbol = '', iconUrl = '' } = coin;
       if (
-        !symbol
-        || !iconUrl
-        || !iconUrl.includes('.svg')
-        || iconUrl.includes('.png')
+        !symbol ||
+        !iconUrl ||
+        !iconUrl.includes('.svg') ||
+        iconUrl.includes('.png')
       ) {
         continue;
       }

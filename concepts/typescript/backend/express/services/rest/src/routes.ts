@@ -9,7 +9,7 @@ import {
   TsoaResponse,
   TsoaRoute,
   ValidateError,
-  ValidationService
+  ValidationService,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AuthController } from './modules/auth/auth.controller';
@@ -35,41 +35,41 @@ const models: TsoaRoute.Models = {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         id: { dataType: 'string', required: true },
-        username: { dataType: 'string', required: true }
+        username: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'TokenRequest': {
+  TokenRequest: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         password: { dataType: 'string', required: true },
         username: { dataType: 'string', required: true },
-        email: { dataType: 'string', required: true }
+        email: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'TokenResponse': {
+  TokenResponse: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: { token: { dataType: 'string', required: true } },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'HealthResponse': {
+  HealthResponse: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: { status: { dataType: 'string', required: true } },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   '%24Result.DefaultSelection_Prisma.%24ListPayload_': {
@@ -80,27 +80,27 @@ const models: TsoaRoute.Models = {
         userId: { dataType: 'string', required: true },
         primary: { dataType: 'boolean', required: true },
         title: { dataType: 'string', required: true },
-        id: { dataType: 'string', required: true }
+        id: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'List': {
+  List: {
     dataType: 'refAlias',
     type: {
       ref: '%24Result.DefaultSelection_Prisma.%24ListPayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'ListRequest': {
+  ListRequest: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: { title: { dataType: 'string', required: true } },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   '%24Result.DefaultSelection_Prisma.%24TaskPayload_': {
@@ -112,21 +112,21 @@ const models: TsoaRoute.Models = {
         completed: { dataType: 'boolean', required: true },
         description: { dataType: 'string', required: true },
         title: { dataType: 'string', required: true },
-        id: { dataType: 'string', required: true }
+        id: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Task': {
+  Task: {
     dataType: 'refAlias',
     type: {
       ref: '%24Result.DefaultSelection_Prisma.%24TaskPayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'TaskRequest': {
+  TaskRequest: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -134,10 +134,10 @@ const models: TsoaRoute.Models = {
         completed: { dataType: 'boolean' },
         description: { dataType: 'string' },
         title: { dataType: 'string', required: true },
-        listId: { dataType: 'string', required: true }
+        listId: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'Pick_User.id-or-email-or-username_': {
@@ -147,24 +147,24 @@ const models: TsoaRoute.Models = {
       nestedProperties: {
         id: { dataType: 'string', required: true },
         username: { dataType: 'string', required: true },
-        email: { dataType: 'string', required: true }
+        email: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'UserRequest': {
+  UserRequest: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         password: { dataType: 'string', required: true },
         username: { dataType: 'string', required: true },
-        email: { dataType: 'string', required: true }
+        email: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
-  }
+      validators: {},
+    },
+  },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 };
 const validationService = new ValidationService(models);
@@ -182,7 +182,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(AuthController.prototype.signUp),
     function AuthController_signUp(request: any, response: any, next: any) {
       const args = {
-        undefined: { in: 'body', required: true, ref: 'TokenRequest' }
+        undefined: { in: 'body', required: true, ref: 'TokenRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -210,7 +210,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(AuthController.prototype.signIn),
     function AuthController_signIn(request: any, response: any, next: any) {
       const args = {
-        undefined: { in: 'body', required: true, ref: 'TokenRequest' }
+        undefined: { in: 'body', required: true, ref: 'TokenRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -296,7 +296,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(ListsController.prototype.getList),
     function ListsController_getList(request: any, response: any, next: any) {
       const args = {
-        id: { in: 'path', name: 'id', required: true, dataType: 'string' }
+        id: { in: 'path', name: 'id', required: true, dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -333,9 +333,9 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
-        undefined: { in: 'body', required: true, ref: 'ListRequest' }
+        undefined: { in: 'body', required: true, ref: 'ListRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -372,10 +372,10 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
         id: { in: 'path', name: 'id', required: true, dataType: 'string' },
-        undefined: { in: 'body', required: true, ref: 'ListRequest' }
+        undefined: { in: 'body', required: true, ref: 'ListRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -412,9 +412,9 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
-        id: { in: 'path', name: 'id', required: true, dataType: 'string' }
+        id: { in: 'path', name: 'id', required: true, dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -474,7 +474,7 @@ export function RegisterRoutes(app: Router) {
       next: any
     ) {
       const args = {
-        undefined: { in: 'body', required: true, ref: 'TaskRequest' }
+        undefined: { in: 'body', required: true, ref: 'TaskRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -503,7 +503,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(TasksController.prototype.getTask),
     function TasksController_getTask(request: any, response: any, next: any) {
       const args = {
-        id: { in: 'path', name: 'id', required: true, dataType: 'string' }
+        id: { in: 'path', name: 'id', required: true, dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -537,7 +537,7 @@ export function RegisterRoutes(app: Router) {
     ) {
       const args = {
         id: { in: 'path', name: 'id', required: true, dataType: 'string' },
-        undefined: { in: 'body', required: true, ref: 'TaskRequest' }
+        undefined: { in: 'body', required: true, ref: 'TaskRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -570,7 +570,7 @@ export function RegisterRoutes(app: Router) {
       next: any
     ) {
       const args = {
-        id: { in: 'path', name: 'id', required: true, dataType: 'string' }
+        id: { in: 'path', name: 'id', required: true, dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -603,8 +603,8 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
-        }
+          dataType: 'object',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -641,9 +641,9 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
-        undefined: { in: 'body', required: true, ref: 'UserRequest' }
+        undefined: { in: 'body', required: true, ref: 'UserRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -682,9 +682,9 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
-        undefined: { in: 'body', required: true, ref: 'UserRequest' }
+        undefined: { in: 'body', required: true, ref: 'UserRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -723,9 +723,9 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
+          dataType: 'object',
         },
-        undefined: { in: 'body', required: true, ref: 'UserRequest' }
+        undefined: { in: 'body', required: true, ref: 'UserRequest' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -762,8 +762,8 @@ export function RegisterRoutes(app: Router) {
           in: 'request',
           name: 'request',
           required: true,
-          dataType: 'object'
-        }
+          dataType: 'object',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -900,10 +900,10 @@ export function RegisterRoutes(app: Router) {
       response.set(name, headers[name]);
     });
     if (
-      data
-      && typeof data.pipe === 'function'
-      && data.readable
-      && typeof data._read === 'function'
+      data &&
+      typeof data.pipe === 'function' &&
+      data.readable &&
+      typeof data._read === 'function'
     ) {
       response.status(statusCode || 200);
       data.pipe(response);
@@ -919,7 +919,7 @@ export function RegisterRoutes(app: Router) {
   function responder(
     response: any
   ): TsoaResponse<HttpStatusCodeLiteral, unknown> {
-    return function(status, data, headers) {
+    return function (status, data, headers) {
       returnHandler(response, status, data, headers);
     };
   }
@@ -998,8 +998,8 @@ export function RegisterRoutes(app: Router) {
               { noImplicitAdditionalProperties: 'throw-on-extras' }
             );
           } else if (
-            args[key].dataType === 'array'
-            && args[key].array.dataType === 'file'
+            args[key].dataType === 'array' &&
+            args[key].array.dataType === 'file'
           ) {
             return validationService.ValidateParam(
               args[key],

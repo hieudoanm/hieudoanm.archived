@@ -20,7 +20,7 @@ export type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({
   children = <></>,
-  onClick = () => {}
+  onClick = () => {},
 }) => {
   return <StyledButton onClick={() => onClick()}>{children}</StyledButton>;
 };

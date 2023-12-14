@@ -10,7 +10,7 @@ import {
   Request,
   Route,
   Security,
-  Tags
+  Tags,
 } from 'tsoa';
 import { LISTS_READ, LISTS_WRITE } from '../../common/constants';
 import { ListRequest, ListsService } from './lists.service';

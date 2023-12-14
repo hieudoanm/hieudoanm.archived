@@ -9,9 +9,9 @@ export default defineConfig({
   plugins: [suidPlugin(), solidSvg(), solidPlugin()],
   base: isProd ? '/solid-template' : '',
   server: {
-    port: 3000
+    port: 3000,
   },
   build: {
-    target: 'esnext'
-  }
+    target: 'esnext',
+  },
 });

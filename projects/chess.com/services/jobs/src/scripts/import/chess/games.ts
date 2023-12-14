@@ -11,7 +11,7 @@ const syncGames = async (username: string) => {
     const playerUrl = `${BASE_URL}/player/${username}`;
     logger.info('playerUrl', playerUrl);
     const { data: player } = await axios.get<Player>(playerUrl, {
-      method: 'POST'
+      method: 'POST',
     });
     logger.info('player', player);
     const { archives = [] } = player;
@@ -31,13 +31,13 @@ const syncGames = async (username: string) => {
           url: gamesUrl,
           method: 'post',
           data: JSON.stringify(data),
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json' },
         });
         const { total = 0, synced = 0, existed = 0 } = syncedData;
         logger.info(`games year=${year} month=${month}`, {
           total,
           synced,
-          existed
+          existed,
         });
       } catch (error) {
         logger.error(`error=${error}`);

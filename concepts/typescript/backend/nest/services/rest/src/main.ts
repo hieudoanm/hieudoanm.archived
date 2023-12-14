@@ -26,7 +26,9 @@ const bootstrap = async () => {
   const app: INestApplication = await NestFactory.create(AppModule);
   app.enableCors();
   app.use(helmet());
-  if (environments.environment === 'development') { swaggerify(app); }
+  if (environments.environment === 'development') {
+    swaggerify(app);
+  }
   await app.listen(environments.port);
 };
 

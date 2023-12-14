@@ -57,8 +57,8 @@ export const SocialHeatPage: NextPage = () => {
   const changeTopicId = (
     event: ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => {
-    const newTopicId: number = Number.parseInt(event?.target.value || '0', 10)
-      || 0;
+    const newTopicId: number =
+      Number.parseInt(event?.target.value || '0', 10) || 0;
     setTopicId(newTopicId);
   };
 
@@ -219,39 +219,37 @@ export const SocialHeatPage: NextPage = () => {
                   </Stack>
                 </div>
                 <div className="col-span-12">
-                  {input === 'input'
-                    ? (
-                      <TextField
-                        id="queries"
-                        label="Queries"
-                        placeholder="Queries"
-                        className="w-full"
-                        value={queryString}
-                        onChange={changeQueryString}
-                        multiline
-                        rows={12}
-                        required
-                      />
-                    )
-                    : (
-                      <div className="rounded border">
-                        {queries.map((query: string, index: number) => {
-                          return (
-                            <div
-                              key={`query-${query}`}
-                              className="grid grid-cols-12 border-b py-4"
-                            >
-                              <div className="col-span-1 text-center">
-                                {index + 1}
-                              </div>
-                              <div className="col-span-11 truncate">
-                                <p className="truncate">{query}</p>
-                              </div>
+                  {input === 'input' ? (
+                    <TextField
+                      id="queries"
+                      label="Queries"
+                      placeholder="Queries"
+                      className="w-full"
+                      value={queryString}
+                      onChange={changeQueryString}
+                      multiline
+                      rows={12}
+                      required
+                    />
+                  ) : (
+                    <div className="rounded border">
+                      {queries.map((query: string, index: number) => {
+                        return (
+                          <div
+                            key={`query-${query}`}
+                            className="grid grid-cols-12 border-b py-4"
+                          >
+                            <div className="col-span-1 text-center">
+                              {index + 1}
                             </div>
-                          );
-                        })}
-                      </div>
-                    )}
+                            <div className="col-span-11 truncate">
+                              <p className="truncate">{query}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               </div>
             </form>
@@ -290,73 +288,65 @@ export const SocialHeatPage: NextPage = () => {
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {loading < 100
-                        ? (
-                          <TableRow className="border-0 border-none">
-                            <TableCell
-                              align="center"
-                              colSpan={4}
-                              className="border-0 border-none uppercase"
-                            >
-                              {loading}%
-                            </TableCell>
-                          </TableRow>
-                        )
-                        : (
-                          <>
-                            {results.length > 0
-                              ? (
-                                results.map((result: Result, index: number) => {
-                                  const resultQuery = result.query || '';
-                                  return (
-                                    <TableRow
-                                      key={`result-${
-                                        resultQuery.replaceAll(
-                                          ' ',
-                                          ''
-                                        )
-                                      }`}
-                                      sx={{
-                                        '&:last-child td, &:last-child th': {
-                                          border: 0
-                                        }
-                                      }}
-                                    >
-                                      <TableCell align="center">
-                                        {index + 1}
-                                      </TableCell>
-                                      <TableCell
-                                        component="th"
-                                        scope="row"
-                                        sx={{ maxWidth: '300px' }}
-                                      >
-                                        <p className="truncate">
-                                          {resultQuery}
-                                        </p>
-                                      </TableCell>
-                                      <TableCell align="right">
-                                        {result.total_collectable_mentions}
-                                      </TableCell>
-                                      <TableCell align="right">
-                                        {result.total_mentions}
-                                      </TableCell>
-                                    </TableRow>
-                                  );
-                                })
-                              )
-                              : (
-                                <TableRow className="border-0 border-none">
+                      {loading < 100 ? (
+                        <TableRow className="border-0 border-none">
+                          <TableCell
+                            align="center"
+                            colSpan={4}
+                            className="border-0 border-none uppercase"
+                          >
+                            {loading}%
+                          </TableCell>
+                        </TableRow>
+                      ) : (
+                        <>
+                          {results.length > 0 ? (
+                            results.map((result: Result, index: number) => {
+                              const resultQuery = result.query || '';
+                              return (
+                                <TableRow
+                                  key={`result-${resultQuery.replaceAll(
+                                    ' ',
+                                    ''
+                                  )}`}
+                                  sx={{
+                                    '&:last-child td, &:last-child th': {
+                                      border: 0
+                                    }
+                                  }}
+                                >
+                                  <TableCell align="center">
+                                    {index + 1}
+                                  </TableCell>
                                   <TableCell
-                                    align="center"
-                                    colSpan={4}
-                                    className="border-0 border-none uppercase"
+                                    component="th"
+                                    scope="row"
+                                    sx={{ maxWidth: '300px' }}
                                   >
-                                    No Data
+                                    <p className="truncate">{resultQuery}</p>
+                                  </TableCell>
+                                  <TableCell align="right">
+                                    {result.total_collectable_mentions}
+                                  </TableCell>
+                                  <TableCell align="right">
+                                    {result.total_mentions}
                                   </TableCell>
                                 </TableRow>
-                              )}
-                          </>
-                        )}
+                              );
+                            })
+                          ) : (
+                            <TableRow className="border-0 border-none">
+                              <TableCell
+                                align="center"
+                                colSpan={4}
+                                className="border-0 border-none uppercase"
+                              >
+                                No Data
+                              </TableCell>
+                            </TableRow>
+                          )}
+                        </>
+                      )}
                     </TableBody>
                   </Table>
                 </TableContainer>

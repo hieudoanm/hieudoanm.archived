@@ -2,7 +2,7 @@ import Container from '../../atoms/Container';
 
 const Circle: React.FC<{ background?: string; children: string }> = ({
   background = '',
-  children
+  children,
 }) => {
   return (
     <div className="w-12 h-12 border border-black rounded-full p-1">

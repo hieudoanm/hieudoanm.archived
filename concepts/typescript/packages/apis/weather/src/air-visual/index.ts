@@ -3,7 +3,7 @@ import {
   AirQuality,
   CitiesResponse,
   CountriesResponse,
-  StatesResponse
+  StatesResponse,
 } from './types';
 
 const BASE_URL = 'http://api.airvisual.com/v2';
@@ -34,8 +34,7 @@ export class AirVisualClient {
     country: string,
     state: string
   ): Promise<CitiesResponse> {
-    const url =
-      `${BASE_URL}/cities?country=${country}&state=${state}&key=${this.apiKey}`;
+    const url = `${BASE_URL}/cities?country=${country}&state=${state}&key=${this.apiKey}`;
     return this.get<CitiesResponse>(url);
   }
 
@@ -44,8 +43,7 @@ export class AirVisualClient {
     state: string,
     city: string
   ): Promise<AirQuality> {
-    const url =
-      `${BASE_URL}/city?country=${country}&state=${state}&city=${city}&key=${this.apiKey}`;
+    const url = `${BASE_URL}/city?country=${country}&state=${state}&city=${city}&key=${this.apiKey}`;
     return this.get<AirQuality>(url);
   }
 }

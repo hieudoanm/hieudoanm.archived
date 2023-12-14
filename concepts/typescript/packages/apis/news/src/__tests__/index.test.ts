@@ -37,7 +37,7 @@ describe('NewsClient', () => {
         sources: ['cnn'],
         from: '2000-01-01',
         to: '2020-01-01',
-        searchIn: [SearchIn.TITLE]
+        searchIn: [SearchIn.TITLE],
       });
       expect(data).toEqual({} as ArticleResponse);
     });

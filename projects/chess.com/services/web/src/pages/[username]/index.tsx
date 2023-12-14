@@ -73,10 +73,10 @@ export const getServerSideProps: GetServerSideProps = async (
   const username: string = context.query.username?.toString() ?? '';
   try {
     const {
-      data: { player }
+      data: { player },
     } = await apolloClient.query<{ player: Player }>({
       query,
-      variables: { username }
+      variables: { username },
     });
     return { props: { player } };
   } catch (error) {

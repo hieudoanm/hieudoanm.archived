@@ -24,8 +24,7 @@ export const JoinOurCommunity: React.FC = () => {
             <div className="mb-16">
               <div className="mb-4">
                 <Header>
-                  <LinearText>Join</LinearText> <LinearText>Our</LinearText>
-                  {' '}
+                  <LinearText>Join</LinearText> <LinearText>Our</LinearText>{' '}
                   <LinearText>Community</LinearText>
                 </Header>
               </div>

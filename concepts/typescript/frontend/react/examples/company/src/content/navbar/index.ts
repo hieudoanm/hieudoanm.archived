@@ -3,27 +3,27 @@ export const navbar = {
     {
       id: 'home',
       link: 'home',
-      text: 'Home'
+      text: 'Home',
     },
     {
       id: 'services',
       link: 'services',
-      text: 'Services'
+      text: 'Services',
     },
     {
       id: 'team',
       link: 'team',
-      text: 'Team'
+      text: 'Team',
     },
     {
       id: 'why',
       link: 'why',
-      text: 'Why Us'
+      text: 'Why Us',
     },
     {
       id: 'projects',
       link: 'projects',
-      text: 'Projects'
-    }
-  ]
+      text: 'Projects',
+    },
+  ],
 };

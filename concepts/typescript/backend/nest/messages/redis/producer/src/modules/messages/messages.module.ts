@@ -14,12 +14,12 @@ import { MessagesService } from './messages.service';
           host: environments.redis.host,
           port: environments.redis.port,
           retryAttempts: environments.redis.retryAttempts,
-          retryDelay: environments.redis.retryDelay
-        }
-      }
-    ])
+          retryDelay: environments.redis.retryDelay,
+        },
+      },
+    ]),
   ],
   controllers: [MessagesController],
-  providers: [MessagesService]
+  providers: [MessagesService],
 })
 export class MessagesModule {}

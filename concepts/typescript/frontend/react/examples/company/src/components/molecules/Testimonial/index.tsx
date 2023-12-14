@@ -8,20 +8,20 @@ export type TestimonialProperties = {
 
 export const Testimonial: React.FC<TestimonialProperties> = ({
   quote = '',
-  author = ''
+  author = '',
 }) => {
   return (
     <div className="pb-16">
       <div
-        className="bg-no-repeat w-full md:w-2/3 pl-0 md:pl-16 mx-auto"
+        className="mx-auto w-full bg-no-repeat pl-0 md:w-2/3 md:pl-16"
         style={{ backgroundImage: `url(${quoteImage.src})` }}
       >
         <blockquote className="pb-8">
-          <h2 className="font-b612 text-2xl text-gray-700 text-justify leading-loose">
+          <h2 className="font-b612 text-justify text-2xl leading-loose text-gray-700">
             {quote}
           </h2>
         </blockquote>
-        <p className="font-medium text-gray-500 text-lg">{author}</p>
+        <p className="text-lg font-medium text-gray-500">{author}</p>
       </div>
     </div>
   );

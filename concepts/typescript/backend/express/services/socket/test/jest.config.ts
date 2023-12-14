@@ -4,6 +4,6 @@ export default {
   testEnvironment: 'node',
   testRegex: '.e2e.test.ts$',
   transform: {
-    '^.+\\.(t|j)s$': 'ts-jest'
-  }
+    '^.+\\.(t|j)s$': 'ts-jest',
+  },
 };

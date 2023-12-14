@@ -12,7 +12,7 @@ const main = async () => {
       const playerUrl = `${BASE_URL}/player/${username}`;
       logger.info('playerUrl', playerUrl);
       const { data: player } = await axios.get<Player>(playerUrl, {
-        method: 'POST'
+        method: 'POST',
       });
       logger.info('player', player);
       const { archives = [] } = player;
@@ -22,11 +22,10 @@ const main = async () => {
           const urlSearchParameters = new URLSearchParams();
           urlSearchParameters.set('year', yyyy);
           urlSearchParameters.set('month', mm);
-          const gamesUrl =
-            `${BASE_URL}/player/${username}/games?${urlSearchParameters.toString()}`;
+          const gamesUrl = `${BASE_URL}/player/${username}/games?${urlSearchParameters.toString()}`;
           logger.info('gamesUrl', gamesUrl);
           const {
-            data: { total = 0, games = [] }
+            data: { total = 0, games = [] },
           } = await axios.get<{
             total: number;
             games: Game[];
@@ -37,7 +36,7 @@ const main = async () => {
             const movesUrl = `${BASE_URL}/player/${username}/games/${id}/moves`;
             logger.info('movesUrl', movesUrl);
             const {
-              data: { total: totalMoves = 0 }
+              data: { total: totalMoves = 0 },
             } = await axios.get<{
               total: number;
             }>(movesUrl, { method: 'POST' });

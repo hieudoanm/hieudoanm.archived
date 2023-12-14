@@ -6,7 +6,7 @@ import { Opponent } from './services/opponents/opponents.types';
 import { ResultsService } from './services/results/results.service';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-(BigInt.prototype as any).toJSON = function() {
+(BigInt.prototype as any).toJSON = function () {
   const int = Number.parseInt(this.toString());
   return int ?? this.toString();
 };
@@ -48,9 +48,8 @@ export class InsightsService {
   public async getOpponentsInsights(
     username: string
   ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number }> {
-    const opponents: Opponent[] = await this.opponentsService.getOpponents(
-      username
-    );
+    const opponents: Opponent[] =
+      await this.opponentsService.getOpponents(username);
     const total: number = opponents.length;
     return { username, total, opponents };
   }

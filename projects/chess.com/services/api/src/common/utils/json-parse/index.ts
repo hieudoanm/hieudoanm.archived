@@ -1,7 +1,9 @@
 import { logger } from '../../libs/log';
 
 export const jsonParse = <T>(jsonString: string | null): T | undefined => {
-  if (!jsonString) { return; }
+  if (!jsonString) {
+    return;
+  }
   try {
     return JSON.parse(jsonString);
   } catch (error) {

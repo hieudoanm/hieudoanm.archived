@@ -9,7 +9,7 @@ import {
   Heading,
   Icon,
   IconButton,
-  Input
+  Input,
 } from '@chakra-ui/react';
 import hero from '@chess/assets/hero.jpg';
 import { APP_NAME } from '@chess/common/constants';

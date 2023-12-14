@@ -31,15 +31,14 @@ const Document = () => {
             __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'AW-10955479760');`
+gtag('config', 'AW-10955479760');`,
           }}
         />
         <Script
           id="snapchat-pixel"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html:
-              `(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+            __html: `(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
 {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
 a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
 r.src=n;var u=t.getElementsByTagName(s)[0];
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     snaptr('track', snap_event_type);
   };
 });
-`
+`,
           }}
         />
         <Script
@@ -70,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		  ttq.load('CB3C7H3C77U3T6AMGQ50');
 		  ttq.page();
-		}(window, document, 'ttq');`
+		}(window, document, 'ttq');`,
           }}
         />
         <Script
@@ -81,16 +80,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N2649H4');`
+})(window,document,'script','dataLayer','GTM-N2649H4');`,
           }}
         />
       </Head>
       <body>
         <noscript
           dangerouslySetInnerHTML={{
-            __html:
-              `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2649H4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2649H4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
         <Main />

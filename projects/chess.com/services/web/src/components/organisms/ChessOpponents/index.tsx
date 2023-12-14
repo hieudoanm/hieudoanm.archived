@@ -9,14 +9,14 @@ import {
   Td,
   Th,
   Thead,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { Insights } from '@chess/types/chess';
 import Link from 'next/link';
 import { useState } from 'react';
 
 export const ChessOpponents: React.FC<{ insights: Insights }> = ({
-  insights: { opponents = [] }
+  insights: { opponents = [] },
 }) => {
   const [sort, setSort] = useState<{ by: string }>({ by: 'games' });
 
@@ -33,7 +33,7 @@ export const ChessOpponents: React.FC<{ insights: Insights }> = ({
         draw,
         drawPercentage,
         loss,
-        lossPercentage
+        lossPercentage,
       };
     }
   );
@@ -124,7 +124,7 @@ export const ChessOpponents: React.FC<{ insights: Insights }> = ({
                     draw = 0,
                     drawPercentage = 0,
                     loss = 0,
-                    lossPercentage = 0
+                    lossPercentage = 0,
                   },
                   index: number
                 ) => {

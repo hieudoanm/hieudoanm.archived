@@ -10,13 +10,13 @@ export const errorHandler = (
   if (error instanceof ValidateError) {
     return response.status(422).json({
       message: 'Validation Failed',
-      details: error.fields
+      details: error.fields,
     });
   }
 
   if (error instanceof Error) {
     return response.status(500).json({
-      message: error.stack ?? error.message
+      message: error.stack ?? error.message,
     });
   }
 

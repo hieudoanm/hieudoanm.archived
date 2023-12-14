@@ -9,7 +9,7 @@ import {
   TsoaResponse,
   TsoaRoute,
   ValidateError,
-  ValidationService
+  ValidationService,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { CountriesController } from './modules/countries/countries.controller';
@@ -31,22 +31,22 @@ const models: TsoaRoute.Models = {
         timezones: {
           dataType: 'array',
           array: { dataType: 'string' },
-          required: true
+          required: true,
         },
         capital: {
           dataType: 'array',
           array: { dataType: 'string' },
-          required: true
+          required: true,
         },
         tld: {
           dataType: 'array',
           array: { dataType: 'string' },
-          required: true
+          required: true,
         },
         borders: {
           dataType: 'array',
           array: { dataType: 'string' },
-          required: true
+          required: true,
         },
         unMember: { dataType: 'boolean', required: true },
         subregion: { dataType: 'string', required: true },
@@ -57,13 +57,13 @@ const models: TsoaRoute.Models = {
           dataType: 'nestedObjectLiteral',
           nestedProperties: {
             common: { dataType: 'string', required: true },
-            official: { dataType: 'string', required: true }
+            official: { dataType: 'string', required: true },
           },
-          required: true
-        }
+          required: true,
+        },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   HealthResponse: {
@@ -71,9 +71,9 @@ const models: TsoaRoute.Models = {
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: { status: { dataType: 'string', required: true } },
-      validators: {}
-    }
-  }
+      validators: {},
+    },
+  },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 };
 const validationService = new ValidationService(models);
@@ -196,10 +196,10 @@ export function RegisterRoutes(app: Router) {
       response.set(name, headers[name]);
     });
     if (
-      data
-      && typeof data.pipe === 'function'
-      && data.readable
-      && typeof data._read === 'function'
+      data &&
+      typeof data.pipe === 'function' &&
+      data.readable &&
+      typeof data._read === 'function'
     ) {
       response.status(statusCode || 200);
       data.pipe(response);
@@ -215,7 +215,7 @@ export function RegisterRoutes(app: Router) {
   function responder(
     response: any
   ): TsoaResponse<HttpStatusCodeLiteral, unknown> {
-    return function(status, data, headers) {
+    return function (status, data, headers) {
       returnHandler(response, status, data, headers);
     };
   }
@@ -294,8 +294,8 @@ export function RegisterRoutes(app: Router) {
               { noImplicitAdditionalProperties: 'throw-on-extras' }
             );
           } else if (
-            args[key].dataType === 'array'
-            && args[key].array.dataType === 'file'
+            args[key].dataType === 'array' &&
+            args[key].array.dataType === 'file'
           ) {
             return validationService.ValidateParam(
               args[key],

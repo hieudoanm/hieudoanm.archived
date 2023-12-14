@@ -7,5 +7,5 @@ export default {
   environment: NODE_ENV,
   port: PORT,
   jwtSecret: JWT_SECRET,
-  saltOrRounds: SALT_OR_ROUNDS
+  saltOrRounds: SALT_OR_ROUNDS,
 };

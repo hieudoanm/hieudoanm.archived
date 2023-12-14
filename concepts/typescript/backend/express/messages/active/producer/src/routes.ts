@@ -9,7 +9,7 @@ import {
   TsoaResponse,
   TsoaRoute,
   ValidateError,
-  ValidationService
+  ValidationService,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { HealthController } from './router/health/health.controller';
@@ -68,9 +68,9 @@ export function RegisterRoutes(app: express.Router) {
           required: true,
           dataType: 'nestedObjectLiteral',
           nestedProperties: {
-            message: { dataType: 'string', required: true }
-          }
-        }
+            message: { dataType: 'string', required: true },
+          },
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -141,10 +141,10 @@ export function RegisterRoutes(app: express.Router) {
       response.set(name, headers[name]);
     });
     if (
-      data
-      && typeof data.pipe === 'function'
-      && data.readable
-      && typeof data._read === 'function'
+      data &&
+      typeof data.pipe === 'function' &&
+      data.readable &&
+      typeof data._read === 'function'
     ) {
       data.pipe(response);
     } else if (data !== null && data !== undefined) {
@@ -159,7 +159,7 @@ export function RegisterRoutes(app: express.Router) {
   function responder(
     response: any
   ): TsoaResponse<HttpStatusCodeLiteral, unknown> {
-    return function(status, data, headers) {
+    return function (status, data, headers) {
       returnHandler(response, status, data, headers);
     };
   }
@@ -229,8 +229,8 @@ export function RegisterRoutes(app: express.Router) {
               { noImplicitAdditionalProperties: 'throw-on-extras' }
             );
           } else if (
-            args[key].dataType === 'array'
-            && args[key].array.dataType === 'file'
+            args[key].dataType === 'array' &&
+            args[key].array.dataType === 'file'
           ) {
             return validationService.ValidateParam(
               args[key],

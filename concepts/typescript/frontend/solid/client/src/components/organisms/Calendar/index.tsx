@@ -9,7 +9,7 @@ import Select from '@suid/material/Select';
 import { Component, createSignal, For, mergeProps } from 'solid-js';
 import { addZero } from '../../../utils/add-zero';
 import CalendarEvent, {
-  CalendarEventProps
+  CalendarEventProps,
 } from '../../molecules/CalendarEvent';
 
 const months = [
@@ -24,7 +24,7 @@ const months = [
   { short: 'Sep', long: 'September' },
   { short: 'Oct', long: 'October' },
   { short: 'Nov', long: 'November' },
-  { short: 'Dec', long: 'December' }
+  { short: 'Dec', long: 'December' },
 ];
 
 const days = [
@@ -34,7 +34,7 @@ const days = [
   'Wednesday',
   'Thursday',
   'Friday',
-  'Saturday'
+  'Saturday',
 ];
 
 const daysByMonths: Record<number, number> = {
@@ -49,7 +49,7 @@ const daysByMonths: Record<number, number> = {
   9: 30,
   10: 31,
   11: 30,
-  12: 31
+  12: 31,
 };
 
 const generateDaysInMonth = (month: number, year: number) => {
@@ -71,7 +71,7 @@ const generateDaysInMonth = (month: number, year: number) => {
         day,
         date: previousDate,
         month: previousMonth,
-        year: previousYear
+        year: previousYear,
       };
     }
   );
@@ -92,7 +92,7 @@ const generateDaysInMonth = (month: number, year: number) => {
         day,
         date: i + 1,
         month: nextMonth,
-        year: nextYear
+        year: nextYear,
       });
     }
   }
@@ -131,9 +131,9 @@ type DayProps = {
 
 const Day: Component<DayProps> = (props) => {
   if (
-    props.date === props.initDate
-    && props.month === props.initMonth
-    && props.year === props.initYear
+    props.date === props.initDate &&
+    props.month === props.initMonth &&
+    props.year === props.initYear
   ) {
     return (
       <div class="px-2 text-right font-bold">
@@ -274,16 +274,13 @@ export const Calendar: Component<CalendarProps> = (_props) => {
                   <span>
                     {month() === initMonth && year() === initYear
                       ? addZero(initDate)
-                      : addZero(1)}
-                    {' '}
+                      : addZero(1)}{' '}
                   </span>
                   <span class="inline md:hidden">
-                    {months[month() - 1].short}
-                    {' '}
+                    {months[month() - 1].short}{' '}
                   </span>
                   <span class="hidden md:inline">
-                    {months[month() - 1].long}
-                    {' '}
+                    {months[month() - 1].long}{' '}
                   </span>
                   <span>{year()}</span>
                 </p>

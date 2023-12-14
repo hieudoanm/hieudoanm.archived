@@ -8,7 +8,7 @@ import {
   Pie,
   PieChart,
   ResponsiveContainer,
-  Tooltip
+  Tooltip,
 } from 'recharts';
 
 const ChessResult: React.FC<{
@@ -18,7 +18,7 @@ const ChessResult: React.FC<{
 }> = ({ title = '', color = 'gray', results = [] }) => {
   const data = results.map(({ result, count }) => ({
     name: result ?? '',
-    value: count ?? 0
+    value: count ?? 0,
   }));
   const total = data.reduce(
     (previous: number, { value = 0 }) => previous + value,
@@ -61,7 +61,7 @@ const ChessResult: React.FC<{
 };
 
 export const ChessResults: React.FC<{ insights: Insights }> = ({
-  insights
+  insights,
 }) => {
   return (
     <Card className="border border-gray-200">

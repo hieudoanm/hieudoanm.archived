@@ -21,9 +21,7 @@ export class HeroesController {
   constructor(@Inject('HEROES_PACKAGE') private client: ClientGrpc) {}
 
   onModuleInit() {
-    this.heroesService = this.client.getService<HeroesService>(
-      'HeroesService'
-    );
+    this.heroesService = this.client.getService<HeroesService>('HeroesService');
   }
 
   @Get(':id')

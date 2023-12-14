@@ -22,7 +22,7 @@ export const StyledLinearText = styled.div`
 `;
 
 export const LinearText: React.FC<{ children?: string }> = ({
-  children = ''
+  children = '',
 }) => {
   return (
     <StyledLinearText className="truncate text-xl md:text-3xl">

@@ -4,7 +4,7 @@ export const NFTComponent = () => <NFT />;
 
 const Story = {
   title: 'organisms/NFT',
-  component: NFT
+  component: NFT,
 };
 
 export default Story;

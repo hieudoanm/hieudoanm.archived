@@ -16,21 +16,21 @@ export type Reason = {
 
 export const Why: React.FC<{ reasons: Reason[] }> = ({ reasons = [] }) => {
   return (
-    <section id="why" className="py-8 md:py-16 why-container">
+    <section id="why" className="why-container py-8 md:py-16">
       <Container>
         <Tabs defaultActiveKey="tab-0" animated={{ tabPane: true }}>
           {reasons.map((reason: Reason) => {
             return (
               <TabPane key={`tab-${reason.tab}`} tab={reason.tab}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div className="col-span-1 pt-8">
-                    <h2 className="text-2xl md:text-3xl mb-4 md:mb-8 font-bold">
+                    <h2 className="mb-4 text-2xl font-bold md:mb-8 md:text-3xl">
                       {reason.title}
                     </h2>
-                    <p className="text-base md:text-lg mb-4 md:mb-8">
+                    <p className="mb-4 text-base md:mb-8 md:text-lg">
                       {reason.description}
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
+                    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
                       {reason.items.map((item: string) => {
                         return (
                           <div key={item} className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export const Why: React.FC<{ reasons: Reason[] }> = ({ reasons = [] }) => {
                       })}
                     </div>
                   </div>
-                  <div className="col-span-1 pt-8 px-8">
+                  <div className="col-span-1 px-8 pt-8">
                     <Image src={tabImage1} alt="illustration" />
                   </div>
                 </div>

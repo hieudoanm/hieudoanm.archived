@@ -9,7 +9,7 @@ import { content } from '../../../content';
 
 export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
   title = '',
-  items = []
+  items = [],
 }) => {
   const [open, setOpen] = useState(false);
 
@@ -19,7 +19,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
         <nav className="bg-white">
           <Container>
             <div className="py-8">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <div className="flex items-center gap-8">
                   <h1 className="text-2xl">
                     <ScrollLink
@@ -33,7 +33,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                       {title}
                     </ScrollLink>
                   </h1>
-                  <div className="hidden md:flex items-center gap-8">
+                  <div className="hidden items-center gap-8 md:flex">
                     {items.map(({ id, link, text }) => {
                       return (
                         <div key={id}>
@@ -44,7 +44,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                             smooth={true}
                             duration={500}
                             activeClass="active"
-                            className="cursor-pointer nav-scroll-link"
+                            className="nav-scroll-link cursor-pointer"
                           >
                             {text}
                           </ScrollLink>
@@ -60,7 +60,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                     offset={-70}
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer text-emerald-500 font-bold"
+                    className="cursor-pointer font-bold text-emerald-500"
                   >
                     Get Started
                   </ScrollLink>
@@ -74,16 +74,16 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
         </nav>
       </Sticky>
       <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
-        <div className="relative w-[80vw] h-screen">
-          <div className="absolute w-full py-8 px-8 flex items-center justify-between">
+        <div className="relative h-screen w-[80vw]">
+          <div className="absolute flex w-full items-center justify-between px-8 py-8">
             <h1 className="text-2xl">{content.seo.shortName}</h1>
             <CloseIcon onClick={() => setOpen(false)} />
           </div>
-          <div className="w-full h-full flex items-center">
+          <div className="flex h-full w-full items-center">
             <div>
               {items.map(({ id, link, text }) => {
                 return (
-                  <div key={id} className="px-8 py-2 w-full">
+                  <div key={id} className="w-full px-8 py-2">
                     <ScrollLink
                       to={link}
                       spy={true}
@@ -91,7 +91,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                       smooth={true}
                       duration={500}
                       activeClass="active"
-                      className="cursor-pointer nav-scroll-link"
+                      className="nav-scroll-link cursor-pointer"
                     >
                       {text}
                     </ScrollLink>

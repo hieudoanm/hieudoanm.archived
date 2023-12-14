@@ -7,7 +7,7 @@ import {
   Html,
   Meta,
   Scripts,
-  Title
+  Title,
 } from 'solid-start';
 import './root.scss';
 

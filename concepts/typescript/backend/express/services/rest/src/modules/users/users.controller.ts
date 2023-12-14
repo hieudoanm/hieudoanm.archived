@@ -8,7 +8,7 @@ import {
   Request,
   Route,
   Security,
-  Tags
+  Tags,
 } from 'tsoa';
 import { USER_READ, USER_WRITE } from '../../common/constants';
 import { UserRequest, UsersService } from './users.service';

@@ -3,7 +3,7 @@ import { ParseMode } from './enum';
 import {
   DeleteWebhookResponse,
   SetWebhookResponse,
-  WebhookInfo
+  WebhookInfo,
 } from './types';
 
 const BASE_URL = 'https://api.telegram.org/bot';
@@ -45,8 +45,9 @@ export class TelegramClient {
     urlSearchParams.set('chat_id', chatId);
     urlSearchParams.set('text', message);
     urlSearchParams.set('parse_mode', parseMode);
-    const sendMessageUrl =
-      `${this.url}/sendMessage?${urlSearchParams.toString()}`;
+    const sendMessageUrl = `${
+      this.url
+    }/sendMessage?${urlSearchParams.toString()}`;
     await this.post(sendMessageUrl);
   }
 
@@ -56,7 +57,7 @@ export class TelegramClient {
     }
     const setWebhookUrl = `${this.url}/setWebhook`;
     return this.post<SetWebhookResponse, { url: string }>(setWebhookUrl, {
-      url
+      url,
     });
   }
 
@@ -66,7 +67,7 @@ export class TelegramClient {
     }
     const setWebhookUrl = `${this.url}/deleteWebhook`;
     return this.post<DeleteWebhookResponse, { url: string }>(setWebhookUrl, {
-      url
+      url,
     });
   }
 

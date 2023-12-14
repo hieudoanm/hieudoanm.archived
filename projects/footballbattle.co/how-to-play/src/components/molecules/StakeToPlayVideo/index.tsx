@@ -8,7 +8,8 @@ const StakeToPlayVideo: React.FC = () => {
         className="card-field bg-contain p-8 rounded-2xl"
         style={{
           backgroundPositionX: '25%',
-          backgroundImage: 'url(/how-to-play/en/images/stake-to-play/field.svg)'
+          backgroundImage:
+            'url(/how-to-play/en/images/stake-to-play/field.svg)',
         }}
       >
         <div className="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9">

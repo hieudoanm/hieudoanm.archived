@@ -3,5 +3,5 @@ const PORT: string = process.env.PORT || '3000';
 
 export default {
   environment: NODE_ENV,
-  port: PORT
+  port: PORT,
 };

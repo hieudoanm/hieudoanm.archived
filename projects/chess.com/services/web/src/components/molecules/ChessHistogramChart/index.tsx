@@ -5,7 +5,7 @@ import {
   ComposedChart,
   ResponsiveContainer,
   Tooltip,
-  XAxis
+  XAxis,
 } from 'recharts';
 
 export const ChessHistogramChart: React.FC<{

@@ -69,7 +69,7 @@ const SignInPage: NextPage = () => {
                       >
                         {showPassword ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
-                    )
+                    ),
                   }}
                   required
                 />

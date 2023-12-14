@@ -11,13 +11,13 @@ import { UsersModule } from './modules/users/users.module';
   imports: [
     JwtModule.register({
       secret: environments.jwtSecret,
-      signOptions: { expiresIn: '300s' }
+      signOptions: { expiresIn: '300s' },
     }),
     AuthModule,
     HealthModule,
     ListsModule,
     TasksModule,
-    UsersModule
-  ]
+    UsersModule,
+  ],
 })
 export class AppModule {}

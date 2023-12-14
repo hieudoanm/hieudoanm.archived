@@ -10,7 +10,7 @@ export const resolvers = {
       { chessDataSource }: ChessContext
     ): Promise<Player> => {
       return chessDataSource.getPlayer(username);
-    }
+    },
   },
   Mutation: {
     player: (
@@ -25,12 +25,12 @@ export const resolvers = {
       {
         username,
         month = new Date().getMonth() + 1,
-        year = new Date().getFullYear()
+        year = new Date().getFullYear(),
       }: { username: string; year: number; month: number },
       { chessDataSource }: ChessContext
     ): Promise<GamesSynced> => {
       return chessDataSource.syncGames(username, { year, month });
-    }
+    },
   },
   Player: {
     games: async (
@@ -40,6 +40,6 @@ export const resolvers = {
     ): Promise<Game[]> => {
       const { games = [] } = await chessDataSource.getGames(username);
       return games;
-    }
-  }
+    },
+  },
 };

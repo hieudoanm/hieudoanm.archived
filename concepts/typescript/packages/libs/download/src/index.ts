@@ -5,7 +5,9 @@ import { Stream } from 'stream';
 export const download = async (url: string, filePath: string) => {
   const { data } = await axios.get<Stream>(url, { responseType: 'stream' });
 
-  if (!data) { throw new Error('Invalid data'); }
+  if (!data) {
+    throw new Error('Invalid data');
+  }
 
   const writer = fs.createWriteStream(filePath);
   data.pipe(writer);

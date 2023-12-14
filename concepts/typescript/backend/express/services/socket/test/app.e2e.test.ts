@@ -7,7 +7,9 @@ describe('app', () => {
       .get('/health')
       .expect(200)
       .end((error: Error) => {
-        if (error) { throw error; }
+        if (error) {
+          throw error;
+        }
       });
   });
 });

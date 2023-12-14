@@ -16,7 +16,7 @@ import {
   Text,
   Th,
   Thead,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
@@ -43,7 +43,7 @@ const StreamersPage: NextPage<StreamersPageProperties> = ({
   title: initialTitle,
   country: initialCountry,
   players = [],
-  countries = []
+  countries = [],
 }) => {
   const router = useRouter();
   const [title, setTitle] = useState<Title>(initialTitle);
@@ -80,7 +80,7 @@ const StreamersPage: NextPage<StreamersPageProperties> = ({
                       setTitle(newTitle);
                       router.push({
                         pathname: router.pathname,
-                        query: { ...router.query, title: newTitle }
+                        query: { ...router.query, title: newTitle },
                       });
                     }}
                   >
@@ -105,7 +105,7 @@ const StreamersPage: NextPage<StreamersPageProperties> = ({
                       setCountry(newCountry);
                       router.push({
                         pathname: router.pathname,
-                        query: { ...router.query, country: newCountry }
+                        query: { ...router.query, country: newCountry },
                       });
                     }}
                   >
@@ -147,35 +147,32 @@ const StreamersPage: NextPage<StreamersPageProperties> = ({
                       followers = 0,
                       country = '',
                       countryCode = '',
-                      twitchUrl = ''
+                      twitchUrl = '',
                     }) => {
                       return (
                         <Tr key={username}>
                           <Td>
-                            {(title ?? '').length > 0
-                              ? (
-                                <Link href={`/titled/${title}`}>
-                                  <Badge colorScheme="red">{title}</Badge>
-                                </Link>
-                              )
-                              : <></>}
+                            {(title ?? '').length > 0 ? (
+                              <Link href={`/titled/${title}`}>
+                                <Badge colorScheme="red">{title}</Badge>
+                              </Link>
+                            ) : (
+                              <></>
+                            )}
                           </Td>
                           <Td>
                             <Link href={`/${username}`}>
                               <div className="inline-flex items-center gap-x-2">
-                                {avatar.length > 0
-                                  ? (
-                                    <div
-                                      className="aspect-square w-8 rounded bg-contain bg-center"
-                                      style={{
-                                        backgroundImage: `url(${avatar})`
-                                      }}
-                                    />
-                                  )
-                                  : (
-                                    <div className="aspect-square w-8 rounded border">
-                                    </div>
-                                  )}
+                                {avatar.length > 0 ? (
+                                  <div
+                                    className="aspect-square w-8 rounded bg-contain bg-center"
+                                    style={{
+                                      backgroundImage: `url(${avatar})`,
+                                    }}
+                                  />
+                                ) : (
+                                  <div className="aspect-square w-8 rounded border"></div>
+                                )}
                                 <Text>{username}</Text>
                               </div>
                             </Link>
@@ -275,11 +272,11 @@ export const getServerSideProps: GetServerSideProps<
   try {
     const {
       data: {
-        streamers: { total = 0, countries = [], players = [] }
-      }
+        streamers: { total = 0, countries = [], players = [] },
+      },
     } = await apolloClient.query<{ streamers: StreamersPageProperties }>({
       query,
-      variables: { title, country }
+      variables: { title, country },
     });
     return { props: { title, country, total, countries, players } };
   } catch (error) {
@@ -287,7 +284,7 @@ export const getServerSideProps: GetServerSideProps<
       `getServerSideProps title=${title} country=${country} error=${error}`
     );
     return {
-      props: { title, country, total: 0, players: [], countries: [] }
+      props: { title, country, total: 0, players: [], countries: [] },
     };
   }
 };

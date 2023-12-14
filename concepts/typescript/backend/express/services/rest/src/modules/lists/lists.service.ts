@@ -15,14 +15,14 @@ export class ListsService {
   async createList(userId: string, { title }: ListRequest): Promise<List> {
     const id = v4();
     const list: List = await prismaClient.list.create({
-      data: { id, title, primary: false, userId }
+      data: { id, title, primary: false, userId },
     });
     return list;
   }
 
   async getList(id: string): Promise<List> {
     const list: List = await prismaClient.list.findFirstOrThrow({
-      where: { id }
+      where: { id },
     });
     return list;
   }
@@ -34,14 +34,14 @@ export class ListsService {
   ): Promise<List> {
     const list: List = await prismaClient.list.update({
       data: { title },
-      where: { id, id_userId: { id, userId } }
+      where: { id, id_userId: { id, userId } },
     });
     return list;
   }
 
   async deleteList(userId: string, id: string): Promise<void> {
     await prismaClient.list.delete({
-      where: { id, id_userId: { id, userId } }
+      where: { id, id_userId: { id, userId } },
     });
   }
 }

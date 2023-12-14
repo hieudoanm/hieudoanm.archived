@@ -6,7 +6,7 @@ import {
   Injectable,
   Patch,
   Request,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { User } from '@prisma/client';

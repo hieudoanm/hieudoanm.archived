@@ -11,8 +11,7 @@ export const queryResult = async (
   const authorization: string = sessionStorage.getItem('accessToken') || '';
   const [fromYear, fromMonth, fromDate] = timeRange.fromDate.split('-');
   const [toYear, toMonth, toDate] = timeRange.toDate.split('-');
-  const url =
-    `https://api.younetmedia.com/batch?topic_id=${topicId}%2C${topicId}&service=mentions-statistics`;
+  const url = `https://api.younetmedia.com/batch?topic_id=${topicId}%2C${topicId}&service=mentions-statistics`;
   const dateFrom = new Date(
     Date.UTC(
       Number.parseInt(fromYear, 10),

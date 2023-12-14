@@ -5,7 +5,7 @@ export type NextBackButtonsProps = {
 
 const NextBackButtons: React.FC<NextBackButtonsProps> = ({
   next = true,
-  back = true
+  back = true,
 }) => {
   return (
     <div className="py-8">

@@ -5,10 +5,10 @@ export const NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: string =
 export const STRIPE_SECRET_KEY: string = process.env.STRIPE_SECRET_KEY ?? '';
 export const STRIPE_PRICE_ID: string = process.env.STRIPE_PRICE_ID ?? '';
 // Base API
-export const BASE_API: string = process.env.BASE_API
-  ?? 'http://localhost:8080/api';
-export const ANALYSE_API: string = process.env.ANALYSE_API
-  ?? 'http://localhost:8000/api';
+export const BASE_API: string =
+  process.env.BASE_API ?? 'http://localhost:8080/api';
+export const ANALYSE_API: string =
+  process.env.ANALYSE_API ?? 'http://localhost:8000/api';
 // GraphQL
 export const GRAPHQL_URI: string = process.env.GRAPHQL_URI ?? '';
 export const NEXT_PUBLIC_GRAPHQL_URI: string =

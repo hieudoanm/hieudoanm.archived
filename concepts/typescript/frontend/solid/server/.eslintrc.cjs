@@ -1,19 +1,19 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:solid/recommended'
+    'plugin:solid/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'solid'],
-  rules: { '@typescript-eslint/no-explicit-any': 'warn' }
+  rules: { '@typescript-eslint/no-explicit-any': 'warn' },
 };

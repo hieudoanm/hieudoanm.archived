@@ -17,15 +17,11 @@ export class ResultsService {
   }
 
   private buildWinResultsQuery(username: string): Prisma.Sql {
-    const selectClause =
-      `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END) as "count"`;
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) = 'win' AND g."rules" = 'chess' AND g."rated" = true`;
-    const groupByClause =
-      `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END`;
+    const selectClause = `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END) as "count"`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) = 'win' AND g."rules" = 'chess' AND g."rated" = true`;
+    const groupByClause = `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."blackResult" ELSE g."whiteResult" END`;
     const orderByClause = `ORDER BY "count" DESC`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -34,15 +30,11 @@ export class ResultsService {
     const drawList: string = DRAW_RESULTS.map(
       (result: string) => `'${result}'`
     ).join(',');
-    const selectClause =
-      `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "count"`;
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${drawList}) AND g."rules" = 'chess' AND g."rated" = true`;
-    const groupByClause =
-      `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END`;
+    const selectClause = `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "count"`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${drawList}) AND g."rules" = 'chess' AND g."rated" = true`;
+    const groupByClause = `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END`;
     const orderByClause = `ORDER BY "count" DESC`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -51,15 +43,11 @@ export class ResultsService {
     const lossList: string = LOSS_RESULTS.map(
       (result: string) => `'${result}'`
     ).join(',');
-    const selectClause =
-      `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "count"`;
-    const whereClause =
-      `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${lossList}) AND g."rules" = 'chess' AND g."rated" = true`;
-    const groupByClause =
-      `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END`;
+    const selectClause = `SELECT (CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "result", COUNT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) as "count"`;
+    const whereClause = `WHERE TEXT(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END) in (${lossList}) AND g."rules" = 'chess' AND g."rated" = true`;
+    const groupByClause = `GROUP BY CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteResult" ELSE g."blackResult" END`;
     const orderByClause = `ORDER BY "count" DESC`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause} ${orderByClause};`;
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
   }
@@ -68,18 +56,16 @@ export class ResultsService {
     const winQuery = this.buildWinResultsQuery(username);
     const drawQuery = this.buildDrawResultsQuery(username);
     const lossQuery = this.buildLossResultsQuery(username);
-    const [win = [], draw = [], loss = []] = await this.prismaClient
-      .$transaction([
+    const [win = [], draw = [], loss = []] =
+      await this.prismaClient.$transaction([
         this.prismaClient.$queryRaw<Result[]>(winQuery),
         this.prismaClient.$queryRaw<Result[]>(drawQuery),
-        this.prismaClient.$queryRaw<Result[]>(lossQuery)
+        this.prismaClient.$queryRaw<Result[]>(lossQuery),
       ]);
-    const timeOfDays = await this.timeOfDaysService.getResultsByTimeOfDays(
-      username
-    );
-    const daysOfWeek = await this.daysOfWeekService.getResultsByDaysOfWeek(
-      username
-    );
+    const timeOfDays =
+      await this.timeOfDaysService.getResultsByTimeOfDays(username);
+    const daysOfWeek =
+      await this.daysOfWeekService.getResultsByDaysOfWeek(username);
     return { win, draw, loss, timeOfDays, daysOfWeek };
   }
 }

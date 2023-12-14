@@ -10,14 +10,18 @@ export class ChessDataSource extends RESTDataSource {
 
   async getStreamers({
     title,
-    country
+    country,
   }: {
     title: Title;
     country: string;
   }): Promise<StreamersResponse> {
     const urlSearchParameters: URLSearchParams = new URLSearchParams();
-    if (title) { urlSearchParameters.set('title', title); }
-    if (country) { urlSearchParameters.set('country', country); }
+    if (title) {
+      urlSearchParameters.set('title', title);
+    }
+    if (country) {
+      urlSearchParameters.set('country', country);
+    }
     const endpoint = `/api/chess/streamers?${urlSearchParameters.toString()}`;
     return this.get(endpoint);
   }
@@ -30,9 +34,7 @@ export class ChessDataSource extends RESTDataSource {
     return this.post(`/api/chess/player/${username}`);
   }
 
-  async getGames(
-    username: string
-  ): Promise<{ total: number; games: Game[] }> {
+  async getGames(username: string): Promise<{ total: number; games: Game[] }> {
     return this.get(`/api/chess/player/${username}/games`);
   }
 
@@ -40,25 +42,26 @@ export class ChessDataSource extends RESTDataSource {
     username: string,
     {
       month = new Date().getMonth() + 1,
-      year = new Date().getFullYear()
+      year = new Date().getFullYear(),
     }: { month: number; year: number }
   ): Promise<GamesSynced> {
     return this.post(`/api/chess/player/${username}/games`, {
-      body: { month, year }
+      body: { month, year },
     });
   }
 
   async getTitled({
     title,
-    timeRange
+    timeRange,
   }: {
     title: string;
     timeRange: TimeRange;
   }): Promise<Titled> {
     const urlSearchParameters: URLSearchParams = new URLSearchParams();
-    if (timeRange) { urlSearchParameters.set('timeRange', timeRange); }
-    const url: string =
-      `/api/chess/titled/${title}?${urlSearchParameters.toString()}`;
+    if (timeRange) {
+      urlSearchParameters.set('timeRange', timeRange);
+    }
+    const url: string = `/api/chess/titled/${title}?${urlSearchParameters.toString()}`;
     return this.get(url);
   }
 
@@ -72,14 +75,18 @@ export class ChessDataSource extends RESTDataSource {
 
   async getOpenings({
     eco = '',
-    name = ''
+    name = '',
   }: {
     eco: string;
     name: string;
   }): Promise<{ total: number; openings: Opening[] }> {
     const urlSearchParameters: URLSearchParams = new URLSearchParams();
-    if (eco !== '') { urlSearchParameters.set('eco', eco); }
-    if (name !== '') { urlSearchParameters.set('name', name); }
+    if (eco !== '') {
+      urlSearchParameters.set('eco', eco);
+    }
+    if (name !== '') {
+      urlSearchParameters.set('name', name);
+    }
     return this.get(`/api/chess/openings?${urlSearchParameters.toString()}`);
   }
 }

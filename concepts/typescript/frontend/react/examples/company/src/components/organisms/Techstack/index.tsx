@@ -11,13 +11,13 @@ export const Techstack: React.FC<{
 }> = ({
   title: sectionTitle = '',
   description: sectionDescription = '',
-  services = []
+  services = [],
 }) => {
   return (
-    <section className="py-8 md:py-16 bg-[#F9FAFC]">
+    <section className="bg-[#F9FAFC] py-8 md:py-16">
       <Container>
         <Heading title={sectionTitle} description={sectionDescription} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           {services.map(({ id, image, title, description }: ServiceType) => {
             return (
               <Service

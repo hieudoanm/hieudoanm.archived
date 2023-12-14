@@ -7,13 +7,13 @@ import {
   LOSS_RESULTS,
   RULE,
   TIME_OF_DAYS,
-  WIN_RESULTS
+  WIN_RESULTS,
 } from '../../insights.constants';
 import {
   Games,
   GamesByDayOfWeek,
   GamesByPeriod,
-  GamesByTimeOfDay
+  GamesByTimeOfDay,
 } from './games.types';
 
 export class GamesService {
@@ -27,8 +27,8 @@ export class GamesService {
     return {
       OR: [
         { whiteUsername: username, whiteResult: { in: results } },
-        { blackUsername: username, blackResult: { in: results } }
-      ]
+        { blackUsername: username, blackResult: { in: results } },
+      ],
     };
   }
 
@@ -40,7 +40,7 @@ export class GamesService {
 
   private async getNumberOfGames(username: string) {
     const totalWhere: Prisma.GameWhereInput = this.buildGameWhereInput({
-      OR: [{ whiteUsername: username }, { blackUsername: username }]
+      OR: [{ whiteUsername: username }, { blackUsername: username }],
     });
     const winWhere: Prisma.GameWhereInput = this.buildGameWhereInput(
       this.buildGameResultsWhereInput(username, WIN_RESULTS)
@@ -51,12 +51,12 @@ export class GamesService {
     const lossWhere: Prisma.GameWhereInput = this.buildGameWhereInput(
       this.buildGameResultsWhereInput(username, LOSS_RESULTS)
     );
-    const [total = 0, win = 0, draw = 0, loss = 0] = await this.prismaClient
-      .$transaction([
+    const [total = 0, win = 0, draw = 0, loss = 0] =
+      await this.prismaClient.$transaction([
         this.prismaClient.game.count({ where: totalWhere }),
         this.prismaClient.game.count({ where: winWhere }),
         this.prismaClient.game.count({ where: drawWhere }),
-        this.prismaClient.game.count({ where: lossWhere })
+        this.prismaClient.game.count({ where: lossWhere }),
       ]);
     return { total, win, draw, loss };
   }
@@ -65,10 +65,8 @@ export class GamesService {
     const selectClause =
       'SELECT COUNT(*) as "games", extract(year from g."endTime")::int as "period"';
     const groupByClause = 'GROUP BY extract(year from g."endTime")';
-    const whereClause =
-      `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
+    const whereClause = `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
     logger.info(`buildGamesByPeriodsQuery query=${query}`);
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
@@ -78,10 +76,8 @@ export class GamesService {
     const selectClause =
       'SELECT COUNT(*) as "games", floor(extract(hour from g."endTime") / 6.0)::int as "timeOfDayIndex"';
     const groupByClause = 'GROUP BY "timeOfDayIndex"';
-    const whereClause =
-      `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
+    const whereClause = `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
     logger.info(`buildGamesByTimeOfDaysQuery query=${query}`);
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
@@ -91,10 +87,8 @@ export class GamesService {
     const selectClause =
       'SELECT COUNT(*) as "games", extract(dow from g."endTime") as "dayOfWeekIndex"';
     const groupByClause = 'GROUP BY "dayOfWeekIndex"';
-    const whereClause =
-      `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
-    const query =
-      `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
+    const whereClause = `WHERE (g."whiteUsername"='${username}' OR g."blackUsername"='${username}') AND g."rules" = '${RULE}' AND g."rated" = true`;
+    const query = `${selectClause} FROM public."Game" as g ${whereClause} ${groupByClause}`;
     logger.info(`buildGamesByDaysOfWeek query=${query}`);
     const sql: Prisma.Sql = Prisma.raw(query);
     return sql;
@@ -105,35 +99,32 @@ export class GamesService {
     timeOfDays: GamesByTimeOfDay[];
     daysOfWeek: GamesByDayOfWeek[];
   }> {
-    const gamesByPeriodsQuery: Prisma.Sql = this.buildGamesByPeriodsQuery(
-      username
-    );
-    const gamesByTimeOfDaysQuery: Prisma.Sql = this.buildGamesByTimeOfDaysQuery(
-      username
-    );
-    const gamesByDaysOfWeekQuery: Prisma.Sql = this.buildGamesByDaysOfWeek(
-      username
-    );
-    const [periods = [], timeOfDaysList = [], daysOfWeekList = []] = await this
-      .prismaClient.$transaction([
+    const gamesByPeriodsQuery: Prisma.Sql =
+      this.buildGamesByPeriodsQuery(username);
+    const gamesByTimeOfDaysQuery: Prisma.Sql =
+      this.buildGamesByTimeOfDaysQuery(username);
+    const gamesByDaysOfWeekQuery: Prisma.Sql =
+      this.buildGamesByDaysOfWeek(username);
+    const [periods = [], timeOfDaysList = [], daysOfWeekList = []] =
+      await this.prismaClient.$transaction([
         this.prismaClient.$queryRaw<GamesByPeriod[]>(gamesByPeriodsQuery),
         this.prismaClient.$queryRaw<
           { games: number; timeOfDayIndex: number }[]
         >(gamesByTimeOfDaysQuery),
         this.prismaClient.$queryRaw<
           { games: number; dayOfWeekIndex: number }[]
-        >(gamesByDaysOfWeekQuery)
+        >(gamesByDaysOfWeekQuery),
       ]);
     const timeOfDays: GamesByTimeOfDay[] = timeOfDaysList.map(
       ({ games = 0, timeOfDayIndex = 0 }) => ({
         games,
-        timeOfDay: TIME_OF_DAYS[`${timeOfDayIndex}`]
+        timeOfDay: TIME_OF_DAYS[`${timeOfDayIndex}`],
       })
     );
     const daysOfWeek: GamesByDayOfWeek[] = daysOfWeekList.map(
       ({ games = 0, dayOfWeekIndex = 0 }) => ({
         games,
-        dayOfWeek: DAYS_OF_WEEK[`${dayOfWeekIndex}`]
+        dayOfWeek: DAYS_OF_WEEK[`${dayOfWeekIndex}`],
       })
     );
     return { periods, timeOfDays, daysOfWeek };
@@ -144,12 +135,12 @@ export class GamesService {
       total = 0,
       win = 0,
       draw = 0,
-      loss = 0
+      loss = 0,
     } = await this.getNumberOfGames(username);
     const {
       periods = [],
       timeOfDays = [],
-      daysOfWeek = []
+      daysOfWeek = [],
     } = await this.getGamesByCalender(username);
     return { total, win, draw, loss, periods, timeOfDays, daysOfWeek };
   }

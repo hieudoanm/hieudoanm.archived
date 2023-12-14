@@ -9,7 +9,7 @@ import {
   TsoaResponse,
   TsoaRoute,
   ValidateError,
-  ValidationService
+  ValidationService,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AnalyseController } from './modules/chess/analyse/analyse.controller';
@@ -38,20 +38,20 @@ import { HealthController } from './modules/health/health.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
 const models: TsoaRoute.Models = {
-  'PrincipalVariationSearch': {
+  PrincipalVariationSearch: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         pawn: { dataType: 'double', required: true },
         centipawn: { dataType: 'double', required: true },
-        nextMoves: { dataType: 'string', required: true }
+        nextMoves: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'FullCloudEvaluation': {
+  FullCloudEvaluation: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -59,14 +59,14 @@ const models: TsoaRoute.Models = {
         principalVariationSearch: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'PrincipalVariationSearch' },
-          required: true
+          required: true,
         },
         depth: { dataType: 'double', required: true },
         knodes: { dataType: 'double', required: true },
-        fen: { dataType: 'string', required: true }
+        fen: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'GetResult_any.any.any_': {
@@ -74,8 +74,8 @@ const models: TsoaRoute.Models = {
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {},
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'runtime.Types.DefaultSelection_OpeningPayload_': {
@@ -84,18 +84,18 @@ const models: TsoaRoute.Models = {
       dataType: 'intersection',
       subSchemas: [
         { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} }
+        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Opening': {
+  Opening: {
     dataType: 'refAlias',
     type: {
       ref: 'runtime.Types.DefaultSelection_OpeningPayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'runtime.Types.DefaultSelection_PositionPayload_': {
@@ -104,18 +104,18 @@ const models: TsoaRoute.Models = {
       dataType: 'intersection',
       subSchemas: [
         { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} }
+        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Position': {
+  Position: {
     dataType: 'refAlias',
     type: {
       ref: 'runtime.Types.DefaultSelection_PositionPayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'runtime.Types.DefaultSelection_GamePayload_': {
@@ -124,18 +124,18 @@ const models: TsoaRoute.Models = {
       dataType: 'intersection',
       subSchemas: [
         { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} }
+        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Game': {
+  Game: {
     dataType: 'refAlias',
     type: {
       ref: 'runtime.Types.DefaultSelection_GamePayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'runtime.Types.DefaultSelection_MovePayload_': {
@@ -144,57 +144,57 @@ const models: TsoaRoute.Models = {
       dataType: 'intersection',
       subSchemas: [
         { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} }
+        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Move': {
+  Move: {
     dataType: 'refAlias',
     type: {
       ref: 'runtime.Types.DefaultSelection_MovePayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'GamesByPeriod': {
+  GamesByPeriod: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         period: { dataType: 'double', required: true },
-        games: { dataType: 'double', required: true }
+        games: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'GamesByTimeOfDay': {
+  GamesByTimeOfDay: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         timeOfDay: { dataType: 'string', required: true },
-        games: { dataType: 'double', required: true }
+        games: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'GamesByDayOfWeek': {
+  GamesByDayOfWeek: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         dayOfWeek: { dataType: 'string', required: true },
-        games: { dataType: 'double', required: true }
+        games: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Games': {
+  Games: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -202,64 +202,64 @@ const models: TsoaRoute.Models = {
         daysOfWeek: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'GamesByDayOfWeek' },
-          required: true
+          required: true,
         },
         timeOfDays: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'GamesByTimeOfDay' },
-          required: true
+          required: true,
         },
         periods: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'GamesByPeriod' },
-          required: true
+          required: true,
         },
         loss: { dataType: 'double', required: true },
         draw: { dataType: 'double', required: true },
         win: { dataType: 'double', required: true },
-        total: { dataType: 'double', required: true }
+        total: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'AccuracyByPeriod': {
+  AccuracyByPeriod: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         period: { dataType: 'double', required: true },
-        average: { dataType: 'double', required: true }
+        average: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'AccuracyByTimeOfDay': {
+  AccuracyByTimeOfDay: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         timeOfDay: { dataType: 'string', required: true },
-        average: { dataType: 'double', required: true }
+        average: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'AccuracyByDayOfWeek': {
+  AccuracyByDayOfWeek: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         dayOfWeek: { dataType: 'string', required: true },
-        average: { dataType: 'double', required: true }
+        average: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Accuracy': {
+  Accuracy: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -267,40 +267,40 @@ const models: TsoaRoute.Models = {
         daysOfWeek: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'AccuracyByDayOfWeek' },
-          required: true
+          required: true,
         },
         timeOfDays: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'AccuracyByTimeOfDay' },
-          required: true
+          required: true,
         },
         periods: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'AccuracyByPeriod' },
-          required: true
+          required: true,
         },
         loss: { dataType: 'double', required: true },
         draw: { dataType: 'double', required: true },
         win: { dataType: 'double', required: true },
-        average: { dataType: 'double', required: true }
+        average: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Result': {
+  Result: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         count: { dataType: 'double', required: true },
-        result: { dataType: 'string', required: true }
+        result: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'ResultsByTimeOfDay': {
+  ResultsByTimeOfDay: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -308,13 +308,13 @@ const models: TsoaRoute.Models = {
         timeOfDay: { dataType: 'string', required: true },
         loss: { dataType: 'double', required: true },
         draw: { dataType: 'double', required: true },
-        win: { dataType: 'double', required: true }
+        win: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'ResultsByDayOfWeek': {
+  ResultsByDayOfWeek: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -322,13 +322,13 @@ const models: TsoaRoute.Models = {
         dayOfWeek: { dataType: 'string', required: true },
         loss: { dataType: 'double', required: true },
         draw: { dataType: 'double', required: true },
-        win: { dataType: 'double', required: true }
+        win: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Results': {
+  Results: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -336,34 +336,34 @@ const models: TsoaRoute.Models = {
         daysOfWeek: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'ResultsByDayOfWeek' },
-          required: true
+          required: true,
         },
         timeOfDays: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'ResultsByTimeOfDay' },
-          required: true
+          required: true,
         },
         loss: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Result' },
-          required: true
+          required: true,
         },
         draw: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Result' },
-          required: true
+          required: true,
         },
         win: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Result' },
-          required: true
-        }
+          required: true,
+        },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Opponent': {
+  Opponent: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -372,13 +372,13 @@ const models: TsoaRoute.Models = {
         draw: { dataType: 'double', required: true },
         win: { dataType: 'double', required: true },
         games: { dataType: 'double', required: true },
-        opponent: { dataType: 'string', required: true }
+        opponent: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Insights': {
+  Insights: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -386,15 +386,15 @@ const models: TsoaRoute.Models = {
         opponents: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Opponent' },
-          required: true
+          required: true,
         },
         results: { ref: 'Results', required: true },
         accuracy: { ref: 'Accuracy', required: true },
         games: { ref: 'Games', required: true },
-        username: { dataType: 'string', required: true }
+        username: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'Pick_Insights.username-or-games_': {
@@ -403,10 +403,10 @@ const models: TsoaRoute.Models = {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         username: { dataType: 'string', required: true },
-        games: { ref: 'Games', required: true }
+        games: { ref: 'Games', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'Pick_Insights.username-or-accuracy_': {
@@ -415,10 +415,10 @@ const models: TsoaRoute.Models = {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         username: { dataType: 'string', required: true },
-        accuracy: { ref: 'Accuracy', required: true }
+        accuracy: { ref: 'Accuracy', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'Pick_Insights.username-or-results_': {
@@ -427,10 +427,10 @@ const models: TsoaRoute.Models = {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         username: { dataType: 'string', required: true },
-        results: { ref: 'Results', required: true }
+        results: { ref: 'Results', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'Pick_Insights.username-or-opponents_': {
@@ -442,11 +442,11 @@ const models: TsoaRoute.Models = {
         opponents: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Opponent' },
-          required: true
-        }
+          required: true,
+        },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   'runtime.Types.DefaultSelection_PlayerPayload_': {
@@ -455,21 +455,21 @@ const models: TsoaRoute.Models = {
       dataType: 'intersection',
       subSchemas: [
         { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} }
+        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Player': {
+  Player: {
     dataType: 'refAlias',
     type: {
       ref: 'runtime.Types.DefaultSelection_PlayerPayload_',
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'StreamersResponse': {
+  StreamersResponse: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -480,23 +480,23 @@ const models: TsoaRoute.Models = {
             dataType: 'nestedObjectLiteral',
             nestedProperties: {
               country: { dataType: 'string', required: true },
-              countryCode: { dataType: 'string', required: true }
-            }
+              countryCode: { dataType: 'string', required: true },
+            },
           },
-          required: true
+          required: true,
         },
         players: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Player' },
-          required: true
+          required: true,
         },
-        total: { dataType: 'double', required: true }
+        total: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'Title': {
+  Title: {
     dataType: 'refAlias',
     type: {
       dataType: 'union',
@@ -514,26 +514,26 @@ const models: TsoaRoute.Models = {
         { dataType: 'enum', enums: ['AGM'] },
         { dataType: 'enum', enums: ['AIM'] },
         { dataType: 'enum', enums: ['AFM'] },
-        { dataType: 'enum', enums: ['ACM'] }
+        { dataType: 'enum', enums: ['ACM'] },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'CountryCount': {
+  CountryCount: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
       nestedProperties: {
         total: { dataType: 'string', required: true },
         country: { dataType: 'string', required: true },
-        countryCode: { dataType: 'string', required: true }
+        countryCode: { dataType: 'string', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'CountriesResponse': {
+  CountriesResponse: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -544,15 +544,15 @@ const models: TsoaRoute.Models = {
             dataType: 'nestedObjectLiteral',
             nestedProperties: {
               total: { dataType: 'double', required: true },
-              title: { dataType: 'string', required: true }
-            }
+              title: { dataType: 'string', required: true },
+            },
           },
-          required: true
+          required: true,
         },
         players: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Player' },
-          required: true
+          required: true,
         },
         total: { dataType: 'double', required: true },
         maxBulletRating: { dataType: 'double', required: true },
@@ -560,13 +560,13 @@ const models: TsoaRoute.Models = {
         maxRapidRating: { dataType: 'double', required: true },
         averageBulletRating: { dataType: 'double', required: true },
         averageBlitzRating: { dataType: 'double', required: true },
-        averageRapidRating: { dataType: 'double', required: true }
+        averageRapidRating: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'TitledStats': {
+  TitledStats: {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
@@ -574,7 +574,7 @@ const models: TsoaRoute.Models = {
         players: {
           dataType: 'array',
           array: { dataType: 'refAlias', ref: 'Player' },
-          required: true
+          required: true,
         },
         total: { dataType: 'double', required: true },
         maxBulletRating: { dataType: 'double', required: true },
@@ -582,13 +582,13 @@ const models: TsoaRoute.Models = {
         maxBlitzRating: { dataType: 'double', required: true },
         averageBlitzRating: { dataType: 'double', required: true },
         maxRapidRating: { dataType: 'double', required: true },
-        averageRapidRating: { dataType: 'double', required: true }
+        averageRapidRating: { dataType: 'double', required: true },
       },
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'ChessTitle': {
+  ChessTitle: {
     dataType: 'refAlias',
     type: {
       dataType: 'union',
@@ -602,13 +602,13 @@ const models: TsoaRoute.Models = {
         { dataType: 'enum', enums: ['CM'] },
         { dataType: 'enum', enums: ['WCM'] },
         { dataType: 'enum', enums: ['NM'] },
-        { dataType: 'enum', enums: ['WNM'] }
+        { dataType: 'enum', enums: ['WNM'] },
       ],
-      validators: {}
-    }
+      validators: {},
+    },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'TimeRange': {
+  TimeRange: {
     dataType: 'refAlias',
     type: {
       dataType: 'union',
@@ -616,11 +616,11 @@ const models: TsoaRoute.Models = {
         { dataType: 'enum', enums: ['WEEK'] },
         { dataType: 'enum', enums: ['MONTH'] },
         { dataType: 'enum', enums: ['QUARTER'] },
-        { dataType: 'enum', enums: ['YEAR'] }
+        { dataType: 'enum', enums: ['YEAR'] },
       ],
-      validators: {}
-    }
-  }
+      validators: {},
+    },
+  },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 };
 const validationService = new ValidationService(models);
@@ -636,18 +636,14 @@ export function RegisterRoutes(app: Router) {
     '/chess/analyse',
     ...fetchMiddlewares<RequestHandler>(AnalyseController),
     ...fetchMiddlewares<RequestHandler>(AnalyseController.prototype.analyse),
-    function AnalyseController_analyse(
-      request: any,
-      response: any,
-      next: any
-    ) {
+    function AnalyseController_analyse(request: any, response: any, next: any) {
       const args = {
         undefined: {
           in: 'body',
           required: true,
           dataType: 'nestedObjectLiteral',
-          nestedProperties: { fen: { dataType: 'string', required: true } }
-        }
+          nestedProperties: { fen: { dataType: 'string', required: true } },
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -687,8 +683,8 @@ export function RegisterRoutes(app: Router) {
           default: '',
           in: 'query',
           name: 'firstMove',
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -752,7 +748,7 @@ export function RegisterRoutes(app: Router) {
       next: any
     ) {
       const args = {
-        fen: { in: 'query', name: 'fen', required: true, dataType: 'string' }
+        fen: { in: 'query', name: 'fen', required: true, dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -790,8 +786,8 @@ export function RegisterRoutes(app: Router) {
           in: 'body',
           required: true,
           dataType: 'nestedObjectLiteral',
-          nestedProperties: { fen: { dataType: 'string', required: true } }
-        }
+          nestedProperties: { fen: { dataType: 'string', required: true } },
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -823,10 +819,10 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         month: { in: 'query', name: 'month', dataType: 'double' },
-        year: { in: 'query', name: 'year', dataType: 'double' }
+        year: { in: 'query', name: 'year', dataType: 'double' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -852,17 +848,13 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games',
     ...fetchMiddlewares<RequestHandler>(GamesController),
     ...fetchMiddlewares<RequestHandler>(GamesController.prototype.syncGames),
-    function GamesController_syncGames(
-      request: any,
-      response: any,
-      next: any
-    ) {
+    function GamesController_syncGames(request: any, response: any, next: any) {
       const args = {
         username: {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         undefined: {
           in: 'body',
@@ -870,9 +862,9 @@ export function RegisterRoutes(app: Router) {
           dataType: 'nestedObjectLiteral',
           nestedProperties: {
             year: { dataType: 'double', required: true },
-            month: { dataType: 'double', required: true }
-          }
-        }
+            month: { dataType: 'double', required: true },
+          },
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -904,14 +896,14 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         gameId: {
           in: 'path',
           name: 'gameId',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -947,14 +939,14 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         gameId: {
           in: 'path',
           name: 'gameId',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -979,9 +971,7 @@ export function RegisterRoutes(app: Router) {
   app.get(
     '/chess/player/:username/games/:gameId/moves',
     ...fetchMiddlewares<RequestHandler>(MovesController),
-    ...fetchMiddlewares<RequestHandler>(
-      MovesController.prototype.getGameMoves
-    ),
+    ...fetchMiddlewares<RequestHandler>(MovesController.prototype.getGameMoves),
     function MovesController_getGameMoves(
       request: any,
       response: any,
@@ -992,14 +982,14 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         gameId: {
           in: 'path',
           name: 'gameId',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1037,14 +1027,14 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
+          dataType: 'string',
         },
         gameId: {
           in: 'path',
           name: 'gameId',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1082,8 +1072,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1121,8 +1111,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1160,8 +1150,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1199,8 +1189,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1238,8 +1228,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1275,8 +1265,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1312,8 +1302,8 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'username',
           required: true,
-          dataType: 'string'
-        }
+          dataType: 'string',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1348,7 +1338,7 @@ export function RegisterRoutes(app: Router) {
     ) {
       const args = {
         title: { in: 'query', name: 'title', ref: 'Title' },
-        country: { in: 'query', name: 'country', dataType: 'string' }
+        country: { in: 'query', name: 'country', dataType: 'string' },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1386,8 +1376,8 @@ export function RegisterRoutes(app: Router) {
           default: true,
           in: 'query',
           name: 'cache',
-          dataType: 'boolean'
-        }
+          dataType: 'boolean',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1426,8 +1416,8 @@ export function RegisterRoutes(app: Router) {
           default: true,
           in: 'query',
           name: 'cache',
-          dataType: 'boolean'
-        }
+          dataType: 'boolean',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1465,20 +1455,20 @@ export function RegisterRoutes(app: Router) {
           in: 'path',
           name: 'title',
           required: true,
-          ref: 'ChessTitle'
+          ref: 'ChessTitle',
         },
         cache: {
           default: true,
           in: 'query',
           name: 'cache',
-          dataType: 'boolean'
+          dataType: 'boolean',
         },
         timeRange: {
           default: 'YEAR',
           in: 'query',
           name: 'timeRange',
-          ref: 'TimeRange'
-        }
+          ref: 'TimeRange',
+        },
       };
 
       // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -1579,10 +1569,10 @@ export function RegisterRoutes(app: Router) {
       response.set(name, headers[name]);
     });
     if (
-      data
-      && typeof data.pipe === 'function'
-      && data.readable
-      && typeof data._read === 'function'
+      data &&
+      typeof data.pipe === 'function' &&
+      data.readable &&
+      typeof data._read === 'function'
     ) {
       response.status(statusCode || 200);
       data.pipe(response);
@@ -1598,7 +1588,7 @@ export function RegisterRoutes(app: Router) {
   function responder(
     response: any
   ): TsoaResponse<HttpStatusCodeLiteral, unknown> {
-    return function(status, data, headers) {
+    return function (status, data, headers) {
       returnHandler(response, status, data, headers);
     };
   }
@@ -1677,8 +1667,8 @@ export function RegisterRoutes(app: Router) {
               { noImplicitAdditionalProperties: 'throw-on-extras' }
             );
           } else if (
-            args[key].dataType === 'array'
-            && args[key].array.dataType === 'file'
+            args[key].dataType === 'array' &&
+            args[key].array.dataType === 'file'
           ) {
             return validationService.ValidateParam(
               args[key],

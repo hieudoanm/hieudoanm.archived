@@ -22,7 +22,7 @@ export class TasksService {
   async createTask({
     title,
     description = '',
-    listId
+    listId,
   }: TaskRequest): Promise<Task> {
     const id = v4();
     const data = { id, title, description, completed: false, listId };
@@ -32,7 +32,7 @@ export class TasksService {
 
   async getTask(id: string): Promise<Task> {
     const task: Task = await this.prismaService.task.findFirstOrThrow({
-      where: { id }
+      where: { id },
     });
     return task;
   }
@@ -44,7 +44,7 @@ export class TasksService {
     const data = { title, description, completed, listId };
     const task: Task = await this.prismaService.task.update({
       data,
-      where: { id }
+      where: { id },
     });
     return task;
   }

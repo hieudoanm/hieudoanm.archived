@@ -19,7 +19,7 @@ import {
   Th,
   Thead,
   Tooltip,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import maps from '@chess/common/data/world.json';
 import { apolloClient } from '@chess/common/graphql';
@@ -35,7 +35,7 @@ import { useRouter } from 'next/router';
 type Country = { countryCode: string; country: string; total: number };
 
 const CountriesTable: React.FC<{ countries: Country[] }> = ({
-  countries = []
+  countries = [],
 }) => {
   return (
     <Card className="border border-gray-200 shadow">
@@ -79,7 +79,7 @@ const CountriesTable: React.FC<{ countries: Country[] }> = ({
 };
 
 const CountriesMaps: React.FC<{ countries: Country[] }> = ({
-  countries = []
+  countries = [],
 }) => {
   const router = useRouter();
 
@@ -105,7 +105,7 @@ const CountriesMaps: React.FC<{ countries: Country[] }> = ({
         id: countryCode,
         label: country,
         value: total,
-        color: overColor
+        color: overColor,
       };
     }
     const colorIndex: number = range.findIndex(
@@ -162,7 +162,7 @@ type CountriesPageProperties = {
 };
 
 const CountriesPage: NextPage<CountriesPageProperties> = ({
-  countries = []
+  countries = [],
 }) => {
   return (
     <Layout>
@@ -203,7 +203,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async () => {
   try {
     const {
-      data: { countries = [] }
+      data: { countries = [] },
     } = await apolloClient.query<{ countries: Country[] }>({ query });
     return { props: { countries } };
   } catch (error) {

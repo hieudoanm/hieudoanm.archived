@@ -166,5 +166,5 @@ export const SYMBOLS: Record<string, string> = {
   ZAR: 'South African Rand',
   ZMK: 'Zambian Kwacha (pre-2013)',
   ZMW: 'Zambian Kwacha',
-  ZWL: 'Zimbabwean Dollar'
+  ZWL: 'Zimbabwean Dollar',
 };

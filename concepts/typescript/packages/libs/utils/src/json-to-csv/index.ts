@@ -3,7 +3,7 @@ type Options = { delimiter?: string; headers?: string[]; quote?: string };
 const defaultOptions = {
   delimiter: ',',
   headers: [],
-  quote: '"'
+  quote: '"',
 };
 
 export const jsonToCSV = <T extends Record<string, string>>(

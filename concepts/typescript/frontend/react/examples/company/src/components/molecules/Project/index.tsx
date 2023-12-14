@@ -9,19 +9,17 @@ export const Project: React.FC<{
   description?: string;
   url?: string;
   technologies?: string[];
-}> = (
-  { image, title = '', description = '', url = '', technologies = [] }
-) => {
+}> = ({ image, title = '', description = '', url = '', technologies = [] }) => {
   return (
-    <div className="hover:p-4 hover:shadow hover:border transition-all duration-100">
+    <div className="transition-all duration-100 hover:border hover:p-4 hover:shadow">
       <Link href={url} target="_blank" className="block">
         <div
           className="aspect-video rounded border bg-cover bg-center"
           style={{ backgroundImage: `url(${image.src})` }}
         />
-        <h2 className="text-lg font-bold mt-4">{title}</h2>
+        <h2 className="mt-4 text-lg font-bold">{title}</h2>
       </Link>
-      <p className="text-gray-500 mt-4">{description}</p>
+      <p className="mt-4 text-gray-500">{description}</p>
       <div className="mt-4">
         {technologies.map((technology) => (
           <Chip
@@ -29,7 +27,7 @@ export const Project: React.FC<{
             label={technology}
             variant="filled"
             size="small"
-            className="text-white bg-emerald-500"
+            className="bg-emerald-500 text-white"
           />
         ))}
       </div>

@@ -36,22 +36,21 @@ const main = async () => {
   await consumer.connect();
   await consumer.subscribe({
     topic: configs.kafka.topic,
-    fromBeginning: true
+    fromBeginning: true,
   });
   await consumer.run({
     eachMessage: async ({ topic, partition, message }) => {
       const offset = message.offset;
       const value = message.value?.toString() || '';
       log.info('Receiving', { topic, partition, offset, value });
-    }
+    },
   });
   // HTTP Server
   httpServer.listen(port);
   httpServer.on('listening', () => {
     const addr = httpServer.address();
-    const bind = typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr?.port;
+    const bind =
+      typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr?.port;
     log.info(`🚀 APIs is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {

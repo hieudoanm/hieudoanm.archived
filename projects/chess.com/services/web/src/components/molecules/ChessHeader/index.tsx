@@ -69,7 +69,7 @@ export const ChessHeader: React.FC<ChessHeaderProperties> = ({
   username = '',
   verified = false,
   is_streamer = false,
-  twitch_url = ''
+  twitch_url = '',
 }) => {
   const toast = useToast();
 
@@ -80,7 +80,7 @@ export const ChessHeader: React.FC<ChessHeaderProperties> = ({
       description: 'Data is synced successfully',
       status: 'success',
       duration: 9000,
-      isClosable: true
+      isClosable: true,
     });
   };
 
@@ -93,13 +93,13 @@ export const ChessHeader: React.FC<ChessHeaderProperties> = ({
         />
         <div>
           <Heading className="flex items-center gap-x-2">
-            {title
-              ? (
-                <Badge className="rounded bg-red-500 px-2 py-1 text-white">
-                  {title}
-                </Badge>
-              )
-              : <></>}
+            {title ? (
+              <Badge className="rounded bg-red-500 px-2 py-1 text-white">
+                {title}
+              </Badge>
+            ) : (
+              <></>
+            )}
             <Link
               href={`https://www.chess.com/member/${username}`}
               target="_blank"
@@ -112,15 +112,15 @@ export const ChessHeader: React.FC<ChessHeaderProperties> = ({
       </div>
       <div className="flex items-center gap-2">
         {verified ? <Icon as={FaCheckCircle} color="teal" /> : <></>}
-        {is_streamer
-          ? (
-            <Link href={twitch_url} target="_blank">
-              <Button colorScheme="teal">
-                <Icon as={FaTwitch} />
-              </Button>
-            </Link>
-          )
-          : <></>}
+        {is_streamer ? (
+          <Link href={twitch_url} target="_blank">
+            <Button colorScheme="teal">
+              <Icon as={FaTwitch} />
+            </Button>
+          </Link>
+        ) : (
+          <></>
+        )}
         <Button colorScheme="teal" onClick={sync}>
           <Icon as={FaSync} />
         </Button>

@@ -12,7 +12,7 @@ import { RegisterRoutes } from './routes';
 export const app = express();
 
 const helmetOptions: Readonly<HelmetOptions> = {
-  contentSecurityPolicy: NODE_ENV === 'production' ? undefined : false
+  contentSecurityPolicy: NODE_ENV === 'production' ? undefined : false,
 };
 
 app.use(cors());

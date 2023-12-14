@@ -2,7 +2,7 @@ export enum Plan {
   TIER_ONE = 'TIER_ONE',
   TIER_TWO = 'TIER_TWO',
   TIER_THREE = 'TIER_THREE',
-  TIER_FOUR = 'TIER_FOUR'
+  TIER_FOUR = 'TIER_FOUR',
 }
 
 export enum Stage {
@@ -31,7 +31,7 @@ export enum Stage {
   APERTURA = 'APERTURA',
   CHAMPIONSHIP = 'CHAMPIONSHIP',
   RELEGATION = 'RELEGATION',
-  RELEGATION_ROUND = 'RELEGATION_ROUND'
+  RELEGATION_ROUND = 'RELEGATION_ROUND',
 }
 
 export enum Status {
@@ -42,10 +42,10 @@ export enum Status {
   PAUSED = 'PAUSED',
   POSTPONED = 'POSTPONED',
   SCHEDULED = 'SCHEDULED',
-  SUSPENDED = 'SUSPENDED'
+  SUSPENDED = 'SUSPENDED',
 }
 
 export enum Venue {
   HOME = 'HOME',
-  AWAY = 'AWAY'
+  AWAY = 'AWAY',
 }

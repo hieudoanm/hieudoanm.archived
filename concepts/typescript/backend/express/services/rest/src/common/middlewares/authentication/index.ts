@@ -15,9 +15,10 @@ const authenticateKey = (request: Request) => {
 };
 
 const authenticateToken = (request: Request, scopes: string[]) => {
-  const token = request.body.token
-    || request.query.token
-    || request.headers['x-access-token'];
+  const token =
+    request.body.token ||
+    request.query.token ||
+    request.headers['x-access-token'];
 
   return new Promise((resolve, reject) => {
     if (!token) {

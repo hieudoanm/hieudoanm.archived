@@ -9,7 +9,7 @@ const SmallBall: React.FC = () => {
       className="w-8 h-8 bg-contain bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          'url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg)'
+          'url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg)',
       }}
     />
   );
@@ -20,7 +20,8 @@ const Play: React.FC = () => {
     <div
       className="w-6 h-6 bg-contain bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url(/how-to-play/en/images/meta-mask-wallet/play.svg)'
+        backgroundImage:
+          'url(/how-to-play/en/images/meta-mask-wallet/play.svg)',
       }}
     />
   );

@@ -17,7 +17,7 @@ export class TitledService {
   public async getTitledStats({
     title,
     cache = true,
-    timeRange = 'YEAR'
+    timeRange = 'YEAR',
   }: {
     cache: boolean;
     title: ChessTitle;
@@ -25,15 +25,17 @@ export class TitledService {
   }): Promise<TitledStats> {
     const key: string = `chess-titled-${title}-${timeRange}`.toLowerCase();
     if (cache) {
-      const cacheTitledStats: TitledStats | null | undefined = await this
-        .redisClient.getObject<TitledStats>(key);
-      if (cacheTitledStats) { return cacheTitledStats; }
+      const cacheTitledStats: TitledStats | null | undefined =
+        await this.redisClient.getObject<TitledStats>(key);
+      if (cacheTitledStats) {
+        return cacheTitledStats;
+      }
     }
     const titledStats: TitledStats = await this.titledRepository.getTitledStats(
       { title, timeRange }
     );
     await this.redisClient.setObject<TitledStats>(key, titledStats, {
-      expiresInSeconds: 30 * 60 // 30 minutes
+      expiresInSeconds: 30 * 60, // 30 minutes
     });
     return titledStats;
   }

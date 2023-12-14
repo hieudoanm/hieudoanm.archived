@@ -6,7 +6,7 @@ import {
   Param,
   Patch,
   Post,
-  UseGuards
+  UseGuards,
 } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Task } from '@prisma/client';
@@ -52,7 +52,7 @@ export class TasksController {
       title,
       description,
       completed,
-      listId
+      listId,
     });
   }
 

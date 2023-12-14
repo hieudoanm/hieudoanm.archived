@@ -10,6 +10,6 @@ export const resolvers = {
       { chessDataSource }: ChessContext
     ): Promise<Titled> => {
       return chessDataSource.getTitled({ title, timeRange });
-    }
-  }
+    },
+  },
 };

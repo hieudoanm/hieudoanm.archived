@@ -6,7 +6,7 @@ import {
   ChessGame,
   ChessPlayer,
   ChessStats,
-  ChessTitle
+  ChessTitle,
 } from './types';
 
 const BASE_URL = 'https://api.chess.com/pub';
@@ -21,7 +21,7 @@ export const TITLES: ChessTitle[] = [
   'WIM',
   'WFM',
   'WCM',
-  'WNM'
+  'WNM',
 ];
 
 export class ChessClient {
@@ -73,9 +73,8 @@ export class ChessClient {
     const archives = await this.getChessArchives(username);
     const filterArchives = archives.filter((archive: string) => {
       const [yearPath = '', monthPath = ''] = archive.split('/').slice(-2);
-      const monthFlag: boolean = month === 0
-        ? true
-        : addZero(month) === monthPath;
+      const monthFlag: boolean =
+        month === 0 ? true : addZero(month) === monthPath;
       const yearFlag: boolean = year === 0 ? true : addZero(year) === yearPath;
       return monthFlag && yearFlag;
     });

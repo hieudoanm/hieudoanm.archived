@@ -11,15 +11,19 @@ export class OpeningsRepository {
   public async getOpenings({
     eco = '',
     name = '',
-    firstMove = ''
+    firstMove = '',
   }: {
     eco: string;
     name: string;
     firstMove: string;
   }): Promise<{ total: number; openings: Opening[] }> {
     let where: Prisma.OpeningWhereInput = {};
-    if (eco !== '') { where = { ...where, eco }; }
-    if (firstMove !== '') { where = { ...where, firstMove }; }
+    if (eco !== '') {
+      where = { ...where, eco };
+    }
+    if (firstMove !== '') {
+      where = { ...where, firstMove };
+    }
     if (name !== '') {
       where = { ...where, name: { contains: name, mode: 'insensitive' } };
     }
@@ -31,9 +35,9 @@ export class OpeningsRepository {
           { centipawn: 'asc' },
           { eco: 'asc' },
           { name: 'asc' },
-          { firstMove: 'asc' }
-        ]
-      })
+          { firstMove: 'asc' },
+        ],
+      }),
     ]);
     return { total, openings };
   }
@@ -41,7 +45,7 @@ export class OpeningsRepository {
   public async getECOs(): Promise<{ total: number; ecos: string[] }> {
     const results = await this.prismaClient.opening.findMany({
       select: { eco: true },
-      distinct: ['eco']
+      distinct: ['eco'],
     });
     const total = results.length;
     const ecos = results.map(({ eco }) => eco);
@@ -52,7 +56,7 @@ export class OpeningsRepository {
     const where: Prisma.OpeningWhereInput | undefined =
       eco !== '' && name !== '' ? { eco, name } : undefined;
     const opening: Opening = await this.prismaClient.opening.findFirstOrThrow({
-      where
+      where,
     });
     return opening;
   }

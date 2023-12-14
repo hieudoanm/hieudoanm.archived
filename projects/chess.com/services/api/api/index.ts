@@ -14,15 +14,13 @@ const startServer = async (apolloServer: ApolloServer<ChessContext>) => {
     cors<cors.CorsRequest>(),
     json(),
     expressMiddleware(apolloServer, {
-      context: async () => ({ chessDataSource: new ChessDataSource() })
+      context: async () => ({ chessDataSource: new ChessDataSource() }),
     })
   );
 };
 
 const httpServer: http.Server = http.createServer(app);
-const apolloServer: ApolloServer<ChessContext> = createApolloServer(
-  httpServer
-);
+const apolloServer: ApolloServer<ChessContext> = createApolloServer(httpServer);
 startServer(apolloServer);
 
 export default httpServer;

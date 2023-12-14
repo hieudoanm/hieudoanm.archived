@@ -5,6 +5,6 @@ import { ListsService } from './lists.service';
 
 @Module({
   controllers: [ListsController],
-  providers: [PrismaService, ListsService]
+  providers: [PrismaService, ListsService],
 })
 export class ListsModule {}

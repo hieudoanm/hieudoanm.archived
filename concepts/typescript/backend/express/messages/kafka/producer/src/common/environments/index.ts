@@ -10,6 +10,6 @@ export default {
     password: KAFKA_PASSWORD,
     brokers: KAFKA_BROKERS,
     clientId: KAFKA_CLIENT_ID,
-    topic: KAFKA_TOPIC
-  }
+    topic: KAFKA_TOPIC,
+  },
 };

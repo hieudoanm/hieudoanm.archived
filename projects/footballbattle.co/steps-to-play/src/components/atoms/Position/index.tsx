@@ -10,7 +10,7 @@ type PositionProps = {
 export const Position: React.FC<PositionProps> = ({
   image,
   title,
-  paddingBottom = '180%'
+  paddingBottom = '180%',
 }) => {
   return (
     <div>

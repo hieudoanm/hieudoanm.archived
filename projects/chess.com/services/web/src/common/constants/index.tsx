@@ -20,7 +20,7 @@ export const TIME_COLORS: string[] = [
   '#3182CE',
   '#00B5D8',
   '#805AD5',
-  '#D53F8C'
+  '#D53F8C',
 ];
 export const TEAL_COLOR: string = '#008080';
 export const TEAL_COLORS: string[] = [
@@ -33,7 +33,7 @@ export const TEAL_COLORS: string[] = [
   '#003333',
   '#002626',
   '#000d0d',
-  '#000000'
+  '#000000',
 ];
 export const GRAY_COLOR: string = '#808080';
 export const GRAY_COLORS: string[] = [
@@ -47,7 +47,7 @@ export const GRAY_COLORS: string[] = [
   '#262626',
   '#1a1a1a',
   '#0d0d0d',
-  '#000000'
+  '#000000',
 ];
 export const RED_COLOR: string = '#ff0000';
 export const RED_COLORS: string[] = [
@@ -61,12 +61,12 @@ export const RED_COLORS: string[] = [
   '#4c0000',
   '#330000',
   '#190000',
-  '#000000'
+  '#000000',
 ];
 export const COLORS_MAP: Record<string, string[]> = {
   teal: TEAL_COLORS,
   gray: GRAY_COLORS,
-  red: RED_COLORS
+  red: RED_COLORS,
 };
 // Results
 export const WIN_RESULTS: string[] = ['win'];
@@ -76,13 +76,13 @@ export const DRAW_RESULTS: string[] = [
   'insufficient',
   'repetition',
   'stalemate',
-  'timevsinsufficient'
+  'timevsinsufficient',
 ];
 export const LOSS_RESULTS: string[] = [
   'checkmated',
   'resigned',
   'timeout',
-  'abandoned'
+  'abandoned',
 ];
 
 export const TITLED_ABBREVIATIONS: Record<Title, string> = {
@@ -99,5 +99,5 @@ export const TITLED_ABBREVIATIONS: Record<Title, string> = {
   AGM: 'Arena Grand Master',
   AIM: 'Arena International Master',
   AFM: 'Arena FIDE Master',
-  ACM: 'Arena Candidate Master'
+  ACM: 'Arena Candidate Master',
 };

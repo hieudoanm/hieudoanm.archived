@@ -6,7 +6,7 @@ import {
   CardHeader,
   Divider,
   Input,
-  Text
+  Text,
 } from '@chakra-ui/react';
 import { logger } from '@chess/common/libs/logger';
 import { getStripe } from '@chess/common/libs/stripe';
@@ -51,8 +51,8 @@ const ProfilePage: NextPage = () => {
 
   const checkout = async () => {
     const headers = {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
     };
     const { data: checkoutSession } = await axios.post<Stripe.Checkout.Session>(
       '/api/stripe',
@@ -61,7 +61,7 @@ const ProfilePage: NextPage = () => {
     logger.info(`checkoutSession`, checkoutSession);
     const stripe = await getStripe();
     const options: RedirectToCheckoutOptions = {
-      sessionId: checkoutSession.id
+      sessionId: checkoutSession.id,
     };
     const response = await stripe!.redirectToCheckout(options);
     logger.info(`response`, response);

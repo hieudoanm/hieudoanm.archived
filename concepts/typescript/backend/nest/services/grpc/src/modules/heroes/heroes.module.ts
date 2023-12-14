@@ -11,11 +11,11 @@ import { HeroesController } from './heroes.controller';
         transport: Transport.GRPC,
         options: {
           package: 'heroes',
-          protoPath: join(__dirname, 'heroes.proto')
-        }
-      }
-    ])
+          protoPath: join(__dirname, 'heroes.proto'),
+        },
+      },
+    ]),
   ],
-  controllers: [HeroesController]
+  controllers: [HeroesController],
 })
 export class HeroesModule {}

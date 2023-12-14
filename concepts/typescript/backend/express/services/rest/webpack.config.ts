@@ -11,12 +11,12 @@ export default {
   externals: [
     nodeExternals(),
     nodeExternals({
-      modulesDir: path.resolve(path.dirname(''), '../../../../node_modules')
-    })
+      modulesDir: path.resolve(path.dirname(''), '../../../../node_modules'),
+    }),
   ],
   output: {
     path: path.resolve(path.dirname(''), 'dist'),
-    filename: 'server.js'
+    filename: 'server.js',
   },
   plugins: [
     // Add your plugins here
@@ -27,13 +27,13 @@ export default {
       {
         test: /\.(ts|tsx)$/i,
         loader: 'ts-loader',
-        exclude: ['/node_modules/']
-      }
+        exclude: ['/node_modules/'],
+      },
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
-    ]
+    ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js']
-  }
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+  },
 };

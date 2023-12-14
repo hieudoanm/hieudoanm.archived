@@ -9,7 +9,8 @@ const ArrowDown: React.FC = () => {
       <div
         className="w-12 h-4 bg-contain bg-no-repeat bg-center"
         style={{
-          backgroundImage: 'url(/how-to-play/en/images/stake-to-play/arrow.svg)'
+          backgroundImage:
+            'url(/how-to-play/en/images/stake-to-play/arrow.svg)',
         }}
       />
     </div>
@@ -31,7 +32,7 @@ const Circle: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const Instruction: React.FC<{ step: string; children: React.ReactNode }> = ({
   step,
-  children = <></>
+  children = <></>,
 }) => {
   return (
     <div className="flex items-center gap-x-4">

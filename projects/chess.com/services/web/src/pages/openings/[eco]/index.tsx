@@ -15,7 +15,7 @@ import {
   Text,
   Th,
   Thead,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { apolloClient } from '@chess/common/graphql';
 import { logger } from '@chess/common/libs/logger';
@@ -29,7 +29,7 @@ type OpeningPageProperties = { eco: string; openings: Opening[] };
 
 const OpeningPage: NextPage<OpeningPageProperties> = ({
   eco = '',
-  openings = []
+  openings = [],
 }) => {
   return (
     <Layout>
@@ -72,7 +72,7 @@ const OpeningPage: NextPage<OpeningPageProperties> = ({
                           eco = '',
                           name = '',
                           firstMove = '',
-                          centipawn = 0
+                          centipawn = 0,
                         }: Opening,
                         index: number
                       ) => {
@@ -119,10 +119,10 @@ export const getServerSideProps: GetServerSideProps<
   const eco: string = context.query.eco?.toString() ?? '';
   try {
     const {
-      data: { openings = [] }
+      data: { openings = [] },
     } = await apolloClient.query<{ openings: Opening[] }>({
       query,
-      variables: { eco }
+      variables: { eco },
     });
     return { props: { eco, openings } };
   } catch (error) {

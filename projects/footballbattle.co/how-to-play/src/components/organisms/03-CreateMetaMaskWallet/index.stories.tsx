@@ -4,7 +4,7 @@ export const CreateMetaMaskWalletComponent = () => <CreateMetaMaskWallet />;
 
 const Story = {
   title: 'organisms/CreateMetaMaskWallet',
-  component: CreateMetaMaskWallet
+  component: CreateMetaMaskWallet,
 };
 
 export default Story;

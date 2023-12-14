@@ -21,7 +21,7 @@ import {
   Text,
   Th,
   Thead,
-  Tr
+  Tr,
 } from '@chakra-ui/react';
 import { GAP, TITLED_ABBREVIATIONS } from '@chess/common/constants';
 import flags from '@chess/common/data/flags.json';
@@ -36,7 +36,7 @@ import Link from 'next/link';
 import { FaBolt, FaClock, FaRocket } from 'react-icons/fa';
 
 const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsRapidRatingLast > 0
@@ -67,7 +67,7 @@ const RapidHistogramChart: React.FC<{ players: Player[] }> = ({
 };
 
 const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsBlitzRatingLast > 0
@@ -98,7 +98,7 @@ const BlitzHistogramChart: React.FC<{ players: Player[] }> = ({
 };
 
 const BulletHistogramChart: React.FC<{ players: Player[] }> = ({
-  players = []
+  players = [],
 }) => {
   const ratedPlayers = players.filter(
     (player: Player) => player.statsBulletRatingLast > 0
@@ -130,7 +130,7 @@ const BulletHistogramChart: React.FC<{ players: Player[] }> = ({
 
 const PlayersTable: React.FC<{ total: number; players: Player[] }> = ({
   total = 0,
-  players = []
+  players = [],
 }) => {
   return (
     <Card className="border border-gray-200 shadow">
@@ -165,35 +165,32 @@ const PlayersTable: React.FC<{ total: number; players: Player[] }> = ({
                 avatar = '',
                 statsBulletRatingLast = 0,
                 statsBlitzRatingLast = 0,
-                statsRapidRatingLast = 0
+                statsRapidRatingLast = 0,
               }) => {
                 return (
                   <Tr key={username}>
                     <Td>
-                      {(title ?? '').length > 0
-                        ? (
-                          <Link href={`/titled/${title}`}>
-                            <Badge colorScheme="red">{title}</Badge>
-                          </Link>
-                        )
-                        : <></>}
+                      {(title ?? '').length > 0 ? (
+                        <Link href={`/titled/${title}`}>
+                          <Badge colorScheme="red">{title}</Badge>
+                        </Link>
+                      ) : (
+                        <></>
+                      )}
                     </Td>
                     <Td>
                       <Link href={`/${username}`}>
                         <div className="inline-flex items-center gap-x-2">
-                          {avatar.length > 0
-                            ? (
-                              <div
-                                className="aspect-square w-8 rounded bg-contain bg-center"
-                                style={{
-                                  backgroundImage: `url(${avatar})`
-                                }}
-                              />
-                            )
-                            : (
-                              <div className="aspect-square w-8 rounded border">
-                              </div>
-                            )}
+                          {avatar.length > 0 ? (
+                            <div
+                              className="aspect-square w-8 rounded bg-contain bg-center"
+                              style={{
+                                backgroundImage: `url(${avatar})`,
+                              }}
+                            />
+                          ) : (
+                            <div className="aspect-square w-8 rounded border"></div>
+                          )}
                           <Text>{username}</Text>
                         </div>
                       </Link>
@@ -227,19 +224,15 @@ const CountryStats: React.FC<{
             <StatNumber>{average.toLocaleString()}</StatNumber>
             <StatHelpText>Highest: {max}</StatHelpText>
           </Stat>
-          {icon
-            ? (
-              <div>
-                <Box
-                  bgColor={'teal.500'}
-                  color={'white'}
-                  className="rounded p-2"
-                >
-                  <Icon as={icon} boxSize={6} />
-                </Box>
-              </div>
-            )
-            : <></>}
+          {icon ? (
+            <div>
+              <Box bgColor={'teal.500'} color={'white'} className="rounded p-2">
+                <Icon as={icon} boxSize={6} />
+              </Box>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </CardBody>
     </Card>
@@ -269,7 +262,7 @@ const CountryPage: NextPage<CountryPageProperties> = ({
   maxBulletRating = 0,
   total = 0,
   players = [],
-  titles = []
+  titles = [],
 }) => {
   return (
     <Layout>
@@ -305,21 +298,21 @@ const CountryPage: NextPage<CountryPageProperties> = ({
                 />
               </div>
             </div>
-            {players.length > 1
-              ? (
-                <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
-                  <div className="col-span-1">
-                    <RapidHistogramChart players={players} />
-                  </div>
-                  <div className="col-span-1">
-                    <BlitzHistogramChart players={players} />
-                  </div>
-                  <div className="col-span-1">
-                    <BulletHistogramChart players={players} />
-                  </div>
+            {players.length > 1 ? (
+              <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-8">
+                <div className="col-span-1">
+                  <RapidHistogramChart players={players} />
                 </div>
-              )
-              : <></>}
+                <div className="col-span-1">
+                  <BlitzHistogramChart players={players} />
+                </div>
+                <div className="col-span-1">
+                  <BulletHistogramChart players={players} />
+                </div>
+              </div>
+            ) : (
+              <></>
+            )}
             <Card className="border border-gray-200 shadow">
               <CardHeader>
                 <Heading className="text-xl">Titles</Heading>
@@ -431,12 +424,12 @@ export const getServerSideProps: GetServerSideProps<
           maxBulletRating = 0,
           total = 0,
           players = [],
-          titles = []
-        }
-      }
+          titles = [],
+        },
+      },
     } = await apolloClient.query<{ country: CountryPageProperties }>({
       query,
-      variables: { code }
+      variables: { code },
     });
     return {
       props: {
@@ -449,8 +442,8 @@ export const getServerSideProps: GetServerSideProps<
         maxBulletRating,
         total,
         players,
-        titles
-      }
+        titles,
+      },
     };
   } catch (error) {
     logger.error(`getServerSideProps error=${error}`);
@@ -465,8 +458,8 @@ export const getServerSideProps: GetServerSideProps<
         maxBulletRating: 0,
         total: 0,
         players: [],
-        titles: []
-      }
+        titles: [],
+      },
     };
   }
 };

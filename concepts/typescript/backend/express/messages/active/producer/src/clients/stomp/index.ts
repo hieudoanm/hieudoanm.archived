@@ -16,8 +16,8 @@ export class Stomp {
     this.client.on('error', async (error) => {
       log.error('STOMP onError', error);
       if (
-        error.message === 'connection timed out'
-        || error.message === 'connection ended unexpectedly'
+        error.message === 'connection timed out' ||
+        error.message === 'connection ended unexpectedly'
       ) {
         this.client = await this.stompConnect();
       }
@@ -27,17 +27,14 @@ export class Stomp {
   public async stompConnect(): Promise<Client> {
     const { connectOptions } = this;
     return new Promise((resolve, reject) => {
-      stompit.connect(
-        connectOptions,
-        (error: Error | null, client: Client) => {
-          if (error) {
-            log.error('STOMP Connect Error', error);
-            return reject(error);
-          }
-          log.info('STOMP is connected');
-          resolve(client);
+      stompit.connect(connectOptions, (error: Error | null, client: Client) => {
+        if (error) {
+          log.error('STOMP Connect Error', error);
+          return reject(error);
         }
-      );
+        log.info('STOMP is connected');
+        resolve(client);
+      });
     });
   }
 
@@ -46,11 +43,13 @@ export class Stomp {
     message: string,
     contentType = 'text/plain'
   ) {
-    if (this.client === null) { throw new Error('StompClient is null'); }
+    if (this.client === null) {
+      throw new Error('StompClient is null');
+    }
 
     const sendHeaders = {
       destination,
-      'content-type': contentType
+      'content-type': contentType,
     };
 
     const frame = this.client.send(sendHeaders);
@@ -63,11 +62,13 @@ export class Stomp {
     callback: (body: string) => void
   ) {
     const { client } = this;
-    if (client === null) { throw new Error('StompClient is null'); }
+    if (client === null) {
+      throw new Error('StompClient is null');
+    }
 
     const subscribeHeaders = {
       destination,
-      ack: 'client-individual'
+      ack: 'client-individual',
     };
 
     client.subscribe(subscribeHeaders, (error, message) => {

@@ -1,21 +1,21 @@
 export type ChessPlayer = {
-  'avatar': string;
-  'player_id': number;
+  avatar: string;
+  player_id: number;
   '@id': string;
-  'url': string;
-  'name': string;
-  'username': string;
-  'title': string;
-  'followers': number;
-  'country': string;
-  'location': string;
-  'last_online': number;
-  'joined': number;
-  'status': string;
-  'is_streamer': boolean;
-  'twitch_url': string;
-  'verified': boolean;
-  'league': string;
+  url: string;
+  name: string;
+  username: string;
+  title: string;
+  followers: number;
+  country: string;
+  location: string;
+  last_online: number;
+  joined: number;
+  status: string;
+  is_streamer: boolean;
+  twitch_url: string;
+  verified: boolean;
+  league: string;
 };
 
 export type ChessStatsLast = { rating: number; date: number; rd: number };
@@ -88,18 +88,18 @@ export type ChessGame = {
   time_class: string;
   rules: string;
   white: {
-    'rating': number;
-    'result': string;
+    rating: number;
+    result: string;
     '@id': string;
-    'username': string;
-    'uuid': string;
+    username: string;
+    uuid: string;
   };
   black: {
-    'rating': number;
-    'result': string;
+    rating: number;
+    result: string;
     '@id': string;
-    'username': string;
-    'uuid': string;
+    username: string;
+    uuid: string;
   };
 };
 

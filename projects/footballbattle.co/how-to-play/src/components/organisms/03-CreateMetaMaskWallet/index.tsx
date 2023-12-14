@@ -13,8 +13,7 @@ export const CreateMetaMaskWallet: React.FC = () => {
       <Container>
         <div className="mb-16">
           <Header>
-            <LinearText>Create</LinearText> <LinearText>MetaMask</LinearText>
-            {' '}
+            <LinearText>Create</LinearText> <LinearText>MetaMask</LinearText>{' '}
             <LinearText>Wallet</LinearText>
           </Header>
         </div>

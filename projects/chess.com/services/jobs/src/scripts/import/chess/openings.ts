@@ -16,7 +16,7 @@ const getCentipawn = async (fen: string): Promise<number> => {
       maxBodyLength: Number.POSITIVE_INFINITY,
       url: 'https://chessanalysisapi.vercel.app/api/analyse/fen',
       headers: { 'Content-Type': 'application/json' },
-      data: requestData
+      data: requestData,
     };
     const { data } = await axios.request<{ centipawn: number }>(config);
     return data.centipawn ?? 0;
@@ -46,13 +46,13 @@ const main = async () => {
       fen,
       centipawn,
       createdAt: d,
-      updatedAt: d
+      updatedAt: d,
     };
     await prismaClient.opening.upsert({
       create: data,
       update: data,
       // eslint-disable-next-line camelcase
-      where: { eco_name_pgn: { eco, name, pgn } }
+      where: { eco_name_pgn: { eco, name, pgn } },
     });
   }
 };

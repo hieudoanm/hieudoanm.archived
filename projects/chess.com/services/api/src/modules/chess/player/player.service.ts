@@ -4,13 +4,13 @@ import {
   Prisma,
   PrismaClient,
   Status,
-  Title
+  Title,
 } from '@prisma/client';
 import axios from 'axios';
 import { ChessClient } from '../../../common/clients/chess.com';
 import {
   ChessPlayer,
-  ChessStats
+  ChessStats,
 } from '../../../common/clients/chess.com/types';
 import { getPrismaClient } from '../../../common/prisma';
 
@@ -26,7 +26,9 @@ export class PlayerService {
   public async getPlayer(username: string): Promise<Player> {
     const where: Prisma.PlayerWhereInput = { username };
     const player = await this.prismaClient.player.findFirst({ where });
-    if (player !== null) { return player; }
+    if (player !== null) {
+      return player;
+    }
     return this.syncPlayer(username);
   }
 
@@ -35,75 +37,75 @@ export class PlayerService {
       chess_daily: {
         last: {
           rating: statsDailyRatingLast = 0,
-          rd: statsDailyRatingDeviation = 0
+          rd: statsDailyRatingDeviation = 0,
         } = { rating: 0, rd: 0 },
         best: { rating: statsDailyRatingBest = 0 } = { rating: 0 },
         record: {
           win: statsDailyRecordWin = 0,
           draw: statsDailyRecordDraw = 0,
-          loss: statsDailyRecordLoss = 0
+          loss: statsDailyRecordLoss = 0,
         } = {
-          record: { win: 0, draw: 0, loss: 0 }
-        }
+          record: { win: 0, draw: 0, loss: 0 },
+        },
       } = {
         last: { rating: 0, rd: 0 },
         best: { rating: 0 },
-        record: { win: 0, draw: 0, loss: 0 }
+        record: { win: 0, draw: 0, loss: 0 },
       },
       chess_rapid: {
         last: {
           rating: statsRapidRatingLast = 0,
-          rd: statsRapidRatingDeviation = 0
+          rd: statsRapidRatingDeviation = 0,
         } = { rating: 0, rd: 0 },
         best: { rating: statsRapidRatingBest = 0 } = { rating: 0 },
         record: {
           win: statsRapidRecordWin = 0,
           draw: statsRapidRecordDraw = 0,
-          loss: statsRapidRecordLoss = 0
+          loss: statsRapidRecordLoss = 0,
         } = {
-          record: { win: 0, draw: 0, loss: 0 }
-        }
+          record: { win: 0, draw: 0, loss: 0 },
+        },
       } = {
         last: { rating: 0, rd: 0 },
         best: { rating: 0 },
-        record: { win: 0, draw: 0, loss: 0 }
+        record: { win: 0, draw: 0, loss: 0 },
       },
       chess_blitz: {
         last: {
           rating: statsBlitzRatingLast = 0,
-          rd: statsBlitzRatingDeviation = 0
+          rd: statsBlitzRatingDeviation = 0,
         } = { rating: 0, rd: 0 },
         best: { rating: statsBlitzRatingBest = 0 } = { rating: 0 },
         record: {
           win: statsBlitzRecordWin = 0,
           draw: statsBlitzRecordDraw = 0,
-          loss: statsBlitzRecordLoss = 0
+          loss: statsBlitzRecordLoss = 0,
         } = {
-          record: { win: 0, draw: 0, loss: 0 }
-        }
+          record: { win: 0, draw: 0, loss: 0 },
+        },
       } = {
         last: { rating: 0, rd: 0 },
         best: { rating: 0 },
-        record: { win: 0, draw: 0, loss: 0 }
+        record: { win: 0, draw: 0, loss: 0 },
       },
       chess_bullet: {
         last: {
           rating: statsBulletRatingLast = 0,
-          rd: statsBulletRatingDeviation = 0
+          rd: statsBulletRatingDeviation = 0,
         } = { rating: 0, rd: 0 },
         best: { rating: statsBulletRatingBest = 0 } = { rating: 0 },
         record: {
           win: statsBulletRecordWin = 0,
           draw: statsBulletRecordDraw = 0,
-          loss: statsBulletRecordLoss = 0
+          loss: statsBulletRecordLoss = 0,
         } = {
-          record: { win: 0, draw: 0, loss: 0 }
-        }
+          record: { win: 0, draw: 0, loss: 0 },
+        },
       } = {
         last: { rating: 0, rd: 0 },
         best: { rating: 0 },
-        record: { win: 0, draw: 0, loss: 0 }
-      }
+        record: { win: 0, draw: 0, loss: 0 },
+      },
     } = stats;
     return {
       // Daily
@@ -133,7 +135,7 @@ export class PlayerService {
       statsBulletRatingDeviation,
       statsBulletRecordWin,
       statsBulletRecordDraw,
-      statsBulletRecordLoss
+      statsBulletRecordLoss,
     };
   }
 
@@ -157,10 +159,10 @@ export class PlayerService {
       is_streamer: isStreamer = false,
       twitch_url: twitchUrl = '',
       verified = false,
-      league = ''
+      league = '',
     } = chessPlayer;
     const {
-      data: { name: country = '', code: countryCode = '' }
+      data: { name: country = '', code: countryCode = '' },
     } = await axios.get<{
       name: string;
       code: string;
@@ -193,24 +195,22 @@ export class PlayerService {
         archive.split('/').slice(-2).join('/')
       ),
       createdAt: d,
-      updatedAt: d
+      updatedAt: d,
     };
   }
 
   public async syncPlayer(username: string): Promise<Player> {
-    const chessPlayer: ChessPlayer = await this.chessClient.getChessPlayer(
-      username
-    );
+    const chessPlayer: ChessPlayer =
+      await this.chessClient.getChessPlayer(username);
     const stats: ChessStats = await this.chessClient.getChessStats(username);
-    const archives: string[] = await this.chessClient.getChessArchives(
-      username
-    );
+    const archives: string[] =
+      await this.chessClient.getChessArchives(username);
     archives.sort((a, b) => (a < b ? 1 : -1));
     const player: Player = await this.mapPlayer(chessPlayer, stats, archives);
     const upsertArguments = {
       create: player,
       update: player,
-      where: { username }
+      where: { username },
     };
     return this.prismaClient.player.upsert(upsertArguments);
   }

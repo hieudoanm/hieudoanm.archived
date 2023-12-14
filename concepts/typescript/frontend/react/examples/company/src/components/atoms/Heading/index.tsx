@@ -11,15 +11,15 @@ export const Heading: React.FC<{
   description = '',
   align = 'text-center',
   bottom = true,
-  enhanced = false
+  enhanced = false,
 }) => {
   return (
     <div className={bottom ? 'mb-8 md:mb-16' : ''}>
-      <div className={`${align} max-w-lg mx-auto`}>
+      <div className={`${align} mx-auto max-w-lg`}>
         <h1
           className={`${
             enhanced ? 'text-2xl sm:text-4xl' : 'text-xl sm:text-3xl'
-          } mb-4 font-b162 font-bold`}
+          } font-b162 mb-4 font-bold`}
         >
           {title}
         </h1>

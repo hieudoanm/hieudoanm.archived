@@ -9,7 +9,7 @@ import Select from '@mui/material/Select';
 import { useState } from 'react';
 import { addZero } from '../../../utils/add-zero';
 import CalendarEvent, {
-  CalendarEventProps
+  CalendarEventProps,
 } from '../../molecules/CalendarEvent';
 
 const months = [
@@ -24,7 +24,7 @@ const months = [
   { short: 'Sep', long: 'September' },
   { short: 'Oct', long: 'October' },
   { short: 'Nov', long: 'November' },
-  { short: 'Dec', long: 'December' }
+  { short: 'Dec', long: 'December' },
 ];
 
 const days = [
@@ -34,7 +34,7 @@ const days = [
   'Wednesday',
   'Thursday',
   'Friday',
-  'Saturday'
+  'Saturday',
 ];
 
 const daysByMonths: Record<number, number> = {
@@ -49,7 +49,7 @@ const daysByMonths: Record<number, number> = {
   9: 30,
   10: 31,
   11: 30,
-  12: 31
+  12: 31,
 };
 
 const generateDaysInMonth = (month: number, year: number) => {
@@ -71,7 +71,7 @@ const generateDaysInMonth = (month: number, year: number) => {
         day,
         date: previousDate,
         month: previousMonth,
-        year: previousYear
+        year: previousYear,
       };
     }
   );
@@ -92,7 +92,7 @@ const generateDaysInMonth = (month: number, year: number) => {
         day,
         date: i + 1,
         month: nextMonth,
-        year: nextYear
+        year: nextYear,
       });
     }
   }
@@ -138,7 +138,7 @@ const Day: React.FC<DayProps> = ({
   initMonth,
   initYear,
   currentMonth,
-  currentYear
+  currentYear,
 }) => {
   if (date === initDate && month === initMonth && year === initYear) {
     return (
@@ -258,16 +258,13 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
                   <span>
                     {month === initMonth && year === initYear
                       ? addZero(initDate)
-                      : addZero(1)}
-                    {' '}
+                      : addZero(1)}{' '}
                   </span>
                   <span className="inline md:hidden">
-                    {months[month - 1].short}
-                    {' '}
+                    {months[month - 1].short}{' '}
                   </span>
                   <span className="hidden md:inline">
-                    {months[month - 1].long}
-                    {' '}
+                    {months[month - 1].long}{' '}
                   </span>
                   <span>{year}</span>
                 </p>
@@ -323,53 +320,51 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-7">
-        {daysInMonth.map(
-          ({ day, date: iDate, month: iMonth, year: iYear }) => {
-            return (
-              <div
-                key={`${iDate}-${iMonth}-${iYear}`}
-                className="col-span-1 border-t"
-              >
-                <div className="flex flex-col gap-2 px-2 py-4">
-                  <Day
-                    day={day}
-                    date={iDate}
-                    month={iMonth}
-                    year={iYear}
-                    initDate={initDate}
-                    initMonth={initMonth}
-                    initYear={initYear}
-                    currentMonth={month}
-                    currentYear={year}
-                  />
-                  {events.map(
-                    ({
-                      type,
-                      date,
-                      month,
-                      year,
-                      description
-                    }: CalendarEventProps) => {
-                      return (
-                        <CalendarEvent
-                          key={`event-${iDate}-${iMonth}-${iYear}`}
-                          type={type}
-                          date={date}
-                          month={month}
-                          year={year}
-                          iDate={iDate}
-                          iMonth={iMonth}
-                          iYear={iYear}
-                          description={description}
-                        />
-                      );
-                    }
-                  )}
-                </div>
+        {daysInMonth.map(({ day, date: iDate, month: iMonth, year: iYear }) => {
+          return (
+            <div
+              key={`${iDate}-${iMonth}-${iYear}`}
+              className="col-span-1 border-t"
+            >
+              <div className="flex flex-col gap-2 px-2 py-4">
+                <Day
+                  day={day}
+                  date={iDate}
+                  month={iMonth}
+                  year={iYear}
+                  initDate={initDate}
+                  initMonth={initMonth}
+                  initYear={initYear}
+                  currentMonth={month}
+                  currentYear={year}
+                />
+                {events.map(
+                  ({
+                    type,
+                    date,
+                    month,
+                    year,
+                    description,
+                  }: CalendarEventProps) => {
+                    return (
+                      <CalendarEvent
+                        key={`event-${iDate}-${iMonth}-${iYear}`}
+                        type={type}
+                        date={date}
+                        month={month}
+                        year={year}
+                        iDate={iDate}
+                        iMonth={iMonth}
+                        iYear={iYear}
+                        description={description}
+                      />
+                    );
+                  }
+                )}
               </div>
-            );
-          }
-        )}
+            </div>
+          );
+        })}
       </div>
     </>
   );

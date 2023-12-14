@@ -4,7 +4,7 @@ export const FooterComponent = () => <Footer />;
 
 const Story = {
   title: 'organisms/Footer',
-  component: Footer
+  component: Footer,
 };
 
 export default Story;

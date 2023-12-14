@@ -6,7 +6,7 @@ import {
   Stat,
   StatHelpText,
   StatLabel,
-  StatNumber
+  StatNumber,
 } from '@chakra-ui/react';
 
 export const ChessStats: React.FC<{
@@ -24,19 +24,15 @@ export const ChessStats: React.FC<{
             <StatNumber>{last ?? 'N/A'}</StatNumber>
             <StatHelpText className="m-0">Best: {best ?? 'N/A'}</StatHelpText>
           </Stat>
-          {icon
-            ? (
-              <div>
-                <Box
-                  bgColor={'teal.500'}
-                  color={'white'}
-                  className="rounded p-2"
-                >
-                  <Icon as={icon} boxSize={6} />
-                </Box>
-              </div>
-            )
-            : <></>}
+          {icon ? (
+            <div>
+              <Box bgColor={'teal.500'} color={'white'} className="rounded p-2">
+                <Icon as={icon} boxSize={6} />
+              </Box>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </CardBody>
     </Card>

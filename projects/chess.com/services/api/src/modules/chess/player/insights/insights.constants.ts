@@ -6,13 +6,13 @@ export const DRAW_RESULTS: string[] = [
   'insufficient',
   'repetition',
   'stalemate',
-  'timevsinsufficient'
+  'timevsinsufficient',
 ];
 export const LOSS_RESULTS: string[] = [
   'checkmated',
   'resigned',
   'timeout',
-  'abandoned'
+  'abandoned',
 ];
 
 export const DAYS_OF_WEEK = [
@@ -22,6 +22,6 @@ export const DAYS_OF_WEEK = [
   'wednesday',
   'thursday',
   'friday',
-  'saturday'
+  'saturday',
 ];
 export const TIME_OF_DAYS = ['night', 'morning', 'afternoon', 'evening'];

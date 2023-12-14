@@ -4,8 +4,8 @@ Object.assign(navigator, {
   clipboard: {
     writeText: () => {
       return;
-    }
-  }
+    },
+  },
 });
 
 describe('copyToClipboard', () => {

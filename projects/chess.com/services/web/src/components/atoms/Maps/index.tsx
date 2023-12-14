@@ -84,7 +84,7 @@ export const SVGMaps: React.FC<SVGMapsProperties> = ({
   id = '',
   maps = { viewBox: '', width: '0', height: '0', paths: [] },
   data = [],
-  onClick = () => {}
+  onClick = () => {},
 }) => {
   useEffectOnce(() => {
     drawChart(id, maps, data, onClick);

@@ -22,7 +22,7 @@ const main = async () => {
       viewBox: svgNode.attr('viewBox'),
       width: svgNode.attr('width'),
       height: svgNode.attr('height'),
-      paths: svgPaths
+      paths: svgPaths,
     };
     writeFileSync(`./json/${fileName}.json`, JSON.stringify(data, null, 2));
   }

@@ -21,45 +21,45 @@ import SettingsPage from './pages/user/settings';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />
+    element: <HomePage />,
   },
   {
     path: '/apps/calendar',
     element: <CalendarPage />,
-    errorElement: <InternalServerErrorPage />
+    errorElement: <InternalServerErrorPage />,
   },
   {
     path: '/apps/chart',
-    element: <ChartPage />
+    element: <ChartPage />,
   },
   {
     path: '/apps/table',
-    element: <TablePage />
+    element: <TablePage />,
   },
   {
     path: '/auth/sign-in',
-    element: <SignInPage />
+    element: <SignInPage />,
   },
   {
     path: '/auth/sign-up',
-    element: <SignUpPage />
+    element: <SignUpPage />,
   },
   {
     path: '/password/forget',
-    element: <ForgetPasswordPage />
+    element: <ForgetPasswordPage />,
   },
   {
     path: '/password/reset',
-    element: <ResetPasswordPage />
+    element: <ResetPasswordPage />,
   },
   {
     path: '/user/profile',
-    element: <ProfilePage />
+    element: <ProfilePage />,
   },
   {
     path: '/user/settings',
-    element: <SettingsPage />
-  }
+    element: <SettingsPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

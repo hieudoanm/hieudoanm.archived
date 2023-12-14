@@ -8,8 +8,8 @@ const signupHandler = async (
   try {
     await handleLogin(request, response, {
       authorizationParams: {
-        screen_hint: 'signup'
-      }
+        screen_hint: 'signup',
+      },
     });
   } catch (error) {
     response.status((error as any).status || 400).end((error as Error).message);

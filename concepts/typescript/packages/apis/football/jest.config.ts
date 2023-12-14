@@ -47,8 +47,8 @@ export default {
       branches: 90,
       functions: 100,
       lines: 95,
-      statements: 95
-    }
+      statements: 95,
+    },
   },
 
   // A path to a custom dependency extractor
@@ -192,7 +192,7 @@ export default {
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  verbose: true
+  verbose: true,
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],
 

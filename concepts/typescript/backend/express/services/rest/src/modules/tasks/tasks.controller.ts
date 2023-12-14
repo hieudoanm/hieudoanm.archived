@@ -10,7 +10,7 @@ import {
   Route,
   Security,
   SuccessResponse,
-  Tags
+  Tags,
 } from 'tsoa';
 import { TASKS_READ, TASKS_WRITE } from '../../common/constants';
 import { TaskRequest, TasksService } from './tasks.service';
@@ -55,7 +55,7 @@ export class TasksController extends Controller {
       title,
       description,
       completed,
-      listId
+      listId,
     });
   }
 

@@ -10,8 +10,7 @@ export class CountriesRepository {
   }
 
   public async getCountries(): Promise<CountryCount[]> {
-    const query: string =
-      `SELECT p."countryCode", p."country", COUNT(p."id") as total
+    const query: string = `SELECT p."countryCode", p."country", COUNT(p."id") as total
 FROM public."Player" as p
 WHERE p."title" IS NOT NULL AND p."lastOnline" > (CURRENT_DATE - INTERVAL '1' year)
 GROUP BY p."country", p."countryCode"
@@ -29,24 +28,24 @@ ORDER BY total DESC, p."country" ASC;`;
       total = 0,
       players = [],
       {
-        _avg: { statsRapidRatingLast: averageRapidRating = 0 }
+        _avg: { statsRapidRatingLast: averageRapidRating = 0 },
       },
       {
-        _avg: { statsBlitzRatingLast: averageBlitzRating = 0 }
+        _avg: { statsBlitzRatingLast: averageBlitzRating = 0 },
       },
       {
-        _avg: { statsBulletRatingLast: averageBulletRating = 0 }
+        _avg: { statsBulletRatingLast: averageBulletRating = 0 },
       },
       {
-        _max: { statsRapidRatingLast: maxRapidRating = 0 }
+        _max: { statsRapidRatingLast: maxRapidRating = 0 },
       },
       {
-        _max: { statsBlitzRatingLast: maxBlitzRating = 0 }
+        _max: { statsBlitzRatingLast: maxBlitzRating = 0 },
       },
       {
-        _max: { statsBulletRatingLast: maxBulletRating = 0 }
+        _max: { statsBulletRatingLast: maxBulletRating = 0 },
       },
-      titles = []
+      titles = [],
     ] = await this.prismaClient.$transaction([
       this.prismaClient.player.count({ where }),
       this.prismaClient.player.findMany({
@@ -54,39 +53,39 @@ ORDER BY total DESC, p."country" ASC;`;
         orderBy: [
           { statsBulletRatingLast: 'desc' },
           { statsBlitzRatingLast: 'desc' },
-          { statsRapidRatingLast: 'desc' }
-        ]
+          { statsRapidRatingLast: 'desc' },
+        ],
       }),
       this.prismaClient.player.aggregate({
         _avg: { statsRapidRatingLast: true },
-        where: { ...where, statsRapidRatingLast: { gt: 0 } }
+        where: { ...where, statsRapidRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.aggregate({
         _avg: { statsBlitzRatingLast: true },
-        where: { ...where, statsBlitzRatingLast: { gt: 0 } }
+        where: { ...where, statsBlitzRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.aggregate({
         _avg: { statsBulletRatingLast: true },
-        where: { ...where, statsBulletRatingLast: { gt: 0 } }
+        where: { ...where, statsBulletRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.aggregate({
         _max: { statsRapidRatingLast: true },
-        where: { ...where, statsRapidRatingLast: { gt: 0 } }
+        where: { ...where, statsRapidRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.aggregate({
         _max: { statsBlitzRatingLast: true },
-        where: { ...where, statsBlitzRatingLast: { gt: 0 } }
+        where: { ...where, statsBlitzRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.aggregate({
         _max: { statsBulletRatingLast: true },
-        where: { ...where, statsBulletRatingLast: { gt: 0 } }
+        where: { ...where, statsBulletRatingLast: { gt: 0 } },
       }),
       this.prismaClient.player.groupBy({
         where,
         by: ['title'],
         _count: { title: true },
-        orderBy: { _count: { title: 'desc' } }
-      })
+        orderBy: { _count: { title: 'desc' } },
+      }),
     ]);
     return {
       averageRapidRating: averageRapidRating ?? 0,
@@ -99,8 +98,8 @@ ORDER BY total DESC, p."country" ASC;`;
       players,
       titles: titles.map(({ _count, title = '' }) => ({
         title: title ?? '',
-        total: (_count?.valueOf() as Record<string, number>).title ?? 0
-      }))
+        total: (_count?.valueOf() as Record<string, number>).title ?? 0,
+      })),
     };
   }
 }

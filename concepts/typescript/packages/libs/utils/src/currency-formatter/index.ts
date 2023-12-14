@@ -11,7 +11,7 @@ export const currencyFormatter = (
     style: 'currency',
     currency,
     minimumFractionDigits,
-    currencyDisplay: 'symbol'
+    currencyDisplay: 'symbol',
   });
   return currencyFormatter.format(number).replace(/\s/g, '');
 };

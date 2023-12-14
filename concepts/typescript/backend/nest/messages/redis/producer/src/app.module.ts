@@ -3,6 +3,6 @@ import { HealthModule } from './modules/health/health.module';
 import { MessagesModule } from './modules/messages/messages.module';
 
 @Module({
-  imports: [HealthModule, MessagesModule]
+  imports: [HealthModule, MessagesModule],
 })
 export class AppModule {}

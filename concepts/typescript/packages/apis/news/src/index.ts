@@ -5,7 +5,7 @@ import {
   EverythingRequest,
   SourceRequest,
   SourceResponse,
-  TopHeadlinesRequest
+  TopHeadlinesRequest,
 } from './types';
 
 export const NEWS_V2_URL = 'https://newsapi.org/v2';
@@ -29,11 +29,11 @@ export class NewsClient {
     {
       category = Category.GENERAL,
       country = Country.UNITED_STATES,
-      language = Language.ENGLISH
+      language = Language.ENGLISH,
     }: SourceRequest = {
       category: Category.GENERAL,
       country: Country.UNITED_STATES,
-      language: Language.ENGLISH
+      language: Language.ENGLISH,
     }
   ): Promise<SourceResponse> {
     const urlSearchParams = new URLSearchParams();
@@ -61,7 +61,7 @@ export class NewsClient {
       searchIn = [],
       sortBy = SortBy.PUBLISHED_AT,
       sources = [],
-      to = ''
+      to = '',
     }: EverythingRequest = {
       domains: [],
       excludeDomains: [],
@@ -73,7 +73,7 @@ export class NewsClient {
       searchIn: [],
       sortBy: SortBy.PUBLISHED_AT,
       sources: [],
-      to: ''
+      to: '',
     }
   ): Promise<ArticleResponse> {
     const urlSearchParams = new URLSearchParams();
@@ -102,8 +102,7 @@ export class NewsClient {
     if (searchIn.length > 0) {
       urlSearchParams.set('searchIn', searchIn.join(','));
     }
-    const topHeadlinesUrl =
-      `${NEWS_V2_URL}/everything?${urlSearchParams.toString()}`;
+    const topHeadlinesUrl = `${NEWS_V2_URL}/everything?${urlSearchParams.toString()}`;
     const configs = { headers: { 'X-Api-Key': this.apiKey } };
     const { status, totalResults, articles } = await this.get<ArticleResponse>(
       topHeadlinesUrl,
@@ -119,14 +118,14 @@ export class NewsClient {
       page = 1,
       pageSize = 20,
       q = '',
-      sources = []
+      sources = [],
     }: TopHeadlinesRequest = {
       category: Category.GENERAL,
       country: Country.UNITED_STATES,
       page: 1,
       pageSize: 20,
       q: '',
-      sources: []
+      sources: [],
     }
   ): Promise<ArticleResponse> {
     const urlSearchParams = new URLSearchParams();
@@ -136,8 +135,7 @@ export class NewsClient {
     urlSearchParams.set('pageSize', pageSize.toString());
     urlSearchParams.set('q', q);
     urlSearchParams.set('sources', sources.join(','));
-    const topHeadlinesUrl =
-      `${NEWS_V2_URL}/top-headlines?${urlSearchParams.toString()}`;
+    const topHeadlinesUrl = `${NEWS_V2_URL}/top-headlines?${urlSearchParams.toString()}`;
     const configs = { headers: { 'X-Api-Key': this.apiKey } };
     const { status, totalResults, articles } = await this.get<ArticleResponse>(
       topHeadlinesUrl,

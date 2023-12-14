@@ -18,10 +18,7 @@ export class MovesService {
     this.gamesService = new GamesService();
   }
 
-  public async getGameMoves(
-    username: string,
-    gameId: string
-  ): Promise<Move[]> {
+  public async getGameMoves(username: string, gameId: string): Promise<Move[]> {
     logger.info(`getGameMoves username=${username} gameId=${gameId}`);
     const where: Prisma.MoveWhereInput = { gameId };
     const total: number = await this.prismaClient.move.count({ where });
@@ -34,8 +31,12 @@ export class MovesService {
 
   private getPiece(annotation: string): Piece {
     const first: string = annotation[0] ?? '';
-    if (['O-O', 'O-O-O'].includes(annotation)) { return 'king' as Piece; }
-    if (FILE_LIST.includes(first as File)) { return 'pawn' as Piece; }
+    if (['O-O', 'O-O-O'].includes(annotation)) {
+      return 'king' as Piece;
+    }
+    if (FILE_LIST.includes(first as File)) {
+      return 'pawn' as Piece;
+    }
     const symbol: PieceSymbol = first as PieceSymbol;
     return PIECE_MAP[`${symbol}`];
   }
@@ -49,9 +50,7 @@ export class MovesService {
         numberString.replaceAll('.', ''),
         10
       );
-      const side: Side = numberString.includes('...')
-        ? Side.black
-        : Side.white;
+      const side: Side = numberString.includes('...') ? Side.black : Side.white;
       const annotation: string = array[1] ?? '';
       const piece: Piece = this.getPiece(annotation);
       const castling: boolean = ['O-O', 'O-O-O'].includes(annotation);
@@ -60,12 +59,13 @@ export class MovesService {
       const checkmate: boolean = annotation.includes('#');
       const promote: boolean = annotation.includes('=');
       const promoteIndex: number = annotation.indexOf('=');
-      const promoteToSymbol: PieceSymbol = promoteIndex > -1
-        ? (annotation.slice(
-          promoteIndex + 1,
-          promoteIndex + 2
-        ) as PieceSymbol)
-        : ('' as PieceSymbol);
+      const promoteToSymbol: PieceSymbol =
+        promoteIndex > -1
+          ? (annotation.slice(
+              promoteIndex + 1,
+              promoteIndex + 2
+            ) as PieceSymbol)
+          : ('' as PieceSymbol);
       const promoteTo: Piece | undefined = PIECE_MAP[`${promoteToSymbol}`];
       const d: Date = new Date();
       return {
@@ -80,7 +80,7 @@ export class MovesService {
         check,
         checkmate,
         createdAt: d,
-        updatedAt: d
+        updatedAt: d,
       };
     });
   }
@@ -112,10 +112,7 @@ export class MovesService {
   }
 
   public async syncGameMoves(username: string, gameId: string) {
-    const moves: Move[] = await this.getGameMovesFromDatabase(
-      username,
-      gameId
-    );
+    const moves: Move[] = await this.getGameMovesFromDatabase(username, gameId);
     const upsertTransactions = moves.map((move) => {
       const { number } = move;
       const data = { ...move, gameId };
@@ -124,7 +121,7 @@ export class MovesService {
       const upsertArguments: Prisma.MoveUpsertArgs = {
         create: data,
         update: data,
-        where
+        where,
       };
       return this.prismaClient.move.upsert(upsertArguments);
     });

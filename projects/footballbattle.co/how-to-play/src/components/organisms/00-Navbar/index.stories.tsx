@@ -4,7 +4,7 @@ export const NavbarComponent = () => <Navbar />;
 
 const Story = {
   title: 'organisms/Navbar',
-  component: Navbar
+  component: Navbar,
 };
 
 export default Story;

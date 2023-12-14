@@ -15,42 +15,42 @@ export const techstack = {
       image: nextjs,
       title: 'Next.js',
       description:
-        'React framework for server-rendered web apps with powerful features.'
+        'React framework for server-rendered web apps with powerful features.',
     },
     {
       id: 'mui',
       image: mui,
       title: 'MUI',
       description:
-        'Popular React library for Material Design components and theming.'
+        'Popular React library for Material Design components and theming.',
     },
     {
       id: 'graphql',
       image: graphql,
       title: 'GraphQL',
       description:
-        "Flexible query language for API's; client defines data structure needed."
+        "Flexible query language for API's; client defines data structure needed.",
     },
     {
       id: 'postgresql',
       image: postgresql,
       title: 'PostgreSQL',
       description:
-        'Powerful, open-source, object-relational database management system.'
+        'Powerful, open-source, object-relational database management system.',
     },
     {
       id: 'prisma',
       image: prisma,
       title: 'Prisma',
       description:
-        'Open-source, type-safe ORM for Node.js and TypeScript with GraphQL support.'
+        'Open-source, type-safe ORM for Node.js and TypeScript with GraphQL support.',
     },
     {
       id: 'supabase',
       image: supabase,
       title: 'Supabase',
       description:
-        'Open-source, Firebase-like platform built on PostgreSQL and GraphQL.'
-    }
-  ]
+        'Open-source, Firebase-like platform built on PostgreSQL and GraphQL.',
+    },
+  ],
 };

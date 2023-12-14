@@ -15,7 +15,7 @@ export const NFTCard: React.FC<NFTCardProps> = ({
   description,
   action,
   href,
-  image
+  image,
 }) => {
   return (
     <Card>

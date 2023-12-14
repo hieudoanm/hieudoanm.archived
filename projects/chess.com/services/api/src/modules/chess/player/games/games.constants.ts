@@ -6,7 +6,7 @@ export const PIECE_LIST: Piece[] = [
   'queen',
   'bishop',
   'knight',
-  'pawn'
+  'pawn',
 ];
 export const PIECE_SYMBOL_LIST: PieceSymbol[] = ['K', 'Q', 'R', 'B', 'N'];
 export const PIECE_MAP: Record<PieceSymbol, Piece> = {
@@ -14,7 +14,7 @@ export const PIECE_MAP: Record<PieceSymbol, Piece> = {
   Q: 'queen',
   R: 'rook',
   B: 'bishop',
-  N: 'knight'
+  N: 'knight',
 };
 // Chess Board
 export const FILE_LIST: File[] = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
@@ -27,11 +27,11 @@ export const DRAW_RESULTS: string[] = [
   'insufficient',
   'repetition',
   'stalemate',
-  'timevsinsufficient'
+  'timevsinsufficient',
 ];
 export const LOSS_RESULTS: string[] = [
   'checkmated',
   'resigned',
   'timeout',
-  'abandoned'
+  'abandoned',
 ];

@@ -34,7 +34,7 @@ app.set('port', port);
 const main = async () => {
   // Socket Server
   const io = new Server(httpServer, {
-    cors: { origin: ['http://localhost:3000'], credentials: true }
+    cors: { origin: ['http://localhost:3000'], credentials: true },
   });
   io.on('connection', (webSocket) => {
     const { id, connected } = webSocket;
@@ -51,9 +51,8 @@ const main = async () => {
   httpServer.listen(port);
   httpServer.on('listening', () => {
     const addr = httpServer.address();
-    const bind = typeof addr === 'string'
-      ? 'pipe ' + addr
-      : 'port ' + addr?.port;
+    const bind =
+      typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr?.port;
     log.info(`🚀 APIs is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {

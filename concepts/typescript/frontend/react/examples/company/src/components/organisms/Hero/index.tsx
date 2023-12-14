@@ -8,14 +8,14 @@ import { Heading } from '../../atoms/Heading';
 
 export const Hero: React.FC<{ title: string; description: string }> = ({
   title = '',
-  description = ''
+  description = '',
 }) => {
   return (
     <section id="home" className="py-8 md:py-16">
       <Container>
         <Heading title={title} description={description} enhanced />
         <div className="relative">
-          <div className="sm:absolute top-0 w-full flex justify-center pb-16">
+          <div className="top-0 flex w-full justify-center pb-16 sm:absolute">
             <ScrollLink
               to="contact"
               spy={true}
@@ -31,8 +31,7 @@ export const Hero: React.FC<{ title: string; description: string }> = ({
         </div>
       </Container>
       <div className="relative hidden sm:block">
-        <div className="bottom-0 -z-10 absolute bg-[#FFF5ED]/50 w-full h-32">
-        </div>
+        <div className="absolute bottom-0 -z-10 h-32 w-full bg-[#FFF5ED]/50"></div>
       </div>
     </section>
   );

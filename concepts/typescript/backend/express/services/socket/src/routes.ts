@@ -9,7 +9,7 @@ import {
   TsoaResponse,
   TsoaRoute,
   ValidateError,
-  ValidationService
+  ValidationService,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import type { RequestHandler, Router } from 'express';
@@ -99,10 +99,10 @@ export function RegisterRoutes(app: Router) {
       response.set(name, headers[name]);
     });
     if (
-      data
-      && typeof data.pipe === 'function'
-      && data.readable
-      && typeof data._read === 'function'
+      data &&
+      typeof data.pipe === 'function' &&
+      data.readable &&
+      typeof data._read === 'function'
     ) {
       response.status(statusCode || 200);
       data.pipe(response);
@@ -118,7 +118,7 @@ export function RegisterRoutes(app: Router) {
   function responder(
     response: any
   ): TsoaResponse<HttpStatusCodeLiteral, unknown> {
-    return function(status, data, headers) {
+    return function (status, data, headers) {
       returnHandler(response, status, data, headers);
     };
   }
@@ -197,8 +197,8 @@ export function RegisterRoutes(app: Router) {
               { noImplicitAdditionalProperties: 'throw-on-extras' }
             );
           } else if (
-            args[key].dataType === 'array'
-            && args[key].array.dataType === 'file'
+            args[key].dataType === 'array' &&
+            args[key].array.dataType === 'file'
           ) {
             return validationService.ValidateParam(
               args[key],

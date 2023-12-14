@@ -10,13 +10,13 @@ export const Portfolio: React.FC<{
 }> = ({
   title: sectionTitle = '',
   description: sectionDescription = '',
-  projects = []
+  projects = [],
 }) => {
   return (
     <section id="projects" className="py-8 md:py-16">
       <Container>
         <Heading title={sectionTitle} description={sectionDescription} />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {projects.map(
             ({ id, url, image, title, description, technologies }) => (
               <Project
