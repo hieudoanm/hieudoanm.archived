@@ -11,7 +11,6 @@
 ## Blogs
 
 - [baeldung](https://www.baeldung.com/)
-- [chess programming](https://www.chessprogramming.org)
 - [dev.to](https://dev.to/)
 - [Google AI](https://ai.google/)
 - [mozilla](https://developer.mozilla.org/en-US/)
