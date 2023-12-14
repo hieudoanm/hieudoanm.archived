@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - concepts/markdown/**
+      - markdown/techstack/**
 
 jobs:
   docsify:
