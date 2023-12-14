@@ -12,6 +12,7 @@ on:
 jobs:
   sync:
     strategy:
+      fail-fast: false
       matrix:
         players:
           - username: hikaru

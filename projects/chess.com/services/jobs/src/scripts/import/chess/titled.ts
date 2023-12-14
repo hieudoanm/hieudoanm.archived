@@ -24,11 +24,11 @@ const syncTitledPlayers = async (title: string) => {
         const { data: player } = await axios.get<Player>(playerUrl);
         logger.info(player);
       } catch (error) {
-        logger.error(error);
+        logger.error(`error=${error}`);
       }
     }
   } catch (error) {
-    logger.error(error);
+    logger.error(`error=${error}`);
   }
 };
 

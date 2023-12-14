@@ -9,11 +9,11 @@ const BASE_URL = 'https://chessinsightsapi.vercel.app/api/chess';
 const syncGames = async (username: string) => {
   try {
     const playerUrl = `${BASE_URL}/player/${username}`;
-    logger.info('playerUrl', playerUrl);
+    logger.info(`playerUrl ${playerUrl}`);
     const { data: player } = await axios.get<Player>(playerUrl, {
       method: 'POST',
     });
-    logger.info('player', player);
+    logger.info(player, 'player');
     const { archives = [] } = player;
     for (const archive of archives) {
       try {
@@ -34,17 +34,15 @@ const syncGames = async (username: string) => {
           headers: { 'Content-Type': 'application/json' },
         });
         const { total = 0, synced = 0, existed = 0 } = syncedData;
-        logger.info(`games year=${year} month=${month}`, {
-          total,
-          synced,
-          existed,
-        });
+        logger.info(
+          `games year=${year} month=${month} total=${total} synced=${synced} existed=${existed}`
+        );
       } catch (error) {
         logger.error(`error=${error}`);
       }
     }
   } catch (error) {
-    logger.error(error);
+    logger.error(`error=${error}`);
   }
 };
 
