@@ -1,5 +1,16 @@
+# images
+*.png
+
+# next.js
 .next
+
+# test
 coverage
+
+# build
 dist
-node_modules
 out
+
+
+# node.js
+node_modules
