@@ -33,7 +33,7 @@
     "@nestjs/platform-express": "10.2.10",
     "@nestjs/swagger": "7.1.17",
     "helmet": "7.1.0",
-    "reflect-metadata": "0.2.0",
+    "reflect-metadata": "0.2.1",
     "rxjs": "7.8.1"
   },
   "devDependencies": {
