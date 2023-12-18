@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@solidjs/meta": "0.29.3",
-    "@solidjs/router": "0.10.4",
+    "@solidjs/router": "0.10.5",
     "@suid/icons-material": "0.6.11",
     "@suid/material": "0.15.1",
     "apexcharts": "3.45.0",
