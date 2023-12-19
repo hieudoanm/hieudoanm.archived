@@ -1,0 +1,287 @@
+openapi: 3.0.0
+paths:
+  /chess/openings:
+    get:
+      operationId: OpeningsController_getOpenings
+      parameters:
+        - name: eco
+          required: true
+          in: query
+          schema:
+            type: string
+        - name: name
+          required: true
+          in: query
+          schema:
+            type: string
+        - name: firstMove
+          required: true
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: &a1
+        - API - openings
+  /chess/openings/ecos:
+    get:
+      operationId: OpeningsController_getECOs
+      parameters: []
+      responses:
+        "200":
+          description: ""
+      tags: *a1
+  /chess/position:
+    get:
+      operationId: PositionController_getPosition
+      parameters:
+        - name: fen
+          required: true
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: &a2
+        - API - Position
+    post:
+      operationId: PositionController_syncPosition
+      parameters: []
+      responses:
+        "201":
+          description: ""
+      tags: *a2
+  /health:
+    get:
+      operationId: HealthController_getHealth
+      parameters: []
+      responses:
+        "200":
+          description: ""
+      tags:
+        - health
+  /chess/player/{username}:
+    get:
+      operationId: PlayerController_getPlayer
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: &a3
+        - API - Player
+        - external - chess.com
+    post:
+      operationId: PlayerController_syncPlayer
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "201":
+          description: ""
+      tags: *a3
+  /chess/player/{username}/games:
+    get:
+      operationId: GamesController_getGames
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: month
+          required: true
+          in: query
+          schema:
+            type: number
+        - name: year
+          required: true
+          in: query
+          schema:
+            type: number
+      responses:
+        "200":
+          description: ""
+      tags: &a4
+        - API - Games
+        - external - chess.com
+    post:
+      operationId: GamesController_syncGames
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "201":
+          description: ""
+      tags: *a4
+  /chess/player/{username}/games/{gameId}:
+    get:
+      operationId: GamesController_getGame
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: gameId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a4
+  /chess/player/{username}/games/{gameId}/pgn:
+    get:
+      operationId: GamesController_getGamePGN
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: gameId
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a4
+  /chess/player/{username}/insights:
+    get:
+      operationId: InsightsController_getInsights
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: &a5
+        - API - Insights
+        - external - chess.com
+  /chess/player/{username}/insights/games:
+    get:
+      operationId: InsightsController_getGamesInsights
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a5
+  /chess/player/{username}/insights/accuracy:
+    get:
+      operationId: InsightsController_getAccuracyInsights
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a5
+  /chess/player/{username}/insights/results:
+    get:
+      operationId: InsightsController_getResultsInsights
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a5
+  /chess/player/{username}/insights/opponents:
+    get:
+      operationId: InsightsController_getResultsOpponents
+      parameters:
+        - name: username
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags: *a5
+  /chess/streamers:
+    get:
+      operationId: StreamersController_getStreamers
+      parameters:
+        - name: title
+          required: true
+          in: query
+          schema:
+            type: string
+        - name: country
+          required: true
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags:
+        - API - Streamers
+        - external - chess.com
+  /chess/titled/{title}:
+    get:
+      operationId: TitledController_getTitledStats
+      parameters:
+        - name: title
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: cache
+          required: true
+          in: query
+          schema:
+            type: boolean
+        - name: timeRange
+          required: true
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: ""
+      tags:
+        - API - Titled
+        - external - chess.com
+info:
+  title: broca.io
+  description: broca.io
+  version: "1.0"
+  contact: {}
+tags:
+  - name: broca
+    description: ""
+servers: []
+components:
+  schemas: {}

@@ -7,6 +7,12 @@
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "format": "yarn workspaces run format",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test"
+  },
   "workspaces": [
     "services/*"
   ]

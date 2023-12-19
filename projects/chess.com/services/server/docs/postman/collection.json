@@ -1,0 +1,413 @@
+{
+  "item": [
+    {
+      "name": "chess",
+      "description": "",
+      "item": [
+        {
+          "name": "openings",
+          "description": "",
+          "item": [
+            {
+              "id": "96c75575-a453-4e9a-b71f-64e3f0eca649",
+              "name": "Openings Controller get Openings",
+              "request": {
+                "name": "Openings Controller get Openings",
+                "description": {},
+                "url": {
+                  "path": ["chess", "openings"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "eco",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "name",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "firstMove",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "714bdab4-bcae-4638-aeff-6cf5babd7589",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "openings"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "eco",
+                          "value": "<string>"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "name",
+                          "value": "<string>"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "firstMove",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [],
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            },
+            {
+              "name": "ecos",
+              "description": "",
+              "item": [
+                {
+                  "id": "bb761194-6c7b-41c1-af03-f44bfcc4c366",
+                  "name": "Openings Controller get EC Os",
+                  "request": {
+                    "name": "Openings Controller get EC Os",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "openings", "ecos"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "68481ff2-dc7c-4301-afc4-8ec08be3bf82",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "openings", "ecos"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [],
+                          "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [],
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "position",
+          "description": "",
+          "item": [
+            {
+              "id": "b734cda9-3512-4909-8467-16071bceac98",
+              "name": "Position Controller get Position",
+              "request": {
+                "name": "Position Controller get Position",
+                "description": {},
+                "url": {
+                  "path": ["chess", "position"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "fen",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "9c39fc02-75a3-4f64-9164-1058e5394c65",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "position"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "fen",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": []
+                    },
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [],
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            },
+            {
+              "id": "c5e4bc8c-bab6-409f-8cc6-e93523fb19e7",
+              "name": "Position Controller sync Position",
+              "request": {
+                "name": "Position Controller sync Position",
+                "description": {},
+                "url": {
+                  "path": ["chess", "position"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "fc699977-d290-45c3-aa9f-d0518b694f33",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["chess", "position"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "POST",
+                    "body": {}
+                  },
+                  "status": "Created",
+                  "code": 201,
+                  "header": [],
+                  "cookie": [],
+                  "_postman_previewlanguage": "text"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        },
+        {
+          "name": "titled",
+          "description": "",
+          "item": [
+            {
+              "name": "{title}",
+              "description": "",
+              "item": [
+                {
+                  "id": "c7771c4d-8906-4b92-9110-380a3b27ebf6",
+                  "name": "Titled Controller get Titled Stats",
+                  "request": {
+                    "name": "Titled Controller get Titled Stats",
+                    "description": {},
+                    "url": {
+                      "path": ["chess", "titled", ":title"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "cache",
+                          "value": "<boolean>"
+                        },
+                        {
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          },
+                          "key": "timeRange",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "type": "any",
+                          "value": "<string>",
+                          "key": "title",
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          }
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "body": {},
+                    "auth": null
+                  },
+                  "response": [
+                    {
+                      "id": "1861d9c2-c4f7-41c5-8e73-10efac6dfaf9",
+                      "originalRequest": {
+                        "url": {
+                          "path": ["chess", "titled", ":title"],
+                          "host": ["{{baseUrl}}"],
+                          "query": [
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              },
+                              "key": "cache",
+                              "value": "<boolean>"
+                            },
+                            {
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              },
+                              "key": "timeRange",
+                              "value": "<string>"
+                            }
+                          ],
+                          "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "header": [],
+                      "cookie": [],
+                      "_postman_previewlanguage": "text"
+                    }
+                  ],
+                  "event": [],
+                  "protocolProfileBehavior": { "disableBodyPruning": true }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "33b4d5bb-083b-4e1d-997b-8776ddd6ca7d",
+          "name": "Health Controller get Health",
+          "request": {
+            "name": "Health Controller get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "284622c1-ec0d-4e1c-810d-29eb71b97e4d",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [],
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "/" }],
+  "info": {
+    "_postman_id": "c5342f6f-82f6-44b6-af36-d4db54b3442e",
+    "name": "broca.io",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": { "content": "broca.io", "type": "text/plain" }
+  }
+}

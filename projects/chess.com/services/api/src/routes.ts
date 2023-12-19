@@ -3,13 +3,13 @@
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import {
   Controller,
-  fetchMiddlewares,
+  ValidationService,
   FieldErrors,
+  ValidateError,
+  TsoaRoute,
   HttpStatusCodeLiteral,
   TsoaResponse,
-  TsoaRoute,
-  ValidateError,
-  ValidationService,
+  fetchMiddlewares,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AnalyseController } from './modules/chess/analyse/analyse.controller';
@@ -32,8 +32,8 @@ import { CountriesController } from './modules/chess/titled/countries/countries.
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { TitledController } from './modules/chess/titled/titled.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-import type { RequestHandler, Router } from 'express';
 import { HealthController } from './modules/health/health.controller';
+import type { RequestHandler, Router } from 'express';
 
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
@@ -69,23 +69,20 @@ const models: TsoaRoute.Models = {
     },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'GetResult_any.any.any_': {
+  '%24Result.DefaultSelection_Prisma.%24OpeningPayload_': {
     dataType: 'refAlias',
     type: {
       dataType: 'nestedObjectLiteral',
-      nestedProperties: {},
-      validators: {},
-    },
-  },
-  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'runtime.Types.DefaultSelection_OpeningPayload_': {
-    dataType: 'refAlias',
-    type: {
-      dataType: 'intersection',
-      subSchemas: [
-        { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
-      ],
+      nestedProperties: {
+        updatedAt: { dataType: 'datetime', required: true },
+        createdAt: { dataType: 'datetime', required: true },
+        centipawn: { dataType: 'double', required: true },
+        fen: { dataType: 'string', required: true },
+        firstMove: { dataType: 'string', required: true },
+        pgn: { dataType: 'string', required: true },
+        name: { dataType: 'string', required: true },
+        eco: { dataType: 'string', required: true },
+      },
       validators: {},
     },
   },
@@ -93,19 +90,23 @@ const models: TsoaRoute.Models = {
   Opening: {
     dataType: 'refAlias',
     type: {
-      ref: 'runtime.Types.DefaultSelection_OpeningPayload_',
+      ref: '%24Result.DefaultSelection_Prisma.%24OpeningPayload_',
       validators: {},
     },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'runtime.Types.DefaultSelection_PositionPayload_': {
+  '%24Result.DefaultSelection_Prisma.%24PositionPayload_': {
     dataType: 'refAlias',
     type: {
-      dataType: 'intersection',
-      subSchemas: [
-        { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
-      ],
+      dataType: 'nestedObjectLiteral',
+      nestedProperties: {
+        updatedAt: { dataType: 'datetime', required: true },
+        createdAt: { dataType: 'datetime', required: true },
+        nextMoves: { dataType: 'string', required: true },
+        pawn: { dataType: 'double', required: true },
+        centipawn: { dataType: 'double', required: true },
+        fen: { dataType: 'string', required: true },
+      },
       validators: {},
     },
   },
@@ -113,19 +114,40 @@ const models: TsoaRoute.Models = {
   Position: {
     dataType: 'refAlias',
     type: {
-      ref: 'runtime.Types.DefaultSelection_PositionPayload_',
+      ref: '%24Result.DefaultSelection_Prisma.%24PositionPayload_',
       validators: {},
     },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'runtime.Types.DefaultSelection_GamePayload_': {
+  '%24Result.DefaultSelection_Prisma.%24GamePayload_': {
     dataType: 'refAlias',
     type: {
-      dataType: 'intersection',
-      subSchemas: [
-        { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
-      ],
+      dataType: 'nestedObjectLiteral',
+      nestedProperties: {
+        updatedAt: { dataType: 'datetime', required: true },
+        createdAt: { dataType: 'datetime', required: true },
+        fen: { dataType: 'string', required: true },
+        blackRating: { dataType: 'double', required: true },
+        whiteRating: { dataType: 'double', required: true },
+        blackResult: { dataType: 'string', required: true },
+        whiteResult: { dataType: 'string', required: true },
+        blackAccuracy: { dataType: 'double', required: true },
+        whiteAccuracy: { dataType: 'double', required: true },
+        blackUsername: { dataType: 'string', required: true },
+        whiteUsername: { dataType: 'string', required: true },
+        blackId: { dataType: 'string', required: true },
+        whiteId: { dataType: 'string', required: true },
+        rules: { dataType: 'string', required: true },
+        initialSetup: { dataType: 'string', required: true },
+        tcn: { dataType: 'string', required: true },
+        rated: { dataType: 'boolean', required: true },
+        endTime: { dataType: 'datetime', required: true },
+        timeClass: { dataType: 'string', required: true },
+        timeControl: { dataType: 'string', required: true },
+        pgn: { dataType: 'string', required: true },
+        url: { dataType: 'string', required: true },
+        id: { dataType: 'string', required: true },
+      },
       validators: {},
     },
   },
@@ -133,19 +155,41 @@ const models: TsoaRoute.Models = {
   Game: {
     dataType: 'refAlias',
     type: {
-      ref: 'runtime.Types.DefaultSelection_GamePayload_',
+      ref: '%24Result.DefaultSelection_Prisma.%24GamePayload_',
       validators: {},
     },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'runtime.Types.DefaultSelection_MovePayload_': {
+  Piece: {
+    dataType: 'refAlias',
+    type: { dataType: 'any', validators: {} },
+  },
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  Side: {
+    dataType: 'refAlias',
+    type: { dataType: 'any', validators: {} },
+  },
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  '%24Result.DefaultSelection_Prisma.%24MovePayload_': {
     dataType: 'refAlias',
     type: {
-      dataType: 'intersection',
-      subSchemas: [
-        { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
-      ],
+      dataType: 'nestedObjectLiteral',
+      nestedProperties: {
+        updatedAt: { dataType: 'datetime', required: true },
+        createdAt: { dataType: 'datetime', required: true },
+        checkmate: { dataType: 'boolean', required: true },
+        check: { dataType: 'boolean', required: true },
+        promoteTo: { ref: 'Piece', required: true },
+        promote: { dataType: 'boolean', required: true },
+        castling: { dataType: 'boolean', required: true },
+        captured: { dataType: 'boolean', required: true },
+        side: { ref: 'Side', required: true },
+        piece: { ref: 'Piece', required: true },
+        annotation: { dataType: 'string', required: true },
+        number: { dataType: 'double', required: true },
+        fen: { dataType: 'string', required: true },
+        gameId: { dataType: 'string', required: true },
+      },
       validators: {},
     },
   },
@@ -153,7 +197,7 @@ const models: TsoaRoute.Models = {
   Move: {
     dataType: 'refAlias',
     type: {
-      ref: 'runtime.Types.DefaultSelection_MovePayload_',
+      ref: '%24Result.DefaultSelection_Prisma.%24MovePayload_',
       validators: {},
     },
   },
@@ -449,14 +493,74 @@ const models: TsoaRoute.Models = {
     },
   },
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  'runtime.Types.DefaultSelection_PlayerPayload_': {
+  Status: {
+    dataType: 'refAlias',
+    type: { dataType: 'any', validators: {} },
+  },
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  Title: {
+    dataType: 'refAlias',
+    type: { dataType: 'any', validators: {} },
+  },
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  League: {
+    dataType: 'refAlias',
+    type: { dataType: 'any', validators: {} },
+  },
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  '%24Result.DefaultSelection_Prisma.%24PlayerPayload_': {
     dataType: 'refAlias',
     type: {
-      dataType: 'intersection',
-      subSchemas: [
-        { ref: 'GetResult_any.any.any_' },
-        { dataType: 'nestedObjectLiteral', nestedProperties: {} },
-      ],
+      dataType: 'nestedObjectLiteral',
+      nestedProperties: {
+        updatedAt: { dataType: 'datetime', required: true },
+        createdAt: { dataType: 'datetime', required: true },
+        archives: {
+          dataType: 'array',
+          array: { dataType: 'string' },
+          required: true,
+        },
+        statsBulletRecordLoss: { dataType: 'double', required: true },
+        statsBulletRecordDraw: { dataType: 'double', required: true },
+        statsBulletRecordWin: { dataType: 'double', required: true },
+        statsBulletRatingDeviation: { dataType: 'double', required: true },
+        statsBulletRatingBest: { dataType: 'double', required: true },
+        statsBulletRatingLast: { dataType: 'double', required: true },
+        statsBlitzRecordLoss: { dataType: 'double', required: true },
+        statsBlitzRecordDraw: { dataType: 'double', required: true },
+        statsBlitzRecordWin: { dataType: 'double', required: true },
+        statsBlitzRatingDeviation: { dataType: 'double', required: true },
+        statsBlitzRatingBest: { dataType: 'double', required: true },
+        statsBlitzRatingLast: { dataType: 'double', required: true },
+        statsRapidRecordLoss: { dataType: 'double', required: true },
+        statsRapidRecordDraw: { dataType: 'double', required: true },
+        statsRapidRecordWin: { dataType: 'double', required: true },
+        statsRapidRatingDeviation: { dataType: 'double', required: true },
+        statsRapidRatingLast: { dataType: 'double', required: true },
+        statsRapidRatingBest: { dataType: 'double', required: true },
+        statsDailyRecordLoss: { dataType: 'double', required: true },
+        statsDailyRecordDraw: { dataType: 'double', required: true },
+        statsDailyRecordWin: { dataType: 'double', required: true },
+        statsDailyRatingDeviation: { dataType: 'double', required: true },
+        statsDailyRatingLast: { dataType: 'double', required: true },
+        statsDailyRatingBest: { dataType: 'double', required: true },
+        league: { ref: 'League', required: true },
+        title: { ref: 'Title', required: true },
+        status: { ref: 'Status', required: true },
+        joined: { dataType: 'datetime', required: true },
+        lastOnline: { dataType: 'datetime', required: true },
+        verified: { dataType: 'boolean', required: true },
+        isStreamer: { dataType: 'boolean', required: true },
+        twitchUrl: { dataType: 'string', required: true },
+        countryCode: { dataType: 'string', required: true },
+        country: { dataType: 'string', required: true },
+        location: { dataType: 'string', required: true },
+        avatar: { dataType: 'string', required: true },
+        followers: { dataType: 'double', required: true },
+        name: { dataType: 'string', required: true },
+        username: { dataType: 'string', required: true },
+        id: { dataType: 'double', required: true },
+      },
       validators: {},
     },
   },
@@ -464,7 +568,7 @@ const models: TsoaRoute.Models = {
   Player: {
     dataType: 'refAlias',
     type: {
-      ref: 'runtime.Types.DefaultSelection_PlayerPayload_',
+      ref: '%24Result.DefaultSelection_Prisma.%24PlayerPayload_',
       validators: {},
     },
   },
@@ -492,30 +596,6 @@ const models: TsoaRoute.Models = {
         },
         total: { dataType: 'double', required: true },
       },
-      validators: {},
-    },
-  },
-  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-  Title: {
-    dataType: 'refAlias',
-    type: {
-      dataType: 'union',
-      subSchemas: [
-        { dataType: 'enum', enums: ['GM'] },
-        { dataType: 'enum', enums: ['WGM'] },
-        { dataType: 'enum', enums: ['IM'] },
-        { dataType: 'enum', enums: ['WIM'] },
-        { dataType: 'enum', enums: ['FM'] },
-        { dataType: 'enum', enums: ['WFM'] },
-        { dataType: 'enum', enums: ['CM'] },
-        { dataType: 'enum', enums: ['WCM'] },
-        { dataType: 'enum', enums: ['NM'] },
-        { dataType: 'enum', enums: ['WNM'] },
-        { dataType: 'enum', enums: ['AGM'] },
-        { dataType: 'enum', enums: ['AIM'] },
-        { dataType: 'enum', enums: ['AFM'] },
-        { dataType: 'enum', enums: ['ACM'] },
-      ],
       validators: {},
     },
   },
@@ -636,6 +716,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/analyse',
     ...fetchMiddlewares<RequestHandler>(AnalyseController),
     ...fetchMiddlewares<RequestHandler>(AnalyseController.prototype.analyse),
+
     function AnalyseController_analyse(request: any, response: any, next: any) {
       const args = {
         undefined: {
@@ -671,6 +752,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       OpeningsController.prototype.getOpenings
     ),
+
     function OpeningsController_getOpenings(
       request: any,
       response: any,
@@ -710,6 +792,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/openings/ecos',
     ...fetchMiddlewares<RequestHandler>(OpeningsController),
     ...fetchMiddlewares<RequestHandler>(OpeningsController.prototype.getECOs),
+
     function OpeningsController_getECOs(
       request: any,
       response: any,
@@ -742,6 +825,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       PositionController.prototype.getPosition
     ),
+
     function PositionController_getPosition(
       request: any,
       response: any,
@@ -776,6 +860,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       PositionController.prototype.syncPosition
     ),
+
     function PositionController_syncPosition(
       request: any,
       response: any,
@@ -813,6 +898,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games',
     ...fetchMiddlewares<RequestHandler>(GamesController),
     ...fetchMiddlewares<RequestHandler>(GamesController.prototype.getGames),
+
     function GamesController_getGames(request: any, response: any, next: any) {
       const args = {
         username: {
@@ -848,6 +934,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games',
     ...fetchMiddlewares<RequestHandler>(GamesController),
     ...fetchMiddlewares<RequestHandler>(GamesController.prototype.syncGames),
+
     function GamesController_syncGames(request: any, response: any, next: any) {
       const args = {
         username: {
@@ -890,6 +977,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games/:gameId',
     ...fetchMiddlewares<RequestHandler>(GamesController),
     ...fetchMiddlewares<RequestHandler>(GamesController.prototype.getGame),
+
     function GamesController_getGame(request: any, response: any, next: any) {
       const args = {
         username: {
@@ -929,6 +1017,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games/:gameId/pgn',
     ...fetchMiddlewares<RequestHandler>(GamesController),
     ...fetchMiddlewares<RequestHandler>(GamesController.prototype.getGamePGN),
+
     function GamesController_getGamePGN(
       request: any,
       response: any,
@@ -972,6 +1061,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username/games/:gameId/moves',
     ...fetchMiddlewares<RequestHandler>(MovesController),
     ...fetchMiddlewares<RequestHandler>(MovesController.prototype.getGameMoves),
+
     function MovesController_getGameMoves(
       request: any,
       response: any,
@@ -1017,6 +1107,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       MovesController.prototype.syncGameMoves
     ),
+
     function MovesController_syncGameMoves(
       request: any,
       response: any,
@@ -1062,6 +1153,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       InsightsController.prototype.getInsights
     ),
+
     function InsightsController_getInsights(
       request: any,
       response: any,
@@ -1101,6 +1193,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       InsightsController.prototype.getGamesInsights
     ),
+
     function InsightsController_getGamesInsights(
       request: any,
       response: any,
@@ -1140,6 +1233,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       InsightsController.prototype.getAccuracyInsights
     ),
+
     function InsightsController_getAccuracyInsights(
       request: any,
       response: any,
@@ -1179,6 +1273,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       InsightsController.prototype.getResultsInsights
     ),
+
     function InsightsController_getResultsInsights(
       request: any,
       response: any,
@@ -1218,6 +1313,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       InsightsController.prototype.getResultsOpponents
     ),
+
     function InsightsController_getResultsOpponents(
       request: any,
       response: any,
@@ -1255,6 +1351,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username',
     ...fetchMiddlewares<RequestHandler>(PlayerController),
     ...fetchMiddlewares<RequestHandler>(PlayerController.prototype.getPlayer),
+
     function PlayerController_getPlayer(
       request: any,
       response: any,
@@ -1292,6 +1389,7 @@ export function RegisterRoutes(app: Router) {
     '/chess/player/:username',
     ...fetchMiddlewares<RequestHandler>(PlayerController),
     ...fetchMiddlewares<RequestHandler>(PlayerController.prototype.syncPlayer),
+
     function PlayerController_syncPlayer(
       request: any,
       response: any,
@@ -1331,6 +1429,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       StreamersController.prototype.getStreamers
     ),
+
     function StreamersController_getStreamers(
       request: any,
       response: any,
@@ -1366,6 +1465,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       CountriesController.prototype.getCountries
     ),
+
     function CountriesController_getCountries(
       request: any,
       response: any,
@@ -1405,6 +1505,7 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       CountriesController.prototype.getTitledPlayersByCountry
     ),
+
     function CountriesController_getTitledPlayersByCountry(
       request: any,
       response: any,
@@ -1445,18 +1546,14 @@ export function RegisterRoutes(app: Router) {
     ...fetchMiddlewares<RequestHandler>(
       TitledController.prototype.getTitledStats
     ),
+
     function TitledController_getTitledStats(
       request: any,
       response: any,
       next: any
     ) {
       const args = {
-        title: {
-          in: 'path',
-          name: 'title',
-          required: true,
-          ref: 'ChessTitle',
-        },
+        title: { in: 'path', name: 'title', required: true, ref: 'ChessTitle' },
         cache: {
           default: true,
           in: 'query',
@@ -1494,6 +1591,7 @@ export function RegisterRoutes(app: Router) {
     '/health',
     ...fetchMiddlewares<RequestHandler>(HealthController),
     ...fetchMiddlewares<RequestHandler>(HealthController.prototype.getHealth),
+
     function HealthController_getHealth(
       request: any,
       response: any,

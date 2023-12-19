@@ -5,11 +5,14 @@
 // K = 40 for all players until their 18th birthday, as long as their rating remains under 2300.
 // K = 20 for RAPID and BLITZ ratings all players.
 
+import { Injectable } from '@nestjs/common';
+
 type Result = 0 | 0.5 | 1;
 type DevelopmentCoefficient = 10 | 20 | 40;
 type TimeControl = 'classical' | 'rapid' | 'blitz';
 type Options = { age: number; games: number; timeControl: TimeControl };
 
+@Injectable()
 export class RatingService {
   private getDevelopmentCoefficient(
     rating: number,

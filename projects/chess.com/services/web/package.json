@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "format": "prettier . --write",
+    "format": "prettier --write .",
     "prebuild": "prisma generate && rimraf .next out"
   },
   "dependencies": {

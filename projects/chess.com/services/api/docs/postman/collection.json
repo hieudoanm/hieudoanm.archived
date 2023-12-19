@@ -9,7 +9,7 @@
           "description": "",
           "item": [
             {
-              "id": "a2bb4a2f-4dc2-4296-bfae-43afc67225b6",
+              "id": "e29a8a87-ce8f-4d6b-a8a5-9696cd72ef71",
               "name": "Analyse",
               "request": {
                 "name": "Analyse",
@@ -36,7 +36,7 @@
               },
               "response": [
                 {
-                  "id": "f3c984f4-b8f6-40ba-b430-1ec727a83ee5",
+                  "id": "f6e7dcaf-0716-431c-ade0-508687ec6981",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
@@ -78,7 +78,7 @@
           "description": "",
           "item": [
             {
-              "id": "6f190b4a-6545-4c31-89e5-b4c85c9565c8",
+              "id": "0a70b614-9ee7-4eb6-9733-c1c359f6ebc8",
               "name": "Get Openings",
               "request": {
                 "name": "Get Openings",
@@ -115,7 +115,7 @@
               },
               "response": [
                 {
-                  "id": "4a2f1013-dd29-4c21-b0fe-a4585999e0c2",
+                  "id": "e3e10669-e0ac-41b8-b39c-5b5af063c958",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
@@ -163,7 +163,7 @@
                   "header": [
                     { "key": "Content-Type", "value": "application/json" }
                   ],
-                  "body": "{\n  \"openings\": [],\n  \"total\": \"<double>\"\n}",
+                  "body": "{\n  \"openings\": [\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24OpeningPayload_ not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24OpeningPayload_ not found in the OpenAPI spec\"\n    }\n  ],\n  \"total\": \"<double>\"\n}",
                   "cookie": [],
                   "_postman_previewlanguage": "json"
                 }
@@ -176,7 +176,7 @@
               "description": "",
               "item": [
                 {
-                  "id": "370493ce-0e56-48d3-96fa-1de4d9e1ad79",
+                  "id": "070f424c-8f39-4b59-8aa0-f5c47a33a31f",
                   "name": "Get EC Os",
                   "request": {
                     "name": "Get EC Os",
@@ -196,7 +196,7 @@
                   },
                   "response": [
                     {
-                      "id": "e564bb41-f2fa-4cf5-8562-ad8fb73fb232",
+                      "id": "b41826fb-7bf9-4ea1-ad39-ea42ab784a4c",
                       "name": "Ok",
                       "originalRequest": {
                         "url": {
@@ -233,7 +233,7 @@
           "description": "",
           "item": [
             {
-              "id": "70b5acc2-5f2b-4c40-9d30-1fc0f2bc7ba2",
+              "id": "295f57d2-74d5-4d09-9d93-7bba03d8ff42",
               "name": "Get Position",
               "request": {
                 "name": "Get Position",
@@ -261,7 +261,7 @@
               },
               "response": [
                 {
-                  "id": "a47fdb13-bd45-4d1d-a1fc-8c18432bee1f",
+                  "id": "1071f623-bf79-441f-a700-4f345b2aba12",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
@@ -291,7 +291,7 @@
                   "header": [
                     { "key": "Content-Type", "value": "application/json" }
                   ],
-                  "body": "{}",
+                  "body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PositionPayload_ not found in the OpenAPI spec\"\n}",
                   "cookie": [],
                   "_postman_previewlanguage": "json"
                 }
@@ -300,7 +300,7 @@
               "protocolProfileBehavior": { "disableBodyPruning": true }
             },
             {
-              "id": "545dd98d-1416-4f23-9680-46f12e566661",
+              "id": "59c49b3b-4cbb-4f7a-aa83-ed6f596e10a3",
               "name": "Sync Position",
               "request": {
                 "name": "Sync Position",
@@ -327,7 +327,7 @@
               },
               "response": [
                 {
-                  "id": "51f6b82f-ceb7-4388-8735-5e58ab412827",
+                  "id": "8da01136-ca7f-4769-8519-8c11335c6378",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
@@ -354,7 +354,7 @@
                   "header": [
                     { "key": "Content-Type", "value": "application/json" }
                   ],
-                  "body": "{}",
+                  "body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PositionPayload_ not found in the OpenAPI spec\"\n}",
                   "cookie": [],
                   "_postman_previewlanguage": "json"
                 }
@@ -377,7 +377,7 @@
                   "description": "",
                   "item": [
                     {
-                      "id": "ff18e4ce-a2ba-4b61-8f84-2b6e41bc555c",
+                      "id": "916b4531-1e27-4b3d-89bf-6893d9b4894d",
                       "name": "Get Games",
                       "request": {
                         "name": "Get Games",
@@ -410,7 +410,11 @@
                               "type": "any",
                               "value": "<string>",
                               "key": "username",
-                              "disabled": false
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              }
                             }
                           ]
                         },
@@ -423,7 +427,7 @@
                       },
                       "response": [
                         {
-                          "id": "35176f16-be56-48d2-b0f0-fb188e2a6f77",
+                          "id": "0928c6de-b1bb-4e5c-bed3-7482a5883877",
                           "name": "Ok",
                           "originalRequest": {
                             "url": {
@@ -465,7 +469,7 @@
                               "value": "application/json"
                             }
                           ],
-                          "body": "{\n  \"games\": [],\n  \"total\": \"<double>\"\n}",
+                          "body": "{\n  \"games\": [\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24GamePayload_ not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24GamePayload_ not found in the OpenAPI spec\"\n    }\n  ],\n  \"total\": \"<double>\"\n}",
                           "cookie": [],
                           "_postman_previewlanguage": "json"
                         }
@@ -474,7 +478,7 @@
                       "protocolProfileBehavior": { "disableBodyPruning": true }
                     },
                     {
-                      "id": "7cb56394-17e0-46fd-8bb2-325e9e247719",
+                      "id": "7f8c9ac3-5804-4afc-a9e9-7651e8f0cdee",
                       "name": "Sync Games",
                       "request": {
                         "name": "Sync Games",
@@ -488,7 +492,11 @@
                               "type": "any",
                               "value": "<string>",
                               "key": "username",
-                              "disabled": false
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              }
                             }
                           ]
                         },
@@ -514,7 +522,7 @@
                       },
                       "response": [
                         {
-                          "id": "963b852b-11c9-4162-be44-e779ca54f1ef",
+                          "id": "9a4b4edf-80d2-4797-b327-0c14570dc43f",
                           "name": "Ok",
                           "originalRequest": {
                             "url": {
@@ -563,7 +571,7 @@
                       "description": "",
                       "item": [
                         {
-                          "id": "718a5348-85d6-465e-b815-57b5f58c434c",
+                          "id": "c882d6f4-0fe3-4326-a0f8-af8b81ac3c04",
                           "name": "Get Game",
                           "request": {
                             "name": "Get Game",
@@ -583,13 +591,21 @@
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "username",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 },
                                 {
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "gameId",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 }
                               ]
                             },
@@ -602,7 +618,7 @@
                           },
                           "response": [
                             {
-                              "id": "3c989a5f-dac6-435c-831f-13f8dcb9ad00",
+                              "id": "dfbda2bf-2076-4f8b-a1b8-f8119ba9f327",
                               "name": "Ok",
                               "originalRequest": {
                                 "url": {
@@ -634,7 +650,7 @@
                                   "value": "application/json"
                                 }
                               ],
-                              "body": "{}",
+                              "body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24GamePayload_ not found in the OpenAPI spec\"\n}",
                               "cookie": [],
                               "_postman_previewlanguage": "json"
                             }
@@ -649,7 +665,7 @@
                           "description": "",
                           "item": [
                             {
-                              "id": "9cd34b71-20f4-4d2e-8177-ef5f8c402100",
+                              "id": "3b6dd16d-e244-458d-a05d-b6c9366d492d",
                               "name": "Get Game PGN",
                               "request": {
                                 "name": "Get Game PGN",
@@ -670,13 +686,21 @@
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "username",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     },
                                     {
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "gameId",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     }
                                   ]
                                 },
@@ -692,7 +716,7 @@
                               },
                               "response": [
                                 {
-                                  "id": "7848d779-bfc5-4432-b7f2-8c3c014f7266",
+                                  "id": "c06dc808-d01f-49c2-8aa6-5e109e71454d",
                                   "name": "Ok",
                                   "originalRequest": {
                                     "url": {
@@ -742,7 +766,7 @@
                           "description": "",
                           "item": [
                             {
-                              "id": "5679666a-41ad-46b8-978c-a5d347bcd66d",
+                              "id": "afd8a227-85a3-4c1e-a9dd-e459cdc05572",
                               "name": "Get Game Moves",
                               "request": {
                                 "name": "Get Game Moves",
@@ -763,13 +787,21 @@
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "username",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     },
                                     {
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "gameId",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     }
                                   ]
                                 },
@@ -785,7 +817,7 @@
                               },
                               "response": [
                                 {
-                                  "id": "265ce91e-ec6d-43c5-a5ba-6f777deb32bb",
+                                  "id": "85826808-5a8d-4fc2-bbe0-c734f6e98aff",
                                   "name": "Ok",
                                   "originalRequest": {
                                     "url": {
@@ -818,7 +850,7 @@
                                       "value": "application/json"
                                     }
                                   ],
-                                  "body": "[]",
+                                  "body": "[\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24MovePayload_ not found in the OpenAPI spec\"\n  },\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24MovePayload_ not found in the OpenAPI spec\"\n  }\n]",
                                   "cookie": [],
                                   "_postman_previewlanguage": "json"
                                 }
@@ -829,7 +861,7 @@
                               }
                             },
                             {
-                              "id": "340ade94-54e6-4cb3-a405-2317e0fcd97f",
+                              "id": "1ba8d18d-7c35-4cd1-8fc0-8870f6783196",
                               "name": "Sync Game Moves",
                               "request": {
                                 "name": "Sync Game Moves",
@@ -850,13 +882,21 @@
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "username",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     },
                                     {
                                       "type": "any",
                                       "value": "<string>",
                                       "key": "gameId",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "description": {
+                                        "content": "(Required) ",
+                                        "type": "text/plain"
+                                      }
                                     }
                                   ]
                                 },
@@ -872,7 +912,7 @@
                               },
                               "response": [
                                 {
-                                  "id": "a43d02a8-4af8-49ce-ae88-deb89225b698",
+                                  "id": "4e0a2b74-beb4-43bf-8846-9810c36656b4",
                                   "name": "Ok",
                                   "originalRequest": {
                                     "url": {
@@ -926,7 +966,7 @@
                   "description": "",
                   "item": [
                     {
-                      "id": "657158f9-1244-41aa-9e49-c8be7c7aebeb",
+                      "id": "bd76757d-cc2b-47ce-9d9f-f7ee043f9ef1",
                       "name": "Get Insights",
                       "request": {
                         "name": "Get Insights",
@@ -940,7 +980,11 @@
                               "type": "any",
                               "value": "<string>",
                               "key": "username",
-                              "disabled": false
+                              "disabled": false,
+                              "description": {
+                                "content": "(Required) ",
+                                "type": "text/plain"
+                              }
                             }
                           ]
                         },
@@ -953,7 +997,7 @@
                       },
                       "response": [
                         {
-                          "id": "f221a5a8-f03a-4809-9741-e6fc9f96400a",
+                          "id": "a4db527e-5643-40ac-a2e6-83836e9201cb",
                           "name": "Ok",
                           "originalRequest": {
                             "url": {
@@ -994,7 +1038,7 @@
                       "description": "",
                       "item": [
                         {
-                          "id": "53b6663c-c2d4-4625-a722-2028c083abfb",
+                          "id": "1aedcbb1-c50a-478e-be86-32da4b5f38e3",
                           "name": "Get Games Insights",
                           "request": {
                             "name": "Get Games Insights",
@@ -1014,7 +1058,11 @@
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "username",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 }
                               ]
                             },
@@ -1027,7 +1075,7 @@
                           },
                           "response": [
                             {
-                              "id": "071e7e33-9695-4f44-a6a2-c49986975d16",
+                              "id": "7ccac8e0-0cad-41e4-8b66-7e63ed07e17c",
                               "name": "Ok",
                               "originalRequest": {
                                 "url": {
@@ -1076,7 +1124,7 @@
                       "description": "",
                       "item": [
                         {
-                          "id": "f0e6d6ca-71a1-4c30-92d9-0bb2c3c2ca52",
+                          "id": "875cfa4a-4c15-4c0e-ba4f-c4b6d2d49ba3",
                           "name": "Get Accuracy Insights",
                           "request": {
                             "name": "Get Accuracy Insights",
@@ -1096,7 +1144,11 @@
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "username",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 }
                               ]
                             },
@@ -1109,7 +1161,7 @@
                           },
                           "response": [
                             {
-                              "id": "7e2a950e-248d-4e01-b3df-d93123038df1",
+                              "id": "3d4f7da4-8c02-4a0c-a041-70b06908757e",
                               "name": "Ok",
                               "originalRequest": {
                                 "url": {
@@ -1158,7 +1210,7 @@
                       "description": "",
                       "item": [
                         {
-                          "id": "b9f9e8c5-cf86-40a5-a064-b307209d502c",
+                          "id": "55e97141-62cf-458d-bab8-41912782df2d",
                           "name": "Get Results Insights",
                           "request": {
                             "name": "Get Results Insights",
@@ -1178,7 +1230,11 @@
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "username",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 }
                               ]
                             },
@@ -1191,7 +1247,7 @@
                           },
                           "response": [
                             {
-                              "id": "1ff3cabf-0639-48fa-91d6-4726894d3d5d",
+                              "id": "741eecdc-c139-4858-8a19-f59d3353c94b",
                               "name": "Ok",
                               "originalRequest": {
                                 "url": {
@@ -1240,7 +1296,7 @@
                       "description": "",
                       "item": [
                         {
-                          "id": "21d3e9f0-5868-41fd-9057-c626a8f025db",
+                          "id": "39600220-3e11-4677-a172-4fc09b8d6ae8",
                           "name": "Get Results Opponents",
                           "request": {
                             "name": "Get Results Opponents",
@@ -1260,7 +1316,11 @@
                                   "type": "any",
                                   "value": "<string>",
                                   "key": "username",
-                                  "disabled": false
+                                  "disabled": false,
+                                  "description": {
+                                    "content": "(Required) ",
+                                    "type": "text/plain"
+                                  }
                                 }
                               ]
                             },
@@ -1273,7 +1333,7 @@
                           },
                           "response": [
                             {
-                              "id": "55c1681e-9fb5-4fa9-a879-8104948175c8",
+                              "id": "966b6aae-8b4b-4ba7-bc94-5f356a3a394a",
                               "name": "Ok",
                               "originalRequest": {
                                 "url": {
@@ -1320,7 +1380,7 @@
                   ]
                 },
                 {
-                  "id": "d683a201-4ef6-4c87-b865-d097d8838119",
+                  "id": "848107d3-8b4c-41fe-a84d-c6b6ad343e3f",
                   "name": "Get Player",
                   "request": {
                     "name": "Get Player",
@@ -1334,7 +1394,11 @@
                           "type": "any",
                           "value": "<string>",
                           "key": "username",
-                          "disabled": false
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          }
                         }
                       ]
                     },
@@ -1347,7 +1411,7 @@
                   },
                   "response": [
                     {
-                      "id": "bc107d43-296d-4907-948e-7d8c122d67e9",
+                      "id": "e2f755ea-2e0a-4668-8111-273a75d7a524",
                       "name": "Ok",
                       "originalRequest": {
                         "url": {
@@ -1367,7 +1431,7 @@
                       "header": [
                         { "key": "Content-Type", "value": "application/json" }
                       ],
-                      "body": "{}",
+                      "body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n}",
                       "cookie": [],
                       "_postman_previewlanguage": "json"
                     }
@@ -1376,7 +1440,7 @@
                   "protocolProfileBehavior": { "disableBodyPruning": true }
                 },
                 {
-                  "id": "691d7420-ccdc-47a8-a184-8b6dc6c51ac0",
+                  "id": "d74cf841-5dd1-4fff-97b2-6bce725f344b",
                   "name": "Sync Player",
                   "request": {
                     "name": "Sync Player",
@@ -1390,7 +1454,11 @@
                           "type": "any",
                           "value": "<string>",
                           "key": "username",
-                          "disabled": false
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          }
                         }
                       ]
                     },
@@ -1403,7 +1471,7 @@
                   },
                   "response": [
                     {
-                      "id": "961c9673-9864-43e6-becc-b99f5203db75",
+                      "id": "787249ac-37dc-4c90-bfb8-f7b1c1f03686",
                       "name": "Ok",
                       "originalRequest": {
                         "url": {
@@ -1423,7 +1491,7 @@
                       "header": [
                         { "key": "Content-Type", "value": "application/json" }
                       ],
-                      "body": "{}",
+                      "body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n}",
                       "cookie": [],
                       "_postman_previewlanguage": "json"
                     }
@@ -1440,7 +1508,7 @@
           "description": "",
           "item": [
             {
-              "id": "94055d1e-9fd6-47b9-9b4f-5ad5c6aae323",
+              "id": "ef00e3b8-90f1-47b3-8723-e82fc6e74299",
               "name": "Get Streamers",
               "request": {
                 "name": "Get Streamers",
@@ -1449,12 +1517,6 @@
                   "path": ["chess", "streamers"],
                   "host": ["{{baseUrl}}"],
                   "query": [
-                    {
-                      "disabled": false,
-                      "description": { "content": "", "type": "text/plain" },
-                      "key": "title",
-                      "value": "NM"
-                    },
                     {
                       "disabled": false,
                       "description": { "content": "", "type": "text/plain" },
@@ -1471,22 +1533,13 @@
               },
               "response": [
                 {
-                  "id": "589a14b4-3f69-47ea-ba3b-4fb0bb7af306",
+                  "id": "c49a1f22-dfe7-406d-ba6f-8fa29f4e8d71",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
                       "path": ["chess", "streamers"],
                       "host": ["{{baseUrl}}"],
                       "query": [
-                        {
-                          "disabled": false,
-                          "description": {
-                            "content": "",
-                            "type": "text/plain"
-                          },
-                          "key": "title",
-                          "value": "NM"
-                        },
                         {
                           "disabled": false,
                           "description": {
@@ -1510,7 +1563,7 @@
                   "header": [
                     { "key": "Content-Type", "value": "application/json" }
                   ],
-                  "body": "{\n  \"countries\": [\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    },\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    }\n  ],\n  \"players\": [],\n  \"total\": \"<double>\"\n}",
+                  "body": "{\n  \"countries\": [\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    },\n    {\n      \"country\": \"<string>\",\n      \"countryCode\": \"<string>\"\n    }\n  ],\n  \"players\": [\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    }\n  ],\n  \"total\": \"<double>\"\n}",
                   "cookie": [],
                   "_postman_previewlanguage": "json"
                 }
@@ -1525,7 +1578,7 @@
           "description": "",
           "item": [
             {
-              "id": "73bf3bc7-9fab-4340-8a40-82ad67cf0467",
+              "id": "79983450-7eca-495a-9efd-1782cc54878c",
               "name": "Get Countries",
               "request": {
                 "name": "Get Countries",
@@ -1550,7 +1603,7 @@
               },
               "response": [
                 {
-                  "id": "40c997df-53a4-4530-bcad-bc780441187c",
+                  "id": "8a548584-5a3e-46a4-8415-d0474319b2dd",
                   "name": "Ok",
                   "originalRequest": {
                     "url": {
@@ -1593,7 +1646,7 @@
               "description": "",
               "item": [
                 {
-                  "id": "09e5ce6a-f3f7-4e72-8f53-ef8f3576e158",
+                  "id": "07f2bba5-cd72-4b1a-bebd-a5df57bcc46b",
                   "name": "Get Titled Players By Country",
                   "request": {
                     "name": "Get Titled Players By Country",
@@ -1617,7 +1670,11 @@
                           "type": "any",
                           "value": "<string>",
                           "key": "code",
-                          "disabled": false
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          }
                         }
                       ]
                     },
@@ -1630,7 +1687,7 @@
                   },
                   "response": [
                     {
-                      "id": "28ba6329-1efb-473e-a08a-05c8efaaf089",
+                      "id": "dba2a005-83f3-40db-baa9-3f56a10884bd",
                       "name": "Ok",
                       "originalRequest": {
                         "url": {
@@ -1660,7 +1717,7 @@
                       "header": [
                         { "key": "Content-Type", "value": "application/json" }
                       ],
-                      "body": "{\n  \"titles\": [\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    }\n  ],\n  \"players\": [],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
+                      "body": "{\n  \"titles\": [\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    },\n    {\n      \"total\": \"<double>\",\n      \"title\": \"<string>\"\n    }\n  ],\n  \"players\": [\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    }\n  ],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
                       "cookie": [],
                       "_postman_previewlanguage": "json"
                     }
@@ -1681,7 +1738,7 @@
               "description": "",
               "item": [
                 {
-                  "id": "5841ea88-a77c-4618-9bd7-a9823e06accc",
+                  "id": "a2ab2ad6-f641-44f8-a842-3694831bfc71",
                   "name": "Get Titled Stats",
                   "request": {
                     "name": "Get Titled Stats",
@@ -1712,9 +1769,13 @@
                       "variable": [
                         {
                           "type": "any",
-                          "value": "CM",
+                          "value": "IM",
                           "key": "title",
-                          "disabled": false
+                          "disabled": false,
+                          "description": {
+                            "content": "(Required) ",
+                            "type": "text/plain"
+                          }
                         }
                       ]
                     },
@@ -1727,7 +1788,7 @@
                   },
                   "response": [
                     {
-                      "id": "aca785da-1dcb-4b74-9fd0-6914b909cb1c",
+                      "id": "f75c5b50-e3ab-455e-b6a2-e60900969231",
                       "name": "Ok",
                       "originalRequest": {
                         "url": {
@@ -1766,7 +1827,7 @@
                       "header": [
                         { "key": "Content-Type", "value": "application/json" }
                       ],
-                      "body": "{\n  \"players\": [],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
+                      "body": "{\n  \"players\": [\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    },\n    {\n      \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_ not found in the OpenAPI spec\"\n    }\n  ],\n  \"total\": \"<double>\",\n  \"maxBulletRating\": \"<double>\",\n  \"averageBulletRating\": \"<double>\",\n  \"maxBlitzRating\": \"<double>\",\n  \"averageBlitzRating\": \"<double>\",\n  \"maxRapidRating\": \"<double>\",\n  \"averageRapidRating\": \"<double>\"\n}",
                       "cookie": [],
                       "_postman_previewlanguage": "json"
                     }
@@ -1785,7 +1846,7 @@
       "description": "",
       "item": [
         {
-          "id": "c2c473dd-9d7a-4dee-a755-c32ccbef6531",
+          "id": "c4de8b3e-74ff-4c6b-b8f1-28ff40476d38",
           "name": "Get Health",
           "request": {
             "name": "Get Health",
@@ -1803,7 +1864,7 @@
           },
           "response": [
             {
-              "id": "54130b0c-40dc-4aa6-ae3b-8bcbefb9ce8e",
+              "id": "a8381cc2-bc55-4fcc-8b9a-58a693397677",
               "name": "Ok",
               "originalRequest": {
                 "url": {
@@ -1835,11 +1896,11 @@
   "event": [],
   "variable": [{ "key": "baseUrl", "value": "http://localhost:8080/api" }],
   "info": {
-    "_postman_id": "6335ec11-ee3d-4b27-86cf-02e5528cba71",
-    "name": "@chess/api",
+    "_postman_id": "db5a84b7-4655-4ee9-a627-a03e4ace6163",
+    "name": "@chess.com/api",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "description": {
-      "content": "Chess - API\n\nContact Support:\n Name: hieudoanm \n Email: hieumdoan@gmail.com",
+      "content": "chess.com - API\n\nContact Support:\n Name: hieudoanm \n Email: hieumdoan@gmail.com",
       "type": "text/plain"
     }
   }

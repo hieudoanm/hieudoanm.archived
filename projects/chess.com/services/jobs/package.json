@@ -8,6 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
+    "format": "prettier --write .",
     "prebuild": "rimraf dist && prisma generate",
     "build": "tsc",
     "export:countries": "yarn build && yarn ts-node ./src/scripts/export/countries/flags",

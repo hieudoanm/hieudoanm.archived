@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "prebuild": "rimraf dist && prisma generate && (yarn docs:swagger:html || true)",
+    "format": "prettier --write .",
     "build": "webpack --mode=production",
     "start": "node .",
     "start:prod": "node .",

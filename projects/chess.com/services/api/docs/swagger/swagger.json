@@ -46,68 +46,271 @@
         "required": ["principalVariationSearch", "depth", "knodes", "fen"],
         "type": "object"
       },
-      "GetResult_any.any.any_": {
-        "properties": {},
+      "%24Result.DefaultSelection_Prisma.%24OpeningPayload_": {
+        "properties": {
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "centipawn": {
+            "type": "number",
+            "format": "double"
+          },
+          "fen": {
+            "type": "string"
+          },
+          "firstMove": {
+            "type": "string"
+          },
+          "pgn": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "eco": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "updatedAt",
+          "createdAt",
+          "centipawn",
+          "fen",
+          "firstMove",
+          "pgn",
+          "name",
+          "eco"
+        ],
         "type": "object"
       },
-      "runtime.Types.DefaultSelection_OpeningPayload_": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/GetResult_any.any.any_"
-          },
-          {
-            "properties": {},
-            "type": "object"
-          }
-        ]
-      },
       "Opening": {
-        "$ref": "#/components/schemas/runtime.Types.DefaultSelection_OpeningPayload_",
+        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24OpeningPayload_",
         "description": "Model Opening"
       },
-      "runtime.Types.DefaultSelection_PositionPayload_": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/GetResult_any.any.any_"
+      "%24Result.DefaultSelection_Prisma.%24PositionPayload_": {
+        "properties": {
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           },
-          {
-            "properties": {},
-            "type": "object"
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nextMoves": {
+            "type": "string"
+          },
+          "pawn": {
+            "type": "number",
+            "format": "double"
+          },
+          "centipawn": {
+            "type": "number",
+            "format": "double"
+          },
+          "fen": {
+            "type": "string"
           }
-        ]
+        },
+        "required": [
+          "updatedAt",
+          "createdAt",
+          "nextMoves",
+          "pawn",
+          "centipawn",
+          "fen"
+        ],
+        "type": "object"
       },
       "Position": {
-        "$ref": "#/components/schemas/runtime.Types.DefaultSelection_PositionPayload_",
+        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24PositionPayload_",
         "description": "Model Position"
       },
-      "runtime.Types.DefaultSelection_GamePayload_": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/GetResult_any.any.any_"
+      "%24Result.DefaultSelection_Prisma.%24GamePayload_": {
+        "properties": {
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           },
-          {
-            "properties": {},
-            "type": "object"
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fen": {
+            "type": "string"
+          },
+          "blackRating": {
+            "type": "number",
+            "format": "double"
+          },
+          "whiteRating": {
+            "type": "number",
+            "format": "double"
+          },
+          "blackResult": {
+            "type": "string"
+          },
+          "whiteResult": {
+            "type": "string"
+          },
+          "blackAccuracy": {
+            "type": "number",
+            "format": "double"
+          },
+          "whiteAccuracy": {
+            "type": "number",
+            "format": "double"
+          },
+          "blackUsername": {
+            "type": "string"
+          },
+          "whiteUsername": {
+            "type": "string"
+          },
+          "blackId": {
+            "type": "string"
+          },
+          "whiteId": {
+            "type": "string"
+          },
+          "rules": {
+            "type": "string"
+          },
+          "initialSetup": {
+            "type": "string"
+          },
+          "tcn": {
+            "type": "string"
+          },
+          "rated": {
+            "type": "boolean"
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "timeClass": {
+            "type": "string"
+          },
+          "timeControl": {
+            "type": "string"
+          },
+          "pgn": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
           }
-        ]
+        },
+        "required": [
+          "updatedAt",
+          "createdAt",
+          "fen",
+          "blackRating",
+          "whiteRating",
+          "blackResult",
+          "whiteResult",
+          "blackAccuracy",
+          "whiteAccuracy",
+          "blackUsername",
+          "whiteUsername",
+          "blackId",
+          "whiteId",
+          "rules",
+          "initialSetup",
+          "tcn",
+          "rated",
+          "endTime",
+          "timeClass",
+          "timeControl",
+          "pgn",
+          "url",
+          "id"
+        ],
+        "type": "object"
       },
       "Game": {
-        "$ref": "#/components/schemas/runtime.Types.DefaultSelection_GamePayload_",
+        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24GamePayload_",
         "description": "Model Game"
       },
-      "runtime.Types.DefaultSelection_MovePayload_": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/GetResult_any.any.any_"
+      "Piece": {},
+      "Side": {},
+      "%24Result.DefaultSelection_Prisma.%24MovePayload_": {
+        "properties": {
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           },
-          {
-            "properties": {},
-            "type": "object"
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "checkmate": {
+            "type": "boolean"
+          },
+          "check": {
+            "type": "boolean"
+          },
+          "promoteTo": {
+            "$ref": "#/components/schemas/Piece"
+          },
+          "promote": {
+            "type": "boolean"
+          },
+          "castling": {
+            "type": "boolean"
+          },
+          "captured": {
+            "type": "boolean"
+          },
+          "side": {
+            "$ref": "#/components/schemas/Side"
+          },
+          "piece": {
+            "$ref": "#/components/schemas/Piece"
+          },
+          "annotation": {
+            "type": "string"
+          },
+          "number": {
+            "type": "number",
+            "format": "double"
+          },
+          "fen": {
+            "type": "string"
+          },
+          "gameId": {
+            "type": "string"
           }
-        ]
+        },
+        "required": [
+          "updatedAt",
+          "createdAt",
+          "checkmate",
+          "check",
+          "promoteTo",
+          "promote",
+          "castling",
+          "captured",
+          "side",
+          "piece",
+          "annotation",
+          "number",
+          "fen",
+          "gameId"
+        ],
+        "type": "object"
       },
       "Move": {
-        "$ref": "#/components/schemas/runtime.Types.DefaultSelection_MovePayload_",
+        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24MovePayload_",
         "description": "Model Move"
       },
       "GamesByPeriod": {
@@ -481,19 +684,223 @@
         "type": "object",
         "description": "From T, pick a set of properties whose keys are in the union K"
       },
-      "runtime.Types.DefaultSelection_PlayerPayload_": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/GetResult_any.any.any_"
+      "Status": {},
+      "Title": {},
+      "League": {},
+      "%24Result.DefaultSelection_Prisma.%24PlayerPayload_": {
+        "properties": {
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
           },
-          {
-            "properties": {},
-            "type": "object"
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "archives": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "statsBulletRecordLoss": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBulletRecordDraw": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBulletRecordWin": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBulletRatingDeviation": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBulletRatingBest": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBulletRatingLast": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRecordLoss": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRecordDraw": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRecordWin": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRatingDeviation": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRatingBest": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsBlitzRatingLast": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRecordLoss": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRecordDraw": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRecordWin": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRatingDeviation": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRatingLast": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsRapidRatingBest": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRecordLoss": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRecordDraw": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRecordWin": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRatingDeviation": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRatingLast": {
+            "type": "number",
+            "format": "double"
+          },
+          "statsDailyRatingBest": {
+            "type": "number",
+            "format": "double"
+          },
+          "league": {
+            "$ref": "#/components/schemas/League"
+          },
+          "title": {
+            "$ref": "#/components/schemas/Title"
+          },
+          "status": {
+            "$ref": "#/components/schemas/Status"
+          },
+          "joined": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastOnline": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "isStreamer": {
+            "type": "boolean"
+          },
+          "twitchUrl": {
+            "type": "string"
+          },
+          "countryCode": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "avatar": {
+            "type": "string"
+          },
+          "followers": {
+            "type": "number",
+            "format": "double"
+          },
+          "name": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "id": {
+            "type": "number",
+            "format": "double"
           }
-        ]
+        },
+        "required": [
+          "updatedAt",
+          "createdAt",
+          "archives",
+          "statsBulletRecordLoss",
+          "statsBulletRecordDraw",
+          "statsBulletRecordWin",
+          "statsBulletRatingDeviation",
+          "statsBulletRatingBest",
+          "statsBulletRatingLast",
+          "statsBlitzRecordLoss",
+          "statsBlitzRecordDraw",
+          "statsBlitzRecordWin",
+          "statsBlitzRatingDeviation",
+          "statsBlitzRatingBest",
+          "statsBlitzRatingLast",
+          "statsRapidRecordLoss",
+          "statsRapidRecordDraw",
+          "statsRapidRecordWin",
+          "statsRapidRatingDeviation",
+          "statsRapidRatingLast",
+          "statsRapidRatingBest",
+          "statsDailyRecordLoss",
+          "statsDailyRecordDraw",
+          "statsDailyRecordWin",
+          "statsDailyRatingDeviation",
+          "statsDailyRatingLast",
+          "statsDailyRatingBest",
+          "league",
+          "title",
+          "status",
+          "joined",
+          "lastOnline",
+          "verified",
+          "isStreamer",
+          "twitchUrl",
+          "countryCode",
+          "country",
+          "location",
+          "avatar",
+          "followers",
+          "name",
+          "username",
+          "id"
+        ],
+        "type": "object"
       },
       "Player": {
-        "$ref": "#/components/schemas/runtime.Types.DefaultSelection_PlayerPayload_",
+        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_",
         "description": "Model Player"
       },
       "StreamersResponse": {
@@ -526,25 +933,6 @@
         },
         "required": ["countries", "players", "total"],
         "type": "object"
-      },
-      "Title": {
-        "type": "string",
-        "enum": [
-          "GM",
-          "WGM",
-          "IM",
-          "WIM",
-          "FM",
-          "WFM",
-          "CM",
-          "WCM",
-          "NM",
-          "WNM",
-          "AGM",
-          "AIM",
-          "AFM",
-          "ACM"
-        ]
       },
       "CountryCount": {
         "properties": {
@@ -699,9 +1087,9 @@
     "securitySchemes": {}
   },
   "info": {
-    "title": "@chess/api",
+    "title": "@chess.com/api",
     "version": "0.0.1",
-    "description": "Chess - API",
+    "description": "chess.com - API",
     "license": {
       "name": "GPL-3.0"
     },
