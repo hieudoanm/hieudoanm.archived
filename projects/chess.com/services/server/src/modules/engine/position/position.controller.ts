@@ -1,20 +1,23 @@
 import { Position } from '@prisma/client';
 import { PositionRepository } from './position.repository';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Body, Controller, Get, Post, Query } from '@nestjs/common';
+import { PositionDto } from 'src/generated/dto/position.entity';
 
-@Controller('chess')
-@ApiTags('API - Position')
+@Controller('position')
+@ApiTags('Position')
 export class PositionController {
   constructor(private readonly positionRepository: PositionRepository) {}
 
-  @Get('position')
-  async getPosition(@Query('fen') fen: string): Promise<Position> {
+  @Get()
+  @ApiResponse({ status: 200, type: PositionDto })
+  async getPosition(@Query('fen') fen: string): Promise<PositionDto> {
     return this.positionRepository.getPosition(fen);
   }
 
-  @Post('position')
-  async syncPosition(@Body() { fen }: { fen: string }): Promise<Position> {
+  @Post()
+  @ApiResponse({ status: 200, type: PositionDto })
+  async syncPosition(@Body() { fen }: { fen: string }): Promise<PositionDto> {
     return this.positionRepository.syncPosition(fen);
   }
 }

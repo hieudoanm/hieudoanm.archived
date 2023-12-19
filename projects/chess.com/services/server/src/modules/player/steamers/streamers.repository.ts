@@ -1,8 +1,10 @@
 import { Prisma, PrismaClient, Title } from '@prisma/client';
 import { getPrismaClient } from '../../../common/prisma';
 import { timeRangeInMilliseconds } from '../../chess.enum';
-import { StreamersResponse } from './streamers.types';
+import { StreamersResponseDto } from './streamers.dto';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class StreamersRepository {
   private prismaClient: PrismaClient;
 
@@ -16,7 +18,7 @@ export class StreamersRepository {
   }: {
     title?: Title;
     country?: string;
-  }): Promise<StreamersResponse> {
+  }): Promise<StreamersResponseDto> {
     const milliseconds: number = timeRangeInMilliseconds.YEAR;
     const d = new Date(Date.now() - milliseconds);
     const [date] = d.toISOString().split('T');

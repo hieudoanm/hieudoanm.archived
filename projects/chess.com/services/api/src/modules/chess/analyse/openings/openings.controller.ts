@@ -3,7 +3,7 @@ import { Controller, Get, Query, Route, Tags } from 'tsoa';
 import { OpeningsRepository } from './openings.repository';
 
 @Route('chess')
-@Tags('API - Openings', 'external - lichess.org')
+@Tags('API - Openings')
 export class OpeningsController extends Controller {
   private openingsRepository: OpeningsRepository;
 

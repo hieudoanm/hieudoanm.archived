@@ -14,13 +14,12 @@ const NODE_ENV: string = process.env.NODE_ENV || 'development';
 const buildDocument = (app: INestApplication) => {
   if (NODE_ENV !== 'development') return;
   const config = new DocumentBuilder()
-    .setTitle('broca.io')
-    .setDescription('broca.io')
+    .setTitle('Chess Insights')
+    .setDescription('Chess Insights from chess.com')
     .setVersion('1.0')
-    .addTag('broca')
     .build();
   const document: OpenAPIObject = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('swagger', app, document);
   const documentYaml: string = stringify(document);
   writeFileSync('./docs/swagger/swagger.yaml', documentYaml);
   writeFileSync(

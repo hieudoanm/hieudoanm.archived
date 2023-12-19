@@ -3,7 +3,7 @@ import { Body, Controller, Get, Post, Query, Route, Tags } from 'tsoa';
 import { PositionService } from './position.service';
 
 @Route('chess')
-@Tags('API - Position', 'external - lichess.org')
+@Tags('API - Position')
 export class PositionController extends Controller {
   private positionService: PositionService;
 

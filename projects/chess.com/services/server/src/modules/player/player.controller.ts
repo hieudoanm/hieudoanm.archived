@@ -1,19 +1,22 @@
 import { Controller, Get, Param, Post } from '@nestjs/common';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Player } from '@prisma/client';
 import { PlayerService } from './player.service';
+import { PlayerDto } from 'src/generated/dto/player.entity';
 
-@Controller('chess')
-@ApiTags('API - Player', 'external - chess.com')
+@Controller('player')
+@ApiTags('Player')
 export class PlayerController {
   constructor(private readonly playerService: PlayerService) {}
 
-  @Get('player/:username')
+  @Get(':username')
+  @ApiResponse({ status: 200, type: PlayerDto })
   async getPlayer(@Param('username') username: string): Promise<Player> {
     return this.playerService.getPlayer(username);
   }
 
-  @Post('player/:username')
+  @Post(':username')
+  @ApiResponse({ status: 200, type: PlayerDto })
   async syncPlayer(@Param('username') username: string): Promise<Player> {
     return this.playerService.syncPlayer(username);
   }

@@ -7,7 +7,7 @@ import {
   timeRangeInDays,
   timeRangeInMilliseconds,
 } from '../chess.enum';
-import { TitledStats } from './titled.types';
+import { TitledStatsDto } from './titled.dto';
 
 export class TitledRepository {
   private prismaClient: PrismaClient;
@@ -81,7 +81,7 @@ export class TitledRepository {
   }: {
     title: ChessTitle;
     timeRange: TimeRange;
-  }): Promise<TitledStats> {
+  }): Promise<TitledStatsDto> {
     const averageRapidRatingQuery = this.buildAverageRatingQuery({
       title,
       timeRange,

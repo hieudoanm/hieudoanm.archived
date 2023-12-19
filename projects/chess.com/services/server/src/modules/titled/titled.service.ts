@@ -2,8 +2,8 @@ import { ChessTitle } from '../../common/clients/chess.com/types';
 import { getRedisClient, RedisClient } from '../../common/databases/redis';
 import { REDIS_URI } from '../../common/environments';
 import { TimeRange } from '../chess.enum';
+import { TitledStatsDto } from './titled.dto';
 import { TitledRepository } from './titled.repository';
-import { TitledStats } from './titled.types';
 
 export class TitledService {
   private redisClient: RedisClient;
@@ -22,19 +22,18 @@ export class TitledService {
     cache: boolean;
     title: ChessTitle;
     timeRange: TimeRange;
-  }): Promise<TitledStats> {
+  }): Promise<TitledStatsDto> {
     const key: string = `chess-titled-${title}-${timeRange}`.toLowerCase();
     if (cache) {
-      const cacheTitledStats: TitledStats | null | undefined =
-        await this.redisClient.getObject<TitledStats>(key);
+      const cacheTitledStats: TitledStatsDto | null | undefined =
+        await this.redisClient.getObject<TitledStatsDto>(key);
       if (cacheTitledStats) {
         return cacheTitledStats;
       }
     }
-    const titledStats: TitledStats = await this.titledRepository.getTitledStats(
-      { title, timeRange }
-    );
-    await this.redisClient.setObject<TitledStats>(key, titledStats, {
+    const titledStats: TitledStatsDto =
+      await this.titledRepository.getTitledStats({ title, timeRange });
+    await this.redisClient.setObject<TitledStatsDto>(key, titledStats, {
       expiresInSeconds: 30 * 60, // 30 minutes
     });
     return titledStats;

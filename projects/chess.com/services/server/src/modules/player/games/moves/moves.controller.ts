@@ -1,14 +1,16 @@
 import { Move } from '@prisma/client';
 import { MovesService } from './moves.service';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Controller, Get, Param, Post } from '@nestjs/common';
+import { MoveDto } from 'src/generated/dto/move.entity';
 
-@Controller('chess')
-@ApiTags('API - Moves', 'external - chess.com')
+@Controller()
+@ApiTags('Moves')
 export class MovesController {
   constructor(private readonly movesService: MovesService) {}
 
   @Get('player/:username/games/:gameId/moves')
+  @ApiResponse({ status: 200, type: [MoveDto] })
   async getGameMoves(
     @Param('username') username: string,
     @Param('gameId') gameId: string
@@ -17,6 +19,7 @@ export class MovesController {
   }
 
   @Post('player/:username/games/:gameId/moves')
+  @ApiResponse({ status: 200 })
   async syncGameMoves(
     @Param('username') username: string,
     @Param('gameId') gameId: string

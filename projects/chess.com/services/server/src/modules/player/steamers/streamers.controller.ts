@@ -1,19 +1,20 @@
 import { Title } from '@prisma/client';
 import { StreamersRepository } from './streamers.repository';
-import { StreamersResponse } from './streamers.types';
-import { ApiTags } from '@nestjs/swagger';
+import { StreamersResponseDto } from './streamers.dto';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Controller, Query, Get } from '@nestjs/common';
 
-@Controller('chess')
-@ApiTags('API - Streamers', 'external - chess.com')
+@Controller('streamers')
+@ApiTags('Streamers')
 export class StreamersController {
   constructor(private readonly streamersRepository: StreamersRepository) {}
 
-  @Get('streamers')
+  @Get()
+  @ApiResponse({ status: 200, type: StreamersResponseDto })
   async getStreamers(
     @Query('title') title?: Title,
     @Query('country') country?: string
-  ): Promise<StreamersResponse> {
+  ): Promise<StreamersResponseDto> {
     return this.streamersRepository.getStreamers({ title, country });
   }
 }

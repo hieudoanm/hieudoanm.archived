@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "paths": {
-    "/chess/openings": {
+    "/openings": {
       "get": {
         "operationId": "OpeningsController_getOpenings",
         "parameters": [
@@ -32,25 +32,39 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OpeningsResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - openings"]
+        "tags": ["Openings"]
       }
     },
-    "/chess/openings/ecos": {
+    "/openings/ecos": {
       "get": {
         "operationId": "OpeningsController_getECOs",
         "parameters": [],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EcosResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - openings"]
+        "tags": ["Openings"]
       }
     },
-    "/chess/position": {
+    "/position": {
       "get": {
         "operationId": "PositionController_getPosition",
         "parameters": [
@@ -65,20 +79,34 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PositionDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Position"]
+        "tags": ["Position"]
       },
       "post": {
         "operationId": "PositionController_syncPosition",
         "parameters": [],
         "responses": {
-          "201": {
-            "description": ""
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PositionDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Position"]
+        "tags": ["Position"]
       }
     },
     "/health": {
@@ -87,13 +115,20 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["health"]
+        "tags": ["Health"]
       }
     },
-    "/chess/player/{username}": {
+    "/player/{username}": {
       "get": {
         "operationId": "PlayerController_getPlayer",
         "parameters": [
@@ -108,10 +143,17 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlayerDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Player", "external - chess.com"]
+        "tags": ["Player"]
       },
       "post": {
         "operationId": "PlayerController_syncPlayer",
@@ -126,14 +168,21 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": ""
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlayerDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Player", "external - chess.com"]
+        "tags": ["Player"]
       }
     },
-    "/chess/player/{username}/games": {
+    "/player/{username}/games": {
       "get": {
         "operationId": "GamesController_getGames",
         "parameters": [
@@ -164,10 +213,17 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GamesResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Games", "external - chess.com"]
+        "tags": ["Player - Games"]
       },
       "post": {
         "operationId": "GamesController_syncGames",
@@ -182,14 +238,21 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": ""
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SyncedResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Games", "external - chess.com"]
+        "tags": ["Player - Games"]
       }
     },
-    "/chess/player/{username}/games/{gameId}": {
+    "/player/{username}/games/{gameId}": {
       "get": {
         "operationId": "GamesController_getGame",
         "parameters": [
@@ -212,13 +275,20 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GameDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Games", "external - chess.com"]
+        "tags": ["Player - Games"]
       }
     },
-    "/chess/player/{username}/games/{gameId}/pgn": {
+    "/player/{username}/games/{gameId}/pgn": {
       "get": {
         "operationId": "GamesController_getGamePGN",
         "parameters": [
@@ -241,13 +311,20 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Games", "external - chess.com"]
+        "tags": ["Player - Games"]
       }
     },
-    "/chess/player/{username}/insights": {
+    "/player/{username}/insights": {
       "get": {
         "operationId": "InsightsController_getInsights",
         "parameters": [
@@ -265,10 +342,10 @@
             "description": ""
           }
         },
-        "tags": ["API - Insights", "external - chess.com"]
+        "tags": ["Player - Insights"]
       }
     },
-    "/chess/player/{username}/insights/games": {
+    "/player/{username}/insights/games": {
       "get": {
         "operationId": "InsightsController_getGamesInsights",
         "parameters": [
@@ -286,10 +363,10 @@
             "description": ""
           }
         },
-        "tags": ["API - Insights", "external - chess.com"]
+        "tags": ["Player - Insights"]
       }
     },
-    "/chess/player/{username}/insights/accuracy": {
+    "/player/{username}/insights/accuracy": {
       "get": {
         "operationId": "InsightsController_getAccuracyInsights",
         "parameters": [
@@ -307,10 +384,10 @@
             "description": ""
           }
         },
-        "tags": ["API - Insights", "external - chess.com"]
+        "tags": ["Player - Insights"]
       }
     },
-    "/chess/player/{username}/insights/results": {
+    "/player/{username}/insights/results": {
       "get": {
         "operationId": "InsightsController_getResultsInsights",
         "parameters": [
@@ -328,10 +405,10 @@
             "description": ""
           }
         },
-        "tags": ["API - Insights", "external - chess.com"]
+        "tags": ["Player - Insights"]
       }
     },
-    "/chess/player/{username}/insights/opponents": {
+    "/player/{username}/insights/opponents": {
       "get": {
         "operationId": "InsightsController_getResultsOpponents",
         "parameters": [
@@ -349,10 +426,10 @@
             "description": ""
           }
         },
-        "tags": ["API - Insights", "external - chess.com"]
+        "tags": ["Player - Insights"]
       }
     },
-    "/chess/streamers": {
+    "/streamers": {
       "get": {
         "operationId": "StreamersController_getStreamers",
         "parameters": [
@@ -375,13 +452,39 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StreamersResponseDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Streamers", "external - chess.com"]
+        "tags": ["Streamers"]
       }
     },
-    "/chess/titled/{title}": {
+    "/titled": {
+      "get": {
+        "operationId": "TitledController_getTitles",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TitlesDto"
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Titled"]
+      }
+    },
+    "/titled/{title}": {
       "get": {
         "operationId": "TitledController_getTitledStats",
         "parameters": [
@@ -412,27 +515,202 @@
         ],
         "responses": {
           "200": {
-            "description": ""
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TitledStatsDto"
+                }
+              }
+            }
           }
         },
-        "tags": ["API - Titled", "external - chess.com"]
+        "tags": ["Titled"]
       }
     }
   },
   "info": {
-    "title": "broca.io",
-    "description": "broca.io",
+    "title": "Chess Insights",
+    "description": "Chess Insights from chess.com",
     "version": "1.0",
     "contact": {}
   },
-  "tags": [
-    {
-      "name": "broca",
-      "description": ""
-    }
-  ],
+  "tags": [],
   "servers": [],
   "components": {
-    "schemas": {}
+    "schemas": {
+      "OpeningDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "OpeningsResponseDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "openings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OpeningDto"
+            }
+          }
+        },
+        "required": ["total", "openings"]
+      },
+      "EcosResponseDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "ecos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["total", "ecos"]
+      },
+      "PositionDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "HealthResponseDto": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": ["status"]
+      },
+      "PlayerDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "GameDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "GamesResponseDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "games": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GameDto"
+            }
+          }
+        },
+        "required": ["total", "games"]
+      },
+      "SyncedResponseDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "synced": {
+            "type": "number"
+          }
+        },
+        "required": ["total", "synced"]
+      },
+      "CountryDto": {
+        "type": "object",
+        "properties": {
+          "countryCode": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          }
+        },
+        "required": ["countryCode", "country"]
+      },
+      "StreamersResponseDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlayerDto"
+            }
+          },
+          "countries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CountryDto"
+            }
+          }
+        },
+        "required": ["total", "players", "countries"]
+      },
+      "TitlesDto": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "type": "number"
+          },
+          "titles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["total", "titles"]
+      },
+      "TitledStatsDto": {
+        "type": "object",
+        "properties": {
+          "averageRapidRating": {
+            "type": "number"
+          },
+          "maxRapidRating": {
+            "type": "number"
+          },
+          "averageBlitzRating": {
+            "type": "number"
+          },
+          "maxBlitzRating": {
+            "type": "number"
+          },
+          "averageBulletRating": {
+            "type": "number"
+          },
+          "maxBulletRating": {
+            "type": "number"
+          },
+          "total": {
+            "type": "number"
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlayerDto"
+            }
+          }
+        },
+        "required": [
+          "averageRapidRating",
+          "maxRapidRating",
+          "averageBlitzRating",
+          "maxBlitzRating",
+          "averageBulletRating",
+          "maxBulletRating",
+          "total",
+          "players"
+        ]
+      }
+    }
   }
 }

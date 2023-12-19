@@ -1,6 +1,6 @@
 openapi: 3.0.0
 paths:
-  /chess/openings:
+  /openings:
     get:
       operationId: OpeningsController_getOpenings
       parameters:
@@ -22,17 +22,25 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpeningsResponseDto'
       tags: &a1
-        - API - openings
-  /chess/openings/ecos:
+        - Openings
+  /openings/ecos:
     get:
       operationId: OpeningsController_getECOs
       parameters: []
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EcosResponseDto'
       tags: *a1
-  /chess/position:
+  /position:
     get:
       operationId: PositionController_getPosition
       parameters:
@@ -44,14 +52,22 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositionDto'
       tags: &a2
-        - API - Position
+        - Position
     post:
       operationId: PositionController_syncPosition
       parameters: []
       responses:
-        '201':
+        '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PositionDto'
       tags: *a2
   /health:
     get:
@@ -60,9 +76,13 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponseDto'
       tags:
-        - health
-  /chess/player/{username}:
+        - Health
+  /player/{username}:
     get:
       operationId: PlayerController_getPlayer
       parameters:
@@ -74,9 +94,12 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlayerDto'
       tags: &a3
-        - API - Player
-        - external - chess.com
+        - Player
     post:
       operationId: PlayerController_syncPlayer
       parameters:
@@ -86,10 +109,14 @@ paths:
           schema:
             type: string
       responses:
-        '201':
+        '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlayerDto'
       tags: *a3
-  /chess/player/{username}/games:
+  /player/{username}/games:
     get:
       operationId: GamesController_getGames
       parameters:
@@ -111,9 +138,12 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GamesResponseDto'
       tags: &a4
-        - API - Games
-        - external - chess.com
+        - Player - Games
     post:
       operationId: GamesController_syncGames
       parameters:
@@ -123,10 +153,14 @@ paths:
           schema:
             type: string
       responses:
-        '201':
+        '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SyncedResponseDto'
       tags: *a4
-  /chess/player/{username}/games/{gameId}:
+  /player/{username}/games/{gameId}:
     get:
       operationId: GamesController_getGame
       parameters:
@@ -143,8 +177,12 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameDto'
       tags: *a4
-  /chess/player/{username}/games/{gameId}/pgn:
+  /player/{username}/games/{gameId}/pgn:
     get:
       operationId: GamesController_getGamePGN
       parameters:
@@ -161,8 +199,12 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                type: string
       tags: *a4
-  /chess/player/{username}/insights:
+  /player/{username}/insights:
     get:
       operationId: InsightsController_getInsights
       parameters:
@@ -175,9 +217,8 @@ paths:
         '200':
           description: ''
       tags: &a5
-        - API - Insights
-        - external - chess.com
-  /chess/player/{username}/insights/games:
+        - Player - Insights
+  /player/{username}/insights/games:
     get:
       operationId: InsightsController_getGamesInsights
       parameters:
@@ -190,7 +231,7 @@ paths:
         '200':
           description: ''
       tags: *a5
-  /chess/player/{username}/insights/accuracy:
+  /player/{username}/insights/accuracy:
     get:
       operationId: InsightsController_getAccuracyInsights
       parameters:
@@ -203,7 +244,7 @@ paths:
         '200':
           description: ''
       tags: *a5
-  /chess/player/{username}/insights/results:
+  /player/{username}/insights/results:
     get:
       operationId: InsightsController_getResultsInsights
       parameters:
@@ -216,7 +257,7 @@ paths:
         '200':
           description: ''
       tags: *a5
-  /chess/player/{username}/insights/opponents:
+  /player/{username}/insights/opponents:
     get:
       operationId: InsightsController_getResultsOpponents
       parameters:
@@ -229,7 +270,7 @@ paths:
         '200':
           description: ''
       tags: *a5
-  /chess/streamers:
+  /streamers:
     get:
       operationId: StreamersController_getStreamers
       parameters:
@@ -246,10 +287,26 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StreamersResponseDto'
       tags:
-        - API - Streamers
-        - external - chess.com
-  /chess/titled/{title}:
+        - Streamers
+  /titled:
+    get:
+      operationId: TitledController_getTitles
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TitlesDto'
+      tags: &a6
+        - Titled
+  /titled/{title}:
     get:
       operationId: TitledController_getTitledStats
       parameters:
@@ -271,17 +328,151 @@ paths:
       responses:
         '200':
           description: ''
-      tags:
-        - API - Titled
-        - external - chess.com
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TitledStatsDto'
+      tags: *a6
 info:
-  title: broca.io
-  description: broca.io
+  title: Chess Insights
+  description: Chess Insights from chess.com
   version: '1.0'
   contact: {}
-tags:
-  - name: broca
-    description: ''
+tags: []
 servers: []
 components:
-  schemas: {}
+  schemas:
+    OpeningDto:
+      type: object
+      properties: {}
+    OpeningsResponseDto:
+      type: object
+      properties:
+        total:
+          type: number
+        openings:
+          type: array
+          items:
+            $ref: '#/components/schemas/OpeningDto'
+      required:
+        - total
+        - openings
+    EcosResponseDto:
+      type: object
+      properties:
+        total:
+          type: number
+        ecos:
+          type: array
+          items:
+            type: string
+      required:
+        - total
+        - ecos
+    PositionDto:
+      type: object
+      properties: {}
+    HealthResponseDto:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    PlayerDto:
+      type: object
+      properties: {}
+    GameDto:
+      type: object
+      properties: {}
+    GamesResponseDto:
+      type: object
+      properties:
+        total:
+          type: number
+        games:
+          type: array
+          items:
+            $ref: '#/components/schemas/GameDto'
+      required:
+        - total
+        - games
+    SyncedResponseDto:
+      type: object
+      properties:
+        total:
+          type: number
+        synced:
+          type: number
+      required:
+        - total
+        - synced
+    CountryDto:
+      type: object
+      properties:
+        countryCode:
+          type: string
+        country:
+          type: string
+      required:
+        - countryCode
+        - country
+    StreamersResponseDto:
+      type: object
+      properties:
+        total:
+          type: number
+        players:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlayerDto'
+        countries:
+          type: array
+          items:
+            $ref: '#/components/schemas/CountryDto'
+      required:
+        - total
+        - players
+        - countries
+    TitlesDto:
+      type: object
+      properties:
+        total:
+          type: number
+        titles:
+          type: array
+          items:
+            type: string
+      required:
+        - total
+        - titles
+    TitledStatsDto:
+      type: object
+      properties:
+        averageRapidRating:
+          type: number
+        maxRapidRating:
+          type: number
+        averageBlitzRating:
+          type: number
+        maxBlitzRating:
+          type: number
+        averageBulletRating:
+          type: number
+        maxBulletRating:
+          type: number
+        total:
+          type: number
+        players:
+          type: array
+          items:
+            $ref: '#/components/schemas/PlayerDto'
+      required:
+        - averageRapidRating
+        - maxRapidRating
+        - averageBlitzRating
+        - maxBlitzRating
+        - averageBulletRating
+        - maxBulletRating
+        - total
+        - players

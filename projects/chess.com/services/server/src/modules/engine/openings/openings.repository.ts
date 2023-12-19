@@ -1,6 +1,7 @@
 import { Opening, Prisma, PrismaClient } from '@prisma/client';
 import { getPrismaClient } from '../../../common/prisma';
 import { Injectable } from '@nestjs/common';
+import { EcosResponseDto, OpeningsResponseDto } from './openings.dto';
 
 @Injectable()
 export class OpeningsRepository {
@@ -18,7 +19,7 @@ export class OpeningsRepository {
     eco: string;
     name: string;
     firstMove: string;
-  }): Promise<{ total: number; openings: Opening[] }> {
+  }): Promise<OpeningsResponseDto> {
     let where: Prisma.OpeningWhereInput = {};
     if (eco !== '') {
       where = { ...where, eco };
@@ -44,7 +45,7 @@ export class OpeningsRepository {
     return { total, openings };
   }
 
-  public async getECOs(): Promise<{ total: number; ecos: string[] }> {
+  public async getECOs(): Promise<EcosResponseDto> {
     const results = await this.prismaClient.opening.findMany({
       select: { eco: true },
       distinct: ['eco'],

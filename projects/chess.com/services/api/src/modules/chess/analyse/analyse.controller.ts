@@ -3,7 +3,7 @@ import { FullCloudEvaluation } from '../../../common/clients/lichess.org/types';
 import { AnalyseService } from './analyse.service';
 
 @Route('chess')
-@Tags('API - Analyse', 'external - lichess.org')
+@Tags('API - Analyse')
 export class AnalyseController extends Controller {
   private analyseService: AnalyseService;
 

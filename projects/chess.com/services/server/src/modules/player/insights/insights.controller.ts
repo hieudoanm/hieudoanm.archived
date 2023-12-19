@@ -1,14 +1,15 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { InsightsService } from './insights.service';
 import { Insights } from './insights.types';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 
-@Controller('chess')
-@ApiTags('API - Insights', 'external - chess.com')
+@Controller()
+@ApiTags('Player - Insights')
 export class InsightsController {
   constructor(private readonly insightsService: InsightsService) {}
 
   @Get('player/:username/insights')
+  @ApiResponse({ status: 200 })
   public async getInsights(
     @Param('username') username: string
   ): Promise<Insights> {
@@ -16,6 +17,7 @@ export class InsightsController {
   }
 
   @Get('player/:username/insights/games')
+  @ApiResponse({ status: 200 })
   public async getGamesInsights(
     @Param('username') username: string
   ): Promise<Pick<Insights, 'username' | 'games'>> {
@@ -23,6 +25,7 @@ export class InsightsController {
   }
 
   @Get('player/:username/insights/accuracy')
+  @ApiResponse({ status: 200 })
   public async getAccuracyInsights(
     @Param('username') username: string
   ): Promise<Pick<Insights, 'username' | 'accuracy'>> {
@@ -30,6 +33,7 @@ export class InsightsController {
   }
 
   @Get('player/:username/insights/results')
+  @ApiResponse({ status: 200 })
   public async getResultsInsights(
     @Param('username') username: string
   ): Promise<Pick<Insights, 'username' | 'results'>> {
@@ -37,6 +41,7 @@ export class InsightsController {
   }
 
   @Get('player/:username/insights/opponents')
+  @ApiResponse({ status: 200 })
   public async getResultsOpponents(
     @Param('username') username: string
   ): Promise<Pick<Insights, 'username' | 'opponents'> & { total: number }> {

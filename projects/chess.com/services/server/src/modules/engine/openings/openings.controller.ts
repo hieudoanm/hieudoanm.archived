@@ -1,24 +1,27 @@
 import { Opening } from '@prisma/client';
 import { OpeningsRepository } from './openings.repository';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Controller, Get, Query } from '@nestjs/common';
+import { EcosResponseDto, OpeningsResponseDto } from './openings.dto';
 
-@Controller('chess')
-@ApiTags('API - openings')
+@Controller('openings')
+@ApiTags('Openings')
 export class OpeningsController {
   constructor(private readonly openingsRepository: OpeningsRepository) {}
 
-  @Get('openings')
+  @Get()
+  @ApiResponse({ status: 200, type: OpeningsResponseDto })
   public async getOpenings(
     @Query('eco') eco: string = '',
     @Query('name') name: string = '',
     @Query('firstMove') firstMove: string = ''
-  ): Promise<{ total: number; openings: Opening[] }> {
+  ): Promise<OpeningsResponseDto> {
     return this.openingsRepository.getOpenings({ eco, name, firstMove });
   }
 
-  @Get('openings/ecos')
-  public async getECOs(): Promise<{ total: number; ecos: string[] }> {
+  @Get('ecos')
+  @ApiResponse({ status: 200, type: EcosResponseDto })
+  public async getECOs(): Promise<EcosResponseDto> {
     return this.openingsRepository.getECOs();
   }
 }
