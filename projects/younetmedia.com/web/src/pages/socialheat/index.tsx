@@ -32,15 +32,25 @@ import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 export const SocialHeatPage: NextPage = () => {
   const router = useRouter();
 
-  const [pin, setPin] = useState<string>('');
-  const [topicId, setTopicId] = useState<number>(0);
-  const [fromDate, setFromDate] = useState<Dayjs>();
-  const [toDate, setToDate] = useState<Dayjs>();
-  const [input, setInput] = useState<'input' | 'table'>('input');
+  const [appState, setAppState] = useState<{
+    input: 'input' | 'table';
+    pin: string;
+    topicId: number;
+    fromDate: Dayjs | null;
+    toDate: Dayjs | null;
+    loading: number;
+  }>({
+    input: 'input',
+    topicId: 0,
+    pin: '',
+    fromDate: null,
+    toDate: null,
+    loading: 0
+  });
+
   const [queryString, setQueryString] = useState<string>('');
   const [queries, setQueries] = useState<string[]>([]);
   const [results, setResults] = useState<Result[]>([]);
-  const [loading, setLoading] = useState<number>(0);
   const [accessToken, setAccessToken] = useState<string>('');
 
   useEffect(() => {
@@ -54,19 +64,48 @@ export const SocialHeatPage: NextPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const setQueryParams = ({
+    pin = '',
+    loading = 0,
+    input,
+    topicId,
+    fromDate,
+    toDate
+  }: {
+    loading: number;
+    pin: string;
+    input: string;
+    topicId: number;
+    fromDate: Dayjs | null;
+    toDate: Dayjs | null;
+  }) => {
+    logger.info(pin, loading);
+    router.push({
+      query: {
+        input,
+        topicId,
+        fromDate: fromDate?.format('YYYY-MM-DD') ?? '',
+        toDate: toDate?.format('YYYY-MM-DD') ?? ''
+      }
+    });
+  };
+
   const changeInput = (
     _event: React.MouseEvent<HTMLElement>,
     newInput: 'input' | 'table'
   ) => {
-    setInput(newInput);
+    setAppState({ ...appState, input: newInput });
+    setQueryParams({ ...appState, input: newInput });
   };
 
   const changeFromDate = (newFromDate: Dayjs) => {
-    setFromDate(newFromDate);
+    setAppState({ ...appState, fromDate: newFromDate });
+    setQueryParams({ ...appState, fromDate: newFromDate });
   };
 
   const changeToDate = (newToDate: Dayjs) => {
-    setToDate(newToDate);
+    setAppState({ ...appState, toDate: newToDate });
+    setQueryParams({ ...appState, toDate: newToDate });
   };
 
   const changeTopicId = (
@@ -74,7 +113,8 @@ export const SocialHeatPage: NextPage = () => {
   ) => {
     const newTopicId: number =
       Number.parseInt(event?.target.value || '0', 10) || 0;
-    setTopicId(newTopicId);
+    setAppState({ ...appState, topicId: newTopicId });
+    setQueryParams({ ...appState, topicId: newTopicId });
   };
 
   const changeQueryString = (
@@ -86,13 +126,13 @@ export const SocialHeatPage: NextPage = () => {
   };
 
   const runQueries = async (event: FormEvent<HTMLFormElement>) => {
-    if (pin === PIN || pin === NEXT_PUBLIC_PIN) {
+    if (appState.pin === PIN || appState.pin === NEXT_PUBLIC_PIN) {
       alert(ERROR_MESSAGE_MISSING_PIN);
       return;
     }
 
     event.preventDefault();
-    if (fromDate === null || toDate === null) {
+    if (appState.fromDate === null || appState.toDate === null) {
       alert(ERROR_MESSAGE_DATE_RANGE);
       return;
     }
@@ -102,7 +142,7 @@ export const SocialHeatPage: NextPage = () => {
       router.push('/auth');
     }
 
-    setLoading(0);
+    setAppState({ ...appState, loading: 0 });
     setResults([]);
     const newResults = [];
     let index = 0;
@@ -110,10 +150,10 @@ export const SocialHeatPage: NextPage = () => {
     for (const query of queries) {
       try {
         const result: Result = await queryResult(
-          topicId,
+          appState.topicId,
           {
-            fromDate: fromDate?.format('YYYY-MM-DD') ?? '',
-            toDate: toDate?.format('YYYY-MM-DD') ?? ''
+            fromDate: appState.fromDate?.format('YYYY-MM-DD') ?? '',
+            toDate: appState.toDate?.format('YYYY-MM-DD') ?? ''
           },
           query
         );
@@ -126,7 +166,8 @@ export const SocialHeatPage: NextPage = () => {
           total_mentions: -1
         } as Result);
       }
-      setLoading(Number.parseFloat(((index / total) * 100).toFixed(2)));
+      const newLoading = Number.parseFloat(((index / total) * 100).toFixed(2));
+      setAppState({ ...appState, loading: newLoading });
       index++;
     }
     setResults(newResults);
@@ -188,8 +229,10 @@ export const SocialHeatPage: NextPage = () => {
                     id="pin"
                     placeholder="PIN"
                     required
-                    value={pin}
-                    onChange={(event) => setPin(event.target.value)}
+                    value={appState.pin}
+                    onChange={(event) =>
+                      setAppState({ ...appState, pin: event.target.value })
+                    }
                   />
                 </div>
                 <div className="col-span-12">
@@ -199,7 +242,7 @@ export const SocialHeatPage: NextPage = () => {
                     label="Topic ID"
                     placeholder="Topic ID"
                     className="w-full"
-                    value={topicId}
+                    value={appState.topicId}
                     onChange={changeTopicId}
                     required
                   />
@@ -208,7 +251,7 @@ export const SocialHeatPage: NextPage = () => {
                   <DesktopDatePicker
                     label="From Date"
                     format="DD/MM/YYYY"
-                    value={fromDate}
+                    value={appState.fromDate}
                     onChange={(newDate: Dayjs | null) => {
                       if (!newDate) {
                         return;
@@ -222,7 +265,7 @@ export const SocialHeatPage: NextPage = () => {
                   <DesktopDatePicker
                     label="To Date"
                     format="DD/MM/YYYY"
-                    value={toDate}
+                    value={appState.toDate}
                     onChange={(newDate: Dayjs | null) => {
                       if (!newDate) {
                         return;
@@ -236,7 +279,7 @@ export const SocialHeatPage: NextPage = () => {
                   <Stack spacing={2} alignItems="center">
                     <ToggleButtonGroup
                       size="large"
-                      value={input}
+                      value={appState.input}
                       onChange={changeInput}
                       exclusive={true}
                     >
@@ -250,7 +293,7 @@ export const SocialHeatPage: NextPage = () => {
                   </Stack>
                 </div>
                 <div className="col-span-12">
-                  {input === 'input' ? (
+                  {appState.input === 'input' ? (
                     <TextField
                       id="queries"
                       label="Queries"
@@ -319,14 +362,14 @@ export const SocialHeatPage: NextPage = () => {
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {loading < 100 ? (
+                      {appState.loading < 100 ? (
                         <TableRow className="border-0 border-none">
                           <TableCell
                             align="center"
                             colSpan={4}
                             className="border-0 border-none uppercase"
                           >
-                            {loading}%
+                            {appState.loading}%
                           </TableCell>
                         </TableRow>
                       ) : (
