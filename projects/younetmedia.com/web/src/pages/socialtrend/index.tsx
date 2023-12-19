@@ -2,6 +2,7 @@ import {
   Button,
   Card,
   CardContent,
+  TextField,
   MenuItem,
   Select,
   Table,
@@ -60,11 +61,12 @@ const downloadCSV = (
   link.click(); // This will download the data file named "my_data.csv".
 };
 
-const SocialTrendMain: React.FC<{
+const SocialTrendForm: React.FC<{
   accessToken: string;
   dateFrom: Dayjs;
   dateTo: Dayjs;
-}> = ({ accessToken = '', dateFrom, dateTo }) => {
+  pin: string;
+}> = ({ accessToken = '', dateFrom, dateTo, pin = '' }) => {
   const urlSearchParameters = new URLSearchParams();
   urlSearchParameters.set('rankedBy', 'buzz');
   urlSearchParameters.set('dateFrom', dateFrom ? dateFrom.toISOString() : '');
@@ -182,7 +184,8 @@ export const SocialTrendPage: NextPage = () => {
   const sevenDaysTime: number = 7 * 24 * oneHourTime + 23 * oneHourTime;
   const thirtyDaysTime: number = 30 * 24 * oneHourTime + 23 * oneHourTime;
 
-  const [accessToken, setAccessToken] = useState('');
+  const [pin, setPin] = useState<string>('');
+  const [accessToken, setAccessToken] = useState<string>('');
   const [dateRange, setDateRange] = useState<{
     range: number;
     date: Dayjs;
@@ -208,6 +211,18 @@ export const SocialTrendPage: NextPage = () => {
       <main className="container mx-auto p-8">
         <div className="flex flex-col gap-4 md:gap-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+            <div className="col-span-1 md:col-span-2">
+              <TextField
+                fullWidth
+                label="PIN"
+                variant="outlined"
+                id="pin"
+                placeholder="PIN"
+                required
+                value={pin}
+                onChange={(event) => setPin(event.target.value)}
+              />
+            </div>
             <div className="col-span-1">
               <DesktopDatePicker
                 label="Date"
@@ -243,10 +258,11 @@ export const SocialTrendPage: NextPage = () => {
             </div>
           </div>
           {accessToken.length > 0 ? (
-            <SocialTrendMain
+            <SocialTrendForm
               accessToken={accessToken}
               dateFrom={dayjs(dateRange.date.unix() * 1000 - dateRange.range)}
               dateTo={dateRange.date}
+              pin={pin}
             />
           ) : (
             <></>

@@ -7,6 +7,9 @@
   "author": "hieudoanm <hieumdoan@gmail.com>",
   "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "dev": "true"
+  },
   "devDependencies": {
     "@types/node": "20.10.5",
     "axios": "1.6.2",

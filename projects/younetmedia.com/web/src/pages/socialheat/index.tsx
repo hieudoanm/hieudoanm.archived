@@ -16,7 +16,8 @@ import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import {
   ERROR_MESSAGE_AUTHENTICATION,
-  ERROR_MESSAGE_DATE_RANGE
+  ERROR_MESSAGE_DATE_RANGE,
+  ERROR_MESSAGE_MISSING_PIN
 } from '@younetmedia/common/constants';
 import { logger } from '@younetmedia/common/libs/log';
 import { Navbar } from '@younetmedia/components/Navbar';
@@ -25,11 +26,12 @@ import { Result } from '@younetmedia/types';
 import { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import React, { ChangeEvent, FormEvent, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 export const SocialHeatPage: NextPage = () => {
   const router = useRouter();
 
+  const [pin, setPin] = useState<string>('');
   const [topicId, setTopicId] = useState<number>(0);
   const [fromDate, setFromDate] = useState<Dayjs>();
   const [toDate, setToDate] = useState<Dayjs>();
@@ -38,6 +40,18 @@ export const SocialHeatPage: NextPage = () => {
   const [queries, setQueries] = useState<string[]>([]);
   const [results, setResults] = useState<Result[]>([]);
   const [loading, setLoading] = useState<number>(0);
+  const [accessToken, setAccessToken] = useState<string>('');
+
+  useEffect(() => {
+    const cacheAccessToken: string =
+      sessionStorage.getItem('accessToken') ?? '';
+    if (!cacheAccessToken) {
+      alert(ERROR_MESSAGE_AUTHENTICATION);
+      router.push('/auth');
+    }
+    setAccessToken(cacheAccessToken);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const changeInput = (
     _event: React.MouseEvent<HTMLElement>,
@@ -71,13 +85,17 @@ export const SocialHeatPage: NextPage = () => {
   };
 
   const runQueries = async (event: FormEvent<HTMLFormElement>) => {
+    if (pin === PIN || pin === NEXT_PUBLIC_PIN) {
+      alert(ERROR_MESSAGE_MISSING_PIN);
+      return;
+    }
+
     event.preventDefault();
     if (fromDate === null || toDate === null) {
       alert(ERROR_MESSAGE_DATE_RANGE);
       return;
     }
 
-    const accessToken: string = sessionStorage.getItem('accessToken') ?? '';
     if (!accessToken) {
       alert(ERROR_MESSAGE_AUTHENTICATION);
       router.push('/auth');
@@ -160,6 +178,18 @@ export const SocialHeatPage: NextPage = () => {
                       Run Queries
                     </Button>
                   </div>
+                </div>
+                <div className="col-span-12">
+                  <TextField
+                    fullWidth
+                    label="PIN"
+                    variant="outlined"
+                    id="pin"
+                    placeholder="PIN"
+                    required
+                    value={pin}
+                    onChange={(event) => setPin(event.target.value)}
+                  />
                 </div>
                 <div className="col-span-12">
                   <TextField
