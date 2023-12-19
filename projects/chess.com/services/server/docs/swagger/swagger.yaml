@@ -20,8 +20,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: &a1
         - API - openings
   /chess/openings/ecos:
@@ -29,8 +29,8 @@ paths:
       operationId: OpeningsController_getECOs
       parameters: []
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a1
   /chess/position:
     get:
@@ -42,24 +42,24 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: &a2
         - API - Position
     post:
       operationId: PositionController_syncPosition
       parameters: []
       responses:
-        "201":
-          description: ""
+        '201':
+          description: ''
       tags: *a2
   /health:
     get:
       operationId: HealthController_getHealth
       parameters: []
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags:
         - health
   /chess/player/{username}:
@@ -72,8 +72,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: &a3
         - API - Player
         - external - chess.com
@@ -86,8 +86,8 @@ paths:
           schema:
             type: string
       responses:
-        "201":
-          description: ""
+        '201':
+          description: ''
       tags: *a3
   /chess/player/{username}/games:
     get:
@@ -109,8 +109,8 @@ paths:
           schema:
             type: number
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: &a4
         - API - Games
         - external - chess.com
@@ -123,8 +123,8 @@ paths:
           schema:
             type: string
       responses:
-        "201":
-          description: ""
+        '201':
+          description: ''
       tags: *a4
   /chess/player/{username}/games/{gameId}:
     get:
@@ -141,8 +141,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a4
   /chess/player/{username}/games/{gameId}/pgn:
     get:
@@ -159,8 +159,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a4
   /chess/player/{username}/insights:
     get:
@@ -172,8 +172,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: &a5
         - API - Insights
         - external - chess.com
@@ -187,8 +187,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a5
   /chess/player/{username}/insights/accuracy:
     get:
@@ -200,8 +200,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a5
   /chess/player/{username}/insights/results:
     get:
@@ -213,8 +213,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a5
   /chess/player/{username}/insights/opponents:
     get:
@@ -226,8 +226,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags: *a5
   /chess/streamers:
     get:
@@ -244,8 +244,8 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags:
         - API - Streamers
         - external - chess.com
@@ -269,19 +269,19 @@ paths:
           schema:
             type: string
       responses:
-        "200":
-          description: ""
+        '200':
+          description: ''
       tags:
         - API - Titled
         - external - chess.com
 info:
   title: broca.io
   description: broca.io
-  version: "1.0"
+  version: '1.0'
   contact: {}
 tags:
   - name: broca
-    description: ""
+    description: ''
 servers: []
 components:
   schemas: {}

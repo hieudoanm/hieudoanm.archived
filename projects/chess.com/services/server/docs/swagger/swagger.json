@@ -35,9 +35,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - openings"
-        ]
+        "tags": ["API - openings"]
       }
     },
     "/chess/openings/ecos": {
@@ -49,9 +47,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - openings"
-        ]
+        "tags": ["API - openings"]
       }
     },
     "/chess/position": {
@@ -72,9 +68,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Position"
-        ]
+        "tags": ["API - Position"]
       },
       "post": {
         "operationId": "PositionController_syncPosition",
@@ -84,9 +78,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Position"
-        ]
+        "tags": ["API - Position"]
       }
     },
     "/health": {
@@ -98,9 +90,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "health"
-        ]
+        "tags": ["health"]
       }
     },
     "/chess/player/{username}": {
@@ -121,10 +111,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Player",
-          "external - chess.com"
-        ]
+        "tags": ["API - Player", "external - chess.com"]
       },
       "post": {
         "operationId": "PlayerController_syncPlayer",
@@ -143,10 +130,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Player",
-          "external - chess.com"
-        ]
+        "tags": ["API - Player", "external - chess.com"]
       }
     },
     "/chess/player/{username}/games": {
@@ -183,10 +167,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Games",
-          "external - chess.com"
-        ]
+        "tags": ["API - Games", "external - chess.com"]
       },
       "post": {
         "operationId": "GamesController_syncGames",
@@ -205,10 +186,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Games",
-          "external - chess.com"
-        ]
+        "tags": ["API - Games", "external - chess.com"]
       }
     },
     "/chess/player/{username}/games/{gameId}": {
@@ -237,10 +215,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Games",
-          "external - chess.com"
-        ]
+        "tags": ["API - Games", "external - chess.com"]
       }
     },
     "/chess/player/{username}/games/{gameId}/pgn": {
@@ -269,10 +244,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Games",
-          "external - chess.com"
-        ]
+        "tags": ["API - Games", "external - chess.com"]
       }
     },
     "/chess/player/{username}/insights": {
@@ -293,10 +265,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Insights",
-          "external - chess.com"
-        ]
+        "tags": ["API - Insights", "external - chess.com"]
       }
     },
     "/chess/player/{username}/insights/games": {
@@ -317,10 +286,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Insights",
-          "external - chess.com"
-        ]
+        "tags": ["API - Insights", "external - chess.com"]
       }
     },
     "/chess/player/{username}/insights/accuracy": {
@@ -341,10 +307,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Insights",
-          "external - chess.com"
-        ]
+        "tags": ["API - Insights", "external - chess.com"]
       }
     },
     "/chess/player/{username}/insights/results": {
@@ -365,10 +328,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Insights",
-          "external - chess.com"
-        ]
+        "tags": ["API - Insights", "external - chess.com"]
       }
     },
     "/chess/player/{username}/insights/opponents": {
@@ -389,10 +349,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Insights",
-          "external - chess.com"
-        ]
+        "tags": ["API - Insights", "external - chess.com"]
       }
     },
     "/chess/streamers": {
@@ -421,10 +378,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Streamers",
-          "external - chess.com"
-        ]
+        "tags": ["API - Streamers", "external - chess.com"]
       }
     },
     "/chess/titled/{title}": {
@@ -461,10 +415,7 @@
             "description": ""
           }
         },
-        "tags": [
-          "API - Titled",
-          "external - chess.com"
-        ]
+        "tags": ["API - Titled", "external - chess.com"]
       }
     }
   },
