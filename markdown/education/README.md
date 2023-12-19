@@ -12,7 +12,8 @@
 
 - [baeldung](https://www.baeldung.com/)
 - [dev.to](https://dev.to/)
-- [Google AI](https://ai.google/)
+- [google.ai](https://ai.google/)
+- [hackster](https://www.hackster.io)
 - [mozilla](https://developer.mozilla.org/en-US/)
 - [roadmap.sh](https://roadmap.sh/)
 - [stackoverflow.co](https://stackoverflow.co)
