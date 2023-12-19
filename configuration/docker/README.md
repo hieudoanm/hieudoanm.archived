@@ -26,9 +26,9 @@
 - Wide Column
   - [cassandra](https://hub.docker.com/_/cassandra)
 - Document Oriented
-  - [cockroachdb](https://hub.docker.com/r/cockroachdb/cockroach)
   - [mongo](https://hub.docker.com/_/mongo)
 - Relational
+  - [cockroachdb](https://hub.docker.com/r/cockroachdb/cockroach)
   - [mysql](https://hub.docker.com/_/mysql)
   - [postgres](https://hub.docker.com/_/postgres)
 - Graph

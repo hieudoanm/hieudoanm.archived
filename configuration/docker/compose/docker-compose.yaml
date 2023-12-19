@@ -1,0 +1,98 @@
+version: '3.9'
+
+volumes:
+  cockroach_data:
+    driver: local
+  mongodb_data:
+    driver: local
+  postgres_data:
+    driver: local
+
+services:
+  # Key Value
+  key-value-redis:
+    restart: unless-stopped
+    image: redis:latest
+    container_name: key-value-redis
+    ports:
+      - 6379:6379
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+
+  key-value-memcached:
+    restart: unless-stopped
+    image: memcached:latest
+    container_name: key-value-memcached
+    ports:
+      - 11211:11211
+  # Wide Column
+  wide-column-cassandra:
+    restart: unless-stopped
+    image: cassandra:latest
+    container_name: wide-column-cassandra
+    ports:
+      - 7000:7000
+  # Document Oriented
+  document-mongodb:
+    image: mongo:7-jammy
+    container_name: document-mongodb
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - '27017:27017'
+  # Relational
+  relational-cockroachdb:
+    image: cockroachdb/cockroach:v23.1.13
+    container_name: relational-cockroachdb
+    restart: always
+    volumes:
+      - cockroach_data:/cockroach/cockroach-data
+    ports:
+      - 26257:26257
+      - 8080:8080
+    command: start-single-node --insecure
+
+  relational-postgresql:
+    restart: unless-stopped
+    image: postgres:latest
+    container_name: relational-postgresql
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+
+  relational-mysql:
+    image: mysql:8.2.0
+    container_name: relational-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  # Graph
+  graph-neo4j:
+    restart: unless-stopped
+    image: neo4j:latest
+    container_name: graph-neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+  # Search Engine
+  search-elasticsearch:
+    restart: unless-stopped
+    image: elasticsearch:latest
+    container_name: search-elasticsearch
+    ports:
+      - 9200:9200
+      - 9300:9300
+  # Multi Model
+  multi-faunadb:
+    restart: unless-stopped
+    image: fauna/faunadb:latest
+    container_name: multi-faunadb
+    ports:
+      - 8084:8084
+      - 8443:8443

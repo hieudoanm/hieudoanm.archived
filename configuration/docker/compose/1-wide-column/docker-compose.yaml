@@ -1,9 +1,0 @@
-version: '3.9'
-
-services:
-  column-cassandra:
-    restart: unless-stopped
-    image: cassandra:latest
-    container_name: column-cassandra
-    ports:
-      - 7000:7000
