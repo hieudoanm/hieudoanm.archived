@@ -24,29 +24,50 @@ import { Navbar } from '@younetmedia/components/Navbar';
 import { PIN, NEXT_PUBLIC_PIN } from '@younetmedia/environments';
 import { queryResult } from '@younetmedia/services/younetmedia.service';
 import { Result } from '@younetmedia/types';
-import { Dayjs } from 'dayjs';
+import dayjs, { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
+import { ParsedUrlQuery } from 'querystring';
 import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+
+const getQueryParam = (
+  query: ParsedUrlQuery,
+  key: string,
+  defaultValue: string
+): string => {
+  const values: string | string[] | undefined = query[key];
+  if (!values) return defaultValue;
+  if (typeof values === 'object') {
+    const [first] = values;
+    return first;
+  }
+  return values;
+};
+
+type AppState = {
+  input: 'input' | 'table';
+  pin: string;
+  topicId: number;
+  fromDate: Dayjs | null;
+  toDate: Dayjs | null;
+  loading: number;
+};
 
 export const SocialHeatPage: NextPage = () => {
   const router = useRouter();
+  const { query } = router;
+  const [today] = new Date().toISOString().split('T');
 
-  const [appState, setAppState] = useState<{
-    input: 'input' | 'table';
-    pin: string;
-    topicId: number;
-    fromDate: Dayjs | null;
-    toDate: Dayjs | null;
-    loading: number;
-  }>({
-    input: 'input',
-    topicId: 0,
-    pin: '',
-    fromDate: null,
-    toDate: null,
+  const defaultAppState: AppState = {
+    topicId: Number.parseInt(getQueryParam(query, 'topicId', '0') ?? '0'),
+    input: getQueryParam(query, 'input', 'input') as 'input' | 'table',
+    fromDate: dayjs(getQueryParam(query, 'fromDate', today)),
+    toDate: dayjs(getQueryParam(query, 'toDate', today)),
+    pin: getQueryParam(query, 'pin', ''),
     loading: 0
-  });
+  };
+  logger.info('defaultAppState', defaultAppState);
+  const [appState, setAppState] = useState<AppState>(defaultAppState);
 
   const [queryString, setQueryString] = useState<string>('');
   const [queries, setQueries] = useState<string[]>([]);
@@ -82,6 +103,7 @@ export const SocialHeatPage: NextPage = () => {
     logger.info(pin, loading);
     router.push({
       query: {
+        pin,
         input,
         topicId,
         fromDate: fromDate?.format('YYYY-MM-DD') ?? '',
@@ -230,9 +252,10 @@ export const SocialHeatPage: NextPage = () => {
                     placeholder="PIN"
                     required
                     value={appState.pin}
-                    onChange={(event) =>
-                      setAppState({ ...appState, pin: event.target.value })
-                    }
+                    onChange={(event) => {
+                      setAppState({ ...appState, pin: event.target.value });
+                      setQueryParams({ ...appState, pin: event.target.value });
+                    }}
                   />
                 </div>
                 <div className="col-span-12">
