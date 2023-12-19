@@ -1,4 +1,4 @@
-FROM python:3-slim-bullseye
+FROM python:3.12.1
 
 ENV ENVIRONMENT=production
 ENV PORT=10000
