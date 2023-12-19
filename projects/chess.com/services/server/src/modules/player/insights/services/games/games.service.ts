@@ -1,6 +1,5 @@
+import { Injectable } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
-import { logger } from '../../../../../common/libs/log';
-import { getPrismaClient } from '../../../../../common/prisma';
 import {
   DAYS_OF_WEEK,
   DRAW_RESULTS,
@@ -8,14 +7,17 @@ import {
   RULE,
   TIME_OF_DAYS,
   WIN_RESULTS,
-} from '../../insights.constants';
+} from 'src/common/constants';
+import { logger } from 'src/common/libs/log';
+import { getPrismaClient } from 'src/common/prisma';
 import {
-  Games,
-  GamesByDayOfWeek,
-  GamesByPeriod,
-  GamesByTimeOfDay,
-} from './games.types';
+  GamesByDayOfWeekDto,
+  GamesByPeriodDto,
+  GamesByTimeOfDayDto,
+  GamesDto,
+} from './games.dto';
 
+@Injectable()
 export class GamesService {
   private prismaClient: PrismaClient;
 
@@ -95,9 +97,9 @@ export class GamesService {
   }
 
   private async getGamesByCalender(username: string): Promise<{
-    periods: GamesByPeriod[];
-    timeOfDays: GamesByTimeOfDay[];
-    daysOfWeek: GamesByDayOfWeek[];
+    periods: GamesByPeriodDto[];
+    timeOfDays: GamesByTimeOfDayDto[];
+    daysOfWeek: GamesByDayOfWeekDto[];
   }> {
     const gamesByPeriodsQuery: Prisma.Sql =
       this.buildGamesByPeriodsQuery(username);
@@ -107,7 +109,7 @@ export class GamesService {
       this.buildGamesByDaysOfWeek(username);
     const [periods = [], timeOfDaysList = [], daysOfWeekList = []] =
       await this.prismaClient.$transaction([
-        this.prismaClient.$queryRaw<GamesByPeriod[]>(gamesByPeriodsQuery),
+        this.prismaClient.$queryRaw<GamesByPeriodDto[]>(gamesByPeriodsQuery),
         this.prismaClient.$queryRaw<
           { games: number; timeOfDayIndex: number }[]
         >(gamesByTimeOfDaysQuery),
@@ -115,13 +117,13 @@ export class GamesService {
           { games: number; dayOfWeekIndex: number }[]
         >(gamesByDaysOfWeekQuery),
       ]);
-    const timeOfDays: GamesByTimeOfDay[] = timeOfDaysList.map(
+    const timeOfDays: GamesByTimeOfDayDto[] = timeOfDaysList.map(
       ({ games = 0, timeOfDayIndex = 0 }) => ({
         games,
         timeOfDay: TIME_OF_DAYS[`${timeOfDayIndex}`],
       })
     );
-    const daysOfWeek: GamesByDayOfWeek[] = daysOfWeekList.map(
+    const daysOfWeek: GamesByDayOfWeekDto[] = daysOfWeekList.map(
       ({ games = 0, dayOfWeekIndex = 0 }) => ({
         games,
         dayOfWeek: DAYS_OF_WEEK[`${dayOfWeekIndex}`],
@@ -130,7 +132,7 @@ export class GamesService {
     return { periods, timeOfDays, daysOfWeek };
   }
 
-  public async getGames(username: string): Promise<Games> {
+  public async getGames(username: string): Promise<GamesDto> {
     const {
       total = 0,
       win = 0,

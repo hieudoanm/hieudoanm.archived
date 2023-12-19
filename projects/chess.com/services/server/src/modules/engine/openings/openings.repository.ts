@@ -1,6 +1,6 @@
-import { Opening, Prisma, PrismaClient } from '@prisma/client';
-import { getPrismaClient } from '../../../common/prisma';
 import { Injectable } from '@nestjs/common';
+import { Opening, Prisma, PrismaClient } from '@prisma/client';
+import { getPrismaClient } from 'src/common/prisma';
 import { EcosResponseDto, OpeningsResponseDto } from './openings.dto';
 
 @Injectable()

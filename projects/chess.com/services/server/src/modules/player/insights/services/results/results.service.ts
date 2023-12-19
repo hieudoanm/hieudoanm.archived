@@ -1,10 +1,12 @@
+import { Injectable } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
-import { getPrismaClient } from '../../../../../common/prisma';
-import { DRAW_RESULTS, LOSS_RESULTS } from '../../insights.constants';
+import { DRAW_RESULTS, LOSS_RESULTS } from 'src/common/constants';
+import { getPrismaClient } from 'src/common/prisma';
 import { DaysOfWeekService } from './helper/days-of-week.service';
 import { TimeOfDaysService } from './helper/time-of-days.service';
-import { Result, Results } from './results.types';
+import { ResultDto, ResultsDto } from './results.dto';
 
+@Injectable()
 export class ResultsService {
   private prismaClient: PrismaClient;
   private timeOfDaysService: TimeOfDaysService;
@@ -52,15 +54,15 @@ export class ResultsService {
     return sql;
   }
 
-  public async getResults(username: string): Promise<Results> {
+  public async getResults(username: string): Promise<ResultsDto> {
     const winQuery = this.buildWinResultsQuery(username);
     const drawQuery = this.buildDrawResultsQuery(username);
     const lossQuery = this.buildLossResultsQuery(username);
     const [win = [], draw = [], loss = []] =
       await this.prismaClient.$transaction([
-        this.prismaClient.$queryRaw<Result[]>(winQuery),
-        this.prismaClient.$queryRaw<Result[]>(drawQuery),
-        this.prismaClient.$queryRaw<Result[]>(lossQuery),
+        this.prismaClient.$queryRaw<ResultDto[]>(winQuery),
+        this.prismaClient.$queryRaw<ResultDto[]>(drawQuery),
+        this.prismaClient.$queryRaw<ResultDto[]>(lossQuery),
       ]);
     const timeOfDays =
       await this.timeOfDaysService.getResultsByTimeOfDays(username);

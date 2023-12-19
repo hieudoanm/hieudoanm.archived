@@ -1,12 +1,12 @@
+import { Injectable } from '@nestjs/common';
 import { Move, Piece, Prisma, PrismaClient, Side } from '@prisma/client';
 import { Chess } from 'chess.js';
-import { logger } from '../../../../common/libs/log';
-import { getPrismaClient } from '../../../../common/prisma';
-import { chunk } from '../../../../common/utils/chunk';
-import { FILE_LIST, PIECE_MAP } from '../games.constants';
+import { FILE_LIST, PIECE_MAP } from 'src/common/constants';
+import { logger } from 'src/common/libs/log';
+import { getPrismaClient } from 'src/common/prisma';
+import { File, PieceSymbol } from 'src/common/types';
+import { chunk } from 'src/common/utils/chunk';
 import { GamesService } from '../games.service';
-import { File, PieceSymbol } from '../games.types';
-import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class MovesService {

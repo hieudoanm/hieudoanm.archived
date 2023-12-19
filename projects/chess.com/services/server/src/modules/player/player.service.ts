@@ -1,3 +1,4 @@
+import { Injectable } from '@nestjs/common';
 import {
   League,
   Player,
@@ -7,10 +8,9 @@ import {
   Title,
 } from '@prisma/client';
 import axios from 'axios';
-import { ChessClient } from '../../common/clients/chess.com';
-import { ChessPlayer, ChessStats } from '../../common/clients/chess.com/types';
-import { getPrismaClient } from '../../common/prisma';
-import { Injectable } from '@nestjs/common';
+import { ChessClient } from 'src/common/clients/chess.com';
+import { ChessPlayer, ChessStats } from 'src/common/clients/chess.com/types';
+import { getPrismaClient } from 'src/common/prisma';
 
 @Injectable()
 export class PlayerService {

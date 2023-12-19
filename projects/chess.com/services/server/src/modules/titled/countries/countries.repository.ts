@@ -1,7 +1,7 @@
-import { Prisma, PrismaClient } from '@prisma/client';
-import { getPrismaClient } from '../../../common/prisma';
-import { CountriesResponse, CountryCount } from './countries.types';
 import { Injectable } from '@nestjs/common';
+import { Prisma, PrismaClient } from '@prisma/client';
+import { getPrismaClient } from 'src/common/prisma';
+import { CountriesResponseDto, CountryResponseDto } from './countries.dto';
 
 @Injectable()
 export class CountriesRepository {
@@ -11,19 +11,19 @@ export class CountriesRepository {
     this.prismaClient = getPrismaClient();
   }
 
-  public async getCountries(): Promise<CountryCount[]> {
+  public async getCountries(): Promise<CountryResponseDto[]> {
     const query: string = `SELECT p."countryCode", p."country", COUNT(p."id") as total
 FROM public."Player" as p
 WHERE p."title" IS NOT NULL AND p."lastOnline" > (CURRENT_DATE - INTERVAL '1' year)
 GROUP BY p."country", p."countryCode"
 ORDER BY total DESC, p."country" ASC;`;
     const sql: Prisma.Sql = Prisma.raw(query);
-    return this.prismaClient.$queryRaw<CountryCount[]>(sql);
+    return this.prismaClient.$queryRaw<CountryResponseDto[]>(sql);
   }
 
   public async getTitledPlayersByCountry(
     countryCode: string
-  ): Promise<CountriesResponse> {
+  ): Promise<CountriesResponseDto> {
     // eslint-disable-next-line unicorn/no-null
     const where = { countryCode, title: { not: null } };
     const [

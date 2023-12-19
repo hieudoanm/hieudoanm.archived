@@ -1,6 +1,8 @@
-import { LichessClient } from '../../../common/clients/lichess.org';
-import { FullCloudEvaluation } from '../../../common/clients/lichess.org/types';
+import { Injectable } from '@nestjs/common';
+import { LichessClient } from 'src/common/clients/lichess.org';
+import { FullCloudEvaluation } from 'src/common/clients/lichess.org/types';
 
+@Injectable()
 export class PositionService {
   private lichessClient: LichessClient;
 

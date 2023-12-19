@@ -61,8 +61,14 @@ paths:
     post:
       operationId: PositionController_syncPosition
       parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePositionDto'
       responses:
-        '200':
+        '201':
           description: ''
           content:
             application/json:
@@ -152,6 +158,12 @@ paths:
           in: path
           schema:
             type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SyncRequestDto'
       responses:
         '200':
           description: ''
@@ -216,6 +228,10 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsightsDto'
       tags: &a5
         - Player - Insights
   /player/{username}/insights/games:
@@ -230,6 +246,10 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsightsDto'
       tags: *a5
   /player/{username}/insights/accuracy:
     get:
@@ -243,6 +263,10 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsightsDto'
       tags: *a5
   /player/{username}/insights/results:
     get:
@@ -256,6 +280,10 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsightsDto'
       tags: *a5
   /player/{username}/insights/opponents:
     get:
@@ -269,6 +297,10 @@ paths:
       responses:
         '200':
           description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InsightsDto'
       tags: *a5
   /streamers:
     get:
@@ -372,6 +404,9 @@ components:
     PositionDto:
       type: object
       properties: {}
+    CreatePositionDto:
+      type: object
+      properties: {}
     HealthResponseDto:
       type: object
       properties:
@@ -397,6 +432,16 @@ components:
       required:
         - total
         - games
+    SyncRequestDto:
+      type: object
+      properties:
+        month:
+          type: number
+        year:
+          type: number
+      required:
+        - month
+        - year
     SyncedResponseDto:
       type: object
       properties:
@@ -404,9 +449,176 @@ components:
           type: number
         synced:
           type: number
+        existed:
+          type: number
       required:
         - total
         - synced
+        - existed
+    GamesDto:
+      type: object
+      properties:
+        total:
+          type: number
+        win:
+          type: number
+        draw:
+          type: number
+        loss:
+          type: number
+        periods:
+          type: array
+          items:
+            type: string
+        timeOfDays:
+          type: array
+          items:
+            type: string
+        daysOfWeek:
+          type: array
+          items:
+            type: string
+      required:
+        - total
+        - win
+        - draw
+        - loss
+        - periods
+        - timeOfDays
+        - daysOfWeek
+    AccuracyByPeriodDto:
+      type: object
+      properties:
+        average:
+          type: number
+        period:
+          type: number
+      required:
+        - average
+        - period
+    AccuracyByTimeOfDayDto:
+      type: object
+      properties:
+        average:
+          type: number
+        timeOfDay:
+          type: string
+      required:
+        - average
+        - timeOfDay
+    AccuracyByDayOfWeekDto:
+      type: object
+      properties:
+        average:
+          type: number
+        dayOfWeek:
+          type: string
+      required:
+        - average
+        - dayOfWeek
+    AccuracyDto:
+      type: object
+      properties:
+        average:
+          type: number
+        win:
+          type: number
+        draw:
+          type: number
+        loss:
+          type: number
+        periods:
+          $ref: '#/components/schemas/AccuracyByPeriodDto'
+        timeOfDays:
+          $ref: '#/components/schemas/AccuracyByTimeOfDayDto'
+        daysOfWeek:
+          $ref: '#/components/schemas/AccuracyByDayOfWeekDto'
+      required:
+        - average
+        - win
+        - draw
+        - loss
+        - periods
+        - timeOfDays
+        - daysOfWeek
+    ResultDto:
+      type: object
+      properties: {}
+    ResultsByTimeOfDayDto:
+      type: object
+      properties: {}
+    ResultsByDayOfWeekDto:
+      type: object
+      properties: {}
+    ResultsDto:
+      type: object
+      properties:
+        win:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultDto'
+        draw:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultDto'
+        loss:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultDto'
+        timeOfDays:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultsByTimeOfDayDto'
+        daysOfWeek:
+          type: array
+          items:
+            $ref: '#/components/schemas/ResultsByDayOfWeekDto'
+      required:
+        - win
+        - draw
+        - loss
+        - timeOfDays
+        - daysOfWeek
+    OpponentDto:
+      type: object
+      properties:
+        opponent:
+          type: string
+        games:
+          type: number
+        win:
+          type: number
+        draw:
+          type: number
+        loss:
+          type: number
+      required:
+        - opponent
+        - games
+        - win
+        - draw
+        - loss
+    InsightsDto:
+      type: object
+      properties:
+        username:
+          type: string
+        games:
+          $ref: '#/components/schemas/GamesDto'
+        accuracy:
+          $ref: '#/components/schemas/AccuracyDto'
+        results:
+          $ref: '#/components/schemas/ResultsDto'
+        opponents:
+          type: array
+          items:
+            $ref: '#/components/schemas/OpponentDto'
+      required:
+        - username
+        - games
+        - accuracy
+        - results
+        - opponents
     CountryDto:
       type: object
       properties:

@@ -1,9 +1,9 @@
-import { Controller, Query, Get, Param } from '@nestjs/common';
-import { ChessTitle } from '../../common/clients/chess.com/types';
-import { TimeRange } from '../chess.enum';
-import { TitledService } from './titled.service';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ChessTitle } from 'src/common/clients/chess.com/types';
+import { TimeRange } from 'src/common/types';
 import { TitledStatsDto, TitlesDto } from './titled.dto';
+import { TitledService } from './titled.service';
 
 @Controller('titled')
 @ApiTags('Titled')

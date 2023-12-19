@@ -1,5 +1,5 @@
+import { Injectable } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
-import { getPrismaClient } from '../../../../../common/prisma';
 import {
   DAYS_OF_WEEK,
   DRAW_RESULTS,
@@ -7,14 +7,16 @@ import {
   RULE,
   TIME_OF_DAYS,
   WIN_RESULTS,
-} from '../../insights.constants';
+} from 'src/common/constants';
+import { getPrismaClient } from 'src/common/prisma';
 import {
-  Accuracy,
-  AccuracyByDayOfWeek,
-  AccuracyByPeriod,
-  AccuracyByTimeOfDay,
-} from './accuracy.types';
+  AccuracyByDayOfWeekDto,
+  AccuracyByPeriodDto,
+  AccuracyByTimeOfDayDto,
+  AccuracyDto,
+} from './accuracy.dto';
 
+@Injectable()
 export class AccuracyService {
   private prismaClient: PrismaClient;
 
@@ -134,9 +136,9 @@ export class AccuracyService {
     whereClause: string;
   }): Promise<{
     average: number;
-    periods: AccuracyByPeriod[];
-    timeOfDays: AccuracyByTimeOfDay[];
-    daysOfWeek: AccuracyByDayOfWeek[];
+    periods: AccuracyByPeriodDto[];
+    timeOfDays: AccuracyByTimeOfDayDto[];
+    daysOfWeek: AccuracyByDayOfWeekDto[];
   }> {
     const averageAccuracyQuery = this.buildAverageAccuracyQuery({
       averageClause,
@@ -163,7 +165,7 @@ export class AccuracyService {
       daysOfWeekList = [],
     ] = await this.prismaClient.$transaction([
       this.prismaClient.$queryRaw<{ average: number }[]>(averageAccuracyQuery),
-      this.prismaClient.$queryRaw<AccuracyByPeriod[]>(
+      this.prismaClient.$queryRaw<AccuracyByPeriodDto[]>(
         averageAccuracyByPeriodsQuery
       ),
       this.prismaClient.$queryRaw<
@@ -191,7 +193,7 @@ export class AccuracyService {
     };
   }
 
-  public async getAccuracy(username: string): Promise<Accuracy> {
+  public async getAccuracy(username: string): Promise<AccuracyDto> {
     const averageClause = `AVG(CASE WHEN g."whiteUsername" = '${username}' THEN g."whiteAccuracy" ELSE g."blackAccuracy" END) as "average"`;
     const whereClause = `g."whiteAccuracy" != 0 AND g."blackAccuracy" != 0 AND g."rules" = '${RULE}' AND g."rated" = true`;
     // Average

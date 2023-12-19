@@ -10,6 +10,14 @@ export class GamesResponseDto {
   games: Game[];
 }
 
+export class SyncRequestDto {
+  @ApiProperty()
+  month: number;
+
+  @ApiProperty()
+  year: number;
+}
+
 export class SyncedResponseDto {
   @ApiProperty()
   total: number;
@@ -17,5 +25,6 @@ export class SyncedResponseDto {
   @ApiProperty()
   synced: number;
 
+  @ApiProperty()
   existed: number;
 }

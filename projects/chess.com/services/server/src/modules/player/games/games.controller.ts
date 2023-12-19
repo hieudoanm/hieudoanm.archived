@@ -2,7 +2,11 @@ import { Game } from '@prisma/client';
 import { GamesService } from './games.service';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
-import { GamesResponseDto, SyncedResponseDto } from './games.dto';
+import {
+  GamesResponseDto,
+  SyncRequestDto,
+  SyncedResponseDto,
+} from './games.dto';
 import { GameDto } from 'src/generated/dto/game.entity';
 
 @Controller()
@@ -24,12 +28,12 @@ export class GamesController {
   @ApiResponse({ status: 200, type: SyncedResponseDto })
   async syncGames(
     @Param('username') username: string,
-    @Body()
-    {
+    @Body() syncRequest: SyncRequestDto
+  ): Promise<SyncedResponseDto> {
+    const {
       month = new Date().getMonth() + 1,
       year = new Date().getFullYear(),
-    }: { month: number; year: number }
-  ): Promise<SyncedResponseDto> {
+    } = syncRequest;
     return this.gamesService.syncGames(username, { month, year });
   }
 

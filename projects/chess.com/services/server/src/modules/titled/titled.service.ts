@@ -1,10 +1,12 @@
-import { ChessTitle } from '../../common/clients/chess.com/types';
-import { getRedisClient, RedisClient } from '../../common/databases/redis';
-import { REDIS_URI } from '../../common/environments';
-import { TimeRange } from '../chess.enum';
+import { Injectable } from '@nestjs/common';
+import { ChessTitle } from 'src/common/clients/chess.com/types';
+import { getRedisClient, RedisClient } from 'src/common/databases/redis';
+import { REDIS_URI } from 'src/common/environments';
+import { TimeRange } from 'src/common/types';
 import { TitledStatsDto } from './titled.dto';
 import { TitledRepository } from './titled.repository';
 
+@Injectable()
 export class TitledService {
   private redisClient: RedisClient;
   private titledRepository: TitledRepository;

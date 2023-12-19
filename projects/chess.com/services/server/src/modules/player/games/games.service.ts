@@ -1,9 +1,9 @@
-import { Game, Prisma, PrismaClient } from '@prisma/client';
-import { ChessClient } from '../../../common/clients/chess.com';
-import { ChessGame } from '../../../common/clients/chess.com/types';
-import { logger } from '../../../common/libs/log';
-import { getPrismaClient } from '../../../common/prisma';
 import { Injectable } from '@nestjs/common';
+import { Game, Prisma, PrismaClient } from '@prisma/client';
+import { ChessClient } from 'src/common/clients/chess.com';
+import { ChessGame } from 'src/common/clients/chess.com/types';
+import { logger } from 'src/common/libs/log';
+import { getPrismaClient } from 'src/common/prisma';
 import { PositionService } from 'src/modules/engine/position/position.service';
 
 @Injectable()

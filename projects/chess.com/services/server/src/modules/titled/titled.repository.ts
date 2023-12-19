@@ -1,14 +1,13 @@
+import { Injectable } from '@nestjs/common';
 import { Player, Prisma, PrismaClient } from '@prisma/client';
-import { ChessTitle } from '../../common/clients/chess.com/types';
-import { logger } from '../../common/libs/log';
-import { getPrismaClient } from '../../common/prisma';
-import {
-  TimeRange,
-  timeRangeInDays,
-  timeRangeInMilliseconds,
-} from '../chess.enum';
+import { ChessTitle } from 'src/common/clients/chess.com/types';
+import { timeRangeInDays, timeRangeInMilliseconds } from 'src/common/constants';
+import { logger } from 'src/common/libs/log';
+import { getPrismaClient } from 'src/common/prisma';
+import { TimeRange } from 'src/common/types';
 import { TitledStatsDto } from './titled.dto';
 
+@Injectable()
 export class TitledRepository {
   private prismaClient: PrismaClient;
 

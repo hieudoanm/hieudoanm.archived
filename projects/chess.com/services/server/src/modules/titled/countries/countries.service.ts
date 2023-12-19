@@ -1,8 +1,10 @@
-import { getRedisClient, RedisClient } from '../../../common/databases/redis';
-import { REDIS_URI } from '../../../common/environments';
+import { Injectable } from '@nestjs/common';
+import { getRedisClient, RedisClient } from 'src/common/databases/redis';
+import { REDIS_URI } from 'src/common/environments';
+import { CountriesResponseDto, CountryResponseDto } from './countries.dto';
 import { CountriesRepository } from './countries.repository';
-import { CountriesResponse, CountryCount } from './countries.types';
 
+@Injectable()
 export class CountriesService {
   private countriesRepository: CountriesRepository;
   private redisClient: RedisClient;
@@ -16,18 +18,18 @@ export class CountriesService {
     cache = true,
   }: {
     cache: boolean;
-  }): Promise<CountryCount[]> {
+  }): Promise<CountryResponseDto[]> {
     const key: string = `chess-countries`.toLowerCase();
     if (cache) {
       const cacheCountries =
-        await this.redisClient.getObject<CountryCount[]>(key);
+        await this.redisClient.getObject<CountryResponseDto[]>(key);
       if (cacheCountries) {
         return cacheCountries;
       }
     }
-    const countries: CountryCount[] =
+    const countries: CountryResponseDto[] =
       await this.countriesRepository.getCountries();
-    await this.redisClient.setObject<CountryCount[]>(key, countries, {
+    await this.redisClient.setObject<CountryResponseDto[]>(key, countries, {
       expiresInSeconds: 30 * 60, // 30 minutes
     });
     return countries;
@@ -39,18 +41,18 @@ export class CountriesService {
   }: {
     cache: boolean;
     code: string;
-  }): Promise<CountriesResponse> {
+  }): Promise<CountriesResponseDto> {
     const key: string = `chess-country-${code}`.toLowerCase();
     if (cache) {
       const cacheCountryStats =
-        await this.redisClient.getObject<CountriesResponse>(key);
+        await this.redisClient.getObject<CountriesResponseDto>(key);
       if (cacheCountryStats) {
         return cacheCountryStats;
       }
     }
-    const countryStats: CountriesResponse =
+    const countryStats: CountriesResponseDto =
       await this.countriesRepository.getTitledPlayersByCountry(code);
-    await this.redisClient.setObject<CountriesResponse>(key, countryStats, {
+    await this.redisClient.setObject<CountriesResponseDto>(key, countryStats, {
       expiresInSeconds: 30 * 60, // 30 minutes
     });
     return countryStats;

@@ -1,8 +1,8 @@
-import { Prisma, PrismaClient, Title } from '@prisma/client';
-import { getPrismaClient } from '../../../common/prisma';
-import { timeRangeInMilliseconds } from '../../chess.enum';
-import { StreamersResponseDto } from './streamers.dto';
 import { Injectable } from '@nestjs/common';
+import { Prisma, PrismaClient, Title } from '@prisma/client';
+import { timeRangeInMilliseconds } from 'src/common/constants';
+import { getPrismaClient } from 'src/common/prisma';
+import { StreamersResponseDto } from './streamers.dto';
 
 @Injectable()
 export class StreamersRepository {

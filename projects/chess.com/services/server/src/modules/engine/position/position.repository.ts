@@ -1,7 +1,9 @@
+import { Injectable } from '@nestjs/common';
 import { Position, Prisma, PrismaClient } from '@prisma/client';
-import { LichessClient } from '../../../common/clients/lichess.org';
-import { getPrismaClient } from '../../../common/prisma';
+import { LichessClient } from 'src/common/clients/lichess.org';
+import { getPrismaClient } from 'src/common/prisma';
 
+@Injectable()
 export class PositionRepository {
   private lichessClient: LichessClient;
   private prismaClient: PrismaClient;

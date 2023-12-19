@@ -1,13 +1,11 @@
+import { Injectable } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
-import { logger } from '../../../../../common/libs/log';
-import { getPrismaClient } from '../../../../../common/prisma';
-import {
-  DRAW_RESULTS,
-  LOSS_RESULTS,
-  WIN_RESULTS,
-} from '../../insights.constants';
-import { Opponent } from './opponents.types';
+import { DRAW_RESULTS, LOSS_RESULTS, WIN_RESULTS } from 'src/common/constants';
+import { logger } from 'src/common/libs/log';
+import { getPrismaClient } from 'src/common/prisma';
+import { OpponentDto } from './opponents.dto';
 
+@Injectable()
 export class OpponentsService {
   private prismaClient: PrismaClient;
 
@@ -42,8 +40,8 @@ export class OpponentsService {
     return sql;
   }
 
-  public async getOpponents(username: string): Promise<Opponent[]> {
+  public async getOpponents(username: string): Promise<OpponentDto[]> {
     const opponentsQuery = this.buildOpponentsQuery(username);
-    return this.prismaClient.$queryRaw<Opponent[]>(opponentsQuery);
+    return this.prismaClient.$queryRaw<OpponentDto[]>(opponentsQuery);
   }
 }

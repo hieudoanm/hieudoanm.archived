@@ -1,12 +1,10 @@
+import { Injectable } from '@nestjs/common';
 import { Prisma, PrismaClient } from '@prisma/client';
-import { getPrismaClient } from '../../../../../../common/prisma';
-import {
-  DRAW_RESULTS,
-  LOSS_RESULTS,
-  TIME_OF_DAYS,
-} from '../../../insights.constants';
-import { ResultsByTimeOfDay } from '../results.types';
+import { DRAW_RESULTS, LOSS_RESULTS, TIME_OF_DAYS } from 'src/common/constants';
+import { getPrismaClient } from 'src/common/prisma';
+import { ResultsByTimeOfDayDto } from '../results.dto';
 
+@Injectable()
 export class TimeOfDaysService {
   private prismaClient: PrismaClient;
 
@@ -53,7 +51,7 @@ export class TimeOfDaysService {
 
   public async getResultsByTimeOfDays(
     username: string
-  ): Promise<ResultsByTimeOfDay[]> {
+  ): Promise<ResultsByTimeOfDayDto[]> {
     const winQuery = this.buildWinResultsByTimeOfDaysQuery(username);
     const drawQuery = this.buildDrawResultsByTimeOfDaysQuery(username);
     const lossQuery = this.buildLossResultsByTimeOfDaysQuery(username);
