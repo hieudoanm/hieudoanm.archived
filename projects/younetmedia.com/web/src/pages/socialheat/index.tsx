@@ -21,6 +21,7 @@ import {
 } from '@younetmedia/common/constants';
 import { logger } from '@younetmedia/common/libs/log';
 import { Navbar } from '@younetmedia/components/Navbar';
+import { PIN, NEXT_PUBLIC_PIN } from '@younetmedia/environments';
 import { queryResult } from '@younetmedia/services/younetmedia.service';
 import { Result } from '@younetmedia/types';
 import { Dayjs } from 'dayjs';
