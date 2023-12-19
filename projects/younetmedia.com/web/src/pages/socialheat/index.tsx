@@ -148,7 +148,7 @@ export const SocialHeatPage: NextPage = () => {
   };
 
   const runQueries = async (event: FormEvent<HTMLFormElement>) => {
-    if (appState.pin === PIN || appState.pin === NEXT_PUBLIC_PIN) {
+    if (appState.pin !== PIN && appState.pin !== NEXT_PUBLIC_PIN) {
       alert(ERROR_MESSAGE_MISSING_PIN);
       return;
     }
