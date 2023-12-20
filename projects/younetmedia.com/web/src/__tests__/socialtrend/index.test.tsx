@@ -5,6 +5,7 @@ jest.mock('next/router', () => {
   return {
     useRouter: jest.fn().mockImplementation(() => {
       return {
+        query: {},
         push: jest.fn()
       };
     })
