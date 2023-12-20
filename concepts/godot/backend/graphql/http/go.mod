@@ -1,6 +1,6 @@
 module graphql-starter
 
-go 1.19
+go 1.21.5
 
 require (
 	github.com/graphql-go/graphql v0.8.1

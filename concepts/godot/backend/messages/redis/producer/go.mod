@@ -1,3 +1,3 @@
 module redis-producer
 
-go 1.19
+go 1.21.5

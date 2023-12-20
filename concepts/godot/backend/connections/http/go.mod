@@ -1,6 +1,6 @@
 module http-socket-starter
 
-go 1.19
+go 1.21.5
 
 require github.com/googollee/go-socket.io v1.7.0
 
