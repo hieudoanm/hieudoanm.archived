@@ -10,14 +10,14 @@
 <br/>
 
 <div align="center">
-    <a href="https://github.com/hieudoanm/app.chess/stargazers">
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/hieudoanm/app.chess" />
+    <a href="https://github.com/hieudoanm/hieudoanm/stargazers">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/hieudoanm/hieudoanm" />
     </a>
-    <a href="https://github.com/hieudoanm/app.chess/blob/master/LICENSE">
+    <a href="https://github.com/hieudoanm/hieudoanm/blob/master/LICENSE">
         <img alt="LICENSE" src="https://img.shields.io/badge/license-GNUV3-red" />
     </a>
-    <a href="https://github.com/hieudoanm/app.chess/issues">
-        <img src="https://img.shields.io/github/issues/hieudoanm/app.chess" alt="GitHub issues" />
+    <a href="https://github.com/hieudoanm/hieudoanm/issues">
+        <img src="https://img.shields.io/github/issues/hieudoanm/hieudoanm" alt="GitHub issues" />
     </a>
     <a href="https://twitter.com/hieudoanm">
         <img alt="Follow" src="https://img.shields.io/twitter/follow/hieudoanm" />
@@ -38,10 +38,6 @@ Chess Insights is a FOSS (Free Open Source Software) for [chess.com insights](ht
   - [Development](#development)
   - [Front-end](#front-end)
   - [Back-end](#back-end)
-    - [Framework](#framework)
-    - [Documentation](#documentation)
-    - [Database](#database)
-  - [Testing](#testing)
   - [DevOps](#devops)
     - [SaaS](#saas)
   - [APIs](#apis)
@@ -68,7 +64,7 @@ Chess Insights is a FOSS (Free Open Source Software) for [chess.com insights](ht
 - [API](https://chessinsightsapi.vercel.app/)
 - [Web](https://chessinsightsweb.vercel.app/)
 
-![demo](./images/demo.png)
+![demo](./assets/images/demo.png)
 
 ## Techstack
 
@@ -83,6 +79,7 @@ Chess Insights is a FOSS (Free Open Source Software) for [chess.com insights](ht
 - [x] Hooks: [husky](https://typicode.github.io/husky/)
 - [x] Linting: [eslint](https://eslint.org/)
 - [x] Logging: [pino](https://getpino.io/)
+- [x] Testing: [jest.js](https://jestjs.io/)
 
 ### Front-end
 
@@ -93,30 +90,21 @@ Chess Insights is a FOSS (Free Open Source Software) for [chess.com insights](ht
 ### Back-end
 
 - [x] Runtime: [node.js](https://nodejs.org/en)
-
-#### Framework
-
-- [x] [express.js](https://expressjs.com/)
-- [x] [apollo-graphql](https://www.apollographql.com/)
-
-#### Documentation
-
-- [x] [redocly](https://redocly.com/)
-- [x] [tsoa](https://tsoa-community.github.io/docs/)
-
-#### Database
-
-- [x] Database: [PostgreSQL](https://www.postgresql.org/)
-- [x] ORM: [Prisma](https://www.prisma.io/)
-  - [x] [Generators](https://www.prisma.io/docs/concepts/components/prisma-schema/generators)
-    - [x] [prisma-client-js](https://www.prisma.io/docs/concepts/components/prisma-client)
-    - [x] [prisma-dbml-generator](https://github.com/notiz-dev/prisma-dbml-generator) - [dbdiagram](https://dbdiagram.io)
-    - [x] [prisma-docs-generator](https://github.com/pantharshit00/prisma-docs-generator)
-    - [x] [prisma-json-schema-generator](https://github.com/valentinpalkovic/prisma-json-schema-generator)
-
-### Testing
-
-- [x] [jest.js](https://jestjs.io/)
+- Framework
+  - [x] [express.js](https://expressjs.com/)
+  - [x] [nest.js](https://nestjs.com)
+  - [x] [apollo-graphql](https://www.apollographql.com/)
+- Swagger
+  - [x] [redocly](https://redocly.com/)
+  - [x] [tsoa](https://tsoa-community.github.io/docs/)
+- Database
+  - [x] Database: [PostgreSQL](https://www.postgresql.org/)
+  - [x] ORM: [Prisma](https://www.prisma.io/)
+    - [x] [Generators](https://www.prisma.io/docs/concepts/components/prisma-schema/generators)
+      - [x] [prisma-client-js](https://www.prisma.io/docs/concepts/components/prisma-client)
+      - [x] [prisma-dbml-generator](https://github.com/notiz-dev/prisma-dbml-generator) - [dbdiagram](https://dbdiagram.io)
+      - [x] [prisma-docs-generator](https://github.com/pantharshit00/prisma-docs-generator)
+      - [x] [prisma-json-schema-generator](https://github.com/valentinpalkovic/prisma-json-schema-generator)
 
 ### DevOps
 
@@ -146,7 +134,7 @@ Here's what you need to be able to run Chess Insights:
 #### 1. Clone the repository
 
 ```shell
-git clone https://github.com/hieudoanm/app.chess.git
+git clone https://github.com/hieudoanm/hieudoanm.git
 cd app.chess
 ```
 
@@ -207,8 +195,8 @@ If you'd like to contribute, please fork the repository and make changes as you'
 
 ### Our Contributors ✨
 
-<a href="https://github.com/hieudoanm/app.chess/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hieudoanm/app.chess" />
+<a href="https://github.com/hieudoanm/hieudoanm/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hieudoanm/hieudoanm" />
 </a>
 
 ### Inspiration
