@@ -1,0 +1,20 @@
+{
+  "name": "@younetmedia.com/scripts",
+  "version": "0.0.1",
+  "description": "younetmedia.com - scripts",
+  "main": "main.ts",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "test": "true",
+    "dev": "true"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "axios": "1.6.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  }
+}

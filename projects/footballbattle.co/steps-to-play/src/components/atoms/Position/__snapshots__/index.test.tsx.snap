@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Position render default 1`] = `
+<div>
+  <div>
+    <div
+      class="border border-black rounded-xl"
+    >
+      <div
+        class="py-4 px-4"
+      >
+        <div
+          class="sc-eLqIir bAYUve bg-cover bg-center mb-4"
+          image=""
+          style="padding-bottom: 180%;"
+        />
+      </div>
+    </div>
+    <div
+      class="text-center font-abel mt-4"
+    />
+  </div>
+</div>
+`;

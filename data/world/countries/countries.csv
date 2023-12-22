@@ -1,0 +1,256 @@
+name,officialName,cca2,cca3,iddZone,iddArea,startOfWeek,ivrc,drivingSide,flag,partOf,associationWith,disputed,unitedNationMember,independent,capital,ccn3,cioc,fifa,region,subregion,landlocked,population,area,density
+Andorra,Principality of Andorra,AD,AND,+3,76,monday,AND,right,🇦🇩,,,False,True,True,Andorra la Vella,020,AND,AND,Europe,Southern Europe,True,77265,468.0,165
+United Arab Emirates,United Arab Emirates,AE,ARE,+9,71,sunday,UAE,right,🇦🇪,,,False,True,True,Abu Dhabi,784,UAE,UAE,Asia,Western Asia,False,9890400,83600.0,118
+Afghanistan,Islamic Republic of Afghanistan,AF,AFG,+9,3,monday,AFG,right,🇦🇫,,,False,True,True,Kabul,004,AFG,AFG,Asia,Southern Asia,True,40218234,652230.0,62
+Antigua and Barbuda,Antigua and Barbuda,AG,ATG,+1,268,monday,AG,left,🇦🇬,,,False,True,True,Saint John's,028,ANT,ATG,Americas,Caribbean,False,97928,442.0,222
+Anguilla,Anguilla,AI,AIA,+1,264,monday,GB,left,🇦🇮,GBR,,False,False,False,The Valley,660,,AIA,Americas,Caribbean,False,13452,91.0,148
+Albania,Republic of Albania,AL,ALB,+3,55,monday,AL,right,🇦🇱,,,False,True,True,Tirana,008,ALB,ALB,Europe,Southeast Europe,False,2837743,28748.0,99
+Armenia,Republic of Armenia,AM,ARM,+3,74,monday,AM,right,🇦🇲,,,False,True,True,Yerevan,051,ARM,ARM,Asia,Western Asia,True,2963234,29743.0,100
+Angola,Republic of Angola,AO,AGO,+2,44,monday,ANG,right,🇦🇴,,,False,True,True,Luanda,024,ANG,ANG,Africa,Middle Africa,False,32866268,1246700.0,26
+Antarctica,Antarctica,AQ,ATA,,,monday,,right,🇦🇶,,,True,False,False,,010,,,Antarctic,,False,1000,14000000.0,0
+Argentina,Argentine Republic,AR,ARG,+5,4,monday,RA,right,🇦🇷,,,False,True,True,Buenos Aires,032,ARG,ARG,Americas,South America,False,45376763,2780400.0,16
+American Samoa,American Samoa,AS,ASM,+1,684,monday,USA,right,🇦🇸,USA,,False,False,False,Pago Pago,016,ASA,ASA,Oceania,Polynesia,False,55197,199.0,277
+Austria,Republic of Austria,AT,AUT,+4,3,monday,A,right,🇦🇹,,,False,True,True,Vienna,040,AUT,AUT,Europe,Central Europe,True,8917205,83871.0,106
+Australia,Commonwealth of Australia,AU,AUS,+6,1,monday,AUS,left,🇦🇺,,,False,True,True,Canberra,036,AUS,AUS,Oceania,Australia and New Zealand,False,25687041,7692024.0,3
+Aruba,Aruba,AW,ABW,+2,97,monday,,right,🇦🇼,NLD,,False,False,False,Oranjestad,533,ARU,ARU,Americas,Caribbean,False,106766,180.0,593
+Åland Islands,Åland Islands,AX,ALA,+3,5818,monday,,right,🇦🇽,FIN,,False,False,False,Mariehamn,248,,,Europe,Northern Europe,False,29458,1580.0,19
+Azerbaijan,Republic of Azerbaijan,AZ,AZE,+9,94,monday,AZ,right,🇦🇿,,,False,True,True,Baku,031,AZE,AZE,Asia,Western Asia,True,10110116,86600.0,117
+Bosnia and Herzegovina,Bosnia and Herzegovina,BA,BIH,+3,87,monday,BIH,right,🇧🇦,,,False,True,True,Sarajevo,070,BIH,BIH,Europe,Southeast Europe,False,3280815,51209.0,64
+Barbados,Barbados,BB,BRB,+1,246,monday,BDS,left,🇧🇧,,,False,True,True,Bridgetown,052,BAR,BRB,Americas,Caribbean,False,287371,430.0,668
+Bangladesh,People's Republic of Bangladesh,BD,BGD,+8,80,sunday,BD,left,🇧🇩,,,False,True,True,Dhaka,050,BAN,BAN,Asia,Southern Asia,False,164689383,147570.0,1116
+Belgium,Kingdom of Belgium,BE,BEL,+3,2,monday,B,right,🇧🇪,,,False,True,True,Brussels,056,BEL,BEL,Europe,Western Europe,False,11555997,30528.0,379
+Burkina Faso,Burkina Faso,BF,BFA,+2,26,monday,BF,right,🇧🇫,,,False,True,True,Ouagadougou,854,BUR,BFA,Africa,Western Africa,True,20903278,272967.0,77
+Bulgaria,Republic of Bulgaria,BG,BGR,+3,59,monday,BG,right,🇧🇬,,,False,True,True,Sofia,100,BUL,BUL,Europe,Southeast Europe,False,6927288,110879.0,62
+Bahrain,Kingdom of Bahrain,BH,BHR,+9,73,monday,BRN,right,🇧🇭,,,False,True,True,Manama,048,BHR,BHR,Asia,Western Asia,False,1701583,765.0,2224
+Burundi,Republic of Burundi,BI,BDI,+2,57,monday,RU,right,🇧🇮,,,False,True,True,Gitega,108,BDI,BDI,Africa,Eastern Africa,True,11890781,27834.0,427
+Benin,Republic of Benin,BJ,BEN,+2,29,monday,DY,right,🇧🇯,,,False,True,True,Porto-Novo,204,BEN,BEN,Africa,Western Africa,False,12123198,112622.0,108
+Saint Barthélemy,Collectivity of Saint Barthélemy,BL,BLM,+5,90,monday,F,right,🇧🇱,FRA,,False,False,False,Gustavia,652,,,Americas,Caribbean,False,4255,21.0,203
+Bermuda,Bermuda,BM,BMU,+1,441,monday,GB,left,🇧🇲,GBR,,False,False,False,Hamilton,060,BER,BER,Americas,North America,False,63903,54.0,1183
+Brunei,"Nation of Brunei, Abode of Peace",BN,BRN,+6,73,monday,BRU,left,🇧🇳,,,False,True,True,Bandar Seri Begawan,096,BRU,BRU,Asia,South-Eastern Asia,False,437483,5765.0,76
+Bolivia,Plurinational State of Bolivia,BO,BOL,+5,91,monday,BOL,right,🇧🇴,,,False,True,True,Sucre,068,BOL,BOL,Americas,South America,True,11673029,1098581.0,11
+Caribbean Netherlands,"Bonaire, Sint Eustatius and Saba",BQ,BES,+5,99,monday,,right,🇧🇶,NLD,,False,False,False,Kralendijk,535,,,Americas,Caribbean,False,25987,328.0,79
+Brazil,Federative Republic of Brazil,BR,BRA,+5,5,monday,BR,right,🇧🇷,,,False,True,True,Brasília,076,BRA,BRA,Americas,South America,False,212559409,8515767.0,25
+Bahamas,Commonwealth of the Bahamas,BS,BHS,+1,242,monday,BS,left,🇧🇸,,,False,True,True,Nassau,044,BAH,BAH,Americas,Caribbean,False,393248,13943.0,28
+Bhutan,Kingdom of Bhutan,BT,BTN,+9,75,monday,BHT,left,🇧🇹,,,False,True,True,Thimphu,064,BHU,BHU,Asia,Southern Asia,True,771612,38394.0,20
+Bouvet Island,Bouvet Island,BV,BVT,+4,7,monday,,right,🇧🇻,NOR,,False,False,False,,074,,,Antarctic,,False,0,49.0,0
+Botswana,Republic of Botswana,BW,BWA,+2,67,monday,BW,left,🇧🇼,,,False,True,True,Gaborone,072,BOT,BOT,Africa,Southern Africa,True,2351625,582000.0,4
+Belarus,Republic of Belarus,BY,BLR,+3,75,monday,BY,right,🇧🇾,,,False,True,True,Minsk,112,BLR,BLR,Europe,Eastern Europe,True,9398861,207600.0,45
+Belize,Belize,BZ,BLZ,+5,01,monday,BH,right,🇧🇿,,,False,True,True,Belmopan,084,BIZ,BLZ,Americas,Central America,False,397621,22966.0,17
+Canada,Canada,CA,CAN,+1,,sunday,CDN,right,🇨🇦,,,False,True,True,Ottawa,124,CAN,CAN,Americas,North America,False,38005238,9984670.0,4
+Cocos (Keeling) Islands,Territory of the Cocos (Keeling) Islands,CC,CCK,+6,1,monday,AUS,left,🇨🇨,AUS,,False,False,False,West Island,166,,,Oceania,Australia and New Zealand,False,544,14.0,39
+DR Congo,Democratic Republic of the Congo,CD,COD,+2,43,monday,CGO,right,🇨🇩,,,False,True,True,Kinshasa,180,COD,COD,Africa,Middle Africa,False,108407721,2344858.0,46
+Central African Republic,Central African Republic,CF,CAF,+2,36,monday,RCA,right,🇨🇫,,,False,True,True,Bangui,140,CAF,CTA,Africa,Middle Africa,True,4829764,622984.0,8
+Republic of the Congo,Republic of the Congo,CG,COG,+2,42,monday,RCB,right,🇨🇬,,,False,True,True,Brazzaville,178,CGO,CGO,Africa,Middle Africa,False,5657000,342000.0,17
+Switzerland,Swiss Confederation,CH,CHE,+4,1,monday,CH,right,🇨🇭,,,False,True,True,Bern,756,SUI,SUI,Europe,Western Europe,True,8654622,41284.0,210
+Ivory Coast,Republic of Côte d'Ivoire,CI,CIV,+2,25,monday,CI,right,🇨🇮,,,False,True,True,Yamoussoukro,384,CIV,CIV,Africa,Western Africa,False,26378275,322463.0,82
+Cook Islands,Cook Islands,CK,COK,+6,82,monday,NZ,left,🇨🇰,,NZL,False,False,False,Avarua,184,COK,COK,Oceania,Polynesia,False,18100,236.0,77
+Chile,Republic of Chile,CL,CHL,+5,6,monday,RCH,right,🇨🇱,,,False,True,True,Santiago,152,CHI,CHI,Americas,South America,False,19116209,756102.0,25
+Cameroon,Republic of Cameroon,CM,CMR,+2,37,monday,CAM,right,🇨🇲,,,False,True,True,Yaoundé,120,CMR,CMR,Africa,Middle Africa,False,26545864,475442.0,56
+China,People's Republic of China,CN,CHN,+8,6,monday,RC,right,🇨🇳,,,False,True,True,Beijing,156,CHN,CHN,Asia,Eastern Asia,False,1402112000,9706961.0,144
+Colombia,Republic of Colombia,CO,COL,+5,7,monday,CO,right,🇨🇴,,,False,True,True,Bogotá,170,COL,COL,Americas,South America,False,50882884,1141748.0,45
+Costa Rica,Republic of Costa Rica,CR,CRI,+5,06,monday,CR,right,🇨🇷,,,False,True,True,San José,188,CRC,CRC,Americas,Central America,False,5094114,51100.0,100
+Cuba,Republic of Cuba,CU,CUB,+5,3,monday,C,right,🇨🇺,,,False,True,True,Havana,192,CUB,CUB,Americas,Caribbean,False,11326616,109884.0,103
+Cape Verde,Republic of Cabo Verde,CV,CPV,+2,38,monday,CV,right,🇨🇻,,,False,True,True,Praia,132,CPV,CPV,Africa,Western Africa,False,555988,4033.0,138
+Curaçao,Country of Curaçao,CW,CUW,+5,99,monday,CW,right,🇨🇼,NLD,,False,False,False,Willemstad,531,,CUW,Americas,Caribbean,False,155014,444.0,349
+Christmas Island,Territory of Christmas Island,CX,CXR,+6,1,monday,AUS,left,🇨🇽,AUS,,False,False,False,Flying Fish Cove,162,,,Oceania,Australia and New Zealand,False,2072,135.0,15
+Cyprus,Republic of Cyprus,CY,CYP,+3,57,monday,CY,left,🇨🇾,,,False,True,True,Nicosia,196,CYP,CYP,Europe,Southern Europe,False,1207361,9251.0,131
+Czechia,Czech Republic,CZ,CZE,+4,20,monday,CZ,right,🇨🇿,,,False,True,True,Prague,203,CZE,CZE,Europe,Central Europe,True,10698896,78865.0,136
+Germany,Federal Republic of Germany,DE,DEU,+4,9,monday,DY,right,🇩🇪,,,False,True,True,Berlin,276,GER,GER,Europe,Western Europe,False,83240525,357114.0,233
+Djibouti,Republic of Djibouti,DJ,DJI,+2,53,monday,DJI,right,🇩🇯,,,False,True,True,Djibouti,262,DJI,DJI,Africa,Eastern Africa,False,988002,23200.0,43
+Denmark,Kingdom of Denmark,DK,DNK,+4,5,monday,DK,right,🇩🇰,,,False,True,True,Copenhagen,208,DEN,DEN,Europe,Northern Europe,False,5831404,43094.0,135
+Dominica,Commonwealth of Dominica,DM,DMA,+1,767,monday,WD,left,🇩🇲,,,False,True,True,Roseau,212,DMA,DMA,Americas,Caribbean,False,71991,751.0,96
+Dominican Republic,Dominican Republic,DO,DOM,+1,809-829-849,monday,DOM,right,🇩🇴,,,False,True,True,Santo Domingo,214,DOM,DOM,Americas,Caribbean,False,10847904,48671.0,223
+Algeria,People's Democratic Republic of Algeria,DZ,DZA,+2,13,sunday,DZ,right,🇩🇿,,,False,True,True,Algiers,012,ALG,ALG,Africa,Northern Africa,False,44700000,2381741.0,19
+Ecuador,Republic of Ecuador,EC,ECU,+5,93,monday,EC,right,🇪🇨,,,False,True,True,Quito,218,ECU,ECU,Americas,South America,False,17643060,276841.0,64
+Estonia,Republic of Estonia,EE,EST,+3,72,monday,EST,right,🇪🇪,,,False,True,True,Tallinn,233,EST,EST,Europe,Northern Europe,False,1331057,45227.0,29
+Egypt,Arab Republic of Egypt,EG,EGY,+2,0,sunday,ET,right,🇪🇬,,,False,True,True,Cairo,818,EGY,EGY,Africa,Northern Africa,False,102334403,1002450.0,102
+Western Sahara,Sahrawi Arab Democratic Republic,EH,ESH,+2,125288-125289,monday,,right,🇪🇭,,,True,False,False,El Aaiún,732,,,Africa,Northern Africa,False,510713,266000.0,2
+Eritrea,State of Eritrea,ER,ERI,+2,91,monday,ER,right,🇪🇷,,,False,True,True,Asmara,232,ERI,ERI,Africa,Eastern Africa,False,5352000,117600.0,46
+Spain,Kingdom of Spain,ES,ESP,+3,4,monday,E,right,🇪🇸,,,False,True,True,Madrid,724,ESP,ESP,Europe,Southern Europe,False,47351567,505992.0,94
+Ethiopia,Federal Democratic Republic of Ethiopia,ET,ETH,+2,51,monday,ETH,right,🇪🇹,,,False,True,True,Addis Ababa,231,ETH,ETH,Africa,Eastern Africa,True,114963583,1104300.0,104
+Finland,Republic of Finland,FI,FIN,+3,58,monday,FIN,right,🇫🇮,,,False,True,True,Helsinki,246,FIN,FIN,Europe,Northern Europe,False,5530719,338424.0,16
+Fiji,Republic of Fiji,FJ,FJI,+6,79,monday,FJI,left,🇫🇯,,,False,True,True,Suva,242,FIJ,FIJ,Oceania,Melanesia,False,896444,18272.0,49
+Falkland Islands,Falkland Islands,FK,FLK,+5,00,monday,GB,left,🇫🇰,GBR,,False,False,False,Stanley,238,,,Americas,South America,False,2563,12173.0,0
+Micronesia,Federated States of Micronesia,FM,FSM,+6,91,monday,FSM,right,🇫🇲,,,False,True,True,Palikir,583,FSM,,Oceania,Micronesia,False,115021,702.0,164
+Faroe Islands,Faroe Islands,FO,FRO,+2,98,monday,FO,right,🇫🇴,DNK,,False,False,False,Tórshavn,234,,FRO,Europe,Northern Europe,False,48865,1393.0,35
+France,French Republic,FR,FRA,+3,3,monday,F,right,🇫🇷,,,False,True,True,Paris,250,FRA,FRA,Europe,Western Europe,False,67391582,551695.0,122
+Gabon,Gabonese Republic,GA,GAB,+2,41,monday,G,right,🇬🇦,,,False,True,True,Libreville,266,GAB,GAB,Africa,Middle Africa,False,2225728,267668.0,8
+United Kingdom,United Kingdom of Great Britain and Northern Ireland,GB,GBR,+4,4,monday,GB,left,🇬🇧,,,False,True,True,London,826,GBR,,Europe,Northern Europe,False,67215293,242900.0,277
+England,England,GB-ENG,ENG,+4,4,monday,GB,left,🏴󠁧󠁢󠁥󠁮󠁧󠁿,GBR,,False,False,False,London,,,ENG,Europe,Northern Europe,False,56536000,130310.0,434
+Northern Ireland,Northern Ireland,GB-NIR,NIR,+4,4,monday,GB,left,,GBR,,False,False,False,Belfast,,,NIR,Europe,Northern Europe,False,1905000,13510.0,141
+Scotland,Scotland,GB-SCT,SCT,+4,4,monday,GB,left,🏴󠁧󠁢󠁳󠁣󠁴󠁿,GBR,,False,False,False,Edinburgh,,,SCO,Europe,Northern Europe,False,5480000,77901.0,70
+Wales,Wales,GB-WLS,WLS,+4,4,monday,GB,left,🏴󠁧󠁢󠁷󠁬󠁳󠁿,GBR,,False,False,False,Cardiff,,,WAL,Europe,Northern Europe,False,3105000,20737.0,150
+Grenada,Grenada,GD,GRD,+1,473,monday,WG,left,🇬🇩,,,False,True,True,St. George's,308,GRN,GRN,Americas,Caribbean,False,112519,344.0,327
+Georgia,Georgia,GE,GEO,+9,95,monday,GE,right,🇬🇪,,,False,True,True,Tbilisi,268,GEO,GEO,Asia,Western Asia,False,3714000,69700.0,53
+French Guiana,Guiana,GF,GUF,+5,94,monday,F,right,🇬🇫,FRA,,False,False,False,Cayenne,254,,,Americas,South America,False,254541,83534.0,3
+Guernsey,Bailiwick of Guernsey,GG,GGY,+4,4,monday,GBG,left,🇬🇬,GBR,,False,False,False,St. Peter Port,831,,,Europe,Northern Europe,False,62999,78.0,808
+Ghana,Republic of Ghana,GH,GHA,+2,33,monday,GH,right,🇬🇭,,,False,True,True,Accra,288,GHA,GHA,Africa,Western Africa,False,31072945,238533.0,130
+Gibraltar,Gibraltar,GI,GIB,+3,50,monday,GBZ,right,🇬🇮,GBR,,False,False,False,Gibraltar,292,,GIB,Europe,Southern Europe,False,33691,6.0,5615
+Greenland,Greenland,GL,GRL,+2,99,monday,DK,right,🇬🇱,DNK,,False,False,False,Nuuk,304,,,Americas,North America,False,56367,2166086.0,0
+Gambia,Republic of the Gambia,GM,GMB,+2,20,monday,WAG,right,🇬🇲,,,False,True,True,Banjul,270,GAM,GAM,Africa,Western Africa,False,2416664,10689.0,226
+Guinea,Republic of Guinea,GN,GIN,+2,24,monday,RG,right,🇬🇳,,,False,True,True,Conakry,324,GUI,GUI,Africa,Western Africa,False,13132792,245857.0,53
+Guadeloupe,Guadeloupe,GP,GLP,+5,90,monday,F,right,🇬🇵,FRA,,False,False,False,Basse-Terre,312,,,Americas,Caribbean,False,400132,1628.0,246
+Equatorial Guinea,Republic of Equatorial Guinea,GQ,GNQ,+2,40,monday,GQ,right,🇬🇶,,,False,True,True,Malabo,226,GEQ,EQG,Africa,Middle Africa,False,1402985,28051.0,50
+Greece,Hellenic Republic,GR,GRC,+3,0,monday,GR,right,🇬🇷,,,False,True,True,Athens,300,GRE,GRE,Europe,Southern Europe,False,10715549,131990.0,81
+South Georgia,South Georgia and the South Sandwich Islands,GS,SGS,+5,00,monday,,right,🇬🇸,GBR,,False,False,False,King Edward Point,239,,,Antarctic,,False,30,3903.0,0
+Guatemala,Republic of Guatemala,GT,GTM,+5,02,monday,GCA,right,🇬🇹,,,False,True,True,Guatemala City,320,GUA,GUA,Americas,Central America,False,16858333,108889.0,155
+Guam,Guam,GU,GUM,+1,671,monday,USA,right,🇬🇺,USA,,False,False,False,Hagåtña,316,GUM,GUM,Oceania,Micronesia,False,168783,549.0,307
+Guinea Bissau,Republic of Guinea-Bissau,GW,GNB,+2,45,monday,RGB,right,🇬🇼,,,False,True,True,Bissau,624,GBS,GNB,Africa,Western Africa,False,1967998,36125.0,54
+Guyana,Co-operative Republic of Guyana,GY,GUY,+5,92,monday,GUY,left,🇬🇾,,,False,True,True,Georgetown,328,GUY,GUY,Americas,South America,False,786559,214969.0,4
+Hong Kong,Hong Kong Special Administrative Region of the People's Republic of China,HK,HKG,+8,52,monday,HK,left,🇭🇰,CHN,,False,False,False,City of Victoria,344,HKG,HKG,Asia,Eastern Asia,False,7500700,1104.0,6794
+Heard Island and McDonald Islands,Heard Island and McDonald Islands,HM,HMD,,,monday,,right,🇭🇲,AUS,,False,False,False,,334,,,Antarctic,,False,0,412.0,0
+Honduras,Republic of Honduras,HN,HND,+5,04,monday,HN,right,🇭🇳,,,False,True,True,Tegucigalpa,340,HON,HON,Americas,Central America,False,9904608,112492.0,88
+Croatia,Republic of Croatia,HR,HRV,+3,85,monday,HR,right,🇭🇷,,,False,True,True,Zagreb,191,CRO,CRO,Europe,Southeast Europe,False,4047200,56594.0,72
+Haiti,Republic of Haiti,HT,HTI,+5,09,monday,RH,right,🇭🇹,,,False,True,True,Port-au-Prince,332,HAI,HAI,Americas,Caribbean,False,11402533,27750.0,411
+Hungary,Hungary,HU,HUN,+3,6,monday,H,right,🇭🇺,,,False,True,True,Budapest,348,HUN,HUN,Europe,Central Europe,True,9749763,93028.0,105
+Indonesia,Republic of Indonesia,ID,IDN,+6,2,monday,RI,left,🇮🇩,,,False,True,True,Jakarta,360,INA,IDN,Asia,South-Eastern Asia,False,273523621,1904569.0,144
+Ireland,Republic of Ireland,IE,IRL,+3,53,monday,IRL,left,🇮🇪,,,False,True,True,Dublin,372,IRL,IRL,Europe,Northern Europe,False,4994724,70273.0,71
+Israel,State of Israel,IL,ISR,+9,72,sunday,IL,right,🇮🇱,,,False,True,True,Jerusalem,376,ISR,ISR,Asia,Western Asia,False,9216900,20770.0,444
+Isle of Man,Isle of Man,IM,IMN,+4,4,monday,GBM,left,🇮🇲,GBR,,False,False,False,Douglas,833,,,Europe,Northern Europe,False,85032,572.0,149
+India,Republic of India,IN,IND,+9,1,monday,IND,left,🇮🇳,,,False,True,True,New Delhi,356,IND,IND,Asia,Southern Asia,False,1380004385,3287590.0,420
+British Indian Ocean Territory,British Indian Ocean Territory,IO,IOT,+2,46,monday,GB,right,🇮🇴,GBR,,False,False,False,Diego Garcia,086,,,Africa,Eastern Africa,False,3000,60.0,50
+Iraq,Republic of Iraq,IQ,IRQ,+9,64,sunday,IRQ,right,🇮🇶,,,False,True,True,Baghdad,368,IRQ,IRQ,Asia,Western Asia,False,40222503,438317.0,92
+Iran,Islamic Republic of Iran,IR,IRN,+9,8,saturday,IR,right,🇮🇷,,,False,True,True,Tehran,364,IRI,IRN,Asia,Southern Asia,False,83992953,1648195.0,51
+Iceland,Iceland,IS,ISL,+3,54,monday,IS,right,🇮🇸,,,False,True,True,Reykjavik,352,ISL,ISL,Europe,Northern Europe,False,366425,103000.0,4
+Italy,Italian Republic,IT,ITA,+3,9,monday,I,right,🇮🇹,,,False,True,True,Rome,380,ITA,ITA,Europe,Southern Europe,False,59554023,301336.0,198
+Jersey,Bailiwick of Jersey,JE,JEY,+4,4,monday,GBJ,left,🇯🇪,GBR,,False,False,False,Saint Helier,832,,,Europe,Northern Europe,False,100800,116.0,869
+Jamaica,Jamaica,JM,JAM,+1,876,monday,JA,left,🇯🇲,,,False,True,True,Kingston,388,JAM,JAM,Americas,Caribbean,False,2961161,10991.0,269
+Jordan,Hashemite Kingdom of Jordan,JO,JOR,+9,62,sunday,HKJ,right,🇯🇴,,,False,True,True,Amman,400,JOR,JOR,Asia,Western Asia,False,10203140,89342.0,114
+Japan,Japan,JP,JPN,+8,1,monday,J,left,🇯🇵,,,False,True,True,Tokyo,392,JPN,JPN,Asia,Eastern Asia,False,125836021,377930.0,333
+Kenya,Republic of Kenya,KE,KEN,+2,54,monday,EAK,left,🇰🇪,,,False,True,True,Nairobi,404,KEN,KEN,Africa,Eastern Africa,False,53771300,580367.0,93
+Kyrgyzstan,Kyrgyz Republic,KG,KGZ,+9,96,monday,KS,right,🇰🇬,,,False,True,True,Bishkek,417,KGZ,KGZ,Asia,Central Asia,True,6591600,199951.0,33
+Cambodia,Kingdom of Cambodia,KH,KHM,+8,55,monday,K,right,🇰🇭,,,False,True,True,Phnom Penh,116,CAM,CAM,Asia,South-Eastern Asia,False,16718971,181035.0,92
+Kiribati,Independent and Sovereign Republic of Kiribati,KI,KIR,+6,86,monday,KIR,left,🇰🇮,,,False,True,True,South Tarawa,296,KIR,,Oceania,Micronesia,False,119446,811.0,147
+Comoros,Union of the Comoros,KM,COM,+2,69,monday,COM,right,🇰🇲,,,False,True,True,Moroni,174,COM,COM,Africa,Eastern Africa,False,869595,1862.0,467
+Saint Kitts and Nevis,Federation of Saint Christopher and Nevis,KN,KNA,+1,869,monday,KN,left,🇰🇳,,,False,True,True,Basseterre,659,SKN,SKN,Americas,Caribbean,False,53192,261.0,204
+North Korea,Democratic People's Republic of Korea,KP,PRK,+8,50,monday,,right,🇰🇵,,,False,True,True,Pyongyang,408,PRK,PRK,Asia,Eastern Asia,False,25778815,120538.0,214
+South Korea,Republic of Korea,KR,KOR,+8,2,monday,ROK,right,🇰🇷,,,False,True,True,Seoul,410,KOR,KOR,Asia,Eastern Asia,False,51780579,100210.0,517
+Kuwait,State of Kuwait,KW,KWT,+9,65,sunday,KWT,right,🇰🇼,,,False,True,True,Kuwait City,414,KUW,KUW,Asia,Western Asia,False,4270563,17818.0,240
+Cayman Islands,Cayman Islands,KY,CYM,+1,345,monday,GB,left,🇰🇾,GBR,,False,False,False,George Town,136,CAY,CAY,Americas,Caribbean,False,65720,264.0,249
+Kazakhstan,Republic of Kazakhstan,KZ,KAZ,+7,6-7,monday,KZ,right,🇰🇿,,,False,True,True,Nur-Sultan,398,KAZ,KAZ,Asia,Central Asia,True,18754440,2724900.0,7
+Laos,Lao People's Democratic Republic,LA,LAO,+8,56,monday,LAO,right,🇱🇦,,,False,True,True,Vientiane,418,LAO,LAO,Asia,South-Eastern Asia,True,7275556,236800.0,31
+Lebanon,Lebanese Republic,LB,LBN,+9,61,monday,RL,right,🇱🇧,,,False,True,True,Beirut,422,LBN,LBN,Asia,Western Asia,False,6825442,10452.0,653
+Saint Lucia,Saint Lucia,LC,LCA,+1,758,monday,WL,left,🇱🇨,,,False,True,True,Castries,662,LCA,LCA,Americas,Caribbean,False,183629,616.0,298
+Liechtenstein,Principality of Liechtenstein,LI,LIE,+4,23,monday,FL,right,🇱🇮,,,False,True,True,Vaduz,438,LIE,LIE,Europe,Western Europe,True,38137,160.0,238
+Sri Lanka,Democratic Socialist Republic of Sri Lanka,LK,LKA,+9,4,monday,CL,left,🇱🇰,,,False,True,True,Sri Jayawardenepura Kotte,144,SRI,SRI,Asia,Southern Asia,False,21919000,65610.0,334
+Liberia,Republic of Liberia,LR,LBR,+2,31,monday,LB,right,🇱🇷,,,False,True,True,Monrovia,430,LBR,LBR,Africa,Western Africa,False,5057677,111369.0,45
+Lesotho,Kingdom of Lesotho,LS,LSO,+2,66,monday,LS,left,🇱🇸,,,False,True,True,Maseru,426,LES,LES,Africa,Southern Africa,True,2142252,30355.0,71
+Lithuania,Republic of Lithuania,LT,LTU,+3,70,monday,LT,right,🇱🇹,,,False,True,True,Vilnius,440,LTU,LTU,Europe,Northern Europe,False,2794700,65300.0,43
+Luxembourg,Grand Duchy of Luxembourg,LU,LUX,+3,52,monday,L,right,🇱🇺,,,False,True,True,Luxembourg,442,LUX,LUX,Europe,Western Europe,True,632275,2586.0,244
+Latvia,Republic of Latvia,LV,LVA,+3,71,monday,LV,right,🇱🇻,,,False,True,True,Riga,428,LAT,LVA,Europe,Northern Europe,False,1901548,64559.0,29
+Libya,State of Libya,LY,LBY,+2,18,sunday,LAR,right,🇱🇾,,,False,True,True,Tripoli,434,LBA,LBY,Africa,Northern Africa,False,6871287,1759540.0,4
+Morocco,Kingdom of Morocco,MA,MAR,+2,12,monday,MA,right,🇲🇦,,,False,True,True,Rabat,504,MAR,MAR,Africa,Northern Africa,False,36910558,446550.0,83
+Monaco,Principality of Monaco,MC,MCO,+3,77,monday,MC,right,🇲🇨,,,False,True,True,Monaco,492,MON,,Europe,Western Europe,False,39244,2.02,19428
+Moldova,Republic of Moldova,MD,MDA,+3,73,monday,MD,right,🇲🇩,,,False,True,True,Chișinău,498,MDA,MDA,Europe,Eastern Europe,True,2617820,33846.0,77
+Montenegro,Montenegro,ME,MNE,+3,82,monday,SCG,right,🇲🇪,,,False,True,True,Podgorica,499,MNE,MNE,Europe,Southeast Europe,False,621718,13812.0,45
+Saint Martin,Saint Martin,MF,MAF,+5,90,monday,F,right,🇲🇫,FRA,,False,False,False,Marigot,663,,,Americas,Caribbean,False,38659,53.0,729
+Madagascar,Republic of Madagascar,MG,MDG,+2,61,monday,RM,right,🇲🇬,,,False,True,True,Antananarivo,450,MAD,MAD,Africa,Eastern Africa,False,27691019,587041.0,47
+Marshall Islands,Republic of the Marshall Islands,MH,MHL,+6,92,monday,MH,right,🇲🇭,,,False,True,True,Majuro,584,MHL,,Oceania,Micronesia,False,59194,181.0,327
+North Macedonia,Republic of North Macedonia,MK,MKD,+3,89,monday,MK,right,🇲🇰,,,False,True,True,Skopje,807,MKD,MKD,Europe,Southeast Europe,True,2077132,25713.0,81
+Mali,Republic of Mali,ML,MLI,+2,23,monday,RMM,right,🇲🇱,,,False,True,True,Bamako,466,MLI,MLI,Africa,Western Africa,True,20250834,1240192.0,16
+Myanmar,Republic of the Union of Myanmar,MM,MMR,+9,5,monday,BUR,right,🇲🇲,,,False,True,True,Naypyidaw,104,MYA,MYA,Asia,South-Eastern Asia,False,54409794,676578.0,80
+Mongolia,Mongolia,MN,MNG,+9,76,monday,MGL,right,🇲🇳,,,False,True,True,Ulan Bator,496,MGL,MNG,Asia,Eastern Asia,True,3278292,1564110.0,2
+Macau,Macao Special Administrative Region of the People's Republic of China,MO,MAC,+8,53,monday,MO,left,🇲🇴,CHN,,False,False,False,,446,,MAC,Asia,Eastern Asia,False,649342,30.0,21645
+Northern Mariana Islands,Commonwealth of the Northern Mariana Islands,MP,MNP,+1,670,monday,USA,right,🇲🇵,USA,,False,False,False,Saipan,580,,,Oceania,Micronesia,False,57557,464.0,124
+Martinique,Martinique,MQ,MTQ,+5,96,monday,F,right,🇲🇶,FRA,,False,False,False,Fort-de-France,474,,,Americas,Caribbean,False,378243,1128.0,335
+Mauritania,Islamic Republic of Mauritania,MR,MRT,+2,22,monday,RIM,right,🇲🇷,,,False,True,True,Nouakchott,478,MTN,MTN,Africa,Western Africa,False,4649660,1030700.0,5
+Montserrat,Montserrat,MS,MSR,+1,664,monday,GB,left,🇲🇸,GBR,,False,False,False,Plymouth,500,,MSR,Americas,Caribbean,False,4922,102.0,48
+Malta,Republic of Malta,MT,MLT,+3,56,monday,M,left,🇲🇹,,,False,True,True,Valletta,470,MLT,MLT,Europe,Southern Europe,False,525285,316.0,1662
+Mauritius,Republic of Mauritius,MU,MUS,+2,30,monday,MS,left,🇲🇺,,,False,True,True,Port Louis,480,MRI,MRI,Africa,Eastern Africa,False,1265740,2040.0,620
+Maldives,Republic of the Maldives,MV,MDV,+9,60,sunday,MV,left,🇲🇻,,,False,True,True,Malé,462,MDV,MDV,Asia,Southern Asia,False,540542,300.0,1802
+Malawi,Republic of Malawi,MW,MWI,+2,65,monday,MW,left,🇲🇼,,,False,True,True,Lilongwe,454,MAW,MWI,Africa,Eastern Africa,True,19129955,118484.0,161
+Mexico,United Mexican States,MX,MEX,+5,2,monday,MEX,right,🇲🇽,,,False,True,True,Mexico City,484,MEX,MEX,Americas,North America,False,128932753,1964375.0,66
+Malaysia,Malaysia,MY,MYS,+6,0,sunday,MAL,left,🇲🇾,,,False,True,True,Kuala Lumpur,458,MAS,MAS,Asia,South-Eastern Asia,False,32365998,330803.0,98
+Mozambique,Republic of Mozambique,MZ,MOZ,+2,58,monday,MOC,left,🇲🇿,,,False,True,True,Maputo,508,MOZ,MOZ,Africa,Eastern Africa,False,31255435,801590.0,39
+Namibia,Republic of Namibia,NA,NAM,+2,64,monday,NAM,left,🇳🇦,,,False,True,True,Windhoek,516,NAM,NAM,Africa,Southern Africa,False,2540916,825615.0,3
+New Caledonia,New Caledonia,NC,NCL,+6,87,monday,F,right,🇳🇨,FRA,,False,False,False,Nouméa,540,,NCL,Oceania,Melanesia,False,271960,18575.0,15
+Niger,Republic of Niger,NE,NER,+2,27,monday,RN,right,🇳🇪,,,False,True,True,Niamey,562,NIG,NIG,Africa,Western Africa,True,24206636,1267000.0,19
+Norfolk Island,Territory of Norfolk Island,NF,NFK,+6,72,monday,AUS,left,🇳🇫,AUS,,False,False,False,Kingston,574,,,Oceania,Australia and New Zealand,False,2302,36.0,64
+Nigeria,Federal Republic of Nigeria,NG,NGA,+2,34,monday,WAN,right,🇳🇬,,,False,True,True,Abuja,566,NGR,NGA,Africa,Western Africa,False,206139587,923768.0,223
+Nicaragua,Republic of Nicaragua,NI,NIC,+5,05,monday,NIC,right,🇳🇮,,,False,True,True,Managua,558,NCA,NCA,Americas,Central America,False,6624554,130373.0,51
+Netherlands,Kingdom of the Netherlands,NL,NLD,+3,1,monday,NL,right,🇳🇱,,,False,True,True,Amsterdam,528,NED,NED,Europe,Western Europe,False,16655799,41850.0,398
+Norway,Kingdom of Norway,NO,NOR,+4,7,monday,N,right,🇳🇴,,,False,True,True,Oslo,578,NOR,NOR,Europe,Northern Europe,False,5379475,323802.0,17
+Nepal,Federal Democratic Republic of Nepal,NP,NPL,+9,77,sunday,NEP,left,🇳🇵,,,False,True,True,Kathmandu,524,NEP,NEP,Asia,Southern Asia,True,29136808,147181.0,198
+Nauru,Republic of Nauru,NR,NRU,+6,74,monday,NAU,left,🇳🇷,,,False,True,True,Yaren,520,NRU,,Oceania,Micronesia,False,10834,21.0,516
+Niue,Niue,NU,NIU,+6,83,monday,NZ,left,🇳🇺,,NZL,False,False,False,Alofi,570,,,Oceania,Polynesia,False,1470,260.0,6
+New Zealand,New Zealand,NZ,NZL,+6,4,monday,NZ,left,🇳🇿,,,False,True,True,Wellington,554,NZL,NZL,Oceania,Australia and New Zealand,False,5084300,270467.0,19
+Oman,Sultanate of Oman,OM,OMN,+9,68,sunday,OM,right,🇴🇲,,,False,True,True,Muscat,512,OMA,OMA,Asia,Western Asia,False,5106622,309500.0,16
+Panama,Republic of Panama,PA,PAN,+5,07,monday,PA,right,🇵🇦,,,False,True,True,Panama City,591,PAN,PAN,Americas,Central America,False,4314768,75417.0,57
+Peru,Republic of Peru,PE,PER,+5,1,monday,PE,right,🇵🇪,,,False,True,True,Lima,604,PER,PER,Americas,South America,False,32971846,1285216.0,26
+French Polynesia,French Polynesia,PF,PYF,+6,89,monday,F,right,🇵🇫,FRA,,False,False,False,Papeetē,258,,,Oceania,Polynesia,False,280904,4167.0,67
+Tahiti,Tahiti,PF-TAH,TAH,+6,89,monday,F,right,,FRA,,False,False,False,,,,TAH,Asia,Polynesia,False,189517,1044,181
+Papua New Guinea,Independent State of Papua New Guinea,PG,PNG,+6,75,monday,PNG,left,🇵🇬,,,False,True,True,Port Moresby,598,PNG,PNG,Oceania,Melanesia,False,8947027,462840.0,19
+Philippines,Republic of the Philippines,PH,PHL,+9,3,monday,RP,right,🇵🇭,,,False,True,True,Manila,608,PHI,PHI,Asia,South-Eastern Asia,False,109581085,342353.0,320
+Pakistan,Islamic Republic of Pakistan,PK,PAK,+4,2,monday,PK,left,🇵🇰,,,False,True,True,Islamabad,586,PAK,PAK,Asia,Southern Asia,False,220892331,881912.0,250
+Poland,Republic of Poland,PL,POL,+4,8,monday,PL,right,🇵🇱,,,False,True,True,Warsaw,616,POL,POL,Europe,Central Europe,False,37950802,312679.0,121
+Saint Pierre and Miquelon,Saint Pierre and Miquelon,PM,SPM,+5,08,monday,F,right,🇵🇲,FRA,,False,False,False,Saint-Pierre,666,,,Americas,North America,False,6069,242.0,25
+Pitcairn Islands,Pitcairn Group of Islands,PN,PCN,+6,4,monday,GB,left,🇵🇳,GBR,,False,False,False,Adamstown,612,,,Oceania,Polynesia,False,56,47.0,1
+Puerto Rico,Commonwealth of Puerto Rico,PR,PRI,+1,787-939,monday,USA,right,🇵🇷,USA,,False,False,False,San Juan,630,PUR,PUR,Americas,Caribbean,False,3194034,8870.0,360
+Palestine,State of Palestine,PS,PSE,+9,70,sunday,PS,right,🇵🇸,,,True,False,False,Jerusalem,275,PLE,PLE,Asia,Western Asia,False,4803269,6220.0,772
+Portugal,Portuguese Republic,PT,PRT,+3,51,monday,P,right,🇵🇹,,,False,True,True,Lisbon,620,POR,POR,Europe,Southern Europe,False,10305564,92090.0,112
+Palau,Republic of Palau,PW,PLW,+6,80,monday,PAL,right,🇵🇼,,,False,True,True,Ngerulmud,585,PLW,,Oceania,Micronesia,False,18092,459.0,39
+Paraguay,Republic of Paraguay,PY,PRY,+5,95,monday,PY,right,🇵🇾,,,False,True,True,Asunción,600,PAR,PAR,Americas,South America,True,7132530,406752.0,18
+Qatar,State of Qatar,QA,QAT,+9,74,sunday,Q,right,🇶🇦,,,False,True,True,Doha,634,QAT,QAT,Asia,Western Asia,False,2881060,11586.0,249
+Réunion,Réunion Island,RE,REU,+2,62,monday,F,right,🇷🇪,FRA,,False,False,False,Saint-Denis,638,,,Africa,Eastern Africa,False,840974,2511.0,335
+Romania,Romania,RO,ROU,+4,0,monday,RO,right,🇷🇴,,,False,True,True,Bucharest,642,ROU,ROU,Europe,Southeast Europe,False,19286123,238391.0,81
+Serbia,Republic of Serbia,RS,SRB,+3,81,monday,SRB,right,🇷🇸,,,False,True,True,Belgrade,688,SRB,SRB,Europe,Southeast Europe,True,6908224,88361.0,78
+Russia,Russian Federation,RU,RUS,+7,3-4-5-8-9,monday,RUS,right,🇷🇺,,,False,True,True,Moscow,643,RUS,RUS,Europe,Eastern Europe,False,144104080,17098242.0,8
+Rwanda,Republic of Rwanda,RW,RWA,+2,50,monday,RWA,right,🇷🇼,,,False,True,True,Kigali,646,RWA,RWA,Africa,Eastern Africa,True,12952209,26338.0,492
+Saudi Arabia,Kingdom of Saudi Arabia,SA,SAU,+9,66,sunday,SA,right,🇸🇦,,,False,True,True,Riyadh,682,KSA,KSA,Asia,Western Asia,False,34813867,2149690.0,16
+Solomon Islands,Solomon Islands,SB,SLB,+6,77,monday,SOL,left,🇸🇧,,,False,True,True,Honiara,090,SOL,SOL,Oceania,Melanesia,False,686878,28896.0,24
+Seychelles,Republic of Seychelles,SC,SYC,+2,48,monday,SY,left,🇸🇨,,,False,True,True,Victoria,690,SEY,SEY,Africa,Eastern Africa,False,98462,452.0,218
+Sudan,Republic of the Sudan,SD,SDN,+2,49,monday,SUD,right,🇸🇩,,,False,True,True,Khartoum,729,SUD,SDN,Africa,Northern Africa,False,43849269,1886068.0,23
+Sweden,Kingdom of Sweden,SE,SWE,+4,6,monday,S,right,🇸🇪,,,False,True,True,Stockholm,752,SWE,SWE,Europe,Northern Europe,False,10353442,450295.0,23
+Singapore,Republic of Singapore,SG,SGP,+6,5,monday,SGP,left,🇸🇬,,,False,True,True,Singapore,702,SGP,SGP,Asia,South-Eastern Asia,False,5685807,710.0,8008
+"Saint Helena, Ascension and Tristan da Cunha","Saint Helena, Ascension and Tristan da Cunha",SH,SHN,+2,47-90,monday,GB,left,🇸🇭,GBR,,False,False,False,Jamestown,654,,,Africa,Western Africa,False,53192,394.0,135
+Slovenia,Republic of Slovenia,SI,SVN,+3,86,monday,SLO,right,🇸🇮,,,False,True,True,Ljubljana,705,SLO,SVN,Europe,Central Europe,False,2100126,20273.0,104
+Svalbard and Jan Mayen,Svalbard og Jan Mayen,SJ,SJM,+4,779,monday,N,right,🇸🇯,NOR,,False,False,False,Longyearbyen,744,,,Europe,Northern Europe,False,2562,-1.0,-2562
+Slovakia,Slovak Republic,SK,SVK,+4,21,monday,SK,right,🇸🇰,,,False,True,True,Bratislava,703,SVK,SVK,Europe,Central Europe,True,5458827,49037.0,111
+Sierra Leone,Republic of Sierra Leone,SL,SLE,+2,32,monday,WAL,right,🇸🇱,,,False,True,True,Freetown,694,SLE,SLE,Africa,Western Africa,False,7976985,71740.0,111
+San Marino,Republic of San Marino,SM,SMR,+3,78,monday,RSM,right,🇸🇲,,,False,True,True,City of San Marino,674,SMR,SMR,Europe,Southern Europe,True,33938,61.0,556
+Senegal,Republic of Senegal,SN,SEN,+2,21,monday,SN,right,🇸🇳,,,False,True,True,Dakar,686,SEN,SEN,Africa,Western Africa,False,16743930,196722.0,85
+Somalia,Federal Republic of Somalia,SO,SOM,+2,52,monday,SO,right,🇸🇴,,,False,True,True,Mogadishu,706,SOM,SOM,Africa,Eastern Africa,False,15893219,637657.0,25
+Suriname,Republic of Suriname,SR,SUR,+5,97,monday,SME,left,🇸🇷,,,False,True,True,Paramaribo,740,SUR,SUR,Americas,South America,False,586634,163820.0,4
+South Sudan,Republic of South Sudan,SS,SSD,+2,11,sunday,,right,🇸🇸,,,False,True,True,Juba,728,SSD,SSD,Africa,Middle Africa,True,11193729,619745.0,18
+São Tomé and Príncipe,Democratic Republic of São Tomé and Príncipe,ST,STP,+2,39,monday,STP,right,🇸🇹,,,False,True,True,São Tomé,678,STP,STP,Africa,Middle Africa,False,219161,964.0,227
+El Salvador,Republic of El Salvador,SV,SLV,+5,03,monday,ES,right,🇸🇻,,,False,True,True,San Salvador,222,ESA,SLV,Americas,Central America,False,6486201,21041.0,308
+Sint Maarten,Sint Maarten,SX,SXM,+1,721,monday,SX,right,🇸🇽,NLD,,False,False,False,Philipsburg,534,,,Americas,Caribbean,False,40812,34.0,1200
+Syria,Syrian Arab Republic,SY,SYR,+9,63,monday,SYR,right,🇸🇾,,,False,True,True,Damascus,760,SYR,SYR,Asia,Western Asia,False,17500657,185180.0,95
+Eswatini,Kingdom of Eswatini,SZ,SWZ,+2,68,monday,SD,left,🇸🇿,,,False,True,True,Mbabane,748,SWZ,SWZ,Africa,Southern Africa,True,1160164,17364.0,67
+Turks and Caicos Islands,Turks and Caicos Islands,TC,TCA,+1,649,monday,GB,left,🇹🇨,GBR,,False,False,False,Cockburn Town,796,,TCA,Americas,Caribbean,False,38718,948.0,41
+Chad,Republic of Chad,TD,TCD,+2,35,monday,TCH,right,🇹🇩,,,False,True,True,N'Djamena,148,CHA,CHA,Africa,Middle Africa,True,16425859,1284000.0,13
+French Southern and Antarctic Lands,Territory of the French Southern and Antarctic Lands,TF,ATF,+2,62,monday,,right,🇹🇫,FRA,,False,False,False,Port-aux-Français,260,,,Antarctic,,False,400,7747.0,0
+Togo,Togolese Republic,TG,TGO,+2,28,monday,TG,right,🇹🇬,,,False,True,True,Lomé,768,TOG,TOG,Africa,Western Africa,False,8278737,56785.0,146
+Thailand,Kingdom of Thailand,TH,THA,+6,6,monday,T,left,🇹🇭,,,False,True,True,Bangkok,764,THA,THA,Asia,South-Eastern Asia,False,69799978,513120.0,136
+Tajikistan,Republic of Tajikistan,TJ,TJK,+9,92,monday,TJ,right,🇹🇯,,,False,True,True,Dushanbe,762,TJK,TJK,Asia,Central Asia,True,9537642,143100.0,67
+Tokelau,Tokelau,TK,TKL,+6,90,monday,,left,🇹🇰,NZL,,False,False,False,Fakaofo,772,,,Oceania,Polynesia,False,1411,12.0,118
+Timor-Leste,Democratic Republic of Timor-Leste,TL,TLS,+6,70,monday,TL,left,🇹🇱,,,False,True,True,Dili,626,TLS,TLS,Asia,South-Eastern Asia,False,1318442,14874.0,89
+Turkmenistan,Turkmenistan,TM,TKM,+9,93,monday,TM,right,🇹🇲,,,False,True,True,Ashgabat,795,TKM,TKM,Asia,Central Asia,True,6031187,488100.0,12
+Tunisia,Tunisian Republic,TN,TUN,+2,16,monday,TN,right,🇹🇳,,,False,True,True,Tunis,788,TUN,TUN,Africa,Northern Africa,False,11818618,163610.0,72
+Tonga,Kingdom of Tonga,TO,TON,+6,76,monday,TO,left,🇹🇴,,,False,True,True,Nuku'alofa,776,TGA,TGA,Oceania,Polynesia,False,105697,747.0,141
+Turkey,Republic of Turkey,TR,TUR,+9,0,monday,TR,right,🇹🇷,,,False,True,True,Ankara,792,TUR,TUR,Asia,Western Asia,False,84339067,783562.0,108
+Trinidad and Tobago,Republic of Trinidad and Tobago,TT,TTO,+1,868,monday,TT,left,🇹🇹,,,False,True,True,Port of Spain,780,TTO,TRI,Americas,Caribbean,False,1399491,5130.0,273
+Tuvalu,Tuvalu,TV,TUV,+6,88,monday,TUV,left,🇹🇻,,,False,True,True,Funafuti,798,TUV,,Oceania,Polynesia,False,11792,26.0,454
+Taiwan,Republic of China (Taiwan),TW,TWN,+8,86,monday,RC,right,🇹🇼,CHN,,False,False,False,Taipei,158,TPE,TPE,Asia,Eastern Asia,False,23503349,36193.0,649
+Tanzania,United Republic of Tanzania,TZ,TZA,+2,55,monday,EAT,left,🇹🇿,,,False,True,True,Dodoma,834,TAN,TAN,Africa,Eastern Africa,False,59734213,945087.0,63
+Ukraine,Ukraine,UA,UKR,+3,80,monday,UA,right,🇺🇦,,,False,True,True,Kyiv,804,UKR,UKR,Europe,Eastern Europe,False,44134693,603500.0,73
+Uganda,Republic of Uganda,UG,UGA,+2,56,monday,EAU,left,🇺🇬,,,False,True,True,Kampala,800,UGA,UGA,Africa,Eastern Africa,True,45741000,241550.0,189
+United States Minor Outlying Islands,United States Minor Outlying Islands,UM,UMI,+2,68,monday,,right,🇺🇲,USA,,False,False,False,Washington DC,581,,,Americas,North America,False,300,34.2,9
+United States,United States of America,US,USA,+1,,sunday,USA,right,🇺🇸,,,False,True,True,"Washington, D.C.",840,USA,USA,Americas,North America,False,329484123,9372610.0,35
+Uruguay,Oriental Republic of Uruguay,UY,URY,+5,98,monday,ROU,right,🇺🇾,,,False,True,True,Montevideo,858,URU,URU,Americas,South America,False,3473727,181034.0,19
+Uzbekistan,Republic of Uzbekistan,UZ,UZB,+9,98,monday,UZ,right,🇺🇿,,,False,True,True,Tashkent,860,UZB,UZB,Asia,Central Asia,True,34232050,447400.0,77
+Vatican City,Vatican City State,VA,VAT,+3,79-906698,monday,V,right,🇻🇦,,,False,True,True,Vatican City,336,,,Europe,Southern Europe,True,451,0.44,1025
+Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,VC,VCT,+1,784,monday,WV,left,🇻🇨,,,False,True,True,Kingstown,670,VIN,VIN,Americas,Caribbean,False,110947,389.0,285
+Venezuela,Bolivarian Republic of Venezuela,VE,VEN,+5,8,monday,YV,right,🇻🇪,,,False,True,True,Caracas,862,VEN,VEN,Americas,South America,False,28435943,916445.0,31
+British Virgin Islands,Virgin Islands,VG,VGB,+1,284,monday,BVI,left,🇻🇬,GBR,,False,False,False,Road Town,092,IVB,VGB,Americas,Caribbean,False,30237,151.0,200
+United States Virgin Islands,Virgin Islands of the United States,VI,VIR,+1,340,monday,USA,right,🇻🇮,USA,,False,False,False,Charlotte Amalie,850,ISV,VIR,Americas,Caribbean,False,106290,347.0,306
+Vietnam,Socialist Republic of Vietnam,VN,VNM,+8,4,monday,VN,right,🇻🇳,,,False,True,True,Hanoi,704,VIE,VIE,Asia,South-Eastern Asia,False,97338583,331212.0,294
+Vanuatu,Republic of Vanuatu,VU,VUT,+6,78,monday,VU,right,🇻🇺,,,False,True,True,Port Vila,548,VAN,VAN,Oceania,Melanesia,False,307150,12189.0,25
+Wallis and Futuna,Territory of the Wallis and Futuna Islands,WF,WLF,+6,81,monday,F,right,🇼🇫,FRA,,False,False,False,Mata-Utu,876,,,Oceania,Polynesia,False,11750,142.0,83
+Samoa,Independent State of Samoa,WS,WSM,+6,85,monday,WS,left,🇼🇸,,,False,True,True,Apia,882,SAM,SAM,Oceania,Polynesia,False,198410,2842.0,70
+Kosovo,Republic of Kosovo,XK,UNK,+3,83,monday,CS,right,🇽🇰,,,True,False,False,Pristina,,KOS,KOS,Europe,Southeast Europe,True,1775378,10908.0,163
+Yemen,Republic of Yemen,YE,YEM,+9,67,sunday,YAR,right,🇾🇪,,,False,True,True,Sana'a,887,YEM,YEM,Asia,Western Asia,False,29825968,527968.0,56
+Mayotte,Department of Mayotte,YT,MYT,+2,62,monday,F,right,🇾🇹,FRA,,False,False,False,Mamoudzou,175,,,Africa,Eastern Africa,False,226915,374.0,607
+South Africa,Republic of South Africa,ZA,ZAF,+2,7,monday,ZA,left,🇿🇦,,,False,True,True,Pretoria,710,RSA,RSA,Africa,Southern Africa,False,59308690,1221037.0,49
+Zambia,Republic of Zambia,ZM,ZMB,+2,60,monday,RNR,left,🇿🇲,,,False,True,True,Lusaka,894,ZAM,ZAM,Africa,Eastern Africa,True,18383956,752612.0,24
+Zimbabwe,Republic of Zimbabwe,ZW,ZWE,+2,63,monday,ZW,left,🇿🇼,,,False,True,True,Harare,716,ZIM,ZIM,Africa,Southern Africa,True,14862927,390757.0,38

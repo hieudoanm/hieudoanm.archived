@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Member renders correctly 1`] = `
+<div>
+  <div>
+    <img
+      alt=""
+      class="rounded-xl border"
+      data-nimg="1"
+      decoding="async"
+      src=""
+      style="color: transparent;"
+    />
+    <div
+      class="text-center"
+    >
+      <h2
+        class="mt-4 text-lg md:text-2xl font-medium"
+      />
+      <p
+        class="mt-2 text-sm md:text-lg text-gray-500"
+      />
+    </div>
+  </div>
+</div>
+`;

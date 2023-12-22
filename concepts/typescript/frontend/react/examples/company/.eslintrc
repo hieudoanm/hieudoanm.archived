@@ -1,0 +1,22 @@
+{
+  "env": { "browser": true, "node": true },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:github/recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:security/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "plugins": [
+    "github",
+    "import",
+    "prettier",
+    "promise",
+    "security",
+    "sonarjs",
+    "unicorn"
+  ]
+}
