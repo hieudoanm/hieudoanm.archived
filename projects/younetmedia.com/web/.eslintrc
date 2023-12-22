@@ -5,19 +5,11 @@
     "plugin:github/recommended",
     "plugin:prettier/recommended",
     "plugin:promise/recommended",
-    "plugin:security/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
     "prettier"
   ],
-  "plugins": [
-    "github",
-    "prettier",
-    "promise",
-    "security",
-    "sonarjs",
-    "unicorn"
-  ],
+  "plugins": ["github", "prettier", "promise", "sonarjs", "unicorn"],
   "rules": {
     "camelcase": "off",
     "filenames/match-regex": "off",
