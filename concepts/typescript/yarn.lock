@@ -27155,10 +27155,10 @@ undici@5.27.2:
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
-undici@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.2.0.tgz#e2f1b41489ebfba503b0f505e0e6c2a0161e7816"
-  integrity sha512-bglzaehBOLMe+BfK+Gv5Vpwpgdq2skaEBbSH92tcAv37wHHHTEGu43boyfTaHB+mwSo3VjyD/8d+ytPGeqsFIg==
+undici@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.2.1.tgz#554293044619e065d986c37a4c92185c3bc02121"
+  integrity sha512-7Wa9thEM6/LMnnKtxJHlc8SrTlDmxqJecgz1iy8KlsN0/iskQXOQCuPkrZLXbElPaSw5slFFyKIKXyJ3UtbApw==
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
