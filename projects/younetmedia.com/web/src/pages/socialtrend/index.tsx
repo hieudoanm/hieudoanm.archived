@@ -78,7 +78,7 @@ const SocialTrendForm: React.FC<{
   urlSearchParameters.set('selectedOption', 'all');
   urlSearchParameters.set('action', 'showMore');
   const url = `https://api-trend.younetmedia.com/socialtrend/hot-topic-ranking-list?${urlSearchParameters.toString()}`;
-
+  logger.info(`pin ${pin}`);
   const { loading, error, data } = useAxios<{
     detailStatistics: { total: any[] };
   }>(url, {

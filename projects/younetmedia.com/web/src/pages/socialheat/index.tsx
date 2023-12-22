@@ -27,10 +27,12 @@ import { Result } from '@younetmedia/types';
 import dayjs, { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { ParsedUrlQuery } from 'querystring';
+import { ParsedUrlQuery } from 'node:querystring';
 import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
-const getQueryParam = (
+const FORMAT: string = 'YYYY-MM-DD';
+
+const getQueryParameter = (
   query: ParsedUrlQuery,
   key: string,
   defaultValue: string
@@ -59,11 +61,11 @@ export const SocialHeatPage: NextPage = () => {
   const [today] = new Date().toISOString().split('T');
 
   const defaultAppState: AppState = {
-    topicId: Number.parseInt(getQueryParam(query, 'topicId', '0') ?? '0'),
-    input: getQueryParam(query, 'input', 'input') as 'input' | 'table',
-    fromDate: dayjs(getQueryParam(query, 'fromDate', today)),
-    toDate: dayjs(getQueryParam(query, 'toDate', today)),
-    pin: getQueryParam(query, 'pin', ''),
+    topicId: Number.parseInt(getQueryParameter(query, 'topicId', '0') ?? '0'),
+    input: getQueryParameter(query, 'input', 'input') as 'input' | 'table',
+    fromDate: dayjs(getQueryParameter(query, 'fromDate', today)),
+    toDate: dayjs(getQueryParameter(query, 'toDate', today)),
+    pin: getQueryParameter(query, 'pin', ''),
     loading: 0
   };
   logger.info('defaultAppState', defaultAppState);
@@ -85,7 +87,7 @@ export const SocialHeatPage: NextPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const setQueryParams = ({
+  const setQueryParameters = ({
     pin = '',
     loading = 0,
     input,
@@ -106,8 +108,8 @@ export const SocialHeatPage: NextPage = () => {
         pin,
         input,
         topicId,
-        fromDate: fromDate?.format('YYYY-MM-DD') ?? '',
-        toDate: toDate?.format('YYYY-MM-DD') ?? ''
+        fromDate: fromDate?.format(FORMAT) ?? '',
+        toDate: toDate?.format(FORMAT) ?? ''
       }
     });
   };
@@ -117,17 +119,17 @@ export const SocialHeatPage: NextPage = () => {
     newInput: 'input' | 'table'
   ) => {
     setAppState({ ...appState, input: newInput });
-    setQueryParams({ ...appState, input: newInput });
+    setQueryParameters({ ...appState, input: newInput });
   };
 
   const changeFromDate = (newFromDate: Dayjs) => {
     setAppState({ ...appState, fromDate: newFromDate });
-    setQueryParams({ ...appState, fromDate: newFromDate });
+    setQueryParameters({ ...appState, fromDate: newFromDate });
   };
 
   const changeToDate = (newToDate: Dayjs) => {
     setAppState({ ...appState, toDate: newToDate });
-    setQueryParams({ ...appState, toDate: newToDate });
+    setQueryParameters({ ...appState, toDate: newToDate });
   };
 
   const changeTopicId = (
@@ -136,7 +138,7 @@ export const SocialHeatPage: NextPage = () => {
     const newTopicId: number =
       Number.parseInt(event?.target.value || '0', 10) || 0;
     setAppState({ ...appState, topicId: newTopicId });
-    setQueryParams({ ...appState, topicId: newTopicId });
+    setQueryParameters({ ...appState, topicId: newTopicId });
   };
 
   const changeQueryString = (
@@ -174,8 +176,8 @@ export const SocialHeatPage: NextPage = () => {
         const result: Result = await queryResult(
           appState.topicId,
           {
-            fromDate: appState.fromDate?.format('YYYY-MM-DD') ?? '',
-            toDate: appState.toDate?.format('YYYY-MM-DD') ?? ''
+            fromDate: appState.fromDate?.format(FORMAT) ?? '',
+            toDate: appState.toDate?.format(FORMAT) ?? ''
           },
           query
         );
@@ -254,7 +256,10 @@ export const SocialHeatPage: NextPage = () => {
                     value={appState.pin}
                     onChange={(event) => {
                       setAppState({ ...appState, pin: event.target.value });
-                      setQueryParams({ ...appState, pin: event.target.value });
+                      setQueryParameters({
+                        ...appState,
+                        pin: event.target.value
+                      });
                     }}
                   />
                 </div>
