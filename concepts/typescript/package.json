@@ -31,6 +31,6 @@
     "frontend/react/server/*",
     "frontend/solid/*",
     "frontend/svelte/*",
-    "packages/libs/*"
+    "packages/*"
   ]
 }
