@@ -18,7 +18,7 @@ const main = async () => {
     console.log(__dirname);
     const swaggerFilePath = path.join(
       __dirname,
-      '../../docs/apis/swagger.json'
+      '../../docs/swagger/swagger.json'
     );
     console.log('swagger file path', swaggerFilePath);
     const swaggerString = readFileSync(swaggerFilePath, 'utf-8');

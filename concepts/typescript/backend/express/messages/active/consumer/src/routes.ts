@@ -3,18 +3,17 @@
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import {
   Controller,
-  fetchMiddlewares,
+  ValidationService,
   FieldErrors,
+  ValidateError,
+  TsoaRoute,
   HttpStatusCodeLiteral,
   TsoaResponse,
-  TsoaRoute,
-  ValidateError,
-  ValidationService,
+  fetchMiddlewares,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-import type { RequestHandler } from 'express';
-import * as express from 'express';
 import { HealthController } from './router/health/health.controller';
+import type { RequestHandler, Router } from 'express';
 
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
@@ -23,7 +22,7 @@ const validationService = new ValidationService(models);
 
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
-export function RegisterRoutes(app: express.Router) {
+export function RegisterRoutes(app: Router) {
   // ###########################################################################################################
   //  NOTE: If you do not see routes for all of your controllers in this file, then you might not have informed tsoa of where to look
   //      Please look into the "controllerPathGlobs" config option described in the readme: https://github.com/lukeautry/tsoa
@@ -32,6 +31,7 @@ export function RegisterRoutes(app: express.Router) {
     '/health',
     ...fetchMiddlewares<RequestHandler>(HealthController),
     ...fetchMiddlewares<RequestHandler>(HealthController.prototype.get),
+
     function HealthController_get(request: any, response: any, next: any) {
       const args = {};
 
@@ -105,6 +105,7 @@ export function RegisterRoutes(app: express.Router) {
       data.readable &&
       typeof data._read === 'function'
     ) {
+      response.status(statusCode || 200);
       data.pipe(response);
     } else if (data !== null && data !== undefined) {
       response.status(statusCode || 200).json(data);
@@ -136,6 +137,15 @@ export function RegisterRoutes(app: express.Router) {
           return validationService.ValidateParam(
             args[key],
             request.query[name],
+            name,
+            fieldErrors,
+            undefined,
+            { noImplicitAdditionalProperties: 'throw-on-extras' }
+          );
+        case 'queries':
+          return validationService.ValidateParam(
+            args[key],
+            request.query,
             name,
             fieldErrors,
             undefined,

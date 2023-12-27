@@ -1,17 +1,6 @@
 import amqp, { Channel, Connection, Message } from 'amqplib/callback_api';
 import configs from '../../environments';
 
-export const createChannel = (connection: Connection): Promise<Channel> => {
-  return new Promise((resolve, reject) => {
-    connection.createChannel((error, channel) => {
-      if (error) {
-        return reject(error);
-      }
-      return resolve(channel);
-    });
-  });
-};
-
 export class RabbitClient {
   private url = '';
   private connection: Connection | undefined;
@@ -21,12 +10,12 @@ export class RabbitClient {
     this.url = url;
   }
 
-  public async init(): Promise<void> {
-    this.connection = await this.connect();
+  public async connect(): Promise<void> {
+    this.connection = await this.amqpConnect();
     this.channel = await this.createChannel();
   }
 
-  private async connect(): Promise<Connection> {
+  private async amqpConnect(): Promise<Connection> {
     return new Promise((resolve, reject) => {
       amqp.connect(this.url, (error, connection) => {
         if (error) {

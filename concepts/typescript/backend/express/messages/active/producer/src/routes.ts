@@ -3,20 +3,25 @@
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import {
   Controller,
-  fetchMiddlewares,
+  ValidationService,
   FieldErrors,
+  ValidateError,
+  TsoaRoute,
   HttpStatusCodeLiteral,
   TsoaResponse,
-  TsoaRoute,
-  ValidateError,
-  ValidationService,
+  fetchMiddlewares,
 } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-import { HealthController } from './router/health/health.controller';
+import { ActiveController } from './modules/activemq/activemq.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-import type { RequestHandler } from 'express';
-import * as express from 'express';
-import { MessagesController } from './router/messages/messages.controller';
+import { HealthController } from './modules/health/health.controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { KafkaController } from './modules/kafka/kafka.controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { RabbitController } from './modules/rabbitmq/rabbitmq.controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { RedisController } from './modules/redis/redis.controller';
+import type { RequestHandler, Router } from 'express';
 
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
@@ -25,15 +30,50 @@ const validationService = new ValidationService(models);
 
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
-export function RegisterRoutes(app: express.Router) {
+export function RegisterRoutes(app: Router) {
   // ###########################################################################################################
   //  NOTE: If you do not see routes for all of your controllers in this file, then you might not have informed tsoa of where to look
   //      Please look into the "controllerPathGlobs" config option described in the readme: https://github.com/lukeautry/tsoa
   // ###########################################################################################################
+  app.post(
+    '/activemq/produce',
+    ...fetchMiddlewares<RequestHandler>(ActiveController),
+    ...fetchMiddlewares<RequestHandler>(ActiveController.prototype.produce),
+
+    function ActiveController_produce(request: any, response: any, next: any) {
+      const args = {
+        undefined: {
+          in: 'body',
+          required: true,
+          dataType: 'nestedObjectLiteral',
+          nestedProperties: { message: { dataType: 'string', required: true } },
+        },
+      };
+
+      // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+      let validatedArgs: any[] = [];
+      try {
+        validatedArgs = getValidatedArgs(args, request, response);
+
+        const controller = new ActiveController();
+
+        const promise = controller.produce.apply(
+          controller,
+          validatedArgs as any
+        );
+        promiseHandler(controller, promise, response, undefined, next);
+      } catch (err) {
+        return next(err);
+      }
+    }
+  );
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   app.get(
     '/health',
     ...fetchMiddlewares<RequestHandler>(HealthController),
     ...fetchMiddlewares<RequestHandler>(HealthController.prototype.get),
+
     function HealthController_get(request: any, response: any, next: any) {
       const args = {};
 
@@ -54,22 +94,17 @@ export function RegisterRoutes(app: express.Router) {
   );
   // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
   app.post(
-    '/messages/produce',
-    ...fetchMiddlewares<RequestHandler>(MessagesController),
-    ...fetchMiddlewares<RequestHandler>(MessagesController.prototype.produce),
-    function MessagesController_produce(
-      request: any,
-      response: any,
-      next: any
-    ) {
+    '/kafka/produce',
+    ...fetchMiddlewares<RequestHandler>(KafkaController),
+    ...fetchMiddlewares<RequestHandler>(KafkaController.prototype.produce),
+
+    function KafkaController_produce(request: any, response: any, next: any) {
       const args = {
         undefined: {
           in: 'body',
           required: true,
           dataType: 'nestedObjectLiteral',
-          nestedProperties: {
-            message: { dataType: 'string', required: true },
-          },
+          nestedProperties: { message: { dataType: 'string', required: true } },
         },
       };
 
@@ -79,7 +114,75 @@ export function RegisterRoutes(app: express.Router) {
       try {
         validatedArgs = getValidatedArgs(args, request, response);
 
-        const controller = new MessagesController();
+        const controller = new KafkaController();
+
+        const promise = controller.produce.apply(
+          controller,
+          validatedArgs as any
+        );
+        promiseHandler(controller, promise, response, undefined, next);
+      } catch (err) {
+        return next(err);
+      }
+    }
+  );
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  app.post(
+    '/rabbitmq/produce',
+    ...fetchMiddlewares<RequestHandler>(RabbitController),
+    ...fetchMiddlewares<RequestHandler>(RabbitController.prototype.produce),
+
+    function RabbitController_produce(request: any, response: any, next: any) {
+      const args = {
+        undefined: {
+          in: 'body',
+          required: true,
+          dataType: 'nestedObjectLiteral',
+          nestedProperties: { message: { dataType: 'string', required: true } },
+        },
+      };
+
+      // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+      let validatedArgs: any[] = [];
+      try {
+        validatedArgs = getValidatedArgs(args, request, response);
+
+        const controller = new RabbitController();
+
+        const promise = controller.produce.apply(
+          controller,
+          validatedArgs as any
+        );
+        promiseHandler(controller, promise, response, undefined, next);
+      } catch (err) {
+        return next(err);
+      }
+    }
+  );
+  // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+  app.post(
+    '/redis/produce',
+    ...fetchMiddlewares<RequestHandler>(RedisController),
+    ...fetchMiddlewares<RequestHandler>(RedisController.prototype.produce),
+
+    function RedisController_produce(request: any, response: any, next: any) {
+      const args = {
+        undefined: {
+          in: 'body',
+          required: true,
+          dataType: 'nestedObjectLiteral',
+          nestedProperties: { message: { dataType: 'string', required: true } },
+        },
+      };
+
+      // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+      let validatedArgs: any[] = [];
+      try {
+        validatedArgs = getValidatedArgs(args, request, response);
+
+        const controller = new RedisController();
 
         const promise = controller.produce.apply(
           controller,
@@ -146,6 +249,7 @@ export function RegisterRoutes(app: express.Router) {
       data.readable &&
       typeof data._read === 'function'
     ) {
+      response.status(statusCode || 200);
       data.pipe(response);
     } else if (data !== null && data !== undefined) {
       response.status(statusCode || 200).json(data);
@@ -177,6 +281,15 @@ export function RegisterRoutes(app: express.Router) {
           return validationService.ValidateParam(
             args[key],
             request.query[name],
+            name,
+            fieldErrors,
+            undefined,
+            { noImplicitAdditionalProperties: 'throw-on-extras' }
+          );
+        case 'queries':
+          return validationService.ValidateParam(
+            args[key],
+            request.query,
             name,
             fieldErrors,
             undefined,

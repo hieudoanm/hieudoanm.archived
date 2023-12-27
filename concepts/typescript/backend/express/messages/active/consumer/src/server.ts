@@ -1,13 +1,10 @@
-import dotenv from 'dotenv';
-const NODE_ENV = process.env.NODE_ENV || 'development';
-NODE_ENV === 'development' && dotenv.config();
-
 import http from 'http';
 import { HttpError } from 'http-errors';
 import app from './app';
-import log from './common/libs/log';
-import stomp from './common/libs/stomp';
-import { consumer } from './services/consumer.service';
+import { PORT } from './common/environments/environments';
+import { logger } from './common/libs/log';
+import { ActiveService } from './router/activemq/activemq.service';
+import { RedisService } from './router/redis/redis.service';
 
 const normalizePort = (val: string): string | number | boolean => {
   const portOrPipe = parseInt(val, 10);
@@ -26,23 +23,29 @@ const normalizePort = (val: string): string | number | boolean => {
 };
 
 // Get port from environment and store in Express.
-const port = normalizePort(process.env.PORT || '4001');
+const port = normalizePort(PORT);
 app.set('port', port);
 
 // Create HTTP server.
 const httpServer = http.createServer(app);
 
+const consume = async () => {
+  const activeService = new ActiveService();
+  await activeService.consume();
+  const redisService = new RedisService();
+  await redisService.consume();
+};
+
 const main = async () => {
   // ActiveMQ
-  await stomp.connect();
-  consumer(stomp);
+  await consume();
   // HTTP Server
   httpServer.listen(port);
   httpServer.on('listening', () => {
     const addr = httpServer.address();
     const bind =
       typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr?.port;
-    log.info(`🚀 APIs is listening on ${bind}`);
+    logger.info(`🚀 Consumer is listening on ${bind}`);
   });
   httpServer.on('error', (error: HttpError) => {
     if (error.syscall !== 'listen') {
@@ -50,26 +53,27 @@ const main = async () => {
     }
     const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
     if (error.code === 'EACCES') {
-      log.error(`${bind} requires elevated privileges`);
+      logger.error(`${bind} requires elevated privileges`);
     }
     if (error.code === 'EADDRINUSE') {
-      log.error(`${bind} is already in use`);
+      logger.error(`${bind} is already in use`);
     }
     process.exit(1);
   });
 };
 
-main().catch((error: Error) => log.error('Error', error));
+main().catch((error: Error) => logger.error(`main error=${error}`));
 
 process.on('unhandledRejection', (reason: string) => {
   // I just caught an unhandled promise rejection,
   // since we already have fallback handler for unhandled errors (see below),
   // let throw and let him handle that
+  logger.error(`unhandledRejection reason=${reason}`);
   throw reason;
 });
 
 process.on('uncaughtException', (error: Error) => {
   // I just received an error that was never handled, time to handle it and then decide whether a restart is needed
-  log.error('Error', error);
+  logger.error(`uncaughtException error=${error}`);
   process.exit(1);
 });
