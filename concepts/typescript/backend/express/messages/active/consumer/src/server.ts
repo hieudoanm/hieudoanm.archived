@@ -5,6 +5,7 @@ import { PORT } from './common/environments/environments';
 import { logger } from './common/libs/log';
 import { ActiveService } from './router/activemq/activemq.service';
 import { RedisService } from './router/redis/redis.service';
+import { RabbitService } from './router/rabbitmq/rabbitmq.service';
 
 const normalizePort = (val: string): string | number | boolean => {
   const portOrPipe = parseInt(val, 10);
@@ -32,6 +33,8 @@ const httpServer = http.createServer(app);
 const consume = async () => {
   const activeService = new ActiveService();
   await activeService.consume();
+  const rabbitService = new RabbitService();
+  await rabbitService.consume();
   const redisService = new RedisService();
   await redisService.consume();
 };

@@ -13,7 +13,7 @@
     "version": "0.0.1",
     "description": "ActiveMQ Consumer",
     "license": {
-      "name": "MIT"
+      "name": "GPL-3.0"
     },
     "contact": {
       "name": "hieudoanm ",

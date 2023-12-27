@@ -13,5 +13,8 @@ export const ACTIVE_MQ_PORT: number =
   parseInt(process.env.ACTIVE_MQ_PORT ?? '61613', 10) ?? 61613;
 export const ACTIVE_MQ_DESTINATION: string =
   process.env.ACTIVE_MQ_DESTINATION ?? '/queue/starter';
+// RabbitMQ
+export const RABBIT_URL = process.env.RABBIT_URL ?? '';
+export const RABBIT_QUEUE = process.env.RABBIT_QUEUE ?? 'rabbit-queue';
 // Redis
 export const REDIS_CHANNEL = process.env.REDIS_CHANNEL ?? 'redis-channel';
