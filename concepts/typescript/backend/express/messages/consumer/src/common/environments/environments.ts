@@ -19,7 +19,8 @@ export const KAFKA_PASSWORD: string = process.env.KAFKA_PASSWORD ?? '';
 export const KAFKA_BROKERS: string[] = process.env.KAFKA_BROKERS?.split(
   ','
 ) ?? ['kafka:9092'];
-export const KAFKA_CLIENT_ID: string = process.env.KAFKA_CLIENT_ID ?? '';
+export const KAFKA_CLIENT_ID: string =
+  process.env.KAFKA_CLIENT_ID ?? 'kafka-client-id';
 export const KAFKA_TOPIC: string = process.env.KAFKA_TOPIC ?? 'kafka-topic';
 // RabbitMQ
 export const RABBIT_URL = process.env.RABBIT_URL ?? '';

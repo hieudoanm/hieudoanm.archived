@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 
-class Http {
+export class HttpClient {
   private errorHandler(error: Error): string {
     if (error instanceof AxiosError) {
       return error.message || error.stack || 'AxiosError';
@@ -111,7 +111,3 @@ class Http {
     }
   }
 }
-
-const http = new Http();
-
-export default http;

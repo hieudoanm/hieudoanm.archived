@@ -18,10 +18,7 @@
     "word-wrap": "1.2.5"
   },
   "workspaces": [
-    "backend/express/messages/active/*",
-    "backend/express/messages/kafka/*",
-    "backend/express/messages/rabbit/*",
-    "backend/express/messages/redis/*",
+    "backend/express/messages/*",
     "backend/express/services/*",
     "backend/nest/messages/active/*",
     "backend/nest/messages/kafka/*",
