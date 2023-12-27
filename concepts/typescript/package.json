@@ -31,7 +31,6 @@
     "frontend/react/server/*",
     "frontend/solid/*",
     "frontend/svelte/*",
-    "packages/apis/*",
     "packages/libs/*"
   ]
 }
