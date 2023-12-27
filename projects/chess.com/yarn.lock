@@ -12373,10 +12373,10 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-chessboard@4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/react-chessboard/-/react-chessboard-4.3.2.tgz#bdec9383c564eeca92cc821b46f02fc48196a9d0"
-  integrity sha512-w6V6q2XsByrUypsAzVEUV+MfhCjeD6iaGbNWdy3D1xo/AcNl4fFgbNV549G6YFJv83OP1ys1chajNcO8Rw7LlQ==
+react-chessboard@4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/react-chessboard/-/react-chessboard-4.3.3.tgz#2a85b9f1336d5e04b66f18ad6d4dc77c1db4c31f"
+  integrity sha512-ndAmoGhw0KQBMhRy7PwLH3fVhllbNEi9lMqUDD2+8nLzYvZvYGBqoYuGgRoGnahAy5GKud2pFrjULVBQqqxrsw==
   dependencies:
     react-dnd "^16.0.1"
     react-dnd-html5-backend "^16.0.1"
