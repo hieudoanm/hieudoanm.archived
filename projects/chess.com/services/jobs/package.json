@@ -34,7 +34,7 @@
     "prisma-dbml-generator": "0.10.0",
     "prisma-docs-generator": "0.8.0",
     "prisma-json-schema-generator": "5.1.1",
-    "prisma-markdown": "1.0.7",
+    "prisma-markdown": "1.0.8",
     "rimraf": "5.0.5",
     "ts-node": "10.9.2",
     "typescript": "5.3.3"
