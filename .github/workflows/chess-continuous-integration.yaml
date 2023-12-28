@@ -19,8 +19,6 @@ jobs:
         services:
           - name: API
             working-directory: projects/chess.com/services/api
-          - name: Server
-            working-directory: projects/chess.com/services/server
           - name: Web
             working-directory: projects/chess.com/services/web
     name: Continuous Integration - ${{ matrix.services.name }}
