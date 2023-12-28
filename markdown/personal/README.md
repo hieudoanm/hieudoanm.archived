@@ -11,7 +11,6 @@
   - [Languages](#languages)
     - [Levels](#levels)
     - [Popular](#popular)
-  - [Music](#music)
 
 ## Neurobiology
 
@@ -44,25 +43,20 @@
 ### Programming
 
 - [chess programming](https://www.chessprogramming.org)
-- Engines
-  - [AlphaZero](https://deepmind.google/technologies/alphazero-and-muzero/)
-  - [Komodo](https://komodochess.com/)
-  - [Leela Chess Zero](https://lczero.org/)
-  - [Stockfish](https://stockfishchess.org/)
 
 ### Titles
 
-| FIDE Title                     |     | FIDE Rating | chess.com rating | lichess.org rating |
-| ------------------------------ | --- | ----------- | ---------------- | ------------------ |
-| Arena Candidate Master         | ACM | 1100        |                  |                    |
-| Arena FIDE Master              | AFM | 1400        |                  |                    |
-| Arena International Master     | AIM | 1700        |                  |                    |
-| Arena Grandmaster              | AGM | 200         |                  |                    |
-| Candidate Master (Dream)       | CM  | 2200        | Blitz - 2600     |                    |
-| FIDE Master                    | FM  | 2300        | Blitz - 2700     |                    |
-| International Master           | IM  | 2400        | Blitz - 2800     |                    |
-| Grandmaster                    | GM  | 2500        | Blitz - 2900     |                    |
-| Super Grandmaster (Unofficial) |     | ≥ 2700      | Blitz - 3100     |                    |
+| FIDE Title                 | Abbreviation | FIDE Rating | chess.com rating | lichess.org rating |
+| -------------------------- | ------------ | ----------- | ---------------- | ------------------ |
+| Arena Candidate Master     | ACM          | 1100        |                  |                    |
+| Arena FIDE Master          | AFM          | 1400        |                  |                    |
+| Arena International Master | AIM          | 1700        |                  |                    |
+| Arena Grandmaster          | AGM          | 2000        |                  |                    |
+| Candidate Master           | CM           | 2200        | Blitz - 2600     |                    |
+| FIDE Master                | FM           | 2300        | Blitz - 2700     |                    |
+| International Master       | IM           | 2400        | Blitz - 2800     |                    |
+| Grandmaster                | GM           | 2500        | Blitz - 2900     |                    |
+| Super Grandmaster          |              | 2700        | Blitz - 3100     |                    |
 
 ## Languages
 
@@ -88,8 +82,3 @@
 - Spanish (the most common language in the South America)
 - French (the most common language in Africa)
 - Arabic (the most common language in Middle East/Western Asia)
-
-## Music
-
-- Piano
-- Violin

@@ -45,7 +45,7 @@
 
 ## Techstack
 
-| Runtime          | Supersector  | Sector               | Subsector              | URL                                            | Developer              |
+| Runtime          | Supersector  | Sector               | Subsector              | Name                                           | Developer              |
 | ---------------- | ------------ | -------------------- | ---------------------- | ---------------------------------------------- | ---------------------- |
 |                  | OS           | Kernel               |                        | [Linux](https://www.kernel.org/)               |                        |
 |                  | Full-stack   | IDE                  |                        | Intellij IDEA                                  | [JetBrains][jetbrains] |
@@ -197,9 +197,13 @@
 |                  | Data Science | Tool                 |                        | [QuillBot](https://quillbot.com/)              |                        |
 |                  | Data Science | Tool                 |                        | [JenniAI](https://jenni.ai/)                   |                        |
 |                  | Data Science | Tool                 |                        | [Woebot Health](https://woebothealth.com/)     |                        |
-|                  | Game         |                      |                        | [Photon Engine](https://www.photonengine.com/) |                        |
-|                  | Game         |                      |                        | [Unity](https://unity.com/)                    |                        |
-|                  | Game         |                      |                        | [Unreal Engine](https://www.unrealengine.com/) |                        |
+|                  | Data Science | Chess Engine         |                        | [AlphaZero][alpha-zero]                        |                        |
+|                  | Data Science | Chess Engine         |                        | [Komodo][komodo]                               |                        |
+|                  | Data Science | Chess Engine         |                        | [Leela][leela]                                 |                        |
+|                  | Data Science | Chess Engine         |                        | [Stockfish][stockfish]                         |                        |
+|                  | Game         | Engine               |                        | [Photon Engine](https://www.photonengine.com/) |                        |
+|                  | Game         | Engine               |                        | [Unity](https://unity.com/)                    |                        |
+|                  | Game         | Engine               |                        | [Unreal Engine](https://www.unrealengine.com/) |                        |
 |                  | DevOps       | Server               |                        | [HTTPD][httpd]                                 | [Apache][apache]       |
 |                  | DevOps       | Server               |                        | [nginx](https://www.nginx.com/)                |                        |
 |                  | DevOps       | Containerization     |                        | [Docker](https://www.docker.com/)              |                        |
@@ -283,6 +287,14 @@
 |                  | Hardware     | Framework            |                        | [Qt](https://www.qt.io/)                       |                        |
 |                  | Hardware     | Electronics          |                        | [Arduino](https://www.arduino.cc/)             |                        |
 |                  | Hardware     | Electronics          |                        | [Raspberry PI][raspberry-pi]                   |                        |
+|                  | Design       | Tools                |                        | [Figma](https://www.figma.com)                 | [Adobe][adobe]         |
+|                  | Design       | Tools                |                        | [Photoshop][photoshop]                         | [Adobe][adobe]         |
+|                  | Design       | Tools                |                        | [Illustrator][illustrator]                     | [Adobe][adobe]         |
+|                  | Design       | Tools                |                        | [Coolors](https://coolors.co/)                 |                        |
+|                  | Design       | Resources            |                        | [Mobbin][mobbin]                               |                        |
+|                  | Design       | Inspiration          |                        | [Monument Valley][monumentvalleygame]          |                        |
+|                  | Music        | Instrument           |                        | Piano                                          |                        |
+|                  | Music        | Instrument           |                        | Violon                                         |                        |
 
 ## Companies
 
@@ -434,3 +446,21 @@
 <!-- Version Control -->
 
 [git]: https://git-scm.com/
+
+<!-- Adobe -->
+
+[adobe]: https://www.adobe.com
+[illustrator]: https://www.adobe.com/products/illustrator.html
+[photoshop]: https://www.adobe.com/products/photoshop.html
+
+<!-- Resources -->
+
+[mobbin]: https://mobbin.com
+[monumentvalleygame]: https://www.monumentvalleygame.com
+
+<!-- Chess -->
+
+[alpha-zero]: https://deepmind.google/technologies/alphazero-and-muzero/
+[komodo]: https://komodochess.com/
+[leela]: https://lczero.org/
+[stockfish]: https://stockfishchess.org/
