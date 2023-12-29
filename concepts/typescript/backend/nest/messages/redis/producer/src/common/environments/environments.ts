@@ -1,5 +1,5 @@
 const NODE_ENV: string = process.env.NODE_ENV || 'development';
-const PORT: string = process.env.PORT || '3000';
+const PORT: string = process.env.PORT || '4000';
 
 const REDIS_HORT: string = process.env.REDIS_HORT || 'localhost';
 const REDIS_PORT: string = process.env.REDIS_HORT || '6379';

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { MessagesModule } from './modules/messages/messages.module';
+import { RedisModule } from './modules/redis/redis.module';
 
 @Module({
-  imports: [MessagesModule],
+  imports: [RedisModule],
 })
 export class AppModule {}

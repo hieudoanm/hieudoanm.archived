@@ -9,10 +9,9 @@ import environments from './common/environments/environments';
 
 const swaggerify = (app: INestApplication) => {
   const config = new DocumentBuilder()
-    .setTitle('Nest.js - Redis - Template')
-    .setDescription('Nest.js - Redis - Template')
+    .setTitle('Nest.js - Messages - Template')
+    .setDescription('Nest.js - Messages - Template')
     .setVersion('1.0')
-    .addTag('Redis')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   const swaggerPath = './docs/swagger';
@@ -30,6 +29,7 @@ const bootstrap = async () => {
   if (environments.environment === 'development') {
     swaggerify(app);
   }
+  console.info(`Producer is listening on port ${environments.port}`);
   await app.listen(environments.port);
 };
 bootstrap();

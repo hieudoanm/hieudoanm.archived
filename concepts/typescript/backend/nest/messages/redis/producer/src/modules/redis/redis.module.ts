@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import environments from 'src/common/environments/environments';
-import { MessagesController } from './messages.controller';
-import { MessagesService } from './messages.service';
+import { RedisController } from './redis.controller';
+import { RedisService } from './redis.service';
 
 @Module({
   imports: [
@@ -19,7 +19,7 @@ import { MessagesService } from './messages.service';
       },
     ]),
   ],
-  controllers: [MessagesController],
-  providers: [MessagesService],
+  controllers: [RedisController],
+  providers: [RedisService],
 })
-export class MessagesModule {}
+export class RedisModule {}

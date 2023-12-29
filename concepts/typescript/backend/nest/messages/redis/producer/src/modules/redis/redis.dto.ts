@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class MessagesResponseDto {
+export class RedisResponseDto {
   @ApiProperty()
   status: string;
 }

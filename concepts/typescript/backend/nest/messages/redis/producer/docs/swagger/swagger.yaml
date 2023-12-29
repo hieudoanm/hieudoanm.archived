@@ -13,9 +13,9 @@ paths:
                 $ref: '#/components/schemas/HealthResponseDto'
       tags:
         - Health
-  /messages/publish:
+  /redis/produce:
     post:
-      operationId: MessagesController_publishEvent
+      operationId: RedisController_publishEvent
       parameters: []
       responses:
         default:
@@ -23,17 +23,15 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MessagesResponseDto'
+                $ref: '#/components/schemas/RedisResponseDto'
       tags:
-        - Messages
+        - Redis
 info:
-  title: Nest.js - Redis - Template
-  description: Nest.js - Redis - Template
+  title: Nest.js - Messages - Template
+  description: Nest.js - Messages - Template
   version: '1.0'
   contact: {}
-tags:
-  - name: Redis
-    description: ''
+tags: []
 servers: []
 components:
   schemas:
@@ -44,7 +42,7 @@ components:
           type: string
       required:
         - status
-    MessagesResponseDto:
+    RedisResponseDto:
       type: object
       properties:
         status:
