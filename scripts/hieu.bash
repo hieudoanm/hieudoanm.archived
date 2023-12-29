@@ -415,3 +415,7 @@ alias pylint='python3 -m pylint $(git ls-files "*.py")'
 
 alias cls='clear'
 alias rst='reset'
+
+# openssl
+
+alias hex='openssl rand -hex 32'
