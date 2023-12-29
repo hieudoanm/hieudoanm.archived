@@ -162,12 +162,6 @@ function install-terraform-ubuntu() {
 
 alias install-typescript="sudo npm install -g @types/node ts-node typescript"
 
-# Pip
-
-function pip-install() {
-  python3.7 -m pip install $1 --no-cache-dir -r requirements.txt
-}
-
 # Terraform
 
 alias tf="terraform"
@@ -353,3 +347,19 @@ alias gsetemaillocal="git config --local user.email "
 alias gsetnamelocal="git config --local user.name "
 alias gsetemailglobal="git config --global user.email "
 alias gsetnameglobal="git config --global user.name "
+
+# Python3
+
+# pylock
+function pylock() {
+  python3 -m pigar generate
+  python3 -m pipenv lock
+}
+
+# pyinstall
+function pyinstall() {
+  python3 -m pip install $1 --no-cache-dir -r requirements.txt
+  python3 -m pipenv install
+}
+
+alias pylint="python3 -m pylint $(git ls-files '*.py')"
