@@ -20,10 +20,7 @@
   "workspaces": [
     "backend/express/messages/*",
     "backend/express/services/*",
-    "backend/nest/messages/active/*",
-    "backend/nest/messages/kafka/*",
-    "backend/nest/messages/rabbit/*",
-    "backend/nest/messages/redis/*",
+    "backend/nest/messages/*",
     "backend/nest/services/*",
     "frontend/angular/*",
     "frontend/react/client/*",
