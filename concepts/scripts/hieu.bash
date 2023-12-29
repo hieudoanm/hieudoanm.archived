@@ -54,6 +54,7 @@ alias heroku-restart="heroku ps:restart web.1 --app "
 
 # Install
 
+# install-dotnet
 function install-dotnet() {
   wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
   sudo dpkg -i packages-microsoft-prod.deb
@@ -61,6 +62,7 @@ function install-dotnet() {
   sudo apt-get install dotnet-sdk-5.0 -y
 }
 
+# install-go
 function install-go() {
   go get -v golang.org/x/tools/gopls
   go get -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
@@ -75,6 +77,7 @@ function install-go() {
   go get -v golang.org/x/tools/gopls
 }
 
+# install-jenkins
 function install-jenkins() {
   # Add the key to your system
   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
@@ -86,6 +89,7 @@ function install-jenkins() {
   sudo apt-get install jenkins -y
 }
 
+# install-nginx
 function install-nginx() {
   if [$1 == "amazon"]; then
     install-terraform-amazon
@@ -94,6 +98,7 @@ function install-nginx() {
   fi
 }
 
+# install-nginx-amazon
 function install-nginx-amazon() {
   sudo yum install epel-release
   sudo yum install nginx
@@ -241,6 +246,7 @@ function gcommitall() {
 
 function gpullall() {
   folders="ls */"
+  echo $folders
   for folder in $folders
   do
     if [ -d "$folder" ]; then
@@ -411,3 +417,4 @@ alias pylint="python3 -m pylint $(git ls-files '*.py')"
 # window
 
 alias cls="clear"
+alias rst="reset"
