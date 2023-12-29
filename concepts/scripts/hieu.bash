@@ -210,6 +210,50 @@ function kill-port() {
 
 # Git
 
+function gcloneall() {
+  username="hieudoanm"
+  folders=(
+    "hieudoanm"
+    "hieudoanm.github.io"
+  )
+  for folder in "${folders[@]}"
+  do
+    echo "----- $folder -----";
+    git clone git@github.com:$username/$folder.git
+  done
+}
+
+function gcommitall() {
+  folders="ls */"
+  for folder in $folders
+  do
+    if [ -d "$folder" ]; then
+        echo "----- $folder -----";
+        cd $folder;
+        git add -A;
+        git status;
+        git commit -m "$1";
+        git push
+        cd ..;
+    fi
+  done
+}
+
+function gpullall() {
+  folders="ls */"
+  for folder in $folders
+  do
+    if [ -d "$folder" ]; then
+      echo "----- $folder -----";
+      cd $folder;
+      git checkout master;
+      git fetch origin master;
+      git pull origin master;
+      cd ..;
+    fi
+  done
+}
+
 function gcurrent() {
   echo `git branch | sed -n "/\* /s///p"`
 }
@@ -363,3 +407,7 @@ function pyinstall() {
 }
 
 alias pylint="python3 -m pylint $(git ls-files '*.py')"
+
+# window
+
+alias cls="clear"
