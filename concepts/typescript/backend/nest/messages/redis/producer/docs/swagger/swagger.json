@@ -20,6 +20,25 @@
         "tags": ["Health"]
       }
     },
+    "/rabbitmq/produce": {
+      "post": {
+        "operationId": "RabbitController_publishEvent",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProduceResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "tags": ["RabbitMQ"]
+      }
+    },
     "/redis/produce": {
       "post": {
         "operationId": "RedisController_publishEvent",
@@ -30,7 +49,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/RedisResponseDto"
+                  "$ref": "#/components/schemas/ProduceResponseDto"
                 }
               }
             }
@@ -59,7 +78,7 @@
         },
         "required": ["status"]
       },
-      "RedisResponseDto": {
+      "ProduceResponseDto": {
         "type": "object",
         "properties": {
           "status": {

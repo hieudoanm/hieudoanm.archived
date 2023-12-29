@@ -13,6 +13,19 @@ paths:
                 $ref: '#/components/schemas/HealthResponseDto'
       tags:
         - Health
+  /rabbitmq/produce:
+    post:
+      operationId: RabbitController_publishEvent
+      parameters: []
+      responses:
+        default:
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProduceResponseDto'
+      tags:
+        - RabbitMQ
   /redis/produce:
     post:
       operationId: RedisController_publishEvent
@@ -23,7 +36,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/RedisResponseDto'
+                $ref: '#/components/schemas/ProduceResponseDto'
       tags:
         - Redis
 info:
@@ -42,7 +55,7 @@ components:
           type: string
       required:
         - status
-    RedisResponseDto:
+    ProduceResponseDto:
       type: object
       properties:
         status:
