@@ -4,6 +4,15 @@ import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
 import environments from './common/environments/environments';
 
+const kafkaOptions = {
+  transport: Transport.KAFKA,
+  options: {
+    client: {
+      brokers: ['localhost:9092'],
+    },
+  },
+};
+
 const rabbitOptions = {
   transport: Transport.RMQ,
   options: {
@@ -25,12 +34,14 @@ const redisOptions = {
   },
 };
 
-enum NewTransport {
+enum CustomTransport {
+  KAFKA = 'kafka',
   RABBIT = 'rabbit',
   REDIS = 'redis',
 }
 
-const options: Record<NewTransport, unknown> = {
+const options: Record<CustomTransport, unknown> = {
+  kafka: kafkaOptions,
   rabbit: rabbitOptions,
   redis: redisOptions,
 };
@@ -39,7 +50,7 @@ const bootstrap = async () => {
   const app: INestMicroservice =
     await NestFactory.createMicroservice<MicroserviceOptions>(
       AppModule,
-      options[NewTransport.RABBIT]
+      options[CustomTransport.RABBIT]
     );
   await app.listen();
 };

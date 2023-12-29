@@ -20,6 +20,25 @@
         "tags": ["Health"]
       }
     },
+    "/kafka/produce": {
+      "post": {
+        "operationId": "KafkaController_publishEvent",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProduceResponseDto"
+                }
+              }
+            }
+          }
+        },
+        "tags": ["Kafka"]
+      }
+    },
     "/rabbitmq/produce": {
       "post": {
         "operationId": "RabbitController_publishEvent",
