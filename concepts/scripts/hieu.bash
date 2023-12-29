@@ -2,55 +2,55 @@
 
 function self-help() {
   # Docker
-  echo "dlist"
+  echo 'dlist'
   # Heroku
-  echo "heroku-logs"
-  echo "heroku-open"
-  echo "heroku-restart"
+  echo 'heroku-logs'
+  echo 'heroku-open'
+  echo 'heroku-restart'
   # Install
-  echo "install-dotnet"
-  echo "install-go"
-  echo "install-jenkins"
-  echo "install-nginx"
-  echo "install-sdkman"
-  echo "install-typescript"
+  echo 'install-dotnet'
+  echo 'install-go'
+  echo 'install-jenkins'
+  echo 'install-nginx'
+  echo 'install-sdkman'
+  echo 'install-typescript'
   # Pip
-  echo "pip-install"
+  echo 'pip-install'
   # Terraform
-  echo "tf"
-  echo "tf-init"
-  echo "tf-apply"
-  echo "tf-destroy"
-  echo "tf-fmt"
-  echo "tf-validate"
-  echo "tf-show"
-  echo "tf-state-list"
-  echo "tf-output"
+  echo 'tf'
+  echo 'tf-init'
+  echo 'tf-apply'
+  echo 'tf-destroy'
+  echo 'tf-fmt'
+  echo 'tf-validate'
+  echo 'tf-show'
+  echo 'tf-state-list'
+  echo 'tf-output'
   # Update
-  echo "update-apt"
-  echo "update-brew"
-  echo "update-yarn"
-  echo "update-yum"
+  echo 'update-apt'
+  echo 'update-brew'
+  echo 'update-yarn'
+  echo 'update-yum'
   # Utils
-  echo "go-build"
-  echo "kill-port"
+  echo 'go-build'
+  echo 'kill-port'
 }
 
-alias self-version="echo 'Minh - 0.0.1'"
+alias self-version='echo "HIEU - 0.0.1"'
 
 # Docker
 
-alias dlist="docker ps -a"
-alias dc="docker-compose"
-alias dkillall="docker kill $(docker ps -q)"
-alias drmall="docker rm $(docker ps -a -q)"
-alias drmiall="docker rmi $(docker images -q)"
+alias dlist='docker ps -a'
+alias dc='docker-compose'
+alias dkillall='docker kill $(docker ps -q)'
+alias drmall='docker rm $(docker ps -a -q)'
+alias drmiall='docker rmi $(docker images -q)'
 
 # Heroku
 
-alias heroku-logs="heroku logs --tail --app "
-alias heroku-open="heroku apps:open --app "
-alias heroku-restart="heroku ps:restart web.1 --app "
+alias heroku-logs='heroku logs --tail --app '
+alias heroku-open='heroku apps:open --app '
+alias heroku-restart='heroku ps:restart web.1 --app '
 
 # Install
 
@@ -82,7 +82,7 @@ function install-jenkins() {
   # Add the key to your system
   wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
   # Add a Jenkins apt repository entry
-  sudo sh -c "echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list"
+  sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
   # Update your local package index
   sudo apt-get update
   # Install Jenkins
@@ -91,7 +91,7 @@ function install-jenkins() {
 
 # install-nginx
 function install-nginx() {
-  if [$1 == "amazon"]; then
+  if [$1 == 'amazon']; then
     install-terraform-amazon
   else
     install-terraform-ubuntu
@@ -112,7 +112,7 @@ function install-nginx-ubuntu() {
 
 function install-sdkman() {
   ## Download install script
-  wget -O sdk.install.sh "https://get.sdkman.io"
+  wget -O sdk.install.sh 'https://get.sdkman.io'
   ## Run install script
   bash sdk.install.sh
   ## Set up PATH
@@ -120,9 +120,9 @@ function install-sdkman() {
 }
 
 function install-terraform() {
-  if [$1 == "amazon"]; then
+  if [$1 == 'amazon']; then
     install-terraform-amazon
-  elif [$1 == "macox"]; then
+  elif [$1 == 'macox']; then
     install-terraform-macox
   else
     install-terraform-ubuntu
@@ -158,26 +158,26 @@ function install-terraform-ubuntu() {
   # Add the HashiCorp GPG key.
   curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
   # Add the official HashiCorp Linux repository.
-  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+  sudo apt-add-repository 'deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main'
   # Update to add the repository, and install the Terraform CLI.
   sudo apt-get update && sudo apt-get install terraform
   # Verify the installation
   terraform -help
 }
 
-alias install-typescript="sudo npm install -g @types/node ts-node typescript"
+alias install-typescript='sudo npm install -g @types/node ts-node typescript'
 
 # Terraform
 
-alias tf="terraform"
-alias tf-init="terraform init "
-alias tf-apply="terraform apply "
-alias tf-destroy="terraform destroy "
-alias tf-fmt="terraform fmt "
-alias tf-validate="terraform validate "
-alias tf-show="terraform show "
-alias tf-state-list="terraform state list "
-alias tf-output="terraform output "
+alias tf='terraform'
+alias tf-init='terraform init '
+alias tf-apply='terraform apply '
+alias tf-destroy='terraform destroy '
+alias tf-fmt='terraform fmt '
+alias tf-validate='terraform validate '
+alias tf-show='terraform show '
+alias tf-state-list='terraform state list '
+alias tf-output='terraform output '
 
 # Update
 
@@ -229,15 +229,14 @@ function gcloneall() {
 }
 
 function gcommitall() {
-  folders="ls */"
-  for folder in $folders
+  for folder in $(ls -d */)
   do
     if [ -d "$folder" ]; then
         echo "----- $folder -----";
         cd $folder;
         git add -A;
         git status;
-        git commit -m "$1";
+        git commit -m '$1';
         git push
         cd ..;
     fi
@@ -245,9 +244,7 @@ function gcommitall() {
 }
 
 function gpullall() {
-  folders="ls */"
-  echo $folders
-  for folder in $folders
+  for folder in $(ls -d */)
   do
     if [ -d "$folder" ]; then
       echo "----- $folder -----";
@@ -261,13 +258,13 @@ function gpullall() {
 }
 
 function gcurrent() {
-  echo `git branch | sed -n "/\* /s///p"`
+  echo `git branch | sed -n '/\* /s///p'`
 }
 
 # gpushtag <tag-name>
 function gpushtag() {
   git checkout main
-  git tag -a $1 -m "v$1"
+  git tag -a $1 -m 'v$1'
   git push origin $1
 }
 
@@ -296,7 +293,7 @@ function gfetch() {
 # gpush <branch-name>
 # function gpush() {
 #   BRANCH=$(gcurrent)
-#   echo "Current git branch $BRANCH"
+#   echo 'Current git branch $BRANCH'
 #   git push origin $BRANCH
 # }
 
@@ -412,9 +409,9 @@ function pyinstall() {
   python3 -m pipenv install
 }
 
-alias pylint="python3 -m pylint $(git ls-files '*.py')"
+alias pylint='python3 -m pylint $(git ls-files "*.py")'
 
 # window
 
-alias cls="clear"
-alias rst="reset"
+alias cls='clear'
+alias rst='reset'
