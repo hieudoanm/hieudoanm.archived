@@ -93,11 +93,12 @@ const main = async () => {
   const succesfulShareLinks = new Map<string, string>();
   for (const chunkItem of chunk(Array.from(linksMap.entries()), 100)) {
     const data = chunkItem
-      .filter(([_, value]) => value === '')
+      // .filter(([_, value]) => value === '')
       .map(([link]) => link);
     for (let i = 0; i < data.length; i++) {
       const shareLink = data[i];
       if (shareLink.includes('share')) {
+        console.log(shareLink);
         const mainLink = await getMainLink(shareLink);
         if (mainLink.length > 0) {
           shareLinks.set(mainLink, shareLink);
@@ -108,7 +109,9 @@ const main = async () => {
     console.info(chunkItem.length);
     try {
       console.info('Loading');
-      const response = await axios.post<{ link: string; system_id: string }[]>(
+      const response = await axios.post<
+        { link: string; system_id: string; existed_in_topic: boolean }[]
+      >(
         url,
         {
           data,
@@ -120,15 +123,19 @@ const main = async () => {
       );
       console.info('Done');
       const { data: results = [] } = response;
-      const unsuccessful = results
-        .filter(({ system_id }) => system_id === '')
-        .map(({ link }) => link);
+      // const unsuccessful = results
+      //   .filter(({ system_id }) => system_id === '')
+      //   .map(({ link }) => link);
       console.info('Loading');
-      console.info('Start Add URLs');
-      await addUrls(unsuccessful);
-      console.info('Complete Add URLs');
+      // console.info('Start Add URLs');
+      // await addUrls(unsuccessful);
+      // console.info('Complete Add URLs');
       for (const result of results) {
-        const { link: resultLink = '', system_id = '' } = result;
+        const {
+          existed_in_topic,
+          link: resultLink = '',
+          system_id = '',
+        } = result;
         let csvLink: string = resultLink;
         let mainLink: string = '';
         if (shareLinks.has(resultLink)) {
@@ -141,20 +148,20 @@ const main = async () => {
             succesfulShareLinks.get(csvLink) ?? ''
           }`
         );
-        if (linksMap.has(csvLink)) {
+        if (linksMap.has(csvLink) && existed_in_topic) {
           linksMap.set(csvLink, system_id);
-          const list: Link[] = [];
-          linksMap.forEach((system_id, link) => {
-            list.push({
-              system_id,
-              link,
-              main_link: succesfulShareLinks.get(link) ?? '',
-            });
-          });
-          const csv = parser.parse(list);
-          writeFileSync(file, csv);
         }
       }
+      const list: Link[] = [];
+      linksMap.forEach((system_id, link) => {
+        list.push({
+          system_id,
+          link,
+          main_link: succesfulShareLinks.get(link) ?? '',
+        });
+      });
+      const csv = parser.parse(list);
+      writeFileSync(file, csv);
     } catch (error) {
       console.error(error);
     }
