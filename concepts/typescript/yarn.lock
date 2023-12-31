@@ -12924,10 +12924,10 @@ define-properties@^1.1.3, define-properties@^1.1.4, define-properties@^1.2.0:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-defu@^6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/defu/-/defu-6.1.2.tgz#1217cba167410a1765ba93893c6dbac9ed9d9e5c"
-  integrity sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ==
+defu@^6.1.3:
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/defu/-/defu-6.1.3.tgz#6d7f56bc61668e844f9f593ace66fd67ef1205fd"
+  integrity sha512-Vy2wmG3NTkmHNg/kzpuvHhkqeIx3ODWqasgCRbKtbXEN0G+HpEEv9BtJLp7ZG1CZloFaC41Ah3ZFbq7aqCqMeQ==
 
 del@^4.1.1:
   version "4.1.1"
@@ -25167,12 +25167,12 @@ socks@^2.6.2, socks@^2.7.1:
     ip "^2.0.0"
     smart-buffer "^4.2.0"
 
-solid-apexcharts@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/solid-apexcharts/-/solid-apexcharts-0.3.2.tgz#586057f3ddb3b06d3db147d0f9074b61f5912952"
-  integrity sha512-4U80dk2e/YEghD903aitBrO0l5WjUv/IhRI6Pp8mfJNT6JPkYG4HTMjBrI+XHRU8uJICJl9ZwLtkvFZnKd2Shw==
+solid-apexcharts@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/solid-apexcharts/-/solid-apexcharts-0.3.3.tgz#f0e6583289e9d28bce3204487ec61901bf518b9c"
+  integrity sha512-qh2VfDdtyhuPZQkM+REvdqe7yXqDAHSARnkU8IZl2uG7jj28Ak71w/cLT22DAH3QEzLWRVN+w9KnRTrLFKmM3Q==
   dependencies:
-    defu "^6.1.2"
+    defu "^6.1.3"
 
 solid-js@1.8.7:
   version "1.8.7"
