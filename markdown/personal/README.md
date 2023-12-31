@@ -21,22 +21,23 @@ mindmap
             Linear Regression
           Unsupervised
           Reinforcement
-        Natural Language Processing
-          Text Classification
-        Computer Vision
+        Artificial
+          Natural Language Processing
+            Text Classification
+          Computer Vision
     Chess
       chess.com
         Blitz - 2500
       FIDE
         CM - 2200
         FM - 2300
+        IM - 2400
+        GM - 2500
     Languages
       Germany
-        B1
-        I live there for 2 years
+        I live there for 2 years - B1
       Korean
-        TOPIK I - 2
-        The easiest pictographic writing to learn
+        The easiest pictographic writing to learn - TOPIK I - 2
       Spanish
         The most common language in the South America
       France
