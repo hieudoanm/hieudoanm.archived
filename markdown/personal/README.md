@@ -18,9 +18,12 @@ mindmap
           Mathematical Analysis
         Types
           Supervised
+            Linear Regression
           Unsupervised
           Reinforcement
         Natural Language Processing
+          Text Classification
+        Computer Vision
     Chess
       chess.com
         Blitz - 2500
