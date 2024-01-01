@@ -20,6 +20,7 @@
   "workspaces": [
     "backend/express/messages/*",
     "backend/express/services/*",
+    "backend/graphql",
     "backend/nest/messages/*",
     "backend/nest/services/*",
     "frontend/angular/*",
