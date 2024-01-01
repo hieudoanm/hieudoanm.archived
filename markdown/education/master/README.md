@@ -1,17 +1,18 @@
 # Master of Computational Neuroscience (TBD)
 
-| Country     | Group         | University                                    | Length  | Fee     |
-| ----------- | ------------- | --------------------------------------------- | ------- | ------- |
-| England     | Russell Group | [Imperial College London][icl]                | 1 year  | £40,900 |
-| England     | Russell Group | [University College London][ucl]              | 2 years | £34,400 |
-| England     | Russell Group | [University of Edinburgh][edinburgh]          | 1 year  | £35,300 |
-| England     | Russell Group | [University of Sheffield][sheffield]          | 1 year  | 32,350  |
-| England     | Russell Group | [University of Birmingham][birmingham]        | 1 year  |         |
-| England     | Russell Group | [University of Nottingham][nottingham]        | 1 year  | £28,600 |
-| England     | Russell Group | [Newcastle University][newcastle]             |         |         |
-| England     |               | [Goldsmiths, University of London][goldsmith] | 1 year  | £17,430 |
-| Netherlands |               | [University of Groningen][groningen]          | 2 years | €24,200 |
-| Netherlands |               | [Radboud University][radboud]                 |         | €18,296 |
+| Country     | Group         | University                                       | Length  | Fee     |
+| ----------- | ------------- | ------------------------------------------------ | ------- | ------- |
+| England     | Russell Group | [Imperial College London][icl]                   | 1 year  | £40,900 |
+| England     | Russell Group | [University College London][ucl]                 | 2 years | £34,400 |
+| England     | Russell Group | [University of Edinburgh][edinburgh]             | 1 year  | £35,300 |
+| England     | Russell Group | [University of Sheffield][sheffield]             | 1 year  | 32,350  |
+| England     | Russell Group | [University of Birmingham][birmingham]           | 1 year  |         |
+| England     | Russell Group | [University of Nottingham][nottingham]           | 1 year  | £28,600 |
+| England     | Russell Group | [Newcastle University][newcastle]                |         |         |
+| England     |               | [Goldsmiths, University of London][goldsmith]    | 1 year  | £17,430 |
+| Netherlands |               | [University of Groningen][groningen]             | 2 years | €24,200 |
+| Netherlands |               | [Radboud University][radboud]                    |         | €18,296 |
+| Germany     |               | [Technische Universität Berlin (TU Berlin)][tub] |         |         |
 
 [birmingham]: https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx
 [edinburgh]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489
@@ -23,3 +24,4 @@
 [radboud]: https://www.ru.nl/en/education/masters/cognitive-neuroscience-research
 [sheffield]: https://www.sheffield.ac.uk/postgraduate/taught/courses/2024/cognitive-and-computational-neuroscience-msc
 [ucl]: https://www.ucl.ac.uk/prospective-students/graduate/research-degrees/gatsby-computational-neuroscience-unit-mphil-phd
+[tub]: https://www.bccn-berlin.de/master-program.html
