@@ -13,6 +13,7 @@
 | Netherlands |               | [University of Groningen][groningen]             | 2 years | €24,200 |
 | Netherlands |               | [Radboud University][radboud]                    |         | €18,296 |
 | Germany     |               | [Technische Universität Berlin (TU Berlin)][tub] |         |         |
+| France      |               | [Université Paris-Saclay][saclay]                |         |         |
 
 [birmingham]: https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx
 [edinburgh]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489
@@ -25,3 +26,4 @@
 [sheffield]: https://www.sheffield.ac.uk/postgraduate/taught/courses/2024/cognitive-and-computational-neuroscience-msc
 [ucl]: https://www.ucl.ac.uk/prospective-students/graduate/research-degrees/gatsby-computational-neuroscience-unit-mphil-phd
 [tub]: https://www.bccn-berlin.de/master-program.html
+[saclay]: https://www.universite-paris-saclay.fr/en/education/master/life-sciences-and-health/m2-computational-neurosciences-and-neuroengineering
