@@ -1,6 +1,6 @@
 module bee-starter
 
-go 1.21.5
+go 1.21.6
 
 require (
 	github.com/beego/beego/v2 v2.1.4
