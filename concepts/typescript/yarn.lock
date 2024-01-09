@@ -7474,10 +7474,10 @@
   resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.29.3.tgz#374516ecbac71cc1bac628f796ebeef46b9e3579"
   integrity sha512-R2uirgjgyh3FPFh+rb840plF701N6GvM5w81/QeI61QwjXb4QzLkyI/uzXfC5UW8favpUn9KK9ILQeoTl6pX0A==
 
-"@solidjs/router@0.10.6":
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.10.6.tgz#1c2174f2d30767ad12ff4267a6d2df5deae24b1f"
-  integrity sha512-PiJO/wsAh0+0mmAIw/+gGgZa0xeMzKGrITWvBfNQ0wiAwNzOF/T0Bm10uhyaWdxPu9td0xK2LuMnC//4CXqnyA==
+"@solidjs/router@0.10.7":
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.10.7.tgz#6ba3edcc3c0f054f68fc50bd1898024c7eca0816"
+  integrity sha512-3sSy3nNy5qQ1TFNwJ4zpFS/M8kiSoSu9ucQwsfaLY5Yo14r5rVArtkkHA+1gtlFeG0K/Dc2iduLLs1u1QChnRQ==
 
 "@solidjs/testing-library@0.8.5":
   version "0.8.5"
