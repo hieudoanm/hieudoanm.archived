@@ -1,0 +1,170 @@
+/* Swiper */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.swiper {
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  padding-bottom: 64px !important;
+}
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/bullet.svg') !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/bullet-active.svg') !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: transparent;
+  width: 2rem !important;
+  height: 2rem !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '' !important;
+}
+.swiper-button-prev {
+  left: -64px;
+  background-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/arrow-left.svg');
+}
+.swiper-button-next {
+  right: -64px;
+  background-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/arrow-right.svg');
+}
+
+.swiper-button-next-mobile,
+.swiper-button-prev-mobile {
+  bottom: 0.35rem;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-button-prev-mobile {
+  left: -2rem;
+  background-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/arrow-left.svg');
+}
+.swiper-button-next-mobile {
+  right: -2rem;
+  background-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/swiper/arrow-right.svg');
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+}
+#swiper-1 .swiper-slide.swiper-slide-display-1,
+#swiper-5 .swiper-slide.swiper-slide-display-5 {
+  opacity: 1 !important;
+}
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+@font-face {
+  font-family: 'Karma';
+  src: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/fonts/karma/karma-suture.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Abel';
+  src: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/fonts/abel/Abel-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/fonts/anton/Anton-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer components {
+  .btn-blue,
+  .btn-red,
+  .btn-yellow {
+    border-style: solid !important;
+    border-width: 8px !important;
+  }
+  .btn-blue {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-blue.svg')
+      8 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-blue.svg')
+      8 stretch;
+  }
+  .btn-red {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-red.svg')
+      8 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-red.svg')
+      8 stretch;
+  }
+  .btn-yellow {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-yellow.svg')
+      8 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/buttons/btn-yellow.svg')
+      8 stretch;
+  }
+
+  .card-blue,
+  .card-field,
+  .card-green,
+  .card-yellow {
+    border-style: solid !important;
+    border-width: 6px !important;
+  }
+
+  .card-blue {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-blue.svg')
+      6 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-blue.svg')
+      6 stretch;
+  }
+
+  .card-green {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-green.svg')
+      6 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-green.svg')
+      6 stretch;
+  }
+
+  .card-field {
+    -o-border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-field.svg')
+      6 stretch;
+    border-image: url('https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/cards/bg-field.svg')
+      6 stretch;
+  }
+
+  .font-karma {
+    font-family: 'Karma', serif;
+  }
+
+  .font-ps2 {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .font-abel {
+    font-family: 'Abel', serif;
+  }
+
+  .font-anton {
+    font-family: 'Anton', serif;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@younetmedia.com/app",
+  "version": "0.0.1",
+  "description": "younetmedia.com - app",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test",
+    "dev": "yarn workspaces run dev"
+  },
+  "workspaces": [
+    "scripts",
+    "web"
+  ]
+}

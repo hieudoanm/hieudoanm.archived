@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StakeToPlayVideo render default 1`] = `
+<div>
+  <a
+    href="https://bit.ly/3O2YWHT"
+    rel="noreferrer"
+    target="_blank"
+  >
+    <div
+      class="card-field bg-contain p-8 rounded-2xl"
+      style="background-position-x: 25%; background-image: url(/how-to-play/en/images/stake-to-play/field.svg);"
+    >
+      <div
+        class="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9"
+      >
+        <div
+          class="col-span-2 md:col-span-3 lg:col-span-4"
+        >
+          <div
+            class="flex justify-center items-center w-full h-full"
+          >
+            <div
+              class="w-full h-full px-2 py-4 bg-[#5CAB40]"
+            >
+              <div
+                class="sc-eLqIir kyxguw w-full bg-cover"
+                image="/how-to-play/en/images/stake-to-play/player-card.svg"
+                style="padding-bottom: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-1"
+        >
+          <div
+            class="flex justify-center items-center w-full h-full"
+          >
+            <div>
+              <div
+                class="sc-eLqIir fAgyHu w-8 h-8 bg-cover"
+                image="/how-to-play/en/images/stake-to-play/play.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-2 md:col-span-3 lg:col-span-4"
+        >
+          <div
+            class="flex justify-start items-center w-full h-full"
+          >
+            <div
+              class="uppercase text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl text-white text-center"
+            >
+              <div>
+                How
+              </div>
+              <div>
+                TO
+              </div>
+              <div>
+                STAKE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;

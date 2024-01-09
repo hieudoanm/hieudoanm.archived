@@ -1,0 +1,48 @@
+{
+  "name": "@solid/client",
+  "version": "0.0.1",
+  "description": "Solid.js - Client",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "vitest || true",
+    "lint": "eslint . --fix --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "5.0.8",
+    "@solidjs/router": "0.10.7",
+    "@suid/icons-material": "0.6.11",
+    "@suid/material": "0.15.1",
+    "apexcharts": "3.45.1",
+    "solid-apexcharts": "0.3.3",
+    "solid-js": "1.8.9"
+  },
+  "devDependencies": {
+    "@solidjs/testing-library": "0.8.5",
+    "@suid/vite-plugin": "0.1.5",
+    "@typescript-eslint/eslint-plugin": "6.18.1",
+    "@typescript-eslint/parser": "6.18.1",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "eslint-plugin-solid": "0.13.1",
+    "jsdom": "23.2.0",
+    "kill-port": "2.0.1",
+    "postcss": "8.4.33",
+    "prettier": "3.1.1",
+    "sass": "1.69.7",
+    "tailwindcss": "3.4.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3",
+    "vite": "5.0.11",
+    "vite-plugin-solid": "2.8.0",
+    "vite-plugin-solid-svg": "0.8.0",
+    "vitest": "1.1.3"
+  }
+}

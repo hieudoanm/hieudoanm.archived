@@ -1,0 +1,19 @@
+{
+  "name": "hieudoanm",
+  "version": "0.0.1",
+  "description": "Hieu Doan",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write || true",
+    "prepare": "husky install || true"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "prettier": "3.1.1",
+    "prettier-plugin-tailwindcss": "0.5.11"
+  }
+}

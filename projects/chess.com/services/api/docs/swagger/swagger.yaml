@@ -1,0 +1,1556 @@
+components:
+  examples: {}
+  headers: {}
+  parameters: {}
+  requestBodies: {}
+  responses: {}
+  schemas:
+    {
+      PrincipalVariationSearch:
+        {
+          properties:
+            {
+              pawn: { type: number, format: double },
+              centipawn: { type: number, format: double },
+              nextMoves: { type: string },
+            },
+          required: [pawn, centipawn, nextMoves],
+          type: object,
+        },
+      FullCloudEvaluation:
+        {
+          properties:
+            {
+              principalVariationSearch:
+                {
+                  items:
+                    { $ref: '#/components/schemas/PrincipalVariationSearch' },
+                  type: array,
+                },
+              depth: { type: number, format: double },
+              knodes: { type: number, format: double },
+              fen: { type: string },
+            },
+          required: [principalVariationSearch, depth, knodes, fen],
+          type: object,
+        },
+      '%24Result.DefaultSelection_Prisma.%24OpeningPayload_':
+        {
+          properties:
+            {
+              updatedAt: { type: string, format: date-time },
+              createdAt: { type: string, format: date-time },
+              centipawn: { type: number, format: double },
+              fen: { type: string },
+              firstMove: { type: string },
+              pgn: { type: string },
+              name: { type: string },
+              eco: { type: string },
+            },
+          required:
+            [updatedAt, createdAt, centipawn, fen, firstMove, pgn, name, eco],
+          type: object,
+        },
+      Opening:
+        {
+          $ref: '#/components/schemas/%24Result.DefaultSelection_Prisma.%24OpeningPayload_',
+          description: 'Model Opening',
+        },
+      '%24Result.DefaultSelection_Prisma.%24PositionPayload_':
+        {
+          properties:
+            {
+              updatedAt: { type: string, format: date-time },
+              createdAt: { type: string, format: date-time },
+              nextMoves: { type: string },
+              pawn: { type: number, format: double },
+              centipawn: { type: number, format: double },
+              fen: { type: string },
+            },
+          required: [updatedAt, createdAt, nextMoves, pawn, centipawn, fen],
+          type: object,
+        },
+      Position:
+        {
+          $ref: '#/components/schemas/%24Result.DefaultSelection_Prisma.%24PositionPayload_',
+          description: 'Model Position',
+        },
+      '%24Result.DefaultSelection_Prisma.%24GamePayload_':
+        {
+          properties:
+            {
+              updatedAt: { type: string, format: date-time },
+              createdAt: { type: string, format: date-time },
+              fen: { type: string },
+              blackRating: { type: number, format: double },
+              whiteRating: { type: number, format: double },
+              blackResult: { type: string },
+              whiteResult: { type: string },
+              blackAccuracy: { type: number, format: double },
+              whiteAccuracy: { type: number, format: double },
+              blackUsername: { type: string },
+              whiteUsername: { type: string },
+              blackId: { type: string },
+              whiteId: { type: string },
+              rules: { type: string },
+              initialSetup: { type: string },
+              tcn: { type: string },
+              rated: { type: boolean },
+              endTime: { type: string, format: date-time },
+              timeClass: { type: string },
+              timeControl: { type: string },
+              pgn: { type: string },
+              url: { type: string },
+              id: { type: string },
+            },
+          required:
+            [
+              updatedAt,
+              createdAt,
+              fen,
+              blackRating,
+              whiteRating,
+              blackResult,
+              whiteResult,
+              blackAccuracy,
+              whiteAccuracy,
+              blackUsername,
+              whiteUsername,
+              blackId,
+              whiteId,
+              rules,
+              initialSetup,
+              tcn,
+              rated,
+              endTime,
+              timeClass,
+              timeControl,
+              pgn,
+              url,
+              id,
+            ],
+          type: object,
+        },
+      Game:
+        {
+          $ref: '#/components/schemas/%24Result.DefaultSelection_Prisma.%24GamePayload_',
+          description: 'Model Game',
+        },
+      Piece: {},
+      Side: {},
+      '%24Result.DefaultSelection_Prisma.%24MovePayload_':
+        {
+          properties:
+            {
+              updatedAt: { type: string, format: date-time },
+              createdAt: { type: string, format: date-time },
+              checkmate: { type: boolean },
+              check: { type: boolean },
+              promoteTo: { $ref: '#/components/schemas/Piece' },
+              promote: { type: boolean },
+              castling: { type: boolean },
+              captured: { type: boolean },
+              side: { $ref: '#/components/schemas/Side' },
+              piece: { $ref: '#/components/schemas/Piece' },
+              annotation: { type: string },
+              number: { type: number, format: double },
+              fen: { type: string },
+              gameId: { type: string },
+            },
+          required:
+            [
+              updatedAt,
+              createdAt,
+              checkmate,
+              check,
+              promoteTo,
+              promote,
+              castling,
+              captured,
+              side,
+              piece,
+              annotation,
+              number,
+              fen,
+              gameId,
+            ],
+          type: object,
+        },
+      Move:
+        {
+          $ref: '#/components/schemas/%24Result.DefaultSelection_Prisma.%24MovePayload_',
+          description: 'Model Move',
+        },
+      GamesByPeriod:
+        {
+          properties:
+            {
+              period: { type: number, format: double },
+              games: { type: number, format: double },
+            },
+          required: [period, games],
+          type: object,
+        },
+      GamesByTimeOfDay:
+        {
+          properties:
+            {
+              timeOfDay: { type: string },
+              games: { type: number, format: double },
+            },
+          required: [timeOfDay, games],
+          type: object,
+        },
+      GamesByDayOfWeek:
+        {
+          properties:
+            {
+              dayOfWeek: { type: string },
+              games: { type: number, format: double },
+            },
+          required: [dayOfWeek, games],
+          type: object,
+        },
+      Games:
+        {
+          properties:
+            {
+              daysOfWeek:
+                {
+                  items: { $ref: '#/components/schemas/GamesByDayOfWeek' },
+                  type: array,
+                },
+              timeOfDays:
+                {
+                  items: { $ref: '#/components/schemas/GamesByTimeOfDay' },
+                  type: array,
+                },
+              periods:
+                {
+                  items: { $ref: '#/components/schemas/GamesByPeriod' },
+                  type: array,
+                },
+              loss: { type: number, format: double },
+              draw: { type: number, format: double },
+              win: { type: number, format: double },
+              total: { type: number, format: double },
+            },
+          required: [daysOfWeek, timeOfDays, periods, loss, draw, win, total],
+          type: object,
+        },
+      AccuracyByPeriod:
+        {
+          properties:
+            {
+              period: { type: number, format: double },
+              average: { type: number, format: double },
+            },
+          required: [period, average],
+          type: object,
+        },
+      AccuracyByTimeOfDay:
+        {
+          properties:
+            {
+              timeOfDay: { type: string },
+              average: { type: number, format: double },
+            },
+          required: [timeOfDay, average],
+          type: object,
+        },
+      AccuracyByDayOfWeek:
+        {
+          properties:
+            {
+              dayOfWeek: { type: string },
+              average: { type: number, format: double },
+            },
+          required: [dayOfWeek, average],
+          type: object,
+        },
+      Accuracy:
+        {
+          properties:
+            {
+              daysOfWeek:
+                {
+                  items: { $ref: '#/components/schemas/AccuracyByDayOfWeek' },
+                  type: array,
+                },
+              timeOfDays:
+                {
+                  items: { $ref: '#/components/schemas/AccuracyByTimeOfDay' },
+                  type: array,
+                },
+              periods:
+                {
+                  items: { $ref: '#/components/schemas/AccuracyByPeriod' },
+                  type: array,
+                },
+              loss: { type: number, format: double },
+              draw: { type: number, format: double },
+              win: { type: number, format: double },
+              average: { type: number, format: double },
+            },
+          required: [daysOfWeek, timeOfDays, periods, loss, draw, win, average],
+          type: object,
+        },
+      Result:
+        {
+          properties:
+            {
+              count: { type: number, format: double },
+              result: { type: string },
+            },
+          required: [count, result],
+          type: object,
+        },
+      ResultsByTimeOfDay:
+        {
+          properties:
+            {
+              timeOfDay: { type: string },
+              loss: { type: number, format: double },
+              draw: { type: number, format: double },
+              win: { type: number, format: double },
+            },
+          required: [timeOfDay, loss, draw, win],
+          type: object,
+        },
+      ResultsByDayOfWeek:
+        {
+          properties:
+            {
+              dayOfWeek: { type: string },
+              loss: { type: number, format: double },
+              draw: { type: number, format: double },
+              win: { type: number, format: double },
+            },
+          required: [dayOfWeek, loss, draw, win],
+          type: object,
+        },
+      Results:
+        {
+          properties:
+            {
+              daysOfWeek:
+                {
+                  items: { $ref: '#/components/schemas/ResultsByDayOfWeek' },
+                  type: array,
+                },
+              timeOfDays:
+                {
+                  items: { $ref: '#/components/schemas/ResultsByTimeOfDay' },
+                  type: array,
+                },
+              loss:
+                { items: { $ref: '#/components/schemas/Result' }, type: array },
+              draw:
+                { items: { $ref: '#/components/schemas/Result' }, type: array },
+              win:
+                { items: { $ref: '#/components/schemas/Result' }, type: array },
+            },
+          required: [daysOfWeek, timeOfDays, loss, draw, win],
+          type: object,
+        },
+      Opponent:
+        {
+          properties:
+            {
+              loss: { type: number, format: double },
+              draw: { type: number, format: double },
+              win: { type: number, format: double },
+              games: { type: number, format: double },
+              opponent: { type: string },
+            },
+          required: [loss, draw, win, games, opponent],
+          type: object,
+        },
+      Insights:
+        {
+          properties:
+            {
+              opponents:
+                {
+                  items: { $ref: '#/components/schemas/Opponent' },
+                  type: array,
+                },
+              results: { $ref: '#/components/schemas/Results' },
+              accuracy: { $ref: '#/components/schemas/Accuracy' },
+              games: { $ref: '#/components/schemas/Games' },
+              username: { type: string },
+            },
+          required: [opponents, results, accuracy, games, username],
+          type: object,
+        },
+      Pick_Insights.username-or-games_:
+        {
+          properties:
+            {
+              username: { type: string },
+              games: { $ref: '#/components/schemas/Games' },
+            },
+          required: [username, games],
+          type: object,
+          description: 'From T, pick a set of properties whose keys are in the union K',
+        },
+      Pick_Insights.username-or-accuracy_:
+        {
+          properties:
+            {
+              username: { type: string },
+              accuracy: { $ref: '#/components/schemas/Accuracy' },
+            },
+          required: [username, accuracy],
+          type: object,
+          description: 'From T, pick a set of properties whose keys are in the union K',
+        },
+      Pick_Insights.username-or-results_:
+        {
+          properties:
+            {
+              username: { type: string },
+              results: { $ref: '#/components/schemas/Results' },
+            },
+          required: [username, results],
+          type: object,
+          description: 'From T, pick a set of properties whose keys are in the union K',
+        },
+      Pick_Insights.username-or-opponents_:
+        {
+          properties:
+            {
+              username: { type: string },
+              opponents:
+                {
+                  items: { $ref: '#/components/schemas/Opponent' },
+                  type: array,
+                },
+            },
+          required: [username, opponents],
+          type: object,
+          description: 'From T, pick a set of properties whose keys are in the union K',
+        },
+      Status: {},
+      Title: {},
+      League: {},
+      '%24Result.DefaultSelection_Prisma.%24PlayerPayload_':
+        {
+          properties:
+            {
+              updatedAt: { type: string, format: date-time },
+              createdAt: { type: string, format: date-time },
+              archives: { items: { type: string }, type: array },
+              statsBulletRecordLoss: { type: number, format: double },
+              statsBulletRecordDraw: { type: number, format: double },
+              statsBulletRecordWin: { type: number, format: double },
+              statsBulletRatingDeviation: { type: number, format: double },
+              statsBulletRatingBest: { type: number, format: double },
+              statsBulletRatingLast: { type: number, format: double },
+              statsBlitzRecordLoss: { type: number, format: double },
+              statsBlitzRecordDraw: { type: number, format: double },
+              statsBlitzRecordWin: { type: number, format: double },
+              statsBlitzRatingDeviation: { type: number, format: double },
+              statsBlitzRatingBest: { type: number, format: double },
+              statsBlitzRatingLast: { type: number, format: double },
+              statsRapidRecordLoss: { type: number, format: double },
+              statsRapidRecordDraw: { type: number, format: double },
+              statsRapidRecordWin: { type: number, format: double },
+              statsRapidRatingDeviation: { type: number, format: double },
+              statsRapidRatingLast: { type: number, format: double },
+              statsRapidRatingBest: { type: number, format: double },
+              statsDailyRecordLoss: { type: number, format: double },
+              statsDailyRecordDraw: { type: number, format: double },
+              statsDailyRecordWin: { type: number, format: double },
+              statsDailyRatingDeviation: { type: number, format: double },
+              statsDailyRatingLast: { type: number, format: double },
+              statsDailyRatingBest: { type: number, format: double },
+              league: { $ref: '#/components/schemas/League' },
+              title: { $ref: '#/components/schemas/Title' },
+              status: { $ref: '#/components/schemas/Status' },
+              joined: { type: string, format: date-time },
+              lastOnline: { type: string, format: date-time },
+              verified: { type: boolean },
+              isStreamer: { type: boolean },
+              twitchUrl: { type: string },
+              countryCode: { type: string },
+              country: { type: string },
+              location: { type: string },
+              avatar: { type: string },
+              followers: { type: number, format: double },
+              name: { type: string },
+              username: { type: string },
+              id: { type: number, format: double },
+            },
+          required:
+            [
+              updatedAt,
+              createdAt,
+              archives,
+              statsBulletRecordLoss,
+              statsBulletRecordDraw,
+              statsBulletRecordWin,
+              statsBulletRatingDeviation,
+              statsBulletRatingBest,
+              statsBulletRatingLast,
+              statsBlitzRecordLoss,
+              statsBlitzRecordDraw,
+              statsBlitzRecordWin,
+              statsBlitzRatingDeviation,
+              statsBlitzRatingBest,
+              statsBlitzRatingLast,
+              statsRapidRecordLoss,
+              statsRapidRecordDraw,
+              statsRapidRecordWin,
+              statsRapidRatingDeviation,
+              statsRapidRatingLast,
+              statsRapidRatingBest,
+              statsDailyRecordLoss,
+              statsDailyRecordDraw,
+              statsDailyRecordWin,
+              statsDailyRatingDeviation,
+              statsDailyRatingLast,
+              statsDailyRatingBest,
+              league,
+              title,
+              status,
+              joined,
+              lastOnline,
+              verified,
+              isStreamer,
+              twitchUrl,
+              countryCode,
+              country,
+              location,
+              avatar,
+              followers,
+              name,
+              username,
+              id,
+            ],
+          type: object,
+        },
+      Player:
+        {
+          $ref: '#/components/schemas/%24Result.DefaultSelection_Prisma.%24PlayerPayload_',
+          description: 'Model Player',
+        },
+      StreamersResponse:
+        {
+          properties:
+            {
+              countries:
+                {
+                  items:
+                    {
+                      properties:
+                        {
+                          country: { type: string },
+                          countryCode: { type: string },
+                        },
+                      required: [country, countryCode],
+                      type: object,
+                    },
+                  type: array,
+                },
+              players:
+                { items: { $ref: '#/components/schemas/Player' }, type: array },
+              total: { type: number, format: double },
+            },
+          required: [countries, players, total],
+          type: object,
+        },
+      CountryCount:
+        {
+          properties:
+            {
+              total: { type: string },
+              country: { type: string },
+              countryCode: { type: string },
+            },
+          required: [total, country, countryCode],
+          type: object,
+        },
+      CountriesResponse:
+        {
+          properties:
+            {
+              titles:
+                {
+                  items:
+                    {
+                      properties:
+                        {
+                          total: { type: number, format: double },
+                          title: { type: string },
+                        },
+                      required: [total, title],
+                      type: object,
+                    },
+                  type: array,
+                },
+              players:
+                { items: { $ref: '#/components/schemas/Player' }, type: array },
+              total: { type: number, format: double },
+              maxBulletRating: { type: number, format: double },
+              maxBlitzRating: { type: number, format: double },
+              maxRapidRating: { type: number, format: double },
+              averageBulletRating: { type: number, format: double },
+              averageBlitzRating: { type: number, format: double },
+              averageRapidRating: { type: number, format: double },
+            },
+          required:
+            [
+              titles,
+              players,
+              total,
+              maxBulletRating,
+              maxBlitzRating,
+              maxRapidRating,
+              averageBulletRating,
+              averageBlitzRating,
+              averageRapidRating,
+            ],
+          type: object,
+        },
+      TitledStats:
+        {
+          properties:
+            {
+              players:
+                { items: { $ref: '#/components/schemas/Player' }, type: array },
+              total: { type: number, format: double },
+              maxBulletRating: { type: number, format: double },
+              averageBulletRating: { type: number, format: double },
+              maxBlitzRating: { type: number, format: double },
+              averageBlitzRating: { type: number, format: double },
+              maxRapidRating: { type: number, format: double },
+              averageRapidRating: { type: number, format: double },
+            },
+          required:
+            [
+              players,
+              total,
+              maxBulletRating,
+              averageBulletRating,
+              maxBlitzRating,
+              averageBlitzRating,
+              maxRapidRating,
+              averageRapidRating,
+            ],
+          type: object,
+        },
+      ChessTitle:
+        { type: string, enum: [GM, WGM, IM, WIM, FM, WFM, CM, WCM, NM, WNM] },
+      TimeRange: { type: string, enum: [WEEK, MONTH, QUARTER, YEAR] },
+    }
+  securitySchemes: {}
+info:
+  title: '@chess.com/api'
+  version: 0.0.1
+  description: 'chess.com - API'
+  license: { name: GPL-3.0 }
+  contact: { name: 'hieudoanm ', email: hieumdoan@gmail.com }
+openapi: 3.0.0
+paths:
+  /chess/analyse:
+    {
+      post:
+        {
+          operationId: Analyse,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              $ref: '#/components/schemas/FullCloudEvaluation',
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Analyse', 'external - lichess.org'],
+          security: [],
+          parameters: [],
+          requestBody:
+            {
+              required: true,
+              content:
+                {
+                  application/json:
+                    {
+                      schema:
+                        {
+                          properties: { fen: { type: string } },
+                          required: [fen],
+                          type: object,
+                        },
+                    },
+                },
+            },
+        },
+    }
+  /chess/openings:
+    {
+      get:
+        {
+          operationId: GetOpenings,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties:
+                                {
+                                  openings:
+                                    {
+                                      items:
+                                        {
+                                          $ref: '#/components/schemas/Opening',
+                                        },
+                                      type: array,
+                                    },
+                                  total: { type: number, format: double },
+                                },
+                              required: [openings, total],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Openings', 'external - lichess.org'],
+          security: [],
+          parameters:
+            [
+              {
+                in: query,
+                name: eco,
+                required: false,
+                schema: { default: '', type: string },
+              },
+              {
+                in: query,
+                name: name,
+                required: false,
+                schema: { default: '', type: string },
+              },
+              {
+                in: query,
+                name: firstMove,
+                required: false,
+                schema: { default: '', type: string },
+              },
+            ],
+        },
+    }
+  /chess/openings/ecos:
+    {
+      get:
+        {
+          operationId: GetECOs,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties:
+                                {
+                                  ecos:
+                                    { items: { type: string }, type: array },
+                                  total: { type: number, format: double },
+                                },
+                              required: [ecos, total],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Openings', 'external - lichess.org'],
+          security: [],
+          parameters: [],
+        },
+    }
+  /chess/position:
+    {
+      get:
+        {
+          operationId: GetPosition,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Position' } },
+                    },
+                },
+            },
+          tags: ['API - Position', 'external - lichess.org'],
+          security: [],
+          parameters:
+            [
+              {
+                in: query,
+                name: fen,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+      post:
+        {
+          operationId: SyncPosition,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Position' } },
+                    },
+                },
+            },
+          tags: ['API - Position', 'external - lichess.org'],
+          security: [],
+          parameters: [],
+          requestBody:
+            {
+              required: true,
+              content:
+                {
+                  application/json:
+                    {
+                      schema:
+                        {
+                          properties: { fen: { type: string } },
+                          required: [fen],
+                          type: object,
+                        },
+                    },
+                },
+            },
+        },
+    }
+  '/chess/player/{username}/games':
+    {
+      get:
+        {
+          operationId: GetGames,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties:
+                                {
+                                  games:
+                                    {
+                                      items:
+                                        { $ref: '#/components/schemas/Game' },
+                                      type: array,
+                                    },
+                                  total: { type: number, format: double },
+                                },
+                              required: [games, total],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Games', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: query,
+                name: month,
+                required: false,
+                schema: { format: double, type: number },
+              },
+              {
+                in: query,
+                name: year,
+                required: false,
+                schema: { format: double, type: number },
+              },
+            ],
+        },
+      post:
+        {
+          operationId: SyncGames,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties:
+                                {
+                                  existed: { type: number, format: double },
+                                  synced: { type: number, format: double },
+                                  total: { type: number, format: double },
+                                },
+                              required: [existed, synced, total],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Games', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+          requestBody:
+            {
+              required: true,
+              content:
+                {
+                  application/json:
+                    {
+                      schema:
+                        {
+                          properties:
+                            {
+                              year: { type: number, format: double },
+                              month: { type: number, format: double },
+                            },
+                          required: [year, month],
+                          type: object,
+                        },
+                    },
+                },
+            },
+        },
+    }
+  '/chess/player/{username}/games/{gameId}':
+    {
+      get:
+        {
+          operationId: GetGame,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Game' } },
+                    },
+                },
+            },
+          tags: ['API - Games', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: path,
+                name: gameId,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/games/{gameId}/pgn':
+    {
+      get:
+        {
+          operationId: GetGamePGN,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content: { application/json: { schema: { type: string } } },
+                },
+            },
+          tags: ['API - Games', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: path,
+                name: gameId,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/games/{gameId}/moves':
+    {
+      get:
+        {
+          operationId: GetGameMoves,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              items: { $ref: '#/components/schemas/Move' },
+                              type: array,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Moves', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: path,
+                name: gameId,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+      post:
+        {
+          operationId: SyncGameMoves,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties:
+                                { total: { type: number, format: double } },
+                              required: [total],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Moves', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: path,
+                name: gameId,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/insights':
+    {
+      get:
+        {
+          operationId: GetInsights,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Insights' } },
+                    },
+                },
+            },
+          tags: ['API - Insights', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/insights/games':
+    {
+      get:
+        {
+          operationId: GetGamesInsights,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              $ref: '#/components/schemas/Pick_Insights.username-or-games_',
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Insights', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/insights/accuracy':
+    {
+      get:
+        {
+          operationId: GetAccuracyInsights,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              $ref: '#/components/schemas/Pick_Insights.username-or-accuracy_',
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Insights', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/insights/results':
+    {
+      get:
+        {
+          operationId: GetResultsInsights,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              $ref: '#/components/schemas/Pick_Insights.username-or-results_',
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Insights', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}/insights/opponents':
+    {
+      get:
+        {
+          operationId: GetResultsOpponents,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              allOf:
+                                [
+                                  {
+                                    $ref: '#/components/schemas/Pick_Insights.username-or-opponents_',
+                                  },
+                                  {
+                                    properties:
+                                      {
+                                        total: { type: number, format: double },
+                                      },
+                                    required: [total],
+                                    type: object,
+                                  },
+                                ],
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Insights', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  '/chess/player/{username}':
+    {
+      get:
+        {
+          operationId: GetPlayer,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Player' } },
+                    },
+                },
+            },
+          tags: ['API - Player', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+      post:
+        {
+          operationId: SyncPlayer,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        { schema: { $ref: '#/components/schemas/Player' } },
+                    },
+                },
+            },
+          tags: ['API - Player', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: username,
+                required: true,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  /chess/streamers:
+    {
+      get:
+        {
+          operationId: GetStreamers,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            { $ref: '#/components/schemas/StreamersResponse' },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Streamers', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: query,
+                name: title,
+                required: false,
+                schema: { $ref: '#/components/schemas/Title' },
+              },
+              {
+                in: query,
+                name: country,
+                required: false,
+                schema: { type: string },
+              },
+            ],
+        },
+    }
+  /chess/countries:
+    {
+      get:
+        {
+          operationId: GetCountries,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              items:
+                                { $ref: '#/components/schemas/CountryCount' },
+                              type: array,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Countries', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: query,
+                name: cache,
+                required: false,
+                schema: { default: true, type: boolean },
+              },
+            ],
+        },
+    }
+  '/chess/countries/{code}':
+    {
+      get:
+        {
+          operationId: GetTitledPlayersByCountry,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            { $ref: '#/components/schemas/CountriesResponse' },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Countries', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: code,
+                required: true,
+                schema: { type: string },
+              },
+              {
+                in: query,
+                name: cache,
+                required: false,
+                schema: { default: true, type: boolean },
+              },
+            ],
+        },
+    }
+  '/chess/titled/{title}':
+    {
+      get:
+        {
+          operationId: GetTitledStats,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema: { $ref: '#/components/schemas/TitledStats' },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Titled', 'external - chess.com'],
+          security: [],
+          parameters:
+            [
+              {
+                in: path,
+                name: title,
+                required: true,
+                schema: { $ref: '#/components/schemas/ChessTitle' },
+              },
+              {
+                in: query,
+                name: cache,
+                required: false,
+                schema: { default: true, type: boolean },
+              },
+              {
+                in: query,
+                name: timeRange,
+                required: false,
+                schema: { $ref: '#/components/schemas/TimeRange' },
+              },
+            ],
+        },
+    }
+  /health:
+    {
+      get:
+        {
+          operationId: GetHealth,
+          responses:
+            {
+              '200':
+                {
+                  description: Ok,
+                  content:
+                    {
+                      application/json:
+                        {
+                          schema:
+                            {
+                              properties: { status: { type: string } },
+                              required: [status],
+                              type: object,
+                            },
+                        },
+                    },
+                },
+            },
+          tags: ['API - Health'],
+          security: [],
+          parameters: [],
+        },
+    }
+servers:
+  - { url: 'http://localhost:8080/api', description: Local }
+  - { url: 'https://chessinsightsapi.vercel.app/api', description: Vercel }

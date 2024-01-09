@@ -1,0 +1,239 @@
+{
+  "item": [
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "0721af33-128d-49e5-a974-f49289af0013",
+          "name": "Health Controller get Health",
+          "request": {
+            "name": "Health Controller get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5eca31f9-a2b0-4e0d-9d2c-5f5e9d380a36",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "body": "{\n  \"status\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    },
+    {
+      "name": "kafka",
+      "description": "",
+      "item": [
+        {
+          "name": "produce",
+          "description": "",
+          "item": [
+            {
+              "id": "8b5aa3d9-31c7-493a-b521-4d7ebe85c73d",
+              "name": "Kafka Controller publish Event",
+              "request": {
+                "name": "Kafka Controller publish Event",
+                "description": {},
+                "url": {
+                  "path": ["kafka", "produce"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "POST",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "231761fa-7ecc-4f80-bb3d-d7f2ee07aad8",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["kafka", "produce"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {}
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"status\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "rabbitmq",
+      "description": "",
+      "item": [
+        {
+          "name": "produce",
+          "description": "",
+          "item": [
+            {
+              "id": "975abb8f-4a44-4111-bfb0-4790fe2b0fad",
+              "name": "Rabbit Controller publish Event",
+              "request": {
+                "name": "Rabbit Controller publish Event",
+                "description": {},
+                "url": {
+                  "path": ["rabbitmq", "produce"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "POST",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "ab305539-4949-4e7e-94e8-1e8e0494515e",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["rabbitmq", "produce"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {}
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"status\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "redis",
+      "description": "",
+      "item": [
+        {
+          "name": "produce",
+          "description": "",
+          "item": [
+            {
+              "id": "e42a342d-2131-4214-a8b5-768fa3e3f991",
+              "name": "Redis Controller publish Event",
+              "request": {
+                "name": "Redis Controller publish Event",
+                "description": {},
+                "url": {
+                  "path": ["redis", "produce"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "POST",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "6f8e0dd2-31d8-44e6-88a4-a5e5c9984d46",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["redis", "produce"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "header": [
+                      { "key": "Accept", "value": "application/json" }
+                    ],
+                    "method": "POST",
+                    "body": {}
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"status\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "/" }],
+  "info": {
+    "_postman_id": "b953af3d-61ef-4530-8b85-4627fc8bfb1c",
+    "name": "Nest.js - Messages - Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Nest.js - Messages - Template",
+      "type": "text/plain"
+    }
+  }
+}

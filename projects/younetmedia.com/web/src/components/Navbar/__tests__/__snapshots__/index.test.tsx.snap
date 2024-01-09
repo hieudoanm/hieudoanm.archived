@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div>
+  <nav
+    class="border-b shadow"
+  >
+    <div
+      class="container mx-auto px-8 py-4"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div>
+          <h1
+            class="text-lg uppercase"
+          >
+            Buzz Metrics
+          </h1>
+        </div>
+        <div>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium uppercase css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Log Out
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

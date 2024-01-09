@@ -1,0 +1,26 @@
+{
+  "name": "@chess.com/addons",
+  "version": "0.0.1",
+  "description": "chess.com - addons",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "devDependencies": {
+    "@types/chrome": "0.0.256",
+    "@types/node": "20.10.7",
+    "@webpack-cli/generators": "3.0.7",
+    "copy-webpack-plugin": "11.0.0",
+    "prettier": "3.1.1",
+    "ts-loader": "9.5.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "format": "prettier --write ."
+  }
+}

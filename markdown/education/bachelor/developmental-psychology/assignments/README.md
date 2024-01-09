@@ -1,0 +1,41 @@
+# Assignments
+
+- Annotated bibliography
+  - Introduction
+    - Narrow down the scope
+      - The mental health of the mother and the health of the child
+      - Research on common sources of anxiety
+    - State why it is important
+      - Research on how the depression/stress/anxiety of mothers affects hormonal balance and health of children negatively
+      - Research on how the depression/stress/anxiety of mothers affects immune levels and health of children negatively
+      - Research on how the depression/stress/anxiety of mothers increases the chances of miscarriage
+    - Intervene early and correctly to improve the health of both mother and children
+    - Refind Research Questions
+  - Body
+    - Critical Analysis
+    - Six Articles
+      - Research on the benefits of mindfulness and relaxation technique
+      - Research on using supplements
+      - Research on encouraging exercise
+      - Research on support from partner
+    - Structure
+      - Aims
+      - Methods
+      - Results
+      - Conclusions
+      - Strengths
+      - Limitations (avoid! If you do, focus on limitations of applications! And state positive instead of negative)
+      - Applications (focus)
+  - Conclusions
+    - Summarise key findings
+- Recommended
+  - EHP
+  - PubMed
+- Feedback
+  - Based on the feedback provided by your teacher, several patterns can be observed:
+    - _Clarity and Specificity:_ Your teacher consistently emphasizes the need for clear and specific language. This includes specifying the type of counselling used in the intervention, detailing the positive influence on maternal mental well-being, and providing specific percentages related to the prevalence of certain conditions.
+    - _Thorough Explanation:_ Your teacher encourages you to provide more detailed explanations or justifications for certain statements. For example, you are explaining why certain conditions might impact the effectiveness of the intervention and elaborating on why a randomized control trial design is vital for the study's credibility.
+    - _Avoiding Repetition:_ There's a note about avoiding repetition, particularly in the concluding statement. Your teacher suggests tying back to the topic sentence without restating the same information.
+    - _Consideration of Specific Conditions:_ There's a focus on considering specific conditions, such as diabetes, hypertension, gestational diabetes, and preeclampsia, and explaining how these conditions might influence anxiety and the effectiveness of the intervention.
+    - _Tying Back to the Topic:_ Your teacher suggests ensuring that all points tie back to the main topic or thesis of the article, emphasizing the broader aim of promoting anxiety-free pregnancies.
+    - By addressing these patterns in your writing, you can enhance your work's clarity, specificity, and overall effectiveness.
