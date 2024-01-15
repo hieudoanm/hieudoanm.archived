@@ -7893,10 +7893,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.2.tgz#c9ed3575c5445afb14965bb76e8446fbf7e4a0e6"
   integrity sha512-BRbo1fOtyVbhfLyuCWw6wAWp+U8UQle+ZXu84MYYWzYSEB28dyfnRBIE99eoG+qdAC0po6L2ScIEivcT07UaMA==
 
-"@tsoa/cli@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@tsoa/cli/-/cli-6.0.0.tgz#97d5b5f475170da94e387634c5ab69ff249112d3"
-  integrity sha512-Pzzg3sWkcalYEKzzNnvX8iAu7X19FxeN79yBjvCvR8h6Q5qvfO2UqlifSIZdZd6rPOoxaIuYEU8C5sBupI6+sg==
+"@tsoa/cli@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@tsoa/cli/-/cli-6.0.1.tgz#8e27d47b8d76ffcf1a842a69296277d1de23572d"
+  integrity sha512-SpdWPIzAtfG6Jcb6KIvT4VVo9VnAfAiY6+dCrrlKURlEfah05rRQ7k09jeJdAZoeeoKVwyJNj+43zlh9w1u7bg==
   dependencies:
     "@tsoa/runtime" "^6.0.0"
     "@types/multer" "^1.4.11"
@@ -25815,12 +25815,12 @@ tslib@~2.4.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
   integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
 
-tsoa@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/tsoa/-/tsoa-6.0.0.tgz#121f99c5123b97c23c11f0856ddb1338b432f128"
-  integrity sha512-D8Kvp3wUhZwpX13hXptqKdk/2VMqg+t8SLeZDiRwv5XiOv39YJbt0F+6DEeyIBW6cC6vBYKD1Cs+cUXoY1VKiQ==
+tsoa@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/tsoa/-/tsoa-6.0.1.tgz#0a1a9ea80b4eca979b71cf4b33db49375b87e422"
+  integrity sha512-Far5BFpFvMYVMZxt87O7hOFGpa6dALQ8XHhdDytry0IhIUJnRliVXLZ2t2KGcgNw0bIwsk+2XkWra18LL6cORA==
   dependencies:
-    "@tsoa/cli" "^6.0.0"
+    "@tsoa/cli" "^6.0.1"
     "@tsoa/runtime" "^6.0.0"
 
 tsutils@^3.21.0:
