@@ -21,7 +21,7 @@
     "@fontsource/roboto": "5.0.8",
     "@mui/icons-material": "5.15.4",
     "@mui/material": "5.15.4",
-    "@types/node": "20.11.3",
+    "@types/node": "20.11.4",
     "apexcharts": "3.45.1",
     "pino": "8.17.2",
     "react": "18.2.0",
