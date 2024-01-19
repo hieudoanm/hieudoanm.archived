@@ -26089,10 +26089,10 @@ undici@6.2.1:
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
-undici@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.3.0.tgz#ad105a56ec80fb74ecb3252e6dc27947bf69d275"
-  integrity sha512-zkSMOXs2topAR1LF0PxAaNNvhdX4LYEcmRMJLMh3mjgfZpBtc/souXOp4aYiR5Q46HrBPA2/8DkEZhD3eNFE1Q==
+undici@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.4.0.tgz#7ca0c3f73e1034f3c79e566183b61bb55b1410ea"
+  integrity sha512-wYaKgftNqf6Je7JQ51YzkEkEevzOgM7at5JytKO7BjaURQpERW8edQSMrr2xb+Yv4U8Yg47J24+lc9+NbeXMFA==
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
