@@ -3,7 +3,7 @@ module bee-starter
 go 1.21.6
 
 require (
-	github.com/beego/beego/v2 v2.1.4
+	github.com/beego/beego/v2 v2.1.5
 	github.com/google/uuid v1.5.0
 	gorm.io/driver/postgres v1.5.4
 	gorm.io/gorm v1.25.5
