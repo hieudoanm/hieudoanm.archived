@@ -67,7 +67,7 @@ services:
       POSTGRES_PASSWORD: password
 
   relational-mysql:
-    image: mysql:8.2.0
+    image: mysql:8.3.0
     container_name: relational-mysql
     restart: always
     environment:
