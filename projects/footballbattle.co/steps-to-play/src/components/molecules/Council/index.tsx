@@ -80,8 +80,7 @@ const CouncilSwiper: React.FC<{
               slide.setAttribute('class', `${classList}`);
             }
           }
-        }}
-      >
+        }}>
         <SwiperSlide>
           <Councilor
             image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/join-our-community/yolo.png"
@@ -101,8 +100,7 @@ const CouncilSwiper: React.FC<{
                     href="https://yolo.io/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline"
-                  >
+                    className="underline">
                     https://yolo.io/
                   </a>
                 </p>
@@ -128,8 +126,7 @@ const CouncilSwiper: React.FC<{
                     href="https://acestarter.finance/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline"
-                  >
+                    className="underline">
                     https://acestarter.finance/
                   </a>
                 </p>
@@ -157,8 +154,7 @@ const CouncilSwiper: React.FC<{
                     href="https://pnb.pinbus.vn/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline"
-                  >
+                    className="underline">
                     https://pnb.pinbus.vn/
                   </a>
                 </p>
@@ -186,8 +182,7 @@ const CouncilSwiper: React.FC<{
                     href="https://www.linkedin.com/in/tim-heath-55096b1/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline"
-                  >
+                    className="underline">
                     https://www.linkedin.com/in/tim-heath-55096b1/
                   </a>
                 </p>
@@ -214,8 +209,7 @@ const CouncilSwiper: React.FC<{
                     href="https://www.linkedin.com/in/quangrock/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline"
-                  >
+                    className="underline">
                     https://www.linkedin.com/in/quangrock/
                   </a>
                 </p>

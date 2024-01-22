@@ -48,14 +48,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://www.facebook.com/footballbattle.co"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/facebook.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"
@@ -67,14 +65,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://www.instagram.com/footballbattle.co/"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/instagram.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"
@@ -86,14 +82,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://twitter.com/fbbattleco"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/twitter.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"
@@ -105,14 +99,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://t.me/footballbattleNFT"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/telegram.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"
@@ -124,14 +116,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://discord.com/invite/vqymVPcFSs"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/discord.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"
@@ -143,14 +133,12 @@ const Footer: React.FC = () => {
               <div>
                 <Sprite
                   image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
-                  className="w-12 h-12 bg-cover bg-no-repeat"
-                >
+                  className="w-12 h-12 bg-cover bg-no-repeat">
                   <div className="flex items-center justify-center w-full h-full">
                     <a
                       href="https://www.tiktok.com/@crowdhero.co"
                       target="_blank"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       <Sprite
                         image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/tiktok.svg"
                         className="w-6 h-6 bg-contain bg-center bg-no-repeat"

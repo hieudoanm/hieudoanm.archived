@@ -78,7 +78,7 @@ define(['exports'], function (t) {
           event: e,
           request: t,
           sameOrigin: n,
-          url: s
+          url: s,
         });
       let a = i && i.handler;
       const o = t.method;
@@ -102,7 +102,7 @@ define(['exports'], function (t) {
                   url: s,
                   request: t,
                   event: e,
-                  params: r
+                  params: r,
                 });
               } catch (t) {
                 t instanceof Error && (n = t);
@@ -147,7 +147,7 @@ define(['exports'], function (t) {
     unregisterRoute(t) {
       if (!this.t.has(t.method)) {
         throw new s('unregister-route-but-not-found-with-method', {
-          method: t.method
+          method: t.method,
         });
       }
       const e = this.t.get(t.method).indexOf(t);
@@ -175,7 +175,7 @@ define(['exports'], function (t) {
         throw new s('unsupported-route-type', {
           moduleName: 'workbox-routing',
           funcName: 'registerRoute',
-          paramName: 'capture'
+          paramName: 'capture',
         });
       }
       a = t;
@@ -187,14 +187,14 @@ define(['exports'], function (t) {
   } catch (t) {}
   const u = {
       cacheWillUpdate: async ({ response: t }) =>
-        200 === t.status || 0 === t.status ? t : null
+        200 === t.status || 0 === t.status ? t : null,
     },
     l = {
       googleAnalytics: 'googleAnalytics',
       precache: 'precache-v2',
       prefix: 'workbox',
       runtime: 'runtime',
-      suffix: 'undefined' != typeof registration ? registration.scope : ''
+      suffix: 'undefined' != typeof registration ? registration.scope : '',
     },
     f = (t) =>
       [l.prefix, t, l.suffix].filter((t) => t && t.length > 0).join('-'),
@@ -254,7 +254,7 @@ define(['exports'], function (t) {
       } catch (t) {
         if (t instanceof Error) {
           throw new s('plugin-error-request-will-fetch', {
-            thrownErrorMessage: t.message
+            thrownErrorMessage: t.message,
           });
         }
       }
@@ -276,7 +276,7 @@ define(['exports'], function (t) {
               error: t,
               event: e,
               originalRequest: r.clone(),
-              request: i.clone()
+              request: i.clone(),
             })),
           t)
         );
@@ -301,7 +301,7 @@ define(['exports'], function (t) {
             matchOptions: r,
             cachedResponse: s,
             request: i,
-            event: this.event
+            event: this.event,
           })) || void 0;
       }
       return s;
@@ -318,7 +318,7 @@ define(['exports'], function (t) {
             new URL(String(a), location.href).href.replace(
               new RegExp(`^${location.origin}`),
               ''
-            ))
+            )),
         });
       }
       var a;
@@ -336,7 +336,7 @@ define(['exports'], function (t) {
                 return t.match(e, n);
               }
               const i = Object.assign(Object.assign({}, n), {
-                  ignoreSearch: !0
+                  ignoreSearch: !0,
                 }),
                 a = await t.keys(e, i);
               for (const e of a) {
@@ -367,7 +367,7 @@ define(['exports'], function (t) {
           oldResponse: f,
           newResponse: o.clone(),
           request: i,
-          event: this.event
+          event: this.event,
         });
       }
       return !0;
@@ -382,7 +382,7 @@ define(['exports'], function (t) {
               mode: e,
               request: n,
               event: this.event,
-              params: this.params
+              params: this.params,
             })
           );
         }
@@ -436,7 +436,7 @@ define(['exports'], function (t) {
             (await t({
               request: this.request,
               response: e,
-              event: this.event
+              event: this.event,
             })) || void 0),
           (s = !0),
           !e)
@@ -500,7 +500,7 @@ define(['exports'], function (t) {
         await e.runCallbacks('handlerDidRespond', {
           event: n,
           request: s,
-          response: r
+          response: r,
         }),
           await e.doneWaiting();
       } catch (t) {
@@ -511,7 +511,7 @@ define(['exports'], function (t) {
           event: n,
           request: s,
           response: r,
-          error: i
+          error: i,
         }),
         e.destroy(),
         i)
@@ -565,7 +565,8 @@ define(['exports'], function (t) {
     },
     set: (t, e, s) => ((t[e] = s), !0),
     has: (t, e) =>
-      (t instanceof IDBTransaction && ('done' === e || 'store' === e)) || e in t
+      (t instanceof IDBTransaction && ('done' === e || 'store' === e)) ||
+      e in t,
   };
   function T(t) {
     return t !== IDBDatabase.prototype.transaction ||
@@ -575,7 +576,7 @@ define(['exports'], function (t) {
           (x = [
             IDBCursor.prototype.advance,
             IDBCursor.prototype.continue,
-            IDBCursor.prototype.continuePrimaryKey
+            IDBCursor.prototype.continuePrimaryKey,
           ])
         ).includes(t)
         ? function (...e) {
@@ -624,7 +625,7 @@ define(['exports'], function (t) {
               IDBObjectStore,
               IDBIndex,
               IDBCursor,
-              IDBTransaction
+              IDBTransaction,
             ])
         )
           ? new Proxy(t, O)
@@ -696,7 +697,7 @@ define(['exports'], function (t) {
   O = ((t) =>
     q({}, t, {
       get: (e, s, n) => S(e, s) || t.get(e, s, n),
-      has: (e, s) => !!S(e, s) || t.has(e, s)
+      has: (e, s) => !!S(e, s) || t.has(e, s),
     }))(O);
   try {
     self['workbox:expiration:6.6.0'] && _();
@@ -729,10 +730,10 @@ define(['exports'], function (t) {
           url: (t = A(t)),
           timestamp: e,
           cacheName: this.L,
-          id: this.N(t)
+          id: this.N(t),
         },
         n = (await this.getDb()).transaction(K, 'readwrite', {
-          durability: 'relaxed'
+          durability: 'relaxed',
         });
       await n.store.put(s), await n.done;
     }
@@ -869,7 +870,7 @@ define(['exports'], function (t) {
           }
           return {
             start: '' === n[1] ? void 0 : Number(n[1]),
-            end: '' === n[2] ? void 0 : Number(n[2])
+            end: '' === n[2] ? void 0 : Number(n[2]),
           };
         })(n),
         i = await e.blob(),
@@ -879,7 +880,7 @@ define(['exports'], function (t) {
             throw new s('range-not-satisfiable', {
               size: r,
               end: n,
-              start: e
+              start: e,
             });
           }
           let i, a;
@@ -897,7 +898,7 @@ define(['exports'], function (t) {
         h = new Response(o, {
           status: 206,
           statusText: 'Partial Content',
-          headers: e.headers
+          headers: e.headers,
         });
       return (
         h.headers.set('Content-Length', String(c)),
@@ -910,7 +911,7 @@ define(['exports'], function (t) {
     } catch (t) {
       return new Response('', {
         status: 416,
-        statusText: 'Range Not Satisfiable'
+        statusText: 'Range Not Satisfiable',
       });
     }
   }
@@ -954,7 +955,7 @@ define(['exports'], function (t) {
         (this.cachedResponseWillBeUsed = async ({
           event: t,
           state: e,
-          cachedResponse: s
+          cachedResponse: s,
         }) => {
           if (
             'install' === t.type &&
@@ -992,7 +993,7 @@ define(['exports'], function (t) {
       i = {
         headers: new Headers(r.headers),
         status: r.status,
-        statusText: r.statusText
+        statusText: r.statusText,
       },
       a = e ? e(i) : i,
       o = (function () {
@@ -1035,7 +1036,7 @@ define(['exports'], function (t) {
       if (!this.j) {
         throw new s('missing-precache-entry', {
           cacheName: this.cacheName,
-          url: t.url
+          url: t.url,
         });
       }
       {
@@ -1044,7 +1045,7 @@ define(['exports'], function (t) {
           a = !i || i === s;
         (n = await e.fetch(
           new Request(t, {
-            integrity: 'no-cors' !== t.mode ? i || s : void 0
+            integrity: 'no-cors' !== t.mode ? i || s : void 0,
           })
         )),
           s &&
@@ -1060,7 +1061,7 @@ define(['exports'], function (t) {
       if (!(await e.cachePut(t, n.clone()))) {
         throw new s('bad-precaching-response', {
           url: t.url,
-          status: n.status
+          status: n.status,
         });
       }
       return n;
@@ -1080,17 +1081,17 @@ define(['exports'], function (t) {
   }
   (Z.defaultPrecacheCacheabilityPlugin = {
     cacheWillUpdate: async ({ response: t }) =>
-      !t || t.status >= 400 ? null : t
+      !t || t.status >= 400 ? null : t,
   }),
     (Z.copyRedirectedCacheableResponsesPlugin = {
       cacheWillUpdate: async ({ response: t }) =>
-        t.redirected ? await Y(t) : t
+        t.redirected ? await Y(t) : t,
     });
   class tt {
     constructor({
       cacheName: t,
       plugins: e = [],
-      fallbackToNetwork: s = !0
+      fallbackToNetwork: s = !0,
     } = {}) {
       (this.F = new Map()),
         (this.H = new Map()),
@@ -1098,7 +1099,7 @@ define(['exports'], function (t) {
         (this.u = new Z({
           cacheName: w(t),
           plugins: [...e, new J({ precacheController: this })],
-          fallbackToNetwork: s
+          fallbackToNetwork: s,
         })),
         (this.install = this.install.bind(this)),
         (this.activate = this.activate.bind(this));
@@ -1124,13 +1125,13 @@ define(['exports'], function (t) {
         if (this.F.has(r) && this.F.get(r) !== t) {
           throw new s('add-to-cache-list-conflicting-entries', {
             firstEntry: this.F.get(r),
-            secondEntry: t
+            secondEntry: t,
           });
         }
         if ('string' != typeof n && n.integrity) {
           if (this.$.has(t) && this.$.get(t) !== n.integrity) {
             throw new s('add-to-cache-list-conflicting-integrities', {
-              url: r
+              url: r,
             });
           }
           this.$.set(t, n.integrity);
@@ -1153,13 +1154,13 @@ define(['exports'], function (t) {
             i = new Request(e, {
               integrity: n,
               cache: r,
-              credentials: 'same-origin'
+              credentials: 'same-origin',
             });
           await Promise.all(
             this.strategy.handleAll({
               params: { cacheKey: s },
               request: i,
-              event: t
+              event: t,
             })
           );
         }
@@ -1222,7 +1223,7 @@ define(['exports'], function (t) {
             ignoreURLParametersMatching: e = [/^utm_/, /^fbclid$/],
             directoryIndex: s = 'index.html',
             cleanURLs: n = !0,
-            urlManipulation: r
+            urlManipulation: r,
           } = {}
         ) {
           const i = new URL(t, location.href);
@@ -1279,7 +1280,7 @@ define(['exports'], function (t) {
           event: t,
           request: e,
           cacheName: s,
-          cachedResponse: n
+          cachedResponse: n,
         }) => {
           if (!n) {
             return null;
@@ -1354,7 +1355,7 @@ define(['exports'], function (t) {
           const { id: s, promise: a } = this.et({
             request: t,
             logs: n,
-            handler: e
+            handler: e,
           });
           (i = s), r.push(a);
         }
@@ -1376,7 +1377,7 @@ define(['exports'], function (t) {
               e(await s.cacheMatch(t));
             }, 1e3 * this.tt);
           }),
-          id: n
+          id: n,
         };
       }
       async st({ timeoutId: t, request: e, logs: s, handler: n }) {
@@ -1395,7 +1396,7 @@ define(['exports'], function (t) {
       constructor() {
         this.cachedResponseWillBeUsed = async ({
           request: t,
-          cachedResponse: e
+          cachedResponse: e,
         }) => (e && t.headers.has('range') ? await $(t, e) : e);
       }
     }),

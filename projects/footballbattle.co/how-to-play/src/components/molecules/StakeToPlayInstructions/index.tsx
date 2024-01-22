@@ -21,8 +21,7 @@ const Circle: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Sprite
       image="/how-to-play/en/images/stake-to-play/circle.svg"
-      className="w-12 h-12 bg-cover"
-    >
+      className="w-12 h-12 bg-cover">
       <div className="text-yellow text-xs w-full h-full flex justify-center items-center">
         {children}
       </div>
@@ -54,8 +53,7 @@ const StakeToPlayInstructions: React.FC = () => {
             href="https://marketplace.footballbattle.co"
             target="_blank"
             rel="noreferrer"
-            className="text-yellow underline"
-          >
+            className="text-yellow underline">
             Markerplace
           </a>
         </Instruction>

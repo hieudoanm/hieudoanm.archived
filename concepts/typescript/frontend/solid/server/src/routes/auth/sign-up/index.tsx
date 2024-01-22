@@ -63,8 +63,7 @@ export const SignUpPage: Component = () => {
                   InputProps={{
                     endAdornment: (
                       <IconButton
-                        onClick={() => setShowPassword(!showPassword())}
-                      >
+                        onClick={() => setShowPassword(!showPassword())}>
                         {showPassword() ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
                     ),

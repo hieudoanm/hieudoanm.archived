@@ -14,8 +14,7 @@ export const Testimonial: React.FC<TestimonialProperties> = ({
     <div className="pb-16">
       <div
         className="mx-auto w-full bg-no-repeat pl-0 md:w-2/3 md:pl-16"
-        style={{ backgroundImage: `url(${quoteImage.src})` }}
-      >
+        style={{ backgroundImage: `url(${quoteImage.src})` }}>
         <blockquote className="pb-8">
           <h2 className="font-b612 text-justify text-2xl leading-loose text-gray-700">
             {quote}

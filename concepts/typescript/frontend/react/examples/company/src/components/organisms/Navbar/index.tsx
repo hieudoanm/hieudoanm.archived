@@ -28,8 +28,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                       offset={-70}
                       smooth={true}
                       duration={500}
-                      className="cursor-pointer"
-                    >
+                      className="cursor-pointer">
                       {title}
                     </ScrollLink>
                   </h1>
@@ -44,8 +43,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                             smooth={true}
                             duration={500}
                             activeClass="active"
-                            className="nav-scroll-link cursor-pointer"
-                          >
+                            className="nav-scroll-link cursor-pointer">
                             {text}
                           </ScrollLink>
                         </div>
@@ -60,8 +58,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                     offset={-70}
                     smooth={true}
                     duration={500}
-                    className="cursor-pointer font-bold text-emerald-500"
-                  >
+                    className="cursor-pointer font-bold text-emerald-500">
                     Get Started
                   </ScrollLink>
                   <div className="block md:hidden">
@@ -91,8 +88,7 @@ export const Navbar: React.FC<{ title?: string; items?: any[] }> = ({
                       smooth={true}
                       duration={500}
                       activeClass="active"
-                      className="nav-scroll-link cursor-pointer"
-                    >
+                      className="nav-scroll-link cursor-pointer">
                       {text}
                     </ScrollLink>
                   </div>

@@ -14,8 +14,7 @@ export const Contact: React.FC<{ title?: string; description?: string }> = ({
     <section
       id="contact"
       className="bg-[#F8F0EA] bg-contain bg-bottom bg-no-repeat py-0 md:py-16"
-      style={{ backgroundImage: `url(${background.src})` }}
-    >
+      style={{ backgroundImage: `url(${background.src})` }}>
       <Container>
         <div className="rounded-none bg-white md:rounded-2xl">
           <div className="px-4 py-8 md:px-8 md:py-16">

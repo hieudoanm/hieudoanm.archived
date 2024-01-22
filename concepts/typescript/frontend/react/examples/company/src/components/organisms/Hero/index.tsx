@@ -22,8 +22,7 @@ export const Hero: React.FC<{ title: string; description: string }> = ({
               offset={-70}
               smooth={true}
               duration={500}
-              className="cursor-pointer"
-            >
+              className="cursor-pointer">
               <Button>Get Started</Button>
             </ScrollLink>
           </div>

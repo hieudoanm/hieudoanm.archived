@@ -41,8 +41,7 @@ const GetPlayers: React.FC = () => {
                 </div>
                 <button
                   type="button"
-                  className="py-2 w-full rounded-2xl text-2xl border border-[#0A6440] text-[#0A6440] font-bold"
-                >
+                  className="py-2 w-full rounded-2xl text-2xl border border-[#0A6440] text-[#0A6440] font-bold">
                   Buy Now
                 </button>
               </div>
@@ -66,8 +65,7 @@ const GetPlayers: React.FC = () => {
                 </div>
                 <button
                   type="button"
-                  className="py-2 w-full rounded-2xl text-2xl border border-[#0A6440] text-[#0A6440] font-bold"
-                >
+                  className="py-2 w-full rounded-2xl text-2xl border border-[#0A6440] text-[#0A6440] font-bold">
                   Buy Now
                 </button>
               </div>
@@ -92,8 +90,7 @@ const GetPlayers: React.FC = () => {
                 </div>
                 <button
                   type="button"
-                  className="py-2 w-full rounded-2xl text-2xl border border-[#C20000] text-[#C20000] font-bold"
-                >
+                  className="py-2 w-full rounded-2xl text-2xl border border-[#C20000] text-[#C20000] font-bold">
                   Coming Soon
                 </button>
               </div>

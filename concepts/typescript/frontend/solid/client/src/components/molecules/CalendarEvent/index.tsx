@@ -29,8 +29,7 @@ export const CalendarEvent: Component<CalendarEventProps> = (_props) => {
         class="flex cursor-pointer items-center gap-2 truncate rounded bg-blue-500 p-2 text-white"
         onClick={() => {
           console.log(props.description);
-        }}
-      >
+        }}>
         <div class="h-4 w-4 rounded-full bg-white" />
         <div class="text-sm">{props.description}</div>
       </div>

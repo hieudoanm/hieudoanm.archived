@@ -5,8 +5,7 @@ const DownloadIcon: React.FC<{ image: string }> = ({ image }) => {
   return (
     <StyledSprite
       image="/how-to-play/en/images/meta-mask-wallet/box.svg"
-      className="w-24 h-24 bg-center bg-cover"
-    >
+      className="w-24 h-24 bg-center bg-cover">
       <div className="flex items-center justify-center w-full h-full">
         <StyledSprite
           image={image}

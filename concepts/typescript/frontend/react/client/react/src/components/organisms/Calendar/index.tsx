@@ -236,8 +236,7 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
                     );
                     setDaysInMonth(newDaysInMonth);
                   }}
-                  size="small"
-                >
+                  size="small">
                   {months.map(({ short, long }, index: number) => (
                     <MenuItem key={`value-${index + 1}`} value={index + 1}>
                       <span className="inline md:hidden">{short}</span>
@@ -250,8 +249,7 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
                 <IconButton
                   onClick={() => {
                     changeMonth(-1);
-                  }}
-                >
+                  }}>
                   <KeyboardArrowLeftIcon />
                 </IconButton>
                 <p className="text-md font-bold md:text-xl">
@@ -271,8 +269,7 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
                 <IconButton
                   onClick={() => {
                     changeMonth(1);
-                  }}
-                >
+                  }}>
                   <KeyboardArrowRightIcon />
                 </IconButton>
               </div>
@@ -286,8 +283,7 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
                   setMonth(initMonth);
                   setYear(initYear);
                   setDaysInMonth(initDaysInMonth);
-                }}
-              >
+                }}>
                 Today
               </Button>
             </div>
@@ -324,8 +320,7 @@ export const Calendar: React.FC<CalendarProps> = ({ events = [] }) => {
           return (
             <div
               key={`${iDate}-${iMonth}-${iYear}`}
-              className="col-span-1 border-t"
-            >
+              className="col-span-1 border-t">
               <div className="flex flex-col gap-2 px-2 py-4">
                 <Day
                   day={day}

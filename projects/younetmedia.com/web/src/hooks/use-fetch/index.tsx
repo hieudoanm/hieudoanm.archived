@@ -24,7 +24,7 @@ function useAxios<T = unknown>(url?: string, config?: any): State<T> {
   const initialState: State<T> = {
     loading: true,
     error: undefined,
-    data: undefined
+    data: undefined,
   };
 
   // Keep state logic separated

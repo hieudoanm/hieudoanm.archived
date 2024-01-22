@@ -10,8 +10,7 @@ const StakeToPlayVideo: React.FC = () => {
           backgroundPositionX: '25%',
           backgroundImage:
             'url(https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/stake-to-play/field.svg)',
-        }}
-      >
+        }}>
         <div className="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-9">
           <div className="col-span-2 md:col-span-3 lg:col-span-4">
             <div className="flex justify-center items-center w-full h-full">

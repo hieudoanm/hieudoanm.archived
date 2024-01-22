@@ -8,10 +8,11 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "format": "prettier . --write || true",
+    "format": "biome format --write . || true",
     "prepare": "husky install || true"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.2",
     "husky": "8.0.3",
     "prettier": "3.2.4",
     "prettier-plugin-tailwindcss": "0.5.11",

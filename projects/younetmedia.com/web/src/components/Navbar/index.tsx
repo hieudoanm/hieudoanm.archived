@@ -21,8 +21,7 @@ export const Navbar = () => {
               type="button"
               variant="outlined"
               onClick={logOut}
-              className="uppercase"
-            >
+              className="uppercase">
               Log Out
             </Button>
           </div>

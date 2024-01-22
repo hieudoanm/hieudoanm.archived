@@ -65,8 +65,7 @@ const SignInPage: NextPage = () => {
                   InputProps={{
                     endAdornment: (
                       <IconButton
-                        onClick={() => setShowPassword(!showPassword)}
-                      >
+                        onClick={() => setShowPassword(!showPassword)}>
                         {showPassword ? <VisibilityOff /> : <Visibility />}
                       </IconButton>
                     ),
@@ -89,8 +88,7 @@ const SignInPage: NextPage = () => {
                 </Button>
                 <Link
                   href="/auth/sign-up"
-                  className="text-center text-blue-500"
-                >
+                  className="text-center text-blue-500">
                   Sign Up
                 </Link>
               </div>

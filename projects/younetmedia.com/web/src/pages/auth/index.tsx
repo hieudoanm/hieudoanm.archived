@@ -31,7 +31,7 @@ export const AuthPage: NextPage = () => {
     try {
       const data = { username, password };
       const {
-        data: { accessToken }
+        data: { accessToken },
       } = await axios.post<{ accessToken: string }>(url, data);
       sessionStorage.setItem('accessToken', accessToken);
       router.push('/');

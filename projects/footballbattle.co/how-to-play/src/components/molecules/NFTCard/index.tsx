@@ -40,8 +40,7 @@ export const NFTCard: React.FC<NFTCardProps> = ({
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex"
-                >
+                  className="flex">
                   <YellowButton>
                     <div className="text-darkRed">{action}</div>
                   </YellowButton>

@@ -20,8 +20,7 @@ export const UserMenu: React.FC = () => {
         id="basic-menu"
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
+        onClose={handleClose}>
         <MenuItem onClick={handleClose}>
           <Link to="/user/profile">Profile</Link>
         </MenuItem>

@@ -1,17 +1,17 @@
 {
-  "env": { "browser": true, "node": true },
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:prettier/recommended",
-    "plugin:promise/recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:unicorn/recommended",
-    "prettier"
-  ],
-  "plugins": ["prettier", "promise", "sonarjs", "unicorn"],
-  "rules": {
-    "camelcase": "off",
-    "filenames/match-regex": "off",
-    "i18n-text/no-en": "off"
-  }
+	"env": { "browser": true, "node": true },
+	"extends": [
+		"next/core-web-vitals",
+		"plugin:prettier/recommended",
+		"plugin:promise/recommended",
+		"plugin:sonarjs/recommended",
+		"plugin:unicorn/recommended",
+		"prettier"
+	],
+	"plugins": ["prettier", "promise", "sonarjs", "unicorn"],
+	"rules": {
+		"camelcase": "off",
+		"filenames/match-regex": "off",
+		"i18n-text/no-en": "off"
+	}
 }

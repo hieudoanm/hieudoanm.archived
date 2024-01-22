@@ -16,11 +16,11 @@ const handler = async (
     const url = 'https://api.younetmedia.com/authentication';
     try {
       const {
-        data: { accessToken }
+        data: { accessToken },
       } = await axios.post<{ accessToken: string }>(url, {
         email: request.body.username || '',
         password: request.body.password || '',
-        strategy: 'local'
+        strategy: 'local',
       });
       response.setHeader(
         'Set-Cookie',

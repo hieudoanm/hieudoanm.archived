@@ -4,7 +4,7 @@ import React from 'react';
 
 export const ErrorTemplate: React.FC<{ code: number; message: string }> = ({
   code = 200,
-  message = ''
+  message = '',
 }) => {
   return (
     <main className="flex h-screen w-full items-center justify-center">

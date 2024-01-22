@@ -1,13 +1,13 @@
 {
-  "env": { "browser": true, "node": true },
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:github/recommended",
-    "plugin:import/recommended",
-    "plugin:prettier/recommended",
-    "plugin:promise/recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:unicorn/recommended"
-  ],
-  "plugins": ["github", "import", "prettier", "promise", "sonarjs", "unicorn"]
+	"env": { "browser": true, "node": true },
+	"extends": [
+		"next/core-web-vitals",
+		"plugin:github/recommended",
+		"plugin:import/recommended",
+		"plugin:prettier/recommended",
+		"plugin:promise/recommended",
+		"plugin:sonarjs/recommended",
+		"plugin:unicorn/recommended"
+	],
+	"plugins": ["github", "import", "prettier", "promise", "sonarjs", "unicorn"]
 }

@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 // This function can be marked `async` if using `await` inside
 export const middleware = (request: NextRequest) => {
   const { value: authorized } = request.cookies.get('authorized') ?? {
-    value: ''
+    value: '',
   };
   logger.info('authorized', authorized);
   if (authorized === 'true') {
@@ -16,5 +16,5 @@ export const middleware = (request: NextRequest) => {
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: '/'
+  matcher: '/',
 };

@@ -15,16 +15,14 @@ export const Steps: React.FC = () => {
       className="py-4 bg-[#085723] bg-repeat-x bg-bottom"
       style={{
         backgroundImage: 'url(/how-to-play/en/images/steps/background.svg)',
-      }}
-    >
+      }}>
       <Section>
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-15 gap-8 md:gap-0">
             <div className="col-span-1 md:col-span-3">
               <div
                 className="cursor-pointer"
-                onClick={() => scrollToSection('create-meta-mask-wallet')}
-              >
+                onClick={() => scrollToSection('create-meta-mask-wallet')}>
                 <Step
                   image="/how-to-play/en/images/steps/create.svg"
                   title="Create MetaMask Wallet"
@@ -37,8 +35,7 @@ export const Steps: React.FC = () => {
             <div className="col-span-1 md:col-span-3">
               <div
                 className="cursor-pointer"
-                onClick={() => scrollToSection('stake-to-play')}
-              >
+                onClick={() => scrollToSection('stake-to-play')}>
                 <Step
                   image="/how-to-play/en/images/steps/stake.svg"
                   title="Stake Now"
@@ -51,8 +48,7 @@ export const Steps: React.FC = () => {
             <div className="col-span-1 md:col-span-3">
               <div
                 className="cursor-pointer"
-                onClick={() => scrollToSection('build-the-team')}
-              >
+                onClick={() => scrollToSection('build-the-team')}>
                 <Step
                   image="/how-to-play/en/images/steps/build.svg"
                   title="Build Dream Team"
@@ -67,8 +63,7 @@ export const Steps: React.FC = () => {
                 id="explore-our-game"
                 href="https://marketplace.footballbattle.co/"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <Step
                   image="/how-to-play/en/images/steps/explore.svg"
                   title="Explore Our Game"

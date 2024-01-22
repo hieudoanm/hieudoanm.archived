@@ -10,7 +10,7 @@ import {
   TableCell,
   TableContainer,
   TableHead,
-  TableRow
+  TableRow,
 } from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -33,7 +33,7 @@ const downloadCSV = (
   const headers: string[] = [
     'topic_id',
     'topic_hot_trend_name',
-    'total_buzz_volumn'
+    'total_buzz_volumn',
   ];
   const headerRow: string = `${headers.join(',')}`;
   const dataRows: string = total
@@ -82,7 +82,7 @@ const SocialTrendForm: React.FC<{
   const { loading, error, data } = useAxios<{
     detailStatistics: { total: any[] };
   }>(url, {
-    headers: { Authorization: accessToken }
+    headers: { Authorization: accessToken },
   });
 
   if (loading) {
@@ -124,8 +124,7 @@ const SocialTrendForm: React.FC<{
           fullWidth
           type="button"
           variant="outlined"
-          onClick={() => downloadCSV(total)}
-        >
+          onClick={() => downloadCSV(total)}>
           Download CSV
         </Button>
       </div>
@@ -145,7 +144,7 @@ const SocialTrendForm: React.FC<{
                 {
                   topic_id = '',
                   topic_hot_trend_name = '',
-                  total_buzz_volumn = 0
+                  total_buzz_volumn = 0,
                 },
                 index: number
               ) => {
@@ -191,7 +190,7 @@ export const SocialTrendPage: NextPage = () => {
     date: Dayjs;
   }>({
     range: oneDayTime,
-    date: dayjs(toTime)
+    date: dayjs(toTime),
   });
 
   useEffect(() => {
@@ -231,7 +230,7 @@ export const SocialTrendPage: NextPage = () => {
                 onChange={(newDate: Dayjs | null) =>
                   setDateRange({
                     ...dateRange,
-                    date: newDate ?? dayjs(toTime)
+                    date: newDate ?? dayjs(toTime),
                   })
                 }
                 className="w-full"
@@ -247,10 +246,9 @@ export const SocialTrendPage: NextPage = () => {
                 onChange={(event) =>
                   setDateRange({
                     ...dateRange,
-                    range: Number.parseInt(event.target.value.toString(), 10)
+                    range: Number.parseInt(event.target.value.toString(), 10),
                   })
-                }
-              >
+                }>
                 <MenuItem value={oneDayTime}>24 hours</MenuItem>
                 <MenuItem value={sevenDaysTime}>7 days ago</MenuItem>
                 <MenuItem value={thirtyDaysTime}>30 days ago</MenuItem>

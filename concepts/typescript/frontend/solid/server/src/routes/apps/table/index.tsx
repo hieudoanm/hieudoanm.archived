@@ -81,8 +81,7 @@ export const TablePage: Component = () => {
                             return a.subregion > b.subregion ? 1 : -1;
                           }
                           return a.region > b.region ? 1 : -1;
-                        })}
-                      >
+                        })}>
                         {(country: Country) => {
                           return (
                             <TableRow>

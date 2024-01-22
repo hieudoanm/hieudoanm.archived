@@ -250,8 +250,7 @@ export const Calendar: Component<CalendarProps> = (_props) => {
                     );
                     setDaysInMonth(newDaysInMonth);
                   }}
-                  size="small"
-                >
+                  size="small">
                   <For each={months}>
                     {({ short, long }, index) => (
                       <MenuItem value={index() + 1}>
@@ -266,8 +265,7 @@ export const Calendar: Component<CalendarProps> = (_props) => {
                 <IconButton
                   onClick={() => {
                     changeMonth(-1);
-                  }}
-                >
+                  }}>
                   <KeyboardArrowLeftIcon />
                 </IconButton>
                 <p class="text-md font-bold md:text-xl">
@@ -287,8 +285,7 @@ export const Calendar: Component<CalendarProps> = (_props) => {
                 <IconButton
                   onClick={() => {
                     changeMonth(1);
-                  }}
-                >
+                  }}>
                   <KeyboardArrowRightIcon />
                 </IconButton>
               </div>
@@ -302,8 +299,7 @@ export const Calendar: Component<CalendarProps> = (_props) => {
                   setMonth(initMonth);
                   setYear(initYear);
                   setDaysInMonth(initDaysInMonth);
-                }}
-              >
+                }}>
                 Today
               </Button>
             </div>

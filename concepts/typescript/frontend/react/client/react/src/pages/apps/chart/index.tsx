@@ -80,8 +80,7 @@ export const ChartPage: React.FC = () => {
                 label="Coin"
                 onChange={(event: SelectChangeEvent) => {
                   setCoinUuid(event.target.value);
-                }}
-              >
+                }}>
                 {(coinsResponse?.data.coins.splice(0, 10) || []).map(
                   (coin: Coin) => {
                     return (

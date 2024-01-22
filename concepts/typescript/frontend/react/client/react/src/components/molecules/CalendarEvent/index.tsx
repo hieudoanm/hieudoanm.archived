@@ -31,8 +31,7 @@ export const CalendarEvent: React.FC<CalendarEventProps> = ({
         className="flex cursor-pointer items-center gap-2 truncate rounded bg-blue-500 p-2 text-white"
         onClick={() => {
           console.log(description);
-        }}
-      >
+        }}>
         <div className="h-4 w-4 rounded-full bg-white"></div>
         <div className="text-sm">{description}</div>
       </div>

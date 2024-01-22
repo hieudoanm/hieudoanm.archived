@@ -1,735 +1,735 @@
 {
-  "components": {
-    "examples": {},
-    "headers": {},
-    "parameters": {},
-    "requestBodies": {},
-    "responses": {},
-    "schemas": {
-      "Pick_User.id-or-username_": {
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          }
-        },
-        "required": ["id", "username"],
-        "type": "object",
-        "description": "From T, pick a set of properties whose keys are in the union K"
-      },
-      "TokenRequest": {
-        "properties": {
-          "password": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          }
-        },
-        "required": ["password", "username", "email"],
-        "type": "object"
-      },
-      "TokenResponse": {
-        "properties": {
-          "token": {
-            "type": "string"
-          }
-        },
-        "required": ["token"],
-        "type": "object"
-      },
-      "HealthResponse": {
-        "properties": {
-          "status": {
-            "type": "string"
-          }
-        },
-        "required": ["status"],
-        "type": "object"
-      },
-      "%24Result.DefaultSelection_Prisma.%24ListPayload_": {
-        "properties": {
-          "userId": {
-            "type": "string"
-          },
-          "primary": {
-            "type": "boolean"
-          },
-          "title": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          }
-        },
-        "required": ["userId", "primary", "title", "id"],
-        "type": "object"
-      },
-      "List": {
-        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_",
-        "description": "Model List"
-      },
-      "ListRequest": {
-        "properties": {
-          "title": {
-            "type": "string"
-          }
-        },
-        "required": ["title"],
-        "type": "object"
-      },
-      "%24Result.DefaultSelection_Prisma.%24TaskPayload_": {
-        "properties": {
-          "listId": {
-            "type": "string"
-          },
-          "completed": {
-            "type": "boolean"
-          },
-          "description": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          }
-        },
-        "required": ["listId", "completed", "description", "title", "id"],
-        "type": "object"
-      },
-      "Task": {
-        "$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_",
-        "description": "Model Task"
-      },
-      "TaskRequest": {
-        "properties": {
-          "completed": {
-            "type": "boolean"
-          },
-          "description": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "listId": {
-            "type": "string"
-          }
-        },
-        "required": ["title", "listId"],
-        "type": "object"
-      },
-      "Pick_User.id-or-email-or-username_": {
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          }
-        },
-        "required": ["id", "username", "email"],
-        "type": "object",
-        "description": "From T, pick a set of properties whose keys are in the union K"
-      },
-      "UserRequest": {
-        "properties": {
-          "password": {
-            "type": "string"
-          },
-          "username": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          }
-        },
-        "required": ["password", "username", "email"],
-        "type": "object"
-      }
-    },
-    "securitySchemes": {
-      "api_key": {
-        "type": "apiKey",
-        "name": "access_token",
-        "in": "query"
-      },
-      "jwt": {
-        "scopes": {
-          "lists:read": "read lists",
-          "lists:write": "modify lists",
-          "tasks:read": "read tasks",
-          "tasks:write": "modify tasks",
-          "users:read": "read users",
-          "users:write": "modify users"
-        }
-      }
-    }
-  },
-  "info": {
-    "title": "@express/rest",
-    "version": "0.0.1",
-    "description": "HTTP - REST",
-    "license": {
-      "name": "GPL-3.0"
-    },
-    "contact": {
-      "name": "hieudoanm ",
-      "email": "hieumdoan@gmail.com"
-    }
-  },
-  "openapi": "3.0.0",
-  "paths": {
-    "/auth/sign-up": {
-      "post": {
-        "operationId": "SignUp",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pick_User.id-or-username_"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Auth"],
-        "security": [],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TokenRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/auth/sign-in": {
-      "post": {
-        "operationId": "SignIn",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TokenResponse"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Auth"],
-        "security": [],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TokenRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/health": {
-      "get": {
-        "operationId": "GetHealth",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HealthResponse"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Health"],
-        "security": [],
-        "parameters": []
-      }
-    },
-    "/lists": {
-      "get": {
-        "operationId": "GetLists",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "items": {
-                    "$ref": "#/components/schemas/List"
-                  },
-                  "type": "array"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Lists"],
-        "security": [
-          {
-            "jwt": ["lists:read"]
-          }
-        ],
-        "parameters": []
-      },
-      "post": {
-        "operationId": "CreateList",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/List"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Lists"],
-        "security": [
-          {
-            "jwt": ["lists:write"]
-          }
-        ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ListRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/lists/{id}": {
-      "get": {
-        "operationId": "GetList",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/List"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Lists"],
-        "security": [
-          {
-            "jwt": ["lists:read"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "patch": {
-        "operationId": "UpdateList",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/List"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Lists"],
-        "security": [
-          {
-            "jwt": ["lists:write"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ListRequest"
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "operationId": "DeleteList",
-        "responses": {
-          "204": {
-            "description": "No content"
-          }
-        },
-        "tags": ["Lists"],
-        "security": [
-          {
-            "jwt": ["lists:write"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/tasks": {
-      "get": {
-        "operationId": "GetTasks",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "items": {
-                    "$ref": "#/components/schemas/Task"
-                  },
-                  "type": "array"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Tasks"],
-        "security": [
-          {
-            "jwt": ["tasks:read"]
-          }
-        ],
-        "parameters": []
-      },
-      "post": {
-        "operationId": "CreateTask",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Task"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Tasks"],
-        "security": [
-          {
-            "jwt": ["tasks:write"]
-          }
-        ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TaskRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/tasks/{id}": {
-      "get": {
-        "operationId": "GetTask",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Task"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Tasks"],
-        "security": [
-          {
-            "jwt": ["tasks:read"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "patch": {
-        "operationId": "UpdateTask",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Task"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["Tasks"],
-        "security": [
-          {
-            "jwt": ["tasks:write"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TaskRequest"
-              }
-            }
-          }
-        }
-      },
-      "delete": {
-        "operationId": "DeleteTask",
-        "responses": {
-          "204": {
-            "description": ""
-          }
-        },
-        "tags": ["Tasks"],
-        "security": [
-          {
-            "jwt": ["tasks:write"]
-          }
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/user": {
-      "get": {
-        "operationId": "GetUser",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pick_User.id-or-username_"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["User"],
-        "security": [
-          {
-            "jwt": ["users:read"]
-          }
-        ],
-        "parameters": []
-      },
-      "delete": {
-        "operationId": "DeleteUser",
-        "responses": {
-          "204": {
-            "description": "No content"
-          }
-        },
-        "tags": ["User"],
-        "security": [
-          {
-            "jwt": ["users:write"]
-          }
-        ],
-        "parameters": []
-      }
-    },
-    "/user/email": {
-      "patch": {
-        "operationId": "UpdateEmail",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pick_User.id-or-email-or-username_"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["User"],
-        "security": [
-          {
-            "jwt": ["users:write"]
-          }
-        ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/user/username": {
-      "patch": {
-        "operationId": "UpdateUsername",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pick_User.id-or-username_"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["User"],
-        "security": [
-          {
-            "jwt": ["users:write"]
-          }
-        ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRequest"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/user/password": {
-      "patch": {
-        "operationId": "UpdatePassword",
-        "responses": {
-          "200": {
-            "description": "Ok",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Pick_User.id-or-username_"
-                }
-              }
-            }
-          }
-        },
-        "tags": ["User"],
-        "security": [
-          {
-            "jwt": ["users:write"]
-          }
-        ],
-        "parameters": [],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRequest"
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "servers": [
-    {
-      "url": "http://localhost:8080",
-      "description": "Local"
-    }
-  ]
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"Pick_User.id-or-username_": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"username": {
+						"type": "string"
+					}
+				},
+				"required": ["id", "username"],
+				"type": "object",
+				"description": "From T, pick a set of properties whose keys are in the union K"
+			},
+			"TokenRequest": {
+				"properties": {
+					"password": {
+						"type": "string"
+					},
+					"username": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					}
+				},
+				"required": ["password", "username", "email"],
+				"type": "object"
+			},
+			"TokenResponse": {
+				"properties": {
+					"token": {
+						"type": "string"
+					}
+				},
+				"required": ["token"],
+				"type": "object"
+			},
+			"HealthResponse": {
+				"properties": {
+					"status": {
+						"type": "string"
+					}
+				},
+				"required": ["status"],
+				"type": "object"
+			},
+			"%24Result.DefaultSelection_Prisma.%24ListPayload_": {
+				"properties": {
+					"userId": {
+						"type": "string"
+					},
+					"primary": {
+						"type": "boolean"
+					},
+					"title": {
+						"type": "string"
+					},
+					"id": {
+						"type": "string"
+					}
+				},
+				"required": ["userId", "primary", "title", "id"],
+				"type": "object"
+			},
+			"List": {
+				"$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_",
+				"description": "Model List"
+			},
+			"ListRequest": {
+				"properties": {
+					"title": {
+						"type": "string"
+					}
+				},
+				"required": ["title"],
+				"type": "object"
+			},
+			"%24Result.DefaultSelection_Prisma.%24TaskPayload_": {
+				"properties": {
+					"listId": {
+						"type": "string"
+					},
+					"completed": {
+						"type": "boolean"
+					},
+					"description": {
+						"type": "string"
+					},
+					"title": {
+						"type": "string"
+					},
+					"id": {
+						"type": "string"
+					}
+				},
+				"required": ["listId", "completed", "description", "title", "id"],
+				"type": "object"
+			},
+			"Task": {
+				"$ref": "#/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_",
+				"description": "Model Task"
+			},
+			"TaskRequest": {
+				"properties": {
+					"completed": {
+						"type": "boolean"
+					},
+					"description": {
+						"type": "string"
+					},
+					"title": {
+						"type": "string"
+					},
+					"listId": {
+						"type": "string"
+					}
+				},
+				"required": ["title", "listId"],
+				"type": "object"
+			},
+			"Pick_User.id-or-email-or-username_": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"username": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					}
+				},
+				"required": ["id", "username", "email"],
+				"type": "object",
+				"description": "From T, pick a set of properties whose keys are in the union K"
+			},
+			"UserRequest": {
+				"properties": {
+					"password": {
+						"type": "string"
+					},
+					"username": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					}
+				},
+				"required": ["password", "username", "email"],
+				"type": "object"
+			}
+		},
+		"securitySchemes": {
+			"api_key": {
+				"type": "apiKey",
+				"name": "access_token",
+				"in": "query"
+			},
+			"jwt": {
+				"scopes": {
+					"lists:read": "read lists",
+					"lists:write": "modify lists",
+					"tasks:read": "read tasks",
+					"tasks:write": "modify tasks",
+					"users:read": "read users",
+					"users:write": "modify users"
+				}
+			}
+		}
+	},
+	"info": {
+		"title": "@express/rest",
+		"version": "0.0.1",
+		"description": "HTTP - REST",
+		"license": {
+			"name": "GPL-3.0"
+		},
+		"contact": {
+			"name": "hieudoanm ",
+			"email": "hieumdoan@gmail.com"
+		}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/auth/sign-up": {
+			"post": {
+				"operationId": "SignUp",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Pick_User.id-or-username_"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Auth"],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TokenRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/auth/sign-in": {
+			"post": {
+				"operationId": "SignIn",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/TokenResponse"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Auth"],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TokenRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/health": {
+			"get": {
+				"operationId": "GetHealth",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HealthResponse"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Health"],
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/lists": {
+			"get": {
+				"operationId": "GetLists",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/List"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Lists"],
+				"security": [
+					{
+						"jwt": ["lists:read"]
+					}
+				],
+				"parameters": []
+			},
+			"post": {
+				"operationId": "CreateList",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/List"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Lists"],
+				"security": [
+					{
+						"jwt": ["lists:write"]
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ListRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/lists/{id}": {
+			"get": {
+				"operationId": "GetList",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/List"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Lists"],
+				"security": [
+					{
+						"jwt": ["lists:read"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"patch": {
+				"operationId": "UpdateList",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/List"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Lists"],
+				"security": [
+					{
+						"jwt": ["lists:write"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/ListRequest"
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteList",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"tags": ["Lists"],
+				"security": [
+					{
+						"jwt": ["lists:write"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/tasks": {
+			"get": {
+				"operationId": "GetTasks",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/Task"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Tasks"],
+				"security": [
+					{
+						"jwt": ["tasks:read"]
+					}
+				],
+				"parameters": []
+			},
+			"post": {
+				"operationId": "CreateTask",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Task"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Tasks"],
+				"security": [
+					{
+						"jwt": ["tasks:write"]
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TaskRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/tasks/{id}": {
+			"get": {
+				"operationId": "GetTask",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Task"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Tasks"],
+				"security": [
+					{
+						"jwt": ["tasks:read"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"patch": {
+				"operationId": "UpdateTask",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Task"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["Tasks"],
+				"security": [
+					{
+						"jwt": ["tasks:write"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TaskRequest"
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteTask",
+				"responses": {
+					"204": {
+						"description": ""
+					}
+				},
+				"tags": ["Tasks"],
+				"security": [
+					{
+						"jwt": ["tasks:write"]
+					}
+				],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/user": {
+			"get": {
+				"operationId": "GetUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Pick_User.id-or-username_"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["User"],
+				"security": [
+					{
+						"jwt": ["users:read"]
+					}
+				],
+				"parameters": []
+			},
+			"delete": {
+				"operationId": "DeleteUser",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"tags": ["User"],
+				"security": [
+					{
+						"jwt": ["users:write"]
+					}
+				],
+				"parameters": []
+			}
+		},
+		"/user/email": {
+			"patch": {
+				"operationId": "UpdateEmail",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Pick_User.id-or-email-or-username_"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["User"],
+				"security": [
+					{
+						"jwt": ["users:write"]
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/UserRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/user/username": {
+			"patch": {
+				"operationId": "UpdateUsername",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Pick_User.id-or-username_"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["User"],
+				"security": [
+					{
+						"jwt": ["users:write"]
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/UserRequest"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/user/password": {
+			"patch": {
+				"operationId": "UpdatePassword",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Pick_User.id-or-username_"
+								}
+							}
+						}
+					}
+				},
+				"tags": ["User"],
+				"security": [
+					{
+						"jwt": ["users:write"]
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/UserRequest"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "http://localhost:8080",
+			"description": "Local"
+		}
+	]
 }

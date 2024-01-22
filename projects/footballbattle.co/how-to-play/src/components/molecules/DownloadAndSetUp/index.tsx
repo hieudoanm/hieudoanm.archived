@@ -39,8 +39,7 @@ const DownloadAndSetUp: React.FC = () => {
               <a
                 href="https://apps.apple.com/us/app/metamask-blockchain-wallet/id1438144202"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 <Sprite
                   image="/how-to-play/en/images/download/google-play-store.svg"
                   className="w-44 h-12 bg-contain bg-no-repeat"
@@ -54,8 +53,7 @@ const DownloadAndSetUp: React.FC = () => {
             Still need help?{' '}
             <a
               href="https://bit.ly/3ArxJvc"
-              className="text-[#FFC815] underline"
-            >
+              className="text-[#FFC815] underline">
               Watch community-made tutorial
             </a>
           </p>

@@ -48,8 +48,7 @@ const ForgetPasswordPage: NextPage = () => {
                 </Button>
                 <Link
                   href="/auth/sign-in"
-                  className="text-center text-blue-500"
-                >
+                  className="text-center text-blue-500">
                   Back to Sign In
                 </Link>
               </div>

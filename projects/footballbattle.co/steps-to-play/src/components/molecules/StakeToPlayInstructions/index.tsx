@@ -17,8 +17,7 @@ const Circle: React.FC<{ background?: string; children: React.ReactNode }> = ({
 }) => {
   return (
     <div
-      className={`w-8 h-8 flex justify-center items-center border border-black rounded-full ${background}`}
-    >
+      className={`w-8 h-8 flex justify-center items-center border border-black rounded-full ${background}`}>
       {children}
     </div>
   );

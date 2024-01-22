@@ -10,14 +10,14 @@ import {
   TableRow,
   TextField,
   ToggleButton,
-  ToggleButtonGroup
+  ToggleButtonGroup,
 } from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import {
   ERROR_MESSAGE_AUTHENTICATION,
   ERROR_MESSAGE_DATE_RANGE,
-  ERROR_MESSAGE_MISSING_PIN
+  ERROR_MESSAGE_MISSING_PIN,
 } from '@younetmedia/common/constants';
 import { logger } from '@younetmedia/common/libs/log';
 import { Navbar } from '@younetmedia/components/Navbar';
@@ -66,7 +66,7 @@ export const SocialHeatPage: NextPage = () => {
     fromDate: dayjs(getQueryParameter(query, 'fromDate', today)),
     toDate: dayjs(getQueryParameter(query, 'toDate', today)),
     pin: getQueryParameter(query, 'pin', ''),
-    loading: 0
+    loading: 0,
   };
   logger.info('defaultAppState', defaultAppState);
   const [appState, setAppState] = useState<AppState>(defaultAppState);
@@ -93,7 +93,7 @@ export const SocialHeatPage: NextPage = () => {
     input,
     topicId,
     fromDate,
-    toDate
+    toDate,
   }: {
     loading: number;
     pin: string;
@@ -109,8 +109,8 @@ export const SocialHeatPage: NextPage = () => {
         input,
         topicId,
         fromDate: fromDate?.format(FORMAT) ?? '',
-        toDate: toDate?.format(FORMAT) ?? ''
-      }
+        toDate: toDate?.format(FORMAT) ?? '',
+      },
     });
   };
 
@@ -177,7 +177,7 @@ export const SocialHeatPage: NextPage = () => {
           appState.topicId,
           {
             fromDate: appState.fromDate?.format(FORMAT) ?? '',
-            toDate: appState.toDate?.format(FORMAT) ?? ''
+            toDate: appState.toDate?.format(FORMAT) ?? '',
           },
           query
         );
@@ -187,7 +187,7 @@ export const SocialHeatPage: NextPage = () => {
         newResults.push({
           query,
           total_collectable_mentions: -1,
-          total_mentions: -1
+          total_mentions: -1,
         } as Result);
       }
       const newLoading = Number.parseFloat(((index / total) * 100).toFixed(2));
@@ -201,7 +201,7 @@ export const SocialHeatPage: NextPage = () => {
     const headers: string[] = [
       'query',
       'total_collectable_mentions',
-      'total_mentions'
+      'total_mentions',
     ];
     const headerRow: string = `${headers.join(',')}`;
     const dataRows: string = results
@@ -258,7 +258,7 @@ export const SocialHeatPage: NextPage = () => {
                       setAppState({ ...appState, pin: event.target.value });
                       setQueryParameters({
                         ...appState,
-                        pin: event.target.value
+                        pin: event.target.value,
                       });
                     }}
                   />
@@ -309,8 +309,7 @@ export const SocialHeatPage: NextPage = () => {
                       size="large"
                       value={appState.input}
                       onChange={changeInput}
-                      exclusive={true}
-                    >
+                      exclusive={true}>
                       <ToggleButton value="input" key="input">
                         Input
                       </ToggleButton>
@@ -339,8 +338,7 @@ export const SocialHeatPage: NextPage = () => {
                         return (
                           <div
                             key={`query-${query}`}
-                            className="grid grid-cols-12 border-b py-4"
-                          >
+                            className="grid grid-cols-12 border-b py-4">
                             <div className="col-span-1 text-center">
                               {index + 1}
                             </div>
@@ -366,8 +364,7 @@ export const SocialHeatPage: NextPage = () => {
                   <Button
                     type="button"
                     variant="outlined"
-                    onClick={downloadCSV}
-                  >
+                    onClick={downloadCSV}>
                     Download CSV
                   </Button>
                 </div>
@@ -376,8 +373,7 @@ export const SocialHeatPage: NextPage = () => {
                 <TableContainer
                   component={Paper}
                   sx={{ maxHeight: 440 }}
-                  className="border"
-                >
+                  className="border">
                   <Table stickyHeader sx={{ minWidth: 650 }} aria-label="table">
                     <TableHead>
                       <TableRow>
@@ -395,8 +391,7 @@ export const SocialHeatPage: NextPage = () => {
                           <TableCell
                             align="center"
                             colSpan={4}
-                            className="border-0 border-none uppercase"
-                          >
+                            className="border-0 border-none uppercase">
                             {appState.loading}%
                           </TableCell>
                         </TableRow>
@@ -413,18 +408,16 @@ export const SocialHeatPage: NextPage = () => {
                                   )}`}
                                   sx={{
                                     '&:last-child td, &:last-child th': {
-                                      border: 0
-                                    }
-                                  }}
-                                >
+                                      border: 0,
+                                    },
+                                  }}>
                                   <TableCell align="center">
                                     {index + 1}
                                   </TableCell>
                                   <TableCell
                                     component="th"
                                     scope="row"
-                                    sx={{ maxWidth: '300px' }}
-                                  >
+                                    sx={{ maxWidth: '300px' }}>
                                     <p className="truncate">{resultQuery}</p>
                                   </TableCell>
                                   <TableCell align="right">
@@ -441,8 +434,7 @@ export const SocialHeatPage: NextPage = () => {
                               <TableCell
                                 align="center"
                                 colSpan={4}
-                                className="border-0 border-none uppercase"
-                              >
+                                className="border-0 border-none uppercase">
                                 No Data
                               </TableCell>
                             </TableRow>

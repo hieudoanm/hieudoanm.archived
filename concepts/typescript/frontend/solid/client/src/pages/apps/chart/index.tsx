@@ -101,8 +101,7 @@ export const ChartPage: Component = () => {
                 onChange={(event: SelectChangeEvent) => {
                   console.log(event.target.value);
                   setCoinUuid(event.target.value);
-                }}
-              >
+                }}>
                 <For each={coinsResponse()?.data.coins.splice(0, 10) ?? []}>
                   {(coin: Coin) => {
                     return <MenuItem value={coin.uuid}>{coin.name}</MenuItem>;

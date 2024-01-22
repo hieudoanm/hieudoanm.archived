@@ -44,7 +44,7 @@ export const queryResult = async (
         params: {
           route: {
             topic_id: topicId,
-            service: 'mentions-statistics'
+            service: 'mentions-statistics',
           },
           query: {
             $select: [
@@ -75,7 +75,7 @@ export const queryResult = async (
               'id_reference',
               'rating_score',
               'sentiment',
-              'sentiment_comments'
+              'sentiment_comments',
             ],
             $noise_filter_mode: 'EXCLUDE_NOISE_SPAM',
             $source_group_not_in: 'off',
@@ -86,9 +86,9 @@ export const queryResult = async (
             $params: { cursorMark: '*' },
             $sort: { last_activity: -1, id: -1 },
             is_ignore: { $ne: 1 },
-            is_relevance: { $ne: 0 }
-          }
-        }
+            is_relevance: { $ne: 0 },
+          },
+        },
       },
       {
         service: 'topics/:topic_id/:service',
@@ -96,7 +96,7 @@ export const queryResult = async (
         params: {
           route: {
             topic_id: topicId,
-            service: 'mentions-statistics'
+            service: 'mentions-statistics',
           },
           query: {
             $select: [
@@ -127,7 +127,7 @@ export const queryResult = async (
               'id_reference',
               'rating_score',
               'sentiment',
-              'sentiment_comments'
+              'sentiment_comments',
             ],
             $noise_filter_mode: 'EXCLUDE_NOISE_SPAM',
             $source_group_not_in: 'off',
@@ -138,11 +138,11 @@ export const queryResult = async (
             $params: { cursorMark: '*' },
             $sort: { last_activity: -1, id: -1 },
             is_ignore: { $ne: 1 },
-            is_relevance: { $ne: 0 }
-          }
-        }
-      }
-    ]
+            is_relevance: { $ne: 0 },
+          },
+        },
+      },
+    ],
   };
   try {
     const { data = [] } = await axios.post<
@@ -151,14 +151,14 @@ export const queryResult = async (
     return {
       query,
       total_mentions: data[0].total_mentions || -1,
-      total_collectable_mentions: data[0].total_collectable_mentions || -1
+      total_collectable_mentions: data[0].total_collectable_mentions || -1,
     };
   } catch (error) {
     logger.error(error);
     return {
       query,
       total_mentions: -1,
-      total_collectable_mentions: -1
+      total_collectable_mentions: -1,
     };
   }
 };

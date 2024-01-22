@@ -27,8 +27,7 @@ const JoinCommunity: React.FC = () => {
                 <a
                   href="https://t.me/footballbattleNFT"
                   target="_blank"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
                   <Sprite
                     style={{ paddingBottom: '50%' }}
                     image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/png/telegram-button.png"
@@ -40,8 +39,7 @@ const JoinCommunity: React.FC = () => {
                 <a
                   href="https://discord.com/invite/vqymVPcFSs"
                   target="_blank"
-                  rel="noreferrer"
-                >
+                  rel="noreferrer">
                   <Sprite
                     style={{ paddingBottom: '50%' }}
                     image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/png/discord-button.png"
