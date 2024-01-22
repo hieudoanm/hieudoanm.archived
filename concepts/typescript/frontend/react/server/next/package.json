@@ -28,7 +28,7 @@
     "@trpc/next": "10.45.0",
     "@trpc/react-query": "10.45.0",
     "@trpc/server": "10.45.0",
-    "apexcharts": "3.45.1",
+    "apexcharts": "3.45.2",
     "axios": "1.6.5",
     "next": "14.1.0",
     "next-auth": "4.24.5",
