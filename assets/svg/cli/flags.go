@@ -36,7 +36,7 @@ func main() {
     fmt.Printf("---- %d ----\n", index);
     fmt.Println(country.Code)
     fmt.Println(country.Flags.SVG)
-    var file string = fmt.Sprintf("../icons/flags/%s.svg", strings.ToLower(country.Code))
+    var file string = fmt.Sprintf("./icons/flags/%s.svg", strings.ToLower(country.Code))
     DownloadFile(file, country.Flags.SVG)
   }
 }

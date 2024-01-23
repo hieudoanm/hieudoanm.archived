@@ -1,9 +1,6 @@
-import dotenv from 'dotenv';
 import { createWriteStream } from 'fs';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
-
-dotenv.config();
 
 const API_KEY_COIN_RANKING: string = process.env.API_KEY_COIN_RANKING ?? '';
 console.log(API_KEY_COIN_RANKING);

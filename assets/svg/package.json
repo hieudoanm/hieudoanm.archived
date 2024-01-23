@@ -8,18 +8,17 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "download:coins": "yarn ts-node ./scripts/download/coins",
-    "download:flags": "yarn ts-node ./scripts/download/flags",
+    "coins": "yarn ts-node ./scripts/download/coins --env-file=.env",
+    "flags": "go run ./cli/flags.go",
     "optimize": "svgo -f icons",
-    "count": "yarn ts-node ./scripts/count",
-    "empty": "yarn ts-node ./scripts/empty",
-    "icons": "yarn ts-node ./scripts/icons"
+    "count": "go run ./cli/count.go",
+    "icons": "yarn ts-node ./scripts/icons",
+    "format": "prettier . --write"
   },
   "devDependencies": {
     "@types/node": "20.11.5",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "dotenv": "16.3.2",
     "eslint": "8.56.0",
     "husky": "8.0.3",
     "prettier": "3.2.4",

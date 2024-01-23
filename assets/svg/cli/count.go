@@ -10,7 +10,7 @@ import (
 func main() {
   const rawGitHub = "https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg"
   var paths []string = []string{};
-  err := filepath.Walk("../icons", func(path string, info os.FileInfo, err error) error {
+  err := filepath.Walk("./icons", func(path string, info os.FileInfo, err error) error {
   	if err != nil {
 		  return err
 	  }
