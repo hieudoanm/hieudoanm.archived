@@ -43,7 +43,7 @@ services:
       - '27017:27017'
   # Relational
   relational-cockroachdb:
-    image: cockroachdb/cockroach:v23.1.13
+    image: cockroachdb/cockroach:v23.1.14
     container_name: relational-cockroachdb
     restart: always
     volumes:
