@@ -788,10 +788,10 @@ htmlparser2@^8.0.1:
     domutils "^3.0.1"
     entities "^4.4.0"
 
-husky@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.1.tgz#710ed0d06b7fb2f5723ea8db436b632e7aecc284"
-  integrity sha512-rXCT8yF2v3awSG03AG6IgICDhJ+m8o3jL1ROwsT4nQZ6urEyKSj0IWFDIh5YC2zgZeAxWksNMbN6rYY4BE1Zrw==
+husky@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.3.tgz#26bf3f7597fc977589c82c16c680e9320b9fcf5b"
+  integrity sha512-MNRluWx5bvZ2Ft2Z9ni5KZAgNFrQSM4LKvEtTJVKTjGRqliI1CeWv8HWnPXfM+4snOaU04bb7IU2u6TPDb8ROw==
 
 ignore@^5.2.0, ignore@^5.2.4:
   version "5.3.0"
