@@ -8,7 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
-    "husky": "9.0.1",
+    "husky": "9.0.3",
     "prettier": "3.2.4",
     "prisma": "5.8.1"
   },
