@@ -11,7 +11,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.258",
+    "@types/chrome": "0.0.259",
     "@types/node": "20.11.6",
     "@webpack-cli/generators": "3.0.7",
     "copy-webpack-plugin": "12.0.2",
