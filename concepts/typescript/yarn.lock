@@ -26217,10 +26217,10 @@ undici@6.2.1:
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
-undici@6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.4.0.tgz#7ca0c3f73e1034f3c79e566183b61bb55b1410ea"
-  integrity sha512-wYaKgftNqf6Je7JQ51YzkEkEevzOgM7at5JytKO7BjaURQpERW8edQSMrr2xb+Yv4U8Yg47J24+lc9+NbeXMFA==
+undici@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.5.0.tgz#fc3b4f4255804bf56e72c01313ddbf75661aae5c"
+  integrity sha512-/MUmPb2ptTvp1j7lPvdMSofMdqPxcOhAaKZi4k55sqm6XMeKI3n1dZJ5cnD4gLjpt2l7CIlthR1IXM59xKhpxw==
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
