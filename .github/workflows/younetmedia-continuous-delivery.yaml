@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - projects/younetmedia.com/web/**
+      - projects/younetmedia.com/**
 
 jobs:
   continuous-delivery:
@@ -13,7 +13,7 @@ jobs:
       matrix:
         services:
           - name: YouNetMedia
-            working-directory: projects/younetmedia.com/web
+            working-directory: projects/younetmedia.com
     name: Continuous Delivery - ${{ matrix.services.name }}
     runs-on: ubuntu-latest
     steps:

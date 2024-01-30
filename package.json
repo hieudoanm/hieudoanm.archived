@@ -8,6 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
+    "format:workspaces": "turbo run format",
     "format": "biome format --write . || true",
     "prepare": "husky install || true"
   },
@@ -19,6 +20,7 @@
     "turbo": "1.11.3"
   },
   "workspaces": [
-    "assets/svg"
+    "assets/svg",
+    "projects/younetmedia.com"
   ]
 }
