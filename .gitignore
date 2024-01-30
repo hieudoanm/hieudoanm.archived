@@ -1,4 +1,11 @@
+# environments
 .env
+
+# macOS
 .DS_Store
 
+# turbo
+.turbo
+
+# node.js
 node_modules

@@ -1,3 +1,4 @@
+import { ParsedUrlQuery } from 'node:querystring';
 import {
   Button,
   Paper,
@@ -14,23 +15,22 @@ import {
 } from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { Navbar } from '@younetmedia/common/components/Navbar';
 import {
   ERROR_MESSAGE_AUTHENTICATION,
   ERROR_MESSAGE_DATE_RANGE,
   ERROR_MESSAGE_MISSING_PIN,
 } from '@younetmedia/common/constants';
-import { logger } from '@younetmedia/common/libs/log';
-import { Navbar } from '@younetmedia/common/components/Navbar';
 import {
-  PIN,
   NEXT_PUBLIC_PIN,
+  PIN,
 } from '@younetmedia/common/environments/environments';
+import { logger } from '@younetmedia/common/libs/log';
 import { queryResult } from '@younetmedia/common/services/younetmedia.service';
 import { Result } from '@younetmedia/common/types';
 import dayjs, { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { ParsedUrlQuery } from 'node:querystring';
 import React, { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 
 const FORMAT: string = 'YYYY-MM-DD';
@@ -87,8 +87,7 @@ export const SocialHeatPage: NextPage = () => {
       router.push('/auth');
     }
     setAccessToken(cacheAccessToken);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router]);
 
   const setQueryParameters = ({
     pin = '',

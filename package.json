@@ -8,6 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
+    "check:workspaces": "turbo run check",
     "format:workspaces": "turbo run format",
     "format": "biome format --write . || true",
     "prepare": "husky install || true"
