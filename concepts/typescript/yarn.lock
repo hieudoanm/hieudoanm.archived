@@ -7869,12 +7869,12 @@
   resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.10.10.tgz#cd236ef438e9aa50864e7361db710af26b152ad5"
   integrity sha512-nGl7gMgsojuaupI5MAK2cFtkndmWWSAPhill/8La3IjujY3vMBamcQFymBsA2ejzxEYJjkOlEQHYgp2jNFkwuQ==
 
-"@solidjs/testing-library@0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@solidjs/testing-library/-/testing-library-0.8.5.tgz#97061b2286d8641bd43bf474e624c3bb47e486a6"
-  integrity sha512-L9TowCoqdRQGB8ikODh9uHXrYTjCUZseVUG0tIVa836//qeSqXP4m0BKG66v9Zp1y1wRxok5qUW97GwrtEBMcw==
+"@solidjs/testing-library@0.8.6":
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@solidjs/testing-library/-/testing-library-0.8.6.tgz#de00bc110f5b1202c3c871cf4fd8e739760f9a34"
+  integrity sha512-MnDGfUw38SjE+lmCDZ44HeZq5WbDU7s/BTa7uvqv55GKatddoWiJmHanUAbuEtmwMdEv+fFQQzftkqrFXEn1BQ==
   dependencies:
-    "@testing-library/dom" "^9.3.1"
+    "@testing-library/dom" "^9.3.4"
 
 "@suid/base@0.8.5":
   version "0.8.5"
@@ -8139,10 +8139,24 @@
     "@tanstack/query-core" "4.36.1"
     use-sync-external-store "^1.2.0"
 
-"@testing-library/dom@^9.0.0", "@testing-library/dom@^9.3.1":
+"@testing-library/dom@^9.0.0":
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-9.3.1.tgz#8094f560e9389fb973fe957af41bf766937a9ee9"
   integrity sha512-0DGPd9AR3+iDTjGoMpxIkAsUihHZ3Ai6CneU6bRRrffXMgzCdlNk43jTrD2/5LT6CBb3MWTP8v510JzYtahD2w==
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^5.0.1"
+    aria-query "5.1.3"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.5.0"
+    pretty-format "^27.0.2"
+
+"@testing-library/dom@^9.3.4":
+  version "9.3.4"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-9.3.4.tgz#50696ec28376926fec0a1bf87d9dbac5e27f60ce"
+  integrity sha512-FlS4ZWlp97iiNWig0Muq8p+3rVDjRiYE+YKGbAqXOu9nwJFFOdL00kFpz42M+4huzYi86vAK1sOOfyOG45muIQ==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
