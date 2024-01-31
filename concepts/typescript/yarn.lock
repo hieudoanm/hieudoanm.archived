@@ -3707,10 +3707,10 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
-"@elastic/elasticsearch@8.11.0":
-  version "8.11.0"
-  resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-8.11.0.tgz#6cc62f29cd139740b4f69d30f76a58a093befc34"
-  integrity sha512-1UEQFdGLuKdROLJnMTjegasRM3X9INm/PVADoIVgdTfuv6DeJ17UMuNwYSkCrLrC0trLjjGV4YganpbJJX/VLg==
+"@elastic/elasticsearch@8.12.0":
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-8.12.0.tgz#5accb96b46214e6fb680fbb3d137f78f637cbe20"
+  integrity sha512-cgUfEYyyXao/VqqS5RGsRMBKVck1fhPYX2Aux7jOwPqMAGE+VE+ra7KhU0T2ZqIpahPCbvx4ro4WPzhBrsVH6A==
   dependencies:
     "@elastic/transport" "^8.4.0"
     tslib "^2.4.0"
