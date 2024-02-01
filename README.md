@@ -1,4 +1,4 @@
-<div align="center">
+  <div align="center">
   <h1><a href="https://hieudoanm.github.io">👨‍💻 HIEU DOAN 👨‍💻</a></h1>
 </div>
 
@@ -8,9 +8,9 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/languages/typescript.svg" alt="TypeScript" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/react.svg" alt="React" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/nextjs-white.svg" alt="Next.js" width="32px" height="32px" />
+  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/expo.svg" alt="Expo" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/meta/graphql.svg" alt="GraphQL" width="32px" height="32px" />
-  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/nest.svg" alt="Nest.js" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/python.svg" alt="Python" width="32px" height="32px" />
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/tech/pandas.svg" alt="Pandas" width="32px" height="32px" />
