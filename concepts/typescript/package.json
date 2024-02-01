@@ -10,7 +10,7 @@
   "devDependencies": {
     "husky": "9.0.8",
     "prettier": "3.2.4",
-    "prisma": "5.9.0"
+    "prisma": "5.9.1"
   },
   "resolutions": {
     "semver": "7.5.4",
