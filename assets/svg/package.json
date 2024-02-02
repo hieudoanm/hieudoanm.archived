@@ -1,0 +1,32 @@
+{
+  "name": "svg",
+  "version": "0.0.1",
+  "description": "SVG",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "coins": "yarn ts-node ./scripts/download/coins --env-file=.env",
+    "flags": "go run ./cli/flags.go",
+    "optimize": "svgo -f icons",
+    "count": "go run ./cli/count.go",
+    "icons": "yarn ts-node ./scripts/icons",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "8.56.0",
+    "husky": "9.0.10",
+    "prettier": "3.2.4",
+    "svgo": "3.2.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  }
+}

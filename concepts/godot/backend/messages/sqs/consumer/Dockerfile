@@ -1,0 +1,15 @@
+FROM golang:1.21.6
+
+LABEL maintainer="hieumdoan@gmail.com"
+LABEL version="1.0"
+LABEL description="SQS - Consumer"
+
+WORKDIR /app
+
+COPY . .
+
+RUN go mod download
+
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ./dist/main
+
+ENTRYPOINT ["./dist/main"]

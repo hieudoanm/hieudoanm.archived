@@ -1,0 +1,16 @@
+# images
+*.png
+
+# next.js
+.next
+
+# test
+coverage
+
+# build
+dist
+out
+
+
+# node.js
+node_modules
