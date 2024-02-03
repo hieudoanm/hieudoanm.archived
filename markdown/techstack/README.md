@@ -3,7 +3,6 @@
 - [Technology](#technology)
   - [Abbreviation](#abbreviation)
   - [Techstack](#techstack)
-  - [Companies](#companies)
 
 ## Abbreviation
 
@@ -48,30 +47,18 @@
 | Runtime          | Supersector  | Sector               | Subsector              | Name                                           | Developer              |
 | ---------------- | ------------ | -------------------- | ---------------------- | ---------------------------------------------- | ---------------------- |
 |                  | OS           | Kernel               |                        | [Linux](https://www.kernel.org/)               |                        |
-|                  | Full-stack   | IDE                  |                        | Intellij IDEA                                  | [JetBrains][jetbrains] |
-|                  | Full-stack   | IDE                  |                        | Visual Studio                                  | [Microsoft][microsoft] |
-|                  | Full-stack   | IDE                  |                        | Visual Studio Code                             | [Microsoft][microsoft] |
 |                  | Full-stack   | Language             | Markup                 | [Markdown][markdown]                           |                        |
 |                  | Full-stack   | Language             | Markup                 | [SVG][svg]                                     |                        |
 |                  | Full-stack   | Language             | Programming            | C                                              |                        |
 |                  | Full-stack   | Language             | Programming            | [C++](https://isocpp.org/)                     |                        |
-|                  | Full-stack   | Language             | Programming            | [C#][csharp]                                   | [Microsoft][microsoft] |
-|                  | Full-stack   | Language             | Programming            | [Dart](https://dart.dev/)                      | [Alphabet][alphabet]   |
-|                  | Full-stack   | Language             | Programming            | [Golang][golang]                               | [Alphabet][alphabet]   |
-|                  | Full-stack   | Language             | Programming            | [Java][java]                                   | [Oracle][oracle]       |
 |                  | Full-stack   | Language             | Programming            | [Python](https://www.python.org)               |                        |
 |                  | Full-stack   | Language             | Programming            | [Shell Script][shell-script]                   |                        |
 | [Node.js][node]  | Full-stack   | Language             | Programming            | [JavaScript][javascript]                       |                        |
-| [Node.js][node]  | Full-stack   | Language             | Programming            | [TypeScript][typescript]                       | [Microsoft][microsoft] |
-| [Golang][golang] | Full-stack   | Package Manager      |                        | [Go Packages](https://pkg.go.dev/)             | [Alphabet][alphabet]   |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [Gradle](https://gradle.org/)                  |                        |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [JFrog](https://jfrog.com/)                    |                        |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [Maven](https://maven.apache.org/)             |                        |
-| [Node.js][node]  | Full-stack   | Package Manager      |                        | [npm](https://www.npmjs.com/)                  | [Microsoft][microsoft] |
 | [Node.js][node]  | Full-stack   | Package Manager      |                        | [pnpm](https://pnpm.io/)                       |                        |
-| [Node.js][node]  | Full-stack   | Package Manager      |                        | [yarn](https://yarnpkg.com/)                   |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [anaconda](https://www.anaconda.com/)          |                        |
-| [Python][python] | Full-stack   | Package Manager      |                        | [conda][conda]                                 |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [pip](https://pypi.org/project/pip/)           |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [pipenv][pipenv]                               |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [virtualenv][virtualenv]                       |                        |
@@ -82,50 +69,19 @@
 |                  | Full-stack   | Linting & Formatter  | Linting                | [sonarlint][sonarlint]                         |                        |
 | [Java][java]     | Full-stack   | Linting & Formatter  | Linting                | [checkstyle](https://checkstyle.org/)          |                        |
 | [Java][java]     | Full-stack   | Linting & Formatter  | Linting                | [spotbugs][spotbugs]                           |                        |
-| [Node.js][node]  | Full-stack   | Linting & Formatter  | Linting                | [eslint](https://eslint.org)                   |                        |
-| [Node.js][node]  | Full-stack   | Linting & Formatter  | Formatter              | [prettier](https://prettier.io)                |                        |
 | [Node.js][node]  | Full-stack   | Build                |                        | [webpack](https://webpack.js.org/)             |                        |
 | [Node.js][node]  | Full-stack   | Testing              | Unit                   | [jasmine](https://jasmine.github.io/)          |                        |
-| [Node.js][node]  | Full-stack   | Testing              | Unit                   | [jest](http://jestjs.io/)                      | [Meta][meta]           |
 | [Node.js][node]  | Full-stack   | Testing              | Unit                   | [mocha](https://mochajs.org/)                  |                        |
 | [Node.js][node]  | Full-stack   | Git Hooks            |                        | [husky][node-husky]                            |                        |
 | [Golang][golang] | Full-stack   | CLI                  |                        | [cobra](https://cobra.dev/)                    |                        |
 | [Node.js][node]  | Full-stack   | CLI                  |                        | [vite](https://vitejs.dev/)                    |                        |
 | [Node.js][node]  | Full-stack   | Documentation        | Markdown to HTML       | [docsify](https://docsify.js.org/#/)           |                        |
-| [Node.js][node]  | Full-stack   | Documentation        | Markdown to HTML       | [docusaurus](https://docusaurus.io/)           |                        |
 | [Node.js][node]  | Full-stack   | Framework            | GraphQL                | [Apollo][apollo]                               |                        |
 | [Node.js][node]  | Front-end    | Styling              | CSS Extension          | [PostCSS](https://postcss.org/)                |                        |
 | [Node.js][node]  | Front-end    | Styling              | CSS Extension          | [SASS](https://sass-lang.com/)                 |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Framework          | [Bootstrap](https://getbootstrap.com/)         | [Twitter][twitter]     |
-| [Node.js][node]  | Front-end    | Styling              | CSS Framework          | [Materialize CSS][materialize]                 | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Styling              | CSS Framework          | [TailwindCSS][tailwind]                        |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [Ant Design](https://ant.design/)              |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [Chakra UI](https://chakra-ui.com)             |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [TailwindUI](https://tailwindui.com/)          |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [Theme UI](https://theme-ui.com/)              |                        |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [MUI](https://mui.com)                         | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [NextUI](https://nextui.org/)                  | [Vercel][vercel]       |
-| [Node.js][node]  | Front-end    | Styling              | CSS Components         | [shadcn](https://ui.shadcn.com/)               |                        |
 | [Node.js][node]  | Front-end    | Styling              | Documentation          | [storybook](https://storybook.js.org/)         |                        |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | ~~[AngularJS](https://angularjs.org/)~~        | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | [Angular](https://angular.io/)                 | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | [React](https://react.dev/)                    | [Meta][meta]           |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | [Solid](https://www.solidjs.com/)              |                        |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | [Svelte](https://svelte.dev/)                  | [Vercel][vercel]       |
-| [Node.js][node]  | Front-end    | Framework            | Client                 | [Vue.js](https://vuejs.org/)                   |                        |
-| [Node.js][node]  | Front-end    | Framework            | Server                 | [Gatsby.js](https://gatsbyjs.org)              | [Netlify][netlify]     |
-| [Node.js][node]  | Front-end    | Framework            | Server                 | [Next.js](https://nextjs.org/)                 | [Vercel][vercel]       |
-| [Node.js][node]  | Front-end    | Framework            | Server                 | [Nuxt](https://nuxtjs.org/)                    |                        |
-| [Node.js][node]  | Front-end    | Framework            | Server                 | [SolidStart][solid-start]                      |                        |
-| [Node.js][node]  | Front-end    | Framework            | Server                 | [SvelteKit](https://kit.svelte.dev/)           |                        |
-| [Node.js][node]  | Front-end    | Framework            | Hybrid                 | [Flutter](https://flutter.dev/)                | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Framework            | Hybrid                 | [Ionic](https://ionicframework.com/)           |                        |
-| [Node.js][node]  | Front-end    | Framework            | Hybrid                 | [NativeScript][nativescript]                   |                        |
-| [Node.js][node]  | Front-end    | Framework            | Hybrid                 | [React Native][react-native]                   | [Meta][meta]           |
-| [Node.js][node]  | Front-end    | Framework            | Desktop                | [Electron][node-electron]                      |                        |
 | [Node.js][node]  | Front-end    | Testing              | e2e                    | [cypress](https://www.cypress.io/)             |                        |
 | [Node.js][node]  | Front-end    | Testing              | e2e                    | [karma][node-karma]                            | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Testing              | e2e                    | [playwright](https://playwright.dev/)          | [Microsoft][microsoft] |
 | [Node.js][node]  | Front-end    | Chart                |                        | [Charts.js](https://www.chartjs.org/)          |                        |
 | [Node.js][node]  | Front-end    | Chart                |                        | [Chartist.js][node-chartist]                   |                        |
 | [Node.js][node]  | Front-end    | Chart                |                        | [D3.js](https://d3js.org/)                     |                        |
@@ -135,9 +91,6 @@
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux][node-redux]                            |                        |
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux Saga][node-redux-saga]                  |                        |
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux Thunk][node-redux-thunk]                |                        |
-|                  | Front-end    | Mobile               | Language               | [Kotlin](https://kotlinlang.org/)              | [JetBrains][jetbrains] |
-|                  | Front-end    | Mobile               | Language               | [Swift][swift]                                 | [Apple][apple]         |
-|                  | Back-end     | Framework            | RPC                    | [gRPC](https://grpc.io/)                       | [Alphabet][alphabet]   |
 | [Golang][golang] | Back-end     | Framework            |                        | [Gin](https://gin-gonic.com/)                  |                        |
 | [Java][java]     | Back-end     | Framework            |                        | [Spring][spring]                               |                        |
 | [Java][java]     | Back-end     | Framework            |                        | [Spring Boot][spring-boot]                     |                        |
@@ -153,14 +106,6 @@
 | [Node.js][node]  | Back-end     | Security             | Protection             | [cors][node-cors]                              |                        |
 | [Node.js][node]  | Back-end     | Security             | Protection             | [helmet](https://helmetjs.github.io/)          |                        |
 | [Node.js][node]  | Back-end     | Swagger              | Documentation          | [tsoa][node-tsoa]                              |                        |
-|                  | Back-end     | DB                   | Key-Value              | [Redis](https://redis.io/)                     |                        |
-|                  | Back-end     | DB                   | Key-Value              | [Memcached](https://memcached.org/)            |                        |
-|                  | Back-end     | DB                   | Wide Column            | [Cassandra][cassandra]                         | [Apache][apache]       |
-|                  | Back-end     | DB                   | Wide Column            | [HBase][hbase]                                 | [Apache][apache]       |
-|                  | Back-end     | DB                   | Document Oriented      | [MongoDB](https://www.mongodb.com/)            |                        |
-|                  | Back-end     | DB                   | Document Oriented      | [CouchDB][couchdb]                             | [Apache][apache]       |
-|                  | Back-end     | DB                   | Relational             | [PostgreSQL][postgresql]                       |                        |
-|                  | Back-end     | DB                   | Relational             | [MySQL](https://www.mysql.com/)                |                        |
 |                  | Back-end     | DB                   | Relational             | [CockroachDB][cockroachdb]                     |                        |
 |                  | Back-end     | DB                   | Relational             | [SQLite](https://www.sqlite.org/)              |                        |
 |                  | Back-end     | DB                   | Graph                  | [neo4j](https://neo4j.com/)                    |                        |
@@ -171,8 +116,6 @@
 | [Node.js][node]  | Back-end     | ORM                  | Library                | [Sequelize](https://sequelize.org/)            |                        |
 | [Node.js][node]  | Back-end     | ORM                  | Library                | [TypeORM](https://typeorm.io/)                 |                        |
 |                  | Back-end     | ORM                  | Visualizer             | [Prismaliser](https://prismaliser.app/)        |                        |
-|                  | Back-end     | Message Broker       |                        | [ActiveMQ][activemq]                           | [Apache][apache]       |
-|                  | Back-end     | Message Broker       |                        | [Kafka][kafka]                                 | [Apache][apache]       |
 |                  | Back-end     | Message Broker       |                        | [RabbitMQ](https://www.rabbitmq.com/)          |                        |
 |                  | Back-end     | API Development      |                        | [Insomnia](https://insomnia.rest/)             |                        |
 |                  | Back-end     | API Development      |                        | [Postman](https://www.postman.com/)            |                        |
@@ -192,25 +135,16 @@
 | [Python][python] | Data Science | Library              | Machine Learning       | [pytorch](https://pytorch.org/)                |                        |
 | [Python][python] | Data Science | Library              | Machine Learning       | [scikit-learn][scikit-learn]                   |                        |
 | [Python][python] | Data Science | Library              | Machine Learning       | [scipy](https://scipy.org/)                    |                        |
-| [Python][python] | Data Science | Library              | Machine Learning       | [tensorflow][tensorflow]                       | [Alphabet][alphabet]   |
 |                  | Data Science | Tool                 |                        | [DeepAI](https://deepai.org/)                  |                        |
 |                  | Data Science | Tool                 |                        | [QuillBot](https://quillbot.com/)              |                        |
 |                  | Data Science | Tool                 |                        | [JenniAI](https://jenni.ai/)                   |                        |
 |                  | Data Science | Tool                 |                        | [Woebot Health](https://woebothealth.com/)     |                        |
-|                  | Data Science | Chess Engine         |                        | [AlphaZero][alpha-zero]                        |                        |
-|                  | Data Science | Chess Engine         |                        | [Komodo][komodo]                               |                        |
-|                  | Data Science | Chess Engine         |                        | [Leela][leela]                                 |                        |
-|                  | Data Science | Chess Engine         |                        | [Stockfish][stockfish]                         |                        |
 |                  | Game         | Engine               |                        | [Photon Engine](https://www.photonengine.com/) |                        |
 |                  | Game         | Engine               |                        | [Unity](https://unity.com/)                    |                        |
 |                  | Game         | Engine               |                        | [Unreal Engine](https://www.unrealengine.com/) |                        |
-|                  | DevOps       | Server               |                        | [HTTPD][httpd]                                 | [Apache][apache]       |
 |                  | DevOps       | Server               |                        | [nginx](https://www.nginx.com/)                |                        |
 |                  | DevOps       | Containerization     |                        | [Docker](https://www.docker.com/)              |                        |
 |                  | DevOps       | Containerization     |                        | [Kubernetes](https://kubernetes.io/)           |                        |
-|                  | DevOps       | Containerization     |                        | [Terraform](https://www.terraform.io/)         | [HashiCorp][hashicorp] |
-|                  | DevOps       | Serverless           |                        | [Netlify](https://www.netlify.com/)            |                        |
-|                  | DevOps       | Serverless           |                        | [Vercel](https://vercel.com)                   |                        |
 |                  | DevOps       | SaaS                 | Authentication         | [Auth0](https://auth0.com/)                    |                        |
 |                  | DevOps       | SaaS                 | Authentication         | [Keycloak](https://www.keycloak.org/)          |                        |
 |                  | DevOps       | SaaS                 | CI/CD                  | [CircleCI](https://circleci.com/)              |                        |
@@ -296,48 +230,13 @@
 |                  | Music        | Instrument           |                        | Piano                                          |                        |
 |                  | Music        | Instrument           |                        | Violon                                         |                        |
 
-## Companies
-
-- [bitbrain](https://www.bitbrain.com/)
-- [blackrockneurotech](https://blackrockneurotech.com/)
-- [brainco](https://brainco.tech/)
-- [braingate](https://www.braingate.org/)
-- [emotiv](https://www.emotiv.com/)
-- [kernel](https://www.kernel.com/)
-- [neurable](https://neurable.com/)
-- [neuralink](https://neuralink.com/)
-- [precisionneuro](https://precisionneuro.io/)
-- [synchron](https://synchron.com/)
-
 <!-- Companies -->
 
 [alphabet]: http://alphabet.com/
 [amazon]: https://www.amazon.com/
-[apple]: https://www.apple.com/
 [elastic]: https://www.elastic.co/
-[hashicorp]: https://www.hashicorp.com/
 [ibm]: https://www.ibm.com/
-[jetbrains]: https://www.jetbrains.com/
-[meta]: https://www.meta.com/
 [microsoft]: https://www.microsoft.com/
-[netlify]: https://netlify.com/
-[oracle]: https://www.oracle.com/
-[twitter]: https://twitter.com/
-[vercel]: https://vercel.com/
-
-<!-- Alphabet -->
-
-[tensorflow]: https://www.tensorflow.org/
-
-<!-- Apache -->
-
-[activemq]: https://activemq.apache.org/
-[apache]: https://www.apache.org/
-[cassandra]: https://cassandra.apache.org/
-[couchdb]: https://couchdb.apache.org/
-[hbase]: https://hbase.apache.org/
-[httpd]: https://httpd.apache.org/
-[kafka]: https://kafka.apache.org/
 
 <!-- AWS -->
 
@@ -353,26 +252,16 @@
 [github-actions]: https://github.com/features/actions
 [gitlab-ci]: https://docs.gitlab.com/ee/ci/
 
-<!-- CSS -->
-
-[materialize]: https://materializecss.com/
-[tailwind]: https://tailwindcss.com/
-
 <!-- Database -->
 
 [cockroachdb]: https://www.cockroachlabs.com/
 [elasticsearch]: https://www.elastic.co/elasticsearch
-[postgresql]: https://www.postgresql.org/
 
 <!-- Digital Ocean -->
 
 [do-firewalls]: https://docs.digitalocean.com/products/networking/firewalls/
 [do-load-balancers]: https://docs.digitalocean.com/products/networking/load-balancers/
 [do-reserved-ips]: https://docs.digitalocean.com/products/networking/reserved-ips/
-
-<!-- Front-end -->
-
-[solid-start]: https://start.solidjs.com
 
 <!-- GraphQL -->
 
@@ -389,7 +278,6 @@
 
 <!-- Languages -->
 
-[csharp]: https://dotnet.microsoft.com/en-us/languages/csharp
 [golang]: https://go.dev/
 [java]: https://www.java.com/
 [javascript]: https://www.javascript.com/
@@ -398,22 +286,11 @@
 [python]: https://www.python.org/
 [shell-script]: https://www.shellscript.sh/
 [svg]: https://www.w3.org/Graphics/SVG/
-[swift]: https://developer.apple.com/swift/
-[typescript]: https://www.typescriptlang.org/
-
-<!-- Meta -->
-
-[react-native]: https://reactnative.dev/
-
-<!-- Mobile -->
-
-[nativescript]: https://nativescript.org/
 
 <!-- Node.js -->
 
 [node-chartist]: https://gionkunz.github.io/chartist-js/
 [node-cors]: https://github.com/expressjs/cors
-[node-electron]: https://www.electronjs.org/
 [node-google-chart]: https://developers.google.com/chart
 [node-highcharts]: https://www.highcharts.com/
 [node-husky]: https://typicode.github.io/husky/#/
@@ -429,7 +306,6 @@
 <!-- Python -->
 
 [beautiful-soup]: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-[conda]: https://docs.conda.io/en/latest/
 [django]: https://www.djangoproject.com/
 [fast-api]: https://fastapi.tiangolo.com/
 [flask]: https://flask.palletsprojects.com/en/3.0.x/
@@ -457,10 +333,3 @@
 
 [mobbin]: https://mobbin.com
 [monumentvalleygame]: https://www.monumentvalleygame.com
-
-<!-- Chess -->
-
-[alpha-zero]: https://deepmind.google/technologies/alphazero-and-muzero/
-[komodo]: https://komodochess.com/
-[leela]: https://lczero.org/
-[stockfish]: https://stockfishchess.org/
