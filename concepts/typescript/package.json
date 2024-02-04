@@ -9,7 +9,7 @@
   "private": true,
   "devDependencies": {
     "husky": "9.0.10",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "prisma": "5.9.1"
   },
   "resolutions": {
