@@ -247,10 +247,9 @@ export const SocialHeatPage: NextPage = () => {
                   </div>
                 </div>
                 <div className="col-span-12">
-                  <TextField
-                    fullWidth
-                    label="PIN"
-                    variant="outlined"
+                  <input
+                    type="text"
+                    className="w-full input input-borderd"
                     id="pin"
                     placeholder="PIN"
                     required
@@ -265,12 +264,11 @@ export const SocialHeatPage: NextPage = () => {
                   />
                 </div>
                 <div className="col-span-12">
-                  <TextField
+                  <input
                     type="number"
                     id="topicId"
-                    label="Topic ID"
                     placeholder="Topic ID"
-                    className="w-full"
+                    className="w-full input input-bordered"
                     value={appState.topicId}
                     onChange={changeTopicId}
                     required

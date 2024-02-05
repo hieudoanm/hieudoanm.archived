@@ -1,4 +1,3 @@
-import { TextField } from '@mui/material';
 import { logger } from '@younetmedia/common/libs/log';
 import axios from 'axios';
 import { NextPage } from 'next';
@@ -42,7 +41,7 @@ export const AuthPage: NextPage = () => {
   };
 
   return (
-    <main className="h-screen w-screen">
+    <main className="bg-white h-screen w-screen">
       <div className="flex h-full w-full items-center justify-center">
         <div className="w-full max-w-xs rounded border p-8 shadow-2xl">
           <div className="mb-8">
@@ -52,23 +51,22 @@ export const AuthPage: NextPage = () => {
           </div>
           <form onSubmit={login}>
             <div className="mb-8">
-              <TextField
+              <input
+                type="text"
                 id="username"
-                label="Username"
                 placeholder="Username"
-                className="w-full"
+                className="input input-bordered w-full"
                 value={username}
                 onChange={changeUsername}
                 required
               />
             </div>
             <div className="mb-8">
-              <TextField
+              <input
                 type="password"
                 id="password"
-                label="Password"
                 placeholder="Password"
-                className="w-full"
+                className="input input-bordered w-full"
                 value={password}
                 onChange={changePassword}
                 required
