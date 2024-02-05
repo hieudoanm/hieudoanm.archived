@@ -106,11 +106,6 @@
 | [Node.js][node]  | Back-end     | Security             | Protection             | [cors][node-cors]                              |                        |
 | [Node.js][node]  | Back-end     | Security             | Protection             | [helmet](https://helmetjs.github.io/)          |                        |
 | [Node.js][node]  | Back-end     | Swagger              | Documentation          | [tsoa][node-tsoa]                              |                        |
-|                  | Back-end     | DB                   | Relational             | [CockroachDB][cockroachdb]                     |                        |
-|                  | Back-end     | DB                   | Relational             | [SQLite](https://www.sqlite.org/)              |                        |
-|                  | Back-end     | DB                   | Graph                  | [neo4j](https://neo4j.com/)                    |                        |
-|                  | Back-end     | DB                   | Search Engine          | [elasticsearch][elasticsearch]                 | [Elastic][elastic]     |
-|                  | Back-end     | DB                   | Multi Model            | [FaunaDB](https://fauna.com/)                  |                        |
 | [Node.js][node]  | Back-end     | ORM                  | Library                | [Mongoose](https://mongoosejs.com/)            |                        |
 | [Node.js][node]  | Back-end     | ORM                  | Library                | [Prisma](https://www.prisma.io/)               |                        |
 | [Node.js][node]  | Back-end     | ORM                  | Library                | [Sequelize](https://sequelize.org/)            |                        |
@@ -234,7 +229,6 @@
 
 [alphabet]: http://alphabet.com/
 [amazon]: https://www.amazon.com/
-[elastic]: https://www.elastic.co/
 [ibm]: https://www.ibm.com/
 [microsoft]: https://www.microsoft.com/
 
@@ -251,11 +245,6 @@
 
 [github-actions]: https://github.com/features/actions
 [gitlab-ci]: https://docs.gitlab.com/ee/ci/
-
-<!-- Database -->
-
-[cockroachdb]: https://www.cockroachlabs.com/
-[elasticsearch]: https://www.elastic.co/elasticsearch
 
 <!-- Digital Ocean -->
 
