@@ -243,7 +243,7 @@ export const SocialHeatPage: NextPage = () => {
                   <div className="col-span-12">
                     <input
                       type="text"
-                      className="w-full input input-borderd"
+                      className="w-full input input-bordered"
                       id="pin"
                       placeholder="PIN"
                       required
