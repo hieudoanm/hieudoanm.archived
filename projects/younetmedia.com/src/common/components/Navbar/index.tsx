@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={logOut}
-              className="btn btn-sm bg-teal-500 text-white uppercase">
+              className="btn bg-blue-500 text-white uppercase">
               Log Out
             </button>
           </div>

@@ -72,7 +72,7 @@ export const AuthPage: NextPage = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn bg-teal-500 w-full">
+            <button type="submit" className="btn bg-blue-500 w-full">
               Log In
             </button>
           </form>

@@ -228,7 +228,7 @@ export const SocialHeatPage: NextPage = () => {
                       <h2 className="text-lg uppercase">Queries</h2>
                       <button
                         type="submit"
-                        className="btn bg-teal-500 text-white">
+                        className="btn bg-blue-500 text-white">
                         Run Queries
                       </button>
                     </div>
@@ -297,7 +297,7 @@ export const SocialHeatPage: NextPage = () => {
                           onClick={() => changeInput('input')}
                           className={`btn join-item ${
                             appState.input === 'input'
-                              ? 'bg-teal-500 text-white'
+                              ? 'bg-blue-500 text-white'
                               : 'bg-gray-500 text-white'
                           }`}>
                           Input
@@ -307,7 +307,7 @@ export const SocialHeatPage: NextPage = () => {
                           onClick={() => changeInput('table')}
                           className={`btn join-item ${
                             appState.input === 'table'
-                              ? 'bg-teal-500 text-white'
+                              ? 'bg-blue-500 text-white'
                               : 'bg-gray-500 text-white'
                           }`}>
                           Table
@@ -357,7 +357,7 @@ export const SocialHeatPage: NextPage = () => {
                     <h2 className="text-lg uppercase">Results</h2>
                     <button
                       type="button"
-                      className="btn bg-teal-500 text-white"
+                      className="btn bg-blue-500 text-white"
                       onClick={downloadCSV}>
                       Download CSV
                     </button>

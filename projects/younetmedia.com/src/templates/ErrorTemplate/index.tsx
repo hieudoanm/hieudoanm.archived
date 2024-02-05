@@ -11,7 +11,7 @@ export const ErrorTemplate: React.FC<{ code: number; message: string }> = ({
         <h1 className="text-9xl font-bold">{code}</h1>
         <p className="text-4xl">{message}</p>
         <Link href="/">
-          <button type="button" className="w-full btn bg-teal-500 text-white">
+          <button type="button" className="w-full btn bg-blue-500 text-white">
             Back to Home
           </button>
         </Link>

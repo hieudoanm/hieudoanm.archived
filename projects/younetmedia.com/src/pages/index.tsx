@@ -11,7 +11,7 @@ export const HomePage: NextPage = () => {
           <div className="col-span-1">
             <Link href="/socialheat">
               <button
-                className="btn bg-teal-500 text-white w-full"
+                className="btn bg-blue-500 text-white w-full"
                 type="button">
                 Social Heat
               </button>
@@ -20,7 +20,7 @@ export const HomePage: NextPage = () => {
           <div className="col-span-1">
             <Link href="/socialtrend">
               <button
-                className="btn bg-teal-500 text-white w-full"
+                className="btn bg-blue-500 text-white w-full"
                 type="button">
                 Social Trend
               </button>

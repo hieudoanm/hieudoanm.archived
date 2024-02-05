@@ -108,7 +108,7 @@ const SocialTrendForm: React.FC<{
       <div className="col-span-1">
         <button
           type="button"
-          className="w-full bg-teal-500 text-white btn"
+          className="w-full bg-blue-500 text-white btn"
           onClick={() => downloadCSV(total)}>
           Download CSV
         </button>
