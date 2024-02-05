@@ -1,6 +1,5 @@
 import { ParsedUrlQuery } from 'node:querystring';
 import {
-  Button,
   Paper,
   Stack,
   Table,
@@ -20,14 +19,14 @@ import {
   ERROR_MESSAGE_AUTHENTICATION,
   ERROR_MESSAGE_DATE_RANGE,
   ERROR_MESSAGE_MISSING_PIN,
-} from '@younetmedia/common/constants';
+} from '@younetmedia/common/constants/app.constants';
 import {
   NEXT_PUBLIC_PIN,
   PIN,
 } from '@younetmedia/common/environments/environments';
 import { logger } from '@younetmedia/common/libs/log';
 import { queryResult } from '@younetmedia/common/services/younetmedia.service';
-import { Result } from '@younetmedia/common/types';
+import { Result } from '@younetmedia/common/types/younetmedia.types';
 import dayjs, { Dayjs } from 'dayjs';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
@@ -242,9 +241,9 @@ export const SocialHeatPage: NextPage = () => {
                 <div className="col-span-12">
                   <div className="flex items-center justify-between">
                     <h2 className="text-lg uppercase">Queries</h2>
-                    <Button type="submit" variant="outlined">
+                    <button type="submit" className="btn bg-teal-500">
                       Run Queries
-                    </Button>
+                    </button>
                   </div>
                 </div>
                 <div className="col-span-12">
@@ -363,12 +362,12 @@ export const SocialHeatPage: NextPage = () => {
               <div className="col-span-12">
                 <div className="flex items-center justify-between">
                   <h2 className="text-lg uppercase">Results</h2>
-                  <Button
+                  <button
                     type="button"
-                    variant="outlined"
+                    className="btn bg-teal-500"
                     onClick={downloadCSV}>
                     Download CSV
-                  </Button>
+                  </button>
                 </div>
               </div>
               <div className="col-span-12">

@@ -1,5 +1,5 @@
 import { logger } from '@younetmedia/common/libs/log';
-import { Result } from '@younetmedia/common/types';
+import { Result } from '@younetmedia/common/types/younetmedia.types';
 import axios from 'axios';
 
 export const queryResult = async (

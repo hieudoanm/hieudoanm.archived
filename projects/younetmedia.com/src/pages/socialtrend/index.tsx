@@ -1,7 +1,4 @@
 import {
-  Button,
-  Card,
-  CardContent,
   MenuItem,
   Select,
   Table,
@@ -15,7 +12,7 @@ import {
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { Navbar } from '@younetmedia/common/components/Navbar';
-import { ERROR_MESSAGE_AUTHENTICATION } from '@younetmedia/common/constants';
+import { ERROR_MESSAGE_AUTHENTICATION } from '@younetmedia/common/constants/app.constants';
 import useAxios from '@younetmedia/common/hooks/use-fetch';
 import { logger } from '@younetmedia/common/libs/log';
 import dayjs, { Dayjs } from 'dayjs';
@@ -87,31 +84,31 @@ const SocialTrendForm: React.FC<{
 
   if (loading) {
     return (
-      <Card className="border shadow">
-        <CardContent>
+      <div className="card border shadow">
+        <div className="card-body">
           <p className="text-center">Loading</p>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     );
   }
 
   if (error) {
     return (
-      <Card className="border shadow">
-        <CardContent>
+      <div className="card border shadow">
+        <div className="card-body">
           <p className="text-center">{error.message}</p>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     );
   }
 
   if (!data) {
     return (
-      <Card className="border shadow">
-        <CardContent>
+      <div className="card border shadow">
+        <div className="card-body">
           <p className="text-center">No Data</p>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     );
   }
 
@@ -120,13 +117,12 @@ const SocialTrendForm: React.FC<{
   return (
     <>
       <div className="col-span-1">
-        <Button
-          fullWidth
+        <button
           type="button"
-          variant="outlined"
+          className="w-full bg-teal-500 btn"
           onClick={() => downloadCSV(total)}>
           Download CSV
-        </Button>
+        </button>
       </div>
       <TableContainer className="rounded border shadow">
         <Table>
@@ -201,8 +197,7 @@ export const SocialTrendPage: NextPage = () => {
       router.push('/auth');
     }
     setAccessToken(cacheAccessToken);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router]);
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -237,11 +232,10 @@ export const SocialTrendPage: NextPage = () => {
               />
             </div>
             <div className="col-span-1">
-              <Select
-                fullWidth
+              <select
+                className="w-full select select-bordered"
                 id="range"
                 name="range"
-                placeholder="Range"
                 value={dateRange.range}
                 onChange={(event) =>
                   setDateRange({
@@ -249,10 +243,11 @@ export const SocialTrendPage: NextPage = () => {
                     range: Number.parseInt(event.target.value.toString(), 10),
                   })
                 }>
-                <MenuItem value={oneDayTime}>24 hours</MenuItem>
-                <MenuItem value={sevenDaysTime}>7 days ago</MenuItem>
-                <MenuItem value={thirtyDaysTime}>30 days ago</MenuItem>
-              </Select>
+                <option value="">Range</option>
+                <option value={oneDayTime}>24 hours</option>
+                <option value={sevenDaysTime}>7 days ago</option>
+                <option value={thirtyDaysTime}>30 days ago</option>
+              </select>
             </div>
           </div>
           {accessToken.length > 0 ? (

@@ -2,7 +2,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { APP_NAME } from '@younetmedia/common/constants';
+import { APP_NAME } from '@younetmedia/common/constants/app.constants';
 import '@younetmedia/common/styles/globals.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';

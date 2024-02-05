@@ -1,4 +1,4 @@
-import { Button, TextField } from '@mui/material';
+import { TextField } from '@mui/material';
 import { logger } from '@younetmedia/common/libs/log';
 import axios from 'axios';
 import { NextPage } from 'next';
@@ -74,9 +74,9 @@ export const AuthPage: NextPage = () => {
                 required
               />
             </div>
-            <Button type="submit" variant="outlined" className="w-full">
+            <button type="submit" className="btn bg-teal-500 w-full">
               Log In
-            </Button>
+            </button>
           </form>
         </div>
       </div>

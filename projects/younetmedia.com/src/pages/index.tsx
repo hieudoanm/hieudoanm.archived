@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { Navbar } from '@younetmedia/common/components/Navbar';
@@ -13,16 +12,16 @@ export const HomePage: NextPage = () => {
         <div className="grid grid-cols-2 gap-8">
           <div className="col-span-1">
             <Link href="/socialheat">
-              <Button fullWidth variant="outlined">
+              <button className="btn bg-teal-500 w-full" type="button">
                 Social Heat
-              </Button>
+              </button>
             </Link>
           </div>
           <div className="col-span-1">
             <Link href="/socialtrend">
-              <Button fullWidth variant="outlined">
+              <button className="btn bg-teal-500 w-full" type="button">
                 Social Trend
-              </Button>
+              </button>
             </Link>
           </div>
         </div>

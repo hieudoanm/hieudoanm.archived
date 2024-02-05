@@ -1,7 +1,6 @@
-import Button from '@mui/material/Button';
 import { useRouter } from 'next/router';
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
   const router = useRouter();
 
   const logOut = () => {
@@ -17,13 +16,12 @@ export const Navbar = () => {
             <h1 className="text-lg uppercase">Buzz Metrics</h1>
           </div>
           <div>
-            <Button
+            <button
               type="button"
-              variant="outlined"
               onClick={logOut}
-              className="uppercase">
+              className="btn bg-teal-500 uppercase">
               Log Out
-            </Button>
+            </button>
           </div>
         </div>
       </div>
