@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export const Navbar: React.FC = () => {
@@ -12,14 +13,22 @@ export const Navbar: React.FC = () => {
     <nav className="border-b shadow">
       <div className="container mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-lg uppercase">Buzz Metrics</h1>
+          <div className="flex items-center gap-x-2">
+            <Link href="/">
+              <h1 className="uppercase">Buzz Metrics</h1>
+            </Link>
+            <Link href="/socialheat">
+              <p>Social Heat</p>
+            </Link>
+            <Link href="/socialtrend">
+              <p>Social Trend</p>
+            </Link>
           </div>
           <div>
             <button
               type="button"
               onClick={logOut}
-              className="btn bg-teal-500 uppercase">
+              className="btn btn-sm bg-teal-500 text-white uppercase">
               Log Out
             </button>
           </div>

@@ -1,10 +1,4 @@
 import { ParsedUrlQuery } from 'node:querystring';
-import {
-  Stack,
-  TextField,
-  ToggleButton,
-  ToggleButtonGroup,
-} from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { Navbar } from '@younetmedia/common/components/Navbar';
@@ -108,10 +102,7 @@ export const SocialHeatPage: NextPage = () => {
     });
   };
 
-  const changeInput = (
-    _event: React.MouseEvent<HTMLElement>,
-    newInput: 'input' | 'table'
-  ) => {
+  const changeInput = (newInput: 'input' | 'table') => {
     setAppState({ ...appState, input: newInput });
     setQueryParameters({ ...appState, input: newInput });
   };
@@ -235,7 +226,9 @@ export const SocialHeatPage: NextPage = () => {
                   <div className="col-span-12">
                     <div className="flex items-center justify-between">
                       <h2 className="text-lg uppercase">Queries</h2>
-                      <button type="submit" className="btn bg-teal-500">
+                      <button
+                        type="submit"
+                        className="btn bg-teal-500 text-white">
                         Run Queries
                       </button>
                     </div>
@@ -297,31 +290,39 @@ export const SocialHeatPage: NextPage = () => {
                     />
                   </div>
                   <div className="col-span-12">
-                    <Stack spacing={2} alignItems="center">
-                      <ToggleButtonGroup
-                        size="large"
-                        value={appState.input}
-                        onChange={changeInput}
-                        exclusive={true}>
-                        <ToggleButton value="input" key="input">
+                    <div className="flex items-center justify-center">
+                      <div className="join">
+                        <button
+                          type="button"
+                          onClick={() => changeInput('input')}
+                          className={`btn join-item ${
+                            appState.input === 'input'
+                              ? 'bg-teal-500 text-white'
+                              : 'bg-gray-500 text-white'
+                          }`}>
                           Input
-                        </ToggleButton>
-                        <ToggleButton value="table" key="table">
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => changeInput('table')}
+                          className={`btn join-item ${
+                            appState.input === 'table'
+                              ? 'bg-teal-500 text-white'
+                              : 'bg-gray-500 text-white'
+                          }`}>
                           Table
-                        </ToggleButton>
-                      </ToggleButtonGroup>
-                    </Stack>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div className="col-span-12">
                     {appState.input === 'input' ? (
-                      <TextField
+                      <textarea
                         id="queries"
-                        label="Queries"
                         placeholder="Queries"
-                        className="w-full"
+                        className="w-full textarea textarea-bordered"
                         value={queryString}
                         onChange={changeQueryString}
-                        multiline
                         rows={12}
                         required
                       />
@@ -356,7 +357,7 @@ export const SocialHeatPage: NextPage = () => {
                     <h2 className="text-lg uppercase">Results</h2>
                     <button
                       type="button"
-                      className="btn bg-teal-500"
+                      className="btn bg-teal-500 text-white"
                       onClick={downloadCSV}>
                       Download CSV
                     </button>
