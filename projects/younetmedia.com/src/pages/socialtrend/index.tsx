@@ -1,14 +1,3 @@
-import {
-  MenuItem,
-  Select,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TextField,
-} from '@mui/material';
 import { DesktopDatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { Navbar } from '@younetmedia/common/components/Navbar';
@@ -124,17 +113,17 @@ const SocialTrendForm: React.FC<{
           Download CSV
         </button>
       </div>
-      <TableContainer className="rounded border shadow">
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>No.</TableCell>
-              <TableCell>Topic ID</TableCell>
-              <TableCell>Name</TableCell>
-              <TableCell align="right">Volumn</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
+      <div className="overflow-x-auto rounded border shadow">
+        <table className="table">
+          <thead>
+            <tr>
+              <td>No.</td>
+              <td>Topic ID</td>
+              <td>Name</td>
+              <td align="right">Volumn</td>
+            </tr>
+          </thead>
+          <tbody>
             {total.map(
               (
                 {
@@ -145,20 +134,18 @@ const SocialTrendForm: React.FC<{
                 index: number
               ) => {
                 return (
-                  <TableRow key={topic_id}>
-                    <TableCell>{index + 1}</TableCell>
-                    <TableCell>{topic_id}</TableCell>
-                    <TableCell>{topic_hot_trend_name}</TableCell>
-                    <TableCell align="right">
-                      {total_buzz_volumn.toLocaleString()}
-                    </TableCell>
-                  </TableRow>
+                  <tr key={topic_id}>
+                    <td>{index + 1}</td>
+                    <td>{topic_id}</td>
+                    <td>{topic_hot_trend_name}</td>
+                    <td align="right">{total_buzz_volumn.toLocaleString()}</td>
+                  </tr>
                 );
               }
             )}
-          </TableBody>
-        </Table>
-      </TableContainer>
+          </tbody>
+        </table>
+      </div>
     </>
   );
 };
@@ -206,10 +193,8 @@ export const SocialTrendPage: NextPage = () => {
         <div className="flex flex-col gap-4 md:gap-8">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
             <div className="col-span-1 md:col-span-2">
-              <TextField
-                fullWidth
-                label="PIN"
-                variant="outlined"
+              <input
+                className="w-full input input-bordered"
                 id="pin"
                 placeholder="PIN"
                 required

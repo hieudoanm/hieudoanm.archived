@@ -1,13 +1,6 @@
 import { ParsedUrlQuery } from 'node:querystring';
 import {
-  Paper,
   Stack,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
   TextField,
   ToggleButton,
   ToggleButtonGroup,
@@ -231,224 +224,211 @@ export const SocialHeatPage: NextPage = () => {
   };
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Navbar />
-      <main className="container mx-auto p-8">
-        <section className="mb-8">
-          <div className="rounded border p-8 shadow-2xl">
-            <form onSubmit={runQueries}>
+    <div className="bg-white">
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <Navbar />
+        <main className="container mx-auto p-8">
+          <section className="mb-8">
+            <div className="rounded border p-8 shadow-2xl">
+              <form onSubmit={runQueries}>
+                <div className="grid grid-cols-12 items-center gap-8">
+                  <div className="col-span-12">
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-lg uppercase">Queries</h2>
+                      <button type="submit" className="btn bg-teal-500">
+                        Run Queries
+                      </button>
+                    </div>
+                  </div>
+                  <div className="col-span-12">
+                    <input
+                      type="text"
+                      className="w-full input input-borderd"
+                      id="pin"
+                      placeholder="PIN"
+                      required
+                      value={appState.pin}
+                      onChange={(event) => {
+                        setAppState({ ...appState, pin: event.target.value });
+                        setQueryParameters({
+                          ...appState,
+                          pin: event.target.value,
+                        });
+                      }}
+                    />
+                  </div>
+                  <div className="col-span-12">
+                    <input
+                      type="number"
+                      id="topicId"
+                      placeholder="Topic ID"
+                      className="w-full input input-bordered"
+                      value={appState.topicId}
+                      onChange={changeTopicId}
+                      required
+                    />
+                  </div>
+                  <div className="col-span-6">
+                    <DesktopDatePicker
+                      label="From Date"
+                      format="DD/MM/YYYY"
+                      value={appState.fromDate}
+                      onChange={(newDate: Dayjs | null) => {
+                        if (!newDate) {
+                          return;
+                        }
+                        changeFromDate(newDate);
+                      }}
+                      className="w-full"
+                    />
+                  </div>
+                  <div className="col-span-6">
+                    <DesktopDatePicker
+                      label="To Date"
+                      format="DD/MM/YYYY"
+                      value={appState.toDate}
+                      onChange={(newDate: Dayjs | null) => {
+                        if (!newDate) {
+                          return;
+                        }
+                        changeToDate(newDate);
+                      }}
+                      className="w-full"
+                    />
+                  </div>
+                  <div className="col-span-12">
+                    <Stack spacing={2} alignItems="center">
+                      <ToggleButtonGroup
+                        size="large"
+                        value={appState.input}
+                        onChange={changeInput}
+                        exclusive={true}>
+                        <ToggleButton value="input" key="input">
+                          Input
+                        </ToggleButton>
+                        <ToggleButton value="table" key="table">
+                          Table
+                        </ToggleButton>
+                      </ToggleButtonGroup>
+                    </Stack>
+                  </div>
+                  <div className="col-span-12">
+                    {appState.input === 'input' ? (
+                      <TextField
+                        id="queries"
+                        label="Queries"
+                        placeholder="Queries"
+                        className="w-full"
+                        value={queryString}
+                        onChange={changeQueryString}
+                        multiline
+                        rows={12}
+                        required
+                      />
+                    ) : (
+                      <div className="rounded border">
+                        {queries.map((query: string, index: number) => {
+                          return (
+                            <div
+                              key={`query-${query}`}
+                              className="grid grid-cols-12 border-b py-4">
+                              <div className="col-span-1 text-center">
+                                {index + 1}
+                              </div>
+                              <div className="col-span-11 truncate">
+                                <p className="truncate">{query}</p>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section>
+            <div className="rounded border p-8 shadow-2xl">
               <div className="grid grid-cols-12 items-center gap-8">
                 <div className="col-span-12">
                   <div className="flex items-center justify-between">
-                    <h2 className="text-lg uppercase">Queries</h2>
-                    <button type="submit" className="btn bg-teal-500">
-                      Run Queries
+                    <h2 className="text-lg uppercase">Results</h2>
+                    <button
+                      type="button"
+                      className="btn bg-teal-500"
+                      onClick={downloadCSV}>
+                      Download CSV
                     </button>
                   </div>
                 </div>
                 <div className="col-span-12">
-                  <input
-                    type="text"
-                    className="w-full input input-borderd"
-                    id="pin"
-                    placeholder="PIN"
-                    required
-                    value={appState.pin}
-                    onChange={(event) => {
-                      setAppState({ ...appState, pin: event.target.value });
-                      setQueryParameters({
-                        ...appState,
-                        pin: event.target.value,
-                      });
-                    }}
-                  />
+                  <div className="overflow-x-auto rounded border shadow">
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <td align="center">No.</td>
+                          <td>Query</td>
+                          <td align="right">Collectable Total Mentions</td>
+                          <td align="right">Total Mentions</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {appState.loading < 100 ? (
+                          <tr className="border-0 border-none">
+                            <td
+                              align="center"
+                              colSpan={4}
+                              className="border-0 border-none uppercase">
+                              {appState.loading}%
+                            </td>
+                          </tr>
+                        ) : (
+                          <>
+                            {results.length > 0 ? (
+                              results.map((result: Result, index: number) => {
+                                const resultQuery = result.query || '';
+                                return (
+                                  <tr
+                                    key={`result-${resultQuery.replaceAll(
+                                      ' ',
+                                      ''
+                                    )}`}>
+                                    <td align="center">{index + 1}</td>
+                                    <td>
+                                      <p className="truncate">{resultQuery}</p>
+                                    </td>
+                                    <td align="right">
+                                      {result.total_collectable_mentions}
+                                    </td>
+                                    <td align="right">
+                                      {result.total_mentions}
+                                    </td>
+                                  </tr>
+                                );
+                              })
+                            ) : (
+                              <tr className="border-0 border-none">
+                                <td
+                                  align="center"
+                                  colSpan={4}
+                                  className="border-0 border-none uppercase">
+                                  No Data
+                                </td>
+                              </tr>
+                            )}
+                          </>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="col-span-12">
-                  <input
-                    type="number"
-                    id="topicId"
-                    placeholder="Topic ID"
-                    className="w-full input input-bordered"
-                    value={appState.topicId}
-                    onChange={changeTopicId}
-                    required
-                  />
-                </div>
-                <div className="col-span-6">
-                  <DesktopDatePicker
-                    label="From Date"
-                    format="DD/MM/YYYY"
-                    value={appState.fromDate}
-                    onChange={(newDate: Dayjs | null) => {
-                      if (!newDate) {
-                        return;
-                      }
-                      changeFromDate(newDate);
-                    }}
-                    className="w-full"
-                  />
-                </div>
-                <div className="col-span-6">
-                  <DesktopDatePicker
-                    label="To Date"
-                    format="DD/MM/YYYY"
-                    value={appState.toDate}
-                    onChange={(newDate: Dayjs | null) => {
-                      if (!newDate) {
-                        return;
-                      }
-                      changeToDate(newDate);
-                    }}
-                    className="w-full"
-                  />
-                </div>
-                <div className="col-span-12">
-                  <Stack spacing={2} alignItems="center">
-                    <ToggleButtonGroup
-                      size="large"
-                      value={appState.input}
-                      onChange={changeInput}
-                      exclusive={true}>
-                      <ToggleButton value="input" key="input">
-                        Input
-                      </ToggleButton>
-                      <ToggleButton value="table" key="table">
-                        Table
-                      </ToggleButton>
-                    </ToggleButtonGroup>
-                  </Stack>
-                </div>
-                <div className="col-span-12">
-                  {appState.input === 'input' ? (
-                    <TextField
-                      id="queries"
-                      label="Queries"
-                      placeholder="Queries"
-                      className="w-full"
-                      value={queryString}
-                      onChange={changeQueryString}
-                      multiline
-                      rows={12}
-                      required
-                    />
-                  ) : (
-                    <div className="rounded border">
-                      {queries.map((query: string, index: number) => {
-                        return (
-                          <div
-                            key={`query-${query}`}
-                            className="grid grid-cols-12 border-b py-4">
-                            <div className="col-span-1 text-center">
-                              {index + 1}
-                            </div>
-                            <div className="col-span-11 truncate">
-                              <p className="truncate">{query}</p>
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>
-        <section>
-          <div className="rounded border p-8 shadow-2xl">
-            <div className="grid grid-cols-12 items-center gap-8">
-              <div className="col-span-12">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-lg uppercase">Results</h2>
-                  <button
-                    type="button"
-                    className="btn bg-teal-500"
-                    onClick={downloadCSV}>
-                    Download CSV
-                  </button>
-                </div>
-              </div>
-              <div className="col-span-12">
-                <TableContainer
-                  component={Paper}
-                  sx={{ maxHeight: 440 }}
-                  className="border">
-                  <Table stickyHeader sx={{ minWidth: 650 }} aria-label="table">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell align="center">No.</TableCell>
-                        <TableCell sx={{ maxWidth: '300px' }}>Query</TableCell>
-                        <TableCell align="right">
-                          Collectable Total Mentions
-                        </TableCell>
-                        <TableCell align="right">Total Mentions</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {appState.loading < 100 ? (
-                        <TableRow className="border-0 border-none">
-                          <TableCell
-                            align="center"
-                            colSpan={4}
-                            className="border-0 border-none uppercase">
-                            {appState.loading}%
-                          </TableCell>
-                        </TableRow>
-                      ) : (
-                        <>
-                          {results.length > 0 ? (
-                            results.map((result: Result, index: number) => {
-                              const resultQuery = result.query || '';
-                              return (
-                                <TableRow
-                                  key={`result-${resultQuery.replaceAll(
-                                    ' ',
-                                    ''
-                                  )}`}
-                                  sx={{
-                                    '&:last-child td, &:last-child th': {
-                                      border: 0,
-                                    },
-                                  }}>
-                                  <TableCell align="center">
-                                    {index + 1}
-                                  </TableCell>
-                                  <TableCell
-                                    component="th"
-                                    scope="row"
-                                    sx={{ maxWidth: '300px' }}>
-                                    <p className="truncate">{resultQuery}</p>
-                                  </TableCell>
-                                  <TableCell align="right">
-                                    {result.total_collectable_mentions}
-                                  </TableCell>
-                                  <TableCell align="right">
-                                    {result.total_mentions}
-                                  </TableCell>
-                                </TableRow>
-                              );
-                            })
-                          ) : (
-                            <TableRow className="border-0 border-none">
-                              <TableCell
-                                align="center"
-                                colSpan={4}
-                                className="border-0 border-none uppercase">
-                                No Data
-                              </TableCell>
-                            </TableRow>
-                          )}
-                        </>
-                      )}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-    </LocalizationProvider>
+          </section>
+        </main>
+      </LocalizationProvider>
+    </div>
   );
 };
 
