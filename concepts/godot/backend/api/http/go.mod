@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/google/uuid v1.6.0
 	github.com/julienschmidt/httprouter v1.3.0
-	gorm.io/driver/postgres v1.5.4
+	gorm.io/driver/postgres v1.5.6
 	gorm.io/gorm v1.25.7
 )
 
