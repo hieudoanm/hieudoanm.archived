@@ -1,4 +1,4 @@
-FROM python:3.12.1
+FROM python:3.12.2
 
 ENV ENVIRONMENT=production
 ENV PORT=10000
