@@ -36,7 +36,7 @@
     "format": "0.2.2",
     "graphql-tag": "2.12.6",
     "jest": "29.7.0",
-    "nodemon": "3.0.3",
+    "nodemon": "3.1.0",
     "prettier": "3.2.5",
     "ts-jest": "29.1.2",
     "ts-loader": "9.5.1",
