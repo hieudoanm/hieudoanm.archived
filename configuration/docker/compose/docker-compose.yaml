@@ -75,7 +75,7 @@ services:
   # Graph
   graph-neo4j:
     restart: unless-stopped
-    image: neo4j:5.16.0
+    image: neo4j:5.17.0
     container_name: graph-neo4j
     ports:
       - 7474:7474
