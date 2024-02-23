@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@apollo/server": "4.10.0",
-    "@graphql-tools/schema": "10.0.2",
+    "@graphql-tools/schema": "10.0.3",
     "graphql": "16.8.1",
     "pino": "8.19.0",
     "pino-pretty": "10.3.1"
