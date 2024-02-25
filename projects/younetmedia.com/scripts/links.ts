@@ -2,12 +2,13 @@ import { Parser } from '@json2csv/plainjs';
 import axios from 'axios';
 import csv from 'csvtojson';
 import dotenv from 'dotenv';
-import { writeFileSync } from 'fs';
+import { writeFileSync } from 'node:fs';
 import chunk from 'lodash/chunk';
 
 dotenv.config();
 
 const AUTHORIZATION = process.env.AUTHORIZATION ?? '';
+const TOPIC_ID = process.env.TOPIC_ID ?? '101256';
 
 const headers = { Authorization: AUTHORIZATION };
 
@@ -21,18 +22,17 @@ const getMainLink = async (url: string) => {
   const link: string = headers['link'] ?? '';
   const start = link.indexOf('<');
   const end = link.indexOf('>');
-  const mainLink = start > -1 && end > -1 ? link.substring(start + 1, end) : '';
-  return mainLink;
+  return start > -1 && end > -1 ? link.slice(start + 1, end) : '';
 };
 
-const addUrls = async (urls: string[]) => {
+const addUrls = async (urls: string[], action_type: number) => {
   try {
     const url = `${BASE}/crawler/add-urls`;
     const batch = urls.map((url) => {
       const [main] = url.split('?');
       const parts = main.split('/');
       const groupsIndex = parts.indexOf('groups');
-      const id_source = groupsIndex !== -1 ? parts[groupsIndex + 1] : '';
+      const id_source = groupsIndex === -1 ? '' : parts[groupsIndex + 1];
       const postsIndex = parts.indexOf('posts');
       const permalinkIndex = parts.indexOf('permalink');
       let id_social = '';
@@ -45,11 +45,11 @@ const addUrls = async (urls: string[]) => {
         mention_id: '',
         link: url,
         platform: 1,
-        action_type: 0,
+        action_type: action_type,
         id_social,
         source_type: 0,
         title: '',
-        topic_id: '101256',
+        topic_id: TOPIC_ID,
         id_source,
         created_date: '',
         application: 'support-tool',
@@ -64,10 +64,10 @@ const addUrls = async (urls: string[]) => {
           status: '',
           fullname: 'Lê Huỳnh Trường Giang',
           id_account: 9,
-          realm: null,
-          username: null,
+          realm: undefined,
+          username: undefined,
           email: 'giang.le@buzzmetrics.com',
-          emailVerified: null,
+          emailVerified: undefined,
           id: 922,
         },
       },
@@ -81,7 +81,7 @@ const addUrls = async (urls: string[]) => {
 };
 
 const main = async () => {
-  const file = './data/links/big.csv';
+  const file = './data/links/xanh.csv';
   const links: Link[] = await csv().fromFile(file);
   const linksMap = new Map<string, string>();
   for (const { link, system_id = '' } of links) {
@@ -91,18 +91,18 @@ const main = async () => {
   const parser = new Parser({ fields: ['system_id', 'link', 'main_link'] });
   const shareLinks = new Map<string, string>();
   const succesfulShareLinks = new Map<string, string>();
-  for (const chunkItem of chunk(Array.from(linksMap.entries()), 100)) {
+  for (const chunkItem of chunk([...linksMap.entries()], 100)) {
     const data = chunkItem
       // .filter(([_, value]) => value === '')
       .map(([link]) => link);
-    for (let i = 0; i < data.length; i++) {
-      const shareLink = data[i];
+    for (let index = 0; index < data.length; index++) {
+      const shareLink = data[index];
       if (shareLink.includes('share')) {
         console.log(shareLink);
         const mainLink = await getMainLink(shareLink);
         if (mainLink.length > 0) {
           shareLinks.set(mainLink, shareLink);
-          data[i] = mainLink;
+          data[index] = mainLink;
         }
       }
     }
@@ -115,20 +115,21 @@ const main = async () => {
         url,
         {
           data,
-          date_from: '2023-11-26T00:00:00+07:00',
-          date_to: '2023-12-26T00:00:00+07:00',
-          topic_id: '101256',
+          date_from: '2024-01-24T00:00:00+07:00',
+          date_to: '2024-02-24T00:00:00+07:00',
+          topic_id: TOPIC_ID,
         },
         { headers }
       );
       console.info('Done');
       const { data: results = [] } = response;
       // const unsuccessful = results
-      //   .filter(({ system_id }) => system_id === '')
-      //   .map(({ link }) => link);
+      // .filter(({ system_id }) => system_id === '')
+      // .map(({ link }) => link);
       console.info('Loading');
       // console.info('Start Add URLs');
-      // await addUrls(unsuccessful);
+      // await addUrls(unsuccessful, 0);
+      // await addUrls(unsuccessful, 1);
       // console.info('Complete Add URLs');
       for (const result of results) {
         const {
@@ -153,20 +154,19 @@ const main = async () => {
         }
       }
       const list: Link[] = [];
-      linksMap.forEach((system_id, link) => {
+      for (const [link, system_id] of linksMap.entries()) {
         list.push({
           system_id,
           link,
           main_link: succesfulShareLinks.get(link) ?? '',
         });
-      });
+      }
       const csv = parser.parse(list);
       writeFileSync(file, csv);
     } catch (error) {
       console.error(error);
     }
   }
-  process.exit(0);
 };
 
-main().catch(console.error);
+main();

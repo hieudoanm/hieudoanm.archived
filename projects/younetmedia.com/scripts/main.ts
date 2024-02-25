@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 
 const KEY = process.env.KEY ?? 'F973A34CB306B1AF88E26AEFD24FD33B';
 
@@ -8,17 +8,16 @@ const writeCSV = (infos: any[]) => {
   const headerRow: string = `${headers.join(',')}`;
   const dataRows: string = infos
     .map((result: any) => {
-      const cells = headers
+      return headers
         .map((header: string) => {
           if (header === 'query') {
             return `"${(result[header] || '')
-              .replace(/"/g, "'")
-              .replace(/#/g, '')}"`;
+              .replaceAll(/"/, "'")
+              .replaceAll(/#/, '')}"`;
           }
           return result[header];
         })
         .join(',');
-      return cells;
     })
     .join('\n');
   const csv: string = `${headerRow}\n${dataRows}`;
@@ -26,7 +25,7 @@ const writeCSV = (infos: any[]) => {
 };
 
 const main = async () => {
-  const ipsString: string = readFileSync('./data/ips.txt', 'utf-8');
+  const ipsString: string = readFileSync('./data/ips.txt', 'utf8');
   const ips: string[] = ipsString.split('\n');
   const infos = [];
   for (const ip of ips) {
@@ -39,4 +38,4 @@ const main = async () => {
   }
 };
 
-main().catch(console.error);
+await main();

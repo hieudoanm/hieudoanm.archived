@@ -1,6 +1,6 @@
 import axios from 'axios';
 import dotenv from 'dotenv';
-import { readFileSync } from 'fs';
+import { readFileSync } from 'node:fs';
 import { chunk } from 'lodash';
 
 dotenv.config();
@@ -57,7 +57,7 @@ const setTagAllMentions = async (
 };
 
 const main = async () => {
-  const idsTxt = readFileSync('./data/ids/bike.txt', 'utf-8');
+  const idsTxt = readFileSync('./data/ids/bike.txt', 'utf8');
   const ids = idsTxt.split('\n');
   for (const chunkIds of chunk(ids, 1000)) {
     console.log('chunkIds', chunkIds);
