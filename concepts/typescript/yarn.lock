@@ -26542,6 +26542,13 @@ undici@6.6.2:
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
+undici@6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.7.0.tgz#ab7eccb292c8e831c93564ac59f8323c0e8aa842"
+  integrity sha512-IcWssIyDN1gk6Mcae44q04oRoWTKrW8OKz0effVK1xdWwAgMPnfpxhn9RXUSL5JlwSikO18R7Ibk7Nukz6kxWA==
+  dependencies:
+    "@fastify/busboy" "^2.0.0"
+
 undici@^5.22.1:
   version "5.23.0"
   resolved "https://registry.yarnpkg.com/undici/-/undici-5.23.0.tgz#e7bdb0ed42cebe7b7aca87ced53e6eaafb8f8ca0"
