@@ -109,13 +109,13 @@
   <h2>📜 Experiences 📜</h2>
 </div>
 
-- 👨‍🎓 **2025**: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
-- 🇦🇺 **2023**: **Senior Software Developer** at [**NAB**][nab][^2]
-- 🎖️ **2021**: [AWS Certified Solutions Architect – Associate][aws-ssa]
-- 🇻🇳 **2019**: **Software Developer** at [**BoostCommerce**][boostcommerce]
-- 🇩🇪 **2017**: **Front-end Developer** at [**admetrics**][admetrics]
-- 👨‍🎓 **2016**: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
-- 🇫🇮 **2015**: **Front-end Developer** at **Witrafi**
+- 🇦🇺 - 👨‍🎓 **2022** - `now`: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
+- 🇦🇺 - 👨‍💻 **2021** - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
+- 🎖️ - 👨‍💻 **2021** - **2024**: [AWS Certified Solutions Architect – Associate][aws-ssa]
+- 🇻🇳 - 👨‍💻 **2019** - **2021**: **Software Developer** at [**BoostCommerce**][boostcommerce]
+- 🇩🇪 - 👨‍💻 **2017** - **2019**: **Front-end Developer** at [**admetrics**][admetrics]
+- 🇫🇮 - 👨‍💻 **2015** - **2017**: **Front-end Developer** at **Witrafi**
+- 🇫🇮 - 👨‍🎓 **2013** - **2016**: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
 
 [^1]: Royal Melbourne Institute of Technology
 [^2]: National Australia Bank
