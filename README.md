@@ -14,9 +14,9 @@
 
 ---
 
-- `broca` - [Language Processing](https://broca.vercel.app/)
-- `chess` - [chess.com Insights](https://chessinsights.vercel.app/)
-- `vi` - [VI](https://iboard.ssi.com.vn/)
+- `broca` - [Natural Language Processing][broca]
+- `chess` - [chess.com Insights and Analysis][chess]
+- `vi` - [VNINDEX Tracker and Analysis][vi]
 
 
 <div align="center">
@@ -126,3 +126,7 @@
 [nab]: https://www.nab.com.au/
 [rmit-psychology]: https://www.rmit.edu.vn/study-at-rmit/undergraduate-programs/bachelor-of-psychology
 [rmit-vietnam]: https://www.rmit.edu.vn/
+
+[broca]: https://broca.vercel.app/
+[chess]: https://chessinsights.vercel.app/
+[vi]: https://iboard.ssi.com.vn/
