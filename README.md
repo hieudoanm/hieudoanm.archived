@@ -109,18 +109,22 @@
   <h2>📜 Experiences 📜</h2>
 </div>
 
-- 👨‍🎓 [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
-- 🇦🇺 **Senior Software Engineer** at [**NAB**][nab][^2]
-- 🇩🇪 Ich arbeite seit zwei Jahren in **Deutschland**
-- 🇫🇮 [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4] in **Finland**
-- 🎖️ **2021-09-11**: [AWS Certified Solutions Architect – Associate][aws-ssa]
+- 👨‍🎓 **2025**: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
+- 🇦🇺 **2023**: **Senior Software Developer** at [**NAB**][nab][^2]
+- 🎖️ **2021**: [AWS Certified Solutions Architect – Associate][aws-ssa]
+- 🇻🇳 **2019**: **Software Developer** at [**BoostCommerce**][boostcommerce]
+- 🇩🇪 **2017**: **Front-end Developer** at [**admetrics**][admetrics]
+- 👨‍🎓 **2016**: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
+- 🇫🇮 **2015**: **Front-end Developer** at **Witrafi**
 
 [^1]: Royal Melbourne Institute of Technology
 [^2]: National Australia Bank
 [^3]: Business Information Technology
 [^4]: LAB University of Applied Sciences
 
+[admetrics]: https://www.admetrics.io/
 [aws-ssa]: https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3
+[boostcommerce]: https://boostcommerce.net/
 [lab]: https://lab.fi/
 [lab-bba-bit]: https://lab.fi/en/study/bachelor-business-administration-business-information-technology-full-time-studies-lahti-210
 [nab]: https://www.nab.com.au/
