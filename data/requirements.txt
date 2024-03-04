@@ -9,5 +9,5 @@ pandas==2.2.1
 python-dotenv==1.0.1
 requests==2.31.0
 selenium==4.18.1
-SQLAlchemy==2.0.27
+SQLAlchemy==2.0.28
 tqdm==4.66.2
