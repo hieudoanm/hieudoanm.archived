@@ -16,7 +16,7 @@
     "lint": "eslint . --fix --ext .ts,.tsx"
   },
   "dependencies": {
-    "@fontsource/roboto": "5.0.8",
+    "@fontsource/roboto": "5.0.12",
     "@solidjs/router": "0.12.4",
     "@suid/icons-material": "0.6.11",
     "@suid/material": "0.15.1",
