@@ -34,13 +34,13 @@
     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/jest.js.svg" title="Jest.js" alt="Jest.js" width="32px" height="32px" />
   </a>
   <a href="https://github.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/github.svg" title="GitHub" alt="GitHub" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/github.svg" title="GitHub" alt="GitHub" width="32px" height="32px" />
   </a>
   <a href="https://www.vaultproject.io" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/vault.svg" title="Vault" alt="Vault" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vault.svg" title="Vault" alt="Vault" width="32px" height="32px" />
   </a>
   <a href="https://vercel.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/vercel.svg" title="Vercel" alt="Vercel" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vercel.svg" title="Vercel" alt="Vercel" width="32px" height="32px" />
   </a>
 </div>
 
@@ -77,10 +77,10 @@
   </a>
   <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
   <a href="https://www.docker.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/docker.svg" title="Docker" alt="Docker" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/docker.svg" title="Docker" alt="Docker" width="32px" height="32px" />
   </a>
   <a href="https://www.terraform.io" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/terraform.svg" title="Terraform" alt="Terraform" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/terraform.svg" title="Terraform" alt="Terraform" width="32px" height="32px" />
   </a>
 </div>
 
@@ -101,7 +101,7 @@
     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/tensorflow.svg" title="Tensorflow" alt="Tensorflow" width="32px" height="32px" />
   </a>
   <a href="https://pytorch.org" target="_blank">
-    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.github.io/master/svg/pytorch.svg" title="PyTorch" alt="PyTorch" width="32px" height="32px" />
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/pytorch.svg" title="PyTorch" alt="PyTorch" width="32px" height="32px" />
   </a>
 </div>
 
