@@ -75,7 +75,9 @@
   <a href="https://www.prisma.io" target="_blank">
     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/prisma.svg" title="Prisma" alt="Prisma" width="32px" height="32px" />
   </a>
-  <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/postgresql.svg" alt="PostgreSQL" width="32px" height="32px" />
+  <a href="https://www.postgresql.org" target="_blank">
+    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/postgresql.svg" title="PostgreSQL" alt="PostgreSQL" width="32px" height="32px" />
+  </a>
   <a href="https://www.docker.com" target="_blank">
     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/docker.svg" title="Docker" alt="Docker" width="32px" height="32px" />
   </a>
