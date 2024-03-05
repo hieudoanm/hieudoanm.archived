@@ -2,6 +2,8 @@
   <h1><a href="https://hieudoanm.github.io">👨‍💻 HIEU DOAN 👨‍💻</a></h1>
 </div>
 
+<br />
+
 <div align="center">
   <h1>🧠 Neurobiology 🧬</h1>
 </div>
@@ -14,13 +16,25 @@
 
 ---
 
+<br />
+
+<div align="center">
+    <h1>🩻 Projects 🩻</h1>
+</div>
+
+<br />
+
 - `broca` - [Natural Language Processing][broca]
 - `chess` - [chess.com Insights and Analysis][chess]
 - `vi` - [VNINDEX Tracker and Analysis][vi]
 
+<br />
+
 <div align="center">
   <h1>🛠️ Techstack 🛠️</h1>
 </div>
+
+<br />
 
 <table align="center">
     <tbody>
@@ -231,9 +245,13 @@
     </tbody>
 </table>
 
+<br />
+
 <div align="center">
   <h1>📜 Experiences 📜</h1>
 </div>
+
+<br />
 
 - 🇦🇺 - 👨‍🎓 `2022` - `now`: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
 - 🇦🇺 - 👨‍💻 `2021` - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
