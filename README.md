@@ -24,9 +24,33 @@
 
 <br />
 
-- `broca` - [Natural Language Processing][broca]
-- `chess` - [chess.com Insights and Analysis][chess]
-- `vi` - [VNINDEX Tracker and Analysis][vi]
+<table align="center">
+    <tbody>
+        <tr>
+            <td align="center" width="96px">
+                <a href="https://broca.vercel.app" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/brain.svg" title="Broca" alt="Broca" width="64px" height="64px" />
+                </a>
+                <br />
+                Broca
+            </td>
+            <td align="center" width="96px">
+                <a href="https://chessinsights.vercel.app" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/chess.svg" title="Chess" alt="Chess" width="64px" height="64px" />
+                </a>
+                <br />
+                Chess
+            </td>
+            <td align="center" width="96px">
+                <a href="https://viapp.vercel.app" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/wallet.svg" title="VI" alt="VI" width="64px" height="64px" />
+                </a>
+                <br />
+                VI
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 <br />
 
