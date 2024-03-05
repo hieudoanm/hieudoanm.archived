@@ -351,7 +351,7 @@ function gmerge() {
   DEST_BRANCH=$1
   BRANCH=$(gcurrent)
   git checkout $DEST_BRANCH
-  git merge --no-ff --squash $BRANCH
+  git merge --squash $BRANCH
   git commit -m "Merge branch $BRANCH"
   git push origin $DEST_BRANCH
 }
