@@ -8,6 +8,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
+    "prettify": "prettier --cache --write .",
     "check:workspaces": "turbo run check",
     "format:workspaces": "turbo run format",
     "format": "biome format --write . || true",
