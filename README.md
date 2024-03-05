@@ -40,6 +40,20 @@
     <tbody>
         <tr>
             <td align="center" width="96px">
+                <a href="https://code.visualstudio.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vscode.svg" title="VSCode" alt="VSCode" width="64px" height="64px" />
+                </a>
+                <br />
+                VSCode
+            </td>
+            <td align="center" width="96px">
+                <a href="https://yarnpkg.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/yarn.svg" title="Yarn" alt="Yarn" width="64px" height="64px" />
+                </a>
+                <br />
+                Yarn
+            </td>
+            <td align="center" width="96px">
                 <a href="https://turbo.build" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/turbo.svg" title="Turbo" alt="Turbo" width="64px" height="64px" />
                 </a>
@@ -75,18 +89,11 @@
                 Jest
             </td>
             <td align="center" width="96px">
-                <a href="https://github.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/github.svg" title="GitHub" alt="GitHub" width="64px" height="64px" />
+                <a href="https://nodejs.org" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/node.js.svg" title="Node.js" alt="Node.js" width="64px" height="64px" />
                 </a>
                 <br />
-                GitHub
-            </td>
-            <td align="center" width="96px">
-                <a href="https://www.vaultproject.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vault.svg" title="Vault" alt="Vault" width="64px" height="64px" />
-                </a>
-                <br />
-                Vault
+                Node.js
             </td>
         </tr>
         <tr>
@@ -139,8 +146,6 @@
                 <br />
                 GraphQL
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://www.apollographql.com" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/apollo.svg" title="Apollo" alt="Apollo" width="64px" height="64px" />
@@ -148,6 +153,8 @@
                 <br />
                 Apollo
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://go.dev" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/golang.svg" title="Golang" alt="Golang" width="64px" height="64px" />
@@ -182,6 +189,20 @@
                 </a>
                 <br />
                 Terraform
+            </td>
+            <td align="center" width="96px">
+                <a href="https://www.vaultproject.io" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vault.svg" title="Vault" alt="Vault" width="64px" height="64px" />
+                </a>
+                <br />
+                Vault
+            </td>
+            <td align="center" width="96px">
+                <a href="https://github.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/github.svg" title="GitHub" alt="GitHub" width="64px" height="64px" />
+                </a>
+                <br />
+                GitHub
             </td>
             <td align="center" width="96px">
                 <a href="https://vercel.com" target="_blank">
@@ -240,6 +261,13 @@
                 </a>
                 <br />
                 PyTorch
+            </td>
+            <td align="center" width="96px">
+                <a href="https://www.rust-lang.org" target="_blank">
+                      <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/rust.svg" title="Rust" alt="Rust" width="64px" height="64px" />
+                </a>
+                <br />
+                Rust
             </td>
         </tr>
     </tbody>
