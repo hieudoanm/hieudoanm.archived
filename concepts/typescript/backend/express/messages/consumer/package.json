@@ -40,7 +40,7 @@
     "@types/express": "4.17.21",
     "@types/http-errors": "2.0.4",
     "@types/jest": "29.5.12",
-    "@types/node": "20.11.24",
+    "@types/node": "20.11.25",
     "@types/stompit": "0.26.6",
     "@types/webpack-node-externals": "3.0.4",
     "@typescript-eslint/eslint-plugin": "7.1.1",
