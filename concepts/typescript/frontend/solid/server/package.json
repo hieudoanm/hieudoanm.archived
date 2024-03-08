@@ -24,7 +24,7 @@
     "solid-apexcharts": "0.3.4",
     "solid-js": "1.8.15",
     "solid-start": "0.3.10",
-    "undici": "6.7.0"
+    "undici": "6.7.1"
   },
   "devDependencies": {
     "@suid/vite-plugin": "0.1.5",
