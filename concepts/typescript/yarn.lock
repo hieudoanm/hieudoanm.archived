@@ -27077,12 +27077,10 @@ undici@6.6.2:
   dependencies:
     "@fastify/busboy" "^2.0.0"
 
-undici@6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.7.0.tgz#ab7eccb292c8e831c93564ac59f8323c0e8aa842"
-  integrity sha512-IcWssIyDN1gk6Mcae44q04oRoWTKrW8OKz0effVK1xdWwAgMPnfpxhn9RXUSL5JlwSikO18R7Ibk7Nukz6kxWA==
-  dependencies:
-    "@fastify/busboy" "^2.0.0"
+undici@6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.7.1.tgz#3cb27222fd5d72c1b2058f4e18bf9b53dd933af8"
+  integrity sha512-+Wtb9bAQw6HYWzCnxrPTMVEV3Q1QjYanI0E4q02ehReMuquQdLTEFEYbfs7hcImVYKcQkWSwT6buEmSVIiDDtQ==
 
 undici@^5.22.1:
   version "5.23.0"
