@@ -37,7 +37,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.3",
+    "@biomejs/biome": "1.6.0",
     "@json2csv/plainjs": "7.0.6",
     "@testing-library/react": "14.2.1",
     "@types/cookie": "0.6.0",
