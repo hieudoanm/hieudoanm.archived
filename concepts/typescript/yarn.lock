@@ -8278,28 +8278,28 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.2.tgz#c9ed3575c5445afb14965bb76e8446fbf7e4a0e6"
   integrity sha512-BRbo1fOtyVbhfLyuCWw6wAWp+U8UQle+ZXu84MYYWzYSEB28dyfnRBIE99eoG+qdAC0po6L2ScIEivcT07UaMA==
 
-"@tsoa/cli@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@tsoa/cli/-/cli-6.0.1.tgz#8e27d47b8d76ffcf1a842a69296277d1de23572d"
-  integrity sha512-SpdWPIzAtfG6Jcb6KIvT4VVo9VnAfAiY6+dCrrlKURlEfah05rRQ7k09jeJdAZoeeoKVwyJNj+43zlh9w1u7bg==
+"@tsoa/cli@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@tsoa/cli/-/cli-6.1.0.tgz#b501ec805b3cc0666065b8e62aaa7fbda903759f"
+  integrity sha512-fAYdR03L5bI44tz5zH0FiJUcQgnntF6fXtWfUxQf3AhuN/z4R6j2XEET8fwe0ABs7skD9a/98hqUggvKNCsIDg==
   dependencies:
-    "@tsoa/runtime" "^6.0.0"
+    "@tsoa/runtime" "^6.1.0"
     "@types/multer" "^1.4.11"
-    deepmerge "^4.3.1"
     fs-extra "^11.2.0"
     glob "^10.3.10"
     handlebars "^4.7.8"
     merge-anything "^5.1.4"
     minimatch "^9.0.1"
+    ts-deepmerge "^7.0.0"
     typescript "^5.3.3"
     validator "^13.11.0"
     yamljs "^0.3.0"
     yargs "^17.7.1"
 
-"@tsoa/runtime@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@tsoa/runtime/-/runtime-6.0.0.tgz#e8e6f5ae7704f7d6913da40ff8cbbe6661d60a6f"
-  integrity sha512-n0LYcjII313kDn3M4bZdAjU+sX7595sIEA3bw4pvxWRrkandyDdDFNrfQL8nZ3Pw6dkTmK7brZi0YBBDhe0Rzw==
+"@tsoa/runtime@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@tsoa/runtime/-/runtime-6.1.0.tgz#65dd590137c83f76fb79032e85bdcae8f3dd3606"
+  integrity sha512-ZE+VMrzVV0laFjUm0j7+ox7VG0yMOiQcouCE4LdS335jMc/pA0hbcxl9EoKexTyfWgmMMFjstvQVBiAq5y60Vw==
   dependencies:
     "@types/multer" "^1.4.11"
     reflect-metadata "^0.2.1"
@@ -26658,6 +26658,11 @@ ts-api-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.0.2.tgz#7c094f753b6705ee4faee25c3c684ade52d66d99"
   integrity sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==
 
+ts-deepmerge@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-7.0.0.tgz#ee824dc177d452603348c7e6f3b90223434a6b44"
+  integrity sha512-WZ/iAJrKDhdINv1WG6KZIGHrZDar6VfhftG1QJFpVbOYZMYJLJOvZOo1amictRXVdBXZIgBHKswMTXzElngprA==
+
 ts-interface-checker@^0.1.9:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
@@ -26798,13 +26803,13 @@ tslib@~2.4.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
   integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
 
-tsoa@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/tsoa/-/tsoa-6.0.1.tgz#0a1a9ea80b4eca979b71cf4b33db49375b87e422"
-  integrity sha512-Far5BFpFvMYVMZxt87O7hOFGpa6dALQ8XHhdDytry0IhIUJnRliVXLZ2t2KGcgNw0bIwsk+2XkWra18LL6cORA==
+tsoa@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/tsoa/-/tsoa-6.1.0.tgz#4cf0ebe836501053cbb6d9631c68e12fd49c7d72"
+  integrity sha512-qFmOQEj6+EIjUesFxqwi8f5FjjpAhPRzj5StDueM23NexJgEUjc76ysghNV5IDf4wOOUCrNgI4krgwYw6trSDg==
   dependencies:
-    "@tsoa/cli" "^6.0.1"
-    "@tsoa/runtime" "^6.0.0"
+    "@tsoa/cli" "^6.1.0"
+    "@tsoa/runtime" "^6.1.0"
 
 tsutils@^3.21.0:
   version "3.21.0"
