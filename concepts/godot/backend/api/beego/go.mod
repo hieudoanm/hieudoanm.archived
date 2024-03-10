@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/beego/beego/v2 v2.1.6
 	github.com/google/uuid v1.6.0
-	gorm.io/driver/postgres v1.5.6
+	gorm.io/driver/postgres v1.5.7
 	gorm.io/gorm v1.25.7
 )
 
