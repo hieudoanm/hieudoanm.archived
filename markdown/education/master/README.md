@@ -4,7 +4,8 @@
 | ----------- | ------------- | ------------------------------------------------ | ------- | ------- |
 | England     | Russell Group | [Imperial College London][icl]                   | 1 year  | £40,900 |
 | England     | Russell Group | [University College London][ucl]                 | 2 years | £34,400 |
-| England     | Russell Group | [University of Edinburgh][edinburgh]             | 1 year  | £35,300 |
+| England     | Russell Group | [University of Edinburgh][edinburgh-phd]         | 1 year  | £35,300 |
+|             |               | [University of Edinburgh][edinburgh-msc]         |         |         |
 | England     | Russell Group | [University of Sheffield][sheffield]             | 1 year  | 32,350  |
 | England     | Russell Group | [University of Birmingham][birmingham]           | 1 year  |         |
 | England     | Russell Group | [University of Nottingham][nottingham]           | 1 year  | £28,600 |
@@ -16,7 +17,8 @@
 | France      |               | [Université Paris-Saclay][saclay]                |         |         |
 
 [birmingham]: https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx
-[edinburgh]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489
+[edinburgh-phd]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489
+[edinburgh-msc]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2024&id=2
 [goldsmith]: https://www.gold.ac.uk/pg/msc-computational-cognitive-neuroscience
 [groningen]: https://www.rug.nl/masters/computational-cognitive-science
 [icl]: https://www.imperial.ac.uk/study/courses/postgraduate-taught/neurotechnology/
