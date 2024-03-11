@@ -305,13 +305,20 @@
 
 <br />
 
-- 🇦🇺 - 👨‍🎓 `2022` - `now`: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
 - 🇦🇺 - 👨‍💻 `2021` - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
-- 🎖️ - 👨‍💻 `2021` - `2024`: [AWS Certified Solutions Architect – Associate][aws-ssa]
 - 🇻🇳 - 👨‍💻 `2019` - `2021`: **Software Developer** at [**BoostCommerce**][boostcommerce]
 - 🇩🇪 - 👨‍💻 `2017` - `2019`: **Front-end Developer** at [**admetrics**][admetrics]
 - 🇫🇮 - 👨‍💻 `2015` - `2017`: **Front-end Developer** at **Witrafi**
-- 🇫🇮 - 👨‍🎓 `2013` - `2016`: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
+
+<div align="center">
+  <h1>👨‍🎓 Education 👨‍🎓</h1>
+</div>
+
+- 🇦🇺 `2022` - `now`: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
+- 🎖️ `2021` - `2024`: [AWS Certified Solutions Architect – Associate][aws-ssa]
+- 🇫🇮 `2013` - `2016`: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
+
+<br />
 
 [^1]: Royal Melbourne Institute of Technology
 [^2]: National Australia Bank
