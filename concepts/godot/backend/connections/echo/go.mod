@@ -1,6 +1,6 @@
 module echo-socket-starter
 
-go 1.22.0
+go 1.22.1
 
 require (
 	github.com/googollee/go-socket.io v1.7.0
