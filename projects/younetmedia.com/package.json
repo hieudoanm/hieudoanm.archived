@@ -26,7 +26,7 @@
     "@mui/icons-material": "5.15.13",
     "@mui/material": "5.15.13",
     "@mui/system": "5.15.13",
-    "@mui/x-date-pickers": "6.19.6",
+    "@mui/x-date-pickers": "6.19.7",
     "axios": "1.6.7",
     "cookie": "0.6.0",
     "dayjs": "1.11.10",
