@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
-import { HomePage } from '../pages/index';
+import { LayoutTemplate } from '../index';
 
 jest.mock('next/router', () => {
   return { useRouter: jest.fn() };
 });
 
-describe('HomePage', () => {
+describe('LayoutTemplate', () => {
   it('renders correctly', () => {
-    const { container } = render(<HomePage />);
+    const { container } = render(<LayoutTemplate />);
     expect(container).toMatchSnapshot();
   });
 });

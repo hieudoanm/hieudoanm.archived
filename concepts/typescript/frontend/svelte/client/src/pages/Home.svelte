@@ -1,15 +1,15 @@
 <script>
 const tasks = [
   {
-    id: "1",
-    title: "Title",
-    description: "Description",
+    id: '1',
+    title: 'Title',
+    description: 'Description',
     completed: false,
   },
   {
-    id: "1",
-    title: "Title",
-    description: "Description",
+    id: '1',
+    title: 'Title',
+    description: 'Description',
     completed: false,
   },
 ];

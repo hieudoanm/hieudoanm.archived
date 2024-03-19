@@ -4,6 +4,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import { APP_NAME } from '@younetmedia/common/constants/app.constants';
 import '@younetmedia/common/styles/globals.scss';
+import { trpcClient } from '@younetmedia/utils/trpc.client';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
@@ -22,4 +23,4 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+export default trpcClient.withTRPC(App);

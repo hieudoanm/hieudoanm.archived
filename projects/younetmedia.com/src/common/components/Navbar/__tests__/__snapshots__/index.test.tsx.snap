@@ -11,23 +11,39 @@ exports[`Navbar renders correctly 1`] = `
       <div
         class="flex items-center justify-between"
       >
-        <div>
-          <h1
-            class="text-lg uppercase"
+        <div
+          class="flex items-center gap-x-2"
+        >
+          <a
+            href="/"
           >
-            Buzz Metrics
-          </h1>
+            <h1
+              class="uppercase"
+            >
+              Buzz Metrics
+            </h1>
+          </a>
+          <a
+            href="/socialheat"
+          >
+            <p>
+              Social Heat
+            </p>
+          </a>
+          <a
+            href="/socialtrend"
+          >
+            <p>
+              Social Trend
+            </p>
+          </a>
         </div>
         <div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium uppercase css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
-            tabindex="0"
+            class="btn bg-blue-500 text-white uppercase"
             type="button"
           >
             Log Out
-            <span
-              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-            />
           </button>
         </div>
       </div>

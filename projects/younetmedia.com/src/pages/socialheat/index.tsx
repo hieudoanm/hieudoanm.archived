@@ -397,7 +397,9 @@ export const SocialHeatPage: NextPage = () => {
                                     )}`}>
                                     <td align="center">{index + 1}</td>
                                     <td>
-                                      <p className="truncate">{resultQuery}</p>
+                                      <p className="truncate w-32">
+                                        {resultQuery}
+                                      </p>
                                     </td>
                                     <td align="right">
                                       {result.total_collectable_mentions}
