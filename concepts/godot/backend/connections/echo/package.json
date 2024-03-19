@@ -1,0 +1,14 @@
+{
+	"name": "@go/echo-socket",
+	"version": "0.0.1",
+	"description": "Echo Socket Starter",
+	"main": "main.go",
+	"repository": "git@github.com:hieudoanm/hieudoanm.git",
+	"author": "hieudoanm <hieumdoan@gmail.com>",
+	"license": "GPL-3.0",
+	"private": true,
+	"scripts": {
+		"dev": "nodemon --exec go run main.go --signal SIGTERM",
+		"docs": "swagger generate spec -o ./docs/swagger.yaml --scan-models"
+	}
+}

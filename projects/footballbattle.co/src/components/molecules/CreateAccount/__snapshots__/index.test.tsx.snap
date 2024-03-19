@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateAccount render default 1`] = `
+<div>
+  <div
+    class="h-full p-8 card-green bg-green rounded-2xl"
+  >
+    <div
+      class="flex flex-col h-full"
+    >
+      <div
+        class="flex-none"
+      >
+        <div
+          class="mb-8"
+        >
+          <h3
+            class="text-[#FFB715] text-base md:text-xl"
+          >
+            Create Account
+          </h3>
+        </div>
+      </div>
+      <div
+        class="grow"
+      >
+        <div
+          class="mb-4"
+        >
+          <p
+            class="text-white text-xs md:text-sm"
+          >
+            MetaMask
+          </p>
+        </div>
+        <div
+          class="mb-12"
+        >
+          <a
+            href="https://bit.ly/3bJtXmr"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <div
+              class="sc-eLqIir fuNSle w-24 h-24 bg-center bg-cover"
+              image="/how-to-play/en/images/meta-mask-wallet/box.svg"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full"
+              >
+                <div
+                  class="sc-eLqIir cjEyMF w-16 h-16 bg-center bg-no-repeat bg-contain"
+                  image="/how-to-play/en/images/download/meta-mask-fox.svg"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="mb-8"
+        >
+          <div
+            class="flex flex-col gap-4 text-white"
+          >
+            <h4
+              class="font-karma"
+            >
+              What is MetaMask Wallet For?
+            </h4>
+            <div
+              class="flex items-center gap-4"
+            >
+              <div>
+                <div
+                  class="w-8 h-8 bg-contain bg-center bg-no-repeat"
+                  style="background-image: url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg);"
+                />
+              </div>
+              <p
+                class="font-karma text-sm md:text-base"
+              >
+                Storing digital assets
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-4"
+            >
+              <div>
+                <div
+                  class="w-8 h-8 bg-contain bg-center bg-no-repeat"
+                  style="background-image: url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg);"
+                />
+              </div>
+              <p
+                class="font-karma text-sm md:text-base"
+              >
+                Sending blockchain transactions without paying expensive gas fees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-none"
+      >
+        <a
+          href="https://bit.ly/3bXegbx"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <div
+            class="flex items-center gap-4"
+          >
+            <div>
+              <div
+                class="w-6 h-6 bg-contain bg-center bg-no-repeat"
+                style="background-image: url(/how-to-play/en/images/meta-mask-wallet/play.svg);"
+              />
+            </div>
+            <p
+              class="text-[#FFC815] font-karma underline text-sm"
+            >
+              View tutorial
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

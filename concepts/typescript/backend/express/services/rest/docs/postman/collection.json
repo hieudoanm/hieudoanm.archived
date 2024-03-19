@@ -1,0 +1,1089 @@
+{
+	"item": [
+		{
+			"name": "auth",
+			"description": "",
+			"item": [
+				{
+					"name": "sign-up",
+					"description": "",
+					"item": [
+						{
+							"id": "079bdb1c-32a8-49cd-9057-fdad49383ce2",
+							"name": "Sign Up",
+							"request": {
+								"name": "Sign Up",
+								"description": {},
+								"url": {
+									"path": ["auth", "sign-up"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "bb6f86c5-ddb4-45f5-a01b-7ccb3ffdf54d",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["auth", "sign-up"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "POST",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "sign-in",
+					"description": "",
+					"item": [
+						{
+							"id": "ba35d994-ed55-422e-bb12-e4bb61761e8c",
+							"name": "Sign In",
+							"request": {
+								"name": "Sign In",
+								"description": {},
+								"url": {
+									"path": ["auth", "sign-in"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "734aef65-241f-4419-9ba4-fe9d24e029f2",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["auth", "sign-in"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "POST",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"token\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "health",
+			"description": "",
+			"item": [
+				{
+					"id": "2d7bf874-d47e-4300-ad9d-767e394d628b",
+					"name": "Get Health",
+					"request": {
+						"name": "Get Health",
+						"description": {},
+						"url": {
+							"path": ["health"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "57927e3d-4de5-45a6-a24b-f3f7d1ea0986",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["health"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"status\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				}
+			]
+		},
+		{
+			"name": "lists",
+			"description": "",
+			"item": [
+				{
+					"id": "4e5d354e-cade-4632-a5f4-467c13a43680",
+					"name": "Get Lists",
+					"request": {
+						"name": "Get Lists",
+						"description": {},
+						"url": {
+							"path": ["lists"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "08583cfb-41e1-4c1c-b2b4-517317c59016",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["lists"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "[\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_ not found in the OpenAPI spec\"\n  },\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_ not found in the OpenAPI spec\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "7012e538-79ac-4e20-ad93-b5e52b29460f",
+					"name": "Create List",
+					"request": {
+						"name": "Create List",
+						"description": {},
+						"url": {
+							"path": ["lists"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{ "key": "Content-Type", "value": "application/json" },
+							{ "key": "Accept", "value": "application/json" }
+						],
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"<string>\"\n}",
+							"options": {
+								"raw": { "headerFamily": "json", "language": "json" }
+							}
+						},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "da5dff44-85a1-4bfa-b4f0-de0281b35a44",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["lists"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_ not found in the OpenAPI spec\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"name": "{id}",
+					"description": "",
+					"item": [
+						{
+							"id": "12594c0f-f508-4642-8bda-6effec185caa",
+							"name": "Get List",
+							"request": {
+								"name": "Get List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "d67145f7-16b2-4cf9-91f9-581970a9fa8c",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_ not found in the OpenAPI spec\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "29a987f5-609a-4bdc-a8b3-9ddcf420a066",
+							"name": "Update List",
+							"request": {
+								"name": "Update List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "bb49e6e8-786b-46bb-9631-b37bb6aa74b2",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"title\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24ListPayload_ not found in the OpenAPI spec\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "775922f9-188e-497a-ae62-106369942cc1",
+							"name": "Delete List",
+							"request": {
+								"name": "Delete List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"method": "DELETE",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "103209dd-d732-4d60-84ac-ad52c3a272f1",
+									"name": "No content",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "No Content",
+									"code": 204,
+									"header": [],
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tasks",
+			"description": "",
+			"item": [
+				{
+					"id": "a60d9e08-ebb6-4a92-b7e8-ee6d24c766c8",
+					"name": "Get Tasks",
+					"request": {
+						"name": "Get Tasks",
+						"description": {},
+						"url": {
+							"path": ["tasks"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "1f85efdc-df0d-453d-9d95-422f312e6901",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["tasks"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "[\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_ not found in the OpenAPI spec\"\n  },\n  {\n    \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_ not found in the OpenAPI spec\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "a51cf798-c571-46cc-9f64-b539ecd3353b",
+					"name": "Create Task",
+					"request": {
+						"name": "Create Task",
+						"description": {},
+						"url": {
+							"path": ["tasks"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{ "key": "Content-Type", "value": "application/json" },
+							{ "key": "Accept", "value": "application/json" }
+						],
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"<string>\",\n  \"listId\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"description\": \"<string>\"\n}",
+							"options": {
+								"raw": { "headerFamily": "json", "language": "json" }
+							}
+						},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "c41ca319-5cd5-491c-80d8-3333bc451c3d",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["tasks"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\",\n  \"listId\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"description\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_ not found in the OpenAPI spec\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"name": "{id}",
+					"description": "",
+					"item": [
+						{
+							"id": "4b1a79b2-f035-4ede-bd6b-39545aff93a2",
+							"name": "Get Task",
+							"request": {
+								"name": "Get Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "fde973d8-9aee-48ef-8083-d9c5a5158229",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_ not found in the OpenAPI spec\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "dad5d3bd-5338-4a29-a90e-1613ff4f4897",
+							"name": "Update Task",
+							"request": {
+								"name": "Update Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\",\n  \"listId\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"description\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "d4230eb7-bd46-4391-8d33-cc07df261263",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"title\": \"<string>\",\n  \"listId\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"description\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"value\": \"reference #/components/schemas/%24Result.DefaultSelection_Prisma.%24TaskPayload_ not found in the OpenAPI spec\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "e0c3833b-9b0f-45ad-a639-7eb257dae7ac",
+							"name": "Delete Task",
+							"request": {
+								"name": "Delete Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [
+										{
+											"type": "any",
+											"value": "<string>",
+											"key": "id",
+											"disabled": false
+										}
+									]
+								},
+								"method": "DELETE",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "d9bebef4-1fd2-47ee-a323-59bc681e1915",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "No Content",
+									"code": 204,
+									"header": [],
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"id": "77796a15-9cf1-4a51-a430-3d60076aedfe",
+					"name": "Get User",
+					"request": {
+						"name": "Get User",
+						"description": {},
+						"url": {
+							"path": ["user"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "53a296d9-799b-4d8b-a1c7-1fabd613c71b",
+							"name": "Ok",
+							"originalRequest": {
+								"url": {
+									"path": ["user"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"id\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "2e393933-dc93-409c-9f16-29d6566b9a04",
+					"name": "Delete User",
+					"request": {
+						"name": "Delete User",
+						"description": {},
+						"url": {
+							"path": ["user"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"method": "DELETE",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "093c3b89-18e2-4bd9-aa26-f18f3ad9f56a",
+							"name": "No content",
+							"originalRequest": {
+								"url": {
+									"path": ["user"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"method": "DELETE",
+								"body": {}
+							},
+							"status": "No Content",
+							"code": 204,
+							"header": [],
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"name": "email",
+					"description": "",
+					"item": [
+						{
+							"id": "5e82769d-6d03-4587-bc97-7aa35e0bf063",
+							"name": "Update Email",
+							"request": {
+								"name": "Update Email",
+								"description": {},
+								"url": {
+									"path": ["user", "email"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "28adebf5-0a3e-4e3a-8c14-0cb3dd53f41c",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "email"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "username",
+					"description": "",
+					"item": [
+						{
+							"id": "2c9135f5-d792-4b18-a9d5-272357b23912",
+							"name": "Update Username",
+							"request": {
+								"name": "Update Username",
+								"description": {},
+								"url": {
+									"path": ["user", "username"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "78064b79-d7af-443e-8e82-49f48c618e76",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "username"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "password",
+					"description": "",
+					"item": [
+						{
+							"id": "92f5e31e-58c6-4f82-9bde-28089a13d298",
+							"name": "Update Password",
+							"request": {
+								"name": "Update Password",
+								"description": {},
+								"url": {
+									"path": ["user", "password"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "cc20a2b2-c233-4a49-83cd-a21671fd4f03",
+									"name": "Ok",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "password"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [],
+	"variable": [{ "key": "baseUrl", "value": "http://localhost:8080" }],
+	"info": {
+		"_postman_id": "409f024c-573f-4ad5-b9b1-30a1c20b210c",
+		"name": "@express/rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "HTTP - REST\n\nContact Support:\n Name: hieudoanm \n Email: hieumdoan@gmail.com",
+			"type": "text/plain"
+		}
+	}
+}

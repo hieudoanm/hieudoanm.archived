@@ -1,0 +1,364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialHeatPage renders correctly 1`] = `
+<div>
+  <div
+    class="bg-white"
+  >
+    <nav
+      class="border-b shadow"
+    >
+      <div
+        class="container mx-auto px-8 py-4"
+      >
+        <div
+          class="flex items-center justify-between"
+        >
+          <div
+            class="flex items-center gap-x-2"
+          >
+            <a
+              href="/"
+            >
+              <h1
+                class="uppercase"
+              >
+                Buzz Metrics
+              </h1>
+            </a>
+            <a
+              href="/socialheat"
+            >
+              <p>
+                Social Heat
+              </p>
+            </a>
+            <a
+              href="/socialtrend"
+            >
+              <p>
+                Social Trend
+              </p>
+            </a>
+          </div>
+          <div>
+            <button
+              class="btn bg-blue-500 text-white uppercase"
+              type="button"
+            >
+              Log Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container mx-auto p-8"
+    >
+      <section
+        class="mb-8"
+      >
+        <div
+          class="rounded border p-8 shadow-2xl"
+        >
+          <form>
+            <div
+              class="grid grid-cols-12 items-center gap-8"
+            >
+              <div
+                class="col-span-12"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <h2
+                    class="text-lg uppercase"
+                  >
+                    Queries
+                  </h2>
+                  <button
+                    class="btn bg-blue-500 text-white"
+                    type="submit"
+                  >
+                    Run Queries
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <input
+                  class="w-full input input-bordered"
+                  id="pin"
+                  placeholder="PIN"
+                  required=""
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <input
+                  class="w-full input input-bordered"
+                  id="topicId"
+                  placeholder="Topic ID"
+                  required=""
+                  type="number"
+                  value="0"
+                />
+              </div>
+              <div
+                class="col-span-6"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root w-full css-z3c6am-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink="true"
+                    for=":r0:"
+                    id=":r0:-label"
+                  >
+                    From Date
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                      id=":r0:"
+                      inputmode="text"
+                      placeholder="DD/MM/YYYY"
+                      type="text"
+                      value="19/03/2024"
+                    />
+                    <div
+                      class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+                    >
+                      <button
+                        aria-label="Choose date, selected date is Mar 19, 2024"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                          data-testid="CalendarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                          />
+                        </svg>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-14lo706"
+                      >
+                        <span>
+                          From Date
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-6"
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root w-full css-z3c6am-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink="true"
+                    for=":r2:"
+                    id=":r2:-label"
+                  >
+                    To Date
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-invalid="false"
+                      autocomplete="off"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                      id=":r2:"
+                      inputmode="text"
+                      placeholder="DD/MM/YYYY"
+                      type="text"
+                      value="19/03/2024"
+                    />
+                    <div
+                      class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+                    >
+                      <button
+                        aria-label="Choose date, selected date is Mar 19, 2024"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                          data-testid="CalendarIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                          />
+                        </svg>
+                        <span
+                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-14lo706"
+                      >
+                        <span>
+                          To Date
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <div
+                  class="flex items-center justify-center"
+                >
+                  <div
+                    class="join"
+                  >
+                    <button
+                      class="btn join-item bg-blue-500 text-white"
+                      type="button"
+                    >
+                      Input
+                    </button>
+                    <button
+                      class="btn join-item bg-gray-500 text-white"
+                      type="button"
+                    >
+                      Table
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <textarea
+                  class="w-full textarea textarea-bordered"
+                  id="queries"
+                  placeholder="Queries"
+                  required=""
+                  rows="12"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div
+          class="rounded border p-8 shadow-2xl"
+        >
+          <div
+            class="grid grid-cols-12 items-center gap-8"
+          >
+            <div
+              class="col-span-12"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <h2
+                  class="text-lg uppercase"
+                >
+                  Results
+                </h2>
+                <button
+                  class="btn bg-blue-500 text-white"
+                  type="button"
+                >
+                  Download CSV
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-span-12"
+            >
+              <div
+                class="overflow-x-auto rounded border shadow"
+              >
+                <table
+                  class="table"
+                >
+                  <thead>
+                    <tr>
+                      <td
+                        align="center"
+                      >
+                        No.
+                      </td>
+                      <td>
+                        Query
+                      </td>
+                      <td
+                        align="right"
+                      >
+                        Collectable Total Mentions
+                      </td>
+                      <td
+                        align="right"
+                      >
+                        Total Mentions
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="border-0 border-none"
+                    >
+                      <td
+                        align="center"
+                        class="border-0 border-none uppercase"
+                        colspan="4"
+                      >
+                        0
+                        %
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+`;

@@ -1,0 +1,996 @@
+{
+	"item": [
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "username",
+					"description": "",
+					"item": [
+						{
+							"id": "b563109d-2826-4a51-89af-89a413880fba",
+							"name": "Users Controller update Username",
+							"request": {
+								"name": "Users Controller update Username",
+								"description": {},
+								"url": {
+									"path": ["user", "username"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "67f6dbf6-9298-41d6-a3c9-b71629e138af",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "username"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"email\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "password",
+					"description": "",
+					"item": [
+						{
+							"id": "31f1640c-57fc-4a3e-ac55-6d12851ca448",
+							"name": "Users Controller update Password",
+							"request": {
+								"name": "Users Controller update Password",
+								"description": {},
+								"url": {
+									"path": ["user", "password"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "4e4bbf6d-50ea-4f62-9857-cd8c16d26663",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "password"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"email\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "email",
+					"description": "",
+					"item": [
+						{
+							"id": "cf53c50f-b1f1-4ed7-850b-3de8f65ce86c",
+							"name": "Users Controller update Email",
+							"request": {
+								"name": "Users Controller update Email",
+								"description": {},
+								"url": {
+									"path": ["user", "email"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "c952e16f-f3a6-43ef-9d86-f99f71d1c381",
+									"originalRequest": {
+										"url": {
+											"path": ["user", "email"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"email\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"id": "eef4b349-47dc-4a72-9487-fe5a87ef90f8",
+					"name": "Users Controller get User",
+					"request": {
+						"name": "Users Controller get User",
+						"description": {},
+						"url": {
+							"path": ["user"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "4f5db193-c60e-4728-a2a8-6118d6fddfd4",
+							"originalRequest": {
+								"url": {
+									"path": ["user"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"id\": \"<string>\",\n  \"email\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "887feb4b-1583-4d1b-9afb-a9f44868e52e",
+					"name": "Users Controller delete User",
+					"request": {
+						"name": "Users Controller delete User",
+						"description": {},
+						"url": {
+							"path": ["user"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"method": "DELETE",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "aa5eb054-26a5-464f-b123-862f1b63efd5",
+							"originalRequest": {
+								"url": {
+									"path": ["user"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"method": "DELETE",
+								"body": {}
+							},
+							"status": "No Content",
+							"code": 204,
+							"header": [],
+							"cookie": [],
+							"_postman_previewlanguage": "text"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				}
+			]
+		},
+		{
+			"name": "tasks",
+			"description": "",
+			"item": [
+				{
+					"name": "{id}",
+					"description": "",
+					"item": [
+						{
+							"id": "3ebe069c-68e1-4382-a9a0-f45a99d1cb88",
+							"name": "Tasks Controller get Task",
+							"request": {
+								"name": "Tasks Controller get Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "a4e8ed3c-93c6-4d97-9a57-884778b76424",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"listId\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "cac47c57-7538-458a-a28a-3a1e81fafd6c",
+							"name": "Tasks Controller update Task",
+							"request": {
+								"name": "Tasks Controller update Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "PATCH",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "3f7509b6-1cf8-43c7-9547-5ea03d7afd27",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"listId\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "951757af-ccf0-4699-aa2f-f3dc1e4692d3",
+							"name": "Tasks Controller delete Task",
+							"request": {
+								"name": "Tasks Controller delete Task",
+								"description": {},
+								"url": {
+									"path": ["tasks", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"method": "DELETE",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "92789b32-dfc0-42af-930d-d0004b0d4007",
+									"originalRequest": {
+										"url": {
+											"path": ["tasks", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "No Content",
+									"code": 204,
+									"header": [],
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"id": "dfd12ce0-57e0-4c6c-baf2-c5fc2abdec8c",
+					"name": "Tasks Controller get Tasks",
+					"request": {
+						"name": "Tasks Controller get Tasks",
+						"description": {},
+						"url": {
+							"path": ["tasks"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "cafe3484-4c80-4015-bd58-5fd55b3ec817",
+							"originalRequest": {
+								"url": {
+									"path": ["tasks"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"description\": \"<string>\",\n    \"completed\": \"<boolean>\",\n    \"listId\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"description\": \"<string>\",\n    \"completed\": \"<boolean>\",\n    \"listId\": \"<string>\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "156b73e3-13db-4b27-aa10-a222ffc77249",
+					"name": "Tasks Controller create Task",
+					"request": {
+						"name": "Tasks Controller create Task",
+						"description": {},
+						"url": {
+							"path": ["tasks"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "POST",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "fc189a26-a405-4722-b91e-f7ed895d4c1b",
+							"originalRequest": {
+								"url": {
+									"path": ["tasks"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "POST",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"completed\": \"<boolean>\",\n  \"listId\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				}
+			]
+		},
+		{
+			"name": "lists",
+			"description": "",
+			"item": [
+				{
+					"name": "{id}",
+					"description": "",
+					"item": [
+						{
+							"id": "04df2c6a-aa25-4196-b8bc-41ce81b1500d",
+							"name": "Lists Controller get List",
+							"request": {
+								"name": "Lists Controller get List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "c628c7bc-090b-438b-b591-c083d6f238cb",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "GET",
+										"body": {}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"primary\": \"<boolean>\",\n  \"userId\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "df7addd9-74bf-49f6-a99f-15e19080e3fd",
+							"name": "Lists Controller update List",
+							"request": {
+								"name": "Lists Controller update List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "PATCH",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "1ae9545a-2b28-4436-ba79-ca14c533a223",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "PATCH",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"title\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"primary\": \"<boolean>\",\n  \"userId\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						},
+						{
+							"id": "a0bf8d9e-5d9f-48d4-8993-125979d85fc7",
+							"name": "Lists Controller delete List",
+							"request": {
+								"name": "Lists Controller delete List",
+								"description": {},
+								"url": {
+									"path": ["lists", ":id"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": [{ "type": "any", "key": "id" }]
+								},
+								"method": "DELETE",
+								"body": {},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "3c90b29d-732d-4ac8-9813-b9ab1a048809",
+									"originalRequest": {
+										"url": {
+											"path": ["lists", ":id"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"method": "DELETE",
+										"body": {}
+									},
+									"status": "No Content",
+									"code": 204,
+									"header": [],
+									"cookie": [],
+									"_postman_previewlanguage": "text"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"id": "30dfb9e4-22c9-43ad-8622-6c84dca6f9d5",
+					"name": "Lists Controller get Lists",
+					"request": {
+						"name": "Lists Controller get Lists",
+						"description": {},
+						"url": {
+							"path": ["lists"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "0c4dfc72-483b-48f4-b44b-dd1acdb76b2a",
+							"originalRequest": {
+								"url": {
+									"path": ["lists"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"primary\": \"<boolean>\",\n    \"userId\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"title\": \"<string>\",\n    \"primary\": \"<boolean>\",\n    \"userId\": \"<string>\"\n  }\n]",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				},
+				{
+					"id": "4e3f8cb6-7269-484d-976c-dcd4fdfede3a",
+					"name": "Lists Controller create List",
+					"request": {
+						"name": "Lists Controller create List",
+						"description": {},
+						"url": {
+							"path": ["lists"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [
+							{ "key": "Content-Type", "value": "application/json" },
+							{ "key": "Accept", "value": "application/json" }
+						],
+						"method": "POST",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"<string>\"\n}",
+							"options": {
+								"raw": { "headerFamily": "json", "language": "json" }
+							}
+						},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "c55ed97e-27ba-4641-80fa-f5658b7f5ea5",
+							"originalRequest": {
+								"url": {
+									"path": ["lists"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"id\": \"<string>\",\n  \"title\": \"<string>\",\n  \"primary\": \"<boolean>\",\n  \"userId\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				}
+			]
+		},
+		{
+			"name": "health",
+			"description": "",
+			"item": [
+				{
+					"id": "9342e3f7-10b6-4a10-9276-db6030586908",
+					"name": "Health Controller get Health",
+					"request": {
+						"name": "Health Controller get Health",
+						"description": {},
+						"url": {
+							"path": ["health"],
+							"host": ["{{baseUrl}}"],
+							"query": [],
+							"variable": []
+						},
+						"header": [{ "key": "Accept", "value": "application/json" }],
+						"method": "GET",
+						"body": {},
+						"auth": null
+					},
+					"response": [
+						{
+							"id": "2b460f55-1a43-494b-98d8-7519a697b616",
+							"originalRequest": {
+								"url": {
+									"path": ["health"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [{ "key": "Accept", "value": "application/json" }],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{ "key": "Content-Type", "value": "application/json" }
+							],
+							"body": "{\n  \"status\": \"<string>\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": { "disableBodyPruning": true }
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"description": "",
+			"item": [
+				{
+					"name": "sign-up",
+					"description": "",
+					"item": [
+						{
+							"id": "4d498fd6-425b-4a8c-9af3-11114551f766",
+							"name": "Auth Controller sign Up",
+							"request": {
+								"name": "Auth Controller sign Up",
+								"description": {},
+								"url": {
+									"path": ["auth", "sign-up"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "441638f4-2f75-4980-8579-ddddf86ec59c",
+									"originalRequest": {
+										"url": {
+											"path": ["auth", "sign-up"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "POST",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"token\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				},
+				{
+					"name": "sign-in",
+					"description": "",
+					"item": [
+						{
+							"id": "206cc52a-b0b2-4598-9721-819ed1610e5a",
+							"name": "Auth Controller sign In",
+							"request": {
+								"name": "Auth Controller sign In",
+								"description": {},
+								"url": {
+									"path": ["auth", "sign-in"],
+									"host": ["{{baseUrl}}"],
+									"query": [],
+									"variable": []
+								},
+								"header": [
+									{ "key": "Content-Type", "value": "application/json" },
+									{ "key": "Accept", "value": "application/json" }
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": { "headerFamily": "json", "language": "json" }
+									}
+								},
+								"auth": null
+							},
+							"response": [
+								{
+									"id": "6a59be89-f726-4225-89ae-a79efee036db",
+									"originalRequest": {
+										"url": {
+											"path": ["auth", "sign-in"],
+											"host": ["{{baseUrl}}"],
+											"query": [],
+											"variable": []
+										},
+										"header": [
+											{ "key": "Content-Type", "value": "application/json" },
+											{ "key": "Accept", "value": "application/json" }
+										],
+										"method": "POST",
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"<string>\",\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": { "headerFamily": "json", "language": "json" }
+											}
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"header": [
+										{ "key": "Content-Type", "value": "application/json" }
+									],
+									"body": "{\n  \"token\": \"<string>\"\n}",
+									"cookie": [],
+									"_postman_previewlanguage": "json"
+								}
+							],
+							"event": [],
+							"protocolProfileBehavior": { "disableBodyPruning": true }
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [],
+	"variable": [{ "key": "baseUrl", "value": "/" }],
+	"info": {
+		"_postman_id": "8863ec34-814b-4c9e-871f-3db0414c0c49",
+		"name": "Nest.js - API - Template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "Nest.js - API - Template",
+			"type": "text/plain"
+		}
+	}
+}
