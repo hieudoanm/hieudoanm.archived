@@ -28,7 +28,7 @@
     "swiper": "11.0.7"
   },
   "devDependencies": {
-    "@babel/core": "7.24.0",
+    "@babel/core": "7.24.1",
     "@storybook/addon-actions": "8.0.1",
     "@storybook/addon-essentials": "8.0.1",
     "@storybook/addon-interactions": "8.0.1",
