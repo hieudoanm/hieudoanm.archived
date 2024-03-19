@@ -7849,12 +7849,12 @@
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-"@redocly/cli@1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-1.10.4.tgz#2b7f0cf7f20470f6288aec68a7db25738c7fe111"
-  integrity sha512-Jgy6MOlWOcwu55Y3tUjM2ozfOt6F+nCXsxn2Rb1JAnluh43B7cGDkv+JSQ2D6KWgLGRnXolmpKlKD1/ASOyI/Q==
+"@redocly/cli@1.10.5":
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-1.10.5.tgz#11906c78af57666876feeabfe15e1fb39c7864ca"
+  integrity sha512-MwFErrbLmzXa7r6UKfPMfBuWErvTBbZ6xkYo9I8Y4pFOdB98Cy1r2e0zI7PKWSI3+skw2etONdAEvlF/F9TEAQ==
   dependencies:
-    "@redocly/openapi-core" "1.10.4"
+    "@redocly/openapi-core" "1.10.5"
     abort-controller "^3.0.0"
     chokidar "^3.5.1"
     colorette "^1.2.0"
@@ -7873,18 +7873,18 @@
     styled-components "^6.0.7"
     yargs "17.0.1"
 
-"@redocly/config@^0.1.1":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.1.2.tgz#a9f3005b9f26d7e009d34be471cc1cddc702a330"
-  integrity sha512-5U2GXa7SQ9IrbynOryc/GrW05a+WheeN2JcIUNcbYc9UCIbkNNIUqcibvN0KDI4fH2rEJUSEGWdBSdGK9IPxfw==
+"@redocly/config@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.1.4.tgz#ffb27ff0a4194c12995597eecb464e29800f5589"
+  integrity sha512-OEdCW1HRpFiZaZNrXQq8LoBxX3APijZaa/Xyoc6r44LnyAPWkjQqvPoBxE7IRqSvMihf8bl+ZRc1gtc1KuFLHw==
 
-"@redocly/openapi-core@1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.10.4.tgz#fb1c3ba0eaa7d76b3e4d76d711b9eac6aebc1069"
-  integrity sha512-GzvAuoVtHk75q/HqaRNqRUTZWYKpZ16HCOWIrx2txAvZrMoWCUNRVsELY91W/ilH/Cepj6t/Nh+bpJ7o/mcN/g==
+"@redocly/openapi-core@1.10.5":
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.10.5.tgz#1575fb15bc31da34afa39fbaa4603a45e9bd7cb7"
+  integrity sha512-RaVwWLbGuzQxK6ezbvPGnz4rtVMTo5DOrxyII/sKJiTexBHplZzUVqrpU6aeRckl3iY9xe9+w07c/kDiLEeWRQ==
   dependencies:
     "@redocly/ajv" "^8.11.0"
-    "@redocly/config" "^0.1.1"
+    "@redocly/config" "^0.1.4"
     colorette "^1.2.0"
     js-levenshtein "^1.1.6"
     js-yaml "^4.1.0"
@@ -9279,10 +9279,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.6.tgz#5e9aaa86be03a09decafd61b128d6cec64a5fe40"
   integrity sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==
 
-"@types/node@20.11.29":
-  version "20.11.29"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.29.tgz#431253cede34f392d6aaf7acad427b9c23aa60f6"
-  integrity sha512-P99thMkD/1YkCvAtOd6/zGedKNA0p2fj4ZpjCzcNiSCBWgm3cNRTBfa/qjFnsKkkojxu4vVLtWpesnZ9+ap+gA==
+"@types/node@20.11.30":
+  version "20.11.30"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.30.tgz#9c33467fc23167a347e73834f788f4b9f399d66f"
+  integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -23190,14 +23190,14 @@ postcss@8.4.35, postcss@^8.4.33, postcss@^8.4.35:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@8.4.36:
-  version "8.4.36"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.36.tgz#dba513c3c3733c44e0288a712894f8910bbaabc6"
-  integrity sha512-/n7eumA6ZjFHAsbX30yhHup/IMkOmlmvtEi7P+6RMYf+bGJSUHc3geH4a0NSZxAz/RJfiS9tooCTs9LAVYUZKw==
+postcss@8.4.37:
+  version "8.4.37"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.37.tgz#4505f992cd0c20e03d25f13b31901640b2db731a"
+  integrity sha512-7iB/v/r7Woof0glKLH8b1SPHrsX7uhdO+Geb41QpF/+mWZHU3uxxSlN+UXGVit1PawOYDToO+AbZzhBzWRDwbQ==
   dependencies:
     nanoid "^3.3.7"
     picocolors "^1.0.0"
-    source-map-js "^1.1.0"
+    source-map-js "^1.2.0"
 
 postcss@^8.2.14, postcss@^8.2.15, postcss@^8.2.9, postcss@^8.4.23, postcss@^8.4.24:
   version "8.4.28"
@@ -25713,10 +25713,10 @@ source-list-map@^2.0.0:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-source-map-js@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.1.0.tgz#9e7d5cb46f0689fb6691b30f226937558d0fa94b"
-  integrity sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==
+source-map-js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
+  integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
 
 source-map-loader@5.0.0:
   version "5.0.0"
