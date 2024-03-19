@@ -222,18 +222,18 @@
                 Vault
             </td>
             <td align="center" width="96px">
-                <a href="https://github.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/github.svg" title="GitHub" alt="GitHub" width="64px" height="64px" />
-                </a>
-                <br />
-                GitHub
-            </td>
-            <td align="center" width="96px">
                 <a href="https://vercel.com" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/vercel.svg" title="Vercel" alt="Vercel" width="64px" height="64px" />
                 </a>
                 <br />
                 Vercel
+            </td>
+            <td align="center" width="96px">
+                <a href="https://supabase.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/supabase.svg" title="Supabase" alt="Supabase" width="64px" height="64px" />
+                </a>
+                <br />
+                Supabase
             </td>
         </tr>
         <tr>
@@ -287,11 +287,34 @@
                 PyTorch
             </td>
             <td align="center" width="96px">
+                <a href="https://trpc.io" target="_blank">
+                      <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/trpc.svg" title="tRPC" alt="tRPC" width="64px" height="64px" />
+                </a>
+                <br />
+                tRPC
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="96px">
                 <a href="https://www.rust-lang.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/rust.svg" title="Rust" alt="Rust" width="64px" height="64px" />
                 </a>
                 <br />
                 Rust
+            </td>
+            <td align="center" width="96px">
+                <a href="https://git-scm.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/git.svg" title="Git" alt="Git" width="64px" height="64px" />
+                </a>
+                <br />
+                Git
+            </td>
+            <td align="center" width="96px">
+                <a href="https://github.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/github.svg" title="GitHub" alt="GitHub" width="64px" height="64px" />
+                </a>
+                <br />
+                GitHub
             </td>
         </tr>
     </tbody>
