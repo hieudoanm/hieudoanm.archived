@@ -7849,12 +7849,12 @@
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-"@redocly/cli@1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-1.10.4.tgz#2b7f0cf7f20470f6288aec68a7db25738c7fe111"
-  integrity sha512-Jgy6MOlWOcwu55Y3tUjM2ozfOt6F+nCXsxn2Rb1JAnluh43B7cGDkv+JSQ2D6KWgLGRnXolmpKlKD1/ASOyI/Q==
+"@redocly/cli@1.10.5":
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-1.10.5.tgz#11906c78af57666876feeabfe15e1fb39c7864ca"
+  integrity sha512-MwFErrbLmzXa7r6UKfPMfBuWErvTBbZ6xkYo9I8Y4pFOdB98Cy1r2e0zI7PKWSI3+skw2etONdAEvlF/F9TEAQ==
   dependencies:
-    "@redocly/openapi-core" "1.10.4"
+    "@redocly/openapi-core" "1.10.5"
     abort-controller "^3.0.0"
     chokidar "^3.5.1"
     colorette "^1.2.0"
@@ -7873,18 +7873,18 @@
     styled-components "^6.0.7"
     yargs "17.0.1"
 
-"@redocly/config@^0.1.1":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.1.2.tgz#a9f3005b9f26d7e009d34be471cc1cddc702a330"
-  integrity sha512-5U2GXa7SQ9IrbynOryc/GrW05a+WheeN2JcIUNcbYc9UCIbkNNIUqcibvN0KDI4fH2rEJUSEGWdBSdGK9IPxfw==
+"@redocly/config@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.1.4.tgz#ffb27ff0a4194c12995597eecb464e29800f5589"
+  integrity sha512-OEdCW1HRpFiZaZNrXQq8LoBxX3APijZaa/Xyoc6r44LnyAPWkjQqvPoBxE7IRqSvMihf8bl+ZRc1gtc1KuFLHw==
 
-"@redocly/openapi-core@1.10.4":
-  version "1.10.4"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.10.4.tgz#fb1c3ba0eaa7d76b3e4d76d711b9eac6aebc1069"
-  integrity sha512-GzvAuoVtHk75q/HqaRNqRUTZWYKpZ16HCOWIrx2txAvZrMoWCUNRVsELY91W/ilH/Cepj6t/Nh+bpJ7o/mcN/g==
+"@redocly/openapi-core@1.10.5":
+  version "1.10.5"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.10.5.tgz#1575fb15bc31da34afa39fbaa4603a45e9bd7cb7"
+  integrity sha512-RaVwWLbGuzQxK6ezbvPGnz4rtVMTo5DOrxyII/sKJiTexBHplZzUVqrpU6aeRckl3iY9xe9+w07c/kDiLEeWRQ==
   dependencies:
     "@redocly/ajv" "^8.11.0"
-    "@redocly/config" "^0.1.1"
+    "@redocly/config" "^0.1.4"
     colorette "^1.2.0"
     js-levenshtein "^1.1.6"
     js-yaml "^4.1.0"
@@ -9279,10 +9279,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.6.tgz#5e9aaa86be03a09decafd61b128d6cec64a5fe40"
   integrity sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==
 
-"@types/node@20.11.29":
-  version "20.11.29"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.29.tgz#431253cede34f392d6aaf7acad427b9c23aa60f6"
-  integrity sha512-P99thMkD/1YkCvAtOd6/zGedKNA0p2fj4ZpjCzcNiSCBWgm3cNRTBfa/qjFnsKkkojxu4vVLtWpesnZ9+ap+gA==
+"@types/node@20.11.30":
+  version "20.11.30"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.30.tgz#9c33467fc23167a347e73834f788f4b9f399d66f"
+  integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -10767,10 +10767,10 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apexcharts@3.47.0:
-  version "3.47.0"
-  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.47.0.tgz#887db702b7246119d3e9077a45bbe05f236fbe84"
-  integrity sha512-s/fgNCA69b8lJdhI3R7Z+/Df47RPplLyHwuvttecR+aaZ3/Pm6wHYPiAGjqDNbVsMGXhuA9mcOpIYU5ZWeSdeg==
+apexcharts@3.48.0:
+  version "3.48.0"
+  resolved "https://registry.yarnpkg.com/apexcharts/-/apexcharts-3.48.0.tgz#cf0e18f4551b04a242d81942c965c15547f5f1b6"
+  integrity sha512-Lhpj1Ij6lKlrUke8gf+P+SE6uGUn+Pe1TnCJ+zqrY0YMvbqM3LMb1lY+eybbTczUyk0RmMZomlTa2NgX2EUs4Q==
   dependencies:
     "@yr/monotone-cubic-spline" "^1.0.3"
     svg.draggable.js "^2.2.2"
