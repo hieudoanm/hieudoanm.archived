@@ -15048,12 +15048,13 @@ eslint-plugin-security@2.1.1:
   dependencies:
     safe-regex "^2.1.1"
 
-eslint-plugin-solid@0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-solid/-/eslint-plugin-solid-0.13.1.tgz#608b8afd981b0f981ee97fa18a8acfe1efc0a9c4"
-  integrity sha512-PdNrAylFzeh/SbnLc2pQ432l+bXFGzXj/qNqkh5QNVZCoWIdSs0CJA2D7hqW0DloztwUrzkVZCDWFWc3iRAm/Q==
+eslint-plugin-solid@0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-solid/-/eslint-plugin-solid-0.13.2.tgz#ae6a286667d1f78c7e330c69c3f7f54b8f7ab565"
+  integrity sha512-Ndeuc6MEO11YVqzIzxtKKEG0t4HPJ4ob/WQyduwpTW//NtyZqWx/gPii5GF656DLqBbsfsmMaX0zkFQ8ElyOdQ==
   dependencies:
     "@typescript-eslint/utils" "^6.4.0"
+    estraverse "^5.3.0"
     is-html "^2.0.0"
     kebab-case "^1.0.2"
     known-css-properties "^0.24.0"
