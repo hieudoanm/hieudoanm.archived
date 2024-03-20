@@ -45,7 +45,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.6.1",
 		"@json2csv/plainjs": "7.0.6",
-		"@testing-library/react": "14.2.1",
+		"@testing-library/react": "14.2.2",
 		"@types/cookie": "0.6.0",
 		"@types/jest": "29.5.12",
 		"@types/lodash": "4.17.0",
