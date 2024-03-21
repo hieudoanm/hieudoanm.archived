@@ -23,7 +23,7 @@
 		"apexcharts": "3.48.0",
 		"solid-apexcharts": "0.3.4",
 		"solid-js": "1.8.16",
-		"solid-start": "0.3.10",
+		"solid-start": "0.3.11",
 		"undici": "6.9.0"
 	},
 	"devDependencies": {
