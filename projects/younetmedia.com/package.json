@@ -26,7 +26,7 @@
 		"@mui/icons-material": "5.15.14",
 		"@mui/material": "5.15.14",
 		"@mui/system": "5.15.14",
-		"@mui/x-date-pickers": "6.19.7",
+		"@mui/x-date-pickers": "6.19.8",
 		"@tanstack/react-query": "5.28.4",
 		"@trpc/client": "11.0.0-next-beta.318",
 		"@trpc/next": "11.0.0-next-beta.318",
