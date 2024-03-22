@@ -18,7 +18,7 @@
 	"dependencies": {
 		"@fontsource/roboto": "5.0.12",
 		"@solidjs/router": "0.13.1",
-		"@suid/icons-material": "0.6.11",
+		"@suid/icons-material": "0.7.0",
 		"@suid/material": "0.16.0",
 		"apexcharts": "3.48.0",
 		"solid-apexcharts": "0.3.4",
