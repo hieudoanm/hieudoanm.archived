@@ -43,7 +43,7 @@
 		"zod": "3.22.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.6.1",
+		"@biomejs/biome": "1.6.2",
 		"@json2csv/plainjs": "7.0.6",
 		"@testing-library/react": "14.2.2",
 		"@types/cookie": "0.6.0",
