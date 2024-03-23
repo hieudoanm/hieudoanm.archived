@@ -323,6 +323,13 @@
                 <br />
                 GitHub
             </td>
+            <td align="center" width="96px">
+                <a href="https://kubernetes.io" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/kubernetes.svg" title="Kubernetes" alt="Kubernetes" width="64px" height="64px" />
+                </a>
+                <br />
+                Kubernetes
+            </td>
         </tr>
     </tbody>
 </table>
