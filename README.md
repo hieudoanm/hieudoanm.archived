@@ -330,6 +330,13 @@
                 <br />
                 Kubernetes
             </td>
+            <td align="center" width="96px">
+                <a href="https://aws.amazon.com" target="_blank">
+                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm/master/assets/svg/icons/readme/aws.svg" title="AWS" alt="AWS" width="64px" height="64px" />
+                </a>
+                <br />
+                AWS
+            </td>
         </tr>
     </tbody>
 </table>
