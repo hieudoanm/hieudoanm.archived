@@ -1,1 +1,7 @@
-/Users/hieudoan/git/github.com/hieudoanm/hieudoanm/concepts/typescript/frontend/react/client/react/.prettierrc
+{
+	"name": "instagram.com",
+	"version": "0.0.1",
+	"main": "index.js",
+	"author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+	"license": "GPL-3.0"
+}

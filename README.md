@@ -358,9 +358,11 @@
   <h1>👨‍🎓 Education 👨‍🎓</h1>
 </div>
 
-- 🇦🇺 `2022` - `now`: [**Bachelor of Psychology**][rmit-psychology] at [**RMIT**][rmit-vietnam][^1]
-- 🎖️ `2021` - `2024`: [AWS Certified Solutions Architect – Associate][aws-ssa]
-- 🇫🇮 `2013` - `2016`: [**Bachelor of Business Administration**, **BIT**][lab-bba-bit][^3] at [**LAB**][lab][^4]
+| Where | From   | To     | Place                        | Degree / Certificate                                        |
+| ----- | ------ | ------ | ---------------------------- | ----------------------------------------------------------- |
+| 🇦🇺    | `2022` | `now`  | [**RMIT**][rmit-vietnam][^1] | [Bachelor of Psychology][rmit-psychology]                   |
+| 🎖️    | `2021` | `2024` | [**AWS**][aws]               | [Solutions Architect – Associate][aws-ssa]                  |
+| 🇫🇮    | `2013` | `2016` | [**LAB**][lab][^4]           | [Bachelor of Business Administration, BIT][lab-bba-bit][^3] |
 
 <br />
 
@@ -370,6 +372,7 @@
 [^4]: LAB University of Applied Sciences
 
 [admetrics]: https://www.admetrics.io/
+[aws]: https://aws.amazon.com
 [aws-ssa]: https://www.credly.com/badges/a427ccdc-fc44-4874-a422-21d772e0e4b3
 [boostcommerce]: https://boostcommerce.net/
 [lab]: https://lab.fi/
