@@ -335,10 +335,10 @@
 
 <br />
 
-- 🇦🇺 - 👨‍💻 `2021` - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
-- 🇻🇳 - 👨‍💻 `2019` - `2021`: **Software Developer** at [**BoostCommerce**][boostcommerce]
-- 🇩🇪 - 👨‍💻 `2017` - `2019`: **Front-end Developer** at [**admetrics**][admetrics]
-- 🇫🇮 - 👨‍💻 `2015` - `2017`: **Front-end Developer** at **Witrafi**
+- 🇦🇺 `2021` - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
+- 🇻🇳 `2019` - `2021`: **Software Developer** at [**BoostCommerce**][boostcommerce]
+- 🇩🇪 `2017` - `2019`: **Front-end Developer** at [**admetrics**][admetrics]
+- 🇫🇮 `2015` - `2017`: **Front-end Developer** at **Witrafi**
 
 <div align="center">
   <h1>👨‍🎓 Education 👨‍🎓</h1>
