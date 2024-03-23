@@ -349,10 +349,12 @@
 
 <br />
 
-- 🇦🇺 `2021` - `now`: **Senior Software Developer** at [**NAB**][nab][^2]
-- 🇻🇳 `2019` - `2021`: **Software Developer** at [**BoostCommerce**][boostcommerce]
-- 🇩🇪 `2017` - `2019`: **Front-end Developer** at [**admetrics**][admetrics]
-- 🇫🇮 `2015` - `2017`: **Front-end Developer** at **Witrafi**
+| Where | From   | To     | Place                              | Position                  |
+| ----- | ------ | ------ | ---------------------------------- | ------------------------- |
+| 🇦🇺    | `2021` | `now`  | [**NAB**][nab][^2]                 | Senior Software Developer |
+| 🇻🇳    | `2019` | `2021` | [**BoostCommerce**][boostcommerce] | Software Developer        |
+| 🇩🇪    | `2017` | `2019` | [**admetrics**][admetrics]         | Front-end Developer       |
+| 🇫🇮    | `2015` | `2017` | **Witrafi**                        | Front-end Developer       |
 
 <div align="center">
   <h1>👨‍🎓 Education 👨‍🎓</h1>
