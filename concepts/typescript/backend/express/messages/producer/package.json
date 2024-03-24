@@ -37,7 +37,7 @@
 		"pino-pretty": "11.0.0",
 		"stompit": "1.0.0",
 		"swagger-ui-express": "5.0.0",
-		"tsoa": "6.1.5"
+		"tsoa": "6.2.0"
 	},
 	"devDependencies": {
 		"@redocly/cli": "1.10.5",
