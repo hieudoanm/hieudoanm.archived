@@ -28256,10 +28256,10 @@ vite-plugin-inspect@^0.7.33:
     picocolors "^1.0.0"
     sirv "^2.0.3"
 
-vite-plugin-solid-svg@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-solid-svg/-/vite-plugin-solid-svg-0.8.0.tgz#37edb1e058182a9c9ce3efff87ea305d80dd5272"
-  integrity sha512-m4HQ6nnwjPqiJONnRRZjLkOC86ZbgfBMpE6UnqGI62R2a7SZB2To/v6oeiZ+17LFtYYCNbZ2DPQT66a/YmqM3A==
+vite-plugin-solid-svg@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-solid-svg/-/vite-plugin-solid-svg-0.8.1.tgz#a5d325a994e6868026b19c6405bee94e1ad88425"
+  integrity sha512-ROGC2ae1eYUCMd+zfJtsbUtuZwsb6DZS0+Sy5/ZXDokOunGi0Ez/cL7OPdsixN3I0/rNYd/3hilo3kpRMAS+IA==
   dependencies:
     svgo "^3.1.0"
 
