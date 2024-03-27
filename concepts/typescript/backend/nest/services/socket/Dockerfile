@@ -14,7 +14,7 @@ COPY . /home/node/app
 RUN yarn install
 RUN yarn build
 
-FROM node:20.11-alpine
+FROM node:20.12-alpine
 
 USER node
 
