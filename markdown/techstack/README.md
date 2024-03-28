@@ -53,63 +53,42 @@
 |                  | Full-stack   | Language             | Programming            | [C++](https://isocpp.org/)                     |                        |
 |                  | Full-stack   | Language             | Programming            | [Python](https://www.python.org)               |                        |
 |                  | Full-stack   | Language             | Programming            | [Shell Script][shell-script]                   |                        |
-| [Node.js][node]  | Full-stack   | Language             | Programming            | [JavaScript][javascript]                       |                        |
+|                  | Full-stack   | Language             | Programming            | [Dart](https://dart.dev)                       | [Alphabet][alphabet]   |
+|                  | Full-stack   | Language             | Programming            | [Golang][golang]                               | [Alphabet][alphabet]   |
+|                  | Full-stack   | Language             | Programming            | [Swift][swift]                                 | [Apple][apple]         |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [Gradle](https://gradle.org/)                  |                        |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [JFrog](https://jfrog.com/)                    |                        |
 | [Java][java]     | Full-stack   | Package Manager      |                        | [Maven](https://maven.apache.org/)             |                        |
-| [Node.js][node]  | Full-stack   | Package Manager      |                        | [pnpm](https://pnpm.io/)                       |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [anaconda](https://www.anaconda.com/)          |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [pip](https://pypi.org/project/pip/)           |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [pipenv][pipenv]                               |                        |
 | [Python][python] | Full-stack   | Package Manager      |                        | [virtualenv][virtualenv]                       |                        |
+| [Golang][golang] | Full-stack   | Package Manager      |                        | [Go Packages](https://pkg.go.dev)              |                        |
 |                  | Full-stack   | Package Manager      | Management             | [Renovate](https://www.mend.io/renovate/)      |                        |
 | [Node.js][node]  | Full-stack   | Logging              |                        | [npmlog][node-npmlog]                          |                        |
-| [Node.js][node]  | Full-stack   | Logging              |                        | [pino](https://getpino.io)                     |                        |
-| [Node.js][node]  | Full-stack   | Logging              |                        | [winston][node-winston]                        |                        |
 |                  | Full-stack   | Linting & Formatter  | Linting                | [sonarlint][sonarlint]                         |                        |
 | [Java][java]     | Full-stack   | Linting & Formatter  | Linting                | [checkstyle](https://checkstyle.org/)          |                        |
 | [Java][java]     | Full-stack   | Linting & Formatter  | Linting                | [spotbugs][spotbugs]                           |                        |
-| [Node.js][node]  | Full-stack   | Build                |                        | [webpack](https://webpack.js.org/)             |                        |
-| [Node.js][node]  | Full-stack   | Testing              | Unit                   | [jasmine](https://jasmine.github.io/)          |                        |
-| [Node.js][node]  | Full-stack   | Testing              | Unit                   | [mocha](https://mochajs.org/)                  |                        |
-| [Node.js][node]  | Full-stack   | Git Hooks            |                        | [husky][node-husky]                            |                        |
 | [Golang][golang] | Full-stack   | CLI                  |                        | [cobra](https://cobra.dev/)                    |                        |
-| [Node.js][node]  | Full-stack   | CLI                  |                        | [vite](https://vitejs.dev/)                    |                        |
-| [Node.js][node]  | Full-stack   | Documentation        | Markdown to HTML       | [docsify](https://docsify.js.org/#/)           |                        |
-| [Node.js][node]  | Full-stack   | Framework            | GraphQL                | [Apollo][apollo]                               |                        |
+|                  | Front-end    | Framework            |                        | [Flutter](https://flutter.dev)                 |                        |
 | [Node.js][node]  | Front-end    | Styling              | CSS Extension          | [PostCSS](https://postcss.org/)                |                        |
 | [Node.js][node]  | Front-end    | Styling              | CSS Extension          | [SASS](https://sass-lang.com/)                 |                        |
-| [Node.js][node]  | Front-end    | Styling              | Documentation          | [storybook](https://storybook.js.org/)         |                        |
-| [Node.js][node]  | Front-end    | Testing              | e2e                    | [cypress](https://www.cypress.io/)             |                        |
-| [Node.js][node]  | Front-end    | Testing              | e2e                    | [karma][node-karma]                            | [Alphabet][alphabet]   |
-| [Node.js][node]  | Front-end    | Chart                |                        | [Charts.js](https://www.chartjs.org/)          |                        |
 | [Node.js][node]  | Front-end    | Chart                |                        | [Chartist.js][node-chartist]                   |                        |
-| [Node.js][node]  | Front-end    | Chart                |                        | [D3.js](https://d3js.org/)                     |                        |
 | [Node.js][node]  | Front-end    | Chart                |                        | [Google Chart][node-google-chart]              | [Alphabet][alphabet]   |
 | [Node.js][node]  | Front-end    | Chart                |                        | [Highcharts][node-highcharts]                  |                        |
-| [Node.js][node]  | Front-end    | Chart                | React                  | [Recharts](https://recharts.org/)              |                        |
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux][node-redux]                            |                        |
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux Saga][node-redux-saga]                  |                        |
 | [Node.js][node]  | Front-end    | State Management     |                        | [Redux Thunk][node-redux-thunk]                |                        |
 | [Golang][golang] | Back-end     | Framework            |                        | [Gin](https://gin-gonic.com/)                  |                        |
 | [Java][java]     | Back-end     | Framework            |                        | [Spring][spring]                               |                        |
 | [Java][java]     | Back-end     | Framework            |                        | [Spring Boot][spring-boot]                     |                        |
-| [Node.js][node]  | Back-end     | Framework            |                        | [Express.js](https://expressjs.com/)           |                        |
-| [Node.js][node]  | Back-end     | Framework            |                        | [Fastify](https://www.fastify.io/)             |                        |
-| [Node.js][node]  | Back-end     | Framework            |                        | [Nest.js](https://nestjs.com/)                 |                        |
-| [Node.js][node]  | Back-end     | Framework            | WebSocket              | [Socket.io](https://socket.io/)                |                        |
 | [Python][python] | Back-end     | Framework            |                        | [Django][django]                               |                        |
 | [Python][python] | Back-end     | Framework            |                        | [FastAPI][fast-api]                            |                        |
 | [Python][python] | Back-end     | Framework            |                        | [Flask][flask]                                 |                        |
-| [Node.js][node]  | Back-end     | Security             | Authentication         | [jsonwebtoken](https://jwt.io/)                |                        |
 | [Node.js][node]  | Back-end     | Security             | Authentication         | [passport][node-passport]                      |                        |
 | [Node.js][node]  | Back-end     | Security             | Protection             | [cors][node-cors]                              |                        |
 | [Node.js][node]  | Back-end     | Security             | Protection             | [helmet](https://helmetjs.github.io/)          |                        |
 | [Node.js][node]  | Back-end     | Swagger              | Documentation          | [tsoa][node-tsoa]                              |                        |
-| [Node.js][node]  | Back-end     | ORM                  | Library                | [Mongoose](https://mongoosejs.com/)            |                        |
-| [Node.js][node]  | Back-end     | ORM                  | Library                | [Prisma](https://www.prisma.io/)               |                        |
-| [Node.js][node]  | Back-end     | ORM                  | Library                | [Sequelize](https://sequelize.org/)            |                        |
-| [Node.js][node]  | Back-end     | ORM                  | Library                | [TypeORM](https://typeorm.io/)                 |                        |
 |                  | Back-end     | ORM                  | Visualizer             | [Prismaliser](https://prismaliser.app/)        |                        |
 |                  | Back-end     | Message Broker       |                        | [RabbitMQ](https://www.rabbitmq.com/)          |                        |
 |                  | Back-end     | API Development      |                        | [Insomnia](https://insomnia.rest/)             |                        |
@@ -252,10 +231,6 @@
 [do-load-balancers]: https://docs.digitalocean.com/products/networking/load-balancers/
 [do-reserved-ips]: https://docs.digitalocean.com/products/networking/reserved-ips/
 
-<!-- GraphQL -->
-
-[apollo]: https://www.apollographql.com/
-
 <!-- Hardware -->
 
 [raspberry-pi]: https://www.raspberrypi.com/
@@ -269,7 +244,6 @@
 
 [golang]: https://go.dev/
 [java]: https://www.java.com/
-[javascript]: https://www.javascript.com/
 [markdown]: https://daringfireball.net/projects/markdown/
 [node]: https://nodejs.org/en/
 [python]: https://www.python.org/
@@ -282,15 +256,12 @@
 [node-cors]: https://github.com/expressjs/cors
 [node-google-chart]: https://developers.google.com/chart
 [node-highcharts]: https://www.highcharts.com/
-[node-husky]: https://typicode.github.io/husky/#/
-[node-karma]: https://karma-runner.github.io
 [node-npmlog]: https://github.com/npm/npmlog
 [node-passport]: https://www.passportjs.org/
 [node-redux]: https://redux.js.org/
 [node-redux-saga]: https://redux-saga.js.org/
 [node-redux-thunk]: https://www.npmjs.com/package/redux-thunk
 [node-tsoa]: https://tsoa-community.github.io/docs/
-[node-winston]: https://github.com/winstonjs
 
 <!-- Python -->
 
@@ -322,3 +293,5 @@
 
 [mobbin]: https://mobbin.com
 [monumentvalleygame]: https://www.monumentvalleygame.com
+[swift]: https://developer.apple.com/swift
+[apple]: https://www.apple.com
