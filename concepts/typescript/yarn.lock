@@ -4807,7 +4807,17 @@
     "@grpc/proto-loader" "^0.7.10"
     "@js-sdsl/ordered-map" "^4.4.2"
 
-"@grpc/proto-loader@0.7.10", "@grpc/proto-loader@^0.7.10":
+"@grpc/proto-loader@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.7.11.tgz#9d5acd6dd273b17efad7d1dba3c96ed565a78156"
+  integrity sha512-amjhSfJ+xYnTP+hncJMmkchoRtjIdi+uO3FaymGSCr07yu5xfpXFEnhZkTU1mj2lPJB3oVToau7j9YkqB+YNdg==
+  dependencies:
+    lodash.camelcase "^4.3.0"
+    long "^5.0.0"
+    protobufjs "^7.2.4"
+    yargs "^17.7.2"
+
+"@grpc/proto-loader@^0.7.10":
   version "0.7.10"
   resolved "https://registry.yarnpkg.com/@grpc/proto-loader/-/proto-loader-0.7.10.tgz#6bf26742b1b54d0a473067743da5d3189d06d720"
   integrity sha512-CAqDfoaQ8ykFd9zqBDn4k6iWT9loLAlc2ETmDFS9JCD70gDcnA4L3AFEo2iV7KyAtAAHFW9ftq1Fz+Vsgq80RQ==
