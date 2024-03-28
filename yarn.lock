@@ -6342,10 +6342,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.2.tgz#673b5f233bf34d8e602b949429f8171d9121bea3"
   integrity sha512-0sVXIohTfLqVIW3kb/0n6IiWF3Ifj5nm2XaSrLq2DI6fKIGa2fYAZdk917rUneaeLVpYfFcyXE2ft0fe3remsA==
 
-daisyui@4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.8.0.tgz#f49ed22d07fe67d92b3f9bd334f8cd4efd3ccb2d"
-  integrity sha512-SXy6MVzhqaa1vPZIdo5K/QAyRaQ4dbRHG+oXy7BFqJnZlwOB6bGkQRqqvClBUY2wCyiiyhk4gY5Ngi1m2JRIEA==
+daisyui@4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.9.0.tgz#c99b0d7146567a73735c56da9895a789da9c73aa"
+  integrity sha512-9JsDx4E+30kPxThE+6yEwQokqg1957uwTx/skP2RE98fG6Ten6U+S9YXeQg1a3CI958aF5aOb0oEA+KZFfrZUA==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
@@ -11299,10 +11299,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-tailwindcss@0.5.12:
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.5.12.tgz#655999849344548ecf4d9b47a051ed856f041c72"
-  integrity sha512-o74kiDBVE73oHW+pdkFSluHBL3cYEvru5YgEqNkBMFF7Cjv+w1vI565lTlfoJT4VLWDe0FMtZ7FkE/7a4pMXSQ==
+prettier-plugin-tailwindcss@0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.5.13.tgz#ee3c1e07848c90abdd1edde36a09366327e31e26"
+  integrity sha512-2tPWHCFNC+WRjAC4SIWQNSOdcL1NNkydXim8w7TDqlZi+/ulZYz2OouAI6qMtkggnPt7lGamboj6LcTMwcCvoQ==
 
 prettier@3.2.5, prettier@^3.0.0, prettier@^3.1.1:
   version "3.2.5"
