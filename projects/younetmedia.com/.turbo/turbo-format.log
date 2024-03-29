@@ -1,2 +1,0 @@
-$ biome format --write ./src || true
-Formatted 29 file(s) in 13ms
