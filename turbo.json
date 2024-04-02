@@ -1,7 +1,0 @@
-{
-	"$schema": "https://turbo.build/schema.json",
-	"pipeline": {
-		"check": { "cache": true, "dependsOn": ["^check"] },
-		"format": { "cache": true, "dependsOn": ["^format"] }
-	}
-}
