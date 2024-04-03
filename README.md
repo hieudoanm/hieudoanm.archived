@@ -64,41 +64,6 @@
     <tbody>
         <tr>
             <td align="center" width="96px">
-                <a href="https://code.visualstudio.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/vscode.svg" title="VSCode" alt="VSCode" width="64px" height="64px" />
-                </a>
-                <br />
-                VSCode
-            </td>
-            <td align="center" width="96px">
-                <a href="https://yarnpkg.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/yarn.svg" title="Yarn" alt="Yarn" width="64px" height="64px" />
-                </a>
-                <br />
-                Yarn
-            </td>
-            <td align="center" width="96px">
-                <a href="https://turbo.build" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/turbo.svg" title="Turbo" alt="Turbo" width="64px" height="64px" />
-                </a>
-                <br />
-                Turbo
-            </td>
-            <td align="center" width="96px">
-                <a href="https://eslint.org/" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/eslint.svg" title="ESLint" alt="ESLint" width="64px" height="64px" />
-                </a>
-                <br />
-                ESLint
-            </td>
-            <td align="center" width="96px">
-                <a href="https://prettier.io/" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/prettier.svg" title="Prettier" alt="Prettier" width="64px" height="64px" />
-                </a>
-                <br />
-                Prettier
-            </td>
-            <td align="center" width="96px">
                 <a href="https://biomejs.dev" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/biome.js.svg" title="Biome" alt="Biome" width="64px" height="64px" />
                 </a>
@@ -106,62 +71,11 @@
                 Biome
             </td>
             <td align="center" width="96px">
-                <a href="https://jestjs.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/jest.js.svg" title="Jest.js" alt="Jest.js" width="64px" height="64px" />
-                </a>
-                <br />
-                Jest
-            </td>
-            <td align="center" width="96px">
-                <a href="https://nodejs.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/node.js.svg" title="Node.js" alt="Node.js" width="64px" height="64px" />
-                </a>
-                <br />
-                Node.js
-            </td>
-        </tr>
-        <tr>
-            <td align="center" width="96px">
-                <a href="https://www.typescriptlang.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/typescript.svg" title="TypeScript" alt="TypeScript" width="64px" height="64px" />
-                </a>
-                <br />
-                TypeScript
-            </td>
-            <td align="center" width="96px">
-                <a href="https://tailwindcss.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/tailwindcss.svg" title="TailwindCSS" alt="TailwindCSS" width="64px" height="64px" />
-                </a>
-                <br />
-                TailwindCSS
-            </td>
-            <td align="center" width="96px">
                 <a href="https://daisyui.com" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/daisyui.svg" title="DaisyUI" alt="DaisyUI" width="64px" height="64px" />
                 </a>
                 <br />
                 DaisyUI
-            </td>
-            <td align="center" width="96px">
-                <a href="https://nextjs.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/next.js.svg" title="Next.js" alt="Next.js" width="64px" height="64px" />
-                </a>
-                <br />
-                Next.js
-            </td>
-            <td align="center" width="96px">
-                <a href="https://expo.dev" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/expo.svg" title="Expo" alt="Expo" width="64px" height="64px" />
-                </a>
-                <br />
-                Expo
-            </td>
-            <td align="center" width="96px">
-                <a href="https://tauri.app" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/tauri.svg" title="Tauri" alt="Tauri" width="64px" height="64px" />
-                </a>
-                <br />
-                Tauri
             </td>
             <td align="center" width="96px">
                 <a href="https://graphql.org" target="_blank">
@@ -177,8 +91,6 @@
                 <br />
                 Apollo
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://go.dev" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/golang.svg" title="Golang" alt="Golang" width="64px" height="64px" />
@@ -186,13 +98,8 @@
                 <br />
                 Golang
             </td>
-            <td align="center" width="96px">
-                <a href="https://www.prisma.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/prisma.svg" title="Prisma" alt="Prisma" width="64px" height="64px" />
-                </a>
-                <br />
-                Prisma
-            </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://www.postgresql.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/postgresql.svg" title="PostgreSQL" alt="PostgreSQL" width="64px" height="64px" />
@@ -227,13 +134,6 @@
                 </a>
                 <br />
                 Vercel
-            </td>
-            <td align="center" width="96px">
-                <a href="https://supabase.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/supabase.svg" title="Supabase" alt="Supabase" width="64px" height="64px" />
-                </a>
-                <br />
-                Supabase
             </td>
         </tr>
         <tr>
@@ -273,25 +173,11 @@
                 Numpy
             </td>
             <td align="center" width="96px">
-                <a href="https://www.tensorflow.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/tensorflow.svg" title="Tensorflow" alt="Tensorflow" width="64px" height="64px" />
-                </a>
-                <br />
-                Tensorflow
-            </td>
-            <td align="center" width="96px">
                 <a href="https://pytorch.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pytorch.svg" title="PyTorch" alt="PyTorch" width="64px" height="64px" />
                 </a>
                 <br />
                 PyTorch
-            </td>
-            <td align="center" width="96px">
-                <a href="https://trpc.io" target="_blank">
-                      <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/trpc.svg" title="tRPC" alt="tRPC" width="64px" height="64px" />
-                </a>
-                <br />
-                tRPC
             </td>
         </tr>
         <tr>
@@ -351,10 +237,10 @@
 
 | Where | From   | To     | Place                              | Position                  |
 | ----- | ------ | ------ | ---------------------------------- | ------------------------- |
-| 🇦🇺    | `2021` | `now`  | [**NAB**][nab][^2]                 | Senior Software Developer |
-| 🇻🇳    | `2019` | `2021` | [**BoostCommerce**][boostcommerce] | Software Developer        |
-| 🇩🇪    | `2017` | `2019` | [**admetrics**][admetrics]         | Front-end Developer       |
-| 🇫🇮    | `2015` | `2017` | **Witrafi**                        | Front-end Developer       |
+| 🇦🇺     | `2021` | `now`  | [**NAB**][nab][^2]                 | Senior Software Developer |
+| 🇻🇳     | `2019` | `2021` | [**BoostCommerce**][boostcommerce] | Software Developer        |
+| 🇩🇪     | `2017` | `2019` | [**admetrics**][admetrics]         | Front-end Developer       |
+| 🇫🇮     | `2015` | `2017` | **Witrafi**                        | Front-end Developer       |
 
 <div align="center">
   <h1>👨‍🎓 Education 👨‍🎓</h1>
@@ -362,9 +248,9 @@
 
 | Where | From   | To     | Place                        | Degree / Certificate                                        |
 | ----- | ------ | ------ | ---------------------------- | ----------------------------------------------------------- |
-| 🇦🇺    | `2022` | `now`  | [**RMIT**][rmit-vietnam][^1] | [Bachelor of Psychology][rmit-psychology]                   |
-| 🎖️    | `2021` | `2024` | [**AWS**][aws]               | [Solutions Architect – Associate][aws-ssa]                  |
-| 🇫🇮    | `2013` | `2016` | [**LAB**][lab][^4]           | [Bachelor of Business Administration, BIT][lab-bba-bit][^3] |
+| 🇦🇺     | `2022` | `now`  | [**RMIT**][rmit-vietnam][^1] | [Bachelor of Psychology][rmit-psychology]                   |
+| 🎖️     | `2021` | `2024` | [**AWS**][aws]               | [Solutions Architect – Associate][aws-ssa]                  |
+| 🇫🇮     | `2013` | `2016` | [**LAB**][lab][^4]           | [Bachelor of Business Administration, BIT][lab-bba-bit][^3] |
 
 <br />
 
