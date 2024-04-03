@@ -64,27 +64,6 @@
     <tbody>
         <tr>
             <td align="center" width="96px">
-                <a href="https://biomejs.dev" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/biome.js.svg" title="Biome" alt="Biome" width="64px" height="64px" />
-                </a>
-                <br />
-                Biome
-            </td>
-            <td align="center" width="96px">
-                <a href="https://daisyui.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/daisyui.svg" title="DaisyUI" alt="DaisyUI" width="64px" height="64px" />
-                </a>
-                <br />
-                DaisyUI
-            </td>
-            <td align="center" width="96px">
-                <a href="https://graphql.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/graphql.svg" title="GraphQL" alt="GraphQL" width="64px" height="64px" />
-                </a>
-                <br />
-                GraphQL
-            </td>
-            <td align="center" width="96px">
                 <a href="https://www.apollographql.com" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/apollo.svg" title="Apollo" alt="Apollo" width="64px" height="64px" />
                 </a>
@@ -98,21 +77,12 @@
                 <br />
                 Golang
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://www.postgresql.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/postgresql.svg" title="PostgreSQL" alt="PostgreSQL" width="64px" height="64px" />
                 </a>
                 <br />
                 PostgreSQL
-            </td>
-            <td align="center" width="96px">
-                <a href="https://www.docker.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/docker.svg" title="Docker" alt="Docker" width="64px" height="64px" />
-                </a>
-                <br />
-                Docker
             </td>
             <td align="center" width="96px">
                 <a href="https://www.terraform.io" target="_blank">
