@@ -46,7 +46,6 @@
 
 | Runtime          | Supersector  | Sector                              | Subsector              | Name                                          | Developer              |
 | ---------------- | ------------ | ----------------------------------- | ---------------------- | --------------------------------------------- | ---------------------- |
-|                  | OS           | Kernel                              |                        | [Linux](https://www.kernel.org)               |                        |
 |                  |              | IDE                                 |                        | [IDEA][idea]                                  |                        |
 |                  |              | IDE                                 |                        | [Visual Studio][vs]                           |                        |
 |                  | Full-stack   | Language                            | Markup                 | [Markdown][markdown]                          |                        |
@@ -91,13 +90,9 @@
 | [Node.js][node]  | Back-end     | Security                            | Protection             | [helmet](https://helmetjs.github.io/)         |                        |
 | [Node.js][node]  | Back-end     | Swagger                             | Documentation          | [tsoa][node-tsoa]                             |                        |
 |                  | Back-end     | ORM                                 | Visualizer             | [Prismaliser](https://prismaliser.app/)       |                        |
-|                  | Back-end     | API Development                     |                        | [Insomnia](https://insomnia.rest/)            |                        |
-|                  | Back-end     | API Development                     |                        | [Postman](https://www.postman.com)            |                        |
 |                  | Back-end     | Blockchain                          |                        | [Solana](https://solana.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Hedera](https://hedera.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Ethereum](https://ethereum.org)              |                        |
-|                  | Back-end     | Server                              |                        | [HTTP][apache-httpd]                          |                        |
-|                  | Data Science | Datasets                            |                        | [huggingface](https://huggingface.co/)        |                        |
 |                  | Data Science | Datasets                            |                        | [kaggle](https://www.kaggle.com)              |                        |
 |                  | Data Science | Datasets                            |                        | [statista](https://www.statista.com)          |                        |
 |                  | Data Science | Language                            | Programming            | [R](https://www.r-project.org)                |                        |
@@ -110,7 +105,6 @@
 | [Python][python] | Data Science | Library                             | Data Visualization     | [matplotlib](https://matplotlib.org)          |                        |
 | [Python][python] | Data Science | Library                             | Machine Learning       | [keras](https://keras.io/)                    |                        |
 | [Python][python] | Data Science | Library                             | Machine Learning       | [pytorch](https://pytorch.org)                |                        |
-| [Python][python] | Data Science | Library                             | Machine Learning       | [Tensorflow][tensorflow]                      |                        |
 | [Python][python] | Data Science | Library                             | Machine Learning       | [scikit-learn][scikit-learn]                  |                        |
 | [Python][python] | Data Science | Library                             | Machine Learning       | [scipy](https://scipy.org)                    |                        |
 |                  | Data Science | Tool                                |                        | [DeepAI](https://deepai.org)                  |                        |
@@ -120,15 +114,6 @@
 |                  | Game         | Engine                              |                        | [Photon Engine](https://www.photonengine.com) |                        |
 |                  | Game         | Engine                              |                        | [Unity](https://unity.com)                    |                        |
 |                  | Game         | Engine                              |                        | [Unreal Engine](https://www.unrealengine.com) |                        |
-|                  | DevOps       | Server                              |                        | [nginx](https://www.nginx.com)                |                        |
-|                  | DevOps       | SaaS                                | Authentication         | [Auth0](https://auth0.com)                    |                        |
-|                  | DevOps       | SaaS                                | Authentication         | [Keycloak](https://www.keycloak.org)          |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [CircleCI](https://circleci.com)              |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [GitHub Actions][github-actions]              |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [GitLab CI][gitlab-ci]                        |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [Jenkins](https://www.jenkins.io/)            |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [Travis](https://www.travis-ci.com)           |                        |
-|                  | DevOps       | SaaS                                | CI/CD                  | [Harness](https://www.harness.io)             |                        |
 |                  | DevOps       | SaaS                                | Diagrams               | [Diagrams](https://www.diagrams.net/)         |                        |
 |                  | DevOps       | SaaS                                | Diagrams               | [Sequence Diagram][sequence-diagram]          |                        |
 |                  | DevOps       | SaaS                                | Logging                | [Grafana](https://grafana.com)                |                        |
@@ -218,11 +203,6 @@
 [elasticbeanstalk]: https://aws.amazon.com/elasticbeanstalk/
 [lambda]: https://aws.amazon.com/lambda/
 
-<!-- CI/CD -->
-
-[github-actions]: https://github.com/features/actions
-[gitlab-ci]: https://docs.gitlab.com/ee/ci/
-
 <!-- Digital Ocean -->
 
 [do-firewalls]: https://docs.digitalocean.com/products/networking/firewalls/
@@ -292,10 +272,8 @@
 [vs]: https://visualstudio.microsoft.com
 [idea]: https://www.jetbrains.com/idea
 [conda]: https://docs.conda.io
-[tensorflow]: https://www.tensorflow.org
 [google-cloud]: https://cloud.google.com
 [github-packages]: https://github.com/features/packages
 [nltk]: https://www.nltk.org
 [jupyter]: https://jupyter.org
 [apache]: https://www.apache.org
-[apache-httpd]: https://httpd.apache.org
