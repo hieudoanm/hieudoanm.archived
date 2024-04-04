@@ -99,15 +99,6 @@
                 Vault
             </td>
             <td align="center" width="96px">
-                <a href="https://vercel.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/vercel.svg" title="Vercel" alt="Vercel" width="64px" height="64px" />
-                </a>
-                <br />
-                Vercel
-            </td>
-        </tr>
-        <tr>
-            <td align="center" width="96px">
                 <a href="https://www.python.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/python.svg" title="Python" alt="Python" width="64px" height="64px" />
                 </a>
@@ -128,6 +119,8 @@
                 <br />
                 Jupyter
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://pandas.pydata.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pandas.svg" title="Pandas" alt="Pandas" width="64px" height="64px" />
@@ -149,8 +142,6 @@
                 <br />
                 PyTorch
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://cplusplus.com" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/cpp.svg" title="C++" alt="C++" width="64px" height="64px" />
@@ -171,13 +162,6 @@
                 </a>
                 <br />
                 Git
-            </td>
-            <td align="center" width="96px">
-                <a href="https://github.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/github.svg" title="GitHub" alt="GitHub" width="64px" height="64px" />
-                </a>
-                <br />
-                GitHub
             </td>
             <td align="center" width="96px">
                 <a href="https://kubernetes.io" target="_blank">
