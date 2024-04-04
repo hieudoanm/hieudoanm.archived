@@ -78,14 +78,8 @@
 | [Java][java]     | Full-stack   | Linting & Formatter                 | Linting                | [spotbugs][spotbugs]                           |                        |
 | [Golang][golang] | Full-stack   | CLI                                 |                        | [cobra](https://cobra.dev/)                    |                        |
 |                  | Front-end    | Framework                           |                        | [Flutter](https://flutter.dev)                 |                        |
-| [Node.js][node]  | Front-end    | Styling                             | CSS Extension          | [PostCSS](https://postcss.org/)                |                        |
-| [Node.js][node]  | Front-end    | Styling                             | CSS Extension          | [SASS](https://sass-lang.com/)                 |                        |
 | [Node.js][node]  | Front-end    | Chart                               |                        | [Chartist.js][node-chartist]                   |                        |
-| [Node.js][node]  | Front-end    | Chart                               |                        | [Google Chart][node-google-chart]              | [Alphabet][alphabet]   |
 | [Node.js][node]  | Front-end    | Chart                               |                        | [Highcharts][node-highcharts]                  |                        |
-| [Node.js][node]  | Front-end    | State Management                    |                        | [Redux][node-redux]                            |                        |
-| [Node.js][node]  | Front-end    | State Management                    |                        | [Redux Saga][node-redux-saga]                  |                        |
-| [Node.js][node]  | Front-end    | State Management                    |                        | [Redux Thunk][node-redux-thunk]                |                        |
 | [Golang][golang] | Back-end     | Framework                           |                        | [Gin](https://gin-gonic.com/)                  |                        |
 | [Java][java]     | Back-end     | Framework                           |                        | [Spring][spring]                               |                        |
 | [Java][java]     | Back-end     | Framework                           |                        | [Spring Boot][spring-boot]                     |                        |
@@ -97,21 +91,11 @@
 | [Node.js][node]  | Back-end     | Security                            | Protection             | [helmet](https://helmetjs.github.io/)          |                        |
 | [Node.js][node]  | Back-end     | Swagger                             | Documentation          | [tsoa][node-tsoa]                              |                        |
 |                  | Back-end     | ORM                                 | Visualizer             | [Prismaliser](https://prismaliser.app/)        |                        |
-|                  | Back-end     | Message Broker                      |                        | [RabbitMQ](https://www.rabbitmq.com/)          |                        |
-|                  | Back-end     | Message Broker                      |                        | [ActiveMQ][apache-activemq]                    |                        |
-|                  | Back-end     | Message Broker                      |                        | [Kafka][apache-kafka]                          |                        |
 |                  | Back-end     | API Development                     |                        | [Insomnia](https://insomnia.rest/)             |                        |
 |                  | Back-end     | API Development                     |                        | [Postman](https://www.postman.com/)            |                        |
-|                  | Back-end     | Database                            | Wide Column            | [Cassandra][apache-cassandra]                  |                        |
-|                  | Back-end     | Database                            | Wide Column            | [HBase][apache-hbase]                          |                        |
-|                  | Back-end     | Database                            | Document Oriented      | [CouchDB][apache-couchdb]                      |                        |
-|                  | Back-end     | Database                            | Key-Value              | [Redis](https://redis.io)                      |                        |
-|                  | Back-end     | Database                            | Key-Value              | [Memcached](https://memcached.org)             |                        |
-|                  | Back-end     | Database                            | Document Oriented      | [MongoDB](https://www.mongodb.com)             |                        |
 |                  | Back-end     | Database                            | Relational             | [CockroachDB][cockroachdb]                     |                        |
 |                  | Back-end     | Database                            | Relational             | [MySQL](https://www.mysql.com)                 |                        |
 |                  | Back-end     | Database                            | Relational             | [SQLite](https://www.sqlite.org)               |                        |
-|                  | Back-end     | Database                            | Relational             | [PostgreSQL][postgresql]                       |                        |
 |                  | Back-end     | Database                            | Graph                  | [neo4j](https://neo4j.com)                     |                        |
 |                  | Back-end     | Database                            | Search Engine          | [elasticsearch][elasticsearch]                 |                        |
 |                  | Back-end     | Database                            | Multi Model            | [FaunaDB](https://fauna.com)                   |                        |
@@ -218,8 +202,6 @@
 |                  | DevOps       | IaaS - Digital Ocean                | DB - Relational        | PostgreSQL                                     |                        |
 |                  | DevOps       | IaaS - Digital Ocean                | DB - Relational        | MySQL                                          |                        |
 |                  | DevOps       | IaaS - IBM                          |                        |                                                | [IBM][ibm]             |
-|                  | DevOps       |                                     |                        | [Vault][vault]                                 | [HashiCorp][hashicorp] |
-|                  | DevOps       |                                     |                        | [Terraform][terraform]                         | [HashiCorp][hashicorp] |
 |                  | Hardware     | Framework                           |                        | [Qt](https://www.qt.io/)                       |                        |
 |                  | Hardware     | Electronics                         |                        | [Arduino](https://www.arduino.cc/)             |                        |
 |                  | Hardware     | Electronics                         |                        | [Raspberry PI][raspberry-pi]                   |                        |
@@ -282,13 +264,9 @@
 
 [node-chartist]: https://gionkunz.github.io/chartist-js/
 [node-cors]: https://github.com/expressjs/cors
-[node-google-chart]: https://developers.google.com/chart
 [node-highcharts]: https://www.highcharts.com/
 [node-npmlog]: https://github.com/npm/npmlog
 [node-passport]: https://www.passportjs.org/
-[node-redux]: https://redux.js.org/
-[node-redux-saga]: https://redux-saga.js.org/
-[node-redux-thunk]: https://www.npmjs.com/package/redux-thunk
 [node-tsoa]: https://tsoa-community.github.io/docs/
 
 <!-- Python -->
@@ -333,17 +311,8 @@
 [tensorflow]: https://www.tensorflow.org
 [google-cloud]: https://cloud.google.com
 [github-packages]: https://github.com/features/packages
-[apache-kafka]: https://kafka.apache.org
-[apache-activemq]: https://activemq.apache.org
-[apache-cassandra]: https://cassandra.apache.org
-[apache-couchdb]: https://couchdb.apache.org
-[apache-hbase]: https://hbase.apache.org
 [cockroachdb]: https://www.cockroachlabs.com
 [elasticsearch]: https://www.elastic.co/elasticsearch
-[postgresql]: https://www.postgresql.org
-[hashicorp]: https://www.hashicorp.com
-[terraform]: https://www.terraform.io
-[vault]: https://www.vaultproject.io
 [nltk]: https://www.nltk.org
 [jupyter]: https://jupyter.org
 [apache]: https://www.apache.org

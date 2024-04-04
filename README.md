@@ -78,14 +78,21 @@
                 Python
             </td>
             <td align="center" width="96px">
+                <a href="https://www.rust-lang.org" target="_blank">
+                      <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/rust.svg" title="Rust" alt="Rust" width="64px" height="64px" />
+                </a>
+                <br />
+                Rust
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="96px">
                 <a href="https://fastapi.tiangolo.com/" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/fastapi.svg" title="Pandas" alt="FastAPI" width="64px" height="64px" />
                 </a>
                 <br />
                 FastAPI
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://jupyter.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/jupyter.svg" title="Jupyter" alt="Jupyter" width="64px" height="64px" />
@@ -100,6 +107,8 @@
                 <br />
                 Pandas
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://numpy.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/numpy.svg" title="NumPy" alt="NumPy" width="64px" height="64px" />
@@ -107,8 +116,6 @@
                 <br />
                 Numpy
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://pytorch.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pytorch.svg" title="PyTorch" alt="PyTorch" width="64px" height="64px" />
@@ -122,13 +129,6 @@
                 </a>
                 <br />
                 C++
-            </td>
-            <td align="center" width="96px">
-                <a href="https://www.rust-lang.org" target="_blank">
-                      <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/rust.svg" title="Rust" alt="Rust" width="64px" height="64px" />
-                </a>
-                <br />
-                Rust
             </td>
         </tr>
     </tbody>
