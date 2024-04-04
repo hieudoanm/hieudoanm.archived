@@ -64,25 +64,11 @@
     <tbody>
         <tr>
             <td align="center" width="96px">
-                <a href="https://www.apollographql.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/apollo.svg" title="Apollo" alt="Apollo" width="64px" height="64px" />
-                </a>
-                <br />
-                Apollo
-            </td>
-            <td align="center" width="96px">
                 <a href="https://go.dev" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/golang.svg" title="Golang" alt="Golang" width="64px" height="64px" />
                 </a>
                 <br />
                 Golang
-            </td>
-            <td align="center" width="96px">
-                <a href="https://www.postgresql.org" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/postgresql.svg" title="PostgreSQL" alt="PostgreSQL" width="64px" height="64px" />
-                </a>
-                <br />
-                PostgreSQL
             </td>
             <td align="center" width="96px">
                 <a href="https://www.python.org" target="_blank">
@@ -112,8 +98,6 @@
                 <br />
                 Pandas
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://numpy.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/numpy.svg" title="NumPy" alt="NumPy" width="64px" height="64px" />
@@ -121,6 +105,8 @@
                 <br />
                 Numpy
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://pytorch.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pytorch.svg" title="PyTorch" alt="PyTorch" width="64px" height="64px" />
