@@ -93,9 +93,6 @@
 |                  | Back-end     | ORM                                 | Visualizer             | [Prismaliser](https://prismaliser.app/)       |                        |
 |                  | Back-end     | API Development                     |                        | [Insomnia](https://insomnia.rest/)            |                        |
 |                  | Back-end     | API Development                     |                        | [Postman](https://www.postman.com)            |                        |
-|                  | Back-end     | Database                            | Graph                  | [neo4j](https://neo4j.com)                    |                        |
-|                  | Back-end     | Database                            | Search Engine          | [elasticsearch][elasticsearch]                |                        |
-|                  | Back-end     | Database                            | Multi Model            | [FaunaDB](https://fauna.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Solana](https://solana.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Hedera](https://hedera.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Ethereum](https://ethereum.org)              |                        |
@@ -132,8 +129,6 @@
 |                  | DevOps       | SaaS                                | CI/CD                  | [Jenkins](https://www.jenkins.io/)            |                        |
 |                  | DevOps       | SaaS                                | CI/CD                  | [Travis](https://www.travis-ci.com)           |                        |
 |                  | DevOps       | SaaS                                | CI/CD                  | [Harness](https://www.harness.io)             |                        |
-|                  | DevOps       | SaaS                                | [Git][git]             | [GitHub](https://github.com)                  |                        |
-|                  | DevOps       | SaaS                                | [Git][git]             | [GitLab](https://about.gitlab.com)            |                        |
 |                  | DevOps       | SaaS                                | Diagrams               | [Diagrams](https://www.diagrams.net/)         |                        |
 |                  | DevOps       | SaaS                                | Diagrams               | [Sequence Diagram][sequence-diagram]          |                        |
 |                  | DevOps       | SaaS                                | Logging                | [Grafana](https://grafana.com)                |                        |
@@ -278,10 +273,6 @@
 [sonarlint]: https://www.sonarsource.com/products/sonarlint/
 [spotbugs]: https://spotbugs.github.io/
 
-<!-- Version Control -->
-
-[git]: https://git-scm.com/
-
 <!-- Adobe -->
 
 [adobe]: https://www.adobe.com
@@ -304,7 +295,6 @@
 [tensorflow]: https://www.tensorflow.org
 [google-cloud]: https://cloud.google.com
 [github-packages]: https://github.com/features/packages
-[elasticsearch]: https://www.elastic.co/elasticsearch
 [nltk]: https://www.nltk.org
 [jupyter]: https://jupyter.org
 [apache]: https://www.apache.org
