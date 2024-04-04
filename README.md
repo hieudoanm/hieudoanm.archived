@@ -85,20 +85,6 @@
                 PostgreSQL
             </td>
             <td align="center" width="96px">
-                <a href="https://www.terraform.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/terraform.svg" title="Terraform" alt="Terraform" width="64px" height="64px" />
-                </a>
-                <br />
-                Terraform
-            </td>
-            <td align="center" width="96px">
-                <a href="https://www.vaultproject.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/vault.svg" title="Vault" alt="Vault" width="64px" height="64px" />
-                </a>
-                <br />
-                Vault
-            </td>
-            <td align="center" width="96px">
                 <a href="https://www.python.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/python.svg" title="Python" alt="Python" width="64px" height="64px" />
                 </a>
@@ -119,8 +105,6 @@
                 <br />
                 Jupyter
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://pandas.pydata.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pandas.svg" title="Pandas" alt="Pandas" width="64px" height="64px" />
@@ -128,6 +112,8 @@
                 <br />
                 Pandas
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://numpy.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/numpy.svg" title="NumPy" alt="NumPy" width="64px" height="64px" />
