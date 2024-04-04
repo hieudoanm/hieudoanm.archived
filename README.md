@@ -84,6 +84,8 @@
                 <br />
                 FastAPI
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://jupyter.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/jupyter.svg" title="Jupyter" alt="Jupyter" width="64px" height="64px" />
@@ -91,8 +93,6 @@
                 <br />
                 Jupyter
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://pandas.pydata.org" target="_blank">
                     <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pandas.svg" title="Pandas" alt="Pandas" width="64px" height="64px" />
@@ -107,6 +107,8 @@
                 <br />
                 Numpy
             </td>
+        </tr>
+        <tr>
             <td align="center" width="96px">
                 <a href="https://pytorch.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/pytorch.svg" title="PyTorch" alt="PyTorch" width="64px" height="64px" />
@@ -121,35 +123,12 @@
                 <br />
                 C++
             </td>
-        </tr>
-        <tr>
             <td align="center" width="96px">
                 <a href="https://www.rust-lang.org" target="_blank">
                       <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/rust.svg" title="Rust" alt="Rust" width="64px" height="64px" />
                 </a>
                 <br />
                 Rust
-            </td>
-            <td align="center" width="96px">
-                <a href="https://git-scm.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/git.svg" title="Git" alt="Git" width="64px" height="64px" />
-                </a>
-                <br />
-                Git
-            </td>
-            <td align="center" width="96px">
-                <a href="https://kubernetes.io" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/kubernetes.svg" title="Kubernetes" alt="Kubernetes" width="64px" height="64px" />
-                </a>
-                <br />
-                Kubernetes
-            </td>
-            <td align="center" width="96px">
-                <a href="https://aws.amazon.com" target="_blank">
-                    <img src="https://raw.githubusercontent.com/hieudoanm/hieudoanm.svg/master/icons/readme/aws.svg" title="AWS" alt="AWS" width="64px" height="64px" />
-                </a>
-                <br />
-                AWS
             </td>
         </tr>
     </tbody>
