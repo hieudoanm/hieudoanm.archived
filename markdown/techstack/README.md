@@ -52,7 +52,6 @@
 |                  | Full-stack   | Language                            | Markup                 | [SVG][svg]                                    |                        |
 |                  | Full-stack   | Language                            | Programming            | C                                             |                        |
 |                  | Full-stack   | Language                            | Programming            | [C++](https://isocpp.org)                     |                        |
-|                  | Full-stack   | Language                            | Programming            | [Python](https://www.python.org)              |                        |
 |                  | Full-stack   | Language                            | Programming            | [Shell Script][shell-script]                  |                        |
 |                  | Full-stack   | Language                            | Programming            | [Dart](https://dart.dev)                      | [Alphabet][alphabet]   |
 |                  | Full-stack   | Language                            | Programming            | [Golang][golang]                              | [Alphabet][alphabet]   |
@@ -64,11 +63,6 @@
 | [Java][java]     | Full-stack   | Package Manager                     |                        | [Gradle](https://gradle.org)                  |                        |
 | [Java][java]     | Full-stack   | Package Manager                     |                        | [JFrog](https://jfrog.com)                    |                        |
 | [Java][java]     | Full-stack   | Package Manager                     |                        | [Maven](https://maven.apache.org)             | [Apache][apache]       |
-| [Python][python] | Full-stack   | Package Manager                     |                        | [Conda][conda]                                |                        |
-| [Python][python] | Full-stack   | Package Manager                     |                        | [anaconda](https://www.anaconda.com)          |                        |
-| [Python][python] | Full-stack   | Package Manager                     |                        | [pip](https://pypi.orgproject/pip/)           |                        |
-| [Python][python] | Full-stack   | Package Manager                     |                        | [pipenv][pipenv]                              |                        |
-| [Python][python] | Full-stack   | Package Manager                     |                        | [virtualenv][virtualenv]                      |                        |
 | [Golang][golang] | Full-stack   | Package Manager                     |                        | [Go Packages](https://pkg.go.dev)             |                        |
 |                  | Full-stack   | Package Manager                     | Management             | [Renovate](https://www.mend.io/renovate/)     |                        |
 | [Node.js][node]  | Full-stack   | Logging                             |                        | [npmlog][node-npmlog]                         |                        |
@@ -82,9 +76,6 @@
 | [Golang][golang] | Back-end     | Framework                           |                        | [Gin](https://gin-gonic.com)                  |                        |
 | [Java][java]     | Back-end     | Framework                           |                        | [Spring][spring]                              |                        |
 | [Java][java]     | Back-end     | Framework                           |                        | [Spring Boot][spring-boot]                    |                        |
-| [Python][python] | Back-end     | Framework                           |                        | [Django][django]                              |                        |
-| [Python][python] | Back-end     | Framework                           |                        | [FastAPI][fast-api]                           |                        |
-| [Python][python] | Back-end     | Framework                           |                        | [Flask][flask]                                |                        |
 | [Node.js][node]  | Back-end     | Security                            | Authentication         | [passport][node-passport]                     |                        |
 | [Node.js][node]  | Back-end     | Security                            | Protection             | [cors][node-cors]                             |                        |
 | [Node.js][node]  | Back-end     | Security                            | Protection             | [helmet](https://helmetjs.github.io/)         |                        |
@@ -93,20 +84,6 @@
 |                  | Back-end     | Blockchain                          |                        | [Solana](https://solana.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Hedera](https://hedera.com)                  |                        |
 |                  | Back-end     | Blockchain                          |                        | [Ethereum](https://ethereum.org)              |                        |
-|                  | Data Science | Datasets                            |                        | [kaggle](https://www.kaggle.com)              |                        |
-|                  | Data Science | Datasets                            |                        | [statista](https://www.statista.com)          |                        |
-|                  | Data Science | Language                            | Programming            | [R](https://www.r-project.org)                |                        |
-|                  | Data Science | Notebook                            |                        | [Jupyter][jupyter]                            |                        |
-|                  | Data Science | Library                             | Toolkit                | [nltk][nltk]                                  |                        |
-| [Python][python] | Data Science | Library                             | Data Collection        | [BeautifulSoup][beautiful-soup]               |                        |
-| [Python][python] | Data Science | Library                             | Data Collection        | [scrapy](https://scrapy.org)                  |                        |
-| [Python][python] | Data Science | Library                             | Data Exploration       | [pandas](https://pandas.pydata.org)           |                        |
-| [Python][python] | Data Science | Library                             | Data Exploration       | [numpy](https://numpy.org)                    |                        |
-| [Python][python] | Data Science | Library                             | Data Visualization     | [matplotlib](https://matplotlib.org)          |                        |
-| [Python][python] | Data Science | Library                             | Machine Learning       | [keras](https://keras.io/)                    |                        |
-| [Python][python] | Data Science | Library                             | Machine Learning       | [pytorch](https://pytorch.org)                |                        |
-| [Python][python] | Data Science | Library                             | Machine Learning       | [scikit-learn][scikit-learn]                  |                        |
-| [Python][python] | Data Science | Library                             | Machine Learning       | [scipy](https://scipy.org)                    |                        |
 |                  | Data Science | Tool                                |                        | [DeepAI](https://deepai.org)                  |                        |
 |                  | Data Science | Tool                                |                        | [QuillBot](https://quillbot.com)              |                        |
 |                  | Data Science | Tool                                |                        | [JenniAI](https://jenni.ai/)                  |                        |
@@ -224,7 +201,6 @@
 [java]: https://www.java.com/
 [markdown]: https://daringfireball.net/projects/markdown/
 [node]: https://nodejs.org/en/
-[python]: https://www.python.org
 [shell-script]: https://www.shellscript.sh/
 [svg]: https://www.w3.org/Graphics/SVG/
 
@@ -236,16 +212,6 @@
 [node-npmlog]: https://github.com/npm/npmlog
 [node-passport]: https://www.passportjs.org
 [node-tsoa]: https://tsoa-community.github.io/docs/
-
-<!-- Python -->
-
-[beautiful-soup]: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-[django]: https://www.djangoproject.com/
-[fast-api]: https://fastapi.tiangolo.com/
-[flask]: https://flask.palletsprojects.com/en/3.0.x/
-[pipenv]: https://pipenv.pypa.io/en/latest/
-[scikit-learn]: https://scikit-learn.org/stable/
-[virtualenv]: https://virtualenv.pypa.io/en/latest/
 
 <!-- Tools -->
 
@@ -271,9 +237,6 @@
 [csharp]: https://dotnet.microsoft.com/en-us/languages/csharp
 [vs]: https://visualstudio.microsoft.com
 [idea]: https://www.jetbrains.com/idea
-[conda]: https://docs.conda.io
 [google-cloud]: https://cloud.google.com
 [github-packages]: https://github.com/features/packages
-[nltk]: https://www.nltk.org
-[jupyter]: https://jupyter.org
 [apache]: https://www.apache.org
