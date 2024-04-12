@@ -7,9 +7,6 @@
 
 | Runtime          | Supersector | Sector              | Subsector      | Name                                      | Developer        |
 | ---------------- | ----------- | ------------------- | -------------- | ----------------------------------------- | ---------------- |
-|                  |             | IDE                 |                | [IDEA][idea]                              |                  |
-|                  |             | IDE                 |                | [Visual Studio][vs]                       |                  |
-|                  | Development | Registry            |                | [github.packages][github-packages]        |                  |
 | [Java][java]     | Full-stack  | Package Manager     |                | [Gradle](https://gradle.org)              |                  |
 | [Java][java]     | Full-stack  | Package Manager     |                | [JFrog](https://jfrog.com)                |                  |
 | [Java][java]     | Full-stack  | Package Manager     |                | [Maven](https://maven.apache.org)         | [Apache][apache] |
