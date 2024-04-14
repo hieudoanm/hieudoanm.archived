@@ -7,6 +7,9 @@
     - [University](#university)
     - [Coures](#coures)
   - [Resources](#resources)
+  - [IoT](#iot)
+  - [Design](#design)
+  - [Diagrams](#diagrams)
 
 ## Blogs
 
@@ -55,3 +58,19 @@
 - [ProQuest](https://www.proquest.com)
 - [ScienceDirect](https://www.sciencedirect.com/)
 - [Scopus](https://www.scopus.com/)
+
+## IoT
+
+- [Arduino](https://www.arduino.cc/)
+- [Qt](https://www.qt.io/)
+- [Raspberry PI](https://www.raspberrypi.com/)
+
+## Design
+
+- [Coolors](https://coolors.co/)
+- [Mobbin](https://mobbin.com)
+
+## Diagrams
+
+- [Diagrams](https://www.diagrams.net/)
+- [Sequence Diagram](https://sequencediagram.org)
