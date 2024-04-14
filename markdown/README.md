@@ -1,121 +1,76 @@
-# Markdown Cheat Sheet
+# Education
 
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
+- [Education](#education)
+  - [Blogs](#blogs)
+  - [Coding](#coding)
+  - [Online](#online)
+    - [University](#university)
+    - [Coures](#coures)
+  - [Resources](#resources)
+  - [IoT](#iot)
+  - [Design](#design)
+  - [Diagrams](#diagrams)
 
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax/) and [extended syntax](https://www.markdownguide.org/extended-syntax/).
+## Blogs
 
-## Basic Syntax
+- [baeldung](https://www.baeldung.com/)
+- [dev.to](https://dev.to/)
+- [google.ai](https://ai.google/)
+- [hackster](https://www.hackster.io)
+- [mozilla](https://developer.mozilla.org/en-US/)
+- [roadmap.sh](https://roadmap.sh/)
+- [stackoverflow.co](https://stackoverflow.co)
 
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+## Coding
 
-### Heading
+- [codecademy](https://www.codecademy.com/catalog)
+- [codility](https://www.codility.com/)
+- [codewars](https://www.codewars.com/)
+- [datacamp](https://www.datacamp.com/)
+- [freecodecamp](https://www.freecodecamp.org/)
+- [hackerrank](https://www.hackerrank.com/)
+- [leetcode](https://leetcode.com/)
+- [neetcode](https://neetcode.io/)
+- [pluralsight](https://www.pluralsight.com/)
+- [NeuroMatch](https://compneuro.neuromatch.io/tutorials/intro.html)
 
-# H1
+## Online
 
-## H2
+### University
 
-### H3
+- [Coursera](https://www.coursera.org/)
+  - [Computational Neuroscience](https://www.coursera.org/learn/computational-neuroscience)
+  - [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
+- [Harvard](https://pll.harvard.edu/)
+- [Redwood - Berkeley - University of California](https://redwood.berkeley.edu/)
+  - [Neural Computation](https://redwood.berkeley.edu/courses/vs265/)
 
-### Bold
+### Coures
 
-**bold text**
+- [LinkedIn Learning](https://www.linkedin.com/learning/)
+- [Udacity](https://www.udacity.com/)
+- [Udemy](https://www.udemy.com/)
 
-### Italic
+## Resources
 
-_italicized text_
+- [American Psychological Association](https://www.apa.org/)
+- [IEEE Xplore](https://ieeexplore.ieee.org)
+- [ProQuest](https://www.proquest.com)
+- [ScienceDirect](https://www.sciencedirect.com/)
+- [Scopus](https://www.scopus.com/)
 
-### Blockquote
+## IoT
 
-> blockquote
+- [Arduino](https://www.arduino.cc/)
+- [Qt](https://www.qt.io/)
+- [Raspberry PI](https://www.raspberrypi.com/)
 
-### Ordered List
+## Design
 
-1. First item
-2. Second item
-3. Third item
+- [Coolors](https://coolors.co/)
+- [Mobbin](https://mobbin.com)
 
-### Unordered List
+## Diagrams
 
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax    | Description |
-| --------- | ----------- |
-| Header    | Title       |
-| Paragraph | Text        |
-
-### Fenced Code Block
-
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
-
-### Strikethrough
-
-~~The world is flat.~~
-
-### Task List
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-### Emoji
-
-That is so funny! :joy:
-
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
-
-### Highlight
-
-I need to highlight these ==very important words==.
-
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
+- [Diagrams](https://www.diagrams.net/)
+- [Sequence Diagram](https://sequencediagram.org)
