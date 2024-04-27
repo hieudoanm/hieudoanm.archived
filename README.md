@@ -19,6 +19,14 @@
 <br />
 
 <div align="center">
+  <h1>🛠️ Techstack 🛠️</h1>
+</div>
+
+- I build `CLI` with [`Go`](https://github.com/hieudoanm/go-cli)
+- I build Full-stack Web Application with [`Next.js`](https://github.com/hieudoanm/ts-next)
+- I build Mobile Application with [`Expo`](https://github.com/hieudoanm/ts-expo)
+
+<div align="center">
   <h1>📜 Experiences 📜</h1>
 </div>
 
