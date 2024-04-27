@@ -34,24 +34,21 @@
   <h1>📜 Experiences 📜</h1>
 </div>
 
-<br />
 
-| Where | From   | To     | Place                                    | Position                  |
-| ----- | ------ | ------ | ---------------------------------------- | ------------------------- |
-| 🇦🇺     | `2021` | `now`  | [**NAB - National Australia Bank**][nab] | Senior Software Developer |
-| 🇻🇳     | `2019` | `2021` | [**BoostCommerce**][boostcommerce]       | Software Developer        |
-| 🇩🇪     | `2017` | `2019` | [**admetrics**][admetrics]               | Front-end Developer       |
-| 🇫🇮     | `2015` | `2017` | **Witrafi**                              | Front-end Developer       |
+1. 🇦🇺 - `2021` - `now` - [**NAB - National Australia Bank**][nab] - Senior Software Developer
+2. 🇻🇳 - `2019` - `2021` - [**BoostCommerce**][boostcommerce] - Software Developer
+3. 🇩🇪 - `2017` - `2019` - [**admetrics**][admetrics] - Front-end Developer
+4. 🇫🇮 - `2015` - `2017` - **Witrafi** - Front-end Developer
+
+<br />
 
 <div align="center">
   <h1>👨‍🎓 Education 👨‍🎓</h1>
 </div>
 
-| Where | From   | To     | Place                                                              | Degree / Certificate                                                                    |
-| ----- | ------ | ------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
-| 🇦🇺     | `2022` | `now`  | [**RMIT - Royal Melbourne Institute of Technology**][rmit-vietnam] | [Bachelor of Psychology][rmit-psychology]                                               |
-| 🎖️     | `2021` | `2024` | [**AWS**][aws]                                                     | [Solutions Architect – Associate][aws-ssa]                                              |
-| 🇫🇮     | `2013` | `2016` | [** LAB University of Applied Sciences**][lab][^4]                 | [Bachelor of Business Administration, Business Information Technology][lab-bba-bit][^3] |
+1. 🇦🇺 - `2022` - `now` - [**RMIT - Royal Melbourne Institute of Technology**][rmit-vietnam] - [Bachelor of Psychology][rmit-psychology]
+2. 🎖️ - `2021` - `2024` - [**AWS - Amazon Web Services**][aws] - [Solutions Architect – Associate][aws-ssa]
+3. 🇫🇮 - `2013` - `2016` - [**LAB University of Applied Sciences**][lab] - [Bachelor of Business Administration, Business Information Technology][lab-bba-bit]
 
 [admetrics]: https://www.admetrics.io/
 [aws]: https://aws.amazon.com
