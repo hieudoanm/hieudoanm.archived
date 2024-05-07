@@ -22,11 +22,12 @@
   <h1>🛠️ Techstack 🛠️</h1>
 </div>
 
-- 📟 I build `CLI` with [**Go**](https://github.com/hieudoanm/go-cli)
-- ⛩️ I build `API Gateway` with [**GraphQL**](https://github.com/hieudoanm/ts-gql)
-- 💻 I build `Web Application` with [**Next.js**](https://github.com/hieudoanm/ts-next)
-- 📱 I build `Mobile Application` with [**Expo**](https://github.com/hieudoanm/ts-expo)
-- 🤖 I build `Machine Learning Model` with **TensorFlow**
+1. 📟 I build `CLI` with [**Go**](https://github.com/hieudoanm/go-cli)
+2. ⛩️ I build `API Gateway` with [**GraphQL**](https://github.com/hieudoanm/ts-gql)
+3. 💻 I build `Web Application` with [**Next.js**](https://github.com/hieudoanm/ts-next)
+4. 📱 I build `Mobile Application` with [**Expo**](https://github.com/hieudoanm/ts-expo)
+5. 🗄️ I build `Back-end Application` with [**FastAPI**](https://github.com/hieudoanm/py-fastapi)
+6. 🤖 I build `Machine Learning Model` with **TensorFlow**
 
 <br />
 
