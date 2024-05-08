@@ -24,10 +24,9 @@
 
 1. 📟 I build `CLI` with [**Go**](https://github.com/hieudoanm/go-cli)
 2. ⛩️ I build `API Gateway` with [**GraphQL**](https://github.com/hieudoanm/ts-gql)
-3. 💻 I build `Web Application` with [**Next.js**](https://github.com/hieudoanm/ts-next)
-4. 📱 I build `Hybrid (Mobile & Desktop) Application` with [**Expo** and **Tauri**](https://github.com/hieudoanm/ts-hybrid)
-5. 🗄️ I build `Back-end Application` with [**FastAPI**](https://github.com/hieudoanm/py-fastapi)
-6. 🤖 I build `Machine Learning Model` with **TensorFlow**
+3. 📱 I build `Front-end Application` with [**Nett**](https://github.com/hieudoanm/ts-nett)
+4. 🗄️ I build `Back-end Application` with [**FastAPI**](https://github.com/hieudoanm/py-fastapi)
+5. 🤖 I build `Machine Learning Model` with **TensorFlow**
 
 <br />
 
