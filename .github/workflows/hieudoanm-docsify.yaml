@@ -19,7 +19,7 @@ jobs:
       - name: Install docsify-cli
         run: yarn global add docsify-cli
       - name: Bundle Docs
-        run: docsify init docs
+        run: docsify init docs --theme dark
       - name: Deploy GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
