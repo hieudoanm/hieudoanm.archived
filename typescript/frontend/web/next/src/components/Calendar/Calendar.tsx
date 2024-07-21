@@ -60,11 +60,15 @@ export const Calendar: React.FC<CalendarProps> = ({
   const years = [...Array.from({ length: LAST_YEAR - FIRST_YEAR + 1 }).keys()]
     .map((year: number) => year + FIRST_YEAR)
     .reverse();
-  const [monthYear, setMonthYear] = useState({
+  const [dateMonthYear, setDateMonthYear] = useState({
+    date: currentDate,
     month: currentMonth,
     year: currentYear,
   });
-  const dates: YearMonthDate[] = getDates(monthYear.year, monthYear.month);
+  const dates: YearMonthDate[] = getDates(
+    dateMonthYear.year,
+    dateMonthYear.month
+  );
 
   return (
     <div className="overflow-hidden rounded border border-gray-200 shadow">
@@ -76,11 +80,11 @@ export const Calendar: React.FC<CalendarProps> = ({
               <select
                 id="month"
                 name="month"
-                value={monthYear.month}
+                value={dateMonthYear.month}
                 className="select select-bordered"
                 onChange={(event: ChangeEvent<HTMLSelectElement>) =>
-                  setMonthYear({
-                    ...monthYear,
+                  setDateMonthYear({
+                    ...dateMonthYear,
                     month: Number.parseInt(event.target.value, 10),
                   })
                 }
@@ -97,10 +101,10 @@ export const Calendar: React.FC<CalendarProps> = ({
                 id="year"
                 name="year"
                 className="select select-bordered"
-                value={monthYear.year}
+                value={dateMonthYear.year}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) =>
-                  setMonthYear({
-                    ...monthYear,
+                  setDateMonthYear({
+                    ...dateMonthYear,
                     year: Number.parseInt(event.target.value, 10),
                   })
                 }
@@ -118,7 +122,8 @@ export const Calendar: React.FC<CalendarProps> = ({
                   type="button"
                   className="btn bg-teal-500 text-white"
                   onClick={() => {
-                    setMonthYear({
+                    setDateMonthYear({
+                      date: new Date().getDate(),
                       month: new Date().getMonth(),
                       year: new Date().getFullYear(),
                     });
@@ -175,8 +180,8 @@ export const Calendar: React.FC<CalendarProps> = ({
         </div>
         <div className="px-8 py-4">
           <p className="w-full text-center">
-            {MONTHS[`${monthYear.month}`]} {today}
-            <sup>{SUFFIX_DATE[today]}</sup>, {monthYear.year}
+            {MONTHS[`${dateMonthYear.month}`]} {dateMonthYear.date}
+            <sup>{SUFFIX_DATE[today]}</sup>, {dateMonthYear.year}
           </p>
         </div>
       </div>
