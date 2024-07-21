@@ -18,7 +18,6 @@
     "dev:desktop": "tauri dev",
     "build:desktop": "tauri build",
     "prebuild": "rimraf dist src/tauri/target",
-    "build": "yarn build:web && yarn build:desktop",
     "test": "jest || true"
   },
   "dependencies": {
