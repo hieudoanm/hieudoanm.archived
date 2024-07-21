@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "7.16.1",
     "autoprefixer": "10.4.19",
     "daisyui": "4.12.10",
-    "eslint": "8.57.0",
+    "eslint": "9.7.0",
     "jsdom": "24.1.1",
     "postcss": "8.4.39",
     "prettier": "3.3.3",
