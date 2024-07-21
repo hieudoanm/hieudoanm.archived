@@ -1,0 +1,48 @@
+{
+  "name": "@ts/solid",
+  "version": "0.0.1",
+  "description": "TypeScript - Solid",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/playground.ts.git",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "prettier --cache --write .",
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "version": "vinxi version",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@prisma/client": "5.17.0",
+    "@solidjs/meta": "0.29.4",
+    "@solidjs/router": "0.14.1",
+    "@solidjs/start": "1.0.6",
+    "@trpc/server": "10.45.2",
+    "solid-js": "1.8.18",
+    "vinxi": "0.4.1"
+  },
+  "devDependencies": {
+    "@solidjs/testing-library": "0.8.8",
+    "@trpc/client": "10.45.2",
+    "@types/node": "20.14.11",
+    "@typescript-eslint/eslint-plugin": "7.16.1",
+    "@typescript-eslint/parser": "7.16.1",
+    "autoprefixer": "10.4.19",
+    "daisyui": "4.12.10",
+    "eslint": "8.57.0",
+    "jsdom": "24.1.1",
+    "postcss": "8.4.39",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "prisma": "5.17.0",
+    "tailwindcss": "3.4.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.3",
+    "vitest": "2.0.3"
+  }
+}

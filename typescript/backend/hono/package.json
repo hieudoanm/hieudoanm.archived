@@ -1,0 +1,50 @@
+{
+  "name": "@ts/hono",
+  "version": "0.0.1",
+  "description": "TypeScript - Hono",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/playground.ts.git",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "start": "vercel dev",
+    "predev": "kill-port 8787 && docker-compose up -d && prisma format && prisma generate --no-engine",
+    "dev": "dotenvx run -- wrangler dev api/index.ts",
+    "deploy:vercel": "vercel",
+    "lint": "eslint .",
+    "format": "prisma format && prettier --cache --write .",
+    "pretest": "prisma format && prisma generate --no-engine",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@prisma/client": "5.17.0",
+    "hono": "4.5.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240718.0",
+    "@dotenvx/dotenvx": "1.6.4",
+    "@eslint/js": "9.7.0",
+    "@prisma/extension-accelerate": "1.1.0",
+    "@types/jest": "29.5.12",
+    "@types/node": "20.14.11",
+    "eslint": "9.7.0",
+    "globals": "15.8.0",
+    "jest": "29.7.0",
+    "kill-port": "2.0.1",
+    "prettier": "3.3.3",
+    "prisma": "5.17.0",
+    "ts-jest": "29.2.3",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.3",
+    "typescript-eslint": "7.16.1",
+    "vercel": "35.1.0",
+    "wrangler": "3.65.1"
+  },
+  "resolutions": {
+    "debug": "4.3.5",
+    "semver": "7.6.3",
+    "tar": "7.4.0",
+    "undici": "6.19.2"
+  }
+}

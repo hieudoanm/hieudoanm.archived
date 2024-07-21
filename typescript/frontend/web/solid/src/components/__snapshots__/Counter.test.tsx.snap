@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Counter > should assert some dummy assertion 1`] = `
+<div>
+  <button
+    class="increment"
+  >
+    Clicks: 
+    0
+  </button>
+</div>
+`;

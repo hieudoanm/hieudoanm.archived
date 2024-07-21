@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body data-theme="light">
+    <main class="container mx-auto p-4 md:p-8">
+      <div class="border rounded overflow-auto">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">UN</th>
+              <th class="text-center">Flag</th>
+              <th>Common</th>
+              <th>Official</th>
+              <th class="text-center">CCA2</th>
+              <th class="text-center">CCA3</th>
+              <th>Capital</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{range $country := .Countries}}
+            <tr>
+              <td class="text-center">
+                {{if $country.UnitedNationMember}}UN{{end}}
+              </td>
+              <td class="text-center">{{$country.Flag}}</td>
+              <td>{{$country.Name.Common}}</td>
+              <td>{{$country.Name.Official}}</td>
+              <td class="text-center">{{$country.Cca2}}</td>
+              <td class="text-center">{{$country.Cca3}}</td>
+              <td>
+                {{range $capital := $country.Capital}}{{$capital}}<br />{{end}}
+              </td>
+            </tr>
+            {{end}}
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
