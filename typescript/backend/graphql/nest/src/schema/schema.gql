@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Country {
+  cca2: String!
+  cca3: String!
+  ccn3: String!
+  cioc: String!
+  independent: Boolean!
+  status: String!
+  unMember: Boolean!
+  region: String!
+}
+
+type Query {
+  countries: [Country!]!
+}
