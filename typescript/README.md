@@ -4,7 +4,10 @@
   - [Back-end](#back-end)
     - [GraphQL](#graphql)
       - [Apollo](#apollo)
+    - [gRPC](#grpc)
     - [REST (Representational State Transfer)](#rest-representational-state-transfer)
+    - [Webhooks](#webhooks)
+    - [WebSocket](#websocket)
   - [Front-end](#front-end)
     - [Mobile](#mobile)
       - [Expo](#expo)
@@ -22,7 +25,13 @@
 
 #### Apollo
 
+### gRPC
+
 ### REST (Representational State Transfer)
+
+### Webhooks
+
+### WebSocket
 
 ## Front-end
 
