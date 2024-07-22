@@ -44,7 +44,7 @@
   "resolutions": {
     "debug": "4.3.5",
     "semver": "7.6.3",
-    "tar": "7.4.0",
+    "tar": "7.4.1",
     "undici": "6.19.2"
   }
 }
