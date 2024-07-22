@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "TypeScript - Playground",
   "main": "index.js",
-  "repository": "git@github.com:hieudoanm/playground.git",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "license": "GPL-3.0",
   "private": true,
@@ -31,6 +31,7 @@
   "workspaces": {
     "packages": [
       "backend/*",
+      "backend/graphql/*",
       "frontend/mobile/*",
       "frontend/web/*"
     ]

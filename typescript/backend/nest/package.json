@@ -1,9 +1,9 @@
 {
-  "name": "nestx",
+  "name": "@ts/nest",
   "version": "0.0.1",
-  "description": "Nest.js Extensions",
+  "description": "TypeScript - Nest.js",
   "main": "dist/main",
-  "repository": "git@github.com:hieudoanm/playground.ts.git",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "license": "GPL-3.0",
   "private": true,
