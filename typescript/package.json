@@ -30,8 +30,8 @@
   },
   "workspaces": {
     "packages": [
-      "backend/*",
       "backend/graphql/*",
+      "backend/rest/*",
       "frontend/mobile/*",
       "frontend/web/*"
     ]
