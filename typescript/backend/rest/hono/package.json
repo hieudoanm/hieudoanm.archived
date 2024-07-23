@@ -40,11 +40,5 @@
     "typescript-eslint": "7.16.1",
     "vercel": "35.1.0",
     "wrangler": "3.65.1"
-  },
-  "resolutions": {
-    "debug": "4.3.5",
-    "semver": "7.6.3",
-    "tar": "7.4.1",
-    "undici": "6.19.4"
   }
 }

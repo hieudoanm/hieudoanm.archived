@@ -25,4 +25,25 @@ export class Country {
 
   @Field()
   public region: string;
+
+  @Field()
+  public subregion: string;
+
+  @Field()
+  public landlocked: boolean;
+
+  @Field()
+  public area: number;
+
+  @Field()
+  public flag: string;
+
+  @Field()
+  public population: number;
+
+  @Field()
+  public fifa: string;
+
+  @Field()
+  public startOfWeek: string;
 }

@@ -66,9 +66,6 @@
     "turbo": "2.0.9",
     "typescript": "5.5.4"
   },
-  "resolutions": {
-    "semver": "7.6.3"
-  },
   "workspaces": {
     "nohoist": [
       "**"

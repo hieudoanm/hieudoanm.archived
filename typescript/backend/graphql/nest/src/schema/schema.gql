@@ -11,6 +11,13 @@ type Country {
   status: String!
   unMember: Boolean!
   region: String!
+  subregion: String!
+  landlocked: Boolean!
+  area: Float!
+  flag: String!
+  population: Float!
+  fifa: String!
+  startOfWeek: String!
 }
 
 type Query {

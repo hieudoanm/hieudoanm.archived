@@ -70,9 +70,5 @@
     "prettier-eslint": "16.3.0",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
-  },
-  "resolutions": {
-    "js-yaml": "4.1.0",
-    "underscore": "1.13.6"
   }
 }
