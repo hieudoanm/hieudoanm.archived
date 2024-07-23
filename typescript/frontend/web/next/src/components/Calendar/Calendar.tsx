@@ -56,7 +56,6 @@ export const Calendar: React.FC<CalendarProps> = ({
   month: currentMonth = new Date().getMonth(),
   year: currentYear = new Date().getFullYear(),
 }) => {
-  const today = new Date().getDate();
   const years = [...Array.from({ length: LAST_YEAR - FIRST_YEAR + 1 }).keys()]
     .map((year: number) => year + FIRST_YEAR)
     .reverse();
