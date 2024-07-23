@@ -181,7 +181,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         <div className="px-8 py-4">
           <p className="w-full text-center">
             {MONTHS[`${dateMonthYear.month}`]} {dateMonthYear.date}
-            <sup>{SUFFIX_DATE[today]}</sup>, {dateMonthYear.year}
+            <sup>{SUFFIX_DATE[dateMonthYear.date]}</sup>, {dateMonthYear.year}
           </p>
         </div>
       </div>
