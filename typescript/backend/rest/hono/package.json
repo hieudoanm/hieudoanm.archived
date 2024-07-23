@@ -22,7 +22,7 @@
     "hono": "4.5.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240718.0",
+    "@cloudflare/workers-types": "4.20240722.0",
     "@dotenvx/dotenvx": "1.6.4",
     "@eslint/js": "9.7.0",
     "@prisma/extension-accelerate": "1.1.0",
@@ -44,7 +44,7 @@
   "resolutions": {
     "debug": "4.3.5",
     "semver": "7.6.3",
-    "tar": "7.4.0",
+    "tar": "7.4.1",
     "undici": "6.19.4"
   }
 }
