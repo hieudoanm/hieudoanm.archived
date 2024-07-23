@@ -1,11 +1,13 @@
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
+import { join } from 'node:path';
 import { CountriesModule } from './modules/countries/countries.module';
-import { join } from 'path';
+import { HealthModule } from './modules/health/health.module';
 
 @Module({
   imports: [
+    HealthModule,
     CountriesModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
