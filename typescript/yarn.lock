@@ -27721,10 +27721,10 @@ tar-stream@^3.0.0, tar-stream@^3.1.5:
     fast-fifo "^1.2.0"
     streamx "^2.15.0"
 
-tar@4.4.18, tar@7.4.0, tar@^6.0.2, tar@^6.0.5, tar@^6.1.0, tar@^6.1.11, tar@^6.1.2, tar@^6.2.0, tar@^6.2.1:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-7.4.0.tgz#e513afef5ba20ce250fd99397b4599db07d06443"
-  integrity sha512-XQs0S8fuAkQWuqhDeCdMlJXDX80D7EOVLDPVFkna9yQfzS+PHKgfxcei0jf6/+QAWcjqrnC8uM3fSAnrQl+XYg==
+tar@4.4.18, tar@7.4.1, tar@^6.0.2, tar@^6.0.5, tar@^6.1.0, tar@^6.1.11, tar@^6.1.2, tar@^6.2.0, tar@^6.2.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.4.1.tgz#e74de34641cc0cb6a1d6a200085a3fa55de64843"
+  integrity sha512-dDJzpQf7Nud96mCs3wtw+XUiWGpi9WHxytSusrg0lYlj/Kr11DnB5hfw5bNDQNzx52JJ2Vy+7l8AFivp6H7ETA==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"
