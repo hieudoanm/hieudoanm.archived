@@ -29,7 +29,7 @@
   "devDependencies": {
     "@solidjs/testing-library": "0.8.9",
     "@trpc/client": "10.45.2",
-    "@types/node": "20.14.11",
+    "@types/node": "20.14.12",
     "@typescript-eslint/eslint-plugin": "7.17.0",
     "@typescript-eslint/parser": "7.17.0",
     "autoprefixer": "10.4.19",
