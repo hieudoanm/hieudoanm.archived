@@ -38,7 +38,7 @@
     "ts-node": "10.9.2",
     "typescript": "5.5.4",
     "typescript-eslint": "7.17.0",
-    "vercel": "35.1.0",
+    "vercel": "35.2.0",
     "wrangler": "3.66.0"
   }
 }
