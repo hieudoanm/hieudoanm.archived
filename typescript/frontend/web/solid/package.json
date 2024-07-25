@@ -23,7 +23,7 @@
     "@solidjs/router": "0.14.1",
     "@solidjs/start": "1.0.6",
     "@trpc/server": "10.45.2",
-    "solid-js": "1.8.18",
+    "solid-js": "1.8.19",
     "vinxi": "0.4.1"
   },
   "devDependencies": {
