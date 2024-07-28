@@ -530,7 +530,7 @@ def zip(*args):
     def get_item(array, i):
         try:
             return array[i]
-        except:
+        except Exception:
             return None
 
     for i in range(0, maximum):
