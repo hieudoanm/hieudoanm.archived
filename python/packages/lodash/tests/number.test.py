@@ -27,5 +27,5 @@ class TestNumberMethods(unittest.TestCase):
         self.assertTrue(5 <= random2 and random2 <= 10)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -11,8 +11,7 @@ class TestUtilMethods(unittest.TestCase):
         """
         test_constant
         """
-        self.assertEqual(_.times(2, _.constant({'a': 1})), [
-                         {'a': 1}, {'a': 1}])
+        self.assertEqual(_.times(2, _.constant({"a": 1})), [{"a": 1}, {"a": 1}])
 
     def test_default_to(self):
         """
@@ -25,7 +24,7 @@ class TestUtilMethods(unittest.TestCase):
         """
         test_identity
         """
-        obj = {'a': 1}
+        obj = {"a": 1}
         self.assertEqual(_.identity(obj), obj)
         self.assertEqual(_.identity(123), 123)
         self.assertEqual(_.identity(obj, 123), obj)
@@ -74,7 +73,7 @@ class TestUtilMethods(unittest.TestCase):
         """
         test_stub_string
         """
-        self.assertEqual(_.stub_string(), '')
+        self.assertEqual(_.stub_string(), "")
 
     def test_stub_true(self):
         """
@@ -93,8 +92,8 @@ class TestUtilMethods(unittest.TestCase):
         """
         test_to_path
         """
-        self.assertEqual(_.to_path('a.b.c'), ['a', 'b', 'c'])
-        self.assertEqual(_.to_path('a[0]b.c'), ['a', '0', 'b', 'c'])
+        self.assertEqual(_.to_path("a.b.c"), ["a", "b", "c"])
+        self.assertEqual(_.to_path("a[0]b.c"), ["a", "0", "b", "c"])
 
     def test_unique_id(self):
         """
@@ -104,5 +103,5 @@ class TestUtilMethods(unittest.TestCase):
         print(unique_id)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

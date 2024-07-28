@@ -23,21 +23,19 @@ class TestMathMethods(unittest.TestCase):
         self.assertEqual(_.max([4, 2, 8, 6]), 8)
 
     def test_maxBy(self):
-        self.assertEqual(_.max_by([{'n': 1}, {'n': 2}], 'n'), 2)
+        self.assertEqual(_.max_by([{"n": 1}, {"n": 2}], "n"), 2)
 
     def test_mean(self):
         self.assertEqual(_.mean([4, 2, 8, 6]), 5)
 
     def test_meanBy(self):
-        self.assertEqual(
-            _.mean_by([{'n': 4}, {'n': 2}, {'n': 8}, {'n': 6}], 'n'), 5)
+        self.assertEqual(_.mean_by([{"n": 4}, {"n": 2}, {"n": 8}, {"n": 6}], "n"), 5)
 
     def test_min(self):
         self.assertEqual(_.min([4, 2, 8, 6]), 2)
 
     def test_minBy(self):
-        self.assertEqual(
-            _.min_by([{'n': 4}, {'n': 2}, {'n': 8}, {'n': 6}], 'n'), 2)
+        self.assertEqual(_.min_by([{"n": 4}, {"n": 2}, {"n": 8}, {"n": 6}], "n"), 2)
 
     def test_multiply(self):
         self.assertEqual(_.multiply(6, 4), 24)
@@ -52,9 +50,8 @@ class TestMathMethods(unittest.TestCase):
         self.assertEqual(_.sum([4, 2, 8, 6]), 20)
 
     def test_sumBy(self):
-        self.assertEqual(
-            _.sum_by([{'n': 4}, {'n': 2}, {'n': 8}, {'n': 6}], 'n'), 20)
+        self.assertEqual(_.sum_by([{"n": 4}, {"n": 2}, {"n": 8}, {"n": 6}], "n"), 20)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
