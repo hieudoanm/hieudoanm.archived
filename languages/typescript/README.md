@@ -2,10 +2,10 @@
 
 - [TypeScript](#typescript)
   - [Back-end](#back-end)
+    - [REST (Representational State Transfer)](#rest-representational-state-transfer)
     - [GraphQL](#graphql)
       - [Apollo](#apollo)
     - [gRPC](#grpc)
-    - [REST (Representational State Transfer)](#rest-representational-state-transfer)
     - [Webhooks](#webhooks)
     - [WebSocket](#websocket)
   - [Front-end](#front-end)
@@ -21,13 +21,13 @@
 
 ## Back-end
 
+### REST (Representational State Transfer)
+
 ### GraphQL
 
 #### Apollo
 
 ### gRPC
-
-### REST (Representational State Transfer)
 
 ### Webhooks
 
