@@ -45,7 +45,7 @@
     "@babel/plugin-transform-runtime": "7.24.7",
     "@tauri-apps/cli": "1.6.0",
     "@types/jest": "29.5.12",
-    "@types/node": "20.14.13",
+    "@types/node": "20.14.14",
     "@types/react": "18.3.3",
     "@typescript-eslint/eslint-plugin": "8.0.0",
     "@typescript-eslint/parser": "8.0.0",
