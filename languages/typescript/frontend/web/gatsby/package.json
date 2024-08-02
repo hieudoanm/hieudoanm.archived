@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "test": "jest",
-    "lint": "eslint . --fix --ext .ts,.tsx"
+    "lint": "eslint ./src --fix"
   },
   "dependencies": {
     "gatsby": "5.13.7",
@@ -41,7 +41,6 @@
     "autoprefixer": "10.4.19",
     "daisyui": "4.12.10",
     "eslint": "8.57.0",
-    "eslint-plugin-react": "7.35.0",
     "gatsby-plugin-postcss": "6.13.1",
     "gatsby-plugin-sass": "6.13.1",
     "identity-obj-proxy": "3.0.0",
