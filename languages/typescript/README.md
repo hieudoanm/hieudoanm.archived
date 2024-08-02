@@ -8,6 +8,8 @@
     - [gRPC](#grpc)
     - [Webhooks](#webhooks)
     - [WebSocket](#websocket)
+    - [Messaging](#messaging)
+      - [Kafka](#kafka)
   - [Front-end](#front-end)
     - [Mobile](#mobile)
       - [Expo](#expo)
@@ -16,8 +18,8 @@
       - [React](#react)
         - [Gatsby](#gatsby)
         - [Next](#next)
-      - [Solid](#solid)
-      - [Svelte](#svelte)
+      - [SolidStart](#solidstart)
+      - [SvelteKit](#sveltekit)
 
 ## Back-end
 
@@ -32,6 +34,10 @@
 ### Webhooks
 
 ### WebSocket
+
+### Messaging
+
+#### Kafka
 
 ## Front-end
 
@@ -49,6 +55,6 @@
 
 ##### Next
 
-#### Solid
+#### SolidStart
 
-#### Svelte
+#### SvelteKit
