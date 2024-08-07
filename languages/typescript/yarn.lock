@@ -17453,10 +17453,10 @@ hexoid@^1.0.0:
   resolved "https://registry.yarnpkg.com/hexoid/-/hexoid-1.0.0.tgz#ad10c6573fb907de23d9ec63a711267d9dc9bc18"
   integrity sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==
 
-hono@4.5.3:
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.5.3.tgz#e3308047decc10f713f85044f549aa293c23bf9e"
-  integrity sha512-r26WwwbKD3BAYdfB294knNnegNda7VfV1tVn66D9Kvl9WQTdrR+5eKdoeaQNHQcC3Gr0KBikzAtjd6VsRGVSaw==
+hono@4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.5.4.tgz#654be361a29eb7a3e7e5eb41f02ecbcef1e5b6a1"
+  integrity sha512-k2IguJfRgNCpDbAfpxk+o+fZBLFHl4+eIZUpjc1ItZWHeZ37SmT3efA1UpkIaC0hSf1NJg0E79/wWn6g9LQ4Cw==
 
 hookable@^5.5.3:
   version "5.5.3"
