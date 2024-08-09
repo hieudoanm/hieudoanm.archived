@@ -2313,10 +2313,10 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
-"@dotenvx/dotenvx@1.6.4":
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/@dotenvx/dotenvx/-/dotenvx-1.6.4.tgz#cd1f465bf85d5fcd1896fa5aa838d85397dff077"
-  integrity sha512-2jbcxpqbJDafeZo9i2ha38qGyB0KISgCht6KDTyvR4LlWK922pflm9t8M1jY97uYgW3PNZZjCmQjzQ+IB/V4rQ==
+"@dotenvx/dotenvx@1.6.5":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@dotenvx/dotenvx/-/dotenvx-1.6.5.tgz#2e4d6d1f2de34acd8f039ec48a435cc0d1b659b8"
+  integrity sha512-0Fx8eOR0l+w7BZII9/rRIVzF7E3BXx8WMpGWIIqC87NoFnaPpXmC0I4aGljUn7B0l8oM59GmmvXRLVsneIhJCg==
   dependencies:
     chalk "^4.1.2"
     commander "^11.1.0"
