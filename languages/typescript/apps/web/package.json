@@ -19,7 +19,7 @@
     "dev": "next dev -p 3000",
     "prestart": "kill-port 3000",
     "start": "next start -p 3000",
-    "pretest": "rimraf coverage",
+    "pretest": "rimraf coverage && prisma format && prisma generate",
     "test": "jest --coverage",
     "prepare": "husky || true"
   },
