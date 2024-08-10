@@ -1,6 +1,6 @@
 import { INestApplication, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { DocumentBuilder, OpenAPIObject, SwaggerModule } from '@nestjs/swagger';
 import * as compression from 'compression';
 import * as cookieParser from 'cookie-parser';
 import helmet from 'helmet';
@@ -16,7 +16,7 @@ const buildDocument = (app: INestApplication) => {
     .setDescription('Nest.js Extensions')
     .setVersion('1.0')
     .build();
-  const document = SwaggerModule.createDocument(app, config);
+  const document: OpenAPIObject = SwaggerModule.createDocument(app, config);
   if (NODE_ENV === 'development') {
     const swaggerPath = `./docs/swagger`;
     // JSON
@@ -25,7 +25,7 @@ const buildDocument = (app: INestApplication) => {
     writeFileSync(jsonFile, jsonString);
     // YAML
     const yamlDocument = new Document();
-    yamlDocument.contents = document as any;
+    yamlDocument.contents = document as never;
     const yamlFile: string = `${swaggerPath}/swagger.yaml`;
     const yamlString: string = yamlDocument.toString();
     writeFileSync(yamlFile, yamlString);
