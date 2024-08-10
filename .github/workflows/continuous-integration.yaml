@@ -38,7 +38,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile --network-timeout 86400000
       - name: Unit Test
-        run: yarn test
+        run: yarn test --concurrency 1
 
   build:
     name: Build
