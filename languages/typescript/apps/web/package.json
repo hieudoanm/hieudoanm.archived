@@ -109,12 +109,5 @@
     "ts-jest": "29.2.4",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
-  },
-  "resolutions": {
-    "braces": "3.0.3",
-    "micromatch": "4.0.7",
-    "serialize-javascript": "6.0.2",
-    "string-width": "6.1.0",
-    "wrap-ansi": "7.0.0"
   }
 }
