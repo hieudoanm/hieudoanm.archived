@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialHeatPage renders correctly 1`] = `
+<div>
+  <div
+    class="bg-white"
+  >
+    <nav
+      class="border-b shadow"
+    >
+      <div
+        class="container mx-auto px-8 py-4"
+      >
+        <div
+          class="flex items-center justify-between"
+        >
+          <div
+            class="flex items-center gap-x-2"
+          >
+            <a
+              href="/"
+            >
+              <h1
+                class="uppercase"
+              >
+                Buzz Metrics
+              </h1>
+            </a>
+            <a
+              href="/socialheat"
+            >
+              <p>
+                Social Heat
+              </p>
+            </a>
+            <a
+              href="/socialtrend"
+            >
+              <p>
+                Social Trend
+              </p>
+            </a>
+          </div>
+          <div>
+            <button
+              class="btn bg-blue-500 uppercase text-white"
+              type="button"
+            >
+              Log Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container mx-auto p-8"
+    >
+      <section
+        class="mb-8"
+      >
+        <div
+          class="rounded border p-8 shadow-2xl"
+        >
+          <form>
+            <div
+              class="grid grid-cols-12 items-center gap-8"
+            >
+              <div
+                class="col-span-12"
+              >
+                <div
+                  class="flex items-center justify-between"
+                >
+                  <h2
+                    class="text-lg uppercase"
+                  >
+                    Queries
+                  </h2>
+                  <button
+                    class="btn bg-blue-500 text-white"
+                    type="submit"
+                  >
+                    Run Queries
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <input
+                  class="input input-bordered w-full"
+                  id="pin"
+                  placeholder="PIN"
+                  required=""
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <input
+                  class="input input-bordered w-full"
+                  id="topicId"
+                  placeholder="Topic ID"
+                  required=""
+                  type="number"
+                  value="0"
+                />
+              </div>
+              <div
+                class="col-span-6"
+              >
+                <input
+                  class="input input-bordered w-full"
+                  name="fromDate"
+                  placeholder="From Date"
+                  type="date"
+                  value="2020-01-01"
+                />
+              </div>
+              <div
+                class="col-span-6"
+              >
+                <input
+                  class="input input-bordered w-full"
+                  name="toDate"
+                  placeholder="To Date"
+                  type="date"
+                  value="2020-01-01"
+                />
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <div
+                  class="flex items-center justify-center"
+                >
+                  <div
+                    class="join"
+                  >
+                    <button
+                      class="btn join-item bg-blue-500 text-white"
+                      type="button"
+                    >
+                      Input
+                    </button>
+                    <button
+                      class="btn join-item bg-gray-500 text-white"
+                      type="button"
+                    >
+                      Table
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-span-12"
+              >
+                <textarea
+                  class="textarea textarea-bordered w-full"
+                  id="queries"
+                  placeholder="Queries"
+                  required=""
+                  rows="12"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div
+          class="rounded border p-8 shadow-2xl"
+        >
+          <div
+            class="grid grid-cols-12 items-center gap-8"
+          >
+            <div
+              class="col-span-12"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <h2
+                  class="text-lg uppercase"
+                >
+                  Results
+                </h2>
+                <button
+                  class="btn bg-blue-500 text-white"
+                  type="button"
+                >
+                  Download CSV
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-span-12"
+            >
+              <div
+                class="overflow-x-auto rounded border shadow"
+              >
+                <table
+                  class="table"
+                >
+                  <thead>
+                    <tr>
+                      <td
+                        align="center"
+                      >
+                        No.
+                      </td>
+                      <td>
+                        Query
+                      </td>
+                      <td
+                        align="right"
+                      >
+                        Collectable Total Mentions
+                      </td>
+                      <td
+                        align="right"
+                      >
+                        Total Mentions
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="border-0 border-none"
+                    >
+                      <td
+                        align="center"
+                        class="border-0 border-none uppercase"
+                        colspan="4"
+                      >
+                        0
+                        %
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+`;

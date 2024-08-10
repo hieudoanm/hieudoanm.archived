@@ -1,0 +1,409 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateMetaMaskWallet render default 1`] = `
+<div>
+  <section
+    class="py-16"
+    id="create-meta-mask-wallet"
+  >
+    <div
+      class="mx-auto px-8 container"
+    >
+      <div
+        class="mb-16"
+      >
+        <div
+          class="hidden md:block"
+        >
+          <h1
+            class="text-center uppercase text-3xl"
+          >
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                Create
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                Create
+              </span>
+              Create
+            </div>
+             
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                MetaMask
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                MetaMask
+              </span>
+              MetaMask
+            </div>
+             
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                Wallet
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                Wallet
+              </span>
+              Wallet
+            </div>
+          </h1>
+        </div>
+        <div
+          class="block md:hidden"
+        >
+          <h1
+            class="text-center uppercase text-xl"
+          >
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                Create
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                Create
+              </span>
+              Create
+            </div>
+             
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                MetaMask
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                MetaMask
+              </span>
+              MetaMask
+            </div>
+             
+            <div
+              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+            >
+              <span
+                class="opacity-0 md:opacity-100"
+              >
+                Wallet
+              </span>
+              <span
+                class="opacity-100 md:opacity-0"
+              >
+                Wallet
+              </span>
+              Wallet
+            </div>
+          </h1>
+        </div>
+      </div>
+      <article>
+        <div
+          class="grid grid-cols-1 md:grid-cols-11 gap-8"
+        >
+          <div
+            class="col-span-1 md:col-span-5"
+          >
+            <div
+              class="h-full p-8 card-green bg-green rounded-2xl"
+            >
+              <div
+                class="flex flex-col h-full"
+              >
+                <div
+                  class="flex-none"
+                >
+                  <div
+                    class="mb-8"
+                  >
+                    <h3
+                      class="text-[#FFB715] text-base md:text-xl"
+                    >
+                      Create Account
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="grow"
+                >
+                  <div
+                    class="mb-4"
+                  >
+                    <p
+                      class="text-white text-xs md:text-sm"
+                    >
+                      MetaMask
+                    </p>
+                  </div>
+                  <div
+                    class="mb-12"
+                  >
+                    <a
+                      href="https://bit.ly/3bJtXmr"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <div
+                        class="sc-gJhJTp ieqGPT w-24 h-24 bg-center bg-cover"
+                        image="/how-to-play/en/images/meta-mask-wallet/box.svg"
+                      >
+                        <div
+                          class="flex items-center justify-center w-full h-full"
+                        >
+                          <div
+                            class="sc-gJhJTp jFBJwU w-16 h-16 bg-center bg-no-repeat bg-contain"
+                            image="/how-to-play/en/images/download/meta-mask-fox.svg"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="mb-8"
+                  >
+                    <div
+                      class="flex flex-col gap-4 text-white"
+                    >
+                      <h4
+                        class="font-karma"
+                      >
+                        What is MetaMask Wallet For?
+                      </h4>
+                      <div
+                        class="flex items-center gap-4"
+                      >
+                        <div>
+                          <div
+                            class="w-8 h-8 bg-contain bg-center bg-no-repeat"
+                            style="background-image: url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg);"
+                          />
+                        </div>
+                        <p
+                          class="font-karma text-sm md:text-base"
+                        >
+                          Storing digital assets
+                        </p>
+                      </div>
+                      <div
+                        class="flex items-center gap-4"
+                      >
+                        <div>
+                          <div
+                            class="w-8 h-8 bg-contain bg-center bg-no-repeat"
+                            style="background-image: url(/how-to-play/en/images/meta-mask-wallet/small-ball.svg);"
+                          />
+                        </div>
+                        <p
+                          class="font-karma text-sm md:text-base"
+                        >
+                          Sending blockchain transactions without paying expensive gas fees.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-none"
+                >
+                  <a
+                    href="https://bit.ly/3bXegbx"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <div
+                      class="flex items-center gap-4"
+                    >
+                      <div>
+                        <div
+                          class="w-6 h-6 bg-contain bg-center bg-no-repeat"
+                          style="background-image: url(/how-to-play/en/images/meta-mask-wallet/play.svg);"
+                        />
+                      </div>
+                      <p
+                        class="text-[#FFC815] font-karma underline text-sm"
+                      >
+                        View tutorial
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div
+              class="flex justify-center items-center w-full h-full"
+            >
+              <div
+                class="sc-gJhJTp mwKiT w-8 h-8 bg-contain bg-center rotate-90 md:rotate-0"
+                image="/how-to-play/en/images/meta-mask-wallet/arrow.svg"
+              />
+            </div>
+          </div>
+          <div
+            class="col-span-1 md:col-span-5"
+          >
+            <div
+              class="h-full p-8 card-green bg-green rounded-2xl"
+            >
+              <div
+                class="flex flex-col h-full"
+              >
+                <div
+                  class="flex-none"
+                >
+                  <div
+                    class="mb-8"
+                  >
+                    <h3
+                      class="text-[#FFB715] text-base md:text-xl"
+                    >
+                      Download & Set Up
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="grow"
+                >
+                  <div
+                    class="mb-4"
+                  >
+                    <p
+                      class="text-white text-xs md:text-sm"
+                    >
+                      Extension
+                    </p>
+                  </div>
+                  <div
+                    class="mb-12"
+                  >
+                    <div
+                      class="flex gap-8"
+                    >
+                      <a
+                        href="https://bit.ly/3bYHlU5"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <div
+                          class="sc-gJhJTp ieqGPT w-24 h-24 bg-center bg-cover"
+                          image="/how-to-play/en/images/meta-mask-wallet/box.svg"
+                        >
+                          <div
+                            class="flex items-center justify-center w-full h-full"
+                          >
+                            <div
+                              class="sc-gJhJTp jLGsCa w-16 h-16 bg-center bg-no-repeat bg-contain"
+                              image="/how-to-play/en/images/download/chrome.svg"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a
+                        href="https://mzl.la/3yMRV9D"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <div
+                          class="sc-gJhJTp ieqGPT w-24 h-24 bg-center bg-cover"
+                          image="/how-to-play/en/images/meta-mask-wallet/box.svg"
+                        >
+                          <div
+                            class="flex items-center justify-center w-full h-full"
+                          >
+                            <div
+                              class="sc-gJhJTp hPUXZ w-16 h-16 bg-center bg-no-repeat bg-contain"
+                              image="/how-to-play/en/images/download/firefox.svg"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-8"
+                  >
+                    <div
+                      class="flex flex-col gap-4"
+                    >
+                      <p
+                        class="text-white text-xs md:text-sm"
+                      >
+                        Mobile App
+                      </p>
+                      <a
+                        href="https://bit.ly/3ymLloN"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <div
+                          class="sc-gJhJTp jnkrru w-44 h-12 bg-contain bg-no-repeat"
+                          image="/how-to-play/en/images/download/apple-app-store.svg"
+                        />
+                      </a>
+                      <a
+                        href="https://apps.apple.com/us/app/metamask-blockchain-wallet/id1438144202"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <div
+                          class="sc-gJhJTp qUpWm w-44 h-12 bg-contain bg-no-repeat"
+                          image="/how-to-play/en/images/download/google-play-store.svg"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex-none"
+                >
+                  <p
+                    class="text-white font-karma text-sm md:text-base"
+                  >
+                    Still need help?
+                     
+                    <a
+                      class="text-[#FFC815] underline"
+                      href="https://bit.ly/3ArxJvc"
+                    >
+                      Watch community-made tutorial
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+`;

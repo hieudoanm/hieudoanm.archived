@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DownloadIcon render default 1`] = `
+<div>
+  <div
+    class="sc-braxZu fxjaiS w-24 h-24 bg-center bg-cover"
+    image="/how-to-play/en/images/meta-mask-wallet/box.svg"
+  >
+    <div
+      class="flex items-center justify-center w-full h-full"
+    >
+      <div
+        class="sc-braxZu dmnYrq w-16 h-16 bg-center bg-no-repeat bg-contain"
+        image=""
+      />
+    </div>
+  </div>
+</div>
+`;

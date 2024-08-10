@@ -1,0 +1,20 @@
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 3H6V6H9V3Z" fill="black"/>
+<path d="M141 0H9V3H141V0Z" fill="black"/>
+<path d="M141 37H9V40H141V37Z" fill="black"/>
+<path d="M6 6H3V9H6V6Z" fill="black"/>
+<path d="M3 9H0V31H3V9Z" fill="black"/>
+<path d="M3 31V34H6V31H3Z" fill="black"/>
+<path d="M6 34V37H9V34H6Z" fill="black"/>
+<path d="M141 6L144 6L144 3L141 3L141 6Z" fill="black"/>
+<path d="M144 9L147 9L147 6L144 6L144 9Z" fill="black"/>
+<path d="M147 31L150 31L150 9L147 9L147 31Z" fill="black"/>
+<path d="M144 31L144 34L147 34L147 31L144 31Z" fill="black"/>
+<path d="M141 34L141 37L144 37L144 34L141 34Z" fill="black"/>
+<path d="M141 34H9V37H141V34Z" fill="#9F1B1F"/>
+<path d="M6 31V34H9V31H6Z" fill="#9F1B1F"/>
+<path d="M141 31L141 34L144 34L144 31L141 31Z" fill="#9F1B1F"/>
+<path d="M9 6H6V9H9V6Z" fill="#FF7B82"/>
+<path d="M141 3H9V6H141V3Z" fill="#FF7B82"/>
+<path d="M141 9L144 9L144 6L141 6L141 9Z" fill="#FF7B82"/>
+</svg>

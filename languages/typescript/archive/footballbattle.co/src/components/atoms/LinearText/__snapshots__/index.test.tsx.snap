@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinearText render default 1`] = `
+<div>
+  <div
+    class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+  >
+    <span
+      class="opacity-0 md:opacity-100"
+    >
+      LinearText
+    </span>
+    <span
+      class="opacity-100 md:opacity-0"
+    >
+      LinearText
+    </span>
+    LinearText
+  </div>
+</div>
+`;

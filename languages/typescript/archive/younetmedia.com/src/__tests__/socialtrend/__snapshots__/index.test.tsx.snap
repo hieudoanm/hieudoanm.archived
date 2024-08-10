@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialTrendPage renders correctly 1`] = `
+<div>
+  <nav
+    class="border-b shadow"
+  >
+    <div
+      class="container mx-auto px-8 py-4"
+    >
+      <div
+        class="flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-x-2"
+        >
+          <a
+            href="/"
+          >
+            <h1
+              class="uppercase"
+            >
+              Buzz Metrics
+            </h1>
+          </a>
+          <a
+            href="/socialheat"
+          >
+            <p>
+              Social Heat
+            </p>
+          </a>
+          <a
+            href="/socialtrend"
+          >
+            <p>
+              Social Trend
+            </p>
+          </a>
+        </div>
+        <div>
+          <button
+            class="btn bg-blue-500 uppercase text-white"
+            type="button"
+          >
+            Log Out
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main
+    class="container mx-auto p-8"
+  >
+    <div
+      class="flex flex-col gap-4 md:gap-8"
+    >
+      <div
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8"
+      >
+        <div
+          class="col-span-1 md:col-span-2"
+        >
+          <input
+            class="input input-bordered w-full"
+            id="pin"
+            placeholder="PIN"
+            required=""
+            value=""
+          />
+        </div>
+        <div
+          class="col-span-1"
+        >
+          <input
+            class="input input-bordered w-full"
+            id="date"
+            max="2020-01-01"
+            name="Date"
+            placeholder="DD/MM/YYYY"
+            type="date"
+            value="2020-01-01"
+          />
+        </div>
+        <div
+          class="col-span-1"
+        >
+          <select
+            class="select select-bordered w-full"
+            id="range"
+            name="range"
+          >
+            <option
+              value=""
+            >
+              Range
+            </option>
+            <option
+              value="86400000"
+            >
+              24 hours
+            </option>
+            <option
+              value="687600000"
+            >
+              7 days ago
+            </option>
+            <option
+              value="2674800000"
+            >
+              30 days ago
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;

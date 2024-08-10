@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BuildTheTeam render default 1`] = `
+<div>
+  <section
+    class="py-16"
+    id=""
+  >
+    <div
+      class="mx-auto px-8 container"
+    >
+      <div
+        class="hidden md:block"
+      >
+        <div
+          class="sc-braxZu dqPmFU h-16 bg-no-repeat bg-contain bg-center mb-16"
+          image="/how-to-play/en/images/build-the-team/title-desktop.svg"
+        />
+      </div>
+      <div
+        class="block md:hidden"
+      >
+        <div
+          class="sc-braxZu eSsBmO h-16 bg-no-repeat bg-contain bg-center mb-16"
+          image="/how-to-play/en/images/build-the-team/title-mobile.svg"
+        />
+      </div>
+      <article>
+        <div
+          class="grid grid-cols-2 md:grid-cols-5 gap-8"
+        >
+          <div
+            class="col-span-1"
+          >
+            <div>
+              <div
+                class="bg-cover bg-center mb-4"
+                style="padding-bottom: 130%; background-image: url(/how-to-play/en/images/build-the-team/gk.svg);"
+              />
+              <div
+                class="text-center text-white font-karma"
+              >
+                Goalkeeper (GK)
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div>
+              <div
+                class="bg-cover bg-center mb-4"
+                style="padding-bottom: 130%; background-image: url(/how-to-play/en/images/build-the-team/mf.svg);"
+              />
+              <div
+                class="text-center text-white font-karma"
+              >
+                Midfield (MF)
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div>
+              <div
+                class="bg-cover bg-center mb-4"
+                style="padding-bottom: 130%; background-image: url(/how-to-play/en/images/build-the-team/df.svg);"
+              />
+              <div
+                class="text-center text-white font-karma"
+              >
+                Defender (DF)
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1"
+          >
+            <div>
+              <div
+                class="bg-cover bg-center mb-4"
+                style="padding-bottom: 130%; background-image: url(/how-to-play/en/images/build-the-team/fw.svg);"
+              />
+              <div
+                class="text-center text-white font-karma"
+              >
+                Forward (FW)
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1"
+          >
+            <div
+              class="w-1/2 md:w-full mx-auto"
+            >
+              <div>
+                <div
+                  class="bg-cover bg-center mb-4"
+                  style="padding-bottom: 130%; background-image: url(/how-to-play/en/images/build-the-team/random.svg);"
+                />
+                <div
+                  class="text-center text-white font-karma"
+                >
+                  <div>
+                    Random position
+                  </div>
+                  <div>
+                    (DF, MF, FW)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+`;
