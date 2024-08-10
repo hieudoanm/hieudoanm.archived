@@ -7,10 +7,12 @@ export type SocialLink = {
   icon: ReactNode;
 };
 
-export const Footer: React.FC<{
-  title: string;
-  socialLinks: SocialLink[];
-}> = ({ title = '', socialLinks = [] }) => {
+export type FooterProps = { title: string; socialLinks: SocialLink[] };
+
+export const Footer: React.FC<FooterProps> = ({
+  title = '',
+  socialLinks = [],
+}: FooterProps) => {
   const year = new Date().getFullYear();
 
   return (

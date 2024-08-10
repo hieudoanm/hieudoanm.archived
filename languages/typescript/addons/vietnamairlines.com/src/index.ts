@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const updatePrices = () => {
   console.log('observeDOM updatePrices');
   const prices = document.querySelectorAll(

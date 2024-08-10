@@ -9,15 +9,17 @@ export type ServiceType = {
   description: string;
 };
 
-export const Services: React.FC<{
+export type ServicesProps = {
   title: string;
   description: string;
   services: ServiceType[];
-}> = ({
+};
+
+export const Services: React.FC<ServicesProps> = ({
   title: sectionTitle = '',
   description: sectionDescription = '',
   services = [],
-}) => {
+}: ServicesProps) => {
   return (
     <section id="services" className="bg-[#FFF5ED]/50 py-8 md:py-16">
       <div className="container mx-auto">
