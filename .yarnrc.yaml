@@ -1,8 +1,8 @@
-cacheFolder: './.yarn/cache'
+cacheFolder: "./.yarn/cache"
 
 cloneConcurrency: 2
 
-defaultLanguageName: 'node'
+defaultLanguageName: "node"
 
 enableColors: true
 
@@ -18,4 +18,16 @@ httpRetry: 6
 
 httpTimeout: 60000
 
-initScope: 'yarnpkg'
+initScope: "yarnpkg"
+
+init-version: "0.0.1"
+
+init-license: "GPL-3.0"
+
+preferInteractive: true
+
+registry: "https://registry.yarnpkg.com"
+
+strict-ssl: true
+
+telemetryUserId: yarnpkg/berry
