@@ -1,7 +1,7 @@
 {
-  "name": "@ts/playground",
+  "name": "hieudoanm",
   "version": "0.0.1",
-  "description": "TypeScript - Playground",
+  "description": "hieudoanm",
   "main": "index.js",
   "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
@@ -30,10 +30,11 @@
   },
   "workspaces": {
     "packages": [
-      "backend/graphql/*",
-      "backend/rest/*",
-      "frontend/mobile/*",
-      "frontend/web/*"
+      "languages/typescript/addons/*",
+      "languages/typescript/backend/graphql/*",
+      "languages/typescript/backend/rest/*",
+      "languages/typescript/frontend/mobile/*",
+      "languages/typescript/frontend/web/*"
     ]
   }
 }
