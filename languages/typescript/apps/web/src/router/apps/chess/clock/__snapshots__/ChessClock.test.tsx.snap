@@ -101,7 +101,7 @@ exports[`ChessClock render default 1`] = `
                     <div
                       class="rotate-180 text-6xl md:rotate-0 md:text-9xl"
                     >
-                      10:00
+                      10:00.0
                     </div>
                   </button>
                 </div>
@@ -115,7 +115,7 @@ exports[`ChessClock render default 1`] = `
                     <div
                       class="text-6xl md:text-9xl"
                     >
-                      10:00
+                      10:00.0
                     </div>
                   </button>
                 </div>

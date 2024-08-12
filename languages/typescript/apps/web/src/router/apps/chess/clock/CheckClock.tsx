@@ -10,7 +10,7 @@ type ChessClockSide = 'top' | 'bottom';
 type ChessClockState = {
   running: boolean;
   current: ChessClockSide | '';
-  seconds: { top: number; bottom: number };
+  milliseconds: { top: number; bottom: number };
   increment: { top: number; bottom: number };
 };
 
@@ -19,10 +19,10 @@ const options: number[] = [
 ];
 
 export const ChessClock: NextPage = () => {
-  const oneSecond = 1_000;
+  const oneUnit = 100;
 
   const initial: ChessClockState = {
-    seconds: { top: 10 * 60, bottom: 10 * 60 },
+    milliseconds: { top: 10 * 60 * 1000, bottom: 10 * 60 * 1000 },
     increment: { top: 0, bottom: 0 },
     current: '',
     running: false,
@@ -38,35 +38,48 @@ export const ChessClock: NextPage = () => {
 
   const click = (side: ChessClockSide) => {
     const otherSide: ChessClockSide = side === 'top' ? 'bottom' : 'top';
-    setClock((clock) => ({ ...clock, current: otherSide, running: true }));
+    setClock((previousClock) => ({
+      ...previousClock,
+      current: otherSide,
+      running: true,
+    }));
 
     const newTimer = setInterval(() => {
-      if (clock.seconds.top === 0 || clock.seconds.bottom === 0) {
+      if (clock.milliseconds.top === 0 || clock.milliseconds.bottom === 0) {
         clearInterval(timer);
       } else {
         setClock(
-          ({ current, seconds, increment, running }: ChessClockState) => {
-            if (current === '') return { current, seconds, increment, running };
-            const newCurrentSeconds = seconds[current] - 1;
+          ({ current, milliseconds, increment, running }: ChessClockState) => {
+            if (current === '')
+              return { current, milliseconds, increment, running };
+            const newCurrentMilliseconds: number =
+              milliseconds[current] - oneUnit;
 
             return {
               current,
               running,
               increment,
-              seconds: { ...seconds, [current]: newCurrentSeconds },
+              milliseconds: {
+                ...milliseconds,
+                [current]: newCurrentMilliseconds,
+              },
             };
           }
         );
       }
-    }, oneSecond);
+    }, oneUnit);
 
     setTimer(newTimer);
   };
 
-  const format = (seconds: number): string => {
-    const minutes: number = Math.floor(seconds / 60);
-    const remainingSeconds: number = seconds % 60;
-    return `${addZero(minutes)}:${addZero(remainingSeconds)}`;
+  const format = (milliseconds: number): string => {
+    const minutes: number = Math.floor(milliseconds / (60 * 1000));
+    const remainingMilliseconds: string = (
+      (milliseconds % (60 * 1000)) /
+      1000
+    ).toFixed(1);
+    const [seconds, ms] = remainingMilliseconds.split('.');
+    return `${addZero(minutes)}:${addZero(parseFloat(seconds))}.${ms}`;
   };
 
   useEffect(() => {
@@ -93,7 +106,7 @@ export const ChessClock: NextPage = () => {
                     className={`btn ${clock.current === 'top' ? 'btn-secondary' : 'btn-primary'} h-full w-full`}
                     onClick={() => click('top')}>
                     <div className='rotate-180 text-6xl md:rotate-0 md:text-9xl'>
-                      {format(clock.seconds.top)}
+                      {format(clock.milliseconds.top)}
                     </div>
                   </button>
                 </div>
@@ -103,7 +116,7 @@ export const ChessClock: NextPage = () => {
                     className={`btn ${clock.current === 'bottom' ? 'btn-secondary' : 'btn-primary'} h-full w-full`}
                     onClick={() => click('bottom')}>
                     <div className='text-6xl md:text-9xl'>
-                      {format(clock.seconds.bottom)}
+                      {format(clock.milliseconds.bottom)}
                     </div>
                   </button>
                 </div>
@@ -160,16 +173,16 @@ export const ChessClock: NextPage = () => {
                 value={modal.topTime}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) => {
                   const topTime = parseInt(event.target.value);
-                  setModal((modal) => {
-                    return { ...modal, topTime };
+                  setModal((previousModal) => {
+                    return { ...previousModal, topTime };
                   });
-                  setClock(({ current, seconds, increment, running }) => {
+                  setClock(({ current, milliseconds, increment, running }) => {
                     return {
                       current,
                       running,
                       increment,
-                      seconds: {
-                        ...seconds,
+                      milliseconds: {
+                        ...milliseconds,
                         top: topTime * 60,
                       },
                     };
@@ -188,10 +201,10 @@ export const ChessClock: NextPage = () => {
                 value={modal.topIncrement}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) => {
                   const topIncrement = parseInt(event.target.value);
-                  setModal((modal) => {
-                    return { ...modal, topIncrement };
+                  setModal((previousModal) => {
+                    return { ...previousModal, topIncrement };
                   });
-                  setClock(({ current, seconds, increment, running }) => {
+                  setClock(({ current, milliseconds, increment, running }) => {
                     return {
                       current,
                       running,
@@ -199,7 +212,7 @@ export const ChessClock: NextPage = () => {
                         ...increment,
                         top: topIncrement,
                       },
-                      seconds,
+                      milliseconds,
                     };
                   });
                 }}>
@@ -219,16 +232,16 @@ export const ChessClock: NextPage = () => {
                 value={modal.bottomTime}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) => {
                   const bottomTime = parseInt(event.target.value);
-                  setModal((modal) => {
-                    return { ...modal, bottomTime };
+                  setModal((previousModal) => {
+                    return { ...previousModal, bottomTime };
                   });
-                  setClock(({ current, seconds, increment, running }) => {
+                  setClock(({ current, milliseconds, increment, running }) => {
                     return {
                       current,
                       running,
                       increment,
-                      seconds: {
-                        ...seconds,
+                      milliseconds: {
+                        ...milliseconds,
                         bottom: bottomTime * 60,
                       },
                     };
@@ -247,10 +260,10 @@ export const ChessClock: NextPage = () => {
                 value={clock.increment.bottom}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) => {
                   const bottomIncrement = parseInt(event.target.value);
-                  setModal((modal) => {
-                    return { ...modal, bottomIncrement };
+                  setModal((previousModal) => {
+                    return { ...previousModal, bottomIncrement };
                   });
-                  setClock(({ current, seconds, increment, running }) => {
+                  setClock(({ current, milliseconds, increment, running }) => {
                     return {
                       current,
                       running,
@@ -258,7 +271,7 @@ export const ChessClock: NextPage = () => {
                         ...increment,
                         bottom: bottomIncrement,
                       },
-                      seconds,
+                      milliseconds,
                     };
                   });
                 }}>
