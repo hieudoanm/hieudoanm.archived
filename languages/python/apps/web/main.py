@@ -163,9 +163,7 @@ class Opening(BaseModel):
 
 
 openings_file_path: str = "./resources/chess/openings/json"
-openings_dict_json_file: TextIOWrapper = open(
-    f"{openings_file_path}/dict/openings.json", "r"
-)
+openings_dict_json_file: TextIOWrapper = open(f"{openings_file_path}/dict/openings.json", "r")
 openings_dict: dict[str, dict[str, str]] = json_load(openings_dict_json_file)
 openings_list_json_file = open(f"{openings_file_path}/list/openings.json", "r")
 openings_list: list[Opening] = json_load(openings_list_json_file)
@@ -215,9 +213,7 @@ def map_top_move(fen: str, top_move_dict: dict) -> TopMove:
     centipawn: int = top_move_dict.get("Centipawn", "")
     pawn = centipawn / 100 if centipawn is not None else None
     mate: int = top_move_dict.get("Mate", "")
-    top_move = TopMove(
-        centipawn=centipawn, pawn=pawn, mate=mate, san=san, uci=uci
-    )
+    top_move = TopMove(centipawn=centipawn, pawn=pawn, mate=mate, san=san, uci=uci)
     return top_move
 
 
@@ -230,9 +226,7 @@ def get_top_moves(fen: str, variations: int, retry: int = 0) -> list[dict]:
         top_moves = stockfish_engine.get_top_moves(variations)
         return top_moves
     except models.StockfishException as stockfishException:
-        print(
-            f'analyse_fen stockfishException="{stockfishException}" retry="{retry}"'
-        )
+        print(f'analyse_fen stockfishException="{stockfishException}" retry="{retry}"')
         kill_stockfish()
         if retry < 3:
             return get_top_moves(fen, variations, retry + 1)
@@ -250,9 +244,7 @@ async def analyse_fen(fen_request_body: FenRequestBody) -> list[TopMove]:
     fen: str = fen_request_body.fen
     variations: int = fen_request_body.variations
     top_moves: list[dict] = get_top_moves(fen, variations)
-    mapped_top_moves: list[TopMove] = list(
-        map(lambda top_move: map_top_move(fen, top_move), top_moves)
-    )
+    mapped_top_moves: list[TopMove] = list(map(lambda top_move: map_top_move(fen, top_move), top_moves))
     kill_stockfish()
     return mapped_top_moves
 
@@ -306,9 +298,7 @@ def evaluate(fen: str, retry: int = 0) -> dict:
         evaluate_dict["best"] = best_move
         evaluate_dict["centipawn"] = centipawn
         evaluate_dict["mate"] = mate
-        print(
-            f'evaluate process="{current_process().pid}" fen="{fen}" centipawn="{centipawn}" mate="{mate}"'
-        )
+        print(f'evaluate process="{current_process().pid}" fen="{fen}" centipawn="{centipawn}" mate="{mate}"')
         return evaluate_dict
     except models.StockfishException as stockfishException:
         print(
@@ -348,12 +338,9 @@ def get_moves_without_evaluation(game: Game) -> list[dict]:
         opening: str = book_move.get("opening", "")
         # Major Pieces
         board_fen: str = board.board_fen()
-        board_fen_without_numbers: str = "".join(
-            "" if c.isdigit() else c for c in board_fen
-        )
+        board_fen_without_numbers: str = "".join("" if c.isdigit() else c for c in board_fen)
         board_fen_without_king_and_pawn: str = "".join(
-            "" if c in ["/", "K", "P", "k", "p"] else c
-            for c in board_fen_without_numbers
+            "" if c in ["/", "K", "P", "k", "p"] else c for c in board_fen_without_numbers
         )
         number_of_major_pieces: int = len(board_fen_without_king_and_pawn)
         phrase: str = "opening" if eco != "" else "middlegame"
@@ -378,20 +365,10 @@ def get_moves_without_evaluation(game: Game) -> list[dict]:
 MAX_CENTIPAWN = 1000
 
 
-def get_move_centipawn(
-    centipawn: Optional[int], mate: Optional[int], turn: str
-):
+def get_move_centipawn(centipawn: Optional[int], mate: Optional[int], turn: str):
     if mate is None:
-        centipawn = (
-            centipawn
-            if centipawn is not None and centipawn <= MAX_CENTIPAWN
-            else MAX_CENTIPAWN
-        )
-        centipawn = (
-            centipawn
-            if centipawn is not None and centipawn >= -1 * MAX_CENTIPAWN
-            else -1 * MAX_CENTIPAWN
-        )
+        centipawn = centipawn if centipawn is not None and centipawn <= MAX_CENTIPAWN else MAX_CENTIPAWN
+        centipawn = centipawn if centipawn is not None and centipawn >= -1 * MAX_CENTIPAWN else -1 * MAX_CENTIPAWN
     elif mate != 0:
         return MAX_CENTIPAWN * (1 if mate > 0 else -1)
     elif mate == 0:
@@ -427,24 +404,18 @@ def get_moves_with_evaluation(
     parallel_time: float = time()
     evaluation_pool = Pool()
     print(f"processes={evaluation_pool}")
-    moves_with_evaluation = evaluation_pool.map(
-        get_move_with_evaluation, moves_without_evaluation
-    )
+    moves_with_evaluation = evaluation_pool.map(get_move_with_evaluation, moves_without_evaluation)
     evaluation_pool.close()
     print(f"seconds={(time() - parallel_time)}")
     return moves_with_evaluation
 
 
-def get_move_quality(
-    opening: str, uci: str, best: str, win_percentage_delta: float, turn: str
-):
+def get_move_quality(opening: str, uci: str, best: str, win_percentage_delta: float, turn: str):
     if opening != "":
         return "book"
     if uci == best:
         return "best"
-    if (win_percentage_delta > 0 and turn == "white") or (
-        win_percentage_delta < 0 and turn == "black"
-    ):
+    if (win_percentage_delta > 0 and turn == "white") or (win_percentage_delta < 0 and turn == "black"):
         if abs(win_percentage_delta) > 30:
             return "blunder"
         elif abs(win_percentage_delta) > 20:
@@ -458,9 +429,7 @@ def get_move_quality(
 
 def get_moves(game: Game) -> list[dict]:
     moves_without_evaluation = get_moves_without_evaluation(game)
-    moves_with_evaluation: list[dict] = get_moves_with_evaluation(
-        moves_without_evaluation
-    )
+    moves_with_evaluation: list[dict] = get_moves_with_evaluation(moves_without_evaluation)
     moves: list[dict] = []
     for index, move_with_evaluation in enumerate(moves_with_evaluation):
         centipawn: int = move_with_evaluation.get("centipawn", 0)
@@ -479,9 +448,7 @@ def get_moves(game: Game) -> list[dict]:
             )
             break
         WIN_MULTIPLIER = -0.00368208
-        win_percentage: float = 50 + 50 * (
-            2 / (1 + exp(WIN_MULTIPLIER * centipawn)) - 1
-        )
+        win_percentage: float = 50 + 50 * (2 / (1 + exp(WIN_MULTIPLIER * centipawn)) - 1)
         win_percentage_delta = 0
         previous_move: dict = moves[index - 1] if index > 0 else {}
         win_percentage_before: float = previous_move.get("winPercentage", 50)
@@ -490,14 +457,8 @@ def get_moves(game: Game) -> list[dict]:
         ACCURACY_DELTA_MULTIPLIER = -0.04354415386753951
         ACCURACY_DELTA = -3.166924740191411
         win_percentage_delta = round(win_percentage_before - win_percentage, 2)
-        move_quality = get_move_quality(
-            opening, uci, best, win_percentage_delta, turn
-        )
-        accuracy = (
-            ACCURACY_MULTIPLIER
-            * exp(ACCURACY_DELTA_MULTIPLIER * win_percentage_delta)
-            + ACCURACY_DELTA
-        )
+        move_quality = get_move_quality(opening, uci, best, win_percentage_delta, turn)
+        accuracy = ACCURACY_MULTIPLIER * exp(ACCURACY_DELTA_MULTIPLIER * win_percentage_delta) + ACCURACY_DELTA
         accuracy = accuracy if accuracy <= 100 else 100
         moves.append(
             {
@@ -541,32 +502,18 @@ async def analyse_pgn(pgn_request_body: PgnRequestBody) -> dict:
     last_move: dict = moves[-1]
     end_phrase: str = last_move.get("phrase", "")
     # Opening
-    last_book_move: dict = list(
-        filter(lambda move: move.get("moveQuality") == "book", moves)
-    )[-1]
+    last_book_move: dict = list(filter(lambda move: move.get("moveQuality") == "book", moves))[-1]
     eco: str = last_book_move.get("eco", "")
     name: str = last_book_move.get("opening", "")
     pgn: str = last_book_move.get("pgn", "")
-    leave_book: str = (
-        "black" if last_book_move.get("turn", "") == "white" else "white"
-    )
-    leave_move: str = last_book_move.get("number", "") + (
-        1 if leave_book == "white" else 0
-    )
+    leave_book: str = "black" if last_book_move.get("turn", "") == "white" else "white"
+    leave_move: str = last_book_move.get("number", "") + (1 if leave_book == "white" else 0)
     # Accuracy
-    white_moves: list[dict] = list(
-        filter(lambda move: move.get("turn") == "white", moves)
-    )
-    white_accuracies: list = list(
-        map(lambda move: move.get("accuracy"), white_moves)
-    )
+    white_moves: list[dict] = list(filter(lambda move: move.get("turn") == "white", moves))
+    white_accuracies: list = list(map(lambda move: move.get("accuracy"), white_moves))
     white_accuracy: float = round(mean(white_accuracies), 2)
-    black_moves: list[dict] = list(
-        filter(lambda move: move.get("turn") == "black", moves)
-    )
-    black_accuracies: list = list(
-        map(lambda move: move.get("accuracy"), black_moves)
-    )
+    black_moves: list[dict] = list(filter(lambda move: move.get("turn") == "black", moves))
+    black_accuracies: list = list(map(lambda move: move.get("accuracy"), black_moves))
     black_accuracy: float = round(mean(black_accuracies), 2)
     return {
         "result": result,

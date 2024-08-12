@@ -1,0 +1,14 @@
+{
+  "name": "python",
+  "version": "1.0.0",
+  "description": "Python",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/hieudoanm.git",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "format": "make format",
+    "check": "make check"
+  }
+}

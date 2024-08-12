@@ -7,7 +7,13 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from 'react-icons/fa';
-import { FaAppStore, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa6';
+import {
+  FaAppStore,
+  FaChess,
+  FaGithub,
+  FaLinkedin,
+  FaTelegram,
+} from 'react-icons/fa6';
 
 type SocialMedia = {
   shown: boolean;
@@ -33,6 +39,14 @@ const socialMedias: SocialMedia[] = [
     name: 'Email',
     icon: <FaEnvelopeSquare className='inline' />,
     link: 'mailto:hieumdoan@gmail.com',
+    external: true,
+  },
+  {
+    shown: true,
+    id: 'chess',
+    name: 'Chess',
+    icon: <FaChess className='inline' />,
+    link: 'https://www.chess.com/member/thedarkknighttrilogy',
     external: true,
   },
   {

@@ -19,6 +19,9 @@ export type Incremental<T> =
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
     };
+export type RequireFields<T, K extends keyof T> = Omit<T, K> & {
+  [P in K]-?: NonNullable<T[P]>;
+};
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: { input: string; output: string };
@@ -64,7 +67,12 @@ export type Name = {
 export type Query = {
   __typename?: 'Query';
   countries?: Maybe<Array<Maybe<Country>>>;
+  country?: Maybe<Country>;
   health?: Maybe<Scalars['String']['output']>;
+};
+
+export type QueryCountryArgs = {
+  cca3: Scalars['String']['input'];
 };
 
 export type ResolverTypeWrapper<T> = Promise<T> | T;
@@ -292,6 +300,12 @@ export type QueryResolvers<
     Maybe<Array<Maybe<ResolversTypes['Country']>>>,
     ParentType,
     ContextType
+  >;
+  country?: Resolver<
+    Maybe<ResolversTypes['Country']>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryCountryArgs, 'cca3'>
   >;
   health?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
 };
