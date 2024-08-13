@@ -240,20 +240,18 @@ const buildOpeningsQuery = ({
     (result: Result) => `'${result}'`
   ).join(',');
   const query: string = `SELECT g."opening",
-o."pgn",
+g."opening_name",
 COUNT(*) as total,
 SUM(CASE WHEN g."${side}_result" IN (${winResults}) THEN 1 ELSE 0 END) as win,
 SUM(CASE WHEN g."${side}_result" IN (${drawResults}) THEN 1 ELSE 0 END) as draw,
 SUM(CASE WHEN g."${side}_result" IN (${lossResults}) THEN 1 ELSE 0 END) as loss
 FROM chess."game" as g
-JOIN chess."opening" as o
-ON g."opening" = o."name"
 WHERE g."opening" <> ''
 AND g."rated" = true
 AND g."rules" = '${variant}'
 AND g."time_class" = '${timeClass}'
 AND g."${side}_username" = '${username}'
-GROUP BY g."opening", o."pgn"
+GROUP BY g."opening", g."opening_name"
 ORDER BY total DESC
 LIMIT 10;`;
   logger.info({ username, side, limit }, `buildOpeningsQuery query=${query}`);

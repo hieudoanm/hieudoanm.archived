@@ -66,6 +66,7 @@ export type Openings = { white: OpeningCount[]; black: OpeningCount[] };
 
 export type OpeningCount = {
   opening: string;
+  opening_name: string;
   pgn: string;
   total: number;
   win: number;

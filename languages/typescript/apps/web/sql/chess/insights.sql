@@ -19,6 +19,22 @@ AND c."white_username" = 'hikaru'
 GROUP BY c."opening", o."pgn"
 ORDER BY total DESC
 LIMIT 10;
+
+SELECT g."opening",
+g."opening_name",
+COUNT(*) as total,
+SUM(CASE WHEN g."white_result" IN ('win') THEN 1 ELSE 0 END) as win,
+SUM(CASE WHEN g."white_result" IN ('agreed','fiftymove') THEN 1 ELSE 0 END) as draw,
+SUM(CASE WHEN g."white_result" IN ('timeout') THEN 1 ELSE 0 END) as loss
+FROM chess."game" as g
+WHERE g."opening" <> ''
+AND g."rated" = true
+AND g."rules" = 'chess'
+AND g."time_class" = 'blitz'
+AND g."white_username" = 'chefshouse'
+GROUP BY g."opening", g."opening_name"
+ORDER BY total DESC
+LIMIT 10;
 -- Moves per Piece (hikaru)
 SELECT
 SUM(CASE WHEN c."white_username" = 'hikaru' THEN c."white_pawn" ELSE c."black_pawn" END) as pawn,

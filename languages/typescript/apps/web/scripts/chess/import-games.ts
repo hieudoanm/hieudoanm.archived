@@ -1,5 +1,6 @@
 import { PrismaClient, Result, TimeClass, Variant } from '@prisma/client';
 import axios from 'axios';
+import { Chess } from 'chess.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -34,6 +35,132 @@ const getGames = async (archive: string): Promise<Game[]> => {
   }
 };
 
+const importGame = async (prismaClient: PrismaClient, game: Game) => {
+  try {
+    const {
+      uuid,
+      url,
+      pgn = '',
+      time_control: timeControl,
+      time_class: timeClass,
+      end_time: endTime,
+      rated,
+      tcn,
+      initial_setup: initialSetup,
+      rules,
+      fen,
+      accuracies: { white: whiteAccuracy = 0, black: blackAccuracy = 0 } = {
+        white: 0,
+        black: 0,
+      },
+      white: {
+        username: whiteUsername = '',
+        result: whiteResult = '',
+        rating: whiteRating = 0,
+      } = { username: '', result: '', rating: 0 },
+      black: {
+        username: blackUsername = '',
+        result: blackResult = '',
+        rating: blackRating = 0,
+      } = { username: '', result: '', rating: 0 },
+    } = game;
+    const whiteResult2: Result =
+      whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
+    const blackResult2: Result =
+      blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
+    // PGN
+    let opening: string = '';
+    let openingName: string = '';
+    let whiteCastling = '';
+    let blackCastling = '';
+    let whiteKing = 0;
+    let blackKing = 0;
+    let whiteQueen = 0;
+    let blackQueen = 0;
+    let whiteRook = 0;
+    let blackRook = 0;
+    let whiteBishop = 0;
+    let blackBishop = 0;
+    let whiteKnight = 0;
+    let blackKnight = 0;
+    let whitePawn = 0;
+    let blackPawn = 0;
+    if (pgn) {
+      const chess = new Chess();
+      chess.loadPgn(pgn);
+      const header: Record<string, string> = chess.header();
+      opening = header['ECO'];
+      openingName = header['ECOUrl'].split('/').at(-1) ?? '';
+      const history: string[] = chess.history();
+      for (const [index, move] of Object.entries(history)) {
+        if (parseInt(index) % 2 === 0) {
+          if (move === 'O-O') whiteCastling = 'short';
+          else if (move === 'O-O-O') whiteCastling = 'long';
+          else if (move.at(0) === 'K') whiteKing += 1;
+          else if (move.at(0) === 'Q') whiteQueen += 1;
+          else if (move.at(0) === 'R') whiteRook += 1;
+          else if (move.at(0) === 'B') whiteBishop += 1;
+          else if (move.at(0) === 'N') whiteKnight += 1;
+          else whitePawn += 1;
+        } else if (parseInt(index) % 2 === 1) {
+          if (move === 'O-O') blackCastling = 'short';
+          else if (move === 'O-O-O') blackCastling = 'long';
+          else if (move.at(0) === 'K') blackKing += 1;
+          else if (move.at(0) === 'Q') blackQueen += 1;
+          else if (move.at(0) === 'R') blackRook += 1;
+          else if (move.at(0) === 'B') blackBishop += 1;
+          else if (move.at(0) === 'N') blackKnight += 1;
+          else blackPawn += 1;
+        }
+      }
+    }
+    const body = {
+      uuid,
+      url,
+      pgn,
+      timeControl,
+      timeClass: timeClass as TimeClass,
+      endTime: new Date(endTime * 1000),
+      rated,
+      tcn,
+      initialSetup,
+      rules: rules as Variant,
+      fen,
+      whiteAccuracy,
+      whiteUsername: whiteUsername.toLowerCase(),
+      whiteRating,
+      whiteResult: whiteResult2,
+      blackAccuracy,
+      blackUsername: blackUsername.toLowerCase(),
+      blackRating,
+      blackResult: blackResult2,
+      whiteCastling,
+      whiteKing,
+      whiteQueen,
+      whiteRook,
+      whiteBishop,
+      whiteKnight,
+      whitePawn,
+      blackCastling,
+      blackKing,
+      blackQueen,
+      blackRook,
+      blackBishop,
+      blackKnight,
+      blackPawn,
+      opening,
+      openingName,
+    };
+    await prismaClient.game.upsert({
+      create: body,
+      update: body,
+      where: { uuid },
+    });
+  } catch (error) {
+    console.error(`importGame error=${error}`);
+  }
+};
+
 const getArchives = async (prismaClient: PrismaClient, username: string) => {
   try {
     console.log(`username=${username}`);
@@ -45,67 +172,7 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
       const games = await getGames(archive);
       console.info(`archive=${archive} games=${games.length}`);
       for (const game of games) {
-        const {
-          uuid,
-          url,
-          pgn,
-          time_control: timeControl,
-          time_class: timeClass,
-          end_time: endTime,
-          rated,
-          tcn,
-          initial_setup: initialSetup,
-          rules,
-          fen,
-          accuracies: { white: whiteAccuracy = 0, black: blackAccuracy = 0 } = {
-            white: 0,
-            black: 0,
-          },
-          white: {
-            username: whiteUsername = '',
-            result: whiteResult = '',
-            rating: whiteRating = 0,
-          } = { username: '', result: '', rating: 0 },
-          black: {
-            username: blackUsername = '',
-            result: blackResult = '',
-            rating: blackRating = 0,
-          } = { username: '', result: '', rating: 0 },
-        } = game;
-        const whiteResult2: Result =
-          whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
-        const blackResult2: Result =
-          blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
-        const body = {
-          uuid,
-          url,
-          pgn,
-          timeControl,
-          timeClass: timeClass as TimeClass,
-          endTime: new Date(endTime * 1000),
-          rated,
-          tcn,
-          initialSetup,
-          rules: rules as Variant,
-          fen,
-          whiteAccuracy,
-          blackAccuracy,
-          whiteUsername: whiteUsername.toLowerCase(),
-          blackUsername: blackUsername.toLowerCase(),
-          whiteRating,
-          blackRating,
-          whiteResult: whiteResult2,
-          blackResult: blackResult2,
-        };
-        try {
-          await prismaClient.game.upsert({
-            create: body,
-            update: body,
-            where: { uuid },
-          });
-        } catch (error) {
-          console.error('chessGame.upsert error', error, body);
-        }
+        importGame(prismaClient, game);
       }
     }
   } catch (error) {

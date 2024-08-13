@@ -19,7 +19,7 @@ const InsightsOpeningsBySide: React.FC<{ openings: OpeningCount[] }> = ({
           </tr>
         </thead>
         <tbody>
-          {openings.map(({ opening, pgn, total, win, draw, loss }) => {
+          {openings.map(({ opening, opening_name, total, win, draw, loss }) => {
             const winPercentage: number = Number.parseFloat(
               ((win / total) * 100).toFixed(2)
             );
@@ -30,9 +30,9 @@ const InsightsOpeningsBySide: React.FC<{ openings: OpeningCount[] }> = ({
               ((loss / total) * 100).toFixed(2)
             );
             return (
-              <tr key={`${opening}-${pgn}`}>
+              <tr key={`${opening}-${opening_name}`}>
                 <td className='p-0'>{opening}</td>
-                <td>{pgn}</td>
+                <td>{opening_name}</td>
                 <td align='right'>{total}</td>
                 <td>
                   <div className='grid w-full grid-cols-3'>
