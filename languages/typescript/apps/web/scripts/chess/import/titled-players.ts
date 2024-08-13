@@ -279,9 +279,9 @@ const main = async () => {
     console.info('========='.repeat(5));
     console.info(title, newUsernames.length);
     const chunkUsernames = chunk(newUsernames, 10);
-    for (const usernames of chunkUsernames) {
-      console.info(title, usernames);
-      await getPlayers(usernames);
+    for (const players of chunkUsernames) {
+      console.info(title, players);
+      await getPlayers(players);
     }
   }
 };

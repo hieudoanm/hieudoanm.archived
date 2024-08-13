@@ -52,15 +52,6 @@ export const getStaticProps = async (
   return { props: { mdxSource } };
 };
 
-// export const getServerSideProps = async (
-//   context: GetServerSidePropsContext
-// ) => {
-//   const { id } = context.query;
-//   const source: string = readFileSync(`./docs/${id}/README.md`, 'utf-8');
-//   const mdxSource = await serialize(source);
-//   return { props: { mdxSource } };
-// };
-
 export const dynamic = 'force-static';
 
 export default NotePage;

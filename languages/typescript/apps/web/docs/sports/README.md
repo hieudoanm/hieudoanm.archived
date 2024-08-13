@@ -20,22 +20,23 @@
 
 ### 2800
 
-| No    | Continent | Country       | Name                   | Birth | Peak | Year | World Champion | World Rapid | World Blitz | World Fisher | World Cup |
-| ----- | --------- | ------------- | ---------------------- | ----- | ---- | ---- | -------------- | ----------- | ----------- | ------------ | --------- |
-| 1     | Europe    | Norway        | Magnus Carlsen         | 1990  | 2882 | 2014 | 5              | 5           | 7           | 0            | 1         |
-| 2     | Europe    | Russia        | Garry Kasparov         | 1963  | 2851 | 1999 | 6              | 0           | 0           | 0            | 0         |
-| 3     | America   | United States | Fabiano Caruana        | 1992  | 2844 | 2014 | 0              | 0           | 0           | 0            | 0         |
-| 4     | America   | United States | Levon Aronian          | 1982  | 2830 | 2014 | 0              | 0           | 1           | 0            | 2         |
-| 5     | America   | United States | Wesley So              | 1993  | 2822 | 2017 | 0              | 0           | 0           | 1            | 0         |
-| 6     | Asia      | Azerbaijan    | Shakhriyar Mamedyarov  | 1985  | 2820 | 2018 | 0              | 1           | 0           | 0            | 0         |
-| 7     | Europe    | France        | Maxime Vachier-Lagrave | 1990  | 2819 | 2016 | 0              | 0           | 1           | 0            | 0         |
-| 8-9   | Asia      | India         | Viswanathan Anand      | 1969  | 2817 | 2011 | 5              | 1           | 0           | 0            | 0         |
-| 8-9   | Europe    | Russia        | Vladimir Kramnik       | 1975  | 2817 | 2016 | 3              | 0           | 0           | 0            | 1         |
-| 10-12 | Europe    | Bulgaria      | Veselin Topalov        | 1975  | 2816 | 2015 | 1              | 0           | 0           | 0            | 0         |
-| 10-12 | America   | United States | Hikaru Nakamura        | 1987  | 2816 | 2015 | 0              | 0           | 0           | 1            | 0         |
-| 10-12 | Asia      | China         | Ding Liren             | 1992  | 2816 | 2018 | 1              | 0           | 0           | 0            | 0         |
-| 13    | Europe    | Russia        | Alexander Grischuk     | 1983  | 2810 | 2014 | 0              | 0           | 3           | 0            | 0         |
-| 14    | Europe    | France        | Alireza Firouzja       | 2003  | 2804 | 2021 | 0              | 0           | 0           | 0            | 0         |
+| No    | Continent | Country       | Name                   | Birth | Live   | Peak | Year | World Champion | World Rapid | World Blitz | World Fisher | World Cup |
+| ----- | --------- | ------------- | ---------------------- | ----- | ------ | ---- | ---- | -------------- | ----------- | ----------- | ------------ | --------- |
+| 1     | Europe    | Norway        | Magnus Carlsen         | 1990  | 2889.2 | 2882 | 2014 | 5              | 5           | 7           | 0            | 1         |
+| 2     | Europe    | Russia        | Garry Kasparov         | 1963  | 2856.7 | 2851 | 1999 | 6              | 0           | 0           | 0            | 0         |
+| 3     | America   | United States | Fabiano Caruana        | 1992  | 2851.3 | 2844 | 2014 | 0              | 0           | 0           | 0            | 0         |
+| 4     | America   | United States | Levon Aronian          | 1982  | 2835.5 | 2830 | 2014 | 0              | 0           | 1           | 0            | 2         |
+| 5     | America   | United States | Wesley So              | 1993  | 2824.5 | 2822 | 2017 | 0              | 0           | 0           | 1            | 0         |
+| 6     | Asia      | Azerbaijan    | Shakhriyar Mamedyarov  | 1985  | 2826.2 | 2820 | 2018 | 0              | 1           | 0           | 0            | 0         |
+| 7     | Europe    | France        | Maxime Vachier-Lagrave | 1990  | 2819.3 | 2819 | 2016 | 0              | 0           | 1           | 0            | 0         |
+| 8-9   | Asia      | India         | Viswanathan Anand      | 1969  | 2820.7 | 2817 | 2011 | 5              | 1           | 0           | 0            | 0         |
+| 8-9   | Europe    | Russia        | Vladimir Kramnik       | 1975  | 2817.8 | 2817 | 2016 | 3              | 0           | 0           | 0            | 1         |
+| 10-12 | Europe    | Bulgaria      | Veselin Topalov        | 1975  | 2826.5 | 2816 | 2015 | 1              | 0           | 0           | 0            | 0         |
+| 10-12 | America   | United States | Hikaru Nakamura        | 1987  | 2819.0 | 2816 | 2015 | 0              | 0           | 0           | 1            | 0         |
+| 10-12 | Asia      | China         | Ding Liren             | 1992  | 2816.9 | 2816 | 2018 | 1              | 0           | 0           | 0            | 0         |
+| 13    | Europe    | Russia        | Alexander Grischuk     | 1983  | 2813.6 | 2810 | 2014 | 0              | 0           | 3           | 0            | 0         |
+| 14    | Europe    | France        | Alireza Firouzja       | 2003  | 2804.0 | 2804 | 2021 | 0              | 0           | 0           | 0            | 0         |
+| 15    | Europe    | Netherlands   | Anish Giri             | 1994  | 2802.8 | 2798 | 2015 | 0              | 0           | 0           | 0            | 0         |
 
 - `Magnus Carlsen` are the most dominant one, with 18 world titles in his name (blitz and rapid are new events starting from 2012).
 - `Fabiano Caruana` and `Alireza Firouzja` are the `youngest` one to cross the **2800** mark but does not win any `world titles`.
