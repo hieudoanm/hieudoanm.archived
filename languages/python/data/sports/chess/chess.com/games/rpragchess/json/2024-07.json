@@ -739,6 +739,10 @@
     "time_control": "60",
     "end_time": 1720285018,
     "rated": true,
+    "accuracies": {
+      "white": 86.74,
+      "black": 76.54
+    },
     "tcn": "lB!Tgv0ScM3VMFZRbl2MFwTNmC92ks5ZftWOdm70iyXPlf6XfuNwpwZTvlYInDTZlvZ5BJ5ZtAZTCKTJAJSJuL09LR8ZRXZQXR1TjzTKDKQYzIPIab45eg90mO",
     "uuid": "9396a7b2-3bb8-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -874,6 +878,10 @@
     "time_control": "60",
     "end_time": 1720285357,
     "rated": true,
+    "accuracies": {
+      "white": 80.06,
+      "black": 90.93
+    },
     "tcn": "gvYQowZJfo!Teg2Ult92bl8!mC6EpxEvdv0Kvm5Zfe98jrWGiyZIcqISCJSBmdQJqjBQlv7Ydl47lsKCvBTNsICuBHunInYwj2!2nwNwe878gnwLoJQzJXzkackzcYztnv8uvoumofLwfgtDHRDx",
     "uuid": "54205c67-3bb9-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -932,6 +940,10 @@
     "time_control": "60",
     "end_time": 1720285577,
     "rated": true,
+    "accuracies": {
+      "white": 83.47,
+      "black": 97.87
+    },
     "tcn": "jrZRcj5Zgv!Tmu2Ufm92lB8!egXPkA6Xbs0Sdk70adYIBJSJAJWOfePHuCHzsy0CmtCEpxENtmTJvKNMKZJumvukj2Xv",
     "uuid": "e88d08a6-3bb9-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -990,6 +1002,10 @@
     "time_control": "60",
     "end_time": 1720285811,
     "rated": true,
+    "accuracies": {
+      "white": 75.82,
+      "black": 62.33
+    },
     "tcn": "gvZRlB!Tbl2UmC92ft8!eg5Qfe0KksTNpx3Vtf7TlANDAuQ0uE6ExEDScu47dlUMad0UfAYQArSDvp98pfVNENDNrANDfwMEwLRJBKUKuDKAlkJCd7T7eCAPDY7ZYPWPCE8egpZYnD!9L2YRk3Rd3?90?80T2NTLEM",
     "uuid": "589dff95-3bba-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1079,6 +1095,10 @@
     "time_control": "60",
     "end_time": 1720286156,
     "rated": true,
+    "accuracies": {
+      "white": 79.07,
+      "black": 90.24
+    },
     "tcn": "mCYQlBZJCJQJft5Qks2Upx92gv6LegLtdt!Tfe8!bl0SvKQKBKTZlv46cM7Pjz6Aac96xFPQFNAscsQsts6sNU3UebZKvK2KzHskiykibciyow!2cYKY",
     "uuid": "44111d90-3bbb-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1106,6 +1126,10 @@
     "time_control": "60",
     "end_time": 1720286303,
     "rated": true,
+    "accuracies": {
+      "white": 84.75,
+      "black": 78.93
+    },
     "tcn": "mCYQbsZJdmJBsd0Kgv9Row!0foQIeg5Qlt6Svl3NnD1TlARYiyNFDLSAtAFwpwYGdnQzntztkt0Qgn70fh86hF01clGlml?FwF7?ahQzov6YFNYPhgPGjr?3gU1!ne!?lm3VUwXPenV3noWOox3VxFV3mo?!ol!9wU3VUw90vm01leV3eg19wU9?ge3VUoV3ow3VegV3ge?9el9?md3VloV3wU?9ol91Fw19wn9?ne3NdN?NU2NhemhpmdphlehNemNxmlxvdcvfcjftltztjktnkjnC21Gz1ZPHZXCRyHRXHOXGOWBtW~tl45GX5XzGXH",
     "uuid": "699eea62-3bbb-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1133,6 +1157,10 @@
     "time_control": "60",
     "end_time": 1720286418,
     "rated": true,
+    "accuracies": {
+      "white": 78.59,
+      "black": 76.77
+    },
     "tcn": "mCZRgv!TlBTCftRJegCTkA0Sbs90cM3VMF8!AIXPjzWGiqGzqz4adaPIzI5Qad6ZtbTNdt2UF070fe95sJ07JsZ6BJQztuzJsJ7JuV6XbU1UVUN2pF59vKJIKEIJEV!?euJNUMNMFMXJus2LVE?2sY2UnDLBowULET9?T3LU3T?hgnhpnuBLutLwTZwLZKUNY3",
     "uuid": "c13f9fe0-3bbb-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1160,6 +1188,10 @@
     "time_control": "60",
     "end_time": 1720286459,
     "rated": true,
+    "accuracies": {
+      "white": 78.41,
+      "black": 91.45
+    },
     "tcn": "oE0KlBKCBJZRbs6EsC!TdB5Zfo90clELlsTCoC0TBtZItHLZHAXHAzWGsT7T",
     "uuid": "0533dc87-3bbc-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1187,6 +1219,10 @@
     "time_control": "60",
     "end_time": 1720286546,
     "rated": true,
+    "accuracies": {
+      "white": 79.72,
+      "black": 78.01
+    },
     "tcn": "lBZJgv!TcM0SMT90mu0Tft8!egYIks5QblSKBKQKvKTKt3!3dN3!NK98KwJBsBIBuB7BlvBEacEwpw6SjrSJcY46fc6YcY8mvM2UYZJQZ1mi10ijMSjr02!?2UWGnDGyDLyqLTqiT1i~gprvUV",
     "uuid": "1da44598-3bbc-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1214,6 +1250,10 @@
     "time_control": "60",
     "end_time": 1720286649,
     "rated": true,
+    "accuracies": {
+      "white": 83.81,
+      "black": 93.33
+    },
     "tcn": "gvYImC5QfH2Ueg92fe0Kks!0ltZRcu8!px3Vbl1LjzLDuD9DzIRIHA!3abXPdm7Rlf6SAH49fpUMbd0UtBIBHQRQsBKBmlQIdcI0cQUKvK2KnvDTecSZQYKYcY0RYWT1pfZSWOSAOyPHyz1WzjWqxFqtleMECKRUFNUNvD9DfwtwewDf",
     "uuid": "51805516-3bbc-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1303,6 +1343,10 @@
     "time_control": "60",
     "end_time": 1720287034,
     "rated": true,
+    "accuracies": {
+      "white": 83.78,
+      "black": 93.92
+    },
     "tcn": "mCYIgv0SfAZJCJSJAH5Qeg!TlB90BI0IfeTCcuIueu8!bsCTut6Ltl7Pab47vBQBlBLkdkPBpxBKHt98smTCbc3VkdKTdfTjcbjimDClfdlbDNildE8egplMEBMNBzNKowbszFsdF7K87JdntLempg2ULZ8u",
     "uuid": "2d5d94b3-3bbd-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1330,6 +1374,10 @@
     "time_control": "60",
     "end_time": 1720287101,
     "rated": true,
+    "accuracies": {
+      "white": 75.53,
+      "black": 91.98
+    },
     "tcn": "lBYIBI!Tgv0Sow9IfoTCmuZJeg5Qbl1LlCLCvB3NiqNFjzIPwEFxoh7MnDMUDLSLBL6SLF?F",
     "uuid": "76163877-3bbd-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1388,6 +1436,10 @@
     "time_control": "60",
     "end_time": 1720287308,
     "rated": true,
+    "accuracies": {
+      "white": 83.38,
+      "black": 75.67
+    },
     "tcn": "lBYQgvZJow0Sfo1Leg!TkA9Rbs8!cDTCAJSJDR7Rmu5ZabZTdk6SjzCsksTCskWGzHQHbHRQkQXQHP96fc45P565vKLDoCJCwD5jcQSxQcjicdGyBJyqKAxZgo!1AK10JR0SKAZHdBHARZiaZ~AfowfHBRSL7M",
     "uuid": "e6be65b8-3bbd-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1446,6 +1498,10 @@
     "time_control": "60",
     "end_time": 1720287415,
     "rated": true,
+    "accuracies": {
+      "white": 97.56,
+      "black": 76.12
+    },
     "tcn": "mCYQgvZJCJQJlB6Eft5Qks0SpxENcD9RDR7Rbl!0egNUtU3UfeRYlf8!fuXHvM98dE!9EF0!M3",
     "uuid": "3bfbb04d-3bbe-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1504,6 +1560,10 @@
     "time_control": "60",
     "end_time": 1720287544,
     "rated": true,
+    "accuracies": {
+      "white": 82.94,
+      "black": 72.99
+    },
     "tcn": "oE0KlBKCBJ9Ibs70foCunuZRpx1LgvLExE6Edt!Tcl5Zec86vBZKtH65BQKQJQXPoxExhx0Sxw2UwvTEvDEuDCSxHOx6O676lu?8uIPICy80sH0SyW",
     "uuid": "70714124-3bbe-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1562,6 +1622,10 @@
     "time_control": "60",
     "end_time": 1720287703,
     "rated": true,
+    "accuracies": {
+      "white": 76.67,
+      "black": 86.55
+    },
     "tcn": "nDYQgvZJow3Nfo!VegVLltNFmCJCtC7PfnLwdeFxcuPjuBjHbsHNpwxonoNvemvmom6Eml5ZabXPiy0KDK9IyGIBlB80goESsdZKduPHkAWOAHOHba?7B707ukQIku7YudYQdsHzsdQHdu4Gadzrd7GiofKQ74",
     "uuid": "d2361756-3bbe-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1620,6 +1684,10 @@
     "time_control": "60",
     "end_time": 1720287904,
     "rated": true,
+    "accuracies": {
+      "white": 88.6,
+      "black": 80.67
+    },
     "tcn": "mCYIgv0SlBIBvB5QbsWOBQXQftZJeg!Tdv90cD8!fe6XCKTZvx2UDV98sm09mD45ksQIemJBsAXQaeOGV9Z9xVGypF5XFNUMDxMExM",
     "uuid": "5569e494-3bbf-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1647,6 +1715,10 @@
     "time_control": "60",
     "end_time": 1720288004,
     "rated": true,
+    "accuracies": {
+      "white": 79.56,
+      "black": 70.66
+    },
     "tcn": "mCZRgv5ZlB0KftKBvB!Tbs2Ueg92nD8!ghYQclZIdvItktTZvn7PluZIadPOnk98DL6ZLT29klISBSZSuV!?V989lV9!fDUMDn!UVNOPtB48NvQInlIBlBPjBRMEvwUTwKjnsJSJK8?2RT",
     "uuid": "7a5f1a74-3bbf-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -1674,6 +1746,10 @@
     "time_control": "60",
     "end_time": 1720288084,
     "rated": true,
+    "accuracies": {
+      "white": 75.46,
+      "black": 73.44
+    },
     "tcn": "owYQfoZJnD!Tgv2Ueg92lt8!bsJBsbQImCBubs5QcuQBgh6SdlTJug46aeXPeS1SvM3VMSBSsJSBks0SJuBLoC7ZwELFgnUMnFMFlnZ0DL0MpxSLuL!?ho68nF9LFMLMCLVNxFMELENEow8uwEutfntlnl",
     "uuid": "b6953a35-3bbf-11ef-b0b7-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",

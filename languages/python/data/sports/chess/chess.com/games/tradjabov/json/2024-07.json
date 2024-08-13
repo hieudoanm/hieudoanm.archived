@@ -2441,6 +2441,10 @@
     "time_control": "180",
     "end_time": 1721203855,
     "rated": true,
+    "accuracies": {
+      "white": 84.53,
+      "black": 92.41
+    },
     "tcn": "gv!Tow2Ufo92egYIkA5Qbs7Plt8!syPYyIZJAJTJIC97ab6LdyJPyrQGrqLCqGCQcDYZbc2jvKjKoQXQGKPJDV1TKC45ck5zCv75fczbgobcVc5PcuPOuI!1vCZSCF3NFAJYADY8DB8YIWYHBuHWuVSJnvOiV3193?91?3183U8ZkiJioniJpFWHwENEUETLEMJBnfBafnaKFNHBmuBSMUKpnfphfnLDuChpnfSBUEZYNVpmfgBvghmp",
     "uuid": "3296414b-4413-11ef-93b6-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",

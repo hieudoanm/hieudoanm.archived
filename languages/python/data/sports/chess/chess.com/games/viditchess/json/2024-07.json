@@ -101,6 +101,10 @@
     "time_control": "180+1",
     "end_time": 1719934868,
     "rated": true,
+    "accuracies": {
+      "white": 85.7,
+      "black": 87.58
+    },
     "tcn": "owZJgv2Ufo92lB5Zeg!TcD8!iyYIksXPyG6Xdy76blXQyq98vKZKDK0SfcIAjrPHGO6ZrAHAcb29qGTEKD90GYZYDY86YGETGz!9bj98z080jXTZmC0RCKR0nD07wE6YXz45ab5PzPWPDLPHLS1SEMYWox70baZPlvPyaqWOgnOPnuHzszPzvlAslrskulzAxfk~rcABqtBFcrFpluQZrByjtljAfApx",
     "uuid": "555cafd6-3888-11ef-9fac-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
@@ -129,6 +133,10 @@
     "time_control": "180+1",
     "end_time": 1719935844,
     "rated": true,
+    "accuracies": {
+      "white": 91.15,
+      "black": 91.39
+    },
     "tcn": "mCYIgvZRfA5Qeg!Tfe6EpxENks0SAH7PiyWOHf90lt8!blRJCJSJyGPYdy98ow0Re848foNUtBIBsBQzlrzkaikecMevov8egoUtiatfopfHyiYkrleaiaTCvCJCaeHQeu3VMDRzjrzlulkrDuQHBJHtJRrJlztHzBJBuB1TwE!1pw1SwDSJBjJRDCRSjqHQCu2MnvQHunS1nw1UxFTLFMVMvDMDwDLEDEUTEDTSDuHQuB",
     "uuid": "9ce302e6-388a-11ef-9fac-6cfe544c0428",
     "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
