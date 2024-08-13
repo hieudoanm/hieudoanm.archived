@@ -10,41 +10,17 @@
         "results": {
           "type": "array",
           "items": {
-            "type": [
-              "number",
-              "string",
-              "boolean",
-              "object",
-              "array",
-              "null"
-            ]
+            "type": ["number", "string", "boolean", "object", "array", "null"]
           }
         },
         "syllables": {
-          "type": [
-            "number",
-            "string",
-            "boolean",
-            "object",
-            "array",
-            "null"
-          ]
+          "type": ["number", "string", "boolean", "object", "array", "null"]
         },
         "pronunciation": {
-          "type": [
-            "number",
-            "string",
-            "boolean",
-            "object",
-            "array",
-            "null"
-          ]
+          "type": ["number", "string", "boolean", "object", "array", "null"]
         },
         "frequency": {
-          "type": [
-            "number",
-            "null"
-          ],
+          "type": ["number", "null"],
           "default": 0
         },
         "createdAt": {
@@ -232,13 +208,7 @@
         "timeClass": {
           "type": "string",
           "default": "classical",
-          "enum": [
-            "daily",
-            "classical",
-            "rapid",
-            "blitz",
-            "bullet"
-          ]
+          "enum": ["daily", "classical", "rapid", "blitz", "bullet"]
         },
         "timeControl": {
           "type": "string",
@@ -406,11 +376,7 @@
         "endPhrase": {
           "type": "string",
           "default": "endgame",
-          "enum": [
-            "opening",
-            "middlegame",
-            "endgame"
-          ]
+          "enum": ["opening", "middlegame", "endgame"]
         },
         "createdAt": {
           "type": "string",

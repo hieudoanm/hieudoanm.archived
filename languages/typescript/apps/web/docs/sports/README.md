@@ -199,6 +199,17 @@
 | 2029 |              |                |              |                       |              |                    |                   |                          |                   |                     |             |                      |                     |               |            |
 | 2030 |              |                |              |                       |              |                    |                   |                          |                   |                     |             |                      |                     |               |            |
 
+### Managers
+
+| Name            | Country  |
+| --------------- | -------- |
+| Zinédine Zidane | France   |
+| Jürgen Klopp    | Germany  |
+| carlo ancelotti | Italy    |
+| José Mourinho   | Portugal |
+| Alex Ferguson   | Scotland |
+| pep guardiola   | Spain    |
+
 ### Players
 
 - Birth Year: 1970 - now
@@ -430,6 +441,7 @@
 | Club          | Europe (UEFA)            | Spain     | Barcelona           | `RW`     | Lionel Messi (10)           |                           |                       | Lionel Messi (10)          | Pedro (17)             | Lionel Messi (10)           |                             |       |
 | Club          | Europe (UEFA)            | Spain     | Barcelona           | `LW`     |                             |                           |                       | Thierry Henry (14)         | David Villa (7)        | Neymar (11)                 |                             |       |
 | Club          | Europe (UEFA)            | Spain     | Barcelona           | `ST`     |                             |                           |                       | Samuel Eto'o (9)           | Lionel Messi (10)      | Luis Suárez (9)             |                             |       |
+| Club          | Europe (UEFA)            | Spain     | Real Madrid         | Manager  |                             |                           |                       |                            |                        |                             |                             |       |
 | Club          | Europe (UEFA)            | Spain     | Real Madrid         | `GK`     | Iker Casillas (1)           |                           | Iker Casillas (1)     | Iker Casillas (1)          | Keylor Navas (1)       | Thibaut Courtois (1)        | Thibaut Courtois (1)        |       |
 | Club          | Europe (UEFA)            | Spain     | Real Madrid         | `RB`     | Dani Carvajal (2)           |                           |                       | Sergio Ramos (4)           | Álvaro Arbeloa (17)    | Dani Carvajal (15)          | Dani Carvajal (2)           |       |
 | Club          | Europe (UEFA)            | Spain     | Real Madrid         | `CB`     | Pepe (3)                    |                           |                       |                            | Pepe (3)               | Raphaël Varane (2)          |                             |       |
