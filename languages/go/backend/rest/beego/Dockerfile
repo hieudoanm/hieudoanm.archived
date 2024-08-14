@@ -1,4 +1,4 @@
-FROM golang:1.22.6
+FROM golang:1.23.0
 
 LABEL maintainer="hieumdoan@gmail.com"
 LABEL version="1.0"
