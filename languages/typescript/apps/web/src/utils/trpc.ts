@@ -3,13 +3,6 @@ import { createTRPCNext } from '@trpc/next';
 import type { AppRouter } from '../server/routers/_app';
 
 const getBaseUrl = (): string => {
-  if (typeof window !== 'undefined') {
-    if (window.location.host.includes('https://hieudoanm.github.io')) {
-      return 'https://hieudoanm.vercel.app';
-    }
-    return ''; // browser should use relative path
-  }
-
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL}`;
   }
