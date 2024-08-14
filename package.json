@@ -21,7 +21,7 @@
     "turbo": "2.0.12"
   },
   "resolutions": {
-    "axios": "1.7.3",
+    "axios": "1.7.4",
     "debug": "4.3.6",
     "postcss": "8.4.41",
     "semver": "7.6.3",
