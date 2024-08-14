@@ -4999,10 +4999,10 @@
   dependencies:
     tslib "2.6.3"
 
-"@nestjs/throttler@6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/throttler/-/throttler-6.1.0.tgz#ce78f5d24078862809e94a55015e74285df2f53a"
-  integrity sha512-MzwameXplM8FhQiN79U2zEIZQNEM0BM9kbOigriFSzdNCEfyIoNKHhGFMfsTvMxP119Ydi0Zvkt3W2CQUSIH5Q==
+"@nestjs/throttler@6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/throttler/-/throttler-6.1.1.tgz#a29f8ea74fe750a19dbb25ff99bcb658ca0ac691"
+  integrity sha512-TTh6Ptwep+URJo/D2PNZ5/77HM9N9jXi7RSs8FOnjrW8MhWixdRrNkxMGERObQicEj8PTYyV+p6gmxHEBwJRrg==
 
 "@netlify/functions@^2.8.0":
   version "2.8.1"
