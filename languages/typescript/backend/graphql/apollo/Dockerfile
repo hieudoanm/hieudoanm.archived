@@ -7,8 +7,8 @@ WORKDIR /home/node/app
 
 COPY . /home/node/app
 
-RUN yarn install
-RUN yarn build
+RUN pnpm install
+RUN pnpm build
 
 FROM node:20.16.0-alpine
 

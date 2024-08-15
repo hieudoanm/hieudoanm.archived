@@ -30,10 +30,10 @@ jobs:
         with:
           node-version: "20.16.0"
       - name: Install Dependencies
-        run: yarn install --network-timeout 86400000
+        run: pnpm install --network-timeout 86400000
         working-directory: languages/typescript/apps/web
       # - name: Set Up Prisma
-      #   run: yarn prisma format && yarn prisma generate
+      #   run: pnpm prisma format && pnpm prisma generate
       #   working-directory: languages/typescript/apps/web
       #   env:
       #     TITLE: ${{ matrix.titles.title }}

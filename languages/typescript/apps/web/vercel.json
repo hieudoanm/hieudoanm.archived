@@ -1,8 +1,8 @@
 {
-  "buildCommand": "PLATFORM=\"vercel\" yarn build",
+  "buildCommand": "PLATFORM=\"vercel\" pnpm build",
   "cleanUrls": true,
   "framework": "nextjs",
-  "installCommand": "yarn install",
+  "installCommand": "pnpm install",
   "trailingSlash": false,
   "regions": ["sin1"],
   "headers": [

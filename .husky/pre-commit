@@ -1,5 +1,5 @@
 #!/bin/sh
 
-yarn lint
-yarn format
+pnpm lint
+pnpm format
 git add -A

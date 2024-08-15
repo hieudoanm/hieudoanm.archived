@@ -10,11 +10,11 @@
   "scripts": {
     "format": "prettier --cache --write .",
     "serve": "webpack serve --mode=development",
-    "dev": "concurrently \"yarn codegen\" \"yarn webpack:watch\" \"yarn dev:nodemon\"",
+    "dev": "concurrently \"pnpm codegen\" \"pnpm webpack:watch\" \"pnpm dev:nodemon\"",
     "dev:nodemon": "nodemon ./dist/main.js --watch dist",
     "webpack:watch": "webpack --progress --watch",
     "start": "kill-port 5000 && node ./dist/main",
-    "prebuild": "yarn codegen",
+    "prebuild": "pnpm codegen",
     "build": "webpack --mode=production",
     "test": "jest",
     "lint": "eslint ./src --fix",
