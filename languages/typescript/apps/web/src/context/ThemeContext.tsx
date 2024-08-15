@@ -17,6 +17,7 @@ import {
   createContext,
   FC,
   ReactNode,
+  useCallback,
   useContext,
   useMemo,
   useState,
@@ -138,8 +139,14 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({
     font: 'robotoMono',
     theme: 'coffee',
   });
-  const setTheme = (theme: Theme) => setSettings({ ...settings, theme });
-  const setFont = (font: Font) => setSettings({ ...settings, font });
+  const setTheme = useCallback(
+    (theme: Theme) => setSettings({ ...settings, theme }),
+    [settings]
+  );
+  const setFont = useCallback(
+    (font: Font) => setSettings({ ...settings, font }),
+    [settings]
+  );
 
   const { theme, font } = settings;
   const value = useMemo(

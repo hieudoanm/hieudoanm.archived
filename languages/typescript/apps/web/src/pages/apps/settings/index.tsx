@@ -1,8 +1,8 @@
 import {
-  fonts,
   COLORED_THEMES,
   DARK_THEMES,
   Font,
+  fonts,
   LIGHT_THEMES,
   useTheme,
 } from '@web/context/ThemeContext';
@@ -29,24 +29,24 @@ const SettingsPage: NextPage = () => {
                   onChange={(event: ChangeEvent<HTMLSelectElement>) =>
                     setTheme(event.target.value as Theme)
                   }>
-                  {COLORED_THEMES.map((theme: string) => {
+                  {COLORED_THEMES.map((coloredTheme: string) => {
                     return (
-                      <option key={theme} value={theme}>
-                        Colored ({theme})
+                      <option key={coloredTheme} value={coloredTheme}>
+                        Colored ({coloredTheme})
                       </option>
                     );
                   })}
-                  {DARK_THEMES.map((theme: string) => {
+                  {DARK_THEMES.map((darkTheme: string) => {
                     return (
-                      <option key={theme} value={theme}>
-                        Dark ({theme})
+                      <option key={darkTheme} value={darkTheme}>
+                        Dark ({darkTheme})
                       </option>
                     );
                   })}
-                  {LIGHT_THEMES.map((theme: string) => {
+                  {LIGHT_THEMES.map((lightTheme: string) => {
                     return (
-                      <option key={theme} value={theme}>
-                        Light ({theme})
+                      <option key={lightTheme} value={lightTheme}>
+                        Light ({lightTheme})
                       </option>
                     );
                   })}
