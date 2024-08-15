@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "husky": "9.1.4",
-    "turbo": "2.0.13"
+    "turbo": "2.0.14"
   },
   "resolutions": {
     "axios": "1.7.4",
