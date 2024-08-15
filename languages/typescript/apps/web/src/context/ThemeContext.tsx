@@ -1,18 +1,17 @@
-import { randomNumber } from '@web/utils/random/number';
 import { Theme } from 'daisyui';
 import {
   Inter,
   Lato,
   Montserrat,
-  Open_Sans,
+  Open_Sans as OpenSans,
   Oswald,
   Poppins,
   Raleway,
   Roboto,
-  Roboto_Mono,
-  Space_Mono,
+  Roboto_Mono as RobotoMono,
+  Space_Mono as SpaceMono,
   Ubuntu,
-  Ubuntu_Mono,
+  Ubuntu_Mono as UbuntuMono,
 } from 'next/font/google';
 import {
   createContext,
@@ -42,7 +41,7 @@ const lato = Lato({ subsets: ['latin'], weight: '400' });
 const latoClassName: string = lato.className;
 const montserrat = Montserrat({ subsets: ['latin'], weight: '400' });
 const montserratClassName: string = montserrat.className;
-const openSans = Open_Sans({ subsets: ['latin'], weight: '400' });
+const openSans = OpenSans({ subsets: ['latin'], weight: '400' });
 const openSansClassName: string = openSans.className;
 const oswald = Oswald({ subsets: ['latin'], weight: '400' });
 const oswaldClassName: string = oswald.className;
@@ -52,13 +51,13 @@ const raleway = Raleway({ subsets: ['latin'], weight: '400' });
 const ralewayClassName: string = raleway.className;
 const roboto = Roboto({ subsets: ['latin'], weight: '400' });
 const robotoClassName: string = roboto.className;
-const robotoMono = Roboto_Mono({ subsets: ['latin'], weight: '400' });
+const robotoMono = RobotoMono({ subsets: ['latin'], weight: '400' });
 const robotoMonoClassName: string = robotoMono.className;
-const spaceMono = Space_Mono({ subsets: ['latin'], weight: '400' });
+const spaceMono = SpaceMono({ subsets: ['latin'], weight: '400' });
 const spaceMonoClassName: string = spaceMono.className;
 const ubuntu = Ubuntu({ subsets: ['latin'], weight: '400' });
 const ubuntuClassName: string = ubuntu.className;
-const ubuntuMono = Ubuntu_Mono({ subsets: ['latin'], weight: '400' });
+const ubuntuMono = UbuntuMono({ subsets: ['latin'], weight: '400' });
 const ubuntuMonoClassName: string = ubuntuMono.className;
 export const fonts: Record<Font, string> = {
   inter: interClassName,
@@ -126,9 +125,9 @@ const ThemeContext = createContext<{
   setTheme: (theme: Theme) => void;
 }>({
   font: fonts.robotoMono,
-  setFont: (value: Font) => value,
+  setFont: (font: Font) => font,
   theme: 'light',
-  setTheme: (value: Theme) => value,
+  setTheme: (theme: Theme) => theme,
 });
 
 export const ThemeProvider: FC<{ children: ReactNode }> = ({
@@ -145,7 +144,7 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({
   const { theme, font } = settings;
   const value = useMemo(
     () => ({ font, setFont, theme, setTheme }),
-    [font, theme]
+    [font, setFont, setTheme, theme]
   );
 
   return (
