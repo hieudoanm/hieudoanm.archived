@@ -18,12 +18,7 @@ const withPWA = nextPWA({
 const nextConfig = {
   transpilePackages: ['next-mdx-remote'],
   swcMinify: true,
-  trailingSlash: true,
   reactStrictMode: true,
-  output:
-    NODE_ENV !== 'development' && PLATFORM !== 'vercel'
-      ? 'export'
-      : 'standalone',
   compiler: { removeConsole: NODE_ENV !== 'development' },
 };
 
