@@ -15,7 +15,7 @@ exports[`SocialPage render default 1`] = `
           class="flex flex-col items-center justify-center gap-y-4 lg:gap-y-8"
         >
           <div
-            class="w-48 md:w-64"
+            class="w-36 md:w-48"
           >
             <div
               class="aspect-square w-full overflow-hidden rounded-full"
@@ -45,7 +45,7 @@ exports[`SocialPage render default 1`] = `
                 target="_self"
               >
                 <button
-                  class="btn btn-primary mx-auto w-48 md:w-64"
+                  class="btn btn-primary mx-auto w-36 md:w-48"
                 >
                   <svg
                     class="inline"
@@ -73,7 +73,7 @@ exports[`SocialPage render default 1`] = `
                 target="_blank"
               >
                 <button
-                  class="btn btn-primary mx-auto w-48 md:w-64"
+                  class="btn btn-primary mx-auto w-36 md:w-48"
                 >
                   <svg
                     class="inline"
@@ -101,7 +101,7 @@ exports[`SocialPage render default 1`] = `
                 target="_blank"
               >
                 <button
-                  class="btn btn-primary mx-auto w-48 md:w-64"
+                  class="btn btn-primary mx-auto w-36 md:w-48"
                 >
                   <svg
                     class="inline"
@@ -129,7 +129,7 @@ exports[`SocialPage render default 1`] = `
                 target="_blank"
               >
                 <button
-                  class="btn btn-primary mx-auto w-48 md:w-64"
+                  class="btn btn-primary mx-auto w-36 md:w-48"
                 >
                   <svg
                     class="inline"
