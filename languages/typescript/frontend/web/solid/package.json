@@ -23,7 +23,7 @@
   "dependencies": {
     "@prisma/client": "5.18.0",
     "@solidjs/meta": "0.29.4",
-    "@solidjs/router": "0.14.2",
+    "@solidjs/router": "0.14.3",
     "@solidjs/start": "1.0.6",
     "@trpc/server": "10.45.2",
     "solid-js": "1.8.21",
