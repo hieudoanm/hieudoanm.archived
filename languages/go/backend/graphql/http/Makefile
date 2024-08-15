@@ -1,6 +1,17 @@
+format:
+	go fmt
+
+vet:
+	go vet main.go
+
+lint:
+	find . -type d | xargs -L 1 golint
+
 run:
 	go run main.go
 
 build:
-	rm -rf bin
-	go build -o bin/main main.go
+	go fmt
+	go vet main.go
+	find . -type d | xargs -L 1 golint
+	go build -o ./bin/main ./main.go

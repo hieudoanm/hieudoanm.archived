@@ -6,6 +6,3 @@ vet:
 
 lint:
 	find . -type d | xargs -L 1 golint
-
-test:
-		go test ./...
