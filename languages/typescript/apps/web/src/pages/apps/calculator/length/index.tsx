@@ -1,4 +1,5 @@
 import { Layout } from '@web/layout';
+import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
 
 type Length = 'yard' | 'foot' | 'inch' | 'cm' | 'm' | 'km';
@@ -25,7 +26,7 @@ const convert =
 
 const convertLength = convert(lengthRates);
 
-const ConverterPage = () => {
+const ConverterPage: NextPage = () => {
   const [length, setLength] = useState<Record<Length, number>>(lengthRates);
 
   return (
@@ -141,5 +142,7 @@ const ConverterPage = () => {
     </Layout>
   );
 };
+
+export const dynamic = 'force-static';
 
 export default ConverterPage;

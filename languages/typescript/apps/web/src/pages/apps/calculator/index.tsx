@@ -5,4 +5,6 @@ const CalculatorApps: NextPage = () => {
   return <GridTemplate folder='calculator' />;
 };
 
+export const dynamic = 'force-static';
+
 export default CalculatorApps;

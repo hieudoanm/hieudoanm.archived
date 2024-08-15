@@ -60,4 +60,6 @@ const FlagsPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default FlagsPage;

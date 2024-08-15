@@ -174,4 +174,6 @@ export const ProvincesPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default ProvincesPage;

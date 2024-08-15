@@ -164,4 +164,6 @@ export const getStaticProps: GetStaticProps<{
   }
 };
 
+export const dynamic = 'force-static';
+
 export default ForexPage;

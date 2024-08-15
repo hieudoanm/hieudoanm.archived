@@ -78,4 +78,6 @@ export const LicensesPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default LicensesPage;

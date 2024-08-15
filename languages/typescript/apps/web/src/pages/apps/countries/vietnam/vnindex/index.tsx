@@ -47,4 +47,6 @@ const StockPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default StockPage;

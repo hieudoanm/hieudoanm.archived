@@ -80,4 +80,6 @@ const SettingsPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default SettingsPage;

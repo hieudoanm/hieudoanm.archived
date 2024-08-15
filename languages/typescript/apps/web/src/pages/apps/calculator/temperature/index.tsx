@@ -87,4 +87,6 @@ const TemperaturePage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default TemperaturePage;

@@ -30,4 +30,6 @@ const ScreenPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default ScreenPage;

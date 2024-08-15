@@ -5,4 +5,6 @@ const CountriesApps: NextPage = () => {
   return <GridTemplate folder='countries' />;
 };
 
+export const dynamic = 'force-static';
+
 export default CountriesApps;

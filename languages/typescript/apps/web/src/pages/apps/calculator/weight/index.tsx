@@ -144,4 +144,6 @@ const ConverterPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default ConverterPage;

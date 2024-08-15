@@ -312,4 +312,6 @@ const CalculatorPage: NextPage = () => {
   );
 };
 
+export const dynamic = 'force-static';
+
 export default CalculatorPage;
