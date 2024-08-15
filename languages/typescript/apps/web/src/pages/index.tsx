@@ -97,7 +97,7 @@ const HomePage: NextPage = () => {
       <div className='container mx-auto h-full w-full'>
         <div className='flex h-full items-center justify-center'>
           <div className='flex flex-col items-center justify-center gap-y-4 lg:gap-y-8'>
-            <div className='w-48 md:w-64'>
+            <div className='w-36 md:w-48'>
               <div className='aspect-square w-full overflow-hidden rounded-full'>
                 <div
                   className='h-full w-full rounded-full border-4 border-base-content bg-cover bg-center'
@@ -118,7 +118,7 @@ const HomePage: NextPage = () => {
                         href={link}
                         target={external ? '_blank' : '_self'}
                         className='w-full'>
-                        <button className='btn btn-primary mx-auto w-48 md:w-64'>
+                        <button className='btn btn-primary mx-auto w-36 md:w-48'>
                           {icon} {name}
                         </button>
                       </Link>
