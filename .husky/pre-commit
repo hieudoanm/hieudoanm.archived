@@ -1,5 +1,5 @@
 #!/bin/sh
 
-pnpm lint
-pnpm format
+pnpm run lint
+pnpm run format
 git add -A

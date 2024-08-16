@@ -26,8 +26,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Linting
-        run: pnpm lint
+        run: pnpm run lint
       - name: Unit Test
-        run: pnpm test --concurrency 1
+        run: pnpm run test --concurrency 1
       - name: Build Production
-        run: pnpm build --concurrency 1
+        run: pnpm run build --concurrency 1
