@@ -6,36 +6,28 @@ on:
 
 jobs:
   sync:
-    strategy:
-      fail-fast: false
-      matrix:
-        players:
-          - username: hikaru
-    name: Sync Games - ${{ matrix.players.username }}
+    name: Sync Games
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: "languages/typescript/apps/web"
+          sparse-checkout-cone-mode: false
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20.16.0"
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Install Dependencies
-        run: pnpm install --network-timeout 86400000
+        run: pnpm install
         working-directory: languages/typescript/apps/web
-      # - name: Set Up Prisma
-      #   run: pnpm prisma format && pnpm prisma generate
-      #   working-directory: languages/typescript/apps/web
-      #   env:
-      #     USERNAME: ${{ matrix.players.username }}
-      #     POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
-      #     POSTGRES_PRISMA_URL: ${{ secrets.POSTGRES_PRISMA_URL }}
-      #     POSTGRES_URL_NON_POOLING: ${{ secrets.POSTGRES_URL_NON_POOLING }}
+      - name: Set Up Prisma
+        run: pnpm prisma format && pnpm prisma generate
+        working-directory: languages/typescript/apps/web
       # - name: Sync Games
-      #   run: make import-games-api
+      #   run: pnpm ts-node ./scripts/ts/chess/import/games.ts
       #   working-directory: languages/typescript/apps/web
       #   env:
-      #     USERNAME: ${{ matrix.players.username }}
       #     POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
-      #     POSTGRES_PRISMA_URL: ${{ secrets.POSTGRES_PRISMA_URL }}
-      #     POSTGRES_URL_NON_POOLING: ${{ secrets.POSTGRES_URL_NON_POOLING }}
