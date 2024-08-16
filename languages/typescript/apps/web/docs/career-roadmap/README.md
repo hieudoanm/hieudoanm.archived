@@ -158,29 +158,33 @@
 
 ### Companies
 
-| Company                                               | Careers                                   |
-| ----------------------------------------------------- | ----------------------------------------- |
-| [bitbrain](https://www.bitbrain.com/)                 | [Careers](https://synchron.com/careers)   |
-| [blackrockneurotech](https://blackrockneurotech.com/) |                                           |
-| [brainco](https://brainco.tech/)                      |                                           |
-| [braingate](https://www.braingate.org/)               |                                           |
-| [emotiv](https://www.emotiv.com/)                     |                                           |
-| [kernel](https://www.kernel.com/)                     |                                           |
-| [neurable](https://neurable.com/)                     |                                           |
-| [neuralink](https://neuralink.com/)                   | [Careers](https://neuralink.com/careers/) |
-| [precisionneuro](https://precisionneuro.io/)          |                                           |
-| [synchron](https://synchron.com/)                     |                                           |
+| Company                                  | Careers                      | Univerity                | State           | Country       |
+| ---------------------------------------- | ---------------------------- | ------------------------ | --------------- | ------------- |
+| [emotiv](https://www.emotiv.com/)        |                              | Macquarie University     | New South Wales | Australia     |
+| [synchron](https://synchron.com/)        | [Careers][synchron-careers]  | University of Melbourne  | Victoria        | Australia     |
+| [bitbrain](https://www.bitbrain.com/)    |                              | University of Zaragoza   | Zaragoza        | Spain         |
+| [neuralink](https://neuralink.com/)      | [Careers][neuralink-careers] | University of California | California      | United States |
+| [braingate](https://www.braingate.org/)  |                              | Brown University         | New York        | United States |
+| [brainco](https://brainco.tech/)         |                              | Harvard University       | Massachusetts   | United States |
+| [neurable](https://neurable.com/)        |                              | University of Michigan   | Michigan        | United States |
+| [blackrockneurotech][blackrockneurotech] |                              | University of Pittsburgh | Pennsylvania    | United States |
+| [precisionneuro][precisionneuro]         |                              | West Virginia University | West Virginia   | United States |
+| [kernel](https://www.kernel.com/)        |                              |                          |                 |               |
 
 [birmingham]: https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx
+[blackrockneurotech]: https://blackrockneurotech.com/
 [edinburgh-phd]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&id=489
 [edinburgh-msc]: https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2024&id=2
 [goldsmith]: https://www.gold.ac.uk/pg/msc-computational-cognitive-neuroscience
 [groningen]: https://www.rug.nl/masters/computational-cognitive-science
 [icl]: https://www.imperial.ac.uk/study/courses/postgraduate-taught/neurotechnology/
+[neuralink-careers]: https://neuralink.com/careers/
 [newcastle]: https://www.ncl.ac.uk/postgraduate/degrees/5199f/
 [nottingham]: https://www.nottingham.ac.uk/pgstudy/course/taught/computational-neuroscience-cognition-and-ai-msc
+[precisionneuro]: https://precisionneuro.io/
 [radboud]: https://www.ru.nl/en/education/masters/cognitive-neuroscience-research/natural-computing-and-neurotechnology
 [sheffield]: https://www.sheffield.ac.uk/postgraduate/taught/courses/2024/cognitive-and-computational-neuroscience-msc
+[synchron-careers]: https://synchron.com/careers
 [ucl]: https://www.ucl.ac.uk/prospective-students/graduate/research-degrees/gatsby-computational-neuroscience-unit-mphil-phd
 [tub]: https://www.bccn-berlin.de/master-program.html
 [saclay]: https://www.universite-paris-saclay.fr/en/education/master/life-sciences-and-health/m2-computational-neurosciences-and-neuroengineering
