@@ -1,18 +1,20 @@
-name: Continuous Integration / Continuous Delivery
+name: TypeScript - Continuous Integration / Continuous Delivery
 
 on:
   push:
     branches:
-      - master
-      - develop
-      - hotfix/**
-      - feature/**
-      - renovate/**
-      - dependabot/**
+      - "master"
+      - "develop"
+      - "hotfix/**"
+      - "feature/**"
+      - "renovate/**"
+      - "dependabot/**"
+    paths:
+      - "languages/typescript/**"
 
 jobs:
-  lint:
-    name: CI / CD
+  ci:
+    name: TypeScript - CI / CD
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
