@@ -233,7 +233,7 @@ const getPlayer = async (playerUsername: string) => {
       where: { id },
     });
   } catch (error) {
-    console.error(playerUsername, error);
+    console.error(`getPlayer error=${error}`);
   }
 };
 
