@@ -1,37 +1,52 @@
-# The Scrum Guide
+# Scrum
 
 <!-- ## Table of Content
 
-- [The Scrum Guide](#the-scrum-guide)
+- [Scrum](#scrum)
   - [Table of Content](#table-of-content)
-  - [Purpose of the Scrum Guide](#purpose-of-the-scrum-guide)
-  - [Scrum Definition](#scrum-definition)
-  - [Scrum Theory](#scrum-theory)
-    - [Transparency](#transparency)
-    - [Inspection](#inspection)
-    - [Adaption](#adaption)
-  - [Scrum Values](#scrum-values)
-  - [Scrum Team](#scrum-team)
-    - [Developers](#developers)
-    - [Product Owner](#product-owner)
-    - [Scrum Master](#scrum-master)
-  - [Scrum Events](#scrum-events)
-    - [The Sprint](#the-sprint)
-    - [Sprint Planning](#sprint-planning)
-    - [Daily Scrum](#daily-scrum)
-    - [Sprint Review](#sprint-review)
-    - [Sprint Retrospective](#sprint-retrospective)
-  - [Scrum Artifacts](#scrum-artifacts)
-    - [Product Backlog](#product-backlog)
-      - [Commitment: Product Goal](#commitment-product-goal)
-    - [Sprint Backlog](#sprint-backlog)
-      - [Commitment: Sprint Goal](#commitment-sprint-goal)
-    - [Increment](#increment)
-      - [Commitment: Definition of Done](#commitment-definition-of-done) -->
+  - [Guide](#guide)
+    - [Purpose of the Scrum Guide](#purpose-of-the-scrum-guide)
+    - [Scrum Definition](#scrum-definition)
+    - [Scrum Theory](#scrum-theory)
+      - [Transparency](#transparency)
+      - [Inspection](#inspection)
+      - [Adaption](#adaption)
+    - [Scrum Values](#scrum-values)
+    - [Scrum Team](#scrum-team)
+      - [Developers](#developers)
+      - [Product Owner](#product-owner)
+      - [Scrum Master](#scrum-master)
+    - [Scrum Events](#scrum-events)
+      - [The Sprint](#the-sprint)
+      - [Sprint Planning](#sprint-planning)
+      - [Daily Scrum](#daily-scrum)
+      - [Sprint Review](#sprint-review)
+      - [Sprint Retrospective](#sprint-retrospective)
+    - [Scrum Artifacts](#scrum-artifacts)
+      - [Product Backlog](#product-backlog)
+        - [Commitment: Product Goal](#commitment-product-goal)
+      - [Sprint Backlog](#sprint-backlog)
+        - [Commitment: Sprint Goal](#commitment-sprint-goal)
+      - [Increment](#increment)
+        - [Commitment: Definition of Done](#commitment-definition-of-done)
+  - [Glossary](#glossary)
+    - [B](#b)
+    - [C](#c)
+    - [D](#d)
+    - [E](#e)
+    - [F](#f)
+    - [I](#i)
+    - [P](#p)
+    - [R](#r)
+    - [S](#s)
+    - [T](#t)
+    - [V](#v) -->
+
+## Guide
 
 The Definitive Guide to Scrum: The Rules of the Game
 
-## Purpose of the Scrum Guide
+### Purpose of the Scrum Guide
 
 We developed Scrum in the early 1990s. We wrote the first version of the Scrum Guide in 2010 to help people worldwide understand Scrum. We have evolved the Guide since then through small, functional updates. Together, we stand behind it.
 
@@ -41,7 +56,7 @@ We follow the growing use of Scrum within an ever-growing complex world. We are 
 
 As Scrum is being used, patterns, processes, and insights that fit the Scrum framework as described in this document, may be found, applied and devised. Their description is beyond the purpose of the Scrum Guide because they are context sensitive and differ widely between Scrum uses. Such tactics for using within the Scrum framework vary widely and are described elsewhere.
 
-## Scrum Definition
+### Scrum Definition
 
 Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems.
 
@@ -56,7 +71,7 @@ Scrum is simple. Try it as is and determine if its philosophy, theory, and struc
 
 Various processes, techniques and methods can be employed within the framework. Scrum wraps around existing practices or renders them unnecessary. Scrum makes visible the relative efficacy of current management, environment, and work techniques, so that improvements can be made.
 
-## Scrum Theory
+### Scrum Theory
 
 Scrum is founded on empiricism and lean thinking. Empiricism asserts that knowledge comes from experience and making decisions based on what is observed. Lean thinking reduces waste and focuses on the essentials.
 
@@ -64,25 +79,25 @@ Scrum employs an iterative, incremental approach to optimize predictability and 
 
 Scrum combines four formal events for inspection and adaptation within a containing event, the Sprint. These events work because they implement the empirical Scrum pillars of transparency, inspection, and adaptation.
 
-### Transparency
+#### Transparency
 
 The emergent process and work must be visible to those performing the work as well as those receiving the work. With Scrum, important decisions are based on the perceived state of its three formal artifacts. Artifacts that have low transparency can lead to decisions that diminish value and increase risk.
 
 Transparency enables inspection. Inspection without transparency is misleading and wasteful
 
-### Inspection
+#### Inspection
 
 The Scrum artifacts and the progress toward agreed goals must be inspected frequently and diligently to detect potentially undesirable variances or problems. To help with inspection, Scrum provides cadence in the form of its five events.
 
 Inspection enables adaptation. Inspection without adaptation is considered pointless. Scrum events are designed to provoke change.
 
-### Adaption
+#### Adaption
 
 If any aspects of a process deviate outside acceptable limits or if the resulting product is unacceptable, the process being applied or the materials being produced must be adjusted. The adjustment must be made as soon as possible to minimize further deviation.
 
 Adaptation becomes more difficult when the people involved are not empowered or self-managing. A Scrum Team is expected to adapt the moment it learns anything new through inspection.
 
-## Scrum Values
+### Scrum Values
 
 Successful use of Scrum depends on people becoming more proficient in living five values:
 
@@ -92,7 +107,7 @@ The Scrum Team commits to achieving its goals and to supporting each other. Thei
 
 These values give direction to the Scrum Team with regard to their work, actions, and behavior. The decisions that are made, the steps taken, and the way Scrum is used should reinforce these values, not diminish or undermine them. The Scrum Team members learn and explore the values as they work with the Scrum events and artifacts. When these values are embodied by the Scrum Team and the people they work with, the empirical Scrum pillars of transparency, inspection, and adaptation come to life building trust.
 
-## Scrum Team
+### Scrum Team
 
 The fundamental unit of Scrum is a small team of people, a Scrum Team. The Scrum Team consists of one Scrum Master, one Product Owner, and Developers. Within a Scrum Team, there are no sub-teams or hierarchies. It is a cohesive unit of professionals focused on one objective at a time, the Product Goal.
 
@@ -104,7 +119,7 @@ The Scrum Team is responsible for all product-related activities from stakeholde
 
 The entire Scrum Team is accountable for creating a valuable, useful Increment every Sprint. Scrum defines three specific accountabilities within the Scrum Team: the Developers, the Product Owner, and the Scrum Master.
 
-### Developers
+#### Developers
 
 Developers are the people in the Scrum Team that are committed to creating any aspect of a usable Increment each Sprint.
 
@@ -115,7 +130,7 @@ The specific skills needed by the Developers are often broad and will vary with 
 - Adapting their plan each day toward the Sprint Goal; and,
 - Holding each other accountable as professionals.
 
-### Product Owner
+#### Product Owner
 
 The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team. How this is done may vary widely across organizations, Scrum Teams, and individuals.
 
@@ -132,7 +147,7 @@ For Product Owners to succeed, the entire organization must respect their decisi
 
 The Product Owner is one person, not a committee. The Product Owner may represent the needs of many stakeholders in the Product Backlog. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner.
 
-### Scrum Master
+#### Scrum Master
 
 The Scrum Master is accountable for establishing Scrum as defined in the Scrum Guide. They do this by helping everyone understand Scrum theory and practice, both within the Scrum Team and the organization.
 
@@ -160,11 +175,11 @@ The Scrum Master serves the organization in several ways, including:
 - Helping employees and stakeholders understand and enact an empirical approach for complex work; and,
 - Removing barriers between stakeholders and Scrum Teams.
 
-## Scrum Events
+### Scrum Events
 
 The Sprint is a container for all other events. Each event in Scrum is a formal opportunity to inspect and adapt Scrum artifacts. These events are specifically designed to enable the transparency required. Failure to operate any events as prescribed results in lost opportunities to inspect and adapt. Events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. Optimally, all events are held at the same time and place to reduce complexity.
 
-### The Sprint
+#### The Sprint
 
 Sprints are the heartbeat of Scrum, where ideas are turned into value.
 
@@ -186,7 +201,7 @@ Various practices exist to forecast progress, like burn-downs, burn-ups, or cumu
 
 A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint.
 
-### Sprint Planning
+#### Sprint Planning
 
 Sprint Planning initiates the Sprint by laying out the work to be performed for the Sprint. This resulting plan is created by the collaborative work of the entire Scrum Team.
 
@@ -212,7 +227,7 @@ The Sprint Goal, the Product Backlog items selected for the Sprint, plus the pla
 
 Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
 
-### Daily Scrum
+#### Daily Scrum
 
 The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
 
@@ -224,7 +239,7 @@ Daily Scrums improve communications, identify impediments, promote quick decisio
 
 The Daily Scrum is not the only time Developers are allowed to adjust their plan. They often meet throughout the day for more detailed discussions about adapting or re-planning the rest of the Sprint’s work.
 
-### Sprint Review
+#### Sprint Review
 
 The purpose of the Sprint Review is to inspect the outcome of the Sprint and determine future adaptations. The Scrum Team presents the results of their work to key stakeholders and progress toward the Product Goal is discussed.
 
@@ -232,7 +247,7 @@ During the event, the Scrum Team and stakeholders review what was accomplished i
 
 The Sprint Review is the second to last event of the Sprint and is timeboxed to a maximum of four hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
 
-### Sprint Retrospective
+#### Sprint Retrospective
 
 The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness.
 
@@ -243,7 +258,7 @@ The Scrum Team identifies the most helpful changes to improve its effectiveness.
 
 The Sprint Retrospective concludes the Sprint. It is timeboxed to a maximum of three hours for a one-month Sprint. For shorter Sprints, the event is usually shorter.
 
-## Scrum Artifacts
+### Scrum Artifacts
 
 Scrum’s artifacts represent work or value. They are designed to maximize transparency of key information. Thus, everyone inspecting them has the same basis for adaptation.
 
@@ -255,7 +270,7 @@ Each artifact contains a commitment to ensure it provides information that enhan
 
 These commitments exist to reinforce empiricism and the Scrum values for the Scrum Team and their stakeholders.
 
-### Product Backlog
+#### Product Backlog
 
 The Product Backlog is an emergent, ordered list of what is needed to improve the product. It is the single source of work undertaken by the Scrum Team.
 
@@ -263,7 +278,7 @@ Product Backlog items that can be Done by the Scrum Team within one Sprint are d
 
 The Developers who will be doing the work are responsible for the sizing. The Product Owner may influence the Developers by helping them understand and select trade-offs.
 
-#### Commitment: Product Goal
+##### Commitment: Product Goal
 
 The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define “what” will fulfill the Product Goal.
 
@@ -271,19 +286,19 @@ The Product Goal describes a future state of the product which can serve as a ta
 
 The Product Goal is the long-term objective for the Scrum Team. They must fulfill (or abandon) one objective before taking on the next.
 
-### Sprint Backlog
+#### Sprint Backlog
 
 The Sprint Backlog is composed of the Sprint Goal (why), the set of Product Backlog items selected for the Sprint (what), as well as an actionable plan for delivering the Increment (how).
 
 The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal. Consequently, the Sprint Backlog is updated throughout the Sprint as more is learned. It should have enough detail that they can inspect their progress in the Daily Scrum.
 
-#### Commitment: Sprint Goal
+##### Commitment: Sprint Goal
 
 The Sprint Goal is the single objective for the Sprint. Although the Sprint Goal is a commitment by the Developers, it provides flexibility in terms of the exact work needed to achieve it. The Sprint Goal also creates coherence and focus, encouraging the Scrum Team to work together rather than on separate initiatives.
 
 The Sprint Goal is created during the Sprint Planning event and then added to the Sprint Backlog. As the Developers work during the Sprint, they keep the Sprint Goal in mind. If the work turns out to be different than they expected, they collaborate with the Product Owner to negotiate the scope of the Sprint Backlog within the Sprint without affecting the Sprint Goal.
 
-### Increment
+#### Increment
 
 An Increment is a concrete stepping stone toward the Product Goal. Each Increment is additive to all prior Increments and thoroughly verified, ensuring that all Increments work together. In order to provide value, the Increment must be usable.
 
@@ -291,7 +306,7 @@ Multiple Increments may be created within a Sprint. The sum of the Increments is
 
 Work cannot be considered part of an Increment unless it meets the Definition of Done.
 
-#### Commitment: Definition of Done
+##### Commitment: Definition of Done
 
 The Definition of Done is a formal description of the state of the Increment when it meets the quality measures required for the product.
 
@@ -302,3 +317,95 @@ The Definition of Done creates transparency by providing everyone a shared under
 If the Definition of Done for an increment is part of the standards of the organization, all Scrum Teams must follow it as a minimum. If it is not an organizational standard, the Scrum Team must create a Definition of Done appropriate for the product.
 
 The Developers are required to conform to the Definition of Done. If there are multiple Scrum Teams working together on a product, they must mutually define and comply with the same Definition of Done.
+
+## Glossary
+
+### B
+
+**Burn-down Chart**: a chart which shows the amount of work which is thought to remain in a backlog. Time is shown on the horizontal axis and work remaining on the vertical axis. As time progresses and items are drawn from the backlog and completed, a plot line showing work remaining may be expected to fall. The amount of work may be assessed in any of several ways such as user story points or task hours. Work remaining in Sprint Backlogs and Product Backlogs may be communicated by means of a burn-down chart. See also: Burnup Chart
+
+**Burn-up Chart**: a chart which shows the amount of work which has been completed. Time is shown on the horizontal axis and work completed on the vertical axis. As time progresses and items are drawn from the backlog and completed, a plot line showing the work done may be expected to rise. The amount of work may be assessed in any of several ways such as user story points or task hours. The amount of work considered to be in-scope may also be plotted as a line; the burn-up can be expected to approach this line as work is completed.
+
+### C
+
+**Coherent/Coherence**: The quality of the relationship between certain Product Backlog items which may make them worthy of consideration as a whole. See also: Sprint Goal.
+
+### D
+
+**Daily Scrum**: Scrum Event that is a 15-minute time-boxed event held each day for the Developers. The Daily Scrum is held every day of the Sprint. At it, the Developers plan work for the next 24 hours. This optimizes team collaboration and performance by inspecting the work since the last Daily Scrum and forecasting upcoming Sprint work. The Daily Scrum is held at the same time and place each day to reduce complexity.
+
+**Definition of Done**: is a formal description of the state of the Increment when it meets the quality measures required for the product. The moment a Product Backlog item meets the Definition of Done, an Increment is born. The Definition of Done creates transparency by providing everyone a shared understanding of what work was completed as part of the Increment. If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review.
+
+**Developer**: any member of a Scrum Team, that is committed to creating any aspect of a usable Increment each Sprint regardless of technical, functional or other specialty.
+
+### E
+
+**Emergence**: the process of the coming into existence or prominence of new facts or new knowledge of a fact, or knowledge of a fact becoming visible unexpectedly.
+
+**Empiricism**: the philosophy that all knowledge originates in experience and observations. It’s a cornerstone of the scientific method and underlies much of modern science and medicine. In the context of Scrum, empiricism refers to the idea that solving complex problems, or doing complex work, can only be done using an exploratory process rather than relying on predetermined plans.
+
+**Engineering Standards**: a shared set of development and technology standards that Developers apply to create releasable Increments of software.
+
+### F
+
+**Forecast (of functionality)**: the selection of items from the Product Backlog Developers deems feasible for implementation in a Sprint.
+
+### I
+
+**Increment**: Scrum Artifact that defines the complete and valuable work produced by the Developers during a Sprint. The sum of all Increments form a product.
+
+### P
+
+**Product Backlog**: A Scrum Artifact that consists of an ordered list of the work to be done in order to create, maintain and sustain a product. Managed by the Product Owner.
+
+**Product Backlog Refinement**: the activity in a Sprint through which the Product Owner and the Developers add granularity to the Product Backlog.
+
+**Product Owner**: Role in Scrum accountable for maximizing the value of a product, primarily by incrementally managing and expressing business and functional expectations for a product to the Developers.
+
+**Product Goal**: The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. The Product Goal is in the Product Backlog. The rest of the Product Backlog emerges to define “what” will fulfill the Product Goal.
+
+### R
+
+**Ready**: a shared understanding by the Product Owner and the Developers regarding the preferred level of description of Product Backlog items introduced at Sprint Planning.
+
+**Refinement**: see Product Backlog Refinement
+
+### S
+
+**Scrum**: Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems as defined in the Scrum GuideTM.
+
+**Scrum Board**: a physical board to visualize information for and by the Scrum Team, often used to manage Sprint Backlog. Scrum boards are an optional implementation within Scrum to make information visible.
+
+**Scrum Guide**: the definition of Scrum, written and provided by Ken Schwaber and Jeff Sutherland, co-creators of Scrum. This definition consists of Scrum’s accountabilities, events, artifacts, and the rules that bind them together.
+
+**Scrum Master**: Role within a Scrum Team accountable for guiding, coaching, teaching and assisting a Scrum Team and its environments in a proper understanding and use of Scrum.
+
+**Scrum Team**: a self-managing team consisting of one Scrum Master, one Product Owner, and Developers.
+
+**Scrum Values**: a set of fundamental values and qualities underpinning the Scrum framework; commitment, focus, openness, respect and courage.
+
+**Self-Managing**: Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how.
+
+**Sprint**: Scrum Event that is time-boxed to one month or less, that serves as a container for the other Scrum events and activities. Sprints are done consecutively, without intermediate gaps.
+
+**Sprint Backlog**: Scrum Artifact that provides an overview of the development work to realize a Sprint’s goal, typically a forecast of functionality and the work needed to deliver that functionality. Managed by the Developers.
+
+**Sprint Goal**: a short expression of the purpose of a Sprint, often a business problem that is addressed. Functionality might be adjusted during the Sprint in order to achieve the Sprint Goal.
+
+**Sprint Planning**: Scrum Event that is time-boxed to 8 hours, or less, to start a Sprint. It serves for the Scrum Team to inspect the work from the Product Backlog that’s most valuable to be done next and design that work into Sprint backlog.
+
+**Sprint Retrospective**: Scrum Event that is set to a time-box of 3 hours, or less, to end a Sprint. It serves for the Scrum Team to inspect the past Sprint and plan for improvements to be enacted during future Sprints.
+
+**Sprint Review**: Scrum Event that is set to a time-boxed of 4 hours, or less, to conclude the development work of a Sprint. It serves for the Scrum Team and the stakeholders to inspect the Increment of product resulting from the Sprint, assess the impact of the work performed on overall progress toward the Product Goal and update the Product backlog in order to maximize the value of the next period.
+
+**Stakeholder**: a person external to the Scrum Team with a specific interest in and knowledge of a product that is required for incremental discovery. Represented by the Product Owner and actively engaged with the Scrum Team at Sprint Review.
+
+### T
+
+**Technical Debt**: the typically unpredictable overhead of maintaining the product, often caused by less than ideal design decisions, contributing to the total cost of ownership. May exist unintentionally in the Increment or introduced purposefully to realize value earlier.
+
+### V
+
+**Values**: When the values of commitment, courage, focus, openness and respect are embodied and lived by the Scrum Team, the _Scrum pillars_ of transparency, inspection, and adaptation _come to life_ and _build trust_ for everyone. The Scrum Team members learn and explore those values as they work with the Scrum events, roles and artifacts. Download the Scrum Values Poster
+
+**Velocity**: an optional, but often used, indication of the amount of Product Backlog turned into an Increment of product during a Sprint by a Scrum Team, tracked by the Developers for use within the Scrum Team.
