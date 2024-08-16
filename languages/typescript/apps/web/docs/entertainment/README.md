@@ -33,20 +33,34 @@
 
 ### Comics
 
-| Company | Team           | Name          | Secret Identity  |
-| ------- | -------------- | ------------- | ---------------- |
-| DC      | Justice League | Superman      | Clark Kent       |
-| DC      | Justice League | Batman        | Bruce Wanye      |
-| DC      | Justice League | Nightwing     | Dick Grayson     |
-| DC      | Justice League | Red Hood      | Jason Todd       |
-| DC      | Justice League | Robin         | Damian Wayne     |
-| DC      | Justice League | Flash         | Barry Allen      |
-| DC      | Justice League | Green Lantern | Hal Jordan       |
-| DC      |                |               | John Constantine |
-| Marvel  | Avengers       | Hulk          | Bruce Banner     |
-| Marvel  | Avengers       | Iron Man      | Tony Stark       |
-| Marvel  | Avengers       | Black Panther | T'Challa         |
-| Marvel  | X-Men          | Cyclops       | Scott Summers    |
+| Company | Team           | Name               | Secret Identity  |
+| ------- | -------------- | ------------------ | ---------------- |
+| DC      | Justice League | Superman           | Clark Kent       |
+| DC      | Justice League | Batman             | Bruce Wanye      |
+| DC      | Justice League | Nightwing          | Dick Grayson     |
+| DC      | Justice League | Red Hood           | Jason Todd       |
+| DC      | Justice League | Robin              | Damian Wayne     |
+| DC      | Justice League | Flash              | Barry Allen      |
+| DC      | Justice League | Green Lantern      | Hal Jordan       |
+| DC      |                |                    | John Constantine |
+| DC      | Greek Gods     | God of Love        | Aphrodite        |
+| DC      | Greek Gods     | God of Sun         | Apollo           |
+| DC      | Greek Gods     | God of War         | Ares             |
+| DC      | Greek Gods     | God of Moon        | Artemis          |
+| DC      | Greek Gods     | God of Wisdom      | Athena           |
+| DC      | Greek Gods     | God of Agriculture | Demeter          |
+| DC      | Greek Gods     |                    | Dionysus         |
+| DC      | Greek Gods     | God of Underworld  | Hades            |
+| DC      | Greek Gods     | God of Engineer    | Hephaestus       |
+| DC      | Greek Gods     |                    | Hera             |
+| DC      | Greek Gods     | God of Messenger   | Hermes           |
+| DC      | Greek Gods     | God of Sky         | Zeus             |
+| DC      | Greek Gods     | God of Sea         | Poseidon         |
+| Marvel  | Avengers       | Hulk               | Bruce Banner     |
+| Marvel  | Avengers       | Iron Man           | Tony Stark       |
+| Marvel  | Avengers       | Black Panther      | T'Challa         |
+| Marvel  | Avengers       | Doctor Strange     | Stephen Strange  |
+| Marvel  | X-Men          | Cyclops            | Scott Summers    |
 
 ## Watching
 
