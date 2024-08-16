@@ -1,6 +1,6 @@
 import { Player, PrismaClient } from '@prisma/client';
-import { jsonToCsv } from '../../../src/utils/json-to-csv';
-import { writeFileSync } from 'fs';
+import { writeFileSync } from 'node:fs';
+import { jsonToCsv } from '../../../../src/utils/json-to-csv';
 
 const prismaClient = new PrismaClient();
 

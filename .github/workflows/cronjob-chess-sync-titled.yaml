@@ -27,7 +27,7 @@ jobs:
         run: pnpm prisma format && pnpm prisma generate
         working-directory: languages/typescript/apps/web
       - name: Sync Titled
-        run: pnpm ts-node ./scripts/chess/import/titled.ts
+        run: pnpm ts-node ./scripts/ts/chess/import/titled.ts
         working-directory: languages/typescript/apps/web
         env:
           POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
