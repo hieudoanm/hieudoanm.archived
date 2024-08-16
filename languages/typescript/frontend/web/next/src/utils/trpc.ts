@@ -7,7 +7,7 @@ import {
   VERCEL_URL,
 } from '@n26/environments/environments';
 
-const getBaseUrl = () => {
+const getBaseUrl = (): string => {
   // browser should use relative path
   if (typeof window !== 'undefined') return '';
   // reference for vercel.com
@@ -16,7 +16,7 @@ const getBaseUrl = () => {
   if (RENDER_INTERNAL_HOSTNAME)
     return `http://${RENDER_INTERNAL_HOSTNAME}:${PORT}`;
   // assume localhost
-  return `http://localhost:${PORT}`;
+  return `http://localhost:${PORT ?? 3000}`;
 };
 
 export const trpc = createTRPCNext<AppRouter>({

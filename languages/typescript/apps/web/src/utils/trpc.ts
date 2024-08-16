@@ -2,16 +2,21 @@ import { httpBatchLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
 import type { AppRouter } from '../server/routers/_app';
 
+const VERCEL_URL: string = process.env.VERCEL_URL ?? '';
+const RENDER_INTERNAL_HOSTNAME: string =
+  process.env.RENDER_INTERNAL_HOSTNAME ?? '';
+const PORT = process.env.PORT;
+
 const getBaseUrl = (): string => {
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
-  }
-
-  if (process.env.RENDER_INTERNAL_HOSTNAME) {
-    return `http://${process.env.RENDER_INTERNAL_HOSTNAME}:${process.env.PORT}`;
-  }
-
-  return `http://localhost:${process.env.PORT ?? 3000}`;
+  // browser should use relative path
+  if (typeof window !== 'undefined') return '';
+  // reference for vercel.com
+  if (VERCEL_URL) return `https://${VERCEL_URL}`;
+  // reference for render.com
+  if (RENDER_INTERNAL_HOSTNAME)
+    return `http://${RENDER_INTERNAL_HOSTNAME}:${PORT}`;
+  // assume localhost
+  return `http://localhost:${PORT ?? 3000}`;
 };
 
 export const trpc = createTRPCNext<AppRouter>({
