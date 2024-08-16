@@ -16,6 +16,5 @@ export const Header: React.FC<{ children?: React.ReactNode }> = ({
 };
 
 Header.displayName = 'Header';
-Header.defaultProps = { children: <></> };
 
 export default Header;

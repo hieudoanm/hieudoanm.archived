@@ -9,6 +9,5 @@ export const Subheader: React.FC<{ children?: React.ReactNode }> = ({
 };
 
 Subheader.displayName = 'Subheader';
-Subheader.defaultProps = { children: <></> };
 
 export default Subheader;

@@ -34,6 +34,5 @@ export const LinearText: React.FC<{ children?: string }> = ({
 };
 
 LinearText.displayName = 'LinearText';
-LinearText.defaultProps = { children: '' };
 
 export default LinearText;

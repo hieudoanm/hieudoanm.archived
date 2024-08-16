@@ -29,14 +29,13 @@ generator markdown {
 }
 
 model Word {
-  word          String @id @db.VarChar(255)
-  results       Json[] @default([])
-  syllables     Json?  @default("{}")
-  pronunciation Json?  @default("{}")
-  frequency     Float? @default(0)
-
-  createdAt DateTime @default(now()) @db.Timestamptz()
-  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz()
+  word          String   @id @map("word") @db.VarChar(255)
+  results       Json[]   @default([]) @map("results")
+  syllables     Json?    @default("{}") @map("syllables")
+  pronunciation Json?    @default("{}") @map("pronunciation")
+  frequency     Float?   @default(0) @map("frequency")
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz()
+  updatedAt     DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz()
 
   @@index([word])
   @@map("word")
@@ -199,12 +198,12 @@ model Game {
 }
 
 model Opening {
-  eco       String   @default("") @db.VarChar(3)
-  name      String   @default("") @db.VarChar(255)
-  fen       String   @default("") @db.VarChar(255)
-  pgn       String   @default("") @db.VarChar(255)
-  createdAt DateTime @default(now()) @db.Timestamptz
-  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz
+  eco       String   @default("") @map("eco") @db.VarChar(3)
+  name      String   @default("") @map("name") @db.VarChar(255)
+  fen       String   @default("") @map("fen") @db.VarChar(255)
+  pgn       String   @default("") @map("pgn") @db.VarChar(255)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz
 
   @@id([eco, name, pgn])
   @@map("opening")
@@ -212,12 +211,14 @@ model Opening {
 }
 
 model Country {
-  cca2      String   @unique @default("") @db.VarChar(255)
-  cca3      String   @unique @default("") @db.VarChar(255)
-  name      String   @default("") @db.VarChar(255)
-  flag      String   @default("") @db.VarChar(255)
-  createdAt DateTime @default(now()) @db.Timestamptz
-  updatedAt DateTime @default(now()) @updatedAt @db.Timestamptz
+  cca2      String   @unique @default("") @map("cca2") @db.VarChar(255)
+  cca3      String   @unique @default("") @map("cca3") @db.VarChar(255)
+  name      String   @default("") @map("name") @db.VarChar(255)
+  common    String   @default("") @map("common") @db.VarChar(255)
+  official  String   @default("") @map("official") @db.VarChar(255)
+  flag      String   @default("") @map("flag") @db.VarChar(255)
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz
 
   @@id([cca2, cca3])
   @@map("country")

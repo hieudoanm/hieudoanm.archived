@@ -14,6 +14,5 @@ export const BlueButton: React.FC<{ children?: React.ReactNode }> = ({
 };
 
 BlueButton.displayName = 'BlueButton';
-BlueButton.defaultProps = { children: <></> };
 
 export default BlueButton;

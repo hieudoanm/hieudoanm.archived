@@ -7,6 +7,5 @@ export const Container: React.FC<{ children?: React.ReactNode }> = ({
 };
 
 Container.displayName = 'Container';
-Container.defaultProps = { children: <></> };
 
 export default Container;

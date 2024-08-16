@@ -12,6 +12,5 @@ export const Section: React.FC<{ id?: string; children?: React.ReactNode }> = ({
 };
 
 Section.displayName = 'Section';
-Section.defaultProps = { children: <></> };
 
 export default Section;
