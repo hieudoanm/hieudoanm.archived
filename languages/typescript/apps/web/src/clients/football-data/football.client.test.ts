@@ -1,13 +1,5 @@
 import axios from 'axios';
-import {
-  FootballClient,
-  getCompetition,
-  getCompetitions,
-  getMatchesByTeam,
-  getTeam,
-  getTeams,
-  getTeamsByCompetition,
-} from './football.client';
+import { FootballClient } from './football.client';
 import { Competition, Team } from './football.dto';
 
 describe('FootballClient', () => {

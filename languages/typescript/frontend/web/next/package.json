@@ -15,7 +15,7 @@
     "build": "next build",
     "prestart": "kill-port 3000 && pnpm generate",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "pretest": "rimraf coverage",
     "test": "jest",
     "pregenerate": "prisma format",
@@ -48,6 +48,9 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "@eslint/compat": "1.1.1",
+    "@eslint/eslintrc": "3.1.0",
+    "@eslint/js": "9.9.0",
     "@million/lint": "0.0.73",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.0.0",
@@ -61,6 +64,7 @@
     "daisyui": "4.12.10",
     "eslint": "9.9.0",
     "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-github": "5.0.1",
     "eslint-plugin-jest": "28.8.0",
     "eslint-plugin-prettier": "5.2.1",

@@ -432,6 +432,14 @@
           "type": "string",
           "default": ""
         },
+        "common": {
+          "type": "string",
+          "default": ""
+        },
+        "official": {
+          "type": "string",
+          "default": ""
+        },
         "flag": {
           "type": "string",
           "default": ""

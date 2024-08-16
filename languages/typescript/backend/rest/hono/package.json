@@ -12,7 +12,7 @@
     "predev": "kill-port 8787 && docker-compose up -d && prisma format && prisma generate",
     "dev": "dotenvx run -- wrangler dev api/index.ts",
     "deploy:vercel": "vercel",
-    "lint": "eslint . --fix",
+    "lint": "eslint \"api/**/*.ts\" --fix",
     "format": "prisma format && prettier --cache --write .",
     "pretest": "prisma format && prisma generate",
     "test": "jest"

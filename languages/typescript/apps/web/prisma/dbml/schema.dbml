@@ -108,6 +108,8 @@ Table country {
   cca2 String [unique, not null, default: '']
   cca3 String [unique, not null, default: '']
   name String [not null, default: '']
+  common String [not null, default: '']
+  official String [not null, default: '']
   flag String [not null, default: '']
   createdAt DateTime [default: `now()`, not null]
   updatedAt DateTime [default: `now()`, not null]

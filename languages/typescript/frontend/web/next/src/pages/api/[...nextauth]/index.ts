@@ -8,7 +8,7 @@ import {
 } from '@n26/environments/environments';
 import { OAuthUserConfig } from 'next-auth/providers/oauth';
 
-const googleProviderOptions: OAuthUserConfig<any> = {
+const googleProviderOptions: OAuthUserConfig<unknown> = {
   clientId: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
 };

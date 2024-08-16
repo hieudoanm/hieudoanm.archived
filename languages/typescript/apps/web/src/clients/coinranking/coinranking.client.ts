@@ -39,7 +39,7 @@ export const getCoins = async ({
     if (tag) urlSearchParams.append('tags', tag);
     const url = `${BASE_URL}/v2/coins?${urlSearchParams.toString()}`;
     return await get(url);
-  } catch (error) {
+  } catch {
     return {
       status: 'error',
       data: {
