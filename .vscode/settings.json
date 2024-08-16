@@ -5,7 +5,6 @@
   "editor.wordWrap": "off",
   "vsicons.presets.angular": true,
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.unicodeHighlight.ambiguousCharacters": true,
     "editor.unicodeHighlight.invisibleCharacters": true,
     "editor.wordWrap": "on",
