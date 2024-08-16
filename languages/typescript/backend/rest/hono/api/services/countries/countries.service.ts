@@ -11,9 +11,9 @@ export const getCountriesFromAPI = async (): Promise<RestCountry[]> => {
   try {
     const url = 'https://restcountries.com/v3.1/all';
     const response = await fetch(url);
-    const countries: RestCountry[] = await response.json();
-    console.log('countries', countries.length);
-    return countries;
+    const restCountries: RestCountry[] = await response.json();
+    console.log('countries', restCountries.length);
+    return restCountries;
   } catch (error) {
     console.error('error', error);
     return [];
@@ -45,9 +45,9 @@ export const syncCountries = async (): Promise<Country[]> => {
   await Promise.all(
     countries.map(async ({ name: { common, official }, cca2, cca3 }) => {
       return await prismaClient.country.upsert({
-        create: { common, official, cca2, cca3 },
-        update: { common, official, cca2, cca3 },
-        where: { cca3 },
+        create: { cca2, cca3, common, official },
+        update: { cca2, cca3, common, official },
+        where: { cca2, cca3 },
       });
     })
   );

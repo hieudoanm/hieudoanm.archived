@@ -10,13 +10,16 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = env("DATABASE_URL")
-  directUrl = env("DIRECT_DATABASE_URL")
+  url       = env("POSTGRESQL_URL")
+  directUrl = env("DIRECT_POSTGRESQL_URL")
 }
 
 model Country {
-  common   String @unique
-  official String @unique
-  cca2     String @unique
-  cca3     String @id
+  cca2     String @unique @map("cca2") @db.VarChar(2)
+  cca3     String @unique @map("cca3") @db.VarChar(3)
+  common   String @unique @map("common") @db.VarChar(255)
+  official String @unique @map("official") @db.VarChar(255)
+
+  @@id([cca2, cca3])
+  @@map("country")
 }

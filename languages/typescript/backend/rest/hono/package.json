@@ -9,12 +9,12 @@
   "private": true,
   "scripts": {
     "start": "vercel dev",
-    "predev": "kill-port 8787 && docker-compose up -d && prisma format && prisma generate --no-engine",
+    "predev": "kill-port 8787 && docker-compose up -d && prisma format && prisma generate",
     "dev": "dotenvx run -- wrangler dev api/index.ts",
     "deploy:vercel": "vercel",
     "lint": "eslint . --fix",
     "format": "prisma format && prettier --cache --write .",
-    "pretest": "prisma format && prisma generate --no-engine",
+    "pretest": "prisma format && prisma generate",
     "test": "jest"
   },
   "dependencies": {
