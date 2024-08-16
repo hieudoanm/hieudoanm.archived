@@ -1,4 +1,5 @@
 import { PrismaClient, Title } from '@prisma/client';
+import axios from 'axios';
 
 const prismaClient = new PrismaClient();
 
@@ -31,8 +32,7 @@ const chunk = <T>(array: T[], count: number) => {
 
 const getTitled = async (title: Title): Promise<string[]> => {
   const url = `https://api.chess.com/pub/titled/${title}`;
-  const response = await fetch(url);
-  const data: { players: string[] } = await response.json();
+  const { data } = await axios.get<{ players: string[] }>(url);
   const { players = [] } = data;
   return players;
 };
@@ -80,8 +80,7 @@ const getPlayer = async (playerUsername: string) => {
   try {
     // Player
     const playerUrl = `https://api.chess.com/pub/player/${playerUsername}`;
-    const playerResponse = await fetch(playerUrl);
-    const player: Player = await playerResponse.json();
+    const { data: player } = await axios.get<Player>(playerUrl);
     const {
       player_id: id = 0,
       username = '',
@@ -99,12 +98,14 @@ const getPlayer = async (playerUsername: string) => {
       country: countryUrl = '',
     } = player;
     // Country
-    const countryResponse = await fetch(countryUrl);
-    const { code: countryCode, name: country } = await countryResponse.json();
+    const { data: countryData } = await axios.get<{
+      code: string;
+      name: string;
+    }>(countryUrl);
+    const { code: countryCode, name: country } = countryData;
     // Stats
     const statsUrl = `https://api.chess.com/pub/player/${playerUsername}/stats`;
-    const statsResponse = await fetch(statsUrl);
-    const stats: Stats = await statsResponse.json();
+    const { data: stats } = await axios.get<Stats>(statsUrl);
     const {
       chess_rapid: {
         best: { rating: rapidRatingBest = 0 } = { rating: 0 },
@@ -237,18 +238,10 @@ const getPlayer = async (playerUsername: string) => {
 };
 
 const getPlayers = (usernames: string[]): Promise<'OK' | 'ERROR'> => {
-  return new Promise((resolve, reject) => {
-    Promise.all(
-      usernames.map(async (username) => {
-        return await getPlayer(username);
-      })
-    )
-      .then(() => {
-        resolve('OK');
-      })
-      .catch(() => {
-        reject('ERROR');
-      });
+  return new Promise((resolve) => {
+    Promise.all(usernames.map(async (username) => getPlayer(username)))
+      .then(() => resolve('OK'))
+      .catch(() => resolve('ERROR'));
   });
 };
 
