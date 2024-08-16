@@ -267,7 +267,7 @@ const getExistingUsernames = async (
 };
 
 const main = async () => {
-  const existingUsernamesSet: Set<string> = await getExistingUsernames(true);
+  const existingUsernamesSet: Set<string> = await getExistingUsernames(false);
   titles.reverse();
   for (const title of titles) {
     const usernames = await getTitled(title);
