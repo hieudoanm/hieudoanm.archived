@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-export const useBluetooth = (): any | false => {
-  const [bluetooth, setBluetooth] = useState<any | false>(false);
+export const useBluetooth = (): Bluetooth | false => {
+  const [bluetooth, setBluetooth] = useState<Bluetooth | false>(false);
 
   useEffect(() => {
     if (

@@ -14,8 +14,8 @@ erDiagram
   Json syllables "nullable"
   Json pronunciation "nullable"
   Float frequency "nullable"
-  DateTime createdAt
-  DateTime updatedAt
+  DateTime created_at
+  DateTime updated_at
 }
 "player" {
   Int id PK
@@ -99,16 +99,18 @@ erDiagram
   String name
   String fen
   String pgn
-  DateTime createdAt
-  DateTime updatedAt
+  DateTime created_at
+  DateTime updated_at
 }
 "country" {
   String cca2 UK
   String cca3 UK
   String name
+  String common
+  String official
   String flag
-  DateTime createdAt
-  DateTime updatedAt
+  DateTime created_at
+  DateTime updated_at
 }
 ```
 
@@ -121,8 +123,8 @@ erDiagram
 - `syllables`:
 - `pronunciation`:
 - `frequency`:
-- `createdAt`:
-- `updatedAt`:
+- `created_at`:
+- `updated_at`:
 
 ### `player`
 
@@ -215,8 +217,8 @@ erDiagram
 - `name`:
 - `fen`:
 - `pgn`:
-- `createdAt`:
-- `updatedAt`:
+- `created_at`:
+- `updated_at`:
 
 ### `country`
 
@@ -225,6 +227,8 @@ erDiagram
 - `cca2`:
 - `cca3`:
 - `name`:
+- `common`:
+- `official`:
 - `flag`:
-- `createdAt`:
-- `updatedAt`:
+- `created_at`:
+- `updated_at`:
