@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { APP_NAME } from '@web/constants/app.constants';
 import { ThemeProvider } from '@web/context/ThemeContext';
 import '@web/styles/globals.css';
@@ -32,6 +33,7 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
           content='width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
         />
       </Head>
+      <SpeedInsights />
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           <Component {...pageProps} />
