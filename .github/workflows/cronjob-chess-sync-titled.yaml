@@ -1,6 +1,11 @@
 name: Chess - Sync Titled
 
 on:
+  push:
+    branches:
+      - "master"
+    paths:
+      - "languages/typescript/apps/web/scripts/ts/chess/import/**"
   schedule:
     - cron: "0 0 * * *"
 
