@@ -28,6 +28,6 @@ jobs:
       - name: Linting
         run: pnpm lint
       - name: Unit Test
-        run: pnpm test --workspace-concurrency 1
+        run: pnpm test --concurrency 1
       - name: Build Production
         run: pnpm build --concurrency 1
