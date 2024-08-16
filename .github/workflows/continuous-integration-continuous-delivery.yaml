@@ -24,7 +24,7 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --network-timeout 86400000
+        run: pnpm install
       - name: Linting
         run: pnpm lint
       - name: Unit Test
