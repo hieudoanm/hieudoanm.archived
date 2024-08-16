@@ -4,7 +4,7 @@
 
 - [Languages](#languages)
   - [Table of Content](#table-of-content)
-  - [A for AWS](#a-for-aws)
+  - [A for AWS and Azure](#a-for-aws-and-azure)
   - [B for Bash](#b-for-bash)
   - [C for CPP](#c-for-cpp)
   - [D for Docker](#d-for-docker)
@@ -14,8 +14,8 @@
   - [H](#h)
   - [I](#i)
   - [J for Java](#j-for-java)
-  - [K](#k)
-  - [L](#l)
+  - [K for Kotlin](#k-for-kotlin)
+  - [L for Large Language Model](#l-for-large-language-model)
   - [M for Markdown](#m-for-markdown)
   - [N](#n)
   - [O](#o)
@@ -25,25 +25,25 @@
   - [S for SQL](#s-for-sql)
   - [T for TypeScript](#t-for-typescript)
   - [U](#u)
-  - [V](#v)
+  - [V for Visual Studio Code](#v-for-visual-studio-code)
   - [W](#w)
   - [X](#x)
   - [Y](#y)
   - [Z](#z)
 
-## [A for AWS](https://aws.amazon.com/)
+## A for [AWS](https://aws.amazon.com/) and [Azure](https://azure.microsoft.com/en-us)
 
 ## B for Bash
 
-## [C for CPP](https://isocpp.org/)
+## C for [CPP](https://isocpp.org/)
 
-## [D for Docker](https://www.docker.com/)
+## D for [Docker](https://www.docker.com/)
 
-## [E for Elastic](https://www.elastic.co/)
+## E for [Elastic](https://www.elastic.co/)
 
 ## F
 
-## [G for Go](https://go.dev/)
+## G for [Go](https://go.dev/)
 
 - Back-end
   - [GraphQL](https://graphql.org/)
@@ -58,19 +58,19 @@
 
 ## I
 
-## [J for Java](https://www.java.com/)
+## J for [Java](https://www.java.com/)
 
-## K
+## K for [Kotlin](https://kotlinlang.org/)
 
-## L
+## L for Large Language Model
 
-## [M for Markdown](https://www.markdownguide.org/)
+## M for [Markdown](https://www.markdownguide.org/)
 
 ## N
 
 ## O
 
-## [P for Python](https://www.python.org/)
+## P for [Python](https://www.python.org/)
 
 - Packages
   - [anaconda][anaconda] x [conda][conda]
@@ -85,11 +85,11 @@
 
 ## Q
 
-## [R for Rust](https://www.rust-lang.org/)
+## R for [Rust](https://www.rust-lang.org/)
 
 ## S for SQL
 
-## [T for TypeScript](https://www.typescriptlang.org/)
+## T for [TypeScript](https://www.typescriptlang.org/)
 
 - Back-end
   - REST (Representational State Transfer)
@@ -116,7 +116,7 @@
 
 ## U
 
-## V
+## V for [Visual Studio Code](https://code.visualstudio.com/)
 
 ## W
 
