@@ -271,7 +271,7 @@ const main = async () => {
     const newUsernames: string[] = [...newUsernamesSet];
     console.info('========='.repeat(5));
     console.info(title, newUsernames.length);
-    const chunkUsernames = chunk(newUsernames, 10);
+    const chunkUsernames = chunk(newUsernames, 1);
     for (const players of chunkUsernames) {
       console.info(title, players);
       await getPlayers(players);
