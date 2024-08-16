@@ -14,18 +14,15 @@
 | Psychological | Purpose in Life        | Long-term (**Important**) goals                  |
 | Psychological | Self-acceptance        | Graceful and Mindfulness                         |
 
-## Titles
+## Education
 
-| No  | Group     | Subgroup  | Title                                                       | Status      |
-| --- | --------- | --------- | ----------------------------------------------------------- | ----------- |
-| 01  | Education |           | Bachelor of Business Information Technology                 | Done        |
-| 02  | Education |           | Bachelor of Psychology                                      | In Progress |
-| 03  | Education |           | Master of Computational Neuroscience or Biology Engineering | Defined     |
-| 04  | Education |           | PhD in Biology / Neuroscience                               | Defined     |
-| 05  | Education |           | MD of Neurology                                             | Defined     |
-| 06  | Hobby     | Marathon  | **5** / 10 / 21 / 42 (km)                                   | In Progress |
-| 07  | Hobby     | Languages | Deutsch (A2)                                                | Defined     |
-| 08  | Hobby     | Languages | Korean (TOPIK I)                                            | Defined     |
+| No  | Title                                                       | Status      |
+| --- | ----------------------------------------------------------- | ----------- |
+| 01  | Bachelor of Business Information Technology                 | Done        |
+| 02  | Bachelor of Psychology                                      | In Progress |
+| 03  | Master of Computational Neuroscience or Biology Engineering | Defined     |
+| 04  | PhD in Biology / Neuroscience                               | Defined     |
+| 05  | MD of Neurology                                             | Defined     |
 
 ## House
 

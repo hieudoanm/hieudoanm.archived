@@ -1,9 +1,8 @@
-# Entertainment
+# Bored
 
 <!-- ## Table of Content
 
-- [Entertainment](#entertainment)
-  - [Table of Content](#table-of-content)
+- [Bored](#bored)
   - [Reading](#reading)
     - [Books](#books)
     - [Comics](#comics)
@@ -25,7 +24,10 @@
       - [Champions](#champions)
       - [Players](#players)
         - [Positions](#positions)
-      - [Honorable Mentions](#honorable-mentions) -->
+      - [Honorable Mentions](#honorable-mentions)
+    - [Marathon](#marathon)
+  - [Studying](#studying)
+    - [Languages](#languages) -->
 
 ## Reading
 
@@ -606,3 +608,28 @@
 #### Honorable Mentions
 
 - Franco Baresi (6)
+
+### Marathon
+
+- 5 / 10 / 21 / 42
+
+## Studying
+
+### Languages
+
+| Country        | Tree     | Language | Certificate  | Region      |
+| -------------- | -------- | -------- | ------------ | ----------- |
+| Australia      | Germanic | English  | PTE          |             |
+| Canada         | Germanic | English  | IELTS (6.5)  |             |
+| Singapore      | Germanic | English  | IELTS (6.5)  |             |
+| United Kingdom | Germanic | English  | IELTS (6.5)  |             |
+| United States  | Germanic | English  | TOEFL        |             |
+| Germany        | Germanic | German   | CEFR (A2)    |             |
+| Netherlands    | Germanic | Dutch    | CEFR (A2)    |             |
+| France         | Romance  | French   | CEFR (A2)    | Africa      |
+| Spain          | Romance  | Spainish | CEFR (A2)    | America     |
+| South Korea    |          | Korean   | TOPIK I (A2) | Sinosphere  |
+| Japan          |          | Japanese | JLPT (N4)    | Sinosphere  |
+| China          |          | Chinese  | HSK (2)      | Sinosphere  |
+| Egypt          |          | Arabic   |              | Middle East |
+| Israel         |          | Hebrew   |              | Middle East |
