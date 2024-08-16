@@ -1,7 +1,7 @@
+import dotenv from '@dotenvx/dotenvx';
 import { PrismaClient, Result, TimeClass, Variant } from '@prisma/client';
 import axios from 'axios';
 import { Chess } from 'chess.js';
-import dotenv from 'dotenv';
 
 dotenv.config();
 

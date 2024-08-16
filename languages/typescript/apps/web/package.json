@@ -61,6 +61,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "1.7.0",
     "@million/lint": "0.0.73",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.0.0",
