@@ -1,42 +1,128 @@
-# Sports
+# Entertainment
 
 <!-- ## Table of Content
 
-- [Sports](#sports)
+- [Entertainment](#entertainment)
   - [Table of Content](#table-of-content)
-  - [Chess](#chess)
-    - [2800](#2800)
-    - [Theory](#theory)
-      - [Openings](#openings)
-      - [Tactics](#tactics)
-      - [Endgames](#endgames)
-  - [Football](#football)
-    - [Champions](#champions)
-    - [Players](#players)
-      - [Positions](#positions)
-    - [Honorable Mentions](#honorable-mentions) -->
+  - [Film](#film)
+  - [Music](#music)
+  - [Political Satire](#political-satire)
+  - [Sports](#sports)
+    - [Chess](#chess)
+      - [Titles](#titles)
+      - [2800](#2800)
+      - [Theory](#theory)
+        - [Openings](#openings)
+        - [Tactics](#tactics)
+        - [Endgames](#endgames)
+    - [Football](#football)
+      - [Champions](#champions)
+      - [Players](#players)
+        - [Positions](#positions)
+      - [Honorable Mentions](#honorable-mentions) -->
 
-## Chess
+## Film
 
-### 2800
+| Country       | Name                                |
+| ------------- | ----------------------------------- |
+| United States | Everything, Everywhere, All At Once |
 
-| No    | Continent | Country       | Name                   | Birth | Live   | Peak | Year | World Champion | World Rapid | World Blitz | World Fisher | World Cup |
-| ----- | --------- | ------------- | ---------------------- | ----- | ------ | ---- | ---- | -------------- | ----------- | ----------- | ------------ | --------- |
-| 1     | Europe    | Norway        | Magnus Carlsen         | 1990  | 2889.2 | 2882 | 2014 | 5              | 5           | 7           | 0            | 1         |
-| 2     | Europe    | Russia        | Garry Kasparov         | 1963  | 2856.7 | 2851 | 1999 | 6              | 0           | 0           | 0            | 0         |
-| 3     | America   | United States | Fabiano Caruana        | 1992  | 2851.3 | 2844 | 2014 | 0              | 0           | 0           | 0            | 0         |
-| 4     | America   | United States | Levon Aronian          | 1982  | 2835.5 | 2830 | 2014 | 0              | 0           | 1           | 0            | 2         |
-| 5     | America   | United States | Wesley So              | 1993  | 2824.5 | 2822 | 2017 | 0              | 0           | 0           | 1            | 0         |
-| 6     | Asia      | Azerbaijan    | Shakhriyar Mamedyarov  | 1985  | 2826.2 | 2820 | 2018 | 0              | 1           | 0           | 0            | 0         |
-| 7     | Europe    | France        | Maxime Vachier-Lagrave | 1990  | 2819.3 | 2819 | 2016 | 0              | 0           | 1           | 0            | 0         |
-| 8-9   | Asia      | India         | Viswanathan Anand      | 1969  | 2820.7 | 2817 | 2011 | 5              | 1           | 0           | 0            | 0         |
-| 8-9   | Europe    | Russia        | Vladimir Kramnik       | 1975  | 2817.8 | 2817 | 2016 | 3              | 0           | 0           | 0            | 1         |
-| 10-12 | Europe    | Bulgaria      | Veselin Topalov        | 1975  | 2826.5 | 2816 | 2015 | 1              | 0           | 0           | 0            | 0         |
-| 10-12 | America   | United States | Hikaru Nakamura        | 1987  | 2819.0 | 2816 | 2015 | 0              | 0           | 0           | 1            | 0         |
-| 10-12 | Asia      | China         | Ding Liren             | 1992  | 2816.9 | 2816 | 2018 | 1              | 0           | 0           | 0            | 0         |
-| 13    | Europe    | Russia        | Alexander Grischuk     | 1983  | 2813.6 | 2810 | 2014 | 0              | 0           | 3           | 0            | 0         |
-| 14    | Europe    | France        | Alireza Firouzja       | 2003  | 2804.0 | 2804 | 2021 | 0              | 0           | 0           | 0            | 0         |
-| 15    | Europe    | Netherlands   | Anish Giri             | 1994  | 2802.8 | 2798 | 2015 | 0              | 0           | 0           | 0            | 0         |
+## Music
+
+| Country       | Company | Group             | Name               |
+| ------------- | ------- | ----------------- | ------------------ |
+| Korean        |         |                   | Bewhy              |
+| Korean        | Hype    | Le Sserafim       | Sakura             |
+| Korean        | Hype    | Le Sserafim       | **Chaewon**        |
+| Korean        | Hype    | Le Sserafim       | Yunjin             |
+| Korean        | Hype    | Le Sserafim       | Kazuha             |
+| Korean        | Hype    | Le Sserafim       | Eunchae            |
+| Korean        | Hype    | New Jeans         | Hanni              |
+| Korean        | Hype    | New Jeans         | Minji              |
+| Korean        | Hype    | New Jeans         | Danielle           |
+| Korean        | Hype    | New Jeans         | Haerin             |
+| Korean        | Hype    | New Jeans         | Hyein              |
+| Korean        | JYP     | NMIXX             | **Haewon**         |
+| Korean        | JYP     | NMIXX             | Sullyoon           |
+| Korean        | JYP     | NMIXX             | Jini               |
+| Korean        | JYP     | NMIXX             | Lily               |
+| Korean        | JYP     | NMIXX             | Jiwoo              |
+| Korean        | JYP     | NMIXX             | Bae                |
+| Korean        | SM      | aespa             | Karina             |
+| Korean        | SM      | aespa             | **Winter**         |
+| Korean        | SM      | aespa             | Ningning           |
+| Korean        | SM      | aespa             | Giselle            |
+| Korean        | SM      | Girls' Generation | **Taeyeon**        |
+| Korean        | SM      | Girls' Generation | Jessica            |
+| Korean        | SM      | Girls' Generation | Sunny              |
+| Korean        | SM      | Girls' Generation | Tiffany            |
+| Korean        | SM      | Girls' Generation | Hyoyeon            |
+| Korean        | SM      | Girls' Generation | Yuri               |
+| Korean        | SM      | Girls' Generation | Sooyoung           |
+| Korean        | SM      | Girls' Generation | Yoona              |
+| Korean        | SM      | Girls' Generation | Seohyun            |
+| Korean        | SM      | Red Velvet        | Irene              |
+| Korean        | SM      | Red Velvet        | Seulgi             |
+| Korean        | SM      | Red Velvet        | **Wendy**          |
+| Korean        | SM      | Red Velvet        | Joy                |
+| Korean        | SM      | Red Velvet        | Yeri               |
+| United States |         |                   | Dr.Dre             |
+| United States |         |                   | **Eminem**         |
+| United States |         |                   | Jay-Z              |
+| United States |         |                   | Kanye West         |
+| United States |         |                   | **Kendrick Lamar** |
+
+## Political Satire
+
+| Network        | Show              | Name            |
+| -------------- | ----------------- | --------------- |
+| CBS            | The Late Show     | David Letterman |
+| CBS            | The Late Show     | Stephen Colbert |
+| Comedy Central | The Daily Show    | Jon Stewart     |
+| Comedy Central | The Daily Show    | Trevor Noah     |
+| HBO            | Last Week Tonight | John Oliver     |
+| HBO            | Real Time         | Bill Maher      |
+| NBC            | Late Night        | Seth Meyers     |
+| TBS            | Conan             | Conan           |
+
+## Sports
+
+### Chess
+
+#### Titles
+
+| Abbreviation | Title                      | Rating | Norms |
+| ------------ | -------------------------- | ------ | ----- |
+| GM           | Grandnmaster               | 2500   | 3     |
+| IM           | International Master       | 2400   | 3     |
+| FM           | FIDE Master                | 2300   | -     |
+| CM           | Candidate Master           | 2200   | -     |
+| NM           | National Master            | -      | -     |
+| WGM          | Woman Grandnmaster         | 2300   | 3     |
+| WIM          | Woman International Master | 2200   | 3     |
+| WFM          | Woman FIDE Master          | 2100   | -     |
+| WCM          | Woman Candidate Master     | 2000   | -     |
+| WNM          | Woman National Master      | -      | -     |
+
+#### 2800
+
+| No  | Continent | Country       | Name                   | Birth | Live   | Peak | Year | World Champion | World Rapid | World Blitz | World Fisher | World Cup |
+| --- | --------- | ------------- | ---------------------- | ----- | ------ | ---- | ---- | -------------- | ----------- | ----------- | ------------ | --------- |
+| 1   | Europe    | Norway        | Magnus Carlsen         | 1990  | 2889.2 | 2882 | 2014 | 5              | 5           | 7           | 0            | 1         |
+| 2   | Europe    | Russia        | Garry Kasparov         | 1963  | 2856.7 | 2851 | 1999 | 6              | 0           | 0           | 0            | 0         |
+| 3   | America   | United States | Fabiano Caruana        | 1992  | 2851.3 | 2844 | 2014 | 0              | 0           | 0           | 0            | 0         |
+| 4   | America   | United States | Levon Aronian          | 1982  | 2835.5 | 2830 | 2014 | 0              | 0           | 1           | 0            | 2         |
+| 5   | America   | United States | Wesley So              | 1993  | 2824.5 | 2822 | 2017 | 0              | 0           | 0           | 1            | 0         |
+| 6   | Asia      | Azerbaijan    | Shakhriyar Mamedyarov  | 1985  | 2826.2 | 2820 | 2018 | 0              | 1           | 0           | 0            | 0         |
+| 7   | Europe    | France        | Maxime Vachier-Lagrave | 1990  | 2819.3 | 2819 | 2016 | 0              | 0           | 1           | 0            | 0         |
+| 8   | Asia      | India         | Viswanathan Anand      | 1969  | 2820.7 | 2817 | 2011 | 5              | 1           | 0           | 0            | 0         |
+| 9   | Europe    | Russia        | Vladimir Kramnik       | 1975  | 2817.8 | 2817 | 2016 | 3              | 0           | 0           | 0            | 1         |
+| 10  | Europe    | Bulgaria      | Veselin Topalov        | 1975  | 2826.5 | 2816 | 2015 | 1              | 0           | 0           | 0            | 0         |
+| 11  | America   | United States | Hikaru Nakamura        | 1987  | 2819.0 | 2816 | 2015 | 0              | 0           | 0           | 1            | 0         |
+| 12  | Asia      | China         | Ding Liren             | 1992  | 2816.9 | 2816 | 2018 | 1              | 0           | 0           | 0            | 0         |
+| 13  | Europe    | Russia        | Alexander Grischuk     | 1983  | 2813.6 | 2810 | 2014 | 0              | 0           | 3           | 0            | 0         |
+| 14  | Europe    | France        | Alireza Firouzja       | 2003  | 2804.0 | 2804 | 2021 | 0              | 0           | 0           | 0            | 0         |
+| 15  | Europe    | Netherlands   | Anish Giri             | 1994  | 2802.8 | 2798 | 2015 | 0              | 0           | 0           | 0            | 0         |
 
 - `Magnus Carlsen` are the most dominant one, with 18 world titles in his name (blitz and rapid are new events starting from 2012).
 - `Fabiano Caruana` and `Alireza Firouzja` are the `youngest` one to cross the **2800** mark but does not win any `world titles`.
@@ -44,9 +130,9 @@
 - `United States` has the most 2800 Super GM (4), followed by `Russia` (3) and `France` (2).
 - In a podcast, `Fabiano Caruana` claimed his generations are the strongest generation (GenY / Millennial). He was right. `9/14` players are generation Y.
 
-### Theory
+#### Theory
 
-#### Openings
+##### Openings
 
 [Openings](https://github.com/lichess-org/chess-openings)
 
@@ -63,7 +149,7 @@
 | 9   | c4    | English Opening   |
 | 10  | Nf3   | Reti Opening      |
 
-#### Tactics
+##### Tactics
 
 1. Fried liver Tactic
 2. Piece Sacrifice
@@ -88,13 +174,13 @@
 21. Windmill
 22. Zugzwang
 
-#### Endgames
+##### Endgames
 
 [Tablebase](https://syzygy-tables.info/)
 
-## Football
+### Football
 
-### Champions
+#### Champions
 
 | Year | World Cup    | Euro           | Copa America | Africa Cup of Nations | Asian Cup    | ASEAN Championship | Champion League   | Europa League            | Premier League    | La Liga             | Seria A     | Bundesliga           | Ligue 1             | Primeira Liga | Eredivisie |
 | ---- | ------------ | -------------- | ------------ | --------------------- | ------------ | ------------------ | ----------------- | ------------------------ | ----------------- | ------------------- | ----------- | -------------------- | ------------------- | ------------- | ---------- |
@@ -200,13 +286,13 @@
 | 2029 |              |                |              |                       |              |                    |                   |                          |                   |                     |             |                      |                     |               |            |
 | 2030 |              |                |              |                       |              |                    |                   |                          |                   |                     |             |                      |                     |               |            |
 
-### Players
+#### Players
 
 - Birth Year: 1970 - now
 - Active Year: 1990 - now
 - Formation: 4-3-3
 
-#### Positions
+##### Positions
 
 - `GK` - Goalkeeper: Shot Stop and Ball Playing
 - `RB` - Right-back: Stamina and Crossing
@@ -454,6 +540,6 @@
 | Club          | Europe (UEFA)            | Spain     | Real Madrid         | `LW`      | Cristiano Ronaldo (7)       |                           |                       |                            | Cristiano Ronaldo (7)  | Cristiano Ronaldo (7)       | Vinícius Júnior             |       |
 | Club          | Europe (UEFA)            | Spain     | Real Madrid         | `ST`      | Karim Benzema               |                           | Ronaldo (9)           | Ruud van Nistelrooy        | Karim Benzema          | Karim Benzema (9)           | Karim Benzema               |       |
 
-### Honorable Mentions
+#### Honorable Mentions
 
 - Franco Baresi (6)

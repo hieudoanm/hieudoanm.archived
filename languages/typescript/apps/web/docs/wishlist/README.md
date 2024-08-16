@@ -24,9 +24,8 @@
 | 04  | Education |           | PhD in Biology / Neuroscience                               | Defined     |
 | 05  | Education |           | MD of Neurology                                             | Defined     |
 | 06  | Hobby     | Marathon  | **5** / 10 / 21 / 42 (km)                                   | In Progress |
-| 07  | Hobby     | Chess     | CM / FM / IM / GM                                           | In Progress |
-| 08  | Hobby     | Languages | Deutsch (B1)                                                | Defined     |
-| 09  | Hobby     | Languages | Korean (TOPIK I)                                            | Defined     |
+| 07  | Hobby     | Languages | Deutsch (A2)                                                | Defined     |
+| 08  | Hobby     | Languages | Korean (TOPIK I)                                            | Defined     |
 
 ## House
 
