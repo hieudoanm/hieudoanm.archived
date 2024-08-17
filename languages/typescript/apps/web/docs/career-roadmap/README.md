@@ -165,9 +165,9 @@
 | [braingate](https://www.braingate.org/)  |                              | Brown University         | New York        | United States | Chip Implant |
 | [precisionneuro][precisionneuro]         |                              | West Virginia University | West Virginia   | United States | Chip Implant |
 | [blackrockneurotech][blackrockneurotech] |                              | University of Pittsburgh | Pennsylvania    | United States | Chip Implant |
-| [kernel](https://www.kernel.com/)        |                              |                          | California      | United States | EEG          |
 | [emotiv](https://www.emotiv.com/)        |                              | Macquarie University     | New South Wales | Australia     | EEG          |
 | [bitbrain](https://www.bitbrain.com/)    |                              | University of Zaragoza   | Zaragoza        | Spain         | EEG          |
+| [kernel](https://www.kernel.com/)        |                              |                          | California      | United States | EEG          |
 | [brainco](https://brainco.tech/)         |                              | Harvard University       | Massachusetts   | United States | EEG          |
 | [neurable](https://neurable.com/)        |                              | University of Michigan   | Michigan        | United States | EEG          |
 
