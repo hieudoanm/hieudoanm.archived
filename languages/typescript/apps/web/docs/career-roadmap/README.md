@@ -158,18 +158,18 @@
 
 ### Companies
 
-| Company                                  | Careers                      | Univerity                | State           | Country       |
-| ---------------------------------------- | ---------------------------- | ------------------------ | --------------- | ------------- |
-| [emotiv](https://www.emotiv.com/)        |                              | Macquarie University     | New South Wales | Australia     |
-| [synchron](https://synchron.com/)        | [Careers][synchron-careers]  | University of Melbourne  | Victoria        | Australia     |
-| [bitbrain](https://www.bitbrain.com/)    |                              | University of Zaragoza   | Zaragoza        | Spain         |
-| [neuralink](https://neuralink.com/)      | [Careers][neuralink-careers] | University of California | California      | United States |
-| [braingate](https://www.braingate.org/)  |                              | Brown University         | New York        | United States |
-| [brainco](https://brainco.tech/)         |                              | Harvard University       | Massachusetts   | United States |
-| [neurable](https://neurable.com/)        |                              | University of Michigan   | Michigan        | United States |
-| [blackrockneurotech][blackrockneurotech] |                              | University of Pittsburgh | Pennsylvania    | United States |
-| [precisionneuro][precisionneuro]         |                              | West Virginia University | West Virginia   | United States |
-| [kernel](https://www.kernel.com/)        |                              |                          |                 |               |
+| Company                                  | Careers                      | Univerity                | State           | Country       | Product      |
+| ---------------------------------------- | ---------------------------- | ------------------------ | --------------- | ------------- | ------------ |
+| [synchron](https://synchron.com/)        | [Careers][synchron-careers]  | University of Melbourne  | Victoria        | Australia     | Chip Implant |
+| [neuralink](https://neuralink.com/)      | [Careers][neuralink-careers] | University of California | California      | United States | Chip Implant |
+| [braingate](https://www.braingate.org/)  |                              | Brown University         | New York        | United States | Chip Implant |
+| [precisionneuro][precisionneuro]         |                              | West Virginia University | West Virginia   | United States | Chip Implant |
+| [blackrockneurotech][blackrockneurotech] |                              | University of Pittsburgh | Pennsylvania    | United States | Chip Implant |
+| [kernel](https://www.kernel.com/)        |                              |                          | California      | United States | EEG          |
+| [emotiv](https://www.emotiv.com/)        |                              | Macquarie University     | New South Wales | Australia     | EEG          |
+| [bitbrain](https://www.bitbrain.com/)    |                              | University of Zaragoza   | Zaragoza        | Spain         | EEG          |
+| [brainco](https://brainco.tech/)         |                              | Harvard University       | Massachusetts   | United States | EEG          |
+| [neurable](https://neurable.com/)        |                              | University of Michigan   | Michigan        | United States | EEG          |
 
 [birmingham]: https://www.birmingham.ac.uk/postgraduate/courses/taught/psych/computation-neuro-cognitive-robotics.aspx
 [blackrockneurotech]: https://blackrockneurotech.com/
