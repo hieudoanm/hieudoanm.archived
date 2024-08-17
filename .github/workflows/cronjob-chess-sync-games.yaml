@@ -7,7 +7,7 @@ on:
     paths:
       - "languages/typescript/apps/web/scripts/ts/chess/import/**"
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 0" # "At 00:00 on Sunday."
 
 jobs:
   sync:
@@ -31,8 +31,8 @@ jobs:
       - name: Set Up Prisma
         run: pnpm prisma format && pnpm prisma generate
         working-directory: languages/typescript/apps/web
-      # - name: Sync Games
-      #   run: pnpm ts-node ./scripts/ts/chess/import/games.ts
-      #   working-directory: languages/typescript/apps/web
-      #   env:
-      #     POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
+      - name: Sync Games
+        run: pnpm ts-node ./scripts/ts/chess/import/games.ts
+        working-directory: languages/typescript/apps/web
+        env:
+          POSTGRESQL_URL: ${{ secrets.POSTGRESQL_URL }}
