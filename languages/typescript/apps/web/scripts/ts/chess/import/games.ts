@@ -229,7 +229,7 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     const archivesUrl = `${PUBLIC_URL}/player/${username}/games/archives`;
     const { data } = await axios.get<{ archives: string[] }>(archivesUrl);
     const { archives = [] } = data;
-    archives.reverse();
+    // archives.reverse();
     for (const archive of archives) {
       const games = await getGames(archive);
       console.info(`archive=${archive} games=${games.length}`);
@@ -255,17 +255,18 @@ const main = async () => {
   const usernames = [
     // { username: 'thedarkknighttrilogy', title: '' }, // Hieu Doan
     { username: 'anishgiri', title: 'gm' }, // Anish Giri
-    // { username: 'azerichess', title: 'gm' }, // Shakhriyar Mamedyarov
+    { username: 'azerichess', title: 'gm' }, // Shakhriyar Mamedyarov
     // { username: 'chesswarrior7197', title: 'gm' }, // Nodirbek Abdusattorov
     { username: 'chefshouse', title: 'gm' }, // Ding Liren
     // { username: 'crescentmoon2411', title: 'gm' }, // Nguyen Ngoc Truong Son
     // { username: 'danielnaroditsky', title: 'gm' }, // Daniel Naroditsky
     // { username: 'duhless', title: 'gm' }, // Daniil Dubov
     { username: 'fabianocaruana', title: 'gm' }, // Fabiano Caruana
-    // { username: 'firouzja2003', title: 'gm' }, // Alireza Firouzja
+    { username: 'firouzja2003', title: 'gm' }, // Alireza Firouzja
+    { username: 'garrykasparov', title: 'gm' }, // Garry Kasparov
     // { username: 'ghandeevam2003', title: 'gm' }, // Arjun Erigaisi
     { username: 'gmwso', title: 'gm' }, // Wesley So
-    // { username: 'grischuk', title: 'gm' }, // Alexander Grischuk
+    { username: 'grischuk', title: 'gm' }, // Alexander Grischuk
     // { username: 'gukeshdommaraju', title: 'gm' }, // Gukesh D
     { username: 'hikaru', title: 'gm' }, // Hikaru Nakamura
     // { username: 'lachesisq', title: 'gm' }, // Ian Nepomniachtchi
@@ -277,12 +278,13 @@ const main = async () => {
     // { username: 'polish_fighter3000', title: 'gm' }, // Jan-Krzysztof Duda
     { username: 'thevish', title: 'gm' }, // Viswanathan Anand
     // { username: 'tradjabov', title: 'gm' }, // Teimour Radjabov
+    { username: 'veselintopalov359', title: 'gm' }, // Veselin Topalov
     // { username: 'viditchess', title: 'gm' }, // Vidit Gujrathi
-    { username: 'vincentkeymer', title: 'gm' }, // Vincent Keymer
-    // { username: 'vladimirkramnik', title: 'gm' }, // Vladimir Kramnik
+    // { username: 'vincentkeymer', title: 'gm' }, // Vincent Keymer
+    { username: 'vladimirkramnik', title: 'gm' }, // Vladimir Kramnik
     // { username: 'rpragchess', title: 'gm' }, // Praggnanandhaa Rameshbabu
-    { username: 'sergeykarjakin', title: 'gm' }, // Sergey Karjakin
-    { username: 'wonderfultime', title: 'gm' }, // Tuan Minh Le
+    // { username: 'sergeykarjakin', title: 'gm' }, // Sergey Karjakin
+    // { username: 'wonderfultime', title: 'gm' }, // Tuan Minh Le
     // { username: 'yifan0227', title: 'gm' }, // Hou Yifan
   ];
   usernames.reverse();
