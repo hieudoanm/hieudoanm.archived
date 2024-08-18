@@ -4,7 +4,7 @@
 | ----------- | ------- | ----------- | ----- | ------- | ------------------------------ | ------------------------------------------ |
 | Education   | Vietnam | Ho Chi Minh | 2022  | **now** | [RMIT][rmit]                   | [Bachelor of Psychology][rmit-psychology]  |
 | Work        | Vietnam | Ho Chi Minh | 2021  | **now** | [NAB][nab]                     | Senior Software Developer                  |
-| Certificate | Vietnam | Ho Chi Minh | 2021  | 2024    | [AWS][aws]                     | [Solutions Architect – Associate][aws-ssa] |
+| Certificate | Vietnam | Ho Chi Minh | 2021  | 2024    | [AWS][aws]                     | [Solutions Architect - Associate][aws-ssa] |
 | Work        | Vietnam | Hanoi       | 2019  | 2021    | [BoostCommerce][boostcommerce] | Software Developer                         |
 | Work        | Germany | Frankfurt   | 2017  | 2019    | [admetrics][admetrics]         | Front-end Developer                        |
 | Work        | Finland | Helsinki    | 2015  | 2017    | Witrafi                        | Front-end Developer                        |

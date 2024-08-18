@@ -1,8 +1,9 @@
 # Bored
 
-<!-- ## Table of Content
+## Table of Content
 
 - [Bored](#bored)
+  - [Table of Content](#table-of-content)
   - [Reading](#reading)
     - [Books](#books)
     - [Comics](#comics)
@@ -15,7 +16,7 @@
   - [Sports](#sports)
     - [Chess](#chess)
       - [Titles](#titles)
-      - [2800](#2800)
+      - [2800 Club](#2800-club)
       - [Theory](#theory)
         - [Openings](#openings)
         - [Tactics](#tactics)
@@ -25,9 +26,17 @@
       - [Players](#players)
         - [Positions](#positions)
       - [Honorable Mentions](#honorable-mentions)
+    - [Futsal](#futsal)
     - [Marathon](#marathon)
   - [Studying](#studying)
-    - [Languages](#languages) -->
+    - [Languages](#languages)
+    - [STEM (Science, Technology, Engineering, and Mathematics)](#stem-science-technology-engineering-and-mathematics)
+      - [Science](#science)
+      - [Technology](#technology)
+        - [Programming](#programming)
+        - [Cloud](#cloud)
+      - [Engineering](#engineering)
+      - [Mathematics](#mathematics)
 
 ## Reading
 
@@ -163,8 +172,12 @@
 | WFM          | Woman FIDE Master          | 2100   | -     |
 | WCM          | Woman Candidate Master     | 2000   | -     |
 | WNM          | Woman National Master      | -      | -     |
+| AGM          |                            | 2000   | -     |
+| AIM          |                            | 1700   | -     |
+| AFM          |                            | 1400   | -     |
+| ACM          |                            | 1100   | -     |
 
-#### 2800
+#### 2800 Club
 
 | No  | Continent | Country       | Name                   | Birth | Live   | Peak | Year | World Champion | World Rapid | World Blitz | World Fisher | World Cup |
 | --- | --------- | ------------- | ---------------------- | ----- | ------ | ---- | ---- | -------------- | ----------- | ----------- | ------------ | --------- |
@@ -649,6 +662,12 @@
 | 2022 |           | Portugal | Argentina |               |            | New Zealand     | Japan   | Thailand  |
 | 2023 |           |          |           |               |            | New Zealand     |         |           |
 | 2024 |           |          | Brazil    | Panama        | Morocco    |                 | Iran    |           |
+| 2025 |           |          |           |               |            |                 |         |           |
+| 2026 |           |          |           |               |            |                 |         |           |
+| 2027 |           |          |           |               |            |                 |         |           |
+| 2028 |           |          |           |               |            |                 |         |           |
+| 2029 |           |          |           |               |            |                 |         |           |
+| 2030 |           |          |           |               |            |                 |         |           |
 
 ### Marathon
 
@@ -674,3 +693,71 @@
 | China          |          | Chinese  | HSK (2)      | Sinosphere  |
 | Egypt          |          | Arabic   |              | Middle East |
 | Israel         |          | Hebrew   |              | Middle East |
+
+### STEM (Science, Technology, Engineering, and Mathematics)
+
+#### Science
+
+#### Technology
+
+##### Programming
+
+|          | Language           | Group           | Subgroup         | Website                                         |
+| -------- | ------------------ | --------------- | ---------------- | ----------------------------------------------- |
+| Hardware | C                  |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
+| Hardware | C++                |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
+| Hardware | Rust               |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
+| Software | Go                 | CLI             |                  | [cobra](https://cobra.dev/)                     |
+| Software | [GraphQL][graphql] |                 |                  |                                                 |
+| Software | HTML               |                 |                  | [HTMX](https://htmx.org/)                       |
+| Software | Python             | Package Manager |                  | [pipenv][pipenv]                                |
+| Software | Python             | Package Manager |                  | [conda][conda]                                  |
+| Software | Python             | Packages Set    |                  | [anaconda][anaconda]                            |
+| Software | Python             | Back-end        |                  | [django][django]                                |
+| Software | Python             | Back-end        |                  | [fastapi](https://fastapi.tiangolo.com/)        |
+| Software | Python             | Back-end        |                  | [flask][flask]                                  |
+| Software | Python             | Data Science    | Data Management  | [Pandas](https://pandas.pydata.org/)            |
+| Software | Python             | Data Science    | Data Management  | [Numpy](https://numpy.org/)                     |
+| Software | Python             | Data Science    | Machine Learning | [PyTorch](https://pytorch.org/)                 |
+| Software | Python             | Data Science    | Machine Learning | [scikit-learn](https://scikit-learn.org/stable) |
+| Software | Python             | Data Science    | Machine Learning | [TensorFlow](https://www.tensorflow.org/)       |
+| Software | SQL                |                 |                  | [PostgreSQL](https://www.postgresql.org/)       |
+| Software | TypeScript         | Package Manager |                  | [PNPM](https://pnpm.io/)                        |
+| Software | TypeScript         | Back-end        |                  | [Nest.js](https://nestjs.com/)                  |
+| Software | TypeScript         | Back-end        |                  | [tRPC](https://trpc.io/)                        |
+| Software | TypeScript         | Back-end        |                  | [gRPC](https://grpc.io/)                        |
+| Software | TypeScript         | Back-end        | GraphQL          | [Apollo](https://www.apollographql.com/)        |
+| Software | TypeScript         | Back-end        | WebSocket        | [Socket.io](https://socket.io/)                 |
+| Software | TypeScript         | Back-end        | WebSocket        | [WS](https://github.com/websockets/ws)          |
+| Software | TypeScript         | Back-end        | [Kafka][kafka]   | [Kafka.js](https://kafka.js.org/)               |
+| Software | TypeScript         | Front-end       | Mobile           | [React Native](https://reactnative.dev/)        |
+| Software | TypeScript         | Front-end       | Mobile           | [Expo](https://expo.dev/)                       |
+| Software | TypeScript         | Front-end       | Web              | [Angular](https://angular.dev/)                 |
+| Software | TypeScript         | Front-end       | Web              | [React](https://react.dev/)                     |
+| Software | TypeScript         | Front-end       | Web              | [Gatsby.js](https://www.gatsbyjs.com/)          |
+| Software | TypeScript         | Front-end       | Web              | [Next.js](https://nextjs.org/)                  |
+| Software | TypeScript         | Front-end       | Web              | [Solid.js Start](https://start.solidjs.com/)    |
+| Software | TypeScript         | Front-end       | Web              | [SvelteKit](https://kit.svelte.dev/)            |
+| Software | TypeScript         | Front-end       | Web              | [Vue](https://vuejs.org/)                       |
+
+##### Cloud
+
+| AWS | Azure | Google Cloud |
+| --- | ----- | ------------ |
+|     |       |              |
+
+#### Engineering
+
+#### Mathematics
+
+- Calculus
+- Linear Algebra
+- Mathematical Analysis
+
+[anaconda]: https://www.anaconda.com
+[conda]: https://docs.conda.io
+[django]: https://www.djangoproject.com/
+[flask]: https://flask.palletsprojects.com/en/3.0.x/
+[graphql]: https://graphql.org/
+[kafka]: https://kafka.apache.org/
+[pipenv]: https://pipenv.pypa.io/en/latest/

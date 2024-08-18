@@ -7,36 +7,34 @@
   - [Bachelor of Psychology (RMIT)](#bachelor-of-psychology-rmit)
   - [Master of Computational Neuroscience](#master-of-computational-neuroscience)
   - [Medical Schools](#medical-schools)
-  - [Biological Computational NeuroScience](#biological-computational-neuroscience)
-    - [Techstack](#techstack)
-    - [Companies](#companies) -->
+  - [Biological Computational NeuroScience](#biological-computational-neuroscience) -->
 
 ## Bachelor of Psychology (RMIT)
 
 | Year | Semester | Subject                                                  | Alternative                          |
 | ---- | -------- | -------------------------------------------------------- | ------------------------------------ |
-| 2023 | C        | Environmental Psychology                                 |                                      |
-| 2023 | C        | **Foundation of Psychology**                             |                                      |
-| 2023 | C        | Understading Personality                                 | Personality Psychology               |
-| 2024 | A        | **Forensic Psychology**                                  |                                      |
-| 2024 | A        | Psychology of Everyday Thinking                          | Cognitive Psychology (Foundation)    |
-| 2024 | A        | Psychology of Social Life                                | Social Psychology (Foundation)       |
-| 2024 | B        | **The Science of Human Nature**                          | Evolutionary Psychology              |
-| 2024 | B        | Principles of Psychology                                 |                                      |
-| 2024 | B        | **Psychology of Gender**                                 |                                      |
-| 2024 | C        | **Cognitive Psychology**                                 |                                      |
-| 2024 | C        | Developmental Psychology                                 |                                      |
-| 2024 | C        | **Social Psychology**                                    |                                      |
-| 2025 | A        | **Biological Psychology**                                |                                      |
-| 2025 | A        | **Research Methods in Psychology**                       | Statistics                           |
-| 2025 | B        | Motivation and Organisational Psychology                 | Industrial-Organizational Psychology |
-| 2025 | B        | **Philosophy and Methodology of Psychology**             | Statistics (Advanced)                |
-| 2025 | C        | **Psychological Assessment and Individual Differences**  |                                      |
-| 2025 | C        | **Psychopathology and Models of Intervention**           |                                      |
-| 2026 | A        | _Foundations of Artificial Intelligence for STEM_        |                                      |
-| 2026 | A        | **Professional Practices and Cross-Cultural Psychology** |                                      |
-| 2026 | B        | Research Project                                         |                                      |
-| 2026 | B        | _Foundation of Digital Health_                           |                                      |
+| 2022 | C        | Environmental Psychology                                 |                                      |
+| 2022 | C        | **Foundation of Psychology**                             |                                      |
+| 2022 | C        | Understading Personality                                 | Personality Psychology               |
+| 2023 | A        | **Forensic Psychology**                                  |                                      |
+| 2023 | A        | Psychology of Everyday Thinking                          | Cognitive Psychology (Foundation)    |
+| 2023 | A        | Psychology of Social Life                                | Social Psychology (Foundation)       |
+| 2023 | B        | **The Science of Human Nature**                          | Evolutionary Psychology              |
+| 2023 | B        | Principles of Psychology                                 |                                      |
+| 2023 | B        | **Psychology of Gender**                                 |                                      |
+| 2023 | C        | **Cognitive Psychology**                                 |                                      |
+| 2023 | C        | Developmental Psychology                                 |                                      |
+| 2023 | C        | **Social Psychology**                                    |                                      |
+| 2024 | A        | **Biological Psychology**                                |                                      |
+| 2024 | A        | **Research Methods in Psychology**                       | Statistics                           |
+| 2024 | B        | Motivation and Organisational Psychology                 | Industrial-Organizational Psychology |
+| 2024 | B        | **Philosophy and Methodology of Psychology**             | Statistics (Advanced)                |
+| 2024 | C        | **Psychological Assessment and Individual Differences**  |                                      |
+| 2024 | C        | **Psychopathology and Models of Intervention**           |                                      |
+| 2025 | A        | _Foundations of Artificial Intelligence for STEM_        |                                      |
+| 2025 | A        | **Professional Practices and Cross-Cultural Psychology** |                                      |
+| 2025 | B        | Research Project                                         |                                      |
+| 2025 | B        | _Foundation of Digital Health_                           |                                      |
 
 ## Master of Computational Neuroscience
 
@@ -141,22 +139,8 @@
 
 ## Biological Computational NeuroScience
 
-### Techstack
-
-- Hardware: C / C++ / Rust
-- Software: JavaScript (React, Angular, Vue)
-- Mathematics: Linear Algebra, Calculus, Mathematical Analysis
-- Python: Scientific Computing (Pandas, Numpy)
-- Python: Machine Learning (sklearn, PyTorch, Tensorflow)
-- Machine Learning: Classic (Supervised and Unsupervised)
-- Deep Learning: Reinforcements
-- AWS
-- Linux/Unix systems
-
 - [Synchron - Neural research engineer](https://job-boards.greenhouse.io/synchron/jobs/5231485004)
 - [Neuralink - Machine Learning Engineer](https://boards.greenhouse.io/neuralink/jobs/5663271003?gh_jid=5663271003&gh_src=c356a2533us)
-
-### Companies
 
 | Company                                  | Careers                      | Univerity                | State           | Country       | Product      |
 | ---------------------------------------- | ---------------------------- | ------------------------ | --------------- | ------------- | ------------ |
