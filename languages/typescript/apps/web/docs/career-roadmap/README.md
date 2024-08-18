@@ -13,30 +13,30 @@
 
 ## Bachelor of Psychology (RMIT)
 
-| Year | Semester | Subject                                             | Alternative                          |
-| ---- | -------- | --------------------------------------------------- | ------------------------------------ |
-| 2023 | C        | Environmental Psychology                            |                                      |
-| 2023 | C        | Foundation of Psychology                            |                                      |
-| 2023 | C        | Understading Personality                            | Personality Psychology               |
-| 2024 | A        | Forensic Psychology                                 |                                      |
-| 2024 | A        | Psychology of Everyday Thinking                     | Cognitive Psychology (Foundation)    |
-| 2024 | A        | Psychology of Social Life                           | Social Psychology (Foundation)       |
-| 2024 | B        | **The Science of Human Nature**                     | Evolutionary Psychology              |
-| 2024 | B        | Principles of Psychology                            |                                      |
-| 2024 | B        | Psychology of Gender                                |                                      |
-| 2024 | C        | **Cognitive Psychology**                            |                                      |
-| 2024 | C        | _Developmental Psychology_                          |                                      |
-| 2024 | C        | _Social Psychology_                                 |                                      |
-| 2025 | A        | **Biological Psychology**                           |                                      |
-| 2025 | A        | Research Methods in Psychology                      | Statistics                           |
-| 2025 | B        | Motivation and Organisational Psychology            | Industrial-Organizational psychology |
-| 2025 | B        | Philosophy and Methodology of Psychology            | Statistics (Advanced)                |
-| 2025 | C        | Psychological Assessment and Individual Differences |                                      |
-| 2025 | C        | Psychopathology and Models of Intervention          |                                      |
-| 2026 | A        | Foundations of Artificial Intelligence for STEM     |                                      |
-| 2026 | A        |                                                     |                                      |
-| 2026 | B        | Research Project                                    |                                      |
-| 2026 | B        |                                                     |                                      |
+| Year | Semester | Subject                                                  | Alternative                          |
+| ---- | -------- | -------------------------------------------------------- | ------------------------------------ |
+| 2023 | C        | Environmental Psychology                                 |                                      |
+| 2023 | C        | **Foundation of Psychology**                             |                                      |
+| 2023 | C        | Understading Personality                                 | Personality Psychology               |
+| 2024 | A        | **Forensic Psychology**                                  |                                      |
+| 2024 | A        | Psychology of Everyday Thinking                          | Cognitive Psychology (Foundation)    |
+| 2024 | A        | Psychology of Social Life                                | Social Psychology (Foundation)       |
+| 2024 | B        | **The Science of Human Nature**                          | Evolutionary Psychology              |
+| 2024 | B        | Principles of Psychology                                 |                                      |
+| 2024 | B        | **Psychology of Gender**                                 |                                      |
+| 2024 | C        | **Cognitive Psychology**                                 |                                      |
+| 2024 | C        | Developmental Psychology                                 |                                      |
+| 2024 | C        | **Social Psychology**                                    |                                      |
+| 2025 | A        | **Biological Psychology**                                |                                      |
+| 2025 | A        | **Research Methods in Psychology**                       | Statistics                           |
+| 2025 | B        | Motivation and Organisational Psychology                 | Industrial-Organizational Psychology |
+| 2025 | B        | **Philosophy and Methodology of Psychology**             | Statistics (Advanced)                |
+| 2025 | C        | **Psychological Assessment and Individual Differences**  |                                      |
+| 2025 | C        | **Psychopathology and Models of Intervention**           |                                      |
+| 2026 | A        | _Foundations of Artificial Intelligence for STEM_        |                                      |
+| 2026 | A        | **Professional Practices and Cross-Cultural Psychology** |                                      |
+| 2026 | B        | Research Project                                         |                                      |
+| 2026 | B        | _Foundation of Digital Health_                           |                                      |
 
 ## Master of Computational Neuroscience
 
