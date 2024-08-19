@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/chrome": "0.0.270",
-    "@types/node": "20.16.0",
+    "@types/node": "20.16.1",
     "@webpack-cli/generators": "3.0.7",
     "copy-webpack-plugin": "12.0.2",
     "ts-loader": "9.5.1",
