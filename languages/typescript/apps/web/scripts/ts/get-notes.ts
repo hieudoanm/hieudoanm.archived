@@ -14,13 +14,13 @@ const getFiles = (dir: string, files: string[] = []) => {
 };
 
 const main = () => {
-  const mainPath: string = './docs';
-  const mainFile: string = 'README.md';
+  const mainPath: string = './src/markdown';
+  const fileExtension: string = '.mdx';
   const files = getFiles(mainPath, []);
   const markdownFiles = files
-    .filter((file: string) => file.includes(mainFile))
+    .filter((file: string) => file.includes(fileExtension))
     .map((file: string) =>
-      file.replaceAll(`/${mainFile}`, '').replaceAll(`${mainPath}/`, '')
+      file.replaceAll(`${fileExtension}`, '').replaceAll(`${mainPath}/`, '')
     );
   writeFileSync(
     './src/json/notes.json',
