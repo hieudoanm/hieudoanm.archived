@@ -4,7 +4,6 @@ import nextPWA from 'next-pwa';
 import remarkGfm from 'remark-gfm';
 
 const NODE_ENV = process.env.NODE_ENV ?? 'development';
-const PLATFORM = process.env.PLATFORM ?? '';
 
 const withPWA = nextPWA({
   dest: 'public',
@@ -16,7 +15,6 @@ const withPWA = nextPWA({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['next-mdx-remote'],
   swcMinify: true,
   reactStrictMode: true,
   compiler: { removeConsole: NODE_ENV !== 'development' },

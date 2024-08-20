@@ -1,7 +1,7 @@
 import notes from '@web/json/notes.json';
 import { readFileSync } from 'fs';
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
-import { MDXRemote } from 'next-mdx-remote';
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import { Suspense } from 'react';
 import rehypeStringify from 'rehype-stringify';
@@ -11,7 +11,10 @@ import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 
 type NotePageProps = {
-  mdxSource: any;
+  mdxSource: MDXRemoteSerializeResult<
+    Record<string, unknown>,
+    Record<string, unknown>
+  >;
 };
 
 const NotePage: NextPage<NotePageProps> = ({ mdxSource }: NotePageProps) => {
@@ -48,7 +51,10 @@ export const getStaticProps = async (
     .use(rehypeStringify)
     .process(source);
   const remarkSourceString: string = String(remarkSource);
-  const mdxSource = await serialize(remarkSourceString);
+  const mdxSource: MDXRemoteSerializeResult<
+    Record<string, unknown>,
+    Record<string, unknown>
+  > = await serialize(remarkSourceString);
   return { props: { mdxSource } };
 };
 
