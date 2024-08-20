@@ -1,7 +1,6 @@
 import createMDX from '@next/mdx';
 import million from 'million/compiler';
 import nextPWA from 'next-pwa';
-import remarkGfm from 'remark-gfm';
 
 const NODE_ENV = process.env.NODE_ENV ?? 'development';
 
@@ -25,10 +24,6 @@ const pwaConfig = withPWA(nextConfig);
 const withMDX = createMDX({
   experimental: {
     mdxRs: true,
-  },
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
   },
 });
 
