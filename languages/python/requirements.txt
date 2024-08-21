@@ -214,7 +214,7 @@ scikit-learn==1.5.1
 scipy==1.14.1
 seaborn==0.13.2
 Send2Trash==1.8.3
-setuptools==73.0.0
+setuptools==73.0.1
 shellingham==1.5.4
 six==1.16.0
 smmap==5.0.1
