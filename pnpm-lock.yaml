@@ -903,8 +903,8 @@ importers:
         specifier: 5.18.0
         version: 5.18.0(prisma@5.18.0)
       hono:
-        specifier: 4.5.6
-        version: 4.5.6
+        specifier: 4.5.7
+        version: 4.5.7
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20240815.0
@@ -12853,8 +12853,8 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
-  hono@4.5.6:
-    resolution: {integrity: sha512-9SuUC/zLQv8YAcnIxJko0KCeLI0Q6menPsDWuJ9jaH+r8ZkVXeLqeLs1QJXCPKKbURAWj9x0SJBSFh803EnAUw==}
+  hono@4.5.7:
+    resolution: {integrity: sha512-7GeBa+zuZ6rXQEcsYvoAafLNgDr3IMxoMlU1JUc23Buy99FaUpjB0viKIFOsfnzMdEp7RhPL6uLYsVuddjdMvw==}
     engines: {node: '>=16.0.0'}
 
   hookable@5.5.3:
@@ -36110,7 +36110,7 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
-  hono@4.5.6: {}
+  hono@4.5.7: {}
 
   hookable@5.5.3: {}
 
