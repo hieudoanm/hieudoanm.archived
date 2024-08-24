@@ -38,7 +38,6 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
   const [timeClass] = useQuery('timeClass', 'blitz');
   const [top, setTop] = useState(0);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleScroll = useCallback(() => {
     const scrollY: number = window.scrollY;
     const top = scrollY > 60 ? scrollY - 60 : scrollY;

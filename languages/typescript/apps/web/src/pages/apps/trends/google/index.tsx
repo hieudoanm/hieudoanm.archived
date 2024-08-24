@@ -106,7 +106,7 @@ const TrendsTemplate: FC<{
                     !SOUTHERN_EUROPE.includes(country) &&
                     !SOUTH_EAST_ASIA.includes(country)
                 )
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -124,7 +124,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => NORTH_AMERICA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -142,7 +142,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => SOUTH_AMERICA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -162,7 +162,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => WESTERN_EUROPE.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -182,7 +182,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => NORTHERN_EUROPE.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -202,7 +202,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => CENTRAL_EUROPE.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -222,7 +222,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => EASTERN_EUROPE.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -242,7 +242,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => SOUTHERN_EUROPE.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -260,7 +260,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => OCEANIA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -280,7 +280,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => SOUTH_EAST_ASIA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -298,7 +298,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => EAST_ASIA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -316,7 +316,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => MIDDLE_EAST.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 
@@ -334,7 +334,7 @@ const TrendsTemplate: FC<{
             <div className='join join-vertical w-full'>
               {countries
                 .filter((country: string) => AFRICA.includes(country))
-                .map((country: string, index: number) => {
+                .map((country: string) => {
                   const queries: string[] = trends[country];
                   queries.sort((a, b) => (a > b ? 1 : -1));
 

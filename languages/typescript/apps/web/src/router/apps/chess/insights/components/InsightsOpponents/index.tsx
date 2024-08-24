@@ -135,7 +135,9 @@ export const InsightsOpponents: React.FC<{ insights: Insights }> = ({
                         {index + 1}
                       </td>
                       <td>
-                        <Link href={`/players/${encodeURIComponent(opponent)}`}>
+                        <Link
+                          href={`https://www.chess.com/member/${encodeURIComponent(opponent)}`}
+                          target='_blank'>
                           {opponent}
                         </Link>
                       </td>

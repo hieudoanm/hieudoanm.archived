@@ -62,7 +62,20 @@ const getColors = ({
   }
 };
 
-const processData = (data: any) => {
+const processData = (data?: {
+  count: {
+    gm: number;
+    im: number;
+    fm: number;
+    cm: number;
+    nm: number;
+    wgm: number;
+    wim: number;
+    wfm: number;
+    wcm: number;
+    wnm: number;
+  };
+}) => {
   const titleData = [
     { title: 'GM', value: data?.count.gm ?? 0 },
     { title: 'IM', value: data?.count.im ?? 0 },
