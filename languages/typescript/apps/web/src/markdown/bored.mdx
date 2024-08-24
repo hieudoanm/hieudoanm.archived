@@ -702,49 +702,81 @@
 
 ##### Programming
 
-|          | Language           | Group           | Subgroup         | Website                                         |
-| -------- | ------------------ | --------------- | ---------------- | ----------------------------------------------- |
-| Hardware | C                  |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
-| Hardware | C++                |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
-| Hardware | Rust               |                 |                  | [Linux Kernel](https://www.kernel.org/)         |
-| Software | Go                 | CLI             |                  | [cobra](https://cobra.dev/)                     |
-| Software | [GraphQL][graphql] |                 |                  |                                                 |
-| Software | HTML               |                 |                  | [HTMX](https://htmx.org/)                       |
-| Software | Python             | Package Manager |                  | [pipenv][pipenv]                                |
-| Software | Python             | Package Manager |                  | [conda][conda]                                  |
-| Software | Python             | Packages Set    |                  | [anaconda][anaconda]                            |
-| Software | Python             | Back-end        |                  | [django][django]                                |
-| Software | Python             | Back-end        |                  | [fastapi](https://fastapi.tiangolo.com/)        |
-| Software | Python             | Back-end        |                  | [flask][flask]                                  |
-| Software | Python             | Data Science    | Data Management  | [Pandas](https://pandas.pydata.org/)            |
-| Software | Python             | Data Science    | Data Management  | [Numpy](https://numpy.org/)                     |
-| Software | Python             | Data Science    | Machine Learning | [PyTorch](https://pytorch.org/)                 |
-| Software | Python             | Data Science    | Machine Learning | [scikit-learn](https://scikit-learn.org/stable) |
-| Software | Python             | Data Science    | Machine Learning | [TensorFlow](https://www.tensorflow.org/)       |
-| Software | SQL                |                 |                  | [PostgreSQL](https://www.postgresql.org/)       |
-| Software | TypeScript         | Package Manager |                  | [PNPM](https://pnpm.io/)                        |
-| Software | TypeScript         | Back-end        |                  | [Nest.js](https://nestjs.com/)                  |
-| Software | TypeScript         | Back-end        |                  | [tRPC](https://trpc.io/)                        |
-| Software | TypeScript         | Back-end        |                  | [gRPC](https://grpc.io/)                        |
-| Software | TypeScript         | Back-end        | GraphQL          | [Apollo](https://www.apollographql.com/)        |
-| Software | TypeScript         | Back-end        | WebSocket        | [Socket.io](https://socket.io/)                 |
-| Software | TypeScript         | Back-end        | WebSocket        | [WS](https://github.com/websockets/ws)          |
-| Software | TypeScript         | Back-end        | [Kafka][kafka]   | [Kafka.js](https://kafka.js.org/)               |
-| Software | TypeScript         | Front-end       | Mobile           | [React Native](https://reactnative.dev/)        |
-| Software | TypeScript         | Front-end       | Mobile           | [Expo](https://expo.dev/)                       |
-| Software | TypeScript         | Front-end       | Web              | [Angular](https://angular.dev/)                 |
-| Software | TypeScript         | Front-end       | Web              | [React](https://react.dev/)                     |
-| Software | TypeScript         | Front-end       | Web              | [Gatsby.js](https://www.gatsbyjs.com/)          |
-| Software | TypeScript         | Front-end       | Web              | [Next.js](https://nextjs.org/)                  |
-| Software | TypeScript         | Front-end       | Web              | [Solid.js Start](https://start.solidjs.com/)    |
-| Software | TypeScript         | Front-end       | Web              | [SvelteKit](https://kit.svelte.dev/)            |
-| Software | TypeScript         | Front-end       | Web              | [Vue](https://vuejs.org/)                       |
+|          | Language           | Group        | Subgroup          | Website                                                       |
+| -------- | ------------------ | ------------ | ----------------- | ------------------------------------------------------------- |
+| Hardware | C                  |              |                   | [Linux Kernel][kernel]                                        |
+| Hardware | C++                |              |                   | [Linux Kernel][kernel]                                        |
+| Hardware | Rust               |              |                   | [Linux Kernel][kernel]                                        |
+| Software | C#                 | Game         | Engine            | [Photon](https://www.photonengine.com)                        |
+| Software | C#                 | Game         | Engine            | [Unity](https://unity.com)                                    |
+| Software | C++                | Game         | Engine            | [Unreal](https://www.unrealengine.com)                        |
+| Software | Docker             | Database     | Key-Value         | [Memcached](https://hub.docker.com/_/memcached)               |
+| Software | Docker             | Database     | Key-Value         | [Redis](https://hub.docker.com/_/redis)                       |
+| Software | Docker             | Database     | Wide Column       | [cassandra](https://hub.docker.com/_/cassandra)               |
+| Software | Docker             | Database     | Document Oriented | [mongo](https://hub.docker.com/_/couchdb)                     |
+| Software | Docker             | Database     | Document Oriented | [mongo](https://hub.docker.com/_/mongo)                       |
+| Software | Docker             | Database     | Relational        | [cockroachdb](https://hub.docker.com/r/cockroachdb/cockroach) |
+| Software | Docker             | Database     | Relational        | [mysql](https://hub.docker.com/_/mysql)                       |
+| Software | Docker             | Database     | Relational        | [postgres](https://hub.docker.com/_/postgres)                 |
+| Software | Docker             | Database     | Graph             | [dgraph](https://hub.docker.com/r/dgraph/dgraph)              |
+| Software | Docker             | Database     | Graph             | [neo4j](https://hub.docker.com/_/neo4j)                       |
+| Software | Docker             | Database     | Search Engine     | [elasticsearch](https://hub.docker.com/_/elasticsearch)       |
+| Software | Docker             | Database     | Search Engine     | [elasticsearch](https://hub.docker.com/_/solr)                |
+| Software | Docker             | Database     | Multi-Model       | [faunadb](https://hub.docker.com/r/fauna/faunadb)             |
+| Software | Docker             | OS           | Linux             | [Alpine](https://hub.docker.com/_/alpine)                     |
+| Software | Docker             | OS           | Linux             | [Ubuntu](https://hub.docker.com/_/ubuntu)                     |
+| Software | Docker             | Server       |                   | [nginx](https://hub.docker.com/_/nginx)                       |
+| Software | Docker             | Runtime      | Golang            | [Golang](https://hub.docker.com/_/golang/)                    |
+| Software | Docker             | Runtime      | Java              | [OpenJDK](https://hub.docker.com/_/openjdk)                   |
+| Software | Docker             | Runtime      | JavaScript        | [Node.js](https://hub.docker.com/_/node/)                     |
+| Software | Docker             | Runtime      | Python            | [Python](https://hub.docker.com/_/python/)                    |
+| Software | Go                 | CLI          |                   | [cobra](https://cobra.dev/)                                   |
+| Software | [GraphQL][graphql] |              |                   |                                                               |
+| Software | HTML               |              |                   | [HTMX](https://htmx.org/)                                     |
+| Software | Python             | Dev Tools    | Package Manager   | [pipenv][pipenv]                                              |
+| Software | Python             | Dev Tools    | Package Manager   | [conda][conda]                                                |
+| Software | Python             | Dev Tools    | Packages Set      | [anaconda][anaconda]                                          |
+| Software | Python             | Back-end     | Framework         | [django][django]                                              |
+| Software | Python             | Back-end     | Framework         | [fastapi][fastapi]                                            |
+| Software | Python             | Back-end     | Framework         | [flask][flask]                                                |
+| Software | Python             | Data Science | Data Management   | [Pandas][pandas]                                              |
+| Software | Python             | Data Science | Data Management   | [Numpy](https://numpy.org/)                                   |
+| Software | Python             | Data Science | Machine Learning  | [PyTorch][pytorch]                                            |
+| Software | Python             | Data Science | Machine Learning  | [scikit-learn][scikit-learn]                                  |
+| Software | Python             | Data Science | Machine Learning  | [TensorFlow][tensorflow]                                      |
+| Software | SQL                |              |                   | [PostgreSQL][postgresql]                                      |
+| Software | TypeScript         | Dev Tools    | Package Manager   | [PNPM](https://pnpm.io/)                                      |
+| Software | TypeScript         | Front-end    | Mobile            | [React Native][react-native]                                  |
+| Software | TypeScript         | Front-end    | Mobile            | [Expo](https://expo.dev/)                                     |
+| Software | TypeScript         | Front-end    | Web               | [Angular][angular]                                            |
+| Software | TypeScript         | Front-end    | Web               | [React](https://react.dev/)                                   |
+| Software | TypeScript         | Front-end    | Web               | [Gatsby.js][gatsby]                                           |
+| Software | TypeScript         | Front-end    | Web               | [Next.js][next]                                               |
+| Software | TypeScript         | Front-end    | Web               | [Solid.js Start][solit-start]                                 |
+| Software | TypeScript         | Front-end    | Web               | [SvelteKit][svelte-kit]                                       |
+| Software | TypeScript         | Front-end    | Web               | [Vue](https://vuejs.org/)                                     |
+| Software | TypeScript         | Back-end     | Framework         | [Nest.js][nest]                                               |
+| Software | TypeScript         | Back-end     | Framework         | [tRPC](https://trpc.io/)                                      |
+| Software | TypeScript         | Back-end     | Framework         | [gRPC](https://grpc.io/)                                      |
+| Software | TypeScript         | Back-end     | GraphQL           | [Apollo][apollo]                                              |
+| Software | TypeScript         | Back-end     | WebSocket         | [Socket.io][socket.io]                                        |
+| Software | TypeScript         | Back-end     | WebSocket         | [WS][ws]                                                      |
+| Software | TypeScript         | Back-end     | [Kafka][kafka]    | [Kafka.js][kafka.js]                                          |
+| Software | TypeScript         | Back-end     | ORM               | [Drizzle][drizzle]                                            |
+| Software | TypeScript         | Back-end     | ORM               | [Prisma][prisma]                                              |
 
 ##### Cloud
 
-| AWS | Azure | Google Cloud |
-| --- | ----- | ------------ |
-|     |       |              |
+| Group     | Subgroup      | [AWS][aws]                      | Azure | Google Cloud |
+| --------- | ------------- | ------------------------------- | ----- | ------------ |
+| Container | Registry      | [ECR][aws-ecr]                  |       |              |
+| Container | Kubernetes    | [EKS][aws-eks]                  |       |              |
+| Database  | Key-Value     | [ElasticCache][aws-elasticache] |       |              |
+| Database  | Relational    | [RDS][aws-rds]                  |       |              |
+| Database  | Search Engine | [OpenSearch][aws-opensearch]    |       |              |
+| Files     | Block Storage | [EBS][aws-ebs]                  |       |              |
+| Files     | Block Storage | [EFS][aws-efs]                  |       |              |
+| Files     | Files Storage | [S3][aws-s3]                    |       |              |
 
 #### Engineering
 
@@ -754,10 +786,39 @@
 - Linear Algebra
 - Mathematical Analysis
 
+[angular]: https://angular.dev/
+[apollo]: https://www.apollographql.com/
 [anaconda]: https://www.anaconda.com
+[aws]: https://aws.amazon.com/
+[aws-ebs]: https://aws.amazon.com/ebs/
+[aws-ecr]: https://aws.amazon.com/ecr/
+[aws-efs]: https://aws.amazon.com/efs/
+[aws-eks]: https://aws.amazon.com/eks/
+[aws-elasticache]: https://aws.amazon.com/elasticache/
+[aws-opensearch]: https://aws.amazon.com/opensearch-service/
+[aws-rds]: https://aws.amazon.com/rds/
+[aws-s3]: https://aws.amazon.com/s3/
 [conda]: https://docs.conda.io
 [django]: https://www.djangoproject.com/
+[drizzle]: https://orm.drizzle.team/
+[fastapi]: https://fastapi.tiangolo.com/
 [flask]: https://flask.palletsprojects.com/en/3.0.x/
+[gatsby]: https://www.gatsbyjs.com/
 [graphql]: https://graphql.org/
 [kafka]: https://kafka.apache.org/
+[kafka.js]: https://kafka.js.org/
+[kernel]: https://www.kernel.org/
+[nest]: https://nestjs.com/
+[next]: https://nextjs.org/
+[pandas]: https://pandas.pydata.org/
 [pipenv]: https://pipenv.pypa.io/en/latest/
+[postgresql]: https://www.postgresql.org/
+[prisma]: https://www.prisma.io/
+[pytorch]: https://pytorch.org/
+[react-native]: https://reactnative.dev/
+[scikit-learn]: https://scikit-learn.org/stable
+[socket.io]: https://socket.io/
+[solid-start]: https://start.solidjs.com/
+[svelte-kit]: https://kit.svelte.dev/
+[tensorflow]: https://www.tensorflow.org/
+[ws]: https://github.com/websockets/ws
