@@ -254,8 +254,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.9.1
-        version: 1.9.1
+        specifier: 1.10.2
+        version: 1.10.2
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -910,8 +910,8 @@ importers:
         specifier: 4.20240821.1
         version: 4.20240821.1
       '@dotenvx/dotenvx':
-        specifier: 1.9.1
-        version: 1.9.1
+        specifier: 1.10.2
+        version: 1.10.2
       '@eslint/js':
         specifier: 9.9.1
         version: 9.9.1
@@ -3199,8 +3199,8 @@ packages:
     resolution: {integrity: sha512-boghen8F0Q8D+0/Q1/1r6DUEieUJ8w2a1gIknExMSHBsJFOr2+0KUfHiVYBvucPwl3+RU5PFBK833FjFCh3BhA==}
     engines: {node: '>=14.17.0'}
 
-  '@dotenvx/dotenvx@1.9.1':
-    resolution: {integrity: sha512-W0yX+TPJS/mzR0WdOBNx/SPe8SwdduSOcOd80cUb6Ym+XugLu7qvr9ztWUH3wObXrD6maIJYgYi1psV0I3rKNg==}
+  '@dotenvx/dotenvx@1.10.2':
+    resolution: {integrity: sha512-PmJBXsXCBFQp+WwAXpwpitXK2ceH1J/w+anrqzcdMutwkN+p4Xf7Rmd1nyhmvrz09WSZvoQb3oyy6KlSxU/9kQ==}
     hasBin: true
 
   '@edge-runtime/format@2.2.1':
@@ -10253,9 +10253,6 @@ packages:
     resolution: {integrity: sha512-lUWFxGKyhraKCW8Qghz6Z0f2l/PqB1W3AO0HKJzGIQ5JRSlR651ekJDiGJbBT4sRNNv5ddnSGVEnsxP9XRCVpQ==}
     engines: {node: '>=4.0.0'}
     hasBin: true
-
-  cuint@0.2.2:
-    resolution: {integrity: sha512-d4ZVpCW31eWwCMe1YT3ur7mUDnTXbgwyzaL320DrcRT45rfjYxkt5QWLrmOJ+/UEAI2+fQgKe/fCjR8l4TpRgw==}
 
   culori@3.3.0:
     resolution: {integrity: sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==}
@@ -20658,9 +20655,6 @@ packages:
   xxhash-wasm@1.0.2:
     resolution: {integrity: sha512-ibF0Or+FivM9lNrg+HGJfVX8WJqgo+kCLDc4vx6xMeTce7Aj+DLttKbxxRR/gNLSAelRc1omAPlJ77N/Jem07A==}
 
-  xxhashjs@0.2.2:
-    resolution: {integrity: sha512-AkTuIuVTET12tpsVIQo+ZU6f/qDmKuRUcjaqR+OIvm+aCBsZ95i7UVY5WJ9TMsSaZ0DA2WxoZ4acu0sPH+OKAw==}
-
   y18n@4.0.3:
     resolution: {integrity: sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==}
 
@@ -22590,10 +22584,9 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.1': {}
 
-  '@dotenvx/dotenvx@1.9.1':
+  '@dotenvx/dotenvx@1.10.2':
     dependencies:
       commander: 11.1.0
-      diff: 5.2.0
       dotenv: 16.4.5
       eciesjs: 0.4.7
       fdir: 6.2.0(picomatch@4.0.2)
@@ -22602,7 +22595,6 @@ snapshots:
       picomatch: 4.0.2
       tinyexec: 0.2.0
       which: 4.0.0
-      xxhashjs: 0.2.2
 
   '@edge-runtime/format@2.2.1': {}
 
@@ -32274,8 +32266,6 @@ snapshots:
       bluebird: 3.7.2
       lodash: 4.17.21
       strip-bom: 2.0.0
-
-  cuint@0.2.2: {}
 
   culori@3.3.0: {}
 
@@ -46069,10 +46059,6 @@ snapshots:
   xxhash-wasm@0.4.2: {}
 
   xxhash-wasm@1.0.2: {}
-
-  xxhashjs@0.2.2:
-    dependencies:
-      cuint: 0.2.2
 
   y18n@4.0.3: {}
 
