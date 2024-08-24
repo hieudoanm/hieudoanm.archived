@@ -1,7 +1,10 @@
+# Check Version
+node -v
+pnpm -v
 # Create App
 pnpm create next-app next-boilerplate --import-alias "@boilerplate/*" --ts --tailwind --eslint --src-dir --turbo --use-pnpm --no-app --skip-install
 # Go to Project
-cd $1
+cd next-boilerplate
 # Install dependencies
 pnpm install --save-exact @prisma/client @tanstack/react-query @trpc/client@latest @trpc/next@latest @trpc/react-query@latest @trpc/server@latest axios next pino react react-dom zod
 # Install devDependencies
