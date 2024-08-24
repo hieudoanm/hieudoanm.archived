@@ -1,5 +1,5 @@
 # Create App
-pnpm create next-app $1 --import-alias "@$1/*" --ts --tailwind --eslint --src-dir --turbo --use-pnpm --no-app --skip-install
+pnpm create next-app next-boilerplate --import-alias "@boilerplate/*" --ts --tailwind --eslint --src-dir --turbo --use-pnpm --no-app --skip-install
 # Go to Project
 cd $1
 # Install dependencies
