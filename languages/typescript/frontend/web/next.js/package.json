@@ -30,7 +30,7 @@
     "@prisma/client": "5.18.0",
     "@stripe/stripe-js": "4.3.0",
     "@tanstack/react-query": "5.52.1",
-    "@tanstack/react-table": "8.20.1",
+    "@tanstack/react-table": "8.20.5",
     "@tanstack/react-virtual": "3.10.4",
     "@trpc/client": "11.0.0-rc.485",
     "@trpc/next": "11.0.0-rc.485",
