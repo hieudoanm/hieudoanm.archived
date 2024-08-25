@@ -1,5 +1,5 @@
 import { Layout } from '@web/layout';
-import MarkdownNote from '@web/markdown/bored.mdx';
+import MarkdownNote from '@web/markdown/career.mdx';
 import { NextPage } from 'next';
 
 const NotePage: NextPage = () => {
