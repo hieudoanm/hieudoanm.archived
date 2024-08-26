@@ -22,7 +22,7 @@
     - [L for Large Language Model](#l-for-large-language-model)
   - [MNO](#mno)
     - [M for Markdown](#m-for-markdown)
-    - [N](#n)
+    - [N for nginx](#n-for-nginx)
     - [O](#o)
   - [PQRS](#pqrs)
     - [P for Python](#p-for-python)
@@ -75,7 +75,7 @@
 
 ### M for [Markdown](https://www.markdownguide.org/)
 
-### N
+### N for [nginx](https://nginx.org/)
 
 ### O
 
