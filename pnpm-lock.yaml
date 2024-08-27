@@ -208,8 +208,8 @@ importers:
         specifier: 5.6.1
         version: 5.6.1
       mathjs:
-        specifier: 13.0.3
-        version: 13.0.3
+        specifier: 13.1.0
+        version: 13.1.0
       next:
         specifier: 14.2.6
         version: 14.2.6(@babel/core@7.25.2)(@opentelemetry/api@1.4.1)(@playwright/test@1.46.1)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)
@@ -3132,6 +3132,10 @@ packages:
 
   '@babel/runtime@7.25.0':
     resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.25.4':
+    resolution: {integrity: sha512-DSgLeL/FNcpXuzav5wfYvHCGvynXkJbn3Zvc3823AEe9nPwW9IK4UoCSS5yGymmQzN0pCPvivtgS6/8U2kkm1w==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.25.0':
@@ -14821,8 +14825,8 @@ packages:
   marky@1.2.5:
     resolution: {integrity: sha512-q9JtQJKjpsVxCRVgQ+WapguSbKC3SQ5HEzFGPAJMStgh3QjCawp00UKv3MTTAArTmGmmPUvllHZoNbZ3gs0I+Q==}
 
-  mathjs@13.0.3:
-    resolution: {integrity: sha512-GpP9OW6swA5POZXvgpc/1FYkAr8lKgV04QHS1tIU60klFfplVCYaNzn6qy0vSp0hAQQN7shcx9CeB507dlLujA==}
+  mathjs@13.1.0:
+    resolution: {integrity: sha512-5BI//cQdcKtDgstJ3QbKYyrWLyUEEHY9ZQgA3laaPyTis+ca8Y7GCxbLFFLYv8nkpOFTIF55FLKoiqQaufj1dQ==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -23283,6 +23287,10 @@ snapshots:
   '@babel/regjsgen@0.8.0': {}
 
   '@babel/runtime@7.25.0':
+    dependencies:
+      regenerator-runtime: 0.14.1
+
+  '@babel/runtime@7.25.4':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -39396,9 +39404,9 @@ snapshots:
 
   marky@1.2.5: {}
 
-  mathjs@13.0.3:
+  mathjs@13.1.0:
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.4
       complex.js: 2.1.1
       decimal.js: 10.4.3
       escape-latex: 1.2.0
