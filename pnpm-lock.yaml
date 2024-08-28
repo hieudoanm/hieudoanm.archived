@@ -257,8 +257,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.11.1
-        version: 1.11.1
+        specifier: 1.11.2
+        version: 1.11.2
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -922,8 +922,8 @@ importers:
         specifier: 4.20240821.1
         version: 4.20240821.1
       '@dotenvx/dotenvx':
-        specifier: 1.11.1
-        version: 1.11.1
+        specifier: 1.11.2
+        version: 1.11.2
       '@eslint/js':
         specifier: 9.9.1
         version: 9.9.1
@@ -3253,8 +3253,8 @@ packages:
     resolution: {integrity: sha512-boghen8F0Q8D+0/Q1/1r6DUEieUJ8w2a1gIknExMSHBsJFOr2+0KUfHiVYBvucPwl3+RU5PFBK833FjFCh3BhA==}
     engines: {node: '>=14.17.0'}
 
-  '@dotenvx/dotenvx@1.11.1':
-    resolution: {integrity: sha512-Xx83aVff+Ejqe6c8yl4o0CiBBC9pyWUxz7BSJ6eRHzI+7yRnYCeYNGKk/y9AG6UFchxM5+xX3CwX+jAp3xryHQ==}
+  '@dotenvx/dotenvx@1.11.2':
+    resolution: {integrity: sha512-1IDx0SeRKrbneWyr6tbUwIIsTJC5WQjcaIqtClJEeEf/URu2gqZeBnGAmCheO/lqY/LIV/OcNnTykReHR96jjg==}
     hasBin: true
 
   '@edge-runtime/format@2.2.1':
@@ -23420,7 +23420,7 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.1': {}
 
-  '@dotenvx/dotenvx@1.11.1':
+  '@dotenvx/dotenvx@1.11.2':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.5
@@ -36201,7 +36201,7 @@ snapshots:
 
   gatsby-plugin-sharp@5.13.1(gatsby@5.13.7(babel-eslint@10.1.0(eslint@9.9.1(jiti@1.21.6)))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@3.13.1)(typescript@5.5.4)(webpack-dev-server@5.0.4(webpack@5.94.0))(webpack-hot-middleware@2.26.1))(graphql@16.9.0):
     dependencies:
-      '@babel/runtime': 7.25.0
+      '@babel/runtime': 7.25.4
       async: 3.2.5
       bluebird: 3.7.2
       debug: 4.3.6(supports-color@8.1.1)
