@@ -52,7 +52,7 @@
     "autoprefixer": "10.4.20",
     "eslint": "9.9.1",
     "eslint-plugin-github": "5.0.1",
-    "eslint-plugin-jest": "28.8.0",
+    "eslint-plugin-jest": "28.8.1",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-sonarjs": "2.0.1",
