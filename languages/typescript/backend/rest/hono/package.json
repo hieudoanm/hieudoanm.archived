@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@prisma/client": "5.18.0",
+    "@prisma/client": "5.19.0",
     "hono": "4.5.9"
   },
   "devDependencies": {
