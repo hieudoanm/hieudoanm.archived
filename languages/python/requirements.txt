@@ -165,7 +165,7 @@ pillow==10.4.0
 pipenv==2024.0.1
 pipreqs==0.5.0
 platformdirs==4.2.2
-posthog==3.5.2
+posthog==3.6.0
 prometheus_client==0.20.0
 prompt-toolkit==3.0.47
 protobuf==5.27.4
