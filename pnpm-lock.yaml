@@ -1757,8 +1757,8 @@ importers:
         specifier: 15.9.0
         version: 15.9.0
       jsdom:
-        specifier: 24.1.3
-        version: 24.1.3
+        specifier: 25.0.0
+        version: 25.0.0
       postcss:
         specifier: 8.4.41
         version: 8.4.41
@@ -1791,7 +1791,7 @@ importers:
         version: 2.10.2(@testing-library/jest-dom@6.5.0)(solid-js@1.8.22)(vite@5.4.2(@types/node@20.16.2)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6))
       vitest:
         specifier: 2.0.5
-        version: 2.0.5(@edge-runtime/vm@4.0.2)(@types/node@20.16.2)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6)
+        version: 2.0.5(@edge-runtime/vm@4.0.2)(@types/node@20.16.2)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6)
 
   languages/typescript/frontend/web/svelte:
     devDependencies:
@@ -14302,15 +14302,6 @@ packages:
     engines: {node: '>=14'}
     peerDependencies:
       canvas: ^2.5.0
-    peerDependenciesMeta:
-      canvas:
-        optional: true
-
-  jsdom@24.1.3:
-    resolution: {integrity: sha512-MyL55p3Ut3cXbeBEG7Hcv0mVM8pp8PBNWxRqchZnSfAiES1v1mRnMeFfaHWIPULpwsYfvO+ZmMZz5tGCnjzDUQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      canvas: ^2.11.2
     peerDependenciesMeta:
       canvas:
         optional: true
@@ -39122,34 +39113,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  jsdom@24.1.3:
-    dependencies:
-      cssstyle: 4.0.1
-      data-urls: 5.0.0
-      decimal.js: 10.4.3
-      form-data: 4.0.0
-      html-encoding-sniffer: 4.0.0
-      http-proxy-agent: 7.0.2
-      https-proxy-agent: 7.0.5
-      is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.12
-      parse5: 7.1.2
-      rrweb-cssom: 0.7.1
-      saxes: 6.0.0
-      symbol-tree: 3.2.4
-      tough-cookie: 4.1.4
-      w3c-xmlserializer: 5.0.0
-      webidl-conversions: 7.0.0
-      whatwg-encoding: 3.1.1
-      whatwg-mimetype: 4.0.0
-      whatwg-url: 14.0.0
-      ws: 8.18.0
-      xml-name-validator: 5.0.0
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-
   jsdom@25.0.0:
     dependencies:
       cssstyle: 4.0.1
@@ -39177,7 +39140,6 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
-    optional: true
 
   jsesc@0.5.0: {}
 
@@ -46876,41 +46838,6 @@ snapshots:
     optionalDependencies:
       vite: 5.4.2(@types/node@22.5.1)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6)
 
-  vitest@2.0.5(@edge-runtime/vm@4.0.2)(@types/node@20.16.2)(jsdom@24.1.3)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6):
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@vitest/expect': 2.0.5
-      '@vitest/pretty-format': 2.0.5
-      '@vitest/runner': 2.0.5
-      '@vitest/snapshot': 2.0.5
-      '@vitest/spy': 2.0.5
-      '@vitest/utils': 2.0.5
-      chai: 5.1.1
-      debug: 4.3.6(supports-color@8.1.1)
-      execa: 8.0.1
-      magic-string: 0.30.11
-      pathe: 1.1.2
-      std-env: 3.7.0
-      tinybench: 2.9.0
-      tinypool: 1.0.0
-      tinyrainbow: 1.2.0
-      vite: 5.4.2(@types/node@20.16.2)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6)
-      vite-node: 2.0.5(@types/node@20.16.2)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6)
-      why-is-node-running: 2.3.0
-    optionalDependencies:
-      '@edge-runtime/vm': 4.0.2
-      '@types/node': 20.16.2
-      jsdom: 24.1.3
-    transitivePeerDependencies:
-      - less
-      - lightningcss
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-
   vitest@2.0.5(@edge-runtime/vm@4.0.2)(@types/node@20.16.2)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6):
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -46945,7 +46872,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-    optional: true
 
   vitest@2.0.5(@edge-runtime/vm@4.0.2)(@types/node@22.5.1)(jsdom@25.0.0)(less@4.2.0)(lightningcss@1.26.0)(sass@1.77.8)(terser@5.31.6):
     dependencies:
