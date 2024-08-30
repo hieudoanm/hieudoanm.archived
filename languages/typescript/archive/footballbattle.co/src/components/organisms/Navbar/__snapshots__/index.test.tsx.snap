@@ -6,7 +6,7 @@ exports[`Navbar render default 1`] = `
     class="bg-[#085723]"
   >
     <nav
-      class="sc-gJhJTp gScXeg py-4 bg-yellow rounded-b-2xl"
+      class="sc-gtLWhw eDDMjN py-4 bg-yellow rounded-b-2xl"
     >
       <div
         class="mx-auto px-8 container"
@@ -15,7 +15,7 @@ exports[`Navbar render default 1`] = `
           class="flex justify-center md:justify-start items-center"
         >
           <div
-            class="sc-braxZu gLJukQ w-36 h-12 bg-cover bg-center"
+            class="sc-blHHSb cKMroc w-36 h-12 bg-cover bg-center"
             image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/navbar/football-battle.svg"
             title="Football Battle"
           />

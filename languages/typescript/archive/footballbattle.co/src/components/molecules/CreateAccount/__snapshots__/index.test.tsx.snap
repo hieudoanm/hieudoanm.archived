@@ -42,14 +42,14 @@ exports[`CreateAccount render default 1`] = `
             target="_blank"
           >
             <div
-              class="sc-braxZu fxjaiS w-24 h-24 bg-center bg-cover"
+              class="sc-blHHSb clpfRi w-24 h-24 bg-center bg-cover"
               image="/how-to-play/en/images/meta-mask-wallet/box.svg"
             >
               <div
                 class="flex items-center justify-center w-full h-full"
               >
                 <div
-                  class="sc-braxZu hEnVZp w-16 h-16 bg-center bg-no-repeat bg-contain"
+                  class="sc-blHHSb iGPIHV w-16 h-16 bg-center bg-no-repeat bg-contain"
                   image="/how-to-play/en/images/download/meta-mask-fox.svg"
                 />
               </div>

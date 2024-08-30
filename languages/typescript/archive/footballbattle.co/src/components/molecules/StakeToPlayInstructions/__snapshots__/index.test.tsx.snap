@@ -13,7 +13,7 @@ exports[`StakeToPlayInstructions render default 1`] = `
           type="button"
         >
           <div
-            class="sc-braxZu cmYWRw w-12 h-12 bg-cover"
+            class="sc-blHHSb cZRvtE w-12 h-12 bg-cover"
             image="/how-to-play/en/images/stake-to-play/circle.svg"
           >
             <div
@@ -53,7 +53,7 @@ exports[`StakeToPlayInstructions render default 1`] = `
           type="button"
         >
           <div
-            class="sc-braxZu cmYWRw w-12 h-12 bg-cover"
+            class="sc-blHHSb cZRvtE w-12 h-12 bg-cover"
             image="/how-to-play/en/images/stake-to-play/circle.svg"
           >
             <div
@@ -89,7 +89,7 @@ exports[`StakeToPlayInstructions render default 1`] = `
           type="button"
         >
           <div
-            class="sc-braxZu cmYWRw w-12 h-12 bg-cover"
+            class="sc-blHHSb cZRvtE w-12 h-12 bg-cover"
             image="/how-to-play/en/images/stake-to-play/circle.svg"
           >
             <div
@@ -125,7 +125,7 @@ exports[`StakeToPlayInstructions render default 1`] = `
           type="button"
         >
           <div
-            class="sc-braxZu cmYWRw w-12 h-12 bg-cover"
+            class="sc-blHHSb cZRvtE w-12 h-12 bg-cover"
             image="/how-to-play/en/images/stake-to-play/circle.svg"
           >
             <div

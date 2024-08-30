@@ -13,7 +13,7 @@ exports[`BuildTheTeam render default 1`] = `
         class="hidden md:block"
       >
         <div
-          class="sc-braxZu dqPmFU h-16 bg-no-repeat bg-contain bg-center mb-16"
+          class="sc-blHHSb kbwBUA h-16 bg-no-repeat bg-contain bg-center mb-16"
           image="/how-to-play/en/images/build-the-team/title-desktop.svg"
         />
       </div>
@@ -21,7 +21,7 @@ exports[`BuildTheTeam render default 1`] = `
         class="block md:hidden"
       >
         <div
-          class="sc-braxZu eSsBmO h-16 bg-no-repeat bg-contain bg-center mb-16"
+          class="sc-blHHSb cExDKW h-16 bg-no-repeat bg-contain bg-center mb-16"
           image="/how-to-play/en/images/build-the-team/title-mobile.svg"
         />
       </div>

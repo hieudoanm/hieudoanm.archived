@@ -19,7 +19,7 @@ exports[`StakeToPlay render default 1`] = `
             class="text-center uppercase text-3xl"
           >
             <div
-              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+              class="sc-blHHSb doWbrX truncate text-xl md:text-3xl"
             >
               <span
                 class="opacity-0 md:opacity-100"
@@ -35,7 +35,7 @@ exports[`StakeToPlay render default 1`] = `
             </div>
              
             <div
-              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+              class="sc-blHHSb doWbrX truncate text-xl md:text-3xl"
             >
               <span
                 class="opacity-0 md:opacity-100"
@@ -58,7 +58,7 @@ exports[`StakeToPlay render default 1`] = `
             class="text-center uppercase text-xl"
           >
             <div
-              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+              class="sc-blHHSb doWbrX truncate text-xl md:text-3xl"
             >
               <span
                 class="opacity-0 md:opacity-100"
@@ -74,7 +74,7 @@ exports[`StakeToPlay render default 1`] = `
             </div>
              
             <div
-              class="sc-braxZu jypyGT truncate text-xl md:text-3xl"
+              class="sc-blHHSb doWbrX truncate text-xl md:text-3xl"
             >
               <span
                 class="opacity-0 md:opacity-100"
@@ -109,7 +109,7 @@ exports[`StakeToPlay render default 1`] = `
                     type="button"
                   >
                     <div
-                      class="sc-gJhJTp kNOLpd w-12 h-12 bg-cover"
+                      class="sc-gtLWhw eETxGY w-12 h-12 bg-cover"
                       image="/how-to-play/en/images/stake-to-play/circle.svg"
                     >
                       <div
@@ -149,7 +149,7 @@ exports[`StakeToPlay render default 1`] = `
                     type="button"
                   >
                     <div
-                      class="sc-gJhJTp kNOLpd w-12 h-12 bg-cover"
+                      class="sc-gtLWhw eETxGY w-12 h-12 bg-cover"
                       image="/how-to-play/en/images/stake-to-play/circle.svg"
                     >
                       <div
@@ -185,7 +185,7 @@ exports[`StakeToPlay render default 1`] = `
                     type="button"
                   >
                     <div
-                      class="sc-gJhJTp kNOLpd w-12 h-12 bg-cover"
+                      class="sc-gtLWhw eETxGY w-12 h-12 bg-cover"
                       image="/how-to-play/en/images/stake-to-play/circle.svg"
                     >
                       <div
@@ -221,7 +221,7 @@ exports[`StakeToPlay render default 1`] = `
                     type="button"
                   >
                     <div
-                      class="sc-gJhJTp kNOLpd w-12 h-12 bg-cover"
+                      class="sc-gtLWhw eETxGY w-12 h-12 bg-cover"
                       image="/how-to-play/en/images/stake-to-play/circle.svg"
                     >
                       <div
@@ -307,7 +307,7 @@ exports[`StakeToPlay render default 1`] = `
                         class="w-full h-full px-2 py-4 bg-[#5CAB40]"
                       >
                         <div
-                          class="sc-gJhJTp iGsYzZ w-full bg-cover"
+                          class="sc-gtLWhw jfNCcs w-full bg-cover"
                           image="/how-to-play/en/images/stake-to-play/player-card.svg"
                           style="padding-bottom: 100%;"
                         />
@@ -322,7 +322,7 @@ exports[`StakeToPlay render default 1`] = `
                     >
                       <div>
                         <div
-                          class="sc-gJhJTp eNKNQr w-8 h-8 bg-cover"
+                          class="sc-gtLWhw LZEau w-8 h-8 bg-cover"
                           image="/how-to-play/en/images/stake-to-play/play.svg"
                         />
                       </div>

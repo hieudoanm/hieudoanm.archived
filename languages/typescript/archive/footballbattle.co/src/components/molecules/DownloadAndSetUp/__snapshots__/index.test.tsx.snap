@@ -45,14 +45,14 @@ exports[`DownloadAndSetUp render default 1`] = `
               target="_blank"
             >
               <div
-                class="sc-braxZu fxjaiS w-24 h-24 bg-center bg-cover"
+                class="sc-blHHSb clpfRi w-24 h-24 bg-center bg-cover"
                 image="/how-to-play/en/images/meta-mask-wallet/box.svg"
               >
                 <div
                   class="flex items-center justify-center w-full h-full"
                 >
                   <div
-                    class="sc-braxZu ipcsXP w-16 h-16 bg-center bg-no-repeat bg-contain"
+                    class="sc-blHHSb jiunNP w-16 h-16 bg-center bg-no-repeat bg-contain"
                     image="/how-to-play/en/images/download/chrome.svg"
                   />
                 </div>
@@ -64,14 +64,14 @@ exports[`DownloadAndSetUp render default 1`] = `
               target="_blank"
             >
               <div
-                class="sc-braxZu fxjaiS w-24 h-24 bg-center bg-cover"
+                class="sc-blHHSb clpfRi w-24 h-24 bg-center bg-cover"
                 image="/how-to-play/en/images/meta-mask-wallet/box.svg"
               >
                 <div
                   class="flex items-center justify-center w-full h-full"
                 >
                   <div
-                    class="sc-braxZu bkETAY w-16 h-16 bg-center bg-no-repeat bg-contain"
+                    class="sc-blHHSb idQMQQ w-16 h-16 bg-center bg-no-repeat bg-contain"
                     image="/how-to-play/en/images/download/firefox.svg"
                   />
                 </div>
@@ -96,7 +96,7 @@ exports[`DownloadAndSetUp render default 1`] = `
               target="_blank"
             >
               <div
-                class="sc-braxZu bZVUPH w-44 h-12 bg-contain bg-no-repeat"
+                class="sc-blHHSb jYzvYv w-44 h-12 bg-contain bg-no-repeat"
                 image="/how-to-play/en/images/download/apple-app-store.svg"
               />
             </a>
@@ -106,7 +106,7 @@ exports[`DownloadAndSetUp render default 1`] = `
               target="_blank"
             >
               <div
-                class="sc-braxZu cScqmb w-44 h-12 bg-contain bg-no-repeat"
+                class="sc-blHHSb cwTpKP w-44 h-12 bg-contain bg-no-repeat"
                 image="/how-to-play/en/images/download/google-play-store.svg"
               />
             </a>
