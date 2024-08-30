@@ -16,8 +16,8 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\" --fix",
     "export": "next export",
     "test": "jest",
-    "dev:sb": "start-storybook -p 6006",
-    "build:sb": "build-storybook"
+    "dev:sb": "storybook dev -p 6006",
+    "build:sb": "storybook build"
   },
   "dependencies": {
     "next": "14.2.7",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.25.2",
+    "@chromatic-com/storybook": "1",
     "@eslint/compat": "1.1.1",
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.9.1",
@@ -36,11 +37,10 @@
     "@storybook/addon-essentials": "8.2.9",
     "@storybook/addon-interactions": "8.2.9",
     "@storybook/addon-links": "8.2.9",
-    "@storybook/builder-webpack5": "8.2.9",
     "@storybook/cli": "8.2.9",
-    "@storybook/manager-webpack5": "6.5.16",
+    "@storybook/nextjs": "8.2.9",
     "@storybook/react": "8.2.9",
-    "@storybook/testing-library": "0.2.2",
+    "@storybook/test": "8.2.9",
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.1",
     "@types/node": "20.16.2",
