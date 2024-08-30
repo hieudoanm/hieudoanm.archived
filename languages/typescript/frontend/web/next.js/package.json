@@ -76,7 +76,7 @@
     "postcss": "8.4.41",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.6",
-    "prisma": "5.18.0",
+    "prisma": "5.19.0",
     "prisma-dbml-generator": "0.12.0",
     "prisma-docs-generator": "0.8.0",
     "prisma-json-schema-generator": "5.1.5",
