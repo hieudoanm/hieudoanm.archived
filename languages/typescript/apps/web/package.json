@@ -71,7 +71,7 @@
     "@million/lint": "0.0.73",
     "@next/mdx": "14.2.6",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/react": "16.0.0",
+    "@testing-library/react": "16.0.1",
     "@types/chroma-js": "2.4.4",
     "@types/d3": "7.4.3",
     "@types/jest": "29.5.12",
