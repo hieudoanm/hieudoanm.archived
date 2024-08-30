@@ -7,7 +7,7 @@
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "license": "GPL-3.0",
   "private": true,
-  "packageManager": "pnpm@9.8.0",
+  "packageManager": "pnpm@9.9.0",
   "scripts": {
     "prepare": "husky || true",
     "format": "turbo run format",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "husky": "9.1.5",
-    "turbo": "2.0.14"
+    "turbo": "2.1.0"
   },
   "resolutions": {
     "axios": "1.7.5",

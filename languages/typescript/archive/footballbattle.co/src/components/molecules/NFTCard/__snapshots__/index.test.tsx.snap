@@ -61,7 +61,7 @@ exports[`NFTCard render default 1`] = `
         class="order-1 md:order-2 col-span-1 md:col-span-2"
       >
         <div
-          class="sc-braxZu dmnYrq w-full bg-center bg-contain bg-no-repeat"
+          class="sc-blHHSb kEYVCC w-full bg-center bg-contain bg-no-repeat"
           image=""
           style="padding-bottom: 120%;"
           title=""

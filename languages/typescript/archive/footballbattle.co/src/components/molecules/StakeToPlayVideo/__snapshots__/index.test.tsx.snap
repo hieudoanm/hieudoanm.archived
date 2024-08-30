@@ -24,7 +24,7 @@ exports[`StakeToPlayVideo render default 1`] = `
               class="w-full h-full px-2 py-4 bg-[#5CAB40]"
             >
               <div
-                class="sc-braxZu dRwmCA w-full bg-cover"
+                class="sc-blHHSb fPvaXE w-full bg-cover"
                 image="/how-to-play/en/images/stake-to-play/player-card.svg"
                 style="padding-bottom: 100%;"
               />
@@ -39,7 +39,7 @@ exports[`StakeToPlayVideo render default 1`] = `
           >
             <div>
               <div
-                class="sc-braxZu hnNRza w-8 h-8 bg-cover"
+                class="sc-blHHSb kOhsri w-8 h-8 bg-cover"
                 image="/how-to-play/en/images/stake-to-play/play.svg"
               />
             </div>

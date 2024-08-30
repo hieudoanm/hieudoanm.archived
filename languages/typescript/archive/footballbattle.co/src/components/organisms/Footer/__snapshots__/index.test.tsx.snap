@@ -3,7 +3,7 @@
 exports[`Footer render default 1`] = `
 <div>
   <footer
-    class="sc-gJhJTp krYWAp py-32 bg-cover bg-center bg-gray-900 bg-no-repeat bg-cover bg-bottom-y"
+    class="sc-gtLWhw jyrTOA py-32 bg-cover bg-center bg-gray-900 bg-no-repeat bg-cover bg-bottom-y"
   >
     <div
       class="mx-auto px-8 container"
@@ -15,7 +15,7 @@ exports[`Footer render default 1`] = `
           class="col-span-1"
         >
           <div
-            class="sc-braxZu fyNrRt w-48 h-28 bg-contain bg-center bg-no-repeat"
+            class="sc-blHHSb dfSill w-48 h-28 bg-contain bg-center bg-no-repeat"
             image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/football-battle.svg"
           />
         </div>
@@ -84,7 +84,7 @@ exports[`Footer render default 1`] = `
           >
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -96,7 +96,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu jWAuLD w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb epKBoX w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/facebook.svg"
                     />
                   </a>
@@ -105,7 +105,7 @@ exports[`Footer render default 1`] = `
             </div>
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -117,7 +117,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu hRLqnT w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb NewDf w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/instagram.svg"
                     />
                   </a>
@@ -126,7 +126,7 @@ exports[`Footer render default 1`] = `
             </div>
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -138,7 +138,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu iGdvtO w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb jIWhem w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/twitter.svg"
                     />
                   </a>
@@ -147,7 +147,7 @@ exports[`Footer render default 1`] = `
             </div>
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -159,7 +159,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu jgllKi w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb jWrQkO w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/telegram.svg"
                     />
                   </a>
@@ -168,7 +168,7 @@ exports[`Footer render default 1`] = `
             </div>
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -180,7 +180,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu emTuCD w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb crqJyf w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/discord.svg"
                     />
                   </a>
@@ -189,7 +189,7 @@ exports[`Footer render default 1`] = `
             </div>
             <div>
               <div
-                class="sc-braxZu kGUDmc w-12 h-12 bg-cover bg-no-repeat"
+                class="sc-blHHSb hyXxMY w-12 h-12 bg-cover bg-no-repeat"
                 image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/icon.svg"
               >
                 <div
@@ -201,7 +201,7 @@ exports[`Footer render default 1`] = `
                     target="_blank"
                   >
                     <div
-                      class="sc-braxZu iSDdVZ w-6 h-6 bg-contain bg-center bg-no-repeat"
+                      class="sc-blHHSb dyhBrt w-6 h-6 bg-contain bg-center bg-no-repeat"
                       image="https://raw.githubusercontent.com/hieudoanm/cdn/master/images/football-battle/svg/footer/tiktok.svg"
                     />
                   </a>
