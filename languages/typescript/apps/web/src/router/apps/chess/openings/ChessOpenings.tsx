@@ -1,59 +1,102 @@
-import { createColumnHelper } from '@tanstack/react-table';
-import { TanStackTable } from '@web/components/TanStack/Table';
-import { TanstackVirtualTable } from '@web/components/TanStack/VirtualTable';
+import { Opening } from '@prisma/client';
 import openings from '@web/json/chess/theory/openings.json';
 import { Layout } from '@web/layout';
-import { FC, useRef } from 'react';
+import { copyToClipboard } from '@web/utils/copy';
+import { sleep } from '@web/utils/sleep';
+import { Chess } from 'chess.js';
+import { FC, useState } from 'react';
+import { Chessboard } from 'react-chessboard';
+import { FaCopy } from 'react-icons/fa';
 
-const NODE_ENV = process.env.NODE_ENV;
+const Openings: FC<{ makeMoves: (pgn: string) => void }> = ({
+  makeMoves = (pgn: string) => pgn,
+}) => {
+  const [selectedPgn, setSelectedPgn] = useState<string>('');
 
-type Opening = { eco: string; name: string; pgn: string };
+  return (
+    <div className='overflow-hidden rounded-xl border border-base-content'>
+      <table className='table'>
+        <tr>
+          <td>Openings ({openings.length})</td>
+        </tr>
+        {openings.map(({ eco = '', name = '', pgn = '' }: Partial<Opening>) => {
+          return (
+            <tr
+              key={`${eco}-${name}`}
+              className={`border-t border-base-content ${selectedPgn === pgn ? 'bg-primary text-secondary' : ''}`}>
+              <td
+                onClick={() => {
+                  setSelectedPgn(pgn);
+                  makeMoves(pgn);
+                }}
+                className='cursor-pointer'>
+                <p className='whitespace-nowrap' title={name}>
+                  {eco} - {name}
+                </p>
+                <p className='whitespace-nowrap' title={pgn}>
+                  {pgn}
+                </p>
+              </td>
+            </tr>
+          );
+        })}
+      </table>
+    </div>
+  );
+};
 
-const columnHelper = createColumnHelper<Opening>();
-
-const columns = [
-  columnHelper.accessor('eco', {
-    id: 'eco',
-    header: () => 'ECO',
-    cell: (info) => info.renderValue(),
-    footer: (info) => info.column.id,
-    filterFn: 'equals',
-  }),
-  columnHelper.accessor('name', {
-    id: 'name',
-    header: () => 'Name',
-    cell: (info) => info.renderValue(),
-    footer: (info) => info.column.id,
-    filterFn: 'equals',
-  }),
-  columnHelper.accessor('pgn', {
-    id: 'pgn',
-    header: () => 'PGN',
-    cell: (info) => info.renderValue(),
-    footer: (info) => info.column.id,
-    filterFn: 'equals',
-  }),
-];
+const INITIAL_FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';
 
 export const ChessOpenings: FC = () => {
-  const parentRef = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState<{ fen: string; pgn: string }>({
+    fen: INITIAL_FEN,
+    pgn: '',
+  });
+
+  const makeMoves = async (pgn: string) => {
+    const game = new Chess();
+    const moves: string[] = pgn
+      .split(' ')
+      .filter((_, index: number) => index % 3 !== 0);
+    for (const move of moves) {
+      await sleep(1000);
+      game.move(move);
+      setPosition({ fen: game.fen(), pgn: game.pgn() });
+    }
+  };
 
   return (
     <Layout nav full>
-      <div ref={parentRef} className='h-full overflow-y-auto'>
-        <div className='container mx-auto'>
-          <div className='p-4 md:p-8'>
-            <div className='flex flex-col gap-y-4 md:gap-y-8'>
-              <h1 className='text-xl'>Openings</h1>
-              {NODE_ENV === 'production' ? (
-                <TanStackTable data={openings} columns={columns} />
-              ) : (
-                <TanstackVirtualTable
-                  parentRef={parentRef}
-                  data={openings}
-                  columns={columns}
-                />
-              )}
+      <div className='container mx-auto h-full'>
+        <div className='h-full p-4 md:p-8'>
+          <div className='grid h-full grid-cols-1 gap-2 md:grid-cols-7 md:gap-4'>
+            <div className='col-span-1 flex items-center md:col-span-3'>
+              <div className='w-full overflow-hidden rounded-xl border border-base-content'>
+                <div className='flex items-center justify-center gap-x-2 p-2'>
+                  <p className='truncate text-xs' title={position.fen}>
+                    {position.fen}
+                  </p>
+                  <FaCopy
+                    className='cursor-pointer'
+                    onClick={() => copyToClipboard(position.fen)}
+                  />
+                </div>
+                <Chessboard position={position.fen} />
+                <div className='flex items-center justify-center gap-x-2 p-2'>
+                  <p className='truncate text-xs' title={position.pgn}>
+                    {position.pgn}
+                  </p>
+                  <FaCopy
+                    className='cursor-pointer'
+                    onClick={() => copyToClipboard(position.pgn)}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className='col-span-1 overflow-hidden md:col-span-4'>
+              <div className='h-full overflow-auto'>
+                <Openings makeMoves={makeMoves} />
+              </div>
             </div>
           </div>
         </div>

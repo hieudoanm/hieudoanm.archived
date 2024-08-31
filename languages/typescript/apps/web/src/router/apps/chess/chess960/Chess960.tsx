@@ -14,8 +14,6 @@ import {
 
 type Piece = 'K' | 'Q' | 'R' | 'B' | 'N';
 
-const order = ['K', 'Q', 'R', 'B', 'N'];
-
 const piecesMap: Record<Piece, string> = {
   K: 'King',
   Q: 'Queen',
@@ -104,11 +102,13 @@ export const Chess960: FC = () => {
     <Layout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
-          <div className='grid h-full grid-cols-1 gap-2 md:grid-cols-5 md:gap-4'>
-            <div className='col-span-1 flex items-center md:col-span-2'>
+          <div className='grid h-full grid-cols-1 gap-2 md:grid-cols-7 md:gap-4'>
+            <div className='col-span-1 flex items-center md:col-span-3'>
               <div className='w-full overflow-hidden rounded-xl border border-base-content'>
-                <div className='flex items-center justify-center gap-x-2 py-2'>
-                  <p className='text-sm'>{initialPosition}</p>
+                <div className='flex items-center justify-center gap-x-2 p-2'>
+                  <p className='truncate text-xs' title={initialPosition}>
+                    {initialPosition}
+                  </p>
                   <FaCopy
                     className='cursor-pointer'
                     onClick={() => copyToClipboard(initialPosition)}
@@ -117,7 +117,7 @@ export const Chess960: FC = () => {
                 <Chessboard position={initialPosition} />
               </div>
             </div>
-            <div className='col-span-1 overflow-hidden md:col-span-3'>
+            <div className='col-span-1 overflow-hidden md:col-span-4'>
               <div className='h-full overflow-auto'>
                 <Positions
                   initialPosition={initialPosition}

@@ -1,4 +1,4 @@
-import { ChessSwiss } from '@web/router/apps/chess/swiss';
+import { ChessSwiss } from '@web/router/apps/chess/tools/swiss';
 import { NextPage } from 'next';
 
 const ChessSwissPage: NextPage = () => {

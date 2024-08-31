@@ -1,6 +1,6 @@
 import players from '@web/json/chess/players/2800.json';
 import { Layout } from '@web/layout';
-import { ChessInsights } from '@web/router/apps/chess/insights/ChessInsights';
+import { ChessInsights } from '@web/router/apps/chess/players/2800/insights';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';

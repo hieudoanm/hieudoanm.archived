@@ -1443,166 +1443,6 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="chess/clock"
-        >
-          <div
-            class="border-b border-base-content"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Clock
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="chess/elo"
-        >
-          <div
-            class="border-b border-base-content"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 384 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Elo
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="chess/insights"
-        >
-          <div
-            class="border-b border-base-content"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Insights
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="chess/titled"
-        >
-          <div
-            class="border-b border-base-content"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 576 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Titled
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
           href="chess/chess960"
         >
           <div
@@ -1683,7 +1523,167 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="chess/swiss"
+          href="chess/players/2800"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    2800
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="chess/players/titled"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 576 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    Titled
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="chess/tools/clock"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    Clock
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="chess/tools/elo"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 384 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    Elo
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="chess/tools/swiss"
         >
           <div
             class="border-b border-base-content"
@@ -3123,7 +3123,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="countries/flags"
+          href="countries/all"
         >
           <div
             class="border-b border-base-content"
@@ -3155,47 +3155,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    Flags
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="countries/united-nations"
-        >
-          <div
-            class="border-b border-base-content"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 448 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M32 0C49.7 0 64 14.3 64 32V48l69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1v36.1l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-20.3-9-41.8-14.7-63.6-16.9v32.2c17.4 2.1 34.4 6.7 50.6 13.9l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 136.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 203.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 232.3v62l-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 299.1v32.7l70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 328.3v33.5c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 400v80c0 17.7-14.3 32-32 32s-32-14.3-32-32V416 345.5 312.8 249.5 216.8 153.5 120.8 64 32C0 14.3 14.3 0 32 0zm80 96A16 16 0 1 0 80 96a16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm-32 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    United Nations
+                    Countries
                   </div>
                 </div>
               </div>
@@ -3516,6 +3476,46 @@ exports[`ListTemplate render default 1`] = `
                   </div>
                   <div>
                     VNIndex
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="finance/crypto"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zm-141.651-35.33c4.937-32.999-20.191-50.739-54.55-62.573l11.146-44.702-27.213-6.781-10.851 43.524c-7.154-1.783-14.502-3.464-21.803-5.13l10.929-43.81-27.198-6.781-11.153 44.686c-5.922-1.349-11.735-2.682-17.377-4.084l.031-.14-37.53-9.37-7.239 29.062s20.191 4.627 19.765 4.913c11.022 2.751 13.014 10.044 12.68 15.825l-12.696 50.925c.76.194 1.744.473 2.829.907-.907-.225-1.876-.473-2.876-.713l-17.796 71.338c-1.349 3.348-4.767 8.37-12.471 6.464.271.395-19.78-4.937-19.78-4.937l-13.51 31.147 35.414 8.827c6.588 1.651 13.045 3.379 19.4 5.006l-11.262 45.213 27.182 6.781 11.153-44.733a1038.209 1038.209 0 0 0 21.687 5.627l-11.115 44.523 27.213 6.781 11.262-45.128c46.404 8.781 81.299 5.239 95.986-36.727 11.836-33.79-.589-53.281-25.004-65.991 17.78-4.098 31.174-15.792 34.747-39.949zm-62.177 87.179c-8.41 33.79-65.308 15.523-83.755 10.943l14.944-59.899c18.446 4.603 77.6 13.717 68.811 48.956zm8.417-87.667c-7.673 30.736-55.031 15.12-70.393 11.292l13.548-54.327c15.363 3.828 64.836 10.973 56.845 43.035z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    Crypto
                   </div>
                 </div>
               </div>
