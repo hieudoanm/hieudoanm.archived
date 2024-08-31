@@ -1,3 +1,4 @@
+import players from '@web/json/chess/players/2800.json';
 import { Layout } from '@web/layout';
 import { ChessInsights } from '@web/router/apps/chess/insights/ChessInsights';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
@@ -36,22 +37,7 @@ const InsightsPage: NextPage<{ username: string }> = ({ username }) => {
 };
 
 export const getStaticPaths = (async () => {
-  const usernames: string[] = [
-    'anishgiri',
-    'chefshouse',
-    'fabianocaruana',
-    'gmwso',
-    'hikaru',
-    'lachesisq',
-    'levonaronian',
-    'liemle',
-    'lyonbeast',
-    'magnuscarlsen',
-    'thevish',
-    'vincentkeymer',
-    'wonderfultime',
-  ];
-  const paths = usernames.map((username) => ({
+  const paths = players.map(({ username }: { username: string }) => ({
     params: { username },
   }));
   return { paths, fallback: true };

@@ -3,16 +3,17 @@ import { Layout } from '@web/layout';
 import { Result } from '@web/server/routers/_app';
 import { trpc } from '@web/utils/trpc';
 import { NextPage } from 'next';
-import { Roboto_Mono } from 'next/font/google';
 import { Dispatch, FC, SetStateAction, Suspense, useState } from 'react';
 
-const Tab: FC<{
+type TabProps = {
   title: string;
   list: string[];
   index: number;
   defaultChecked?: boolean;
   setWord: Dispatch<SetStateAction<string>>;
-}> = ({
+};
+
+const Tab: FC<TabProps> = ({
   title = '',
   list = [],
   index = 0,
@@ -51,11 +52,13 @@ const Tab: FC<{
   );
 };
 
-const Results: FC<{
+type ResultsProps = {
   word: string;
   results: Result[];
   setWord: Dispatch<SetStateAction<string>>;
-}> = ({ word = '', results = [], setWord }) => {
+};
+
+const Results: FC<ResultsProps> = ({ word = '', results = [], setWord }) => {
   return (
     <>
       <p className='text-xl'>{word}</p>
@@ -116,12 +119,13 @@ const Results: FC<{
   );
 };
 
-const SearchResults: FC<{
+type SearchResultsProps = {
   query: string;
   setWord: Dispatch<SetStateAction<string>>;
-}> = ({ query = '', setWord }) => {
+};
+
+const SearchResults: FC<SearchResultsProps> = ({ query = '', setWord }) => {
   const {
-    // @ts-ignore
     data = { word: '', results: [] },
     status,
     error,

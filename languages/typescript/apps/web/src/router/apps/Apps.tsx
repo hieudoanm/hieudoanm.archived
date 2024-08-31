@@ -63,6 +63,7 @@ import {
   FaTelegram,
   FaTemperatureFull,
   FaTiktok,
+  FaToolbox,
   FaTwitter,
   FaUsers,
   FaYoutube,
@@ -77,10 +78,13 @@ export type Folder =
   | 'home'
   | 'calculator'
   | 'chess'
-  | 'colors'
+  | 'chess-players'
+  | 'chess-tools'
   | 'clock'
+  | 'colors'
   | 'countries'
   | 'converter'
+  | 'crypto'
   | 'csv'
   | 'editor'
   | 'finance'
@@ -163,50 +167,6 @@ export const APPS: App[] = [
     isFolder: true,
   },
   {
-    id: 'chess-clock',
-    href: 'chess/clock',
-    name: 'Clock',
-    shortName: 'Clock',
-    enabled: true,
-    icon: <FaClock />,
-    borderStyle: Border.Solid,
-    folder: 'chess',
-    isFolder: false,
-  },
-  {
-    id: 'chess-elo',
-    href: 'chess/elo',
-    name: 'Elo',
-    shortName: 'Elo',
-    enabled: true,
-    icon: <FaCalculator />,
-    borderStyle: Border.Solid,
-    folder: 'chess',
-    isFolder: false,
-  },
-  {
-    id: 'chess-insights',
-    href: 'chess/insights',
-    name: 'Insights',
-    shortName: 'Insights',
-    enabled: true,
-    icon: <FaMagnifyingGlass />,
-    borderStyle: Border.Solid,
-    folder: 'chess',
-    isFolder: false,
-  },
-  {
-    id: 'chess-titled',
-    href: 'chess/titled',
-    name: 'Titled',
-    shortName: 'Titled',
-    enabled: true,
-    icon: <FaCrown />,
-    borderStyle: Border.Solid,
-    folder: 'chess',
-    isFolder: false,
-  },
-  {
     id: 'chess-chess960',
     href: 'chess/chess960',
     name: 'Chess960',
@@ -229,14 +189,80 @@ export const APPS: App[] = [
     isFolder: false,
   },
   {
-    id: 'chess-swiss',
-    href: 'chess/swiss',
+    id: 'chess-players',
+    href: 'chess/players',
+    name: 'Players',
+    shortName: 'Players',
+    enabled: true,
+    icon: <FaUsers />,
+    borderStyle: Border.Solid,
+    folder: 'chess',
+    isFolder: true,
+  },
+  {
+    id: 'chess-players-2800',
+    href: 'chess/players/2800',
+    name: '2800',
+    shortName: '2800',
+    enabled: true,
+    icon: <FaMagnifyingGlass />,
+    borderStyle: Border.Solid,
+    folder: 'chess-players',
+    isFolder: false,
+  },
+  {
+    id: 'chess-players-titled',
+    href: 'chess/players/titled',
+    name: 'Titled',
+    shortName: 'Titled',
+    enabled: true,
+    icon: <FaCrown />,
+    borderStyle: Border.Solid,
+    folder: 'chess-players',
+    isFolder: false,
+  },
+  {
+    id: 'chess-tools',
+    href: 'chess/tools',
+    name: 'Tools',
+    shortName: 'Tools',
+    enabled: true,
+    icon: <FaToolbox />,
+    borderStyle: Border.Solid,
+    folder: 'chess',
+    isFolder: true,
+  },
+  {
+    id: 'chess-tools-clock',
+    href: 'chess/tools/clock',
+    name: 'Clock',
+    shortName: 'Clock',
+    enabled: true,
+    icon: <FaClock />,
+    borderStyle: Border.Solid,
+    folder: 'chess-tools',
+    isFolder: false,
+  },
+  {
+    id: 'chess-tools-elo',
+    href: 'chess/tools/elo',
+    name: 'Elo',
+    shortName: 'Elo',
+    enabled: true,
+    icon: <FaCalculator />,
+    borderStyle: Border.Solid,
+    folder: 'chess-tools',
+    isFolder: false,
+  },
+  {
+    id: 'chess-tools-swiss',
+    href: 'chess/tools/swiss',
     name: 'Swiss',
     shortName: 'Swiss',
     enabled: true,
     icon: <FaChess />,
     borderStyle: Border.Solid,
-    folder: 'chess',
+    folder: 'chess-tools',
     isFolder: false,
   },
   {
@@ -769,22 +795,11 @@ export const APPS: App[] = [
   },
   {
     id: 'un',
-    href: 'countries/flags',
-    name: 'Flags',
-    shortName: 'Flags',
+    href: 'countries/all',
+    name: 'Countries',
+    shortName: 'Countries',
     enabled: true,
     icon: <FaFlag />,
-    borderStyle: Border.Solid,
-    folder: 'countries',
-    isFolder: false,
-  },
-  {
-    id: 'un',
-    href: 'countries/united-nations',
-    name: 'United Nations',
-    shortName: 'UN',
-    enabled: true,
-    icon: <FaFlagUsa />,
     borderStyle: Border.Solid,
     folder: 'countries',
     isFolder: false,
@@ -878,6 +893,17 @@ export const APPS: App[] = [
     isFolder: false,
   },
   {
+    id: 'crypto',
+    href: 'finance/crypto',
+    name: 'Crypto',
+    shortName: 'Crypto',
+    enabled: true,
+    icon: <FaBitcoin />,
+    borderStyle: Border.Solid,
+    folder: 'finance',
+    isFolder: false,
+  },
+  {
     id: 'coins',
     href: 'finance/crypto/coins',
     name: 'Coins',
@@ -885,7 +911,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaBitcoin />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -896,7 +922,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaUsers />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -907,7 +933,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaFutbol />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -918,7 +944,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaDog />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -929,7 +955,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaLock />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -940,7 +966,7 @@ export const APPS: App[] = [
     enabled: true,
     icon: <FaDollarSign />,
     borderStyle: Border.Solid,
-    folder: 'finance',
+    folder: 'crypto',
     isFolder: false,
   },
   {
@@ -1187,12 +1213,12 @@ export const APPS: App[] = [
   },
 ];
 
-const getColumns = (number: number) => {
-  if (number <= 6) return { sm: 1, md: number };
-  if (number <= 12) return { sm: 2, md: Math.floor(number / 2) };
-  if (number <= 18) return { sm: 3, md: Math.floor(number / 3) };
-  return { sm: 4, md: Math.floor(number / 3) };
-};
+// const getColumns = (number: number) => {
+//   if (number <= 6) return { sm: 1, md: number };
+//   if (number <= 12) return { sm: 2, md: Math.floor(number / 2) };
+//   if (number <= 18) return { sm: 3, md: Math.floor(number / 3) };
+//   return { sm: 4, md: Math.floor(number / 3) };
+// };
 
 export const Grid: FC<{ apps: App[] }> = ({ apps = [] }) => {
   const numberOfApps: number = apps.length;

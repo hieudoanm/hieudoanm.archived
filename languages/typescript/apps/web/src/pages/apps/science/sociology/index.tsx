@@ -1,4 +1,4 @@
-import countries from '@web/json/hofstede.json';
+import countries from '@web/json/science/psychology/hofstede.json';
 import { Layout } from '@web/layout';
 import {
   Chart,
