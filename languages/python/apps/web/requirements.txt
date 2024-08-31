@@ -3,7 +3,7 @@
 chess==1.10.0
 curl-cffi==0.7.1
 fastapi==0.112.2
-g4f==0.3.2.4
+g4f==0.3.2.5
 psutil==6.0.0
 pydantic==2.8.2
 scikit-learn==1.5.1
