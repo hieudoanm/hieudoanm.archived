@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@prisma/client": "5.19.0",
-    "hono": "4.5.9"
+    "hono": "4.5.10"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240821.1",
