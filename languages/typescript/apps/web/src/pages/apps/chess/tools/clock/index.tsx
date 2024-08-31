@@ -1,4 +1,4 @@
-import { ChessClock } from '@web/router/apps/chess/clock';
+import { ChessClock } from '@web/router/apps/chess/tools/clock';
 import { NextPage } from 'next';
 
 const ChessClockPage: NextPage = () => {

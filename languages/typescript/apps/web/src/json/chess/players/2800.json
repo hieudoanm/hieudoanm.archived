@@ -1,0 +1,87 @@
+[
+  {
+    "ranking": 1,
+    "username": "magnuscarlsen",
+    "name": "Magnus Carlsen",
+    "live": 2889.2
+  },
+  {
+    "ranking": 2,
+    "username": "garrykasparov",
+    "name": "Garry Kasparov",
+    "live": 2856.7
+  },
+  {
+    "ranking": 3,
+    "username": "fabianocaruana",
+    "name": "Fabiano Caruana",
+    "live": 2851.3
+  },
+  {
+    "ranking": 4,
+    "username": "levonaronian",
+    "name": "Levon Aronian",
+    "live": 2835.5
+  },
+  { "ranking": 5, "username": "gmwso", "name": "Wesley So", "live": 2824.5 },
+  {
+    "ranking": 6,
+    "username": "azerichess",
+    "name": "Shakhriyar Mamedyarov",
+    "live": 2826.2
+  },
+  {
+    "ranking": 7,
+    "username": "lyonbeast",
+    "name": "Maxime Vachier-Lagrave",
+    "live": 2819.3
+  },
+  {
+    "ranking": 8,
+    "username": "thevish",
+    "name": "Viswanathan Anand",
+    "live": 2820.7
+  },
+  {
+    "ranking": 9,
+    "username": "vladimirkramnik",
+    "name": "Vladimir Kramnik",
+    "live": 2817.8
+  },
+  {
+    "ranking": 10,
+    "username": "veselintopalov359",
+    "name": "Veselin Topalov",
+    "live": 2826.5
+  },
+  {
+    "ranking": 11,
+    "username": "hikaru",
+    "name": "Hikaru Nakamura",
+    "live": 2819.0
+  },
+  {
+    "ranking": 12,
+    "username": "chefshouse",
+    "name": "Ding Liren",
+    "live": 2816.9
+  },
+  {
+    "ranking": 13,
+    "username": "grischuk",
+    "name": "Alexander Grischuk",
+    "live": 2813.6
+  },
+  {
+    "ranking": 14,
+    "username": "firouzja2003",
+    "name": "Alireza Firouzja",
+    "live": 2804.0
+  },
+  {
+    "ranking": 15,
+    "username": "anishgiri",
+    "name": "Anish Giri",
+    "live": 2802.8
+  }
+]

@@ -1,4 +1,4 @@
-import { ChessElo } from '@web/router/apps/chess/elo';
+import { ChessElo } from '@web/router/apps/chess/tools/elo';
 import { NextPage } from 'next';
 
 const ChessEloPage: NextPage = () => {

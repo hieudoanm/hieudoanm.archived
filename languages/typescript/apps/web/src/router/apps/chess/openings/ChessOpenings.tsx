@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table';
 import { TanStackTable } from '@web/components/TanStack/Table';
 import { TanstackVirtualTable } from '@web/components/TanStack/VirtualTable';
-import openings from '@web/json/chess/openings.json';
+import openings from '@web/json/chess/theory/openings.json';
 import { Layout } from '@web/layout';
 import { FC, useRef } from 'react';
 
