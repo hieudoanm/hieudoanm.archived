@@ -165,7 +165,7 @@ export const NewsQuery: FC<{ category: Category; country: Country }> = ({
   const {
     isPending,
     error,
-    data: articles,
+    data: articles = [],
   } = trpc.news.useQuery({
     category,
     country,
