@@ -1,6 +1,6 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
 import { usePosition } from '@web/hooks/use-position';
-import cities from '@web/json/cities.json';
+import cities from '@web/json/maps/cities.json';
 import { Layout } from '@web/layout';
 import { trpc } from '@web/utils/trpc';
 import { NextPage } from 'next';

@@ -1,8 +1,8 @@
+import cities from '@web/json/maps/cities.json';
 import { Layout } from '@web/layout';
-import { NextPage } from 'next';
-import cities from '@web/json/cities.json';
-import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { addZero } from '@web/utils/number/number';
+import { NextPage } from 'next';
+import { ChangeEvent, FC, useEffect, useState } from 'react';
 
 const Clock: FC<{ city: string; timezone: number }> = ({
   city = '',
