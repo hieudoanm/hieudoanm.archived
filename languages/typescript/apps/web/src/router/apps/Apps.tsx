@@ -1,3 +1,4 @@
+import languages from '@web/json/languages/languages.json';
 import { Layout } from '@web/layout';
 import { logger } from '@web/log';
 import Link from 'next/link';
@@ -90,13 +91,14 @@ export type Folder =
   | 'finance'
   | 'generator'
   | 'languages'
+  | 'languages-words'
   | 'media'
   | 'news'
   | 'news-de'
   | 'news-kr'
   | 'news-uk'
   | 'news-us'
-  | 'science'
+  | 'sciences'
   | 'transfer'
   | 'trends'
   | 'vietnam'
@@ -114,7 +116,19 @@ export type App = {
   isFolder: boolean;
 };
 
-export const APPS: App[] = [
+const languagesWordsApps: App[] = languages.map((language: string) => ({
+  id: `languages-words-${language}`,
+  href: `languages/words/${language}`,
+  name: language,
+  shortName: language,
+  enabled: true,
+  icon: <FaLanguage />,
+  borderStyle: Border.Solid,
+  folder: 'languages-words',
+  isFolder: false,
+}));
+
+export const allApps: App[] = [
   {
     id: 'calculator',
     href: 'calculator',
@@ -556,17 +570,6 @@ export const APPS: App[] = [
     isFolder: false,
   },
   {
-    id: 'languages',
-    href: 'languages',
-    name: 'Languages',
-    shortName: 'Languages',
-    enabled: true,
-    icon: <FaLanguage />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
-  {
     id: 'media',
     href: 'media',
     name: 'Media',
@@ -633,10 +636,10 @@ export const APPS: App[] = [
     isFolder: true,
   },
   {
-    id: 'science',
-    href: 'science',
-    name: 'Science',
-    shortName: 'Science',
+    id: 'sciences',
+    href: 'sciences',
+    name: 'Sciences',
+    shortName: 'Sciences',
     enabled: true,
     icon: <FaBrain />,
     borderStyle: Border.Solid,
@@ -644,69 +647,69 @@ export const APPS: App[] = [
     isFolder: true,
   },
   {
-    id: 'science-sociology',
-    href: 'science/sociology',
+    id: 'sciences-sociology',
+    href: 'sciences/sociology',
     name: 'Sociology',
     shortName: 'Sociology',
     enabled: true,
     icon: <FaUsers />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
-    id: 'science-psychology',
-    href: 'science/psychology',
+    id: 'sciences-psychology',
+    href: 'sciences/psychology',
     name: 'Psychology',
     shortName: 'Psychology',
     enabled: true,
     icon: <FaBrain />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
-    id: 'science-biology',
-    href: 'science/biology',
+    id: 'sciences-biology',
+    href: 'sciences/biology',
     name: 'Biology',
     shortName: 'Biology',
     enabled: true,
     icon: <FaBacteria />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
-    id: 'science-chemistry',
-    href: 'science/chemistry',
+    id: 'sciences-chemistry',
+    href: 'sciences/chemistry',
     name: 'Chemistry',
     shortName: 'Chemistry',
     enabled: true,
     icon: <FaFlaskVial />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
-    id: 'science-physics',
-    href: 'science/physics',
+    id: 'sciences-physics',
+    href: 'sciences/physics',
     name: 'Physics',
     shortName: 'Physics',
     enabled: true,
     icon: <FaMeteor />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
-    id: 'science-mathematics',
-    href: 'science/mathematics',
+    id: 'sciences-mathematics',
+    href: 'sciences/mathematics',
     name: 'Mathematics',
     shortName: 'Mathematics',
     enabled: true,
     icon: <FaN />,
     borderStyle: Border.Solid,
-    folder: 'science',
+    folder: 'sciences',
     isFolder: false,
   },
   {
@@ -1304,6 +1307,17 @@ export const APPS: App[] = [
     isFolder: false,
   },
   {
+    id: 'languages',
+    href: 'languages',
+    name: 'Languages',
+    shortName: 'Languages',
+    enabled: true,
+    icon: <FaLanguage />,
+    borderStyle: Border.Solid,
+    folder: 'home',
+    isFolder: true,
+  },
+  {
     id: 'languages-detection',
     href: 'languages/detection',
     name: 'Detection',
@@ -1315,27 +1329,17 @@ export const APPS: App[] = [
     isFolder: false,
   },
   {
-    id: 'languages-english',
-    href: 'languages/english',
-    name: 'English',
-    shortName: 'English',
+    id: 'languages-words',
+    href: 'languages/words',
+    name: 'Words',
+    shortName: 'Words',
     enabled: true,
     icon: <FaLanguage />,
     borderStyle: Border.Solid,
     folder: 'languages',
     isFolder: false,
   },
-  {
-    id: 'languages-korean',
-    href: 'languages/korean',
-    name: '한국어',
-    shortName: '한국어',
-    enabled: true,
-    icon: <FaLanguage />,
-    borderStyle: Border.Solid,
-    folder: 'languages',
-    isFolder: false,
-  },
+  ...languagesWordsApps,
   {
     id: 'trends-facebook',
     href: 'trends/facebook',
@@ -1393,13 +1397,6 @@ export const APPS: App[] = [
   },
 ];
 
-// const getColumns = (number: number) => {
-//   if (number <= 6) return { sm: 1, md: number };
-//   if (number <= 12) return { sm: 2, md: Math.floor(number / 2) };
-//   if (number <= 18) return { sm: 3, md: Math.floor(number / 3) };
-//   return { sm: 4, md: Math.floor(number / 3) };
-// };
-
 export const Grid: FC<{ apps: App[] }> = ({ apps = [] }) => {
   const numberOfApps: number = apps.length;
   const sm: number = Math.ceil(numberOfApps / 6);
@@ -1422,8 +1419,12 @@ export const Grid: FC<{ apps: App[] }> = ({ apps = [] }) => {
                       {icon}
                     </div>
                     <div className='truncate text-center text-xs md:text-base'>
-                      <span className='hidden md:inline'>{name}</span>
-                      <span className='inline md:hidden'>{shortName}</span>
+                      <span className='hidden capitalize md:inline'>
+                        {name}
+                      </span>
+                      <span className='inline capitalize md:hidden'>
+                        {shortName}
+                      </span>
                     </div>
                   </div>
                 </Link>
@@ -1440,7 +1441,7 @@ export const GridTemplate: FC<{ full?: boolean; folder?: Folder }> = ({
   full = false,
   folder = 'home',
 }) => {
-  const apps = APPS.filter(
+  const apps = allApps.filter(
     ({ enabled, folder: appFolder }: App) => appFolder === folder && enabled
   );
 
@@ -1458,11 +1459,13 @@ export const GridTemplate: FC<{ full?: boolean; folder?: Folder }> = ({
 export const ListTemplate: FC = () => {
   const [query, setQuery] = useState('');
 
-  const apps = APPS.filter(({ isFolder }) => !isFolder).filter(
-    ({ name = '', shortName = '' }: App) =>
-      shortName.toLowerCase().includes(query.toLowerCase()) ||
-      name.toLowerCase().includes(query.toLowerCase())
-  );
+  const apps = allApps
+    .filter(({ isFolder }) => !isFolder)
+    .filter(
+      ({ name = '', shortName = '' }: App) =>
+        shortName.toLowerCase().includes(query.toLowerCase()) ||
+        name.toLowerCase().includes(query.toLowerCase())
+    );
 
   return (
     <Layout nav navBorder full>

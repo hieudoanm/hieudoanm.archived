@@ -1,6 +1,6 @@
 import { Layout } from '@web/layout';
 import { NextPage } from 'next';
-import alphabet from '@web/json/korean/alphabet.json';
+import alphabet from '@web/json/languages/korean/alphabet.json';
 import { FC } from 'react';
 
 const Key: FC<{ latin: string; hangul: string; shift?: string }> = ({

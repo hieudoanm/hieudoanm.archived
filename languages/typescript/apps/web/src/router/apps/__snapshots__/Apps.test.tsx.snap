@@ -121,12 +121,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Calculator
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Calculator
                       </span>
@@ -168,12 +168,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Calendar
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Calendar
                       </span>
@@ -215,12 +215,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Camera
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Camera
                       </span>
@@ -262,12 +262,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Chess
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Chess
                       </span>
@@ -309,12 +309,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Clock
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Clock
                       </span>
@@ -356,12 +356,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Colors
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Colors
                       </span>
@@ -403,12 +403,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Compass
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Compass
                       </span>
@@ -450,12 +450,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         CSV
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         CSV
                       </span>
@@ -497,12 +497,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Countries
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Countries
                       </span>
@@ -544,12 +544,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Editor
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Editor
                       </span>
@@ -591,12 +591,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Finance
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Finance
                       </span>
@@ -638,61 +638,14 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Generator
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Generator
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-span-1"
-            >
-              <div
-                class="flex h-full items-center justify-center"
-              >
-                <a
-                  href="/apps/languages"
-                >
-                  <div
-                    class="flex flex-col gap-y-2 md:gap-y-4"
-                  >
-                    <div
-                      class="mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border border-base-content text-xl md:w-16 border-solid"
-                    >
-                      <svg
-                        fill="currentColor"
-                        height="1em"
-                        stroke="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 640 512"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="truncate text-center text-xs md:text-base"
-                    >
-                      <span
-                        class="hidden md:inline"
-                      >
-                        Languages
-                      </span>
-                      <span
-                        class="inline md:hidden"
-                      >
-                        Languages
                       </span>
                     </div>
                   </div>
@@ -732,12 +685,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Media
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Media
                       </span>
@@ -779,12 +732,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Messages
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Messages
                       </span>
@@ -826,12 +779,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         News
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         News
                       </span>
@@ -873,12 +826,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Notes
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Notes
                       </span>
@@ -894,7 +847,7 @@ exports[`GridTemplate render default 1`] = `
                 class="flex h-full items-center justify-center"
               >
                 <a
-                  href="/apps/science"
+                  href="/apps/sciences"
                 >
                   <div
                     class="flex flex-col gap-y-2 md:gap-y-4"
@@ -920,14 +873,14 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
-                        Science
+                        Sciences
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
-                        Science
+                        Sciences
                       </span>
                     </div>
                   </div>
@@ -967,12 +920,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Settings
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Settings
                       </span>
@@ -1014,12 +967,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Status
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Status
                       </span>
@@ -1061,12 +1014,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Tasks
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Tasks
                       </span>
@@ -1108,12 +1061,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Transfer
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Transfer
                       </span>
@@ -1155,12 +1108,12 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Trends
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Trends
                       </span>
@@ -1202,14 +1155,61 @@ exports[`GridTemplate render default 1`] = `
                       class="truncate text-center text-xs md:text-base"
                     >
                       <span
-                        class="hidden md:inline"
+                        class="hidden capitalize md:inline"
                       >
                         Weather
                       </span>
                       <span
-                        class="inline md:hidden"
+                        class="inline capitalize md:hidden"
                       >
                         Weather
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-span-1"
+            >
+              <div
+                class="flex h-full items-center justify-center"
+              >
+                <a
+                  href="/apps/languages"
+                >
+                  <div
+                    class="flex flex-col gap-y-2 md:gap-y-4"
+                  >
+                    <div
+                      class="mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border border-base-content text-xl md:w-16 border-solid"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 640 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="truncate text-center text-xs md:text-base"
+                    >
+                      <span
+                        class="hidden capitalize md:inline"
+                      >
+                        Languages
+                      </span>
+                      <span
+                        class="inline capitalize md:hidden"
+                      >
+                        Languages
                       </span>
                     </div>
                   </div>
@@ -2643,7 +2643,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/sociology"
+          href="sciences/sociology"
         >
           <div
             class="border-b border-base-content"
@@ -2683,7 +2683,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/psychology"
+          href="sciences/psychology"
         >
           <div
             class="border-b border-base-content"
@@ -2723,7 +2723,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/biology"
+          href="sciences/biology"
         >
           <div
             class="border-b border-base-content"
@@ -2763,7 +2763,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/chemistry"
+          href="sciences/chemistry"
         >
           <div
             class="border-b border-base-content"
@@ -2803,7 +2803,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/physics"
+          href="sciences/physics"
         >
           <div
             class="border-b border-base-content"
@@ -2843,7 +2843,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="science/mathematics"
+          href="sciences/mathematics"
         >
           <div
             class="border-b border-base-content"
@@ -3843,7 +3843,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/business"
+          href="news/de/business"
         >
           <div
             class="border-b border-base-content"
@@ -3875,7 +3875,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    US Business
+                    DE Business
                   </div>
                 </div>
               </div>
@@ -3883,7 +3883,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/entertainment"
+          href="news/de/entertainment"
         >
           <div
             class="border-b border-base-content"
@@ -3915,7 +3915,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    US Entertainment
+                    DE Entertainment
                   </div>
                 </div>
               </div>
@@ -3923,7 +3923,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/health"
+          href="news/de/health"
         >
           <div
             class="border-b border-base-content"
@@ -3955,7 +3955,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    US Health
+                    DE Health
                   </div>
                 </div>
               </div>
@@ -3963,7 +3963,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/science"
+          href="news/de/science"
         >
           <div
             class="border-b border-base-content"
@@ -3995,7 +3995,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    US Science
+                    DE Science
                   </div>
                 </div>
               </div>
@@ -4003,7 +4003,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/sports"
+          href="news/de/sports"
         >
           <div
             class="border-b border-base-content"
@@ -4030,12 +4030,12 @@ exports[`ListTemplate render default 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M247.5 25.4c-13.5 3.3-26.4 7.2-38.6 11.7C142.9 61.6 96.7 103.6 66 153.6c-18.3 29.8-30.9 62.3-39.2 95.4L264.5 486.6c13.5-3.3 26.4-7.2 38.6-11.7c66-24.5 112.2-66.5 142.9-116.5c18.3-29.8 30.9-62.3 39.1-95.3L247.5 25.4zM495.2 205.3c6.1-56.8 1.4-112.2-7.7-156.4c-2.7-12.9-13-22.9-26.1-25.1c-58.2-9.7-109.9-12-155.6-7.9L495.2 205.3zM206.1 496L16.8 306.7c-6.1 56.8-1.4 112.2 7.7 156.4c2.7 12.9 13 22.9 26.1 25.1c58.2 9.7 109.9 12 155.6 7.9zm54.6-331.3c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6zm-48 48c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6zm-48 48c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6z"
+                        d="M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z"
                       />
                     </svg>
                   </div>
                   <div>
-                    US Sports
+                    DE Sports
                   </div>
                 </div>
               </div>
@@ -4043,7 +4043,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="news/us/technology"
+          href="news/de/technology"
         >
           <div
             class="border-b border-base-content"
@@ -4075,7 +4075,247 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    US Technology
+                    DE Technology
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/business"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 352h8.2c32.3-39.1 81.1-64 135.8-64c5.4 0 10.7 .2 16 .7V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM320 352H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H360.2C335.1 449.6 320 410.5 320 368c0-5.4 .2-10.7 .7-16l-.7 0zm320 16a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zM496 288c8.8 0 16 7.2 16 16v48h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Business
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/entertainment"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Entertainment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/health"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Health
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/science"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 398.8c-11.8 5.1-23.4 9.7-34.9 13.5c16.7 33.8 31 35.7 34.9 35.7s18.1-1.9 34.9-35.7c-11.4-3.9-23.1-8.4-34.9-13.5zM446 256c33 45.2 44.3 90.9 23.6 128c-20.2 36.3-62.5 49.3-115.2 43.2c-22 52.1-55.6 84.8-98.4 84.8s-76.4-32.7-98.4-84.8c-52.7 6.1-95-6.8-115.2-43.2C21.7 346.9 33 301.2 66 256c-33-45.2-44.3-90.9-23.6-128c20.2-36.3 62.5-49.3 115.2-43.2C179.6 32.7 213.2 0 256 0s76.4 32.7 98.4 84.8c52.7-6.1 95 6.8 115.2 43.2c20.7 37.1 9.4 82.8-23.6 128zm-65.8 67.4c-1.7 14.2-3.9 28-6.7 41.2c31.8 1.4 38.6-8.7 40.2-11.7c2.3-4.2 7-17.9-11.9-48.1c-6.8 6.3-14 12.5-21.6 18.6zm-6.7-175.9c2.8 13.1 5 26.9 6.7 41.2c7.6 6.1 14.8 12.3 21.6 18.6c18.9-30.2 14.2-44 11.9-48.1c-1.6-2.9-8.4-13-40.2-11.7zM290.9 99.7C274.1 65.9 259.9 64 256 64s-18.1 1.9-34.9 35.7c11.4 3.9 23.1 8.4 34.9 13.5c11.8-5.1 23.4-9.7 34.9-13.5zm-159 88.9c1.7-14.3 3.9-28 6.7-41.2c-31.8-1.4-38.6 8.7-40.2 11.7c-2.3 4.2-7 17.9 11.9 48.1c6.8-6.3 14-12.5 21.6-18.6zM110.2 304.8C91.4 335 96 348.7 98.3 352.9c1.6 2.9 8.4 13 40.2 11.7c-2.8-13.1-5-26.9-6.7-41.2c-7.6-6.1-14.8-12.3-21.6-18.6zM336 256a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zm-80-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Science
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/sports"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M417.3 360.1l-71.6-4.8c-5.2-.3-10.3 1.1-14.5 4.2s-7.2 7.4-8.4 12.5l-17.6 69.6C289.5 445.8 273 448 256 448s-33.5-2.2-49.2-6.4L189.2 372c-1.3-5-4.3-9.4-8.4-12.5s-9.3-4.5-14.5-4.2l-71.6 4.8c-17.6-27.2-28.5-59.2-30.4-93.6L125 228.3c4.4-2.8 7.6-7 9.2-11.9s1.4-10.2-.5-15l-26.7-66.6C128 109.2 155.3 89 186.7 76.9l55.2 46c4 3.3 9 5.1 14.1 5.1s10.2-1.8 14.1-5.1l55.2-46c31.3 12.1 58.7 32.3 79.6 57.9l-26.7 66.6c-1.9 4.8-2.1 10.1-.5 15s4.9 9.1 9.2 11.9l60.7 38.2c-1.9 34.4-12.8 66.4-30.4 93.6zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm14.1-325.7c-8.4-6.1-19.8-6.1-28.2 0L194 221c-8.4 6.1-11.9 16.9-8.7 26.8l18.3 56.3c3.2 9.9 12.4 16.6 22.8 16.6h59.2c10.4 0 19.6-6.7 22.8-16.6l18.3-56.3c3.2-9.9-.3-20.7-8.7-26.8l-47.9-34.8z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Sports
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/kr/technology"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    KR Technology
                   </div>
                 </div>
               </div>
@@ -4323,6 +4563,246 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
+          href="news/us/business"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 352h8.2c32.3-39.1 81.1-64 135.8-64c5.4 0 10.7 .2 16 .7V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM320 352H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H360.2C335.1 449.6 320 410.5 320 368c0-5.4 .2-10.7 .7-16l-.7 0zm320 16a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zM496 288c8.8 0 16 7.2 16 16v48h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Business
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/us/entertainment"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Entertainment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/us/health"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Health
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/us/science"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 398.8c-11.8 5.1-23.4 9.7-34.9 13.5c16.7 33.8 31 35.7 34.9 35.7s18.1-1.9 34.9-35.7c-11.4-3.9-23.1-8.4-34.9-13.5zM446 256c33 45.2 44.3 90.9 23.6 128c-20.2 36.3-62.5 49.3-115.2 43.2c-22 52.1-55.6 84.8-98.4 84.8s-76.4-32.7-98.4-84.8c-52.7 6.1-95-6.8-115.2-43.2C21.7 346.9 33 301.2 66 256c-33-45.2-44.3-90.9-23.6-128c20.2-36.3 62.5-49.3 115.2-43.2C179.6 32.7 213.2 0 256 0s76.4 32.7 98.4 84.8c52.7-6.1 95 6.8 115.2 43.2c20.7 37.1 9.4 82.8-23.6 128zm-65.8 67.4c-1.7 14.2-3.9 28-6.7 41.2c31.8 1.4 38.6-8.7 40.2-11.7c2.3-4.2 7-17.9-11.9-48.1c-6.8 6.3-14 12.5-21.6 18.6zm-6.7-175.9c2.8 13.1 5 26.9 6.7 41.2c7.6 6.1 14.8 12.3 21.6 18.6c18.9-30.2 14.2-44 11.9-48.1c-1.6-2.9-8.4-13-40.2-11.7zM290.9 99.7C274.1 65.9 259.9 64 256 64s-18.1 1.9-34.9 35.7c11.4 3.9 23.1 8.4 34.9 13.5c11.8-5.1 23.4-9.7 34.9-13.5zm-159 88.9c1.7-14.3 3.9-28 6.7-41.2c-31.8-1.4-38.6 8.7-40.2 11.7c-2.3 4.2-7 17.9 11.9 48.1c6.8-6.3 14-12.5 21.6-18.6zM110.2 304.8C91.4 335 96 348.7 98.3 352.9c1.6 2.9 8.4 13 40.2 11.7c-2.8-13.1-5-26.9-6.7-41.2c-7.6-6.1-14.8-12.3-21.6-18.6zM336 256a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zm-80-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Science
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/us/sports"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M247.5 25.4c-13.5 3.3-26.4 7.2-38.6 11.7C142.9 61.6 96.7 103.6 66 153.6c-18.3 29.8-30.9 62.3-39.2 95.4L264.5 486.6c13.5-3.3 26.4-7.2 38.6-11.7c66-24.5 112.2-66.5 142.9-116.5c18.3-29.8 30.9-62.3 39.1-95.3L247.5 25.4zM495.2 205.3c6.1-56.8 1.4-112.2-7.7-156.4c-2.7-12.9-13-22.9-26.1-25.1c-58.2-9.7-109.9-12-155.6-7.9L495.2 205.3zM206.1 496L16.8 306.7c-6.1 56.8-1.4 112.2 7.7 156.4c2.7 12.9 13 22.9 26.1 25.1c58.2 9.7 109.9 12 155.6 7.9zm54.6-331.3c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6zm-48 48c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6zm-48 48c6.2-6.2 16.4-6.2 22.6 0l64 64c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-64-64c-6.2-6.2-6.2-16.4 0-22.6z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Sports
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="news/us/technology"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    US Technology
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
           href="languages/detection"
         >
           <div
@@ -4363,7 +4843,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="languages/english"
+          href="languages/words"
         >
           <div
             class="border-b border-base-content"
@@ -4395,7 +4875,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    English
+                    Words
                   </div>
                 </div>
               </div>
@@ -4403,7 +4883,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="languages/korean"
+          href="languages/words/arabic"
         >
           <div
             class="border-b border-base-content"
@@ -4435,7 +4915,447 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    한국어
+                    arabic
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/chinese"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    chinese
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/dutch"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    dutch
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/english"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    english
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/french"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    french
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/germany"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    germany
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/hebrew"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    hebrew
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/italian"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    italian
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/japanese"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    japanese
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/korean"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    korean
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/spanish"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    spanish
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="languages/words/vietnamese"
+        >
+          <div
+            class="border-b border-base-content"
+          >
+            <div
+              class="container mx-auto"
+            >
+              <div
+                class="p-4 md:p-8"
+              >
+                <div
+                  class="flex items-center gap-x-4"
+                >
+                  <div
+                    class="text-4xl"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 128C0 92.7 28.7 64 64 64H256h48 16H576c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H320 304 256 64c-35.3 0-64-28.7-64-64V128zm320 0V384H576V128H320zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1h73.6l8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276H141l19-42.8zM448 164c11 0 20 9 20 20v4h44 16c11 0 20 9 20 20s-9 20-20 20h-2l-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45H448 376c-11 0-20-9-20-20s9-20 20-20h52v-4c0-11 9-20 20-20z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    vietnamese
                   </div>
                 </div>
               </div>

@@ -1,5 +1,4 @@
 import { Layout } from '@web/layout';
-import { NextPage } from 'next';
 import { FC } from 'react';
 
 const Block: FC<{
@@ -37,7 +36,7 @@ const Block: FC<{
   );
 };
 
-const ChemistryPage: NextPage = () => {
+export const Chemistry: FC = () => {
   return (
     <Layout nav full>
       <div className='h-full overflow-y-auto'>
@@ -1104,5 +1103,3 @@ const ChemistryPage: NextPage = () => {
     </Layout>
   );
 };
-
-export default ChemistryPage;
