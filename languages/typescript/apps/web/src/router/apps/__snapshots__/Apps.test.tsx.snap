@@ -5083,7 +5083,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="languages/words/germany"
+          href="languages/words/german"
         >
           <div
             class="border-b border-base-content"
@@ -5115,7 +5115,7 @@ exports[`ListTemplate render default 1`] = `
                     </svg>
                   </div>
                   <div>
-                    germany
+                    german
                   </div>
                 </div>
               </div>

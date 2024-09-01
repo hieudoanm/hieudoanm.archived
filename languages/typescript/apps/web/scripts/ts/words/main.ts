@@ -26,10 +26,11 @@ const main = async () => {
         .split('\n')
         .filter((word: string) => word !== '')
         .sort((a, b) => (a > b ? 1 : -1));
+      const uniqueWords: string[] = [...new Set<string>(words)];
       const folder: string = `./src/json/languages/${language}`;
       if (!existsSync(folder)) mkdirSync(folder);
       const filename: string = `${folder}/words.json`;
-      writeFileSync(filename, JSON.stringify(words, null, 2));
+      writeFileSync(filename, JSON.stringify(uniqueWords, null, 2));
     } catch (error) {
       console.error(language, error);
     }
