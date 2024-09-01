@@ -9,36 +9,43 @@ export const Chess2800: FC = () => {
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='rounded-xl border border-base-content'>
-            <div className='p-2 md:p-4'>
-              <div className='flex items-center justify-between'>
-                <p>Players ({players.length})</p>
-                <p>Peak Live Rating</p>
-              </div>
-            </div>
-            {players.map(
-              ({
-                username,
-                name,
-                live,
-              }: {
-                username: string;
-                name: string;
-                live: number;
-              }) => {
-                return (
-                  <div
-                    key={username}
-                    className='border-t border-base-content p-2 md:p-4'>
-                    <div className='flex items-center justify-between'>
-                      <Link href={`/apps/chess/players/2800/${username}`}>
-                        {name}
-                      </Link>
-                      <p>{live}</p>
-                    </div>
-                  </div>
-                );
-              }
-            )}
+            <table className='table'>
+              <caption className='py-2'>2800 Clubs ({players.length})</caption>
+              <thead>
+                <tr className='border-t border-base-content'>
+                  <th>Username</th>
+                  <th>Name </th>
+                  <th align='right'>Peak</th>
+                </tr>
+              </thead>
+              <tbody>
+                {players.map(
+                  ({
+                    username,
+                    name,
+                    live,
+                  }: {
+                    username: string;
+                    name: string;
+                    live: number;
+                  }) => {
+                    return (
+                      <tr
+                        key={username}
+                        className='border-t border-base-content'>
+                        <td>
+                          <Link href={`/apps/chess/players/2800/${username}`}>
+                            {username}
+                          </Link>
+                        </td>
+                        <td>{name}</td>
+                        <td align='right'>{live}</td>
+                      </tr>
+                    );
+                  }
+                )}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

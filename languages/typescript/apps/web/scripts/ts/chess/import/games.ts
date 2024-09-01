@@ -229,13 +229,27 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     const archivesUrl = `${PUBLIC_URL}/player/${username}/games/archives`;
     const { data } = await axios.get<{ archives: string[] }>(archivesUrl);
     const { archives = [] } = data;
-    // archives.reverse();
+    let games: Game[] = [];
     for (const archive of archives) {
-      const games = await getGames(archive);
-      console.info(`archive=${archive} games=${games.length}`);
-      for (const game of games) {
-        await importGame(prismaClient, game);
-      }
+      const gamesPerArchive = await getGames(archive);
+      console.info(`archive=${archive} games=${gamesPerArchive.length}`);
+      games = games.concat(gamesPerArchive);
+    }
+    const databaseGames = await prismaClient.game.findMany({
+      where: { OR: [{ whiteUsername: username }, { blackUsername: username }] },
+    });
+    const databaseGameIds: Set<string> = new Set(
+      databaseGames.map(({ uuid }) => uuid)
+    );
+    let i: number = 0;
+    const remainingGames: Game[] = games.filter(
+      ({ uuid }) => !databaseGameIds.has(uuid)
+    );
+    console.info(`games=${remainingGames.length}`);
+    for (const game of remainingGames) {
+      await importGame(prismaClient, game);
+      console.info(((i / remainingGames.length) * 100).toFixed(2));
+      i += 1;
     }
   } catch (error) {
     console.error(`getArchives error=${error}`);
@@ -252,42 +266,50 @@ const main = async () => {
     return;
   }
 
-  const usernames = [
-    // { username: 'thedarkknighttrilogy', title: '' }, // Hieu Doan
+  const usernames2800: { username: string; title: string }[] = [
     { username: 'anishgiri', title: 'gm' }, // Anish Giri
     { username: 'azerichess', title: 'gm' }, // Shakhriyar Mamedyarov
-    // { username: 'chesswarrior7197', title: 'gm' }, // Nodirbek Abdusattorov
     { username: 'chefshouse', title: 'gm' }, // Ding Liren
-    // { username: 'crescentmoon2411', title: 'gm' }, // Nguyen Ngoc Truong Son
-    // { username: 'danielnaroditsky', title: 'gm' }, // Daniel Naroditsky
-    // { username: 'duhless', title: 'gm' }, // Daniil Dubov
     { username: 'fabianocaruana', title: 'gm' }, // Fabiano Caruana
     { username: 'firouzja2003', title: 'gm' }, // Alireza Firouzja
     { username: 'garrykasparov', title: 'gm' }, // Garry Kasparov
-    // { username: 'ghandeevam2003', title: 'gm' }, // Arjun Erigaisi
     { username: 'gmwso', title: 'gm' }, // Wesley So
     { username: 'grischuk', title: 'gm' }, // Alexander Grischuk
-    // { username: 'gukeshdommaraju', title: 'gm' }, // Gukesh D
     { username: 'hikaru', title: 'gm' }, // Hikaru Nakamura
-    // { username: 'lachesisq', title: 'gm' }, // Ian Nepomniachtchi
     { username: 'levonaronian', title: 'gm' }, // Levon Aronian
     { username: 'liemle', title: 'gm' }, // Liem Le
     { username: 'lyonbeast', title: 'gm' }, // MVL
     { username: 'magnuscarlsen', title: 'gm' }, // Magnus Carlsen
-    // { username: 'nihalsarin', title: 'gm' }, // Nihal Sarin
-    // { username: 'polish_fighter3000', title: 'gm' }, // Jan-Krzysztof Duda
     { username: 'thevish', title: 'gm' }, // Viswanathan Anand
-    // { username: 'tradjabov', title: 'gm' }, // Teimour Radjabov
     { username: 'veselintopalov359', title: 'gm' }, // Veselin Topalov
-    // { username: 'viditchess', title: 'gm' }, // Vidit Gujrathi
-    // { username: 'vincentkeymer', title: 'gm' }, // Vincent Keymer
     { username: 'vladimirkramnik', title: 'gm' }, // Vladimir Kramnik
+  ];
+
+  const usernamesIndia: { username: string; title: string }[] = [
+    // { username: 'ghandeevam2003', title: 'gm' }, // Arjun Erigaisi
+    // { username: 'gukeshdommaraju', title: 'gm' }, // Gukesh D
+    // { username: 'nihalsarin', title: 'gm' }, // Nihal Sarin
+    // { username: 'viditchess', title: 'gm' }, // Vidit Gujrathi
     // { username: 'rpragchess', title: 'gm' }, // Praggnanandhaa Rameshbabu
+  ];
+
+  const usernames: { username: string; title: string }[] = [
+    ...usernames2800,
+    ...usernamesIndia,
+    // { username: 'thedarkknighttrilogy', title: '' }, // Hieu Doan
+    // { username: 'chesswarrior7197', title: 'gm' }, // Nodirbek Abdusattorov
+    // { username: 'crescentmoon2411', title: 'gm' }, // Nguyen Ngoc Truong Son
+    // { username: 'danielnaroditsky', title: 'gm' }, // Daniel Naroditsky
+    // { username: 'duhless', title: 'gm' }, // Daniil Dubov
+    // { username: 'lachesisq', title: 'gm' }, // Ian Nepomniachtchi
+    // { username: 'polish_fighter3000', title: 'gm' }, // Jan-Krzysztof Duda
+    // { username: 'tradjabov', title: 'gm' }, // Teimour Radjabov
+    // { username: 'vincentkeymer', title: 'gm' }, // Vincent Keymer
     // { username: 'sergeykarjakin', title: 'gm' }, // Sergey Karjakin
     // { username: 'wonderfultime', title: 'gm' }, // Tuan Minh Le
     // { username: 'yifan0227', title: 'gm' }, // Hou Yifan
   ];
-  usernames.reverse();
+
   console.log(usernames.length);
   for (const { username } of usernames) {
     await getArchives(prismaClient, username);
