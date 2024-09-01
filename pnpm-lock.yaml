@@ -437,8 +437,8 @@ importers:
         specifier: 6.1.13
         version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       swiper:
-        specifier: 11.1.11
-        version: 11.1.11
+        specifier: 11.1.12
+        version: 11.1.12
     devDependencies:
       '@babel/core':
         specifier: 7.25.2
@@ -18771,8 +18771,8 @@ packages:
   swap-case@2.0.2:
     resolution: {integrity: sha512-kc6S2YS/2yXbtkSMunBtKdah4VFETZ8Oh6ONSmSd9bRxhqTrtARUCBUiWXH3xVPpvR7tz2CSnkuXVE42EcGnMw==}
 
-  swiper@11.1.11:
-    resolution: {integrity: sha512-077Aw3OrlZpkkBRf/6+44bGh/HZY/vsLEyate2db2KkJgYUIR5TvDgvvhcJtW/puXzw79w5KBc30DauEX6GZYQ==}
+  swiper@11.1.12:
+    resolution: {integrity: sha512-PUkCToYAZMB4kP7z+YfPnkMHOMwMO71g8vUhz2o5INGIgIMb6Sb0XiP6cEJFsiFTd7FRDn5XCbg+KVKPDZqXLw==}
     engines: {node: '>= 4.7.0'}
 
   symbol-observable@1.2.0:
@@ -43836,7 +43836,7 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  swiper@11.1.11: {}
+  swiper@11.1.12: {}
 
   symbol-observable@1.2.0: {}
 
