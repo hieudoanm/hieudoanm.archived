@@ -23,7 +23,7 @@
   "resolutions": {
     "axios": "1.7.7",
     "debug": "4.3.6",
-    "postcss": "8.4.42",
+    "postcss": "8.4.43",
     "semver": "7.6.3",
     "tar": "7.4.3",
     "webpack-dev-middleware": "7.4.2"
