@@ -189,6 +189,7 @@ model Game {
   opening       String    @default("") @map("opening") @db.VarChar(3)
   openingName   String    @default("") @map("opening_name") @db.VarChar(255)
   endPhrase     Phrase    @default(endgame) @map("end_phrase")
+  termination   String    @default("") @map("termination")
   createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz
   updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at") @db.Timestamptz
 

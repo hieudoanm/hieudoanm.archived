@@ -378,6 +378,10 @@
           "default": "endgame",
           "enum": ["opening", "middlegame", "endgame"]
         },
+        "termination": {
+          "type": "string",
+          "default": ""
+        },
         "createdAt": {
           "type": "string",
           "format": "date-time"

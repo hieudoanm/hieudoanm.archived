@@ -6,6 +6,8 @@ import { Chess } from 'chess.js';
 dotenv.config();
 
 const PUBLIC_URL: string = 'https://api.chess.com/pub';
+const CHESS_USERNAME = process.env.CHESS_USERNAME ?? '';
+const EXISTING: string = process.env.EXISTING ?? 'true';
 
 type ApiGame = {
   url: string;
@@ -45,6 +47,73 @@ const getGames = async (archive: string): Promise<ApiGame[]> => {
   }
 };
 
+const processTermination = (termination: string): Result => {
+  // Win / Lose
+  if (termination.includes('abandoned')) {
+    return 'abandoned';
+  }
+  if (termination.includes('checkmate')) {
+    // won by checkmate
+    return 'checkmated';
+  }
+  if (termination.includes('resignation')) {
+    // won by resignation
+    return 'resigned';
+  }
+  if (termination.includes('won on time')) {
+    // won on time
+    return 'timeout';
+  }
+  // Draw
+  if (termination.includes('50-move rule')) {
+    // drawn by 50-move rule
+    return 'fiftymove';
+  }
+  if (termination.includes('agreement')) {
+    // drawn by agreement
+    return 'agreed';
+  }
+  if (termination.includes('repetition')) {
+    // drawn by repetition
+    return 'repetition';
+  }
+  if (termination.includes('insufficient material')) {
+    // drawn by insufficient material
+    return 'insufficient';
+  }
+  if (termination.includes('stalemate')) {
+    // drawn by stalemate
+    return 'stalemate';
+  }
+  if (termination.includes('timeout vs insufficient material')) {
+    // drawn by timeout vs insufficient material
+    return 'timevsinsufficient';
+  }
+  return 'win';
+};
+
+type PgnResult = {
+  opening: string;
+  openingName: string;
+  whiteCastling: string;
+  whiteKing: number;
+  whiteQueen: number;
+  whiteRook: number;
+  whiteBishop: number;
+  whiteKnight: number;
+  whitePawn: number;
+  whiteResult: Result;
+  blackCastling: string;
+  blackKing: number;
+  blackQueen: number;
+  blackRook: number;
+  blackBishop: number;
+  blackKnight: number;
+  blackPawn: number;
+  blackResult: Result;
+  termination: string;
+};
+
 const processPGN = ({
   pgn,
   rules,
@@ -53,7 +122,7 @@ const processPGN = ({
   pgn: string;
   rules: string;
   initialSetup: string;
-}) => {
+}): PgnResult => {
   let opening: string = '';
   let openingName: string = '';
   let whiteCastling = '';
@@ -70,16 +139,38 @@ const processPGN = ({
   let blackKnight = 0;
   let whitePawn = 0;
   let blackPawn = 0;
+  let whiteResult: Result = 'win';
+  let blackResult: Result = 'win';
+  let termination: string = '';
+  const validRules: string[] = ['chess', 'chess960'];
+  const initialSetups: string[] = [
+    'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1',
+    '',
+  ];
   if (
     pgn &&
-    ['chess', 'chess960'].includes(rules) &&
-    initialSetup === 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+    validRules.includes(rules) &&
+    initialSetups.includes(initialSetup)
   ) {
     const chess = new Chess();
     chess.loadPgn(pgn);
+    // Header
     const header: Record<string, string> = chess.header();
     opening = header['ECO'];
     openingName = (header['ECOUrl'] ?? '').split('/').at(-1) ?? '';
+    const result: string = header['Result'];
+    termination = header['Termination'];
+    if (result === '1-0') {
+      whiteResult = 'win' as Result;
+      blackResult = processTermination(termination);
+    } else if (result === '1/2-1/2') {
+      whiteResult = processTermination(termination);
+      blackResult = processTermination(termination);
+    } else if (result === '0-1') {
+      whiteResult = processTermination(termination);
+      blackResult = 'win' as Result;
+    }
+    // History
     const history: string[] = chess.history();
     for (const [index, move] of Object.entries(history)) {
       if (parseInt(index) % 2 === 0) {
@@ -114,6 +205,7 @@ const processPGN = ({
     whiteBishop,
     whiteKnight,
     whitePawn,
+    whiteResult,
     blackCastling,
     blackKing,
     blackQueen,
@@ -121,8 +213,12 @@ const processPGN = ({
     blackBishop,
     blackKnight,
     blackPawn,
+    blackResult,
+    termination,
   };
 };
+
+const LOSS_RESULTS = ['checkmated', 'resigned', 'timeout', 'abandoned'];
 
 const mapGame = (
   game: ApiGame
@@ -154,10 +250,6 @@ const mapGame = (
       rating: blackRating = 0,
     } = { username: '', result: '', rating: 0 },
   } = game;
-  const whiteResult2: Result =
-    whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
-  const blackResult2: Result =
-    blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
   const {
     whiteCastling,
     whiteKing,
@@ -166,6 +258,7 @@ const mapGame = (
     whiteBishop,
     whiteKnight,
     whitePawn,
+    whiteResult: whiteResultPGN,
     blackCastling,
     blackKing,
     blackQueen,
@@ -173,9 +266,23 @@ const mapGame = (
     blackBishop,
     blackKnight,
     blackPawn,
+    blackResult: blackResultPGN,
     opening,
     openingName,
+    termination,
   } = processPGN({ pgn, rules, initialSetup });
+
+  let whiteResultFinal: Result =
+    whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
+  let blackResultFinal: Result =
+    blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
+  if (
+    LOSS_RESULTS.includes(whiteResultFinal) &&
+    LOSS_RESULTS.includes(blackResultFinal)
+  ) {
+    whiteResultFinal = whiteResultPGN;
+    blackResultFinal = blackResultPGN;
+  }
 
   return {
     uuid,
@@ -192,11 +299,11 @@ const mapGame = (
     whiteAccuracy,
     whiteUsername: whiteUsername.toLowerCase(),
     whiteRating,
-    whiteResult: whiteResult2,
+    whiteResult: whiteResultFinal,
     blackAccuracy,
     blackUsername: blackUsername.toLowerCase(),
     blackRating,
-    blackResult: blackResult2,
+    blackResult: blackResultFinal,
     whiteCastling,
     whiteKing,
     whiteQueen,
@@ -213,6 +320,7 @@ const mapGame = (
     blackPawn,
     opening,
     openingName,
+    termination,
   };
 };
 
@@ -286,12 +394,12 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
       );
       games = games.concat(gamesPerArchive);
     }
-    const databaseGames = await prismaClient.game.findMany({
-      where: { OR: [{ whiteUsername: username }, { blackUsername: username }] },
-    });
-    const databaseGameIds: Set<string> = new Set(
-      databaseGames.map(({ uuid }) => uuid)
-    );
+    let databaseGameIds: Set<string> = new Set();
+    if (EXISTING === 'true') {
+      const OR = [{ whiteUsername: username }, { blackUsername: username }];
+      const databaseGames = await prismaClient.game.findMany({ where: { OR } });
+      databaseGameIds = new Set(databaseGames.map(({ uuid }) => uuid));
+    }
     let i: number = 0;
     const remainingGames: ApiGame[] = games.filter(
       ({ uuid }) => !databaseGameIds.has(uuid)
@@ -313,8 +421,6 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     console.error(logDate(), `getArchives error=${error}`);
   }
 };
-
-const CHESS_USERNAME = process.env.CHESS_USERNAME ?? '';
 
 const main = async () => {
   const prismaClient = new PrismaClient();

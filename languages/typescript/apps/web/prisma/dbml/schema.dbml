@@ -87,6 +87,7 @@ Table game {
   opening String [not null, default: '']
   openingName String [not null, default: '']
   endPhrase Phrase [not null, default: 'endgame']
+  termination String [not null, default: '']
   createdAt DateTime [default: `now()`, not null]
   updatedAt DateTime [default: `now()`, not null]
 }

@@ -1,9 +1,35 @@
 -- Get Win Results by Opponent Rating
-SELECT COUNT(*) as "count", floor((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) as "column" FROM chess."game" as g WHERE g."time_class" = 'blitz' AND (g."white_username"='hikaru' OR g."black_username"='hikaru') AND TEXT(CASE WHEN g."white_username" = 'hikaru' THEN g."black_result" ELSE g."black_result" END) in ('win') AND g."rated" = true AND g."rules" = 'chess' GROUP BY "column" ORDER BY "column"
+SELECT COUNT(*) as "count",
+FLOOR((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) as "opponent_rating_group"
+FROM chess."game" as g
+WHERE g."time_class" = 'blitz'
+AND (g."white_username" = 'hikaru' OR g."black_username" = 'hikaru')
+AND TEXT(CASE WHEN g."white_username" = 'hikaru' THEN g."black_result" ELSE g."black_result" END) in ('win')
+AND g."rated" = true AND g."rules" = 'chess'
+GROUP BY "opponent_rating_group"
+ORDER BY "opponent_rating_group";
 -- Get Draw Results by Opponent Rating
-SELECT COUNT(*) as "count", floor((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) as "column" FROM chess."game" as g WHERE g."time_class" = 'blitz' AND (g."white_username"='hikaru' OR g."black_username"='hikaru') AND TEXT(CASE WHEN g."white_username" = 'hikaru' THEN g."black_result" ELSE g."black_result" END) in ('fiftymove','agreed','insufficient','repetition','stalemate','timevsinsufficient') AND g."rated" = true AND g."rules" = 'chess' GROUP BY "column" ORDER BY "column"
+SELECT COUNT(*) as "count",
+FLOOR((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) AS "opponent_rating_group"
+FROM chess."game" as g
+WHERE g."time_class" = 'blitz'
+AND (g."white_username"='hikaru' OR g."black_username"='hikaru')
+AND TEXT(CASE WHEN g."white_username" = 'hikaru'THEN g."black_result" ELSE g."black_result" END) in ('fiftymove','agreed','insufficient','repetition','stalemate','timevsinsufficient')
+AND g."rated" = true
+AND g."rules" = 'chess'
+GROUP BY "opponent_rating_group"
+ORDER BY "opponent_rating_group";
 -- Get Loss Results by Opponent Rating
-SELECT COUNT(*) as "count", floor((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) as "column" FROM chess."game" as g WHERE g."time_class" = 'blitz' AND (g."white_username"='hikaru' OR g."black_username"='hikaru') AND TEXT(CASE WHEN g."white_username" = 'hikaru' THEN g."black_result" ELSE g."black_result" END) in ('checkmated','resigned','timeout','abandoned') AND g."rated" = true AND g."rules" = 'chess' GROUP BY "column" ORDER BY "column"
+SELECT COUNT(*) as "count",
+FLOOR((CASE WHEN g."white_username" = 'hikaru' THEN g."black_rating" ELSE g."white_rating" END) / 100) AS "opponent_rating_group"
+FROM chess."game" as g
+WHERE g."time_class" = 'blitz'
+AND (g."white_username"='hikaru' OR g."black_username"='hikaru')
+AND TEXT(CASE WHEN g."white_username" = 'hikaru' THEN g."black_result" ELSE g."black_result" END) in ('checkmated','resigned','timeout','abandoned')
+AND g."rated" = true
+AND g."rules" = 'chess'
+GROUP BY "opponent_rating_group"
+ORDER BY "opponent_rating_group";
 -- How well you perform in your 10 most played openings (hikaru as white)
 SELECT c."opening",
 o."pgn",

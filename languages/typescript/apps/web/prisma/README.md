@@ -91,6 +91,7 @@ erDiagram
   String opening
   String opening_name
   Phrase end_phrase
+  String termination
   DateTime created_at
   DateTime updated_at
 }
@@ -206,6 +207,7 @@ erDiagram
 - `opening`:
 - `opening_name`:
 - `end_phrase`:
+- `termination`:
 - `created_at`:
 - `updated_at`:
 
