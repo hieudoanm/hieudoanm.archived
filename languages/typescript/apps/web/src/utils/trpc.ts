@@ -1,6 +1,7 @@
 import { httpBatchLink } from '@trpc/client';
 import { createTRPCNext } from '@trpc/next';
-import type { AppRouter } from '../server/routers/_app';
+import { createServerSideHelpers } from '@trpc/react-query/server';
+import { appRouter, type AppRouter } from '../server/routers/_app';
 
 const VERCEL_URL: string = process.env.VERCEL_URL ?? '';
 const RENDER_INTERNAL_HOSTNAME: string =
@@ -34,4 +35,9 @@ export const trpc = createTRPCNext<AppRouter>({
     };
   },
   ssr: false,
+});
+
+export const trpcServerSideHelpers = createServerSideHelpers({
+  router: appRouter,
+  ctx: {},
 });

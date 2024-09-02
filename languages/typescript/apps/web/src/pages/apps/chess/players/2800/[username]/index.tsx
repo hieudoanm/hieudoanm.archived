@@ -2,7 +2,7 @@ import players from '@web/json/chess/players/2800.json';
 import { Layout } from '@web/layout';
 import { ChessInsights } from '@web/router/apps/chess/players/2800/insights';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
-import { trpc } from '@web/utils/trpc';
+import { trpc, trpcServerSideHelpers } from '@web/utils/trpc';
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
 import { FC } from 'react';
 
@@ -32,7 +32,11 @@ const InsightsQuery: FC<{ username: string }> = ({ username }) => {
   );
 };
 
-const InsightsPage: NextPage<{ username: string }> = ({ username }) => {
+type InsightsPageProps = { username: string };
+
+const InsightsPage: NextPage<InsightsPageProps> = ({
+  username,
+}: InsightsPageProps) => {
   return <InsightsQuery username={username}></InsightsQuery>;
 };
 
@@ -44,11 +48,17 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 export const getStaticProps = async (
-  context: GetStaticPropsContext<{ username: string }>
+  context: GetStaticPropsContext<InsightsPageProps>
 ) => {
   const { params } = context;
-  const username: string = (params ?? { username: '' }).username ?? '';
-  return { props: { username } };
+  const username: string = (params ?? { username: '' }).username ?? ''; // prefetch `post.byId`
+  await trpcServerSideHelpers.chess.insights.prefetch({
+    username,
+    timeClass: 'blitz',
+    variant: 'chess',
+  });
+
+  return { props: { username, trpcState: trpcServerSideHelpers.dehydrate() } };
 };
 
 export const dynamic = 'force-static';
