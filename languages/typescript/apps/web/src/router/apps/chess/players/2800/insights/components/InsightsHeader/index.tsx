@@ -2,6 +2,7 @@ import { TimeClass, Title, Variant } from '@prisma/client';
 import { useQuery } from '@web/hooks/use-query-param';
 import Link from 'next/link';
 import { ChangeEvent } from 'react';
+import { FaChessPawn } from 'react-icons/fa6';
 
 export type InsightsHeaderProperties = {
   name?: string;
@@ -33,12 +34,12 @@ export const InsightsHeader: React.FC<InsightsHeaderProperties> = ({
             ) : (
               <></>
             )}
+            <div className='text-lg uppercase md:text-xl'>{username}</div>
             <div>
               <Link
                 href={`https://www.chess.com/member/${username}`}
-                target='_blank'
-                className='text-lg uppercase md:text-xl'>
-                {username}
+                target='_blank'>
+                <FaChessPawn />
               </Link>
             </div>
           </div>
