@@ -29,7 +29,8 @@ export const useQuery = (
   defaultValue: string
 ): [value: string, (newValue: string) => void] => {
   const router: NextRouter = useRouter();
-  const { basePath, pathname } = router;
+  const { basePath, asPath = '', pathname = '' } = router;
+  const path = asPath ?? pathname ?? '';
   const urlSearchParams =
     typeof window === 'undefined'
       ? getQueryFromServer(router)
@@ -39,7 +40,7 @@ export const useQuery = (
   const setValue = (newValue: string) => {
     const query = convertToObject(urlSearchParams.entries());
     const newQuery = { ...query, [key]: newValue };
-    router.push(`${basePath}${pathname}`, { query: newQuery });
+    router.push(`${basePath}${path}`, { query: newQuery });
   };
 
   return [value, setValue];

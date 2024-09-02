@@ -73,14 +73,14 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
           <div
             style={{ top: `${top}px` }}
             className='absolute left-0 right-0 w-full transition-all duration-0 ease-linear'>
-            <div className='card border shadow'>
+            <div className='card border border-base-content shadow'>
               <div className='p-4'>
                 <div className='flex justify-between'>
                   <div className='uppercase'>{username}</div>
                   <div className='font-semibold capitalize'>{timeClass}</div>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaChessBoard className='text-teal-500' />
                   <ScrollLink
@@ -94,7 +94,7 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
                   </ScrollLink>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaBook className='text-teal-500' />
                   <ScrollLink
@@ -108,7 +108,7 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
                   </ScrollLink>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaChessPawn className='text-teal-500' />
                   <ScrollLink
@@ -122,7 +122,7 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
                   </ScrollLink>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaCalendarDays className='text-teal-500' />
                   <ScrollLink
@@ -136,7 +136,7 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
                   </ScrollLink>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaGlobe className='text-teal-500' />
                   <ScrollLink
@@ -150,7 +150,7 @@ export const ChessInsights: React.FC<ChessInsightsProperties> = ({
                   </ScrollLink>
                 </div>
               </div>
-              <div className='border-t px-4 py-2'>
+              <div className='border-t border-base-content px-4 py-2'>
                 <div className='flex items-center gap-x-2'>
                   <FaCircleUser className='text-teal-500' />
                   <ScrollLink
