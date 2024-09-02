@@ -65,8 +65,8 @@ export const InsightsGamesResults: React.FC<{ insights: Insights }> = ({
   insights,
 }) => {
   return (
-    <div className='card border border-gray-200 shadow'>
-      <div className='border-b px-8 py-4'>
+    <div className='card border border-base-content shadow'>
+      <div className='border-b border-base-content px-8 py-4'>
         <CardHeading>
           <div className='flex items-center gap-x-2'>
             <FaTrophy />
@@ -74,21 +74,21 @@ export const InsightsGamesResults: React.FC<{ insights: Insights }> = ({
           </div>
         </CardHeading>
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessResult
           title='Games you won by ...'
           results={insights?.results?.win ?? []}
           color='teal'
         />
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessResult
           title='Games you drawn by ...'
           results={insights?.results?.draw ?? []}
           color='gray'
         />
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessResult
           title='Games you lost by ...'
           results={insights?.results?.loss ?? []}

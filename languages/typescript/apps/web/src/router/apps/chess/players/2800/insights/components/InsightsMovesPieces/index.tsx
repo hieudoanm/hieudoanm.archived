@@ -33,8 +33,8 @@ export const InsightsMovesPieces: React.FC<InsightsMovesPiecesProperties> = ({
   ];
 
   return (
-    <div className='card border border-gray-200 shadow'>
-      <div className='border-b px-8 py-4'>
+    <div className='card border border-base-content shadow'>
+      <div className='border-b border-base-content px-8 py-4'>
         <CardHeading>Pieces</CardHeading>
       </div>
       <div className='card-body'>

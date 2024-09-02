@@ -441,7 +441,6 @@ const main = async () => {
     { username: 'grischuk', title: 'gm' }, // Alexander Grischuk
     { username: 'hikaru', title: 'gm' }, // Hikaru Nakamura
     { username: 'levonaronian', title: 'gm' }, // Levon Aronian
-    { username: 'liemle', title: 'gm' }, // Liem Le
     { username: 'lyonbeast', title: 'gm' }, // MVL
     { username: 'magnuscarlsen', title: 'gm' }, // Magnus Carlsen
     { username: 'thevish', title: 'gm' }, // Viswanathan Anand
@@ -457,20 +456,29 @@ const main = async () => {
     // { username: 'rpragchess', title: 'gm' }, // Praggnanandhaa Rameshbabu
   ];
 
+  const usernamesRussia: { username: string; title: string }[] = [
+    // { username: 'duhless', title: 'gm' }, // Daniil Dubov
+    // { username: 'lachesisq', title: 'gm' }, // Ian Nepomniachtchi
+    // { username: 'sergeykarjakin', title: 'gm' }, // Sergey Karjakin
+  ];
+
+  const usernamesVietnam: { username: string; title: string }[] = [
+    // { username: 'crescentmoon2411', title: 'gm' }, // Nguyen Ngoc Truong Son
+    { username: 'liemle', title: 'gm' }, // Liem Le
+    // { username: 'wonderfultime', title: 'gm' }, // Tuan Minh Le
+  ];
+
   const usernames: { username: string; title: string }[] = [
     ...usernames2800,
     ...usernamesIndia,
+    ...usernamesRussia,
+    ...usernamesVietnam,
     // { username: 'thedarkknighttrilogy', title: '' }, // Hieu Doan
     // { username: 'chesswarrior7197', title: 'gm' }, // Nodirbek Abdusattorov
-    // { username: 'crescentmoon2411', title: 'gm' }, // Nguyen Ngoc Truong Son
     // { username: 'danielnaroditsky', title: 'gm' }, // Daniel Naroditsky
-    // { username: 'duhless', title: 'gm' }, // Daniil Dubov
-    // { username: 'lachesisq', title: 'gm' }, // Ian Nepomniachtchi
     // { username: 'polish_fighter3000', title: 'gm' }, // Jan-Krzysztof Duda
     // { username: 'tradjabov', title: 'gm' }, // Teimour Radjabov
     // { username: 'vincentkeymer', title: 'gm' }, // Vincent Keymer
-    // { username: 'sergeykarjakin', title: 'gm' }, // Sergey Karjakin
-    // { username: 'wonderfultime', title: 'gm' }, // Tuan Minh Le
     // { username: 'yifan0227', title: 'gm' }, // Hou Yifan
   ];
 

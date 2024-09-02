@@ -166,17 +166,17 @@ export const InsightsCalendarDaysOfWeek: React.FC<{
   insights: Insights;
 }> = ({ insights }) => {
   return (
-    <div className='card border border-gray-200 shadow'>
-      <div className='border-b px-8 py-4'>
+    <div className='card border border-base-content shadow'>
+      <div className='border-b border-base-content px-8 py-4'>
         <CardHeading>Day of Week</CardHeading>
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessGamesByDaysOfWeek insights={insights} />
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessAccuracyByDaysOfWeek insights={insights} />
       </div>
-      <div className='card-body border-b'>
+      <div className='card-body border-b border-base-content'>
         <ChessResultsByDaysOfWeek insights={insights} />
       </div>
       <div className='card-body' />

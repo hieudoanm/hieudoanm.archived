@@ -142,8 +142,8 @@ export const InsightsGamesPhrases: React.FC<{ insights: Insights }> = ({
   insights: Insights;
 }) => {
   return (
-    <div className='card border border-gray-200 shadow'>
-      <div className='border-b px-8 py-4'>
+    <div className='card border border-base-content shadow'>
+      <div className='border-b border-base-content px-8 py-4'>
         <CardHeading>
           <div className='flex items-center gap-x-2'>
             <FaXmarksLines />

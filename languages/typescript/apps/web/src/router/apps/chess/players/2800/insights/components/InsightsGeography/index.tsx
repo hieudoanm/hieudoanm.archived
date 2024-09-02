@@ -24,8 +24,8 @@ export const InsightsGeography: React.FC<InsightsGeographyProperties> = ({
           How do you perform in the global chess community?
         </p>
       </div>
-      <div className='card border border-gray-300 shadow'>
-        <div className='border-b px-8 py-4'>
+      <div className='card border border-base-content shadow'>
+        <div className='border-b border-base-content px-8 py-4'>
           <div className='flex items-center justify-between'>
             <CardHeading>Countries ({countries.length})</CardHeading>
           </div>

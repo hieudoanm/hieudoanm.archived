@@ -119,10 +119,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -148,7 +148,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -329,7 +329,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -498,10 +498,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -527,7 +527,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -552,7 +552,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -577,7 +577,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -606,10 +606,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           />
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -695,10 +695,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-300 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="flex items-center justify-between"
@@ -840,10 +840,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -870,10 +870,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -882,7 +882,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -903,7 +903,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -924,7 +924,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -979,10 +979,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -991,7 +991,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1004,7 +1004,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1017,7 +1017,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1034,10 +1034,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           />
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"
@@ -1046,7 +1046,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1059,7 +1059,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1072,7 +1072,7 @@ exports[`ChessInsights to match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="card-body border-b"
+            class="card-body border-b border-base-content"
           >
             <div
               class="flex flex-col gap-y-8"
@@ -1122,10 +1122,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-300 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="flex items-center justify-between"
@@ -1212,10 +1212,10 @@ exports[`ChessInsights to match snapshot 1`] = `
           </p>
         </div>
         <div
-          class="card border border-gray-200 shadow"
+          class="card border border-base-content shadow"
         >
           <div
-            class="border-b px-8 py-4"
+            class="border-b border-base-content px-8 py-4"
           >
             <div
               class="text-base md:text-lg lg:text-xl"

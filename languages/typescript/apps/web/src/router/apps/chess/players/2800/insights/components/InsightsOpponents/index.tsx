@@ -44,8 +44,8 @@ export const InsightsOpponents: React.FC<{ insights: Insights }> = ({
           Most frequently played opponents
         </p>
       </div>
-      <div className='card border border-gray-200 shadow'>
-        <div className='border-b px-8 py-4'>
+      <div className='card border border-base-content shadow'>
+        <div className='border-b border-base-content px-8 py-4'>
           <CardHeading>Opponents</CardHeading>
         </div>
         <div className='w-full overflow-x-auto'>

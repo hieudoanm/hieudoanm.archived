@@ -109,8 +109,8 @@ export const InsightsOpenings: React.FC<InsightsOpeningsProperties> = ({
           How well do you play your openings?
         </p>
       </div>
-      <div className='card border border-gray-300 shadow'>
-        <div className='border-b px-8 py-4'>
+      <div className='card border border-base-content shadow'>
+        <div className='border-b border-base-content px-8 py-4'>
           <div className='flex items-center justify-between'>
             <CardHeading>Performance</CardHeading>
             <div className='join'>
@@ -149,8 +149,8 @@ export const InsightsOpenings: React.FC<InsightsOpeningsProperties> = ({
           </div>
         </div>
       </div>
-      {/* <div className="card border border-gray-300 shadow">
-        <div className="py-4 px-8 border-b">
+      {/* <div className="card border border-base-content shadow">
+        <div className="py-4 px-8 border-b border-base-content">
           <CardHeading>Mastery</CardHeading>
         </div>
         <div className="card-body" />
