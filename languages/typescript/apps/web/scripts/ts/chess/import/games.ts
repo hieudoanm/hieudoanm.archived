@@ -24,6 +24,10 @@ type ApiGame = {
   black: { rating: number; result: string; username: string };
 };
 
+const logDate = (): string => {
+  return new Date().toISOString();
+};
+
 const chunk = <T>(array: T[], number: number) => {
   return Array.from(Array(Math.ceil(array.length / number)), (_, i) =>
     array.slice(i * number, i * number + number)
@@ -36,7 +40,7 @@ const getGames = async (archive: string): Promise<ApiGame[]> => {
     const { games = [] } = data;
     return games;
   } catch (error) {
-    console.error(`getGames error=${error}`);
+    console.error(logDate(), `getGames error=${error}`);
     return [];
   }
 };
@@ -232,7 +236,7 @@ const mapGame = (
 //       importGame(prismaClient, game, retry + 1);
 //       return;
 //     }
-//     console.error(`importGame game=${game.uuid} error=${error}`);
+//     console.error(logDate(), `importGame game=${game.uuid} error=${error}`);
 //   }
 // };
 
@@ -260,20 +264,26 @@ const importGames = async (
       importGames(prismaClient, games, retry + 1);
       return;
     }
-    console.error(`importGames games=${games.length} error=${error}`);
+    console.error(
+      logDate(),
+      `importGames games=${games.length} error=${error}`
+    );
   }
 };
 
 const getArchives = async (prismaClient: PrismaClient, username: string) => {
   try {
-    console.log(`username=${username}`);
+    console.log(logDate(), `username=${username}`);
     const archivesUrl = `${PUBLIC_URL}/player/${username}/games/archives`;
     const { data } = await axios.get<{ archives: string[] }>(archivesUrl);
     const { archives = [] } = data;
     let games: ApiGame[] = [];
     for (const archive of archives) {
       const gamesPerArchive = await getGames(archive);
-      console.info(`archive=${archive} games=${gamesPerArchive.length}`);
+      console.info(
+        logDate(),
+        `archive=${archive} games=${gamesPerArchive.length}`
+      );
       games = games.concat(gamesPerArchive);
     }
     const databaseGames = await prismaClient.game.findMany({
@@ -286,21 +296,21 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     const remainingGames: ApiGame[] = games.filter(
       ({ uuid }) => !databaseGameIds.has(uuid)
     );
-    // console.info(`games=${remainingGames.length}`);
+    // console.info(logDate(), `games=${remainingGames.length}`);
     // for (const game of remainingGames) {
     //   await importGame(prismaClient, game);
-    //   console.info(((i / remainingGames.length) * 100).toFixed(3));
+    //   console.info(logDate(), ((i / remainingGames.length) * 100).toFixed(3));
     //   i += 1;
     // }
     const chunks: ApiGame[][] = chunk(remainingGames, 100);
-    console.info(`chunks=${chunks.length}`);
+    console.info(logDate(), `chunks=${chunks.length}`);
     for (const chunk of chunks) {
       await importGames(prismaClient, chunk);
-      console.info(((i / chunks.length) * 100).toFixed(3));
+      console.info(logDate(), ((i / chunks.length) * 100).toFixed(3));
       i += 1;
     }
   } catch (error) {
-    console.error(`getArchives error=${error}`);
+    console.error(logDate(), `getArchives error=${error}`);
   }
 };
 
@@ -358,7 +368,7 @@ const main = async () => {
     // { username: 'yifan0227', title: 'gm' }, // Hou Yifan
   ];
 
-  console.log(usernames.length);
+  console.log(logDate(), usernames.length);
   for (const { username } of usernames) {
     await getArchives(prismaClient, username);
   }
