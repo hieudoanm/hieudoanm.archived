@@ -289,14 +289,14 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     // console.info(`games=${remainingGames.length}`);
     // for (const game of remainingGames) {
     //   await importGame(prismaClient, game);
-    //   console.info(((i / remainingGames.length) * 100).toFixed(2));
+    //   console.info(((i / remainingGames.length) * 100).toFixed(3));
     //   i += 1;
     // }
-    const chunks: ApiGame[][] = chunk(remainingGames, 10);
+    const chunks: ApiGame[][] = chunk(remainingGames, 100);
     console.info(`chunks=${chunks.length}`);
     for (const chunk of chunks) {
       await importGames(prismaClient, chunk);
-      console.info(((i / chunks.length) * 100).toFixed(2));
+      console.info(((i / chunks.length) * 100).toFixed(3));
       i += 1;
     }
   } catch (error) {
