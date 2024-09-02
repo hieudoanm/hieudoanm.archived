@@ -1,5 +1,5 @@
 import dotenv from '@dotenvx/dotenvx';
-import { PrismaClient, Result, TimeClass, Variant } from '@prisma/client';
+import { Game, PrismaClient, Result, TimeClass, Variant } from '@prisma/client';
 import axios from 'axios';
 import { Chess } from 'chess.js';
 
@@ -7,7 +7,7 @@ dotenv.config();
 
 const PUBLIC_URL: string = 'https://api.chess.com/pub';
 
-type Game = {
+type ApiGame = {
   url: string;
   pgn: string;
   time_control: string;
@@ -24,9 +24,15 @@ type Game = {
   black: { rating: number; result: string; username: string };
 };
 
-const getGames = async (archive: string): Promise<Game[]> => {
+const chunk = <T>(array: T[], number: number) => {
+  return Array.from(Array(Math.ceil(array.length / number)), (_, i) =>
+    array.slice(i * number, i * number + number)
+  );
+};
+
+const getGames = async (archive: string): Promise<ApiGame[]> => {
   try {
-    const { data } = await axios.get<{ games: Game[] }>(archive);
+    const { data } = await axios.get<{ games: ApiGame[] }>(archive);
     const { games = [] } = data;
     return games;
   } catch (error) {
@@ -114,112 +120,147 @@ const processPGN = ({
   };
 };
 
-const importGame = async (
+const mapGame = (
+  game: ApiGame
+): Omit<Game, 'endPhrase' | 'createdAt' | 'updatedAt'> => {
+  const {
+    uuid,
+    url,
+    pgn = '',
+    time_control: timeControl,
+    time_class: timeClass,
+    end_time: endTime,
+    rated,
+    tcn,
+    initial_setup: initialSetup,
+    rules,
+    fen,
+    accuracies: { white: whiteAccuracy = 0, black: blackAccuracy = 0 } = {
+      white: 0,
+      black: 0,
+    },
+    white: {
+      username: whiteUsername = '',
+      result: whiteResult = '',
+      rating: whiteRating = 0,
+    } = { username: '', result: '', rating: 0 },
+    black: {
+      username: blackUsername = '',
+      result: blackResult = '',
+      rating: blackRating = 0,
+    } = { username: '', result: '', rating: 0 },
+  } = game;
+  const whiteResult2: Result =
+    whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
+  const blackResult2: Result =
+    blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
+  const {
+    whiteCastling,
+    whiteKing,
+    whiteQueen,
+    whiteRook,
+    whiteBishop,
+    whiteKnight,
+    whitePawn,
+    blackCastling,
+    blackKing,
+    blackQueen,
+    blackRook,
+    blackBishop,
+    blackKnight,
+    blackPawn,
+    opening,
+    openingName,
+  } = processPGN({ pgn, rules, initialSetup });
+
+  return {
+    uuid,
+    url,
+    pgn,
+    timeControl,
+    timeClass: timeClass as TimeClass,
+    endTime: new Date(endTime * 1000),
+    rated,
+    tcn,
+    initialSetup,
+    rules: rules as Variant,
+    fen,
+    whiteAccuracy,
+    whiteUsername: whiteUsername.toLowerCase(),
+    whiteRating,
+    whiteResult: whiteResult2,
+    blackAccuracy,
+    blackUsername: blackUsername.toLowerCase(),
+    blackRating,
+    blackResult: blackResult2,
+    whiteCastling,
+    whiteKing,
+    whiteQueen,
+    whiteRook,
+    whiteBishop,
+    whiteKnight,
+    whitePawn,
+    blackCastling,
+    blackKing,
+    blackQueen,
+    blackRook,
+    blackBishop,
+    blackKnight,
+    blackPawn,
+    opening,
+    openingName,
+  };
+};
+
+// const importGame = async (
+//   prismaClient: PrismaClient,
+//   game: ApiGame,
+//   retry: number = 0
+// ) => {
+//   try {
+//     const body = mapGame(game);
+//     const { uuid = '' } = body;
+//     await prismaClient.$connect();
+//     await prismaClient.game.upsert({
+//       create: body,
+//       update: body,
+//       where: { uuid },
+//     });
+//     await prismaClient.$disconnect();
+//   } catch (error) {
+//     if (retry === 3) {
+//       importGame(prismaClient, game, retry + 1);
+//       return;
+//     }
+//     console.error(`importGame game=${game.uuid} error=${error}`);
+//   }
+// };
+
+const importGames = async (
   prismaClient: PrismaClient,
-  game: Game,
+  games: ApiGame[],
   retry: number = 0
 ) => {
   try {
-    const {
-      uuid,
-      url,
-      pgn = '',
-      time_control: timeControl,
-      time_class: timeClass,
-      end_time: endTime,
-      rated,
-      tcn,
-      initial_setup: initialSetup,
-      rules,
-      fen,
-      accuracies: { white: whiteAccuracy = 0, black: blackAccuracy = 0 } = {
-        white: 0,
-        black: 0,
-      },
-      white: {
-        username: whiteUsername = '',
-        result: whiteResult = '',
-        rating: whiteRating = 0,
-      } = { username: '', result: '', rating: 0 },
-      black: {
-        username: blackUsername = '',
-        result: blackResult = '',
-        rating: blackRating = 0,
-      } = { username: '', result: '', rating: 0 },
-    } = game;
-    const whiteResult2: Result =
-      whiteResult === '50move' ? 'fiftymove' : (whiteResult as Result);
-    const blackResult2: Result =
-      blackResult === '50move' ? 'fiftymove' : (blackResult as Result);
-    const {
-      whiteCastling,
-      whiteKing,
-      whiteQueen,
-      whiteRook,
-      whiteBishop,
-      whiteKnight,
-      whitePawn,
-      blackCastling,
-      blackKing,
-      blackQueen,
-      blackRook,
-      blackBishop,
-      blackKnight,
-      blackPawn,
-      opening,
-      openingName,
-    } = processPGN({ pgn, rules, initialSetup });
+    const mappedGames = games.map(mapGame);
 
-    const body = {
-      uuid,
-      url,
-      pgn,
-      timeControl,
-      timeClass: timeClass as TimeClass,
-      endTime: new Date(endTime * 1000),
-      rated,
-      tcn,
-      initialSetup,
-      rules: rules as Variant,
-      fen,
-      whiteAccuracy,
-      whiteUsername: whiteUsername.toLowerCase(),
-      whiteRating,
-      whiteResult: whiteResult2,
-      blackAccuracy,
-      blackUsername: blackUsername.toLowerCase(),
-      blackRating,
-      blackResult: blackResult2,
-      whiteCastling,
-      whiteKing,
-      whiteQueen,
-      whiteRook,
-      whiteBishop,
-      whiteKnight,
-      whitePawn,
-      blackCastling,
-      blackKing,
-      blackQueen,
-      blackRook,
-      blackBishop,
-      blackKnight,
-      blackPawn,
-      opening,
-      openingName,
-    };
     await prismaClient.$connect();
-    await prismaClient.game.upsert({
-      create: body,
-      update: body,
-      where: { uuid },
-    });
+    await prismaClient.$transaction(
+      mappedGames.map((game) =>
+        prismaClient.game.upsert({
+          create: game,
+          update: game,
+          where: { uuid: game.uuid },
+        })
+      )
+    );
     await prismaClient.$disconnect();
   } catch (error) {
     if (retry === 3) {
-      importGame(prismaClient, game, retry + 1);
+      importGames(prismaClient, games, retry + 1);
       return;
     }
-    console.error(`importGame game=${game.uuid} error=${error}`);
+    console.error(`importGames games=${games.length} error=${error}`);
   }
 };
 
@@ -229,7 +270,7 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
     const archivesUrl = `${PUBLIC_URL}/player/${username}/games/archives`;
     const { data } = await axios.get<{ archives: string[] }>(archivesUrl);
     const { archives = [] } = data;
-    let games: Game[] = [];
+    let games: ApiGame[] = [];
     for (const archive of archives) {
       const gamesPerArchive = await getGames(archive);
       console.info(`archive=${archive} games=${gamesPerArchive.length}`);
@@ -242,13 +283,20 @@ const getArchives = async (prismaClient: PrismaClient, username: string) => {
       databaseGames.map(({ uuid }) => uuid)
     );
     let i: number = 0;
-    const remainingGames: Game[] = games.filter(
+    const remainingGames: ApiGame[] = games.filter(
       ({ uuid }) => !databaseGameIds.has(uuid)
     );
-    console.info(`games=${remainingGames.length}`);
-    for (const game of remainingGames) {
-      await importGame(prismaClient, game);
-      console.info(((i / remainingGames.length) * 100).toFixed(2));
+    // console.info(`games=${remainingGames.length}`);
+    // for (const game of remainingGames) {
+    //   await importGame(prismaClient, game);
+    //   console.info(((i / remainingGames.length) * 100).toFixed(2));
+    //   i += 1;
+    // }
+    const chunks: ApiGame[][] = chunk(remainingGames, 10);
+    console.info(`chunks=${chunks.length}`);
+    for (const chunk of chunks) {
+      await importGames(prismaClient, chunk);
+      console.info(((i / chunks.length) * 100).toFixed(2));
       i += 1;
     }
   } catch (error) {
