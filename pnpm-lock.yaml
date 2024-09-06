@@ -266,8 +266,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.12.1
-        version: 1.12.1
+        specifier: 1.13.2
+        version: 1.13.2
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -931,8 +931,8 @@ importers:
         specifier: 4.20240821.1
         version: 4.20240821.1
       '@dotenvx/dotenvx':
-        specifier: 1.12.1
-        version: 1.12.1
+        specifier: 1.13.2
+        version: 1.13.2
       '@eslint/js':
         specifier: 9.9.1
         version: 9.9.1
@@ -3323,8 +3323,8 @@ packages:
     resolution: {integrity: sha512-boghen8F0Q8D+0/Q1/1r6DUEieUJ8w2a1gIknExMSHBsJFOr2+0KUfHiVYBvucPwl3+RU5PFBK833FjFCh3BhA==}
     engines: {node: '>=14.17.0'}
 
-  '@dotenvx/dotenvx@1.12.1':
-    resolution: {integrity: sha512-qdTBiLDMXUxrZf91o4MQTiLrAWIwwnSu44gQUSVSysXXVSoSckUmjyjoTb+tsn0GgqZCttZZp8XYSa09IC399w==}
+  '@dotenvx/dotenvx@1.13.2':
+    resolution: {integrity: sha512-S8krn1MeACjZoYFCdCcq16QvIOrifI0IxuIppPLacJyBL/37nCZT+o4C6ZE+JNoHaYx11cVxLwc1ghaboG01QQ==}
     hasBin: true
 
   '@edge-runtime/format@2.2.1':
@@ -23255,7 +23255,7 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.1': {}
 
-  '@dotenvx/dotenvx@1.12.1':
+  '@dotenvx/dotenvx@1.13.2':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.5
