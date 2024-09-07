@@ -10,7 +10,7 @@
   "packageManager": "pnpm@9.9.0",
   "scripts": {
     "start": "vercel dev",
-    "predev": "kill-port 8787 && docker-compose up -d && prisma format && prisma generate",
+    "predev": "kill-port 8787 && docker compose up -d && prisma format && prisma generate",
     "dev": "dotenvx run -- wrangler dev api/index.ts",
     "deploy:vercel": "vercel",
     "lint": "eslint \"api/**/*.ts\" --fix",

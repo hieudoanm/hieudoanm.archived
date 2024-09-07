@@ -1,5 +1,3 @@
-version: '3.9'
-
 volumes:
   thesaurus_postgresql:
     driver: local
@@ -12,7 +10,7 @@ services:
     volumes:
       - thesaurus_postgresql:/var/lib/postgresql/data
     ports:
-      - '5432:5432'
+      - "5432:5432"
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: username
