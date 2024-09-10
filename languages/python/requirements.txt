@@ -112,7 +112,7 @@ langchain-community==0.2.16
 langchain-core==0.2.38
 langchain-text-splitters==0.2.4
 langdetect==1.0.9
-langsmith==0.1.116
+langsmith==0.1.117
 lxml==5.3.0
 Markdown==3.7
 markdown-it-py==3.0.0
