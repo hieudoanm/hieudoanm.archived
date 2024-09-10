@@ -6,7 +6,7 @@ require (
 	github.com/beego/beego/v2 v2.3.1
 	github.com/google/uuid v1.6.0
 	gorm.io/driver/postgres v1.5.9
-	gorm.io/gorm v1.25.11
+	gorm.io/gorm v1.25.12
 )
 
 require (
