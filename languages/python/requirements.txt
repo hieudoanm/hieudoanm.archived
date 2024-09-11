@@ -174,7 +174,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.3
 pyarrow==17.0.0
 pyasn1==0.6.1
-pyasn1_modules==0.4.0
+pyasn1_modules==0.4.1
 pycparser==2.22
 pycryptodome==3.20.0
 pydantic==2.9.1
