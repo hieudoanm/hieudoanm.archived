@@ -2,7 +2,7 @@
 
 chess==1.10.0
 curl-cffi==0.7.1
-fastapi==0.114.0
+fastapi==0.114.1
 g4f==0.3.2.6
 psutil==6.0.0
 pydantic==2.9.1
