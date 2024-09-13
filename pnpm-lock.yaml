@@ -450,8 +450,8 @@ importers:
         specifier: 7.25.2
         version: 7.25.2
       '@chromatic-com/storybook':
-        specifier: 2.0.1
-        version: 2.0.1(react@18.3.1)
+        specifier: 2.0.2
+        version: 2.0.2(react@18.3.1)
       '@eslint/compat':
         specifier: 1.1.1
         version: 1.1.1
@@ -3176,8 +3176,8 @@ packages:
     resolution: {integrity: sha512-snXIGNiZpqjno3XYQN2lbBB+05hsQR/LSttbtIW1c0gmZ7Kh/DIo0YrxlDxCDulAMFPFM8J+4voLwvYepSj3sw==}
     hasBin: true
 
-  '@chromatic-com/storybook@2.0.1':
-    resolution: {integrity: sha512-BWedsjGOMXsWIWqDmdV9VV1lx2GSauBISu0a2ZbwL2BPN4yrBypsOOuQ8hKvtEfFlYetGmTafi1N5W1oR1CW3A==}
+  '@chromatic-com/storybook@2.0.2':
+    resolution: {integrity: sha512-7bPIliISedeIpnVKbzktysFYW5n56bN91kxuOj1XXKixmjbUHRUMvcXd4K2liN6MiR5ZqJtmtcPsZ6CebbGlEA==}
     engines: {node: '>=16.0.0', yarn: '>=1.22.18'}
 
   '@clack/core@0.3.4':
@@ -22699,7 +22699,7 @@ snapshots:
 
   '@builder.io/partytown@0.7.6': {}
 
-  '@chromatic-com/storybook@2.0.1(react@18.3.1)':
+  '@chromatic-com/storybook@2.0.2(react@18.3.1)':
     dependencies:
       chromatic: 11.7.1
       filesize: 10.1.6
