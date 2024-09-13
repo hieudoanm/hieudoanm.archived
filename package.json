@@ -17,7 +17,7 @@
     "dev": "turbo run dev"
   },
   "devDependencies": {
-    "husky": "9.1.5",
+    "husky": "9.1.6",
     "turbo": "2.1.1"
   },
   "resolutions": {
