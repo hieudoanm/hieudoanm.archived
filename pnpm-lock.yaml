@@ -443,8 +443,8 @@ importers:
         specifier: 6.1.13
         version: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       swiper:
-        specifier: 11.1.12
-        version: 11.1.12
+        specifier: 11.1.14
+        version: 11.1.14
     devDependencies:
       '@babel/core':
         specifier: 7.25.2
@@ -18384,8 +18384,8 @@ packages:
   swap-case@2.0.2:
     resolution: {integrity: sha512-kc6S2YS/2yXbtkSMunBtKdah4VFETZ8Oh6ONSmSd9bRxhqTrtARUCBUiWXH3xVPpvR7tz2CSnkuXVE42EcGnMw==}
 
-  swiper@11.1.12:
-    resolution: {integrity: sha512-PUkCToYAZMB4kP7z+YfPnkMHOMwMO71g8vUhz2o5INGIgIMb6Sb0XiP6cEJFsiFTd7FRDn5XCbg+KVKPDZqXLw==}
+  swiper@11.1.14:
+    resolution: {integrity: sha512-VbQLQXC04io6AoAjIUWuZwW4MSYozkcP9KjLdrsG/00Q/yiwvhz9RQyt0nHXV10hi9NVnDNy1/wv7Dzq1lkOCQ==}
     engines: {node: '>= 4.7.0'}
 
   symbol-observable@1.2.0:
@@ -43093,7 +43093,7 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  swiper@11.1.12: {}
+  swiper@11.1.14: {}
 
   symbol-observable@1.2.0: {}
 
@@ -44605,7 +44605,7 @@ snapshots:
       range-parser: 1.2.1
       schema-utils: 4.2.0
     optionalDependencies:
-      webpack: 5.94.0
+      webpack: 5.94.0(esbuild@0.23.0)
 
   webpack-dev-server@5.0.4(webpack@5.94.0):
     dependencies:
