@@ -15,7 +15,7 @@ import {
   WESTERN_EUROPE,
 } from '@web/constants/news.constants';
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';
 import { GetStaticProps, NextPage } from 'next';
@@ -76,7 +76,7 @@ const TrendsTemplate: FC<{
   trends: Record<string, string[]>;
 }> = ({ countries = [], rankings = {}, trends = {} }) => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-8'>
@@ -351,7 +351,7 @@ const TrendsTemplate: FC<{
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

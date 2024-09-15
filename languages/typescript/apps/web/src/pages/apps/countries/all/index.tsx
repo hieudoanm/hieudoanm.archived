@@ -1,5 +1,5 @@
 import countries from '@web/json/countries/countries.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import {
   Country,
   FlagView,
@@ -98,7 +98,7 @@ const FlagsPage: NextPage = () => {
   );
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full overflow-hidden'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full flex-col gap-y-4 md:gap-y-8'>
@@ -207,7 +207,7 @@ const FlagsPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

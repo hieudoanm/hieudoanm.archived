@@ -1,9 +1,9 @@
 import { FC, ReactNode } from 'react';
 import { TbMathFunction } from 'react-icons/tb';
 
-export type FooterProps = { border?: boolean; children?: ReactNode };
+export type AppFooterProps = { border?: boolean; children?: ReactNode };
 
-export const Footer: FC<FooterProps> = ({
+export const AppFooter: FC<AppFooterProps> = ({
   border = false,
   children = <TbMathFunction />,
 }) => {

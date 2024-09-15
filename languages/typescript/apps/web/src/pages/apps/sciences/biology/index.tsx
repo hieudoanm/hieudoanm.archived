@@ -1,8 +1,8 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 const BiologyPage: NextPage = () => {
-  return <Layout nav></Layout>;
+  return <AppLayout nav></AppLayout>;
 };
 
 export default BiologyPage;

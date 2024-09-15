@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -7,7 +7,7 @@ import { v4 } from 'uuid';
 const UuidPage: NextPage = () => {
   const [uuid, setUuid] = useState(v4());
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -39,7 +39,7 @@ const UuidPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { evaluate } from 'mathjs';
 import { NextPage } from 'next';
 import { useState } from 'react';
@@ -20,7 +20,7 @@ const CalculatorPage: NextPage = () => {
   const btnClass = 'btn btn-outline h-full w-full rounded-full';
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='mx-auto max-w-md rounded-lg border border-base-content p-4'>
@@ -308,7 +308,7 @@ const CalculatorPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

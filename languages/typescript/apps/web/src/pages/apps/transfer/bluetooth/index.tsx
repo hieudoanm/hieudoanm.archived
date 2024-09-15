@@ -1,5 +1,5 @@
 import { useBluetooth } from '@web/hooks/use-bluetooth';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import { useState } from 'react';
 
@@ -10,13 +10,13 @@ export const BluetoothPage: NextPage = () => {
 
   if (!bluetooth) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Web Bluetooth is Unavailable
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
@@ -26,7 +26,7 @@ export const BluetoothPage: NextPage = () => {
   };
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='rounded-lg border border-base-content'>
@@ -51,7 +51,7 @@ export const BluetoothPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

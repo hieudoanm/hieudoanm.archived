@@ -1,5 +1,5 @@
 import { NavbarColors } from '@web/components/NavbarColors';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { getBrightness, hexToRgb, rgbToHex } from '@web/utils/colors';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -14,7 +14,7 @@ const ColorsConverterPage: NextPage = () => {
 
   return (
     <div style={{ backgroundColor: colors.hex ?? colors.rgb, color }}>
-      <Layout nav full footer footerContent={<NavbarColors />}>
+      <AppLayout nav full footer footerContent={<NavbarColors />}>
         <div className='flex h-full w-full items-center justify-center'>
           <div className='text-center'>
             <input
@@ -61,7 +61,7 @@ const ColorsConverterPage: NextPage = () => {
             />
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     </div>
   );
 };

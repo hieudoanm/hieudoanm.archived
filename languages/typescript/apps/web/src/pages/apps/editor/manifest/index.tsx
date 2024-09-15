@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -45,7 +45,7 @@ const ManifestPage: NextPage = () => {
     offline_enabled: true,
   });
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
@@ -330,7 +330,7 @@ const ManifestPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

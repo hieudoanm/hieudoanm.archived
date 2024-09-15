@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import { csvToJson } from '@web/utils/csv-to-json';
 import { download } from '@web/utils/download';
@@ -33,7 +33,7 @@ const HomePage: NextPage = () => {
   const md = `${headerRow}\n${dividerRow}\n${rows}`;
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='grid h-full grid-cols-2 gap-2 md:gap-4'>
@@ -147,7 +147,7 @@ const HomePage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

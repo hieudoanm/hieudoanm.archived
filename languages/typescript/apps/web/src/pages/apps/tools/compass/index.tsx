@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import { useState } from 'react';
 
@@ -39,7 +39,7 @@ export const CompassPage: NextPage = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='flex h-full items-center justify-center p-8'>
         <div className='mx-auto flex w-64 flex-col gap-y-8'>
           <div
@@ -68,7 +68,7 @@ export const CompassPage: NextPage = () => {
           </button>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

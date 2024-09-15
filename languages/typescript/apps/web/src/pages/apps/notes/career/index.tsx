@@ -1,10 +1,10 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import MarkdownNote from '@web/markdown/career.mdx';
 import { NextPage } from 'next';
 
 const NotePage: NextPage = () => {
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='min-h-screen'>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
@@ -14,7 +14,7 @@ const NotePage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

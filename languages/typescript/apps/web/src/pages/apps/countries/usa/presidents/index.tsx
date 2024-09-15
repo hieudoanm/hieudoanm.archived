@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table';
 import { TanStackTable } from '@web/components/TanStack/Table';
 import presidents from '@web/json/usa/presidents.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 type President = {
@@ -56,7 +56,7 @@ const columns = [
 
 const PresidentPage: NextPage = () => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='overflow-auto'>
@@ -64,7 +64,7 @@ const PresidentPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

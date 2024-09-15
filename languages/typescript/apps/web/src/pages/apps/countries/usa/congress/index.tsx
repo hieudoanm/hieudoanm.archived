@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table';
 import { TanStackTable } from '@web/components/TanStack/Table';
 import congresses from '@web/json/usa/congress.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 type Congress = {
@@ -108,7 +108,7 @@ const columns = [
 
 const CongressPage: NextPage = () => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='overflow-auto'>
@@ -116,7 +116,7 @@ const CongressPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

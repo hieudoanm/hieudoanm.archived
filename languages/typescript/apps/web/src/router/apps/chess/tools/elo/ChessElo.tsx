@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { ChangeEvent, FC, useState } from 'react';
 
 type DevelopmentCoefficient = 10 | 20 | 40;
@@ -102,7 +102,7 @@ export const ChessElo: FC = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full w-full items-center justify-center'>
@@ -243,6 +243,6 @@ export const ChessElo: FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

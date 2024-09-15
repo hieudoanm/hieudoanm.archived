@@ -1,5 +1,5 @@
 import { NavbarColors } from '@web/components/NavbarColors/NavbarColors';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { getBrightness, randomHexColorCode } from '@web/utils/colors';
 import { copyToClipboard } from '@web/utils/copy';
 import { NextPage } from 'next';
@@ -22,7 +22,7 @@ export const ColorsPage: NextPage = () => {
 
   return (
     <div style={{ backgroundColor, color }}>
-      <Layout nav footer footerContent={<NavbarColors />} full>
+      <AppLayout nav footer footerContent={<NavbarColors />} full>
         <div className='flex h-full w-full items-center justify-center overflow-hidden'>
           <div className='flex items-center justify-between gap-x-4 text-4xl'>
             <button
@@ -38,7 +38,7 @@ export const ColorsPage: NextPage = () => {
             </button>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     </div>
   );
 };

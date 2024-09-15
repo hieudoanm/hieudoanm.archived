@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import { Navbar } from '.';
+import { AppNavbar } from '.';
 
-describe('Navbar', () => {
+describe('AppNavbar', () => {
   it('to match snapshot', () => {
-    const { container } = render(<Navbar />);
+    const { container } = render(<AppNavbar />);
     expect(container).toMatchSnapshot();
   });
 });

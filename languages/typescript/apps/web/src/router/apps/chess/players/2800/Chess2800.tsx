@@ -1,11 +1,11 @@
 import players from '@web/json/chess/players/2800.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import Link from 'next/link';
 import { FC } from 'react';
 
 export const Chess2800: FC = () => {
   return (
-    <Layout full nav>
+    <AppLayout full nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='rounded-xl border border-base-content'>
@@ -49,6 +49,6 @@ export const Chess2800: FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

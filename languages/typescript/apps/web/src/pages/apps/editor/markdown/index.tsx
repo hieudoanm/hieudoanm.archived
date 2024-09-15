@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -141,7 +141,7 @@ const MarkdownPage: NextPage = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='grid h-full grid-cols-2 gap-4 md:gap-8'>
@@ -189,7 +189,7 @@ const MarkdownPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

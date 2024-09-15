@@ -1,5 +1,5 @@
 import chess960Positions from '@web/json/chess/chess960/positions.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import { Dispatch, FC, SetStateAction, useState } from 'react';
 import { Chessboard } from 'react-chessboard';
@@ -99,7 +99,7 @@ export const Chess960: FC = () => {
   const [initialPosition, setInitialPosition] = useState<string>(DEFAULT_FEN);
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='grid h-full grid-cols-1 gap-2 md:grid-cols-7 md:gap-4'>
@@ -128,6 +128,6 @@ export const Chess960: FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

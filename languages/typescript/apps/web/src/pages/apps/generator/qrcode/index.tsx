@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { downloadImage } from '@web/utils/download';
 import { NextPage } from 'next';
 import { toDataURL } from 'qrcode';
@@ -21,7 +21,7 @@ const QRCodePage: NextPage = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-4 md:gap-y-8'>
@@ -79,7 +79,7 @@ const QRCodePage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

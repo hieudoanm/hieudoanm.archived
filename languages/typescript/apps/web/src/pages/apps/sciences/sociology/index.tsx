@@ -1,5 +1,5 @@
 import countries from '@web/json/science/psychology/hofstede.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import {
   Chart,
   ChartData,
@@ -359,7 +359,7 @@ const HofstedePage: NextPage = () => {
   }, [countryIds, onChange]);
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-8'>
@@ -547,7 +547,7 @@ const HofstedePage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

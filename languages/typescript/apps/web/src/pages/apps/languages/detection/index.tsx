@@ -1,5 +1,5 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { trpc } from '@web/utils/trpc';
 import { NextPage } from 'next';
 import { ChangeEvent, FC, FormEvent, useState } from 'react';
@@ -47,18 +47,18 @@ const LanguagesPage: NextPage = () => {
 
   if (!isOnline) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Service is Offline
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <form onSubmit={predict}>
@@ -95,7 +95,7 @@ const LanguagesPage: NextPage = () => {
           </form>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

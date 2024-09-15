@@ -2,7 +2,7 @@ import { createColumnHelper } from '@tanstack/react-table';
 import { TanStackTable } from '@web/components/TanStack/Table';
 import { TanstackVirtualTable } from '@web/components/TanStack/VirtualTable';
 import licenses from '@web/json/vietnam/licenses.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import { ChangeEvent, useRef, useState } from 'react';
 
@@ -37,7 +37,7 @@ export const LicensesPage: NextPage = () => {
   );
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='h-full overflow-y-auto'>
         <div className='container mx-auto h-full'>
           <div className='h-full p-4 md:p-8'>
@@ -74,7 +74,7 @@ export const LicensesPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

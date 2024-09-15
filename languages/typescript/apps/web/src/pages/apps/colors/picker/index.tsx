@@ -1,6 +1,6 @@
 import { NavbarColors } from '@web/components/NavbarColors';
 import colours from '@web/json/colours.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import type { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -10,7 +10,7 @@ const PickerPage: NextPage = () => {
   const rows: string[][] = colours[group];
 
   return (
-    <Layout nav full footer footerContent={<NavbarColors />}>
+    <AppLayout nav full footer footerContent={<NavbarColors />}>
       <div className='flex h-full items-center justify-center px-8'>
         <div className='flex flex-col gap-y-8'>
           <div className='overflow-hidden rounded'>
@@ -49,7 +49,7 @@ const PickerPage: NextPage = () => {
           />
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

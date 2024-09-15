@@ -1,7 +1,7 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
 import { usePosition } from '@web/hooks/use-position';
 import cities from '@web/json/maps/cities.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { trpc } from '@web/utils/trpc';
 import { NextPage } from 'next';
 import { ChangeEvent, FC, useState } from 'react';
@@ -99,13 +99,13 @@ const WeatherPage: NextPage = () => {
 
   if (!isOnline) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Service is Offline
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
@@ -126,7 +126,7 @@ const WeatherPage: NextPage = () => {
   continents.sort((a, b) => (a > b ? 1 : -1));
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='h-full overflow-y-auto'>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
@@ -208,7 +208,7 @@ const WeatherPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

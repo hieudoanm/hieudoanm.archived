@@ -1,6 +1,6 @@
 import { Article } from '@web/clients/news/news.dto';
 import { Category, Country } from '@web/clients/news/news.enums';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';
 import Link from 'next/link';
@@ -176,11 +176,11 @@ export const NewsQuery: FC<{ category: Category; country: Country }> = ({
       isPending={isPending}
       error={error}
       noData={!articles || articles.length === 0}>
-      <Layout full nav navBorder>
+      <AppLayout full nav navBorder>
         <div className='h-full overflow-auto'>
           <Articles articles={articles} />
         </div>
-      </Layout>
+      </AppLayout>
     </QueryTemplate>
   );
 };

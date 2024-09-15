@@ -1,6 +1,6 @@
 import { useBrowser } from '@web/hooks/use-browser';
 import { useScreenSize } from '@web/hooks/use-screen-size';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 const ScreenPage: NextPage = () => {
@@ -8,7 +8,7 @@ const ScreenPage: NextPage = () => {
   const browser = useBrowser();
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -26,7 +26,7 @@ const ScreenPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

@@ -1,6 +1,6 @@
 import { Tag } from '@web/clients/coinranking/coinranking.client';
 import { Coin } from '@web/clients/coinranking/coinranking.dto';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { formatCurrency } from '@web/utils/number/number';
 import { trpc } from '@web/utils/trpc';
@@ -25,7 +25,7 @@ export const CryptoQuery: FC<{ tag: Tag }> = ({ tag }) => {
 
 export const CryptoTemplate: FC<{ coins?: Coin[] }> = ({ coins = [] }) => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-4'>
@@ -61,6 +61,6 @@ export const CryptoTemplate: FC<{ coins?: Coin[] }> = ({ coins = [] }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

@@ -1,7 +1,7 @@
 import { getLatest } from '@web/clients/forex/frankfurter/frankfurter.client';
 import { useIsOnline } from '@web/hooks/use-is-online';
 import currencies from '@web/json/currencies.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
 import { formatCurrency } from '@web/utils/number/number';
 import { trpc } from '@web/utils/trpc';
@@ -216,7 +216,7 @@ const ForexTemplate: FC<{
   setForexOptions: Dispatch<SetStateAction<ForexOptions>>;
 }> = ({ forexOptions, baseAmount, rates, codes, setForexOptions }) => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-8'>
@@ -290,7 +290,7 @@ const ForexTemplate: FC<{
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 
@@ -305,35 +305,35 @@ const ForexQuery: FC<{
 
   if (isPending) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             <span className='loading loading-infinity loading-lg'></span>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   if (error) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             {error?.message ?? 'Error'}
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   if (!data) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl'>No Data</div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 

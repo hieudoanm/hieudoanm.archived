@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
 
@@ -30,7 +30,7 @@ const ConverterPage: NextPage = () => {
   const [length, setLength] = useState<Record<Length, number>>(lengthRates);
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -139,7 +139,7 @@ const ConverterPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

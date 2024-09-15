@@ -1,5 +1,5 @@
 import players from '@web/json/chess/players/2800.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { ChessInsights } from '@web/router/apps/chess/players/2800/insights';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc, trpcServerSideHelpers } from '@web/utils/trpc';
@@ -15,7 +15,7 @@ const InsightsQuery: FC<{ username: string }> = ({ username }) => {
 
   return (
     <QueryTemplate isPending={isPending} error={error} noData={!data}>
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
             <ChessInsights
@@ -27,7 +27,7 @@ const InsightsQuery: FC<{ username: string }> = ({ username }) => {
             />
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     </QueryTemplate>
   );
 };

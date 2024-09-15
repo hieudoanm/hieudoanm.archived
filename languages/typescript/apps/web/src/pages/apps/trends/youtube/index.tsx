@@ -1,5 +1,5 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 export const YouTubePage: NextPage = () => {
@@ -7,17 +7,17 @@ export const YouTubePage: NextPage = () => {
 
   if (!isOnline) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Service is Offline
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
-  return <Layout nav></Layout>;
+  return <AppLayout nav></AppLayout>;
 };
 
 export default YouTubePage;

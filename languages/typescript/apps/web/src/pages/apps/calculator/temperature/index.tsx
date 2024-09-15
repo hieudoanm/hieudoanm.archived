@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { cf, ck, fc, fk, kc, kf } from '@web/utils/temperature/temperature';
 import { NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -15,7 +15,7 @@ const TemperaturePage: NextPage = () => {
   });
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -83,7 +83,7 @@ const TemperaturePage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

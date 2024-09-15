@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { addZero } from '@web/utils/add-zero';
 import { NextPage } from 'next';
 import { ChangeEvent, useEffect, useState } from 'react';
@@ -94,7 +94,7 @@ export const ChessClock: NextPage = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full flex-row gap-2 md:flex-col md:gap-4'>
@@ -292,6 +292,6 @@ export const ChessClock: NextPage = () => {
           </div>
         </div>
       </dialog>
-    </Layout>
+    </AppLayout>
   );
 };

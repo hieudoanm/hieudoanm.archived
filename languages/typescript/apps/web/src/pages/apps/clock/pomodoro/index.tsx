@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { addZero } from '@web/utils/number/number';
 import { NextPage } from 'next';
 import { ChangeEvent, useEffect, useState } from 'react';
@@ -100,7 +100,7 @@ const Pomodoro: NextPage = () => {
   }, [timer]);
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='flex h-full flex-col items-center justify-center gap-y-8'>
         <div className='flex aspect-square h-60 w-60 items-center justify-center rounded-full border border-base-content'>
           <div className='flex flex-col items-center gap-y-2 md:gap-y-4'>
@@ -185,7 +185,7 @@ const Pomodoro: NextPage = () => {
           </label>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

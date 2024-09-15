@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer to match snapshot 1`] = `
+exports[`AppFooter to match snapshot 1`] = `
 <div>
   <footer>
     <div

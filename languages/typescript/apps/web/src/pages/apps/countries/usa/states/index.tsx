@@ -2,7 +2,7 @@ import { createColumnHelper } from '@tanstack/react-table';
 import { TanStackTable } from '@web/components/TanStack/Table';
 import { TanstackVirtualTable } from '@web/components/TanStack/VirtualTable';
 import states from '@web/json/usa/states.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import { ChangeEvent, useRef, useState } from 'react';
 
@@ -105,7 +105,7 @@ const UnitedStatesPage: NextPage = () => {
   divisions.sort((a: string, b: string) => (a > b ? 1 : -1));
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='h-full overflow-hidden'>
         <div className='container mx-auto h-full'>
           <div className='h-full p-4 md:p-8'>
@@ -191,7 +191,7 @@ const UnitedStatesPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

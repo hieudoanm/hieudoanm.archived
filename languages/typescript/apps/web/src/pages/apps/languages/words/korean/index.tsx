@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import alphabet from '@web/json/languages/korean/alphabet.json';
 import { FC } from 'react';
@@ -113,7 +113,7 @@ const Keyboard: FC = () => {
 
 const KoreanPage: NextPage = () => {
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-4 md:gap-y-8'>
@@ -145,7 +145,7 @@ const KoreanPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import { Footer } from '.';
+import { AppLayout } from '.';
 
-describe('Footer', () => {
+describe('AppLayout', () => {
   it('to match snapshot', () => {
-    const { container } = render(<Footer />);
+    const { container } = render(<AppLayout />);
     expect(container).toMatchSnapshot();
   });
 });

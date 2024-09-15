@@ -1,5 +1,5 @@
 import { getLatest } from '@web/clients/forex/frankfurter/frankfurter.client';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
 import { GetStaticProps, NextPage } from 'next';
 import { ChangeEvent, useState } from 'react';
@@ -45,7 +45,7 @@ const ForexPage: NextPage<{ rates: Record<string, number> }> = ({
   });
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full w-full items-center justify-center'>
@@ -148,7 +148,7 @@ const ForexPage: NextPage<{ rates: Record<string, number> }> = ({
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

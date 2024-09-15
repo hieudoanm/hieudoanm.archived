@@ -3,7 +3,7 @@ import { SVGMaps } from '@web/components/Maps';
 import { useTheme } from '@web/context/ThemeContext';
 import countries from '@web/json/countries/countries.json';
 import maps from '@web/json/maps/world.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { Days } from '@web/services/chess/chess.service';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';
@@ -153,7 +153,7 @@ export const ChessTitled: FC = () => {
 
   return (
     <QueryTemplate isPending={isPending} error={error} noData={!data}>
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
             <div className='flex flex-col gap-y-4 md:gap-y-8'>
@@ -523,7 +523,7 @@ export const ChessTitled: FC = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     </QueryTemplate>
   );
 };

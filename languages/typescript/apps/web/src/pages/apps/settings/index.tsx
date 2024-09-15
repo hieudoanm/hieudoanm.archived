@@ -6,7 +6,7 @@ import {
   LIGHT_THEMES,
   useTheme,
 } from '@web/context/ThemeContext';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { Theme } from 'daisyui';
 import { NextPage } from 'next';
 import { ChangeEvent } from 'react';
@@ -15,7 +15,7 @@ const SettingsPage: NextPage = () => {
   const { font, setFont, theme, setTheme } = useTheme();
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='card rounded-lg border border-base-content'>
@@ -76,7 +76,7 @@ const SettingsPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

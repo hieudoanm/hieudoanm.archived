@@ -1,6 +1,5 @@
 import { useCamera } from '@web/hooks/use-camera';
-import { Layout } from '@web/layout';
-import { logger } from '@web/log';
+import { AppLayout } from '@web/layout/AppLayout';
 import { downloadImage } from '@web/utils/download';
 import { NextPage } from 'next';
 import { useEffect, useRef, useState } from 'react';
@@ -57,13 +56,13 @@ const CameraPage: NextPage = () => {
 
   if (!camera) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Camera is Unavailable
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
@@ -93,7 +92,7 @@ const CameraPage: NextPage = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full flex-col gap-y-4 md:gap-y-8'>
@@ -138,7 +137,7 @@ const CameraPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

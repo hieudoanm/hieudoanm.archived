@@ -1,5 +1,5 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
 import { RequestBody, ResponseData } from '@web/pages/api/instagram';
 import { validate } from '@web/utils/instagram/validate';
@@ -65,18 +65,18 @@ const InstagramPage: NextPage = () => {
 
   if (!isOnline) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Service is Offline
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -144,7 +144,7 @@ const InstagramPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

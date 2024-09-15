@@ -1,5 +1,5 @@
 import { TRPCClientErrorLike } from '@trpc/client';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { FC, ReactNode } from 'react';
 
 export type QueryTemplateProps = {
@@ -17,7 +17,7 @@ export const QueryTemplate: FC<QueryTemplateProps> = ({
 }) => {
   if (isPending) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='container mx-auto h-full'>
           <div className='h-full p-4 md:p-8'>
             <div className='flex h-full items-center justify-center'>
@@ -25,13 +25,13 @@ export const QueryTemplate: FC<QueryTemplateProps> = ({
             </div>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   if (error) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='container mx-auto h-full'>
           <div className='h-full p-4 md:p-8'>
             <div className='flex h-full items-center justify-center'>
@@ -41,13 +41,13 @@ export const QueryTemplate: FC<QueryTemplateProps> = ({
             </div>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   if (noData) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='container mx-auto h-full'>
           <div className='h-full p-4 md:p-8'>
             <div className='flex h-full items-center justify-center'>
@@ -55,7 +55,7 @@ export const QueryTemplate: FC<QueryTemplateProps> = ({
             </div>
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 

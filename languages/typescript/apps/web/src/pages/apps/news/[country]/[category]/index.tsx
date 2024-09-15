@@ -2,7 +2,7 @@ import { getTopHeadlines } from '@web/clients/news/news.client';
 import { Article } from '@web/clients/news/news.dto';
 import { Category, Country } from '@web/clients/news/news.enums';
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout/Layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { Articles, NewsQuery } from '@web/router/apps/news';
 import { GetStaticPaths, GetStaticPropsContext, NextPage } from 'next';
 
@@ -21,9 +21,9 @@ const NewsPage: NextPage<NewsPageProps> = ({
 
   if (!isOnline) {
     return (
-      <Layout full nav navBorder>
+      <AppLayout full nav navBorder>
         <Articles articles={defaultArticles} />
-      </Layout>
+      </AppLayout>
     );
   }
 

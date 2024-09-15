@@ -1,4 +1,4 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { FC } from 'react';
 
 const Block: FC<{
@@ -38,7 +38,7 @@ const Block: FC<{
 
 export const Chemistry: FC = () => {
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='h-full overflow-y-auto'>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
@@ -1100,6 +1100,6 @@ export const Chemistry: FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

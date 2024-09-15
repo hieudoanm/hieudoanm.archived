@@ -1,5 +1,5 @@
 import { useIsOnline } from '@web/hooks/use-is-online';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { Result } from '@web/server/routers/_app';
 import { trpc } from '@web/utils/trpc';
 import { NextPage } from 'next';
@@ -175,18 +175,18 @@ const ThesaurusPage: NextPage = () => {
 
   if (!isOnline) {
     return (
-      <Layout full nav>
+      <AppLayout full nav>
         <div className='flex h-full items-center justify-center'>
           <div className='text-center text-xl uppercase'>
             Service is Offline
           </div>
         </div>
-      </Layout>
+      </AppLayout>
     );
   }
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-8'>
@@ -210,7 +210,7 @@ const ThesaurusPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

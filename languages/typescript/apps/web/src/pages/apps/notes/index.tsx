@@ -1,5 +1,5 @@
 import notes from '@web/json/notes.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 import Link from 'next/link';
 
@@ -15,7 +15,7 @@ const NotesPage: NextPage = () => {
   });
 
   return (
-    <Layout nav>
+    <AppLayout nav>
       <div className='container mx-auto'>
         <div className='p-4 md:p-8'>
           <div className='flex flex-col gap-y-4 md:gap-y-8'>
@@ -43,7 +43,7 @@ const NotesPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

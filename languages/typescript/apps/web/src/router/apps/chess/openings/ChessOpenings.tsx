@@ -1,6 +1,6 @@
 import { Opening } from '@prisma/client';
 import openings from '@web/json/chess/theory/openings.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
 import { sleep } from '@web/utils/sleep';
 import { Chess } from 'chess.js';
@@ -66,7 +66,7 @@ export const ChessOpenings: FC = () => {
   };
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='grid h-full grid-cols-1 gap-2 md:grid-cols-7 md:gap-4'>
@@ -101,6 +101,6 @@ export const ChessOpenings: FC = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

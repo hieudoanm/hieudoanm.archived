@@ -1,8 +1,8 @@
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { NextPage } from 'next';
 
 const TasksPage: NextPage = () => {
-  return <Layout nav full />;
+  return <AppLayout nav full />;
 };
 
 export default TasksPage;

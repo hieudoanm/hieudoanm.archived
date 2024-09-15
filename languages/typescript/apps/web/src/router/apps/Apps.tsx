@@ -1,5 +1,5 @@
 import languages from '@web/json/languages/languages.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
 import Link from 'next/link';
 import { FC, ReactNode, useState } from 'react';
@@ -27,6 +27,7 @@ import {
   FaFootball,
   FaFutbol,
   FaGoogle,
+  FaHand,
   FaHeart,
   FaIdBadge,
   FaInstagram,
@@ -60,6 +61,7 @@ import {
   FaTwitter,
   FaUsers,
   FaYoutube,
+  FaGamepad,
 } from 'react-icons/fa6';
 
 export enum Border {
@@ -81,6 +83,7 @@ export type Folder =
   | 'editor'
   | 'finance'
   | 'finance-crypto'
+  | 'games'
   | 'generator'
   | 'languages'
   | 'languages-words'
@@ -91,6 +94,7 @@ export type Folder =
   | 'news-uk'
   | 'news-us'
   | 'sciences'
+  | 'tools'
   | 'transfer'
   | 'trends'
   | 'vietnam'
@@ -391,17 +395,6 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'compass',
-    href: 'compass',
-    name: 'Compass',
-    shortName: 'Compass',
-    enabled: true,
-    icon: <FaCompass />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
     id: 'calculator-forex',
     href: 'calculator/forex',
     name: 'Forex',
@@ -565,6 +558,28 @@ export const allApps: App[] = [
     borderStyle: Border.Solid,
     folder: 'home',
     isFolder: true,
+  },
+  {
+    id: 'games',
+    href: 'games',
+    name: 'Games',
+    shortName: 'Games',
+    enabled: true,
+    icon: <FaGamepad />,
+    borderStyle: Border.Solid,
+    folder: 'home',
+    isFolder: true,
+  },
+  {
+    id: 'games-rock-paper-scissors',
+    href: 'games/rock-paper-scissors',
+    name: 'Rock Paper Scissors',
+    shortName: 'Rock Paper Scissors',
+    enabled: true,
+    icon: <FaHand />,
+    borderStyle: Border.Solid,
+    folder: 'games',
+    isFolder: false,
   },
   {
     id: 'generator',
@@ -734,14 +749,36 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'tasks',
-    href: 'tasks',
+    id: 'tools',
+    href: 'tools',
+    name: 'Tools',
+    shortName: 'Tools',
+    enabled: true,
+    icon: <FaListCheck />,
+    borderStyle: Border.Solid,
+    folder: 'home',
+    isFolder: false,
+  },
+  {
+    id: 'tools-compass',
+    href: 'tools/compass',
+    name: 'Compass',
+    shortName: 'Compass',
+    enabled: true,
+    icon: <FaCompass />,
+    borderStyle: Border.Solid,
+    folder: 'tools',
+    isFolder: false,
+  },
+  {
+    id: 'tools-tasks',
+    href: 'tools/tasks',
     name: 'Tasks',
     shortName: 'Tasks',
     enabled: true,
     icon: <FaListCheck />,
     borderStyle: Border.Solid,
-    folder: 'home',
+    folder: 'tools',
     isFolder: false,
   },
   {
@@ -1335,13 +1372,13 @@ export const GridTemplate: FC<{ full?: boolean; folder?: Folder }> = ({
   );
 
   return (
-    <Layout nav full={full || apps.length <= 6}>
+    <AppLayout nav full={full || apps.length <= 6}>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <Grid apps={apps} />
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 
@@ -1357,7 +1394,7 @@ export const ListTemplate: FC = () => {
     );
 
   return (
-    <Layout nav navBorder full>
+    <AppLayout nav navBorder full>
       <div className='h-full overflow-auto'>
         <div className='border-b border-base-content'>
           <div className='container mx-auto'>
@@ -1400,6 +1437,6 @@ export const ListTemplate: FC = () => {
           </div>
         )}
       </div>
-    </Layout>
+    </AppLayout>
   );
 };

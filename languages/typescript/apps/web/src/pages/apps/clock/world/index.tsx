@@ -1,5 +1,5 @@
 import cities from '@web/json/maps/cities.json';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import { addZero } from '@web/utils/number/number';
 import { NextPage } from 'next';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
@@ -70,7 +70,7 @@ const WorldClockPage: NextPage = () => {
   ];
 
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='h-full overflow-y-auto'>
         <div className='container mx-auto'>
           <div className='p-4 md:p-8'>
@@ -117,7 +117,7 @@ const WorldClockPage: NextPage = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 

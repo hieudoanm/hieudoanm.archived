@@ -1,5 +1,5 @@
 import { Calendar } from '@web/components/Calendar';
-import { Layout } from '@web/layout';
+import { AppLayout } from '@web/layout/AppLayout';
 import React from 'react';
 
 export type CalendarPageProperties = {
@@ -16,7 +16,7 @@ export const CalendarPage: React.FC<CalendarPageProperties> = ({
   year = d.getFullYear(),
 }) => {
   return (
-    <Layout nav full>
+    <AppLayout nav full>
       <div className='container mx-auto h-full'>
         <div className='h-full p-4 md:p-8'>
           <div className='flex h-full items-center justify-center'>
@@ -24,7 +24,7 @@ export const CalendarPage: React.FC<CalendarPageProperties> = ({
           </div>
         </div>
       </div>
-    </Layout>
+    </AppLayout>
   );
 };
 
