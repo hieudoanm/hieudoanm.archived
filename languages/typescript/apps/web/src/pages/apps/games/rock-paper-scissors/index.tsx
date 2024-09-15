@@ -5,6 +5,7 @@ import { useState } from 'react';
 type RockPaperScissors = '🪨' | '📜' | '✂️';
 
 const RockPaperScissorsGame: NextPage = () => {
+  const rockPaperScissors: RockPaperScissors[] = ['🪨', '📜', '✂️'];
   const [game, setGame] = useState<{
     win: number;
     draw: number;
@@ -18,7 +19,6 @@ const RockPaperScissorsGame: NextPage = () => {
     const max: number = 2;
     const min: number = 0;
     const index = Math.floor(Math.random() * (max - min + 1) + min);
-    const rockPaperScissors: RockPaperScissors[] = ['🪨', '📜', '✂️'];
     const opponent = rockPaperScissors[index];
     if (player === opponent) {
       draw += 1;
@@ -38,53 +38,41 @@ const RockPaperScissorsGame: NextPage = () => {
 
   return (
     <AppLayout nav full>
-      <div className='container mx-auto'>
-        <div className='p-4 md:p-8'>
-          <div className='grid grid-cols-3 gap-8'>
-            <div className='col-span-3'>
-              <div className='w-full text-center text-9xl'>{game.opponent}</div>
-            </div>
-            <div className='col-span-3 text-center text-4xl'>
-              <p>
-                {game.win} / {game.draw} / {game.loss}
-              </p>
-              {total ? (
+      <div className='container mx-auto h-full'>
+        <div className='h-full p-4 md:p-8'>
+          <div className='flex h-full items-center justify-center'>
+            <div className='grid grid-cols-3 gap-8'>
+              <div className='col-span-3'>
+                <div className='w-full text-center text-4xl md:text-9xl'>
+                  {game.opponent}
+                </div>
+              </div>
+              <div className='col-span-3 text-center text-xl md:text-4xl'>
                 <p>
-                  {((game.win / total) * 100).toFixed(2)}% /{' '}
-                  {((game.draw / total) * 100).toFixed(2)}% /{' '}
-                  {((game.loss / total) * 100).toFixed(2)}%
+                  {game.win} / {game.draw} / {game.loss}
                 </p>
-              ) : (
-                <></>
-              )}
-              <p>(W / D / L)</p>
-            </div>
-            <div className='col-span-1'>
-              <div
-                className='w-full cursor-pointer text-center text-9xl'
-                onClick={() => {
-                  play('🪨');
-                }}>
-                🪨
+                {total ? (
+                  <p>
+                    {((game.win / total) * 100).toFixed(2)}% /{' '}
+                    {((game.draw / total) * 100).toFixed(2)}% /{' '}
+                    {((game.loss / total) * 100).toFixed(2)}%
+                  </p>
+                ) : (
+                  <></>
+                )}
+                <p>(W / D / L)</p>
               </div>
-            </div>
-            <div className='col-span-1'>
-              <div
-                className='w-full cursor-pointer text-center text-9xl'
-                onClick={() => {
-                  play('📜');
-                }}>
-                📜
-              </div>
-            </div>
-            <div className='col-span-1'>
-              <div
-                className='w-full cursor-pointer text-center text-9xl'
-                onClick={() => {
-                  play('✂️');
-                }}>
-                ✂️
-              </div>
+              {rockPaperScissors.map((value: RockPaperScissors) => {
+                return (
+                  <div key={value} className='col-span-1'>
+                    <div
+                      className='w-full cursor-pointer text-center text-4xl md:text-9xl'
+                      onClick={() => play(value)}>
+                      {value}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
