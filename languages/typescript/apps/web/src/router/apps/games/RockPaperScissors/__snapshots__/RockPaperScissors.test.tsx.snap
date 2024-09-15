@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RockPaperScissors render default 1`] = `
+<div>
+  <div
+    class="grid grid-cols-3 gap-8"
+  >
+    <div
+      class="col-span-3"
+    >
+      <div
+        class="w-full text-center text-4xl md:text-9xl"
+      >
+        🪨
+      </div>
+    </div>
+    <div
+      class="col-span-3 text-center text-xl md:text-4xl"
+    >
+      <p>
+        0
+         / 
+        0
+         / 
+        0
+      </p>
+      <p>
+        (W / D / L)
+      </p>
+    </div>
+    <div
+      class="col-span-1"
+    >
+      <div
+        class="w-full cursor-pointer text-center text-4xl md:text-9xl"
+      >
+        🪨
+      </div>
+    </div>
+    <div
+      class="col-span-1"
+    >
+      <div
+        class="w-full cursor-pointer text-center text-4xl md:text-9xl"
+      >
+        📜
+      </div>
+    </div>
+    <div
+      class="col-span-1"
+    >
+      <div
+        class="w-full cursor-pointer text-center text-4xl md:text-9xl"
+      >
+        ✂️
+      </div>
+    </div>
+  </div>
+</div>
+`;

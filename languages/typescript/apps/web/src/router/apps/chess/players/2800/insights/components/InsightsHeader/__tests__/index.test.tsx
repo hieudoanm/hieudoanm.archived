@@ -4,6 +4,7 @@ import { InsightsHeader } from '..';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({
+    asPath: '',
     basePath: '',
     pathname: '',
   }),

@@ -7,11 +7,7 @@ import { trpc } from '@web/utils/trpc';
 import { FC } from 'react';
 
 export const CryptoQuery: FC<{ tag: Tag }> = ({ tag }) => {
-  const {
-    isPending,
-    error,
-    data: coins,
-  } = trpc.crypto.useQuery({ tag: Tag.LAYER_1 });
+  const { isPending, error, data: coins } = trpc.crypto.useQuery({ tag });
 
   return (
     <QueryTemplate
