@@ -572,6 +572,17 @@ export const allApps: App[] = [
     isFolder: true,
   },
   {
+    id: 'games-flipism',
+    href: 'games/flipism',
+    name: 'Flipism',
+    shortName: 'Flipism',
+    enabled: true,
+    icon: <FaHand />,
+    borderStyle: Border.Solid,
+    folder: 'games',
+    isFolder: false,
+  },
+  {
     id: 'games-rock-paper-scissors',
     href: 'games/rock-paper-scissors',
     name: 'Rock Paper Scissors',

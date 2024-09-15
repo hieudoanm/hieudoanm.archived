@@ -1,5 +1,5 @@
 import { AppLayout } from '@web/layout/AppLayout';
-import { RockPaperScissors } from '@web/router/apps/games/RockPaperScissors/RockPaperScissors';
+import { RockPaperScissors } from '@web/router/apps/games/RockPaperScissors';
 import { NextPage } from 'next';
 
 const RockPaperScissorsPage: NextPage = () => {
