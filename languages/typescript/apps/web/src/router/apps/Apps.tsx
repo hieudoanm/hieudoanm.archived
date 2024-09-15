@@ -26,6 +26,7 @@ import {
   FaFlagUsa,
   FaFootball,
   FaFutbol,
+  FaGamepad,
   FaGoogle,
   FaHand,
   FaHeart,
@@ -60,8 +61,8 @@ import {
   FaToolbox,
   FaTwitter,
   FaUsers,
+  FaWheelchair,
   FaYoutube,
-  FaGamepad,
 } from 'react-icons/fa6';
 
 export enum Border {
@@ -577,6 +578,17 @@ export const allApps: App[] = [
     shortName: 'Rock Paper Scissors',
     enabled: true,
     icon: <FaHand />,
+    borderStyle: Border.Solid,
+    folder: 'games',
+    isFolder: false,
+  },
+  {
+    id: 'games-wheel-of-fortune',
+    href: 'games/wheel-of-fortune',
+    name: 'Wheel of Fortune',
+    shortName: 'Wheel of Fortune',
+    enabled: true,
+    icon: <FaWheelchair />,
     borderStyle: Border.Solid,
     folder: 'games',
     isFolder: false,
