@@ -1,7 +1,6 @@
 import { AppLayout } from '@web/layout/AppLayout';
 import { addZero } from '@web/utils/add-zero';
-import { NextPage } from 'next';
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { FaPause } from 'react-icons/fa';
 import { FaArrowsRotate, FaPlay, FaScrewdriverWrench } from 'react-icons/fa6';
 
@@ -18,8 +17,10 @@ const options: number[] = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 45, 60, 90, 120, 150, 180,
 ];
 
-export const ChessClock: NextPage = () => {
-  const oneUnit = 100;
+export const ChessClock: FC = () => {
+  const oneUnit = 10;
+
+  const [timeOption, setTimeOption] = useState<string>('10+0');
 
   const initial: ChessClockState = {
     milliseconds: { top: 10 * 60 * 1000, bottom: 10 * 60 * 1000 },
@@ -165,10 +166,61 @@ export const ChessClock: NextPage = () => {
       <dialog id='chess-clock-modal' className='modal'>
         <div className='modal-box'>
           <div className='flex flex-col gap-y-4'>
+            <select
+              id='timeOptions'
+              name='timeOptions'
+              className='select select-bordered'
+              value={timeOption}
+              onChange={(event: ChangeEvent<HTMLSelectElement>) => {
+                const timeOption = event.target.value;
+                setTimeOption(timeOption);
+                const time: string[] = timeOption.split('+');
+                const [minute, second] = time;
+                setModal((previousModal) => {
+                  return {
+                    ...previousModal,
+                    topTime: parseFloat(minute),
+                    topIncrement: parseFloat(second),
+                    bottomTime: parseFloat(minute),
+                    bottomIncrement: parseFloat(second),
+                  };
+                });
+                setClock(({ current, running }) => {
+                  return {
+                    current,
+                    running,
+                    increment: {
+                      top: parseFloat(second),
+                      bottom: parseFloat(second),
+                    },
+                    milliseconds: {
+                      top: parseFloat(minute) * 60 * 1000,
+                      bottom: parseFloat(minute) * 60 * 1000,
+                    },
+                  };
+                });
+              }}>
+              <option value='0.33+1'>20 sec | 1</option>
+              <option value='0.5+0'>30 sec | 0</option>
+              <option value='1+0'>1 | 0</option>
+              <option value='1+1'>1 | 1</option>
+              <option value='2+1'>2 | 1</option>
+              <option value='3+0'>3 | 0</option>
+              <option value='3+2'>3 | 2</option>
+              <option value='5+0'>5 | 0</option>
+              <option value='5+2'>5 | 2</option>
+              <option value='5+5'>5 | 5</option>
+              <option value='10+0'>10 | 0</option>
+              <option value='10+5'>10 | 5</option>
+              <option value='15+10'>15 | 10</option>
+              <option value='20+0'>20 | 0</option>
+              <option value='30+0'>30 | 0</option>
+              <option value='60+0'>60 | 0</option>
+            </select>
             <div className='join'>
               <select
                 id='topTime'
-                name='Top Time'
+                name='topTime'
                 className='join-item select select-bordered w-full'
                 value={modal.topTime}
                 onChange={(event: ChangeEvent<HTMLSelectElement>) => {
@@ -183,7 +235,7 @@ export const ChessClock: NextPage = () => {
                       increment,
                       milliseconds: {
                         ...milliseconds,
-                        top: topTime * 60,
+                        top: topTime * 60 * 1000,
                       },
                     };
                   });
@@ -242,7 +294,7 @@ export const ChessClock: NextPage = () => {
                       increment,
                       milliseconds: {
                         ...milliseconds,
-                        bottom: bottomTime * 60,
+                        bottom: bottomTime * 60 * 1000,
                       },
                     };
                   });

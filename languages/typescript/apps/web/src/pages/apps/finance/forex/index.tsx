@@ -21,6 +21,21 @@ const SOUTH_EAST_ASIA: string[] = ['IDR', 'MYR', 'PHP', 'SGD', 'THB'];
 type ForexOptions = { amount: number; base: string };
 
 const ListItem: FC<{
+  borderTop: boolean;
+  left: string;
+  right: string;
+}> = ({ borderTop = false, left = '', right = '' }) => {
+  const borderTopString = borderTop ? 'border-t' : '';
+  return (
+    <div
+      className={`flex flex-col items-start justify-between gap-y-1 border-base-content px-4 py-2 md:flex-row md:items-center md:gap-y-2 md:px-8 md:py-4 ${borderTopString}`}>
+      <p className='text-sm md:text-base'>{left}</p>
+      <p className='text-sm md:text-base'>{right}</p>
+    </div>
+  );
+};
+
+const ListItemRow: FC<{
   code: string;
   amount: number;
   base: string;
@@ -30,16 +45,9 @@ const ListItem: FC<{
   logger.info(amount);
   const fromRate: number = rates[base] ?? baseAmount;
   const toRate: number = rates[code];
-  return (
-    <div className='flex items-center justify-between gap-y-4 border-t border-base-content px-8 py-4 md:gap-y-8'>
-      <p className='text-sm md:text-base'>
-        {code} - {(currencies as Record<string, string>)[code]}
-      </p>
-      <p className='text-sm md:text-base'>
-        {formatCurrency((amount * toRate) / fromRate, code)}
-      </p>
-    </div>
-  );
+  const left: string = `${code} - ${(currencies as Record<string, string>)[code]}`;
+  const right: string = formatCurrency((amount * toRate) / fromRate, code);
+  return <ListItem borderTop left={left} right={right} />;
 };
 
 const List: FC<{
@@ -57,14 +65,13 @@ const List: FC<{
 }) => {
   return (
     <div className='rounded-xl border border-base-content'>
-      <div className='flex items-center justify-between border-base-content px-8 py-4'>
-        <p>
-          {title} ({codes.length})
-        </p>
-        <p>Rate</p>
-      </div>
+      <ListItem
+        borderTop={false}
+        left={`${title} (${codes.length})`}
+        right='Rate'
+      />
       {codes.map((code: string) => (
-        <ListItem
+        <ListItemRow
           key={code}
           code={code}
           amount={
