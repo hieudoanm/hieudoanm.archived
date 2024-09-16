@@ -1,16 +1,14 @@
 import axios from 'axios';
 import {
+  AirQuality,
+  CitiesResponse,
+  CountriesResponse,
   getAirQuality,
   getCities,
   getCountries,
   getStates,
-} from './air-visual.client';
-import {
-  AirQuality,
-  CitiesResponse,
-  CountriesResponse,
   StatesResponse,
-} from './air-visual.dto';
+} from '.';
 
 describe('AirVisualClient', () => {
   describe('getCountries', () => {

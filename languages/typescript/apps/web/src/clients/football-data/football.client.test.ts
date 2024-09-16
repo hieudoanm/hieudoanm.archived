@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { FootballClient } from './football.client';
-import { Competition, Team } from './football.dto';
+import { Competition, FootballClient, Team } from '.';
 
 describe('FootballClient', () => {
   const footballClient = FootballClient('');

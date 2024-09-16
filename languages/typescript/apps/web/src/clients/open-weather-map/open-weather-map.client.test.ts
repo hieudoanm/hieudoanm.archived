@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { getWeather } from './open-weather-map.client';
-import { Weather } from './open-weather-map.dto';
+import { getWeather, Weather } from '.';
 
 describe('OpenWeatherMapClient', () => {
   describe('getWeather', () => {

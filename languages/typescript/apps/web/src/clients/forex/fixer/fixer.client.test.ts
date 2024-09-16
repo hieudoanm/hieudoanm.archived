@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { FixerClient } from './fixer.client';
-import { FixerLatestResponse, SymbolsResponse } from './fixer.dto';
+import { FixerClient, FixerLatestResponse, SymbolsResponse } from '.';
 
 const key: string = 'key';
 const fixerClient = FixerClient(key);

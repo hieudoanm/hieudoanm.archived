@@ -178,13 +178,99 @@ exports[`ChessClock render default 1`] = `
           <div
             class="flex flex-col gap-y-4"
           >
+            <select
+              class="select select-bordered"
+              id="timeOptions"
+              name="timeOptions"
+            >
+              <option
+                value="0.33+1"
+              >
+                20 sec | 1
+              </option>
+              <option
+                value="0.5+0"
+              >
+                30 sec | 0
+              </option>
+              <option
+                value="1+0"
+              >
+                1 | 0
+              </option>
+              <option
+                value="1+1"
+              >
+                1 | 1
+              </option>
+              <option
+                value="2+1"
+              >
+                2 | 1
+              </option>
+              <option
+                value="3+0"
+              >
+                3 | 0
+              </option>
+              <option
+                value="3+2"
+              >
+                3 | 2
+              </option>
+              <option
+                value="5+0"
+              >
+                5 | 0
+              </option>
+              <option
+                value="5+2"
+              >
+                5 | 2
+              </option>
+              <option
+                value="5+5"
+              >
+                5 | 5
+              </option>
+              <option
+                value="10+0"
+              >
+                10 | 0
+              </option>
+              <option
+                value="10+5"
+              >
+                10 | 5
+              </option>
+              <option
+                value="15+10"
+              >
+                15 | 10
+              </option>
+              <option
+                value="20+0"
+              >
+                20 | 0
+              </option>
+              <option
+                value="30+0"
+              >
+                30 | 0
+              </option>
+              <option
+                value="60+0"
+              >
+                60 | 0
+              </option>
+            </select>
             <div
               class="join"
             >
               <select
                 class="join-item select select-bordered w-full"
                 id="topTime"
-                name="Top Time"
+                name="topTime"
               >
                 <option
                   value="1"
