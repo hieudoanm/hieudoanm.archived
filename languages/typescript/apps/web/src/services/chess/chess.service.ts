@@ -30,7 +30,7 @@ import {
   ResultsByEndPhrase,
   ResultsByOpponentRating,
   ResultsByTimeOfDay,
-} from './chess.model';
+} from './chess.dto';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 (BigInt.prototype as any).toJSON = function () {

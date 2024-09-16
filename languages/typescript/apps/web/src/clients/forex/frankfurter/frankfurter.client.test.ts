@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { getCurrencies, getLatest } from './frankfurter.client';
-import { FrankfurterLatestResponse } from './frankfurter.dto';
+import { FrankfurterLatestResponse, getCurrencies, getLatest } from '.';
 
 describe('getLatest', () => {
   it('success', async () => {

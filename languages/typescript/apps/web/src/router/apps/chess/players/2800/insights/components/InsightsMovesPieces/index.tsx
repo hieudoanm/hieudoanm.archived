@@ -1,5 +1,5 @@
 import { TIME_COLORS } from '@web/constants/chess.constants';
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { customLabel } from '@web/utils/custom-label';
 import {
   Cell,

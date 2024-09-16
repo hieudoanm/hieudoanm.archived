@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListView render default 1`] = `
+<div>
+  <div
+    style="height: 0px;"
+  >
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Region
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Subregion
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  CCA2
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  CCA3
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Name (Common)
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Name (Official)
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Capital
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+          <th
+            colspan="1"
+            style="width: 150px;"
+          >
+            <div
+              class="cursor-pointer select-none"
+            >
+              <div
+                class="flex items-center justify-between"
+              >
+                <p>
+                  Flag
+                </p>
+                <p />
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

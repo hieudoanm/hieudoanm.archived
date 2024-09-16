@@ -1,5 +1,5 @@
 import { COLORS_MAP } from '@web/constants/chess.constants';
-import { Insights, Result } from '@web/services/chess/chess.model';
+import { Insights, Result } from '@web/services/chess/chess.dto';
 import { customLabel } from '@web/utils/custom-label';
 import { FaTrophy } from 'react-icons/fa6';
 import {

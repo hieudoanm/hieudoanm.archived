@@ -1,5 +1,7 @@
 import { render } from '@testing-library/react';
-import { Chemistry } from '.';
+import { Insights } from '@web/services/chess/chess.dto';
+import { mockResizeObserver } from '@web/utils/mock-resize-observer';
+import { ChessInsights } from '.';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({
@@ -18,9 +20,13 @@ jest.mock('next/navigation', () => ({
   useSearchParams: jest.fn().mockReturnValue(new URLSearchParams()),
 }));
 
-describe('Chemistry', () => {
-  test('render default', () => {
-    const wrapper = render(<Chemistry />);
-    expect(wrapper.container).toMatchSnapshot();
+describe('ChessInsights', () => {
+  beforeEach(() => {
+    mockResizeObserver();
+  });
+
+  it('to match snapshot', () => {
+    const { container } = render(<ChessInsights insights={{} as Insights} />);
+    expect(container).toMatchSnapshot();
   });
 });

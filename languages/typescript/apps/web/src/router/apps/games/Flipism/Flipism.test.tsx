@@ -1,7 +1,5 @@
 import { render } from '@testing-library/react';
-import { Insights } from '@web/services/chess/chess.model';
-import { mockResizeObserver } from '@web/utils/mock-resize-observer';
-import { ChessInsights } from '../ChessInsights';
+import { Flipism } from '.';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({
@@ -20,13 +18,9 @@ jest.mock('next/navigation', () => ({
   useSearchParams: jest.fn().mockReturnValue(new URLSearchParams()),
 }));
 
-describe('ChessInsights', () => {
-  beforeEach(() => {
-    mockResizeObserver();
-  });
-
-  it('to match snapshot', () => {
-    const { container } = render(<ChessInsights insights={{} as Insights} />);
-    expect(container).toMatchSnapshot();
+describe('Flipism', () => {
+  test('render default', () => {
+    const wrapper = render(<Flipism />);
+    expect(wrapper.container).toMatchSnapshot();
   });
 });

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { GridTemplate, ListTemplate } from './Apps';
+import { GridTemplate, ListTemplate } from '.';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({

@@ -1,7 +1,12 @@
 import axios from 'axios';
-import { getEverything, getSources, getTopHeadlines } from '../news.client';
-import { ArticleResponse, SourceResponse } from '../news.dto';
-import { SearchIn } from '../news.enums';
+import {
+  ArticleResponse,
+  getEverything,
+  getSources,
+  getTopHeadlines,
+  SearchIn,
+  SourceResponse,
+} from '.';
 
 describe('getSources', () => {
   it('success', async () => {

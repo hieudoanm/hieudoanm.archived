@@ -1,14 +1,15 @@
-import { Title, Variant, TimeClass } from '@prisma/client';
+import { TimeClass, Title, Variant } from '@prisma/client';
 import { getCoins, Tag } from '@web/clients/coinranking/coinranking.client';
 import { Coin } from '@web/clients/coinranking/coinranking.dto';
 import { getLatest } from '@web/clients/forex/frankfurter/frankfurter.client';
 import { FrankfurterLatestResponse } from '@web/clients/forex/frankfurter/frankfurter.dto';
 import { getTrends } from '@web/clients/google/google.client';
+import { Category, Country } from '@web/clients/news';
 import { getTopHeadlines } from '@web/clients/news/news.client';
 import { Article } from '@web/clients/news/news.dto';
-import { Category, Country } from '@web/clients/news/news.enums';
 import { LANGUAGES_API } from '@web/constants/languages.constants';
 import { logger } from '@web/log';
+import { Insights } from '@web/services/chess/chess.dto';
 import {
   Days,
   getInsights,
@@ -17,7 +18,6 @@ import {
 import axios, { AxiosError } from 'axios';
 import { z } from 'zod';
 import { procedure, router } from '../trpc';
-import { Insights } from '@web/services/chess/chess.model';
 
 export type Result = {
   definition: string;

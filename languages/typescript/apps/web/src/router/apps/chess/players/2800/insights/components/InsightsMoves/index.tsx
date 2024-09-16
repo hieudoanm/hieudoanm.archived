@@ -1,4 +1,4 @@
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { FaChessPawn } from 'react-icons/fa6';
 import { InsightsMovesCastling } from '../InsightsMovesCastling';
 import { InsightsMovesPieces } from '../InsightsMovesPieces';

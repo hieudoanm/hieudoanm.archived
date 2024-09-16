@@ -1,4 +1,4 @@
-import { Insights, OpeningCount } from '@web/services/chess/chess.model';
+import { Insights, OpeningCount } from '@web/services/chess/chess.dto';
 import { useState } from 'react';
 import { FaBook, FaSquare, FaSquareMinus, FaSquarePlus } from 'react-icons/fa6';
 import { CardHeading } from '../InsightsCardHeading';

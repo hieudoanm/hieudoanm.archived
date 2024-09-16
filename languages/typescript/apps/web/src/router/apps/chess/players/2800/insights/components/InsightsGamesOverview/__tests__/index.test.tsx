@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { mockResizeObserver } from '@web/utils/mock-resize-observer';
 import { InsightsGamesOverview } from '..';
 

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { ChessOpenings } from './ChessOpenings';
+import { ChessOpenings } from '.';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({

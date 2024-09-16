@@ -1,6 +1,6 @@
 import { Title } from '@prisma/client';
 import { useQuery } from '@web/hooks/use-query-param';
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { useCallback, useEffect, useState } from 'react';
 import { FaChessPawn } from 'react-icons/fa';
 import {

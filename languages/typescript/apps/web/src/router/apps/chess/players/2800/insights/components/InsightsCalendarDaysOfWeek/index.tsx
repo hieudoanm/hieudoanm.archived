@@ -6,7 +6,7 @@ import {
 } from '@web/constants/chess.constants';
 import { customLabel } from '@web/utils/custom-label';
 import { CardHeading } from '../InsightsCardHeading';
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import {
   Bar,
   BarChart,

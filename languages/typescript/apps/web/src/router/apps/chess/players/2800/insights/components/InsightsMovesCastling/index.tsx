@@ -3,7 +3,7 @@ import {
   RED_COLOR,
   TEAL_COLOR,
 } from '@web/constants/chess.constants';
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { ChessCastling } from '@web/types/chess';
 import {
   Bar,

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Trends } from './Trends';
+import { Trends } from '.';
 
 describe('Trends', () => {
   it('to match snapshot', () => {

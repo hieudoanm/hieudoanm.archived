@@ -1,5 +1,5 @@
+import { Category, Country } from '@web/clients/news';
 import { Article } from '@web/clients/news/news.dto';
-import { Category, Country } from '@web/clients/news/news.enums';
 import { AppLayout } from '@web/layout/AppLayout';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';

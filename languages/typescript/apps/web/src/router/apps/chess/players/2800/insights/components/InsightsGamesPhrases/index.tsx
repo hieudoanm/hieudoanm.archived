@@ -3,7 +3,7 @@ import {
   RED_COLOR,
   TEAL_COLOR,
 } from '@web/constants/chess.constants';
-import { Insights, ResultsByEndPhrase } from '@web/services/chess/chess.model';
+import { Insights, ResultsByEndPhrase } from '@web/services/chess/chess.dto';
 import { FaXmarksLines } from 'react-icons/fa6';
 import {
   Bar,

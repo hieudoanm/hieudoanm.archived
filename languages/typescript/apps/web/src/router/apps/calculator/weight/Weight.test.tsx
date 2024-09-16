@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { Weight } from './Weight';
+import { Weight } from '.';
 
 jest.mock('next/router', () => ({
   useRouter: jest.fn().mockReturnValue({

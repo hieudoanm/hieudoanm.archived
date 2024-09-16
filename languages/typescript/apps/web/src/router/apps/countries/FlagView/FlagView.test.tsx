@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import { Calendar } from '.';
+import { FlagView } from '.';
 
-describe('Calendar', () => {
+describe('FlagView', () => {
   test('render default', () => {
-    const wrapper = render(<Calendar year={1995} month={12} date={4} />);
+    const wrapper = render(<FlagView countries={[]} />);
     expect(wrapper.container).toMatchSnapshot();
   });
 });

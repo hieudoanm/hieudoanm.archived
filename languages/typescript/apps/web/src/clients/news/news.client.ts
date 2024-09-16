@@ -1,12 +1,15 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import {
   ArticleResponse,
+  Category,
+  Country,
   EverythingRequest,
+  Language,
+  SortBy,
   SourceRequest,
   SourceResponse,
   TopHeadlinesRequest,
 } from './news.dto';
-import { Category, Country, Language, SortBy } from './news.enums';
 
 const NEWS_API_KEY = process.env.NEWS_API_KEY ?? '';
 

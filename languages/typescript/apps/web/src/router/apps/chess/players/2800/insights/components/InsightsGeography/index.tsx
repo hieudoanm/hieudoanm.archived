@@ -1,4 +1,4 @@
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { FaGlobe } from 'react-icons/fa';
 import { CardHeading } from '../InsightsCardHeading';
 import { SectionHeading } from '../InsightsSectionHeading';

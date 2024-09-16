@@ -1,4 +1,4 @@
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaCircleUser } from 'react-icons/fa6';

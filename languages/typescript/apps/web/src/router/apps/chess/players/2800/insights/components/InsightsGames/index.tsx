@@ -1,4 +1,4 @@
-import { Insights } from '@web/services/chess/chess.model';
+import { Insights } from '@web/services/chess/chess.dto';
 import { FaChessBoard } from 'react-icons/fa6';
 import { InsightsGamesOverview } from '../InsightsGamesOverview';
 import { InsightsGamesPhrases } from '../InsightsGamesPhrases';
