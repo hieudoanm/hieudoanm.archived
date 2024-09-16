@@ -1,6 +1,4 @@
-import { getTopHeadlines } from '@web/clients/news/news.client';
-import { Article } from '@web/clients/news/news.dto';
-import { Category, Country } from '@web/clients/news/news.enums';
+import { Article, Category, Country, getTopHeadlines } from '@web/clients/news';
 import { useIsOnline } from '@web/hooks/use-is-online';
 import { AppLayout } from '@web/layout/AppLayout';
 import { Articles, NewsQuery } from '@web/router/apps/news';
