@@ -1742,8 +1742,8 @@ importers:
         specifier: 9.11.0
         version: 9.11.0
       '@solidjs/testing-library':
-        specifier: 0.8.9
-        version: 0.8.9(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)
+        specifier: 0.8.10
+        version: 0.8.10(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)
       '@testing-library/jest-dom':
         specifier: 6.5.0
         version: 6.5.0
@@ -6698,8 +6698,8 @@ packages:
   '@solidjs/start@1.0.8':
     resolution: {integrity: sha512-5JfIa305L898GkUxVDtxqujLYqCjuekJvXDl9uysZmPqtfFMcDmJyfnfkmoIOgGRyswKcyEWySYru8ZRYCIBuw==}
 
-  '@solidjs/testing-library@0.8.9':
-    resolution: {integrity: sha512-gcjTSHwzXqy8roTrDgHTasRkrUcWjVm/7T7wjUI5WNm2BdUTTi296CorTiIGQVFZg2BVYuwtJOzzNn71Y/QQfg==}
+  '@solidjs/testing-library@0.8.10':
+    resolution: {integrity: sha512-qdeuIerwyq7oQTIrrKvV0aL9aFeuwTd86VYD3afdq5HYEwoox1OBTJy4y8A3TFZr8oAR0nujYgCzY/8wgHGfeQ==}
     engines: {node: '>= 14'}
     peerDependencies:
       '@solidjs/router': '>=0.9.0'
@@ -27335,7 +27335,7 @@ snapshots:
       - vinxi
       - vite
 
-  '@solidjs/testing-library@0.8.9(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)':
+  '@solidjs/testing-library@0.8.10(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.8.22
