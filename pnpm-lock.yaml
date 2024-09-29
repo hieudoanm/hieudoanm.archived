@@ -279,7 +279,7 @@ importers:
         version: 9.11.0
       '@million/lint':
         specifier: 1.0.0-rc.84
-        version: 1.0.0-rc.84(encoding@0.1.13)(rollup@4.22.4)(webpack-sources@3.2.3)
+        version: 1.0.0-rc.84(encoding@0.1.13)(rollup@2.79.1)(webpack-sources@3.2.3)
       '@next/mdx':
         specifier: 14.2.13
         version: 14.2.13(@mdx-js/loader@3.0.1(webpack@5.94.0))(@mdx-js/react@3.0.1(@types/react@18.3.8)(react@18.3.1))
@@ -378,7 +378,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@4.22.4)(webpack-sources@3.2.3)
+        version: 3.1.11(rollup@2.79.1)(webpack-sources@3.2.3)
       postcss:
         specifier: 8.4.47
         version: 8.4.47
@@ -617,7 +617,7 @@ importers:
         version: 7.0.6
       '@million/lint':
         specifier: 1.0.0-rc.84
-        version: 1.0.0-rc.84(encoding@0.1.13)(rollup@2.79.1)(webpack-sources@3.2.3)
+        version: 1.0.0-rc.84(encoding@0.1.13)(rollup@4.22.4)(webpack-sources@3.2.3)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -692,7 +692,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@2.79.1)(webpack-sources@3.2.3)
+        version: 3.1.11(rollup@4.22.4)(webpack-sources@3.2.3)
       postcss:
         specifier: 8.4.47
         version: 8.4.47
@@ -1742,8 +1742,8 @@ importers:
         specifier: 9.11.0
         version: 9.11.0
       '@solidjs/testing-library':
-        specifier: 0.8.9
-        version: 0.8.9(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)
+        specifier: 0.8.10
+        version: 0.8.10(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)
       '@testing-library/jest-dom':
         specifier: 6.5.0
         version: 6.5.0
@@ -4126,7 +4126,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.18.29':
     resolution: {integrity: sha512-X810C48Ss+67RdZU39YEO1khNYo1RmjouRV+vVe0QhMoTe8R6OA3t+XYEdwaNbJ5p/DJN7szfHfNmX2glpC7xg==}
@@ -6698,8 +6698,8 @@ packages:
   '@solidjs/start@1.0.8':
     resolution: {integrity: sha512-5JfIa305L898GkUxVDtxqujLYqCjuekJvXDl9uysZmPqtfFMcDmJyfnfkmoIOgGRyswKcyEWySYru8ZRYCIBuw==}
 
-  '@solidjs/testing-library@0.8.9':
-    resolution: {integrity: sha512-gcjTSHwzXqy8roTrDgHTasRkrUcWjVm/7T7wjUI5WNm2BdUTTi296CorTiIGQVFZg2BVYuwtJOzzNn71Y/QQfg==}
+  '@solidjs/testing-library@0.8.10':
+    resolution: {integrity: sha512-qdeuIerwyq7oQTIrrKvV0aL9aFeuwTd86VYD3afdq5HYEwoox1OBTJy4y8A3TFZr8oAR0nujYgCzY/8wgHGfeQ==}
     engines: {node: '>= 14'}
     peerDependencies:
       '@solidjs/router': '>=0.9.0'
@@ -27335,7 +27335,7 @@ snapshots:
       - vinxi
       - vite
 
-  '@solidjs/testing-library@0.8.9(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)':
+  '@solidjs/testing-library@0.8.10(@solidjs/router@0.14.7(solid-js@1.8.22))(solid-js@1.8.22)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.8.22
@@ -28602,7 +28602,7 @@ snapshots:
 
   '@types/yoga-layout@1.9.2': {}
 
-  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)':
+  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)':
     dependencies:
       '@eslint-community/regexpp': 4.11.1
       '@typescript-eslint/parser': 5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
@@ -33097,7 +33097,7 @@ snapshots:
 
   eslint-config-react-app@6.0.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(eslint@7.32.0)(typescript@5.6.2))(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(babel-eslint@10.1.0(eslint@9.11.0(jiti@1.21.6)))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.30.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(eslint@7.32.0))(eslint-plugin-jsx-a11y@6.10.0(eslint@7.32.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.36.1(eslint@9.11.0(jiti@1.21.6)))(eslint@7.32.0)(typescript@5.6.2):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       '@typescript-eslint/parser': 5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       babel-eslint: 10.1.0(eslint@9.11.0(jiti@1.21.6))
       confusing-browser-globals: 1.0.11
@@ -34825,7 +34825,7 @@ snapshots:
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.26.1)(webpack-dev-server@5.1.0(webpack@5.94.0))(webpack-hot-middleware@2.26.1)(webpack@5.94.0)
       '@sigmacomputing/babel-plugin-lodash': 3.3.5
       '@types/http-proxy': 1.17.15
-      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       '@typescript-eslint/parser': 5.62.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       '@vercel/webpack-asset-relocator-loader': 1.7.3
       acorn-loose: 8.4.0
