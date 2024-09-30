@@ -937,8 +937,8 @@ importers:
         specifier: 9.11.1
         version: 9.11.1
       '@prisma/extension-accelerate':
-        specifier: 1.1.0
-        version: 1.1.0(@prisma/client@5.20.0(prisma@5.20.0))
+        specifier: 1.2.0
+        version: 1.2.0(@prisma/client@5.20.0(prisma@5.20.0))
       '@types/jest':
         specifier: 29.5.13
         version: 29.5.13
@@ -6009,8 +6009,8 @@ packages:
   '@prisma/engines@5.8.1':
     resolution: {integrity: sha512-TJgYLRrZr56uhqcXO4GmP5be+zjCIHtLDK20Cnfg+o9d905hsN065QOL+3Z0zQAy6YD31Ol4u2kzSfRmbJv/uA==}
 
-  '@prisma/extension-accelerate@1.1.0':
-    resolution: {integrity: sha512-sESjhBZ4ywQjAVpKzsfhxyNu+9txIM5I6M1MPBaJBq/xDlqmniIAhlwIEt9KLtO80zqPxqbZYes18zrkgYqNiQ==}
+  '@prisma/extension-accelerate@1.2.0':
+    resolution: {integrity: sha512-bELNCWi1iZx4Q1iFFEDcUEc+KR9M8I2lhO2fO9DabKOQjLQc/WkPXbaNB1dr81WZPqzj7FwFVAqpex3NNkxSPw==}
     engines: {node: '>=16'}
     peerDependencies:
       '@prisma/client': '>=4.16.1'
@@ -26285,7 +26285,7 @@ snapshots:
       '@prisma/fetch-engine': 5.8.1
       '@prisma/get-platform': 5.8.1
 
-  '@prisma/extension-accelerate@1.1.0(@prisma/client@5.20.0(prisma@5.20.0))':
+  '@prisma/extension-accelerate@1.2.0(@prisma/client@5.20.0(prisma@5.20.0))':
     dependencies:
       '@prisma/client': 5.20.0(prisma@5.20.0)
 
