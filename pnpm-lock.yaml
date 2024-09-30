@@ -1146,14 +1146,14 @@ importers:
         specifier: 5.56.2
         version: 5.56.2(react@18.3.1)
       expo:
-        specifier: 51.0.32
-        version: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+        specifier: 51.0.34
+        version: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
       expo-linking:
         specifier: 6.3.1
-        version: 6.3.1(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+        version: 6.3.1(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
       expo-router:
         specifier: 3.5.23
-        version: 3.5.23(qdsrk3g52jx2ccdyagpdyavnwy)
+        version: 3.5.23(rrcskvsw3ygf2hupcjjhqyh2xa)
       expo-status-bar:
         specifier: 1.12.1
         version: 1.12.1
@@ -4138,6 +4138,9 @@ packages:
   '@expo/config-plugins@8.0.8':
     resolution: {integrity: sha512-Fvu6IO13EUw0R9WeqxUO37FkM62YJBNcZb9DyJAOgMz7Ez/vaKQGEjKt9cwT+Q6uirtCATMgaq6VWAW7YW8xXw==}
 
+  '@expo/config-plugins@8.0.9':
+    resolution: {integrity: sha512-dNCG45C7BbDPV9MdWvCbsFtJtVn4w/TJbb5b7Yr6FA8HYIlaaVM0wqUMzTPmGj54iYXw8X/Vge8uCPxg7RWgeA==}
+
   '@expo/config-types@51.0.2':
     resolution: {integrity: sha512-IglkIoiDwJMY01lYkF/ZSBoe/5cR+O3+Gx6fpLFjLfgZGBTdyPkKa1g8NWoWQCk+D3cKL2MDbszT2DyRRB0YqQ==}
 
@@ -4198,8 +4201,8 @@ packages:
     resolution: {integrity: sha512-QdWi16+CHB9JYP7gma19OVVg0BFkvU8zNj9GjWorYI8Iv8FUxjOCcYRuAmX4s/h91e4e7BPsskc8cSrZYho9Ew==}
     engines: {node: '>=12'}
 
-  '@expo/vector-icons@14.0.2':
-    resolution: {integrity: sha512-70LpmXQu4xa8cMxjp1fydgRPsalefnHaXLzIwaHMEzcZhnyjw2acZz8azRrZOslPVAWlxItOa2Dd7WtD/kI+CA==}
+  '@expo/vector-icons@14.0.3':
+    resolution: {integrity: sha512-UJAKOXPPi6ez/1QZfoFVopCH3+c12Sw+T+IIVkvONCEN7zjN1fLxxWHkZ7Spz4WO5EH2ObtaJfCe/k4rw+ftxA==}
 
   '@expo/xcpretty@4.3.1':
     resolution: {integrity: sha512-sqXgo1SCv+j4VtYEwl/bukuOIBrVgx6euIoCat3Iyx5oeoXwEA2USCoeL0IPubflMxncA2INkqJ/Wr3NGrSgzw==}
@@ -11542,8 +11545,8 @@ packages:
   expo-status-bar@1.12.1:
     resolution: {integrity: sha512-/t3xdbS8KB0prj5KG5w7z+wZPFlPtkgs95BsmrP/E7Q0xHXTcDcQ6Cu2FkFuRM+PKTb17cJDnLkawyS5vDLxMA==}
 
-  expo@51.0.32:
-    resolution: {integrity: sha512-6GEhYvHRnyS/6BytQagGkClsaqbuwAtlN3A6oDfnNMRKLmz6NE/r+Rjg9zbQgUO6zigqb60Yj5lAX32DmixRDw==}
+  expo@51.0.34:
+    resolution: {integrity: sha512-l2oi+hIj/ph3qGcvM54Nyd2uF3Zq5caVmSg7AXfBUgtvcdv5Pj1EI/2xCXP9tfMNQo351CWyOwBkTGjv+GdrLg==}
     hasBin: true
 
   exponential-backoff@3.1.1:
@@ -23392,7 +23395,7 @@ snapshots:
       '@babel/runtime': 7.25.6
       '@expo/code-signing-certificates': 0.0.5
       '@expo/config': 9.0.3
-      '@expo/config-plugins': 8.0.8
+      '@expo/config-plugins': 8.0.9
       '@expo/devcert': 1.1.4
       '@expo/env': 0.3.0
       '@expo/image-utils': 0.5.1(encoding@0.1.13)
@@ -23498,12 +23501,32 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@expo/config-plugins@8.0.9':
+    dependencies:
+      '@expo/config-types': 51.0.2
+      '@expo/json-file': 8.3.3
+      '@expo/plist': 0.1.3
+      '@expo/sdk-runtime-versions': 1.0.0
+      chalk: 4.1.2
+      debug: 4.3.7(supports-color@8.1.1)
+      find-up: 5.0.0
+      getenv: 1.0.0
+      glob: 7.1.6
+      resolve-from: 5.0.0
+      semver: 7.6.3
+      slash: 3.0.0
+      slugify: 1.6.6
+      xcode: 3.0.1
+      xml2js: 0.6.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@expo/config-types@51.0.2': {}
 
   '@expo/config@9.0.3':
     dependencies:
       '@babel/code-frame': 7.10.4
-      '@expo/config-plugins': 8.0.8
+      '@expo/config-plugins': 8.0.9
       '@expo/config-types': 51.0.2
       '@expo/json-file': 8.3.3
       getenv: 1.0.0
@@ -23638,7 +23661,7 @@ snapshots:
   '@expo/prebuild-config@7.0.8(encoding@0.1.13)(expo-modules-autolinking@1.11.2)':
     dependencies:
       '@expo/config': 9.0.3
-      '@expo/config-plugins': 8.0.8
+      '@expo/config-plugins': 8.0.9
       '@expo/config-types': 51.0.2
       '@expo/image-utils': 0.5.1(encoding@0.1.13)
       '@expo/json-file': 8.3.3
@@ -23681,7 +23704,7 @@ snapshots:
     dependencies:
       cross-spawn: 7.0.3
 
-  '@expo/vector-icons@14.0.2':
+  '@expo/vector-icons@14.0.3':
     dependencies:
       prop-types: 15.8.1
 
@@ -33055,7 +33078,7 @@ snapshots:
       '@typescript-eslint/parser': 8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6))
       eslint-plugin-import: 2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-typescript@3.6.3)(eslint@9.11.0(jiti@1.21.6))
       eslint-plugin-jsx-a11y: 6.10.0(eslint@9.11.0(jiti@1.21.6))
       eslint-plugin-react: 7.36.1(eslint@9.11.0(jiti@1.21.6))
@@ -33094,13 +33117,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.3.7(supports-color@8.1.1)
       enhanced-resolve: 5.17.1
       eslint: 9.11.0(jiti@1.21.6)
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -33123,14 +33146,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
+  eslint-module-utils@2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)):
     dependencies:
       debug: 4.3.7(supports-color@8.1.1)
     optionalDependencies:
       '@typescript-eslint/parser': 8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6))
     transitivePeerDependencies:
       - supports-color
 
@@ -33233,7 +33256,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -33261,7 +33284,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.11.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
+      eslint-module-utils: 2.11.0(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.30.0)(eslint@9.11.0(jiti@1.21.6)))(eslint@9.11.0(jiti@1.21.6))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -33815,39 +33838,39 @@ snapshots:
       jest-message-util: 29.7.0
       jest-util: 29.7.0
 
-  expo-asset@10.0.10(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-asset@10.0.10(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
-      expo-constants: 16.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo-constants: 16.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
       invariant: 2.2.4
       md5-file: 3.2.3
     transitivePeerDependencies:
       - supports-color
 
-  expo-constants@16.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-constants@16.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
       '@expo/config': 9.0.3
       '@expo/env': 0.3.0
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
     transitivePeerDependencies:
       - supports-color
 
-  expo-file-system@17.0.1(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-file-system@17.0.1(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
 
-  expo-font@12.0.10(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-font@12.0.10(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
       fontfaceobserver: 2.3.0
 
-  expo-keep-awake@13.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-keep-awake@13.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
 
-  expo-linking@6.3.1(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-linking@6.3.1(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
-      expo-constants: 16.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-constants: 16.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
       invariant: 2.2.4
     transitivePeerDependencies:
       - expo
@@ -33867,7 +33890,7 @@ snapshots:
     dependencies:
       invariant: 2.2.4
 
-  expo-router@3.5.23(qdsrk3g52jx2ccdyagpdyavnwy):
+  expo-router@3.5.23(rrcskvsw3ygf2hupcjjhqyh2xa):
     dependencies:
       '@expo/metro-runtime': 3.2.3(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))
       '@expo/server': 0.4.4(typescript@5.6.2)
@@ -33875,10 +33898,10 @@ snapshots:
       '@react-navigation/bottom-tabs': 6.5.20(@react-navigation/native@6.1.18(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native-safe-area-context@4.11.0(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native-screens@3.34.0(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1)
       '@react-navigation/native': 6.1.18(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1)
       '@react-navigation/native-stack': 6.9.26(@react-navigation/native@6.1.18(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native-safe-area-context@4.11.0(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native-screens@3.34.0(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1))(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1)
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
-      expo-constants: 16.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
-      expo-linking: 6.3.1(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
-      expo-splash-screen: 0.27.5(encoding@0.1.13)(expo-modules-autolinking@1.11.2)(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo-constants: 16.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-linking: 6.3.1(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-splash-screen: 0.27.5(encoding@0.1.13)(expo-modules-autolinking@1.11.2)(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
       expo-status-bar: 1.12.1
       react-native-helmet-async: 2.0.4(react@18.3.1)
       react-native-safe-area-context: 4.11.0(react-native@0.75.3(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(@types/react@18.3.10)(encoding@0.1.13)(react@18.3.1)(typescript@5.6.2))(react@18.3.1)
@@ -33894,10 +33917,10 @@ snapshots:
       - supports-color
       - typescript
 
-  expo-splash-screen@0.27.5(encoding@0.1.13)(expo-modules-autolinking@1.11.2)(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
+  expo-splash-screen@0.27.5(encoding@0.1.13)(expo-modules-autolinking@1.11.2)(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)):
     dependencies:
       '@expo/prebuild-config': 7.0.6(encoding@0.1.13)(expo-modules-autolinking@1.11.2)
-      expo: 51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
+      expo: 51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
       - expo-modules-autolinking
@@ -33905,19 +33928,19 @@ snapshots:
 
   expo-status-bar@1.12.1: {}
 
-  expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13):
+  expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13):
     dependencies:
       '@babel/runtime': 7.25.6
       '@expo/cli': 0.18.29(encoding@0.1.13)(expo-modules-autolinking@1.11.2)
       '@expo/config': 9.0.3
-      '@expo/config-plugins': 8.0.8
+      '@expo/config-plugins': 8.0.9
       '@expo/metro-config': 0.18.11
-      '@expo/vector-icons': 14.0.2
+      '@expo/vector-icons': 14.0.3
       babel-preset-expo: 11.0.14(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))
-      expo-asset: 10.0.10(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
-      expo-file-system: 17.0.1(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
-      expo-font: 12.0.10(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
-      expo-keep-awake: 13.0.2(expo@51.0.32(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-asset: 10.0.10(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-file-system: 17.0.1(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-font: 12.0.10(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
+      expo-keep-awake: 13.0.2(expo@51.0.34(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))(encoding@0.1.13))
       expo-modules-autolinking: 1.11.2
       expo-modules-core: 1.12.24
       fbemitter: 3.0.0(encoding@0.1.13)
