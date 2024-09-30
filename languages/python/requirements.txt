@@ -162,7 +162,7 @@ pexpect==4.9.0
 pickleshare==0.7.5
 pigar==2.1.6
 pillow==10.4.0
-pipenv==2024.0.2
+pipenv==2024.1.0
 pipreqs==0.5.0
 platformdirs==4.3.6
 posthog==3.6.6
