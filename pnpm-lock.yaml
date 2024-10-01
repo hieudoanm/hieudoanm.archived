@@ -1539,8 +1539,8 @@ importers:
         specifier: 5.20.0
         version: 5.20.0(prisma@5.20.0)
       '@stripe/stripe-js':
-        specifier: 4.5.0
-        version: 4.5.0
+        specifier: 4.6.0
+        version: 4.6.0
       '@tanstack/react-query':
         specifier: 5.56.2
         version: 5.56.2(react@18.3.1)
@@ -6886,8 +6886,8 @@ packages:
   '@streamparser/json@0.0.20':
     resolution: {integrity: sha512-VqAAkydywPpkw63WQhPVKCD3SdwXuihCUVZbbiY3SfSTGQyHmwRoq27y4dmJdZuJwd5JIlQoMPyGvMbUPY0RKQ==}
 
-  '@stripe/stripe-js@4.5.0':
-    resolution: {integrity: sha512-dMOzc58AOlsF20nYM/avzV8RFhO/vgYTY7ajLMH6mjlnZysnOHZxsECQvjEmL8Q/ukPwHkOnxSPW/QGCCnp7XA==}
+  '@stripe/stripe-js@4.6.0':
+    resolution: {integrity: sha512-ZoK0dMFnVH0J5XUWGqsta8S8xm980qEwJKAIgZcLQxaSsbGRB9CsVvfOjwQFE1JC1q3rPwb/b+gQAmzIESnHnA==}
     engines: {node: '>=12.16'}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
@@ -27178,7 +27178,7 @@ snapshots:
 
   '@streamparser/json@0.0.20': {}
 
-  '@stripe/stripe-js@4.5.0': {}
+  '@stripe/stripe-js@4.6.0': {}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     dependencies:
