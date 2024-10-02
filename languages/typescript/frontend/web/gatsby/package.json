@@ -41,7 +41,7 @@
     "autoprefixer": "10.4.20",
     "daisyui": "4.12.10",
     "eslint": "9.11.1",
-    "eslint-plugin-react": "7.37.0",
+    "eslint-plugin-react": "7.37.1",
     "gatsby-plugin-postcss": "6.13.1",
     "gatsby-plugin-sass": "6.13.1",
     "globals": "15.10.0",
