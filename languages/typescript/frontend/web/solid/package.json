@@ -39,7 +39,7 @@
     "autoprefixer": "10.4.20",
     "daisyui": "4.12.10",
     "eslint": "9.11.1",
-    "globals": "15.9.0",
+    "globals": "15.10.0",
     "jsdom": "25.0.1",
     "postcss": "8.4.47",
     "prettier": "3.3.3",
