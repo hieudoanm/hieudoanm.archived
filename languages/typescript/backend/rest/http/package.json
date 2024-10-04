@@ -9,6 +9,9 @@
   "private": true,
   "packageManager": "pnpm@9.11.0",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "dev": "nodemon src/server.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "format": "prettier --cache --write ."
   },
@@ -17,12 +20,16 @@
     "@types/node": "22.7.4",
     "eslint": "9.11.1",
     "globals": "15.10.0",
+    "lodash": "4.17.21",
+    "nodemon": "3.1.7",
     "prettier": "3.3.3",
+    "rimraf": "6.0.1",
     "ts-node": "10.9.2",
     "typescript": "5.6.2",
     "typescript-eslint": "8.8.0"
   },
   "dependencies": {
-    "million": "3.1.11"
+    "million": "3.1.11",
+    "node-vault": "0.10.2"
   }
 }
