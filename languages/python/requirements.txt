@@ -61,7 +61,7 @@ fonttools==4.54.1
 fqdn==1.5.1
 frozenlist==1.4.1
 fsspec==2024.9.0
-g4f==0.3.2.8
+g4f==0.3.2.9
 gitdb==4.0.11
 GitPython==3.1.43
 google-auth==2.35.0
