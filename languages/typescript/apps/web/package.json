@@ -9,7 +9,7 @@
   "private": true,
   "packageManager": "pnpm@9.11.0",
   "engines": {
-    "npm": "10.8.3"
+    "npm": "10.9.0"
   },
   "scripts": {
     "import-games": "pnpm ts-node ./scripts/ts/chess/import/games.ts",
