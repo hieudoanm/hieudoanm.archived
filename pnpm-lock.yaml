@@ -235,8 +235,8 @@ importers:
         specifier: 5.2.0
         version: 5.2.0(chart.js@4.4.4)(react@18.3.1)
       react-chessboard:
-        specifier: 4.7.1
-        version: 4.7.1(@types/hoist-non-react-statics@3.3.5)(@types/node@22.7.4)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 4.7.2
+        version: 4.7.2(@types/hoist-non-react-statics@3.3.5)(@types/node@22.7.4)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
@@ -16900,8 +16900,8 @@ packages:
       chart.js: ^4.1.1
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  react-chessboard@4.7.1:
-    resolution: {integrity: sha512-WP5hO9RWNnk6NiuSymqBub8+3BUYvUmUkqN7KiZjNFQLOOJ36bVjzeDGc9vxbS5DepF3SGNixyGz47Em0NgFgA==}
+  react-chessboard@4.7.2:
+    resolution: {integrity: sha512-aOWWf+Qnsa9HIsT08PK4ORXLR8pP82DgidpHmQnjnI3GrudqCCE2WqNZe4j3tSQ0kI733qFjhqu+GFWhuG/QdA==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -33347,7 +33347,7 @@ snapshots:
       debug: 4.3.7(supports-color@8.1.1)
       enhanced-resolve: 5.17.1
       eslint: 9.12.0(jiti@2.2.1)
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.12.0(jiti@2.2.1))
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -33370,7 +33370,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1)):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.12.0(jiti@2.2.1)):
     dependencies:
       debug: 4.3.7(supports-color@8.1.1)
     optionalDependencies:
@@ -33481,7 +33481,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.12.0(jiti@2.2.1)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.12.0(jiti@2.2.1))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -33510,7 +33510,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.12.0(jiti@2.2.1)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1)))(eslint@9.12.0(jiti@2.2.1))
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.8.0(eslint@9.12.0(jiti@2.2.1))(typescript@5.6.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@9.12.0(jiti@2.2.1))
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -41176,7 +41176,7 @@ snapshots:
       chart.js: 4.4.4
       react: 18.3.1
 
-  react-chessboard@4.7.1(@types/hoist-non-react-statics@3.3.5)(@types/node@22.7.4)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-chessboard@4.7.2(@types/hoist-non-react-statics@3.3.5)(@types/node@22.7.4)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dnd: 16.0.1(@types/hoist-non-react-statics@3.3.5)(@types/node@22.7.4)(@types/react@18.3.11)(react@18.3.1)
