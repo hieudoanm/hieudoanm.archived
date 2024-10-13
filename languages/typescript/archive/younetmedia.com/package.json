@@ -30,8 +30,8 @@
     "@trpc/react-query": "11.0.0-rc.566",
     "@trpc/server": "11.0.0-rc.566",
     "axios": "1.7.7",
-    "cookie": "0.7.2",
-    "next": "14.2.14",
+    "cookie": "1.0.1",
+    "next": "14.2.15",
     "next-pwa": "5.6.0",
     "pino": "9.4.0",
     "react": "18.3.1",
@@ -57,7 +57,7 @@
     "daisyui": "4.12.13",
     "dotenv": "16.4.5",
     "eslint": "9.12.0",
-    "eslint-config-next": "14.2.14",
+    "eslint-config-next": "14.2.15",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-github": "5.0.2",
     "eslint-plugin-jest": "28.8.3",
@@ -76,7 +76,7 @@
     "tailwindcss": "3.4.13",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
-    "typescript": "5.6.2",
+    "typescript": "5.6.3",
     "typescript-eslint": "8.8.1"
   }
 }
