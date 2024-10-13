@@ -89,7 +89,7 @@
     "@types/web-bluetooth": "0.0.20",
     "autoprefixer": "10.4.20",
     "babel-loader": "9.2.1",
-    "chroma-js": "3.1.1",
+    "chroma-js": "3.1.2",
     "csvtojson": "2.0.10",
     "d3": "7.9.0",
     "daisyui": "4.12.13",
