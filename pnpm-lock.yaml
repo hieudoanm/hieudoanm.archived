@@ -332,8 +332,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1(@babel/core@7.25.8)(webpack@5.95.0)
       chroma-js:
-        specifier: 3.1.1
-        version: 3.1.1
+        specifier: 3.1.2
+        version: 3.1.2
       csvtojson:
         specifier: 2.0.10
         version: 2.0.10
@@ -9351,8 +9351,8 @@ packages:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
 
-  chroma-js@3.1.1:
-    resolution: {integrity: sha512-CGr6w73Gi86142RWqZ1RjED/CyduYw2vMTikQZUvr2jGIihnZlMo/Kzm9rYHWDP2pJc6eebwc8CkX0iteBon+A==}
+  chroma-js@3.1.2:
+    resolution: {integrity: sha512-IJnETTalXbsLx1eKEgx19d5L6SRM7cH4vINw/99p/M11HCuXGRWL+6YmCm7FWFGIo6dtWuQoQi1dc5yQ7ESIHg==}
 
   chromatic@11.12.5:
     resolution: {integrity: sha512-5z+BXQy3TMyXIzCdCDO9Psc8aMs9kIrCFHhMgYbwA6dTXxAL0oUjHZbICn5h4Ay/fM9cZQPaCH9T7a3myPA8Sw==}
@@ -31003,7 +31003,7 @@ snapshots:
 
   chownr@3.0.0: {}
 
-  chroma-js@3.1.1: {}
+  chroma-js@3.1.2: {}
 
   chromatic@11.12.5: {}
 
