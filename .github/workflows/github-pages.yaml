@@ -24,9 +24,10 @@ jobs:
           version: "9.12.2"
       - name: Install Dependencies
         run: pnpm install
+        working-directory: ./languages/markdown/docusaurus
       - name: Build Prod
         run: pnpm run build
-
+        working-directory: ./languages/markdown/docusaurus
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
