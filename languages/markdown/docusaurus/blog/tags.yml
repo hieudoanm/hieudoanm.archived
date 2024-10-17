@@ -13,7 +13,32 @@ docusaurus:
   permalink: /docusaurus
   description: Docusaurus tag description
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+javascript:
+  label: JavaScript
+  permalink: /javascript
+  description: JavaScript
+
+chess:
+  label: Chess
+  permalink: /chess
+  description: Chess
+
+python:
+  label: Python
+  permalink: /python
+  description: Python
+
+tennis:
+  label: Tennis
+  permalink: /tennis
+  description: Tennis
+
+football:
+  label: Football
+  permalink: /football
+  description: Football
+
+basketball:
+  label: Basketball
+  permalink: /basketball
+  description: Basketball
