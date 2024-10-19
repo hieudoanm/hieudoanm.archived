@@ -4,6 +4,7 @@ import { logger } from '@web/log';
 import Link from 'next/link';
 import { FC, ReactNode, useState } from 'react';
 import {
+  FaAppStore,
   FaArrowTrendUp,
   FaAtom,
   FaBitcoin,
@@ -45,7 +46,6 @@ import {
   FaMusic,
   FaNewspaper,
   FaNfcSymbol,
-  FaNoteSticky,
   FaPalette,
   FaPen,
   FaQrcode,
@@ -165,6 +165,17 @@ const sciencesApps: App[] = [
 }));
 
 export const allApps: App[] = [
+  {
+    id: 'all',
+    href: 'all',
+    name: 'All',
+    shortName: 'All',
+    enabled: true,
+    icon: <FaAppStore />,
+    borderStyle: Border.Solid,
+    folder: 'home',
+    isFolder: true,
+  },
   {
     id: 'calculator',
     href: 'calculator',
@@ -723,17 +734,6 @@ export const allApps: App[] = [
     shortName: 'News',
     enabled: true,
     icon: <FaNewspaper />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
-  {
-    id: 'notes',
-    href: 'notes',
-    name: 'Notes',
-    shortName: 'Notes',
-    enabled: true,
-    icon: <FaNoteSticky />,
     borderStyle: Border.Solid,
     folder: 'home',
     isFolder: true,
