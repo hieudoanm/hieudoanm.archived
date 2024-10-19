@@ -1582,8 +1582,8 @@ importers:
   languages/typescript/frontend/web/next.js:
     dependencies:
       '@auth/prisma-adapter':
-        specifier: 2.7.0
-        version: 2.7.0(@prisma/client@5.21.1(prisma@5.21.1))
+        specifier: 2.7.1
+        version: 2.7.1(@prisma/client@5.21.1(prisma@5.21.1))
       '@next-auth/prisma-adapter':
         specifier: 1.0.7
         version: 1.0.7(@prisma/client@5.21.1(prisma@5.21.1))(next-auth@4.24.8(next@14.2.15(@babel/core@7.25.8)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.1)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.80.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -2437,8 +2437,8 @@ packages:
     resolution: {integrity: sha512-xhlTqH0m31mnsG0tIP4ETgfSB6gXDaYYsUWTrlUV93fFQPI9dd8hE0Ot6MHLCtqgB32hwJAC3YZMWlXZw7AleA==}
     engines: {node: '>=14'}
 
-  '@auth/core@0.37.0':
-    resolution: {integrity: sha512-LybAgfFC5dta3Mu3al0UbnzMGVBpZRqLMvvXupQOfETtPNlL7rXgTO13EVRTCdvPqMQrVYjODUDvgVfQM1M3Qg==}
+  '@auth/core@0.37.1':
+    resolution: {integrity: sha512-85PosPEZXHKZhEaAH5DVCig2N1Cu5PC8CbWX03Dw9g1JISLHyrRT0RZRcaWlgmz+0Ua4N52sFRX+g9WARQaUlA==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
       '@simplewebauthn/server': ^9.0.2
@@ -2451,8 +2451,8 @@ packages:
       nodemailer:
         optional: true
 
-  '@auth/prisma-adapter@2.7.0':
-    resolution: {integrity: sha512-Ts4cvwxjXPPa9UMjONGcUSoP1Fb0GAkwIXHFzDGsmvoDQnbJExRFJ6OclGYPiJuNRR+4qhb/0w+gAi7x+42FdQ==}
+  '@auth/prisma-adapter@2.7.1':
+    resolution: {integrity: sha512-Wqs18vM6N6tJUvJ1mOEmuAqtsR+m3s8i9ROCvWmaLIF7ilbQdBJetywbiNQEbwaM4ThsgWmvCDpSRDhpVWDg7g==}
     peerDependencies:
       '@prisma/client': '>=2.26.0 || >=3 || >=4 || >=5'
 
@@ -22163,7 +22163,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@auth/core@0.37.0':
+  '@auth/core@0.37.1':
     dependencies:
       '@panva/hkdf': 1.2.1
       '@types/cookie': 0.6.0
@@ -22173,9 +22173,9 @@ snapshots:
       preact: 10.11.3
       preact-render-to-string: 5.2.3(preact@10.11.3)
 
-  '@auth/prisma-adapter@2.7.0(@prisma/client@5.21.1(prisma@5.21.1))':
+  '@auth/prisma-adapter@2.7.1(@prisma/client@5.21.1(prisma@5.21.1))':
     dependencies:
-      '@auth/core': 0.37.0
+      '@auth/core': 0.37.1
       '@prisma/client': 5.21.1(prisma@5.21.1)
     transitivePeerDependencies:
       - '@simplewebauthn/browser'
