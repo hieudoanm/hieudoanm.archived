@@ -772,6 +772,9 @@ importers:
       graphql:
         specifier: 16.9.0
         version: 16.9.0
+      graphql-tag:
+        specifier: 2.12.6
+        version: 2.12.6(graphql@16.9.0)
       pino:
         specifier: 9.5.0
         version: 9.5.0
@@ -806,9 +809,6 @@ importers:
       eslint:
         specifier: 9.13.0
         version: 9.13.0(jiti@2.3.3)
-      graphql-tag:
-        specifier: 2.12.6
-        version: 2.12.6(graphql@16.9.0)
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.7.7)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.7.7)(typescript@5.6.3))
@@ -848,6 +848,73 @@ importers:
       webpack-dev-server:
         specifier: 5.1.0
         version: 5.1.0(webpack-cli@5.1.4)(webpack@5.95.0)
+
+  languages/typescript/backend/graphql/express:
+    dependencies:
+      express:
+        specifier: 4.21.1
+        version: 4.21.1
+      graphql:
+        specifier: 16.9.0
+        version: 16.9.0
+      graphql-http:
+        specifier: 1.22.1
+        version: 1.22.1(graphql@16.9.0)
+      ruru:
+        specifier: 2.0.0-beta.13
+        version: 2.0.0-beta.13(graphile-config@0.0.1-beta.9)(graphql@16.9.0)
+    devDependencies:
+      '@eslint/js':
+        specifier: 9.13.0
+        version: 9.13.0
+      '@types/jest':
+        specifier: 29.5.13
+        version: 29.5.13
+      '@types/node':
+        specifier: 22.7.7
+        version: 22.7.7
+      '@webpack-cli/generators':
+        specifier: 3.0.7
+        version: 3.0.7(encoding@0.1.13)(mem-fs@2.3.0)(prettier@3.3.3)(webpack-cli@5.1.4)(webpack@5.95.0)
+      eslint:
+        specifier: 9.13.0
+        version: 9.13.0(jiti@2.3.3)
+      jest:
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@22.7.7)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.7.7)(typescript@5.6.3))
+      kill-port:
+        specifier: 2.0.1
+        version: 2.0.1
+      nodemon:
+        specifier: 3.1.7
+        version: 3.1.7
+      prettier:
+        specifier: 3.3.3
+        version: 3.3.3
+      rimraf:
+        specifier: 6.0.1
+        version: 6.0.1
+      ts-jest:
+        specifier: 29.2.5
+        version: 29.2.5(@babel/core@7.25.8)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.25.8))(esbuild@0.17.19)(jest@29.7.0(@types/node@22.7.7)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.7.7)(typescript@5.6.3)))(typescript@5.6.3)
+      ts-loader:
+        specifier: 9.5.1
+        version: 9.5.1(typescript@5.6.3)(webpack@5.95.0)
+      ts-node:
+        specifier: 10.9.2
+        version: 10.9.2(@types/node@22.7.7)(typescript@5.6.3)
+      typescript:
+        specifier: 5.6.3
+        version: 5.6.3
+      typescript-eslint:
+        specifier: 8.10.0
+        version: 8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3)
+      webpack:
+        specifier: 5.95.0
+        version: 5.95.0(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: 5.1.4
+        version: 5.1.4(@webpack-cli/generators@3.0.7)(webpack@5.95.0)
 
   languages/typescript/backend/graphql/nest:
     dependencies:
@@ -941,7 +1008,7 @@ importers:
         version: 29.2.5(@babel/core@7.25.8)(@jest/transform@29.7.0)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.25.8))(esbuild@0.17.19)(jest@29.7.0(@types/node@22.7.7)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.7.7)(typescript@5.6.3)))(typescript@5.6.3)
       ts-loader:
         specifier: 9.5.1
-        version: 9.5.1(typescript@5.6.3)(webpack@5.95.0)
+        version: 9.5.1(typescript@5.6.3)(webpack@5.94.0)
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@22.7.7)(typescript@5.6.3)
@@ -4474,7 +4541,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.18.30':
     resolution: {integrity: sha512-V90TUJh9Ly8stYo8nwqIqNWCsYjE28GlVFWEhAFCUOp99foiQr8HSTpiiX5GIrprcPoWmlGoY+J5fQA29R4lFg==}
@@ -7913,6 +7980,9 @@ packages:
   '@types/http-proxy@1.17.15':
     resolution: {integrity: sha512-25g5atgiVNTIv0LBDTg1H74Hvayx0ajtJPLLcYE3whFv75J0pWNtOBzaXJQgDTmrX1bx5U9YC2w/n65BN1HwRQ==}
 
+  '@types/interpret@1.1.3':
+    resolution: {integrity: sha512-uBaBhj/BhilG58r64mtDb/BEdH51HIQLgP5bmWzc5qCtFMja8dCk/IOJmk36j0lbi9QHwI6sbtUNGuqXdKCAtQ==}
+
   '@types/istanbul-lib-coverage@2.0.6':
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
 
@@ -8002,6 +8072,9 @@ packages:
 
   '@types/node@18.19.57':
     resolution: {integrity: sha512-I2ioBd/IPrYDMv9UNR5NlPElOZ68QB7yY5V2EsLtSrTO0LM0PnCEFF9biLWHf5k+sIy4ohueCV9t4gk1AEdlVA==}
+
+  '@types/node@20.16.13':
+    resolution: {integrity: sha512-GjQ7im10B0labo8ZGXDGROUl9k0BNyDgzfGpb4g/cl+4yYDWVKcozANF4FGr4/p0O/rAkQClM6Wiwkije++1Tg==}
 
   '@types/node@22.7.7':
     resolution: {integrity: sha512-SRxCrrg9CL/y54aiMCG3edPKdprgMVGDXjA3gB8UmmBW5TcXzRUYAh8EWzTnSJFAd1rgImPELza+A3bJ+qxz8Q==}
@@ -13009,6 +13082,10 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
+
+  graphile-config@0.0.1-beta.9:
+    resolution: {integrity: sha512-7vNxXZ24OAgXxDKXYi9JtgWPMuNbBL3057Yf32Ux+/rVP4+EePgySCc+NNnn0tORi8qwqVreN8bdWqGIcSwNXg==}
+    engines: {node: '>=16'}
 
   graphql-compose@9.0.11:
     resolution: {integrity: sha512-p3+8p2lo7wel24IQwGIhwVGOnCJ3hfBno+x8CE7G4ZLaC4u5G2g6h1Mm8O5iJPTD0C+Q/WxxDqSL2qs8VOf5mg==}
@@ -18511,6 +18588,14 @@ packages:
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
+
+  ruru@2.0.0-beta.13:
+    resolution: {integrity: sha512-TFloGwn4YGsBFuFgafYaDfW3oTtT9kdc4DrbE4p1GTimlFvhmyptTHbsqSBAJhAzZKLp+eBtmfb32rjoBoj19Q==}
+    engines: {node: '>=16'}
+    hasBin: true
+    peerDependencies:
+      graphile-config: ^0.0.1-beta.9
+      graphql: ^16.1.0-experimental-stream-defer.6
 
   rw@1.3.3:
     resolution: {integrity: sha512-PdhdWy89SiZogBLaw42zdeqtRJ//zFd2PgQavcICDUgJT5oW10QCRKbJ6bg4r0/UY2M6BWd5tkxuGFRvCkgfHQ==}
@@ -26245,7 +26330,7 @@ snapshots:
     dependencies:
       '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.0
 
   '@graphql-tools/merge@9.0.8(graphql@16.9.0)':
     dependencies:
@@ -26261,7 +26346,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.9.0)':
     dependencies:
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.0
 
   '@graphql-tools/prisma-loader@8.0.9(@types/node@22.7.7)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
@@ -26304,7 +26389,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.9.0)
       '@graphql-tools/utils': 10.5.5(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -26314,7 +26399,7 @@ snapshots:
       '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
       '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.0
       value-or-promise: 1.0.12
 
   '@graphql-tools/schema@10.0.7(graphql@16.9.0)':
@@ -26361,7 +26446,7 @@ snapshots:
       cross-inspect: 1.0.0
       dset: 3.1.4
       graphql: 16.9.0
-      tslib: 2.6.3
+      tslib: 2.8.0
 
   '@graphql-tools/utils@10.5.5(graphql@16.9.0)':
     dependencies:
@@ -26374,7 +26459,7 @@ snapshots:
   '@graphql-tools/utils@8.13.1(graphql@16.9.0)':
     dependencies:
       graphql: 16.9.0
-      tslib: 2.4.1
+      tslib: 2.8.0
 
   '@graphql-tools/utils@9.2.1(graphql@16.9.0)':
     dependencies:
@@ -30547,6 +30632,10 @@ snapshots:
     dependencies:
       '@types/node': 22.7.7
 
+  '@types/interpret@1.1.3':
+    dependencies:
+      '@types/node': 22.7.7
+
   '@types/istanbul-lib-coverage@2.0.6': {}
 
   '@types/istanbul-lib-report@3.0.3':
@@ -30638,6 +30727,10 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/node@20.16.13':
+    dependencies:
+      undici-types: 6.19.8
+
   '@types/node@22.7.7':
     dependencies:
       undici-types: 6.19.8
@@ -30721,7 +30814,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 22.7.7
 
   '@types/semver@7.5.8': {}
 
@@ -33878,7 +33971,7 @@ snapshots:
 
   cross-inspect@1.0.0:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.0
 
   cross-inspect@1.0.1:
     dependencies:
@@ -35458,7 +35551,7 @@ snapshots:
       '@typescript-eslint/parser': 8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3)
       eslint: 9.13.0(jiti@2.3.3)
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint@9.13.0(jiti@2.3.3)))(eslint@9.13.0(jiti@2.3.3))
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.13.0(jiti@2.3.3))
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-typescript@3.6.3)(eslint@9.13.0(jiti@2.3.3))
       eslint-plugin-jsx-a11y: 6.10.1(eslint@9.13.0(jiti@2.3.3))
       eslint-plugin-react: 7.37.1(eslint@9.13.0(jiti@2.3.3))
@@ -35497,7 +35590,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint@9.13.0(jiti@2.3.3)))(eslint@9.13.0(jiti@2.3.3)):
+  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.13.0(jiti@2.3.3)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.3.7(supports-color@8.1.1)
@@ -35533,7 +35626,7 @@ snapshots:
       '@typescript-eslint/parser': 8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3)
       eslint: 9.13.0(jiti@2.3.3)
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint@9.13.0(jiti@2.3.3)))(eslint@9.13.0(jiti@2.3.3))
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.10.0(eslint@9.13.0(jiti@2.3.3))(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.13.0(jiti@2.3.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -37789,6 +37882,20 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   graphemer@1.4.0: {}
+
+  graphile-config@0.0.1-beta.9:
+    dependencies:
+      '@types/interpret': 1.1.3
+      '@types/node': 20.16.13
+      '@types/semver': 7.5.8
+      chalk: 4.1.2
+      debug: 4.3.7(supports-color@8.1.1)
+      interpret: 3.1.1
+      semver: 7.6.3
+      tslib: 2.8.0
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - supports-color
 
   graphql-compose@9.0.11(graphql@16.9.0):
     dependencies:
@@ -44896,6 +45003,17 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
+  ruru@2.0.0-beta.13(graphile-config@0.0.1-beta.9)(graphql@16.9.0):
+    dependencies:
+      '@emotion/is-prop-valid': 1.3.1
+      graphile-config: 0.0.1-beta.9
+      graphql: 16.9.0
+      http-proxy: 1.18.1(debug@4.3.7)
+      tslib: 2.8.0
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - debug
+
   rw@1.3.3: {}
 
   rx@4.1.0: {}
@@ -46625,6 +46743,16 @@ snapshots:
       '@jest/types': 29.6.3
       babel-jest: 29.7.0(@babel/core@7.25.8)
       esbuild: 0.17.19
+
+  ts-loader@9.5.1(typescript@5.6.3)(webpack@5.94.0):
+    dependencies:
+      chalk: 4.1.2
+      enhanced-resolve: 5.17.1
+      micromatch: 4.0.8
+      semver: 7.6.3
+      source-map: 0.7.4
+      typescript: 5.6.3
+      webpack: 5.94.0
 
   ts-loader@9.5.1(typescript@5.6.3)(webpack@5.95.0):
     dependencies:
