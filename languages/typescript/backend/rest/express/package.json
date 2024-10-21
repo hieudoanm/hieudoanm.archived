@@ -1,7 +1,7 @@
 {
-  "name": "@ts/graphql-express",
+  "name": "@ts/rest-express",
   "version": "0.0.1",
-  "description": "TypeScript - GraphQL - Express.js",
+  "description": "TypeScript - REST - Express.js",
   "main": "dist/server.js",
   "repository": "git@github.com:hieudoanm/hieudoanm.git",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
@@ -17,10 +17,7 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
-    "express": "4.21.1",
-    "graphql": "16.9.0",
-    "graphql-http": "1.22.1",
-    "ruru": "2.0.0-beta.13"
+    "express": "4.21.1"
   },
   "devDependencies": {
     "@eslint/js": "9.13.0",
@@ -42,7 +39,6 @@
     "webpack-cli": "5.1.4"
   },
   "keywords": [
-    "express",
-    "graphql"
+    "express"
   ]
 }
