@@ -8,8 +8,6 @@ import { etag } from 'hono/etag';
 import { logger } from 'hono/logger';
 import { BlankInput } from 'hono/types';
 
-export const config = { runtime: 'edge' };
-
 const basePath: string = '/api';
 
 const app = new Hono().basePath(basePath);
@@ -30,5 +28,7 @@ app.get('/:cca3', async (context: Context) => {
   const country = await getCountry(cca3);
   return context.json({ country });
 });
+
+export const config = { runtime: 'edge' };
 
 export default app;
