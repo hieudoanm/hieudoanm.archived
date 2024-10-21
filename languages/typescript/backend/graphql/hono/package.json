@@ -1,5 +1,5 @@
 {
-  "name": "@ts/hono-graphql",
+  "name": "@ts/graphql-hono",
   "version": "0.0.1",
   "description": "TypeScript - Hono - GraphQL",
   "main": "index.js",

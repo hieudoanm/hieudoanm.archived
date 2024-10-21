@@ -1,5 +1,5 @@
 {
-  "name": "@ts/hono-rest",
+  "name": "@ts/rest-hono",
   "version": "0.0.1",
   "description": "TypeScript - Hono - Rest",
   "main": "index.js",

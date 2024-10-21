@@ -1,5 +1,5 @@
 {
-  "name": "@ts/http",
+  "name": "@ts/rest-http",
   "version": "0.0.1",
   "description": "TypeScript - HTTP",
   "main": "index.js",

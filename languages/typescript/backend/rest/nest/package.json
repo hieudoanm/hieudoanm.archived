@@ -1,5 +1,5 @@
 {
-  "name": "@ts/nest",
+  "name": "@ts/rest-nest",
   "version": "0.0.1",
   "description": "TypeScript - Nest.js",
   "main": "dist/main",
