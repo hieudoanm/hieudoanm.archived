@@ -935,10 +935,10 @@ importers:
     dependencies:
       '@hono/graphql-server':
         specifier: 0.5.1
-        version: 0.5.1(hono@4.6.5)
+        version: 0.5.1(hono@4.6.6)
       hono:
-        specifier: 4.6.5
-        version: 4.6.5
+        specifier: 4.6.6
+        version: 4.6.6
     devDependencies:
       '@dotenvx/dotenvx':
         specifier: 1.20.0
@@ -1159,8 +1159,8 @@ importers:
         specifier: 5.21.1
         version: 5.21.1(prisma@5.21.1)
       hono:
-        specifier: 4.6.5
-        version: 4.6.5
+        specifier: 4.6.6
+        version: 4.6.6
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20241018.0
@@ -13472,6 +13472,10 @@ packages:
 
   hono@4.6.5:
     resolution: {integrity: sha512-qsmN3V5fgtwdKARGLgwwHvcdLKursMd+YOt69eGpl1dUCJb8mCd7hZfyZnBYjxCegBG7qkJRQRUy2oO25yHcyQ==}
+    engines: {node: '>=16.9.0'}
+
+  hono@4.6.6:
+    resolution: {integrity: sha512-euUj5qwvtkG+p38GFs0LYacwaoS2hYRAGn9ysAggiwT2QBcPnT1XYUCW3hatW4C1KzAXTYuQ08BlVDJtAGuhlg==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -26647,10 +26651,10 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hono/graphql-server@0.5.1(hono@4.6.5)':
+  '@hono/graphql-server@0.5.1(hono@4.6.6)':
     dependencies:
       graphql: 16.9.0
-      hono: 4.6.5
+      hono: 4.6.6
 
   '@hono/node-server@1.13.2(hono@4.6.5)':
     dependencies:
@@ -38394,6 +38398,8 @@ snapshots:
       react-is: 16.13.1
 
   hono@4.6.5: {}
+
+  hono@4.6.6: {}
 
   hookable@5.5.3: {}
 
