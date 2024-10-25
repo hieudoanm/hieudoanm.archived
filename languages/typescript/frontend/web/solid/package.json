@@ -35,7 +35,7 @@
     "@solidjs/testing-library": "0.8.10",
     "@testing-library/jest-dom": "6.6.2",
     "@trpc/client": "10.45.2",
-    "@types/node": "22.8.0",
+    "@types/node": "22.8.1",
     "autoprefixer": "10.4.20",
     "daisyui": "4.12.13",
     "eslint": "9.13.0",
