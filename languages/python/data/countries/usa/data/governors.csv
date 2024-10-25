@@ -1,0 +1,281 @@
+state,no,name,party
+Minnesota,1,Henry Hastings Sibley,Democratic
+Minnesota,2,Alexander Ramsey,Republican
+Minnesota,3,Henry Adoniram Swift,Republican
+Minnesota,4,Stephen Miller,Republican
+Minnesota,5,William Rainey Marshall,Republican
+Minnesota,6,Horace Austin,Republican
+Minnesota,7,Cushman Kellogg Davis,Republican
+Minnesota,8,John S. Pillsbury,Republican
+Minnesota,9,Lucius Frederick Hubbard,Republican
+Minnesota,10,Andrew Ryan McGill,Republican
+Minnesota,11,William Rush Merriam,Republican
+Minnesota,12,Knute Nelson,Republican
+Minnesota,13,David Marston Clough,Republican
+Minnesota,14,John Lind,Democratic
+Minnesota,15,Samuel Rinnah Van Sant,Republican
+Minnesota,16,John Albert Johnson,Democratic
+Minnesota,17,Adolph Olson Eberhart,Republican
+Minnesota,18,Winfield Scott Hammond,Democratic
+Minnesota,19,Joseph A. A. Burnquist,Republican
+Minnesota,20,J. A. O. Preus,Republican
+Minnesota,21,Theodore Christianson,Republican
+Minnesota,22,Floyd B. Olson,Farmer-Labor
+Minnesota,23,Hjalmar Petersen,Farmer-Labor
+Minnesota,24,Elmer Austin Benson,Farmer-Labor
+Minnesota,25,Harold Stassen,Republican
+Minnesota,26,Edward John Thye,Republican
+Minnesota,27,Luther Youngdahl,Republican
+Minnesota,28,C. Elmer Anderson,Republican
+Minnesota,29,Orville Freeman,Democratic
+Minnesota,30,Elmer L. Andersen,Republican
+Minnesota,31,Karl Rolvaag,Democratic
+Minnesota,32,Harold LeVander,Republican
+Minnesota,33,Wendell R. Anderson,Democratic
+Minnesota,34,Rudy Perpich,Democratic
+Minnesota,35,Al Quie,Republican
+Minnesota,36,Rudy Perpich,Democratic
+Minnesota,37,Arne Carlson,Republican
+Minnesota,38,Jesse Ventura,Reform
+Minnesota,39,Tim Pawlenty,Republican
+Minnesota,40,Mark Dayton,Democratic
+Minnesota,41,Tim Walz,Democratic
+Hawaii,1,William F. Quinn,Republican
+Hawaii,2,John A. Burns,Democratic
+Hawaii,3,George Ariyoshi,Democratic
+Hawaii,4,John D. Waiheʻe III,Democratic
+Hawaii,5,Ben Cayetano,Democratic
+Hawaii,6,Linda Lingle,Republican
+Hawaii,7,Neil Abercrombie,Democratic
+Hawaii,8,David Ige,Democratic
+Hawaii,9,Josh Green,Democratic
+Alaska,1,William A. Egan,Democratic
+Alaska,2,Wally Hickel,Republican
+Alaska,3,Keith Harvey Miller,Republican
+Alaska,1,William A. Egan,Democratic
+Alaska,4,Jay Hammond,Republican
+Alaska,5,Bill Sheffield,Democratic
+Alaska,6,Steve Cowper,Democratic
+Alaska,2,Wally Hickel,Independence
+Alaska,7,Tony Knowles,Republican
+Alaska,8,Frank Murkowski,Republican
+Alaska,9,Sarah Palin,Republican
+Alaska,10,Sean Parnell,Republican
+Alaska,11,Bill Walker,Independence
+Alaska,12,Mike Dunleavy,Republican
+California,1,Peter Hardeman Burnett,
+California,2,John McDougal,
+California,3,John Bigler,
+California,4,J. Neely Johnson,
+California,5,John B. Weller,
+California,6,Milton Latham,
+California,7,John G. Downey,
+California,8,Leland Stanford,
+California,9,Frederick Low,
+California,10,Henry Huntly Haight,
+California,11,Newton Booth,
+California,12,Romualdo Pacheco,
+California,13,William Irwin,
+California,14,George C. Perkins,
+California,15,George Stoneman,
+California,16,Washington Bartlett,
+California,17,Robert Waterman,
+California,18,Henry Markham,
+California,19,James Budd,
+California,20,Henry T. Gage,
+California,21,George Pardee,
+California,22,James Gillett,
+California,23,Hiram Johnson,
+California,24,William Stephens,
+California,25,Friend Richardson,
+California,26,C. C. Young,
+California,27,James Rolph,
+California,28,Frank Merriam,
+California,29,Culbert Olson,
+California,30,Earl Warren,
+California,31,Goodwin Knight,
+California,32,Pat Brown,
+California,33,Ronald Reagan,
+California,34,Jerry Brown,
+California,35,George Deukmejian,
+California,36,Pete Wilson,
+California,37,Gray Davis,
+California,38,Arnold Schwarzenegger,
+California,39,Jerry Brown,
+California,40,Gavin Newsom,
+Michigan,1,Stevens T. Mason,
+Michigan,2,William Woodbridge,
+Michigan,3,James Wright Gordon,
+Michigan,4,John S. Barry,
+Michigan,5,Alpheus Felch,
+Michigan,6,William L. Greenly,
+Michigan,7,Epaphroditus Ransom,
+Michigan,8,John S. Barry,
+Michigan,9,Robert McClelland,
+Michigan,10,Andrew Parsons,
+Michigan,11,Kinsley S. Bingham,
+Michigan,12,Moses Wisner,
+Michigan,13,Austin Blair,
+Michigan,14,Henry H. Crapo,
+Michigan,15,Henry P. Baldwin,
+Michigan,16,John J. Bagley,
+Michigan,17,Charles Croswell,
+Michigan,18,David Jerome,
+Michigan,19,Josiah Begole,
+Michigan,20,Russell A. Alger,
+Michigan,21,Cyrus G. Luce,
+Michigan,22,Edwin B. Winans,
+Michigan,23,John Treadway Rich,
+Michigan,24,Hazen S. Pingree,
+Michigan,25,Aaron T. Bliss,
+Michigan,26,Fred M. Warner,
+Michigan,27,Chase Osborn,
+Michigan,28,Woodbridge N. Ferris,
+Michigan,29,Albert Sleeper,
+Michigan,30,Alex J. Groesbeck,
+Michigan,31,Fred W. Green,
+Michigan,32,Wilber M. Brucker,
+Michigan,33,William Comstock,
+Michigan,34,Frank Fitzgerald,
+Michigan,35,Frank Murphy,
+Michigan,36,Frank Fitzgerald,
+Michigan,37,Luren Dickinson,
+Michigan,38,Murray Van Wagoner,
+Michigan,39,Harry Kelly,
+Michigan,40,Kim Sigler,
+Michigan,41,G. Mennen Williams,
+Michigan,42,John Swainson,
+Michigan,43,George W. Romney,
+Michigan,44,William Milliken,
+Michigan,45,James Blanchard,
+Michigan,46,John Engler,
+Michigan,47,Jennifer Granholm,
+Michigan,48,Rick Snyder,
+Michigan,49,Gretchen Whitmer,
+Arizona,1,George W. P. Hunt,
+Arizona,2,Thomas Edward Campbell,
+Arizona,1,George W. P. Hunt,
+Arizona,3,John Calhoun Phillips,
+Arizona,1,George W. P. Hunt,
+Arizona,4,Benjamin Baker Moeur,
+Arizona,5,Rawghlie Clement Stanford,
+Arizona,6,Robert Taylor Jones,
+Arizona,7,Sidney Preston Osborn,
+Arizona,8,Dan Edward Garvey,
+Arizona,9,John Howard Pyle,
+Arizona,10,Ernest McFarland,
+Arizona,11,Paul Fannin,
+Arizona,12,Samuel Pearson Goddard Jr.,
+Arizona,13,Jack Williams,
+Arizona,14,Raúl Héctor Castro,
+Arizona,15,Wesley Bolin,
+Arizona,16,Bruce Babbitt,
+Arizona,17,Evan Mecham,
+Arizona,18,Rose Mofford,
+Arizona,19,Fife Symington,
+Arizona,20,Jane Dee Hull,
+Arizona,21,Janet Napolitano,
+Arizona,22,Jan Brewer,
+Arizona,23,Doug Ducey,
+Arizona,24,Katie Hobbs,
+Utah,1,Heber Manning Wells,
+Utah,2,John Christopher Cutler,
+Utah,3,William Spry,
+Utah,4,Simon Bamberger,
+Utah,5,Charles R. Mabey,
+Utah,6,George Dern,
+Utah,7,Henry H. Blood,
+Utah,8,Herbert B. Maw,
+Utah,9,J. Bracken Lee,
+Utah,10,George Dewey Clyde,
+Utah,11,Cal Rampton,
+Utah,12,Scott M. Matheson,
+Utah,13,Norman H. Bangerter,
+Utah,14,Mike Leavitt,
+Utah,15,Olene Walker,
+Utah,16,Jon Huntsman Jr.,
+Utah,17,Gary Herbert,
+Utah,18,Spencer Cox,
+Washington,1,Elisha P. Ferry,
+Washington,2,John McGraw,
+Washington,3,John Rankin Rogers,
+Washington,4,Henry McBride,
+Washington,5,Albert E. Mead,
+Washington,6,Samuel G. Cosgrove,
+Washington,7,Marion E. Hay,
+Washington,8,Ernest Lister,
+Washington,9,Louis F. Hart,
+Washington,10,Roland H. Hartley,
+Washington,11,Clarence D. Martin,
+Washington,12,Arthur B. Langlie,
+Washington,13,Monrad Wallgren,
+Washington,14,Arthur B. Langlie,
+Washington,15,Albert Rosellini,
+Washington,16,Daniel J. Evans,
+Washington,17,Dixy Lee Ray,
+Washington,18,John Spellman,
+Washington,19,Booth Gardner,
+Washington,20,Mike Lowry,
+Washington,21,Gary Locke,
+Washington,22,Christine Gregoire,
+Washington,23,Jay Inslee,
+New Mexico,1,William C. McDonald,
+New Mexico,2,Ezequiel Cabeza De Baca,
+New Mexico,3,Washington Ellsworth Lindsey,
+New Mexico,4,Octaviano Ambrosio Larrazolo,
+New Mexico,5,Merritt C. Mechem,
+New Mexico,6,James F. Hinkle,
+New Mexico,7,Arthur T. Hannett,
+New Mexico,8,Richard C. Dillon,
+New Mexico,9,Arthur Seligman,
+New Mexico,10,Andrew W. Hockenhull,
+New Mexico,11,Clyde Tingley,
+New Mexico,12,John E. Miles,
+New Mexico,13,John J. Dempsey,
+New Mexico,14,Thomas J. Mabry,
+New Mexico,15,Edwin L. Mechem,
+New Mexico,16,John F. Simms,
+New Mexico,17,Edwin L. Mechem,
+New Mexico,18,John Burroughs,
+New Mexico,19,Edwin L. Mechem,
+New Mexico,20,Tom Bolack,
+New Mexico,21,Jack M. Campbell,
+New Mexico,22,David Cargo,
+New Mexico,23,Bruce King,
+New Mexico,24,Jerry Apodaca,
+New Mexico,25,Bruce King,
+New Mexico,26,Toney Anaya,
+New Mexico,27,Garrey Carruthers,
+New Mexico,28,Bruce King,
+New Mexico,29,Gary Johnson,
+New Mexico,30,Bill Richardson,
+New Mexico,31,Susana Martinez,
+New Mexico,32,Michelle Lujan Grisham,
+Oklahoma,1,Charles N. Haskell,
+Oklahoma,2,Lee Cruce,
+Oklahoma,3,Robert L. Williams,
+Oklahoma,4,James B. A. Robertson,
+Oklahoma,5,Jack C. Walton,
+Oklahoma,6,Martin E. Trapp,
+Oklahoma,7,Henry S. Johnston,
+Oklahoma,8,William J. Holloway,
+Oklahoma,9,William H. Murray,
+Oklahoma,10,E. W. Marland,
+Oklahoma,11,Leon C. Phillips,
+Oklahoma,12,Robert S. Kerr,
+Oklahoma,13,Roy J. Turner,
+Oklahoma,14,Johnston Murray,
+Oklahoma,15,Raymond D. Gary,
+Oklahoma,16,J. Howard Edmondson,
+Oklahoma,17,George Nigh,
+Oklahoma,18,Henry Bellmon,
+Oklahoma,19,Dewey F. Bartlett,
+Oklahoma,20,David Hall,
+Oklahoma,21,David Boren,
+Oklahoma,22,George Nigh,
+Oklahoma,23,Henry Bellmon,
+Oklahoma,24,David Walters,
+Oklahoma,25,Frank Keating,
+Oklahoma,26,Brad Henry,
+Oklahoma,27,Mary Fallin,
+Oklahoma,28,Kevin Stitt,
