@@ -1,4 +1,0 @@
-packages:
-  - "languages/markdown/**"
-  - "languages/python"
-  - "languages/typescript/**"

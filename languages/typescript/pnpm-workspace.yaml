@@ -1,0 +1,6 @@
+packages:
+  - "addons/**"
+  - "apps/**"
+  - "archive/**"
+  - "backend/**"
+  - "frontend/**"
