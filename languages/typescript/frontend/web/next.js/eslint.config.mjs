@@ -23,7 +23,10 @@ const config = [
   ...ts.configs.recommended,
   prettierConfigRecommended,
   // Add more flat configs here
-  { ignores: ['.next/*'] },
+  {
+    ignores: ['.next/*'],
+    rules: { '@typescript-eslint/no-explicit-any': 'warn' },
+  },
 ];
 
 export default config;

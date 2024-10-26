@@ -17,14 +17,7 @@ const nextConfig = {
   reactStrictMode: true,
   compiler: { removeConsole: NODE_ENV !== 'development' },
   experimental: {
-    swcPlugins: [
-      [
-        'next-superjson-plugin',
-        {
-          excluded: [],
-        },
-      ],
-    ],
+    swcPlugins: [['next-superjson-plugin', { excluded: [] }]],
   },
 };
 
