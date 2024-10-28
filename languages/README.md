@@ -5,7 +5,7 @@
 - [Languages](#languages)
   - [Table of Content](#table-of-content)
   - [ABC](#abc)
-    - [A for AWS and Azure](#a-for-aws-and-azure)
+    - [A for Assembly](#a-for-assembly)
     - [B for Bash](#b-for-bash)
     - [C for CPP](#c-for-cpp)
   - [DEF](#def)
@@ -17,7 +17,7 @@
     - [H](#h)
     - [I](#i)
   - [JKL](#jkl)
-    - [J for Java](#j-for-java)
+    - [J for JavaScript](#j-for-javascript)
     - [K for Kotlin](#k-for-kotlin)
     - [L for Large Language Model](#l-for-large-language-model)
   - [MNO](#mno)
@@ -30,9 +30,9 @@
     - [R for Rust](#r-for-rust)
     - [S for SQL](#s-for-sql)
   - [TUV](#tuv)
-    - [T for TypeScript](#t-for-typescript)
+    - [T for Terraform](#t-for-terraform)
     - [U](#u)
-    - [V for Visual Studio Code](#v-for-visual-studio-code)
+    - [V](#v)
   - [WXYZ](#wxyz)
     - [W](#w)
     - [X](#x)
@@ -41,7 +41,7 @@
 
 ## ABC
 
-### A for [AWS](https://aws.amazon.com/) and [Azure](https://azure.microsoft.com/en-us)
+### A for Assembly
 
 ### B for Bash
 
@@ -65,7 +65,7 @@
 
 ## JKL
 
-### J for [Java](https://www.java.com/)
+### J for [JavaScript](https://www.javascript.com/)
 
 ### K for [Kotlin](https://kotlinlang.org/)
 
@@ -91,11 +91,11 @@
 
 ## TUV
 
-### T for [TypeScript](https://www.typescriptlang.org/)
+### T for [Terraform](https://www.terraform.io/)
 
 ### U
 
-### V for [Visual Studio Code](https://code.visualstudio.com/)
+### V
 
 ## WXYZ
 
