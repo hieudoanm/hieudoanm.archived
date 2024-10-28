@@ -10,7 +10,7 @@ on:
       - "renovate/**"
       - "dependabot/**"
     paths:
-      - "languages/typescript/**"
+      - "languages/javascript/**"
 
 jobs:
   ci:
@@ -25,16 +25,16 @@ jobs:
           node-version: "20.18.0"
       - name: Install pnpm
         run: npm install -g pnpm
-        working-directory: "./languages/typescript"
+        working-directory: "./languages/javascript"
       - name: Install Dependencies
         run: pnpm install
-        working-directory: "./languages/typescript"
+        working-directory: "./languages/javascript"
       - name: Linting
         run: pnpm run lint
-        working-directory: "./languages/typescript"
+        working-directory: "./languages/javascript"
       - name: Unit Test
         run: pnpm run test --concurrency 1
-        working-directory: "./languages/typescript"
+        working-directory: "./languages/javascript"
       - name: Build Production
         run: pnpm run build --concurrency 1
-        working-directory: "./languages/typescript"
+        working-directory: "./languages/javascript"
