@@ -16,9 +16,6 @@ const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
   compiler: { removeConsole: NODE_ENV !== 'development' },
-  experimental: {
-    swcPlugins: [['next-superjson-plugin', { excluded: [] }]],
-  },
 };
 
 const pwaConfig = withPWA(nextConfig);

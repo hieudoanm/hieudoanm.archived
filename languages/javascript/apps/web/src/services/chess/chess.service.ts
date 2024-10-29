@@ -884,21 +884,21 @@ export const getInsights = async ({
     // Games by Years
     const gamesByYears: GamesByYear[] = gamesByYearsList.map(
       ({ count: games = 0, column = 0 }) => ({
-        games,
+        games: parseInt(games.toString(), 10),
         period: column,
       })
     );
     // Games by Time of Day
     const gamesByTimeOfDays: GamesByTimeOfDay[] = gamesByTimeOfDaysList.map(
       ({ count: games = 0, column = 0 }) => ({
-        games,
+        games: parseInt(games.toString(), 10),
         timeOfDay: [...TIME_OF_DAYS][`${column}`],
       })
     );
     // Games by Day of Week
     const gamesByDaysOfWeek: GamesByDayOfWeek[] = gamesByDaysOfWeekList.map(
       ({ count: games = 0, column = 0 }) => ({
-        games,
+        games: parseInt(games.toString(), 10),
         dayOfWeek: [...DAYS_OF_WEEK][`${column}`],
       })
     );
@@ -927,7 +927,12 @@ export const getInsights = async ({
           ({ column: lossColumn }) =>
             lossColumn.toString() === column.toString()
         ) ?? { count: 0 };
-        return { timeOfDay, win, draw, loss };
+        return {
+          timeOfDay,
+          win: parseInt(win.toString(), 10),
+          draw: parseInt(draw.toString(), 10),
+          loss: parseInt(loss.toString(), 10),
+        };
       });
     // Results by Day of Week
     const resultsByDaysOfWeek: ResultsByDayOfWeek[] =
@@ -943,7 +948,12 @@ export const getInsights = async ({
           ({ column: lossColumn }) =>
             lossColumn.toString() === column.toString()
         ) ?? { count: 0 };
-        return { dayOfWeek, win, draw, loss };
+        return {
+          dayOfWeek,
+          win: parseInt(win.toString(), 10),
+          draw: parseInt(draw.toString(), 10),
+          loss: parseInt(loss.toString(), 10),
+        };
       });
     // Results by Opponent Rating
     const ratings: Set<number> = new Set(
@@ -966,7 +976,12 @@ export const getInsights = async ({
           ({ column: lossRating }) =>
             lossRating.toString() === rating.toString()
         ) ?? { count: 0 };
-        return { rating: rating * 100, win, draw, loss };
+        return {
+          rating: rating * 100,
+          win: parseInt(win.toString(), 10),
+          draw: parseInt(draw.toString(), 10),
+          loss: parseInt(loss.toString(), 10),
+        };
       })
       .sort((a, b) => (a.rating > b.rating ? 1 : -1));
     // Results by
@@ -991,22 +1006,27 @@ export const getInsights = async ({
           ({ column: lossPhrase }) =>
             lossPhrase.toString() === endPhrase.toString()
         ) ?? { count: 0 };
-        return { phrase: endPhrase.toString() as Phrase, win, draw, loss };
+        return {
+          phrase: endPhrase.toString() as Phrase,
+          win: parseInt(win.toString(), 10),
+          draw: parseInt(draw.toString(), 10),
+          loss: parseInt(loss.toString(), 10),
+        };
       }
     );
     // Results
     const results = {
       win: winResults.map(({ column, count }) => ({
         result: column.toString(),
-        count,
+        count: parseInt(count.toString(), 10),
       })),
       draw: drawResults.map(({ column, count }) => ({
         result: column.toString(),
-        count,
+        count: parseInt(count.toString(), 10),
       })),
       loss: lossResults.map(({ column, count }) => ({
         result: column.toString(),
-        count,
+        count: parseInt(count.toString(), 10),
       })),
       timeOfDays: resultsByTimeOfDays,
       daysOfWeek: resultsByDaysOfWeek,
@@ -1023,72 +1043,127 @@ export const getInsights = async ({
       accuracy,
       results,
       games,
-      openings: { white: whiteOpenings, black: blackOpenings },
+      openings: {
+        white: whiteOpenings.map(
+          ({
+            opening = '',
+            opening_name = '',
+            pgn = '',
+            total,
+            win,
+            draw,
+            loss,
+          }: OpeningCount) => ({
+            opening,
+            opening_name,
+            pgn,
+            total: parseInt(total.toString(), 10),
+            win: parseInt(win.toString(), 10),
+            draw: parseInt(draw.toString(), 10),
+            loss: parseInt(loss.toString(), 10),
+          })
+        ),
+        black: blackOpenings.map(
+          ({
+            opening = '',
+            opening_name = '',
+            pgn = '',
+            total,
+            win,
+            draw,
+            loss,
+          }: OpeningCount) => ({
+            opening,
+            opening_name,
+            pgn,
+            total: parseInt(total.toString(), 10),
+            win: parseInt(win.toString(), 10),
+            draw: parseInt(draw.toString(), 10),
+            loss: parseInt(loss.toString(), 10),
+          })
+        ),
+      },
       moves: {
         pieces: {
-          king,
-          queen,
-          rook,
-          bishop,
-          knight,
-          pawn,
+          king: parseInt(king.toString(), 10),
+          queen: parseInt(queen.toString(), 10),
+          rook: parseInt(rook.toString(), 10),
+          bishop: parseInt(bishop.toString(), 10),
+          knight: parseInt(knight.toString(), 10),
+          pawn: parseInt(pawn.toString(), 10),
         },
         castling: {
           short: {
             short: {
-              win: short_short_win,
-              draw: short_short_draw,
-              loss: short_short_loss,
+              win: parseInt(short_short_win.toString(), 10),
+              draw: parseInt(short_short_draw.toString(), 10),
+              loss: parseInt(short_short_loss.toString(), 10),
             },
             long: {
-              win: short_long_win,
-              draw: short_long_draw,
-              loss: short_long_loss,
+              win: parseInt(short_long_win.toString(), 10),
+              draw: parseInt(short_long_draw.toString(), 10),
+              loss: parseInt(short_long_loss.toString(), 10),
             },
             none: {
-              win: short_none_win,
-              draw: short_none_draw,
-              loss: short_none_loss,
+              win: parseInt(short_none_win.toString(), 10),
+              draw: parseInt(short_none_draw.toString(), 10),
+              loss: parseInt(short_none_loss.toString(), 10),
             },
           },
           long: {
             short: {
-              win: long_short_win,
-              draw: long_short_draw,
-              loss: long_short_loss,
+              win: parseInt(long_short_win.toString(), 10),
+              draw: parseInt(long_short_draw.toString(), 10),
+              loss: parseInt(long_short_loss.toString(), 10),
             },
             long: {
-              win: long_long_win,
-              draw: long_long_draw,
-              loss: long_long_loss,
+              win: parseInt(long_long_win.toString(), 10),
+              draw: parseInt(long_long_draw.toString(), 10),
+              loss: parseInt(long_long_loss.toString(), 10),
             },
             none: {
-              win: long_none_win,
-              draw: long_none_draw,
-              loss: long_none_loss,
+              win: parseInt(long_none_win.toString(), 10),
+              draw: parseInt(long_none_draw.toString(), 10),
+              loss: parseInt(long_none_loss.toString(), 10),
             },
           },
           none: {
             short: {
-              win: none_short_win,
-              draw: none_short_draw,
-              loss: none_short_loss,
+              win: parseInt(none_short_win.toString(), 10),
+              draw: parseInt(none_short_draw.toString(), 10),
+              loss: parseInt(none_short_loss.toString(), 10),
             },
             long: {
-              win: none_long_win,
-              draw: none_long_draw,
-              loss: none_long_loss,
+              win: parseInt(none_long_win.toString(), 10),
+              draw: parseInt(none_long_draw.toString(), 10),
+              loss: parseInt(none_long_loss.toString(), 10),
             },
             none: {
-              win: none_none_win,
-              draw: none_none_draw,
-              loss: none_none_loss,
+              win: parseInt(none_none_win.toString(), 10),
+              draw: parseInt(none_none_draw.toString(), 10),
+              loss: parseInt(none_none_loss.toString(), 10),
             },
           },
         },
       },
-      geography,
-      opponents,
+      geography: geography.map(
+        ({ flag = '', code = '', name = '', total, win, draw, loss }) => ({
+          flag,
+          code,
+          name,
+          total: parseInt(total.toString(), 10),
+          win: parseInt(win.toString(), 10),
+          draw: parseInt(draw.toString(), 10),
+          loss: parseInt(loss.toString(), 10),
+        })
+      ),
+      opponents: opponents.map(({ opponent = '', games, win, draw, loss }) => ({
+        opponent,
+        games: parseInt(games.toString(), 10),
+        win: parseInt(win.toString(), 10),
+        draw: parseInt(draw.toString(), 10),
+        loss: parseInt(loss.toString(), 10),
+      })),
     };
   } catch (error) {
     logger.error(`getInsights error=${error}`);
