@@ -29,18 +29,18 @@
   },
   "devDependencies": {
     "@babel/core": "7.26.0",
-    "@chromatic-com/storybook": "3.1.0",
+    "@chromatic-com/storybook": "3.2.1",
     "@eslint/compat": "1.2.2",
     "@eslint/eslintrc": "3.1.0",
     "@eslint/js": "9.13.0",
-    "@storybook/addon-actions": "8.3.6",
-    "@storybook/addon-essentials": "8.3.6",
-    "@storybook/addon-interactions": "8.3.6",
-    "@storybook/addon-links": "8.3.6",
-    "@storybook/cli": "8.3.6",
-    "@storybook/nextjs": "8.3.6",
-    "@storybook/react": "8.3.6",
-    "@storybook/test": "8.3.6",
+    "@storybook/addon-actions": "8.4.0",
+    "@storybook/addon-essentials": "8.4.0",
+    "@storybook/addon-interactions": "8.4.0",
+    "@storybook/addon-links": "8.4.0",
+    "@storybook/cli": "8.4.0",
+    "@storybook/nextjs": "8.4.0",
+    "@storybook/react": "8.4.0",
+    "@storybook/test": "8.4.0",
     "@testing-library/jest-dom": "6.6.2",
     "@testing-library/react": "16.0.1",
     "@types/node": "22.8.5",
@@ -63,6 +63,6 @@
     "tailwindcss": "3.4.14",
     "ts-node": "10.9.2",
     "typescript": "5.6.3",
-    "typescript-eslint": "8.11.0"
+    "typescript-eslint": "8.12.2"
   }
 }
