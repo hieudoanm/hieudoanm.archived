@@ -20,7 +20,7 @@ beautifulsoup4==4.12.3
 black==24.10.0
 bleach==6.1.0
 blinker==1.8.2
-boto3==1.35.51
+boto3==1.35.52
 botocore==1.35.51
 Brotli==1.1.0
 build==1.2.2.post1
@@ -107,9 +107,9 @@ jupyterlab_widgets==3.0.13
 kiwisolver==1.4.7
 kubernetes==31.0.0
 langchain==0.3.6
-langchain-aws==0.2.4
+langchain-aws==0.2.5
 langchain-community==0.3.4
-langchain-core==0.3.13
+langchain-core==0.3.14
 langchain-text-splitters==0.3.1
 langdetect==1.0.9
 langsmith==0.1.138
