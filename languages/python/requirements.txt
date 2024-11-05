@@ -198,7 +198,7 @@ pywatchman==2.0.0
 PyYAML==6.0.2
 pyzmq==26.2.0
 qtconsole==5.6.1
-QtPy==2.4.1
+QtPy==2.4.2
 rapidfuzz==3.10.1
 referencing==0.35.1
 regex==2024.9.11
