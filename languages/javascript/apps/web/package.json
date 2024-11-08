@@ -40,7 +40,7 @@
     "@trpc/react-query": "11.0.0-rc.608",
     "@trpc/server": "11.0.0-rc.608",
     "@vercel/analytics": "1.3.2",
-    "@vercel/speed-insights": "1.0.14",
+    "@vercel/speed-insights": "1.1.0",
     "axios": "1.7.7",
     "chart.js": "4.4.6",
     "chess.js": "1.0.0-beta.8",
