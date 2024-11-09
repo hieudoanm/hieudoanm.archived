@@ -172,7 +172,7 @@ protobuf==5.28.3
 psutil==6.1.0
 ptyprocess==0.7.0
 pure-eval==0.2.3
-pyarrow==17.0.0
+pyarrow==18.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
@@ -256,7 +256,7 @@ wcwidth==0.2.13
 webcolors==24.8.0
 webencodings==0.5.1
 websocket-client==1.8.0
-websockets==13.1
+websockets==14.0
 wheel==0.45.0
 widgetsnbextension==4.0.13
 wrapt==1.16.0
