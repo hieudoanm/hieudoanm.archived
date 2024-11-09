@@ -28,7 +28,7 @@
     "path-to-regexp": "6.3.0",
     "postcss": "8.4.47",
     "semver": "7.6.3",
-    "send": "0.19.1",
+    "send": "1.1.0",
     "tar": "7.4.3",
     "webpack-dev-middleware": "7.4.2"
   }
