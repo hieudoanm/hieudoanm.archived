@@ -26,7 +26,7 @@
     "cookie": "1.0.1",
     "debug": "4.3.7",
     "path-to-regexp": "8.2.0",
-    "postcss": "8.4.47",
+    "postcss": "8.4.48",
     "semver": "7.6.3",
     "send": "1.1.0",
     "tar": "7.4.3",
