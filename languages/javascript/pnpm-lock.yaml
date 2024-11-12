@@ -265,8 +265,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.22.0
-        version: 1.22.0
+        specifier: 1.22.1
+        version: 1.22.1
       '@eslint/compat':
         specifier: 1.2.2
         version: 1.2.2(eslint@9.14.0(jiti@2.4.0))
@@ -773,8 +773,8 @@ importers:
         version: 4.6.9
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.22.0
-        version: 1.22.0
+        specifier: 1.22.1
+        version: 1.22.1
       '@eslint/js':
         specifier: 9.14.0
         version: 9.14.0
@@ -1001,8 +1001,8 @@ importers:
         specifier: 4.20241106.0
         version: 4.20241106.0
       '@dotenvx/dotenvx':
-        specifier: 1.22.0
-        version: 1.22.0
+        specifier: 1.22.1
+        version: 1.22.1
       '@eslint/js':
         specifier: 9.14.0
         version: 9.14.0
@@ -3365,8 +3365,8 @@ packages:
     resolution: {integrity: sha512-boghen8F0Q8D+0/Q1/1r6DUEieUJ8w2a1gIknExMSHBsJFOr2+0KUfHiVYBvucPwl3+RU5PFBK833FjFCh3BhA==}
     engines: {node: '>=14.17.0'}
 
-  '@dotenvx/dotenvx@1.22.0':
-    resolution: {integrity: sha512-EO09sE4iHu/MuKSx1FKQwXHQZ50mF0O4KUnBa3Rrlhgdwv0byg53lDcOpWpbaeq/f8z0dJ1EdV6Su1rugVanug==}
+  '@dotenvx/dotenvx@1.22.1':
+    resolution: {integrity: sha512-UjzWeb0B9yVq3OxPd4FlZX5zV8nC9enXy2fTcTdzorVjNs8dqCuuWe1nNW/YTO4yKvVU4ePNF3oPAgcChqKeaA==}
     hasBin: true
 
   '@ecies/ciphers@0.2.1':
@@ -22313,7 +22313,7 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.1': {}
 
-  '@dotenvx/dotenvx@1.22.0':
+  '@dotenvx/dotenvx@1.22.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.5
