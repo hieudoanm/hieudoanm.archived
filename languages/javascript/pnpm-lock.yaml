@@ -33,8 +33,8 @@ importers:
         specifier: 9.14.0
         version: 9.14.0
       '@types/chrome':
-        specifier: 0.0.280
-        version: 0.0.280
+        specifier: 0.0.281
+        version: 0.0.281
       '@types/node':
         specifier: 22.9.0
         version: 22.9.0
@@ -78,8 +78,8 @@ importers:
         specifier: 9.14.0
         version: 9.14.0
       '@types/chrome':
-        specifier: 0.0.280
-        version: 0.0.280
+        specifier: 0.0.281
+        version: 0.0.281
       '@types/node':
         specifier: 22.9.0
         version: 22.9.0
@@ -120,8 +120,8 @@ importers:
   addons/youtube.com:
     devDependencies:
       '@types/chrome':
-        specifier: 0.0.280
-        version: 0.0.280
+        specifier: 0.0.281
+        version: 0.0.281
       '@types/node':
         specifier: 22.9.0
         version: 22.9.0
@@ -7155,8 +7155,8 @@ packages:
   '@types/chroma-js@2.4.4':
     resolution: {integrity: sha512-/DTccpHTaKomqussrn+ciEvfW4k6NAHzNzs/sts1TCqg333qNxOhy8TNIoQCmbGG3Tl8KdEhkGAssb1n3mTXiQ==}
 
-  '@types/chrome@0.0.280':
-    resolution: {integrity: sha512-AotSmZrL9bcZDDmSI1D9dE7PGbhOur5L0cKxXd7IqbVizQWCY4gcvupPUVsQ4FfDj3V2tt/iOpomT9EY0s+w1g==}
+  '@types/chrome@0.0.281':
+    resolution: {integrity: sha512-MH+8FFrJ1POZwKnKRBa+jZcVp+yCFxes6PYKvgFd0qLTzoQe+TdejC3dkA8gSs8UGjFKrKzu4AkZypmswv0NOg==}
 
   '@types/common-tags@1.8.4':
     resolution: {integrity: sha512-S+1hLDJPjWNDhcGxsxEbepzaxWqURP/o+3cP4aa2w7yBXgdcmKGQtZzP8JbyfOd0m+33nh+8+kvxYE2UJtBDkg==}
@@ -27072,7 +27072,7 @@ snapshots:
 
   '@types/chroma-js@2.4.4': {}
 
-  '@types/chrome@0.0.280':
+  '@types/chrome@0.0.281':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
