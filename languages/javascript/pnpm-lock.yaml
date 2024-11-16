@@ -168,8 +168,8 @@ importers:
         specifier: 5.22.0
         version: 5.22.0(prisma@5.22.0)
       '@tanstack/react-query':
-        specifier: 5.60.2
-        version: 5.60.2(react@18.3.1)
+        specifier: 5.60.5
+        version: 5.60.5(react@18.3.1)
       '@tanstack/react-table':
         specifier: 8.20.5
         version: 8.20.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -181,10 +181,10 @@ importers:
         version: 11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))
       '@trpc/next':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(i6jy64ak3es5bu6rxu23juop4y)
+        version: 11.0.0-rc.637(h6wh56kcbwzfs47hiyd7ibx32u)
       '@trpc/react-query':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(@tanstack/react-query@5.60.2(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.637(@tanstack/react-query@5.60.5(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: 11.0.0-rc.633
         version: 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
@@ -439,17 +439,17 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       '@tanstack/react-query':
-        specifier: 5.60.2
-        version: 5.60.2(react@18.3.1)
+        specifier: 5.60.5
+        version: 5.60.5(react@18.3.1)
       '@trpc/client':
         specifier: 11.0.0-rc.633
         version: 11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))
       '@trpc/next':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(i6jy64ak3es5bu6rxu23juop4y)
+        version: 11.0.0-rc.637(h6wh56kcbwzfs47hiyd7ibx32u)
       '@trpc/react-query':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(@tanstack/react-query@5.60.2(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.637(@tanstack/react-query@5.60.5(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: 11.0.0-rc.633
         version: 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
@@ -1228,8 +1228,8 @@ importers:
         specifier: 4.0.0
         version: 4.0.0(react-native@0.76.2(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@14.1.0)(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))
       '@tanstack/react-query':
-        specifier: 5.60.2
-        version: 5.60.2(react@18.3.1)
+        specifier: 5.60.5
+        version: 5.60.5(react@18.3.1)
       expo:
         specifier: 52.0.7
         version: 52.0.7(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.0(react-native@0.76.2(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@14.1.0)(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1)))(encoding@0.1.13)(graphql@16.9.0)(react-native@0.76.2(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@14.1.0)(@types/react@18.3.12)(encoding@0.1.13)(react@18.3.1))(react@18.3.1)
@@ -1627,8 +1627,8 @@ importers:
         specifier: 4.10.0
         version: 4.10.0
       '@tanstack/react-query':
-        specifier: 5.60.2
-        version: 5.60.2(react@18.3.1)
+        specifier: 5.60.5
+        version: 5.60.5(react@18.3.1)
       '@tanstack/react-table':
         specifier: 8.20.5
         version: 8.20.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1640,10 +1640,10 @@ importers:
         version: 11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))
       '@trpc/next':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(i6jy64ak3es5bu6rxu23juop4y)
+        version: 11.0.0-rc.637(h6wh56kcbwzfs47hiyd7ibx32u)
       '@trpc/react-query':
         specifier: 11.0.0-rc.637
-        version: 11.0.0-rc.637(@tanstack/react-query@5.60.2(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 11.0.0-rc.637(@tanstack/react-query@5.60.5(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@trpc/server':
         specifier: 11.0.0-rc.633
         version: 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
@@ -6871,11 +6871,11 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tanstack/query-core@5.59.20':
-    resolution: {integrity: sha512-e8vw0lf7KwfGe1if4uPFhvZRWULqHjFcz3K8AebtieXvnMOz5FSzlZe3mTLlPuUBcydCnBRqYs2YJ5ys68wwLg==}
+  '@tanstack/query-core@5.60.5':
+    resolution: {integrity: sha512-jiS1aC3XI3BJp83ZiTuDLerTmn9P3U95r6p+6/SNauLJaYxfIC4dMuWygwnBHIZxjn2zJqEpj3nysmPieoxfPQ==}
 
-  '@tanstack/react-query@5.60.2':
-    resolution: {integrity: sha512-JhpJNxIAPuE0YCpP1Py4zAsgx+zY0V531McRMtQbwVlJF8+mlZwcOPrzGmPV248K8IP+mPbsfxXToVNMNwjUcw==}
+  '@tanstack/react-query@5.60.5':
+    resolution: {integrity: sha512-M77bOsPwj1wYE56gk7iJvxGAr4IC12NWdIDhT+Eo8ldkWRHMvIR8I/rufIvT1OXoV/bl7EECwuRuMlxxWtvW2Q==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -26637,11 +26637,11 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tanstack/query-core@5.59.20': {}
+  '@tanstack/query-core@5.60.5': {}
 
-  '@tanstack/react-query@5.60.2(react@18.3.1)':
+  '@tanstack/react-query@5.60.5(react@18.3.1)':
     dependencies:
-      '@tanstack/query-core': 5.59.20
+      '@tanstack/query-core': 5.60.5
       react: 18.3.1
 
   '@tanstack/react-table@8.20.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -26748,7 +26748,7 @@ snapshots:
     dependencies:
       '@trpc/server': 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
 
-  '@trpc/next@11.0.0-rc.637(i6jy64ak3es5bu6rxu23juop4y)':
+  '@trpc/next@11.0.0-rc.637(h6wh56kcbwzfs47hiyd7ibx32u)':
     dependencies:
       '@trpc/client': 11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))
       '@trpc/server': 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
@@ -26756,12 +26756,12 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@tanstack/react-query': 5.60.2(react@18.3.1)
-      '@trpc/react-query': 11.0.0-rc.637(@tanstack/react-query@5.60.2(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-query': 5.60.5(react@18.3.1)
+      '@trpc/react-query': 11.0.0-rc.637(@tanstack/react-query@5.60.5(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@trpc/react-query@11.0.0-rc.637(@tanstack/react-query@5.60.2(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@trpc/react-query@11.0.0-rc.637(@tanstack/react-query@5.60.5(react@18.3.1))(@trpc/client@11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)))(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/react-query': 5.60.2(react@18.3.1)
+      '@tanstack/react-query': 5.60.5(react@18.3.1)
       '@trpc/client': 11.0.0-rc.633(@trpc/server@11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))
       '@trpc/server': 11.0.0-rc.633(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.48.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
       react: 18.3.1
