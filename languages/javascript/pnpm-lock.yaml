@@ -235,8 +235,8 @@ importers:
         specifier: 11.0.0-rc.638
         version: 11.0.0-rc.638(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
       '@vercel/analytics':
-        specifier: 1.4.0
-        version: 1.4.0(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(next@15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(svelte@5.2.3)
+        specifier: 1.4.1
+        version: 1.4.1(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(next@15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(svelte@5.2.3)
       '@vercel/speed-insights':
         specifier: 1.1.0
         version: 1.1.0(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(next@15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(svelte@5.2.3)
@@ -7867,8 +7867,8 @@ packages:
     peerDependencies:
       '@urql/core': ^5.0.0
 
-  '@vercel/analytics@1.4.0':
-    resolution: {integrity: sha512-eUwWW7l8nPJb0nJmjZuYp9o7YZ9XPj67lU9mEogaPXiFxq/SFB5DMnvQVk4aKcL8kFgotiYdDZWxdiNcWo7cgg==}
+  '@vercel/analytics@1.4.1':
+    resolution: {integrity: sha512-ekpL4ReX2TH3LnrRZTUKjHHNpNy9S1I7QmS+g/RQXoSUQ8ienzosuX7T9djZ/s8zPhBx1mpHP/Rw5875N+zQIQ==}
     peerDependencies:
       '@remix-run/react': ^2
       '@sveltejs/kit': ^1 || ^2
@@ -27938,7 +27938,7 @@ snapshots:
       '@urql/core': 5.0.8(graphql@16.9.0)
       wonka: 6.3.4
 
-  '@vercel/analytics@1.4.0(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(next@15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(svelte@5.2.3)':
+  '@vercel/analytics@1.4.1(@sveltejs/kit@2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(next@15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(svelte@5.2.3)':
     optionalDependencies:
       '@sveltejs/kit': 2.8.1(@sveltejs/vite-plugin-svelte@4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0)))(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.0)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0))
       next: 15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
