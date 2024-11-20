@@ -39,7 +39,7 @@
     "@trpc/next": "11.0.0-rc.638",
     "@trpc/react-query": "11.0.0-rc.638",
     "@trpc/server": "11.0.0-rc.638",
-    "@vercel/analytics": "1.4.0",
+    "@vercel/analytics": "1.4.1",
     "@vercel/speed-insights": "1.1.0",
     "axios": "1.7.7",
     "chart.js": "4.4.6",
