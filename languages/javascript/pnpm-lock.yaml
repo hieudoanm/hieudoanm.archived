@@ -7,7 +7,7 @@ settings:
 overrides:
   axios: 1.7.7
   body-parser: 1.20.3
-  cookie: 1.0.1
+  cookie: 1.0.2
   cross-spawn: 7.0.6
   debug: 4.3.7
   path-to-regexp: 8.2.0
@@ -503,8 +503,8 @@ importers:
         specifier: 1.7.7
         version: 1.7.7(debug@4.3.7)
       cookie:
-        specifier: 1.0.1
-        version: 1.0.1
+        specifier: 1.0.2
+        version: 1.0.2
       next:
         specifier: 15.0.3
         version: 15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
@@ -9634,8 +9634,8 @@ packages:
     resolution: {integrity: sha512-D76uU73ulSXrD1UXF4KE2TMxVVwhsnCgfAyTg9k8P6KGZjlXKrOLe4dJQKI3Bxi5wjesZoFXJWElNWBjPZMbhg==}
     engines: {node: '>=6.6.0'}
 
-  cookie@1.0.1:
-    resolution: {integrity: sha512-Xd8lFX4LM9QEEwxQpF9J9NTUh8pmdJO0cyRJhFiDoLTk2eH8FXlRv2IFGYVadZpqI3j8fhNrSdKCeYPxiAhLXw==}
+  cookie@1.0.2:
+    resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
     engines: {node: '>=18'}
 
   cookiejar@2.1.4:
@@ -26230,7 +26230,7 @@ snapshots:
       '@remix-run/router': 1.21.0
       '@types/cookie': 0.6.0
       '@web3-storage/multipart-parser': 1.0.0
-      cookie: 1.0.1
+      cookie: 1.0.2
       set-cookie-parser: 2.7.1
       source-map: 0.7.4
       turbo-stream: 2.4.0
@@ -26661,7 +26661,7 @@ snapshots:
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.1(svelte@5.2.3)(vite@5.4.11(@types/node@22.9.1)(less@4.2.0)(lightningcss@1.28.1)(sass@1.81.0)(terser@5.36.0))
       '@types/cookie': 0.6.0
-      cookie: 1.0.1
+      cookie: 1.0.2
       devalue: 5.1.1
       esm-env: 1.1.4
       import-meta-resolve: 4.1.0
@@ -30172,14 +30172,14 @@ snapshots:
 
   cookie-parser@1.4.7:
     dependencies:
-      cookie: 1.0.1
+      cookie: 1.0.2
       cookie-signature: 1.0.6
 
   cookie-signature@1.0.6: {}
 
   cookie-signature@1.2.2: {}
 
-  cookie@1.0.1: {}
+  cookie@1.0.2: {}
 
   cookiejar@2.1.4: {}
 
@@ -31258,7 +31258,7 @@ snapshots:
       '@types/node': 22.9.1
       accepts: 1.3.8
       base64id: 2.0.0
-      cookie: 1.0.1
+      cookie: 1.0.2
       cors: 2.8.5
       debug: 4.3.7(supports-color@9.4.0)
       engine.io-parser: 5.2.3
@@ -31275,7 +31275,7 @@ snapshots:
       '@types/node': 22.9.1
       accepts: 1.3.8
       base64id: 2.0.0
-      cookie: 1.0.1
+      cookie: 1.0.2
       cors: 2.8.5
       debug: 4.3.7(supports-color@9.4.0)
       engine.io-parser: 5.2.3
@@ -32798,7 +32798,7 @@ snapshots:
       body-parser: 1.20.3
       content-disposition: 0.5.4
       content-type: 1.0.5
-      cookie: 1.0.1
+      cookie: 1.0.2
       cookie-signature: 1.0.6
       debug: 4.3.7(supports-color@9.4.0)
       depd: 2.0.0
@@ -33670,7 +33670,7 @@ snapshots:
       chokidar: 3.6.0
       common-tags: 1.8.2
       compression: 1.7.5
-      cookie: 1.0.1
+      cookie: 1.0.2
       core-js: 3.39.0
       cors: 2.8.5
       css-loader: 5.2.7(webpack@5.96.1)
@@ -35955,7 +35955,7 @@ snapshots:
 
   light-my-request@6.3.0:
     dependencies:
-      cookie: 1.0.1
+      cookie: 1.0.2
       process-warning: 4.0.0
       set-cookie-parser: 2.7.1
     optional: true
@@ -37573,7 +37573,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.0
       '@panva/hkdf': 1.2.1
-      cookie: 1.0.1
+      cookie: 1.0.2
       jose: 4.15.9
       next: 15.0.3(@babel/core@7.26.0)(@opentelemetry/api@1.9.0)(@playwright/test@1.49.0)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0)
       oauth: 0.9.15
@@ -43633,7 +43633,7 @@ snapshots:
 
   youch@3.3.4:
     dependencies:
-      cookie: 1.0.1
+      cookie: 1.0.2
       mustache: 4.2.0
       stacktracey: 2.1.8
 
