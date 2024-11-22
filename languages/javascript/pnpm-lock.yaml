@@ -311,8 +311,8 @@ importers:
         version: 3.23.8
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.24.4
-        version: 1.24.4
+        specifier: 1.24.5
+        version: 1.24.5
       '@eslint/compat':
         specifier: 1.2.3
         version: 1.2.3(eslint@9.15.0(jiti@2.4.0))
@@ -819,8 +819,8 @@ importers:
         version: 4.6.11
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.24.4
-        version: 1.24.4
+        specifier: 1.24.5
+        version: 1.24.5
       '@eslint/js':
         specifier: 9.15.0
         version: 9.15.0
@@ -1047,8 +1047,8 @@ importers:
         specifier: 4.20241112.0
         version: 4.20241112.0
       '@dotenvx/dotenvx':
-        specifier: 1.24.4
-        version: 1.24.4
+        specifier: 1.24.5
+        version: 1.24.5
       '@eslint/js':
         specifier: 9.15.0
         version: 9.15.0
@@ -3391,8 +3391,8 @@ packages:
     resolution: {integrity: sha512-boghen8F0Q8D+0/Q1/1r6DUEieUJ8w2a1gIknExMSHBsJFOr2+0KUfHiVYBvucPwl3+RU5PFBK833FjFCh3BhA==}
     engines: {node: '>=14.17.0'}
 
-  '@dotenvx/dotenvx@1.24.4':
-    resolution: {integrity: sha512-Vm9mviQrhunb1oSVwsRkKAWNb/hkpRR26C6R1T9+tfnRYWnbGoz+GXM+iHL97i+5w8JRTzxujGUhTlZnVNf5Rw==}
+  '@dotenvx/dotenvx@1.24.5':
+    resolution: {integrity: sha512-Mt/fhUkFPMprJWnFxHMMzzVEgzwdK3lw1FaiF3JZXhOuphQ1aJjod5R4z4jAvpyJqB/ib4XsSYpMRmbNP1jPSg==}
     hasBin: true
 
   '@ecies/ciphers@0.2.1':
@@ -4253,7 +4253,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.21.5':
     resolution: {integrity: sha512-hd0pC5ntZxon7IijOsqp5wPOMGtaQNvTPOc74EQc+WS+Cldd7cMNSKKVUI2X7Lrn2Zcje9ne/WgGCnMTjdcVgA==}
@@ -22332,7 +22332,7 @@ snapshots:
 
   '@discoveryjs/json-ext@0.6.1': {}
 
-  '@dotenvx/dotenvx@1.24.4':
+  '@dotenvx/dotenvx@1.24.5':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.5
