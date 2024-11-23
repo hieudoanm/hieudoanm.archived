@@ -17,7 +17,7 @@
 | 07  | Search           | Google            |           |                 | Bing                |
 | 08  | Assistant        | Assistant         | Siri      |                 |                     |
 | 09  | Chatbot          | Gemini            |           |                 | Copilot             |
-| 10  | Messaging        | Chat              | iMessages |                 | Teams               |
+| 10  | Messaging        | Chat              | iMessages | Messenger       | Teams               |
 | 11  | Calendar         | Calendar          | Calendar  |                 |                     |
 | 12  | Mail             | GMail             |           |                 | Outlook             |
 | 13  | Files            | Drive             | iCloud    |                 | OneDrive            |
@@ -27,3 +27,8 @@
 | 17  | To-do            | Tasks             |           |                 |                     |
 | 18  | Video Call       | Meet              | Facetime  |                 | Skype               |
 | 19  | Photos           | Photos            | Photos    |                 |                     |
+| 20  |                  |                   |           |                 |                     |
+| 21  |                  |                   |           |                 |                     |
+| 22  |                  |                   |           |                 |                     |
+| 23  |                  |                   |           |                 |                     |
+| 24  |                  |                   |           |                 |                     |
