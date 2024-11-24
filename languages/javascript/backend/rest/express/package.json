@@ -17,7 +17,7 @@
     "format": "prettier --cache --write ."
   },
   "dependencies": {
-    "express": "4.21.1"
+    "express": "4.20.0"
   },
   "devDependencies": {
     "@eslint/js": "9.15.0",
