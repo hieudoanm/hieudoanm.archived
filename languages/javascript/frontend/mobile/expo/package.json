@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "4.0.0",
-    "@tanstack/react-query": "5.61.0",
+    "@tanstack/react-query": "5.61.3",
     "expo": "52.0.11",
     "expo-linking": "7.0.3",
     "expo-router": "4.0.9",
