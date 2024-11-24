@@ -31,6 +31,7 @@
     "postcss": "8.4.49",
     "semver": "7.6.3",
     "send": "1.1.0",
+    "serve-static": "1.16.0",
     "tar": "7.4.3",
     "webpack-dev-middleware": "7.4.2"
   }
