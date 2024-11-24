@@ -1,7 +1,7 @@
 import chess960Positions from '@web/json/chess/chess960/positions.json';
 import { AppLayout } from '@web/layout/AppLayout';
 import { copyToClipboard } from '@web/utils/copy';
-import { Dispatch, FC, SetStateAction, useState } from 'react';
+import { Dispatch, FC, ReactNode, SetStateAction, useState } from 'react';
 import { Chessboard } from 'react-chessboard';
 import {
   FaChessBishop,
@@ -22,7 +22,7 @@ const piecesMap: Record<Piece, string> = {
   N: 'Knight',
 };
 
-const pieceIcons: Record<Piece, unknown> = {
+const pieceIcons: Record<Piece, ReactNode> = {
   K: <FaChessKing />,
   Q: <FaChessQueen />,
   R: <FaChessRook />,
