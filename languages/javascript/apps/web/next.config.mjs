@@ -13,7 +13,6 @@ const withPWA = nextPWA({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: true,
   reactStrictMode: true,
   compiler: { removeConsole: NODE_ENV !== 'development' },
 };
