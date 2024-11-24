@@ -27,8 +27,8 @@
 | 17  | To-do            | Tasks             |           |                 |                     |
 | 18  | Video Call       | Meet              | Facetime  |                 | Skype               |
 | 19  | Photos           | Photos            | Photos    |                 |                     |
-| 20  |                  |                   |           |                 |                     |
-| 21  |                  |                   |           |                 |                     |
-| 22  |                  |                   |           |                 |                     |
+| 20  | Music            | YouTube Music     | Music     |                 |                     |
+| 21  | Videos           | YouTube           |           |                 |                     |
+| 22  | News             | News              | News      |                 |                     |
 | 23  |                  |                   |           |                 |                     |
 | 24  |                  |                   |           |                 |                     |
