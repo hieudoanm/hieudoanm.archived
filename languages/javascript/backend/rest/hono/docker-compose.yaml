@@ -5,7 +5,7 @@ volumes:
 services:
   hono-postgresql:
     restart: unless-stopped
-    image: postgres:17.1
+    image: postgres:17.2
     container_name: hono-postgresql
     volumes:
       - hono_postgresql:/var/lib/postgresql/data

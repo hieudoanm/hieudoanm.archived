@@ -5,7 +5,7 @@ volumes:
 services:
   thesaurus-postgresql:
     restart: unless-stopped
-    image: postgres:17.1
+    image: postgres:17.2
     container_name: thesaurus-postgresql
     volumes:
       - thesaurus_postgresql:/var/lib/postgresql/data
