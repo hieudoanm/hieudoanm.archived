@@ -259,7 +259,7 @@ websocket-client==1.8.0
 websockets==14.1
 wheel==0.45.1
 widgetsnbextension==4.0.13
-wrapt==1.16.0
+wrapt==1.17.0
 xmltodict==0.14.2
 yarg==0.1.10
 yarl==1.18.0
