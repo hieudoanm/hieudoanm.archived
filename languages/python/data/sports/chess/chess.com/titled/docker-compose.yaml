@@ -7,7 +7,7 @@ volumes:
 services:
   postgresql-chess:
     restart: unless-stopped
-    image: postgres:17.1
+    image: postgres:17.2
     container_name: postgresql-chess
     volumes:
       - postgresql_chess:/var/lib/postgresql/data
