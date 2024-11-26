@@ -36,8 +36,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       '@types/chrome':
-        specifier: 0.0.285
-        version: 0.0.285
+        specifier: 0.0.287
+        version: 0.0.287
       '@types/node':
         specifier: 22.9.4
         version: 22.9.4
@@ -81,8 +81,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       '@types/chrome':
-        specifier: 0.0.285
-        version: 0.0.285
+        specifier: 0.0.287
+        version: 0.0.287
       '@types/node':
         specifier: 22.9.4
         version: 22.9.4
@@ -126,8 +126,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       '@types/chrome':
-        specifier: 0.0.285
-        version: 0.0.285
+        specifier: 0.0.287
+        version: 0.0.287
       '@types/node':
         specifier: 22.9.4
         version: 22.9.4
@@ -168,8 +168,8 @@ importers:
   addons/youtube.com:
     devDependencies:
       '@types/chrome':
-        specifier: 0.0.285
-        version: 0.0.285
+        specifier: 0.0.287
+        version: 0.0.287
       '@types/node':
         specifier: 22.9.4
         version: 22.9.4
@@ -3644,7 +3644,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {node: '>=0.10.0'}
+    engines: {'0': node >=0.10.0}
 
   '@expo/cli@0.21.8':
     resolution: {integrity: sha512-gU+NlL/XS9r7LEfLhjDDKuv3jEtOh+rVnk/k7Lp8WrUwaMCoEGfmQpSqLXetFCCC4UFXSaj1cdMGoy2UBw4rew==}
@@ -6269,8 +6269,8 @@ packages:
   '@types/chroma-js@2.4.4':
     resolution: {integrity: sha512-/DTccpHTaKomqussrn+ciEvfW4k6NAHzNzs/sts1TCqg333qNxOhy8TNIoQCmbGG3Tl8KdEhkGAssb1n3mTXiQ==}
 
-  '@types/chrome@0.0.285':
-    resolution: {integrity: sha512-hjHIibIQ+2Ixdcg37031hmsgUvqSaP30TecRq4WKIsW8YbEMBTvnSk6e9dHf6uCv8aYod6iptcy62RSH8TjNkA==}
+  '@types/chrome@0.0.287':
+    resolution: {integrity: sha512-wWhBNPNXZHwycHKNYnexUcpSbrihVZu++0rdp6GEk5ZgAglenLx+RwdEouh6FrHS0XQiOxSd62yaujM1OoQlZQ==}
 
   '@types/common-tags@1.8.4':
     resolution: {integrity: sha512-S+1hLDJPjWNDhcGxsxEbepzaxWqURP/o+3cP4aa2w7yBXgdcmKGQtZzP8JbyfOd0m+33nh+8+kvxYE2UJtBDkg==}
@@ -24214,7 +24214,7 @@ snapshots:
 
   '@types/chroma-js@2.4.4': {}
 
-  '@types/chrome@0.0.285':
+  '@types/chrome@0.0.287':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
