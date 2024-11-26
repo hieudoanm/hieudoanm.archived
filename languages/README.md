@@ -14,7 +14,7 @@
     - [F](#f)
   - [GHI](#ghi)
     - [G for Go](#g-for-go)
-    - [H](#h)
+    - [Hanguk-eo](#hanguk-eo)
     - [I](#i)
   - [JKL](#jkl)
     - [J for JavaScript](#j-for-javascript)
@@ -59,7 +59,7 @@
 
 ### G for [Go](https://go.dev/)
 
-### H
+### Hanguk-eo
 
 ### I
 
