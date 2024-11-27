@@ -325,8 +325,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       '@million/lint':
-        specifier: 1.0.12
-        version: 1.0.12(encoding@0.1.13)(rollup@2.79.2)
+        specifier: 1.0.13
+        version: 1.0.13(encoding@0.1.13)(rollup@2.79.2)
       '@next/mdx':
         specifier: 15.0.3
         version: 15.0.3(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.96.1))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))
@@ -539,8 +539,8 @@ importers:
         specifier: 7.0.6
         version: 7.0.6
       '@million/lint':
-        specifier: 1.0.12
-        version: 1.0.12(encoding@0.1.13)(rollup@4.27.4)
+        specifier: 1.0.13
+        version: 1.0.13(encoding@0.1.13)(rollup@4.27.4)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -1594,8 +1594,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       '@million/lint':
-        specifier: 1.0.12
-        version: 1.0.12(encoding@0.1.13)(rollup@4.27.4)
+        specifier: 1.0.13
+        version: 1.0.13(encoding@0.1.13)(rollup@4.27.4)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -2856,6 +2856,9 @@ packages:
     resolution: {integrity: sha512-0MhX9/B4iL6Re04jPrttDm+BsP8y6mS7byuv0BvXgdXhbV5PdlsHt55dvNsuBCPZ7xq1oTAOOuotR9NFbQyMSA==}
     bundledDependencies:
       - is-unicode-supported
+
+  '@clack/prompts@0.8.2':
+    resolution: {integrity: sha512-6b9Ab2UiZwJYA9iMyboYyW9yJvAO9V753ZhS+DHKEjZRKAxPPOb7MXXu84lsPFG+vZt6FRFniZ8rXi+zCIw4yQ==}
 
   '@cloudflare/kv-asset-handler@0.3.4':
     resolution: {integrity: sha512-YLPHc8yASwjNkmcDMQMY35yiWjoKAKnhUbPRszBRS0YgH+IXtsMp61j+yTcnCE3oO2DgP0U3iejLC8FTtKDC8Q==}
@@ -4503,8 +4506,8 @@ packages:
     resolution: {integrity: sha512-gFslYuzCem83FHMo4ZIWXmRWmyABXmTBQxodwnP4AeWtLjdvymOp8JB5+b/A4eZX79heFZuw9eqBpERo9zgvtg==}
     hasBin: true
 
-  '@million/lint@1.0.12':
-    resolution: {integrity: sha512-aicK2WWdCGxxoRzQTrfBPUsumvKblnHvQ//OtIsutqiFqareMI1vcG8v4X1y+kliJB81j7oLDi4zZqvYBQHVvQ==}
+  '@million/lint@1.0.13':
+    resolution: {integrity: sha512-jYQMz0GK5FzfwsQZDxs58V2GeUPqma9af7vkLVrdKHzXTpV1cVXxIjSL8+rvDM8iuzVA2BEtunZ0k3bIYAmvIA==}
     hasBin: true
 
   '@mischnic/json-sourcemap@0.1.1':
@@ -9381,6 +9384,10 @@ packages:
 
   engine.io@6.5.5:
     resolution: {integrity: sha512-C5Pn8Wk+1vKBoHghJODM63yk8MvrO9EWZUfkAt5HAqIgPE4/8FF0PEGHXtEd40l223+cE5ABWuPzm38PHFXfMA==}
+    engines: {node: '>=10.2.0'}
+
+  engine.io@6.6.2:
+    resolution: {integrity: sha512-gmNvsYi9C8iErnZdVcJnvCpSKbWTt1E8+JZo8b+daLninywUWi5NQ5STSHZ9rFjFO7imNcvb8Pc5pe/wMR5xEw==}
     engines: {node: '>=10.2.0'}
 
   enhanced-resolve@5.17.1:
@@ -15071,6 +15078,10 @@ packages:
     resolution: {integrity: sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==}
     engines: {node: '>=0.10.0'}
 
+  react-scan@0.0.31:
+    resolution: {integrity: sha512-reHgQnASWVXwHe0Ibk/EbsEPZhKrmNRf8EUNDmjMi1lzXec+Cj9litKxD0TG2ghAwg5V4sT0wzhiOgZSIefeVg==}
+    hasBin: true
+
   react-scroll@1.9.0:
     resolution: {integrity: sha512-mamNcaX9Ng+JeSbBu97nWwRhYvL2oba+xR2GxvyXsbDeGP+gkYIKZ+aDMMj/n20TbV9SCWm/H7nyuNTSiXA6yA==}
     peerDependencies:
@@ -15916,6 +15927,10 @@ packages:
   socket.io@4.7.1:
     resolution: {integrity: sha512-W+utHys2w//dhFjy7iQQu9sGd3eokCjGbl2r59tyLqNiJJBdIebn3GAKEXBr3osqHTObJi2die/25bCx2zsaaw==}
     engines: {node: '>=10.0.0'}
+
+  socket.io@4.8.1:
+    resolution: {integrity: sha512-oZ7iUCxph8WYRHHcjBEc9unw3adt5CmSNlppj/5Q4k2RIrhl8Z5yY2Xr4j9zj0+wzVZ0bxmYoGSzKJnRl6A4yg==}
+    engines: {node: '>=10.2.0'}
 
   sockjs@0.3.24:
     resolution: {integrity: sha512-GJgLTZ7vYb/JtPSSZ10hsOYIvEYsjbNU+zPdIHcUaWVNUEPivzxku31865sSSud0Da0W4lEeOPlmw93zLQchuQ==}
@@ -20006,6 +20021,12 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
+  '@clack/prompts@0.8.2':
+    dependencies:
+      '@clack/core': 0.3.5
+      picocolors: 1.1.1
+      sisteransi: 1.0.5
+
   '@cloudflare/kv-asset-handler@0.3.4':
     dependencies:
       mime: 3.0.0
@@ -22014,7 +22035,7 @@ snapshots:
       recast: 0.23.9
       xycolors: 0.1.2
 
-  '@million/lint@1.0.12(encoding@0.1.13)(rollup@2.79.2)':
+  '@million/lint@1.0.13(encoding@0.1.13)(rollup@2.79.2)':
     dependencies:
       '@axiomhq/js': 1.0.0-rc.3
       '@babel/core': 7.26.0
@@ -22030,13 +22051,16 @@ snapshots:
       hono: 4.6.12
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
       nanoid: 5.0.9
+      ohash: 1.1.4
       pako: 2.1.0
       pathe: 1.1.2
       piscina: 4.7.0
       pretty-ms: 8.0.0
+      react-scan: 0.0.31
       rrweb: 2.0.0-alpha.4
       rrweb-player: 1.0.0-alpha.4
       semver: 7.6.3
+      socket.io: 4.8.1
       socket.io-client: 4.8.1
       tmp: 0.2.3
       unplugin: 1.16.0
@@ -22048,7 +22072,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@million/lint@1.0.12(encoding@0.1.13)(rollup@4.27.4)':
+  '@million/lint@1.0.13(encoding@0.1.13)(rollup@4.27.4)':
     dependencies:
       '@axiomhq/js': 1.0.0-rc.3
       '@babel/core': 7.26.0
@@ -22064,13 +22088,16 @@ snapshots:
       hono: 4.6.12
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
       nanoid: 5.0.9
+      ohash: 1.1.4
       pako: 2.1.0
       pathe: 1.1.2
       piscina: 4.7.0
       pretty-ms: 8.0.0
+      react-scan: 0.0.31
       rrweb: 2.0.0-alpha.4
       rrweb-player: 1.0.0-alpha.4
       semver: 7.6.3
+      socket.io: 4.8.1
       socket.io-client: 4.8.1
       tmp: 0.2.3
       unplugin: 1.16.0
@@ -28055,6 +28082,23 @@ snapshots:
   engine.io-parser@5.2.3: {}
 
   engine.io@6.5.5:
+    dependencies:
+      '@types/cookie': 0.4.1
+      '@types/cors': 2.8.17
+      '@types/node': 22.10.0
+      accepts: 1.3.8
+      base64id: 2.0.0
+      cookie: 1.0.2
+      cors: 2.8.5
+      debug: 4.3.7(supports-color@9.4.0)
+      engine.io-parser: 5.2.3
+      ws: 8.17.1
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  engine.io@6.6.2:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.17
@@ -35722,6 +35766,14 @@ snapshots:
 
   react-refresh@0.14.2: {}
 
+  react-scan@0.0.31:
+    dependencies:
+      '@clack/core': 0.3.5
+      '@clack/prompts': 0.8.2
+      kleur: 4.1.5
+      mri: 1.2.0
+      playwright: 1.49.0
+
   react-scroll@1.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       lodash.throttle: 4.1.1
@@ -36776,6 +36828,20 @@ snapshots:
       cors: 2.8.5
       debug: 4.3.7(supports-color@9.4.0)
       engine.io: 6.5.5
+      socket.io-adapter: 2.5.5
+      socket.io-parser: 4.2.4
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  socket.io@4.8.1:
+    dependencies:
+      accepts: 1.3.8
+      base64id: 2.0.0
+      cors: 2.8.5
+      debug: 4.3.7(supports-color@9.4.0)
+      engine.io: 6.6.2
       socket.io-adapter: 2.5.5
       socket.io-parser: 4.2.4
     transitivePeerDependencies:
