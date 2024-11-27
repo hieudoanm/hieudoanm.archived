@@ -24,7 +24,7 @@
   "dependencies": {
     "@apollo/datasource-rest": "6.3.0",
     "@apollo/server": "4.11.2",
-    "@graphql-tools/schema": "10.0.9",
+    "@graphql-tools/schema": "10.0.10",
     "graphql": "16.9.0",
     "graphql-tag": "2.12.6",
     "pino": "9.5.0"
