@@ -7,7 +7,7 @@
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "private": true,
   "license": "GPL-3.0",
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.14.3",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -37,7 +37,7 @@
     "rxjs": "7.8.1"
   },
   "devDependencies": {
-    "@eslint/js": "9.15.0",
+    "@eslint/js": "9.16.0",
     "@nestjs/cli": "10.4.8",
     "@nestjs/schematics": "10.2.3",
     "@nestjs/testing": "10.4.11",
@@ -45,7 +45,7 @@
     "@types/jest": "29.5.14",
     "@types/node": "22.10.1",
     "@types/supertest": "6.0.2",
-    "eslint": "9.15.0",
+    "eslint": "9.16.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
     "globals": "15.12.0",
