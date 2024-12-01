@@ -42,7 +42,7 @@
     "@vercel/analytics": "1.4.1",
     "@vercel/speed-insights": "1.1.0",
     "axios": "1.7.8",
-    "chart.js": "4.4.6",
+    "chart.js": "4.4.7",
     "chess.js": "1.0.0-beta.8",
     "framer-motion": "11.12.0",
     "github-markdown-css": "5.8.1",
