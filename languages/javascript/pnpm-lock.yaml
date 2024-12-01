@@ -51,8 +51,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       prettier:
         specifier: 3.4.1
         version: 3.4.1
@@ -96,8 +96,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       prettier:
         specifier: 3.4.1
         version: 3.4.1
@@ -141,8 +141,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       prettier:
         specifier: 3.4.1
         version: 3.4.1
@@ -415,8 +415,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4(@typescript-eslint/parser@8.16.0(eslint@9.16.0(jiti@2.4.0))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.0))
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -602,8 +602,8 @@ importers:
         specifier: 56.0.1
         version: 56.0.1(eslint@9.16.0(jiti@2.4.0))
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -696,8 +696,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -772,8 +772,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -836,8 +836,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       graphql:
         specifier: 16.9.0
         version: 16.9.0
@@ -939,8 +939,8 @@ importers:
         specifier: 5.2.1
         version: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@2.4.0)))(eslint@9.16.0(jiti@2.4.0))(prettier@3.4.1)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -997,8 +997,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -1067,8 +1067,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -1119,8 +1119,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       lodash:
         specifier: 4.17.21
         version: 4.17.21
@@ -1231,8 +1231,8 @@ importers:
         specifier: 5.2.1
         version: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@2.4.0)))(eslint@9.16.0(jiti@2.4.0))(prettier@3.4.1)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -1370,8 +1370,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4(@typescript-eslint/parser@8.16.0(eslint@9.16.0(jiti@2.4.0))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.0))
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -1473,8 +1473,8 @@ importers:
         specifier: 6.14.0
         version: 6.14.0(gatsby@5.14.0(babel-eslint@10.1.0(eslint@9.16.0(jiti@2.4.0)))(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.28.1)(typescript@5.7.2)(webpack-dev-server@5.1.0(webpack@5.96.1)))(sass@1.81.0)(webpack@5.96.1)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       identity-obj-proxy:
         specifier: 3.0.0
         version: 3.0.0
@@ -1648,8 +1648,8 @@ importers:
         specifier: 2.0.4
         version: 2.0.4(@typescript-eslint/parser@8.16.0(eslint@9.16.0(jiti@2.4.0))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.0))
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@22.10.1)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
@@ -1754,8 +1754,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@2.4.0)
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       jsdom:
         specifier: 25.0.1
         version: 25.0.1
@@ -1820,8 +1820,8 @@ importers:
         specifier: 2.46.1
         version: 2.46.1(eslint@9.16.0(jiti@2.4.0))(svelte@5.2.11)(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       prettier:
         specifier: 3.4.1
         version: 3.4.1
@@ -10938,8 +10938,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.12.0:
-    resolution: {integrity: sha512-1+gLErljJFhbOVyaetcwJiJ4+eLe45S2E7P5UiZ9xGfeq3ATQf5DOv9G7MH3gGbKQLkzmNh2DxfZwLdw+j6oTQ==}
+  globals@15.13.0:
+    resolution: {integrity: sha512-49TewVEz0UxZjr1WYYsWpPrhyC/B/pA8Bq0fUmet2n+eR7yn0IvNzNaoBwnK6mdkzcN+se7Ez9zUgULTz2QH4g==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -28700,7 +28700,7 @@ snapshots:
       eslint-plugin-no-only-tests: 3.3.0
       eslint-plugin-prettier: 5.2.1(@types/eslint@9.6.1)(eslint-config-prettier@9.1.0(eslint@9.16.0(jiti@2.4.0)))(eslint@9.16.0(jiti@2.4.0))(prettier@3.4.1)
       eslint-rule-documentation: 1.0.23
-      globals: 15.12.0
+      globals: 15.13.0
       jsx-ast-utils: 3.3.5
       prettier: 3.4.1
       svg-element-attributes: 1.3.1
@@ -29003,7 +29003,7 @@ snapshots:
       core-js-compat: 3.39.0
       eslint: 9.16.0(jiti@2.4.0)
       esquery: 1.6.0
-      globals: 15.12.0
+      globals: 15.13.0
       indent-string: 4.0.0
       is-builtin-module: 3.2.1
       jsesc: 3.0.2
@@ -30620,7 +30620,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.12.0: {}
+  globals@15.13.0: {}
 
   globalthis@1.0.4:
     dependencies:
