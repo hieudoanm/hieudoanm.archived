@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  style="isolation:isolate" viewBox="0 0 512 512" width="512pt" height="512pt">
+  <defs>
+    <clipPath id="_clipPath_1aCPklsgsgUuWPwBny8YnjveboMD5VIv">
+      <rect width="512" height="512" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#_clipPath_1aCPklsgsgUuWPwBny8YnjveboMD5VIv)">
+    <rect width="512" height="512" style="fill:rgb(237,29,36)" />
+    <path
+      d=" M 344 352 L 168 352 C 163.582 352 160 355.582 160 360 L 160 376 C 160 380.418 163.582 384 168 384 L 344 384 C 348.418 384 352 380.418 352 376 L 352 360 C 352 355.582 348.418 352 344 352 Z  M 352 208 L 272 208 L 272 184 L 292 184 C 294.209 184 296 182.209 296 180 L 296 156 C 296 153.791 294.209 152 292 152 L 272 152 L 272 132 C 272 129.791 270.209 128 268 128 L 244 128 C 241.791 128 240 129.791 240 132 L 240 152 L 220 152 C 217.791 152 216 153.791 216 156 L 216 180 C 216 182.209 217.791 184 220 184 L 240 184 L 240 208 L 160 208 C 154.913 208.004 150.131 210.427 147.118 214.527 C 144.106 218.626 143.223 223.914 144.74 228.77 L 181.28 336 L 330.72 336 L 367.26 228.77 C 368.777 223.914 367.894 218.626 364.882 214.527 C 361.869 210.427 357.087 208.004 352 208 Z "
+      fill="rgb(239,191,4)" />
+  </g>
+</svg>
