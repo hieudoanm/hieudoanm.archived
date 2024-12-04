@@ -70,7 +70,7 @@
     "kill-port": "2.0.1",
     "million": "3.1.11",
     "postcss": "8.4.49",
-    "prettier": "3.4.1",
+    "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "0.6.9",
     "rimraf": "6.0.1",
     "tailwindcss": "3.4.16",
