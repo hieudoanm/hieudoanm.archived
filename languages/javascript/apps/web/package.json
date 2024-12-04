@@ -41,7 +41,7 @@
     "@trpc/server": "11.0.0-rc.648",
     "@vercel/analytics": "1.4.1",
     "@vercel/speed-insights": "1.1.0",
-    "axios": "1.7.8",
+    "axios": "1.7.9",
     "chart.js": "4.4.7",
     "chess.js": "1.0.0-beta.8",
     "framer-motion": "11.12.0",
