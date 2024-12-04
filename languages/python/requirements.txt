@@ -20,8 +20,8 @@ beautifulsoup4==4.12.3
 black==24.10.0
 bleach==6.2.0
 blinker==1.9.0
-boto3==1.35.73
-botocore==1.35.73
+boto3==1.35.74
+botocore==1.35.74
 Brotli==1.1.0
 build==1.2.2.post1
 cachetools==5.5.0
@@ -100,7 +100,7 @@ jupyter_client==8.6.3
 jupyter_core==5.7.2
 jupyter_server==2.14.2
 jupyter_server_terminals==0.5.3
-jupyterlab==4.3.1
+jupyterlab==4.3.2
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.13
@@ -166,7 +166,7 @@ pipenv==2024.4.0
 pipreqs==0.5.0
 platformdirs==4.3.6
 posthog==3.7.4
-prometheus_client==0.21.0
+prometheus_client==0.21.1
 prompt-toolkit==3.0.48
 protobuf==5.29.0
 psutil==6.1.0
@@ -177,7 +177,7 @@ pyasn1==0.6.1
 pyasn1_modules==0.4.1
 pycparser==2.22
 pycryptodome==3.21.0
-pydantic==2.10.2
+pydantic==2.10.3
 pydantic_core==2.27.1
 pydeck==0.9.1
 Pygments==2.18.0
