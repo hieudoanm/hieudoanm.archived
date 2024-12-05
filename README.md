@@ -1,9 +1,15 @@
 # I'm [HIEU DOAN](https://hieudoanm.vercel.app)
 
+- [I'm HIEU DOAN](#im-hieu-doan)
+  - [Introduction](#introduction)
+  - [DSL: Data Science Libraries](#dsl-data-science-libraries)
+  - [SDK: Software Development Kit](#sdk-software-development-kit)
+
+## Introduction
+
 A Computational Neuroscience enthusiast with a focus on Computer Vision (CV) and Natural Language Processing (NLP) and Neural Network, and a background in Software Development.
 
-- DSL: Data Science Libraries
-- SDK: Software Development Kit
+## DSL: Data Science Libraries
 
 | No  | Domain | Group           | Subgroup                                     | Name                                               | Note                     |
 | --- | ------ | --------------- | -------------------------------------------- | -------------------------------------------------- | ------------------------ |
@@ -23,19 +29,20 @@ A Computational Neuroscience enthusiast with a focus on Computer Vision (CV) and
 | 14  | DSL    | Domain          | Language                                     | [`NLTK`](https://www.nltk.org/)                    |                          |
 | 15  | DSL    | Domain          | Vision                                       | [`OpenCV`](https://opencv.org/)                    |                          |
 | 16  | DSL    | Back-end        |                                              | `FastAPI`                                          |                          |
-| 17  | SDK    | Language        |                                              | [TypeScript](https://www.typescriptlang.org/)      |                          |
-| 18  | SDK    | Package Manager |                                              | [pnpm](https://pnpm.io/)                           |                          |
-| 19  | SDK    | Front-end       | Framework                                    | `Next.js`                                          |                          |
-| 20  | SDK    | Front-end       | CSS                                          | `TailwindCSS`                                      |                          |
-| 21  | SDK    | Front-end       | UI                                           | `DaisyUI`                                          |                          |
-| 22  | SDK    | Back-end        | Framework                                    | `tRPC`                                             |                          |
-| 23  | SDK    | Back-end        | ORM                                          | `Prisma`                                           |                          |
-| 24  | SDK    | Back-end        | Database                                     | `PostgreSQL`                                       |                          |
-| 25  | SDK    | DevOps          | Containerisation                             | [`Docker`](https://www.docker.com/)                |                          |
-| 26  | SDK    |                 |                                              |                                                    |                          |
-| 27  | SDK    |                 |                                              |                                                    |                          |
-| 28  | SDK    |                 |                                              |                                                    |                          |
-| 29  | SDK    |                 |                                              |                                                    |                          |
-| 30  | SDK    |                 |                                              |                                                    |                          |
-| 31  | SDK    |                 |                                              |                                                    |                          |
-| 32  | SDK    |                 |                                              |                                                    |                          |
+
+## SDK: Software Development Kit
+
+| No  | Domain | Group           | Subgroup         | Name                                          | Note                      |
+| --- | ------ | --------------- | ---------------- | --------------------------------------------- | ------------------------- |
+| 1   | SDK    | Language        |                  | [TypeScript](https://www.typescriptlang.org/) |                           |
+| 2   | SDK    | Package Manager |                  | [pnpm](https://pnpm.io/)                      |                           |
+| 3   | SDK    | Front-end       | Framework        | [`Next.js`](https://nextjs.org/)              |                           |
+| 4   | SDK    | Front-end       | CSS              | [`TailwindCSS`](https://tailwindcss.com/)     |                           |
+| 5   | SDK    | Front-end       | UI               | [`DaisyUI`](https://daisyui.com/)             | Based on `TailwindCSS`    |
+| 6   | SDK    | Back-end        | API              | [`tRPC`](https://trpc.io/)                    | Integrated with `Next.js` |
+| 7   | SDK    | Back-end        | Authentication   | [`NextAuth`](https://next-auth.js.org/)       | Integrated with `Next.js` |
+| 8   | SDK    | Back-end        | ORM              | [`Prisma`](https://www.prisma.io/)            |                           |
+| 9   | SDK    | Back-end        | Database         | [`PostgreSQL`](https://www.postgresql.org/)   | Used with `Prisma`        |
+| 10  | SDK    | DevOps          | Containerisation | [`Docker`](https://www.docker.com/)           |                           |
+| 11  | SDK    | DevOps          | Containerisation | [`Kubernetes`](https://kubernetes.io/)        | Used with `Docker`        |
+| 12  | SDK    | DevOps          | Hosting          | [`Vercel`](https://vercel.com/)               |                           |
