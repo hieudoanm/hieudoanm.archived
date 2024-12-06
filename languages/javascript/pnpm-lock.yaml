@@ -10,7 +10,7 @@ overrides:
   cookie: 1.0.2
   cross-spawn: 7.0.6
   debug: 4.3.7
-  express: 4.21.1
+  express: 4.21.2
   path-to-regexp: 8.2.0
   postcss: 8.4.49
   semver: 7.6.3
@@ -741,8 +741,8 @@ importers:
   backend/graphql/express:
     dependencies:
       express:
-        specifier: 4.21.1
-        version: 4.21.1
+        specifier: 4.21.2
+        version: 4.21.2
       graphql:
         specifier: 16.9.0
         version: 16.9.0
@@ -975,8 +975,8 @@ importers:
   backend/rest/express:
     dependencies:
       express:
-        specifier: 4.21.1
-        version: 4.21.1
+        specifier: 4.21.2
+        version: 4.21.2
     devDependencies:
       '@eslint/js':
         specifier: 9.16.0
@@ -10079,8 +10079,8 @@ packages:
     resolution: {integrity: sha512-/l77JHcOUrDUX8V67E287VEUQT0lbm71gdGVoodnlWBziarYKgMcpqT7xvh/HM8Jv52phw8Bd8tY+a7QjOr7Yg==}
     engines: {node: '>=6.0.0'}
 
-  express@4.21.1:
-    resolution: {integrity: sha512-YSFlK1Ee0/GC8QaO91tHcDxJiE/X4FbpAyQWkxAvG6AXCuR65YzK8ua6D9hvi/TzUfZMpc+BwuM1IPw8fmQBiQ==}
+  express@4.21.2:
+    resolution: {integrity: sha512-28HqgMZAmih1Czt9ny7qr6ek2qddF4FclbMzwhCREB6OFfH+rXAnuNCwo1/wFvrtbgsQDb4kSbX9de9lFbrXnA==}
     engines: {node: '>= 0.10.0'}
 
   ext@1.7.0:
@@ -18081,7 +18081,7 @@ snapshots:
       '@types/node-fetch': 2.6.12
       async-retry: 1.3.3
       cors: 2.8.5
-      express: 4.21.1
+      express: 4.21.2
       graphql: 16.9.0
       loglevel: 1.9.2
       lru-cache: 7.18.3
@@ -21480,7 +21480,7 @@ snapshots:
       '@nestjs/core': 10.4.13(@nestjs/common@10.4.13(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/platform-express@10.4.13)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       body-parser: 1.20.3
       cors: 2.8.5
-      express: 4.21.1
+      express: 4.21.2
       multer: 1.4.4-lts.1
       tslib: 2.8.1
     transitivePeerDependencies:
@@ -28366,7 +28366,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  express@4.21.1:
+  express@4.21.2:
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
@@ -29215,7 +29215,7 @@ snapshots:
       eslint-webpack-plugin: 2.7.0(eslint@7.32.0)(webpack@5.97.0)
       event-source-polyfill: 1.0.31
       execa: 5.1.1
-      express: 4.21.1
+      express: 4.21.2
       express-http-proxy: 1.6.3
       fastest-levenshtein: 1.0.16
       fastq: 1.17.1
@@ -34203,7 +34203,7 @@ snapshots:
     dependencies:
       '@prisma/generator-helper': 4.16.2
       '@prisma/internals': 4.16.2(encoding@0.1.13)
-      express: 4.21.1
+      express: 4.21.2
       indent-string: 5.0.0
       kleur: 4.1.5
       meow: 9.0.0
@@ -37668,7 +37668,7 @@ snapshots:
       colorette: 2.0.20
       compression: 1.7.5
       connect-history-api-fallback: 2.0.0
-      express: 4.21.1
+      express: 4.21.2
       graceful-fs: 4.2.11
       html-entities: 2.5.2
       http-proxy-middleware: 2.0.7(@types/express@4.17.21)
