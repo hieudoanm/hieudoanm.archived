@@ -34,7 +34,7 @@
     "@prisma/client": "6.0.1",
     "@tanstack/react-query": "5.62.3",
     "@tanstack/react-table": "8.20.5",
-    "@tanstack/react-virtual": "3.10.9",
+    "@tanstack/react-virtual": "3.11.0",
     "@trpc/client": "11.0.0-rc.648",
     "@trpc/next": "11.0.0-rc.648",
     "@trpc/react-query": "11.0.0-rc.648",
