@@ -647,8 +647,8 @@ importers:
   backend/graphql/apollo:
     dependencies:
       '@apollo/datasource-rest':
-        specifier: 6.4.0
-        version: 6.4.0(encoding@0.1.13)(graphql@16.9.0)
+        specifier: 6.4.1
+        version: 6.4.1(encoding@0.1.13)(graphql@16.9.0)
       '@apollo/server':
         specifier: 4.11.2
         version: 4.11.2(encoding@0.1.13)(graphql@16.9.0)
@@ -1908,8 +1908,8 @@ packages:
     peerDependencies:
       graphql: 14.x || 15.x || 16.x
 
-  '@apollo/datasource-rest@6.4.0':
-    resolution: {integrity: sha512-2bG4MGr3QGgBZYGaOQ1IM2L109J3GnvJoUzl6zXsaKUvxAjs3NOgQDqxR3sc1Y4SJ3j5KsZI2rxnHBCJMIBCmA==}
+  '@apollo/datasource-rest@6.4.1':
+    resolution: {integrity: sha512-RmZy1vXw8Yh+x6tYV/e6fdtk0iCS083d4C+H9A8Oy1sTC2eoCkuw619YTc74nFzYQ/8yyqI8MvNie2YD/G0wVg==}
     engines: {node: '>=16.14'}
     peerDependencies:
       graphql: ^16.5.0
@@ -18015,7 +18015,7 @@ snapshots:
     dependencies:
       graphql: 16.9.0
 
-  '@apollo/datasource-rest@6.4.0(encoding@0.1.13)(graphql@16.9.0)':
+  '@apollo/datasource-rest@6.4.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@apollo/utils.fetcher': 3.1.0
       '@apollo/utils.keyvaluecache': 3.1.0
