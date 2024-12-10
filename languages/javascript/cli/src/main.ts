@@ -16,8 +16,8 @@ program
 
 const options = program.opts();
 
-if (options.v || options.version) {
-  console.log(version);
+if (options.i || options.info) {
+  console.log(figlet('HIEU DOAN'));
 }
 
 program
@@ -41,6 +41,33 @@ program
   .action(() => {
     const [, time] = new Date().toISOString().split('T');
     console.log(time);
+  });
+
+program
+  .command('week')
+  .description('Get Week')
+  .action(() => {
+    const weekdays: string[] = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+    ];
+    const oneDay: number = 1000 * 60 * 60 * 24;
+    const d = new Date();
+    const currentWeekday: number = d.getDay();
+    const currentTimestamp: number = d.getTime();
+    const weekdaysTable = [];
+    for (let index = 0; index < 7; index++) {
+      const diffDays = currentWeekday - index;
+      const diffTimestamp = currentTimestamp - diffDays * oneDay;
+      const [date] = new Date(diffTimestamp).toISOString().split('T');
+      weekdaysTable.push({ weekday: weekdays[index], date });
+    }
+    console.table(weekdaysTable);
   });
 
 program.parse(process.argv);
