@@ -11,7 +11,7 @@ overrides:
   cross-spawn: 7.0.6
   debug: 4.4.0
   express: 4.21.2
-  nanoid: 3.3.8
+  nanoid: 5.0.9
   path-to-regexp: 8.2.0
   postcss: 8.4.49
   semver: 7.6.3
@@ -327,7 +327,7 @@ importers:
         version: 9.16.0
       '@million/lint':
         specifier: 1.0.13
-        version: 1.0.13(encoding@0.1.13)(rollup@4.28.1)
+        version: 1.0.13(encoding@0.1.13)(rollup@2.79.2)
       '@next/mdx':
         specifier: 15.0.4
         version: 15.0.4(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.97.1))(@mdx-js/react@3.1.0(@types/react@19.0.1)(react@19.0.0))
@@ -429,7 +429,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@4.28.1)
+        version: 3.1.11(rollup@2.79.2)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -541,7 +541,7 @@ importers:
         version: 7.0.6
       '@million/lint':
         specifier: 1.0.13
-        version: 1.0.13(encoding@0.1.13)(rollup@2.79.2)
+        version: 1.0.13(encoding@0.1.13)(rollup@4.28.1)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -616,7 +616,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@2.79.2)
+        version: 3.1.11(rollup@4.28.1)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -4502,7 +4502,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.22.3':
     resolution: {integrity: sha512-1HBtqInFDFHUJWzTJ1CJj5MR3JwvOiozmRUWF2kVQAeq/bKzSYM6We6B3XoZBM5XP6z6WtnrG87C7BjeW5E/cA==}
@@ -15134,9 +15134,9 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+  nanoid@5.0.9:
+    resolution: {integrity: sha512-Aooyr6MXU6HpvvWXKoVoXwKMs/KyVakWwg7xQfv5/S/RIgJMy0Ifa45H9qqYy7pTCszrHzP21Uk4PZq2HpEM8Q==}
+    engines: {node: ^18 || >=20}
     hasBin: true
 
   napi-build-utils@1.0.2:
@@ -25529,7 +25529,7 @@ snapshots:
       cli-high: 0.4.3
       diff: 5.2.0
       effect: 3.11.4
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       recast: 0.23.9
       xycolors: 0.1.2
 
@@ -25548,7 +25548,7 @@ snapshots:
       faster-babel-types: 0.1.0(@babel/types@7.26.0)
       hono: 4.6.13
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       ohash: 1.1.4
       pako: 2.1.0
       pathe: 1.1.2
@@ -25585,7 +25585,7 @@ snapshots:
       faster-babel-types: 0.1.0(@babel/types@7.26.0)
       hono: 4.6.13
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       ohash: 1.1.4
       pako: 2.1.0
       pathe: 1.1.2
@@ -27206,7 +27206,7 @@ snapshots:
     dependencies:
       '@react-navigation/routers': 7.1.1
       escape-string-regexp: 4.0.0
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       query-string: 7.1.3
       react: 19.0.0
       react-is: 18.3.1
@@ -27238,14 +27238,14 @@ snapshots:
       '@react-navigation/core': 7.3.0(react@19.0.0)
       escape-string-regexp: 4.0.0
       fast-deep-equal: 3.1.3
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       react: 19.0.0
       react-native: 0.76.5(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@19.0.1)(encoding@0.1.13)(react@19.0.0)
       use-latest-callback: 0.2.3(react@19.0.0)
 
   '@react-navigation/routers@7.1.1':
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 5.0.9
 
   '@redocly/ajv@8.11.2':
     dependencies:
@@ -28621,7 +28621,7 @@ snapshots:
 
   '@types/yoga-layout@1.9.2': {}
 
-  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)':
+  '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
       '@typescript-eslint/parser': 5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
@@ -32648,7 +32648,7 @@ snapshots:
 
   eslint-config-react-app@6.0.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(eslint@7.32.0)(typescript@5.7.2))(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(babel-eslint@10.1.0(eslint@9.16.0(jiti@2.4.1)))(eslint-plugin-flowtype@5.10.0(eslint@7.32.0))(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(eslint@7.32.0))(eslint-plugin-jsx-a11y@6.10.2(eslint@7.32.0))(eslint-plugin-react-hooks@4.6.2(eslint@7.32.0))(eslint-plugin-react@7.37.2(eslint@9.16.0(jiti@2.4.1)))(eslint@7.32.0)(typescript@5.7.2):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
       '@typescript-eslint/parser': 5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
       babel-eslint: 10.1.0(eslint@9.16.0(jiti@2.4.1))
       confusing-browser-globals: 1.0.11
@@ -34290,7 +34290,7 @@ snapshots:
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.30.0)(webpack-dev-server@5.1.0(webpack@5.97.1))(webpack@5.97.1)
       '@sigmacomputing/babel-plugin-lodash': 3.3.5
       '@types/http-proxy': 1.17.15
-      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.7.2))(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
       '@typescript-eslint/parser': 5.62.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
       '@vercel/webpack-asset-relocator-loader': 1.7.3
       acorn-loose: 8.4.0
@@ -38270,7 +38270,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.8: {}
+  nanoid@5.0.9: {}
 
   napi-build-utils@1.0.2: {}
 
@@ -40138,7 +40138,7 @@ snapshots:
 
   postcss@8.4.49:
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -44653,7 +44653,7 @@ snapshots:
       esbuild: 0.17.19
       itty-time: 1.0.6
       miniflare: 3.20241205.0
-      nanoid: 3.3.8
+      nanoid: 5.0.9
       path-to-regexp: 8.2.0
       resolve: 1.22.8
       selfsigned: 2.4.1
