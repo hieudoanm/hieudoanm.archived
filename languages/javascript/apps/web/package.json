@@ -63,7 +63,7 @@
     "showdown": "2.1.0",
     "superjson": "2.2.2",
     "uuid": "11.0.3",
-    "zod": "3.23.8"
+    "zod": "3.24.0"
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "1.29.0",
