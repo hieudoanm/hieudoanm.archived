@@ -2,5 +2,6 @@ packages:
   - "addons/**"
   - "apps/**"
   - "backend/**"
+  - "cli/**"
   - "docs/**"
   - "frontend/**"

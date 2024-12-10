@@ -1271,6 +1271,46 @@ importers:
         specifier: 2.6.1
         version: 2.6.1
 
+  cli:
+    dependencies:
+      commander:
+        specifier: 12.1.0
+        version: 12.1.0
+      figlet:
+        specifier: 1.8.0
+        version: 1.8.0
+    devDependencies:
+      '@eslint/js':
+        specifier: 9.16.0
+        version: 9.16.0
+      '@types/figlet':
+        specifier: 1.7.0
+        version: 1.7.0
+      '@types/node':
+        specifier: 22.10.1
+        version: 22.10.1
+      eslint:
+        specifier: 9.16.0
+        version: 9.16.0(jiti@2.4.1)
+      globals:
+        specifier: 15.13.0
+        version: 15.13.0
+      prettier:
+        specifier: 3.4.2
+        version: 3.4.2
+      rimraf:
+        specifier: 6.0.1
+        version: 6.0.1
+      ts-node:
+        specifier: 10.9.2
+        version: 10.9.2(@types/node@22.10.1)(typescript@5.7.2)
+      typescript:
+        specifier: 5.7.2
+        version: 5.7.2
+      typescript-eslint:
+        specifier: 8.18.0
+        version: 8.18.0(eslint@9.16.0(jiti@2.4.1))(typescript@5.7.2)
+
   docs/docusaurus:
     dependencies:
       '@docusaurus/core':
@@ -7709,6 +7749,9 @@ packages:
   '@types/express@5.0.0':
     resolution: {integrity: sha512-DvZriSMehGHL1ZNLzi6MidnsDhUZM/x2pRdDIKdwbUNqqwHxMlRdkxtn6/EPKyqKpHqTl/4nRZsRNLpZxZRpPQ==}
 
+  '@types/figlet@1.7.0':
+    resolution: {integrity: sha512-KwrT7p/8Eo3Op/HBSIwGXOsTZKYiM9NpWRBJ5sVjWP/SmlS+oxxRvJht/FNAtliJvja44N3ul1yATgohnVBV0Q==}
+
   '@types/filesystem@0.0.36':
     resolution: {integrity: sha512-vPDXOZuannb9FZdxgHnqSwAG/jvdGM8Wq+6N4D/d80z+D4HWH+bItqsZaVRQykAn6WEVeEkLm2oQigyHtgb0RA==}
 
@@ -11856,6 +11899,11 @@ packages:
 
   fflate@0.4.8:
     resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
+
+  figlet@1.8.0:
+    resolution: {integrity: sha512-chzvGjd+Sp7KUvPHZv6EXV5Ir3Q7kYNpCr4aHrRW79qFtTefmQZNny+W1pW9kf5zeE6dikku2W50W/wAH2xWgw==}
+    engines: {node: '>= 0.4.0'}
+    hasBin: true
 
   figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
@@ -28334,6 +28382,8 @@ snapshots:
       '@types/qs': 6.9.17
       '@types/serve-static': 1.15.7
 
+  '@types/figlet@1.7.0': {}
+
   '@types/filesystem@0.0.36':
     dependencies:
       '@types/filewriter': 0.0.33
@@ -28542,7 +28592,7 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 22.10.1
 
   '@types/semver@7.5.8': {}
 
@@ -33632,6 +33682,8 @@ snapshots:
   fetch-retry@6.0.0: {}
 
   fflate@0.4.8: {}
+
+  figlet@1.8.0: {}
 
   figures@3.2.0:
     dependencies:

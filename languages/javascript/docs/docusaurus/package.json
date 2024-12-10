@@ -1,7 +1,10 @@
 {
   "name": "docusaurus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "22.12.0"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -41,7 +44,22 @@
       "last 5 safari version"
     ]
   },
-  "engines": {
-    "node": "22.12.0"
-  }
+  "description": "Docusaurus",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieudoanm/hieudoanm.git"
+  },
+  "keywords": [
+    "docusaurus"
+  ],
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hieudoanm/hieudoanm/issues"
+  },
+  "homepage": "https://github.com/hieudoanm/hieudoanm#readme"
 }
