@@ -43,7 +43,7 @@
     "@eslint/eslintrc": "3.2.0",
     "@eslint/js": "9.16.0",
     "@json2csv/plainjs": "7.0.6",
-    "@million/lint": "1.0.13",
+    "@million/lint": "1.0.14",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.1.0",
     "@types/jest": "29.5.14",
