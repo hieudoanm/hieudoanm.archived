@@ -310,8 +310,8 @@ importers:
         specifier: 11.0.3
         version: 11.0.3
       zod:
-        specifier: 3.24.0
-        version: 3.24.0
+        specifier: 3.24.1
+        version: 3.24.1
     devDependencies:
       '@dotenvx/dotenvx':
         specifier: 1.29.0
@@ -524,8 +524,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       zod:
-        specifier: 3.24.0
-        version: 3.24.0
+        specifier: 3.24.1
+        version: 3.24.1
     devDependencies:
       '@eslint/compat':
         specifier: 1.2.4
@@ -1759,8 +1759,8 @@ importers:
         specifier: 0.33.5
         version: 0.33.5
       zod:
-        specifier: 3.24.0
-        version: 3.24.0
+        specifier: 3.24.1
+        version: 3.24.1
     devDependencies:
       '@eslint/compat':
         specifier: 1.2.4
@@ -20672,8 +20672,8 @@ packages:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
     engines: {node: '>= 14'}
 
-  zod@3.24.0:
-    resolution: {integrity: sha512-Hz+wiY8yD0VLA2k/+nsg2Abez674dDGTai33SwNvMPuf9uIrBC9eFgIMQxBBbHFxVXi8W+5nX9DcAh9YNSQm/w==}
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
   zone.js@0.15.0:
     resolution: {integrity: sha512-9oxn0IIjbCZkJ67L+LkhYWRyAy7axphb3VgE2MBDlOqnmHMPWGYMxJxBYFueFq/JGY2GMwS0rU+UCLunEmy5UA==}
@@ -22409,7 +22409,7 @@ snapshots:
   '@cloudflare/workers-shared@0.11.0':
     dependencies:
       mime: 3.0.0
-      zod: 3.24.0
+      zod: 3.24.1
 
   '@cloudflare/workers-types@4.20241205.0': {}
 
@@ -38025,7 +38025,7 @@ snapshots:
       workerd: 1.20241205.0
       ws: 8.18.0
       youch: 3.3.4
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -40296,7 +40296,7 @@ snapshots:
       '@prisma/generator-helper': 4.16.2
       '@prisma/internals': 4.16.2(encoding@0.1.13)
       prettier: 2.8.8
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - encoding
       - prisma
@@ -40309,7 +40309,7 @@ snapshots:
       '@prisma/internals': 4.16.2(encoding@0.1.13)
       prettier: 2.8.8
       tslib: 2.8.1
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - encoding
       - prisma
@@ -43816,7 +43816,7 @@ snapshots:
       unenv: 1.10.0
       unstorage: 1.13.1(ioredis@5.4.1)
       vite: 6.0.3(@types/node@22.10.1)(jiti@2.4.1)(less@4.2.0)(lightningcss@1.28.2)(sass@1.82.0)(terser@5.37.0)(yaml@2.6.1)
-      zod: 3.24.0
+      zod: 3.24.1
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -44945,7 +44945,7 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.5.2
 
-  zod@3.24.0: {}
+  zod@3.24.1: {}
 
   zone.js@0.15.0: {}
 
