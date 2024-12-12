@@ -64,7 +64,7 @@ const columns = [
 
 export const ListView: FC<{
   countries: Country[];
-  parentRef: RefObject<HTMLDivElement>;
+  parentRef: RefObject<HTMLDivElement | null>;
 }> = ({ countries = [], parentRef }) => {
   return (
     <>

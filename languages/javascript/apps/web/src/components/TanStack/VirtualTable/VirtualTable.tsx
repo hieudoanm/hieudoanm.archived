@@ -18,13 +18,13 @@ export type ColumnSort = {
 export type SortingState = ColumnSort[];
 
 export type TanstackVirtualTableProps = {
-  parentRef: RefObject<HTMLDivElement>;
+  parentRef: RefObject<HTMLDivElement | null>;
   columns: any[];
   data: any[];
 };
 
 export const TanstackVirtualTable: FC<TanstackVirtualTableProps> = ({
-  parentRef = {} as RefObject<HTMLDivElement>,
+  parentRef = {} as RefObject<HTMLDivElement | null>,
   columns = [],
   data = [],
 }) => {

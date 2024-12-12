@@ -13,8 +13,8 @@ const blobToBase64 = (blob: Blob): Promise<string | ArrayBuffer> => {
 };
 
 const CameraPage: NextPage = () => {
-  const imageRef = useRef<HTMLCanvasElement>();
-  const videoRef = useRef<HTMLVideoElement>();
+  const imageRef = useRef<HTMLCanvasElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [size, setSize] = useState({
     width: videoRef.current?.videoWidth ?? 0,
     height: videoRef.current?.videoHeight ?? 0,
