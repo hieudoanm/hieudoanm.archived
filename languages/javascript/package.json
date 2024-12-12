@@ -9,7 +9,6 @@
   "private": true,
   "packageManager": "pnpm@9.15.0",
   "scripts": {
-    "prepare": "husky || true",
     "format": "turbo run format",
     "build": "turbo run build",
     "lint": "turbo run lint",
