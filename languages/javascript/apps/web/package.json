@@ -70,7 +70,7 @@
     "@eslint/compat": "1.2.4",
     "@eslint/eslintrc": "3.2.0",
     "@eslint/js": "9.16.0",
-    "@million/lint": "1.0.13",
+    "@million/lint": "1.0.14",
     "@next/mdx": "15.0.4",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.1.0",
