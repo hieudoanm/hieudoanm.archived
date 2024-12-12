@@ -3,4 +3,4 @@
 langchain==0.3.11
 langchain-community==0.3.11
 langchain-core==0.3.24
-streamlit==1.40.2
+streamlit==1.41.0
