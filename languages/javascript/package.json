@@ -27,7 +27,6 @@
     "debug": "4.4.0",
     "express": "4.21.2",
     "nanoid": "3.3.8",
-    "path-to-regexp": "8.2.0",
     "postcss": "8.4.49",
     "semver": "7.6.3",
     "send": "1.1.0",
