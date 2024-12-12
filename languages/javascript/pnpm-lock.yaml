@@ -259,8 +259,8 @@ importers:
         specifier: 5.8.1
         version: 5.8.1
       mathjs:
-        specifier: 14.0.0
-        version: 14.0.0
+        specifier: 14.0.1
+        version: 14.0.1
       next:
         specifier: 15.0.4
         version: 15.0.4(@babel/core@7.26.0)(@opentelemetry/api@1.4.1)(@playwright/test@1.49.1)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.82.0)
@@ -14541,8 +14541,8 @@ packages:
   marky@1.2.5:
     resolution: {integrity: sha512-q9JtQJKjpsVxCRVgQ+WapguSbKC3SQ5HEzFGPAJMStgh3QjCawp00UKv3MTTAArTmGmmPUvllHZoNbZ3gs0I+Q==}
 
-  mathjs@14.0.0:
-    resolution: {integrity: sha512-MR3me92c6pKBqzUXosqL5KMIZDrb1x0MGOy+Ss6fQllD1zhAFloG6DJnG6X5b0VYAMA9sgGfAR2tYi5HPNNQBQ==}
+  mathjs@14.0.1:
+    resolution: {integrity: sha512-yyJgLwC6UXuve724np8tHRMYaTtb5UqiOGQkjwbSXgH8y1C/LcJ0pvdNDZLI2LT7r+iExh2Y5HwfAY+oZFtGIQ==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -37104,7 +37104,7 @@ snapshots:
 
   marky@1.2.5: {}
 
-  mathjs@14.0.0:
+  mathjs@14.0.1:
     dependencies:
       '@babel/runtime': 7.26.0
       complex.js: 2.4.2
