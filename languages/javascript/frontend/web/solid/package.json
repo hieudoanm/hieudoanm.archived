@@ -37,7 +37,7 @@
     "@trpc/client": "10.45.2",
     "@types/node": "22.10.2",
     "autoprefixer": "10.4.20",
-    "daisyui": "4.12.21",
+    "daisyui": "4.12.22",
     "eslint": "9.16.0",
     "globals": "15.13.0",
     "jsdom": "25.0.1",
