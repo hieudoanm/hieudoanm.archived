@@ -3,3 +3,6 @@ format:
 
 check:
 	python3 -m ruff check . --fix
+
+update:
+	pip install --upgrade --force-reinstall -r requirements.txt
