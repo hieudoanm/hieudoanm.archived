@@ -314,8 +314,8 @@ importers:
         version: 3.24.1
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.29.0
-        version: 1.29.0
+        specifier: 1.30.1
+        version: 1.30.1
       '@eslint/compat':
         specifier: 1.2.4
         version: 1.2.4(eslint@9.17.0(jiti@2.4.1))
@@ -822,8 +822,8 @@ importers:
         version: 4.6.13
     devDependencies:
       '@dotenvx/dotenvx':
-        specifier: 1.29.0
-        version: 1.29.0
+        specifier: 1.30.1
+        version: 1.30.1
       '@eslint/js':
         specifier: 9.17.0
         version: 9.17.0
@@ -1050,8 +1050,8 @@ importers:
         specifier: 4.20241205.0
         version: 4.20241205.0
       '@dotenvx/dotenvx':
-        specifier: 1.29.0
-        version: 1.29.0
+        specifier: 1.30.1
+        version: 1.30.1
       '@eslint/js':
         specifier: 9.17.0
         version: 9.17.0
@@ -3392,8 +3392,8 @@ packages:
     resolution: {integrity: sha512-0R/FR3bKVl4yl8QwbL4TYFfR+OXBRpVUaTJdENapBGR3YMwfM6/JnhGilWQO8AOwPJGtGoDK7ib8+8UF9f3OZQ==}
     engines: {node: '>=18.0'}
 
-  '@dotenvx/dotenvx@1.29.0':
-    resolution: {integrity: sha512-lyITV6hPsj6XgafFzm7j6tPTvuPP2FRW6kuVhblDpw7TneZcVjGWXcQRn/QX2bBigqPtCWQtXvzWMhW7Nj0olA==}
+  '@dotenvx/dotenvx@1.30.1':
+    resolution: {integrity: sha512-GOwG4QJvCjRlGOsDUqer6RjKJ7i1S40k5hkiH3RhI8SwiETDOnx1i8LajmmyrQd0k3hX7van8Cv6Egii6ahH0Q==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -4086,7 +4086,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.22.5':
     resolution: {integrity: sha512-A2wYKtcBbEEyRUAyUeMDd356UROo1xaMl7ZaZC5tQOdIhvWKelRd4f3QCaI56D9B4EMWLg9pVuPVbAMz8zJ4+A==}
@@ -20238,7 +20238,7 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@dotenvx/dotenvx@1.29.0':
+  '@dotenvx/dotenvx@1.30.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
