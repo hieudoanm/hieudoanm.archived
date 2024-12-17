@@ -12,7 +12,7 @@
 | 8   | Front-end  | Web     | React        | [Next.js](https://nextjs.org/)                  | [Vercel](https://vercel.com)                    |
 | 9   | Front-end  | Web     | React        | [Gatsby.js](https://www.gatsbyjs.com/)          | [Netlify](https://www.netlify.com/)             |
 | 10  | Front-end  | Web     |              | [Angular](https://angular.dev/)                 | [Google](https://developers.google.com/)        |
-| 11  | Front-end  | Web     |              | [Solid](https://www.solidjs.com/)               |                                                 |
+| 11  | Front-end  | Web     |              | [Solid Start](https://start.solidjs.com/)       |                                                 |
 | 12  | Front-end  | Web     |              | [Svelte](https://svelte.dev/)                   | [Vercel](https://vercel.com)                    |
 | 13  | Front-end  | Mobild  | React Native | [Expo](https://expo.dev/)                       |                                                 |
 | 14  | Front-end  | Desktop |              | [Tauri](https://tauri.app/)                     |                                                 |
