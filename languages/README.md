@@ -9,8 +9,8 @@
     - [B for Bash](#b-for-bash)
     - [C for CPP](#c-for-cpp)
   - [DEF](#def)
-    - [D for Docker](#d-for-docker)
-    - [E for Elastic](#e-for-elastic)
+    - [Dev](#dev)
+    - [E](#e)
     - [F](#f)
   - [GHI](#ghi)
     - [G for Go](#g-for-go)
@@ -19,10 +19,10 @@
   - [JKL](#jkl)
     - [J for JavaScript](#j-for-javascript)
     - [K for Kotlin](#k-for-kotlin)
-    - [L for Large Language Model](#l-for-large-language-model)
+    - [L](#l)
   - [MNO](#mno)
     - [M for Markdown](#m-for-markdown)
-    - [N for nginx](#n-for-nginx)
+    - [N](#n)
     - [O](#o)
   - [PQRS](#pqrs)
     - [P for Python](#p-for-python)
@@ -30,7 +30,7 @@
     - [R for Rust](#r-for-rust)
     - [S for SQL](#s-for-sql)
   - [TUV](#tuv)
-    - [T for Terraform](#t-for-terraform)
+    - [T](#t)
     - [U](#u)
     - [V](#v)
   - [WXYZ](#wxyz)
@@ -49,9 +49,9 @@
 
 ## DEF
 
-### D for [Docker](https://www.docker.com/)
+### Dev
 
-### E for [Elastic](https://www.elastic.co/)
+### E
 
 ### F
 
@@ -69,13 +69,13 @@
 
 ### K for [Kotlin](https://kotlinlang.org/)
 
-### L for Large Language Model
+### L
 
 ## MNO
 
 ### M for [Markdown](https://www.markdownguide.org/)
 
-### N for [nginx](https://nginx.org/)
+### N
 
 ### O
 
@@ -91,7 +91,7 @@
 
 ## TUV
 
-### T for [Terraform](https://www.terraform.io/)
+### T
 
 ### U
 
