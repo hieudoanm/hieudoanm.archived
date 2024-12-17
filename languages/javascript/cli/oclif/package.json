@@ -1,7 +1,7 @@
 {
-  "name": "@commander/cli",
+  "name": "@oclif/cli",
   "version": "0.0.1",
-  "description": "Commander CLI",
+  "description": "Open CLI Framework",
   "main": "dist/main.js",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "repository": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/hieudoanm/hieudoanm#readme",
   "license": "GPL-3.0",
   "keywords": [
-    "commander",
+    "yargs",
     "cli"
   ],
   "scripts": {
@@ -26,22 +26,18 @@
     "install-cli": "npm install -g . --force"
   },
   "dependencies": {
-    "commander": "12.1.0",
+    "@oclif/core": "4.0.37",
     "figlet": "1.8.0"
   },
   "devDependencies": {
-    "@eslint/js": "9.17.0",
-    "@types/figlet": "1.7.0",
     "@types/node": "22.10.2",
     "eslint": "9.17.0",
-    "globals": "15.13.0",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
     "ts-node": "10.9.2",
-    "typescript": "5.7.2",
-    "typescript-eslint": "8.18.1"
+    "typescript": "5.7.2"
   },
   "bin": {
-    "hd-commander": "./dist/main.js"
+    "hd-of": "./dist/main.js"
   }
 }

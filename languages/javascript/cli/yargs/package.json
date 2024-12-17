@@ -1,7 +1,7 @@
 {
-  "name": "@commander/cli",
+  "name": "@yargs/cli",
   "version": "0.0.1",
-  "description": "Commander CLI",
+  "description": "Yargs CLI",
   "main": "dist/main.js",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "repository": {
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/hieudoanm/hieudoanm#readme",
   "license": "GPL-3.0",
   "keywords": [
-    "commander",
+    "yargs",
     "cli"
   ],
   "scripts": {
@@ -26,13 +26,14 @@
     "install-cli": "npm install -g . --force"
   },
   "dependencies": {
-    "commander": "12.1.0",
-    "figlet": "1.8.0"
+    "figlet": "1.8.0",
+    "yargs": "17.7.2"
   },
   "devDependencies": {
     "@eslint/js": "9.17.0",
     "@types/figlet": "1.7.0",
     "@types/node": "22.10.2",
+    "@types/yargs": "17.0.33",
     "eslint": "9.17.0",
     "globals": "15.13.0",
     "prettier": "3.4.2",
@@ -42,6 +43,6 @@
     "typescript-eslint": "8.18.1"
   },
   "bin": {
-    "hd-commander": "./dist/main.js"
+    "hd-yargs": "./dist/main.js"
   }
 }
