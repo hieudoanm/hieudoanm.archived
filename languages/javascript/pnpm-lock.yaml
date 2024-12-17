@@ -1325,6 +1325,9 @@ importers:
       eslint:
         specifier: 9.17.0
         version: 9.17.0(jiti@2.4.1)
+      globals:
+        specifier: 15.13.0
+        version: 15.13.0
       prettier:
         specifier: 3.4.2
         version: 3.4.2
