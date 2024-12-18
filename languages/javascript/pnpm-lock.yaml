@@ -326,7 +326,7 @@ importers:
         version: 9.17.0
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
+        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
       '@next/mdx':
         specifier: 15.1.1
         version: 15.1.1(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.97.1))(@mdx-js/react@3.1.0(@types/react@19.0.1)(react@19.0.0))
@@ -428,7 +428,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@4.28.1)
+        version: 3.1.11(rollup@2.79.2)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -540,7 +540,7 @@ importers:
         version: 7.0.6
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
+        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -615,7 +615,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@2.79.2)
+        version: 3.1.11(rollup@4.28.1)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -864,7 +864,7 @@ importers:
         version: 8.18.1(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
       wrangler:
         specifier: 3.97.0
-        version: 3.97.0(@cloudflare/workers-types@4.20241216.0)
+        version: 3.97.0(@cloudflare/workers-types@4.20241218.0)
 
   backend/graphql/nest:
     dependencies:
@@ -1046,8 +1046,8 @@ importers:
         version: 4.6.14
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20241216.0
-        version: 4.20241216.0
+        specifier: 4.20241218.0
+        version: 4.20241218.0
       '@dotenvx/dotenvx':
         specifier: 1.31.0
         version: 1.31.0
@@ -1098,7 +1098,7 @@ importers:
         version: 39.2.2(encoding@0.1.13)
       wrangler:
         specifier: 3.97.0
-        version: 3.97.0(@cloudflare/workers-types@4.20241216.0)
+        version: 3.97.0(@cloudflare/workers-types@4.20241218.0)
 
   backend/rest/http:
     dependencies:
@@ -3094,8 +3094,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20241216.0':
-    resolution: {integrity: sha512-PGIINXS+aE9vD2GYyWXfRG+VyxxceRkGDCoPxqwUweh1Bfv75HVotyL/adJ7mRVwh3XZDifGBdTaLReTT+Fcog==}
+  '@cloudflare/workers-types@4.20241218.0':
+    resolution: {integrity: sha512-Y0brjmJHcAZBXOPI7lU5hbiXglQWniA1kQjot2ata+HFimyjPPcz+4QWBRrmWcMPo0OadR2Vmac7WStDLpvz0w==}
 
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
@@ -18901,6 +18901,7 @@ packages:
   wrangler@3.97.0:
     resolution: {integrity: sha512-NkFAigqZWe4NOK0gYROcpvdugaYJE/JRFrIZ+c5Q5/uie+25WH8OVbRvvmiXhWVhso56cZs2W2TPmAxT/sgHkw==}
     engines: {node: '>=16.17.0'}
+    deprecated: Downgrade to 3.96.0
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20241205.0
@@ -20690,7 +20691,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20241205.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20241216.0': {}
+  '@cloudflare/workers-types@4.20241218.0': {}
 
   '@colors/colors@1.5.0':
     optional: true
@@ -28339,7 +28340,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   capnp-ts@0.7.0:
@@ -28413,7 +28414,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   change-case@5.4.4: {}
 
@@ -28865,7 +28866,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@0.5.2: {}
@@ -32114,7 +32115,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   helmet@8.0.0: {}
 
@@ -32727,7 +32728,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-map@2.0.3: {}
 
@@ -32852,7 +32853,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-utf8@0.2.1: {}
 
@@ -33901,11 +33902,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lowercase-keys@1.0.1: {}
 
@@ -35312,7 +35313,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   node-abort-controller@3.1.1: {}
 
@@ -36109,7 +36110,7 @@ snapshots:
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -38245,7 +38246,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-error@2.1.0: {}
@@ -38696,7 +38697,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sprintf-js@1.0.3: {}
 
@@ -39105,7 +39106,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   symbol-observable@1.2.0: {}
 
@@ -39318,7 +39319,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   tldts-core@6.1.68: {}
 
@@ -39965,11 +39966,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uqr@0.1.2: {}
 
@@ -40918,7 +40919,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20241205.0
       '@cloudflare/workerd-windows-64': 1.20241205.0
 
-  wrangler@3.97.0(@cloudflare/workers-types@4.20241216.0):
+  wrangler@3.97.0(@cloudflare/workers-types@4.20241218.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -40938,7 +40939,7 @@ snapshots:
       workerd: 1.20241205.0
       xxhash-wasm: 1.1.0
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20241216.0
+      '@cloudflare/workers-types': 4.20241218.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
