@@ -24,9 +24,9 @@
   "dependencies": {
     "@expo/metro-runtime": "4.0.0",
     "@tanstack/react-query": "5.62.8",
-    "expo": "52.0.19",
+    "expo": "52.0.20",
     "expo-linking": "7.0.3",
-    "expo-router": "4.0.13",
+    "expo-router": "4.0.14",
     "expo-status-bar": "2.0.0",
     "nativewind": "4.1.23",
     "react": "19.0.0",
