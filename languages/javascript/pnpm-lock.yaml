@@ -326,7 +326,7 @@ importers:
         version: 9.17.0
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
+        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
       '@next/mdx':
         specifier: 15.1.2
         version: 15.1.2(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.97.1))(@mdx-js/react@3.1.0(@types/react@19.0.2)(react@19.0.0))
@@ -428,7 +428,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@2.79.2)
+        version: 3.1.11(rollup@4.28.1)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -540,7 +540,7 @@ importers:
         version: 7.0.6
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
+        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -615,7 +615,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@4.28.1)
+        version: 3.1.11(rollup@2.79.2)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -1384,7 +1384,7 @@ importers:
         specifier: 8.18.2
         version: 8.18.2(eslint@9.17.0(jiti@2.4.2))(typescript@5.7.2)
 
-  templates/docs/astro:
+  templates/documentation/astro:
     dependencies:
       '@astrojs/starlight':
         specifier: 0.30.3
@@ -1409,13 +1409,13 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
 
-  templates/docs/docsify:
+  templates/documentation/docsify:
     devDependencies:
       docsify-cli:
         specifier: 4.4.4
         version: 4.4.4(encoding@0.1.13)
 
-  templates/docs/docusaurus:
+  templates/documentation/docusaurus:
     dependencies:
       '@docusaurus/core':
         specifier: 3.6.3
@@ -1452,7 +1452,7 @@ importers:
         specifier: 5.7.2
         version: 5.7.2
 
-  templates/docs/vuepress:
+  templates/documentation/vuepress:
     devDependencies:
       '@eslint/js':
         specifier: 9.17.0
@@ -4393,7 +4393,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {node: '>=0.10.0'}
+    engines: {'0': node >=0.10.0}
 
   '@expo/cli@0.22.7':
     resolution: {integrity: sha512-aNrUPVFPdIX42Q6UM6qygrN4DUqnXMDS1CnkTfNFVIZWRiJ1TUA05Zk6aF35M674CKd/c/dWHFjmbgjsyN/hEA==}
