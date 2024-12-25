@@ -1,9 +1,5 @@
 packages:
-  - "addons/**"
   - "apps/**"
-  - "backend/**"
-  - "cli/**"
-  - "docs/**"
-  - "frontend/**"
-  - "!frontend/web/angular"
-  - "!frontend/web/react/gatsby.js"
+  - "templates/**"
+  - "!templates/frontend/web/angular"
+  - "!templates/frontend/web/react/gatsby.js"
