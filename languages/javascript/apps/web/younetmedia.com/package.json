@@ -53,7 +53,7 @@
     "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.20",
     "csvtojson": "2.0.10",
-    "daisyui": "4.12.22",
+    "daisyui": "4.12.23",
     "dotenv": "16.4.7",
     "eslint": "9.17.0",
     "eslint-config-next": "15.1.2",
