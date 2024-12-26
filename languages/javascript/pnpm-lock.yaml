@@ -267,8 +267,8 @@ importers:
         specifier: 5.6.0
         version: 5.6.0(@babel/core@7.26.0)(@types/babel__core@7.20.5)(next@15.1.2(@babel/core@7.26.0)(@opentelemetry/api@1.4.1)(@playwright/test@1.49.1)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.82.0))(webpack@5.97.1)
       node-html-parser:
-        specifier: 6.1.13
-        version: 6.1.13
+        specifier: 7.0.1
+        version: 7.0.1
       pino:
         specifier: 9.6.0
         version: 9.6.0
@@ -326,7 +326,7 @@ importers:
         version: 9.17.0
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
+        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
       '@next/mdx':
         specifier: 15.1.2
         version: 15.1.2(@mdx-js/loader@3.1.0(acorn@8.14.0)(webpack@5.97.1))(@mdx-js/react@3.1.0(@types/react@19.0.2)(react@19.0.0))
@@ -428,7 +428,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@4.28.1)
+        version: 3.1.11(rollup@2.79.2)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -540,7 +540,7 @@ importers:
         version: 7.0.6
       '@million/lint':
         specifier: 1.0.14
-        version: 1.0.14(encoding@0.1.13)(rollup@2.79.2)
+        version: 1.0.14(encoding@0.1.13)(rollup@4.28.1)
       '@testing-library/dom':
         specifier: 10.4.0
         version: 10.4.0
@@ -615,7 +615,7 @@ importers:
         version: 2.0.1
       million:
         specifier: 3.1.11
-        version: 3.1.11(rollup@2.79.2)
+        version: 3.1.11(rollup@4.28.1)
       postcss:
         specifier: 8.4.49
         version: 8.4.49
@@ -4393,7 +4393,7 @@ packages:
 
   '@expo/bunyan@4.0.1':
     resolution: {integrity: sha512-+Lla7nYSiHZirgK+U/uYzsLv/X+HaJienbD5AKX1UQZHYfWaP+9uuQluRB4GrEVWF0GZ7vEVp/jzaOT9k/SQlg==}
-    engines: {'0': node >=0.10.0}
+    engines: {node: '>=0.10.0'}
 
   '@expo/cli@0.22.7':
     resolution: {integrity: sha512-aNrUPVFPdIX42Q6UM6qygrN4DUqnXMDS1CnkTfNFVIZWRiJ1TUA05Zk6aF35M674CKd/c/dWHFjmbgjsyN/hEA==}
@@ -14229,8 +14229,8 @@ packages:
     engines: {node: ^12.13 || ^14.13 || >=16}
     hasBin: true
 
-  node-html-parser@6.1.13:
-    resolution: {integrity: sha512-qIsTMOY4C/dAa5Q5vsobRpOOvPfC4pB61UVW2uSwZNUp0QU/jCekTal1vMmbO0DgdHeLUJpv/ARmDqErVxA3Sg==}
+  node-html-parser@7.0.1:
+    resolution: {integrity: sha512-KGtmPY2kS0thCWGK0VuPyOS+pBKhhe8gXztzA2ilAOhbUbxa9homF1bOyKvhGzMLXUoRds9IOmr/v5lr/lqNmA==}
 
   node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
@@ -35443,7 +35443,7 @@ snapshots:
       - bluebird
       - supports-color
 
-  node-html-parser@6.1.13:
+  node-html-parser@7.0.1:
     dependencies:
       css-select: 5.1.0
       he: 1.2.0
