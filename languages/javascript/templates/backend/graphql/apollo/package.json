@@ -24,7 +24,7 @@
   "dependencies": {
     "@apollo/datasource-rest": "6.4.1",
     "@apollo/server": "4.11.3",
-    "@graphql-tools/schema": "10.0.14",
+    "@graphql-tools/schema": "10.0.15",
     "graphql": "16.10.0",
     "graphql-tag": "2.12.6",
     "pino": "9.6.0"
@@ -36,7 +36,7 @@
     "@graphql-codegen/typescript": "4.1.2",
     "@graphql-codegen/typescript-resolvers": "4.4.1",
     "@types/jest": "29.5.14",
-    "@types/node": "22.10.3",
+    "@types/node": "22.10.4",
     "@webpack-cli/generators": "3.0.7",
     "concurrently": "9.1.2",
     "eslint": "9.17.0",
