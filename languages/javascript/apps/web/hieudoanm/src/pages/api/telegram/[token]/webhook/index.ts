@@ -32,49 +32,10 @@ export type TelegramRequestBody = {
   message: TelegramMessage;
 };
 
-type Message = {
-  role: string;
-  content: string;
-};
-
-type Choice = {
-  index: number;
-  message: Message;
-  finish_reason: string;
-};
-
-type Usage = {
-  prompt_tokens: number;
-  completion_tokens: number;
-  total_tokens: number;
-};
-
-type GenerativePreTrainingTransformerResponse = {
-  id: string;
-  object: string;
-  created: number;
-  model: string;
-  provider: string;
-  choices: Choice[];
-  usage: Usage;
-};
-
-const getMessage = async (content: string) => {
-  try {
-    const url: string = 'https://telegram-gpt-mk6x.onrender.com/process';
-    const format: string = 'application/json';
-    const response: Response = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify({ content }),
-      headers: { Accept: format, 'Content-Type': format },
-    });
-    const data: GenerativePreTrainingTransformerResponse =
-      await response.json();
-    return data.choices[0].message.content ?? `Echo: ${content}`;
-  } catch (error) {
-    logger.error(`getMessage error.message=${(error as Error).message}`);
-    return `Echo: ${content}`;
-  }
+const getQuery = (query: string | string[] | undefined): string => {
+  if (!query) return '';
+  if (Array.isArray(query)) return query[0];
+  return query;
 };
 
 const handler = async (
@@ -83,13 +44,15 @@ const handler = async (
 ) => {
   const { method } = request;
   if (method === 'POST') {
-    const token: string = request.query.token?.toString() ?? '';
+    const token: string = getQuery(request.query.token);
     const body: TelegramRequestBody = request.body;
     const chatId: number = body.message.chat.id ?? 0;
     try {
       logger.info(body, 'Request body');
-      const message: string = await getMessage(body.message.text ?? '');
-      await sendMessage(token, { chatId, message });
+      const rawMessage = `\`\`\`json
+${JSON.stringify(body, null, 2)}
+\`\`\``;
+      await sendMessage(token, { chatId, message: rawMessage });
     } catch (error) {
       const errorMessage = (error as Error).message;
       await sendMessage(token, { chatId, message: errorMessage });
