@@ -1,5 +1,0 @@
-# Languages
-
-- Assembly
-- Kotlin
-- Qt
