@@ -43,6 +43,7 @@ const handler = async (
   response: NextApiResponse<{ message: string }>
 ) => {
   const { method } = request;
+  logger.info(request.body, 'Telegram Webhook');
   if (method === 'POST') {
     const token: string = getQuery(request.query.token);
     const body: TelegramRequestBody = request.body;
