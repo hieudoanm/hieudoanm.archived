@@ -1387,8 +1387,8 @@ importers:
   templates/documentation/astro:
     dependencies:
       '@astrojs/starlight':
-        specifier: 0.30.3
-        version: 0.30.3(astro@5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0))
+        specifier: 0.30.4
+        version: 0.30.4(astro@5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0))
       astro:
         specifier: 5.1.2
         version: 5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0)
@@ -2222,8 +2222,8 @@ packages:
   '@astrojs/sitemap@3.2.1':
     resolution: {integrity: sha512-uxMfO8f7pALq0ADL6Lk68UV6dNYjJ2xGUzyjjVj60JLBs5a6smtlkBYv3tQ0DzoqwS7c9n4FUx5lgv0yPo/fgA==}
 
-  '@astrojs/starlight@0.30.3':
-    resolution: {integrity: sha512-HbGYYIR2Rnrvvc2jD0dUpp8zUzv3jQYtG5im3aulDgE4Jo21Ahw0yXlb/Y134G3LALLbqhImmlbt/h/nDV3yMA==}
+  '@astrojs/starlight@0.30.4':
+    resolution: {integrity: sha512-cqnXdp2Z3fIsv72HiiJsiZy8u3fEemzA5a9OOwH0qwUOfACuv2VD5VEfoTuq/8v87WsV9JhvWY0F7bKCETH0uA==}
     peerDependencies:
       astro: ^5.0.0
 
@@ -19584,7 +19584,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/starlight@0.30.3(astro@5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0))':
+  '@astrojs/starlight@0.30.4(astro@5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0))':
     dependencies:
       '@astrojs/mdx': 4.0.3(astro@5.1.2(@types/node@22.10.5)(db0@0.2.1)(ioredis@5.4.2)(jiti@2.4.2)(less@4.2.0)(lightningcss@1.28.2)(rollup@4.30.0)(sass@1.82.0)(terser@5.37.0)(typescript@5.7.2)(yaml@2.7.0))
       '@astrojs/sitemap': 3.2.1
