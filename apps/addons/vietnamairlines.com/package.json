@@ -1,5 +1,5 @@
 {
-  "name": "vietnamairlines.com",
+  "name": "@addons/vietnamairlines.com",
   "version": "0.0.1",
   "description": "vietnamairlines.com",
   "main": "dist/index.js",

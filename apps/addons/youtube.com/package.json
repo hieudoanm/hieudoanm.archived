@@ -1,5 +1,5 @@
 {
-  "name": "youtube.com",
+  "name": "@addons/youtube.com",
   "version": "0.0.1",
   "description": "youtube.com",
   "main": "index.js",

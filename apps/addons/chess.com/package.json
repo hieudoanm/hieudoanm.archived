@@ -1,5 +1,5 @@
 {
-  "name": "chess.com",
+  "name": "@addons/chess.com",
   "version": "0.0.1",
   "description": "chess.com",
   "main": "dist/index.js",

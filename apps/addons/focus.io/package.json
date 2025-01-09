@@ -1,5 +1,5 @@
 {
-  "name": "focus.io",
+  "name": "@addons/focus.io",
   "version": "0.0.1",
   "description": "focus.io",
   "main": "dist/index.js",
