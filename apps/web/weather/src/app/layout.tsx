@@ -3,7 +3,10 @@ import { Roboto } from "next/font/google";
 import { FC } from "react";
 import "./globals.css";
 
-const roboto = Roboto({ weight: ["100", "300", "400", "500", "700", "900"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Weather",
