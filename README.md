@@ -1,6 +1,20 @@
 # Apps
 
-1. Calculator
-2. Calendar
-3. Clock
-4. Weather
+## Table of Content
+
+- [Apps](#apps)
+  - [Table of Content](#table-of-content)
+  - [Calculator](#calculator)
+  - [Calendar](#calendar)
+  - [Clock](#clock)
+  - [Weather](#weather)
+
+## Calculator
+
+## Calendar
+
+## Clock
+
+![clock](./apps/web/clock/images/cover.png)
+
+## Weather
