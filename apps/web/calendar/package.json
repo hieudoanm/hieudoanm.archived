@@ -1,10 +1,10 @@
 {
-  "name": "@hieudoanm/clock",
+  "name": "@hieudoanm/calendar",
   "version": "0.0.1",
-  "description": "Clock",
+  "description": "Calendar",
   "keywords": [
     "apps",
-    "clock"
+    "calendar"
   ],
   "homepage": "https://github.com/hieudoanm/hieudoanm.app#readme",
   "bugs": {

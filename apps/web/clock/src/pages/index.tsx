@@ -248,7 +248,7 @@ const HomePage: NextPage = () => {
   });
 
   return (
-    <div className="w-screen h-double-screen md:h-screen overflow-hidden bg-gray-100">
+    <div className="w-screen h-triple-screen md:h-screen overflow-hidden bg-gray-300">
       <div className="grid grid-rows-3 md:grid-rows-none grid-cols-none md:grid-cols-3 h-full gap-8 p-8">
         <div className="col-span-1 h-full">
           <div className="flex items-center justify-center h-full">

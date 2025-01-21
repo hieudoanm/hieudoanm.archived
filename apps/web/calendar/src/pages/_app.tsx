@@ -1,4 +1,4 @@
-import "@clock/styles/globals.css";
+import "@calendar/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Roboto_Mono } from "next/font/google";
 import Head from "next/head";
@@ -9,7 +9,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <title>Clock</title>
+        <title>Calendar</title>
       </Head>
       <div className={robotoMono.className}>
         <Component {...pageProps} />
@@ -17,4 +17,5 @@ const App = ({ Component, pageProps }: AppProps) => {
     </>
   );
 };
+
 export default App;

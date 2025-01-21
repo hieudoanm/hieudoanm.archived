@@ -13,6 +13,8 @@
 
 ## Calendar
 
+![calendar](./apps/web/calendar/images/cover.png)
+
 ## Clock
 
 ![clock](./apps/web/clock/images/cover.png)
