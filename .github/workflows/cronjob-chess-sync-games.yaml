@@ -3,11 +3,11 @@ name: Chess - Sync Games
 on:
   push:
     branches:
-      - "master"
+      - 'master'
     paths:
-      - "languages/javascript/apps/web/scripts/ts/chess/import/games.ts"
+      - 'languages/javascript/apps/web/scripts/ts/chess/import/games.ts'
   schedule:
-    - cron: "0 0 * * 0" # "At 00:00 on Sunday."
+    - cron: '0 0 * * 0' # "At 00:00 on Sunday."
 
 jobs:
   sync:
@@ -17,12 +17,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          sparse-checkout: "languages/javascript/apps/web"
+          sparse-checkout: 'languages/javascript/apps/web'
           sparse-checkout-cone-mode: false
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22.12.0"
+          node-version: '22.12.0'
       - name: Install pnpm
         run: npm install -g pnpm
       - name: Install Dependencies

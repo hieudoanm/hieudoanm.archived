@@ -25,7 +25,7 @@ These are the elements outlined in John Gruber’s original design document. All
 ### Styling
 
 - Bold: **bold text**
-- Italic: *italicized text*
+- Italic: _italicized text_
 
 ### Blockquote
 
