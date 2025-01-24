@@ -12,13 +12,11 @@ import {
   FaChess,
   FaClock,
   FaCode,
-  FaCoins,
   FaCrown,
   FaFlag,
   FaFlagUsa,
   FaFootball,
   FaFutbol,
-  FaGamepad,
   FaHeart,
   FaIdBadge,
   FaInstagram,
@@ -51,7 +49,6 @@ export type Folder =
   | 'converter'
   | 'csv'
   | 'crypto'
-  | 'games'
   | 'news'
   | 'news-de'
   | 'news-kr'
@@ -277,36 +274,14 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'games',
-    href: 'games',
-    name: 'Games',
-    shortName: 'Games',
-    enabled: true,
-    icon: <FaGamepad />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
-  {
-    id: 'games-flipism',
-    href: 'games/flipism',
-    name: 'Flipism',
-    shortName: 'Flipism',
-    enabled: true,
-    icon: <FaCoins />,
-    borderStyle: Border.Solid,
-    folder: 'games',
-    isFolder: false,
-  },
-  {
-    id: 'games-wheel-of-fortune',
-    href: 'games/wheel-of-fortune',
+    id: 'wheel-of-fortune',
+    href: 'wheel-of-fortune',
     name: 'Wheel of Fortune',
     shortName: 'Wheel of Fortune',
     enabled: true,
     icon: <FaWheelchair />,
     borderStyle: Border.Solid,
-    folder: 'games',
+    folder: 'home',
     isFolder: false,
   },
   {
