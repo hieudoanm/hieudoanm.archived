@@ -1,7 +1,5 @@
-import { useTheme } from '@web/context/ThemeContext';
 import { useEffectOnce } from '@web/hooks/use-effect-once';
 import { select } from 'd3';
-import daisyuiColors from 'daisyui/src/theming/themes';
 import { FC } from 'react';
 
 type Path = {
@@ -83,9 +81,7 @@ export const SVGMaps: FC<MapsProperties> = ({
   svg = { viewBox: '', width: '0', height: '0', paths: [] },
   data = [],
 }) => {
-  const { theme } = useTheme();
-
-  const chartColor = daisyuiColors[theme]['primary'];
+  const chartColor = '#000000';
 
   useEffectOnce(() => {
     drawChart(id, svg, data, chartColor);

@@ -1,6 +1,5 @@
 import { Title } from '@prisma/client';
 import { SVGMaps } from '@web/components/Maps';
-import { useTheme } from '@web/context/ThemeContext';
 import countries from '@web/json/countries/countries.json';
 import maps from '@web/json/maps/world.json';
 import { AppLayout } from '@web/layout/AppLayout';
@@ -8,7 +7,6 @@ import { Days } from '@web/services/chess/chess.service';
 import { QueryTemplate } from '@web/templates/QueryTemplate';
 import { trpc } from '@web/utils/trpc';
 import chroma from 'chroma-js';
-import daisyuiColors from 'daisyui/src/theming/themes';
 import Link from 'next/link';
 import { FC, useState } from 'react';
 import { FaBoltLightning, FaClock, FaRocket } from 'react-icons/fa6';
@@ -92,7 +90,6 @@ const processData = (data?: {
 };
 
 export const ChessTitled: FC = () => {
-  const { theme } = useTheme();
   const [state, setState] = useState<{
     days?: Days;
     title?: Title;
@@ -112,8 +109,8 @@ export const ChessTitled: FC = () => {
     countryCode: state.countryCode,
   });
 
-  const primaryColor = daisyuiColors[theme]['primary'];
-  const baseColor = daisyuiColors[theme]['base-100'];
+  const primaryColor = '#FFFFFF';
+  const baseColor = '#000000';
 
   const { titleData } = processData(data);
 
