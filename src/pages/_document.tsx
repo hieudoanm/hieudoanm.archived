@@ -3,9 +3,9 @@ import { FC } from 'react';
 
 const Document: FC = () => {
   return (
-    <Html lang='en' data-theme='coffee'>
+    <Html lang='en'>
       <Head />
-      <body>
+      <body data-theme='coffee'>
         <Main />
         <NextScript />
       </body>

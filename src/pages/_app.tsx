@@ -35,8 +35,8 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         {/* Meta */}
         <meta charSet='UTF-8' />
         <meta name='keywords' content='f(x)' />
-        <meta name='theme-color' content='#000000' />
-        <meta name='url' content='https://fxai.vercel.app' />
+        {/* <meta name='theme-color' content='#000000' /> */}
+        <meta name='url' content='https://hieudoanm.vercel.app' />
         <meta
           name='viewport'
           content='width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
