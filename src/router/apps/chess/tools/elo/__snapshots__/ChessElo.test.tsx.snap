@@ -62,10 +62,10 @@ exports[`ChessElo render default 1`] = `
               class="flex w-full flex-col gap-y-4 md:gap-y-8"
             >
               <div
-                class="join join-vertical w-full md:join-horizontal"
+                class="join join-vertical md:join-horizontal w-full"
               >
                 <label
-                  class="input join-item input-bordered flex w-full items-center gap-2 border-base-content"
+                  class="input join-item input-bordered border-base-content flex w-full items-center gap-2"
                 >
                   <span>
                     Player
@@ -80,7 +80,7 @@ exports[`ChessElo render default 1`] = `
                   />
                 </label>
                 <label
-                  class="input join-item input-bordered flex w-full items-center gap-2 border-base-content"
+                  class="input join-item input-bordered border-base-content flex w-full items-center gap-2"
                 >
                   <span>
                     Opponent
@@ -95,7 +95,7 @@ exports[`ChessElo render default 1`] = `
                   />
                 </label>
                 <select
-                  class="join-item select select-bordered w-full border-base-content"
+                  class="join-item select select-bordered border-base-content w-full"
                   id="score"
                   name="score"
                 >
@@ -121,7 +121,7 @@ exports[`ChessElo render default 1`] = `
                   </option>
                 </select>
                 <select
-                  class="join-item select select-bordered w-full border-base-content"
+                  class="join-item select select-bordered border-base-content w-full"
                   id="timeClass"
                   name="timeClass"
                 >
@@ -148,10 +148,10 @@ exports[`ChessElo render default 1`] = `
                 </select>
               </div>
               <div
-                class="join join-vertical w-full md:join-horizontal"
+                class="join join-vertical md:join-horizontal w-full"
               >
                 <select
-                  class="join-item select select-bordered w-full border-base-content"
+                  class="join-item select select-bordered border-base-content w-full"
                   id="age"
                   name="age"
                 >
@@ -172,7 +172,7 @@ exports[`ChessElo render default 1`] = `
                   </option>
                 </select>
                 <select
-                  class="join-item select select-bordered w-full border-base-content"
+                  class="join-item select select-bordered border-base-content w-full"
                   id="rating"
                   name="rating"
                 >
@@ -193,7 +193,7 @@ exports[`ChessElo render default 1`] = `
                   </option>
                 </select>
                 <select
-                  class="join-item select select-bordered w-full border-base-content"
+                  class="join-item select select-bordered border-base-content w-full"
                   id="games"
                   name="games"
                 >
@@ -214,7 +214,7 @@ exports[`ChessElo render default 1`] = `
                   </option>
                 </select>
                 <label
-                  class="input join-item input-bordered flex w-full items-center gap-2 border-base-content"
+                  class="input join-item input-bordered border-base-content flex w-full items-center gap-2"
                 >
                   <span>
                     New

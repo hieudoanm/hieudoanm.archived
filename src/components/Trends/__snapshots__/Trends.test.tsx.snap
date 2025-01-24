@@ -3,14 +3,14 @@
 exports[`Trends to match snapshot 1`] = `
 <div>
   <div
-    class="collapse join-item collapse-arrow border border-base-content"
+    class="join-item collapse-arrow border-base-content collapse border"
   >
     <input
       name="accordion-trends"
       type="radio"
     />
     <div
-      class="collapse-title border-b border-base-content capitalize"
+      class="collapse-title border-base-content border-b capitalize"
     >
        (
       0

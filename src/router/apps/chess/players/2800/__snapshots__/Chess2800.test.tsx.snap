@@ -56,7 +56,7 @@ exports[`Chess2800 render default 1`] = `
           class="p-4 md:p-8"
         >
           <div
-            class="rounded-xl border border-base-content"
+            class="border-base-content rounded-xl border"
           >
             <table
               class="table"
@@ -70,7 +70,7 @@ exports[`Chess2800 render default 1`] = `
               </caption>
               <thead>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <th>
                     Username
@@ -87,7 +87,7 @@ exports[`Chess2800 render default 1`] = `
               </thead>
               <tbody>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -106,7 +106,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -125,7 +125,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -144,7 +144,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -163,7 +163,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -182,7 +182,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -201,7 +201,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -220,7 +220,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -239,7 +239,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -258,7 +258,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -277,7 +277,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -296,7 +296,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -315,7 +315,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -334,7 +334,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a
@@ -353,7 +353,7 @@ exports[`Chess2800 render default 1`] = `
                   </td>
                 </tr>
                 <tr
-                  class="border-t border-base-content"
+                  class="border-base-content border-t"
                 >
                   <td>
                     <a

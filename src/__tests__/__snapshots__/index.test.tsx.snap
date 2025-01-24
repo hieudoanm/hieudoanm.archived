@@ -21,7 +21,7 @@ exports[`SocialPage render default 1`] = `
               class="aspect-square w-full overflow-hidden rounded-full"
             >
               <div
-                class="h-full w-full rounded-full border-4 border-base-content bg-cover bg-center"
+                class="border-base-content h-full w-full rounded-full border-4 bg-cover bg-center"
                 style="background-image: url(/img.jpg);"
               />
             </div>

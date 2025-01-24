@@ -36,10 +36,10 @@ exports[`InsightsGeography to match snapshot 1`] = `
     </p>
   </div>
   <div
-    class="card border border-base-content shadow"
+    class="card border-base-content border shadow"
   >
     <div
-      class="border-b border-base-content px-8 py-4"
+      class="border-base-content border-b px-8 py-4"
     >
       <div
         class="flex items-center justify-between"
