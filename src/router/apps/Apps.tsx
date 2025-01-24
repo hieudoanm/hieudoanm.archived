@@ -82,18 +82,6 @@ export type App = {
   isFolder: boolean;
 };
 
-const languagesApps: App[] = ['english', 'korean'].map((language: string) => ({
-  id: `languages-${language}`,
-  href: `languages/${language}`,
-  name: language,
-  shortName: language,
-  enabled: true,
-  icon: <FaLanguage />,
-  borderStyle: Border.Solid,
-  folder: 'languages',
-  isFolder: false,
-}));
-
 const sciencesApps: App[] = ['chemistry', 'sociology'].map(
   (science: string) => ({
     id: `${science}`,
