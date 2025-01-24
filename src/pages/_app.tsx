@@ -2,7 +2,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { APP_NAME } from '@web/constants/app.constants';
-import { ThemeProvider } from '@web/context/ThemeContext';
 import '@web/styles/globals.css';
 import { trpc } from '@web/utils/trpc';
 import 'github-markdown-css/github-markdown.css';
@@ -45,9 +44,7 @@ const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
       </Head>
       <Vercel />
       <QueryClientProvider client={queryClient}>
-        <ThemeProvider>
-          <Component {...pageProps} />
-        </ThemeProvider>
+        <Component {...pageProps} />
       </QueryClientProvider>
     </>
   );
