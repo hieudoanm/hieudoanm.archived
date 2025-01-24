@@ -162,53 +162,6 @@ exports[`GridTemplate render default 1`] = `
                 class="flex h-full items-center justify-center"
               >
                 <a
-                  href="/apps/camera"
-                >
-                  <div
-                    class="flex flex-col gap-y-2 md:gap-y-4"
-                  >
-                    <div
-                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
-                    >
-                      <svg
-                        fill="currentColor"
-                        height="1em"
-                        stroke="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="truncate text-center text-xs md:text-base"
-                    >
-                      <span
-                        class="hidden capitalize md:inline"
-                      >
-                        Camera
-                      </span>
-                      <span
-                        class="inline capitalize md:hidden"
-                      >
-                        Camera
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-span-1"
-            >
-              <div
-                class="flex h-full items-center justify-center"
-              >
-                <a
                   href="/apps/chess"
                 >
                   <div
@@ -243,53 +196,6 @@ exports[`GridTemplate render default 1`] = `
                         class="inline capitalize md:hidden"
                       >
                         Chess
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-span-1"
-            >
-              <div
-                class="flex h-full items-center justify-center"
-              >
-                <a
-                  href="/apps/colors"
-                >
-                  <div
-                    class="flex flex-col gap-y-2 md:gap-y-4"
-                  >
-                    <div
-                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
-                    >
-                      <svg
-                        fill="currentColor"
-                        height="1em"
-                        stroke="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="truncate text-center text-xs md:text-base"
-                    >
-                      <span
-                        class="hidden capitalize md:inline"
-                      >
-                        Colors
-                      </span>
-                      <span
-                        class="inline capitalize md:hidden"
-                      >
-                        Colors
                       </span>
                     </div>
                   </div>
@@ -1149,7 +1055,54 @@ exports[`GridTemplate render default 1`] = `
                 class="flex h-full items-center justify-center"
               >
                 <a
-                  href="/apps/vietnam"
+                  href="/apps/presidents"
+                >
+                  <div
+                    class="flex flex-col gap-y-2 md:gap-y-4"
+                  >
+                    <div
+                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 448 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M32 0C49.7 0 64 14.3 64 32l0 16 69-17.2c38.1-9.5 78.3-5.1 113.5 12.5c46.3 23.2 100.8 23.2 147.1 0l9.6-4.8C423.8 28.1 448 43.1 448 66.1l0 36.1-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-20.3-9-41.8-14.7-63.6-16.9l0 32.2c17.4 2.1 34.4 6.7 50.6 13.9l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 136.3l0 62-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 203.1l0 32.7 70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 232.3l0 62-44.7 16.2c-42.8 15.6-90 13.9-131.6-4.6l-16.1-7.2c-40.2-17.9-85-22.5-128.1-13.3L64 299.1l0 32.7 70.2-15.1c36.4-7.8 74.3-3.9 108.4 11.3l16.1 7.2c49.2 21.9 105 23.8 155.6 5.4L448 328.3l0 33.5c0 13.3-8.3 25.3-20.8 30l-34.7 13c-46.2 17.3-97.6 14.6-141.7-7.4c-37.9-19-81.3-23.7-122.5-13.4L64 400l0 80c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64 0-70.5 0-32.7 0-63.3 0-32.7 0-63.3 0-32.7L0 64 0 32C0 14.3 14.3 0 32 0zm80 96A16 16 0 1 0 80 96a16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32zm-32 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm32 0a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="truncate text-center text-xs md:text-base"
+                    >
+                      <span
+                        class="hidden capitalize md:inline"
+                      >
+                        Presidents
+                      </span>
+                      <span
+                        class="inline capitalize md:hidden"
+                      >
+                        Presidents
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-span-1"
+            >
+              <div
+                class="flex h-full items-center justify-center"
+              >
+                <a
+                  href="/apps/licenses"
                 >
                   <div
                     class="flex flex-col gap-y-2 md:gap-y-4"
@@ -1177,12 +1130,59 @@ exports[`GridTemplate render default 1`] = `
                       <span
                         class="hidden capitalize md:inline"
                       >
-                        Vietnam
+                        Licenses
                       </span>
                       <span
                         class="inline capitalize md:hidden"
                       >
-                        Vietnam
+                        Licenses
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-span-1"
+            >
+              <div
+                class="flex h-full items-center justify-center"
+              >
+                <a
+                  href="/apps/provinces"
+                >
+                  <div
+                    class="flex flex-col gap-y-2 md:gap-y-4"
+                  >
+                    <div
+                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 576 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="truncate text-center text-xs md:text-base"
+                    >
+                      <span
+                        class="hidden capitalize md:inline"
+                      >
+                        Provinces
+                      </span>
+                      <span
+                        class="inline capitalize md:hidden"
+                      >
+                        Provinces
                       </span>
                     </div>
                   </div>
@@ -1302,46 +1302,6 @@ exports[`ListTemplate render default 1`] = `
                   </div>
                   <div>
                     Calculator
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="camera"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Camera
                   </div>
                 </div>
               </div>
@@ -1589,126 +1549,6 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="colors/converter"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Colors Converter
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="colors/picker"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Colors Picker
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="colors/randomiser"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Colors Randomiser
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
           href="screen"
         >
           <div
@@ -1742,46 +1582,6 @@ exports[`ListTemplate render default 1`] = `
                   </div>
                   <div>
                     Screen
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="calculator/weight"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 640 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M384 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L398.4 96c-5.2 25.8-22.9 47.1-46.4 57.3L352 448l160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0-192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0 0-294.7c-23.5-10.3-41.2-31.6-46.4-57.3L128 96c-17.7 0-32-14.3-32-32s14.3-32 32-32l128 0c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288l144.9 0L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320l144.9 0L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Weight
                   </div>
                 </div>
               </div>
@@ -2669,7 +2469,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="usa/presidents"
+          href="presidents"
         >
           <div
             class="border-base-content border-b"
@@ -2709,47 +2509,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="vietnam"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 576 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Vietnam
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="vietnam/licenses"
+          href="licenses"
         >
           <div
             class="border-base-content border-b"
@@ -2789,7 +2549,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="vietnam/provinces"
+          href="provinces"
         >
           <div
             class="border-base-content border-b"
@@ -2822,46 +2582,6 @@ exports[`ListTemplate render default 1`] = `
                   </div>
                   <div>
                     Provinces
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="vietnam/vnindex"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 576 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    VNIndex
                   </div>
                 </div>
               </div>

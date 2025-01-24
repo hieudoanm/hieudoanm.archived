@@ -9,7 +9,6 @@ import {
   FaBrain,
   FaBusinessTime,
   FaCalculator,
-  FaCamera,
   FaChess,
   FaClock,
   FaCode,
@@ -20,7 +19,6 @@ import {
   FaFootball,
   FaFutbol,
   FaGamepad,
-  FaHand,
   FaHeart,
   FaIdBadge,
   FaInstagram,
@@ -30,11 +28,9 @@ import {
   FaMarkdown,
   FaMusic,
   FaNewspaper,
-  FaPalette,
   FaQrcode,
   FaRobot,
   FaRulerCombined,
-  FaScaleBalanced,
   FaStar,
   FaTable,
   FaTelegram,
@@ -48,12 +44,9 @@ export enum Border {
 
 export type Folder =
   | 'home'
-  | 'calculator'
   | 'chess'
   | 'chess-players'
   | 'chess-tools'
-  | 'clock'
-  | 'colors'
   | 'countries'
   | 'converter'
   | 'csv'
@@ -67,7 +60,6 @@ export type Folder =
   | 'sciences'
   | 'tools'
   | 'trends'
-  | 'vietnam'
   | 'usa';
 
 export type App = {
@@ -115,17 +107,6 @@ export const allApps: App[] = [
     shortName: 'Calculator',
     enabled: true,
     icon: <FaCalculator />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
-    id: 'camera',
-    href: 'camera',
-    name: 'Camera',
-    shortName: 'Camera',
-    enabled: true,
-    icon: <FaCamera />,
     borderStyle: Border.Solid,
     folder: 'home',
     isFolder: false,
@@ -208,50 +189,6 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'colors',
-    href: 'colors',
-    name: 'Colors',
-    shortName: 'Colors',
-    enabled: true,
-    icon: <FaPalette />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
-  {
-    id: 'colors-converter',
-    href: 'colors/converter',
-    name: 'Colors Converter',
-    shortName: 'Converter',
-    enabled: true,
-    icon: <FaPalette />,
-    borderStyle: Border.Solid,
-    folder: 'colors',
-    isFolder: false,
-  },
-  {
-    id: 'colors-picker',
-    href: 'colors/picker',
-    name: 'Colors Picker',
-    shortName: 'Picker',
-    enabled: true,
-    icon: <FaPalette />,
-    borderStyle: Border.Solid,
-    folder: 'colors',
-    isFolder: false,
-  },
-  {
-    id: 'colors-randomiser',
-    href: 'colors/randomiser',
-    name: 'Colors Randomiser',
-    shortName: 'Randomiser',
-    enabled: true,
-    icon: <FaPalette />,
-    borderStyle: Border.Solid,
-    folder: 'colors',
-    isFolder: false,
-  },
-  {
     id: 'screen',
     href: 'screen',
     name: 'Screen',
@@ -260,17 +197,6 @@ export const allApps: App[] = [
     icon: <FaRulerCombined />,
     borderStyle: Border.Solid,
     folder: 'home',
-    isFolder: false,
-  },
-  {
-    id: 'calculator-weight',
-    href: 'calculator/weight',
-    name: 'Weight',
-    shortName: 'Weight',
-    enabled: true,
-    icon: <FaScaleBalanced />,
-    borderStyle: Border.Solid,
-    folder: 'calculator',
     isFolder: false,
   },
   {
@@ -368,17 +294,6 @@ export const allApps: App[] = [
     shortName: 'Flipism',
     enabled: true,
     icon: <FaCoins />,
-    borderStyle: Border.Solid,
-    folder: 'games',
-    isFolder: false,
-  },
-  {
-    id: 'games-rock-paper-scissors',
-    href: 'games/rock-paper-scissors',
-    name: 'Rock Paper Scissors',
-    shortName: 'Rock Paper Scissors',
-    enabled: true,
-    icon: <FaHand />,
     borderStyle: Border.Solid,
     folder: 'games',
     isFolder: false,
@@ -539,21 +454,21 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'usa-presidents',
-    href: 'usa/presidents',
+    id: 'presidents',
+    href: 'presidents',
     name: 'Presidents',
     shortName: 'Presidents',
     enabled: true,
     icon: <FaFlagUsa />,
     borderStyle: Border.Solid,
-    folder: 'usa',
+    folder: 'home',
     isFolder: false,
   },
   {
-    id: 'vietnam',
-    href: 'vietnam',
-    name: 'Vietnam',
-    shortName: 'Vietnam',
+    id: 'licenses',
+    href: 'licenses',
+    name: 'Licenses',
+    shortName: 'Licenses',
     enabled: true,
     icon: <FaStar />,
     borderStyle: Border.Solid,
@@ -561,36 +476,14 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'vietnam-licenses',
-    href: 'vietnam/licenses',
-    name: 'Licenses',
-    shortName: 'Licenses',
-    enabled: true,
-    icon: <FaStar />,
-    borderStyle: Border.Solid,
-    folder: 'vietnam',
-    isFolder: false,
-  },
-  {
-    id: 'vietnam-provinces',
-    href: 'vietnam/provinces',
+    id: 'provinces',
+    href: 'provinces',
     name: 'Provinces',
     shortName: 'Provinces',
     enabled: true,
     icon: <FaStar />,
     borderStyle: Border.Solid,
-    folder: 'vietnam',
-    isFolder: false,
-  },
-  {
-    id: 'vietnam-vnindex',
-    href: 'vietnam/vnindex',
-    name: 'VNIndex',
-    shortName: 'VNIndex',
-    enabled: true,
-    icon: <FaStar />,
-    borderStyle: Border.Solid,
-    folder: 'vietnam',
+    folder: 'home',
     isFolder: false,
   },
   {
