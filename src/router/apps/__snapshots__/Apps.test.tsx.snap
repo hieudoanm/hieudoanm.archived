@@ -256,53 +256,6 @@ exports[`GridTemplate render default 1`] = `
                 class="flex h-full items-center justify-center"
               >
                 <a
-                  href="/apps/pomodoro"
-                >
-                  <div
-                    class="flex flex-col gap-y-2 md:gap-y-4"
-                  >
-                    <div
-                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
-                    >
-                      <svg
-                        fill="currentColor"
-                        height="1em"
-                        stroke="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="truncate text-center text-xs md:text-base"
-                    >
-                      <span
-                        class="hidden capitalize md:inline"
-                      >
-                        Pomodoro
-                      </span>
-                      <span
-                        class="inline capitalize md:hidden"
-                      >
-                        Pomodoro
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-span-1"
-            >
-              <div
-                class="flex h-full items-center justify-center"
-              >
-                <a
                   href="/apps/colors"
                 >
                   <div
@@ -679,7 +632,7 @@ exports[`GridTemplate render default 1`] = `
                 class="flex h-full items-center justify-center"
               >
                 <a
-                  href="/apps/languages"
+                  href="/apps/detection"
                 >
                   <div
                     class="flex flex-col gap-y-2 md:gap-y-4"
@@ -707,12 +660,59 @@ exports[`GridTemplate render default 1`] = `
                       <span
                         class="hidden capitalize md:inline"
                       >
-                        Languages
+                        Detection
                       </span>
                       <span
                         class="inline capitalize md:hidden"
                       >
-                        Languages
+                        Detection
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-span-1"
+            >
+              <div
+                class="flex h-full items-center justify-center"
+              >
+                <a
+                  href="/apps/english"
+                >
+                  <div
+                    class="flex flex-col gap-y-2 md:gap-y-4"
+                  >
+                    <div
+                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 640 512"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="truncate text-center text-xs md:text-base"
+                    >
+                      <span
+                        class="hidden capitalize md:inline"
+                      >
+                        english
+                      </span>
+                      <span
+                        class="inline capitalize md:hidden"
+                      >
+                        english
                       </span>
                     </div>
                   </div>
@@ -1589,46 +1589,6 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="pomodoro"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 512 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    Pomodoro
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
           href="colors/converter"
         >
           <div
@@ -2269,7 +2229,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="languages/detection"
+          href="detection"
         >
           <div
             class="border-base-content border-b"
@@ -2309,7 +2269,7 @@ exports[`ListTemplate render default 1`] = `
           </div>
         </a>
         <a
-          href="languages/english"
+          href="english"
         >
           <div
             class="border-base-content border-b"
@@ -2342,46 +2302,6 @@ exports[`ListTemplate render default 1`] = `
                   </div>
                   <div>
                     english
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a
-          href="languages/korean"
-        >
-          <div
-            class="border-base-content border-b"
-          >
-            <div
-              class="container mx-auto"
-            >
-              <div
-                class="p-4 md:p-8"
-              >
-                <div
-                  class="flex items-center gap-x-4"
-                >
-                  <div
-                    class="text-4xl"
-                  >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 640 512"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    korean
                   </div>
                 </div>
               </div>

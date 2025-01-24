@@ -59,7 +59,6 @@ export type Folder =
   | 'csv'
   | 'crypto'
   | 'games'
-  | 'languages'
   | 'news'
   | 'news-de'
   | 'news-kr'
@@ -218,17 +217,6 @@ export const allApps: App[] = [
     icon: <FaCalculator />,
     borderStyle: Border.Solid,
     folder: 'chess',
-    isFolder: false,
-  },
-  {
-    id: 'pomodoro',
-    href: 'pomodoro',
-    name: 'Pomodoro',
-    shortName: 'Pomodoro',
-    enabled: true,
-    icon: <FaClock />,
-    borderStyle: Border.Solid,
-    folder: 'home',
     isFolder: false,
   },
   {
@@ -441,28 +429,27 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'languages',
-    href: 'languages',
-    name: 'Languages',
-    shortName: 'Languages',
-    enabled: true,
-    icon: <FaLanguage />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
-  {
-    id: 'languages-detection',
-    href: 'languages/detection',
+    id: 'detection',
+    href: 'detection',
     name: 'Detection',
     shortName: 'Detection',
     enabled: true,
     icon: <FaLanguage />,
     borderStyle: Border.Solid,
-    folder: 'languages',
+    folder: 'home',
     isFolder: false,
   },
-  ...languagesApps,
+  {
+    id: 'english',
+    href: 'english',
+    name: 'english',
+    shortName: 'english',
+    enabled: true,
+    icon: <FaLanguage />,
+    borderStyle: Border.Solid,
+    folder: 'home',
+    isFolder: false,
+  },
   {
     id: 'photos',
     href: 'photos',
