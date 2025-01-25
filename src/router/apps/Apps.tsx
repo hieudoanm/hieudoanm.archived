@@ -32,7 +32,6 @@ import {
   FaStar,
   FaTable,
   FaTelegram,
-  FaWheelchair,
 } from 'react-icons/fa6';
 
 export enum Border {
@@ -56,8 +55,7 @@ export type Folder =
   | 'news-us'
   | 'sciences'
   | 'tools'
-  | 'trends'
-  | 'usa';
+  | 'trends';
 
 export type App = {
   id: string;
@@ -274,17 +272,6 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'wheel-of-fortune',
-    href: 'wheel-of-fortune',
-    name: 'Wheel of Fortune',
-    shortName: 'Wheel of Fortune',
-    enabled: true,
-    icon: <FaWheelchair />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
     id: 'qrcode',
     href: 'qrcode',
     name: 'QR Code',
@@ -396,10 +383,10 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'usa',
-    href: 'usa',
-    name: 'United States',
-    shortName: 'USA',
+    id: 'usa-states',
+    href: 'states',
+    name: 'States',
+    shortName: 'States',
     enabled: true,
     icon: <FaFlagUsa />,
     borderStyle: Border.Solid,
@@ -407,29 +394,18 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'usa-states',
-    href: 'usa/states',
-    name: 'States',
-    shortName: 'States',
-    enabled: true,
-    icon: <FaFlagUsa />,
-    borderStyle: Border.Solid,
-    folder: 'usa',
-    isFolder: false,
-  },
-  {
     id: 'usa-congress',
-    href: 'usa/congress',
+    href: 'congress',
     name: 'Congress',
     shortName: 'Congress',
     enabled: true,
     icon: <FaFlagUsa />,
     borderStyle: Border.Solid,
-    folder: 'usa',
+    folder: 'home',
     isFolder: false,
   },
   {
-    id: 'presidents',
+    id: 'usa-presidents',
     href: 'presidents',
     name: 'Presidents',
     shortName: 'Presidents',
