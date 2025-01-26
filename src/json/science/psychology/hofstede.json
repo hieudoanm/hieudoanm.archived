@@ -1,7 +1,7 @@
 [
   {
     "id": 545,
-    "country": "Albania*",
+    "country": "Albania",
     "powerDistance": 90,
     "individualism": 20,
     "masculinity": 80,
@@ -11,7 +11,7 @@
   },
   {
     "id": 7062,
-    "country": "Algeria*",
+    "country": "Algeria",
     "powerDistance": 80,
     "individualism": 35,
     "masculinity": 35,
@@ -21,7 +21,7 @@
   },
   {
     "id": 546,
-    "country": "Angola*",
+    "country": "Angola",
     "powerDistance": 83,
     "individualism": 18,
     "masculinity": 20,
@@ -41,7 +41,7 @@
   },
   {
     "id": 7067,
-    "country": "Armenia*",
+    "country": "Armenia",
     "powerDistance": 85,
     "individualism": 22,
     "masculinity": 50,
@@ -71,7 +71,7 @@
   },
   {
     "id": 7074,
-    "country": "Azerbaijan*",
+    "country": "Azerbaijan",
     "powerDistance": 85,
     "individualism": 22,
     "masculinity": 50,
@@ -91,7 +91,7 @@
   },
   {
     "id": 7077,
-    "country": "Belarus*",
+    "country": "Belarus",
     "powerDistance": 95,
     "individualism": 25,
     "masculinity": 20,
@@ -111,7 +111,7 @@
   },
   {
     "id": 463,
-    "country": "Bhutan*",
+    "country": "Bhutan",
     "powerDistance": 94,
     "individualism": 52,
     "masculinity": 32,
@@ -121,7 +121,7 @@
   },
   {
     "id": 7027,
-    "country": "Bolivia*",
+    "country": "Bolivia",
     "powerDistance": 78,
     "individualism": 10,
     "masculinity": 42,
@@ -131,7 +131,7 @@
   },
   {
     "id": 7086,
-    "country": "Bosnia and Herzegovina*",
+    "country": "Bosnia and Herzegovina",
     "powerDistance": 90,
     "individualism": 22,
     "masculinity": 48,
@@ -161,7 +161,7 @@
   },
   {
     "id": 548,
-    "country": "Burkina Faso*",
+    "country": "Burkina Faso",
     "powerDistance": 70,
     "individualism": 15,
     "masculinity": 50,
@@ -181,7 +181,7 @@
   },
   {
     "id": 547,
-    "country": "Cape Verde*",
+    "country": "Cape Verde",
     "powerDistance": 75,
     "individualism": 20,
     "masculinity": 15,
@@ -261,7 +261,7 @@
   },
   {
     "id": 549,
-    "country": "Dominican Republic*",
+    "country": "Dominican Republic",
     "powerDistance": 65,
     "individualism": 30,
     "masculinity": 65,
@@ -281,7 +281,7 @@
   },
   {
     "id": 456,
-    "country": "Egypt*",
+    "country": "Egypt",
     "powerDistance": 80,
     "individualism": 37,
     "masculinity": 55,
@@ -311,7 +311,7 @@
   },
   {
     "id": 457,
-    "country": "Ethiopia*",
+    "country": "Ethiopia",
     "powerDistance": 70,
     "individualism": 20,
     "masculinity": 65,
@@ -321,7 +321,7 @@
   },
   {
     "id": 550,
-    "country": "Fiji*",
+    "country": "Fiji",
     "powerDistance": 78,
     "individualism": 14,
     "masculinity": 46,
@@ -351,7 +351,7 @@
   },
   {
     "id": 7089,
-    "country": "Georgia*",
+    "country": "Georgia",
     "powerDistance": 65,
     "individualism": 41,
     "masculinity": 55,
@@ -371,7 +371,7 @@
   },
   {
     "id": 482,
-    "country": "Ghana*",
+    "country": "Ghana",
     "powerDistance": 80,
     "individualism": 15,
     "masculinity": 40,
@@ -401,7 +401,7 @@
   },
   {
     "id": 551,
-    "country": "Honduras*",
+    "country": "Honduras",
     "powerDistance": 80,
     "individualism": 20,
     "masculinity": 40,
@@ -421,7 +421,7 @@
   },
   {
     "id": 520,
-    "country": "Hungary*",
+    "country": "Hungary",
     "powerDistance": 46,
     "individualism": 80,
     "masculinity": 88,
@@ -431,7 +431,7 @@
   },
   {
     "id": 552,
-    "country": "Iceland*",
+    "country": "Iceland",
     "powerDistance": 30,
     "individualism": 60,
     "masculinity": 10,
@@ -471,7 +471,7 @@
   },
   {
     "id": 521,
-    "country": "Iraq*",
+    "country": "Iraq",
     "powerDistance": 97,
     "individualism": 31,
     "masculinity": 53,
@@ -531,7 +531,7 @@
   },
   {
     "id": 553,
-    "country": "Jordan*",
+    "country": "Jordan",
     "powerDistance": 70,
     "individualism": 30,
     "masculinity": 45,
@@ -541,7 +541,7 @@
   },
   {
     "id": 7100,
-    "country": "Kazakhstan*",
+    "country": "Kazakhstan",
     "powerDistance": 88,
     "individualism": 20,
     "masculinity": 50,
@@ -551,7 +551,7 @@
   },
   {
     "id": 554,
-    "country": "Kenya*",
+    "country": "Kenya",
     "powerDistance": 70,
     "individualism": 25,
     "masculinity": 60,
@@ -561,7 +561,7 @@
   },
   {
     "id": 523,
-    "country": "Kuwait*",
+    "country": "Kuwait",
     "powerDistance": 90,
     "individualism": 25,
     "masculinity": 40,
@@ -581,7 +581,7 @@
   },
   {
     "id": 524,
-    "country": "Lebanon*",
+    "country": "Lebanon",
     "powerDistance": 62,
     "individualism": 43,
     "masculinity": 48,
@@ -621,7 +621,7 @@
   },
   {
     "id": 555,
-    "country": "Malawi*",
+    "country": "Malawi",
     "powerDistance": 70,
     "individualism": 30,
     "masculinity": 40,
@@ -661,7 +661,7 @@
   },
   {
     "id": 7102,
-    "country": "Moldova*",
+    "country": "Moldova",
     "powerDistance": 90,
     "individualism": 27,
     "masculinity": 39,
@@ -671,7 +671,7 @@
   },
   {
     "id": 7132,
-    "country": "Montenegro*",
+    "country": "Montenegro",
     "powerDistance": 88,
     "individualism": 24,
     "masculinity": 48,
@@ -691,7 +691,7 @@
   },
   {
     "id": 556,
-    "country": "Mozambique*",
+    "country": "Mozambique",
     "powerDistance": 85,
     "individualism": 15,
     "masculinity": 38,
@@ -701,7 +701,7 @@
   },
   {
     "id": 464,
-    "country": "Namibia*",
+    "country": "Namibia",
     "powerDistance": 65,
     "individualism": 30,
     "masculinity": 40,
@@ -711,7 +711,7 @@
   },
   {
     "id": 557,
-    "country": "Nepal*",
+    "country": "Nepal",
     "powerDistance": 65,
     "individualism": 30,
     "masculinity": 40,
@@ -741,7 +741,7 @@
   },
   {
     "id": 526,
-    "country": "Nigeria*",
+    "country": "Nigeria",
     "powerDistance": 80,
     "individualism": 30,
     "masculinity": 60,
@@ -751,7 +751,7 @@
   },
   {
     "id": 7113,
-    "country": "North Macedonia*",
+    "country": "North Macedonia",
     "powerDistance": 90,
     "individualism": 22,
     "masculinity": 45,
@@ -791,7 +791,7 @@
   },
   {
     "id": 7034,
-    "country": "Paraguay*",
+    "country": "Paraguay",
     "powerDistance": 70,
     "individualism": 12,
     "masculinity": 40,
@@ -841,7 +841,7 @@
   },
   {
     "id": 561,
-    "country": "Puerto Rico*",
+    "country": "Puerto Rico",
     "powerDistance": 68,
     "individualism": 27,
     "masculinity": 56,
@@ -851,7 +851,7 @@
   },
   {
     "id": 3873,
-    "country": "Qatar*",
+    "country": "Qatar",
     "powerDistance": 93,
     "individualism": 25,
     "masculinity": 55,
@@ -881,7 +881,7 @@
   },
   {
     "id": 7147,
-    "country": "São Tomé and Príncipe*",
+    "country": "São Tomé and Príncipe",
     "powerDistance": 75,
     "individualism": 37,
     "masculinity": 24,
@@ -891,7 +891,7 @@
   },
   {
     "id": 531,
-    "country": "Saudi Arabia*",
+    "country": "Saudi Arabia",
     "powerDistance": 72,
     "individualism": 48,
     "masculinity": 43,
@@ -901,7 +901,7 @@
   },
   {
     "id": 558,
-    "country": "Senegal*",
+    "country": "Senegal",
     "powerDistance": 70,
     "individualism": 25,
     "masculinity": 45,
@@ -921,7 +921,7 @@
   },
   {
     "id": 527,
-    "country": "Sierra Leone*",
+    "country": "Sierra Leone",
     "powerDistance": 70,
     "individualism": 20,
     "masculinity": 40,
@@ -991,7 +991,7 @@
   },
   {
     "id": 559,
-    "country": "Sri Lanka*",
+    "country": "Sri Lanka",
     "powerDistance": 80,
     "individualism": 35,
     "masculinity": 10,
@@ -1031,7 +1031,7 @@
   },
   {
     "id": 560,
-    "country": "Syria*",
+    "country": "Syria",
     "powerDistance": 80,
     "individualism": 35,
     "masculinity": 52,
@@ -1051,7 +1051,7 @@
   },
   {
     "id": 529,
-    "country": "Tanzania*",
+    "country": "Tanzania",
     "powerDistance": 70,
     "individualism": 25,
     "masculinity": 40,
@@ -1081,7 +1081,7 @@
   },
   {
     "id": 7149,
-    "country": "Tunisia*",
+    "country": "Tunisia",
     "powerDistance": 70,
     "individualism": 40,
     "masculinity": 40,
@@ -1101,7 +1101,7 @@
   },
   {
     "id": 533,
-    "country": "Ukraine*",
+    "country": "Ukraine",
     "powerDistance": 92,
     "individualism": 25,
     "masculinity": 27,
@@ -1111,7 +1111,7 @@
   },
   {
     "id": 518,
-    "country": "United Arab Emirates*",
+    "country": "United Arab Emirates",
     "powerDistance": 74,
     "individualism": 36,
     "masculinity": 52,
@@ -1171,7 +1171,7 @@
   },
   {
     "id": 530,
-    "country": "Zambia*",
+    "country": "Zambia",
     "powerDistance": 60,
     "individualism": 35,
     "masculinity": 40,

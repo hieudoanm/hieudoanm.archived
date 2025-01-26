@@ -3,10 +3,8 @@ import { logger } from '@web/log';
 import Link from 'next/link';
 import { FC, ReactNode, useState } from 'react';
 import {
-  FaAppStore,
   FaArrowTrendUp,
   FaAtom,
-  FaBrain,
   FaBusinessTime,
   FaCalculator,
   FaChess,
@@ -58,30 +56,7 @@ export type App = {
   isFolder: boolean;
 };
 
-const sciencesApps: App[] = ['sociology'].map((science: string) => ({
-  id: `${science}`,
-  href: `${science}`,
-  name: science,
-  shortName: science,
-  enabled: true,
-  icon: <FaBrain />,
-  borderStyle: Border.Solid,
-  folder: 'home',
-  isFolder: false,
-}));
-
 export const allApps: App[] = [
-  {
-    id: 'all',
-    href: 'all',
-    name: 'All',
-    shortName: 'All',
-    enabled: true,
-    icon: <FaAppStore />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
-  },
   {
     id: 'chess',
     href: 'chess',
@@ -203,7 +178,6 @@ export const allApps: App[] = [
     folder: 'home',
     isFolder: true,
   },
-  ...sciencesApps,
   {
     id: 'status',
     href: 'status',
