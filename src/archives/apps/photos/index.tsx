@@ -1,7 +1,7 @@
+import { RequestBody, ResponseData } from '@web/archives/api/instagram';
 import { useIsOnline } from '@web/hooks/use-is-online';
 import { AppLayout } from '@web/layout/AppLayout';
 import { logger } from '@web/log';
-import { RequestBody, ResponseData } from '@web/pages/api/instagram';
 import { validate } from '@web/utils/instagram/validate';
 import axios from 'axios';
 import { NextPage } from 'next';

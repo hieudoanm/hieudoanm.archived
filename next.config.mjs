@@ -8,11 +8,13 @@ const withPWA = nextPWA({
   skipWaiting: true,
   disable: NODE_ENV === 'development',
   register: NODE_ENV !== 'development',
-  fallbacks: { document: '/apps' },
+  fallbacks: { document: '/' },
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'docs',
   reactStrictMode: true,
   compiler: { removeConsole: NODE_ENV !== 'development' },
 };
