@@ -18,7 +18,6 @@ import {
   FaFootball,
   FaFutbol,
   FaHeart,
-  FaIdBadge,
   FaInstagram,
   FaLanguage,
   FaLightbulb,
@@ -28,7 +27,6 @@ import {
   FaNewspaper,
   FaQrcode,
   FaRobot,
-  FaRulerCombined,
   FaStar,
   FaTable,
   FaTelegram,
@@ -69,19 +67,17 @@ export type App = {
   isFolder: boolean;
 };
 
-const sciencesApps: App[] = ['chemistry', 'sociology'].map(
-  (science: string) => ({
-    id: `${science}`,
-    href: `${science}`,
-    name: science,
-    shortName: science,
-    enabled: true,
-    icon: <FaBrain />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  })
-);
+const sciencesApps: App[] = ['sociology'].map((science: string) => ({
+  id: `${science}`,
+  href: `${science}`,
+  name: science,
+  shortName: science,
+  enabled: true,
+  icon: <FaBrain />,
+  borderStyle: Border.Solid,
+  folder: 'home',
+  isFolder: false,
+}));
 
 export const allApps: App[] = [
   {
@@ -184,17 +180,6 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'screen',
-    href: 'screen',
-    name: 'Screen',
-    shortName: 'Screen',
-    enabled: true,
-    icon: <FaRulerCombined />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
     id: 'csv',
     href: 'csv',
     name: 'CSV',
@@ -267,28 +252,6 @@ export const allApps: App[] = [
     shortName: 'Markdown',
     enabled: true,
     icon: <FaMarkdown />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
-    id: 'qrcode',
-    href: 'qrcode',
-    name: 'QR Code',
-    shortName: 'QR Code',
-    enabled: true,
-    icon: <FaQrcode />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
-    id: 'uuid',
-    href: 'uuid',
-    name: 'UUID',
-    shortName: 'UUID',
-    enabled: true,
-    icon: <FaIdBadge />,
     borderStyle: Border.Solid,
     folder: 'home',
     isFolder: false,
