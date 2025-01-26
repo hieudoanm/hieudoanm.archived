@@ -3681,9 +3681,6 @@
     top: auto;
     bottom: 0;
   }
-  .end-1 {
-    inset-inline-end: calc(var(--spacing) * 1);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }

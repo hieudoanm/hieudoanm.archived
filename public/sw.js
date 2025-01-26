@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-mkdoyz31FUV5g68EdYKNn.js'),
+  importScripts('fallback-mhPVBtm4QrVmJbldmiwRp.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -71,8 +71,8 @@ define(['./workbox-e9849328'], function (e) {
           revision: 'c4406f7b6ad5eb7d',
         },
         {
-          url: '/_next/static/chunks/pages/index-c59a80624e4430ac.js',
-          revision: 'c59a80624e4430ac',
+          url: '/_next/static/chunks/pages/index-20f93f5b7205381c.js',
+          revision: '20f93f5b7205381c',
         },
         {
           url: '/_next/static/chunks/polyfills-42372ed130431b0a.js',
@@ -83,15 +83,15 @@ define(['./workbox-e9849328'], function (e) {
           revision: '8cac0b4b405cede1',
         },
         {
-          url: '/_next/static/css/ddead2e9c78dd1cf.css',
-          revision: 'ddead2e9c78dd1cf',
+          url: '/_next/static/css/0cc5c9e4353242be.css',
+          revision: '0cc5c9e4353242be',
         },
         {
-          url: '/_next/static/mkdoyz31FUV5g68EdYKNn/_buildManifest.js',
-          revision: '3ae73fbb73789b04755ebb5863238062',
+          url: '/_next/static/mhPVBtm4QrVmJbldmiwRp/_buildManifest.js',
+          revision: '46656fc8993ced9d8c864571a2791b7a',
         },
         {
-          url: '/_next/static/mkdoyz31FUV5g68EdYKNn/_ssgManifest.js',
+          url: '/_next/static/mhPVBtm4QrVmJbldmiwRp/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
         },
         { url: '/favicon.ico', revision: 'e2cff4502779c8302cd4b493f40fd8d6' },

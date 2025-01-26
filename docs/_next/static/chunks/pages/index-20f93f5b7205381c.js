@@ -29,7 +29,8 @@
                   children: (0, n.jsx)(l(), {
                     href: '/nothing',
                     target: '_blank',
-                    className: 'underline decoration-dotted underline-offset-6',
+                    className:
+                      'font-black uppercase underline decoration-dotted underline-offset-6',
                     children: 'Hieu Doan',
                   }),
                 }),

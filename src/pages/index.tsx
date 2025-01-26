@@ -10,7 +10,7 @@ const HomePage: NextPage = () => {
           <Link
             href='/nothing'
             target='_blank'
-            className='underline decoration-dotted underline-offset-6'>
+            className='font-black uppercase underline decoration-dotted underline-offset-6'>
             Hieu Doan
           </Link>
         </p>
