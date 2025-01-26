@@ -133,17 +133,6 @@ export const allApps: App[] = [
     isFolder: false,
   },
   {
-    id: 'detection',
-    href: 'detection',
-    name: 'Detection',
-    shortName: 'Detection',
-    enabled: true,
-    icon: <FaLanguage />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: false,
-  },
-  {
     id: 'english',
     href: 'english',
     name: 'english',
