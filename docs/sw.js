@@ -15,21 +15,21 @@ if (!self.define) {
         return e;
       })
   );
-  self.define = (a, r) => {
-    const c =
+  self.define = (a, c) => {
+    const r =
       e ||
       ('document' in self ? document.currentScript.src : '') ||
       location.href;
-    if (s[c]) return;
+    if (s[r]) return;
     let i = {};
-    const t = (e) => n(e, c),
-      o = { module: { uri: c }, exports: i, require: t };
-    s[c] = Promise.all(a.map((e) => o[e] || t(e))).then((e) => (r(...e), i));
+    const t = (e) => n(e, r),
+      o = { module: { uri: r }, exports: i, require: t };
+    s[r] = Promise.all(a.map((e) => o[e] || t(e))).then((e) => (c(...e), i));
   };
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-mhPVBtm4QrVmJbldmiwRp.js'),
+  importScripts('fallback-ldosXTck206xH7AeZz4ST.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -87,11 +87,11 @@ define(['./workbox-e9849328'], function (e) {
           revision: '0cc5c9e4353242be',
         },
         {
-          url: '/_next/static/mhPVBtm4QrVmJbldmiwRp/_buildManifest.js',
+          url: '/_next/static/ldosXTck206xH7AeZz4ST/_buildManifest.js',
           revision: '46656fc8993ced9d8c864571a2791b7a',
         },
         {
-          url: '/_next/static/mhPVBtm4QrVmJbldmiwRp/_ssgManifest.js',
+          url: '/_next/static/ldosXTck206xH7AeZz4ST/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
         },
         { url: '/favicon.ico', revision: 'e2cff4502779c8302cd4b493f40fd8d6' },
