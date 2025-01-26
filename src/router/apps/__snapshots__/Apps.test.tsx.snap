@@ -59,7 +59,7 @@ exports[`GridTemplate render default 1`] = `
             class="hidden grid-cols-1 grid-cols-2 grid-cols-3 grid-cols-4 grid-cols-5 grid-cols-6 md:grid-cols-1 md:grid-cols-2 md:grid-cols-3 md:grid-cols-4 md:grid-cols-5 md:grid-cols-6"
           />
           <div
-            class="grid grid-cols-2 md:grid-cols-4 h-full gap-4 md:gap-6"
+            class="grid grid-cols-2 md:grid-cols-3 h-full gap-4 md:gap-6"
           >
             <div
               class="col-span-1"
@@ -384,53 +384,6 @@ exports[`GridTemplate render default 1`] = `
                         class="inline capitalize md:hidden"
                       >
                         Telegram
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div
-              class="col-span-1"
-            >
-              <div
-                class="flex h-full items-center justify-center"
-              >
-                <a
-                  href="/apps/trends"
-                >
-                  <div
-                    class="flex flex-col gap-y-2 md:gap-y-4"
-                  >
-                    <div
-                      class="border-base-content mx-auto flex aspect-square w-12 items-center justify-center rounded-xl border text-xl md:w-16 border-solid"
-                    >
-                      <svg
-                        fill="currentColor"
-                        height="1em"
-                        stroke="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 576 512"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-82.7L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160 384 160z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="truncate text-center text-xs md:text-base"
-                    >
-                      <span
-                        class="hidden capitalize md:inline"
-                      >
-                        Trends
-                      </span>
-                      <span
-                        class="inline capitalize md:hidden"
-                      >
-                        Trends
                       </span>
                     </div>
                   </div>

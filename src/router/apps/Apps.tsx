@@ -3,7 +3,6 @@ import { logger } from '@web/log';
 import Link from 'next/link';
 import { FC, ReactNode, useState } from 'react';
 import {
-  FaArrowTrendUp,
   FaAtom,
   FaBusinessTime,
   FaCalculator,
@@ -41,8 +40,7 @@ export type Folder =
   | 'news-uk'
   | 'news-us'
   | 'sciences'
-  | 'tools'
-  | 'trends';
+  | 'tools';
 
 export type App = {
   id: string;
@@ -199,17 +197,6 @@ export const allApps: App[] = [
     borderStyle: Border.Solid,
     folder: 'home',
     isFolder: false,
-  },
-  {
-    id: 'trends',
-    href: 'trends',
-    name: 'Trends',
-    shortName: 'Trends',
-    enabled: true,
-    icon: <FaArrowTrendUp />,
-    borderStyle: Border.Solid,
-    folder: 'home',
-    isFolder: true,
   },
   {
     id: 'news-de',
