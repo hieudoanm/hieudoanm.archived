@@ -11,70 +11,70 @@
     },
     7045: (e, t, r) => {
       'use strict';
-      r.r(t), r.d(t, { default: () => o, dynamic: () => c });
+      r.r(t), r.d(t, { default: () => l, dynamic: () => a });
       var n = r(5105),
         i = r(9594),
-        l = r.n(i),
-        a = r(5899);
-      let c = 'force-static',
-        o = () =>
+        o = r.n(i),
+        c = r(5899);
+      let a = 'force-static',
+        l = () =>
           (0, n.jsx)('div', {
             className: 'h-screen w-screen bg-gray-100 p-8',
             children: (0, n.jsxs)('div', {
               className:
-                'flex h-full flex-col items-center justify-center gap-y-4',
+                'flex h-full flex-col items-center justify-center gap-y-8 text-black',
               children: [
                 (0, n.jsx)('p', {
-                  className: 'text-xl text-black lowercase',
-                  children: (0, n.jsx)(l(), {
+                  children: (0, n.jsx)(o(), {
                     href: '/nothing',
                     target: '_blank',
                     className:
-                      'font-black uppercase underline decoration-dotted underline-offset-6',
+                      'text-2xl font-black tracking-wide uppercase underline decoration-dotted underline-offset-6',
                     children: 'Hieu Doan',
                   }),
                 }),
-                (0, n.jsxs)('div', {
+                (0, n.jsx)('div', {
                   className:
-                    'flex items-center gap-x-1 text-xl text-black lowercase',
+                    'flex flex-col items-center justify-center gap-y-4',
                   children: [
-                    (0, n.jsx)(a.hL4, {}),
-                    (0, n.jsx)(l(), {
+                    {
+                      id: 'github',
                       href: 'https://github.com/hieudoanm',
-                      target: '_blank',
-                      className:
-                        'underline decoration-dotted underline-offset-6',
-                      children: 'github',
-                    }),
-                  ],
-                }),
-                (0, n.jsxs)('div', {
-                  className:
-                    'flex items-center gap-x-1 text-xl text-black lowercase',
-                  children: [
-                    (0, n.jsx)(a.QEs, {}),
-                    (0, n.jsx)(l(), {
-                      href: 'https://www.linkedin.com/in/hieudoanm',
-                      target: '_blank',
-                      className:
-                        'underline decoration-dotted underline-offset-6',
-                      children: 'linkedin',
-                    }),
-                  ],
-                }),
-                (0, n.jsxs)('div', {
-                  className:
-                    'flex items-center gap-x-1 text-xl text-black lowercase',
-                  children: [
-                    (0, n.jsx)(a.TCj, {}),
-                    (0, n.jsx)(l(), {
+                      name: 'GitHub',
+                      icon: (0, n.jsx)(c.UDP, {}),
+                    },
+                    {
+                      id: 'twitter',
                       href: 'https://x.com/hieudoanm',
-                      target: '_blank',
-                      className:
-                        'underline decoration-dotted underline-offset-6',
-                      children: 'x (twitter)',
-                    }),
-                  ],
+                      name: 'Twitter',
+                      icon: (0, n.jsx)(c.Y28, {}),
+                    },
+                    {
+                      id: 'linkedin',
+                      href: 'https://www.linkedin.com/in/hieudoanm',
+                      name: 'LinkedIn',
+                      icon: (0, n.jsx)(c.QEs, {}),
+                    },
+                  ].map((e) => {
+                    let { id: t, href: r, name: i, icon: c } = e;
+                    return (0, n.jsxs)(
+                      'div',
+                      {
+                        className:
+                          'flex items-center gap-x-1 border-b border-dotted text-xl',
+                        children: [
+                          c,
+                          (0, n.jsx)(o(), {
+                            href: r,
+                            target: '_blank',
+                            className: 'tracking-wide lowercase',
+                            children: i,
+                          }),
+                        ],
+                      },
+                      t
+                    );
+                  }),
                 }),
               ],
             }),
@@ -91,10 +91,10 @@
           style: void 0,
           attr: void 0,
         },
-        l = n.createContext && n.createContext(i),
-        a = ['attr', 'size', 'title'];
-      function c() {
-        return (c = Object.assign
+        o = n.createContext && n.createContext(i),
+        c = ['attr', 'size', 'title'];
+      function a() {
+        return (a = Object.assign
           ? Object.assign.bind()
           : function (e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -105,7 +105,7 @@
               return e;
             }).apply(this, arguments);
       }
-      function o(e, t) {
+      function l(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
@@ -121,7 +121,7 @@
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
-            ? o(Object(r), !0).forEach(function (t) {
+            ? l(Object(r), !0).forEach(function (t) {
                 var n, i;
                 (n = t),
                   (i = r[t]),
@@ -150,7 +150,7 @@
               })
             : Object.getOwnPropertyDescriptors
               ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r))
-              : o(Object(r)).forEach(function (t) {
+              : l(Object(r)).forEach(function (t) {
                   Object.defineProperty(
                     e,
                     t,
@@ -164,7 +164,7 @@
         return (t) =>
           n.createElement(
             f,
-            c({ attr: s({}, e.attr) }, t),
+            a({ attr: s({}, e.attr) }, t),
             (function e(t) {
               return (
                 t &&
@@ -178,7 +178,7 @@
       function f(e) {
         var t = (t) => {
           var r,
-            { attr: i, size: l, title: o } = e,
+            { attr: i, size: o, title: l } = e,
             u = (function (e, t) {
               if (null == e) return {};
               var r,
@@ -194,22 +194,22 @@
                   return r;
                 })(e, t);
               if (Object.getOwnPropertySymbols) {
-                var l = Object.getOwnPropertySymbols(e);
-                for (n = 0; n < l.length; n++)
-                  (r = l[n]),
+                var o = Object.getOwnPropertySymbols(e);
+                for (n = 0; n < o.length; n++)
+                  (r = o[n]),
                     !(t.indexOf(r) >= 0) &&
                       Object.prototype.propertyIsEnumerable.call(e, r) &&
                       (i[r] = e[r]);
               }
               return i;
-            })(e, a),
-            f = l || t.size || '1em';
+            })(e, c),
+            f = o || t.size || '1em';
           return (
             t.className && (r = t.className),
             e.className && (r = (r ? r + ' ' : '') + e.className),
             n.createElement(
               'svg',
-              c(
+              a(
                 {
                   stroke: 'currentColor',
                   fill: 'currentColor',
@@ -226,13 +226,13 @@
                   xmlns: 'http://www.w3.org/2000/svg',
                 }
               ),
-              o && n.createElement('title', null, o),
+              l && n.createElement('title', null, l),
               e.children
             )
           );
         };
-        return void 0 !== l
-          ? n.createElement(l.Consumer, null, (e) => t(e))
+        return void 0 !== o
+          ? n.createElement(o.Consumer, null, (e) => t(e))
           : t(i);
       }
     },

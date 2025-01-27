@@ -16,20 +16,20 @@ if (!self.define) {
       })
   );
   self.define = (a, c) => {
-    const r =
+    const i =
       e ||
       ('document' in self ? document.currentScript.src : '') ||
       location.href;
-    if (s[r]) return;
-    let i = {};
-    const t = (e) => n(e, r),
-      o = { module: { uri: r }, exports: i, require: t };
-    s[r] = Promise.all(a.map((e) => o[e] || t(e))).then((e) => (c(...e), i));
+    if (s[i]) return;
+    let r = {};
+    const t = (e) => n(e, i),
+      d = { module: { uri: i }, exports: r, require: t };
+    s[i] = Promise.all(a.map((e) => d[e] || t(e))).then((e) => (c(...e), r));
   };
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-oQ82eWzayFCP5k_3EJ1DI.js'),
+  importScripts('fallback-56FznA18VfZh29LyKXNLP.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -39,12 +39,20 @@ define(['./workbox-e9849328'], function (e) {
           revision: 'd751713988987e9331980363e24189ce',
         },
         {
+          url: '/_next/static/56FznA18VfZh29LyKXNLP/_buildManifest.js',
+          revision: '8a2a0aa130283b6be7f79725ccb61d52',
+        },
+        {
+          url: '/_next/static/56FznA18VfZh29LyKXNLP/_ssgManifest.js',
+          revision: 'b6652df95db52feb4daf4eca35380933',
+        },
+        {
           url: '/_next/static/chunks/594-d13fc5ebc556d9a4.js',
           revision: 'd13fc5ebc556d9a4',
         },
         {
-          url: '/_next/static/chunks/ddb80a4a-16725ec983811a7e.js',
-          revision: '16725ec983811a7e',
+          url: '/_next/static/chunks/ddb80a4a-ec51629b4193f483.js',
+          revision: 'ec51629b4193f483',
         },
         {
           url: '/_next/static/chunks/framework-249c5167381ef5cb.js',
@@ -55,24 +63,24 @@ define(['./workbox-e9849328'], function (e) {
           revision: '2db50ced7e6cd7b5',
         },
         {
-          url: '/_next/static/chunks/pages/404-a6f9020386ac5dec.js',
-          revision: 'a6f9020386ac5dec',
+          url: '/_next/static/chunks/pages/404-d0e197dafd1590a0.js',
+          revision: 'd0e197dafd1590a0',
         },
         {
-          url: '/_next/static/chunks/pages/500-8ac60502eec775f3.js',
-          revision: '8ac60502eec775f3',
+          url: '/_next/static/chunks/pages/500-c05220ffe2acaea6.js',
+          revision: 'c05220ffe2acaea6',
         },
         {
-          url: '/_next/static/chunks/pages/_app-ea1cc09e357febde.js',
-          revision: 'ea1cc09e357febde',
+          url: '/_next/static/chunks/pages/_app-dfeb89176f0fe7b7.js',
+          revision: 'dfeb89176f0fe7b7',
         },
         {
-          url: '/_next/static/chunks/pages/_error-e93886aa4ad6e464.js',
-          revision: 'e93886aa4ad6e464',
+          url: '/_next/static/chunks/pages/_error-d8703b516fb812a5.js',
+          revision: 'd8703b516fb812a5',
         },
         {
-          url: '/_next/static/chunks/pages/index-3d78d504745e97d9.js',
-          revision: '3d78d504745e97d9',
+          url: '/_next/static/chunks/pages/index-fccbcdae78466985.js',
+          revision: 'fccbcdae78466985',
         },
         {
           url: '/_next/static/chunks/polyfills-42372ed130431b0a.js',
@@ -83,16 +91,32 @@ define(['./workbox-e9849328'], function (e) {
           revision: '8cac0b4b405cede1',
         },
         {
-          url: '/_next/static/css/ddead2e9c78dd1cf.css',
-          revision: 'ddead2e9c78dd1cf',
+          url: '/_next/static/css/6b3e5b1641d78260.css',
+          revision: '6b3e5b1641d78260',
         },
         {
-          url: '/_next/static/oQ82eWzayFCP5k_3EJ1DI/_buildManifest.js',
-          revision: '0a6d724f737ab37328d81ac2663124fe',
+          url: '/_next/static/media/05d30fccf6dfb4ed-s.woff2',
+          revision: 'f44737ff64388df273b8277a256e2dae',
         },
         {
-          url: '/_next/static/oQ82eWzayFCP5k_3EJ1DI/_ssgManifest.js',
-          revision: 'b6652df95db52feb4daf4eca35380933',
+          url: '/_next/static/media/12d86e8d7e1c2769-s.p.woff2',
+          revision: '365576734a1d6fcf0ba8ce8ee218c9e7',
+        },
+        {
+          url: '/_next/static/media/5536c2b71f31f4c7-s.woff2',
+          revision: 'a249fc31bd37ca2fed2511e9175a4df7',
+        },
+        {
+          url: '/_next/static/media/69f639318a288687-s.woff2',
+          revision: 'f743aa03b62d95151d2738aba962f693',
+        },
+        {
+          url: '/_next/static/media/8ea6d73be4df1015-s.woff2',
+          revision: '853efe04b7a3633d95dcb66ebdc24e9b',
+        },
+        {
+          url: '/_next/static/media/f2fa6d7398e61d46-s.woff2',
+          revision: '9100886c15016aaff47cb7fbfb203398',
         },
         { url: '/favicon.ico', revision: 'e2cff4502779c8302cd4b493f40fd8d6' },
         {

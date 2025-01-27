@@ -1,45 +1,54 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaSquareTwitter, FaSquareGithub } from 'react-icons/fa6';
 
 const HomePage: NextPage = () => {
   return (
     <div className='h-screen w-screen bg-gray-100 p-8'>
-      <div className='flex h-full flex-col items-center justify-center gap-y-4'>
-        <p className='text-xl text-black lowercase'>
+      <div className='flex h-full flex-col items-center justify-center gap-y-8 text-black'>
+        <p>
           <Link
             href='/nothing'
             target='_blank'
-            className='font-black uppercase underline decoration-dotted underline-offset-6'>
+            className='text-2xl font-black tracking-wide uppercase underline decoration-dotted underline-offset-6'>
             Hieu Doan
           </Link>
         </p>
-        <div className='flex items-center gap-x-1 text-xl text-black lowercase'>
-          <FaGithub />
-          <Link
-            href='https://github.com/hieudoanm'
-            target='_blank'
-            className='underline decoration-dotted underline-offset-6'>
-            github
-          </Link>
-        </div>
-        <div className='flex items-center gap-x-1 text-xl text-black lowercase'>
-          <FaLinkedin />
-          <Link
-            href='https://www.linkedin.com/in/hieudoanm'
-            target='_blank'
-            className='underline decoration-dotted underline-offset-6'>
-            linkedin
-          </Link>
-        </div>
-        <div className='flex items-center gap-x-1 text-xl text-black lowercase'>
-          <FaXTwitter />
-          <Link
-            href='https://x.com/hieudoanm'
-            target='_blank'
-            className='underline decoration-dotted underline-offset-6'>
-            x (twitter)
-          </Link>
+        <div className='flex flex-col items-center justify-center gap-y-4'>
+          {[
+            {
+              id: 'github',
+              href: 'https://github.com/hieudoanm',
+              name: 'GitHub',
+              icon: <FaSquareGithub />,
+            },
+            {
+              id: 'twitter',
+              href: 'https://x.com/hieudoanm',
+              name: 'Twitter',
+              icon: <FaSquareTwitter />,
+            },
+            {
+              id: 'linkedin',
+              href: 'https://www.linkedin.com/in/hieudoanm',
+              name: 'LinkedIn',
+              icon: <FaLinkedin />,
+            },
+          ].map(({ id, href, name, icon }) => {
+            return (
+              <div
+                key={id}
+                className='flex items-center gap-x-1 border-b border-dotted text-xl'>
+                {icon}
+                <Link
+                  href={href}
+                  target='_blank'
+                  className='tracking-wide lowercase'>
+                  {name}
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

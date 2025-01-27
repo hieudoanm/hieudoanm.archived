@@ -3945,7 +3945,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
     4884: (e, t, r) => {
       'use strict';
       let n, i;
-      r.r(t), r.d(t, { default: () => aU });
+      r.r(t), r.d(t, { default: () => aL });
       var s,
         a,
         o,
@@ -3962,28 +3962,1061 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         v = {};
       r.r(v),
         r.d(v, {
-          hasBrowserEnv: () => rK,
-          hasStandardBrowserEnv: () => rG,
-          hasStandardBrowserWebWorkerEnv: () => rJ,
-          navigator: () => rV,
-          origin: () => rY,
+          hasBrowserEnv: () => rG,
+          hasStandardBrowserEnv: () => rY,
+          hasStandardBrowserWebWorkerEnv: () => rX,
+          navigator: () => rJ,
+          origin: () => r0,
         });
-      var b = r(5105),
-        w = 'undefined' == typeof window || 'Deno' in globalThis;
-      function _() {}
+      var b = r(5105);
+      r(1657);
+      var w = r(1757),
+        _ = r.n(w);
       function E(e) {
-        return 'number' == typeof e && e >= 0 && e !== 1 / 0;
+        let t = {
+          subscribe(t) {
+            let r = null,
+              n = !1,
+              i = !1,
+              s = !1;
+            function a() {
+              if (null === r) {
+                s = !0;
+                return;
+              }
+              !i &&
+                ((i = !0), 'function' == typeof r ? r() : r && r.unsubscribe());
+            }
+            return (
+              (r = e({
+                next(e) {
+                  n || t.next?.(e);
+                },
+                error(e) {
+                  n || ((n = !0), t.error?.(e), a());
+                },
+                complete() {
+                  n || ((n = !0), t.complete?.(), a());
+                },
+              })),
+              s && a(),
+              { unsubscribe: a }
+            );
+          },
+          pipe: (...e) => e.reduce(S, t),
+        };
+        return t;
       }
       function S(e, t) {
+        return t(e);
+      }
+      Symbol();
+      let O = () => {},
+        R = (e) => {
+          Object.freeze && Object.freeze(e);
+        },
+        A = (e) =>
+          (function e(t, r, n) {
+            let i = r.join('.');
+            return (
+              n[i] ??
+                (n[i] = new Proxy(O, {
+                  get(i, s) {
+                    if ('string' == typeof s && 'then' !== s)
+                      return e(t, [...r, s], n);
+                  },
+                  apply(e, n, i) {
+                    let s = r[r.length - 1],
+                      a = { args: i, path: r };
+                    return (
+                      'call' === s
+                        ? (a = {
+                            args: i.length >= 2 ? [i[1]] : [],
+                            path: r.slice(0, -1),
+                          })
+                        : 'apply' === s &&
+                          (a = {
+                            args: i.length >= 2 ? i[1] : [],
+                            path: r.slice(0, -1),
+                          }),
+                      R(a.args),
+                      R(a.path),
+                      t(a)
+                    );
+                  },
+                })),
+              n[i]
+            );
+          })(e, [], Object.create(null)),
+        N = (e) =>
+          new Proxy(O, {
+            get(t, r) {
+              if ('string' == typeof r && 'then' !== r) return e(r);
+            },
+          }),
+        C = {
+          INTERNAL_SERVER_ERROR: -32603,
+          BAD_GATEWAY: -32603,
+          SERVICE_UNAVAILABLE: -32603,
+          GATEWAY_TIMEOUT: -32603,
+        },
+        x = Symbol();
+      function k(e, ...t) {
+        let r = Object.assign(Object.create(null), e);
+        for (let e of t)
+          for (let t in e) {
+            if (t in r && r[t] !== e[t]) throw Error(`Duplicate key ${t}`);
+            r[t] = e[t];
+          }
+        return r;
+      }
+      function T(e) {
+        return !!e && !Array.isArray(e) && 'object' == typeof e;
+      }
+      function I(e) {
+        return Object.assign(Object.create(null), e);
+      }
+      let P = 'function' == typeof Symbol && !!Symbol.asyncIterator;
+      function D(e) {
+        return P && T(e) && Symbol.asyncIterator in e;
+      }
+      function M(e, t, r) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = r),
+          e
+        );
+      }
+      class j extends Error {}
+      function q(e) {
+        if (e instanceof U || (e instanceof Error && 'TRPCError' === e.name))
+          return e;
+        let t = new U({ code: 'INTERNAL_SERVER_ERROR', cause: e });
+        return e instanceof Error && e.stack && (t.stack = e.stack), t;
+      }
+      class U extends Error {
+        constructor(e) {
+          let t = (function (e) {
+            if (e instanceof Error) return e;
+            let t = typeof e;
+            if ('undefined' !== t && 'function' !== t && null !== e) {
+              if ('object' !== t) return Error(String(e));
+              if (T(e)) {
+                let t = new j();
+                for (let r in e) t[r] = e[r];
+                return t;
+              }
+            }
+          })(e.cause);
+          super(e.message ?? t?.message ?? e.code, { cause: t }),
+            M(this, 'cause', void 0),
+            M(this, 'code', void 0),
+            (this.code = e.code),
+            (this.name = 'TRPCError'),
+            this.cause || (this.cause = t);
+        }
+      }
+      new WeakMap(),
+        Symbol.toStringTag,
+        (u = Symbol).dispose ?? (u.dispose = Symbol()),
+        (l = Symbol).asyncDispose ?? (l.asyncDispose = Symbol()),
+        Symbol();
+      Symbol(), Symbol('ping');
+      let L = {
+        input: { serialize: (e) => e, deserialize: (e) => e },
+        output: { serialize: (e) => e, deserialize: (e) => e },
+      };
+      class F extends Error {
+        constructor() {
+          super('Unable to transform response from server');
+        }
+      }
+      let B = ({ shape: e }) => e,
+        Q = 'middlewareMarker';
+      class Z extends Error {
+        constructor(e) {
+          super(e[0]?.message),
+            (function (e, t, r) {
+              t in e
+                ? Object.defineProperty(e, t, {
+                    value: r,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0,
+                  })
+                : (e[t] = r);
+            })(this, 'issues', void 0),
+            (this.name = 'SchemaError'),
+            (this.issues = e);
+        }
+      }
+      function z(e) {
+        if ('function' == typeof e && 'function' == typeof e.assert)
+          return e.assert.bind(e);
+        if ('function' == typeof e) return e;
+        if ('function' == typeof e.parseAsync) return e.parseAsync.bind(e);
+        if ('function' == typeof e.parse) return e.parse.bind(e);
+        if ('function' == typeof e.validateSync) return e.validateSync.bind(e);
+        if ('function' == typeof e.create) return e.create.bind(e);
+        if ('function' == typeof e.assert) return (t) => (e.assert(t), t);
+        if ('~standard' in e)
+          return async (t) => {
+            let r = await e['~standard'].validate(t);
+            if (r.issues) throw new Z(r.issues);
+            return r.value;
+          };
+        throw Error('Could not find a validator fn');
+      }
+      function H(e, t) {
+        let { middlewares: r = [], inputs: n, meta: i, ...s } = t;
+        return W({
+          ...k(e, s),
+          inputs: [...e.inputs, ...(n ?? [])],
+          middlewares: [...e.middlewares, ...r],
+          meta: e.meta && i ? { ...e.meta, ...i } : (i ?? e.meta),
+        });
+      }
+      function W(e = {}) {
+        let t = { procedure: !0, inputs: [], middlewares: [], ...e };
+        return {
+          _def: t,
+          input(e) {
+            let r = z(e);
+            return H(t, {
+              inputs: [e],
+              middlewares: [
+                (function (e) {
+                  let t = async function (t) {
+                    let r;
+                    let n = await t.getRawInput();
+                    try {
+                      r = await e(n);
+                    } catch (e) {
+                      throw new U({ code: 'BAD_REQUEST', cause: e });
+                    }
+                    let i = T(t.input) && T(r) ? { ...t.input, ...r } : r;
+                    return t.next({ input: i });
+                  };
+                  return (t._type = 'input'), t;
+                })(r),
+              ],
+            });
+          },
+          output(e) {
+            let r = z(e);
+            return H(t, {
+              output: e,
+              middlewares: [
+                (function (e) {
+                  let t = async function ({ next: t }) {
+                    let r = await t();
+                    if (!r.ok) return r;
+                    try {
+                      let t = await e(r.data);
+                      return { ...r, data: t };
+                    } catch (e) {
+                      throw new U({
+                        message: 'Output validation failed',
+                        code: 'INTERNAL_SERVER_ERROR',
+                        cause: e,
+                      });
+                    }
+                  };
+                  return (t._type = 'output'), t;
+                })(r),
+              ],
+            });
+          },
+          meta: (e) => H(t, { meta: e }),
+          use: (e) =>
+            H(t, { middlewares: '_middlewares' in e ? e._middlewares : [e] }),
+          unstable_concat: (e) => H(t, e._def),
+          query: (e) => $({ ...t, type: 'query' }, e),
+          mutation: (e) => $({ ...t, type: 'mutation' }, e),
+          subscription: (e) => $({ ...t, type: 'subscription' }, e),
+          experimental_caller: (e) => H(t, { caller: e }),
+        };
+      }
+      function $(e, t) {
+        let r = H(e, {
+            resolver: t,
+            middlewares: [
+              async function (e) {
+                return { marker: Q, ok: !0, data: await t(e), ctx: e.ctx };
+              },
+            ],
+          }),
+          n = {
+            ...r._def,
+            type: e.type,
+            experimental_caller: !!r._def.caller,
+            meta: r._def.meta,
+            $types: null,
+          },
+          i = (function (e) {
+            async function t(t) {
+              if (!t || !('getRawInput' in t)) throw Error(K);
+              let r = await V(0, e, t);
+              if (!r)
+                throw new U({
+                  code: 'INTERNAL_SERVER_ERROR',
+                  message:
+                    'No result from middlewares - did you forget to `return next()`?',
+                });
+              if (!r.ok) throw r.error;
+              return r.data;
+            }
+            return (t._def = e), t;
+          })(r._def),
+          s = r._def.caller;
+        if (!s) return i;
+        let a = async (...e) => await s({ args: e, invoke: i, _def: n });
+        return (a._def = n), a;
+      }
+      let K = `
+This is a client-only function.
+If you want to call this function on the server, see https://trpc.io/docs/v11/server/server-side-calls
+`.trim();
+      async function V(e, t, r) {
+        try {
+          let n = t.middlewares[e];
+          return await n({
+            ...r,
+            meta: t.meta,
+            input: r.input,
+            next: (n) =>
+              V(e + 1, t, {
+                ...r,
+                ctx: n?.ctx ? { ...r.ctx, ...n.ctx } : r.ctx,
+                input: n && 'input' in n ? n.input : r.input,
+                getRawInput: n?.getRawInput ?? r.getRawInput,
+              }),
+          });
+        } catch (e) {
+          return { ok: !1, error: q(e), marker: Q };
+        }
+      }
+      let G =
+          'undefined' == typeof window ||
+          'Deno' in window ||
+          globalThis.process?.env?.NODE_ENV === 'test' ||
+          !!globalThis.process?.env?.JEST_WORKER_ID ||
+          !!globalThis.process?.env?.VITEST_WORKER_ID,
+        J = {
+          _ctx: null,
+          _errorShape: null,
+          _meta: null,
+          queries: {},
+          mutations: {},
+          subscriptions: {},
+          errorFormatter: B,
+          transformer: L,
+        },
+        Y = ['then', 'call', 'apply'];
+      function X(e) {
+        return function (t) {
+          let r = new Set(Object.keys(t).filter((e) => Y.includes(e)));
+          if (r.size > 0)
+            throw Error(
+              'Reserved words used in `router({})` call: ' +
+                Array.from(r).join(', ')
+            );
+          let n = I({}),
+            i = (function e(t, r = []) {
+              let i = I({});
+              for (let [s, a] of Object.entries(t ?? {})) {
+                if (a._def && 'router' in a._def) {
+                  i[s] = e(a._def.record, [...r, s]);
+                  continue;
+                }
+                if (!ee(a)) {
+                  i[s] = e(a, [...r, s]);
+                  continue;
+                }
+                let t = [...r, s].join('.');
+                if (n[t]) throw Error(`Duplicate key: ${t}`);
+                (n[t] = a), (i[s] = a);
+              }
+              return i;
+            })(t),
+            s = { _config: e, router: !0, procedures: n, ...J, record: i };
+          return { ...i, _def: s, createCaller: et()({ _def: s }) };
+        };
+      }
+      function ee(e) {
+        return 'function' == typeof e;
+      }
+      function et() {
+        return function (e) {
+          let t = e._def;
+          return function (e, r) {
+            return A(async ({ path: n, args: i }) => {
+              let s;
+              let a = n.join('.');
+              if (1 === n.length && '_def' === n[0]) return t;
+              let o = t.procedures[a];
+              try {
+                return (
+                  (s = 'function' == typeof e ? await Promise.resolve(e()) : e),
+                  await o({
+                    path: a,
+                    getRawInput: async () => i[0],
+                    ctx: s,
+                    type: o._def.type,
+                    signal: r?.signal,
+                  })
+                );
+              } catch (e) {
+                throw (
+                  (r?.onError?.({
+                    ctx: s,
+                    error: q(e),
+                    input: i[0],
+                    path: a,
+                    type: o._def.type,
+                  }),
+                  e)
+                );
+              }
+            });
+          };
+        };
+      }
+      function er(...e) {
+        let t = k({}, ...e.map((e) => e._def.record));
+        return X({
+          errorFormatter: e.reduce((e, t) => {
+            if (
+              t._def._config.errorFormatter &&
+              t._def._config.errorFormatter !== B
+            ) {
+              if (e !== B && e !== t._def._config.errorFormatter)
+                throw Error('You seem to have several error formatters');
+              return t._def._config.errorFormatter;
+            }
+            return e;
+          }, B),
+          transformer: e.reduce((e, t) => {
+            if (
+              t._def._config.transformer &&
+              t._def._config.transformer !== L
+            ) {
+              if (e !== L && e !== t._def._config.transformer)
+                throw Error('You seem to have several transformers');
+              return t._def._config.transformer;
+            }
+            return e;
+          }, L),
+          isDev: e.every((e) => e._def._config.isDev),
+          allowOutsideOfServer: e.every(
+            (e) => e._def._config.allowOutsideOfServer
+          ),
+          isServer: e.every((e) => e._def._config.isServer),
+          $types: e[0]?._def._config.$types,
+        })(t);
+      }
+      class en {
+        context() {
+          return new en();
+        }
+        meta() {
+          return new en();
+        }
+        create(e) {
+          var t;
+          let r = {
+            ...e,
+            transformer:
+              'input' in (t = e?.transformer ?? L)
+                ? t
+                : { input: t, output: t },
+            isDev:
+              e?.isDev ?? globalThis.process?.env.NODE_ENV !== 'production',
+            allowOutsideOfServer: e?.allowOutsideOfServer ?? !1,
+            errorFormatter: e?.errorFormatter ?? B,
+            isServer: e?.isServer ?? G,
+            $types: null,
+          };
+          if (!(e?.isServer ?? G) && e?.allowOutsideOfServer !== !0)
+            throw Error(
+              "You're trying to use @trpc/server in a non-server environment. This is not supported by default."
+            );
+          return {
+            _config: r,
+            procedure: W({ meta: e?.defaultMeta }),
+            middleware: function (e) {
+              return (function e(t) {
+                return {
+                  _middlewares: t,
+                  unstable_pipe: (r) =>
+                    e([...t, ...('_middlewares' in r ? r._middlewares : [r])]),
+                };
+              })([e]);
+            },
+            router: X(r),
+            mergeRouters: er,
+            createCallerFactory: et(),
+          };
+        }
+      }
+      let ei = new en();
+      function es(e, t, r) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = r),
+          e
+        );
+      }
+      class ea extends Error {
+        static from(e, t = {}) {
+          return e instanceof ea ||
+            (e instanceof Error && 'TRPCClientError' === e.name)
+            ? (t.meta && (e.meta = { ...e.meta, ...t.meta }), e)
+            : T(e) &&
+                T(e.error) &&
+                'number' == typeof e.error.code &&
+                'string' == typeof e.error.message
+              ? new ea(e.error.message, { ...t, result: e })
+              : new ea(
+                  'string' == typeof e
+                    ? e
+                    : T(e) && 'string' == typeof e.message
+                      ? e.message
+                      : 'Unknown error',
+                  { ...t, cause: e }
+                );
+        }
+        constructor(e, t) {
+          let r = t?.cause;
+          super(e, { cause: r }),
+            es(this, 'cause', void 0),
+            es(this, 'shape', void 0),
+            es(this, 'data', void 0),
+            es(this, 'meta', void 0),
+            (this.meta = t?.meta),
+            (this.cause = r),
+            (this.shape = t?.result?.error),
+            (this.data = t?.result?.error.data),
+            (this.name = 'TRPCClientError'),
+            Object.setPrototypeOf(this, ea.prototype);
+        }
+      }
+      function eo(e, t, r) {
+        return (
+          t in e
+            ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+              })
+            : (e[t] = r),
+          e
+        );
+      }
+      class eu {
+        $request(e) {
+          var t;
+          return ((t = {
+            links: this.links,
+            op: { ...e, context: e.context ?? {}, id: ++this.requestId },
+          }),
+          E((e) =>
+            (function e(r = 0, n = t.op) {
+              let i = t.links[r];
+              if (!i)
+                throw Error(
+                  'No more links to execute - did you forget to add an ending link?'
+                );
+              return i({ op: n, next: (t) => e(r + 1, t) });
+            })().subscribe(e)
+          )).pipe((e) => {
+            let t = 0,
+              r = null,
+              n = [];
+            return E(
+              (i) => (
+                t++,
+                n.push(i),
+                r ||
+                  (r = e.subscribe({
+                    next(e) {
+                      for (let t of n) t.next?.(e);
+                    },
+                    error(e) {
+                      for (let t of n) t.error?.(e);
+                    },
+                    complete() {
+                      for (let e of n) e.complete?.();
+                    },
+                  })),
+                {
+                  unsubscribe() {
+                    t--,
+                      (function () {
+                        if (0 === t && r) {
+                          let e = r;
+                          (r = null), e.unsubscribe();
+                        }
+                      })();
+                    let e = n.findIndex((e) => e === i);
+                    e > -1 && n.splice(e, 1);
+                  },
+                }
+              )
+            );
+          });
+        }
+        async requestAsPromise(e) {
+          try {
+            let t = this.$request(e);
+            return (
+              await (function (e) {
+                let t = new AbortController();
+                return new Promise((r, n) => {
+                  let i = !1;
+                  function s() {
+                    i || ((i = !0), a.unsubscribe());
+                  }
+                  t.signal.addEventListener('abort', () => {
+                    n(t.signal.reason);
+                  });
+                  let a = e.subscribe({
+                    next(e) {
+                      (i = !0), r(e), s();
+                    },
+                    error(e) {
+                      n(e);
+                    },
+                    complete() {
+                      t.abort(), s();
+                    },
+                  });
+                });
+              })(t)
+            ).result.data;
+          } catch (e) {
+            throw ea.from(e);
+          }
+        }
+        query(e, t, r) {
+          return this.requestAsPromise({
+            type: 'query',
+            path: e,
+            input: t,
+            context: r?.context,
+            signal: r?.signal,
+          });
+        }
+        mutation(e, t, r) {
+          return this.requestAsPromise({
+            type: 'mutation',
+            path: e,
+            input: t,
+            context: r?.context,
+            signal: r?.signal,
+          });
+        }
+        subscription(e, t, r) {
+          return this.$request({
+            type: 'subscription',
+            path: e,
+            input: t,
+            context: r.context,
+            signal: r.signal,
+          }).subscribe({
+            next(e) {
+              switch (e.result.type) {
+                case 'state':
+                  r.onConnectionStateChange?.(e.result);
+                  break;
+                case 'started':
+                  r.onStarted?.({ context: e.context });
+                  break;
+                case 'stopped':
+                  r.onStopped?.();
+                  break;
+                case 'data':
+                case void 0:
+                  r.onData?.(e.result.data);
+              }
+            },
+            error(e) {
+              r.onError?.(e);
+            },
+            complete() {
+              r.onComplete?.();
+            },
+          });
+        }
+        constructor(e) {
+          eo(this, 'links', void 0),
+            eo(this, 'runtime', void 0),
+            eo(this, 'requestId', void 0),
+            (this.requestId = 0),
+            (this.runtime = {}),
+            (this.links = e.links.map((e) => e(this.runtime)));
+        }
+      }
+      let el = {
+          query: 'query',
+          mutate: 'mutation',
+          subscribe: 'subscription',
+        },
+        ec = (e) => el[e];
+      function eh(e) {
+        let t = A(({ path: t, args: r }) => {
+          let n = [...t],
+            i = ec(n.pop()),
+            s = n.join('.');
+          return e[i](s, ...r);
+        });
+        return N((r) =>
+          e.hasOwnProperty(r) ? e[r] : '__untypedClient' === r ? e : t[r]
+        );
+      }
+      function ed(e) {
+        return eh(new eu(e));
+      }
+      function ef(e) {
+        return e.__untypedClient;
+      }
+      let ep = () => {
+        throw Error(
+          'Something went wrong. Please submit an issue at https://github.com/trpc/trpc/issues/new'
+        );
+      };
+      function em(e) {
+        let t = null,
+          r = null,
+          n = () => {
+            clearTimeout(r), (r = null), (t = null);
+          };
+        function i() {
+          let r = (function (t) {
+            let r = [[]],
+              n = 0;
+            for (;;) {
+              let i = t[n];
+              if (!i) break;
+              let s = r[r.length - 1];
+              if (i.aborted) {
+                i.reject?.(Error('Aborted')), n++;
+                continue;
+              }
+              if (e.validate(s.concat(i).map((e) => e.key))) {
+                s.push(i), n++;
+                continue;
+              }
+              if (0 === s.length) {
+                i.reject?.(Error('Input is too big for a single dispatch')),
+                  n++;
+                continue;
+              }
+              r.push([]);
+            }
+            return r;
+          })(t);
+          for (let t of (n(), r)) {
+            if (!t.length) continue;
+            let r = { items: t };
+            for (let e of t) e.batch = r;
+            e.fetch(r.items.map((e) => e.key))
+              .then(async (e) => {
+                for (let t of (await Promise.all(
+                  e.map(async (e, t) => {
+                    let n = r.items[t];
+                    try {
+                      let t = await Promise.resolve(e);
+                      n.resolve?.(t);
+                    } catch (e) {
+                      n.reject?.(e);
+                    }
+                    (n.batch = null), (n.reject = null), (n.resolve = null);
+                  })
+                ),
+                r.items))
+                  t.reject?.(Error('Missing result')), (t.batch = null);
+              })
+              .catch((e) => {
+                for (let t of r.items) t.reject?.(e), (t.batch = null);
+              });
+          }
+        }
+        return {
+          load: function (e) {
+            let n = {
+                aborted: !1,
+                key: e,
+                batch: null,
+                resolve: ep,
+                reject: ep,
+              },
+              s = new Promise((e, r) => {
+                (n.reject = r), (n.resolve = e), t || (t = []), t.push(n);
+              });
+            return r || (r = setTimeout(i)), s;
+          },
+        };
+      }
+      let eg = (e) => 'function' == typeof e;
+      function ey(e) {
+        return e
+          ? 'input' in e
+            ? e
+            : { input: e, output: e }
+          : {
+              input: { serialize: (e) => e, deserialize: (e) => e },
+              output: { serialize: (e) => e, deserialize: (e) => e },
+            };
+      }
+      let ev = { query: 'GET', mutation: 'POST', subscription: 'PATCH' };
+      function eb(e) {
+        return 'input' in e
+          ? e.transformer.input.serialize(e.input)
+          : (function (e) {
+              let t = {};
+              for (let r = 0; r < e.length; r++) {
+                let n = e[r];
+                t[r] = n;
+              }
+              return t;
+            })(e.inputs.map((t) => e.transformer.input.serialize(t)));
+      }
+      let ew = (e) => {
+          let t = e.url.split('?'),
+            r = t[0].replace(/\/$/, '') + '/' + e.path,
+            n = [];
+          if (
+            (t[1] && n.push(t[1]),
+            'inputs' in e && n.push('batch=1'),
+            'query' === e.type || 'subscription' === e.type)
+          ) {
+            let t = eb(e);
+            void 0 !== t &&
+              'POST' !== e.methodOverride &&
+              n.push(`input=${encodeURIComponent(JSON.stringify(t))}`);
+          }
+          return n.length && (r += '?' + n.join('&')), r;
+        },
+        e_ = (e) => {
+          if ('query' === e.type && 'POST' !== e.methodOverride) return;
+          let t = eb(e);
+          return void 0 !== t ? JSON.stringify(t) : void 0;
+        },
+        eE = (e) =>
+          eA({
+            ...e,
+            contentTypeHeader: 'application/json',
+            getUrl: ew,
+            getBody: e_,
+          });
+      class eS extends Error {
+        constructor() {
+          let e = 'AbortError';
+          super(e), (this.name = e), (this.message = e);
+        }
+      }
+      let eO = (e) => {
+        if (e?.aborted) {
+          if ((e.throwIfAborted?.(), 'undefined' != typeof DOMException))
+            throw new DOMException('AbortError', 'AbortError');
+          throw new eS();
+        }
+      };
+      async function eR(e) {
+        eO(e.signal);
+        let t = e.getUrl(e),
+          r = e.getBody(e),
+          { type: n } = e,
+          i = await (async () => {
+            let t = await e.headers();
+            return Symbol.iterator in t ? Object.fromEntries(t) : t;
+          })(),
+          s = {
+            ...(e.contentTypeHeader
+              ? { 'content-type': e.contentTypeHeader }
+              : {}),
+            ...(e.trpcAcceptHeader
+              ? { 'trpc-accept': e.trpcAcceptHeader }
+              : void 0),
+            ...i,
+          };
+        return (function (e) {
+          if (e) return e;
+          if ('undefined' != typeof window && eg(window.fetch))
+            return window.fetch;
+          if ('undefined' != typeof globalThis && eg(globalThis.fetch))
+            return globalThis.fetch;
+          throw Error('No fetch implementation found');
+        })(e.fetch)(t, {
+          method: e.methodOverride ?? ev[n],
+          signal: e.signal,
+          body: r,
+          headers: s,
+        });
+      }
+      async function eA(e) {
+        let t = {},
+          r = await eR(e);
+        t.response = r;
+        let n = await r.json();
+        return (t.responseJSON = n), { json: n, meta: t };
+      }
+      class eN extends Error {
+        constructor(e) {
+          super(e?.message ?? 'WebSocket closed', { cause: e?.cause }),
+            (this.name = 'TRPCWebSocketClosedError'),
+            Object.setPrototypeOf(this, eN.prototype);
+        }
+      }
+      C.BAD_GATEWAY,
+        C.SERVICE_UNAVAILABLE,
+        C.GATEWAY_TIMEOUT,
+        C.INTERNAL_SERVER_ERROR;
+      var eC = r(8101),
+        ex = eC.createContext(void 0),
+        ek = (e) => {
+          let t = eC.useContext(ex);
+          if (e) return e;
+          if (!t)
+            throw Error(
+              'No QueryClient set, use QueryClientProvider to set one'
+            );
+          return t;
+        },
+        eT = ({ client: e, children: t }) => (
+          eC.useEffect(
+            () => (
+              e.mount(),
+              () => {
+                e.unmount();
+              }
+            ),
+            [e]
+          ),
+          (0, b.jsx)(ex.Provider, { value: e, children: t })
+        );
+      function eI(e) {
+        return e;
+      }
+      function eP(e) {
+        return e.state.isPaused;
+      }
+      function eD(e) {
+        return 'success' === e.state.status;
+      }
+      function eM(e, t, r) {
+        if ('object' != typeof t || null === t) return;
+        let n = e.getMutationCache(),
+          i = e.getQueryCache(),
+          s =
+            r?.defaultOptions?.deserializeData ??
+            e.getDefaultOptions().hydrate?.deserializeData ??
+            eI,
+          a = t.mutations || [],
+          o = t.queries || [];
+        a.forEach(({ state: t, ...i }) => {
+          n.build(
+            e,
+            {
+              ...e.getDefaultOptions().hydrate?.mutations,
+              ...r?.defaultOptions?.mutations,
+              ...i,
+            },
+            t
+          );
+        }),
+          o.forEach(
+            ({ queryKey: t, state: n, queryHash: a, meta: o, promise: u }) => {
+              let l = i.get(a),
+                c = void 0 === n.data ? n.data : s(n.data);
+              if (l) {
+                if (l.state.dataUpdatedAt < n.dataUpdatedAt) {
+                  let { fetchStatus: e, ...t } = n;
+                  l.setState({ ...t, data: c });
+                }
+              } else
+                l = i.build(
+                  e,
+                  {
+                    ...e.getDefaultOptions().hydrate?.queries,
+                    ...r?.defaultOptions?.queries,
+                    queryKey: t,
+                    queryHash: a,
+                    meta: o,
+                  },
+                  { ...n, data: c, fetchStatus: 'idle' }
+                );
+              if (u) {
+                let e = Promise.resolve(u).then(s);
+                l.fetch(void 0, { initialPromise: e });
+              }
+            }
+          );
+      }
+      var ej = ({ children: e, options: t = {}, state: r, queryClient: n }) => {
+        let i = ek(n),
+          [s, a] = eC.useState(),
+          o = eC.useRef(t);
+        return (
+          (o.current = t),
+          eC.useMemo(() => {
+            if (r) {
+              if ('object' != typeof r) return;
+              let e = i.getQueryCache(),
+                t = r.queries || [],
+                n = [],
+                u = [];
+              for (let r of t) {
+                let t = e.get(r.queryHash);
+                if (t) {
+                  let e = r.state.dataUpdatedAt > t.state.dataUpdatedAt,
+                    n = s?.find((e) => e.queryHash === r.queryHash);
+                  e &&
+                    (!n || r.state.dataUpdatedAt > n.state.dataUpdatedAt) &&
+                    u.push(r);
+                } else n.push(r);
+              }
+              n.length > 0 && eM(i, { queries: n }, o.current),
+                u.length > 0 && a((e) => (e ? [...e, ...u] : u));
+            }
+          }, [i, s, r]),
+          eC.useEffect(() => {
+            s && (eM(i, { queries: s }, o.current), a(void 0));
+          }, [i, s]),
+          e
+        );
+      };
+      let eq = ['client', 'ssrContext', 'ssrState', 'abortOnUnmount'],
+        eU = eC.createContext?.(null);
+      var eL = 'undefined' == typeof window || 'Deno' in globalThis;
+      function eF() {}
+      function eB(e) {
+        return 'number' == typeof e && e >= 0 && e !== 1 / 0;
+      }
+      function eQ(e, t) {
         return Math.max(e + (t || 0) - Date.now(), 0);
       }
-      function O(e, t) {
+      function eZ(e, t) {
         return 'function' == typeof e ? e(t) : e;
       }
-      function R(e, t) {
+      function ez(e, t) {
         return 'function' == typeof e ? e(t) : e;
       }
-      function A(e, t) {
+      function eH(e, t) {
         let {
           type: r = 'all',
           exact: n,
@@ -3994,8 +5027,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         } = e;
         if (a) {
           if (n) {
-            if (t.queryHash !== C(a, t.options)) return !1;
-          } else if (!k(t.queryKey, a)) return !1;
+            if (t.queryHash !== e$(a, t.options)) return !1;
+          } else if (!eV(t.queryKey, a)) return !1;
         }
         if ('all' !== r) {
           let e = t.isActive();
@@ -4007,29 +5040,29 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           (!s || !!s(t))
         );
       }
-      function N(e, t) {
+      function eW(e, t) {
         let { exact: r, status: n, predicate: i, mutationKey: s } = e;
         if (s) {
           if (!t.options.mutationKey) return !1;
           if (r) {
-            if (x(t.options.mutationKey) !== x(s)) return !1;
-          } else if (!k(t.options.mutationKey, s)) return !1;
+            if (eK(t.options.mutationKey) !== eK(s)) return !1;
+          } else if (!eV(t.options.mutationKey, s)) return !1;
         }
         return (!n || t.state.status === n) && (!i || !!i(t));
       }
-      function C(e, t) {
-        return (t?.queryKeyHashFn || x)(e);
+      function e$(e, t) {
+        return (t?.queryKeyHashFn || eK)(e);
       }
-      function x(e) {
+      function eK(e) {
         return JSON.stringify(e, (e, t) =>
-          D(t)
+          eX(t)
             ? Object.keys(t)
                 .sort()
                 .reduce((e, r) => ((e[r] = t[r]), e), {})
             : t
         );
       }
-      function k(e, t) {
+      function eV(e, t) {
         return (
           e === t ||
           (typeof e == typeof t &&
@@ -4037,13 +5070,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             !!t &&
             'object' == typeof e &&
             'object' == typeof t &&
-            !Object.keys(t).some((r) => !k(e[r], t[r])))
+            !Object.keys(t).some((r) => !eV(e[r], t[r])))
         );
       }
-      function T(e, t) {
+      function eG(e, t) {
         if (e === t) return e;
-        let r = P(e) && P(t);
-        if (r || (D(e) && D(t))) {
+        let r = eY(e) && eY(t);
+        if (r || (eX(e) && eX(t))) {
           let n = r ? e : Object.keys(e),
             i = n.length,
             s = r ? t : Object.keys(t),
@@ -4054,58 +5087,181 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             let a = r ? i : s[i];
             ((!r && n.includes(a)) || r) && void 0 === e[a] && void 0 === t[a]
               ? ((o[a] = void 0), u++)
-              : ((o[a] = T(e[a], t[a])),
+              : ((o[a] = eG(e[a], t[a])),
                 o[a] === e[a] && void 0 !== e[a] && u++);
           }
           return i === a && u === i ? e : o;
         }
         return t;
       }
-      function I(e, t) {
+      function eJ(e, t) {
         if (!t || Object.keys(e).length !== Object.keys(t).length) return !1;
         for (let r in e) if (e[r] !== t[r]) return !1;
         return !0;
       }
-      function P(e) {
+      function eY(e) {
         return Array.isArray(e) && e.length === Object.keys(e).length;
       }
-      function D(e) {
-        if (!M(e)) return !1;
+      function eX(e) {
+        if (!e0(e)) return !1;
         let t = e.constructor;
         if (void 0 === t) return !0;
         let r = t.prototype;
         return (
-          !!(M(r) && r.hasOwnProperty('isPrototypeOf')) &&
+          !!(e0(r) && r.hasOwnProperty('isPrototypeOf')) &&
           Object.getPrototypeOf(e) === Object.prototype
         );
       }
-      function M(e) {
+      function e0(e) {
         return '[object Object]' === Object.prototype.toString.call(e);
       }
-      function j(e, t, r) {
+      function e1(e, t, r) {
         return 'function' == typeof r.structuralSharing
           ? r.structuralSharing(e, t)
           : !1 !== r.structuralSharing
-            ? T(e, t)
+            ? eG(e, t)
             : t;
       }
-      function q(e, t, r = 0) {
+      function e2(e, t, r = 0) {
         let n = [...e, t];
         return r && n.length > r ? n.slice(1) : n;
       }
-      function U(e, t, r = 0) {
+      function e4(e, t, r = 0) {
         let n = [t, ...e];
         return r && n.length > r ? n.slice(0, -1) : n;
       }
-      var L = Symbol();
-      function F(e, t) {
+      var e5 = Symbol();
+      function e3(e, t) {
         return !e.queryFn && t?.initialPromise
           ? () => t.initialPromise
-          : e.queryFn && e.queryFn !== L
+          : e.queryFn && e.queryFn !== e5
             ? e.queryFn
             : () => Promise.reject(Error(`Missing queryFn: '${e.queryHash}'`));
       }
-      var B = (function () {
+      function e6(e, t, r) {
+        let n = e.flatMap((e) => e.split('.'));
+        if (!t && (!r || 'any' === r)) return n.length ? [n] : [];
+        if ('infinite' === r && T(t) && ('direction' in t || 'cursor' in t)) {
+          let { cursor: e, direction: r, ...i } = t;
+          return [n, { input: i, type: 'infinite' }];
+        }
+        return [
+          n,
+          {
+            ...(void 0 !== t && t !== e5 && { input: t }),
+            ...(r && 'any' !== r && { type: r }),
+          },
+        ];
+      }
+      function e8(e) {
+        return e6(e, void 0, 'any');
+      }
+      let e9 = (e) => {
+        switch (e) {
+          case 'queryOptions':
+          case 'fetch':
+          case 'ensureData':
+          case 'prefetch':
+          case 'getData':
+          case 'setData':
+          case 'setQueriesData':
+            return 'query';
+          case 'infiniteQueryOptions':
+          case 'fetchInfinite':
+          case 'prefetchInfinite':
+          case 'getInfiniteData':
+          case 'setInfiniteData':
+            return 'infinite';
+          case 'setMutationDefaults':
+          case 'getMutationDefaults':
+          case 'isMutating':
+          case 'cancel':
+          case 'invalidate':
+          case 'refetch':
+          case 'reset':
+            return 'any';
+        }
+      };
+      function e7(e) {
+        let t = e instanceof eu ? e : ef(e);
+        return A((e) => {
+          let r = e.path,
+            n = r.join('.'),
+            [i, s] = e.args;
+          return {
+            queryKey: e6(r, i, 'query'),
+            queryFn: () => t.query(n, i, s?.trpc),
+            ...s,
+          };
+        });
+      }
+      var te = class {
+          constructor() {
+            (this.listeners = new Set()),
+              (this.subscribe = this.subscribe.bind(this));
+          }
+          subscribe(e) {
+            return (
+              this.listeners.add(e),
+              this.onSubscribe(),
+              () => {
+                this.listeners.delete(e), this.onUnsubscribe();
+              }
+            );
+          }
+          hasListeners() {
+            return this.listeners.size > 0;
+          }
+          onSubscribe() {}
+          onUnsubscribe() {}
+        },
+        tt = new (class extends te {
+          #e;
+          #t;
+          #r;
+          constructor() {
+            super(),
+              (this.#r = (e) => {
+                if (!eL && window.addEventListener) {
+                  let t = () => e();
+                  return (
+                    window.addEventListener('visibilitychange', t, !1),
+                    () => {
+                      window.removeEventListener('visibilitychange', t);
+                    }
+                  );
+                }
+              });
+          }
+          onSubscribe() {
+            this.#t || this.setEventListener(this.#r);
+          }
+          onUnsubscribe() {
+            this.hasListeners() || (this.#t?.(), (this.#t = void 0));
+          }
+          setEventListener(e) {
+            (this.#r = e),
+              this.#t?.(),
+              (this.#t = e((e) => {
+                'boolean' == typeof e ? this.setFocused(e) : this.onFocus();
+              }));
+          }
+          setFocused(e) {
+            this.#e !== e && ((this.#e = e), this.onFocus());
+          }
+          onFocus() {
+            let e = this.isFocused();
+            this.listeners.forEach((t) => {
+              t(e);
+            });
+          }
+          isFocused() {
+            return 'boolean' == typeof this.#e
+              ? this.#e
+              : globalThis.document?.visibilityState !== 'hidden';
+          }
+        })(),
+        tr = (function () {
           let e = [],
             t = 0,
             r = (e) => {
@@ -4164,80 +5320,14 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             },
           };
         })(),
-        Q = class {
-          constructor() {
-            (this.listeners = new Set()),
-              (this.subscribe = this.subscribe.bind(this));
-          }
-          subscribe(e) {
-            return (
-              this.listeners.add(e),
-              this.onSubscribe(),
-              () => {
-                this.listeners.delete(e), this.onUnsubscribe();
-              }
-            );
-          }
-          hasListeners() {
-            return this.listeners.size > 0;
-          }
-          onSubscribe() {}
-          onUnsubscribe() {}
-        },
-        Z = new (class extends Q {
-          #e;
-          #t;
-          #r;
-          constructor() {
-            super(),
-              (this.#r = (e) => {
-                if (!w && window.addEventListener) {
-                  let t = () => e();
-                  return (
-                    window.addEventListener('visibilitychange', t, !1),
-                    () => {
-                      window.removeEventListener('visibilitychange', t);
-                    }
-                  );
-                }
-              });
-          }
-          onSubscribe() {
-            this.#t || this.setEventListener(this.#r);
-          }
-          onUnsubscribe() {
-            this.hasListeners() || (this.#t?.(), (this.#t = void 0));
-          }
-          setEventListener(e) {
-            (this.#r = e),
-              this.#t?.(),
-              (this.#t = e((e) => {
-                'boolean' == typeof e ? this.setFocused(e) : this.onFocus();
-              }));
-          }
-          setFocused(e) {
-            this.#e !== e && ((this.#e = e), this.onFocus());
-          }
-          onFocus() {
-            let e = this.isFocused();
-            this.listeners.forEach((t) => {
-              t(e);
-            });
-          }
-          isFocused() {
-            return 'boolean' == typeof this.#e
-              ? this.#e
-              : globalThis.document?.visibilityState !== 'hidden';
-          }
-        })(),
-        z = new (class extends Q {
+        tn = new (class extends te {
           #n = !0;
           #t;
           #r;
           constructor() {
             super(),
               (this.#r = (e) => {
-                if (!w && window.addEventListener) {
+                if (!eL && window.addEventListener) {
                   let t = () => e(!0),
                     r = () => e(!1);
                   return (
@@ -4273,7 +5363,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             return this.#n;
           }
         })();
-      function H() {
+      function ti() {
         let e, t;
         let r = new Promise((r, n) => {
           (e = r), (t = n);
@@ -4293,33 +5383,33 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           r
         );
       }
-      function W(e) {
+      function ts(e) {
         return Math.min(1e3 * 2 ** e, 3e4);
       }
-      function $(e) {
-        return (e ?? 'online') !== 'online' || z.isOnline();
+      function ta(e) {
+        return (e ?? 'online') !== 'online' || tn.isOnline();
       }
-      var K = class extends Error {
+      var to = class extends Error {
         constructor(e) {
           super('CancelledError'),
             (this.revert = e?.revert),
             (this.silent = e?.silent);
         }
       };
-      function V(e) {
-        return e instanceof K;
+      function tu(e) {
+        return e instanceof to;
       }
-      function G(e) {
+      function tl(e) {
         let t,
           r = !1,
           n = 0,
           i = !1,
-          s = H(),
+          s = ti(),
           a = () =>
-            Z.isFocused() &&
-            ('always' === e.networkMode || z.isOnline()) &&
+            tt.isFocused() &&
+            ('always' === e.networkMode || tn.isOnline()) &&
             e.canRun(),
-          o = () => $(e.networkMode) && e.canRun(),
+          o = () => ta(e.networkMode) && e.canRun(),
           u = (r) => {
             i || ((i = !0), e.onSuccess?.(r), t?.(), s.resolve(r));
           },
@@ -4348,8 +5438,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               .then(u)
               .catch((t) => {
                 if (i) return;
-                let s = e.retry ?? (w ? 0 : 3),
-                  o = e.retryDelay ?? W,
+                let s = e.retry ?? (eL ? 0 : 3),
+                  o = e.retryDelay ?? ts,
                   u = 'function' == typeof o ? o(n, t) : o,
                   d =
                     !0 === s ||
@@ -4373,7 +5463,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         return {
           promise: s,
           cancel: (t) => {
-            i || (l(new K(t)), e.abort?.());
+            i || (l(new to(t)), e.abort?.());
           },
           continue: () => (t?.(), s),
           cancelRetry: () => {
@@ -4386,26 +5476,26 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           start: () => (o() ? h() : c().then(h), s),
         };
       }
-      var J = class {
+      var tc = class {
           #i;
           destroy() {
             this.clearGcTimeout();
           }
           scheduleGc() {
             this.clearGcTimeout(),
-              E(this.gcTime) &&
+              eB(this.gcTime) &&
                 (this.#i = setTimeout(() => {
                   this.optionalRemove();
                 }, this.gcTime));
           }
           updateGcTime(e) {
-            this.gcTime = Math.max(this.gcTime || 0, e ?? (w ? 1 / 0 : 3e5));
+            this.gcTime = Math.max(this.gcTime || 0, e ?? (eL ? 1 / 0 : 3e5));
           }
           clearGcTimeout() {
             this.#i && (clearTimeout(this.#i), (this.#i = void 0));
           }
         },
-        Y = class extends J {
+        th = class extends tc {
           #s;
           #a;
           #o;
@@ -4466,7 +5556,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               this.#o.remove(this);
           }
           setData(e, t) {
-            let r = j(this.state.data, e, this.options);
+            let r = e1(this.state.data, e, this.options);
             return (
               this.#h({
                 data: r,
@@ -4483,7 +5573,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           cancel(e) {
             let t = this.#u?.promise;
             return (
-              this.#u?.cancel(e), t ? t.then(_).catch(_) : Promise.resolve()
+              this.#u?.cancel(e), t ? t.then(eF).catch(eF) : Promise.resolve()
             );
           }
           destroy() {
@@ -4494,13 +5584,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           }
           isActive() {
             return this.observers.some(
-              (e) => !1 !== R(e.options.enabled, this)
+              (e) => !1 !== ez(e.options.enabled, this)
             );
           }
           isDisabled() {
             return this.getObserversCount() > 0
               ? !this.isActive()
-              : this.options.queryFn === L ||
+              : this.options.queryFn === e5 ||
                   this.state.dataUpdateCount + this.state.errorUpdateCount ===
                     0;
           }
@@ -4516,7 +5606,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             return (
               this.state.isInvalidated ||
               void 0 === this.state.data ||
-              !S(this.state.dataUpdatedAt, e)
+              !eQ(this.state.dataUpdatedAt, e)
             );
           }
           onFocus() {
@@ -4581,7 +5671,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 queryKey: this.queryKey,
                 state: this.state,
                 fetchFn: () => {
-                  let e = F(this.options, t),
+                  let e = e3(this.options, t),
                     r = { queryKey: this.queryKey, meta: this.meta };
                   return (n(r), (this.#c = !1), this.options.persister)
                     ? this.options.persister(e, r, this)
@@ -4595,14 +5685,14 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 this.state.fetchMeta !== i.fetchOptions?.meta) &&
                 this.#h({ type: 'fetch', meta: i.fetchOptions?.meta });
             let s = (e) => {
-              (V(e) && e.silent) || this.#h({ type: 'error', error: e }),
-                V(e) ||
+              (tu(e) && e.silent) || this.#h({ type: 'error', error: e }),
+                tu(e) ||
                   (this.#o.config.onError?.(e, this),
                   this.#o.config.onSettled?.(this.state.data, e, this)),
                 this.scheduleGc();
             };
             return (
-              (this.#u = G({
+              (this.#u = tl({
                 initialPromise: t?.initialPromise,
                 fn: i.fetchFn,
                 abort: r.abort.bind(r),
@@ -4655,7 +5745,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 case 'fetch':
                   return {
                     ...t,
-                    ...X(t.data, this.options),
+                    ...td(t.data, this.options),
                     fetchMeta: e.meta ?? null,
                   };
                 case 'success':
@@ -4675,7 +5765,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   };
                 case 'error':
                   let r = e.error;
-                  if (V(r) && r.revert && this.#a)
+                  if (tu(r) && r.revert && this.#a)
                     return { ...this.#a, fetchStatus: 'idle' };
                   return {
                     ...t,
@@ -4693,7 +5783,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   return { ...t, ...e.state };
               }
             })(this.state)),
-              B.batch(() => {
+              tr.batch(() => {
                 this.observers.forEach((e) => {
                   e.onQueryUpdate();
                 }),
@@ -4701,1808 +5791,23 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               });
           }
         };
-      function X(e, t) {
+      function td(e, t) {
         return {
           fetchFailureCount: 0,
           fetchFailureReason: null,
-          fetchStatus: $(t.networkMode) ? 'fetching' : 'paused',
+          fetchStatus: ta(t.networkMode) ? 'fetching' : 'paused',
           ...(void 0 === e && { error: null, status: 'pending' }),
         };
       }
-      var ee = class extends Q {
-          constructor(e = {}) {
-            super(), (this.config = e), (this.#d = new Map());
-          }
-          #d;
-          build(e, t, r) {
-            let n = t.queryKey,
-              i = t.queryHash ?? C(n, t),
-              s = this.get(i);
-            return (
-              s ||
-                ((s = new Y({
-                  cache: this,
-                  queryKey: n,
-                  queryHash: i,
-                  options: e.defaultQueryOptions(t),
-                  state: r,
-                  defaultOptions: e.getQueryDefaults(n),
-                })),
-                this.add(s)),
-              s
-            );
-          }
-          add(e) {
-            this.#d.has(e.queryHash) ||
-              (this.#d.set(e.queryHash, e),
-              this.notify({ type: 'added', query: e }));
-          }
-          remove(e) {
-            let t = this.#d.get(e.queryHash);
-            t &&
-              (e.destroy(),
-              t === e && this.#d.delete(e.queryHash),
-              this.notify({ type: 'removed', query: e }));
-          }
-          clear() {
-            B.batch(() => {
-              this.getAll().forEach((e) => {
-                this.remove(e);
-              });
-            });
-          }
-          get(e) {
-            return this.#d.get(e);
-          }
-          getAll() {
-            return [...this.#d.values()];
-          }
-          find(e) {
-            let t = { exact: !0, ...e };
-            return this.getAll().find((e) => A(t, e));
-          }
-          findAll(e = {}) {
-            let t = this.getAll();
-            return Object.keys(e).length > 0 ? t.filter((t) => A(e, t)) : t;
-          }
-          notify(e) {
-            B.batch(() => {
-              this.listeners.forEach((t) => {
-                t(e);
-              });
-            });
-          }
-          onFocus() {
-            B.batch(() => {
-              this.getAll().forEach((e) => {
-                e.onFocus();
-              });
-            });
-          }
-          onOnline() {
-            B.batch(() => {
-              this.getAll().forEach((e) => {
-                e.onOnline();
-              });
-            });
-          }
-        },
-        et = class extends J {
-          #f;
-          #p;
-          #u;
-          constructor(e) {
-            super(),
-              (this.mutationId = e.mutationId),
-              (this.#p = e.mutationCache),
-              (this.#f = []),
-              (this.state = e.state || er()),
-              this.setOptions(e.options),
-              this.scheduleGc();
-          }
-          setOptions(e) {
-            (this.options = e), this.updateGcTime(this.options.gcTime);
-          }
-          get meta() {
-            return this.options.meta;
-          }
-          addObserver(e) {
-            this.#f.includes(e) ||
-              (this.#f.push(e),
-              this.clearGcTimeout(),
-              this.#p.notify({
-                type: 'observerAdded',
-                mutation: this,
-                observer: e,
-              }));
-          }
-          removeObserver(e) {
-            (this.#f = this.#f.filter((t) => t !== e)),
-              this.scheduleGc(),
-              this.#p.notify({
-                type: 'observerRemoved',
-                mutation: this,
-                observer: e,
-              });
-          }
-          optionalRemove() {
-            this.#f.length ||
-              ('pending' === this.state.status
-                ? this.scheduleGc()
-                : this.#p.remove(this));
-          }
-          continue() {
-            return this.#u?.continue() ?? this.execute(this.state.variables);
-          }
-          async execute(e) {
-            this.#u = G({
-              fn: () =>
-                this.options.mutationFn
-                  ? this.options.mutationFn(e)
-                  : Promise.reject(Error('No mutationFn found')),
-              onFail: (e, t) => {
-                this.#h({ type: 'failed', failureCount: e, error: t });
-              },
-              onPause: () => {
-                this.#h({ type: 'pause' });
-              },
-              onContinue: () => {
-                this.#h({ type: 'continue' });
-              },
-              retry: this.options.retry ?? 0,
-              retryDelay: this.options.retryDelay,
-              networkMode: this.options.networkMode,
-              canRun: () => this.#p.canRun(this),
-            });
-            let t = 'pending' === this.state.status,
-              r = !this.#u.canStart();
-            try {
-              if (!t) {
-                this.#h({ type: 'pending', variables: e, isPaused: r }),
-                  await this.#p.config.onMutate?.(e, this);
-                let t = await this.options.onMutate?.(e);
-                t !== this.state.context &&
-                  this.#h({
-                    type: 'pending',
-                    context: t,
-                    variables: e,
-                    isPaused: r,
-                  });
-              }
-              let n = await this.#u.start();
-              return (
-                await this.#p.config.onSuccess?.(
-                  n,
-                  e,
-                  this.state.context,
-                  this
-                ),
-                await this.options.onSuccess?.(n, e, this.state.context),
-                await this.#p.config.onSettled?.(
-                  n,
-                  null,
-                  this.state.variables,
-                  this.state.context,
-                  this
-                ),
-                await this.options.onSettled?.(n, null, e, this.state.context),
-                this.#h({ type: 'success', data: n }),
-                n
-              );
-            } catch (t) {
-              try {
-                throw (
-                  (await this.#p.config.onError?.(
-                    t,
-                    e,
-                    this.state.context,
-                    this
-                  ),
-                  await this.options.onError?.(t, e, this.state.context),
-                  await this.#p.config.onSettled?.(
-                    void 0,
-                    t,
-                    this.state.variables,
-                    this.state.context,
-                    this
-                  ),
-                  await this.options.onSettled?.(
-                    void 0,
-                    t,
-                    e,
-                    this.state.context
-                  ),
-                  t)
-                );
-              } finally {
-                this.#h({ type: 'error', error: t });
-              }
-            } finally {
-              this.#p.runNext(this);
-            }
-          }
-          #h(e) {
-            (this.state = ((t) => {
-              switch (e.type) {
-                case 'failed':
-                  return {
-                    ...t,
-                    failureCount: e.failureCount,
-                    failureReason: e.error,
-                  };
-                case 'pause':
-                  return { ...t, isPaused: !0 };
-                case 'continue':
-                  return { ...t, isPaused: !1 };
-                case 'pending':
-                  return {
-                    ...t,
-                    context: e.context,
-                    data: void 0,
-                    failureCount: 0,
-                    failureReason: null,
-                    error: null,
-                    isPaused: e.isPaused,
-                    status: 'pending',
-                    variables: e.variables,
-                    submittedAt: Date.now(),
-                  };
-                case 'success':
-                  return {
-                    ...t,
-                    data: e.data,
-                    failureCount: 0,
-                    failureReason: null,
-                    error: null,
-                    status: 'success',
-                    isPaused: !1,
-                  };
-                case 'error':
-                  return {
-                    ...t,
-                    data: void 0,
-                    error: e.error,
-                    failureCount: t.failureCount + 1,
-                    failureReason: e.error,
-                    isPaused: !1,
-                    status: 'error',
-                  };
-              }
-            })(this.state)),
-              B.batch(() => {
-                this.#f.forEach((t) => {
-                  t.onMutationUpdate(e);
-                }),
-                  this.#p.notify({
-                    mutation: this,
-                    type: 'updated',
-                    action: e,
-                  });
-              });
-          }
-        };
-      function er() {
-        return {
-          context: void 0,
-          data: void 0,
-          error: null,
-          failureCount: 0,
-          failureReason: null,
-          isPaused: !1,
-          status: 'idle',
-          variables: void 0,
-          submittedAt: 0,
-        };
-      }
-      var en = class extends Q {
-        constructor(e = {}) {
-          super(),
-            (this.config = e),
-            (this.#m = new Set()),
-            (this.#g = new Map()),
-            (this.#y = 0);
-        }
-        #m;
-        #g;
-        #y;
-        build(e, t, r) {
-          let n = new et({
-            mutationCache: this,
-            mutationId: ++this.#y,
-            options: e.defaultMutationOptions(t),
-            state: r,
-          });
-          return this.add(n), n;
-        }
-        add(e) {
-          this.#m.add(e);
-          let t = ei(e);
-          if ('string' == typeof t) {
-            let r = this.#g.get(t);
-            r ? r.push(e) : this.#g.set(t, [e]);
-          }
-          this.notify({ type: 'added', mutation: e });
-        }
-        remove(e) {
-          if (this.#m.delete(e)) {
-            let t = ei(e);
-            if ('string' == typeof t) {
-              let r = this.#g.get(t);
-              if (r) {
-                if (r.length > 1) {
-                  let t = r.indexOf(e);
-                  -1 !== t && r.splice(t, 1);
-                } else r[0] === e && this.#g.delete(t);
-              }
-            }
-          }
-          this.notify({ type: 'removed', mutation: e });
-        }
-        canRun(e) {
-          let t = ei(e);
-          if ('string' != typeof t) return !0;
-          {
-            let r = this.#g.get(t),
-              n = r?.find((e) => 'pending' === e.state.status);
-            return !n || n === e;
-          }
-        }
-        runNext(e) {
-          let t = ei(e);
-          if ('string' != typeof t) return Promise.resolve();
-          {
-            let r = this.#g.get(t)?.find((t) => t !== e && t.state.isPaused);
-            return r?.continue() ?? Promise.resolve();
-          }
-        }
-        clear() {
-          B.batch(() => {
-            this.#m.forEach((e) => {
-              this.notify({ type: 'removed', mutation: e });
-            }),
-              this.#m.clear(),
-              this.#g.clear();
-          });
-        }
-        getAll() {
-          return Array.from(this.#m);
-        }
-        find(e) {
-          let t = { exact: !0, ...e };
-          return this.getAll().find((e) => N(t, e));
-        }
-        findAll(e = {}) {
-          return this.getAll().filter((t) => N(e, t));
-        }
-        notify(e) {
-          B.batch(() => {
-            this.listeners.forEach((t) => {
-              t(e);
-            });
-          });
-        }
-        resumePausedMutations() {
-          let e = this.getAll().filter((e) => e.state.isPaused);
-          return B.batch(() =>
-            Promise.all(e.map((e) => e.continue().catch(_)))
-          );
-        }
-      };
-      function ei(e) {
-        return e.options.scope?.id;
-      }
-      function es(e) {
-        return {
-          onFetch: (t, r) => {
-            let n = t.options,
-              i = t.fetchOptions?.meta?.fetchMore?.direction,
-              s = t.state.data?.pages || [],
-              a = t.state.data?.pageParams || [],
-              o = { pages: [], pageParams: [] },
-              u = 0,
-              l = async () => {
-                let r = !1,
-                  l = (e) => {
-                    Object.defineProperty(e, 'signal', {
-                      enumerable: !0,
-                      get: () => (
-                        t.signal.aborted
-                          ? (r = !0)
-                          : t.signal.addEventListener('abort', () => {
-                              r = !0;
-                            }),
-                        t.signal
-                      ),
-                    });
-                  },
-                  c = F(t.options, t.fetchOptions),
-                  h = async (e, n, i) => {
-                    if (r) return Promise.reject();
-                    if (null == n && e.pages.length) return Promise.resolve(e);
-                    let s = {
-                      queryKey: t.queryKey,
-                      pageParam: n,
-                      direction: i ? 'backward' : 'forward',
-                      meta: t.options.meta,
-                    };
-                    l(s);
-                    let a = await c(s),
-                      { maxPages: o } = t.options,
-                      u = i ? U : q;
-                    return {
-                      pages: u(e.pages, a, o),
-                      pageParams: u(e.pageParams, n, o),
-                    };
-                  };
-                if (i && s.length) {
-                  let e = 'backward' === i,
-                    t = { pages: s, pageParams: a },
-                    r = (e ? eo : ea)(n, t);
-                  o = await h(t, r, e);
-                } else {
-                  let t = e ?? s.length;
-                  do {
-                    let e = 0 === u ? (a[0] ?? n.initialPageParam) : ea(n, o);
-                    if (u > 0 && null == e) break;
-                    (o = await h(o, e)), u++;
-                  } while (u < t);
-                }
-                return o;
-              };
-            t.options.persister
-              ? (t.fetchFn = () =>
-                  t.options.persister?.(
-                    l,
-                    {
-                      queryKey: t.queryKey,
-                      meta: t.options.meta,
-                      signal: t.signal,
-                    },
-                    r
-                  ))
-              : (t.fetchFn = l);
-          },
-        };
-      }
-      function ea(e, { pages: t, pageParams: r }) {
-        let n = t.length - 1;
-        return t.length > 0 ? e.getNextPageParam(t[n], t, r[n], r) : void 0;
-      }
-      function eo(e, { pages: t, pageParams: r }) {
-        return t.length > 0
-          ? e.getPreviousPageParam?.(t[0], t, r[0], r)
-          : void 0;
-      }
-      var eu = class {
-          #v;
-          #p;
-          #l;
-          #b;
-          #w;
-          #_;
-          #E;
-          #S;
-          constructor(e = {}) {
-            (this.#v = e.queryCache || new ee()),
-              (this.#p = e.mutationCache || new en()),
-              (this.#l = e.defaultOptions || {}),
-              (this.#b = new Map()),
-              (this.#w = new Map()),
-              (this.#_ = 0);
-          }
-          mount() {
-            this.#_++,
-              1 === this.#_ &&
-                ((this.#E = Z.subscribe(async (e) => {
-                  e && (await this.resumePausedMutations(), this.#v.onFocus());
-                })),
-                (this.#S = z.subscribe(async (e) => {
-                  e && (await this.resumePausedMutations(), this.#v.onOnline());
-                })));
-          }
-          unmount() {
-            this.#_--,
-              0 === this.#_ &&
-                (this.#E?.(),
-                (this.#E = void 0),
-                this.#S?.(),
-                (this.#S = void 0));
-          }
-          isFetching(e) {
-            return this.#v.findAll({ ...e, fetchStatus: 'fetching' }).length;
-          }
-          isMutating(e) {
-            return this.#p.findAll({ ...e, status: 'pending' }).length;
-          }
-          getQueryData(e) {
-            let t = this.defaultQueryOptions({ queryKey: e });
-            return this.#v.get(t.queryHash)?.state.data;
-          }
-          ensureQueryData(e) {
-            let t = this.defaultQueryOptions(e),
-              r = this.#v.build(this, t),
-              n = r.state.data;
-            return void 0 === n
-              ? this.fetchQuery(e)
-              : (e.revalidateIfStale &&
-                  r.isStaleByTime(O(t.staleTime, r)) &&
-                  this.prefetchQuery(t),
-                Promise.resolve(n));
-          }
-          getQueriesData(e) {
-            return this.#v
-              .findAll(e)
-              .map(({ queryKey: e, state: t }) => [e, t.data]);
-          }
-          setQueryData(e, t, r) {
-            let n = this.defaultQueryOptions({ queryKey: e }),
-              i = this.#v.get(n.queryHash),
-              s = i?.state.data,
-              a = 'function' == typeof t ? t(s) : t;
-            if (void 0 !== a)
-              return this.#v.build(this, n).setData(a, { ...r, manual: !0 });
-          }
-          setQueriesData(e, t, r) {
-            return B.batch(() =>
-              this.#v
-                .findAll(e)
-                .map(({ queryKey: e }) => [e, this.setQueryData(e, t, r)])
-            );
-          }
-          getQueryState(e) {
-            let t = this.defaultQueryOptions({ queryKey: e });
-            return this.#v.get(t.queryHash)?.state;
-          }
-          removeQueries(e) {
-            let t = this.#v;
-            B.batch(() => {
-              t.findAll(e).forEach((e) => {
-                t.remove(e);
-              });
-            });
-          }
-          resetQueries(e, t) {
-            let r = this.#v,
-              n = { type: 'active', ...e };
-            return B.batch(
-              () => (
-                r.findAll(e).forEach((e) => {
-                  e.reset();
-                }),
-                this.refetchQueries(n, t)
-              )
-            );
-          }
-          cancelQueries(e, t = {}) {
-            let r = { revert: !0, ...t };
-            return Promise.all(
-              B.batch(() => this.#v.findAll(e).map((e) => e.cancel(r)))
-            )
-              .then(_)
-              .catch(_);
-          }
-          invalidateQueries(e, t = {}) {
-            return B.batch(() => {
-              if (
-                (this.#v.findAll(e).forEach((e) => {
-                  e.invalidate();
-                }),
-                e?.refetchType === 'none')
-              )
-                return Promise.resolve();
-              let r = { ...e, type: e?.refetchType ?? e?.type ?? 'active' };
-              return this.refetchQueries(r, t);
-            });
-          }
-          refetchQueries(e, t = {}) {
-            let r = { ...t, cancelRefetch: t.cancelRefetch ?? !0 };
-            return Promise.all(
-              B.batch(() =>
-                this.#v
-                  .findAll(e)
-                  .filter((e) => !e.isDisabled())
-                  .map((e) => {
-                    let t = e.fetch(void 0, r);
-                    return (
-                      r.throwOnError || (t = t.catch(_)),
-                      'paused' === e.state.fetchStatus ? Promise.resolve() : t
-                    );
-                  })
-              )
-            ).then(_);
-          }
-          fetchQuery(e) {
-            let t = this.defaultQueryOptions(e);
-            void 0 === t.retry && (t.retry = !1);
-            let r = this.#v.build(this, t);
-            return r.isStaleByTime(O(t.staleTime, r))
-              ? r.fetch(t)
-              : Promise.resolve(r.state.data);
-          }
-          prefetchQuery(e) {
-            return this.fetchQuery(e).then(_).catch(_);
-          }
-          fetchInfiniteQuery(e) {
-            return (e.behavior = es(e.pages)), this.fetchQuery(e);
-          }
-          prefetchInfiniteQuery(e) {
-            return this.fetchInfiniteQuery(e).then(_).catch(_);
-          }
-          ensureInfiniteQueryData(e) {
-            return (e.behavior = es(e.pages)), this.ensureQueryData(e);
-          }
-          resumePausedMutations() {
-            return z.isOnline()
-              ? this.#p.resumePausedMutations()
-              : Promise.resolve();
-          }
-          getQueryCache() {
-            return this.#v;
-          }
-          getMutationCache() {
-            return this.#p;
-          }
-          getDefaultOptions() {
-            return this.#l;
-          }
-          setDefaultOptions(e) {
-            this.#l = e;
-          }
-          setQueryDefaults(e, t) {
-            this.#b.set(x(e), { queryKey: e, defaultOptions: t });
-          }
-          getQueryDefaults(e) {
-            let t = [...this.#b.values()],
-              r = {};
-            return (
-              t.forEach((t) => {
-                k(e, t.queryKey) && Object.assign(r, t.defaultOptions);
-              }),
-              r
-            );
-          }
-          setMutationDefaults(e, t) {
-            this.#w.set(x(e), { mutationKey: e, defaultOptions: t });
-          }
-          getMutationDefaults(e) {
-            let t = [...this.#w.values()],
-              r = {};
-            return (
-              t.forEach((t) => {
-                k(e, t.mutationKey) && (r = { ...r, ...t.defaultOptions });
-              }),
-              r
-            );
-          }
-          defaultQueryOptions(e) {
-            if (e._defaulted) return e;
-            let t = {
-              ...this.#l.queries,
-              ...this.getQueryDefaults(e.queryKey),
-              ...e,
-              _defaulted: !0,
-            };
-            return (
-              t.queryHash || (t.queryHash = C(t.queryKey, t)),
-              void 0 === t.refetchOnReconnect &&
-                (t.refetchOnReconnect = 'always' !== t.networkMode),
-              void 0 === t.throwOnError && (t.throwOnError = !!t.suspense),
-              !t.networkMode && t.persister && (t.networkMode = 'offlineFirst'),
-              t.queryFn === L && (t.enabled = !1),
-              t
-            );
-          }
-          defaultMutationOptions(e) {
-            return e?._defaulted
-              ? e
-              : {
-                  ...this.#l.mutations,
-                  ...(e?.mutationKey &&
-                    this.getMutationDefaults(e.mutationKey)),
-                  ...e,
-                  _defaulted: !0,
-                };
-          }
-          clear() {
-            this.#v.clear(), this.#p.clear();
-          }
-        },
-        el = r(8101),
-        ec = el.createContext(void 0),
-        eh = (e) => {
-          let t = el.useContext(ec);
-          if (e) return e;
-          if (!t)
-            throw Error(
-              'No QueryClient set, use QueryClientProvider to set one'
-            );
-          return t;
-        },
-        ed = ({ client: e, children: t }) => (
-          el.useEffect(
-            () => (
-              e.mount(),
-              () => {
-                e.unmount();
-              }
-            ),
-            [e]
-          ),
-          (0, b.jsx)(ec.Provider, { value: e, children: t })
-        );
-      function ef(e) {
-        let t = {
-          subscribe(t) {
-            let r = null,
-              n = !1,
-              i = !1,
-              s = !1;
-            function a() {
-              if (null === r) {
-                s = !0;
-                return;
-              }
-              !i &&
-                ((i = !0), 'function' == typeof r ? r() : r && r.unsubscribe());
-            }
-            return (
-              (r = e({
-                next(e) {
-                  n || t.next?.(e);
-                },
-                error(e) {
-                  n || ((n = !0), t.error?.(e), a());
-                },
-                complete() {
-                  n || ((n = !0), t.complete?.(), a());
-                },
-              })),
-              s && a(),
-              { unsubscribe: a }
-            );
-          },
-          pipe: (...e) => e.reduce(ep, t),
-        };
-        return t;
-      }
-      function ep(e, t) {
-        return t(e);
-      }
-      r(1657), Symbol();
-      let em = () => {},
-        eg = (e) => {
-          Object.freeze && Object.freeze(e);
-        },
-        ey = (e) =>
-          (function e(t, r, n) {
-            let i = r.join('.');
-            return (
-              n[i] ??
-                (n[i] = new Proxy(em, {
-                  get(i, s) {
-                    if ('string' == typeof s && 'then' !== s)
-                      return e(t, [...r, s], n);
-                  },
-                  apply(e, n, i) {
-                    let s = r[r.length - 1],
-                      a = { args: i, path: r };
-                    return (
-                      'call' === s
-                        ? (a = {
-                            args: i.length >= 2 ? [i[1]] : [],
-                            path: r.slice(0, -1),
-                          })
-                        : 'apply' === s &&
-                          (a = {
-                            args: i.length >= 2 ? i[1] : [],
-                            path: r.slice(0, -1),
-                          }),
-                      eg(a.args),
-                      eg(a.path),
-                      t(a)
-                    );
-                  },
-                })),
-              n[i]
-            );
-          })(e, [], Object.create(null)),
-        ev = (e) =>
-          new Proxy(em, {
-            get(t, r) {
-              if ('string' == typeof r && 'then' !== r) return e(r);
-            },
-          }),
-        eb = {
-          INTERNAL_SERVER_ERROR: -32603,
-          BAD_GATEWAY: -32603,
-          SERVICE_UNAVAILABLE: -32603,
-          GATEWAY_TIMEOUT: -32603,
-        },
-        ew = Symbol();
-      function e_(e, ...t) {
-        let r = Object.assign(Object.create(null), e);
-        for (let e of t)
-          for (let t in e) {
-            if (t in r && r[t] !== e[t]) throw Error(`Duplicate key ${t}`);
-            r[t] = e[t];
-          }
-        return r;
-      }
-      function eE(e) {
-        return !!e && !Array.isArray(e) && 'object' == typeof e;
-      }
-      function eS(e) {
-        return Object.assign(Object.create(null), e);
-      }
-      let eO = 'function' == typeof Symbol && !!Symbol.asyncIterator;
-      function eR(e) {
-        return eO && eE(e) && Symbol.asyncIterator in e;
-      }
-      function eA(e, t, r) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0,
-              })
-            : (e[t] = r),
-          e
-        );
-      }
-      class eN extends Error {}
-      function eC(e) {
-        if (e instanceof ex || (e instanceof Error && 'TRPCError' === e.name))
-          return e;
-        let t = new ex({ code: 'INTERNAL_SERVER_ERROR', cause: e });
-        return e instanceof Error && e.stack && (t.stack = e.stack), t;
-      }
-      class ex extends Error {
-        constructor(e) {
-          let t = (function (e) {
-            if (e instanceof Error) return e;
-            let t = typeof e;
-            if ('undefined' !== t && 'function' !== t && null !== e) {
-              if ('object' !== t) return Error(String(e));
-              if (eE(e)) {
-                let t = new eN();
-                for (let r in e) t[r] = e[r];
-                return t;
-              }
-            }
-          })(e.cause);
-          super(e.message ?? t?.message ?? e.code, { cause: t }),
-            eA(this, 'cause', void 0),
-            eA(this, 'code', void 0),
-            (this.code = e.code),
-            (this.name = 'TRPCError'),
-            this.cause || (this.cause = t);
-        }
-      }
-      new WeakMap(),
-        Symbol.toStringTag,
-        (u = Symbol).dispose ?? (u.dispose = Symbol()),
-        (l = Symbol).asyncDispose ?? (l.asyncDispose = Symbol()),
-        Symbol();
-      Symbol(), Symbol('ping');
-      let ek = {
-        input: { serialize: (e) => e, deserialize: (e) => e },
-        output: { serialize: (e) => e, deserialize: (e) => e },
-      };
-      class eT extends Error {
-        constructor() {
-          super('Unable to transform response from server');
-        }
-      }
-      let eI = ({ shape: e }) => e,
-        eP = 'middlewareMarker';
-      class eD extends Error {
-        constructor(e) {
-          super(e[0]?.message),
-            (function (e, t, r) {
-              t in e
-                ? Object.defineProperty(e, t, {
-                    value: r,
-                    enumerable: !0,
-                    configurable: !0,
-                    writable: !0,
-                  })
-                : (e[t] = r);
-            })(this, 'issues', void 0),
-            (this.name = 'SchemaError'),
-            (this.issues = e);
-        }
-      }
-      function eM(e) {
-        if ('function' == typeof e && 'function' == typeof e.assert)
-          return e.assert.bind(e);
-        if ('function' == typeof e) return e;
-        if ('function' == typeof e.parseAsync) return e.parseAsync.bind(e);
-        if ('function' == typeof e.parse) return e.parse.bind(e);
-        if ('function' == typeof e.validateSync) return e.validateSync.bind(e);
-        if ('function' == typeof e.create) return e.create.bind(e);
-        if ('function' == typeof e.assert) return (t) => (e.assert(t), t);
-        if ('~standard' in e)
-          return async (t) => {
-            let r = await e['~standard'].validate(t);
-            if (r.issues) throw new eD(r.issues);
-            return r.value;
-          };
-        throw Error('Could not find a validator fn');
-      }
-      function ej(e, t) {
-        let { middlewares: r = [], inputs: n, meta: i, ...s } = t;
-        return eq({
-          ...e_(e, s),
-          inputs: [...e.inputs, ...(n ?? [])],
-          middlewares: [...e.middlewares, ...r],
-          meta: e.meta && i ? { ...e.meta, ...i } : (i ?? e.meta),
-        });
-      }
-      function eq(e = {}) {
-        let t = { procedure: !0, inputs: [], middlewares: [], ...e };
-        return {
-          _def: t,
-          input(e) {
-            let r = eM(e);
-            return ej(t, {
-              inputs: [e],
-              middlewares: [
-                (function (e) {
-                  let t = async function (t) {
-                    let r;
-                    let n = await t.getRawInput();
-                    try {
-                      r = await e(n);
-                    } catch (e) {
-                      throw new ex({ code: 'BAD_REQUEST', cause: e });
-                    }
-                    let i = eE(t.input) && eE(r) ? { ...t.input, ...r } : r;
-                    return t.next({ input: i });
-                  };
-                  return (t._type = 'input'), t;
-                })(r),
-              ],
-            });
-          },
-          output(e) {
-            let r = eM(e);
-            return ej(t, {
-              output: e,
-              middlewares: [
-                (function (e) {
-                  let t = async function ({ next: t }) {
-                    let r = await t();
-                    if (!r.ok) return r;
-                    try {
-                      let t = await e(r.data);
-                      return { ...r, data: t };
-                    } catch (e) {
-                      throw new ex({
-                        message: 'Output validation failed',
-                        code: 'INTERNAL_SERVER_ERROR',
-                        cause: e,
-                      });
-                    }
-                  };
-                  return (t._type = 'output'), t;
-                })(r),
-              ],
-            });
-          },
-          meta: (e) => ej(t, { meta: e }),
-          use: (e) =>
-            ej(t, { middlewares: '_middlewares' in e ? e._middlewares : [e] }),
-          unstable_concat: (e) => ej(t, e._def),
-          query: (e) => eU({ ...t, type: 'query' }, e),
-          mutation: (e) => eU({ ...t, type: 'mutation' }, e),
-          subscription: (e) => eU({ ...t, type: 'subscription' }, e),
-          experimental_caller: (e) => ej(t, { caller: e }),
-        };
-      }
-      function eU(e, t) {
-        let r = ej(e, {
-            resolver: t,
-            middlewares: [
-              async function (e) {
-                return { marker: eP, ok: !0, data: await t(e), ctx: e.ctx };
-              },
-            ],
-          }),
-          n = {
-            ...r._def,
-            type: e.type,
-            experimental_caller: !!r._def.caller,
-            meta: r._def.meta,
-            $types: null,
-          },
-          i = (function (e) {
-            async function t(t) {
-              if (!t || !('getRawInput' in t)) throw Error(eL);
-              let r = await eF(0, e, t);
-              if (!r)
-                throw new ex({
-                  code: 'INTERNAL_SERVER_ERROR',
-                  message:
-                    'No result from middlewares - did you forget to `return next()`?',
-                });
-              if (!r.ok) throw r.error;
-              return r.data;
-            }
-            return (t._def = e), t;
-          })(r._def),
-          s = r._def.caller;
-        if (!s) return i;
-        let a = async (...e) => await s({ args: e, invoke: i, _def: n });
-        return (a._def = n), a;
-      }
-      let eL = `
-This is a client-only function.
-If you want to call this function on the server, see https://trpc.io/docs/v11/server/server-side-calls
-`.trim();
-      async function eF(e, t, r) {
-        try {
-          let n = t.middlewares[e];
-          return await n({
-            ...r,
-            meta: t.meta,
-            input: r.input,
-            next: (n) =>
-              eF(e + 1, t, {
-                ...r,
-                ctx: n?.ctx ? { ...r.ctx, ...n.ctx } : r.ctx,
-                input: n && 'input' in n ? n.input : r.input,
-                getRawInput: n?.getRawInput ?? r.getRawInput,
-              }),
-          });
-        } catch (e) {
-          return { ok: !1, error: eC(e), marker: eP };
-        }
-      }
-      let eB =
-          'undefined' == typeof window ||
-          'Deno' in window ||
-          globalThis.process?.env?.NODE_ENV === 'test' ||
-          !!globalThis.process?.env?.JEST_WORKER_ID ||
-          !!globalThis.process?.env?.VITEST_WORKER_ID,
-        eQ = {
-          _ctx: null,
-          _errorShape: null,
-          _meta: null,
-          queries: {},
-          mutations: {},
-          subscriptions: {},
-          errorFormatter: eI,
-          transformer: ek,
-        },
-        eZ = ['then', 'call', 'apply'];
-      function ez(e) {
-        return function (t) {
-          let r = new Set(Object.keys(t).filter((e) => eZ.includes(e)));
-          if (r.size > 0)
-            throw Error(
-              'Reserved words used in `router({})` call: ' +
-                Array.from(r).join(', ')
-            );
-          let n = eS({}),
-            i = (function e(t, r = []) {
-              let i = eS({});
-              for (let [s, a] of Object.entries(t ?? {})) {
-                if (a._def && 'router' in a._def) {
-                  i[s] = e(a._def.record, [...r, s]);
-                  continue;
-                }
-                if (!eH(a)) {
-                  i[s] = e(a, [...r, s]);
-                  continue;
-                }
-                let t = [...r, s].join('.');
-                if (n[t]) throw Error(`Duplicate key: ${t}`);
-                (n[t] = a), (i[s] = a);
-              }
-              return i;
-            })(t),
-            s = { _config: e, router: !0, procedures: n, ...eQ, record: i };
-          return { ...i, _def: s, createCaller: eW()({ _def: s }) };
-        };
-      }
-      function eH(e) {
-        return 'function' == typeof e;
-      }
-      function eW() {
-        return function (e) {
-          let t = e._def;
-          return function (e, r) {
-            return ey(async ({ path: n, args: i }) => {
-              let s;
-              let a = n.join('.');
-              if (1 === n.length && '_def' === n[0]) return t;
-              let o = t.procedures[a];
-              try {
-                return (
-                  (s = 'function' == typeof e ? await Promise.resolve(e()) : e),
-                  await o({
-                    path: a,
-                    getRawInput: async () => i[0],
-                    ctx: s,
-                    type: o._def.type,
-                    signal: r?.signal,
-                  })
-                );
-              } catch (e) {
-                throw (
-                  (r?.onError?.({
-                    ctx: s,
-                    error: eC(e),
-                    input: i[0],
-                    path: a,
-                    type: o._def.type,
-                  }),
-                  e)
-                );
-              }
-            });
-          };
-        };
-      }
-      function e$(...e) {
-        let t = e_({}, ...e.map((e) => e._def.record));
-        return ez({
-          errorFormatter: e.reduce((e, t) => {
-            if (
-              t._def._config.errorFormatter &&
-              t._def._config.errorFormatter !== eI
-            ) {
-              if (e !== eI && e !== t._def._config.errorFormatter)
-                throw Error('You seem to have several error formatters');
-              return t._def._config.errorFormatter;
-            }
-            return e;
-          }, eI),
-          transformer: e.reduce((e, t) => {
-            if (
-              t._def._config.transformer &&
-              t._def._config.transformer !== ek
-            ) {
-              if (e !== ek && e !== t._def._config.transformer)
-                throw Error('You seem to have several transformers');
-              return t._def._config.transformer;
-            }
-            return e;
-          }, ek),
-          isDev: e.every((e) => e._def._config.isDev),
-          allowOutsideOfServer: e.every(
-            (e) => e._def._config.allowOutsideOfServer
-          ),
-          isServer: e.every((e) => e._def._config.isServer),
-          $types: e[0]?._def._config.$types,
-        })(t);
-      }
-      class eK {
-        context() {
-          return new eK();
-        }
-        meta() {
-          return new eK();
-        }
-        create(e) {
-          var t;
-          let r = {
-            ...e,
-            transformer:
-              'input' in (t = e?.transformer ?? ek)
-                ? t
-                : { input: t, output: t },
-            isDev:
-              e?.isDev ?? globalThis.process?.env.NODE_ENV !== 'production',
-            allowOutsideOfServer: e?.allowOutsideOfServer ?? !1,
-            errorFormatter: e?.errorFormatter ?? eI,
-            isServer: e?.isServer ?? eB,
-            $types: null,
-          };
-          if (!(e?.isServer ?? eB) && e?.allowOutsideOfServer !== !0)
-            throw Error(
-              "You're trying to use @trpc/server in a non-server environment. This is not supported by default."
-            );
-          return {
-            _config: r,
-            procedure: eq({ meta: e?.defaultMeta }),
-            middleware: function (e) {
-              return (function e(t) {
-                return {
-                  _middlewares: t,
-                  unstable_pipe: (r) =>
-                    e([...t, ...('_middlewares' in r ? r._middlewares : [r])]),
-                };
-              })([e]);
-            },
-            router: ez(r),
-            mergeRouters: e$,
-            createCallerFactory: eW(),
-          };
-        }
-      }
-      let eV = new eK();
-      function eG(e, t, r) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0,
-              })
-            : (e[t] = r),
-          e
-        );
-      }
-      class eJ extends Error {
-        static from(e, t = {}) {
-          return e instanceof eJ ||
-            (e instanceof Error && 'TRPCClientError' === e.name)
-            ? (t.meta && (e.meta = { ...e.meta, ...t.meta }), e)
-            : eE(e) &&
-                eE(e.error) &&
-                'number' == typeof e.error.code &&
-                'string' == typeof e.error.message
-              ? new eJ(e.error.message, { ...t, result: e })
-              : new eJ(
-                  'string' == typeof e
-                    ? e
-                    : eE(e) && 'string' == typeof e.message
-                      ? e.message
-                      : 'Unknown error',
-                  { ...t, cause: e }
-                );
-        }
-        constructor(e, t) {
-          let r = t?.cause;
-          super(e, { cause: r }),
-            eG(this, 'cause', void 0),
-            eG(this, 'shape', void 0),
-            eG(this, 'data', void 0),
-            eG(this, 'meta', void 0),
-            (this.meta = t?.meta),
-            (this.cause = r),
-            (this.shape = t?.result?.error),
-            (this.data = t?.result?.error.data),
-            (this.name = 'TRPCClientError'),
-            Object.setPrototypeOf(this, eJ.prototype);
-        }
-      }
-      function eY(e, t, r) {
-        return (
-          t in e
-            ? Object.defineProperty(e, t, {
-                value: r,
-                enumerable: !0,
-                configurable: !0,
-                writable: !0,
-              })
-            : (e[t] = r),
-          e
-        );
-      }
-      class eX {
-        $request(e) {
-          var t;
-          return ((t = {
-            links: this.links,
-            op: { ...e, context: e.context ?? {}, id: ++this.requestId },
-          }),
-          ef((e) =>
-            (function e(r = 0, n = t.op) {
-              let i = t.links[r];
-              if (!i)
-                throw Error(
-                  'No more links to execute - did you forget to add an ending link?'
-                );
-              return i({ op: n, next: (t) => e(r + 1, t) });
-            })().subscribe(e)
-          )).pipe((e) => {
-            let t = 0,
-              r = null,
-              n = [];
-            return ef(
-              (i) => (
-                t++,
-                n.push(i),
-                r ||
-                  (r = e.subscribe({
-                    next(e) {
-                      for (let t of n) t.next?.(e);
-                    },
-                    error(e) {
-                      for (let t of n) t.error?.(e);
-                    },
-                    complete() {
-                      for (let e of n) e.complete?.();
-                    },
-                  })),
-                {
-                  unsubscribe() {
-                    t--,
-                      (function () {
-                        if (0 === t && r) {
-                          let e = r;
-                          (r = null), e.unsubscribe();
-                        }
-                      })();
-                    let e = n.findIndex((e) => e === i);
-                    e > -1 && n.splice(e, 1);
-                  },
-                }
-              )
-            );
-          });
-        }
-        async requestAsPromise(e) {
-          try {
-            let t = this.$request(e);
-            return (
-              await (function (e) {
-                let t = new AbortController();
-                return new Promise((r, n) => {
-                  let i = !1;
-                  function s() {
-                    i || ((i = !0), a.unsubscribe());
-                  }
-                  t.signal.addEventListener('abort', () => {
-                    n(t.signal.reason);
-                  });
-                  let a = e.subscribe({
-                    next(e) {
-                      (i = !0), r(e), s();
-                    },
-                    error(e) {
-                      n(e);
-                    },
-                    complete() {
-                      t.abort(), s();
-                    },
-                  });
-                });
-              })(t)
-            ).result.data;
-          } catch (e) {
-            throw eJ.from(e);
-          }
-        }
-        query(e, t, r) {
-          return this.requestAsPromise({
-            type: 'query',
-            path: e,
-            input: t,
-            context: r?.context,
-            signal: r?.signal,
-          });
-        }
-        mutation(e, t, r) {
-          return this.requestAsPromise({
-            type: 'mutation',
-            path: e,
-            input: t,
-            context: r?.context,
-            signal: r?.signal,
-          });
-        }
-        subscription(e, t, r) {
-          return this.$request({
-            type: 'subscription',
-            path: e,
-            input: t,
-            context: r.context,
-            signal: r.signal,
-          }).subscribe({
-            next(e) {
-              switch (e.result.type) {
-                case 'state':
-                  r.onConnectionStateChange?.(e.result);
-                  break;
-                case 'started':
-                  r.onStarted?.({ context: e.context });
-                  break;
-                case 'stopped':
-                  r.onStopped?.();
-                  break;
-                case 'data':
-                case void 0:
-                  r.onData?.(e.result.data);
-              }
-            },
-            error(e) {
-              r.onError?.(e);
-            },
-            complete() {
-              r.onComplete?.();
-            },
-          });
-        }
-        constructor(e) {
-          eY(this, 'links', void 0),
-            eY(this, 'runtime', void 0),
-            eY(this, 'requestId', void 0),
-            (this.requestId = 0),
-            (this.runtime = {}),
-            (this.links = e.links.map((e) => e(this.runtime)));
-        }
-      }
-      let e0 = {
-          query: 'query',
-          mutate: 'mutation',
-          subscribe: 'subscription',
-        },
-        e1 = (e) => e0[e];
-      function e2(e) {
-        let t = ey(({ path: t, args: r }) => {
-          let n = [...t],
-            i = e1(n.pop()),
-            s = n.join('.');
-          return e[i](s, ...r);
-        });
-        return ev((r) =>
-          e.hasOwnProperty(r) ? e[r] : '__untypedClient' === r ? e : t[r]
-        );
-      }
-      function e4(e) {
-        return e2(new eX(e));
-      }
-      function e5(e) {
-        return e.__untypedClient;
-      }
-      let e3 = () => {
-        throw Error(
-          'Something went wrong. Please submit an issue at https://github.com/trpc/trpc/issues/new'
-        );
-      };
-      function e6(e) {
-        let t = null,
-          r = null,
-          n = () => {
-            clearTimeout(r), (r = null), (t = null);
-          };
-        function i() {
-          let r = (function (t) {
-            let r = [[]],
-              n = 0;
-            for (;;) {
-              let i = t[n];
-              if (!i) break;
-              let s = r[r.length - 1];
-              if (i.aborted) {
-                i.reject?.(Error('Aborted')), n++;
-                continue;
-              }
-              if (e.validate(s.concat(i).map((e) => e.key))) {
-                s.push(i), n++;
-                continue;
-              }
-              if (0 === s.length) {
-                i.reject?.(Error('Input is too big for a single dispatch')),
-                  n++;
-                continue;
-              }
-              r.push([]);
-            }
-            return r;
-          })(t);
-          for (let t of (n(), r)) {
-            if (!t.length) continue;
-            let r = { items: t };
-            for (let e of t) e.batch = r;
-            e.fetch(r.items.map((e) => e.key))
-              .then(async (e) => {
-                for (let t of (await Promise.all(
-                  e.map(async (e, t) => {
-                    let n = r.items[t];
-                    try {
-                      let t = await Promise.resolve(e);
-                      n.resolve?.(t);
-                    } catch (e) {
-                      n.reject?.(e);
-                    }
-                    (n.batch = null), (n.reject = null), (n.resolve = null);
-                  })
-                ),
-                r.items))
-                  t.reject?.(Error('Missing result')), (t.batch = null);
-              })
-              .catch((e) => {
-                for (let t of r.items) t.reject?.(e), (t.batch = null);
-              });
-          }
-        }
-        return {
-          load: function (e) {
-            let n = {
-                aborted: !1,
-                key: e,
-                batch: null,
-                resolve: e3,
-                reject: e3,
-              },
-              s = new Promise((e, r) => {
-                (n.reject = r), (n.resolve = e), t || (t = []), t.push(n);
-              });
-            return r || (r = setTimeout(i)), s;
-          },
-        };
-      }
-      let e8 = (e) => 'function' == typeof e;
-      function e9(e) {
-        return e
-          ? 'input' in e
-            ? e
-            : { input: e, output: e }
-          : {
-              input: { serialize: (e) => e, deserialize: (e) => e },
-              output: { serialize: (e) => e, deserialize: (e) => e },
-            };
-      }
-      let e7 = { query: 'GET', mutation: 'POST', subscription: 'PATCH' };
-      function te(e) {
-        return 'input' in e
-          ? e.transformer.input.serialize(e.input)
-          : (function (e) {
-              let t = {};
-              for (let r = 0; r < e.length; r++) {
-                let n = e[r];
-                t[r] = n;
-              }
-              return t;
-            })(e.inputs.map((t) => e.transformer.input.serialize(t)));
-      }
-      let tt = (e) => {
-          let t = e.url.split('?'),
-            r = t[0].replace(/\/$/, '') + '/' + e.path,
-            n = [];
-          if (
-            (t[1] && n.push(t[1]),
-            'inputs' in e && n.push('batch=1'),
-            'query' === e.type || 'subscription' === e.type)
-          ) {
-            let t = te(e);
-            void 0 !== t &&
-              'POST' !== e.methodOverride &&
-              n.push(`input=${encodeURIComponent(JSON.stringify(t))}`);
-          }
-          return n.length && (r += '?' + n.join('&')), r;
-        },
-        tr = (e) => {
-          if ('query' === e.type && 'POST' !== e.methodOverride) return;
-          let t = te(e);
-          return void 0 !== t ? JSON.stringify(t) : void 0;
-        },
-        tn = (e) =>
-          to({
-            ...e,
-            contentTypeHeader: 'application/json',
-            getUrl: tt,
-            getBody: tr,
-          });
-      class ti extends Error {
-        constructor() {
-          let e = 'AbortError';
-          super(e), (this.name = e), (this.message = e);
-        }
-      }
-      let ts = (e) => {
-        if (e?.aborted) {
-          if ((e.throwIfAborted?.(), 'undefined' != typeof DOMException))
-            throw new DOMException('AbortError', 'AbortError');
-          throw new ti();
-        }
-      };
-      async function ta(e) {
-        ts(e.signal);
-        let t = e.getUrl(e),
-          r = e.getBody(e),
-          { type: n } = e,
-          i = await (async () => {
-            let t = await e.headers();
-            return Symbol.iterator in t ? Object.fromEntries(t) : t;
-          })(),
-          s = {
-            ...(e.contentTypeHeader
-              ? { 'content-type': e.contentTypeHeader }
-              : {}),
-            ...(e.trpcAcceptHeader
-              ? { 'trpc-accept': e.trpcAcceptHeader }
-              : void 0),
-            ...i,
-          };
-        return (function (e) {
-          if (e) return e;
-          if ('undefined' != typeof window && e8(window.fetch))
-            return window.fetch;
-          if ('undefined' != typeof globalThis && e8(globalThis.fetch))
-            return globalThis.fetch;
-          throw Error('No fetch implementation found');
-        })(e.fetch)(t, {
-          method: e.methodOverride ?? e7[n],
-          signal: e.signal,
-          body: r,
-          headers: s,
-        });
-      }
-      async function to(e) {
-        let t = {},
-          r = await ta(e);
-        t.response = r;
-        let n = await r.json();
-        return (t.responseJSON = n), { json: n, meta: t };
-      }
-      class tu extends Error {
-        constructor(e) {
-          super(e?.message ?? 'WebSocket closed', { cause: e?.cause }),
-            (this.name = 'TRPCWebSocketClosedError'),
-            Object.setPrototypeOf(this, tu.prototype);
-        }
-      }
-      function tl(e) {
-        return e;
-      }
-      function tc(e) {
-        return e.state.isPaused;
-      }
-      function th(e) {
-        return 'success' === e.state.status;
-      }
-      function td(e, t, r) {
-        if ('object' != typeof t || null === t) return;
-        let n = e.getMutationCache(),
-          i = e.getQueryCache(),
-          s =
-            r?.defaultOptions?.deserializeData ??
-            e.getDefaultOptions().hydrate?.deserializeData ??
-            tl,
-          a = t.mutations || [],
-          o = t.queries || [];
-        a.forEach(({ state: t, ...i }) => {
-          n.build(
-            e,
-            {
-              ...e.getDefaultOptions().hydrate?.mutations,
-              ...r?.defaultOptions?.mutations,
-              ...i,
-            },
-            t
-          );
-        }),
-          o.forEach(
-            ({ queryKey: t, state: n, queryHash: a, meta: o, promise: u }) => {
-              let l = i.get(a),
-                c = void 0 === n.data ? n.data : s(n.data);
-              if (l) {
-                if (l.state.dataUpdatedAt < n.dataUpdatedAt) {
-                  let { fetchStatus: e, ...t } = n;
-                  l.setState({ ...t, data: c });
-                }
-              } else
-                l = i.build(
-                  e,
-                  {
-                    ...e.getDefaultOptions().hydrate?.queries,
-                    ...r?.defaultOptions?.queries,
-                    queryKey: t,
-                    queryHash: a,
-                    meta: o,
-                  },
-                  { ...n, data: c, fetchStatus: 'idle' }
-                );
-              if (u) {
-                let e = Promise.resolve(u).then(s);
-                l.fetch(void 0, { initialPromise: e });
-              }
-            }
-          );
-      }
-      eb.BAD_GATEWAY,
-        eb.SERVICE_UNAVAILABLE,
-        eb.GATEWAY_TIMEOUT,
-        eb.INTERNAL_SERVER_ERROR;
-      var tf = ({ children: e, options: t = {}, state: r, queryClient: n }) => {
-        let i = eh(n),
-          [s, a] = el.useState(),
-          o = el.useRef(t);
-        return (
-          (o.current = t),
-          el.useMemo(() => {
-            if (r) {
-              if ('object' != typeof r) return;
-              let e = i.getQueryCache(),
-                t = r.queries || [],
-                n = [],
-                u = [];
-              for (let r of t) {
-                let t = e.get(r.queryHash);
-                if (t) {
-                  let e = r.state.dataUpdatedAt > t.state.dataUpdatedAt,
-                    n = s?.find((e) => e.queryHash === r.queryHash);
-                  e &&
-                    (!n || r.state.dataUpdatedAt > n.state.dataUpdatedAt) &&
-                    u.push(r);
-                } else n.push(r);
-              }
-              n.length > 0 && td(i, { queries: n }, o.current),
-                u.length > 0 && a((e) => (e ? [...e, ...u] : u));
-            }
-          }, [i, s, r]),
-          el.useEffect(() => {
-            s && (td(i, { queries: s }, o.current), a(void 0));
-          }, [i, s]),
-          e
-        );
-      };
-      let tp = ['client', 'ssrContext', 'ssrState', 'abortOnUnmount'],
-        tm = el.createContext?.(null);
-      function tg(e, t, r) {
-        let n = e.flatMap((e) => e.split('.'));
-        if (!t && (!r || 'any' === r)) return n.length ? [n] : [];
-        if ('infinite' === r && eE(t) && ('direction' in t || 'cursor' in t)) {
-          let { cursor: e, direction: r, ...i } = t;
-          return [n, { input: i, type: 'infinite' }];
-        }
-        return [
-          n,
-          {
-            ...(void 0 !== t && t !== L && { input: t }),
-            ...(r && 'any' !== r && { type: r }),
-          },
-        ];
-      }
-      function ty(e) {
-        return tg(e, void 0, 'any');
-      }
-      let tv = (e) => {
-        switch (e) {
-          case 'queryOptions':
-          case 'fetch':
-          case 'ensureData':
-          case 'prefetch':
-          case 'getData':
-          case 'setData':
-          case 'setQueriesData':
-            return 'query';
-          case 'infiniteQueryOptions':
-          case 'fetchInfinite':
-          case 'prefetchInfinite':
-          case 'getInfiniteData':
-          case 'setInfiniteData':
-            return 'infinite';
-          case 'setMutationDefaults':
-          case 'getMutationDefaults':
-          case 'isMutating':
-          case 'cancel':
-          case 'invalidate':
-          case 'refetch':
-          case 'reset':
-            return 'any';
-        }
-      };
-      function tb(e) {
-        let t = e instanceof eX ? e : e5(e);
-        return ey((e) => {
-          let r = e.path,
-            n = r.join('.'),
-            [i, s] = e.args;
-          return {
-            queryKey: tg(r, i, 'query'),
-            queryFn: () => t.query(n, i, s?.trpc),
-            ...s,
-          };
-        });
-      }
-      var tw = class extends Q {
+      var tf = class extends te {
         constructor(e, t) {
           super(),
             (this.options = t),
-            (this.#O = e),
-            (this.#R = null),
-            (this.#A = H()),
+            (this.#d = e),
+            (this.#f = null),
+            (this.#p = ti()),
             this.options.experimental_prefetchInRender ||
-              this.#A.reject(
+              this.#p.reject(
                 Error(
                   'experimental_prefetchInRender feature flag is not enabled'
                 )
@@ -6510,98 +5815,98 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             this.bindMethods(),
             this.setOptions(t);
         }
+        #d;
+        #m = void 0;
+        #g = void 0;
+        #y = void 0;
+        #v;
+        #b;
+        #p;
+        #f;
+        #w;
+        #_;
+        #E;
+        #S;
         #O;
-        #N = void 0;
-        #C = void 0;
-        #x = void 0;
-        #k;
-        #T;
-        #A;
         #R;
-        #I;
-        #P;
-        #D;
-        #M;
-        #j;
-        #q;
-        #U = new Set();
+        #A = new Set();
         bindMethods() {
           this.refetch = this.refetch.bind(this);
         }
         onSubscribe() {
           1 === this.listeners.size &&
-            (this.#N.addObserver(this),
-            t_(this.#N, this.options) ? this.#L() : this.updateResult(),
-            this.#F());
+            (this.#m.addObserver(this),
+            tp(this.#m, this.options) ? this.#N() : this.updateResult(),
+            this.#C());
         }
         onUnsubscribe() {
           this.hasListeners() || this.destroy();
         }
         shouldFetchOnReconnect() {
-          return tE(this.#N, this.options, this.options.refetchOnReconnect);
+          return tm(this.#m, this.options, this.options.refetchOnReconnect);
         }
         shouldFetchOnWindowFocus() {
-          return tE(this.#N, this.options, this.options.refetchOnWindowFocus);
+          return tm(this.#m, this.options, this.options.refetchOnWindowFocus);
         }
         destroy() {
           (this.listeners = new Set()),
-            this.#B(),
-            this.#Q(),
-            this.#N.removeObserver(this);
+            this.#x(),
+            this.#k(),
+            this.#m.removeObserver(this);
         }
         setOptions(e, t) {
           let r = this.options,
-            n = this.#N;
+            n = this.#m;
           if (
-            ((this.options = this.#O.defaultQueryOptions(e)),
+            ((this.options = this.#d.defaultQueryOptions(e)),
             void 0 !== this.options.enabled &&
               'boolean' != typeof this.options.enabled &&
               'function' != typeof this.options.enabled &&
-              'boolean' != typeof R(this.options.enabled, this.#N))
+              'boolean' != typeof ez(this.options.enabled, this.#m))
           )
             throw Error(
               'Expected enabled to be a boolean or a callback that returns a boolean'
             );
-          this.#Z(),
-            this.#N.setOptions(this.options),
+          this.#T(),
+            this.#m.setOptions(this.options),
             r._defaulted &&
-              !I(this.options, r) &&
-              this.#O
+              !eJ(this.options, r) &&
+              this.#d
                 .getQueryCache()
                 .notify({
                   type: 'observerOptionsUpdated',
-                  query: this.#N,
+                  query: this.#m,
                   observer: this,
                 });
           let i = this.hasListeners();
-          i && tS(this.#N, n, this.options, r) && this.#L(),
+          i && tg(this.#m, n, this.options, r) && this.#N(),
             this.updateResult(t),
             i &&
-              (this.#N !== n ||
-                R(this.options.enabled, this.#N) !== R(r.enabled, this.#N) ||
-                O(this.options.staleTime, this.#N) !==
-                  O(r.staleTime, this.#N)) &&
-              this.#z();
-          let s = this.#H();
+              (this.#m !== n ||
+                ez(this.options.enabled, this.#m) !== ez(r.enabled, this.#m) ||
+                eZ(this.options.staleTime, this.#m) !==
+                  eZ(r.staleTime, this.#m)) &&
+              this.#I();
+          let s = this.#P();
           i &&
-            (this.#N !== n ||
-              R(this.options.enabled, this.#N) !== R(r.enabled, this.#N) ||
-              s !== this.#q) &&
-            this.#W(s);
+            (this.#m !== n ||
+              ez(this.options.enabled, this.#m) !== ez(r.enabled, this.#m) ||
+              s !== this.#R) &&
+            this.#D(s);
         }
         getOptimisticResult(e) {
-          let t = this.#O.getQueryCache().build(this.#O, e),
+          let t = this.#d.getQueryCache().build(this.#d, e),
             r = this.createResult(t, e);
           return (
-            I(this.getCurrentResult(), r) ||
-              ((this.#x = r),
-              (this.#T = this.options),
-              (this.#k = this.#N.state)),
+            eJ(this.getCurrentResult(), r) ||
+              ((this.#y = r),
+              (this.#b = this.options),
+              (this.#v = this.#m.state)),
             r
           );
         }
         getCurrentResult() {
-          return this.#x;
+          return this.#y;
         }
         trackResult(e, t) {
           let r = {};
@@ -6617,97 +5922,97 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
         trackProp(e) {
-          this.#U.add(e);
+          this.#A.add(e);
         }
         getCurrentQuery() {
-          return this.#N;
+          return this.#m;
         }
         refetch({ ...e } = {}) {
           return this.fetch({ ...e });
         }
         fetchOptimistic(e) {
-          let t = this.#O.defaultQueryOptions(e),
-            r = this.#O.getQueryCache().build(this.#O, t);
+          let t = this.#d.defaultQueryOptions(e),
+            r = this.#d.getQueryCache().build(this.#d, t);
           return r.fetch().then(() => this.createResult(r, t));
         }
         fetch(e) {
-          return this.#L({ ...e, cancelRefetch: e.cancelRefetch ?? !0 }).then(
-            () => (this.updateResult(), this.#x)
+          return this.#N({ ...e, cancelRefetch: e.cancelRefetch ?? !0 }).then(
+            () => (this.updateResult(), this.#y)
           );
         }
-        #L(e) {
-          this.#Z();
-          let t = this.#N.fetch(this.options, e);
-          return e?.throwOnError || (t = t.catch(_)), t;
+        #N(e) {
+          this.#T();
+          let t = this.#m.fetch(this.options, e);
+          return e?.throwOnError || (t = t.catch(eF)), t;
         }
-        #z() {
-          this.#B();
-          let e = O(this.options.staleTime, this.#N);
-          if (w || this.#x.isStale || !E(e)) return;
-          let t = S(this.#x.dataUpdatedAt, e);
-          this.#M = setTimeout(() => {
-            this.#x.isStale || this.updateResult();
+        #I() {
+          this.#x();
+          let e = eZ(this.options.staleTime, this.#m);
+          if (eL || this.#y.isStale || !eB(e)) return;
+          let t = eQ(this.#y.dataUpdatedAt, e);
+          this.#S = setTimeout(() => {
+            this.#y.isStale || this.updateResult();
           }, t + 1);
         }
-        #H() {
+        #P() {
           return (
             ('function' == typeof this.options.refetchInterval
-              ? this.options.refetchInterval(this.#N)
+              ? this.options.refetchInterval(this.#m)
               : this.options.refetchInterval) ?? !1
           );
         }
-        #W(e) {
-          this.#Q(),
-            (this.#q = e),
-            !w &&
-              !1 !== R(this.options.enabled, this.#N) &&
-              E(this.#q) &&
-              0 !== this.#q &&
-              (this.#j = setInterval(() => {
-                (this.options.refetchIntervalInBackground || Z.isFocused()) &&
-                  this.#L();
-              }, this.#q));
+        #D(e) {
+          this.#k(),
+            (this.#R = e),
+            !eL &&
+              !1 !== ez(this.options.enabled, this.#m) &&
+              eB(this.#R) &&
+              0 !== this.#R &&
+              (this.#O = setInterval(() => {
+                (this.options.refetchIntervalInBackground || tt.isFocused()) &&
+                  this.#N();
+              }, this.#R));
         }
-        #F() {
-          this.#z(), this.#W(this.#H());
+        #C() {
+          this.#I(), this.#D(this.#P());
         }
-        #B() {
-          this.#M && (clearTimeout(this.#M), (this.#M = void 0));
+        #x() {
+          this.#S && (clearTimeout(this.#S), (this.#S = void 0));
         }
-        #Q() {
-          this.#j && (clearInterval(this.#j), (this.#j = void 0));
+        #k() {
+          this.#O && (clearInterval(this.#O), (this.#O = void 0));
         }
         createResult(e, t) {
           let r;
-          let n = this.#N,
+          let n = this.#m,
             i = this.options,
-            s = this.#x,
-            a = this.#k,
-            o = this.#T,
-            u = e !== n ? e.state : this.#C,
+            s = this.#y,
+            a = this.#v,
+            o = this.#b,
+            u = e !== n ? e.state : this.#g,
             { state: l } = e,
             c = { ...l },
             h = !1;
           if (t._optimisticResults) {
             let r = this.hasListeners(),
-              s = !r && t_(e, t),
-              a = r && tS(e, n, t, i);
-            (s || a) && (c = { ...c, ...X(l.data, e.options) }),
+              s = !r && tp(e, t),
+              a = r && tg(e, n, t, i);
+            (s || a) && (c = { ...c, ...td(l.data, e.options) }),
               'isRestoring' === t._optimisticResults &&
                 (c.fetchStatus = 'idle');
           }
           let { error: d, errorUpdatedAt: f, status: p } = c;
           if (t.select && void 0 !== c.data) {
-            if (s && c.data === a?.data && t.select === this.#I) r = this.#P;
+            if (s && c.data === a?.data && t.select === this.#w) r = this.#_;
             else
               try {
-                (this.#I = t.select),
+                (this.#w = t.select),
                   (r = t.select(c.data)),
-                  (r = j(s?.data, r, t)),
-                  (this.#P = r),
-                  (this.#R = null);
+                  (r = e1(s?.data, r, t)),
+                  (this.#_ = r),
+                  (this.#f = null);
               } catch (e) {
-                this.#R = e;
+                this.#f = e;
               }
           } else r = c.data;
           if (void 0 !== t.placeholderData && void 0 === r && 'pending' === p) {
@@ -6720,19 +6025,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             else if (
               ((e =
                 'function' == typeof t.placeholderData
-                  ? t.placeholderData(this.#D?.state.data, this.#D)
+                  ? t.placeholderData(this.#E?.state.data, this.#E)
                   : t.placeholderData),
               t.select && void 0 !== e)
             )
               try {
-                (e = t.select(e)), (this.#R = null);
+                (e = t.select(e)), (this.#f = null);
               } catch (e) {
-                this.#R = e;
+                this.#f = e;
               }
-            void 0 !== e && ((p = 'success'), (r = j(s?.data, e, t)), (h = !0));
+            void 0 !== e &&
+              ((p = 'success'), (r = e1(s?.data, e, t)), (h = !0));
           }
-          this.#R &&
-            ((d = this.#R), (r = this.#P), (f = Date.now()), (p = 'error'));
+          this.#f &&
+            ((d = this.#f), (r = this.#_), (f = Date.now()), (p = 'error'));
           let m = 'fetching' === c.fetchStatus,
             g = 'pending' === p,
             y = 'error' === p,
@@ -6763,9 +6069,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               isPaused: 'paused' === c.fetchStatus,
               isPlaceholderData: h,
               isRefetchError: y && b,
-              isStale: tO(e, t),
+              isStale: ty(e, t),
               refetch: this.refetch,
-              promise: this.#A,
+              promise: this.#p,
             };
           if (this.options.experimental_prefetchInRender) {
             let t = (e) => {
@@ -6774,9 +6080,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   : void 0 !== w.data && e.resolve(w.data);
               },
               r = () => {
-                t((this.#A = w.promise = H()));
+                t((this.#p = w.promise = ti()));
               },
-              i = this.#A;
+              i = this.#p;
             switch (i.status) {
               case 'pending':
                 e.queryHash === n.queryHash && t(i);
@@ -6791,84 +6097,84 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return w;
         }
         updateResult(e) {
-          let t = this.#x,
-            r = this.createResult(this.#N, this.options);
+          let t = this.#y,
+            r = this.createResult(this.#m, this.options);
           if (
-            ((this.#k = this.#N.state),
-            (this.#T = this.options),
-            void 0 !== this.#k.data && (this.#D = this.#N),
-            I(r, t))
+            ((this.#v = this.#m.state),
+            (this.#b = this.options),
+            void 0 !== this.#v.data && (this.#E = this.#m),
+            eJ(r, t))
           )
             return;
-          this.#x = r;
+          this.#y = r;
           let n = {};
           e?.listeners !== !1 &&
             (() => {
               if (!t) return !0;
               let { notifyOnChangeProps: e } = this.options,
                 r = 'function' == typeof e ? e() : e;
-              if ('all' === r || (!r && !this.#U.size)) return !0;
-              let n = new Set(r ?? this.#U);
+              if ('all' === r || (!r && !this.#A.size)) return !0;
+              let n = new Set(r ?? this.#A);
               return (
                 this.options.throwOnError && n.add('error'),
-                Object.keys(this.#x).some(
-                  (e) => this.#x[e] !== t[e] && n.has(e)
+                Object.keys(this.#y).some(
+                  (e) => this.#y[e] !== t[e] && n.has(e)
                 )
               );
             })() &&
             (n.listeners = !0),
-            this.#$({ ...n, ...e });
+            this.#M({ ...n, ...e });
         }
-        #Z() {
-          let e = this.#O.getQueryCache().build(this.#O, this.options);
-          if (e === this.#N) return;
-          let t = this.#N;
-          (this.#N = e),
-            (this.#C = e.state),
+        #T() {
+          let e = this.#d.getQueryCache().build(this.#d, this.options);
+          if (e === this.#m) return;
+          let t = this.#m;
+          (this.#m = e),
+            (this.#g = e.state),
             this.hasListeners() &&
               (t?.removeObserver(this), e.addObserver(this));
         }
         onQueryUpdate() {
-          this.updateResult(), this.hasListeners() && this.#F();
+          this.updateResult(), this.hasListeners() && this.#C();
         }
-        #$(e) {
-          B.batch(() => {
+        #M(e) {
+          tr.batch(() => {
             e.listeners &&
               this.listeners.forEach((e) => {
-                e(this.#x);
+                e(this.#y);
               }),
-              this.#O
+              this.#d
                 .getQueryCache()
-                .notify({ query: this.#N, type: 'observerResultsUpdated' });
+                .notify({ query: this.#m, type: 'observerResultsUpdated' });
           });
         }
       };
-      function t_(e, t) {
+      function tp(e, t) {
         return (
-          (!1 !== R(t.enabled, e) &&
+          (!1 !== ez(t.enabled, e) &&
             void 0 === e.state.data &&
             !('error' === e.state.status && !1 === t.retryOnMount)) ||
-          (void 0 !== e.state.data && tE(e, t, t.refetchOnMount))
+          (void 0 !== e.state.data && tm(e, t, t.refetchOnMount))
         );
       }
-      function tE(e, t, r) {
-        if (!1 !== R(t.enabled, e)) {
+      function tm(e, t, r) {
+        if (!1 !== ez(t.enabled, e)) {
           let n = 'function' == typeof r ? r(e) : r;
-          return 'always' === n || (!1 !== n && tO(e, t));
+          return 'always' === n || (!1 !== n && ty(e, t));
         }
         return !1;
       }
-      function tS(e, t, r, n) {
+      function tg(e, t, r, n) {
         return (
-          (e !== t || !1 === R(n.enabled, e)) &&
+          (e !== t || !1 === ez(n.enabled, e)) &&
           (!r.suspense || 'error' !== e.state.status) &&
-          tO(e, r)
+          ty(e, r)
         );
       }
-      function tO(e, t) {
-        return !1 !== R(t.enabled, e) && e.isStaleByTime(O(t.staleTime, e));
+      function ty(e, t) {
+        return !1 !== ez(t.enabled, e) && e.isStaleByTime(eZ(t.staleTime, e));
       }
-      var tR = el.createContext(
+      var tv = eC.createContext(
           (function () {
             let e = !1;
             return {
@@ -6882,22 +6188,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             };
           })()
         ),
-        tA = () => el.useContext(tR);
-      function tN(e, t) {
+        tb = () => eC.useContext(tv);
+      function tw(e, t) {
         return 'function' == typeof e ? e(...t) : !!e;
       }
-      function tC() {}
-      var tx = (e, t) => {
+      function t_() {}
+      var tE = (e, t) => {
           (e.suspense || e.throwOnError || e.experimental_prefetchInRender) &&
             !t.isReset() &&
             (e.retryOnMount = !1);
         },
-        tk = (e) => {
-          el.useEffect(() => {
+        tS = (e) => {
+          eC.useEffect(() => {
             e.clearReset();
           }, [e]);
         },
-        tT = ({
+        tO = ({
           result: e,
           errorResetBoundary: t,
           throwOnError: r,
@@ -6907,12 +6213,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           !t.isReset() &&
           !e.isFetching &&
           n &&
-          tN(r, [e.error, n]),
-        tI = el.createContext(!1),
-        tP = () => el.useContext(tI);
-      tI.Provider;
-      var tD = (e, t) => void 0 === t.state.data,
-        tM = (e) => {
+          tw(r, [e.error, n]),
+        tR = eC.createContext(!1),
+        tA = () => eC.useContext(tR);
+      tR.Provider;
+      var tN = (e, t) => void 0 === t.state.data,
+        tC = (e) => {
           let t = e.staleTime;
           e.suspense &&
             ((e.staleTime =
@@ -6922,31 +6228,31 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             'number' == typeof e.gcTime &&
               (e.gcTime = Math.max(e.gcTime, 1e3)));
         },
-        tj = (e, t) => e.isLoading && e.isFetching && !t,
-        tq = (e, t) => e?.suspense && t.isPending,
-        tU = (e, t, r) =>
+        tx = (e, t) => e.isLoading && e.isFetching && !t,
+        tk = (e, t) => e?.suspense && t.isPending,
+        tT = (e, t, r) =>
           t.fetchOptimistic(e).catch(() => {
             r.clearReset();
           });
-      function tL(e, t, r) {
-        let n = eh(r),
-          i = tP(),
-          s = tA(),
+      function tI(e, t, r) {
+        let n = ek(r),
+          i = tA(),
+          s = tb(),
           a = n.defaultQueryOptions(e);
         n.getDefaultOptions().queries?._experimental_beforeQuery?.(a),
           (a._optimisticResults = i ? 'isRestoring' : 'optimistic'),
-          tM(a),
-          tx(a, s),
-          tk(s);
+          tC(a),
+          tE(a, s),
+          tS(s);
         let o = !n.getQueryCache().get(a.queryHash),
-          [u] = el.useState(() => new t(n, a)),
+          [u] = eC.useState(() => new t(n, a)),
           l = u.getOptimisticResult(a),
           c = !i && !1 !== e.subscribed;
         if (
-          (el.useSyncExternalStore(
-            el.useCallback(
+          (eC.useSyncExternalStore(
+            eC.useCallback(
               (e) => {
-                let t = c ? u.subscribe(B.batchCalls(e)) : tC;
+                let t = c ? u.subscribe(tr.batchCalls(e)) : t_;
                 return u.updateResult(), t;
               },
               [u, c]
@@ -6954,14 +6260,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             () => u.getCurrentResult(),
             () => u.getCurrentResult()
           ),
-          el.useEffect(() => {
+          eC.useEffect(() => {
             u.setOptions(a, { listeners: !1 });
           }, [a, u]),
-          tq(a, l))
+          tk(a, l))
         )
-          throw tU(a, u, s);
+          throw tT(a, u, s);
         if (
-          tT({
+          tO({
             result: l,
             errorResetBoundary: s,
             throwOnError: a.throwOnError,
@@ -6971,189 +6277,462 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           throw l.error;
         if (
           (n.getDefaultOptions().queries?._experimental_afterQuery?.(a, l),
-          a.experimental_prefetchInRender && !w && tj(l, i))
+          a.experimental_prefetchInRender && !eL && tx(l, i))
         ) {
-          let e = o ? tU(a, u, s) : n.getQueryCache().get(a.queryHash)?.promise;
-          e?.catch(tC).finally(() => {
+          let e = o ? tT(a, u, s) : n.getQueryCache().get(a.queryHash)?.promise;
+          e?.catch(t_).finally(() => {
             u.updateResult();
           });
         }
         return a.notifyOnChangeProps ? l : u.trackResult(l);
       }
-      var tF = class extends Q {
-          #O;
-          #x = void 0;
-          #K;
-          #V;
-          constructor(e, t) {
-            super(),
-              (this.#O = e),
-              this.setOptions(t),
-              this.bindMethods(),
-              this.#G();
-          }
-          bindMethods() {
-            (this.mutate = this.mutate.bind(this)),
-              (this.reset = this.reset.bind(this));
-          }
-          setOptions(e) {
-            let t = this.options;
-            (this.options = this.#O.defaultMutationOptions(e)),
-              I(this.options, t) ||
-                this.#O
-                  .getMutationCache()
-                  .notify({
-                    type: 'observerOptionsUpdated',
-                    mutation: this.#K,
-                    observer: this,
-                  }),
-              t?.mutationKey &&
-              this.options.mutationKey &&
-              x(t.mutationKey) !== x(this.options.mutationKey)
-                ? this.reset()
-                : this.#K?.state.status === 'pending' &&
-                  this.#K.setOptions(this.options);
-          }
-          onUnsubscribe() {
-            this.hasListeners() || this.#K?.removeObserver(this);
-          }
-          onMutationUpdate(e) {
-            this.#G(), this.#$(e);
-          }
-          getCurrentResult() {
-            return this.#x;
-          }
-          reset() {
-            this.#K?.removeObserver(this),
-              (this.#K = void 0),
-              this.#G(),
-              this.#$();
-          }
-          mutate(e, t) {
+      var tP = class extends tc {
+        #j;
+        #q;
+        #u;
+        constructor(e) {
+          super(),
+            (this.mutationId = e.mutationId),
+            (this.#q = e.mutationCache),
+            (this.#j = []),
+            (this.state = e.state || tD()),
+            this.setOptions(e.options),
+            this.scheduleGc();
+        }
+        setOptions(e) {
+          (this.options = e), this.updateGcTime(this.options.gcTime);
+        }
+        get meta() {
+          return this.options.meta;
+        }
+        addObserver(e) {
+          this.#j.includes(e) ||
+            (this.#j.push(e),
+            this.clearGcTimeout(),
+            this.#q.notify({
+              type: 'observerAdded',
+              mutation: this,
+              observer: e,
+            }));
+        }
+        removeObserver(e) {
+          (this.#j = this.#j.filter((t) => t !== e)),
+            this.scheduleGc(),
+            this.#q.notify({
+              type: 'observerRemoved',
+              mutation: this,
+              observer: e,
+            });
+        }
+        optionalRemove() {
+          this.#j.length ||
+            ('pending' === this.state.status
+              ? this.scheduleGc()
+              : this.#q.remove(this));
+        }
+        continue() {
+          return this.#u?.continue() ?? this.execute(this.state.variables);
+        }
+        async execute(e) {
+          this.#u = tl({
+            fn: () =>
+              this.options.mutationFn
+                ? this.options.mutationFn(e)
+                : Promise.reject(Error('No mutationFn found')),
+            onFail: (e, t) => {
+              this.#h({ type: 'failed', failureCount: e, error: t });
+            },
+            onPause: () => {
+              this.#h({ type: 'pause' });
+            },
+            onContinue: () => {
+              this.#h({ type: 'continue' });
+            },
+            retry: this.options.retry ?? 0,
+            retryDelay: this.options.retryDelay,
+            networkMode: this.options.networkMode,
+            canRun: () => this.#q.canRun(this),
+          });
+          let t = 'pending' === this.state.status,
+            r = !this.#u.canStart();
+          try {
+            if (!t) {
+              this.#h({ type: 'pending', variables: e, isPaused: r }),
+                await this.#q.config.onMutate?.(e, this);
+              let t = await this.options.onMutate?.(e);
+              t !== this.state.context &&
+                this.#h({
+                  type: 'pending',
+                  context: t,
+                  variables: e,
+                  isPaused: r,
+                });
+            }
+            let n = await this.#u.start();
             return (
-              (this.#V = t),
-              this.#K?.removeObserver(this),
-              (this.#K = this.#O
-                .getMutationCache()
-                .build(this.#O, this.options)),
-              this.#K.addObserver(this),
-              this.#K.execute(e)
+              await this.#q.config.onSuccess?.(n, e, this.state.context, this),
+              await this.options.onSuccess?.(n, e, this.state.context),
+              await this.#q.config.onSettled?.(
+                n,
+                null,
+                this.state.variables,
+                this.state.context,
+                this
+              ),
+              await this.options.onSettled?.(n, null, e, this.state.context),
+              this.#h({ type: 'success', data: n }),
+              n
             );
+          } catch (t) {
+            try {
+              throw (
+                (await this.#q.config.onError?.(t, e, this.state.context, this),
+                await this.options.onError?.(t, e, this.state.context),
+                await this.#q.config.onSettled?.(
+                  void 0,
+                  t,
+                  this.state.variables,
+                  this.state.context,
+                  this
+                ),
+                await this.options.onSettled?.(
+                  void 0,
+                  t,
+                  e,
+                  this.state.context
+                ),
+                t)
+              );
+            } finally {
+              this.#h({ type: 'error', error: t });
+            }
+          } finally {
+            this.#q.runNext(this);
           }
-          #G() {
-            let e = this.#K?.state ?? er();
-            this.#x = {
-              ...e,
-              isPending: 'pending' === e.status,
-              isSuccess: 'success' === e.status,
-              isError: 'error' === e.status,
-              isIdle: 'idle' === e.status,
-              mutate: this.mutate,
-              reset: this.reset,
-            };
-          }
-          #$(e) {
-            B.batch(() => {
-              if (this.#V && this.hasListeners()) {
-                let t = this.#x.variables,
-                  r = this.#x.context;
-                e?.type === 'success'
-                  ? (this.#V.onSuccess?.(e.data, t, r),
-                    this.#V.onSettled?.(e.data, null, t, r))
-                  : e?.type === 'error' &&
-                    (this.#V.onError?.(e.error, t, r),
-                    this.#V.onSettled?.(void 0, e.error, t, r));
-              }
-              this.listeners.forEach((e) => {
-                e(this.#x);
-              });
+        }
+        #h(e) {
+          (this.state = ((t) => {
+            switch (e.type) {
+              case 'failed':
+                return {
+                  ...t,
+                  failureCount: e.failureCount,
+                  failureReason: e.error,
+                };
+              case 'pause':
+                return { ...t, isPaused: !0 };
+              case 'continue':
+                return { ...t, isPaused: !1 };
+              case 'pending':
+                return {
+                  ...t,
+                  context: e.context,
+                  data: void 0,
+                  failureCount: 0,
+                  failureReason: null,
+                  error: null,
+                  isPaused: e.isPaused,
+                  status: 'pending',
+                  variables: e.variables,
+                  submittedAt: Date.now(),
+                };
+              case 'success':
+                return {
+                  ...t,
+                  data: e.data,
+                  failureCount: 0,
+                  failureReason: null,
+                  error: null,
+                  status: 'success',
+                  isPaused: !1,
+                };
+              case 'error':
+                return {
+                  ...t,
+                  data: void 0,
+                  error: e.error,
+                  failureCount: t.failureCount + 1,
+                  failureReason: e.error,
+                  isPaused: !1,
+                  status: 'error',
+                };
+            }
+          })(this.state)),
+            tr.batch(() => {
+              this.#j.forEach((t) => {
+                t.onMutationUpdate(e);
+              }),
+                this.#q.notify({ mutation: this, type: 'updated', action: e });
             });
-          }
-        },
-        tB = class extends tw {
-          constructor(e, t) {
-            super(e, t);
-          }
-          bindMethods() {
-            super.bindMethods(),
-              (this.fetchNextPage = this.fetchNextPage.bind(this)),
-              (this.fetchPreviousPage = this.fetchPreviousPage.bind(this));
-          }
-          setOptions(e, t) {
-            super.setOptions({ ...e, behavior: es() }, t);
-          }
-          getOptimisticResult(e) {
-            return (e.behavior = es()), super.getOptimisticResult(e);
-          }
-          fetchNextPage(e) {
-            return this.fetch({
-              ...e,
-              meta: { fetchMore: { direction: 'forward' } },
-            });
-          }
-          fetchPreviousPage(e) {
-            return this.fetch({
-              ...e,
-              meta: { fetchMore: { direction: 'backward' } },
-            });
-          }
-          createResult(e, t) {
-            var r, n;
-            let { state: i } = e,
-              s = super.createResult(e, t),
-              {
-                isFetching: a,
-                isRefetching: o,
-                isError: u,
-                isRefetchError: l,
-              } = s,
-              c = i.fetchMeta?.fetchMore?.direction,
-              h = u && 'forward' === c,
-              d = a && 'forward' === c,
-              f = u && 'backward' === c,
-              p = a && 'backward' === c;
-            return {
-              ...s,
-              fetchNextPage: this.fetchNextPage,
-              fetchPreviousPage: this.fetchPreviousPage,
-              hasNextPage: !!(r = i.data) && null != ea(t, r),
-              hasPreviousPage:
-                !!(n = i.data) && !!t.getPreviousPageParam && null != eo(t, n),
-              isFetchNextPageError: h,
-              isFetchingNextPage: d,
-              isFetchPreviousPageError: f,
-              isFetchingPreviousPage: p,
-              isRefetchError: l && !h && !f,
-              isRefetching: o && !d && !p,
-            };
-          }
+        }
+      };
+      function tD() {
+        return {
+          context: void 0,
+          data: void 0,
+          error: null,
+          failureCount: 0,
+          failureReason: null,
+          isPaused: !1,
+          status: 'idle',
+          variables: void 0,
+          submittedAt: 0,
         };
-      function tQ(e, t) {
+      }
+      var tM = class extends te {
+        #d;
+        #y = void 0;
+        #U;
+        #L;
+        constructor(e, t) {
+          super(),
+            (this.#d = e),
+            this.setOptions(t),
+            this.bindMethods(),
+            this.#F();
+        }
+        bindMethods() {
+          (this.mutate = this.mutate.bind(this)),
+            (this.reset = this.reset.bind(this));
+        }
+        setOptions(e) {
+          let t = this.options;
+          (this.options = this.#d.defaultMutationOptions(e)),
+            eJ(this.options, t) ||
+              this.#d
+                .getMutationCache()
+                .notify({
+                  type: 'observerOptionsUpdated',
+                  mutation: this.#U,
+                  observer: this,
+                }),
+            t?.mutationKey &&
+            this.options.mutationKey &&
+            eK(t.mutationKey) !== eK(this.options.mutationKey)
+              ? this.reset()
+              : this.#U?.state.status === 'pending' &&
+                this.#U.setOptions(this.options);
+        }
+        onUnsubscribe() {
+          this.hasListeners() || this.#U?.removeObserver(this);
+        }
+        onMutationUpdate(e) {
+          this.#F(), this.#M(e);
+        }
+        getCurrentResult() {
+          return this.#y;
+        }
+        reset() {
+          this.#U?.removeObserver(this),
+            (this.#U = void 0),
+            this.#F(),
+            this.#M();
+        }
+        mutate(e, t) {
+          return (
+            (this.#L = t),
+            this.#U?.removeObserver(this),
+            (this.#U = this.#d.getMutationCache().build(this.#d, this.options)),
+            this.#U.addObserver(this),
+            this.#U.execute(e)
+          );
+        }
+        #F() {
+          let e = this.#U?.state ?? tD();
+          this.#y = {
+            ...e,
+            isPending: 'pending' === e.status,
+            isSuccess: 'success' === e.status,
+            isError: 'error' === e.status,
+            isIdle: 'idle' === e.status,
+            mutate: this.mutate,
+            reset: this.reset,
+          };
+        }
+        #M(e) {
+          tr.batch(() => {
+            if (this.#L && this.hasListeners()) {
+              let t = this.#y.variables,
+                r = this.#y.context;
+              e?.type === 'success'
+                ? (this.#L.onSuccess?.(e.data, t, r),
+                  this.#L.onSettled?.(e.data, null, t, r))
+                : e?.type === 'error' &&
+                  (this.#L.onError?.(e.error, t, r),
+                  this.#L.onSettled?.(void 0, e.error, t, r));
+            }
+            this.listeners.forEach((e) => {
+              e(this.#y);
+            });
+          });
+        }
+      };
+      function tj(e) {
+        return {
+          onFetch: (t, r) => {
+            let n = t.options,
+              i = t.fetchOptions?.meta?.fetchMore?.direction,
+              s = t.state.data?.pages || [],
+              a = t.state.data?.pageParams || [],
+              o = { pages: [], pageParams: [] },
+              u = 0,
+              l = async () => {
+                let r = !1,
+                  l = (e) => {
+                    Object.defineProperty(e, 'signal', {
+                      enumerable: !0,
+                      get: () => (
+                        t.signal.aborted
+                          ? (r = !0)
+                          : t.signal.addEventListener('abort', () => {
+                              r = !0;
+                            }),
+                        t.signal
+                      ),
+                    });
+                  },
+                  c = e3(t.options, t.fetchOptions),
+                  h = async (e, n, i) => {
+                    if (r) return Promise.reject();
+                    if (null == n && e.pages.length) return Promise.resolve(e);
+                    let s = {
+                      queryKey: t.queryKey,
+                      pageParam: n,
+                      direction: i ? 'backward' : 'forward',
+                      meta: t.options.meta,
+                    };
+                    l(s);
+                    let a = await c(s),
+                      { maxPages: o } = t.options,
+                      u = i ? e4 : e2;
+                    return {
+                      pages: u(e.pages, a, o),
+                      pageParams: u(e.pageParams, n, o),
+                    };
+                  };
+                if (i && s.length) {
+                  let e = 'backward' === i,
+                    t = { pages: s, pageParams: a },
+                    r = (e ? tU : tq)(n, t);
+                  o = await h(t, r, e);
+                } else {
+                  let t = e ?? s.length;
+                  do {
+                    let e = 0 === u ? (a[0] ?? n.initialPageParam) : tq(n, o);
+                    if (u > 0 && null == e) break;
+                    (o = await h(o, e)), u++;
+                  } while (u < t);
+                }
+                return o;
+              };
+            t.options.persister
+              ? (t.fetchFn = () =>
+                  t.options.persister?.(
+                    l,
+                    {
+                      queryKey: t.queryKey,
+                      meta: t.options.meta,
+                      signal: t.signal,
+                    },
+                    r
+                  ))
+              : (t.fetchFn = l);
+          },
+        };
+      }
+      function tq(e, { pages: t, pageParams: r }) {
+        let n = t.length - 1;
+        return t.length > 0 ? e.getNextPageParam(t[n], t, r[n], r) : void 0;
+      }
+      function tU(e, { pages: t, pageParams: r }) {
+        return t.length > 0
+          ? e.getPreviousPageParam?.(t[0], t, r[0], r)
+          : void 0;
+      }
+      var tL = class extends tf {
+        constructor(e, t) {
+          super(e, t);
+        }
+        bindMethods() {
+          super.bindMethods(),
+            (this.fetchNextPage = this.fetchNextPage.bind(this)),
+            (this.fetchPreviousPage = this.fetchPreviousPage.bind(this));
+        }
+        setOptions(e, t) {
+          super.setOptions({ ...e, behavior: tj() }, t);
+        }
+        getOptimisticResult(e) {
+          return (e.behavior = tj()), super.getOptimisticResult(e);
+        }
+        fetchNextPage(e) {
+          return this.fetch({
+            ...e,
+            meta: { fetchMore: { direction: 'forward' } },
+          });
+        }
+        fetchPreviousPage(e) {
+          return this.fetch({
+            ...e,
+            meta: { fetchMore: { direction: 'backward' } },
+          });
+        }
+        createResult(e, t) {
+          var r, n;
+          let { state: i } = e,
+            s = super.createResult(e, t),
+            {
+              isFetching: a,
+              isRefetching: o,
+              isError: u,
+              isRefetchError: l,
+            } = s,
+            c = i.fetchMeta?.fetchMore?.direction,
+            h = u && 'forward' === c,
+            d = a && 'forward' === c,
+            f = u && 'backward' === c,
+            p = a && 'backward' === c;
+          return {
+            ...s,
+            fetchNextPage: this.fetchNextPage,
+            fetchPreviousPage: this.fetchPreviousPage,
+            hasNextPage: !!(r = i.data) && null != tq(t, r),
+            hasPreviousPage:
+              !!(n = i.data) && !!t.getPreviousPageParam && null != tU(t, n),
+            isFetchNextPageError: h,
+            isFetchingNextPage: d,
+            isFetchPreviousPageError: f,
+            isFetchingPreviousPage: p,
+            isRefetchError: l && !h && !f,
+            isRefetching: o && !d && !p,
+          };
+        }
+      };
+      function tF(e, t) {
         return e.filter((e) => !t.includes(e));
       }
-      var tZ = class extends Q {
-        #O;
-        #J;
+      var tB = class extends te {
         #d;
-        #Y;
-        #f;
-        #X;
-        #ee;
-        #et;
+        #B;
+        #Q;
+        #Z;
+        #j;
+        #z;
+        #H;
+        #W;
         constructor(e, t, r) {
           super(),
-            (this.#O = e),
-            (this.#Y = r),
-            (this.#d = []),
-            (this.#f = []),
-            (this.#J = []),
+            (this.#d = e),
+            (this.#Z = r),
+            (this.#Q = []),
+            (this.#j = []),
+            (this.#B = []),
             this.setQueries(t);
         }
         onSubscribe() {
           1 === this.listeners.size &&
-            this.#f.forEach((e) => {
+            this.#j.forEach((e) => {
               e.subscribe((t) => {
-                this.#er(e, t);
+                this.#$(e, t);
               });
             });
         }
@@ -7162,16 +6741,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         destroy() {
           (this.listeners = new Set()),
-            this.#f.forEach((e) => {
+            this.#j.forEach((e) => {
               e.destroy();
             });
         }
         setQueries(e, t, r) {
-          (this.#d = e),
-            (this.#Y = t),
-            B.batch(() => {
-              let e = this.#f,
-                t = this.#en(this.#d);
+          (this.#Q = e),
+            (this.#Z = t),
+            tr.batch(() => {
+              let e = this.#j,
+                t = this.#K(this.#Q);
               t.forEach((e) =>
                 e.observer.setOptions(e.defaultedQueryOptions, r)
               );
@@ -7179,37 +6758,37 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 i = n.map((e) => e.getCurrentResult()),
                 s = n.some((t, r) => t !== e[r]);
               (e.length !== n.length || s) &&
-                ((this.#f = n),
-                (this.#J = i),
+                ((this.#j = n),
+                (this.#B = i),
                 this.hasListeners() &&
-                  (tQ(e, n).forEach((e) => {
+                  (tF(e, n).forEach((e) => {
                     e.destroy();
                   }),
-                  tQ(n, e).forEach((e) => {
+                  tF(n, e).forEach((e) => {
                     e.subscribe((t) => {
-                      this.#er(e, t);
+                      this.#$(e, t);
                     });
                   }),
-                  this.#$()));
+                  this.#M()));
             });
         }
         getCurrentResult() {
-          return this.#J;
+          return this.#B;
         }
         getQueries() {
-          return this.#f.map((e) => e.getCurrentQuery());
+          return this.#j.map((e) => e.getCurrentQuery());
         }
         getObservers() {
-          return this.#f;
+          return this.#j;
         }
         getOptimisticResult(e, t) {
-          let r = this.#en(e).map((e) =>
+          let r = this.#K(e).map((e) =>
             e.observer.getOptimisticResult(e.defaultedQueryOptions)
           );
-          return [r, (e) => this.#ei(e ?? r, t), () => this.#es(r, e)];
+          return [r, (e) => this.#V(e ?? r, t), () => this.#G(r, e)];
         }
-        #es(e, t) {
-          let r = this.#en(t);
+        #G(e, t) {
+          let r = this.#K(t);
           return r.map((t, n) => {
             let i = e[n];
             return t.defaultedQueryOptions.notifyOnChangeProps
@@ -7221,57 +6800,56 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 });
           });
         }
-        #ei(e, t) {
+        #V(e, t) {
           return t
-            ? ((this.#X && this.#J === this.#et && t === this.#ee) ||
-                ((this.#ee = t),
-                (this.#et = this.#J),
-                (this.#X = T(this.#X, t(e)))),
-              this.#X)
+            ? ((this.#z && this.#B === this.#W && t === this.#H) ||
+                ((this.#H = t),
+                (this.#W = this.#B),
+                (this.#z = eG(this.#z, t(e)))),
+              this.#z)
             : e;
         }
-        #en(e) {
-          let t = new Map(this.#f.map((e) => [e.options.queryHash, e])),
+        #K(e) {
+          let t = new Map(this.#j.map((e) => [e.options.queryHash, e])),
             r = [];
           return (
             e.forEach((e) => {
-              let n = this.#O.defaultQueryOptions(e),
+              let n = this.#d.defaultQueryOptions(e),
                 i = t.get(n.queryHash);
               i
                 ? r.push({ defaultedQueryOptions: n, observer: i })
                 : r.push({
                     defaultedQueryOptions: n,
-                    observer: new tw(this.#O, n),
+                    observer: new tf(this.#d, n),
                   });
             }),
             r
           );
         }
-        #er(e, t) {
-          let r = this.#f.indexOf(e);
+        #$(e, t) {
+          let r = this.#j.indexOf(e);
           -1 !== r &&
-            ((this.#J = (function (e, t, r) {
+            ((this.#B = (function (e, t, r) {
               let n = e.slice(0);
               return (n[t] = r), n;
-            })(this.#J, r, t)),
-            this.#$());
+            })(this.#B, r, t)),
+            this.#M());
         }
-        #$() {
+        #M() {
           this.hasListeners() &&
-            this.#X !==
-              this.#ei(this.#es(this.#J, this.#d), this.#Y?.combine) &&
-            B.batch(() => {
+            this.#z !== this.#V(this.#G(this.#B, this.#Q), this.#Z?.combine) &&
+            tr.batch(() => {
               this.listeners.forEach((e) => {
-                e(this.#J);
+                e(this.#B);
               });
             });
         }
       };
-      function tz({ queries: e, ...t }, r) {
-        let n = eh(r),
-          i = tP(),
-          s = tA(),
-          a = el.useMemo(
+      function tQ({ queries: e, ...t }, r) {
+        let n = ek(r),
+          i = tA(),
+          s = tb(),
+          a = eC.useMemo(
             () =>
               e.map((e) => {
                 let t = n.defaultQueryOptions(e);
@@ -7282,30 +6860,30 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             [e, n, i]
           );
         a.forEach((e) => {
-          tM(e), tx(e, s);
+          tC(e), tE(e, s);
         }),
-          tk(s);
-        let [o] = el.useState(() => new tZ(n, a, t)),
+          tS(s);
+        let [o] = eC.useState(() => new tB(n, a, t)),
           [u, l, c] = o.getOptimisticResult(a, t.combine),
           h = !i && !1 !== t.subscribed;
-        el.useSyncExternalStore(
-          el.useCallback(
-            (e) => (h ? o.subscribe(B.batchCalls(e)) : tC),
+        eC.useSyncExternalStore(
+          eC.useCallback(
+            (e) => (h ? o.subscribe(tr.batchCalls(e)) : t_),
             [o, h]
           ),
           () => o.getCurrentResult(),
           () => o.getCurrentResult()
         ),
-          el.useEffect(() => {
+          eC.useEffect(() => {
             o.setQueries(a, t, { listeners: !1 });
           }, [a, t, o]);
-        let d = u.some((e, t) => tq(a[t], e))
+        let d = u.some((e, t) => tk(a[t], e))
           ? u.flatMap((e, t) => {
               let r = a[t];
               if (r) {
-                let t = new tw(n, r);
-                if (tq(r, e)) return tU(r, t, s);
-                tj(e, i) && tU(r, t, s);
+                let t = new tf(n, r);
+                if (tk(r, e)) return tT(r, t, s);
+                tx(e, i) && tT(r, t, s);
               }
               return [];
             })
@@ -7315,7 +6893,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let r = a[t];
           return (
             r &&
-            tT({
+            tO({
               result: e,
               errorResetBoundary: s,
               throwOnError: r.throwOnError,
@@ -7326,7 +6904,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         if (f?.error) throw f.error;
         return l(c());
       }
-      function tH(e, t, r) {
+      function tZ(e, t, r) {
         let n = e[0],
           i = e[1]?.input;
         return (
@@ -7339,26 +6917,26 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           [n.join('.'), i, t?.trpc]
         );
       }
-      function tW(e) {
+      function tz(e) {
         return { path: e.path.join('.') };
       }
-      function t$(e) {
-        let t = tW(e);
-        return el.useMemo(() => t, [t]);
+      function tH(e) {
+        let t = tz(e);
+        return eC.useMemo(() => t, [t]);
       }
-      async function tK(e, t, r) {
+      async function tW(e, t, r) {
         let n = t.getQueryCache().build(t, { queryKey: r });
         n.setState({ data: [], status: 'success' });
         let i = [];
         for await (let t of e) i.push(t), n.setState({ data: [...i] });
         return i;
       }
-      let tV = (e, t) => new Proxy(e, { get: (e, r) => (t(r), e[r]) });
-      function tG(e) {
+      let t$ = (e, t) => new Proxy(e, { get: (e, r) => (t(r), e[r]) });
+      function tK(e) {
         let t = e?.overrides?.useMutation?.onSuccess ?? ((e) => e.originalFn()),
-          r = e?.context ?? tm;
+          r = e?.context ?? eU;
         function n() {
-          let e = el.useContext(r);
+          let e = eC.useContext(r);
           if (!e)
             throw Error(
               'Unable to find tRPC Context. Did you forget to wrap your App inside `withTRPC` HoC?'
@@ -7376,16 +6954,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         return {
           Provider: (e) => {
             let { abortOnUnmount: t = !1, queryClient: n, ssrContext: i } = e,
-              [s, a] = el.useState(e.ssrState ?? !1),
-              o = e.client instanceof eX ? e.client : e5(e.client),
-              u = el.useMemo(
+              [s, a] = eC.useState(e.ssrState ?? !1),
+              o = e.client instanceof eu ? e.client : ef(e.client),
+              u = eC.useMemo(
                 () =>
                   (function (e) {
                     let { client: t, queryClient: r } = e,
-                      n = t instanceof eX ? t : e5(t);
+                      n = t instanceof eu ? t : ef(t);
                     return {
                       infiniteQueryOptions: (e, t, r) => {
-                        let i = t[1]?.input === L,
+                        let i = t[1]?.input === e5,
                           s = async (e) => {
                             let i = {
                               ...r,
@@ -7397,7 +6975,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                               },
                             };
                             return await n.query(
-                              ...tH(t, i, {
+                              ...tZ(t, i, {
                                 direction: e.direction,
                                 pageParam: e.pageParam,
                               })
@@ -7408,14 +6986,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                             ...r,
                             initialData: r?.initialData,
                             queryKey: t,
-                            queryFn: i ? L : s,
+                            queryFn: i ? e5 : s,
                             initialPageParam: r?.initialCursor ?? null,
                           },
-                          { trpc: tW({ path: e }) }
+                          { trpc: tz({ path: e }) }
                         );
                       },
                       queryOptions: (e, t, i) => {
-                        let s = t[1]?.input === L,
+                        let s = t[1]?.input === e5,
                           a = async (e) => {
                             let s = {
                                 ...i,
@@ -7426,24 +7004,24 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                     : { signal: null }),
                                 },
                               },
-                              a = await n.query(...tH(t, s));
-                            return eR(a) ? tK(a, r, t) : a;
+                              a = await n.query(...tZ(t, s));
+                            return D(a) ? tW(a, r, t) : a;
                           };
                         return Object.assign(
                           {
                             ...i,
                             initialData: i?.initialData,
                             queryKey: t,
-                            queryFn: s ? L : a,
+                            queryFn: s ? e5 : a,
                           },
-                          { trpc: tW({ path: e }) }
+                          { trpc: tz({ path: e }) }
                         );
                       },
                       fetchQuery: (e, t) =>
                         r.fetchQuery({
                           ...t,
                           queryKey: e,
-                          queryFn: () => n.query(...tH(e, t)),
+                          queryFn: () => n.query(...tZ(e, t)),
                         }),
                       fetchInfiniteQuery: (e, t) =>
                         r.fetchInfiniteQuery({
@@ -7451,7 +7029,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                           queryKey: e,
                           queryFn: ({ pageParam: r, direction: i }) =>
                             n.query(
-                              ...tH(e, t, { pageParam: r, direction: i })
+                              ...tZ(e, t, { pageParam: r, direction: i })
                             ),
                           initialPageParam: t?.initialCursor ?? null,
                         }),
@@ -7459,7 +7037,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         r.prefetchQuery({
                           ...t,
                           queryKey: e,
-                          queryFn: () => n.query(...tH(e, t)),
+                          queryFn: () => n.query(...tZ(e, t)),
                         }),
                       prefetchInfiniteQuery: (e, t) =>
                         r.prefetchInfiniteQuery({
@@ -7467,7 +7045,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                           queryKey: e,
                           queryFn: ({ pageParam: r, direction: i }) =>
                             n.query(
-                              ...tH(e, t, { pageParam: r, direction: i })
+                              ...tZ(e, t, { pageParam: r, direction: i })
                             ),
                           initialPageParam: t?.initialCursor ?? null,
                         }),
@@ -7475,7 +7053,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         r.ensureQueryData({
                           ...t,
                           queryKey: e,
-                          queryFn: () => n.query(...tH(e, t)),
+                          queryFn: () => n.query(...tZ(e, t)),
                         }),
                       invalidateQueries: (e, t, n) =>
                         r.invalidateQueries({ ...t, queryKey: e }, n),
@@ -7499,7 +7077,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                           'function' == typeof i
                             ? i({
                                 canonicalMutationFn: (t) =>
-                                  n.mutation(...tH([s, { input: t }], e)),
+                                  n.mutation(...tZ([s, { input: t }], e)),
                               })
                             : i
                         );
@@ -7510,7 +7088,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   })({ client: o, queryClient: n }),
                 [o, n]
               ),
-              l = el.useMemo(
+              l = eC.useMemo(
                 () => ({
                   abortOnUnmount: t,
                   queryClient: n,
@@ -7522,13 +7100,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 [t, o, u, n, i, s]
               );
             return (
-              el.useEffect(() => {
+              eC.useEffect(() => {
                 a((e) => !!e && 'mounted');
               }, []),
-              el.createElement(r.Provider, { value: l }, e.children)
+              eC.createElement(r.Provider, { value: l }, e.children)
             );
           },
-          createClient: e4,
+          createClient: ed,
           useContext: n,
           useUtils: n,
           useQuery: function (t, r, s) {
@@ -7539,9 +7117,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 queryClient: l,
                 prefetchQuery: c,
               } = n(),
-              h = tg(t, r, 'query'),
+              h = e6(t, r, 'query'),
               d = l.getQueryDefaults(h),
-              f = r === L;
+              f = r === e5;
             'undefined' != typeof window ||
               'prepass' !== u ||
               s?.trpc?.ssr === !1 ||
@@ -7551,7 +7129,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               c(h, s);
             let p = i(h, { ...d, ...s }),
               m = s?.trpc?.abortOnUnmount ?? e?.abortOnUnmount ?? a,
-              g = tL(
+              g = tI(
                 {
                   ...p,
                   queryKey: h,
@@ -7565,25 +7143,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                               ...(m ? { signal: e.signal } : { signal: null }),
                             },
                           },
-                          r = await o.query(...tH(h, t));
-                        return eR(r) ? tK(r, l, h) : r;
+                          r = await o.query(...tZ(h, t));
+                        return D(r) ? tW(r, l, h) : r;
                       },
                 },
-                tw,
+                tf,
                 l
               );
-            return (g.trpc = t$({ path: t })), g;
+            return (g.trpc = tH({ path: t })), g;
           },
           usePrefetchQuery: function (t, r, i) {
             let s = n(),
-              a = tg(t, r, 'query'),
-              o = r === L,
+              a = e6(t, r, 'query'),
+              o = r === e5,
               u =
                 i?.trpc?.abortOnUnmount ??
                 e?.abortOnUnmount ??
                 s.abortOnUnmount;
             !(function (e, t) {
-              let r = eh(void 0);
+              let r = ek(void 0);
               r.getQueryState(e.queryKey) || r.prefetchQuery(e);
             })({
               ...i,
@@ -7594,14 +7172,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     let t = {
                       trpc: { ...i?.trpc, ...(u ? { signal: e.signal } : {}) },
                     };
-                    return s.client.query(...tH(a, t));
+                    return s.client.query(...tZ(a, t));
                   },
             });
           },
           useSuspenseQuery: function (t, r, i) {
             var s, a;
             let o = n(),
-              u = tg(t, r, 'query'),
+              u = e6(t, r, 'query'),
               l =
                 i?.trpc?.abortOnUnmount ??
                 e?.abortOnUnmount ??
@@ -7618,22 +7196,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ...(l ? { signal: e.signal } : { signal: null }),
                       },
                     };
-                    return o.client.query(...tH(u, t));
+                    return o.client.query(...tZ(u, t));
                   },
                 }),
                 (a = o.queryClient),
-                tL(
+                tI(
                   {
                     ...s,
                     enabled: !0,
                     suspense: !0,
-                    throwOnError: tD,
+                    throwOnError: tN,
                     placeholderData: void 0,
                   },
-                  tw,
+                  tf,
                   a
                 ));
-            return (c.trpc = t$({ path: t })), [c.data, c];
+            return (c.trpc = tH({ path: t })), [c.data, c];
           },
           useQueries: (e, t) => {
             let {
@@ -7642,13 +7220,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 prefetchQuery: s,
                 client: a,
               } = n(),
-              o = e(tb(a));
+              o = e(e7(a));
             if ('undefined' == typeof window && 'prepass' === r)
               for (let e of o)
                 e.trpc?.ssr === !1 ||
                   i.getQueryCache().find({ queryKey: e.queryKey }) ||
                   s(e.queryKey, e);
-            return tz(
+            return tQ(
               {
                 queries: o.map((e) => ({ ...e, queryKey: e.queryKey })),
                 combine: t?.combine,
@@ -7659,10 +7237,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           useSuspenseQueries: (e) => {
             var t;
             let { queryClient: r, client: i } = n(),
-              s = tz(
+              s = tQ(
                 {
                   ...(t = {
-                    queries: e(tb(i)).map((e) => ({
+                    queries: e(e7(i)).map((e) => ({
                       ...e,
                       queryFn: e.queryFn,
                       queryKey: e.queryKey,
@@ -7671,7 +7249,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   queries: t.queries.map((e) => ({
                     ...e,
                     suspense: !0,
-                    throwOnError: tD,
+                    throwOnError: tN,
                     enabled: !0,
                     placeholderData: void 0,
                   })),
@@ -7682,33 +7260,33 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           },
           useMutation: function (e, r) {
             let { client: i, queryClient: s } = n(),
-              a = ty(e),
+              a = e8(e),
               o = s.defaultMutationOptions(s.getMutationDefaults(a)),
               u = (function (e, t) {
-                let r = eh(t),
-                  [n] = el.useState(() => new tF(r, e));
-                el.useEffect(() => {
+                let r = ek(t),
+                  [n] = eC.useState(() => new tM(r, e));
+                eC.useEffect(() => {
                   n.setOptions(e);
                 }, [n, e]);
-                let i = el.useSyncExternalStore(
-                    el.useCallback((e) => n.subscribe(B.batchCalls(e)), [n]),
+                let i = eC.useSyncExternalStore(
+                    eC.useCallback((e) => n.subscribe(tr.batchCalls(e)), [n]),
                     () => n.getCurrentResult(),
                     () => n.getCurrentResult()
                   ),
-                  s = el.useCallback(
+                  s = eC.useCallback(
                     (e, t) => {
-                      n.mutate(e, t).catch(tC);
+                      n.mutate(e, t).catch(t_);
                     },
                     [n]
                   );
-                if (i.error && tN(n.options.throwOnError, [i.error]))
+                if (i.error && tw(n.options.throwOnError, [i.error]))
                   throw i.error;
                 return { ...i, mutate: s, mutateAsync: i.mutate };
               })(
                 {
                   ...r,
                   mutationKey: a,
-                  mutationFn: (t) => i.mutation(...tH([e, { input: t }], r)),
+                  mutationFn: (t) => i.mutation(...tZ([e, { input: t }], r)),
                   onSuccess: (...e) =>
                     t({
                       originalFn: () =>
@@ -7719,20 +7297,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 },
                 s
               );
-            return (u.trpc = t$({ path: e })), u;
+            return (u.trpc = tH({ path: e })), u;
           },
           useSubscription: function (e, t, r) {
-            let i = r?.enabled ?? t !== L,
-              s = x(tg(e, t, 'any')),
+            let i = r?.enabled ?? t !== e5,
+              s = eK(e6(e, t, 'any')),
               { client: a } = n(),
-              o = el.useRef(r);
+              o = eC.useRef(r);
             o.current = r;
-            let u = el.useRef(new Set([])),
-              l = el.useCallback((e) => {
+            let u = eC.useRef(new Set([])),
+              l = eC.useCallback((e) => {
                 u.current.add(e);
               }, []),
-              c = el.useRef(null),
-              h = el.useCallback(() => {
+              c = eC.useRef(null),
+              h = eC.useCallback(() => {
                 if ((c.current?.(), g(d), !i)) return;
                 let r = !1,
                   n = a.subscription(e.join('.'), t ?? void 0, {
@@ -7765,7 +7343,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   (r = !0), n.unsubscribe();
                 };
               }, [s, i]),
-              d = el.useCallback(
+              d = eC.useCallback(
                 () =>
                   i
                     ? {
@@ -7777,10 +7355,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     : { data: void 0, error: null, status: 'idle', reset: h },
                 [i, h]
               ),
-              f = el.useRef(d()),
-              [p, m] = el.useState(tV(f.current, l));
+              f = eC.useRef(d()),
+              [p, m] = eC.useState(t$(f.current, l));
             p.reset = h;
-            let g = el.useCallback(
+            let g = eC.useCallback(
               (e) => {
                 let t = f.current,
                   r = (f.current = e(t)),
@@ -7790,12 +7368,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     n = !0;
                     break;
                   }
-                n && m(tV(r, l));
+                n && m(t$(r, l));
               },
               [l]
             );
             return (
-              el.useEffect(() => {
+              eC.useEffect(() => {
                 if (i)
                   return (
                     h(),
@@ -7815,9 +7393,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 queryClient: u,
                 abortOnUnmount: l,
               } = n(),
-              c = tg(e, t, 'infinite'),
+              c = e6(e, t, 'infinite'),
               h = u.getQueryDefaults(c),
-              d = t === L;
+              d = t === e5;
             'undefined' != typeof window ||
               'prepass' !== a ||
               r?.trpc?.ssr === !1 ||
@@ -7827,7 +7405,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               o(c, { ...h, ...r });
             let f = i(c, { ...h, ...r }),
               p = r?.trpc?.abortOnUnmount ?? l,
-              m = tL(
+              m = tI(
                 {
                   ...f,
                   initialPageParam: r.initialCursor ?? null,
@@ -7844,27 +7422,27 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                           },
                         };
                         return s.query(
-                          ...tH(c, t, {
+                          ...tZ(c, t, {
                             pageParam: e.pageParam ?? r.initialCursor,
                             direction: e.direction,
                           })
                         );
                       },
                 },
-                tB,
+                tL,
                 u
               );
-            return (m.trpc = t$({ path: e })), m;
+            return (m.trpc = tH({ path: e })), m;
           },
           usePrefetchInfiniteQuery: function (e, t, r) {
             let s = n(),
-              a = tg(e, t, 'infinite'),
+              a = e6(e, t, 'infinite'),
               o = s.queryClient.getQueryDefaults(a),
-              u = t === L,
+              u = t === e5,
               l = i(a, { ...o, ...r }),
               c = r?.trpc?.abortOnUnmount ?? s.abortOnUnmount;
             !(function (e, t) {
-              let r = eh(void 0);
+              let r = ek(void 0);
               r.getQueryState(e.queryKey) || r.prefetchInfiniteQuery(e);
             })({
               ...r,
@@ -7878,7 +7456,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       trpc: { ...l?.trpc, ...(c ? { signal: e.signal } : {}) },
                     };
                     return s.client.query(
-                      ...tH(a, t, {
+                      ...tZ(a, t, {
                         pageParam: e.pageParam ?? r.initialCursor,
                         direction: e.direction,
                       })
@@ -7889,7 +7467,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           useSuspenseInfiniteQuery: function (e, t, r) {
             var s, a;
             let o = n(),
-              u = tg(e, t, 'infinite'),
+              u = e6(e, t, 'infinite'),
               l = o.queryClient.getQueryDefaults(u),
               c = i(u, { ...l, ...r }),
               h = r?.trpc?.abortOnUnmount ?? o.abortOnUnmount,
@@ -7904,7 +7482,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       trpc: { ...c?.trpc, ...(h ? { signal: e.signal } : {}) },
                     };
                     return o.client.query(
-                      ...tH(u, t, {
+                      ...tZ(u, t, {
                         pageParam: e.pageParam ?? r.initialCursor,
                         direction: e.direction,
                       })
@@ -7912,41 +7490,449 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   },
                 }),
                 (a = o.queryClient),
-                tL(
-                  { ...s, enabled: !0, suspense: !0, throwOnError: tD },
-                  tB,
+                tI(
+                  { ...s, enabled: !0, suspense: !0, throwOnError: tN },
+                  tL,
                   a
                 ));
-            return (d.trpc = t$({ path: e })), [d.data, d];
+            return (d.trpc = tH({ path: e })), [d.data, d];
           },
         };
       }
-      let tJ = (e) => e.queryClient ?? new eu(e.queryClientConfig);
-      var tY = r(4233);
-      function tX(e, t) {
+      var tV = class extends te {
+          constructor(e = {}) {
+            super(), (this.config = e), (this.#Q = new Map());
+          }
+          #Q;
+          build(e, t, r) {
+            let n = t.queryKey,
+              i = t.queryHash ?? e$(n, t),
+              s = this.get(i);
+            return (
+              s ||
+                ((s = new th({
+                  cache: this,
+                  queryKey: n,
+                  queryHash: i,
+                  options: e.defaultQueryOptions(t),
+                  state: r,
+                  defaultOptions: e.getQueryDefaults(n),
+                })),
+                this.add(s)),
+              s
+            );
+          }
+          add(e) {
+            this.#Q.has(e.queryHash) ||
+              (this.#Q.set(e.queryHash, e),
+              this.notify({ type: 'added', query: e }));
+          }
+          remove(e) {
+            let t = this.#Q.get(e.queryHash);
+            t &&
+              (e.destroy(),
+              t === e && this.#Q.delete(e.queryHash),
+              this.notify({ type: 'removed', query: e }));
+          }
+          clear() {
+            tr.batch(() => {
+              this.getAll().forEach((e) => {
+                this.remove(e);
+              });
+            });
+          }
+          get(e) {
+            return this.#Q.get(e);
+          }
+          getAll() {
+            return [...this.#Q.values()];
+          }
+          find(e) {
+            let t = { exact: !0, ...e };
+            return this.getAll().find((e) => eH(t, e));
+          }
+          findAll(e = {}) {
+            let t = this.getAll();
+            return Object.keys(e).length > 0 ? t.filter((t) => eH(e, t)) : t;
+          }
+          notify(e) {
+            tr.batch(() => {
+              this.listeners.forEach((t) => {
+                t(e);
+              });
+            });
+          }
+          onFocus() {
+            tr.batch(() => {
+              this.getAll().forEach((e) => {
+                e.onFocus();
+              });
+            });
+          }
+          onOnline() {
+            tr.batch(() => {
+              this.getAll().forEach((e) => {
+                e.onOnline();
+              });
+            });
+          }
+        },
+        tG = class extends te {
+          constructor(e = {}) {
+            super(),
+              (this.config = e),
+              (this.#J = new Set()),
+              (this.#Y = new Map()),
+              (this.#X = 0);
+          }
+          #J;
+          #Y;
+          #X;
+          build(e, t, r) {
+            let n = new tP({
+              mutationCache: this,
+              mutationId: ++this.#X,
+              options: e.defaultMutationOptions(t),
+              state: r,
+            });
+            return this.add(n), n;
+          }
+          add(e) {
+            this.#J.add(e);
+            let t = tJ(e);
+            if ('string' == typeof t) {
+              let r = this.#Y.get(t);
+              r ? r.push(e) : this.#Y.set(t, [e]);
+            }
+            this.notify({ type: 'added', mutation: e });
+          }
+          remove(e) {
+            if (this.#J.delete(e)) {
+              let t = tJ(e);
+              if ('string' == typeof t) {
+                let r = this.#Y.get(t);
+                if (r) {
+                  if (r.length > 1) {
+                    let t = r.indexOf(e);
+                    -1 !== t && r.splice(t, 1);
+                  } else r[0] === e && this.#Y.delete(t);
+                }
+              }
+            }
+            this.notify({ type: 'removed', mutation: e });
+          }
+          canRun(e) {
+            let t = tJ(e);
+            if ('string' != typeof t) return !0;
+            {
+              let r = this.#Y.get(t),
+                n = r?.find((e) => 'pending' === e.state.status);
+              return !n || n === e;
+            }
+          }
+          runNext(e) {
+            let t = tJ(e);
+            if ('string' != typeof t) return Promise.resolve();
+            {
+              let r = this.#Y.get(t)?.find((t) => t !== e && t.state.isPaused);
+              return r?.continue() ?? Promise.resolve();
+            }
+          }
+          clear() {
+            tr.batch(() => {
+              this.#J.forEach((e) => {
+                this.notify({ type: 'removed', mutation: e });
+              }),
+                this.#J.clear(),
+                this.#Y.clear();
+            });
+          }
+          getAll() {
+            return Array.from(this.#J);
+          }
+          find(e) {
+            let t = { exact: !0, ...e };
+            return this.getAll().find((e) => eW(t, e));
+          }
+          findAll(e = {}) {
+            return this.getAll().filter((t) => eW(e, t));
+          }
+          notify(e) {
+            tr.batch(() => {
+              this.listeners.forEach((t) => {
+                t(e);
+              });
+            });
+          }
+          resumePausedMutations() {
+            let e = this.getAll().filter((e) => e.state.isPaused);
+            return tr.batch(() =>
+              Promise.all(e.map((e) => e.continue().catch(eF)))
+            );
+          }
+        };
+      function tJ(e) {
+        return e.options.scope?.id;
+      }
+      var tY = class {
+        #ee;
+        #q;
+        #l;
+        #et;
+        #er;
+        #en;
+        #ei;
+        #es;
+        constructor(e = {}) {
+          (this.#ee = e.queryCache || new tV()),
+            (this.#q = e.mutationCache || new tG()),
+            (this.#l = e.defaultOptions || {}),
+            (this.#et = new Map()),
+            (this.#er = new Map()),
+            (this.#en = 0);
+        }
+        mount() {
+          this.#en++,
+            1 === this.#en &&
+              ((this.#ei = tt.subscribe(async (e) => {
+                e && (await this.resumePausedMutations(), this.#ee.onFocus());
+              })),
+              (this.#es = tn.subscribe(async (e) => {
+                e && (await this.resumePausedMutations(), this.#ee.onOnline());
+              })));
+        }
+        unmount() {
+          this.#en--,
+            0 === this.#en &&
+              (this.#ei?.(),
+              (this.#ei = void 0),
+              this.#es?.(),
+              (this.#es = void 0));
+        }
+        isFetching(e) {
+          return this.#ee.findAll({ ...e, fetchStatus: 'fetching' }).length;
+        }
+        isMutating(e) {
+          return this.#q.findAll({ ...e, status: 'pending' }).length;
+        }
+        getQueryData(e) {
+          let t = this.defaultQueryOptions({ queryKey: e });
+          return this.#ee.get(t.queryHash)?.state.data;
+        }
+        ensureQueryData(e) {
+          let t = this.defaultQueryOptions(e),
+            r = this.#ee.build(this, t),
+            n = r.state.data;
+          return void 0 === n
+            ? this.fetchQuery(e)
+            : (e.revalidateIfStale &&
+                r.isStaleByTime(eZ(t.staleTime, r)) &&
+                this.prefetchQuery(t),
+              Promise.resolve(n));
+        }
+        getQueriesData(e) {
+          return this.#ee
+            .findAll(e)
+            .map(({ queryKey: e, state: t }) => [e, t.data]);
+        }
+        setQueryData(e, t, r) {
+          let n = this.defaultQueryOptions({ queryKey: e }),
+            i = this.#ee.get(n.queryHash),
+            s = i?.state.data,
+            a = 'function' == typeof t ? t(s) : t;
+          if (void 0 !== a)
+            return this.#ee.build(this, n).setData(a, { ...r, manual: !0 });
+        }
+        setQueriesData(e, t, r) {
+          return tr.batch(() =>
+            this.#ee
+              .findAll(e)
+              .map(({ queryKey: e }) => [e, this.setQueryData(e, t, r)])
+          );
+        }
+        getQueryState(e) {
+          let t = this.defaultQueryOptions({ queryKey: e });
+          return this.#ee.get(t.queryHash)?.state;
+        }
+        removeQueries(e) {
+          let t = this.#ee;
+          tr.batch(() => {
+            t.findAll(e).forEach((e) => {
+              t.remove(e);
+            });
+          });
+        }
+        resetQueries(e, t) {
+          let r = this.#ee,
+            n = { type: 'active', ...e };
+          return tr.batch(
+            () => (
+              r.findAll(e).forEach((e) => {
+                e.reset();
+              }),
+              this.refetchQueries(n, t)
+            )
+          );
+        }
+        cancelQueries(e, t = {}) {
+          let r = { revert: !0, ...t };
+          return Promise.all(
+            tr.batch(() => this.#ee.findAll(e).map((e) => e.cancel(r)))
+          )
+            .then(eF)
+            .catch(eF);
+        }
+        invalidateQueries(e, t = {}) {
+          return tr.batch(() => {
+            if (
+              (this.#ee.findAll(e).forEach((e) => {
+                e.invalidate();
+              }),
+              e?.refetchType === 'none')
+            )
+              return Promise.resolve();
+            let r = { ...e, type: e?.refetchType ?? e?.type ?? 'active' };
+            return this.refetchQueries(r, t);
+          });
+        }
+        refetchQueries(e, t = {}) {
+          let r = { ...t, cancelRefetch: t.cancelRefetch ?? !0 };
+          return Promise.all(
+            tr.batch(() =>
+              this.#ee
+                .findAll(e)
+                .filter((e) => !e.isDisabled())
+                .map((e) => {
+                  let t = e.fetch(void 0, r);
+                  return (
+                    r.throwOnError || (t = t.catch(eF)),
+                    'paused' === e.state.fetchStatus ? Promise.resolve() : t
+                  );
+                })
+            )
+          ).then(eF);
+        }
+        fetchQuery(e) {
+          let t = this.defaultQueryOptions(e);
+          void 0 === t.retry && (t.retry = !1);
+          let r = this.#ee.build(this, t);
+          return r.isStaleByTime(eZ(t.staleTime, r))
+            ? r.fetch(t)
+            : Promise.resolve(r.state.data);
+        }
+        prefetchQuery(e) {
+          return this.fetchQuery(e).then(eF).catch(eF);
+        }
+        fetchInfiniteQuery(e) {
+          return (e.behavior = tj(e.pages)), this.fetchQuery(e);
+        }
+        prefetchInfiniteQuery(e) {
+          return this.fetchInfiniteQuery(e).then(eF).catch(eF);
+        }
+        ensureInfiniteQueryData(e) {
+          return (e.behavior = tj(e.pages)), this.ensureQueryData(e);
+        }
+        resumePausedMutations() {
+          return tn.isOnline()
+            ? this.#q.resumePausedMutations()
+            : Promise.resolve();
+        }
+        getQueryCache() {
+          return this.#ee;
+        }
+        getMutationCache() {
+          return this.#q;
+        }
+        getDefaultOptions() {
+          return this.#l;
+        }
+        setDefaultOptions(e) {
+          this.#l = e;
+        }
+        setQueryDefaults(e, t) {
+          this.#et.set(eK(e), { queryKey: e, defaultOptions: t });
+        }
+        getQueryDefaults(e) {
+          let t = [...this.#et.values()],
+            r = {};
+          return (
+            t.forEach((t) => {
+              eV(e, t.queryKey) && Object.assign(r, t.defaultOptions);
+            }),
+            r
+          );
+        }
+        setMutationDefaults(e, t) {
+          this.#er.set(eK(e), { mutationKey: e, defaultOptions: t });
+        }
+        getMutationDefaults(e) {
+          let t = [...this.#er.values()],
+            r = {};
+          return (
+            t.forEach((t) => {
+              eV(e, t.mutationKey) && (r = { ...r, ...t.defaultOptions });
+            }),
+            r
+          );
+        }
+        defaultQueryOptions(e) {
+          if (e._defaulted) return e;
+          let t = {
+            ...this.#l.queries,
+            ...this.getQueryDefaults(e.queryKey),
+            ...e,
+            _defaulted: !0,
+          };
+          return (
+            t.queryHash || (t.queryHash = e$(t.queryKey, t)),
+            void 0 === t.refetchOnReconnect &&
+              (t.refetchOnReconnect = 'always' !== t.networkMode),
+            void 0 === t.throwOnError && (t.throwOnError = !!t.suspense),
+            !t.networkMode && t.persister && (t.networkMode = 'offlineFirst'),
+            t.queryFn === e5 && (t.enabled = !1),
+            t
+          );
+        }
+        defaultMutationOptions(e) {
+          return e?._defaulted
+            ? e
+            : {
+                ...this.#l.mutations,
+                ...(e?.mutationKey && this.getMutationDefaults(e.mutationKey)),
+                ...e,
+                _defaulted: !0,
+              };
+        }
+        clear() {
+          this.#ee.clear(), this.#q.clear();
+        }
+      };
+      let tX = (e) => e.queryClient ?? new tY(e.queryClientConfig);
+      var t0 = r(4233);
+      function t1(e, t) {
         return function () {
           return e.apply(t, arguments);
         };
       }
-      var t0 = r(2836);
-      let { toString: t1 } = Object.prototype,
-        { getPrototypeOf: t2 } = Object,
-        t4 = ((e) => (t) => {
-          let r = t1.call(t);
+      var t2 = r(2836);
+      let { toString: t4 } = Object.prototype,
+        { getPrototypeOf: t5 } = Object,
+        t3 = ((e) => (t) => {
+          let r = t4.call(t);
           return e[r] || (e[r] = r.slice(8, -1).toLowerCase());
         })(Object.create(null)),
-        t5 = (e) => ((e = e.toLowerCase()), (t) => t4(t) === e),
-        t3 = (e) => (t) => typeof t === e,
-        { isArray: t6 } = Array,
-        t8 = t3('undefined'),
-        t9 = t5('ArrayBuffer'),
-        t7 = t3('string'),
-        re = t3('function'),
-        rt = t3('number'),
-        rr = (e) => null !== e && 'object' == typeof e,
-        rn = (e) => {
-          if ('object' !== t4(e)) return !1;
-          let t = t2(e);
+        t6 = (e) => ((e = e.toLowerCase()), (t) => t3(t) === e),
+        t8 = (e) => (t) => typeof t === e,
+        { isArray: t9 } = Array,
+        t7 = t8('undefined'),
+        re = t6('ArrayBuffer'),
+        rt = t8('string'),
+        rr = t8('function'),
+        rn = t8('number'),
+        ri = (e) => null !== e && 'object' == typeof e,
+        rs = (e) => {
+          if ('object' !== t3(e)) return !1;
+          let t = t5(e);
           return (
             (null === t ||
               t === Object.prototype ||
@@ -7955,21 +7941,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             !(Symbol.iterator in e)
           );
         },
-        ri = t5('Date'),
-        rs = t5('File'),
-        ra = t5('Blob'),
-        ro = t5('FileList'),
-        ru = t5('URLSearchParams'),
-        [rl, rc, rh, rd] = [
+        ra = t6('Date'),
+        ro = t6('File'),
+        ru = t6('Blob'),
+        rl = t6('FileList'),
+        rc = t6('URLSearchParams'),
+        [rh, rd, rf, rp] = [
           'ReadableStream',
           'Request',
           'Response',
           'Headers',
-        ].map(t5);
-      function rf(e, t, { allOwnKeys: r = !1 } = {}) {
+        ].map(t6);
+      function rm(e, t, { allOwnKeys: r = !1 } = {}) {
         let n, i;
         if (null != e) {
-          if (('object' != typeof e && (e = [e]), t6(e)))
+          if (('object' != typeof e && (e = [e]), t9(e)))
             for (n = 0, i = e.length; n < i; n++) t.call(null, e[n], n, e);
           else {
             let i;
@@ -7979,7 +7965,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
         }
       }
-      function rp(e, t) {
+      function rg(e, t) {
         let r;
         t = t.toLowerCase();
         let n = Object.keys(e),
@@ -7987,7 +7973,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         for (; i-- > 0; ) if (t === (r = n[i]).toLowerCase()) return r;
         return null;
       }
-      let rm =
+      let ry =
           'undefined' != typeof globalThis
             ? globalThis
             : 'undefined' != typeof self
@@ -7995,64 +7981,64 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               : 'undefined' != typeof window
                 ? window
                 : global,
-        rg = (e) => !t8(e) && e !== rm,
-        ry = (
+        rv = (e) => !t7(e) && e !== ry,
+        rb = (
           (e) => (t) =>
             e && t instanceof e
-        )('undefined' != typeof Uint8Array && t2(Uint8Array)),
-        rv = t5('HTMLFormElement'),
-        rb = (
+        )('undefined' != typeof Uint8Array && t5(Uint8Array)),
+        rw = t6('HTMLFormElement'),
+        r_ = (
           ({ hasOwnProperty: e }) =>
           (t, r) =>
             e.call(t, r)
         )(Object.prototype),
-        rw = t5('RegExp'),
-        r_ = (e, t) => {
+        rE = t6('RegExp'),
+        rS = (e, t) => {
           let r = Object.getOwnPropertyDescriptors(e),
             n = {};
-          rf(r, (r, i) => {
+          rm(r, (r, i) => {
             let s;
             !1 !== (s = t(r, i, e)) && (n[i] = s || r);
           }),
             Object.defineProperties(e, n);
         },
-        rE = 'abcdefghijklmnopqrstuvwxyz',
-        rS = '0123456789',
-        rO = { DIGIT: rS, ALPHA: rE, ALPHA_DIGIT: rE + rE.toUpperCase() + rS },
-        rR = t5('AsyncFunction'),
-        rA =
+        rO = 'abcdefghijklmnopqrstuvwxyz',
+        rR = '0123456789',
+        rA = { DIGIT: rR, ALPHA: rO, ALPHA_DIGIT: rO + rO.toUpperCase() + rR },
+        rN = t6('AsyncFunction'),
+        rC =
           ((s = 'function' == typeof setImmediate),
-          (a = re(rm.postMessage)),
+          (a = rr(ry.postMessage)),
           s
             ? setImmediate
             : a
               ? ((e, t) => (
-                  rm.addEventListener(
+                  ry.addEventListener(
                     'message',
                     ({ source: r, data: n }) => {
-                      r === rm && n === e && t.length && t.shift()();
+                      r === ry && n === e && t.length && t.shift()();
                     },
                     !1
                   ),
                   (r) => {
-                    t.push(r), rm.postMessage(e, '*');
+                    t.push(r), ry.postMessage(e, '*');
                   }
                 ))(`axios@${Math.random()}`, [])
               : (e) => setTimeout(e)),
-        rN =
+        rx =
           'undefined' != typeof queueMicrotask
-            ? queueMicrotask.bind(rm)
-            : (void 0 !== t0 && t0.nextTick) || rA,
-        rC = {
-          isArray: t6,
-          isArrayBuffer: t9,
+            ? queueMicrotask.bind(ry)
+            : (void 0 !== t2 && t2.nextTick) || rC,
+        rk = {
+          isArray: t9,
+          isArrayBuffer: re,
           isBuffer: function (e) {
             return (
               null !== e &&
-              !t8(e) &&
+              !t7(e) &&
               null !== e.constructor &&
-              !t8(e.constructor) &&
-              re(e.constructor.isBuffer) &&
+              !t7(e.constructor) &&
+              rr(e.constructor.isBuffer) &&
               e.constructor.isBuffer(e)
             );
           },
@@ -8061,60 +8047,60 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             return (
               e &&
               (('function' == typeof FormData && e instanceof FormData) ||
-                (re(e.append) &&
-                  ('formdata' === (t = t4(e)) ||
+                (rr(e.append) &&
+                  ('formdata' === (t = t3(e)) ||
                     ('object' === t &&
-                      re(e.toString) &&
+                      rr(e.toString) &&
                       '[object FormData]' === e.toString()))))
             );
           },
           isArrayBufferView: function (e) {
             return 'undefined' != typeof ArrayBuffer && ArrayBuffer.isView
               ? ArrayBuffer.isView(e)
-              : e && e.buffer && t9(e.buffer);
+              : e && e.buffer && re(e.buffer);
           },
-          isString: t7,
-          isNumber: rt,
+          isString: rt,
+          isNumber: rn,
           isBoolean: (e) => !0 === e || !1 === e,
-          isObject: rr,
-          isPlainObject: rn,
-          isReadableStream: rl,
-          isRequest: rc,
-          isResponse: rh,
-          isHeaders: rd,
-          isUndefined: t8,
-          isDate: ri,
-          isFile: rs,
-          isBlob: ra,
-          isRegExp: rw,
-          isFunction: re,
-          isStream: (e) => rr(e) && re(e.pipe),
-          isURLSearchParams: ru,
-          isTypedArray: ry,
-          isFileList: ro,
-          forEach: rf,
+          isObject: ri,
+          isPlainObject: rs,
+          isReadableStream: rh,
+          isRequest: rd,
+          isResponse: rf,
+          isHeaders: rp,
+          isUndefined: t7,
+          isDate: ra,
+          isFile: ro,
+          isBlob: ru,
+          isRegExp: rE,
+          isFunction: rr,
+          isStream: (e) => ri(e) && rr(e.pipe),
+          isURLSearchParams: rc,
+          isTypedArray: rb,
+          isFileList: rl,
+          forEach: rm,
           merge: function e() {
-            let { caseless: t } = (rg(this) && this) || {},
+            let { caseless: t } = (rv(this) && this) || {},
               r = {},
               n = (n, i) => {
-                let s = (t && rp(r, i)) || i;
-                rn(r[s]) && rn(n)
+                let s = (t && rg(r, i)) || i;
+                rs(r[s]) && rs(n)
                   ? (r[s] = e(r[s], n))
-                  : rn(n)
+                  : rs(n)
                     ? (r[s] = e({}, n))
-                    : t6(n)
+                    : t9(n)
                       ? (r[s] = n.slice())
                       : (r[s] = n);
               };
             for (let e = 0, t = arguments.length; e < t; e++)
-              arguments[e] && rf(arguments[e], n);
+              arguments[e] && rm(arguments[e], n);
             return r;
           },
           extend: (e, t, r, { allOwnKeys: n } = {}) => (
-            rf(
+            rm(
               t,
               (t, n) => {
-                r && re(t) ? (e[n] = tX(t, r)) : (e[n] = t);
+                r && rr(t) ? (e[n] = t1(t, r)) : (e[n] = t);
               },
               { allOwnKeys: n }
             ),
@@ -8139,12 +8125,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               for (s = (i = Object.getOwnPropertyNames(e)).length; s-- > 0; )
                 (a = i[s]),
                   (!n || n(a, e, t)) && !o[a] && ((t[a] = e[a]), (o[a] = !0));
-              e = !1 !== r && t2(e);
+              e = !1 !== r && t5(e);
             } while (e && (!r || r(e, t)) && e !== Object.prototype);
             return t;
           },
-          kindOf: t4,
-          kindOfTest: t5,
+          kindOf: t3,
+          kindOfTest: t6,
           endsWith: (e, t, r) => {
             (e = String(e)),
               (void 0 === r || r > e.length) && (r = e.length),
@@ -8154,9 +8140,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           },
           toArray: (e) => {
             if (!e) return null;
-            if (t6(e)) return e;
+            if (t9(e)) return e;
             let t = e.length;
-            if (!rt(t)) return null;
+            if (!rn(t)) return null;
             let r = Array(t);
             for (; t-- > 0; ) r[t] = e[t];
             return r;
@@ -8175,15 +8161,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             for (; null !== (r = e.exec(t)); ) n.push(r);
             return n;
           },
-          isHTMLForm: rv,
-          hasOwnProperty: rb,
-          hasOwnProp: rb,
-          reduceDescriptors: r_,
+          isHTMLForm: rw,
+          hasOwnProperty: r_,
+          hasOwnProp: r_,
+          reduceDescriptors: rS,
           freezeMethods: (e) => {
-            r_(e, (t, r) => {
-              if (re(e) && -1 !== ['arguments', 'caller', 'callee'].indexOf(r))
+            rS(e, (t, r) => {
+              if (rr(e) && -1 !== ['arguments', 'caller', 'callee'].indexOf(r))
                 return !1;
-              if (re(e[r])) {
+              if (rr(e[r])) {
                 if (((t.enumerable = !1), 'writable' in t)) {
                   t.writable = !1;
                   return;
@@ -8202,7 +8188,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 e.forEach((e) => {
                   r[e] = !0;
                 });
-              })(t6(e) ? e : String(e).split(t)),
+              })(t9(e) ? e : String(e).split(t)),
               r
             );
           },
@@ -8215,11 +8201,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           noop: () => {},
           toFiniteNumber: (e, t) =>
             null != e && Number.isFinite((e = +e)) ? e : t,
-          findKey: rp,
-          global: rm,
-          isContextDefined: rg,
-          ALPHABET: rO,
-          generateString: (e = 16, t = rO.ALPHA_DIGIT) => {
+          findKey: rg,
+          global: ry,
+          isContextDefined: rv,
+          ALPHABET: rA,
+          generateString: (e = 16, t = rA.ALPHA_DIGIT) => {
             let r = '',
               { length: n } = t;
             for (; e--; ) r += t[(Math.random() * n) | 0];
@@ -8228,7 +8214,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           isSpecCompliantForm: function (e) {
             return !!(
               e &&
-              re(e.append) &&
+              rr(e.append) &&
               'FormData' === e[Symbol.toStringTag] &&
               e[Symbol.iterator]
             );
@@ -8236,15 +8222,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           toJSONObject: (e) => {
             let t = Array(10),
               r = (e, n) => {
-                if (rr(e)) {
+                if (ri(e)) {
                   if (t.indexOf(e) >= 0) return;
                   if (!('toJSON' in e)) {
                     t[n] = e;
-                    let i = t6(e) ? [] : {};
+                    let i = t9(e) ? [] : {};
                     return (
-                      rf(e, (e, t) => {
+                      rm(e, (e, t) => {
                         let s = r(e, n + 1);
-                        t8(s) || (i[t] = s);
+                        t7(s) || (i[t] = s);
                       }),
                       (t[n] = void 0),
                       i
@@ -8255,12 +8241,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               };
             return r(e, 0);
           },
-          isAsyncFn: rR,
-          isThenable: (e) => e && (rr(e) || re(e)) && re(e.then) && re(e.catch),
-          setImmediate: rA,
-          asap: rN,
+          isAsyncFn: rN,
+          isThenable: (e) => e && (ri(e) || rr(e)) && rr(e.then) && rr(e.catch),
+          setImmediate: rC,
+          asap: rx,
         };
-      function rx(e, t, r, n, i) {
+      function rT(e, t, r, n, i) {
         Error.call(this),
           Error.captureStackTrace
             ? Error.captureStackTrace(this, this.constructor)
@@ -8273,7 +8259,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           i &&
             ((this.response = i), (this.status = i.status ? i.status : null));
       }
-      rC.inherits(rx, Error, {
+      rk.inherits(rT, Error, {
         toJSON: function () {
           return {
             message: this.message,
@@ -8284,14 +8270,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             lineNumber: this.lineNumber,
             columnNumber: this.columnNumber,
             stack: this.stack,
-            config: rC.toJSONObject(this.config),
+            config: rk.toJSONObject(this.config),
             code: this.code,
             status: this.status,
           };
         },
       });
-      let rk = rx.prototype,
-        rT = {};
+      let rI = rT.prototype,
+        rP = {};
       [
         'ERR_BAD_OPTION_VALUE',
         'ERR_BAD_OPTION',
@@ -8306,14 +8292,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         'ERR_NOT_SUPPORT',
         'ERR_INVALID_URL',
       ].forEach((e) => {
-        rT[e] = { value: e };
+        rP[e] = { value: e };
       }),
-        Object.defineProperties(rx, rT),
-        Object.defineProperty(rk, 'isAxiosError', { value: !0 }),
-        (rx.from = (e, t, r, n, i, s) => {
-          let a = Object.create(rk);
+        Object.defineProperties(rT, rP),
+        Object.defineProperty(rI, 'isAxiosError', { value: !0 }),
+        (rT.from = (e, t, r, n, i, s) => {
+          let a = Object.create(rI);
           return (
-            rC.toFlatObject(
+            rk.toFlatObject(
               e,
               a,
               function (e) {
@@ -8321,42 +8307,42 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               },
               (e) => 'isAxiosError' !== e
             ),
-            rx.call(a, e.message, t, r, n, i),
+            rT.call(a, e.message, t, r, n, i),
             (a.cause = e),
             (a.name = e.name),
             s && Object.assign(a, s),
             a
           );
         });
-      var rI = r(2796).hp;
-      function rP(e) {
-        return rC.isPlainObject(e) || rC.isArray(e);
+      var rD = r(2796).hp;
+      function rM(e) {
+        return rk.isPlainObject(e) || rk.isArray(e);
       }
-      function rD(e) {
-        return rC.endsWith(e, '[]') ? e.slice(0, -2) : e;
+      function rj(e) {
+        return rk.endsWith(e, '[]') ? e.slice(0, -2) : e;
       }
-      function rM(e, t, r) {
+      function rq(e, t, r) {
         return e
           ? e
               .concat(t)
               .map(function (e, t) {
-                return (e = rD(e)), !r && t ? '[' + e + ']' : e;
+                return (e = rj(e)), !r && t ? '[' + e + ']' : e;
               })
               .join(r ? '.' : '')
           : t;
       }
-      let rj = rC.toFlatObject(rC, {}, null, function (e) {
+      let rU = rk.toFlatObject(rk, {}, null, function (e) {
           return /^is[A-Z]/.test(e);
         }),
-        rq = function (e, t, r) {
-          if (!rC.isObject(e)) throw TypeError('target must be an object');
+        rL = function (e, t, r) {
+          if (!rk.isObject(e)) throw TypeError('target must be an object');
           t = t || new FormData();
-          let n = (r = rC.toFlatObject(
+          let n = (r = rk.toFlatObject(
               r,
               { metaTokens: !0, dots: !1, indexes: !1 },
               !1,
               function (e, t) {
-                return !rC.isUndefined(t[e]);
+                return !rk.isUndefined(t[e]);
               }
             )).metaTokens,
             i = r.visitor || l,
@@ -8364,38 +8350,38 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             a = r.indexes,
             o =
               (r.Blob || ('undefined' != typeof Blob && Blob)) &&
-              rC.isSpecCompliantForm(t);
-          if (!rC.isFunction(i)) throw TypeError('visitor must be a function');
+              rk.isSpecCompliantForm(t);
+          if (!rk.isFunction(i)) throw TypeError('visitor must be a function');
           function u(e) {
             if (null === e) return '';
-            if (rC.isDate(e)) return e.toISOString();
-            if (!o && rC.isBlob(e))
-              throw new rx('Blob is not supported. Use a Buffer instead.');
-            return rC.isArrayBuffer(e) || rC.isTypedArray(e)
+            if (rk.isDate(e)) return e.toISOString();
+            if (!o && rk.isBlob(e))
+              throw new rT('Blob is not supported. Use a Buffer instead.');
+            return rk.isArrayBuffer(e) || rk.isTypedArray(e)
               ? o && 'function' == typeof Blob
                 ? new Blob([e])
-                : rI.from(e)
+                : rD.from(e)
               : e;
           }
           function l(e, r, i) {
             let o = e;
             if (e && !i && 'object' == typeof e) {
-              if (rC.endsWith(r, '{}'))
+              if (rk.endsWith(r, '{}'))
                 (r = n ? r : r.slice(0, -2)), (e = JSON.stringify(e));
               else {
                 var l;
                 if (
-                  (rC.isArray(e) && ((l = e), rC.isArray(l) && !l.some(rP))) ||
-                  ((rC.isFileList(e) || rC.endsWith(r, '[]')) &&
-                    (o = rC.toArray(e)))
+                  (rk.isArray(e) && ((l = e), rk.isArray(l) && !l.some(rM))) ||
+                  ((rk.isFileList(e) || rk.endsWith(r, '[]')) &&
+                    (o = rk.toArray(e)))
                 )
                   return (
-                    (r = rD(r)),
+                    (r = rj(r)),
                     o.forEach(function (e, n) {
-                      rC.isUndefined(e) ||
+                      rk.isUndefined(e) ||
                         null === e ||
                         t.append(
-                          !0 === a ? rM([r], n, s) : null === a ? r : r + '[]',
+                          !0 === a ? rq([r], n, s) : null === a ? r : r + '[]',
                           u(e)
                         );
                     }),
@@ -8403,25 +8389,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   );
               }
             }
-            return !!rP(e) || (t.append(rM(i, r, s), u(e)), !1);
+            return !!rM(e) || (t.append(rq(i, r, s), u(e)), !1);
           }
           let c = [],
-            h = Object.assign(rj, {
+            h = Object.assign(rU, {
               defaultVisitor: l,
               convertValue: u,
-              isVisitable: rP,
+              isVisitable: rM,
             });
-          if (!rC.isObject(e)) throw TypeError('data must be an object');
+          if (!rk.isObject(e)) throw TypeError('data must be an object');
           return (
             !(function e(r, n) {
-              if (!rC.isUndefined(r)) {
+              if (!rk.isUndefined(r)) {
                 if (-1 !== c.indexOf(r))
                   throw Error('Circular reference detected in ' + n.join('.'));
                 c.push(r),
-                  rC.forEach(r, function (r, s) {
+                  rk.forEach(r, function (r, s) {
                     !0 ===
-                      (!(rC.isUndefined(r) || null === r) &&
-                        i.call(t, r, rC.isString(s) ? s.trim() : s, n, h)) &&
+                      (!(rk.isUndefined(r) || null === r) &&
+                        i.call(t, r, rk.isString(s) ? s.trim() : s, n, h)) &&
                       e(r, n ? n.concat(s) : [s]);
                   }),
                   c.pop();
@@ -8430,7 +8416,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             t
           );
         };
-      function rU(e) {
+      function rF(e) {
         let t = {
           '!': '%21',
           "'": '%27',
@@ -8444,11 +8430,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return t[e];
         });
       }
-      function rL(e, t) {
-        (this._pairs = []), e && rq(e, this, t);
+      function rB(e, t) {
+        (this._pairs = []), e && rL(e, this, t);
       }
-      let rF = rL.prototype;
-      function rB(e) {
+      let rQ = rB.prototype;
+      function rZ(e) {
         return encodeURIComponent(e)
           .replace(/%3A/gi, ':')
           .replace(/%24/g, '$')
@@ -8457,18 +8443,18 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           .replace(/%5B/gi, '[')
           .replace(/%5D/gi, ']');
       }
-      function rQ(e, t, r) {
+      function rz(e, t, r) {
         let n;
         if (!t) return e;
-        let i = (r && r.encode) || rB;
-        rC.isFunction(r) && (r = { serialize: r });
+        let i = (r && r.encode) || rZ;
+        rk.isFunction(r) && (r = { serialize: r });
         let s = r && r.serialize;
         if (
           (n = s
             ? s(t, r)
-            : rC.isURLSearchParams(t)
+            : rk.isURLSearchParams(t)
               ? t.toString()
-              : new rL(t, r).toString(i))
+              : new rB(t, r).toString(i))
         ) {
           let t = e.indexOf('#');
           -1 !== t && (e = e.slice(0, t)),
@@ -8476,22 +8462,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         return e;
       }
-      (rF.append = function (e, t) {
+      (rQ.append = function (e, t) {
         this._pairs.push([e, t]);
       }),
-        (rF.toString = function (e) {
+        (rQ.toString = function (e) {
           let t = e
             ? function (t) {
-                return e.call(this, t, rU);
+                return e.call(this, t, rF);
               }
-            : rU;
+            : rF;
           return this._pairs
             .map(function (e) {
               return t(e[0]) + '=' + t(e[1]);
             }, '')
             .join('&');
         });
-      class rZ {
+      class rH {
         constructor() {
           this.handlers = [];
         }
@@ -8513,54 +8499,54 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           this.handlers && (this.handlers = []);
         }
         forEach(e) {
-          rC.forEach(this.handlers, function (t) {
+          rk.forEach(this.handlers, function (t) {
             null !== t && e(t);
           });
         }
       }
-      let rz = {
+      let rW = {
           silentJSONParsing: !0,
           forcedJSONParsing: !0,
           clarifyTimeoutError: !1,
         },
-        rH = 'undefined' != typeof URLSearchParams ? URLSearchParams : rL,
-        rW = 'undefined' != typeof FormData ? FormData : null,
-        r$ = 'undefined' != typeof Blob ? Blob : null,
-        rK = 'undefined' != typeof window && 'undefined' != typeof document,
-        rV = ('object' == typeof navigator && navigator) || void 0,
-        rG =
-          rK &&
-          (!rV ||
-            0 > ['ReactNative', 'NativeScript', 'NS'].indexOf(rV.product)),
-        rJ =
+        r$ = 'undefined' != typeof URLSearchParams ? URLSearchParams : rB,
+        rK = 'undefined' != typeof FormData ? FormData : null,
+        rV = 'undefined' != typeof Blob ? Blob : null,
+        rG = 'undefined' != typeof window && 'undefined' != typeof document,
+        rJ = ('object' == typeof navigator && navigator) || void 0,
+        rY =
+          rG &&
+          (!rJ ||
+            0 > ['ReactNative', 'NativeScript', 'NS'].indexOf(rJ.product)),
+        rX =
           'undefined' != typeof WorkerGlobalScope &&
           self instanceof WorkerGlobalScope &&
           'function' == typeof self.importScripts,
-        rY = (rK && window.location.href) || 'http://localhost',
-        rX = {
+        r0 = (rG && window.location.href) || 'http://localhost',
+        r1 = {
           ...v,
           isBrowser: !0,
-          classes: { URLSearchParams: rH, FormData: rW, Blob: r$ },
+          classes: { URLSearchParams: r$, FormData: rK, Blob: rV },
           protocols: ['http', 'https', 'file', 'blob', 'url', 'data'],
         },
-        r0 = function (e) {
-          if (rC.isFormData(e) && rC.isFunction(e.entries)) {
+        r2 = function (e) {
+          if (rk.isFormData(e) && rk.isFunction(e.entries)) {
             let t = {};
             return (
-              rC.forEachEntry(e, (e, r) => {
+              rk.forEachEntry(e, (e, r) => {
                 !(function e(t, r, n, i) {
                   let s = t[i++];
                   if ('__proto__' === s) return !0;
                   let a = Number.isFinite(+s),
                     o = i >= t.length;
                   return (
-                    ((s = !s && rC.isArray(n) ? n.length : s), o)
-                      ? rC.hasOwnProp(n, s)
+                    ((s = !s && rk.isArray(n) ? n.length : s), o)
+                      ? rk.hasOwnProp(n, s)
                         ? (n[s] = [n[s], r])
                         : (n[s] = r)
-                      : ((n[s] && rC.isObject(n[s])) || (n[s] = []),
+                      : ((n[s] && rk.isObject(n[s])) || (n[s] = []),
                         e(t, r, n[s], i) &&
-                          rC.isArray(n[s]) &&
+                          rk.isArray(n[s]) &&
                           (n[s] = (function (e) {
                             let t, r;
                             let n = {},
@@ -8572,7 +8558,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     !a
                   );
                 })(
-                  rC
+                  rk
                     .matchAll(/\w+|\[(\w*)]/g, e)
                     .map((e) => ('[]' === e[0] ? '' : e[1] || e[0])),
                   r,
@@ -8585,31 +8571,31 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
           return null;
         },
-        r1 = {
-          transitional: rz,
+        r4 = {
+          transitional: rW,
           adapter: ['xhr', 'http', 'fetch'],
           transformRequest: [
             function (e, t) {
               let r;
               let n = t.getContentType() || '',
                 i = n.indexOf('application/json') > -1,
-                s = rC.isObject(e);
+                s = rk.isObject(e);
               if (
-                (s && rC.isHTMLForm(e) && (e = new FormData(e)),
-                rC.isFormData(e))
+                (s && rk.isHTMLForm(e) && (e = new FormData(e)),
+                rk.isFormData(e))
               )
-                return i ? JSON.stringify(r0(e)) : e;
+                return i ? JSON.stringify(r2(e)) : e;
               if (
-                rC.isArrayBuffer(e) ||
-                rC.isBuffer(e) ||
-                rC.isStream(e) ||
-                rC.isFile(e) ||
-                rC.isBlob(e) ||
-                rC.isReadableStream(e)
+                rk.isArrayBuffer(e) ||
+                rk.isBuffer(e) ||
+                rk.isStream(e) ||
+                rk.isFile(e) ||
+                rk.isBlob(e) ||
+                rk.isReadableStream(e)
               )
                 return e;
-              if (rC.isArrayBufferView(e)) return e.buffer;
-              if (rC.isURLSearchParams(e))
+              if (rk.isArrayBufferView(e)) return e.buffer;
+              if (rk.isURLSearchParams(e))
                 return (
                   t.setContentType(
                     'application/x-www-form-urlencoded;charset=utf-8',
@@ -8622,13 +8608,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   var a, o;
                   return ((a = e),
                   (o = this.formSerializer),
-                  rq(
+                  rL(
                     a,
-                    new rX.classes.URLSearchParams(),
+                    new r1.classes.URLSearchParams(),
                     Object.assign(
                       {
                         visitor: function (e, t, r, n) {
-                          return rX.isNode && rC.isBuffer(e)
+                          return r1.isNode && rk.isBuffer(e)
                             ? (this.append(t, e.toString('base64')), !1)
                             : n.defaultVisitor.apply(this, arguments);
                         },
@@ -8638,11 +8624,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   )).toString();
                 }
                 if (
-                  (r = rC.isFileList(e)) ||
+                  (r = rk.isFileList(e)) ||
                   n.indexOf('multipart/form-data') > -1
                 ) {
                   let t = this.env && this.env.FormData;
-                  return rq(
+                  return rL(
                     r ? { 'files[]': e } : e,
                     t && new t(),
                     this.formSerializer
@@ -8652,9 +8638,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               return s || i
                 ? (t.setContentType('application/json', !1),
                   (function (e, t, r) {
-                    if (rC.isString(e))
+                    if (rk.isString(e))
                       try {
-                        return (0, JSON.parse)(e), rC.trim(e);
+                        return (0, JSON.parse)(e), rk.trim(e);
                       } catch (e) {
                         if ('SyntaxError' !== e.name) throw e;
                       }
@@ -8665,20 +8651,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           ],
           transformResponse: [
             function (e) {
-              let t = this.transitional || r1.transitional,
+              let t = this.transitional || r4.transitional,
                 r = t && t.forcedJSONParsing,
                 n = 'json' === this.responseType;
-              if (rC.isResponse(e) || rC.isReadableStream(e)) return e;
-              if (e && rC.isString(e) && ((r && !this.responseType) || n)) {
+              if (rk.isResponse(e) || rk.isReadableStream(e)) return e;
+              if (e && rk.isString(e) && ((r && !this.responseType) || n)) {
                 let r = t && t.silentJSONParsing;
                 try {
                   return JSON.parse(e);
                 } catch (e) {
                   if (!r && n) {
                     if ('SyntaxError' === e.name)
-                      throw rx.from(
+                      throw rT.from(
                         e,
-                        rx.ERR_BAD_RESPONSE,
+                        rT.ERR_BAD_RESPONSE,
                         this,
                         null,
                         this.response
@@ -8695,7 +8681,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           xsrfHeaderName: 'X-XSRF-TOKEN',
           maxContentLength: -1,
           maxBodyLength: -1,
-          env: { FormData: rX.classes.FormData, Blob: rX.classes.Blob },
+          env: { FormData: r1.classes.FormData, Blob: r1.classes.Blob },
           validateStatus: function (e) {
             return e >= 200 && e < 300;
           },
@@ -8706,10 +8692,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             },
           },
         };
-      rC.forEach(['delete', 'get', 'head', 'post', 'put', 'patch'], (e) => {
-        r1.headers[e] = {};
+      rk.forEach(['delete', 'get', 'head', 'post', 'put', 'patch'], (e) => {
+        r4.headers[e] = {};
       });
-      let r2 = rC.toObjectSet([
+      let r5 = rk.toObjectSet([
           'age',
           'authorization',
           'content-length',
@@ -8728,7 +8714,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           'retry-after',
           'user-agent',
         ]),
-        r4 = (e) => {
+        r3 = (e) => {
           let t, r, n;
           let i = {};
           return (
@@ -8738,7 +8724,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   (t = e.substring(0, n).trim().toLowerCase()),
                   (r = e.substring(n + 1).trim()),
                   !t ||
-                    (i[t] && r2[t]) ||
+                    (i[t] && r5[t]) ||
                     ('set-cookie' === t
                       ? i[t]
                         ? i[t].push(r)
@@ -8748,51 +8734,51 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             i
           );
         },
-        r5 = Symbol('internals');
-      function r3(e) {
+        r6 = Symbol('internals');
+      function r8(e) {
         return e && String(e).trim().toLowerCase();
       }
-      function r6(e) {
+      function r9(e) {
         return !1 === e || null == e
           ? e
-          : rC.isArray(e)
-            ? e.map(r6)
+          : rk.isArray(e)
+            ? e.map(r9)
             : String(e);
       }
-      let r8 = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
-      function r9(e, t, r, n, i) {
-        if (rC.isFunction(n)) return n.call(this, t, r);
-        if ((i && (t = r), rC.isString(t))) {
-          if (rC.isString(n)) return -1 !== t.indexOf(n);
-          if (rC.isRegExp(n)) return n.test(t);
+      let r7 = (e) => /^[-_a-zA-Z0-9^`|~,!#$%&'*+.]+$/.test(e.trim());
+      function ne(e, t, r, n, i) {
+        if (rk.isFunction(n)) return n.call(this, t, r);
+        if ((i && (t = r), rk.isString(t))) {
+          if (rk.isString(n)) return -1 !== t.indexOf(n);
+          if (rk.isRegExp(n)) return n.test(t);
         }
       }
-      class r7 {
+      class nt {
         constructor(e) {
           e && this.set(e);
         }
         set(e, t, r) {
           let n = this;
           function i(e, t, r) {
-            let i = r3(t);
+            let i = r8(t);
             if (!i) throw Error('header name must be a non-empty string');
-            let s = rC.findKey(n, i);
+            let s = rk.findKey(n, i);
             (s &&
               void 0 !== n[s] &&
               !0 !== r &&
               (void 0 !== r || !1 === n[s])) ||
-              (n[s || t] = r6(e));
+              (n[s || t] = r9(e));
           }
-          let s = (e, t) => rC.forEach(e, (e, r) => i(e, r, t));
-          if (rC.isPlainObject(e) || e instanceof this.constructor) s(e, t);
-          else if (rC.isString(e) && (e = e.trim()) && !r8(e)) s(r4(e), t);
-          else if (rC.isHeaders(e)) for (let [t, n] of e.entries()) i(n, t, r);
+          let s = (e, t) => rk.forEach(e, (e, r) => i(e, r, t));
+          if (rk.isPlainObject(e) || e instanceof this.constructor) s(e, t);
+          else if (rk.isString(e) && (e = e.trim()) && !r7(e)) s(r3(e), t);
+          else if (rk.isHeaders(e)) for (let [t, n] of e.entries()) i(n, t, r);
           else null != e && i(t, e, r);
           return this;
         }
         get(e, t) {
-          if ((e = r3(e))) {
-            let r = rC.findKey(this, e);
+          if ((e = r8(e))) {
+            let r = rk.findKey(this, e);
             if (r) {
               let e = this[r];
               if (!t) return e;
@@ -8804,19 +8790,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   for (; (t = n.exec(e)); ) r[t[1]] = t[2];
                   return r;
                 })(e);
-              if (rC.isFunction(t)) return t.call(this, e, r);
-              if (rC.isRegExp(t)) return t.exec(e);
+              if (rk.isFunction(t)) return t.call(this, e, r);
+              if (rk.isRegExp(t)) return t.exec(e);
               throw TypeError('parser must be boolean|regexp|function');
             }
           }
         }
         has(e, t) {
-          if ((e = r3(e))) {
-            let r = rC.findKey(this, e);
+          if ((e = r8(e))) {
+            let r = rk.findKey(this, e);
             return !!(
               r &&
               void 0 !== this[r] &&
-              (!t || r9(this, this[r], r, t))
+              (!t || ne(this, this[r], r, t))
             );
           }
           return !1;
@@ -8825,12 +8811,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let r = this,
             n = !1;
           function i(e) {
-            if ((e = r3(e))) {
-              let i = rC.findKey(r, e);
-              i && (!t || r9(r, r[i], i, t)) && (delete r[i], (n = !0));
+            if ((e = r8(e))) {
+              let i = rk.findKey(r, e);
+              i && (!t || ne(r, r[i], i, t)) && (delete r[i], (n = !0));
             }
           }
-          return rC.isArray(e) ? e.forEach(i) : i(e), n;
+          return rk.isArray(e) ? e.forEach(i) : i(e), n;
         }
         clear(e) {
           let t = Object.keys(this),
@@ -8838,7 +8824,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             n = !1;
           for (; r--; ) {
             let i = t[r];
-            (!e || r9(this, this[i], i, e, !0)) && (delete this[i], (n = !0));
+            (!e || ne(this, this[i], i, e, !0)) && (delete this[i], (n = !0));
           }
           return n;
         }
@@ -8846,10 +8832,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let t = this,
             r = {};
           return (
-            rC.forEach(this, (n, i) => {
-              let s = rC.findKey(r, i);
+            rk.forEach(this, (n, i) => {
+              let s = rk.findKey(r, i);
               if (s) {
-                (t[s] = r6(n)), delete t[i];
+                (t[s] = r9(n)), delete t[i];
                 return;
               }
               let a = e
@@ -8861,7 +8847,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       (e, t, r) => t.toUpperCase() + r
                     )
                 : String(i).trim();
-              a !== i && delete t[i], (t[a] = r6(n)), (r[a] = !0);
+              a !== i && delete t[i], (t[a] = r9(n)), (r[a] = !0);
             }),
             this
           );
@@ -8872,10 +8858,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         toJSON(e) {
           let t = Object.create(null);
           return (
-            rC.forEach(this, (r, n) => {
+            rk.forEach(this, (r, n) => {
               null != r &&
                 !1 !== r &&
-                (t[n] = e && rC.isArray(r) ? r.join(', ') : r);
+                (t[n] = e && rk.isArray(r) ? r.join(', ') : r);
             }),
             t
           );
@@ -8899,13 +8885,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return t.forEach((e) => r.set(e)), r;
         }
         static accessor(e) {
-          let t = (this[r5] = this[r5] = { accessors: {} }).accessors,
+          let t = (this[r6] = this[r6] = { accessors: {} }).accessors,
             r = this.prototype;
           function n(e) {
-            let n = r3(e);
+            let n = r8(e);
             t[n] ||
               (!(function (e, t) {
-                let r = rC.toCamelCase(' ' + t);
+                let r = rk.toCamelCase(' ' + t);
                 ['get', 'set', 'has'].forEach((n) => {
                   Object.defineProperty(e, n + r, {
                     value: function (e, r, i) {
@@ -8917,37 +8903,37 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               })(r, e),
               (t[n] = !0));
           }
-          return rC.isArray(e) ? e.forEach(n) : n(e), this;
+          return rk.isArray(e) ? e.forEach(n) : n(e), this;
         }
       }
-      function ne(e, t) {
-        let r = this || r1,
+      function nr(e, t) {
+        let r = this || r4,
           n = t || r,
-          i = r7.from(n.headers),
+          i = nt.from(n.headers),
           s = n.data;
         return (
-          rC.forEach(e, function (e) {
+          rk.forEach(e, function (e) {
             s = e.call(r, s, i.normalize(), t ? t.status : void 0);
           }),
           i.normalize(),
           s
         );
       }
-      function nt(e) {
+      function nn(e) {
         return !!(e && e.__CANCEL__);
       }
-      function nr(e, t, r) {
-        rx.call(this, null == e ? 'canceled' : e, rx.ERR_CANCELED, t, r),
+      function ni(e, t, r) {
+        rT.call(this, null == e ? 'canceled' : e, rT.ERR_CANCELED, t, r),
           (this.name = 'CanceledError');
       }
-      function nn(e, t, r) {
+      function ns(e, t, r) {
         let n = r.config.validateStatus;
         !r.status || !n || n(r.status)
           ? e(r)
           : t(
-              new rx(
+              new rT(
                 'Request failed with status code ' + r.status,
-                [rx.ERR_BAD_REQUEST, rx.ERR_BAD_RESPONSE][
+                [rT.ERR_BAD_REQUEST, rT.ERR_BAD_RESPONSE][
                   Math.floor(r.status / 100) - 4
                 ],
                 r.config,
@@ -8956,7 +8942,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               )
             );
       }
-      r7.accessor([
+      nt.accessor([
         'Content-Type',
         'Content-Length',
         'Accept',
@@ -8964,7 +8950,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         'User-Agent',
         'Authorization',
       ]),
-        rC.reduceDescriptors(r7.prototype, ({ value: e }, t) => {
+        rk.reduceDescriptors(nt.prototype, ({ value: e }, t) => {
           let r = t[0].toUpperCase() + t.slice(1);
           return {
             get: () => e,
@@ -8973,9 +8959,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             },
           };
         }),
-        rC.freezeMethods(r7),
-        rC.inherits(nr, rx, { __CANCEL__: !0 });
-      let ni = function (e, t) {
+        rk.freezeMethods(nt),
+        rk.inherits(ni, rT, { __CANCEL__: !0 });
+      let na = function (e, t) {
           let r;
           let n = Array((e = e || 10)),
             i = Array(e),
@@ -8997,7 +8983,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
           );
         },
-        ns = function (e, t) {
+        no = function (e, t) {
           let r,
             n,
             i = 0,
@@ -9023,10 +9009,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             () => r && a(r),
           ];
         },
-        na = (e, t, r = 3) => {
+        nu = (e, t, r = 3) => {
           let n = 0,
-            i = ni(50, 250);
-          return ns((r) => {
+            i = na(50, 250);
+          return no((r) => {
             let s = r.loaded,
               a = r.lengthComputable ? r.total : void 0,
               o = s - n,
@@ -9045,36 +9031,36 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               });
           }, r);
         },
-        no = (e, t) => {
+        nl = (e, t) => {
           let r = null != e;
           return [
             (n) => t[0]({ lengthComputable: r, total: e, loaded: n }),
             t[1],
           ];
         },
-        nu =
+        nc =
           (e) =>
           (...t) =>
-            rC.asap(() => e(...t)),
-        nl = rX.hasStandardBrowserEnv
+            rk.asap(() => e(...t)),
+        nh = r1.hasStandardBrowserEnv
           ? ((e, t) => (r) => (
-              (r = new URL(r, rX.origin)),
+              (r = new URL(r, r1.origin)),
               e.protocol === r.protocol &&
                 e.host === r.host &&
                 (t || e.port === r.port)
             ))(
-              new URL(rX.origin),
-              rX.navigator && /(msie|trident)/i.test(rX.navigator.userAgent)
+              new URL(r1.origin),
+              r1.navigator && /(msie|trident)/i.test(r1.navigator.userAgent)
             )
           : () => !0,
-        nc = rX.hasStandardBrowserEnv
+        nd = r1.hasStandardBrowserEnv
           ? {
               write(e, t, r, n, i, s) {
                 let a = [e + '=' + encodeURIComponent(t)];
-                rC.isNumber(r) &&
+                rk.isNumber(r) &&
                   a.push('expires=' + new Date(r).toGMTString()),
-                  rC.isString(n) && a.push('path=' + n),
-                  rC.isString(i) && a.push('domain=' + i),
+                  rk.isString(n) && a.push('path=' + n),
+                  rk.isString(i) && a.push('domain=' + i),
                   !0 === s && a.push('secure'),
                   (document.cookie = a.join('; '));
               },
@@ -9089,39 +9075,39 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               },
             }
           : { write() {}, read: () => null, remove() {} };
-      function nh(e, t) {
+      function nf(e, t) {
         return e && !/^([a-z][a-z\d+\-.]*:)?\/\//i.test(t)
           ? t
             ? e.replace(/\/?\/$/, '') + '/' + t.replace(/^\/+/, '')
             : e
           : t;
       }
-      let nd = (e) => (e instanceof r7 ? { ...e } : e);
-      function nf(e, t) {
+      let np = (e) => (e instanceof nt ? { ...e } : e);
+      function nm(e, t) {
         t = t || {};
         let r = {};
         function n(e, t, r, n) {
-          return rC.isPlainObject(e) && rC.isPlainObject(t)
-            ? rC.merge.call({ caseless: n }, e, t)
-            : rC.isPlainObject(t)
-              ? rC.merge({}, t)
-              : rC.isArray(t)
+          return rk.isPlainObject(e) && rk.isPlainObject(t)
+            ? rk.merge.call({ caseless: n }, e, t)
+            : rk.isPlainObject(t)
+              ? rk.merge({}, t)
+              : rk.isArray(t)
                 ? t.slice()
                 : t;
         }
         function i(e, t, r, i) {
-          return rC.isUndefined(t)
-            ? rC.isUndefined(e)
+          return rk.isUndefined(t)
+            ? rk.isUndefined(e)
               ? void 0
               : n(void 0, e, r, i)
             : n(e, t, r, i);
         }
         function s(e, t) {
-          if (!rC.isUndefined(t)) return n(void 0, t);
+          if (!rk.isUndefined(t)) return n(void 0, t);
         }
         function a(e, t) {
-          return rC.isUndefined(t)
-            ? rC.isUndefined(e)
+          return rk.isUndefined(t)
+            ? rk.isUndefined(e)
               ? void 0
               : n(void 0, e)
             : n(void 0, t);
@@ -9158,20 +9144,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           socketPath: a,
           responseEncoding: a,
           validateStatus: o,
-          headers: (e, t, r) => i(nd(e), nd(t), r, !0),
+          headers: (e, t, r) => i(np(e), np(t), r, !0),
         };
         return (
-          rC.forEach(Object.keys(Object.assign({}, e, t)), function (n) {
+          rk.forEach(Object.keys(Object.assign({}, e, t)), function (n) {
             let s = u[n] || i,
               a = s(e[n], t[n], n);
-            (rC.isUndefined(a) && s !== o) || (r[n] = a);
+            (rk.isUndefined(a) && s !== o) || (r[n] = a);
           }),
           r
         );
       }
-      let np = (e) => {
+      let ng = (e) => {
           let t;
-          let r = nf({}, e),
+          let r = nm({}, e),
             {
               data: n,
               withXSRFToken: i,
@@ -9181,8 +9167,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               auth: u,
             } = r;
           if (
-            ((r.headers = o = r7.from(o)),
-            (r.url = rQ(nh(r.baseURL, r.url), e.params, e.paramsSerializer)),
+            ((r.headers = o = nt.from(o)),
+            (r.url = rz(nf(r.baseURL, r.url), e.params, e.paramsSerializer)),
             u &&
               o.set(
                 'Authorization',
@@ -9195,9 +9181,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         : '')
                   )
               ),
-            rC.isFormData(n))
+            rk.isFormData(n))
           ) {
-            if (rX.hasStandardBrowserEnv || rX.hasStandardBrowserWebWorkerEnv)
+            if (r1.hasStandardBrowserEnv || r1.hasStandardBrowserWebWorkerEnv)
               o.setContentType(void 0);
             else if (!1 !== (t = o.getContentType())) {
               let [e, ...r] = t
@@ -9210,22 +9196,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
           }
           if (
-            rX.hasStandardBrowserEnv &&
-            (i && rC.isFunction(i) && (i = i(r)), i || (!1 !== i && nl(r.url)))
+            r1.hasStandardBrowserEnv &&
+            (i && rk.isFunction(i) && (i = i(r)), i || (!1 !== i && nh(r.url)))
           ) {
-            let e = s && a && nc.read(a);
+            let e = s && a && nd.read(a);
             e && o.set(s, e);
           }
           return r;
         },
-        nm =
+        ny =
           'undefined' != typeof XMLHttpRequest &&
           function (e) {
             return new Promise(function (t, r) {
               let n, i, s, a, o;
-              let u = np(e),
+              let u = ng(e),
                 l = u.data,
-                c = r7.from(u.headers).normalize(),
+                c = nt.from(u.headers).normalize(),
                 {
                   responseType: h,
                   onUploadProgress: d,
@@ -9240,10 +9226,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               let m = new XMLHttpRequest();
               function g() {
                 if (!m) return;
-                let n = r7.from(
+                let n = nt.from(
                   'getAllResponseHeaders' in m && m.getAllResponseHeaders()
                 );
-                nn(
+                ns(
                   function (e) {
                     t(e), p();
                   },
@@ -9278,22 +9264,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     }),
                 (m.onabort = function () {
                   m &&
-                    (r(new rx('Request aborted', rx.ECONNABORTED, e, m)),
+                    (r(new rT('Request aborted', rT.ECONNABORTED, e, m)),
                     (m = null));
                 }),
                 (m.onerror = function () {
-                  r(new rx('Network Error', rx.ERR_NETWORK, e, m)), (m = null);
+                  r(new rT('Network Error', rT.ERR_NETWORK, e, m)), (m = null);
                 }),
                 (m.ontimeout = function () {
                   let t = u.timeout
                       ? 'timeout of ' + u.timeout + 'ms exceeded'
                       : 'timeout exceeded',
-                    n = u.transitional || rz;
+                    n = u.transitional || rW;
                   u.timeoutErrorMessage && (t = u.timeoutErrorMessage),
                     r(
-                      new rx(
+                      new rT(
                         t,
-                        n.clarifyTimeoutError ? rx.ETIMEDOUT : rx.ECONNABORTED,
+                        n.clarifyTimeoutError ? rT.ETIMEDOUT : rT.ECONNABORTED,
                         e,
                         m
                       )
@@ -9302,22 +9288,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 }),
                 void 0 === l && c.setContentType(null),
                 'setRequestHeader' in m &&
-                  rC.forEach(c.toJSON(), function (e, t) {
+                  rk.forEach(c.toJSON(), function (e, t) {
                     m.setRequestHeader(t, e);
                   }),
-                rC.isUndefined(u.withCredentials) ||
+                rk.isUndefined(u.withCredentials) ||
                   (m.withCredentials = !!u.withCredentials),
                 h && 'json' !== h && (m.responseType = u.responseType),
-                f && (([s, o] = na(f, !0)), m.addEventListener('progress', s)),
+                f && (([s, o] = nu(f, !0)), m.addEventListener('progress', s)),
                 d &&
                   m.upload &&
-                  (([i, a] = na(d)),
+                  (([i, a] = nu(d)),
                   m.upload.addEventListener('progress', i),
                   m.upload.addEventListener('loadend', a)),
                 (u.cancelToken || u.signal) &&
                   ((n = (t) => {
                     m &&
-                      (r(!t || t.type ? new nr(null, e, m) : t),
+                      (r(!t || t.type ? new ni(null, e, m) : t),
                       m.abort(),
                       (m = null));
                   }),
@@ -9330,11 +9316,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let t = /^([-+\w]{1,25})(:?\/\/|:)/.exec(e);
                 return (t && t[1]) || '';
               })(u.url);
-              if (y && -1 === rX.protocols.indexOf(y)) {
+              if (y && -1 === r1.protocols.indexOf(y)) {
                 r(
-                  new rx(
+                  new rT(
                     'Unsupported protocol ' + y + ':',
-                    rx.ERR_BAD_REQUEST,
+                    rT.ERR_BAD_REQUEST,
                     e
                   )
                 );
@@ -9343,7 +9329,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               m.send(l || null);
             });
           },
-        ng = (e, t) => {
+        nv = (e, t) => {
           let { length: r } = (e = e ? e.filter(Boolean) : []);
           if (t || r) {
             let r,
@@ -9353,9 +9339,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   (r = !0), a();
                   let t = e instanceof Error ? e : this.reason;
                   n.abort(
-                    t instanceof rx
+                    t instanceof rT
                       ? t
-                      : new nr(t instanceof Error ? t.message : t)
+                      : new ni(t instanceof Error ? t.message : t)
                   );
                 }
               },
@@ -9363,7 +9349,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 t &&
                 setTimeout(() => {
                   (s = null),
-                    i(new rx(`timeout ${t} of ms exceeded`, rx.ETIMEDOUT));
+                    i(new rT(`timeout ${t} of ms exceeded`, rT.ETIMEDOUT));
                 }, t),
               a = () => {
                 e &&
@@ -9378,10 +9364,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               };
             e.forEach((e) => e.addEventListener('abort', i));
             let { signal: o } = n;
-            return (o.unsubscribe = () => rC.asap(a)), o;
+            return (o.unsubscribe = () => rk.asap(a)), o;
           }
         },
-        ny = function* (e, t) {
+        nb = function* (e, t) {
           let r,
             n = e.byteLength;
           if (!t || n < t) {
@@ -9391,10 +9377,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let i = 0;
           for (; i < n; ) (r = i + t), yield e.slice(i, r), (i = r);
         },
-        nv = async function* (e, t) {
-          for await (let r of nb(e)) yield* ny(r, t);
+        nw = async function* (e, t) {
+          for await (let r of n_(e)) yield* nb(r, t);
         },
-        nb = async function* (e) {
+        n_ = async function* (e) {
           if (e[Symbol.asyncIterator]) {
             yield* e;
             return;
@@ -9410,9 +9396,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             await t.cancel();
           }
         },
-        nw = (e, t, r, n) => {
+        nE = (e, t, r, n) => {
           let i;
-          let s = nv(e, t),
+          let s = nw(e, t),
             a = 0,
             o = (e) => {
               !i && ((i = !0), n && n(e));
@@ -9441,28 +9427,28 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             { highWaterMark: 2 }
           );
         },
-        n_ =
+        nS =
           'function' == typeof fetch &&
           'function' == typeof Request &&
           'function' == typeof Response,
-        nE = n_ && 'function' == typeof ReadableStream,
-        nS =
-          n_ &&
+        nO = nS && 'function' == typeof ReadableStream,
+        nR =
+          nS &&
           ('function' == typeof TextEncoder
             ? ((i = new TextEncoder()), (e) => i.encode(e))
             : async (e) => new Uint8Array(await new Response(e).arrayBuffer())),
-        nO = (e, ...t) => {
+        nA = (e, ...t) => {
           try {
             return !!e(...t);
           } catch (e) {
             return !1;
           }
         },
-        nR =
-          nE &&
-          nO(() => {
+        nN =
+          nO &&
+          nA(() => {
             let e = !1,
-              t = new Request(rX.origin, {
+              t = new Request(r1.origin, {
                 body: new ReadableStream(),
                 method: 'POST',
                 get duplex() {
@@ -9471,44 +9457,44 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }).headers.has('Content-Type');
             return e && !t;
           }),
-        nA = nE && nO(() => rC.isReadableStream(new Response('').body)),
-        nN = { stream: nA && ((e) => e.body) };
-      n_ &&
+        nC = nO && nA(() => rk.isReadableStream(new Response('').body)),
+        nx = { stream: nC && ((e) => e.body) };
+      nS &&
         ((o = new Response()),
         ['text', 'arrayBuffer', 'blob', 'formData', 'stream'].forEach((e) => {
-          nN[e] ||
-            (nN[e] = rC.isFunction(o[e])
+          nx[e] ||
+            (nx[e] = rk.isFunction(o[e])
               ? (t) => t[e]()
               : (t, r) => {
-                  throw new rx(
+                  throw new rT(
                     `Response type '${e}' is not supported`,
-                    rx.ERR_NOT_SUPPORT,
+                    rT.ERR_NOT_SUPPORT,
                     r
                   );
                 });
         }));
-      let nC = async (e) => {
+      let nk = async (e) => {
           if (null == e) return 0;
-          if (rC.isBlob(e)) return e.size;
-          if (rC.isSpecCompliantForm(e)) {
-            let t = new Request(rX.origin, { method: 'POST', body: e });
+          if (rk.isBlob(e)) return e.size;
+          if (rk.isSpecCompliantForm(e)) {
+            let t = new Request(r1.origin, { method: 'POST', body: e });
             return (await t.arrayBuffer()).byteLength;
           }
-          return rC.isArrayBufferView(e) || rC.isArrayBuffer(e)
+          return rk.isArrayBufferView(e) || rk.isArrayBuffer(e)
             ? e.byteLength
-            : (rC.isURLSearchParams(e) && (e += ''), rC.isString(e))
-              ? (await nS(e)).byteLength
+            : (rk.isURLSearchParams(e) && (e += ''), rk.isString(e))
+              ? (await nR(e)).byteLength
               : void 0;
         },
-        nx = async (e, t) => {
-          let r = rC.toFiniteNumber(e.getContentLength());
-          return null == r ? nC(t) : r;
+        nT = async (e, t) => {
+          let r = rk.toFiniteNumber(e.getContentLength());
+          return null == r ? nk(t) : r;
         },
-        nk = {
+        nI = {
           http: null,
-          xhr: nm,
+          xhr: ny,
           fetch:
-            n_ &&
+            nS &&
             (async (e) => {
               let t,
                 r,
@@ -9525,9 +9511,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   headers: d,
                   withCredentials: f = 'same-origin',
                   fetchOptions: p,
-                } = np(e);
+                } = ng(e);
               h = h ? (h + '').toLowerCase() : 'text';
-              let m = ng([a, o && o.toAbortSignal()], u),
+              let m = nv([a, o && o.toAbortSignal()], u),
                 g =
                   m &&
                   m.unsubscribe &&
@@ -9537,10 +9523,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               try {
                 if (
                   c &&
-                  nR &&
+                  nN &&
                   'get' !== i &&
                   'head' !== i &&
-                  0 !== (r = await nx(d, s))
+                  0 !== (r = await nT(d, s))
                 ) {
                   let e,
                     t = new Request(n, {
@@ -9549,16 +9535,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       duplex: 'half',
                     });
                   if (
-                    (rC.isFormData(s) &&
+                    (rk.isFormData(s) &&
                       (e = t.headers.get('content-type')) &&
                       d.setContentType(e),
                     t.body)
                   ) {
-                    let [e, n] = no(r, na(nu(c)));
-                    s = nw(t.body, 65536, e, n);
+                    let [e, n] = nl(r, nu(nc(c)));
+                    s = nE(t.body, 65536, e, n);
                   }
                 }
-                rC.isString(f) || (f = f ? 'include' : 'omit');
+                rk.isString(f) || (f = f ? 'include' : 'omit');
                 let a = 'credentials' in Request.prototype;
                 t = new Request(n, {
                   ...p,
@@ -9570,29 +9556,29 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   credentials: a ? f : void 0,
                 });
                 let o = await fetch(t),
-                  u = nA && ('stream' === h || 'response' === h);
-                if (nA && (l || (u && g))) {
+                  u = nC && ('stream' === h || 'response' === h);
+                if (nC && (l || (u && g))) {
                   let e = {};
                   ['status', 'statusText', 'headers'].forEach((t) => {
                     e[t] = o[t];
                   });
-                  let t = rC.toFiniteNumber(o.headers.get('content-length')),
-                    [r, n] = (l && no(t, na(nu(l), !0))) || [];
+                  let t = rk.toFiniteNumber(o.headers.get('content-length')),
+                    [r, n] = (l && nl(t, nu(nc(l), !0))) || [];
                   o = new Response(
-                    nw(o.body, 65536, r, () => {
+                    nE(o.body, 65536, r, () => {
                       n && n(), g && g();
                     }),
                     e
                   );
                 }
                 h = h || 'text';
-                let y = await nN[rC.findKey(nN, h) || 'text'](o, e);
+                let y = await nx[rk.findKey(nx, h) || 'text'](o, e);
                 return (
                   !u && g && g(),
                   await new Promise((r, n) => {
-                    nn(r, n, {
+                    ns(r, n, {
                       data: y,
-                      headers: r7.from(o.headers),
+                      headers: nt.from(o.headers),
                       status: o.status,
                       statusText: o.statusText,
                       config: e,
@@ -9606,14 +9592,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   r && 'TypeError' === r.name && /fetch/i.test(r.message))
                 )
                   throw Object.assign(
-                    new rx('Network Error', rx.ERR_NETWORK, e, t),
+                    new rT('Network Error', rT.ERR_NETWORK, e, t),
                     { cause: r.cause || r }
                   );
-                throw rx.from(r, r && r.code, e, t);
+                throw rT.from(r, r && r.code, e, t);
               }
             }),
         };
-      rC.forEach(nk, (e, t) => {
+      rk.forEach(nI, (e, t) => {
         if (e) {
           try {
             Object.defineProperty(e, 'name', { value: t });
@@ -9621,20 +9607,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           Object.defineProperty(e, 'adapterName', { value: t });
         }
       });
-      let nT = (e) => `- ${e}`,
-        nI = (e) => rC.isFunction(e) || null === e || !1 === e,
-        nP = {
+      let nP = (e) => `- ${e}`,
+        nD = (e) => rk.isFunction(e) || null === e || !1 === e,
+        nM = {
           getAdapter: (e) => {
             let t, r;
-            let { length: n } = (e = rC.isArray(e) ? e : [e]),
+            let { length: n } = (e = rk.isArray(e) ? e : [e]),
               i = {};
             for (let s = 0; s < n; s++) {
               let n;
               if (
                 ((r = t = e[s]),
-                !nI(t) && void 0 === (r = nk[(n = String(t)).toLowerCase()]))
+                !nD(t) && void 0 === (r = nI[(n = String(t)).toLowerCase()]))
               )
-                throw new rx(`Unknown adapter '${n}'`);
+                throw new rT(`Unknown adapter '${n}'`);
               if (r) break;
               i[n || '#' + s] = r;
             }
@@ -9646,12 +9632,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     ? 'is not supported by the environment'
                     : 'is not available in the build')
               );
-              throw new rx(
+              throw new rT(
                 'There is no suitable adapter to dispatch the request ' +
                   (n
                     ? e.length > 1
-                      ? 'since :\n' + e.map(nT).join('\n')
-                      : ' ' + nT(e[0])
+                      ? 'since :\n' + e.map(nP).join('\n')
+                      : ' ' + nP(e[0])
                     : 'as no adapter specified'),
                 'ERR_NOT_SUPPORT'
               );
@@ -9659,64 +9645,64 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             return r;
           },
         };
-      function nD(e) {
+      function nj(e) {
         if (
           (e.cancelToken && e.cancelToken.throwIfRequested(),
           e.signal && e.signal.aborted)
         )
-          throw new nr(null, e);
+          throw new ni(null, e);
       }
-      function nM(e) {
+      function nq(e) {
         return (
-          nD(e),
-          (e.headers = r7.from(e.headers)),
-          (e.data = ne.call(e, e.transformRequest)),
+          nj(e),
+          (e.headers = nt.from(e.headers)),
+          (e.data = nr.call(e, e.transformRequest)),
           -1 !== ['post', 'put', 'patch'].indexOf(e.method) &&
             e.headers.setContentType('application/x-www-form-urlencoded', !1),
-          nP
-            .getAdapter(e.adapter || r1.adapter)(e)
+          nM
+            .getAdapter(e.adapter || r4.adapter)(e)
             .then(
               function (t) {
                 return (
-                  nD(e),
-                  (t.data = ne.call(e, e.transformResponse, t)),
-                  (t.headers = r7.from(t.headers)),
+                  nj(e),
+                  (t.data = nr.call(e, e.transformResponse, t)),
+                  (t.headers = nt.from(t.headers)),
                   t
                 );
               },
               function (t) {
                 return (
-                  !nt(t) &&
-                    (nD(e),
+                  !nn(t) &&
+                    (nj(e),
                     t &&
                       t.response &&
-                      ((t.response.data = ne.call(
+                      ((t.response.data = nr.call(
                         e,
                         e.transformResponse,
                         t.response
                       )),
-                      (t.response.headers = r7.from(t.response.headers)))),
+                      (t.response.headers = nt.from(t.response.headers)))),
                   Promise.reject(t)
                 );
               }
             )
         );
       }
-      let nj = '1.7.9',
-        nq = {};
+      let nU = '1.7.9',
+        nL = {};
       ['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach(
         (e, t) => {
-          nq[e] = function (r) {
+          nL[e] = function (r) {
             return typeof r === e || 'a' + (t < 1 ? 'n ' : ' ') + e;
           };
         }
       );
-      let nU = {};
-      (nq.transitional = function (e, t, r) {
+      let nF = {};
+      (nL.transitional = function (e, t, r) {
         function n(e, t) {
           return (
             '[Axios v' +
-            nj +
+            nU +
             "] Transitional option '" +
             e +
             "'" +
@@ -9726,14 +9712,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         return (r, i, s) => {
           if (!1 === e)
-            throw new rx(
+            throw new rT(
               n(i, ' has been removed' + (t ? ' in ' + t : '')),
-              rx.ERR_DEPRECATED
+              rT.ERR_DEPRECATED
             );
           return (
             t &&
-              !nU[i] &&
-              ((nU[i] = !0),
+              !nF[i] &&
+              ((nF[i] = !0),
               console.warn(
                 n(
                   i,
@@ -9746,17 +9732,17 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         };
       }),
-        (nq.spelling = function (e) {
+        (nL.spelling = function (e) {
           return (t, r) => (
             console.warn(`${r} is likely a misspelling of ${e}`), !0
           );
         });
-      let nL = {
+      let nB = {
           assertOptions: function (e, t, r) {
             if ('object' != typeof e)
-              throw new rx(
+              throw new rT(
                 'options must be an object',
-                rx.ERR_BAD_OPTION_VALUE
+                rT.ERR_BAD_OPTION_VALUE
               );
             let n = Object.keys(e),
               i = n.length;
@@ -9767,23 +9753,23 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let t = e[s],
                   r = void 0 === t || a(t, s, e);
                 if (!0 !== r)
-                  throw new rx(
+                  throw new rT(
                     'option ' + s + ' must be ' + r,
-                    rx.ERR_BAD_OPTION_VALUE
+                    rT.ERR_BAD_OPTION_VALUE
                   );
                 continue;
               }
               if (!0 !== r)
-                throw new rx('Unknown option ' + s, rx.ERR_BAD_OPTION);
+                throw new rT('Unknown option ' + s, rT.ERR_BAD_OPTION);
             }
           },
-          validators: nq,
+          validators: nL,
         },
-        nF = nL.validators;
-      class nB {
+        nQ = nB.validators;
+      class nZ {
         constructor(e) {
           (this.defaults = e),
-            (this.interceptors = { request: new rZ(), response: new rZ() });
+            (this.interceptors = { request: new rH(), response: new rH() });
         }
         async request(e, t) {
           try {
@@ -9813,30 +9799,30 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             transitional: i,
             paramsSerializer: s,
             headers: a,
-          } = (t = nf(this.defaults, t));
+          } = (t = nm(this.defaults, t));
           void 0 !== i &&
-            nL.assertOptions(
+            nB.assertOptions(
               i,
               {
-                silentJSONParsing: nF.transitional(nF.boolean),
-                forcedJSONParsing: nF.transitional(nF.boolean),
-                clarifyTimeoutError: nF.transitional(nF.boolean),
+                silentJSONParsing: nQ.transitional(nQ.boolean),
+                forcedJSONParsing: nQ.transitional(nQ.boolean),
+                clarifyTimeoutError: nQ.transitional(nQ.boolean),
               },
               !1
             ),
             null != s &&
-              (rC.isFunction(s)
+              (rk.isFunction(s)
                 ? (t.paramsSerializer = { serialize: s })
-                : nL.assertOptions(
+                : nB.assertOptions(
                     s,
-                    { encode: nF.function, serialize: nF.function },
+                    { encode: nQ.function, serialize: nQ.function },
                     !0
                   )),
-            nL.assertOptions(
+            nB.assertOptions(
               t,
               {
-                baseUrl: nF.spelling('baseURL'),
-                withXsrfToken: nF.spelling('withXSRFToken'),
+                baseUrl: nQ.spelling('baseURL'),
+                withXsrfToken: nQ.spelling('withXSRFToken'),
               },
               !0
             ),
@@ -9845,15 +9831,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               this.defaults.method ||
               'get'
             ).toLowerCase());
-          let o = a && rC.merge(a.common, a[t.method]);
+          let o = a && rk.merge(a.common, a[t.method]);
           a &&
-            rC.forEach(
+            rk.forEach(
               ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
               (e) => {
                 delete a[e];
               }
             ),
-            (t.headers = r7.concat(o, a));
+            (t.headers = nt.concat(o, a));
           let u = [],
             l = !0;
           this.interceptors.request.forEach(function (e) {
@@ -9866,7 +9852,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           });
           let h = 0;
           if (!l) {
-            let e = [nM.bind(this), void 0];
+            let e = [nq.bind(this), void 0];
             for (
               e.unshift.apply(e, u),
                 e.push.apply(e, c),
@@ -9891,7 +9877,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
           }
           try {
-            r = nM.call(this, d);
+            r = nq.call(this, d);
           } catch (e) {
             return Promise.reject(e);
           }
@@ -9899,25 +9885,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return r;
         }
         getUri(e) {
-          return rQ(
-            nh((e = nf(this.defaults, e)).baseURL, e.url),
+          return rz(
+            nf((e = nm(this.defaults, e)).baseURL, e.url),
             e.params,
             e.paramsSerializer
           );
         }
       }
-      rC.forEach(['delete', 'get', 'head', 'options'], function (e) {
-        nB.prototype[e] = function (t, r) {
+      rk.forEach(['delete', 'get', 'head', 'options'], function (e) {
+        nZ.prototype[e] = function (t, r) {
           return this.request(
-            nf(r || {}, { method: e, url: t, data: (r || {}).data })
+            nm(r || {}, { method: e, url: t, data: (r || {}).data })
           );
         };
       }),
-        rC.forEach(['post', 'put', 'patch'], function (e) {
+        rk.forEach(['post', 'put', 'patch'], function (e) {
           function t(t) {
             return function (r, n, i) {
               return this.request(
-                nf(i || {}, {
+                nm(i || {}, {
                   method: e,
                   headers: t ? { 'Content-Type': 'multipart/form-data' } : {},
                   url: r,
@@ -9926,9 +9912,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               );
             };
           }
-          (nB.prototype[e] = t()), (nB.prototype[e + 'Form'] = t(!0));
+          (nZ.prototype[e] = t()), (nZ.prototype[e + 'Form'] = t(!0));
         });
-      class nQ {
+      class nz {
         constructor(e) {
           let t;
           if ('function' != typeof e)
@@ -9956,7 +9942,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               );
             }),
             e(function (e, n, i) {
-              r.reason || ((r.reason = new nr(e, n, i)), t(r.reason));
+              r.reason || ((r.reason = new ni(e, n, i)), t(r.reason));
             });
         }
         throwIfRequested() {
@@ -9988,14 +9974,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         static source() {
           let e;
           return {
-            token: new nQ(function (t) {
+            token: new nz(function (t) {
               e = t;
             }),
             cancel: e,
           };
         }
       }
-      let nZ = {
+      let nH = {
         Continue: 100,
         SwitchingProtocols: 101,
         Processing: 102,
@@ -10060,48 +10046,48 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         NotExtended: 510,
         NetworkAuthenticationRequired: 511,
       };
-      Object.entries(nZ).forEach(([e, t]) => {
-        nZ[t] = e;
+      Object.entries(nH).forEach(([e, t]) => {
+        nH[t] = e;
       });
-      let nz = (function e(t) {
-        let r = new nB(t),
-          n = tX(nB.prototype.request, r);
+      let nW = (function e(t) {
+        let r = new nZ(t),
+          n = t1(nZ.prototype.request, r);
         return (
-          rC.extend(n, nB.prototype, r, { allOwnKeys: !0 }),
-          rC.extend(n, r, null, { allOwnKeys: !0 }),
+          rk.extend(n, nZ.prototype, r, { allOwnKeys: !0 }),
+          rk.extend(n, r, null, { allOwnKeys: !0 }),
           (n.create = function (r) {
-            return e(nf(t, r));
+            return e(nm(t, r));
           }),
           n
         );
-      })(r1);
-      (nz.Axios = nB),
-        (nz.CanceledError = nr),
-        (nz.CancelToken = nQ),
-        (nz.isCancel = nt),
-        (nz.VERSION = nj),
-        (nz.toFormData = rq),
-        (nz.AxiosError = rx),
-        (nz.Cancel = nz.CanceledError),
-        (nz.all = function (e) {
+      })(r4);
+      (nW.Axios = nZ),
+        (nW.CanceledError = ni),
+        (nW.CancelToken = nz),
+        (nW.isCancel = nn),
+        (nW.VERSION = nU),
+        (nW.toFormData = rL),
+        (nW.AxiosError = rT),
+        (nW.Cancel = nW.CanceledError),
+        (nW.all = function (e) {
           return Promise.all(e);
         }),
-        (nz.spread = function (e) {
+        (nW.spread = function (e) {
           return function (t) {
             return e.apply(null, t);
           };
         }),
-        (nz.isAxiosError = function (e) {
-          return rC.isObject(e) && !0 === e.isAxiosError;
+        (nW.isAxiosError = function (e) {
+          return rk.isObject(e) && !0 === e.isAxiosError;
         }),
-        (nz.mergeConfig = nf),
-        (nz.AxiosHeaders = r7),
-        (nz.formToJSON = (e) => r0(rC.isHTMLForm(e) ? new FormData(e) : e)),
-        (nz.getAdapter = nP.getAdapter),
-        (nz.HttpStatusCode = nZ),
-        (nz.default = nz);
-      let nH = async (e) => (await nz.get(e)).data;
-      var nW = (function (e) {
+        (nW.mergeConfig = nm),
+        (nW.AxiosHeaders = nt),
+        (nW.formToJSON = (e) => r2(rk.isHTMLForm(e) ? new FormData(e) : e)),
+        (nW.getAdapter = nM.getAdapter),
+        (nW.HttpStatusCode = nH),
+        (nW.default = nW);
+      let n$ = async (e) => (await nW.get(e)).data;
+      var nK = (function (e) {
         return (
           (e.DEFI = 'defi'),
           (e.STABLE_COIN = 'stablecoin'),
@@ -10124,7 +10110,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           e
         );
       })({});
-      let n$ = async (e) => {
+      let nV = async (e) => {
           let { tag: t } = e;
           try {
             let e = new URLSearchParams();
@@ -10132,7 +10118,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let r = ''
               .concat('https://api.coinranking.com', '/v2/coins?')
               .concat(e.toString());
-            return await nH(r);
+            return await n$(r);
           } catch (e) {
             return {
               status: 'error',
@@ -10150,8 +10136,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             };
           }
         },
-        nK = async (e) => (await nz.get(e)).data,
-        nV = async function () {
+        nG = async (e) => (await nW.get(e)).data,
+        nJ = async function () {
           let {
               amount: e = 1,
               base: t = 'EUR',
@@ -10164,26 +10150,26 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             n.set('amount', e.toString()),
             n.set('from', t),
             r.length > 0 && n.set('to', r.join(',')),
-            nK(
+            nG(
               ''
                 .concat('https://api.frankfurter.app', '/latest?')
                 .concat(n.toString())
             )
           );
         };
-      var nG = r(4403);
-      let nJ = r.n(nG)()(),
-        nY = async () => {
+      var nY = r(4403);
+      let nX = r.n(nY)()(),
+        n0 = async () => {
           try {
-            let { data: e } = await nz.get(
+            let { data: e } = await nW.get(
               'https://trends.google.com/trends/hottrends/visualize/internal/data'
             );
             return e;
           } catch (e) {
-            return nJ.error('getTrends error='.concat(e)), {};
+            return nX.error('getTrends error='.concat(e)), {};
           }
         };
-      var nX = (function (e) {
+      var n1 = (function (e) {
           return (
             (e.UNITED_ARAB_EMIRATES = 'ae'),
             (e.ARGENTINA = 'ar'),
@@ -10242,7 +10228,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             e
           );
         })({}),
-        n0 = (function (e) {
+        n2 = (function (e) {
           return (
             (e.BUSINESS = 'business'),
             (e.ENTERTAINMENT = 'entertainment'),
@@ -10254,16 +10240,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             e
           );
         })({});
-      let n1 = null !== (c = r(2836).env.NEWS_API_KEY) && void 0 !== c ? c : '',
-        n2 = async function (e) {
+      let n4 = null !== (c = r(2836).env.NEWS_API_KEY) && void 0 !== c ? c : '',
+        n5 = async function (e) {
           let t =
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-          return (await nz.get(e, t)).data;
+          return (await nW.get(e, t)).data;
         },
-        n4 = async function () {
+        n3 = async function () {
           let {
-              category: e = n0.GENERAL,
-              country: t = nX.UNITED_STATES,
+              category: e = n2.GENERAL,
+              country: t = n1.UNITED_STATES,
               page: r = 1,
               pageSize: n = 20,
               query: i = '',
@@ -10271,8 +10257,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             } = arguments.length > 0 && void 0 !== arguments[0]
               ? arguments[0]
               : {
-                  category: n0.GENERAL,
-                  country: nX.UNITED_STATES,
+                  category: n2.GENERAL,
+                  country: n1.UNITED_STATES,
                   page: 1,
                   pageSize: 20,
                   query: '',
@@ -10292,54 +10278,54 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               status: u,
               totalResults: l,
               articles: c,
-            } = await n2(o, { headers: { 'X-Api-Key': n1 } });
+            } = await n5(o, { headers: { 'X-Api-Key': n4 } });
           return { status: u, totalResults: l, articles: c };
         },
-        n5 =
+        n6 =
           null !== (h = r(2836).env.LANGUAGES_API) && void 0 !== h
             ? h
             : 'http://localhost:8080',
-        n3 = [tY.Result.win],
-        n6 = [
-          tY.Result.fiftymove,
-          tY.Result.agreed,
-          tY.Result.insufficient,
-          tY.Result.repetition,
-          tY.Result.stalemate,
-          tY.Result.timevsinsufficient,
+        n8 = [t0.Result.win],
+        n9 = [
+          t0.Result.fiftymove,
+          t0.Result.agreed,
+          t0.Result.insufficient,
+          t0.Result.repetition,
+          t0.Result.stalemate,
+          t0.Result.timevsinsufficient,
         ],
-        n8 = [
-          tY.Result.checkmated,
-          tY.Result.resigned,
-          tY.Result.timeout,
-          tY.Result.abandoned,
+        n7 = [
+          t0.Result.checkmated,
+          t0.Result.resigned,
+          t0.Result.timeout,
+          t0.Result.abandoned,
         ],
-        n9 = new Set();
-      n9.add('sunday'),
-        n9.add('monday'),
-        n9.add('tuesday'),
-        n9.add('wednesday'),
-        n9.add('thursday'),
-        n9.add('friday'),
-        n9.add('saturday');
-      let n7 = new Set();
-      n7.add('night'),
-        n7.add('morning'),
-        n7.add('afternoon'),
-        n7.add('evening');
-      let ie = new tY.PrismaClient(),
-        it = () => (void 0 !== ie ? ie : (ie = new tY.PrismaClient()));
+        ie = new Set();
+      ie.add('sunday'),
+        ie.add('monday'),
+        ie.add('tuesday'),
+        ie.add('wednesday'),
+        ie.add('thursday'),
+        ie.add('friday'),
+        ie.add('saturday');
+      let it = new Set();
+      it.add('night'),
+        it.add('morning'),
+        it.add('afternoon'),
+        it.add('evening');
+      let ir = new t0.PrismaClient(),
+        ii = () => (void 0 !== ir ? ir : (ir = new t0.PrismaClient()));
       BigInt.prototype.toJSON = function () {
         let e = Number.parseInt(this.toString());
         return null != e ? e : this.toString();
       };
-      let ir = (e) => {
+      let is = (e) => {
           let {
               username: t = '',
               results: r = [],
               accuracy: n = !1,
-              variant: i = tY.Variant.chess,
-              timeClass: s = tY.TimeClass.blitz,
+              variant: i = t0.Variant.chess,
+              timeClass: s = t0.TimeClass.blitz,
               rated: a = !0,
               endPhrase: o = !1,
             } = e,
@@ -10370,12 +10356,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             ];
           return 'WHERE '.concat(c.filter((e) => '' !== e).join(' AND '));
         },
-        ii = function () {
+        ia = function () {
           let {
             username: e = '',
             results: t = [],
-            timeClass: r = tY.TimeClass.blitz,
-            variant: n = tY.Variant.chess,
+            timeClass: r = t0.TimeClass.blitz,
+            variant: n = t0.Variant.chess,
             rated: i = !0,
           } = arguments.length > 0 && void 0 !== arguments[0]
             ? arguments[0]
@@ -10394,25 +10380,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             timeClass: r,
           };
         },
-        is = (e) =>
+        io = (e) =>
           'AVG(CASE WHEN g."white_username" = \''.concat(
             e,
             '\' THEN g."white_accuracy" ELSE g."black_accuracy" END) as "average"'
           ),
-        ia = (e) => {
+        iu = (e) => {
           let {
               name: t = 'query',
               sqlFunction: r = 'count',
               column: n = '',
               accuracy: i = !1,
               username: s = '',
-              variant: a = tY.Variant.chess,
-              timeClass: o = tY.TimeClass.blitz,
+              variant: a = t0.Variant.chess,
+              timeClass: o = t0.TimeClass.blitz,
               results: u = [],
               rated: l = !0,
               endPhrase: c = !1,
             } = e,
-            h = is(s),
+            h = io(s),
             d = [
               'count' === r ? 'COUNT(*) as "count"' : h,
               n.length > 0
@@ -10439,7 +10425,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             ]
               .filter((e) => '' !== e)
               .join(', '),
-            f = ir({
+            f = is({
               accuracy: i,
               username: s,
               results: u,
@@ -10458,7 +10444,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat(m)
               .trim();
           return (
-            nJ.info(
+            nX.info(
               {
                 username: s,
                 variant: a,
@@ -10471,10 +10457,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               },
               'buildFunctionQuery name='.concat(t, ' query=').concat(g)
             ),
-            tY.Prisma.raw(g)
+            t0.Prisma.raw(g)
           );
         },
-        io = (e) => {
+        il = (e) => {
           let {
               username: t,
               side: r,
@@ -10482,9 +10468,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               variant: i = 'chess',
               timeClass: s = 'blitz',
             } = e,
-            a = n3.map((e) => "'".concat(e, "'")).join(','),
-            o = n6.map((e) => "'".concat(e, "'")).join(','),
-            u = n8.map((e) => "'".concat(e, "'")).join(','),
+            a = n8.map((e) => "'".concat(e, "'")).join(','),
+            o = n9.map((e) => "'".concat(e, "'")).join(','),
+            u = n7.map((e) => "'".concat(e, "'")).join(','),
             l =
               'SELECT g."opening",\ng."opening_name",\nCOUNT(*) as total,\nSUM(CASE WHEN g."'
                 .concat(r, '_result" IN (')
@@ -10504,14 +10490,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   '\'\nGROUP BY g."opening", g."opening_name"\nORDER BY total DESC\nLIMIT 10;'
                 );
           return (
-            nJ.info(
+            nX.info(
               { username: t, side: r, limit: n },
               'buildOpeningsQuery query='.concat(l)
             ),
-            tY.Prisma.raw(l)
+            t0.Prisma.raw(l)
           );
         },
-        iu = (e) => {
+        ic = (e) => {
           let { username: t, variant: r = 'chess', timeClass: n = 'blitz' } = e,
             i = 'SELECT\nSUM(CASE WHEN g."white_username" = \''
               .concat(
@@ -10543,14 +10529,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat(r, '\'\nAND g."time_class" = \'')
               .concat(n, "';");
           return (
-            nJ.info(
+            nX.info(
               { username: t },
               'buildMovesByPiecesQuery query='.concat(i)
             ),
-            tY.Prisma.raw(i)
+            t0.Prisma.raw(i)
           );
         },
-        il = (e, t, r) => (n, i) => {
+        ih = (e, t, r) => (n, i) => {
           let s = n.map((e) => "'".concat(e, "'")).join(',');
           return 'SUM(CASE WHEN\n  (CASE WHEN c."white_username" = \''
             .concat(
@@ -10570,44 +10556,44 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             .concat(s, ') THEN 1 ELSE 0 END\n) as ')
             .concat(i);
         },
-        ic = (e) => {
+        id = (e) => {
           let { username: t, variant: r = 'chess', timeClass: n = 'blitz' } = e,
-            i = il(t, 'short', 'short'),
-            s = i(n3, 'short_short_win'),
-            a = i(n6, 'short_short_draw'),
-            o = i(n8, 'short_short_loss'),
-            u = il(t, 'short', 'long'),
-            l = u(n3, 'short_long_win'),
-            c = u(n6, 'short_long_draw'),
-            h = u(n8, 'short_long_loss'),
-            d = il(t, 'short', ''),
-            f = d(n3, 'short_none_win'),
-            p = d(n6, 'short_none_draw'),
-            m = d(n8, 'short_none_loss'),
-            g = il(t, 'long', 'short'),
-            y = g(n3, 'long_short_win'),
-            v = g(n6, 'long_short_draw'),
-            b = g(n8, 'long_short_loss'),
-            w = il(t, 'long', 'long'),
-            _ = w(n3, 'long_long_win'),
-            E = w(n6, 'long_long_draw'),
-            S = w(n8, 'long_long_loss'),
-            O = il(t, 'long', ''),
-            R = O(n3, 'long_none_win'),
-            A = O(n6, 'long_none_draw'),
-            N = O(n8, 'long_none_loss'),
-            C = il(t, '', 'short'),
-            x = C(n3, 'none_short_win'),
-            k = C(n6, 'none_short_draw'),
-            T = C(n8, 'none_short_loss'),
-            I = il(t, '', 'long'),
-            P = I(n3, 'none_long_win'),
-            D = I(n6, 'none_long_draw'),
-            M = I(n8, 'none_long_loss'),
-            j = il(t, '', ''),
-            q = j(n3, 'none_none_win'),
-            U = j(n6, 'none_none_draw'),
-            L = j(n8, 'none_none_loss'),
+            i = ih(t, 'short', 'short'),
+            s = i(n8, 'short_short_win'),
+            a = i(n9, 'short_short_draw'),
+            o = i(n7, 'short_short_loss'),
+            u = ih(t, 'short', 'long'),
+            l = u(n8, 'short_long_win'),
+            c = u(n9, 'short_long_draw'),
+            h = u(n7, 'short_long_loss'),
+            d = ih(t, 'short', ''),
+            f = d(n8, 'short_none_win'),
+            p = d(n9, 'short_none_draw'),
+            m = d(n7, 'short_none_loss'),
+            g = ih(t, 'long', 'short'),
+            y = g(n8, 'long_short_win'),
+            v = g(n9, 'long_short_draw'),
+            b = g(n7, 'long_short_loss'),
+            w = ih(t, 'long', 'long'),
+            _ = w(n8, 'long_long_win'),
+            E = w(n9, 'long_long_draw'),
+            S = w(n7, 'long_long_loss'),
+            O = ih(t, 'long', ''),
+            R = O(n8, 'long_none_win'),
+            A = O(n9, 'long_none_draw'),
+            N = O(n7, 'long_none_loss'),
+            C = ih(t, '', 'short'),
+            x = C(n8, 'none_short_win'),
+            k = C(n9, 'none_short_draw'),
+            T = C(n7, 'none_short_loss'),
+            I = ih(t, '', 'long'),
+            P = I(n8, 'none_long_win'),
+            D = I(n9, 'none_long_draw'),
+            M = I(n7, 'none_long_loss'),
+            j = ih(t, '', ''),
+            q = j(n8, 'none_none_win'),
+            U = j(n9, 'none_none_draw'),
+            L = j(n7, 'none_none_loss'),
             F = 'SELECT\n'
               .concat(s, ', ')
               .concat(a, ', ')
@@ -10644,18 +10630,18 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat(r, '\'\nAND c."time_class" = \'')
               .concat(n, "';");
           return (
-            nJ.info(
+            nX.info(
               { username: t },
               'buildMovesByCastlingQuery query='.concat(F)
             ),
-            tY.Prisma.raw(F)
+            t0.Prisma.raw(F)
           );
         },
-        ih = (e) => {
+        ip = (e) => {
           let { username: t, variant: r = 'chess', timeClass: n = 'blitz' } = e,
-            i = n3.map((e) => "'".concat(e, "'")).join(','),
-            s = n6.map((e) => "'".concat(e, "'")).join(','),
-            a = n8.map((e) => "'".concat(e, "'")).join(','),
+            i = n8.map((e) => "'".concat(e, "'")).join(','),
+            s = n9.map((e) => "'".concat(e, "'")).join(','),
+            a = n7.map((e) => "'".concat(e, "'")).join(','),
             o =
               'SELECT\nc."flag",\np."country_code" as code,\nc."name",\nCOUNT(p."country_code") as total,\nSUM(CASE WHEN (CASE WHEN g."white_username" = \''
                 .concat(
@@ -10693,19 +10679,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   n,
                   '\'\nGROUP BY c."flag", p."country_code", c."name"\nORDER BY total DESC;'
                 );
-          return tY.Prisma.raw(o);
+          return t0.Prisma.raw(o);
         },
-        id = (e) => {
+        im = (e) => {
           let {
               username: t = '',
               limit: r = 100,
-              variant: n = tY.Variant.chess,
-              timeClass: i = tY.TimeClass.blitz,
+              variant: n = t0.Variant.chess,
+              timeClass: i = t0.TimeClass.blitz,
               rated: s = !0,
             } = e,
-            a = n3.map((e) => "'".concat(e, "'")).join(','),
-            o = n6.map((e) => "'".concat(e, "'")).join(','),
-            u = n8.map((e) => "'".concat(e, "'")).join(','),
+            a = n8.map((e) => "'".concat(e, "'")).join(','),
+            o = n9.map((e) => "'".concat(e, "'")).join(','),
+            u = n7.map((e) => "'".concat(e, "'")).join(','),
             l = '(CASE WHEN g."white_username" = \''.concat(
               t,
               '\' THEN g."black_username" ELSE g."white_username" END) as "opponent"'
@@ -10734,7 +10720,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat(c, ', ')
               .concat(h, ', ')
               .concat(d),
-            p = ir({ username: t, variant: n, timeClass: i, rated: s }),
+            p = is({ username: t, variant: n, timeClass: i, rated: s }),
             m = ''
               .concat(f, ' ')
               .concat('FROM chess."game" as g', ' ')
@@ -10743,201 +10729,201 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat('ORDER BY "games" DESC', ' ')
               .concat('LIMIT '.concat(r), ';');
           return (
-            nJ.info(
+            nX.info(
               { username: t, timeClass: i, variant: n },
               'buildOpponentsQuery query='.concat(m)
             ),
-            tY.Prisma.raw(m)
+            t0.Prisma.raw(m)
           );
         },
-        ip = async (e) => {
+        ig = async (e) => {
           let {
             username: t,
-            variant: r = tY.Variant.chess,
-            timeClass: n = tY.TimeClass.blitz,
+            variant: r = t0.Variant.chess,
+            timeClass: n = t0.TimeClass.blitz,
             rated: i = !0,
           } = e;
           try {
-            let e = it(),
+            let e = ii(),
               {
                 avatar: s,
                 title: a,
                 name: o,
               } = await e.player.findFirstOrThrow({ where: { username: t } }),
               u = { username: t, timeClass: n, variant: r, rated: i },
-              l = ia({
+              l = iu({
                 ...u,
                 name: 'averageAccuracyQuery',
                 sqlFunction: 'avg',
                 accuracy: !0,
               }),
-              c = ia({
+              c = iu({
                 ...u,
                 name: 'averageAccuracyQueryByWinResults',
                 sqlFunction: 'avg',
                 accuracy: !0,
-                results: n3,
+                results: n8,
               }),
-              h = ia({
+              h = iu({
                 ...u,
                 name: 'averageAccuracyQueryByDrawResults',
                 sqlFunction: 'avg',
                 accuracy: !0,
-                results: n6,
+                results: n9,
               }),
-              d = ia({
+              d = iu({
                 ...u,
                 name: 'averageAccuracyQueryByLossResults',
                 sqlFunction: 'avg',
                 accuracy: !0,
-                results: n8,
+                results: n7,
               }),
-              f = ia({
+              f = iu({
                 ...u,
                 name: 'averageAccuracyQueryByYears',
                 sqlFunction: 'avg',
                 accuracy: !0,
                 column: 'year',
               }),
-              p = ia({
+              p = iu({
                 ...u,
                 name: 'averageAccuracyQueryByTimeOfDay',
                 sqlFunction: 'avg',
                 accuracy: !0,
                 column: 'timeOfDay',
               }),
-              m = ia({
+              m = iu({
                 ...u,
                 name: 'averageAccuracyQueryByDayOfWeek',
                 sqlFunction: 'avg',
                 accuracy: !0,
                 column: 'dayOfWeek',
               }),
-              g = ii(u),
-              y = ii({ ...u, results: n3 }),
-              v = ii({ ...u, results: n6 }),
-              b = ii({ ...u, results: n8 }),
-              w = ia({ ...u, name: 'gamesQueryByYear', column: 'year' }),
-              _ = ia({
+              g = ia(u),
+              y = ia({ ...u, results: n8 }),
+              v = ia({ ...u, results: n9 }),
+              b = ia({ ...u, results: n7 }),
+              w = iu({ ...u, name: 'gamesQueryByYear', column: 'year' }),
+              _ = iu({
                 ...u,
                 name: 'gamesQueryByTimeOfDay',
                 column: 'timeOfDay',
               }),
-              E = ia({
+              E = iu({
                 ...u,
                 name: 'gamesQueryByDayOfWeek',
                 column: 'dayOfWeek',
               }),
-              S = io({
+              S = il({
                 variant: r,
                 username: t,
                 timeClass: n,
                 limit: 10,
                 side: 'white',
               }),
-              O = io({
+              O = il({
                 variant: r,
                 username: t,
                 timeClass: n,
                 limit: 10,
                 side: 'black',
               }),
-              R = iu({ variant: r, username: t, timeClass: n }),
-              A = ic({ variant: r, username: t, timeClass: n }),
-              N = ih({ variant: r, username: t, timeClass: n }),
-              C = id({ ...u, limit: 100 }),
-              x = ia({
+              R = ic({ variant: r, username: t, timeClass: n }),
+              A = id({ variant: r, username: t, timeClass: n }),
+              N = ip({ variant: r, username: t, timeClass: n }),
+              C = im({ ...u, limit: 100 }),
+              x = iu({
                 ...u,
                 name: 'winResultsQuery',
                 column: 'result',
-                results: n3,
+                results: n8,
               }),
-              k = ia({
+              k = iu({
                 ...u,
                 name: 'drawResultsQuery',
                 column: 'result',
-                results: n6,
+                results: n9,
               }),
-              T = ia({
+              T = iu({
                 ...u,
                 name: 'lossResultsQuery',
                 column: 'result',
-                results: n8,
+                results: n7,
               }),
-              I = ia({
+              I = iu({
                 ...u,
                 name: 'winResultsQueryByTimeOfDay',
                 column: 'timeOfDay',
-                results: n3,
+                results: n8,
               }),
-              P = ia({
+              P = iu({
                 ...u,
                 name: 'drawResultsQueryByTimeOfDay',
                 column: 'timeOfDay',
-                results: n6,
+                results: n9,
               }),
-              D = ia({
+              D = iu({
                 ...u,
                 name: 'lossResultsQueryByTimeOfDay',
                 column: 'timeOfDay',
-                results: n8,
+                results: n7,
               }),
-              M = ia({
+              M = iu({
                 ...u,
                 name: 'winResultsQueryByDayOfWeek',
                 column: 'dayOfWeek',
-                results: n3,
+                results: n8,
               }),
-              j = ia({
+              j = iu({
                 ...u,
                 name: 'drawResultsQueryByDayOfWeek',
                 column: 'dayOfWeek',
-                results: n6,
+                results: n9,
               }),
-              q = ia({
+              q = iu({
                 ...u,
                 name: 'lossResultsQueryByDayOfWeek',
                 column: 'dayOfWeek',
-                results: n8,
+                results: n7,
               }),
-              U = ia({
+              U = iu({
                 ...u,
                 name: 'winResultsQueryByOpponentRating',
                 column: 'opponent',
-                results: n3,
+                results: n8,
               }),
-              L = ia({
+              L = iu({
                 ...u,
                 name: 'drawResultsQueryByOpponentRating',
                 column: 'opponent',
-                results: n6,
+                results: n9,
               }),
-              F = ia({
+              F = iu({
                 ...u,
                 name: 'lossResultsQueryByOpponentRating',
                 column: 'opponent',
-                results: n8,
+                results: n7,
               }),
-              B = ia({
+              B = iu({
                 ...u,
                 endPhrase: !0,
                 name: 'winResultsQueryByEndPhrase',
                 column: 'endPhrase',
-                results: n3,
+                results: n8,
               }),
-              Q = ia({
+              Q = iu({
                 ...u,
                 endPhrase: !0,
                 name: 'drawResultsQueryByEndPhrase',
                 column: 'endPhrase',
-                results: n6,
+                results: n9,
               }),
-              Z = ia({
+              Z = iu({
                 ...u,
                 endPhrase: !0,
                 name: 'lossResultsQueryByEndPhrase',
                 column: 'endPhrase',
-                results: n8,
+                results: n7,
               }),
               [
                 [{ average: z = 0 }] = [{ average: 0 }],
@@ -11094,11 +11080,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 }),
                 timeOfDays: V.map((e) => {
                   let { average: t, column: r } = e;
-                  return { average: t, timeOfDay: [...n7][''.concat(r)] };
+                  return { average: t, timeOfDay: [...it][''.concat(r)] };
                 }),
                 daysOfWeek: G.map((e) => {
                   let { average: t, column: r } = e;
-                  return { average: t, dayOfWeek: [...n9][''.concat(r)] };
+                  return { average: t, dayOfWeek: [...ie][''.concat(r)] };
                 }),
               },
               e4 = eU.map((e) => {
@@ -11109,20 +11095,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let { count: t = 0, column: r = 0 } = e;
                 return {
                   games: parseInt(t.toString(), 10),
-                  timeOfDay: [...n7][''.concat(r)],
+                  timeOfDay: [...it][''.concat(r)],
                 };
               }),
               e3 = eF.map((e) => {
                 let { count: t = 0, column: r = 0 } = e;
                 return {
                   games: parseInt(t.toString(), 10),
-                  dayOfWeek: [...n9][''.concat(r)],
+                  dayOfWeek: [...ie][''.concat(r)],
                 };
               }),
               e6 = ez.map((e) => {
                 var t, r;
                 let { count: n, column: i } = e,
-                  s = [...n7][''.concat(Number.parseInt(i.toString()))],
+                  s = [...it][''.concat(Number.parseInt(i.toString()))],
                   { count: a = 0 } =
                     null !==
                       (t = eH.find((e) => {
@@ -11149,7 +11135,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               e8 = e$.map((e) => {
                 var t, r;
                 let { count: n, column: i } = e,
-                  s = [...n9][''.concat(Number.parseInt(i.toString()))],
+                  s = [...ie][''.concat(Number.parseInt(i.toString()))],
                   { count: a = 0 } =
                     null !==
                       (t = eK.find((e) => {
@@ -11444,21 +11430,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }
             );
           } catch (e) {
-            return nJ.error('getInsights error='.concat(e)), { username: t };
+            return nX.error('getInsights error='.concat(e)), { username: t };
           }
         },
-        im = async (e) => {
+        iy = async (e) => {
           let { days: t, title: r, countryCode: n } = e,
-            { count: i, overall: s } = await iy({
+            { count: i, overall: s } = await ib({
               days: t,
               title: r,
               countryCode: n,
             }),
-            a = await iw({ days: t, title: r, countryCode: n }),
-            o = await ib({ days: t, title: r, countryCode: n }),
-            u = await i_({ days: t, title: r, countryCode: n });
+            a = await iE({ days: t, title: r, countryCode: n }),
+            o = await i_({ days: t, title: r, countryCode: n }),
+            u = await iS({ days: t, title: r, countryCode: n });
           return (
-            await ie.$disconnect(),
+            await ir.$disconnect(),
             {
               count: i,
               overall: s,
@@ -11468,7 +11454,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
           );
         },
-        ig = function (e) {
+        iv = function (e) {
           let { days: t, title: r, countryCode: n } = e,
             i =
               arguments.length > 1 && void 0 !== arguments[1]
@@ -11481,17 +11467,17 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 'p."last_online" > now() - interval \''.concat(t, " days'")
               );
           let s = 0 === i.length ? '' : 'WHERE '.concat(i.join(' AND '));
-          return nJ.info('whereClause='.concat(s)), s;
+          return nX.info('whereClause='.concat(s)), s;
         },
-        iy = async (e) => {
+        ib = async (e) => {
           let { days: t, title: r, countryCode: n } = e;
           try {
             let e =
                 '-- Descriptive (Count - Average - Max) --\nSELECT COUNT(p."username") AS "count_total", -- Count - Total\nSUM(CASE WHEN p."title" = \'GM\' then 1 else 0 end) AS "count_gm", -- Count - GM\nSUM(CASE WHEN p."title" = \'IM\' then 1 else 0 end) AS "count_im", -- Count - IM\nSUM(CASE WHEN p."title" = \'FM\' then 1 else 0 end) AS "count_fm", -- Count - FM\nSUM(CASE WHEN p."title" = \'CM\' then 1 else 0 end) AS "count_cm", -- Count - CM\nSUM(CASE WHEN p."title" = \'NM\' then 1 else 0 end) AS "count_nm", -- Count - NM\nSUM(CASE WHEN p."title" = \'WGM\' then 1 else 0 end) AS "count_wgm", -- Count - WGM\nSUM(CASE WHEN p."title" = \'WIM\' then 1 else 0 end) AS "count_wim", -- Count - WIM\nSUM(CASE WHEN p."title" = \'WFM\' then 1 else 0 end) AS "count_wfm", -- Count - WFM\nSUM(CASE WHEN p."title" = \'WCM\' then 1 else 0 end) AS "count_wcm", -- Count - WCM\nSUM(CASE WHEN p."title" = \'WNM\' then 1 else 0 end) AS "count_wnm", -- Count - WNM\nCAST(ROUND(AVG(CASE WHEN p."rapid_rating_best" <> 0 THEN p."rapid_rating_best" ELSE NULL END), 2) AS FLOAT) AS "average_rapid_rating_best", -- Average\nCAST(ROUND(AVG(CASE WHEN p."blitz_rating_best" <> 0 THEN p."blitz_rating_best" ELSE NULL END), 2) AS FLOAT) AS "average_blitz_rating_best", -- Average\nCAST(ROUND(AVG(CASE WHEN p."bullet_rating_best" <> 0 THEN p."bullet_rating_best" ELSE NULL END), 2) AS FLOAT) AS "average_bullet_rating_best", -- Average\nMAX(p."rapid_rating_best") AS "max_rapid_rating_best", -- Max\nMAX(p."blitz_rating_best") AS "max_blitz_rating_best", -- Max\nMAX(p."bullet_rating_best") AS "max_bullet_rating_best" -- Max\nFROM chess."player" AS p\n'.concat(
-                  ig({ days: t, title: r, countryCode: n }),
+                  iv({ days: t, title: r, countryCode: n }),
                   ';'
                 ),
-              i = tY.Prisma.raw(e),
+              i = t0.Prisma.raw(e),
               {
                 count_total: s = 0,
                 count_gm: a = 0,
@@ -11510,7 +11496,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 max_rapid_rating_best: b = 0,
                 max_blitz_rating_best: w = 0,
                 max_bullet_rating_best: _ = 0,
-              } = (await ie.$queryRaw(i))[0];
+              } = (await ir.$queryRaw(i))[0];
             return {
               count: {
                 total: s,
@@ -11533,7 +11519,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             };
           } catch (e) {
             return (
-              nJ.error('getDescriptive error='.concat(e)),
+              nX.error('getDescriptive error='.concat(e)),
               {
                 count: {
                   total: 0,
@@ -11555,7 +11541,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             );
           }
         },
-        iv = async (e) => {
+        iw = async (e) => {
           let { days: t, title: r, countryCode: n, timeClass: i } = e;
           try {
             let e = 'SELECT COUNT(p."username") AS "total", (FLOOR((p."'
@@ -11564,7 +11550,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   '_rating_last" / 100)) * 100) AS "group" FROM chess."player" AS p '
                 )
                 .concat(
-                  ig({ days: t, title: r, countryCode: n }, [
+                  iv({ days: t, title: r, countryCode: n }, [
                     '(FLOOR((p."'.concat(
                       i,
                       '_rating_last" / 100)) * 100) <> 0'
@@ -11572,28 +11558,28 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   ]),
                   ' GROUP BY "group" ORDER BY "group";'
                 ),
-              s = tY.Prisma.raw(e);
-            return ie.$queryRaw(s);
+              s = t0.Prisma.raw(e);
+            return ir.$queryRaw(s);
           } catch (e) {
-            return nJ.error('getDistributionByTimeClass error='.concat(e)), [];
+            return nX.error('getDistributionByTimeClass error='.concat(e)), [];
           }
         },
-        ib = async (e) => {
+        i_ = async (e) => {
           let { days: t, title: r, countryCode: n } = e;
           return {
-            rapid: await iv({
+            rapid: await iw({
               days: t,
               title: r,
               countryCode: n,
               timeClass: 'rapid',
             }),
-            blitz: await iv({
+            blitz: await iw({
               days: t,
               title: r,
               countryCode: n,
               timeClass: 'blitz',
             }),
-            bullet: await iv({
+            bullet: await iw({
               days: t,
               title: r,
               countryCode: n,
@@ -11601,52 +11587,52 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }),
           };
         },
-        iw = async (e) => {
+        iE = async (e) => {
           let { days: t, title: r, countryCode: n } = e;
           try {
             let e =
                 'SELECT p."country_code", p."country", COUNT(p."username") AS "count" FROM chess."player" AS p '.concat(
-                  ig({ days: t, title: r, countryCode: n }),
+                  iv({ days: t, title: r, countryCode: n }),
                   ' GROUP BY p."country_code", p."country"\nORDER BY p."count" DESC;'
                 ),
-              i = tY.Prisma.raw(e);
-            return ie.$queryRaw(i);
+              i = t0.Prisma.raw(e);
+            return ir.$queryRaw(i);
           } catch (e) {
-            return nJ.error('getCountries error='.concat(e)), [];
+            return nX.error('getCountries error='.concat(e)), [];
           }
         },
-        i_ = async (e) => {
+        iS = async (e) => {
           let { days: t, title: r, countryCode: n } = e;
           try {
             let e =
                 'SELECT p."title", p."country_code", p."country", p."username", p."name", p."bullet_rating_best", p."blitz_rating_best", p."rapid_rating_best" FROM chess."player" AS p '.concat(
-                  ig({ days: t, title: r, countryCode: n }),
+                  iv({ days: t, title: r, countryCode: n }),
                   ' ORDER BY p."blitz_rating_best" DESC, p."bullet_rating_best" DESC, p."rapid_rating_best" DESC LIMIT 100 OFFSET 0 ;'
                 ),
-              i = tY.Prisma.raw(e);
-            return ie.$queryRaw(i);
+              i = t0.Prisma.raw(e);
+            return ir.$queryRaw(i);
           } catch (e) {
-            return nJ.error('getLeaderboard error='.concat(e)), [];
+            return nX.error('getLeaderboard error='.concat(e)), [];
           }
         },
         {
-          Axios: iE,
-          AxiosError: iS,
-          CanceledError: iO,
-          isCancel: iR,
-          CancelToken: iA,
-          VERSION: iN,
-          all: iC,
-          Cancel: ix,
-          isAxiosError: ik,
-          spread: iT,
-          toFormData: iI,
-          AxiosHeaders: iP,
-          HttpStatusCode: iD,
-          formToJSON: iM,
-          getAdapter: ij,
-          mergeConfig: iq,
-        } = nz;
+          Axios: iO,
+          AxiosError: iR,
+          CanceledError: iA,
+          isCancel: iN,
+          CancelToken: iC,
+          VERSION: ix,
+          all: ik,
+          Cancel: iT,
+          isAxiosError: iI,
+          spread: iP,
+          toFormData: iD,
+          AxiosHeaders: iM,
+          HttpStatusCode: ij,
+          formToJSON: iq,
+          getAdapter: iU,
+          mergeConfig: iL,
+        } = nW;
       !(function (e) {
         (e.assertEqual = (e) => e),
           (e.assertIs = function (e) {}),
@@ -11692,7 +11678,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             'bigint' == typeof t ? t.toString() : t);
       })(d || (d = {})),
         ((f || (f = {})).mergeShapes = (e, t) => ({ ...e, ...t }));
-      let iU = d.arrayToEnum([
+      let iF = d.arrayToEnum([
           'string',
           'nan',
           'number',
@@ -11714,42 +11700,42 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           'map',
           'set',
         ]),
-        iL = (e) => {
+        iB = (e) => {
           switch (typeof e) {
             case 'undefined':
-              return iU.undefined;
+              return iF.undefined;
             case 'string':
-              return iU.string;
+              return iF.string;
             case 'number':
-              return isNaN(e) ? iU.nan : iU.number;
+              return isNaN(e) ? iF.nan : iF.number;
             case 'boolean':
-              return iU.boolean;
+              return iF.boolean;
             case 'function':
-              return iU.function;
+              return iF.function;
             case 'bigint':
-              return iU.bigint;
+              return iF.bigint;
             case 'symbol':
-              return iU.symbol;
+              return iF.symbol;
             case 'object':
-              if (Array.isArray(e)) return iU.array;
-              if (null === e) return iU.null;
+              if (Array.isArray(e)) return iF.array;
+              if (null === e) return iF.null;
               if (
                 e.then &&
                 'function' == typeof e.then &&
                 e.catch &&
                 'function' == typeof e.catch
               )
-                return iU.promise;
-              if ('undefined' != typeof Map && e instanceof Map) return iU.map;
-              if ('undefined' != typeof Set && e instanceof Set) return iU.set;
+                return iF.promise;
+              if ('undefined' != typeof Map && e instanceof Map) return iF.map;
+              if ('undefined' != typeof Set && e instanceof Set) return iF.set;
               if ('undefined' != typeof Date && e instanceof Date)
-                return iU.date;
-              return iU.object;
+                return iF.date;
+              return iF.object;
             default:
-              return iU.unknown;
+              return iF.unknown;
           }
         },
-        iF = d.arrayToEnum([
+        iQ = d.arrayToEnum([
           'invalid_type',
           'invalid_literal',
           'custom',
@@ -11767,7 +11753,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           'not_multiple_of',
           'not_finite',
         ]);
-      class iB extends Error {
+      class iZ extends Error {
         get errors() {
           return this.issues;
         }
@@ -11817,7 +11803,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return n(this), r;
         }
         static assert(e) {
-          if (!(e instanceof iB)) throw Error(`Not a ZodError: ${e}`);
+          if (!(e instanceof iZ)) throw Error(`Not a ZodError: ${e}`);
         }
         toString() {
           return this.message;
@@ -11841,41 +11827,41 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.flatten();
         }
       }
-      iB.create = (e) => new iB(e);
-      let iQ = (e, t) => {
+      iZ.create = (e) => new iZ(e);
+      let iz = (e, t) => {
           let r;
           switch (e.code) {
-            case iF.invalid_type:
+            case iQ.invalid_type:
               r =
-                e.received === iU.undefined
+                e.received === iF.undefined
                   ? 'Required'
                   : `Expected ${e.expected}, received ${e.received}`;
               break;
-            case iF.invalid_literal:
+            case iQ.invalid_literal:
               r = `Invalid literal value, expected ${JSON.stringify(e.expected, d.jsonStringifyReplacer)}`;
               break;
-            case iF.unrecognized_keys:
+            case iQ.unrecognized_keys:
               r = `Unrecognized key(s) in object: ${d.joinValues(e.keys, ', ')}`;
               break;
-            case iF.invalid_union:
+            case iQ.invalid_union:
               r = 'Invalid input';
               break;
-            case iF.invalid_union_discriminator:
+            case iQ.invalid_union_discriminator:
               r = `Invalid discriminator value. Expected ${d.joinValues(e.options)}`;
               break;
-            case iF.invalid_enum_value:
+            case iQ.invalid_enum_value:
               r = `Invalid enum value. Expected ${d.joinValues(e.options)}, received '${e.received}'`;
               break;
-            case iF.invalid_arguments:
+            case iQ.invalid_arguments:
               r = 'Invalid function arguments';
               break;
-            case iF.invalid_return_type:
+            case iQ.invalid_return_type:
               r = 'Invalid function return type';
               break;
-            case iF.invalid_date:
+            case iQ.invalid_date:
               r = 'Invalid date';
               break;
-            case iF.invalid_string:
+            case iQ.invalid_string:
               'object' == typeof e.validation
                 ? 'includes' in e.validation
                   ? ((r = `Invalid input: must include "${e.validation.includes}"`),
@@ -11891,7 +11877,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       ? `Invalid ${e.validation}`
                       : 'Invalid');
               break;
-            case iF.too_small:
+            case iQ.too_small:
               r =
                 'array' === e.type
                   ? `Array must contain ${e.exact ? 'exactly' : e.inclusive ? 'at least' : 'more than'} ${e.minimum} element(s)`
@@ -11903,7 +11889,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ? `Date must be ${e.exact ? 'exactly equal to ' : e.inclusive ? 'greater than or equal to ' : 'greater than '}${new Date(Number(e.minimum))}`
                         : 'Invalid input';
               break;
-            case iF.too_big:
+            case iQ.too_big:
               r =
                 'array' === e.type
                   ? `Array must contain ${e.exact ? 'exactly' : e.inclusive ? 'at most' : 'less than'} ${e.maximum} element(s)`
@@ -11917,16 +11903,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                           ? `Date must be ${e.exact ? 'exactly' : e.inclusive ? 'smaller than or equal to' : 'smaller than'} ${new Date(Number(e.maximum))}`
                           : 'Invalid input';
               break;
-            case iF.custom:
+            case iQ.custom:
               r = 'Invalid input';
               break;
-            case iF.invalid_intersection_types:
+            case iQ.invalid_intersection_types:
               r = 'Intersection results could not be merged';
               break;
-            case iF.not_multiple_of:
+            case iQ.not_multiple_of:
               r = `Number must be a multiple of ${e.multipleOf}`;
               break;
-            case iF.not_finite:
+            case iQ.not_finite:
               r = 'Number must be finite';
               break;
             default:
@@ -11934,11 +11920,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
           return { message: r };
         },
-        iZ = iQ;
-      function iz() {
-        return iZ;
+        iH = iz;
+      function iW() {
+        return iH;
       }
-      let iH = (e) => {
+      let i$ = (e) => {
         let { data: t, path: r, errorMaps: n, issueData: i } = e,
           s = [...r, ...(i.path || [])],
           a = { ...i, path: s };
@@ -11951,9 +11937,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           o = e(a, { data: t, defaultError: o }).message;
         return { ...i, path: s, message: o };
       };
-      function iW(e, t) {
-        let r = iz(),
-          n = iH({
+      function iK(e, t) {
+        let r = iW(),
+          n = i$({
             issueData: t,
             data: e.data,
             path: e.path,
@@ -11961,12 +11947,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               e.common.contextualErrorMap,
               e.schemaErrorMap,
               r,
-              r === iQ ? void 0 : iQ,
+              r === iz ? void 0 : iz,
             ].filter((e) => !!e),
           });
         e.common.issues.push(n);
       }
-      class i$ {
+      class iV {
         constructor() {
           this.value = 'valid';
         }
@@ -11979,7 +11965,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         static mergeArray(e, t) {
           let r = [];
           for (let n of t) {
-            if ('aborted' === n.status) return iK;
+            if ('aborted' === n.status) return iG;
             'dirty' === n.status && e.dirty(), r.push(n.value);
           }
           return { status: e.value, value: r };
@@ -11991,13 +11977,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               n = await e.value;
             r.push({ key: t, value: n });
           }
-          return i$.mergeObjectSync(e, r);
+          return iV.mergeObjectSync(e, r);
         }
         static mergeObjectSync(e, t) {
           let r = {};
           for (let n of t) {
             let { key: t, value: i } = n;
-            if ('aborted' === t.status || 'aborted' === i.status) return iK;
+            if ('aborted' === t.status || 'aborted' === i.status) return iG;
             'dirty' === t.status && e.dirty(),
               'dirty' === i.status && e.dirty(),
               '__proto__' !== t.value &&
@@ -12007,14 +11993,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return { status: e.value, value: r };
         }
       }
-      let iK = Object.freeze({ status: 'aborted' }),
-        iV = (e) => ({ status: 'dirty', value: e }),
-        iG = (e) => ({ status: 'valid', value: e }),
-        iJ = (e) => 'aborted' === e.status,
-        iY = (e) => 'dirty' === e.status,
-        iX = (e) => 'valid' === e.status,
-        i0 = (e) => 'undefined' != typeof Promise && e instanceof Promise;
-      function i1(e, t, r, n) {
+      let iG = Object.freeze({ status: 'aborted' }),
+        iJ = (e) => ({ status: 'dirty', value: e }),
+        iY = (e) => ({ status: 'valid', value: e }),
+        iX = (e) => 'aborted' === e.status,
+        i0 = (e) => 'dirty' === e.status,
+        i1 = (e) => 'valid' === e.status,
+        i2 = (e) => 'undefined' != typeof Promise && e instanceof Promise;
+      function i4(e, t, r, n) {
         if ('a' === r && !n)
           throw TypeError('Private accessor was defined without a getter');
         if ('function' == typeof t ? e !== t || !n : !t.has(e))
@@ -12023,7 +12009,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         return 'm' === r ? n : 'a' === r ? n.call(e) : n ? n.value : t.get(e);
       }
-      function i2(e, t, r, n, i) {
+      function i5(e, t, r, n, i) {
         if ('m' === n) throw TypeError('Private method is not writable');
         if ('a' === n && !i)
           throw TypeError('Private accessor was defined without a setter');
@@ -12040,7 +12026,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             (e.toString = (e) =>
               'string' == typeof e ? e : null == e ? void 0 : e.message);
         })(p || (p = {}));
-      class i4 {
+      class i3 {
         constructor(e, t, r, n) {
           (this._cachedPath = []),
             (this.parent = e),
@@ -12058,20 +12044,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
       }
-      let i5 = (e, t) => {
-        if (iX(t)) return { success: !0, data: t.value };
+      let i6 = (e, t) => {
+        if (i1(t)) return { success: !0, data: t.value };
         if (!e.common.issues.length)
           throw Error('Validation failed but no issues detected.');
         return {
           success: !1,
           get error() {
             if (this._error) return this._error;
-            let t = new iB(e.common.issues);
+            let t = new iZ(e.common.issues);
             return (this._error = t), this._error;
           },
         };
       };
-      function i3(e) {
+      function i8(e) {
         if (!e) return {};
         let {
           errorMap: t,
@@ -12110,19 +12096,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               description: i,
             };
       }
-      class i6 {
+      class i9 {
         get description() {
           return this._def.description;
         }
         _getType(e) {
-          return iL(e.data);
+          return iB(e.data);
         }
         _getOrReturnCtx(e, t) {
           return (
             t || {
               common: e.parent.common,
               data: e.data,
-              parsedType: iL(e.data),
+              parsedType: iB(e.data),
               schemaErrorMap: this._def.errorMap,
               path: e.path,
               parent: e.parent,
@@ -12131,11 +12117,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         _processInputParams(e) {
           return {
-            status: new i$(),
+            status: new iV(),
             ctx: {
               common: e.parent.common,
               data: e.data,
-              parsedType: iL(e.data),
+              parsedType: iB(e.data),
               schemaErrorMap: this._def.errorMap,
               path: e.path,
               parent: e.parent,
@@ -12144,7 +12130,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         _parseSync(e) {
           let t = this._parse(e);
-          if (i0(t)) throw Error('Synchronous parse encountered promise.');
+          if (i2(t)) throw Error('Synchronous parse encountered promise.');
           return t;
         }
         _parseAsync(e) {
@@ -12170,10 +12156,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               schemaErrorMap: this._def.errorMap,
               parent: null,
               data: e,
-              parsedType: iL(e),
+              parsedType: iB(e),
             },
             i = this._parseSync({ data: e, path: n.path, parent: n });
-          return i5(n, i);
+          return i6(n, i);
         }
         '~validate'(e) {
           var t, r;
@@ -12183,12 +12169,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             schemaErrorMap: this._def.errorMap,
             parent: null,
             data: e,
-            parsedType: iL(e),
+            parsedType: iB(e),
           };
           if (!this['~standard'].async)
             try {
               let t = this._parseSync({ data: e, path: [], parent: n });
-              return iX(t) ? { value: t.value } : { issues: n.common.issues };
+              return i1(t) ? { value: t.value } : { issues: n.common.issues };
             } catch (e) {
               (null ===
                 (r =
@@ -12200,7 +12186,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 (n.common = { issues: [], async: !0 });
             }
           return this._parseAsync({ data: e, path: [], parent: n }).then((e) =>
-            iX(e) ? { value: e.value } : { issues: n.common.issues }
+            i1(e) ? { value: e.value } : { issues: n.common.issues }
           );
         }
         async parseAsync(e, t) {
@@ -12219,10 +12205,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               schemaErrorMap: this._def.errorMap,
               parent: null,
               data: e,
-              parsedType: iL(e),
+              parsedType: iB(e),
             },
             n = this._parse({ data: e, path: r.path, parent: r });
-          return i5(r, await (i0(n) ? n : Promise.resolve(n)));
+          return i6(r, await (i2(n) ? n : Promise.resolve(n)));
         }
         refine(e, t) {
           let r = (e) =>
@@ -12233,7 +12219,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 : t;
           return this._refinement((t, n) => {
             let i = e(t),
-              s = () => n.addIssue({ code: iF.custom, ...r(t) });
+              s = () => n.addIssue({ code: iQ.custom, ...r(t) });
             return 'undefined' != typeof Promise && i instanceof Promise
               ? i.then((e) => !!e || (s(), !1))
               : !!i || (s(), !1);
@@ -12246,7 +12232,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
         _refinement(e) {
-          return new sz({
+          return new sW({
             schema: this,
             typeName: y.ZodEffects,
             effect: { type: 'refinement', refinement: e },
@@ -12289,52 +12275,52 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             });
         }
         optional() {
-          return sH.create(this, this._def);
+          return s$.create(this, this._def);
         }
         nullable() {
-          return sW.create(this, this._def);
+          return sK.create(this, this._def);
         }
         nullish() {
           return this.nullable().optional();
         }
         array() {
-          return sN.create(this);
+          return sx.create(this);
         }
         promise() {
-          return sZ.create(this, this._def);
+          return sH.create(this, this._def);
         }
         or(e) {
-          return sx.create([this, e], this._def);
+          return sT.create([this, e], this._def);
         }
         and(e) {
-          return sI.create(this, e, this._def);
+          return sD.create(this, e, this._def);
         }
         transform(e) {
-          return new sz({
-            ...i3(this._def),
+          return new sW({
+            ...i8(this._def),
             schema: this,
             typeName: y.ZodEffects,
             effect: { type: 'transform', transform: e },
           });
         }
         default(e) {
-          return new s$({
-            ...i3(this._def),
+          return new sV({
+            ...i8(this._def),
             innerType: this,
             defaultValue: 'function' == typeof e ? e : () => e,
             typeName: y.ZodDefault,
           });
         }
         brand() {
-          return new sJ({
+          return new sX({
             typeName: y.ZodBranded,
             type: this,
-            ...i3(this._def),
+            ...i8(this._def),
           });
         }
         catch(e) {
-          return new sK({
-            ...i3(this._def),
+          return new sG({
+            ...i8(this._def),
             innerType: this,
             catchValue: 'function' == typeof e ? e : () => e,
             typeName: y.ZodCatch,
@@ -12344,10 +12330,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return new this.constructor({ ...this._def, description: e });
         }
         pipe(e) {
-          return sY.create(this, e);
+          return s0.create(this, e);
         }
         readonly() {
-          return sX.create(this);
+          return s1.create(this);
         }
         isOptional() {
           return this.safeParse(void 0).success;
@@ -12356,32 +12342,32 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.safeParse(null).success;
         }
       }
-      let i8 = /^c[^\s-]{8,}$/i,
-        i9 = /^[0-9a-z]+$/,
-        i7 = /^[0-9A-HJKMNP-TV-Z]{26}$/i,
-        se =
+      let i7 = /^c[^\s-]{8,}$/i,
+        se = /^[0-9a-z]+$/,
+        st = /^[0-9A-HJKMNP-TV-Z]{26}$/i,
+        sr =
           /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/i,
-        st = /^[a-z0-9_-]{21}$/i,
-        sr = /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*$/,
-        sn =
-          /^[-+]?P(?!$)(?:(?:[-+]?\d+Y)|(?:[-+]?\d+[.,]\d+Y$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:(?:[-+]?\d+W)|(?:[-+]?\d+[.,]\d+W$))?(?:(?:[-+]?\d+D)|(?:[-+]?\d+[.,]\d+D$))?(?:T(?=[\d+-])(?:(?:[-+]?\d+H)|(?:[-+]?\d+[.,]\d+H$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:[-+]?\d+(?:[.,]\d+)?S)?)??$/,
-        si =
-          /^(?!\.)(?!.*\.\.)([A-Z0-9_'+\-\.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9\-]*\.)+[A-Z]{2,}$/i,
+        sn = /^[a-z0-9_-]{21}$/i,
+        si = /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*$/,
         ss =
-          /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$/,
+          /^[-+]?P(?!$)(?:(?:[-+]?\d+Y)|(?:[-+]?\d+[.,]\d+Y$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:(?:[-+]?\d+W)|(?:[-+]?\d+[.,]\d+W$))?(?:(?:[-+]?\d+D)|(?:[-+]?\d+[.,]\d+D$))?(?:T(?=[\d+-])(?:(?:[-+]?\d+H)|(?:[-+]?\d+[.,]\d+H$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:[-+]?\d+(?:[.,]\d+)?S)?)??$/,
         sa =
-          /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\/(3[0-2]|[12]?[0-9])$/,
+          /^(?!\.)(?!.*\.\.)([A-Z0-9_'+\-\.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9\-]*\.)+[A-Z]{2,}$/i,
         so =
-          /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$/,
+          /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$/,
         su =
-          /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$/,
-        sl = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/,
+          /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\/(3[0-2]|[12]?[0-9])$/,
+        sl =
+          /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$/,
         sc =
+          /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$/,
+        sh = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/,
+        sd =
           /^([0-9a-zA-Z-_]{4})*(([0-9a-zA-Z-_]{2}(==)?)|([0-9a-zA-Z-_]{3}(=)?))?$/,
-        sh =
+        sf =
           '((\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-((0[13578]|1[02])-(0[1-9]|[12]\\d|3[01])|(0[469]|11)-(0[1-9]|[12]\\d|30)|(02)-(0[1-9]|1\\d|2[0-8])))',
-        sd = RegExp(`^${sh}$`);
-      function sf(e) {
+        sp = RegExp(`^${sf}$`);
+      function sm(e) {
         let t = '([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d';
         return (
           e.precision
@@ -12390,8 +12376,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           t
         );
       }
-      function sp(e) {
-        let t = `${sh}T${sf(e)}`,
+      function sg(e) {
+        let t = `${sf}T${sm(e)}`,
           r = [];
         return (
           r.push(e.local ? 'Z?' : 'Z'),
@@ -12400,30 +12386,30 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           RegExp(`^${t}$`)
         );
       }
-      class sm extends i6 {
+      class sy extends i9 {
         _parse(e) {
           var t, r, i, s;
           let a;
           if (
             (this._def.coerce && (e.data = String(e.data)),
-            this._getType(e) !== iU.string)
+            this._getType(e) !== iF.string)
           ) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.string,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.string,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          let o = new i$();
+          let o = new iV();
           for (let u of this._def.checks)
             if ('min' === u.kind)
               e.data.length < u.value &&
-                (iW((a = this._getOrReturnCtx(e, a)), {
-                  code: iF.too_small,
+                (iK((a = this._getOrReturnCtx(e, a)), {
+                  code: iQ.too_small,
                   minimum: u.value,
                   type: 'string',
                   inclusive: !0,
@@ -12433,8 +12419,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 o.dirty());
             else if ('max' === u.kind)
               e.data.length > u.value &&
-                (iW((a = this._getOrReturnCtx(e, a)), {
-                  code: iF.too_big,
+                (iK((a = this._getOrReturnCtx(e, a)), {
+                  code: iQ.too_big,
                   maximum: u.value,
                   type: 'string',
                   inclusive: !0,
@@ -12448,8 +12434,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               (t || r) &&
                 ((a = this._getOrReturnCtx(e, a)),
                 t
-                  ? iW(a, {
-                      code: iF.too_big,
+                  ? iK(a, {
+                      code: iQ.too_big,
                       maximum: u.value,
                       type: 'string',
                       inclusive: !0,
@@ -12457,8 +12443,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       message: u.message,
                     })
                   : r &&
-                    iW(a, {
-                      code: iF.too_small,
+                    iK(a, {
+                      code: iQ.too_small,
                       minimum: u.value,
                       type: 'string',
                       inclusive: !0,
@@ -12467,10 +12453,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     }),
                 o.dirty());
             } else if ('email' === u.kind)
-              si.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              sa.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'email',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
@@ -12481,49 +12467,49 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   'u'
                 )),
                 n.test(e.data) ||
-                  (iW((a = this._getOrReturnCtx(e, a)), {
+                  (iK((a = this._getOrReturnCtx(e, a)), {
                     validation: 'emoji',
-                    code: iF.invalid_string,
+                    code: iQ.invalid_string,
                     message: u.message,
                   }),
                   o.dirty());
             else if ('uuid' === u.kind)
-              se.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              sr.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'uuid',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
             else if ('nanoid' === u.kind)
-              st.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              sn.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'nanoid',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
             else if ('cuid' === u.kind)
-              i8.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              i7.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'cuid',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
             else if ('cuid2' === u.kind)
-              i9.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              se.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'cuid2',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
             else if ('ulid' === u.kind)
-              i7.test(e.data) ||
-                (iW((a = this._getOrReturnCtx(e, a)), {
+              st.test(e.data) ||
+                (iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'ulid',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                 o.dirty());
@@ -12531,9 +12517,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               try {
                 new URL(e.data);
               } catch (t) {
-                iW((a = this._getOrReturnCtx(e, a)), {
+                iK((a = this._getOrReturnCtx(e, a)), {
                   validation: 'url',
-                  code: iF.invalid_string,
+                  code: iQ.invalid_string,
                   message: u.message,
                 }),
                   o.dirty();
@@ -12542,9 +12528,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               'regex' === u.kind
                 ? ((u.regex.lastIndex = 0),
                   u.regex.test(e.data) ||
-                    (iW((a = this._getOrReturnCtx(e, a)), {
+                    (iK((a = this._getOrReturnCtx(e, a)), {
                       validation: 'regex',
-                      code: iF.invalid_string,
+                      code: iQ.invalid_string,
                       message: u.message,
                     }),
                     o.dirty()))
@@ -12552,8 +12538,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   ? (e.data = e.data.trim())
                   : 'includes' === u.kind
                     ? e.data.includes(u.value, u.position) ||
-                      (iW((a = this._getOrReturnCtx(e, a)), {
-                        code: iF.invalid_string,
+                      (iK((a = this._getOrReturnCtx(e, a)), {
+                        code: iQ.invalid_string,
                         validation: { includes: u.value, position: u.position },
                         message: u.message,
                       }),
@@ -12564,69 +12550,69 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ? (e.data = e.data.toUpperCase())
                         : 'startsWith' === u.kind
                           ? e.data.startsWith(u.value) ||
-                            (iW((a = this._getOrReturnCtx(e, a)), {
-                              code: iF.invalid_string,
+                            (iK((a = this._getOrReturnCtx(e, a)), {
+                              code: iQ.invalid_string,
                               validation: { startsWith: u.value },
                               message: u.message,
                             }),
                             o.dirty())
                           : 'endsWith' === u.kind
                             ? e.data.endsWith(u.value) ||
-                              (iW((a = this._getOrReturnCtx(e, a)), {
-                                code: iF.invalid_string,
+                              (iK((a = this._getOrReturnCtx(e, a)), {
+                                code: iQ.invalid_string,
                                 validation: { endsWith: u.value },
                                 message: u.message,
                               }),
                               o.dirty())
                             : 'datetime' === u.kind
-                              ? sp(u).test(e.data) ||
-                                (iW((a = this._getOrReturnCtx(e, a)), {
-                                  code: iF.invalid_string,
+                              ? sg(u).test(e.data) ||
+                                (iK((a = this._getOrReturnCtx(e, a)), {
+                                  code: iQ.invalid_string,
                                   validation: 'datetime',
                                   message: u.message,
                                 }),
                                 o.dirty())
                               : 'date' === u.kind
-                                ? sd.test(e.data) ||
-                                  (iW((a = this._getOrReturnCtx(e, a)), {
-                                    code: iF.invalid_string,
+                                ? sp.test(e.data) ||
+                                  (iK((a = this._getOrReturnCtx(e, a)), {
+                                    code: iQ.invalid_string,
                                     validation: 'date',
                                     message: u.message,
                                   }),
                                   o.dirty())
                                 : 'time' === u.kind
-                                  ? RegExp(`^${sf(u)}$`).test(e.data) ||
-                                    (iW((a = this._getOrReturnCtx(e, a)), {
-                                      code: iF.invalid_string,
+                                  ? RegExp(`^${sm(u)}$`).test(e.data) ||
+                                    (iK((a = this._getOrReturnCtx(e, a)), {
+                                      code: iQ.invalid_string,
                                       validation: 'time',
                                       message: u.message,
                                     }),
                                     o.dirty())
                                   : 'duration' === u.kind
-                                    ? sn.test(e.data) ||
-                                      (iW((a = this._getOrReturnCtx(e, a)), {
+                                    ? ss.test(e.data) ||
+                                      (iK((a = this._getOrReturnCtx(e, a)), {
                                         validation: 'duration',
-                                        code: iF.invalid_string,
+                                        code: iQ.invalid_string,
                                         message: u.message,
                                       }),
                                       o.dirty())
                                     : 'ip' === u.kind
                                       ? ((t = e.data),
                                         (('v4' === (r = u.version) || !r) &&
-                                          ss.test(t)) ||
-                                          (('v6' === r || !r) && so.test(t)) ||
-                                          (iW(
+                                          so.test(t)) ||
+                                          (('v6' === r || !r) && sl.test(t)) ||
+                                          (iK(
                                             (a = this._getOrReturnCtx(e, a)),
                                             {
                                               validation: 'ip',
-                                              code: iF.invalid_string,
+                                              code: iQ.invalid_string,
                                               message: u.message,
                                             }
                                           ),
                                           o.dirty()))
                                       : 'jwt' === u.kind
                                         ? !(function (e, t) {
-                                            if (!sr.test(e)) return !1;
+                                            if (!si.test(e)) return !1;
                                             try {
                                               let [r] = e.split('.'),
                                                 n = r
@@ -12652,11 +12638,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                               return !1;
                                             }
                                           })(e.data, u.alg) &&
-                                          (iW(
+                                          (iK(
                                             (a = this._getOrReturnCtx(e, a)),
                                             {
                                               validation: 'jwt',
-                                              code: iF.invalid_string,
+                                              code: iQ.invalid_string,
                                               message: u.message,
                                             }
                                           ),
@@ -12664,45 +12650,45 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                         : 'cidr' === u.kind
                                           ? ((i = e.data),
                                             (('v4' === (s = u.version) || !s) &&
-                                              sa.test(i)) ||
+                                              su.test(i)) ||
                                               (('v6' === s || !s) &&
-                                                su.test(i)) ||
-                                              (iW(
+                                                sc.test(i)) ||
+                                              (iK(
                                                 (a = this._getOrReturnCtx(
                                                   e,
                                                   a
                                                 )),
                                                 {
                                                   validation: 'cidr',
-                                                  code: iF.invalid_string,
+                                                  code: iQ.invalid_string,
                                                   message: u.message,
                                                 }
                                               ),
                                               o.dirty()))
                                           : 'base64' === u.kind
-                                            ? sl.test(e.data) ||
-                                              (iW(
+                                            ? sh.test(e.data) ||
+                                              (iK(
                                                 (a = this._getOrReturnCtx(
                                                   e,
                                                   a
                                                 )),
                                                 {
                                                   validation: 'base64',
-                                                  code: iF.invalid_string,
+                                                  code: iQ.invalid_string,
                                                   message: u.message,
                                                 }
                                               ),
                                               o.dirty())
                                             : 'base64url' === u.kind
-                                              ? sc.test(e.data) ||
-                                                (iW(
+                                              ? sd.test(e.data) ||
+                                                (iK(
                                                   (a = this._getOrReturnCtx(
                                                     e,
                                                     a
                                                   )),
                                                   {
                                                     validation: 'base64url',
-                                                    code: iF.invalid_string,
+                                                    code: iQ.invalid_string,
                                                     message: u.message,
                                                   }
                                                 ),
@@ -12713,12 +12699,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         _regex(e, t, r) {
           return this.refinement((t) => e.test(t), {
             validation: t,
-            code: iF.invalid_string,
+            code: iQ.invalid_string,
             ...p.errToObj(r),
           });
         }
         _addCheck(e) {
-          return new sm({ ...this._def, checks: [...this._def.checks, e] });
+          return new sy({ ...this._def, checks: [...this._def.checks, e] });
         }
         email(e) {
           return this._addCheck({ kind: 'email', ...p.errToObj(e) });
@@ -12846,19 +12832,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.min(1, p.errToObj(e));
         }
         trim() {
-          return new sm({
+          return new sy({
             ...this._def,
             checks: [...this._def.checks, { kind: 'trim' }],
           });
         }
         toLowerCase() {
-          return new sm({
+          return new sy({
             ...this._def,
             checks: [...this._def.checks, { kind: 'toLowerCase' }],
           });
         }
         toUpperCase() {
-          return new sm({
+          return new sy({
             ...this._def,
             checks: [...this._def.checks, { kind: 'toUpperCase' }],
           });
@@ -12924,17 +12910,17 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return e;
         }
       }
-      sm.create = (e) => {
+      sy.create = (e) => {
         var t;
-        return new sm({
+        return new sy({
           checks: [],
           typeName: y.ZodString,
           coerce:
             null !== (t = null == e ? void 0 : e.coerce) && void 0 !== t && t,
-          ...i3(e),
+          ...i8(e),
         });
       };
-      class sg extends i6 {
+      class sv extends i9 {
         constructor() {
           super(...arguments),
             (this.min = this.gte),
@@ -12945,24 +12931,24 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let t;
           if (
             (this._def.coerce && (e.data = Number(e.data)),
-            this._getType(e) !== iU.number)
+            this._getType(e) !== iF.number)
           ) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.number,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.number,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          let r = new i$();
+          let r = new iV();
           for (let n of this._def.checks)
             'int' === n.kind
               ? d.isInteger(e.data) ||
-                (iW((t = this._getOrReturnCtx(e, t)), {
-                  code: iF.invalid_type,
+                (iK((t = this._getOrReturnCtx(e, t)), {
+                  code: iQ.invalid_type,
                   expected: 'integer',
                   received: 'float',
                   message: n.message,
@@ -12970,8 +12956,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 r.dirty())
               : 'min' === n.kind
                 ? (n.inclusive ? e.data < n.value : e.data <= n.value) &&
-                  (iW((t = this._getOrReturnCtx(e, t)), {
-                    code: iF.too_small,
+                  (iK((t = this._getOrReturnCtx(e, t)), {
+                    code: iQ.too_small,
                     minimum: n.value,
                     type: 'number',
                     inclusive: n.inclusive,
@@ -12981,8 +12967,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   r.dirty())
                 : 'max' === n.kind
                   ? (n.inclusive ? e.data > n.value : e.data >= n.value) &&
-                    (iW((t = this._getOrReturnCtx(e, t)), {
-                      code: iF.too_big,
+                    (iK((t = this._getOrReturnCtx(e, t)), {
+                      code: iQ.too_big,
                       maximum: n.value,
                       type: 'number',
                       inclusive: n.inclusive,
@@ -13002,16 +12988,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                             Math.pow(10, i)
                           );
                         })(e.data, n.value) &&
-                      (iW((t = this._getOrReturnCtx(e, t)), {
-                        code: iF.not_multiple_of,
+                      (iK((t = this._getOrReturnCtx(e, t)), {
+                        code: iQ.not_multiple_of,
                         multipleOf: n.value,
                         message: n.message,
                       }),
                       r.dirty())
                     : 'finite' === n.kind
                       ? Number.isFinite(e.data) ||
-                        (iW((t = this._getOrReturnCtx(e, t)), {
-                          code: iF.not_finite,
+                        (iK((t = this._getOrReturnCtx(e, t)), {
+                          code: iQ.not_finite,
                           message: n.message,
                         }),
                         r.dirty())
@@ -13031,7 +13017,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.setLimit('max', e, !1, p.toString(t));
         }
         setLimit(e, t, r, n) {
-          return new sg({
+          return new sv({
             ...this._def,
             checks: [
               ...this._def.checks,
@@ -13040,7 +13026,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           });
         }
         _addCheck(e) {
-          return new sg({ ...this._def, checks: [...this._def.checks, e] });
+          return new sv({ ...this._def, checks: [...this._def.checks, e] });
         }
         int(e) {
           return this._addCheck({ kind: 'int', message: p.toString(e) });
@@ -13138,14 +13124,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return Number.isFinite(t) && Number.isFinite(e);
         }
       }
-      sg.create = (e) =>
-        new sg({
+      sv.create = (e) =>
+        new sv({
           checks: [],
           typeName: y.ZodNumber,
           coerce: (null == e ? void 0 : e.coerce) || !1,
-          ...i3(e),
+          ...i8(e),
         });
-      class sy extends i6 {
+      class sb extends i9 {
         constructor() {
           super(...arguments), (this.min = this.gte), (this.max = this.lte);
         }
@@ -13157,13 +13143,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             } catch (t) {
               return this._getInvalidInput(e);
             }
-          if (this._getType(e) !== iU.bigint) return this._getInvalidInput(e);
-          let r = new i$();
+          if (this._getType(e) !== iF.bigint) return this._getInvalidInput(e);
+          let r = new iV();
           for (let n of this._def.checks)
             'min' === n.kind
               ? (n.inclusive ? e.data < n.value : e.data <= n.value) &&
-                (iW((t = this._getOrReturnCtx(e, t)), {
-                  code: iF.too_small,
+                (iK((t = this._getOrReturnCtx(e, t)), {
+                  code: iQ.too_small,
                   type: 'bigint',
                   minimum: n.value,
                   inclusive: n.inclusive,
@@ -13172,8 +13158,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 r.dirty())
               : 'max' === n.kind
                 ? (n.inclusive ? e.data > n.value : e.data >= n.value) &&
-                  (iW((t = this._getOrReturnCtx(e, t)), {
-                    code: iF.too_big,
+                  (iK((t = this._getOrReturnCtx(e, t)), {
+                    code: iQ.too_big,
                     type: 'bigint',
                     maximum: n.value,
                     inclusive: n.inclusive,
@@ -13182,8 +13168,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   r.dirty())
                 : 'multipleOf' === n.kind
                   ? e.data % n.value !== BigInt(0) &&
-                    (iW((t = this._getOrReturnCtx(e, t)), {
-                      code: iF.not_multiple_of,
+                    (iK((t = this._getOrReturnCtx(e, t)), {
+                      code: iQ.not_multiple_of,
                       multipleOf: n.value,
                       message: n.message,
                     }),
@@ -13194,12 +13180,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         _getInvalidInput(e) {
           let t = this._getOrReturnCtx(e);
           return (
-            iW(t, {
-              code: iF.invalid_type,
-              expected: iU.bigint,
+            iK(t, {
+              code: iQ.invalid_type,
+              expected: iF.bigint,
               received: t.parsedType,
             }),
-            iK
+            iG
           );
         }
         gte(e, t) {
@@ -13215,7 +13201,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.setLimit('max', e, !1, p.toString(t));
         }
         setLimit(e, t, r, n) {
-          return new sy({
+          return new sb({
             ...this._def,
             checks: [
               ...this._def.checks,
@@ -13224,7 +13210,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           });
         }
         _addCheck(e) {
-          return new sy({ ...this._def, checks: [...this._def.checks, e] });
+          return new sb({ ...this._def, checks: [...this._def.checks, e] });
         }
         positive(e) {
           return this._addCheck({
@@ -13278,66 +13264,66 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return e;
         }
       }
-      sy.create = (e) => {
+      sb.create = (e) => {
         var t;
-        return new sy({
+        return new sb({
           checks: [],
           typeName: y.ZodBigInt,
           coerce:
             null !== (t = null == e ? void 0 : e.coerce) && void 0 !== t && t,
-          ...i3(e),
+          ...i8(e),
         });
       };
-      class sv extends i6 {
+      class sw extends i9 {
         _parse(e) {
           if (
             (this._def.coerce && (e.data = !!e.data),
-            this._getType(e) !== iU.boolean)
+            this._getType(e) !== iF.boolean)
           ) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.boolean,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.boolean,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sv.create = (e) =>
-        new sv({
+      sw.create = (e) =>
+        new sw({
           typeName: y.ZodBoolean,
           coerce: (null == e ? void 0 : e.coerce) || !1,
-          ...i3(e),
+          ...i8(e),
         });
-      class sb extends i6 {
+      class s_ extends i9 {
         _parse(e) {
           let t;
           if (
             (this._def.coerce && (e.data = new Date(e.data)),
-            this._getType(e) !== iU.date)
+            this._getType(e) !== iF.date)
           ) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.date,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.date,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
           if (isNaN(e.data.getTime()))
-            return iW(this._getOrReturnCtx(e), { code: iF.invalid_date }), iK;
-          let r = new i$();
+            return iK(this._getOrReturnCtx(e), { code: iQ.invalid_date }), iG;
+          let r = new iV();
           for (let n of this._def.checks)
             'min' === n.kind
               ? e.data.getTime() < n.value &&
-                (iW((t = this._getOrReturnCtx(e, t)), {
-                  code: iF.too_small,
+                (iK((t = this._getOrReturnCtx(e, t)), {
+                  code: iQ.too_small,
                   message: n.message,
                   inclusive: !0,
                   exact: !1,
@@ -13347,8 +13333,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 r.dirty())
               : 'max' === n.kind
                 ? e.data.getTime() > n.value &&
-                  (iW((t = this._getOrReturnCtx(e, t)), {
-                    code: iF.too_big,
+                  (iK((t = this._getOrReturnCtx(e, t)), {
+                    code: iQ.too_big,
                     message: n.message,
                     inclusive: !0,
                     exact: !1,
@@ -13360,7 +13346,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return { status: r.value, value: new Date(e.data.getTime()) };
         }
         _addCheck(e) {
-          return new sb({ ...this._def, checks: [...this._def.checks, e] });
+          return new s_({ ...this._def, checks: [...this._def.checks, e] });
         }
         min(e, t) {
           return this._addCheck({
@@ -13389,132 +13375,132 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return null != e ? new Date(e) : null;
         }
       }
-      sb.create = (e) =>
-        new sb({
+      s_.create = (e) =>
+        new s_({
           checks: [],
           coerce: (null == e ? void 0 : e.coerce) || !1,
           typeName: y.ZodDate,
-          ...i3(e),
+          ...i8(e),
         });
-      class sw extends i6 {
+      class sE extends i9 {
         _parse(e) {
-          if (this._getType(e) !== iU.symbol) {
+          if (this._getType(e) !== iF.symbol) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.symbol,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.symbol,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sw.create = (e) => new sw({ typeName: y.ZodSymbol, ...i3(e) });
-      class s_ extends i6 {
+      sE.create = (e) => new sE({ typeName: y.ZodSymbol, ...i8(e) });
+      class sS extends i9 {
         _parse(e) {
-          if (this._getType(e) !== iU.undefined) {
+          if (this._getType(e) !== iF.undefined) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.undefined,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.undefined,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      s_.create = (e) => new s_({ typeName: y.ZodUndefined, ...i3(e) });
-      class sE extends i6 {
+      sS.create = (e) => new sS({ typeName: y.ZodUndefined, ...i8(e) });
+      class sO extends i9 {
         _parse(e) {
-          if (this._getType(e) !== iU.null) {
+          if (this._getType(e) !== iF.null) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.null,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.null,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sE.create = (e) => new sE({ typeName: y.ZodNull, ...i3(e) });
-      class sS extends i6 {
+      sO.create = (e) => new sO({ typeName: y.ZodNull, ...i8(e) });
+      class sR extends i9 {
         constructor() {
           super(...arguments), (this._any = !0);
         }
         _parse(e) {
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sS.create = (e) => new sS({ typeName: y.ZodAny, ...i3(e) });
-      class sO extends i6 {
+      sR.create = (e) => new sR({ typeName: y.ZodAny, ...i8(e) });
+      class sA extends i9 {
         constructor() {
           super(...arguments), (this._unknown = !0);
         }
         _parse(e) {
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sO.create = (e) => new sO({ typeName: y.ZodUnknown, ...i3(e) });
-      class sR extends i6 {
+      sA.create = (e) => new sA({ typeName: y.ZodUnknown, ...i8(e) });
+      class sN extends i9 {
         _parse(e) {
           let t = this._getOrReturnCtx(e);
           return (
-            iW(t, {
-              code: iF.invalid_type,
-              expected: iU.never,
+            iK(t, {
+              code: iQ.invalid_type,
+              expected: iF.never,
               received: t.parsedType,
             }),
-            iK
+            iG
           );
         }
       }
-      sR.create = (e) => new sR({ typeName: y.ZodNever, ...i3(e) });
-      class sA extends i6 {
+      sN.create = (e) => new sN({ typeName: y.ZodNever, ...i8(e) });
+      class sC extends i9 {
         _parse(e) {
-          if (this._getType(e) !== iU.undefined) {
+          if (this._getType(e) !== iF.undefined) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.void,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.void,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
       }
-      sA.create = (e) => new sA({ typeName: y.ZodVoid, ...i3(e) });
-      class sN extends i6 {
+      sC.create = (e) => new sC({ typeName: y.ZodVoid, ...i8(e) });
+      class sx extends i9 {
         _parse(e) {
           let { ctx: t, status: r } = this._processInputParams(e),
             n = this._def;
-          if (t.parsedType !== iU.array)
+          if (t.parsedType !== iF.array)
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.array,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.array,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           if (null !== n.exactLength) {
             let e = t.data.length > n.exactLength.value,
               i = t.data.length < n.exactLength.value;
             (e || i) &&
-              (iW(t, {
-                code: e ? iF.too_big : iF.too_small,
+              (iK(t, {
+                code: e ? iQ.too_big : iQ.too_small,
                 minimum: i ? n.exactLength.value : void 0,
                 maximum: e ? n.exactLength.value : void 0,
                 type: 'array',
@@ -13527,8 +13513,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           if (
             (null !== n.minLength &&
               t.data.length < n.minLength.value &&
-              (iW(t, {
-                code: iF.too_small,
+              (iK(t, {
+                code: iQ.too_small,
                 minimum: n.minLength.value,
                 type: 'array',
                 inclusive: !0,
@@ -13538,8 +13524,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               r.dirty()),
             null !== n.maxLength &&
               t.data.length > n.maxLength.value &&
-              (iW(t, {
-                code: iF.too_big,
+              (iK(t, {
+                code: iQ.too_big,
                 maximum: n.maxLength.value,
                 type: 'array',
                 inclusive: !0,
@@ -13551,31 +13537,31 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           )
             return Promise.all(
               [...t.data].map((e, r) =>
-                n.type._parseAsync(new i4(t, e, t.path, r))
+                n.type._parseAsync(new i3(t, e, t.path, r))
               )
-            ).then((e) => i$.mergeArray(r, e));
+            ).then((e) => iV.mergeArray(r, e));
           let i = [...t.data].map((e, r) =>
-            n.type._parseSync(new i4(t, e, t.path, r))
+            n.type._parseSync(new i3(t, e, t.path, r))
           );
-          return i$.mergeArray(r, i);
+          return iV.mergeArray(r, i);
         }
         get element() {
           return this._def.type;
         }
         min(e, t) {
-          return new sN({
+          return new sx({
             ...this._def,
             minLength: { value: e, message: p.toString(t) },
           });
         }
         max(e, t) {
-          return new sN({
+          return new sx({
             ...this._def,
             maxLength: { value: e, message: p.toString(t) },
           });
         }
         length(e, t) {
-          return new sN({
+          return new sx({
             ...this._def,
             exactLength: { value: e, message: p.toString(t) },
           });
@@ -13584,16 +13570,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.min(1, e);
         }
       }
-      sN.create = (e, t) =>
-        new sN({
+      sx.create = (e, t) =>
+        new sx({
           type: e,
           minLength: null,
           maxLength: null,
           exactLength: null,
           typeName: y.ZodArray,
-          ...i3(t),
+          ...i8(t),
         });
-      class sC extends i6 {
+      class sk extends i9 {
         constructor() {
           super(...arguments),
             (this._cached = null),
@@ -13607,15 +13593,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return (this._cached = { shape: e, keys: t });
         }
         _parse(e) {
-          if (this._getType(e) !== iU.object) {
+          if (this._getType(e) !== iF.object) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.object,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.object,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
           let { status: t, ctx: r } = this._processInputParams(e),
@@ -13623,7 +13609,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             s = [];
           if (
             !(
-              this._def.catchall instanceof sR &&
+              this._def.catchall instanceof sN &&
               'strip' === this._def.unknownKeys
             )
           )
@@ -13634,11 +13620,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               i = r.data[e];
             a.push({
               key: { status: 'valid', value: e },
-              value: t._parse(new i4(r, i, r.path, e)),
+              value: t._parse(new i3(r, i, r.path, e)),
               alwaysSet: e in r.data,
             });
           }
-          if (this._def.catchall instanceof sR) {
+          if (this._def.catchall instanceof sN) {
             let e = this._def.unknownKeys;
             if ('passthrough' === e)
               for (let e of s)
@@ -13648,7 +13634,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 });
             else if ('strict' === e)
               s.length > 0 &&
-                (iW(r, { code: iF.unrecognized_keys, keys: s }), t.dirty());
+                (iK(r, { code: iQ.unrecognized_keys, keys: s }), t.dirty());
             else if ('strip' === e);
             else
               throw Error(
@@ -13660,7 +13646,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               let n = r.data[t];
               a.push({
                 key: { status: 'valid', value: t },
-                value: e._parse(new i4(r, n, r.path, t)),
+                value: e._parse(new i3(r, n, r.path, t)),
                 alwaysSet: t in r.data,
               });
             }
@@ -13676,8 +13662,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   }
                   return e;
                 })
-                .then((e) => i$.mergeObjectSync(t, e))
-            : i$.mergeObjectSync(t, a);
+                .then((e) => iV.mergeObjectSync(t, e))
+            : iV.mergeObjectSync(t, a);
         }
         get shape() {
           return this._def.shape();
@@ -13685,7 +13671,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         strict(e) {
           return (
             p.errToObj,
-            new sC({
+            new sk({
               ...this._def,
               unknownKeys: 'strict',
               ...(void 0 !== e
@@ -13717,19 +13703,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
         strip() {
-          return new sC({ ...this._def, unknownKeys: 'strip' });
+          return new sk({ ...this._def, unknownKeys: 'strip' });
         }
         passthrough() {
-          return new sC({ ...this._def, unknownKeys: 'passthrough' });
+          return new sk({ ...this._def, unknownKeys: 'passthrough' });
         }
         extend(e) {
-          return new sC({
+          return new sk({
             ...this._def,
             shape: () => ({ ...this._def.shape(), ...e }),
           });
         }
         merge(e) {
-          return new sC({
+          return new sk({
             unknownKeys: e._def.unknownKeys,
             catchall: e._def.catchall,
             shape: () => ({ ...this._def.shape(), ...e._def.shape() }),
@@ -13740,7 +13726,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.augment({ [e]: t });
         }
         catchall(e) {
-          return new sC({ ...this._def, catchall: e });
+          return new sk({ ...this._def, catchall: e });
         }
         pick(e) {
           let t = {};
@@ -13748,7 +13734,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             d.objectKeys(e).forEach((r) => {
               e[r] && this.shape[r] && (t[r] = this.shape[r]);
             }),
-            new sC({ ...this._def, shape: () => t })
+            new sk({ ...this._def, shape: () => t })
           );
         }
         omit(e) {
@@ -13757,27 +13743,27 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             d.objectKeys(this.shape).forEach((r) => {
               e[r] || (t[r] = this.shape[r]);
             }),
-            new sC({ ...this._def, shape: () => t })
+            new sk({ ...this._def, shape: () => t })
           );
         }
         deepPartial() {
           return (function e(t) {
-            if (t instanceof sC) {
+            if (t instanceof sk) {
               let r = {};
               for (let n in t.shape) {
                 let i = t.shape[n];
-                r[n] = sH.create(e(i));
+                r[n] = s$.create(e(i));
               }
-              return new sC({ ...t._def, shape: () => r });
+              return new sk({ ...t._def, shape: () => r });
             }
-            return t instanceof sN
-              ? new sN({ ...t._def, type: e(t.element) })
-              : t instanceof sH
-                ? sH.create(e(t.unwrap()))
-                : t instanceof sW
-                  ? sW.create(e(t.unwrap()))
-                  : t instanceof sP
-                    ? sP.create(t.items.map((t) => e(t)))
+            return t instanceof sx
+              ? new sx({ ...t._def, type: e(t.element) })
+              : t instanceof s$
+                ? s$.create(e(t.unwrap()))
+                : t instanceof sK
+                  ? sK.create(e(t.unwrap()))
+                  : t instanceof sM
+                    ? sM.create(t.items.map((t) => e(t)))
                     : t;
           })(this);
         }
@@ -13788,7 +13774,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               let n = this.shape[r];
               e && !e[r] ? (t[r] = n) : (t[r] = n.optional());
             }),
-            new sC({ ...this._def, shape: () => t })
+            new sk({ ...this._def, shape: () => t })
           );
         }
         required(e) {
@@ -13798,42 +13784,42 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               if (e && !e[r]) t[r] = this.shape[r];
               else {
                 let e = this.shape[r];
-                for (; e instanceof sH; ) e = e._def.innerType;
+                for (; e instanceof s$; ) e = e._def.innerType;
                 t[r] = e;
               }
             }),
-            new sC({ ...this._def, shape: () => t })
+            new sk({ ...this._def, shape: () => t })
           );
         }
         keyof() {
-          return sF(d.objectKeys(this.shape));
+          return sQ(d.objectKeys(this.shape));
         }
       }
-      (sC.create = (e, t) =>
-        new sC({
+      (sk.create = (e, t) =>
+        new sk({
           shape: () => e,
           unknownKeys: 'strip',
-          catchall: sR.create(),
+          catchall: sN.create(),
           typeName: y.ZodObject,
-          ...i3(t),
+          ...i8(t),
         })),
-        (sC.strictCreate = (e, t) =>
-          new sC({
+        (sk.strictCreate = (e, t) =>
+          new sk({
             shape: () => e,
             unknownKeys: 'strict',
-            catchall: sR.create(),
+            catchall: sN.create(),
             typeName: y.ZodObject,
-            ...i3(t),
+            ...i8(t),
           })),
-        (sC.lazycreate = (e, t) =>
-          new sC({
+        (sk.lazycreate = (e, t) =>
+          new sk({
             shape: e,
             unknownKeys: 'strip',
-            catchall: sR.create(),
+            catchall: sN.create(),
             typeName: y.ZodObject,
-            ...i3(t),
+            ...i8(t),
           }));
-      class sx extends i6 {
+      class sT extends i9 {
         _parse(e) {
           let { ctx: t } = this._processInputParams(e),
             r = this._def.options;
@@ -13859,8 +13845,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               for (let r of e)
                 if ('dirty' === r.result.status)
                   return t.common.issues.push(...r.ctx.common.issues), r.result;
-              let r = e.map((e) => new iB(e.ctx.common.issues));
-              return iW(t, { code: iF.invalid_union, unionErrors: r }), iK;
+              let r = e.map((e) => new iZ(e.ctx.common.issues));
+              return iK(t, { code: iQ.invalid_union, unionErrors: r }), iG;
             });
           {
             let e;
@@ -13878,43 +13864,43 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
             if (e)
               return t.common.issues.push(...e.ctx.common.issues), e.result;
-            let i = n.map((e) => new iB(e));
-            return iW(t, { code: iF.invalid_union, unionErrors: i }), iK;
+            let i = n.map((e) => new iZ(e));
+            return iK(t, { code: iQ.invalid_union, unionErrors: i }), iG;
           }
         }
         get options() {
           return this._def.options;
         }
       }
-      sx.create = (e, t) =>
-        new sx({ options: e, typeName: y.ZodUnion, ...i3(t) });
-      let sk = (e) => {
-        if (e instanceof sU) return sk(e.schema);
-        if (e instanceof sz) return sk(e.innerType());
-        if (e instanceof sL) return [e.value];
-        if (e instanceof sB) return e.options;
-        if (e instanceof sQ) return d.objectValues(e.enum);
-        if (e instanceof s$) return sk(e._def.innerType);
-        if (e instanceof s_) return [void 0];
-        else if (e instanceof sE) return [null];
-        else if (e instanceof sH) return [void 0, ...sk(e.unwrap())];
-        else if (e instanceof sW) return [null, ...sk(e.unwrap())];
-        else if (e instanceof sJ) return sk(e.unwrap());
-        else if (e instanceof sX) return sk(e.unwrap());
-        else if (e instanceof sK) return sk(e._def.innerType);
+      sT.create = (e, t) =>
+        new sT({ options: e, typeName: y.ZodUnion, ...i8(t) });
+      let sI = (e) => {
+        if (e instanceof sF) return sI(e.schema);
+        if (e instanceof sW) return sI(e.innerType());
+        if (e instanceof sB) return [e.value];
+        if (e instanceof sZ) return e.options;
+        if (e instanceof sz) return d.objectValues(e.enum);
+        if (e instanceof sV) return sI(e._def.innerType);
+        if (e instanceof sS) return [void 0];
+        else if (e instanceof sO) return [null];
+        else if (e instanceof s$) return [void 0, ...sI(e.unwrap())];
+        else if (e instanceof sK) return [null, ...sI(e.unwrap())];
+        else if (e instanceof sX) return sI(e.unwrap());
+        else if (e instanceof s1) return sI(e.unwrap());
+        else if (e instanceof sG) return sI(e._def.innerType);
         else return [];
       };
-      class sT extends i6 {
+      class sP extends i9 {
         _parse(e) {
           let { ctx: t } = this._processInputParams(e);
-          if (t.parsedType !== iU.object)
+          if (t.parsedType !== iF.object)
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.object,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.object,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           let r = this.discriminator,
             n = t.data[r],
@@ -13923,12 +13909,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             ? t.common.async
               ? i._parseAsync({ data: t.data, path: t.path, parent: t })
               : i._parseSync({ data: t.data, path: t.path, parent: t })
-            : (iW(t, {
-                code: iF.invalid_union_discriminator,
+            : (iK(t, {
+                code: iQ.invalid_union_discriminator,
                 options: Array.from(this.optionsMap.keys()),
                 path: [r],
               }),
-              iK);
+              iG);
         }
         get discriminator() {
           return this._def.discriminator;
@@ -13942,7 +13928,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         static create(e, t, r) {
           let n = new Map();
           for (let r of t) {
-            let t = sk(r.shape[e]);
+            let t = sI(r.shape[e]);
             if (!t.length)
               throw Error(
                 `A discriminator value for key \`${e}\` could not be extracted from all schema options`
@@ -13955,25 +13941,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               n.set(i, r);
             }
           }
-          return new sT({
+          return new sP({
             typeName: y.ZodDiscriminatedUnion,
             discriminator: e,
             options: t,
             optionsMap: n,
-            ...i3(r),
+            ...i8(r),
           });
         }
       }
-      class sI extends i6 {
+      class sD extends i9 {
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e),
             n = (e, n) => {
-              if (iJ(e) || iJ(n)) return iK;
+              if (iX(e) || iX(n)) return iG;
               let i = (function e(t, r) {
-                let n = iL(t),
-                  i = iL(r);
+                let n = iB(t),
+                  i = iB(r);
                 if (t === r) return { valid: !0, data: t };
-                if (n === iU.object && i === iU.object) {
+                if (n === iF.object && i === iF.object) {
                   let n = d.objectKeys(r),
                     i = d.objectKeys(t).filter((e) => -1 !== n.indexOf(e)),
                     s = { ...t, ...r };
@@ -13984,7 +13970,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   }
                   return { valid: !0, data: s };
                 }
-                if (n === iU.array && i === iU.array) {
+                if (n === iF.array && i === iF.array) {
                   if (t.length !== r.length) return { valid: !1 };
                   let n = [];
                   for (let i = 0; i < t.length; i++) {
@@ -13994,14 +13980,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   }
                   return { valid: !0, data: n };
                 }
-                return n === iU.date && i === iU.date && +t == +r
+                return n === iF.date && i === iF.date && +t == +r
                   ? { valid: !0, data: t }
                   : { valid: !1 };
               })(e.value, n.value);
               return i.valid
-                ? ((iY(e) || iY(n)) && t.dirty(),
+                ? ((i0(e) || i0(n)) && t.dirty(),
                   { status: t.value, value: i.data })
-                : (iW(r, { code: iF.invalid_intersection_types }), iK);
+                : (iK(r, { code: iQ.invalid_intersection_types }), iG);
             };
           return r.common.async
             ? Promise.all([
@@ -14030,35 +14016,35 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               );
         }
       }
-      sI.create = (e, t, r) =>
-        new sI({ left: e, right: t, typeName: y.ZodIntersection, ...i3(r) });
-      class sP extends i6 {
+      sD.create = (e, t, r) =>
+        new sD({ left: e, right: t, typeName: y.ZodIntersection, ...i8(r) });
+      class sM extends i9 {
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
-          if (r.parsedType !== iU.array)
+          if (r.parsedType !== iF.array)
             return (
-              iW(r, {
-                code: iF.invalid_type,
-                expected: iU.array,
+              iK(r, {
+                code: iQ.invalid_type,
+                expected: iF.array,
                 received: r.parsedType,
               }),
-              iK
+              iG
             );
           if (r.data.length < this._def.items.length)
             return (
-              iW(r, {
-                code: iF.too_small,
+              iK(r, {
+                code: iQ.too_small,
                 minimum: this._def.items.length,
                 inclusive: !0,
                 exact: !1,
                 type: 'array',
               }),
-              iK
+              iG
             );
           !this._def.rest &&
             r.data.length > this._def.items.length &&
-            (iW(r, {
-              code: iF.too_big,
+            (iK(r, {
+              code: iQ.too_big,
               maximum: this._def.items.length,
               inclusive: !0,
               exact: !1,
@@ -14068,26 +14054,26 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           let n = [...r.data]
             .map((e, t) => {
               let n = this._def.items[t] || this._def.rest;
-              return n ? n._parse(new i4(r, e, r.path, t)) : null;
+              return n ? n._parse(new i3(r, e, r.path, t)) : null;
             })
             .filter((e) => !!e);
           return r.common.async
-            ? Promise.all(n).then((e) => i$.mergeArray(t, e))
-            : i$.mergeArray(t, n);
+            ? Promise.all(n).then((e) => iV.mergeArray(t, e))
+            : iV.mergeArray(t, n);
         }
         get items() {
           return this._def.items;
         }
         rest(e) {
-          return new sP({ ...this._def, rest: e });
+          return new sM({ ...this._def, rest: e });
         }
       }
-      sP.create = (e, t) => {
+      sM.create = (e, t) => {
         if (!Array.isArray(e))
           throw Error('You must pass an array of schemas to z.tuple([ ... ])');
-        return new sP({ items: e, typeName: y.ZodTuple, rest: null, ...i3(t) });
+        return new sM({ items: e, typeName: y.ZodTuple, rest: null, ...i8(t) });
       };
-      class sD extends i6 {
+      class sj extends i9 {
         get keySchema() {
           return this._def.keyType;
         }
@@ -14096,45 +14082,45 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
-          if (r.parsedType !== iU.object)
+          if (r.parsedType !== iF.object)
             return (
-              iW(r, {
-                code: iF.invalid_type,
-                expected: iU.object,
+              iK(r, {
+                code: iQ.invalid_type,
+                expected: iF.object,
                 received: r.parsedType,
               }),
-              iK
+              iG
             );
           let n = [],
             i = this._def.keyType,
             s = this._def.valueType;
           for (let e in r.data)
             n.push({
-              key: i._parse(new i4(r, e, r.path, e)),
-              value: s._parse(new i4(r, r.data[e], r.path, e)),
+              key: i._parse(new i3(r, e, r.path, e)),
+              value: s._parse(new i3(r, r.data[e], r.path, e)),
               alwaysSet: e in r.data,
             });
           return r.common.async
-            ? i$.mergeObjectAsync(t, n)
-            : i$.mergeObjectSync(t, n);
+            ? iV.mergeObjectAsync(t, n)
+            : iV.mergeObjectSync(t, n);
         }
         get element() {
           return this._def.valueType;
         }
         static create(e, t, r) {
-          return new sD(
-            t instanceof i6
-              ? { keyType: e, valueType: t, typeName: y.ZodRecord, ...i3(r) }
+          return new sj(
+            t instanceof i9
+              ? { keyType: e, valueType: t, typeName: y.ZodRecord, ...i8(r) }
               : {
-                  keyType: sm.create(),
+                  keyType: sy.create(),
                   valueType: e,
                   typeName: y.ZodRecord,
-                  ...i3(t),
+                  ...i8(t),
                 }
           );
         }
       }
-      class sM extends i6 {
+      class sq extends i9 {
         get keySchema() {
           return this._def.keyType;
         }
@@ -14143,20 +14129,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
-          if (r.parsedType !== iU.map)
+          if (r.parsedType !== iF.map)
             return (
-              iW(r, {
-                code: iF.invalid_type,
-                expected: iU.map,
+              iK(r, {
+                code: iQ.invalid_type,
+                expected: iF.map,
                 received: r.parsedType,
               }),
-              iK
+              iG
             );
           let n = this._def.keyType,
             i = this._def.valueType,
             s = [...r.data.entries()].map(([e, t], s) => ({
-              key: n._parse(new i4(r, e, r.path, [s, 'key'])),
-              value: i._parse(new i4(r, t, r.path, [s, 'value'])),
+              key: n._parse(new i3(r, e, r.path, [s, 'key'])),
+              value: i._parse(new i3(r, t, r.path, [s, 'value'])),
             }));
           if (r.common.async) {
             let e = new Map();
@@ -14164,7 +14150,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               for (let r of s) {
                 let n = await r.key,
                   i = await r.value;
-                if ('aborted' === n.status || 'aborted' === i.status) return iK;
+                if ('aborted' === n.status || 'aborted' === i.status) return iG;
                 ('dirty' === n.status || 'dirty' === i.status) && t.dirty(),
                   e.set(n.value, i.value);
               }
@@ -14176,7 +14162,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             for (let r of s) {
               let n = r.key,
                 i = r.value;
-              if ('aborted' === n.status || 'aborted' === i.status) return iK;
+              if ('aborted' === n.status || 'aborted' === i.status) return iG;
               ('dirty' === n.status || 'dirty' === i.status) && t.dirty(),
                 e.set(n.value, i.value);
             }
@@ -14184,25 +14170,25 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
         }
       }
-      sM.create = (e, t, r) =>
-        new sM({ valueType: t, keyType: e, typeName: y.ZodMap, ...i3(r) });
-      class sj extends i6 {
+      sq.create = (e, t, r) =>
+        new sq({ valueType: t, keyType: e, typeName: y.ZodMap, ...i8(r) });
+      class sU extends i9 {
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
-          if (r.parsedType !== iU.set)
+          if (r.parsedType !== iF.set)
             return (
-              iW(r, {
-                code: iF.invalid_type,
-                expected: iU.set,
+              iK(r, {
+                code: iQ.invalid_type,
+                expected: iF.set,
                 received: r.parsedType,
               }),
-              iK
+              iG
             );
           let n = this._def;
           null !== n.minSize &&
             r.data.size < n.minSize.value &&
-            (iW(r, {
-              code: iF.too_small,
+            (iK(r, {
+              code: iQ.too_small,
               minimum: n.minSize.value,
               type: 'set',
               inclusive: !0,
@@ -14212,8 +14198,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             t.dirty()),
             null !== n.maxSize &&
               r.data.size > n.maxSize.value &&
-              (iW(r, {
-                code: iF.too_big,
+              (iK(r, {
+                code: iQ.too_big,
                 maximum: n.maxSize.value,
                 type: 'set',
                 inclusive: !0,
@@ -14225,24 +14211,24 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           function s(e) {
             let r = new Set();
             for (let n of e) {
-              if ('aborted' === n.status) return iK;
+              if ('aborted' === n.status) return iG;
               'dirty' === n.status && t.dirty(), r.add(n.value);
             }
             return { status: t.value, value: r };
           }
           let a = [...r.data.values()].map((e, t) =>
-            i._parse(new i4(r, e, r.path, t))
+            i._parse(new i3(r, e, r.path, t))
           );
           return r.common.async ? Promise.all(a).then((e) => s(e)) : s(a);
         }
         min(e, t) {
-          return new sj({
+          return new sU({
             ...this._def,
             minSize: { value: e, message: p.toString(t) },
           });
         }
         max(e, t) {
-          return new sj({
+          return new sU({
             ...this._def,
             maxSize: { value: e, message: p.toString(t) },
           });
@@ -14254,61 +14240,61 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.min(1, e);
         }
       }
-      sj.create = (e, t) =>
-        new sj({
+      sU.create = (e, t) =>
+        new sU({
           valueType: e,
           minSize: null,
           maxSize: null,
           typeName: y.ZodSet,
-          ...i3(t),
+          ...i8(t),
         });
-      class sq extends i6 {
+      class sL extends i9 {
         constructor() {
           super(...arguments), (this.validate = this.implement);
         }
         _parse(e) {
           let { ctx: t } = this._processInputParams(e);
-          if (t.parsedType !== iU.function)
+          if (t.parsedType !== iF.function)
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.function,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.function,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           function r(e, r) {
-            return iH({
+            return i$({
               data: e,
               path: t.path,
               errorMaps: [
                 t.common.contextualErrorMap,
                 t.schemaErrorMap,
-                iz(),
-                iQ,
+                iW(),
+                iz,
               ].filter((e) => !!e),
-              issueData: { code: iF.invalid_arguments, argumentsError: r },
+              issueData: { code: iQ.invalid_arguments, argumentsError: r },
             });
           }
           function n(e, r) {
-            return iH({
+            return i$({
               data: e,
               path: t.path,
               errorMaps: [
                 t.common.contextualErrorMap,
                 t.schemaErrorMap,
-                iz(),
-                iQ,
+                iW(),
+                iz,
               ].filter((e) => !!e),
-              issueData: { code: iF.invalid_return_type, returnTypeError: r },
+              issueData: { code: iQ.invalid_return_type, returnTypeError: r },
             });
           }
           let i = { errorMap: t.common.contextualErrorMap },
             s = t.data;
-          if (this._def.returns instanceof sZ) {
+          if (this._def.returns instanceof sH) {
             let e = this;
-            return iG(async function (...t) {
-              let a = new iB([]),
+            return iY(async function (...t) {
+              let a = new iZ([]),
                 o = await e._def.args.parseAsync(t, i).catch((e) => {
                   throw (a.addIssue(r(t, e)), a);
                 }),
@@ -14322,12 +14308,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
           {
             let e = this;
-            return iG(function (...t) {
+            return iY(function (...t) {
               let a = e._def.args.safeParse(t, i);
-              if (!a.success) throw new iB([r(t, a.error)]);
+              if (!a.success) throw new iZ([r(t, a.error)]);
               let o = Reflect.apply(s, this, a.data),
                 u = e._def.returns.safeParse(o, i);
-              if (!u.success) throw new iB([n(o, u.error)]);
+              if (!u.success) throw new iZ([n(o, u.error)]);
               return u.data;
             });
           }
@@ -14339,10 +14325,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.returns;
         }
         args(...e) {
-          return new sq({ ...this._def, args: sP.create(e).rest(sO.create()) });
+          return new sL({ ...this._def, args: sM.create(e).rest(sA.create()) });
         }
         returns(e) {
-          return new sq({ ...this._def, returns: e });
+          return new sL({ ...this._def, returns: e });
         }
         implement(e) {
           return this.parse(e);
@@ -14351,15 +14337,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.parse(e);
         }
         static create(e, t, r) {
-          return new sq({
-            args: e || sP.create([]).rest(sO.create()),
-            returns: t || sO.create(),
+          return new sL({
+            args: e || sM.create([]).rest(sA.create()),
+            returns: t || sA.create(),
             typeName: y.ZodFunction,
-            ...i3(r),
+            ...i8(r),
           });
         }
       }
-      class sU extends i6 {
+      class sF extends i9 {
         get schema() {
           return this._def.getter();
         }
@@ -14370,19 +14356,19 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             ._parse({ data: t.data, path: t.path, parent: t });
         }
       }
-      sU.create = (e, t) =>
-        new sU({ getter: e, typeName: y.ZodLazy, ...i3(t) });
-      class sL extends i6 {
+      sF.create = (e, t) =>
+        new sF({ getter: e, typeName: y.ZodLazy, ...i8(t) });
+      class sB extends i9 {
         _parse(e) {
           if (e.data !== this._def.value) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
+              iK(t, {
                 received: t.data,
-                code: iF.invalid_literal,
+                code: iQ.invalid_literal,
                 expected: this._def.value,
               }),
-              iK
+              iG
             );
           }
           return { status: 'valid', value: e.data };
@@ -14391,12 +14377,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.value;
         }
       }
-      function sF(e, t) {
-        return new sB({ values: e, typeName: y.ZodEnum, ...i3(t) });
+      function sQ(e, t) {
+        return new sZ({ values: e, typeName: y.ZodEnum, ...i8(t) });
       }
-      sL.create = (e, t) =>
-        new sL({ value: e, typeName: y.ZodLiteral, ...i3(t) });
-      class sB extends i6 {
+      sB.create = (e, t) =>
+        new sB({ value: e, typeName: y.ZodLiteral, ...i8(t) });
+      class sZ extends i9 {
         constructor() {
           super(...arguments), m.set(this, void 0);
         }
@@ -14405,30 +14391,30 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let t = this._getOrReturnCtx(e),
               r = this._def.values;
             return (
-              iW(t, {
+              iK(t, {
                 expected: d.joinValues(r),
                 received: t.parsedType,
-                code: iF.invalid_type,
+                code: iQ.invalid_type,
               }),
-              iK
+              iG
             );
           }
           if (
-            (i1(this, m, 'f') || i2(this, m, new Set(this._def.values), 'f'),
-            !i1(this, m, 'f').has(e.data))
+            (i4(this, m, 'f') || i5(this, m, new Set(this._def.values), 'f'),
+            !i4(this, m, 'f').has(e.data))
           ) {
             let t = this._getOrReturnCtx(e),
               r = this._def.values;
             return (
-              iW(t, {
+              iK(t, {
                 received: t.data,
-                code: iF.invalid_enum_value,
+                code: iQ.invalid_enum_value,
                 options: r,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
         get options() {
           return this._def.values;
@@ -14449,73 +14435,73 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return e;
         }
         extract(e, t = this._def) {
-          return sB.create(e, { ...this._def, ...t });
+          return sZ.create(e, { ...this._def, ...t });
         }
         exclude(e, t = this._def) {
-          return sB.create(
+          return sZ.create(
             this.options.filter((t) => !e.includes(t)),
             { ...this._def, ...t }
           );
         }
       }
-      (m = new WeakMap()), (sB.create = sF);
-      class sQ extends i6 {
+      (m = new WeakMap()), (sZ.create = sQ);
+      class sz extends i9 {
         constructor() {
           super(...arguments), g.set(this, void 0);
         }
         _parse(e) {
           let t = d.getValidEnumValues(this._def.values),
             r = this._getOrReturnCtx(e);
-          if (r.parsedType !== iU.string && r.parsedType !== iU.number) {
+          if (r.parsedType !== iF.string && r.parsedType !== iF.number) {
             let e = d.objectValues(t);
             return (
-              iW(r, {
+              iK(r, {
                 expected: d.joinValues(e),
                 received: r.parsedType,
-                code: iF.invalid_type,
+                code: iQ.invalid_type,
               }),
-              iK
+              iG
             );
           }
           if (
-            (i1(this, g, 'f') ||
-              i2(this, g, new Set(d.getValidEnumValues(this._def.values)), 'f'),
-            !i1(this, g, 'f').has(e.data))
+            (i4(this, g, 'f') ||
+              i5(this, g, new Set(d.getValidEnumValues(this._def.values)), 'f'),
+            !i4(this, g, 'f').has(e.data))
           ) {
             let e = d.objectValues(t);
             return (
-              iW(r, {
+              iK(r, {
                 received: r.data,
-                code: iF.invalid_enum_value,
+                code: iQ.invalid_enum_value,
                 options: e,
               }),
-              iK
+              iG
             );
           }
-          return iG(e.data);
+          return iY(e.data);
         }
         get enum() {
           return this._def.values;
         }
       }
       (g = new WeakMap()),
-        (sQ.create = (e, t) =>
-          new sQ({ values: e, typeName: y.ZodNativeEnum, ...i3(t) }));
-      class sZ extends i6 {
+        (sz.create = (e, t) =>
+          new sz({ values: e, typeName: y.ZodNativeEnum, ...i8(t) }));
+      class sH extends i9 {
         unwrap() {
           return this._def.type;
         }
         _parse(e) {
           let { ctx: t } = this._processInputParams(e);
-          return t.parsedType !== iU.promise && !1 === t.common.async
-            ? (iW(t, {
-                code: iF.invalid_type,
-                expected: iU.promise,
+          return t.parsedType !== iF.promise && !1 === t.common.async
+            ? (iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.promise,
                 received: t.parsedType,
               }),
-              iK)
-            : iG(
-                (t.parsedType === iU.promise
+              iG)
+            : iY(
+                (t.parsedType === iF.promise
                   ? t.data
                   : Promise.resolve(t.data)
                 ).then((e) =>
@@ -14527,9 +14513,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               );
         }
       }
-      sZ.create = (e, t) =>
-        new sZ({ type: e, typeName: y.ZodPromise, ...i3(t) });
-      class sz extends i6 {
+      sH.create = (e, t) =>
+        new sH({ type: e, typeName: y.ZodPromise, ...i8(t) });
+      class sW extends i9 {
         innerType() {
           return this._def.schema;
         }
@@ -14543,7 +14529,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             n = this._def.effect || null,
             i = {
               addIssue: (e) => {
-                iW(r, e), e.fatal ? t.abort() : t.dirty();
+                iK(r, e), e.fatal ? t.abort() : t.dirty();
               },
               get path() {
                 return r.path;
@@ -14553,29 +14539,29 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let e = n.transform(r.data, i);
             if (r.common.async)
               return Promise.resolve(e).then(async (e) => {
-                if ('aborted' === t.value) return iK;
+                if ('aborted' === t.value) return iG;
                 let n = await this._def.schema._parseAsync({
                   data: e,
                   path: r.path,
                   parent: r,
                 });
                 return 'aborted' === n.status
-                  ? iK
+                  ? iG
                   : 'dirty' === n.status || 'dirty' === t.value
-                    ? iV(n.value)
+                    ? iJ(n.value)
                     : n;
               });
             {
-              if ('aborted' === t.value) return iK;
+              if ('aborted' === t.value) return iG;
               let n = this._def.schema._parseSync({
                 data: e,
                 path: r.path,
                 parent: r,
               });
               return 'aborted' === n.status
-                ? iK
+                ? iG
                 : 'dirty' === n.status || 'dirty' === t.value
-                  ? iV(n.value)
+                  ? iJ(n.value)
                   : n;
             }
           }
@@ -14594,7 +14580,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 ._parseAsync({ data: r.data, path: r.path, parent: r })
                 .then((r) =>
                   'aborted' === r.status
-                    ? iK
+                    ? iG
                     : ('dirty' === r.status && t.dirty(),
                       e(r.value).then(() => ({
                         status: t.value,
@@ -14608,7 +14594,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 parent: r,
               });
               return 'aborted' === n.status
-                ? iK
+                ? iG
                 : ('dirty' === n.status && t.dirty(),
                   e(n.value),
                   { status: t.value, value: n.value });
@@ -14619,7 +14605,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               return this._def.schema
                 ._parseAsync({ data: r.data, path: r.path, parent: r })
                 .then((e) =>
-                  iX(e)
+                  i1(e)
                     ? Promise.resolve(n.transform(e.value, i)).then((e) => ({
                         status: t.value,
                         value: e,
@@ -14632,7 +14618,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 path: r.path,
                 parent: r,
               });
-              if (!iX(e)) return e;
+              if (!i1(e)) return e;
               let s = n.transform(e.value, i);
               if (s instanceof Promise)
                 throw Error(
@@ -14644,45 +14630,45 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           d.assertNever(n);
         }
       }
-      (sz.create = (e, t, r) =>
-        new sz({ schema: e, typeName: y.ZodEffects, effect: t, ...i3(r) })),
-        (sz.createWithPreprocess = (e, t, r) =>
-          new sz({
+      (sW.create = (e, t, r) =>
+        new sW({ schema: e, typeName: y.ZodEffects, effect: t, ...i8(r) })),
+        (sW.createWithPreprocess = (e, t, r) =>
+          new sW({
             schema: t,
             effect: { type: 'preprocess', transform: e },
             typeName: y.ZodEffects,
-            ...i3(r),
+            ...i8(r),
           }));
-      class sH extends i6 {
+      class s$ extends i9 {
         _parse(e) {
-          return this._getType(e) === iU.undefined
-            ? iG(void 0)
+          return this._getType(e) === iF.undefined
+            ? iY(void 0)
             : this._def.innerType._parse(e);
         }
         unwrap() {
           return this._def.innerType;
         }
       }
-      sH.create = (e, t) =>
-        new sH({ innerType: e, typeName: y.ZodOptional, ...i3(t) });
-      class sW extends i6 {
+      s$.create = (e, t) =>
+        new s$({ innerType: e, typeName: y.ZodOptional, ...i8(t) });
+      class sK extends i9 {
         _parse(e) {
-          return this._getType(e) === iU.null
-            ? iG(null)
+          return this._getType(e) === iF.null
+            ? iY(null)
             : this._def.innerType._parse(e);
         }
         unwrap() {
           return this._def.innerType;
         }
       }
-      sW.create = (e, t) =>
-        new sW({ innerType: e, typeName: y.ZodNullable, ...i3(t) });
-      class s$ extends i6 {
+      sK.create = (e, t) =>
+        new sK({ innerType: e, typeName: y.ZodNullable, ...i8(t) });
+      class sV extends i9 {
         _parse(e) {
           let { ctx: t } = this._processInputParams(e),
             r = t.data;
           return (
-            t.parsedType === iU.undefined && (r = this._def.defaultValue()),
+            t.parsedType === iF.undefined && (r = this._def.defaultValue()),
             this._def.innerType._parse({ data: r, path: t.path, parent: t })
           );
         }
@@ -14690,15 +14676,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.innerType;
         }
       }
-      s$.create = (e, t) =>
-        new s$({
+      sV.create = (e, t) =>
+        new sV({
           innerType: e,
           typeName: y.ZodDefault,
           defaultValue:
             'function' == typeof t.default ? t.default : () => t.default,
-          ...i3(t),
+          ...i8(t),
         });
-      class sK extends i6 {
+      class sG extends i9 {
         _parse(e) {
           let { ctx: t } = this._processInputParams(e),
             r = { ...t, common: { ...t.common, issues: [] } },
@@ -14707,7 +14693,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               path: r.path,
               parent: { ...r },
             });
-          return i0(n)
+          return i2(n)
             ? n.then((e) => ({
                 status: 'valid',
                 value:
@@ -14715,7 +14701,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     ? e.value
                     : this._def.catchValue({
                         get error() {
-                          return new iB(r.common.issues);
+                          return new iZ(r.common.issues);
                         },
                         input: r.data,
                       }),
@@ -14727,7 +14713,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     ? n.value
                     : this._def.catchValue({
                         get error() {
-                          return new iB(r.common.issues);
+                          return new iZ(r.common.issues);
                         },
                         input: r.data,
                       }),
@@ -14737,32 +14723,32 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.innerType;
         }
       }
-      sK.create = (e, t) =>
-        new sK({
+      sG.create = (e, t) =>
+        new sG({
           innerType: e,
           typeName: y.ZodCatch,
           catchValue: 'function' == typeof t.catch ? t.catch : () => t.catch,
-          ...i3(t),
+          ...i8(t),
         });
-      class sV extends i6 {
+      class sJ extends i9 {
         _parse(e) {
-          if (this._getType(e) !== iU.nan) {
+          if (this._getType(e) !== iF.nan) {
             let t = this._getOrReturnCtx(e);
             return (
-              iW(t, {
-                code: iF.invalid_type,
-                expected: iU.nan,
+              iK(t, {
+                code: iQ.invalid_type,
+                expected: iF.nan,
                 received: t.parsedType,
               }),
-              iK
+              iG
             );
           }
           return { status: 'valid', value: e.data };
         }
       }
-      sV.create = (e) => new sV({ typeName: y.ZodNaN, ...i3(e) });
-      let sG = Symbol('zod_brand');
-      class sJ extends i6 {
+      sJ.create = (e) => new sJ({ typeName: y.ZodNaN, ...i8(e) });
+      let sY = Symbol('zod_brand');
+      class sX extends i9 {
         _parse(e) {
           let { ctx: t } = this._processInputParams(e),
             r = t.data;
@@ -14772,7 +14758,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.type;
         }
       }
-      class sY extends i6 {
+      class s0 extends i9 {
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
           if (r.common.async)
@@ -14783,9 +14769,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 parent: r,
               });
               return 'aborted' === e.status
-                ? iK
+                ? iG
                 : 'dirty' === e.status
-                  ? (t.dirty(), iV(e.value))
+                  ? (t.dirty(), iJ(e.value))
                   : this._def.out._parseAsync({
                       data: e.value,
                       path: r.path,
@@ -14799,7 +14785,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               parent: r,
             });
             return 'aborted' === e.status
-              ? iK
+              ? iG
               : 'dirty' === e.status
                 ? (t.dirty(), { status: 'dirty', value: e.value })
                 : this._def.out._parseSync({
@@ -14810,22 +14796,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
         }
         static create(e, t) {
-          return new sY({ in: e, out: t, typeName: y.ZodPipeline });
+          return new s0({ in: e, out: t, typeName: y.ZodPipeline });
         }
       }
-      class sX extends i6 {
+      class s1 extends i9 {
         _parse(e) {
           let t = this._def.innerType._parse(e),
-            r = (e) => (iX(e) && (e.value = Object.freeze(e.value)), e);
-          return i0(t) ? t.then((e) => r(e)) : r(t);
+            r = (e) => (i1(e) && (e.value = Object.freeze(e.value)), e);
+          return i2(t) ? t.then((e) => r(e)) : r(t);
         }
         unwrap() {
           return this._def.innerType;
         }
       }
-      function s0(e, t = {}, r) {
+      function s2(e, t = {}, r) {
         return e
-          ? sS.create().superRefine((n, i) => {
+          ? sR.create().superRefine((n, i) => {
               var s, a;
               if (!e(n)) {
                 let e =
@@ -14843,11 +14829,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 i.addIssue({ code: 'custom', ...u, fatal: o });
               }
             })
-          : sS.create();
+          : sR.create();
       }
-      sX.create = (e, t) =>
-        new sX({ innerType: e, typeName: y.ZodReadonly, ...i3(t) });
-      let s1 = { object: sC.lazycreate };
+      s1.create = (e, t) =>
+        new s1({ innerType: e, typeName: y.ZodReadonly, ...i8(t) });
+      let s4 = { object: sk.lazycreate };
       !(function (e) {
         (e.ZodString = 'ZodString'),
           (e.ZodNumber = 'ZodNumber'),
@@ -14886,11 +14872,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           (e.ZodPipeline = 'ZodPipeline'),
           (e.ZodReadonly = 'ZodReadonly');
       })(y || (y = {}));
-      let s2 = sm.create,
-        s4 = sg.create,
-        s5 = sV.create,
-        s3 = sy.create,
-        s6 = sv.create,
+      let s5 = sy.create,
+        s3 = sv.create,
+        s6 = sJ.create,
         s8 = sb.create,
         s9 = sw.create,
         s7 = s_.create,
@@ -14901,10 +14885,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         ai = sA.create,
         as = sN.create,
         aa = sC.create,
-        ao = sC.strictCreate,
-        au = sx.create,
-        al = sT.create,
-        ac = sI.create,
+        ao = sx.create,
+        au = sk.create,
+        al = sk.strictCreate,
+        ac = sT.create,
         ah = sP.create,
         ad = sD.create,
         af = sM.create,
@@ -14912,144 +14896,146 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         am = sq.create,
         ag = sU.create,
         ay = sL.create,
-        av = sB.create,
-        ab = sQ.create,
+        av = sF.create,
+        ab = sB.create,
         aw = sZ.create,
         a_ = sz.create,
         aE = sH.create,
         aS = sW.create,
-        aO = sz.createWithPreprocess,
-        aR = sY.create;
-      var aA = Object.freeze({
+        aO = s$.create,
+        aR = sK.create,
+        aA = sW.createWithPreprocess,
+        aN = s0.create;
+      var aC = Object.freeze({
         __proto__: null,
-        defaultErrorMap: iQ,
+        defaultErrorMap: iz,
         setErrorMap: function (e) {
-          iZ = e;
+          iH = e;
         },
-        getErrorMap: iz,
-        makeIssue: iH,
+        getErrorMap: iW,
+        makeIssue: i$,
         EMPTY_PATH: [],
-        addIssueToContext: iW,
-        ParseStatus: i$,
-        INVALID: iK,
-        DIRTY: iV,
-        OK: iG,
-        isAborted: iJ,
-        isDirty: iY,
-        isValid: iX,
-        isAsync: i0,
+        addIssueToContext: iK,
+        ParseStatus: iV,
+        INVALID: iG,
+        DIRTY: iJ,
+        OK: iY,
+        isAborted: iX,
+        isDirty: i0,
+        isValid: i1,
+        isAsync: i2,
         get util() {
           return d;
         },
         get objectUtil() {
           return f;
         },
-        ZodParsedType: iU,
-        getParsedType: iL,
-        ZodType: i6,
-        datetimeRegex: sp,
-        ZodString: sm,
-        ZodNumber: sg,
-        ZodBigInt: sy,
-        ZodBoolean: sv,
-        ZodDate: sb,
-        ZodSymbol: sw,
-        ZodUndefined: s_,
-        ZodNull: sE,
-        ZodAny: sS,
-        ZodUnknown: sO,
-        ZodNever: sR,
-        ZodVoid: sA,
-        ZodArray: sN,
-        ZodObject: sC,
-        ZodUnion: sx,
-        ZodDiscriminatedUnion: sT,
-        ZodIntersection: sI,
-        ZodTuple: sP,
-        ZodRecord: sD,
-        ZodMap: sM,
-        ZodSet: sj,
-        ZodFunction: sq,
-        ZodLazy: sU,
-        ZodLiteral: sL,
-        ZodEnum: sB,
-        ZodNativeEnum: sQ,
-        ZodPromise: sZ,
-        ZodEffects: sz,
-        ZodTransformer: sz,
-        ZodOptional: sH,
-        ZodNullable: sW,
-        ZodDefault: s$,
-        ZodCatch: sK,
-        ZodNaN: sV,
-        BRAND: sG,
-        ZodBranded: sJ,
-        ZodPipeline: sY,
-        ZodReadonly: sX,
-        custom: s0,
-        Schema: i6,
-        ZodSchema: i6,
-        late: s1,
+        ZodParsedType: iF,
+        getParsedType: iB,
+        ZodType: i9,
+        datetimeRegex: sg,
+        ZodString: sy,
+        ZodNumber: sv,
+        ZodBigInt: sb,
+        ZodBoolean: sw,
+        ZodDate: s_,
+        ZodSymbol: sE,
+        ZodUndefined: sS,
+        ZodNull: sO,
+        ZodAny: sR,
+        ZodUnknown: sA,
+        ZodNever: sN,
+        ZodVoid: sC,
+        ZodArray: sx,
+        ZodObject: sk,
+        ZodUnion: sT,
+        ZodDiscriminatedUnion: sP,
+        ZodIntersection: sD,
+        ZodTuple: sM,
+        ZodRecord: sj,
+        ZodMap: sq,
+        ZodSet: sU,
+        ZodFunction: sL,
+        ZodLazy: sF,
+        ZodLiteral: sB,
+        ZodEnum: sZ,
+        ZodNativeEnum: sz,
+        ZodPromise: sH,
+        ZodEffects: sW,
+        ZodTransformer: sW,
+        ZodOptional: s$,
+        ZodNullable: sK,
+        ZodDefault: sV,
+        ZodCatch: sG,
+        ZodNaN: sJ,
+        BRAND: sY,
+        ZodBranded: sX,
+        ZodPipeline: s0,
+        ZodReadonly: s1,
+        custom: s2,
+        Schema: i9,
+        ZodSchema: i9,
+        late: s4,
         get ZodFirstPartyTypeKind() {
           return y;
         },
         coerce: {
-          string: (e) => sm.create({ ...e, coerce: !0 }),
-          number: (e) => sg.create({ ...e, coerce: !0 }),
-          boolean: (e) => sv.create({ ...e, coerce: !0 }),
-          bigint: (e) => sy.create({ ...e, coerce: !0 }),
-          date: (e) => sb.create({ ...e, coerce: !0 }),
+          string: (e) => sy.create({ ...e, coerce: !0 }),
+          number: (e) => sv.create({ ...e, coerce: !0 }),
+          boolean: (e) => sw.create({ ...e, coerce: !0 }),
+          bigint: (e) => sb.create({ ...e, coerce: !0 }),
+          date: (e) => s_.create({ ...e, coerce: !0 }),
         },
-        any: at,
-        array: as,
-        bigint: s3,
-        boolean: s6,
-        date: s8,
-        discriminatedUnion: al,
-        effect: a_,
-        enum: av,
-        function: am,
+        any: an,
+        array: ao,
+        bigint: s8,
+        boolean: s9,
+        date: s7,
+        discriminatedUnion: ah,
+        effect: aS,
+        enum: aw,
+        function: ay,
         instanceof: (e, t = { message: `Input not instance of ${e.name}` }) =>
-          s0((t) => t instanceof e, t),
-        intersection: ac,
-        lazy: ag,
-        literal: ay,
-        map: af,
-        nan: s5,
-        nativeEnum: ab,
-        never: an,
-        null: ae,
-        nullable: aS,
-        number: s4,
-        object: aa,
-        oboolean: () => s6().optional(),
-        onumber: () => s4().optional(),
-        optional: aE,
-        ostring: () => s2().optional(),
-        pipeline: aR,
-        preprocess: aO,
-        promise: aw,
-        record: ad,
-        set: ap,
-        strictObject: ao,
-        string: s2,
-        symbol: s9,
-        transformer: a_,
-        tuple: ah,
-        undefined: s7,
-        union: au,
-        unknown: ar,
-        void: ai,
-        NEVER: iK,
-        ZodIssueCode: iF,
+          s2((t) => t instanceof e, t),
+        intersection: ad,
+        lazy: av,
+        literal: ab,
+        map: am,
+        nan: s6,
+        nativeEnum: a_,
+        never: as,
+        null: ar,
+        nullable: aR,
+        number: s3,
+        object: au,
+        oboolean: () => s9().optional(),
+        onumber: () => s3().optional(),
+        optional: aO,
+        ostring: () => s5().optional(),
+        pipeline: aN,
+        preprocess: aA,
+        promise: aE,
+        record: ap,
+        set: ag,
+        strictObject: al,
+        string: s5,
+        symbol: ae,
+        transformer: aS,
+        tuple: af,
+        undefined: at,
+        union: ac,
+        unknown: ai,
+        void: aa,
+        NEVER: iG,
+        ZodIssueCode: iQ,
         quotelessJson: (e) =>
           JSON.stringify(e, null, 2).replace(/"([^"]+)":/g, '$1:'),
-        ZodError: iB,
+        ZodError: iZ,
       });
-      let aN = eV.create({ allowOutsideOfServer: !0 }),
-        aC = aN.router,
-        ax = aN.procedure,
-        ak = {
+      let ax = ei.create({ allowOutsideOfServer: !0 }),
+        ak = ax.router,
+        aT = ax.procedure,
+        aI = {
           0: 'Clear sky',
           1: 'Mainly Clear',
           2: 'Partly Cloudy',
@@ -15079,35 +15065,35 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           96: 'Slight Thunderstorm',
           99: 'Heavy Thunderstorm',
         },
-        aT = aC({
+        aP = ak({
           chess: {
-            titled: ax
+            titled: aT
               .input(
-                aA.object({
-                  days: aA.number().int().optional(),
-                  title: aA.nativeEnum(tY.Title).optional(),
-                  countryCode: aA.string().optional(),
+                aC.object({
+                  days: aC.number().int().optional(),
+                  title: aC.nativeEnum(t0.Title).optional(),
+                  countryCode: aC.string().optional(),
                 })
               )
               .query(async (e) => {
                 let t = e.input.days,
                   r = e.input.title,
                   n = e.input.countryCode;
-                return await im({ days: t, title: r, countryCode: n });
+                return await iy({ days: t, title: r, countryCode: n });
               }),
-            insights: ax
+            insights: aT
               .input(
-                aA.object({
-                  username: aA.string(),
-                  variant: aA.nativeEnum(tY.Variant),
-                  timeClass: aA.nativeEnum(tY.TimeClass),
+                aC.object({
+                  username: aC.string(),
+                  variant: aC.nativeEnum(t0.Variant),
+                  timeClass: aC.nativeEnum(t0.TimeClass),
                 })
               )
               .query(async (e) => {
                 let t = e.input.timeClass,
                   r = e.input.username,
                   n = e.input.variant;
-                return await ip({
+                return await ig({
                   username: r,
                   variant: n,
                   timeClass: t,
@@ -15115,84 +15101,84 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 });
               }),
           },
-          countries: ax.query(async () => {
-            let { data: e } = await nz.get(
+          countries: aT.query(async () => {
+            let { data: e } = await nW.get(
               'https://restcountries.com/v3.1/all'
             );
             return e;
           }),
-          crypto: ax
+          crypto: aT
             .input(
-              aA.object({
-                tag: aA.nativeEnum(nW).optional().default(nW.LAYER_1),
+              aC.object({
+                tag: aC.nativeEnum(nK).optional().default(nK.LAYER_1),
               })
             )
             .query(async (e) => {
               let t = e.input.tag,
                 {
                   data: { coins: r = [] },
-                } = await n$({ tag: t });
+                } = await nV({ tag: t });
               return r;
             }),
-          forex: ax
+          forex: aT
             .input(
-              aA.object({
-                amount: aA.number().int().optional().default(1),
-                base: aA.string().optional().default('EUR'),
+              aC.object({
+                amount: aC.number().int().optional().default(1),
+                base: aC.string().optional().default('EUR'),
               })
             )
-            .query((e) => nV({ amount: e.input.amount, base: e.input.base })),
-          languages: aC({
-            health: ax.query(async () => {
+            .query((e) => nJ({ amount: e.input.amount, base: e.input.base })),
+          languages: ak({
+            health: aT.query(async () => {
               try {
                 let {
                   data: { status: e },
-                } = await nz.get(''.concat(n5, '/health'), {
+                } = await nW.get(''.concat(n6, '/health'), {
                   headers: { 'Content-Type': 'application/json' },
                 });
                 return { status: e };
               } catch (t) {
-                if (t instanceof iS) {
+                if (t instanceof iR) {
                   var e;
-                  nJ.error(
+                  nX.error(
                     null !== (e = t.cause) && void 0 !== e ? e : t.message
                   );
-                } else nJ.error(t);
+                } else nX.error(t);
                 return { status: 'ERROR' };
               }
             }),
-            predict: ax
-              .input(aA.object({ text: aA.string().default('') }))
+            predict: aT
+              .input(aC.object({ text: aC.string().default('') }))
               .mutation(async (e) => {
                 try {
                   let t = e.input.text,
                     {
                       data: { language: r },
-                    } = await nz.post(
-                      ''.concat(n5, '/predict'),
+                    } = await nW.post(
+                      ''.concat(n6, '/predict'),
                       { text: t },
                       { headers: { 'Content-Type': 'application/json' } }
                     );
                   return { language: r };
                 } catch (e) {
-                  if (e instanceof iS) {
+                  if (e instanceof iR) {
                     var t;
-                    nJ.error(
+                    nX.error(
                       null !== (t = e.cause) && void 0 !== t ? t : e.message
                     );
-                  } else nJ.error(e);
+                  } else nX.error(e);
                   return { language: 'N/A' };
                 }
               }),
           }),
-          news: ax
+          news: aT
             .input(
-              aA.object({
-                category: aA.nativeEnum(n0).optional().default(n0.GENERAL),
-                country: aA.nativeEnum(nX).optional().default(nX.UNITED_STATES),
-                page: aA.number().int().optional().default(1),
-                pageSize: aA.number().int().optional().default(100),
-                query: aA.string().optional().default(''),
+              aC.object({
+                category: aC.nativeEnum(n2).optional().default(n2.GENERAL),
+                country: aC.nativeEnum(n1).optional().default(n1.UNITED_STATES),
+                page: aC.number().int().optional().default(1),
+                pageSize: aC.number().int().optional().default(100),
+                query: aC.string().optional().default(''),
               })
             )
             .query(async (e) => {
@@ -15201,7 +15187,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 n = e.input.page,
                 i = e.input.pageSize,
                 s = e.input.query,
-                { articles: a = [] } = await n4({
+                { articles: a = [] } = await n3({
                   category: t,
                   country: r,
                   page: n,
@@ -15210,12 +15196,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 });
               return a;
             }),
-          trends: ax.query(() => nY()),
-          weather: ax
+          trends: aT.query(() => n0()),
+          weather: aT
             .input(
-              aA.object({
-                latitude: aA.number().default(0),
-                longitude: aA.number().default(0),
+              aC.object({
+                latitude: aC.number().default(0),
+                longitude: aC.number().default(0),
               })
             )
             .query(async (e) => {
@@ -15231,21 +15217,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let i = 'https://api.open-meteo.com/v1/forecast?'.concat(
                     e.toString()
                   ),
-                  { data: s } = await nz.get(i),
+                  { data: s } = await nW.get(i),
                   { current: a } = s,
                   { weather_code: o = 0, temperature_2m: u = 0 } = a;
                 return {
-                  main: null !== (n = ak[o]) && void 0 !== n ? n : 'N/A',
+                  main: null !== (n = aI[o]) && void 0 !== n ? n : 'N/A',
                   temperature: u,
                 };
               } catch (e) {
                 return (
-                  nJ.error('error='.concat(e)), { main: '', temperature: 0 }
+                  nX.error('error='.concat(e)), { main: '', temperature: 0 }
                 );
               }
             }),
-          word: ax
-            .input(aA.object({ word: aA.string().default('') }))
+          word: aT
+            .input(aC.object({ word: aC.string().default('') }))
             .query(async (e) => {
               let { word: t } = e.input;
               try {
@@ -15253,29 +15239,29 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     encodeURIComponent(t),
                     '?when=2024-06-03T05:47:08.760Z&encrypted=8cfdb18ee722959bea9207bfea58babeaeb0250937f997b8'
                   ),
-                  { data: r } = await nz.get(e),
+                  { data: r } = await nW.get(e),
                   { results: n } = r;
                 return { word: t, results: n };
               } catch (e) {
-                return nJ.error('error='.concat(e)), { word: t, results: [] };
+                return nX.error('error='.concat(e)), { word: t, results: [] };
               }
             }),
         });
-      var aI = r(2836);
-      aI.env.VERCEL_URL, aI.env.RENDER_INTERNAL_HOSTNAME, aI.env.PORT;
-      let aP = () => '',
-        aD = (function (e) {
-          let t = tG(e),
+      var aD = r(2836);
+      aD.env.VERCEL_URL, aD.env.RENDER_INTERNAL_HOSTNAME, aD.env.PORT;
+      let aM = () => '',
+        aj = (function (e) {
+          let t = tK(e),
             r = (function (e) {
               let { config: t } = e,
-                r = e9(e.transformer);
+                r = ey(e.transformer);
               return (n) => {
-                let i = tG(e),
+                let i = tK(e),
                   s = (s) => {
-                    let [a] = (0, el.useState)(() => {
+                    let [a] = (0, eC.useState)(() => {
                         if (s.trpc) return s.trpc;
                         let r = t({}),
-                          n = tJ(r),
+                          n = tX(r),
                           a = i.createClient(r);
                         return {
                           abortOnUnmount: r.abortOnUnmount,
@@ -15292,11 +15278,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ssrContext: c,
                       } = a,
                       h = s.pageProps?.trpcState,
-                      d = el.useMemo(
+                      d = eC.useMemo(
                         () => (h ? r.input.deserialize(h) : h),
                         [h, u]
                       );
-                    return el.createElement(
+                    return eC.createElement(
                       i.Provider,
                       {
                         abortOnUnmount: a.abortOnUnmount ?? !1,
@@ -15305,13 +15291,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ssrState: l,
                         ssrContext: c,
                       },
-                      el.createElement(
-                        ed,
+                      eC.createElement(
+                        eT,
                         { client: o },
-                        el.createElement(
-                          tf,
+                        eC.createElement(
+                          ej,
                           { state: d },
-                          el.createElement(n, s)
+                          eC.createElement(n, s)
                         )
                       )
                     );
@@ -15333,7 +15319,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 return (s.displayName = `withTRPC(${a})`), s;
               };
             })(e),
-            n = ey(({ path: e, args: r }) => {
+            n = A(({ path: e, args: r }) => {
               let n = [...e],
                 i = n.pop();
               if ('useMutation' === i) return t[i](n, ...r);
@@ -15342,20 +15328,20 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 o = a[0] || {};
               return t[i](n, s, o);
             });
-          return ev((e) =>
+          return N((e) =>
             'useContext' === e || 'useUtils' === e
               ? () => {
                   let e = t.useUtils();
-                  return (0, el.useMemo)(
+                  return (0, eC.useMemo)(
                     () =>
                       (function (e) {
-                        let t = e2(e.client),
-                          r = ey((t) => {
+                        let t = eh(e.client),
+                          r = A((t) => {
                             let r = [...t.path],
                               n = r.pop(),
                               i = [...t.args],
                               s = i.shift(),
-                              a = tg(r, s, tv(n));
+                              a = e6(r, s, e9(n));
                             return {
                               infiniteQueryOptions: () =>
                                 e.infiniteQueryOptions(r, a, i[0]),
@@ -15382,15 +15368,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                               getData: () => e.getQueryData(a),
                               getInfiniteData: () => e.getInfiniteQueryData(a),
                               setMutationDefaults: () =>
-                                e.setMutationDefaults(ty(r), s),
+                                e.setMutationDefaults(e8(r), s),
                               getMutationDefaults: () =>
-                                e.getMutationDefaults(ty(r)),
+                                e.getMutationDefaults(e8(r)),
                               isMutating: () =>
-                                e.isMutating({ mutationKey: ty(r) }),
+                                e.isMutating({ mutationKey: e8(r) }),
                             }[n]();
                           });
-                        return ev((n) =>
-                          'client' === n ? t : tp.includes(n) ? e[n] : r[n]
+                        return N((n) =>
+                          'client' === n ? t : eq.includes(n) ? e[n] : r[n]
                         );
                       })(e),
                     [e]
@@ -15411,7 +15397,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let t = {
                     url: e.url.toString(),
                     fetch: e.fetch,
-                    transformer: e9(e.transformer),
+                    transformer: ey(e.transformer),
                     methodOverride: e.methodOverride,
                   },
                   r = e.maxURLLength ?? 1 / 0;
@@ -15422,7 +15408,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         let i = e.map((e) => e.path).join(','),
                           s = e.map((e) => e.input);
                         return (
-                          tt({
+                          ew({
                             ...t,
                             type: n,
                             path: i,
@@ -15447,7 +15433,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                 : t?.addEventListener('abort', i, { once: !0 });
                             return t.signal;
                           })(...r.map((e) => e.signal)),
-                          o = await tn({
+                          o = await eE({
                             ...t,
                             path: i,
                             inputs: s,
@@ -15465,9 +15451,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ).map((e) => ({ meta: o.meta, json: e }));
                       },
                     }),
-                    i = { query: e6(n('query')), mutation: e6(n('mutation')) };
+                    i = { query: em(n('query')), mutation: em(n('mutation')) };
                   return ({ op: e }) =>
-                    ef((r) => {
+                    E((r) => {
                       let n;
                       if ('subscription' === e.type)
                         throw Error(
@@ -15502,33 +15488,33 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                   };
                                 })(e, t);
                               } catch {
-                                throw new eT();
+                                throw new F();
                               }
                               if (
                                 (!r.ok &&
-                                  (!eE(r.error.error) ||
+                                  (!T(r.error.error) ||
                                     'number' != typeof r.error.error.code)) ||
-                                (r.ok && !eE(r.result))
+                                (r.ok && !T(r.result))
                               )
-                                throw new eT();
+                                throw new F();
                               return r;
                             })(e.json, t.transformer.output);
                             if (!i.ok) {
-                              r.error(eJ.from(i.error, { meta: e.meta }));
+                              r.error(ea.from(i.error, { meta: e.meta }));
                               return;
                             }
                             r.next({ context: e.meta, result: i.result }),
                               r.complete();
                           })
                           .catch((e) => {
-                            r.error(eJ.from(e, { meta: n?.meta }));
+                            r.error(ea.from(e, { meta: n?.meta }));
                           }),
                         () => {}
                       );
                     });
                 };
               })({
-                url: ''.concat(aP(), '/api/trpc'),
+                url: ''.concat(aM(), '/api/trpc'),
                 headers: async () => ({}),
               }),
             ],
@@ -15536,8 +15522,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           ssr: !1,
         });
       !(function (e) {
-        let t = tJ(e),
-          r = e9(e.transformer),
+        let t = tX(e),
+          r = ey(e.transformer),
           n = (() => {
             if ('router' in e) {
               let { ctx: t, router: n } = e;
@@ -15549,10 +15535,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       n = e.procedures[r];
                     if (
                       !n ||
-                      !eH(n) ||
+                      !ee(n) ||
                       (n._def.type !== t && !e.allowMethodOverride)
                     )
-                      throw new ex({
+                      throw new U({
                         code: 'NOT_FOUND',
                         message: `No "${t}"-procedure on path "${r}"`,
                       });
@@ -15561,7 +15547,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       e.allowMethodOverride &&
                       'subscription' === n._def.type
                     )
-                      throw new ex({
+                      throw new U({
                         code: 'METHOD_NOT_SUPPORTED',
                         message:
                           'Method override is not supported for subscriptions',
@@ -15578,7 +15564,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               };
             }
             let { client: t } = e,
-              n = t instanceof eX ? t : e5(t);
+              n = t instanceof eu ? t : ef(t);
             return {
               query: (e) => n.query(e.path, e.input),
               serialize: (e) => r.output.serialize(e),
@@ -15589,7 +15575,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let r =
                 t.shouldDehydrateMutation ??
                 e.getDefaultOptions().dehydrate?.shouldDehydrateMutation ??
-                tc,
+                eP,
               n = e
                 .getMutationCache()
                 .getAll()
@@ -15608,11 +15594,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               i =
                 t.shouldDehydrateQuery ??
                 e.getDefaultOptions().dehydrate?.shouldDehydrateQuery ??
-                th,
+                eD,
               s =
                 t.serializeData ??
                 e.getDefaultOptions().dehydrate?.serializeData ??
-                tl;
+                eI;
             return {
               mutations: n,
               queries: e
@@ -15644,13 +15630,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           })(t, e);
           return n.serialize(r);
         }
-        let s = ey((e) => {
+        let s = A((e) => {
           let r = e.args,
             i = r[0],
             s = [...e.path],
             a = s.pop(),
             o = () => n.query({ path: s.join('.'), input: i }),
-            u = tg(s, i, tv(a));
+            u = e6(s, i, e9(a));
           return {
             queryOptions: () => ({ ...r[1], queryKey: u, queryFn: o }),
             infiniteQueryOptions: () => ({ ...r[1], queryKey: u, queryFn: o }),
@@ -15682,53 +15668,60 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             },
           }[a]();
         });
-        ev((e) => ('queryClient' === e ? t : 'dehydrate' === e ? i : s[e]));
-      })({ router: aT, ctx: {} }),
-        r(2574);
-      var aM = r(832),
-        aj = r.n(aM);
-      let aq = new eu(),
-        aU = aD.withTRPC((e) => {
-          let { Component: t, pageProps: r } = e;
-          return (0, b.jsxs)(b.Fragment, {
-            children: [
-              (0, b.jsxs)(aj(), {
-                children: [
-                  (0, b.jsx)('title', { children: 'HIEU DOAN (hieudoanm)' }),
-                  (0, b.jsx)('link', {
-                    rel: 'manifest',
-                    href: '/manifest.json',
-                  }),
-                  (0, b.jsx)('link', {
-                    rel: 'icon',
-                    href: '/favicon.ico',
-                    sizes: 'any',
-                  }),
-                  (0, b.jsx)('link', {
-                    href: '/icons/png/512x512.png',
-                    rel: 'apple-touch-icon',
-                    type: 'image/png',
-                  }),
-                  (0, b.jsx)('meta', { charSet: 'UTF-8' }),
-                  (0, b.jsx)('meta', { name: 'keywords', content: 'f(x)' }),
-                  (0, b.jsx)('meta', {
-                    name: 'url',
-                    content: 'https://hieudoanm.github.io',
-                  }),
-                  (0, b.jsx)('meta', {
-                    name: 'viewport',
-                    content:
-                      'width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no',
-                  }),
-                ],
-              }),
-              (0, b.jsx)(ed, { client: aq, children: (0, b.jsx)(t, { ...r }) }),
-            ],
-          });
+        N((e) => ('queryClient' === e ? t : 'dehydrate' === e ? i : s[e]));
+      })({ router: aP, ctx: {} });
+      var aq = r(832),
+        aU = r.n(aq);
+      let aL = aj.withTRPC((e) => {
+        let { Component: t, pageProps: r } = e;
+        return (0, b.jsxs)(b.Fragment, {
+          children: [
+            (0, b.jsxs)(aU(), {
+              children: [
+                (0, b.jsx)('title', { children: 'HIEU DOAN: hieudoanm' }),
+                (0, b.jsx)('link', { rel: 'manifest', href: '/manifest.json' }),
+                (0, b.jsx)('link', {
+                  rel: 'icon',
+                  href: '/favicon.ico',
+                  sizes: 'any',
+                }),
+                (0, b.jsx)('link', {
+                  href: '/icons/png/512x512.png',
+                  rel: 'apple-touch-icon',
+                  type: 'image/png',
+                }),
+                (0, b.jsx)('meta', { charSet: 'UTF-8' }),
+                (0, b.jsx)('meta', { name: 'keywords', content: 'hieudoanm' }),
+                (0, b.jsx)('meta', {
+                  name: 'url',
+                  content: 'https://hieudoanm.github.io',
+                }),
+                (0, b.jsx)('meta', {
+                  name: 'viewport',
+                  content:
+                    'width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no',
+                }),
+              ],
+            }),
+            (0, b.jsx)('div', {
+              className: _().className,
+              children: (0, b.jsx)(t, { ...r }),
+            }),
+          ],
         });
+      });
     },
-    2574: () => {},
     1657: () => {},
+    1757: (e) => {
+      e.exports = {
+        style: {
+          fontFamily: "'Roboto Mono', 'Roboto Mono Fallback'",
+          fontWeight: 400,
+          fontStyle: 'normal',
+        },
+        className: '__className_d96792',
+      };
+    },
     832: (e, t, r) => {
       e.exports = r(3320);
     },

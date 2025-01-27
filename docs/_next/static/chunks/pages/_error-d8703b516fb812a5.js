@@ -11,45 +11,39 @@
     },
     8514: (e, r, s) => {
       'use strict';
-      s.r(r), s.d(r, { ErrorPage: () => c, default: () => l });
+      s.r(r), s.d(r, { ErrorPage: () => n, default: () => c });
       var t = s(5105),
-        n = s(4727);
-      let c = () => (0, t.jsx)(n.L, { code: 500, title: 'Error' }),
-        l = c;
+        l = s(4727);
+      let n = () => (0, t.jsx)(l.L, { code: 500, title: 'Error' }),
+        c = n;
     },
     4727: (e, r, s) => {
       'use strict';
       s.d(r, { L: () => a });
       var t = s(5105),
-        n = s(832),
-        c = s.n(n),
-        l = s(9594),
-        i = s.n(l);
+        l = s(832),
+        n = s.n(l),
+        c = s(9594),
+        i = s.n(c);
       let a = (e) => {
         let { code: r = 500, title: s = 'Error' } = e;
         return (0, t.jsxs)(t.Fragment, {
           children: [
-            (0, t.jsx)(c(), {
-              children: (0, t.jsxs)('title', { children: ['HIEU: ', s] }),
+            (0, t.jsx)(n(), {
+              children: (0, t.jsxs)('title', { children: ['HIEU DOAN: ', s] }),
             }),
             (0, t.jsx)('div', {
               className: 'flex h-screen w-screen items-center justify-center',
               children: (0, t.jsxs)('div', {
-                className: 'py-8 text-center',
+                className: 'flex flex-col gap-y-2',
                 children: [
-                  (0, t.jsx)('h2', { className: 'mb-4 text-9xl', children: r }),
-                  (0, t.jsx)('p', {
-                    className: 'mb-4 text-2xl uppercase',
-                    children: s,
-                  }),
-                  (0, t.jsx)('p', {
-                    children: (0, t.jsx)(i(), {
-                      href: '/',
-                      children: (0, t.jsx)('button', {
-                        className: 'btn',
-                        type: 'button',
-                        children: 'Back to Home',
-                      }),
+                  (0, t.jsx)('h2', { className: 'text-9xl', children: r }),
+                  (0, t.jsx)(i(), {
+                    href: '/',
+                    children: (0, t.jsx)('button', {
+                      className: 'w-full rounded-full bg-black py-2 text-white',
+                      type: 'button',
+                      children: 'Back to Home',
                     }),
                   }),
                 ],

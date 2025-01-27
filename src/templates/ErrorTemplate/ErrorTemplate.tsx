@@ -11,19 +11,18 @@ export const ErrorTemplate: FC<ErrorRouteProps> = ({
   return (
     <>
       <Head>
-        <title>HIEU: {title}</title>
+        <title>HIEU DOAN: {title}</title>
       </Head>
       <div className='flex h-screen w-screen items-center justify-center'>
-        <div className='py-8 text-center'>
-          <h2 className='mb-4 text-9xl'>{code}</h2>
-          <p className='mb-4 text-2xl uppercase'>{title}</p>
-          <p>
-            <Link href='/'>
-              <button className='btn' type='button'>
-                Back to Home
-              </button>
-            </Link>
-          </p>
+        <div className='flex flex-col gap-y-2'>
+          <h2 className='text-9xl'>{code}</h2>
+          <Link href='/'>
+            <button
+              className='w-full rounded-full bg-black py-2 text-white'
+              type='button'>
+              Back to Home
+            </button>
+          </Link>
         </div>
       </div>
     </>

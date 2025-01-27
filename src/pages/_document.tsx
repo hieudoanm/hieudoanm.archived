@@ -5,7 +5,7 @@ const Document: FC = () => {
   return (
     <Html lang='en'>
       <Head />
-      <body data-theme='coffee'>
+      <body>
         <Main />
         <NextScript />
       </body>
