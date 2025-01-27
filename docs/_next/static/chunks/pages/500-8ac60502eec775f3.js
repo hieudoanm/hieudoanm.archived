@@ -1,31 +1,32 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-  [731],
+  [421],
   {
-    8778: (e, r, s) => {
+    7492: (e, r, s) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
-        '/_error',
+        '/500',
         function () {
-          return s(2774);
+          return s(292);
         },
       ]);
     },
-    2774: (e, r, s) => {
+    292: (e, r, s) => {
       'use strict';
-      s.r(r), s.d(r, { ErrorPage: () => c, default: () => l });
+      s.r(r), s.d(r, { InternalServerErrorPage: () => c, default: () => l });
       var t = s(5105),
-        n = s(6673);
-      let c = () => (0, t.jsx)(n.L, { code: 500, title: 'Error' }),
+        n = s(4727);
+      let c = () =>
+          (0, t.jsx)(n.L, { code: 500, title: 'Internal Server Error' }),
         l = c;
     },
-    6673: (e, r, s) => {
+    4727: (e, r, s) => {
       'use strict';
-      s.d(r, { L: () => a });
+      s.d(r, { L: () => i });
       var t = s(5105),
-        n = s(1028),
+        n = s(832),
         c = s.n(n),
-        l = s(2190),
-        i = s.n(l);
-      let a = (e) => {
+        l = s(9594),
+        a = s.n(l);
+      let i = (e) => {
         let { code: r = 500, title: s = 'Error' } = e;
         return (0, t.jsxs)(t.Fragment, {
           children: [
@@ -43,7 +44,7 @@
                     children: s,
                   }),
                   (0, t.jsx)('p', {
-                    children: (0, t.jsx)(i(), {
+                    children: (0, t.jsx)(a(), {
                       href: '/',
                       children: (0, t.jsx)('button', {
                         className: 'btn',
@@ -62,6 +63,6 @@
   },
   (e) => {
     var r = (r) => e((e.s = r));
-    e.O(0, [190, 636, 593, 792], () => r(8778)), (_N_E = e.O());
+    e.O(0, [594, 636, 593, 792], () => r(7492)), (_N_E = e.O());
   },
 ]);

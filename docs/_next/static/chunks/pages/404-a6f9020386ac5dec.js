@@ -1,29 +1,29 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
   [336],
   {
-    6776: (e, s, t) => {
+    604: (e, s, t) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
         '/404',
         function () {
-          return t(6889);
+          return t(3429);
         },
       ]);
     },
-    6889: (e, s, t) => {
+    3429: (e, s, t) => {
       'use strict';
       t.r(s), t.d(s, { NotFoundPage: () => c, default: () => l });
       var n = t(5105),
-        r = t(6673);
+        r = t(4727);
       let c = () => (0, n.jsx)(r.L, { code: 404, title: 'Not Found' }),
         l = c;
     },
-    6673: (e, s, t) => {
+    4727: (e, s, t) => {
       'use strict';
       t.d(s, { L: () => a });
       var n = t(5105),
-        r = t(1028),
+        r = t(832),
         c = t.n(r),
-        l = t(2190),
+        l = t(9594),
         i = t.n(l);
       let a = (e) => {
         let { code: s = 500, title: t = 'Error' } = e;
@@ -62,6 +62,6 @@
   },
   (e) => {
     var s = (s) => e((e.s = s));
-    e.O(0, [190, 636, 593, 792], () => s(6776)), (_N_E = e.O());
+    e.O(0, [594, 636, 593, 792], () => s(604)), (_N_E = e.O());
   },
 ]);
