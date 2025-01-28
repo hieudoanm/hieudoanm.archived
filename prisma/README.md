@@ -8,15 +8,6 @@
 
 ```mermaid
 erDiagram
-"word" {
-  String word PK
-  Json results
-  Json syllables "nullable"
-  Json pronunciation "nullable"
-  Float frequency "nullable"
-  DateTime created_at
-  DateTime updated_at
-}
 "player" {
   Int id PK
   String username UK
@@ -114,18 +105,6 @@ erDiagram
   DateTime updated_at
 }
 ```
-
-### `word`
-
-**Properties**
-
-- `word`:
-- `results`:
-- `syllables`:
-- `pronunciation`:
-- `frequency`:
-- `created_at`:
-- `updated_at`:
 
 ### `player`
 

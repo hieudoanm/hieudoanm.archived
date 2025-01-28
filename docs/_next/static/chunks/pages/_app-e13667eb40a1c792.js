@@ -89,15 +89,6 @@ In case this error is unexpected for you, please report it in https://pris.ly/pr
           RepeatableRead: 'RepeatableRead',
           Serializable: 'Serializable',
         })),
-        (t.Prisma.WordScalarFieldEnum = {
-          word: 'word',
-          results: 'results',
-          syllables: 'syllables',
-          pronunciation: 'pronunciation',
-          frequency: 'frequency',
-          createdAt: 'createdAt',
-          updatedAt: 'updatedAt',
-        }),
         (t.Prisma.PlayerScalarFieldEnum = {
           id: 'id',
           username: 'username',
@@ -195,20 +186,10 @@ In case this error is unexpected for you, please report it in https://pris.ly/pr
           updatedAt: 'updatedAt',
         }),
         (t.Prisma.SortOrder = { asc: 'asc', desc: 'desc' }),
-        (t.Prisma.NullableJsonNullValueInput = {
-          DbNull: l.DbNull,
-          JsonNull: l.JsonNull,
-        }),
         (t.Prisma.QueryMode = {
           default: 'default',
           insensitive: 'insensitive',
         }),
-        (t.Prisma.JsonNullValueFilter = {
-          DbNull: l.DbNull,
-          JsonNull: l.JsonNull,
-          AnyNull: l.AnyNull,
-        }),
-        (t.Prisma.NullsOrder = { first: 'first', last: 'last' }),
         (t.Title = t.$Enums.Title =
           {
             GM: 'GM',
@@ -264,7 +245,6 @@ In case this error is unexpected for you, please report it in https://pris.ly/pr
         (t.Phrase = t.$Enums.Phrase =
           { opening: 'opening', middlegame: 'middlegame', endgame: 'endgame' }),
         (t.Prisma.ModelName = {
-          Word: 'Word',
           Player: 'Player',
           Game: 'Game',
           Opening: 'Opening',
@@ -432,7 +412,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           '2.3025850929940456840179914546843642076011014886287729760333279009675726096773524802359972050895982983419677840422862486334095254650828067566662873690987816894829072083255546808437998948262331985283935053089653777326288461633662222876982198867465436674744042432743651550489343149393914796194044002221051017141748003688084012647080685567743216228355220114804663715659121373450747856947683463616792101806445070648000277502684916746550586856935673420670581136429224554405758925724208241314695689016758940256776311356919292033376587141660230105703089634572075440370847469940168269282808481184289314848524948644871927809676271275775397027668605952496716674183485704422507197965004714951050492214776567636938662976979522110718264549734772662425709429322582798502585509785265383207606726317164309505995087807523710333101197857547331541421808427543863591778117054309827482385045648019095610299291824318237525357709750539565187697510374970888692180205189339507238539205144634197265287286965110862571492198849978748873771345686209167058',
         A =
           '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632789',
-        N = {
+        C = {
           precision: 20,
           rounding: 4,
           modulo: 1,
@@ -442,7 +422,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           maxE: 9e15,
           crypto: !1,
         },
-        C = !0,
+        N = !0,
         x = '[DecimalError] ',
         k = x + 'Invalid argument: ',
         T = x + 'Precision limit exceeded',
@@ -451,8 +431,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         D = Math.floor,
         M = Math.pow,
         j = /^0b([01]+(\.[01]*)?|\.[01]+)(p[+-]?\d+)?$/i,
-        q = /^0x([0-9a-f]+(\.[0-9a-f]*)?|\.[0-9a-f]+)(p[+-]?\d+)?$/i,
-        U = /^0o([0-7]+(\.[0-7]*)?|\.[0-7]+)(p[+-]?\d+)?$/i,
+        U = /^0x([0-9a-f]+(\.[0-9a-f]*)?|\.[0-9a-f]+)(p[+-]?\d+)?$/i,
+        q = /^0o([0-7]+(\.[0-7]*)?|\.[0-7]+)(p[+-]?\d+)?$/i,
         L = /^(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i,
         F = R.length - 1,
         B = A.length - 1,
@@ -510,7 +490,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           a
         );
       }
-      function W(e, t, r) {
+      function $(e, t, r) {
         for (var n, i, s = [0], a = 0, o = e.length; a < o; ) {
           for (i = s.length; i--; ) s[i] *= t;
           for (s[0] += O.indexOf(e.charAt(a++)), n = 0; n < s.length; n++)
@@ -615,7 +595,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               c = this.constructor;
             if (!this.isFinite() || this.isZero()) return new c(this);
             for (
-              C = !1,
+              N = !1,
                 (s = this.s * M(this.s * this, 1 / 3)) && Math.abs(s) != 1 / 0
                   ? (n = new c(s.toString()))
                   : ((r = Z(this.d)),
@@ -637,7 +617,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
 
             )
               if (
-                ((n = $(
+                ((n = W(
                   (l = (u = (o = n).times(o).times(o)).plus(this))
                     .plus(this)
                     .times(o),
@@ -661,7 +641,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 }
                 (a += 4), (i = 1);
               }
-            return (C = !0), K(n, e, c.rounding, t);
+            return (N = !0), K(n, e, c.rounding, t);
           }),
         (Q.decimalPlaces = Q.dp =
           function () {
@@ -677,12 +657,12 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           }),
         (Q.dividedBy = Q.div =
           function (e) {
-            return $(this, new this.constructor(e));
+            return W(this, new this.constructor(e));
           }),
         (Q.dividedToIntegerBy = Q.divToInt =
           function (e) {
             var t = this.constructor;
-            return K($(this, new t(e), 0, 1, 1), t.precision, t.rounding);
+            return K(W(this, new t(e), 0, 1, 1), t.precision, t.rounding);
           }),
         (Q.equals = Q.eq =
           function (e) {
@@ -762,7 +742,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   (t = r.rounding),
                   (r.precision = e + 7),
                   (r.rounding = 1),
-                  $(
+                  W(
                     this.sinh(),
                     this.cosh(),
                     (r.precision = e),
@@ -807,9 +787,9 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   (t = n.rounding),
                   (n.precision = e + Math.max(Math.abs(r.e), r.sd()) + 4),
                   (n.rounding = 1),
-                  (C = !1),
+                  (N = !1),
                   (r = r.times(r).minus(1).sqrt().plus(r)),
-                  (C = !0),
+                  (N = !0),
                   (n.precision = e),
                   (n.rounding = t),
                   r.ln())
@@ -827,9 +807,9 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 (t = n.rounding),
                 (n.precision = e + 2 * Math.max(Math.abs(r.e), r.sd()) + 6),
                 (n.rounding = 1),
-                (C = !1),
+                (N = !1),
                 (r = r.times(r).plus(1).sqrt().plus(r)),
-                (C = !0),
+                (N = !0),
                 (n.precision = e),
                 (n.rounding = t),
                 r.ln());
@@ -850,7 +830,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   Math.max((n = i.sd()), e) < -(2 * i.e) - 1
                     ? K(new s(i), e, t, !0)
                     : ((s.precision = r = n - i.e),
-                      (i = $(i.plus(1), new s(1).minus(i), r + e, 1)),
+                      (i = W(i.plus(1), new s(1).minus(i), r + e, 1)),
                       (s.precision = e + 4),
                       (s.rounding = 1),
                       (i = i.ln()),
@@ -918,7 +898,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             )
               l = l.div(l.times(l).plus(1).sqrt().plus(1));
             for (
-              C = !1,
+              N = !1,
                 t = Math.ceil(o / 7),
                 n = 1,
                 u = l.times(l),
@@ -936,7 +916,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 for (e = t; a.d[e] === s.d[e] && e--; );
             return (
               r && (a = a.times(2 << (r - 1))),
-              (C = !0),
+              (N = !0),
               K(a, (c.precision = h), (c.rounding = d), !0)
             );
           }),
@@ -999,9 +979,9 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               }
             }
             if (
-              ((C = !1),
+              ((N = !1),
               H(
-                (o = $(
+                (o = W(
                   es(this, (a = l + 5)),
                   t ? J(u, a + 10) : es(e, a),
                   a,
@@ -1014,7 +994,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               do
                 if (
                   ((a += 10),
-                  (o = $(es(this, a), t ? J(u, a + 10) : es(e, a), a, 1)),
+                  (o = W(es(this, a), t ? J(u, a + 10) : es(e, a), a, 1)),
                   !i)
                 ) {
                   +Z(o.d).slice(n + 1, n + 15) + 1 == 1e14 &&
@@ -1022,7 +1002,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   break;
                 }
               while (H(o.d, (n += 10), c));
-            return (C = !0), K(o, l, c);
+            return (N = !0), K(o, l, c);
           }),
         (Q.minus = Q.sub =
           function (e) {
@@ -1061,7 +1041,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 if (!l[0]) return new f(3 === u ? -0 : 0);
                 e = new f(this);
               }
-              return C ? K(e, o, u) : e;
+              return N ? K(e, o, u) : e;
             }
             if (
               ((r = D(e.e / 7)),
@@ -1112,7 +1092,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             for (; 0 === l[--a]; ) l.pop();
             for (; 0 === l[0]; l.shift()) --r;
             return l[0]
-              ? ((e.d = l), (e.e = G(l, r)), C ? K(e, o, u) : e)
+              ? ((e.d = l), (e.e = G(l, r)), N ? K(e, o, u) : e)
               : new f(3 === u ? -0 : 0);
           }),
         (Q.modulo = Q.mod =
@@ -1123,12 +1103,12 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               (e = new r(e)),
               this.d && e.s && (!e.d || e.d[0])
                 ? e.d && (!this.d || this.d[0])
-                  ? ((C = !1),
+                  ? ((N = !1),
                     9 == r.modulo
-                      ? ((t = $(this, e.abs(), 0, 3, 1)), (t.s *= e.s))
-                      : (t = $(this, e, 0, r.modulo, 1)),
+                      ? ((t = W(this, e.abs(), 0, 3, 1)), (t.s *= e.s))
+                      : (t = W(this, e, 0, r.modulo, 1)),
                     (t = t.times(e)),
-                    (C = !0),
+                    (N = !0),
                     this.minus(t))
                   : K(new r(this), r.precision, r.rounding)
                 : new r(NaN)
@@ -1175,7 +1155,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               (u = h.rounding),
               !l[0] || !c[0])
             )
-              return c[0] || (e = new h(this)), C ? K(e, o, u) : e;
+              return c[0] || (e = new h(this)), N ? K(e, o, u) : e;
             if (
               ((s = D(this.e / 7)),
               (n = D(e.e / 7)),
@@ -1204,7 +1184,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             )
               (t = ((l[--i] = l[i] + c[i] + t) / 1e7) | 0), (l[i] %= 1e7);
             for (t && (l.unshift(t), ++n), a = l.length; 0 == l[--a]; ) l.pop();
-            return (e.d = l), (e.e = G(l, n)), C ? K(e, o, u) : e;
+            return (e.d = l), (e.e = G(l, n)), N ? K(e, o, u) : e;
           }),
         (Q.precision = Q.sd =
           function (e) {
@@ -1272,7 +1252,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 !u || (u < 0 && (!a || a[0])) ? NaN : a ? this : 1 / 0
               );
             for (
-              C = !1,
+              N = !1,
                 0 == (u = Math.sqrt(+this)) || u == 1 / 0
                   ? (((t = Z(a)).length + o) % 2 == 0 && (t += '0'),
                     (u = Math.sqrt(t)),
@@ -1292,7 +1272,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
 
             )
               if (
-                ((n = (s = n).plus($(this, s, r + 2, 1)).times(0.5)),
+                ((n = (s = n).plus(W(this, s, r + 2, 1)).times(0.5)),
                 Z(s.d).slice(0, r) === (t = Z(n.d)).slice(0, r))
               ) {
                 if (
@@ -1309,7 +1289,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 }
                 (r += 4), (i = 1);
               }
-            return (C = !0), K(n, o, l.rounding, e);
+            return (N = !0), K(n, o, l.rounding, e);
           }),
         (Q.tangent = Q.tan =
           function () {
@@ -1325,7 +1305,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   (n.precision = e + 10),
                   (n.rounding = 1),
                   ((r = r.sin()).s = 1),
-                  (r = $(r, new n(1).minus(r.times(r)).sqrt(), e + 10, 0)),
+                  (r = W(r, new n(1).minus(r.times(r)).sqrt(), e + 10, 0)),
                   (n.precision = e),
                   (n.rounding = t),
                   K(2 == S || 4 == S ? r.neg() : r, e, t, !0))
@@ -1375,7 +1355,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               t ? ++r : s.shift(),
               (e.d = s),
               (e.e = G(s, r)),
-              C ? K(e, c.precision, c.rounding) : e
+              N ? K(e, c.precision, c.rounding) : e
             );
           }),
         (Q.toBinary = function (e, t) {
@@ -1453,11 +1433,11 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             e = o.gt(t) ? (s > 0 ? t : l) : o;
           }
           for (
-            C = !1,
+            N = !1,
               o = new p(Z(f)),
               c = p.precision,
               p.precision = s = 14 * f.length;
-            (h = $(o, t, 0, 1, 1)), 1 != (i = r.plus(h.times(n))).cmp(e);
+            (h = W(o, t, 0, 1, 1)), 1 != (i = r.plus(h.times(n))).cmp(e);
 
           )
             (r = n),
@@ -1469,20 +1449,20 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               (t = o.minus(h.times(i))),
               (o = i);
           return (
-            (i = $(e.minus(r), n, 0, 1, 1)),
+            (i = W(e.minus(r), n, 0, 1, 1)),
             (u = u.plus(i.times(l))),
             (r = r.plus(i.times(n))),
             (u.s = l.s = this.s),
             (d =
               1 >
-              $(l, n, s, 1)
+              W(l, n, s, 1)
                 .minus(this)
                 .abs()
-                .cmp($(u, r, s, 1).minus(this).abs())
+                .cmp(W(u, r, s, 1).minus(this).abs())
                 ? [l, n]
                 : [u, r]),
             (p.precision = c),
-            (C = !0),
+            (N = !0),
             d
           );
         }),
@@ -1507,7 +1487,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           }
           return (
             e.d[0]
-              ? ((C = !1), (r = $(r, e, 0, t, 1).times(e)), (C = !0), K(r))
+              ? ((N = !1), (r = W(r, e, 0, t, 1).times(e)), (N = !0), K(r))
               : ((e.s = r.s), (r = e)),
             r
           );
@@ -1554,7 +1534,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 : D(l * (Math.log('0.' + Z(o.d)) / Math.LN10 + o.e + 1))) >
               u.maxE + 1 || t < u.minE - 1
               ? new u(t > 0 ? a / 0 : 0)
-              : ((C = !1),
+              : ((N = !1),
                 (u.rounding = o.s = 1),
                 (r = Math.min(12, (t + '').length)),
                 (i = ei(e.times(es(o, n + r)), n)).d &&
@@ -1567,7 +1547,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                     1 ==
                     1e14 && (i = K(i, n + 1, 0))),
                 (i.s = a),
-                (C = !0),
+                (N = !0),
                 (u.rounding = s),
                 K(i, n, s));
           }),
@@ -1613,7 +1593,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               t = V(this, this.e <= e.toExpNeg || this.e >= e.toExpPos);
             return this.isNeg() ? '-' + t : t;
           });
-      var $ = (function () {
+      var W = (function () {
         function e(e, t, r) {
           var n,
             i = 0,
@@ -1658,8 +1638,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             O,
             R,
             A,
-            N,
             C,
+            N,
             x,
             k = n.constructor,
             T = n.s == i.s ? 1 : -1,
@@ -1677,7 +1657,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             u
               ? ((f = 1), (c = n.e - i.e))
               : ((u = 1e7), (f = 7), (c = D(n.e / f) - D(i.e / f))),
-              C = P.length,
+              N = P.length,
               A = I.length,
               v = (y = new k(T)).d = [],
               h = 0;
@@ -1693,7 +1673,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           )
             v.push(1), (p = !0);
           else {
-            if (((S = (S / f + 2) | 0), (h = 0), 1 == C)) {
+            if (((S = (S / f + 2) | 0), (h = 0), 1 == N)) {
               for (d = 0, P = P[0], S++; (h < A || d) && S--; h++)
                 (O = d * u + (I[h] || 0)),
                   (v[h] = (O / P) | 0),
@@ -1704,33 +1684,33 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 (d = (u / (P[0] + 1)) | 0) > 1 &&
                   ((P = e(P, d, u)),
                   (I = e(I, d, u)),
-                  (C = P.length),
+                  (N = P.length),
                   (A = I.length)),
-                  R = C,
-                  w = (b = I.slice(0, C)).length;
-                w < C;
+                  R = N,
+                  w = (b = I.slice(0, N)).length;
+                w < N;
 
               )
                 b[w++] = 0;
-              (x = P.slice()).unshift(0), (N = P[0]), P[1] >= u / 2 && ++N;
+              (x = P.slice()).unshift(0), (C = P[0]), P[1] >= u / 2 && ++C;
               do
                 (d = 0),
-                  (l = t(P, b, C, w)) < 0
+                  (l = t(P, b, N, w)) < 0
                     ? ((_ = b[0]),
-                      C != w && (_ = _ * u + (b[1] || 0)),
-                      (d = (_ / N) | 0) > 1
+                      N != w && (_ = _ * u + (b[1] || 0)),
+                      (d = (_ / C) | 0) > 1
                         ? (d >= u && (d = u - 1),
                           (g = (m = e(P, d, u)).length),
                           (w = b.length),
                           1 == (l = t(m, b, g, w)) &&
-                            (d--, r(m, C < g ? x : P, g, u)))
+                            (d--, r(m, N < g ? x : P, g, u)))
                         : (0 == d && (l = d = 1), (m = P.slice())),
                       (g = m.length) < w && m.unshift(0),
                       r(b, m, w, u),
                       -1 == l &&
                         ((w = b.length),
-                        (l = t(P, b, C, w)) < 1 &&
-                          (d++, r(b, C < w ? x : P, w, u))),
+                        (l = t(P, b, N, w)) < 1 &&
+                          (d++, r(b, N < w ? x : P, w, u))),
                       (w = b.length))
                     : 0 === l && (d++, (b = [0])),
                   (v[h++] = d),
@@ -1826,7 +1806,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           for (s = h.length; 0 === h[--s]; ) h.pop();
         }
         return (
-          C &&
+          N &&
             (e.e > f.maxE
               ? ((e.d = null), (e.e = NaN))
               : e.e < f.minE && ((e.e = 0), (e.d = [0]))),
@@ -1864,7 +1844,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         return t;
       }
       function J(e, t, r) {
-        if (t > F) throw ((C = !0), r && (e.precision = r), Error(T));
+        if (t > F) throw ((N = !0), r && (e.precision = r), Error(T));
         return K(new e(R), t, 1, !0);
       }
       function Y(e, t, r) {
@@ -1888,7 +1868,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         var i,
           s = new e(1),
           a = Math.ceil(n / 7 + 4);
-        for (C = !1; ; ) {
+        for (N = !1; ; ) {
           if (
             (r % 2 && ed((s = s.times(t)).d, a) && (i = !0),
             0 === (r = D(r / 2)))
@@ -1898,7 +1878,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           }
           ed((t = t.times(t)).d, a);
         }
-        return (C = !0), s;
+        return (N = !0), s;
       }
       function er(e) {
         return 1 & e.d[e.d.length - 1];
@@ -1941,7 +1921,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 : NaN
           );
         for (
-          null == t ? ((C = !1), (u = p)) : (u = t), o = new d(0.03125);
+          null == t ? ((N = !1), (u = p)) : (u = t), o = new d(0.03125);
           e.e > -2;
 
         )
@@ -1956,12 +1936,12 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           if (
             ((s = K(s.times(e), u, 1)),
             (r = r.times(++c)),
-            Z((o = a.plus($(s, r, u, 1))).d).slice(0, u) === Z(a.d).slice(0, u))
+            Z((o = a.plus(W(s, r, u, 1))).d).slice(0, u) === Z(a.d).slice(0, u))
           ) {
             for (i = h; i--; ) a = K(a.times(a), u, 1);
             if (null != t) return (d.precision = p), a;
             if (!(l < 3 && H(a.d, u - n, f, l)))
-              return K(a, (d.precision = p), f, (C = !0));
+              return K(a, (d.precision = p), f, (N = !0));
             (d.precision = u += 10), (r = s = o = new d(1)), (c = 0), l++;
           }
           a = o;
@@ -1988,7 +1968,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         if (p.s < 0 || !m || !m[0] || (!p.e && 1 == m[0] && 1 == m.length))
           return new g(m && !m[0] ? -1 / 0 : 1 != p.s ? NaN : m ? 0 : p);
         if (
-          (null == t ? ((C = !1), (c = v)) : (c = t),
+          (null == t ? ((N = !1), (c = v)) : (c = t),
           (g.precision = c += 10),
           (n = (r = Z(m)).charAt(0)),
           !(15e14 > Math.abs((s = p.e))))
@@ -1997,7 +1977,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             (l = J(g, c + 2, v).times(s + '')),
             (p = es(new g(n + '.' + r.slice(1)), c - 10).plus(l)),
             (g.precision = v),
-            null == t ? K(p, v, y, (C = !0)) : p
+            null == t ? K(p, v, y, (N = !0)) : p
           );
         for (; (n < 7 && 1 != n) || (1 == n && r.charAt(1) > 3); )
           (n = (r = Z((p = p.times(e)).d)).charAt(0)), f++;
@@ -2007,7 +1987,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               ? ((p = new g('0.' + r)), s++)
               : (p = new g(n + '.' + r.slice(1))),
             h = p,
-            u = a = p = $(p.minus(1), p.plus(1), c, 1),
+            u = a = p = W(p.minus(1), p.plus(1), c, 1),
             d = K(p.times(p), c, 1),
             i = 3;
           ;
@@ -2015,20 +1995,20 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         ) {
           if (
             ((a = K(a.times(d), c, 1)),
-            Z((l = u.plus($(a, new g(i), c, 1))).d).slice(0, c) ===
+            Z((l = u.plus(W(a, new g(i), c, 1))).d).slice(0, c) ===
               Z(u.d).slice(0, c))
           ) {
             if (
               ((u = u.times(2)),
               0 !== s && (u = u.plus(J(g, c + 2, v).times(s + ''))),
-              (u = $(u, new g(f), c, 1)),
+              (u = W(u, new g(f), c, 1)),
               null != t)
             )
               return (g.precision = v), u;
             if (!H(u.d, c - 10, y, o))
-              return K(u, (g.precision = v), y, (C = !0));
+              return K(u, (g.precision = v), y, (N = !0));
             (g.precision = c += 10),
-              (l = a = p = $(h.minus(1), h.plus(1), c, 1)),
+              (l = a = p = W(h.minus(1), h.plus(1), c, 1)),
               (d = K(p.times(p), c, 1)),
               (i = o = 1);
           }
@@ -2067,7 +2047,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           } else n -= i;
           for (; n--; ) t += '0';
           e.d.push(+t),
-            C &&
+            N &&
               (e.e > e.constructor.maxE
                 ? ((e.d = null), (e.e = NaN))
                 : e.e < e.constructor.minE && ((e.e = 0), (e.d = [0])));
@@ -2081,11 +2061,11 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           u,
           l = e.precision,
           c = Math.ceil(l / 7);
-        for (C = !1, u = r.times(r), o = new e(n); ; ) {
+        for (N = !1, u = r.times(r), o = new e(n); ; ) {
           if (
-            ((a = $(o.times(u), new e(t++ * t++), l, 1)),
+            ((a = W(o.times(u), new e(t++ * t++), l, 1)),
             (o = i ? n.plus(a) : n.minus(a)),
-            (n = $(a.times(u), new e(t++ * t++), l, 1)),
+            (n = W(a.times(u), new e(t++ * t++), l, 1)),
             void 0 !== (a = o.plus(n)).d[c])
           ) {
             for (s = c; a.d[s] === o.d[s] && s--; );
@@ -2093,7 +2073,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           }
           (s = o), (o = n), (n = a), (a = s);
         }
-        return (C = !0), (a.d.length = c + 1), a;
+        return (N = !0), (a.d.length = c + 1), a;
       }
       function el(e, t) {
         for (var r = e; --t; ) r *= e;
@@ -2140,9 +2120,9 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               a >= 0 &&
                 ((c = c.replace('.', '')),
                 ((d = new f(1)).e = c.length - a),
-                (d.d = W(V(d), 10, i)),
+                (d.d = $(V(d), 10, i)),
                 (d.e = d.d.length)),
-              s = u = (h = W(c, 10, i)).length;
+              s = u = (h = $(c, 10, i)).length;
             0 == h[--u];
 
           )
@@ -2153,7 +2133,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 ? s--
                 : (((e = new f(e)).d = h),
                   (e.e = s),
-                  (h = (e = $(e, d, r, n, 0, i)).d),
+                  (h = (e = W(e, d, r, n, 0, i)).d),
                   (s = e.e),
                   (l = E)),
               (a = h[r]),
@@ -2178,7 +2158,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               if (u > 1) {
                 if (16 == t || 8 == t) {
                   for (a = 16 == t ? 4 : 3, --u; u % a; u++) c += '0';
-                  for (u = (h = W(c, i, t)).length; !h[u - 1]; --u);
+                  for (u = (h = $(c, i, t)).length; !h[u - 1]; --u);
                   for (a = 1, c = '1.'; a < u; a++) c += O.charAt(h[a]);
                 } else c = c.charAt(0) + '.' + c.slice(1);
               }
@@ -2236,12 +2216,12 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   : t.s < 0
                     ? ((this.precision = s),
                       (this.rounding = 1),
-                      (r = this.atan($(e, t, s, 1))),
+                      (r = this.atan(W(e, t, s, 1))),
                       (t = Y(this, s, 1)),
                       (this.precision = n),
                       (this.rounding = i),
                       (r = e.s < 0 ? r.minus(t) : r.plus(t)))
-                    : (r = this.atan($(e, t, s, 1)))
+                    : (r = this.atan(W(e, t, s, 1)))
               : ((r = Y(this, s, 1).times(t.s > 0 ? 0.25 : 0.75)).s = e.s)
             : (r = new this(NaN)),
           r
@@ -2286,11 +2266,11 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             9,
           ];
         for (t = 0; t < s.length; t += 3)
-          if (((r = s[t]), i && (this[r] = N[r]), void 0 !== (n = e[r]))) {
+          if (((r = s[t]), i && (this[r] = C[r]), void 0 !== (n = e[r]))) {
             if (D(n) === n && n >= s[t + 1] && n <= s[t + 2]) this[r] = n;
             else throw Error(k + r + ': ' + n);
           }
-        if (((r = 'crypto'), i && (this[r] = N[r]), void 0 !== (n = e[r]))) {
+        if (((r = 'crypto'), i && (this[r] = C[r]), void 0 !== (n = e[r]))) {
           if (!0 === n || !1 === n || 0 === n || 1 === n) {
             if (n) {
               if (
@@ -2308,10 +2288,10 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
       function eA(e) {
         return new this(e).cos();
       }
-      function eN(e) {
+      function eC(e) {
         return new this(e).cosh();
       }
-      function eC(e, t) {
+      function eN(e, t) {
         return new this(e).div(t);
       }
       function ex(e) {
@@ -2324,14 +2304,14 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         var e,
           t,
           r = new this(0);
-        for (C = !1, e = 0; e < arguments.length; )
+        for (N = !1, e = 0; e < arguments.length; )
           if (((t = new this(arguments[e++])), t.d))
             r.d && (r = r.plus(t.times(t)));
           else {
-            if (t.s) return (C = !0), new this(1 / 0);
+            if (t.s) return (N = !0), new this(1 / 0);
             r = t;
           }
-        return (C = !0), r.sqrt();
+        return (N = !0), r.sqrt();
       }
       function eI(e) {
         return e instanceof eX || (e && e.toStringTag === P) || !1;
@@ -2348,10 +2328,10 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
       function ej(e) {
         return new this(e).log(10);
       }
-      function eq() {
+      function eU() {
         return en(this, arguments, 'lt');
       }
-      function eU() {
+      function eq() {
         return en(this, arguments, 'gt');
       }
       function eL(e, t) {
@@ -2418,10 +2398,10 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
       function eH(e) {
         return new this(e).sin();
       }
-      function eW(e) {
+      function e$(e) {
         return new this(e).sinh();
       }
-      function e$(e) {
+      function eW(e) {
         return new this(e).sqrt();
       }
       function eK(e, t) {
@@ -2431,8 +2411,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         var e = 0,
           t = arguments,
           r = new this(t[0]);
-        for (C = !1; r.s && ++e < t.length; ) r = r.plus(t[e]);
-        return (C = !0), K(r, this.precision, this.rounding);
+        for (N = !1; r.s && ++e < t.length; ) r = r.plus(t[e]);
+        return (N = !0), K(r, this.precision, this.rounding);
       }
       function eG(e) {
         return new this(e).tan();
@@ -2452,7 +2432,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           if (!(this instanceof s)) return new s(e);
           if (((this.constructor = s), eI(e))) {
             (this.s = e.s),
-              C
+              N
                 ? !e.d || e.e > s.maxE
                   ? ((this.e = NaN), (this.d = null))
                   : e.e < s.minE
@@ -2471,7 +2451,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               e === ~~e && e < 1e7)
             ) {
               for (t = 0, r = e; r >= 10; r /= 10) t++;
-              C
+              N
                 ? t > s.maxE
                   ? ((this.e = NaN), (this.d = null))
                   : t < s.minE
@@ -2500,9 +2480,9 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                       return eo(e, t);
                   } else if ('Infinity' === t || 'NaN' === t)
                     return +t || (e.s = NaN), (e.e = NaN), (e.d = null), e;
-                  if (q.test(t)) (r = 16), (t = t.toLowerCase());
+                  if (U.test(t)) (r = 16), (t = t.toLowerCase());
                   else if (j.test(t)) r = 2;
-                  else if (U.test(t)) r = 8;
+                  else if (q.test(t)) r = 8;
                   else throw Error(k + t);
                   for (
                     (s = t.search(/p/i)) > 0
@@ -2513,7 +2493,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                       a &&
                         ((s = (o = (t = t.replace('.', '')).length) - s),
                         (i = et(n, new n(r), s, 2 * s))),
-                      s = c = (l = W(t, r, 1e7)).length - 1;
+                      s = c = (l = $(t, r, 1e7)).length - 1;
                     0 === l[s];
                     --s
                   )
@@ -2522,13 +2502,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                     ? new n(0 * e.s)
                     : ((e.e = G(l, c)),
                       (e.d = l),
-                      (C = !1),
-                      a && (e = $(e, i, 4 * o)),
+                      (N = !1),
+                      a && (e = W(e, i, 4 * o)),
                       u &&
                         (e = e.times(
                           54 > Math.abs(u) ? M(2, u) : eX.pow(2, u)
                         )),
-                      (C = !0),
+                      (N = !0),
                       e);
                 })(this, e)
           );
@@ -2561,8 +2541,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           (s.ceil = eS),
           (s.clamp = eO),
           (s.cos = eA),
-          (s.cosh = eN),
-          (s.div = eC),
+          (s.cosh = eC),
+          (s.div = eN),
           (s.exp = ex),
           (s.floor = ek),
           (s.hypot = eT),
@@ -2570,8 +2550,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           (s.log = eD),
           (s.log10 = ej),
           (s.log2 = eM),
-          (s.max = eq),
-          (s.min = eU),
+          (s.max = eU),
+          (s.min = eq),
           (s.mod = eL),
           (s.mul = eF),
           (s.pow = eB),
@@ -2579,8 +2559,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           (s.round = eZ),
           (s.sign = ez),
           (s.sin = eH),
-          (s.sinh = eW),
-          (s.sqrt = e$),
+          (s.sinh = e$),
+          (s.sqrt = eW),
           (s.sub = eK),
           (s.sum = eV),
           (s.tan = eG),
@@ -2606,7 +2586,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           )
             t.hasOwnProperty((n = i[r++])) || (t[n] = this[n]);
         return s.config(t), s;
-      })(N));
+      })(C));
       (R = new eX(R)), (A = new eX(A));
       var e0 = eX;
     },
@@ -2877,7 +2857,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
             case 'hex':
               return r >>> 1;
             case 'base64':
-              return N(e).length;
+              return C(e).length;
             default:
               if (i) return n ? -1 : A(e).length;
               (t = ('' + t).toLowerCase()), (i = !0);
@@ -3378,14 +3358,14 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 })(this, e, t, r);
               case 'utf8':
               case 'utf-8':
-                return (i = t), (s = r), C(A(e, this.length - i), this, i, s);
+                return (i = t), (s = r), N(A(e, this.length - i), this, i, s);
               case 'ascii':
               case 'latin1':
               case 'binary':
                 return (
                   (a = t),
                   (o = r),
-                  C(
+                  N(
                     (function (e) {
                       for (var t = [], r = 0; r < e.length; ++r)
                         t.push(255 & e.charCodeAt(r));
@@ -3397,7 +3377,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                   )
                 );
               case 'base64':
-                return (u = t), (l = r), C(N(e), this, u, l);
+                return (u = t), (l = r), N(C(e), this, u, l);
               case 'ucs2':
               case 'ucs-2':
               case 'utf16le':
@@ -3405,7 +3385,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                 return (
                   (c = t),
                   (h = r),
-                  C(
+                  N(
                     (function (e, t) {
                       for (
                         var r, n, i = [], s = 0;
@@ -3842,7 +3822,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         }
         return s;
       }
-      function N(e) {
+      function C(e) {
         return n.toByteArray(
           (function (e) {
             if ((e = (e = e.split('=')[0]).trim().replace(R, '')).length < 2)
@@ -3852,7 +3832,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           })(e)
         );
       }
-      function C(e, t, r, n) {
+      function N(e, t, r, n) {
         for (var i = 0; i < n && !(i + r >= t.length) && !(i >= e.length); ++i)
           t[i + r] = e[i];
         return i;
@@ -4048,13 +4028,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               n[i]
             );
           })(e, [], Object.create(null)),
-        N = (e) =>
+        C = (e) =>
           new Proxy(O, {
             get(t, r) {
               if ('string' == typeof r && 'then' !== r) return e(r);
             },
           }),
-        C = {
+        N = {
           INTERNAL_SERVER_ERROR: -32603,
           BAD_GATEWAY: -32603,
           SERVICE_UNAVAILABLE: -32603,
@@ -4094,13 +4074,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         );
       }
       class j extends Error {}
-      function q(e) {
-        if (e instanceof U || (e instanceof Error && 'TRPCError' === e.name))
+      function U(e) {
+        if (e instanceof q || (e instanceof Error && 'TRPCError' === e.name))
           return e;
-        let t = new U({ code: 'INTERNAL_SERVER_ERROR', cause: e });
+        let t = new q({ code: 'INTERNAL_SERVER_ERROR', cause: e });
         return e instanceof Error && e.stack && (t.stack = e.stack), t;
       }
-      class U extends Error {
+      class q extends Error {
         constructor(e) {
           let t = (function (e) {
             if (e instanceof Error) return e;
@@ -4175,14 +4155,14 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
       }
       function H(e, t) {
         let { middlewares: r = [], inputs: n, meta: i, ...s } = t;
-        return W({
+        return $({
           ...k(e, s),
           inputs: [...e.inputs, ...(n ?? [])],
           middlewares: [...e.middlewares, ...r],
           meta: e.meta && i ? { ...e.meta, ...i } : (i ?? e.meta),
         });
       }
-      function W(e = {}) {
+      function $(e = {}) {
         let t = { procedure: !0, inputs: [], middlewares: [], ...e };
         return {
           _def: t,
@@ -4198,7 +4178,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                     try {
                       r = await e(n);
                     } catch (e) {
-                      throw new U({ code: 'BAD_REQUEST', cause: e });
+                      throw new q({ code: 'BAD_REQUEST', cause: e });
                     }
                     let i = T(t.input) && T(r) ? { ...t.input, ...r } : r;
                     return t.next({ input: i });
@@ -4221,7 +4201,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
                       let t = await e(r.data);
                       return { ...r, data: t };
                     } catch (e) {
-                      throw new U({
+                      throw new q({
                         message: 'Output validation failed',
                         code: 'INTERNAL_SERVER_ERROR',
                         cause: e,
@@ -4237,13 +4217,13 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
           use: (e) =>
             H(t, { middlewares: '_middlewares' in e ? e._middlewares : [e] }),
           unstable_concat: (e) => H(t, e._def),
-          query: (e) => $({ ...t, type: 'query' }, e),
-          mutation: (e) => $({ ...t, type: 'mutation' }, e),
-          subscription: (e) => $({ ...t, type: 'subscription' }, e),
+          query: (e) => W({ ...t, type: 'query' }, e),
+          mutation: (e) => W({ ...t, type: 'mutation' }, e),
+          subscription: (e) => W({ ...t, type: 'subscription' }, e),
           experimental_caller: (e) => H(t, { caller: e }),
         };
       }
-      function $(e, t) {
+      function W(e, t) {
         let r = H(e, {
             resolver: t,
             middlewares: [
@@ -4264,7 +4244,7 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
               if (!t || !('getRawInput' in t)) throw Error(K);
               let r = await V(0, e, t);
               if (!r)
-                throw new U({
+                throw new q({
                   code: 'INTERNAL_SERVER_ERROR',
                   message:
                     'No result from middlewares - did you forget to `return next()`?',
@@ -4299,7 +4279,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }),
           });
         } catch (e) {
-          return { ok: !1, error: q(e), marker: Q };
+          return { ok: !1, error: U(e), marker: Q };
         }
       }
       let G =
@@ -4376,7 +4356,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 throw (
                   (r?.onError?.({
                     ctx: s,
-                    error: q(e),
+                    error: U(e),
                     input: i[0],
                     path: a,
                     type: o._def.type,
@@ -4449,7 +4429,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             );
           return {
             _config: r,
-            procedure: W({ meta: e?.defaultMeta }),
+            procedure: $({ meta: e?.defaultMeta }),
             middleware: function (e) {
               return (function e(t) {
                 return {
@@ -4683,7 +4663,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             s = n.join('.');
           return e[i](s, ...r);
         });
-        return N((r) =>
+        return C((r) =>
           e.hasOwnProperty(r) ? e[r] : '__untypedClient' === r ? e : t[r]
         );
       }
@@ -4875,21 +4855,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         let n = await r.json();
         return (t.responseJSON = n), { json: n, meta: t };
       }
-      class eN extends Error {
+      class eC extends Error {
         constructor(e) {
           super(e?.message ?? 'WebSocket closed', { cause: e?.cause }),
             (this.name = 'TRPCWebSocketClosedError'),
-            Object.setPrototypeOf(this, eN.prototype);
+            Object.setPrototypeOf(this, eC.prototype);
         }
       }
-      C.BAD_GATEWAY,
-        C.SERVICE_UNAVAILABLE,
-        C.GATEWAY_TIMEOUT,
-        C.INTERNAL_SERVER_ERROR;
-      var eC = r(8101),
-        ex = eC.createContext(void 0),
+      N.BAD_GATEWAY,
+        N.SERVICE_UNAVAILABLE,
+        N.GATEWAY_TIMEOUT,
+        N.INTERNAL_SERVER_ERROR;
+      var eN = r(8101),
+        ex = eN.createContext(void 0),
         ek = (e) => {
-          let t = eC.useContext(ex);
+          let t = eN.useContext(ex);
           if (e) return e;
           if (!t)
             throw Error(
@@ -4898,7 +4878,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return t;
         },
         eT = ({ client: e, children: t }) => (
-          eC.useEffect(
+          eN.useEffect(
             () => (
               e.mount(),
               () => {
@@ -4969,11 +4949,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       }
       var ej = ({ children: e, options: t = {}, state: r, queryClient: n }) => {
         let i = ek(n),
-          [s, a] = eC.useState(),
-          o = eC.useRef(t);
+          [s, a] = eN.useState(),
+          o = eN.useRef(t);
         return (
           (o.current = t),
-          eC.useMemo(() => {
+          eN.useMemo(() => {
             if (r) {
               if ('object' != typeof r) return;
               let e = i.getQueryCache(),
@@ -4994,14 +4974,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 u.length > 0 && a((e) => (e ? [...e, ...u] : u));
             }
           }, [i, s, r]),
-          eC.useEffect(() => {
+          eN.useEffect(() => {
             s && (eM(i, { queries: s }, o.current), a(void 0));
           }, [i, s]),
           e
         );
       };
-      let eq = ['client', 'ssrContext', 'ssrState', 'abortOnUnmount'],
-        eU = eC.createContext?.(null);
+      let eU = ['client', 'ssrContext', 'ssrState', 'abortOnUnmount'],
+        eq = eN.createContext?.(null);
       var eL = 'undefined' == typeof window || 'Deno' in globalThis;
       function eF() {}
       function eB(e) {
@@ -5027,7 +5007,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         } = e;
         if (a) {
           if (n) {
-            if (t.queryHash !== e$(a, t.options)) return !1;
+            if (t.queryHash !== eW(a, t.options)) return !1;
           } else if (!eV(t.queryKey, a)) return !1;
         }
         if ('all' !== r) {
@@ -5040,7 +5020,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           (!s || !!s(t))
         );
       }
-      function eW(e, t) {
+      function e$(e, t) {
         let { exact: r, status: n, predicate: i, mutationKey: s } = e;
         if (s) {
           if (!t.options.mutationKey) return !1;
@@ -5050,7 +5030,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         return (!n || t.state.status === n) && (!i || !!i(t));
       }
-      function e$(e, t) {
+      function eW(e, t) {
         return (t?.queryKeyHashFn || eK)(e);
       }
       function eK(e) {
@@ -5836,8 +5816,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         onSubscribe() {
           1 === this.listeners.size &&
             (this.#m.addObserver(this),
-            tp(this.#m, this.options) ? this.#N() : this.updateResult(),
-            this.#C());
+            tp(this.#m, this.options) ? this.#C() : this.updateResult(),
+            this.#N());
         }
         onUnsubscribe() {
           this.hasListeners() || this.destroy();
@@ -5879,7 +5859,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   observer: this,
                 });
           let i = this.hasListeners();
-          i && tg(this.#m, n, this.options, r) && this.#N(),
+          i && tg(this.#m, n, this.options, r) && this.#C(),
             this.updateResult(t),
             i &&
               (this.#m !== n ||
@@ -5936,11 +5916,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return r.fetch().then(() => this.createResult(r, t));
         }
         fetch(e) {
-          return this.#N({ ...e, cancelRefetch: e.cancelRefetch ?? !0 }).then(
+          return this.#C({ ...e, cancelRefetch: e.cancelRefetch ?? !0 }).then(
             () => (this.updateResult(), this.#y)
           );
         }
-        #N(e) {
+        #C(e) {
           this.#T();
           let t = this.#m.fetch(this.options, e);
           return e?.throwOnError || (t = t.catch(eF)), t;
@@ -5970,10 +5950,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               0 !== this.#R &&
               (this.#O = setInterval(() => {
                 (this.options.refetchIntervalInBackground || tt.isFocused()) &&
-                  this.#N();
+                  this.#C();
               }, this.#R));
         }
-        #C() {
+        #N() {
           this.#I(), this.#D(this.#P());
         }
         #x() {
@@ -6135,7 +6115,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               (t?.removeObserver(this), e.addObserver(this));
         }
         onQueryUpdate() {
-          this.updateResult(), this.hasListeners() && this.#C();
+          this.updateResult(), this.hasListeners() && this.#N();
         }
         #M(e) {
           tr.batch(() => {
@@ -6174,7 +6154,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       function ty(e, t) {
         return !1 !== ez(t.enabled, e) && e.isStaleByTime(eZ(t.staleTime, e));
       }
-      var tv = eC.createContext(
+      var tv = eN.createContext(
           (function () {
             let e = !1;
             return {
@@ -6188,7 +6168,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             };
           })()
         ),
-        tb = () => eC.useContext(tv);
+        tb = () => eN.useContext(tv);
       function tw(e, t) {
         return 'function' == typeof e ? e(...t) : !!e;
       }
@@ -6199,7 +6179,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             (e.retryOnMount = !1);
         },
         tS = (e) => {
-          eC.useEffect(() => {
+          eN.useEffect(() => {
             e.clearReset();
           }, [e]);
         },
@@ -6214,11 +6194,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           !e.isFetching &&
           n &&
           tw(r, [e.error, n]),
-        tR = eC.createContext(!1),
-        tA = () => eC.useContext(tR);
+        tR = eN.createContext(!1),
+        tA = () => eN.useContext(tR);
       tR.Provider;
-      var tN = (e, t) => void 0 === t.state.data,
-        tC = (e) => {
+      var tC = (e, t) => void 0 === t.state.data,
+        tN = (e) => {
           let t = e.staleTime;
           e.suspense &&
             ((e.staleTime =
@@ -6241,16 +6221,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           a = n.defaultQueryOptions(e);
         n.getDefaultOptions().queries?._experimental_beforeQuery?.(a),
           (a._optimisticResults = i ? 'isRestoring' : 'optimistic'),
-          tC(a),
+          tN(a),
           tE(a, s),
           tS(s);
         let o = !n.getQueryCache().get(a.queryHash),
-          [u] = eC.useState(() => new t(n, a)),
+          [u] = eN.useState(() => new t(n, a)),
           l = u.getOptimisticResult(a),
           c = !i && !1 !== e.subscribed;
         if (
-          (eC.useSyncExternalStore(
-            eC.useCallback(
+          (eN.useSyncExternalStore(
+            eN.useCallback(
               (e) => {
                 let t = c ? u.subscribe(tr.batchCalls(e)) : t_;
                 return u.updateResult(), t;
@@ -6260,7 +6240,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             () => u.getCurrentResult(),
             () => u.getCurrentResult()
           ),
-          eC.useEffect(() => {
+          eN.useEffect(() => {
             u.setOptions(a, { listeners: !1 });
           }, [a, u]),
           tk(a, l))
@@ -6288,12 +6268,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       }
       var tP = class extends tc {
         #j;
-        #q;
+        #U;
         #u;
         constructor(e) {
           super(),
             (this.mutationId = e.mutationId),
-            (this.#q = e.mutationCache),
+            (this.#U = e.mutationCache),
             (this.#j = []),
             (this.state = e.state || tD()),
             this.setOptions(e.options),
@@ -6309,7 +6289,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           this.#j.includes(e) ||
             (this.#j.push(e),
             this.clearGcTimeout(),
-            this.#q.notify({
+            this.#U.notify({
               type: 'observerAdded',
               mutation: this,
               observer: e,
@@ -6318,7 +6298,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         removeObserver(e) {
           (this.#j = this.#j.filter((t) => t !== e)),
             this.scheduleGc(),
-            this.#q.notify({
+            this.#U.notify({
               type: 'observerRemoved',
               mutation: this,
               observer: e,
@@ -6328,7 +6308,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           this.#j.length ||
             ('pending' === this.state.status
               ? this.scheduleGc()
-              : this.#q.remove(this));
+              : this.#U.remove(this));
         }
         continue() {
           return this.#u?.continue() ?? this.execute(this.state.variables);
@@ -6351,14 +6331,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             retry: this.options.retry ?? 0,
             retryDelay: this.options.retryDelay,
             networkMode: this.options.networkMode,
-            canRun: () => this.#q.canRun(this),
+            canRun: () => this.#U.canRun(this),
           });
           let t = 'pending' === this.state.status,
             r = !this.#u.canStart();
           try {
             if (!t) {
               this.#h({ type: 'pending', variables: e, isPaused: r }),
-                await this.#q.config.onMutate?.(e, this);
+                await this.#U.config.onMutate?.(e, this);
               let t = await this.options.onMutate?.(e);
               t !== this.state.context &&
                 this.#h({
@@ -6370,9 +6350,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
             let n = await this.#u.start();
             return (
-              await this.#q.config.onSuccess?.(n, e, this.state.context, this),
+              await this.#U.config.onSuccess?.(n, e, this.state.context, this),
               await this.options.onSuccess?.(n, e, this.state.context),
-              await this.#q.config.onSettled?.(
+              await this.#U.config.onSettled?.(
                 n,
                 null,
                 this.state.variables,
@@ -6386,9 +6366,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           } catch (t) {
             try {
               throw (
-                (await this.#q.config.onError?.(t, e, this.state.context, this),
+                (await this.#U.config.onError?.(t, e, this.state.context, this),
                 await this.options.onError?.(t, e, this.state.context),
-                await this.#q.config.onSettled?.(
+                await this.#U.config.onSettled?.(
                   void 0,
                   t,
                   this.state.variables,
@@ -6407,7 +6387,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               this.#h({ type: 'error', error: t });
             }
           } finally {
-            this.#q.runNext(this);
+            this.#U.runNext(this);
           }
         }
         #h(e) {
@@ -6462,7 +6442,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               this.#j.forEach((t) => {
                 t.onMutationUpdate(e);
               }),
-                this.#q.notify({ mutation: this, type: 'updated', action: e });
+                this.#U.notify({ mutation: this, type: 'updated', action: e });
             });
         }
       };
@@ -6482,7 +6462,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       var tM = class extends te {
         #d;
         #y = void 0;
-        #U;
+        #q;
         #L;
         constructor(e, t) {
           super(),
@@ -6503,18 +6483,18 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 .getMutationCache()
                 .notify({
                   type: 'observerOptionsUpdated',
-                  mutation: this.#U,
+                  mutation: this.#q,
                   observer: this,
                 }),
             t?.mutationKey &&
             this.options.mutationKey &&
             eK(t.mutationKey) !== eK(this.options.mutationKey)
               ? this.reset()
-              : this.#U?.state.status === 'pending' &&
-                this.#U.setOptions(this.options);
+              : this.#q?.state.status === 'pending' &&
+                this.#q.setOptions(this.options);
         }
         onUnsubscribe() {
-          this.hasListeners() || this.#U?.removeObserver(this);
+          this.hasListeners() || this.#q?.removeObserver(this);
         }
         onMutationUpdate(e) {
           this.#F(), this.#M(e);
@@ -6523,22 +6503,22 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.#y;
         }
         reset() {
-          this.#U?.removeObserver(this),
-            (this.#U = void 0),
+          this.#q?.removeObserver(this),
+            (this.#q = void 0),
             this.#F(),
             this.#M();
         }
         mutate(e, t) {
           return (
             (this.#L = t),
-            this.#U?.removeObserver(this),
-            (this.#U = this.#d.getMutationCache().build(this.#d, this.options)),
-            this.#U.addObserver(this),
-            this.#U.execute(e)
+            this.#q?.removeObserver(this),
+            (this.#q = this.#d.getMutationCache().build(this.#d, this.options)),
+            this.#q.addObserver(this),
+            this.#q.execute(e)
           );
         }
         #F() {
-          let e = this.#U?.state ?? tD();
+          let e = this.#q?.state ?? tD();
           this.#y = {
             ...e,
             isPending: 'pending' === e.status,
@@ -6613,12 +6593,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 if (i && s.length) {
                   let e = 'backward' === i,
                     t = { pages: s, pageParams: a },
-                    r = (e ? tU : tq)(n, t);
+                    r = (e ? tq : tU)(n, t);
                   o = await h(t, r, e);
                 } else {
                   let t = e ?? s.length;
                   do {
-                    let e = 0 === u ? (a[0] ?? n.initialPageParam) : tq(n, o);
+                    let e = 0 === u ? (a[0] ?? n.initialPageParam) : tU(n, o);
                     if (u > 0 && null == e) break;
                     (o = await h(o, e)), u++;
                   } while (u < t);
@@ -6640,11 +6620,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           },
         };
       }
-      function tq(e, { pages: t, pageParams: r }) {
+      function tU(e, { pages: t, pageParams: r }) {
         let n = t.length - 1;
         return t.length > 0 ? e.getNextPageParam(t[n], t, r[n], r) : void 0;
       }
-      function tU(e, { pages: t, pageParams: r }) {
+      function tq(e, { pages: t, pageParams: r }) {
         return t.length > 0
           ? e.getPreviousPageParam?.(t[0], t, r[0], r)
           : void 0;
@@ -6695,9 +6675,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             ...s,
             fetchNextPage: this.fetchNextPage,
             fetchPreviousPage: this.fetchPreviousPage,
-            hasNextPage: !!(r = i.data) && null != tq(t, r),
+            hasNextPage: !!(r = i.data) && null != tU(t, r),
             hasPreviousPage:
-              !!(n = i.data) && !!t.getPreviousPageParam && null != tU(t, n),
+              !!(n = i.data) && !!t.getPreviousPageParam && null != tq(t, n),
             isFetchNextPageError: h,
             isFetchingNextPage: d,
             isFetchPreviousPageError: f,
@@ -6718,7 +6698,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         #j;
         #z;
         #H;
-        #W;
+        #$;
         constructor(e, t, r) {
           super(),
             (this.#d = e),
@@ -6732,7 +6712,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           1 === this.listeners.size &&
             this.#j.forEach((e) => {
               e.subscribe((t) => {
-                this.#$(e, t);
+                this.#W(e, t);
               });
             });
         }
@@ -6766,7 +6746,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   }),
                   tF(n, e).forEach((e) => {
                     e.subscribe((t) => {
-                      this.#$(e, t);
+                      this.#W(e, t);
                     });
                   }),
                   this.#M()));
@@ -6802,9 +6782,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         #V(e, t) {
           return t
-            ? ((this.#z && this.#B === this.#W && t === this.#H) ||
+            ? ((this.#z && this.#B === this.#$ && t === this.#H) ||
                 ((this.#H = t),
-                (this.#W = this.#B),
+                (this.#$ = this.#B),
                 (this.#z = eG(this.#z, t(e)))),
               this.#z)
             : e;
@@ -6826,7 +6806,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             r
           );
         }
-        #$(e, t) {
+        #W(e, t) {
           let r = this.#j.indexOf(e);
           -1 !== r &&
             ((this.#B = (function (e, t, r) {
@@ -6849,7 +6829,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         let n = ek(r),
           i = tA(),
           s = tb(),
-          a = eC.useMemo(
+          a = eN.useMemo(
             () =>
               e.map((e) => {
                 let t = n.defaultQueryOptions(e);
@@ -6860,21 +6840,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             [e, n, i]
           );
         a.forEach((e) => {
-          tC(e), tE(e, s);
+          tN(e), tE(e, s);
         }),
           tS(s);
-        let [o] = eC.useState(() => new tB(n, a, t)),
+        let [o] = eN.useState(() => new tB(n, a, t)),
           [u, l, c] = o.getOptimisticResult(a, t.combine),
           h = !i && !1 !== t.subscribed;
-        eC.useSyncExternalStore(
-          eC.useCallback(
+        eN.useSyncExternalStore(
+          eN.useCallback(
             (e) => (h ? o.subscribe(tr.batchCalls(e)) : t_),
             [o, h]
           ),
           () => o.getCurrentResult(),
           () => o.getCurrentResult()
         ),
-          eC.useEffect(() => {
+          eN.useEffect(() => {
             o.setQueries(a, t, { listeners: !1 });
           }, [a, t, o]);
         let d = u.some((e, t) => tk(a[t], e))
@@ -6922,21 +6902,21 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       }
       function tH(e) {
         let t = tz(e);
-        return eC.useMemo(() => t, [t]);
+        return eN.useMemo(() => t, [t]);
       }
-      async function tW(e, t, r) {
+      async function t$(e, t, r) {
         let n = t.getQueryCache().build(t, { queryKey: r });
         n.setState({ data: [], status: 'success' });
         let i = [];
         for await (let t of e) i.push(t), n.setState({ data: [...i] });
         return i;
       }
-      let t$ = (e, t) => new Proxy(e, { get: (e, r) => (t(r), e[r]) });
+      let tW = (e, t) => new Proxy(e, { get: (e, r) => (t(r), e[r]) });
       function tK(e) {
         let t = e?.overrides?.useMutation?.onSuccess ?? ((e) => e.originalFn()),
-          r = e?.context ?? eU;
+          r = e?.context ?? eq;
         function n() {
-          let e = eC.useContext(r);
+          let e = eN.useContext(r);
           if (!e)
             throw Error(
               'Unable to find tRPC Context. Did you forget to wrap your App inside `withTRPC` HoC?'
@@ -6954,9 +6934,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         return {
           Provider: (e) => {
             let { abortOnUnmount: t = !1, queryClient: n, ssrContext: i } = e,
-              [s, a] = eC.useState(e.ssrState ?? !1),
+              [s, a] = eN.useState(e.ssrState ?? !1),
               o = e.client instanceof eu ? e.client : ef(e.client),
-              u = eC.useMemo(
+              u = eN.useMemo(
                 () =>
                   (function (e) {
                     let { client: t, queryClient: r } = e,
@@ -7005,7 +6985,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                 },
                               },
                               a = await n.query(...tZ(t, s));
-                            return D(a) ? tW(a, r, t) : a;
+                            return D(a) ? t$(a, r, t) : a;
                           };
                         return Object.assign(
                           {
@@ -7088,7 +7068,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   })({ client: o, queryClient: n }),
                 [o, n]
               ),
-              l = eC.useMemo(
+              l = eN.useMemo(
                 () => ({
                   abortOnUnmount: t,
                   queryClient: n,
@@ -7100,10 +7080,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 [t, o, u, n, i, s]
               );
             return (
-              eC.useEffect(() => {
+              eN.useEffect(() => {
                 a((e) => !!e && 'mounted');
               }, []),
-              eC.createElement(r.Provider, { value: l }, e.children)
+              eN.createElement(r.Provider, { value: l }, e.children)
             );
           },
           createClient: ed,
@@ -7144,7 +7124,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                             },
                           },
                           r = await o.query(...tZ(h, t));
-                        return D(r) ? tW(r, l, h) : r;
+                        return D(r) ? t$(r, l, h) : r;
                       },
                 },
                 tf,
@@ -7205,7 +7185,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     ...s,
                     enabled: !0,
                     suspense: !0,
-                    throwOnError: tN,
+                    throwOnError: tC,
                     placeholderData: void 0,
                   },
                   tf,
@@ -7249,7 +7229,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   queries: t.queries.map((e) => ({
                     ...e,
                     suspense: !0,
-                    throwOnError: tN,
+                    throwOnError: tC,
                     enabled: !0,
                     placeholderData: void 0,
                   })),
@@ -7264,16 +7244,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               o = s.defaultMutationOptions(s.getMutationDefaults(a)),
               u = (function (e, t) {
                 let r = ek(t),
-                  [n] = eC.useState(() => new tM(r, e));
-                eC.useEffect(() => {
+                  [n] = eN.useState(() => new tM(r, e));
+                eN.useEffect(() => {
                   n.setOptions(e);
                 }, [n, e]);
-                let i = eC.useSyncExternalStore(
-                    eC.useCallback((e) => n.subscribe(tr.batchCalls(e)), [n]),
+                let i = eN.useSyncExternalStore(
+                    eN.useCallback((e) => n.subscribe(tr.batchCalls(e)), [n]),
                     () => n.getCurrentResult(),
                     () => n.getCurrentResult()
                   ),
-                  s = eC.useCallback(
+                  s = eN.useCallback(
                     (e, t) => {
                       n.mutate(e, t).catch(t_);
                     },
@@ -7303,14 +7283,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let i = r?.enabled ?? t !== e5,
               s = eK(e6(e, t, 'any')),
               { client: a } = n(),
-              o = eC.useRef(r);
+              o = eN.useRef(r);
             o.current = r;
-            let u = eC.useRef(new Set([])),
-              l = eC.useCallback((e) => {
+            let u = eN.useRef(new Set([])),
+              l = eN.useCallback((e) => {
                 u.current.add(e);
               }, []),
-              c = eC.useRef(null),
-              h = eC.useCallback(() => {
+              c = eN.useRef(null),
+              h = eN.useCallback(() => {
                 if ((c.current?.(), g(d), !i)) return;
                 let r = !1,
                   n = a.subscription(e.join('.'), t ?? void 0, {
@@ -7343,7 +7323,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   (r = !0), n.unsubscribe();
                 };
               }, [s, i]),
-              d = eC.useCallback(
+              d = eN.useCallback(
                 () =>
                   i
                     ? {
@@ -7355,10 +7335,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     : { data: void 0, error: null, status: 'idle', reset: h },
                 [i, h]
               ),
-              f = eC.useRef(d()),
-              [p, m] = eC.useState(t$(f.current, l));
+              f = eN.useRef(d()),
+              [p, m] = eN.useState(tW(f.current, l));
             p.reset = h;
-            let g = eC.useCallback(
+            let g = eN.useCallback(
               (e) => {
                 let t = f.current,
                   r = (f.current = e(t)),
@@ -7368,12 +7348,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     n = !0;
                     break;
                   }
-                n && m(t$(r, l));
+                n && m(tW(r, l));
               },
               [l]
             );
             return (
-              eC.useEffect(() => {
+              eN.useEffect(() => {
                 if (i)
                   return (
                     h(),
@@ -7491,7 +7471,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 }),
                 (a = o.queryClient),
                 tI(
-                  { ...s, enabled: !0, suspense: !0, throwOnError: tN },
+                  { ...s, enabled: !0, suspense: !0, throwOnError: tC },
                   tL,
                   a
                 ));
@@ -7506,7 +7486,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           #Q;
           build(e, t, r) {
             let n = t.queryKey,
-              i = t.queryHash ?? e$(n, t),
+              i = t.queryHash ?? eW(n, t),
               s = this.get(i);
             return (
               s ||
@@ -7652,10 +7632,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
           find(e) {
             let t = { exact: !0, ...e };
-            return this.getAll().find((e) => eW(t, e));
+            return this.getAll().find((e) => e$(t, e));
           }
           findAll(e = {}) {
-            return this.getAll().filter((t) => eW(e, t));
+            return this.getAll().filter((t) => e$(e, t));
           }
           notify(e) {
             tr.batch(() => {
@@ -7676,7 +7656,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       }
       var tY = class {
         #ee;
-        #q;
+        #U;
         #l;
         #et;
         #er;
@@ -7685,7 +7665,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         #es;
         constructor(e = {}) {
           (this.#ee = e.queryCache || new tV()),
-            (this.#q = e.mutationCache || new tG()),
+            (this.#U = e.mutationCache || new tG()),
             (this.#l = e.defaultOptions || {}),
             (this.#et = new Map()),
             (this.#er = new Map()),
@@ -7713,7 +7693,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.#ee.findAll({ ...e, fetchStatus: 'fetching' }).length;
         }
         isMutating(e) {
-          return this.#q.findAll({ ...e, status: 'pending' }).length;
+          return this.#U.findAll({ ...e, status: 'pending' }).length;
         }
         getQueryData(e) {
           let t = this.defaultQueryOptions({ queryKey: e });
@@ -7834,14 +7814,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
         resumePausedMutations() {
           return tn.isOnline()
-            ? this.#q.resumePausedMutations()
+            ? this.#U.resumePausedMutations()
             : Promise.resolve();
         }
         getQueryCache() {
           return this.#ee;
         }
         getMutationCache() {
-          return this.#q;
+          return this.#U;
         }
         getDefaultOptions() {
           return this.#l;
@@ -7884,7 +7864,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             _defaulted: !0,
           };
           return (
-            t.queryHash || (t.queryHash = e$(t.queryKey, t)),
+            t.queryHash || (t.queryHash = eW(t.queryKey, t)),
             void 0 === t.refetchOnReconnect &&
               (t.refetchOnReconnect = 'always' !== t.networkMode),
             void 0 === t.throwOnError && (t.throwOnError = !!t.suspense),
@@ -7904,7 +7884,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               };
         }
         clear() {
-          this.#ee.clear(), this.#q.clear();
+          this.#ee.clear(), this.#U.clear();
         }
       };
       let tX = (e) => e.queryClient ?? new tY(e.queryClientConfig);
@@ -8005,8 +7985,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         rO = 'abcdefghijklmnopqrstuvwxyz',
         rR = '0123456789',
         rA = { DIGIT: rR, ALPHA: rO, ALPHA_DIGIT: rO + rO.toUpperCase() + rR },
-        rN = t6('AsyncFunction'),
-        rC =
+        rC = t6('AsyncFunction'),
+        rN =
           ((s = 'function' == typeof setImmediate),
           (a = rr(ry.postMessage)),
           s
@@ -8028,7 +8008,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         rx =
           'undefined' != typeof queueMicrotask
             ? queueMicrotask.bind(ry)
-            : (void 0 !== t2 && t2.nextTick) || rC,
+            : (void 0 !== t2 && t2.nextTick) || rN,
         rk = {
           isArray: t9,
           isArrayBuffer: re,
@@ -8241,9 +8221,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               };
             return r(e, 0);
           },
-          isAsyncFn: rN,
+          isAsyncFn: rC,
           isThenable: (e) => e && (ri(e) || rr(e)) && rr(e.then) && rr(e.catch),
-          setImmediate: rC,
+          setImmediate: rN,
           asap: rx,
         };
       function rT(e, t, r, n, i) {
@@ -8321,7 +8301,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       function rj(e) {
         return rk.endsWith(e, '[]') ? e.slice(0, -2) : e;
       }
-      function rq(e, t, r) {
+      function rU(e, t, r) {
         return e
           ? e
               .concat(t)
@@ -8331,7 +8311,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .join(r ? '.' : '')
           : t;
       }
-      let rU = rk.toFlatObject(rk, {}, null, function (e) {
+      let rq = rk.toFlatObject(rk, {}, null, function (e) {
           return /^is[A-Z]/.test(e);
         }),
         rL = function (e, t, r) {
@@ -8381,7 +8361,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       rk.isUndefined(e) ||
                         null === e ||
                         t.append(
-                          !0 === a ? rq([r], n, s) : null === a ? r : r + '[]',
+                          !0 === a ? rU([r], n, s) : null === a ? r : r + '[]',
                           u(e)
                         );
                     }),
@@ -8389,10 +8369,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   );
               }
             }
-            return !!rM(e) || (t.append(rq(i, r, s), u(e)), !1);
+            return !!rM(e) || (t.append(rU(i, r, s), u(e)), !1);
           }
           let c = [],
-            h = Object.assign(rU, {
+            h = Object.assign(rq, {
               defaultVisitor: l,
               convertValue: u,
               isVisitable: rM,
@@ -8504,12 +8484,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           });
         }
       }
-      let rW = {
+      let r$ = {
           silentJSONParsing: !0,
           forcedJSONParsing: !0,
           clarifyTimeoutError: !1,
         },
-        r$ = 'undefined' != typeof URLSearchParams ? URLSearchParams : rB,
+        rW = 'undefined' != typeof URLSearchParams ? URLSearchParams : rB,
         rK = 'undefined' != typeof FormData ? FormData : null,
         rV = 'undefined' != typeof Blob ? Blob : null,
         rG = 'undefined' != typeof window && 'undefined' != typeof document,
@@ -8526,7 +8506,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         r1 = {
           ...v,
           isBrowser: !0,
-          classes: { URLSearchParams: r$, FormData: rK, Blob: rV },
+          classes: { URLSearchParams: rW, FormData: rK, Blob: rV },
           protocols: ['http', 'https', 'file', 'blob', 'url', 'data'],
         },
         r2 = function (e) {
@@ -8572,7 +8552,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return null;
         },
         r4 = {
-          transitional: rW,
+          transitional: r$,
           adapter: ['xhr', 'http', 'fetch'],
           transformRequest: [
             function (e, t) {
@@ -9274,7 +9254,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   let t = u.timeout
                       ? 'timeout of ' + u.timeout + 'ms exceeded'
                       : 'timeout exceeded',
-                    n = u.transitional || rW;
+                    n = u.transitional || r$;
                   u.timeoutErrorMessage && (t = u.timeoutErrorMessage),
                     r(
                       new rT(
@@ -9444,7 +9424,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             return !1;
           }
         },
-        nN =
+        nC =
           nO &&
           nA(() => {
             let e = !1,
@@ -9457,8 +9437,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }).headers.has('Content-Type');
             return e && !t;
           }),
-        nC = nO && nA(() => rk.isReadableStream(new Response('').body)),
-        nx = { stream: nC && ((e) => e.body) };
+        nN = nO && nA(() => rk.isReadableStream(new Response('').body)),
+        nx = { stream: nN && ((e) => e.body) };
       nS &&
         ((o = new Response()),
         ['text', 'arrayBuffer', 'blob', 'formData', 'stream'].forEach((e) => {
@@ -9523,7 +9503,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               try {
                 if (
                   c &&
-                  nN &&
+                  nC &&
                   'get' !== i &&
                   'head' !== i &&
                   0 !== (r = await nT(d, s))
@@ -9556,8 +9536,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   credentials: a ? f : void 0,
                 });
                 let o = await fetch(t),
-                  u = nC && ('stream' === h || 'response' === h);
-                if (nC && (l || (u && g))) {
+                  u = nN && ('stream' === h || 'response' === h);
+                if (nN && (l || (u && g))) {
                   let e = {};
                   ['status', 'statusText', 'headers'].forEach((t) => {
                     e[t] = o[t];
@@ -9652,7 +9632,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         )
           throw new ni(null, e);
       }
-      function nq(e) {
+      function nU(e) {
         return (
           nj(e),
           (e.headers = nt.from(e.headers)),
@@ -9688,7 +9668,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             )
         );
       }
-      let nU = '1.7.9',
+      let nq = '1.7.9',
         nL = {};
       ['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach(
         (e, t) => {
@@ -9702,7 +9682,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         function n(e, t) {
           return (
             '[Axios v' +
-            nU +
+            nq +
             "] Transitional option '" +
             e +
             "'" +
@@ -9852,7 +9832,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           });
           let h = 0;
           if (!l) {
-            let e = [nq.bind(this), void 0];
+            let e = [nU.bind(this), void 0];
             for (
               e.unshift.apply(e, u),
                 e.push.apply(e, c),
@@ -9877,7 +9857,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }
           }
           try {
-            r = nq.call(this, d);
+            r = nU.call(this, d);
           } catch (e) {
             return Promise.reject(e);
           }
@@ -10049,7 +10029,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       Object.entries(nH).forEach(([e, t]) => {
         nH[t] = e;
       });
-      let nW = (function e(t) {
+      let n$ = (function e(t) {
         let r = new nZ(t),
           n = t1(nZ.prototype.request, r);
         return (
@@ -10061,32 +10041,32 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           n
         );
       })(r4);
-      (nW.Axios = nZ),
-        (nW.CanceledError = ni),
-        (nW.CancelToken = nz),
-        (nW.isCancel = nn),
-        (nW.VERSION = nU),
-        (nW.toFormData = rL),
-        (nW.AxiosError = rT),
-        (nW.Cancel = nW.CanceledError),
-        (nW.all = function (e) {
+      (n$.Axios = nZ),
+        (n$.CanceledError = ni),
+        (n$.CancelToken = nz),
+        (n$.isCancel = nn),
+        (n$.VERSION = nq),
+        (n$.toFormData = rL),
+        (n$.AxiosError = rT),
+        (n$.Cancel = n$.CanceledError),
+        (n$.all = function (e) {
           return Promise.all(e);
         }),
-        (nW.spread = function (e) {
+        (n$.spread = function (e) {
           return function (t) {
             return e.apply(null, t);
           };
         }),
-        (nW.isAxiosError = function (e) {
+        (n$.isAxiosError = function (e) {
           return rk.isObject(e) && !0 === e.isAxiosError;
         }),
-        (nW.mergeConfig = nm),
-        (nW.AxiosHeaders = nt),
-        (nW.formToJSON = (e) => r2(rk.isHTMLForm(e) ? new FormData(e) : e)),
-        (nW.getAdapter = nM.getAdapter),
-        (nW.HttpStatusCode = nH),
-        (nW.default = nW);
-      let n$ = async (e) => (await nW.get(e)).data;
+        (n$.mergeConfig = nm),
+        (n$.AxiosHeaders = nt),
+        (n$.formToJSON = (e) => r2(rk.isHTMLForm(e) ? new FormData(e) : e)),
+        (n$.getAdapter = nM.getAdapter),
+        (n$.HttpStatusCode = nH),
+        (n$.default = n$);
+      let nW = async (e) => (await n$.get(e)).data;
       var nK = (function (e) {
         return (
           (e.DEFI = 'defi'),
@@ -10118,7 +10098,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             let r = ''
               .concat('https://api.coinranking.com', '/v2/coins?')
               .concat(e.toString());
-            return await n$(r);
+            return await nW(r);
           } catch (e) {
             return {
               status: 'error',
@@ -10136,7 +10116,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             };
           }
         },
-        nG = async (e) => (await nW.get(e)).data,
+        nG = async (e) => (await n$.get(e)).data,
         nJ = async function () {
           let {
               amount: e = 1,
@@ -10161,7 +10141,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       let nX = r.n(nY)()(),
         n0 = async () => {
           try {
-            let { data: e } = await nW.get(
+            let { data: e } = await n$.get(
               'https://trends.google.com/trends/hottrends/visualize/internal/data'
             );
             return e;
@@ -10244,7 +10224,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         n5 = async function (e) {
           let t =
             arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-          return (await nW.get(e, t)).data;
+          return (await n$.get(e, t)).data;
         },
         n3 = async function () {
           let {
@@ -10581,18 +10561,18 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             O = ih(t, 'long', ''),
             R = O(n8, 'long_none_win'),
             A = O(n9, 'long_none_draw'),
-            N = O(n7, 'long_none_loss'),
-            C = ih(t, '', 'short'),
-            x = C(n8, 'none_short_win'),
-            k = C(n9, 'none_short_draw'),
-            T = C(n7, 'none_short_loss'),
+            C = O(n7, 'long_none_loss'),
+            N = ih(t, '', 'short'),
+            x = N(n8, 'none_short_win'),
+            k = N(n9, 'none_short_draw'),
+            T = N(n7, 'none_short_loss'),
             I = ih(t, '', 'long'),
             P = I(n8, 'none_long_win'),
             D = I(n9, 'none_long_draw'),
             M = I(n7, 'none_long_loss'),
             j = ih(t, '', ''),
-            q = j(n8, 'none_none_win'),
-            U = j(n9, 'none_none_draw'),
+            U = j(n8, 'none_none_win'),
+            q = j(n9, 'none_none_draw'),
             L = j(n7, 'none_none_loss'),
             F = 'SELECT\n'
               .concat(s, ', ')
@@ -10612,15 +10592,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               .concat(S, ', ')
               .concat(R, ', ')
               .concat(A, ', ')
-              .concat(N, ',\n')
+              .concat(C, ',\n')
               .concat(x, ', ')
               .concat(k, ', ')
               .concat(T, ', ')
               .concat(P, ', ')
               .concat(D, ', ')
               .concat(M, ', ')
-              .concat(q, ', ')
               .concat(U, ', ')
+              .concat(q, ', ')
               .concat(
                 L,
                 '\nFROM chess."game" as c\nWHERE (c."white_username" = \''
@@ -10830,8 +10810,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }),
               R = ic({ variant: r, username: t, timeClass: n }),
               A = id({ variant: r, username: t, timeClass: n }),
-              N = ip({ variant: r, username: t, timeClass: n }),
-              C = im({ ...u, limit: 100 }),
+              C = ip({ variant: r, username: t, timeClass: n }),
+              N = im({ ...u, limit: 100 }),
               x = iu({
                 ...u,
                 name: 'winResultsQuery',
@@ -10880,13 +10860,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 column: 'dayOfWeek',
                 results: n9,
               }),
-              q = iu({
+              U = iu({
                 ...u,
                 name: 'lossResultsQueryByDayOfWeek',
                 column: 'dayOfWeek',
                 results: n7,
               }),
-              U = iu({
+              q = iu({
                 ...u,
                 name: 'winResultsQueryByOpponentRating',
                 column: 'opponent',
@@ -10928,8 +10908,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               [
                 [{ average: z = 0 }] = [{ average: 0 }],
                 [{ average: H = 0 }] = [{ average: 0 }],
-                [{ average: W = 0 }] = [{ average: 0 }],
                 [{ average: $ = 0 }] = [{ average: 0 }],
+                [{ average: W = 0 }] = [{ average: 0 }],
                 K = [],
                 V = [],
                 G = [],
@@ -10971,8 +10951,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     none_short_draw: eO = 0,
                     none_short_loss: eR = 0,
                     none_long_win: eA = 0,
-                    none_long_draw: eN = 0,
-                    none_long_loss: eC = 0,
+                    none_long_draw: eC = 0,
+                    none_long_loss: eN = 0,
                     none_none_win: ex = 0,
                     none_none_draw: ek = 0,
                     none_none_loss: eT = 0,
@@ -11013,8 +10993,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 eD = 0,
                 eM = 0,
                 ej = 0,
-                eq = 0,
-                eU = [],
+                eU = 0,
+                eq = [],
                 eL = [],
                 eF = [],
                 eB = [],
@@ -11022,8 +11002,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 eZ = [],
                 ez = [],
                 eH = [],
-                eW = [],
                 e$ = [],
+                eW = [],
                 eK = [],
                 eV = [],
                 eG = [],
@@ -11044,8 +11024,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 e.$queryRaw(O),
                 e.$queryRaw(R),
                 e.$queryRaw(A),
-                e.$queryRaw(N),
                 e.$queryRaw(C),
+                e.$queryRaw(N),
                 e.game.count({ where: g }),
                 e.game.count({ where: y }),
                 e.game.count({ where: v }),
@@ -11061,8 +11041,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 e.$queryRaw(D),
                 e.$queryRaw(M),
                 e.$queryRaw(j),
-                e.$queryRaw(q),
                 e.$queryRaw(U),
+                e.$queryRaw(q),
                 e.$queryRaw(L),
                 e.$queryRaw(F),
                 e.$queryRaw(B),
@@ -11072,8 +11052,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               e2 = {
                 average: z,
                 win: H,
-                draw: W,
-                loss: $,
+                draw: $,
+                loss: W,
                 periods: K.map((e) => {
                   let { average: t, column: r } = e;
                   return { average: t, period: r };
@@ -11087,7 +11067,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   return { average: t, dayOfWeek: [...ie][''.concat(r)] };
                 }),
               },
-              e4 = eU.map((e) => {
+              e4 = eq.map((e) => {
                 let { count: t = 0, column: r = 0 } = e;
                 return { games: parseInt(t.toString(), 10), period: r };
               }),
@@ -11119,7 +11099,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       : { draw: 0 },
                   { count: o = 0 } =
                     null !==
-                      (r = eW.find((e) => {
+                      (r = e$.find((e) => {
                         let { column: t } = e;
                         return t.toString() === i.toString();
                       })) && void 0 !== r
@@ -11132,7 +11112,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   loss: parseInt(o.toString(), 10),
                 };
               }),
-              e8 = e$.map((e) => {
+              e8 = eW.map((e) => {
                 var t, r;
                 let { count: n, column: i } = e,
                   s = [...ie][''.concat(Number.parseInt(i.toString()))],
@@ -11281,7 +11261,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                   total: eD,
                   win: eM,
                   draw: ej,
-                  loss: eq,
+                  loss: eU,
                   periods: e4,
                   timeOfDays: e5,
                   daysOfWeek: e3,
@@ -11380,8 +11360,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       },
                       long: {
                         win: parseInt(eA.toString(), 10),
-                        draw: parseInt(eN.toString(), 10),
-                        loss: parseInt(eC.toString(), 10),
+                        draw: parseInt(eC.toString(), 10),
+                        loss: parseInt(eN.toString(), 10),
                       },
                       none: {
                         win: parseInt(ex.toString(), 10),
@@ -11619,8 +11599,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           Axios: iO,
           AxiosError: iR,
           CanceledError: iA,
-          isCancel: iN,
-          CancelToken: iC,
+          isCancel: iC,
+          CancelToken: iN,
           VERSION: ix,
           all: ik,
           Cancel: iT,
@@ -11629,10 +11609,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           toFormData: iD,
           AxiosHeaders: iM,
           HttpStatusCode: ij,
-          formToJSON: iq,
-          getAdapter: iU,
+          formToJSON: iU,
+          getAdapter: iq,
           mergeConfig: iL,
-        } = nW;
+        } = n$;
       !(function (e) {
         (e.assertEqual = (e) => e),
           (e.assertIs = function (e) {}),
@@ -11921,10 +11901,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return { message: r };
         },
         iH = iz;
-      function iW() {
+      function i$() {
         return iH;
       }
-      let i$ = (e) => {
+      let iW = (e) => {
         let { data: t, path: r, errorMaps: n, issueData: i } = e,
           s = [...r, ...(i.path || [])],
           a = { ...i, path: s };
@@ -11938,8 +11918,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         return { ...i, path: s, message: o };
       };
       function iK(e, t) {
-        let r = iW(),
-          n = i$({
+        let r = i$(),
+          n = iW({
             issueData: t,
             data: e.data,
             path: e.path,
@@ -12232,7 +12212,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
         _refinement(e) {
-          return new sW({
+          return new s$({
             schema: this,
             typeName: y.ZodEffects,
             effect: { type: 'refinement', refinement: e },
@@ -12275,7 +12255,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             });
         }
         optional() {
-          return s$.create(this, this._def);
+          return sW.create(this, this._def);
         }
         nullable() {
           return sK.create(this, this._def);
@@ -12296,7 +12276,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return sD.create(this, e, this._def);
         }
         transform(e) {
-          return new sW({
+          return new s$({
             ...i8(this._def),
             schema: this,
             typeName: y.ZodEffects,
@@ -13451,7 +13431,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         }
       }
       sA.create = (e) => new sA({ typeName: y.ZodUnknown, ...i8(e) });
-      class sN extends i9 {
+      class sC extends i9 {
         _parse(e) {
           let t = this._getOrReturnCtx(e);
           return (
@@ -13464,8 +13444,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
       }
-      sN.create = (e) => new sN({ typeName: y.ZodNever, ...i8(e) });
-      class sC extends i9 {
+      sC.create = (e) => new sC({ typeName: y.ZodNever, ...i8(e) });
+      class sN extends i9 {
         _parse(e) {
           if (this._getType(e) !== iF.undefined) {
             let t = this._getOrReturnCtx(e);
@@ -13481,7 +13461,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return iY(e.data);
         }
       }
-      sC.create = (e) => new sC({ typeName: y.ZodVoid, ...i8(e) });
+      sN.create = (e) => new sN({ typeName: y.ZodVoid, ...i8(e) });
       class sx extends i9 {
         _parse(e) {
           let { ctx: t, status: r } = this._processInputParams(e),
@@ -13609,7 +13589,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             s = [];
           if (
             !(
-              this._def.catchall instanceof sN &&
+              this._def.catchall instanceof sC &&
               'strip' === this._def.unknownKeys
             )
           )
@@ -13624,7 +13604,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               alwaysSet: e in r.data,
             });
           }
-          if (this._def.catchall instanceof sN) {
+          if (this._def.catchall instanceof sC) {
             let e = this._def.unknownKeys;
             if ('passthrough' === e)
               for (let e of s)
@@ -13752,14 +13732,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               let r = {};
               for (let n in t.shape) {
                 let i = t.shape[n];
-                r[n] = s$.create(e(i));
+                r[n] = sW.create(e(i));
               }
               return new sk({ ...t._def, shape: () => r });
             }
             return t instanceof sx
               ? new sx({ ...t._def, type: e(t.element) })
-              : t instanceof s$
-                ? s$.create(e(t.unwrap()))
+              : t instanceof sW
+                ? sW.create(e(t.unwrap()))
                 : t instanceof sK
                   ? sK.create(e(t.unwrap()))
                   : t instanceof sM
@@ -13784,7 +13764,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               if (e && !e[r]) t[r] = this.shape[r];
               else {
                 let e = this.shape[r];
-                for (; e instanceof s$; ) e = e._def.innerType;
+                for (; e instanceof sW; ) e = e._def.innerType;
                 t[r] = e;
               }
             }),
@@ -13799,7 +13779,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         new sk({
           shape: () => e,
           unknownKeys: 'strip',
-          catchall: sN.create(),
+          catchall: sC.create(),
           typeName: y.ZodObject,
           ...i8(t),
         })),
@@ -13807,7 +13787,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           new sk({
             shape: () => e,
             unknownKeys: 'strict',
-            catchall: sN.create(),
+            catchall: sC.create(),
             typeName: y.ZodObject,
             ...i8(t),
           })),
@@ -13815,7 +13795,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           new sk({
             shape: e,
             unknownKeys: 'strip',
-            catchall: sN.create(),
+            catchall: sC.create(),
             typeName: y.ZodObject,
             ...i8(t),
           }));
@@ -13876,14 +13856,14 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         new sT({ options: e, typeName: y.ZodUnion, ...i8(t) });
       let sI = (e) => {
         if (e instanceof sF) return sI(e.schema);
-        if (e instanceof sW) return sI(e.innerType());
+        if (e instanceof s$) return sI(e.innerType());
         if (e instanceof sB) return [e.value];
         if (e instanceof sZ) return e.options;
         if (e instanceof sz) return d.objectValues(e.enum);
         if (e instanceof sV) return sI(e._def.innerType);
         if (e instanceof sS) return [void 0];
         else if (e instanceof sO) return [null];
-        else if (e instanceof s$) return [void 0, ...sI(e.unwrap())];
+        else if (e instanceof sW) return [void 0, ...sI(e.unwrap())];
         else if (e instanceof sK) return [null, ...sI(e.unwrap())];
         else if (e instanceof sX) return sI(e.unwrap());
         else if (e instanceof s1) return sI(e.unwrap());
@@ -14120,7 +14100,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           );
         }
       }
-      class sq extends i9 {
+      class sU extends i9 {
         get keySchema() {
           return this._def.keyType;
         }
@@ -14170,9 +14150,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }
         }
       }
-      sq.create = (e, t, r) =>
-        new sq({ valueType: t, keyType: e, typeName: y.ZodMap, ...i8(r) });
-      class sU extends i9 {
+      sU.create = (e, t, r) =>
+        new sU({ valueType: t, keyType: e, typeName: y.ZodMap, ...i8(r) });
+      class sq extends i9 {
         _parse(e) {
           let { status: t, ctx: r } = this._processInputParams(e);
           if (r.parsedType !== iF.set)
@@ -14222,13 +14202,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return r.common.async ? Promise.all(a).then((e) => s(e)) : s(a);
         }
         min(e, t) {
-          return new sU({
+          return new sq({
             ...this._def,
             minSize: { value: e, message: p.toString(t) },
           });
         }
         max(e, t) {
-          return new sU({
+          return new sq({
             ...this._def,
             maxSize: { value: e, message: p.toString(t) },
           });
@@ -14240,8 +14220,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this.min(1, e);
         }
       }
-      sU.create = (e, t) =>
-        new sU({
+      sq.create = (e, t) =>
+        new sq({
           valueType: e,
           minSize: null,
           maxSize: null,
@@ -14264,26 +14244,26 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               iG
             );
           function r(e, r) {
-            return i$({
+            return iW({
               data: e,
               path: t.path,
               errorMaps: [
                 t.common.contextualErrorMap,
                 t.schemaErrorMap,
-                iW(),
+                i$(),
                 iz,
               ].filter((e) => !!e),
               issueData: { code: iQ.invalid_arguments, argumentsError: r },
             });
           }
           function n(e, r) {
-            return i$({
+            return iW({
               data: e,
               path: t.path,
               errorMaps: [
                 t.common.contextualErrorMap,
                 t.schemaErrorMap,
-                iW(),
+                i$(),
                 iz,
               ].filter((e) => !!e),
               issueData: { code: iQ.invalid_return_type, returnTypeError: r },
@@ -14515,7 +14495,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
       }
       sH.create = (e, t) =>
         new sH({ type: e, typeName: y.ZodPromise, ...i8(t) });
-      class sW extends i9 {
+      class s$ extends i9 {
         innerType() {
           return this._def.schema;
         }
@@ -14630,16 +14610,16 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           d.assertNever(n);
         }
       }
-      (sW.create = (e, t, r) =>
-        new sW({ schema: e, typeName: y.ZodEffects, effect: t, ...i8(r) })),
-        (sW.createWithPreprocess = (e, t, r) =>
-          new sW({
+      (s$.create = (e, t, r) =>
+        new s$({ schema: e, typeName: y.ZodEffects, effect: t, ...i8(r) })),
+        (s$.createWithPreprocess = (e, t, r) =>
+          new s$({
             schema: t,
             effect: { type: 'preprocess', transform: e },
             typeName: y.ZodEffects,
             ...i8(r),
           }));
-      class s$ extends i9 {
+      class sW extends i9 {
         _parse(e) {
           return this._getType(e) === iF.undefined
             ? iY(void 0)
@@ -14649,8 +14629,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           return this._def.innerType;
         }
       }
-      s$.create = (e, t) =>
-        new s$({ innerType: e, typeName: y.ZodOptional, ...i8(t) });
+      sW.create = (e, t) =>
+        new sW({ innerType: e, typeName: y.ZodOptional, ...i8(t) });
       class sK extends i9 {
         _parse(e) {
           return this._getType(e) === iF.null
@@ -14883,8 +14863,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         ar = sO.create,
         an = sR.create,
         ai = sA.create,
-        as = sN.create,
-        aa = sC.create,
+        as = sC.create,
+        aa = sN.create,
         ao = sx.create,
         au = sk.create,
         al = sk.strictCreate,
@@ -14893,27 +14873,27 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         ad = sD.create,
         af = sM.create,
         ap = sj.create,
-        am = sq.create,
-        ag = sU.create,
+        am = sU.create,
+        ag = sq.create,
         ay = sL.create,
         av = sF.create,
         ab = sB.create,
         aw = sZ.create,
         a_ = sz.create,
         aE = sH.create,
-        aS = sW.create,
-        aO = s$.create,
+        aS = s$.create,
+        aO = sW.create,
         aR = sK.create,
-        aA = sW.createWithPreprocess,
-        aN = s0.create;
-      var aC = Object.freeze({
+        aA = s$.createWithPreprocess,
+        aC = s0.create;
+      var aN = Object.freeze({
         __proto__: null,
         defaultErrorMap: iz,
         setErrorMap: function (e) {
           iH = e;
         },
-        getErrorMap: iW,
-        makeIssue: i$,
+        getErrorMap: i$,
+        makeIssue: iW,
         EMPTY_PATH: [],
         addIssueToContext: iK,
         ParseStatus: iV,
@@ -14944,8 +14924,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         ZodNull: sO,
         ZodAny: sR,
         ZodUnknown: sA,
-        ZodNever: sN,
-        ZodVoid: sC,
+        ZodNever: sC,
+        ZodVoid: sN,
         ZodArray: sx,
         ZodObject: sk,
         ZodUnion: sT,
@@ -14953,17 +14933,17 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         ZodIntersection: sD,
         ZodTuple: sM,
         ZodRecord: sj,
-        ZodMap: sq,
-        ZodSet: sU,
+        ZodMap: sU,
+        ZodSet: sq,
         ZodFunction: sL,
         ZodLazy: sF,
         ZodLiteral: sB,
         ZodEnum: sZ,
         ZodNativeEnum: sz,
         ZodPromise: sH,
-        ZodEffects: sW,
-        ZodTransformer: sW,
-        ZodOptional: s$,
+        ZodEffects: s$,
+        ZodTransformer: s$,
+        ZodOptional: sW,
         ZodNullable: sK,
         ZodDefault: sV,
         ZodCatch: sG,
@@ -15012,7 +14992,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
         onumber: () => s3().optional(),
         optional: aO,
         ostring: () => s5().optional(),
-        pipeline: aN,
+        pipeline: aC,
         preprocess: aA,
         promise: aE,
         record: ap,
@@ -15069,10 +15049,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           chess: {
             titled: aT
               .input(
-                aC.object({
-                  days: aC.number().int().optional(),
-                  title: aC.nativeEnum(t0.Title).optional(),
-                  countryCode: aC.string().optional(),
+                aN.object({
+                  days: aN.number().int().optional(),
+                  title: aN.nativeEnum(t0.Title).optional(),
+                  countryCode: aN.string().optional(),
                 })
               )
               .query(async (e) => {
@@ -15083,10 +15063,10 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }),
             insights: aT
               .input(
-                aC.object({
-                  username: aC.string(),
-                  variant: aC.nativeEnum(t0.Variant),
-                  timeClass: aC.nativeEnum(t0.TimeClass),
+                aN.object({
+                  username: aN.string(),
+                  variant: aN.nativeEnum(t0.Variant),
+                  timeClass: aN.nativeEnum(t0.TimeClass),
                 })
               )
               .query(async (e) => {
@@ -15102,15 +15082,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }),
           },
           countries: aT.query(async () => {
-            let { data: e } = await nW.get(
+            let { data: e } = await n$.get(
               'https://restcountries.com/v3.1/all'
             );
             return e;
           }),
           crypto: aT
             .input(
-              aC.object({
-                tag: aC.nativeEnum(nK).optional().default(nK.LAYER_1),
+              aN.object({
+                tag: aN.nativeEnum(nK).optional().default(nK.LAYER_1),
               })
             )
             .query(async (e) => {
@@ -15122,9 +15102,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             }),
           forex: aT
             .input(
-              aC.object({
-                amount: aC.number().int().optional().default(1),
-                base: aC.string().optional().default('EUR'),
+              aN.object({
+                amount: aN.number().int().optional().default(1),
+                base: aN.string().optional().default('EUR'),
               })
             )
             .query((e) => nJ({ amount: e.input.amount, base: e.input.base })),
@@ -15133,7 +15113,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               try {
                 let {
                   data: { status: e },
-                } = await nW.get(''.concat(n6, '/health'), {
+                } = await n$.get(''.concat(n6, '/health'), {
                   headers: { 'Content-Type': 'application/json' },
                 });
                 return { status: e };
@@ -15148,13 +15128,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }
             }),
             predict: aT
-              .input(aC.object({ text: aC.string().default('') }))
+              .input(aN.object({ text: aN.string().default('') }))
               .mutation(async (e) => {
                 try {
                   let t = e.input.text,
                     {
                       data: { language: r },
-                    } = await nW.post(
+                    } = await n$.post(
                       ''.concat(n6, '/predict'),
                       { text: t },
                       { headers: { 'Content-Type': 'application/json' } }
@@ -15173,12 +15153,12 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           }),
           news: aT
             .input(
-              aC.object({
-                category: aC.nativeEnum(n2).optional().default(n2.GENERAL),
-                country: aC.nativeEnum(n1).optional().default(n1.UNITED_STATES),
-                page: aC.number().int().optional().default(1),
-                pageSize: aC.number().int().optional().default(100),
-                query: aC.string().optional().default(''),
+              aN.object({
+                category: aN.nativeEnum(n2).optional().default(n2.GENERAL),
+                country: aN.nativeEnum(n1).optional().default(n1.UNITED_STATES),
+                page: aN.number().int().optional().default(1),
+                pageSize: aN.number().int().optional().default(100),
+                query: aN.string().optional().default(''),
               })
             )
             .query(async (e) => {
@@ -15199,9 +15179,9 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
           trends: aT.query(() => n0()),
           weather: aT
             .input(
-              aC.object({
-                latitude: aC.number().default(0),
-                longitude: aC.number().default(0),
+              aN.object({
+                latitude: aN.number().default(0),
+                longitude: aN.number().default(0),
               })
             )
             .query(async (e) => {
@@ -15217,7 +15197,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 let i = 'https://api.open-meteo.com/v1/forecast?'.concat(
                     e.toString()
                   ),
-                  { data: s } = await nW.get(i),
+                  { data: s } = await n$.get(i),
                   { current: a } = s,
                   { weather_code: o = 0, temperature_2m: u = 0 } = a;
                 return {
@@ -15231,7 +15211,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               }
             }),
           word: aT
-            .input(aC.object({ word: aC.string().default('') }))
+            .input(aN.object({ word: aN.string().default('') }))
             .query(async (e) => {
               let { word: t } = e.input;
               try {
@@ -15239,7 +15219,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                     encodeURIComponent(t),
                     '?when=2024-06-03T05:47:08.760Z&encrypted=8cfdb18ee722959bea9207bfea58babeaeb0250937f997b8'
                   ),
-                  { data: r } = await nW.get(e),
+                  { data: r } = await n$.get(e),
                   { results: n } = r;
                 return { word: t, results: n };
               } catch (e) {
@@ -15258,7 +15238,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
               return (n) => {
                 let i = tK(e),
                   s = (s) => {
-                    let [a] = (0, eC.useState)(() => {
+                    let [a] = (0, eN.useState)(() => {
                         if (s.trpc) return s.trpc;
                         let r = t({}),
                           n = tX(r),
@@ -15278,11 +15258,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ssrContext: c,
                       } = a,
                       h = s.pageProps?.trpcState,
-                      d = eC.useMemo(
+                      d = eN.useMemo(
                         () => (h ? r.input.deserialize(h) : h),
                         [h, u]
                       );
-                    return eC.createElement(
+                    return eN.createElement(
                       i.Provider,
                       {
                         abortOnUnmount: a.abortOnUnmount ?? !1,
@@ -15291,13 +15271,13 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                         ssrState: l,
                         ssrContext: c,
                       },
-                      eC.createElement(
+                      eN.createElement(
                         eT,
                         { client: o },
-                        eC.createElement(
+                        eN.createElement(
                           ej,
                           { state: d },
-                          eC.createElement(n, s)
+                          eN.createElement(n, s)
                         )
                       )
                     );
@@ -15328,11 +15308,11 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                 o = a[0] || {};
               return t[i](n, s, o);
             });
-          return N((e) =>
+          return C((e) =>
             'useContext' === e || 'useUtils' === e
               ? () => {
                   let e = t.useUtils();
-                  return (0, eC.useMemo)(
+                  return (0, eN.useMemo)(
                     () =>
                       (function (e) {
                         let t = eh(e.client),
@@ -15375,8 +15355,8 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                                 e.isMutating({ mutationKey: e8(r) }),
                             }[n]();
                           });
-                        return N((n) =>
-                          'client' === n ? t : eq.includes(n) ? e[n] : r[n]
+                        return C((n) =>
+                          'client' === n ? t : eU.includes(n) ? e[n] : r[n]
                         );
                       })(e),
                     [e]
@@ -15538,7 +15518,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       !ee(n) ||
                       (n._def.type !== t && !e.allowMethodOverride)
                     )
-                      throw new U({
+                      throw new q({
                         code: 'NOT_FOUND',
                         message: `No "${t}"-procedure on path "${r}"`,
                       });
@@ -15547,7 +15527,7 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
                       e.allowMethodOverride &&
                       'subscription' === n._def.type
                     )
-                      throw new U({
+                      throw new q({
                         code: 'METHOD_NOT_SUPPORTED',
                         message:
                           'Method override is not supported for subscriptions',
@@ -15668,15 +15648,15 @@ If you want to call this function on the server, see https://trpc.io/docs/v11/se
             },
           }[a]();
         });
-        N((e) => ('queryClient' === e ? t : 'dehydrate' === e ? i : s[e]));
+        C((e) => ('queryClient' === e ? t : 'dehydrate' === e ? i : s[e]));
       })({ router: aP, ctx: {} });
-      var aq = r(832),
-        aU = r.n(aq);
+      var aU = r(832),
+        aq = r.n(aU);
       let aL = aj.withTRPC((e) => {
         let { Component: t, pageProps: r } = e;
         return (0, b.jsxs)(b.Fragment, {
           children: [
-            (0, b.jsxs)(aU(), {
+            (0, b.jsxs)(aq(), {
               children: [
                 (0, b.jsx)('title', { children: 'HIEU DOAN: hieudoanm' }),
                 (0, b.jsx)('link', { rel: 'manifest', href: '/manifest.json' }),

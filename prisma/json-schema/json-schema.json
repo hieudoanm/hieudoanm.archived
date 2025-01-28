@@ -1,38 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
-    "Word": {
-      "type": "object",
-      "properties": {
-        "word": {
-          "type": "string"
-        },
-        "results": {
-          "type": "array",
-          "items": {
-            "type": ["number", "string", "boolean", "object", "array", "null"]
-          }
-        },
-        "syllables": {
-          "type": ["number", "string", "boolean", "object", "array", "null"]
-        },
-        "pronunciation": {
-          "type": ["number", "string", "boolean", "object", "array", "null"]
-        },
-        "frequency": {
-          "type": ["number", "null"],
-          "default": 0
-        },
-        "createdAt": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "updatedAt": {
-          "type": "string",
-          "format": "date-time"
-        }
-      }
-    },
     "Player": {
       "type": "object",
       "properties": {
@@ -461,9 +429,6 @@
   },
   "type": "object",
   "properties": {
-    "word": {
-      "$ref": "#/definitions/Word"
-    },
     "player": {
       "$ref": "#/definitions/Player"
     },

@@ -28,20 +28,6 @@ generator markdown {
   output   = "./README.md"
 }
 
-model Word {
-  word          String   @id @map("word") @db.VarChar(255)
-  results       Json[]   @default([]) @map("results")
-  syllables     Json?    @default("{}") @map("syllables")
-  pronunciation Json?    @default("{}") @map("pronunciation")
-  frequency     Float?   @default(0) @map("frequency")
-  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz()
-  updatedAt     DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz()
-
-  @@index([word])
-  @@map("word")
-  @@schema("public")
-}
-
 model Player {
   id                    Int      @id @map("id")
   username              String   @unique @map("username") @db.VarChar(255)
