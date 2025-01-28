@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-cqjhvpoL94GPcugyA2E73.js'),
+  importScripts('fallback-f9yaJ7w2h5AismWerAHh7.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -83,16 +83,16 @@ define(['./workbox-e9849328'], function (e) {
           revision: '8cac0b4b405cede1',
         },
         {
-          url: '/_next/static/cqjhvpoL94GPcugyA2E73/_buildManifest.js',
+          url: '/_next/static/css/b47d0a70f877bc49.css',
+          revision: 'b47d0a70f877bc49',
+        },
+        {
+          url: '/_next/static/f9yaJ7w2h5AismWerAHh7/_buildManifest.js',
           revision: '8a2a0aa130283b6be7f79725ccb61d52',
         },
         {
-          url: '/_next/static/cqjhvpoL94GPcugyA2E73/_ssgManifest.js',
+          url: '/_next/static/f9yaJ7w2h5AismWerAHh7/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
-        },
-        {
-          url: '/_next/static/css/1c24274b697b3814.css',
-          revision: '1c24274b697b3814',
         },
         {
           url: '/_next/static/media/05d30fccf6dfb4ed-s.woff2',
