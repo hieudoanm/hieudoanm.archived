@@ -22,7 +22,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/**/*.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../nothing/src/utils/temperature.test.ts"
   ],
   "exclude": ["node_modules"]
 }
