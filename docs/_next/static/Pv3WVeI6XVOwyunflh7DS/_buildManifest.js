@@ -16,9 +16,9 @@
       bitArray: [],
     },
     '/': [
-      'static/chunks/ddb80a4a-469d031dce0c80b0.js',
+      'static/chunks/ddb80a4a-4f7547cc221dff31.js',
       s,
-      'static/chunks/pages/index-55a711cf5bb48a66.js',
+      'static/chunks/pages/index-a967a994af35d07d.js',
     ],
     '/404': [s, 'static/chunks/pages/404-d0e197dafd1590a0.js'],
     '/500': [s, 'static/chunks/pages/500-c05220ffe2acaea6.js'],

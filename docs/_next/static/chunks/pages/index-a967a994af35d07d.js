@@ -11,12 +11,12 @@
     },
     7045: (e, t, r) => {
       'use strict';
-      r.r(t), r.d(t, { default: () => l, dynamic: () => a });
+      r.r(t), r.d(t, { default: () => l, dynamic: () => s });
       var n = r(5105),
         i = r(9594),
-        o = r.n(i),
-        c = r(5899);
-      let a = 'force-static',
+        c = r.n(i),
+        a = r(5899);
+      let s = 'force-static',
         l = () =>
           (0, n.jsx)('div', {
             className: 'h-screen w-screen bg-gray-100 p-8',
@@ -25,57 +25,108 @@
                 'flex h-full flex-col items-center justify-center gap-y-8 text-black',
               children: [
                 (0, n.jsx)('p', {
-                  className: 'text-2xl font-black tracking-wide uppercase',
+                  className: 'text-xl font-black tracking-wide uppercase',
                   children: 'Hieu Doan',
                 }),
-                (0, n.jsx)('div', {
-                  className:
-                    'flex flex-col items-center justify-center gap-y-4',
+                (0, n.jsxs)('div', {
+                  className: 'flex flex-col gap-y-4',
                   children: [
-                    {
-                      id: 'apps',
-                      href: 'https://hieudoanm.github.io/nothing',
-                      name: 'Apps',
-                      icon: (0, n.jsx)(c.agh, {}),
-                    },
-                    {
-                      id: 'github',
-                      href: 'https://github.com/hieudoanm',
-                      name: 'GitHub',
-                      icon: (0, n.jsx)(c.UDP, {}),
-                    },
-                    {
-                      id: 'twitter',
-                      href: 'https://x.com/hieudoanm',
-                      name: 'Twitter',
-                      icon: (0, n.jsx)(c.Y28, {}),
-                    },
-                    {
-                      id: 'linkedin',
-                      href: 'https://www.linkedin.com/in/hieudoanm',
-                      name: 'LinkedIn',
-                      icon: (0, n.jsx)(c.QEs, {}),
-                    },
-                  ].map((e) => {
-                    let { id: t, href: r, name: i, icon: c } = e;
-                    return (0, n.jsxs)(
-                      'div',
-                      {
-                        className:
-                          'flex items-center gap-x-1 border-b border-dotted text-xl',
-                        children: [
-                          c,
-                          (0, n.jsx)(o(), {
-                            href: r,
-                            target: '_blank',
-                            className: 'tracking-wide lowercase',
-                            children: i,
-                          }),
-                        ],
-                      },
-                      t
-                    );
-                  }),
+                    (0, n.jsx)('p', {
+                      className:
+                        'text-center text-lg font-black tracking-wide uppercase',
+                      children: 'Apps',
+                    }),
+                    (0, n.jsx)('div', {
+                      className:
+                        'flex flex-col items-center justify-center gap-y-2',
+                      children: [
+                        {
+                          id: 'chess',
+                          href: 'https://hieudoanm.github.io/chess',
+                          name: 'chess',
+                          icon: (0, n.jsx)(a.zrC, {}),
+                        },
+                        {
+                          id: 'nothing',
+                          href: 'https://hieudoanm.github.io/nothing',
+                          name: 'nothing',
+                          icon: (0, n.jsx)(a.agh, {}),
+                        },
+                      ].map((e) => {
+                        let { id: t, href: r, name: i, icon: a } = e;
+                        return (0, n.jsxs)(
+                          'div',
+                          {
+                            className:
+                              'flex items-center gap-x-1 border-b border-dotted',
+                            children: [
+                              a,
+                              (0, n.jsx)(c(), {
+                                href: r,
+                                target: '_blank',
+                                className: 'tracking-wide lowercase',
+                                children: i,
+                              }),
+                            ],
+                          },
+                          t
+                        );
+                      }),
+                    }),
+                  ],
+                }),
+                (0, n.jsxs)('div', {
+                  className: 'flex flex-col gap-y-4',
+                  children: [
+                    (0, n.jsx)('p', {
+                      className:
+                        'text-center text-lg font-black tracking-wide uppercase',
+                      children: 'Profile',
+                    }),
+                    (0, n.jsx)('div', {
+                      className:
+                        'flex flex-col items-center justify-center gap-y-2',
+                      children: [
+                        {
+                          id: 'github',
+                          href: 'https://github.com/hieudoanm',
+                          name: 'GitHub',
+                          icon: (0, n.jsx)(a.UDP, {}),
+                        },
+                        {
+                          id: 'twitter',
+                          href: 'https://x.com/hieudoanm',
+                          name: 'Twitter',
+                          icon: (0, n.jsx)(a.Y28, {}),
+                        },
+                        {
+                          id: 'linkedin',
+                          href: 'https://www.linkedin.com/in/hieudoanm',
+                          name: 'LinkedIn',
+                          icon: (0, n.jsx)(a.QEs, {}),
+                        },
+                      ].map((e) => {
+                        let { id: t, href: r, name: i, icon: a } = e;
+                        return (0, n.jsxs)(
+                          'div',
+                          {
+                            className:
+                              'flex items-center gap-x-1 border-b border-dotted',
+                            children: [
+                              a,
+                              (0, n.jsx)(c(), {
+                                href: r,
+                                target: '_blank',
+                                className: 'tracking-wide lowercase',
+                                children: i,
+                              }),
+                            ],
+                          },
+                          t
+                        );
+                      }),
+                    }),
+                  ],
                 }),
               ],
             }),
@@ -92,10 +143,10 @@
           style: void 0,
           attr: void 0,
         },
-        o = n.createContext && n.createContext(i),
-        c = ['attr', 'size', 'title'];
-      function a() {
-        return (a = Object.assign
+        c = n.createContext && n.createContext(i),
+        a = ['attr', 'size', 'title'];
+      function s() {
+        return (s = Object.assign
           ? Object.assign.bind()
           : function (e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -118,7 +169,7 @@
         }
         return r;
       }
-      function s(e) {
+      function o(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2
@@ -165,12 +216,12 @@
         return (t) =>
           n.createElement(
             f,
-            a({ attr: s({}, e.attr) }, t),
+            s({ attr: o({}, e.attr) }, t),
             (function e(t) {
               return (
                 t &&
                 t.map((t, r) =>
-                  n.createElement(t.tag, s({ key: r }, t.attr), e(t.child))
+                  n.createElement(t.tag, o({ key: r }, t.attr), e(t.child))
                 )
               );
             })(e.child)
@@ -179,7 +230,7 @@
       function f(e) {
         var t = (t) => {
           var r,
-            { attr: i, size: o, title: l } = e,
+            { attr: i, size: c, title: l } = e,
             u = (function (e, t) {
               if (null == e) return {};
               var r,
@@ -195,22 +246,22 @@
                   return r;
                 })(e, t);
               if (Object.getOwnPropertySymbols) {
-                var o = Object.getOwnPropertySymbols(e);
-                for (n = 0; n < o.length; n++)
-                  (r = o[n]),
+                var c = Object.getOwnPropertySymbols(e);
+                for (n = 0; n < c.length; n++)
+                  (r = c[n]),
                     !(t.indexOf(r) >= 0) &&
                       Object.prototype.propertyIsEnumerable.call(e, r) &&
                       (i[r] = e[r]);
               }
               return i;
-            })(e, c),
-            f = o || t.size || '1em';
+            })(e, a),
+            f = c || t.size || '1em';
           return (
             t.className && (r = t.className),
             e.className && (r = (r ? r + ' ' : '') + e.className),
             n.createElement(
               'svg',
-              a(
+              s(
                 {
                   stroke: 'currentColor',
                   fill: 'currentColor',
@@ -221,7 +272,7 @@
                 u,
                 {
                   className: r,
-                  style: s(s({ color: e.color || t.color }, t.style), e.style),
+                  style: o(o({ color: e.color || t.color }, t.style), e.style),
                   height: f,
                   width: f,
                   xmlns: 'http://www.w3.org/2000/svg',
@@ -232,8 +283,8 @@
             )
           );
         };
-        return void 0 !== o
-          ? n.createElement(o.Consumer, null, (e) => t(e))
+        return void 0 !== c
+          ? n.createElement(c.Consumer, null, (e) => t(e))
           : t(i);
       }
     },
