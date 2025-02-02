@@ -12,7 +12,6 @@ import {
   CHESS_WIN_RESULTS,
 } from '@web/constants/chess.constants';
 import { DAYS_OF_WEEK, TIME_OF_DAYS } from '@web/constants/time.constants';
-import { logger } from '@web/log';
 import { getPrismaClient, prismaClient } from '@web/prisma/prisma.client';
 import { ChessSide } from '@web/types/chess';
 import {
@@ -202,7 +201,7 @@ const buildFunctionQuery = ({
   // QUERY
   const query: string =
     `${selectClause} ${fromClause} ${whereClause} ${groupByClause} ${orderByClause}`.trim();
-  logger.info(
+  console.info(
     {
       username,
       variant,
@@ -255,7 +254,7 @@ AND g."${side}_username" = '${username}'
 GROUP BY g."opening", g."opening_name"
 ORDER BY total DESC
 LIMIT 10;`;
-  logger.info({ username, side, limit }, `buildOpeningsQuery query=${query}`);
+  console.info({ username, side, limit }, `buildOpeningsQuery query=${query}`);
   return Prisma.raw(query);
 };
 
@@ -280,7 +279,7 @@ WHERE (g."white_username" = '${username}' OR g."black_username" = '${username}')
 AND g."rated" = true
 AND g."rules" = '${variant}'
 AND g."time_class" = '${timeClass}';`;
-  logger.info({ username }, `buildMovesByPiecesQuery query=${query}`);
+  console.info({ username }, `buildMovesByPiecesQuery query=${query}`);
   return Prisma.raw(query);
 };
 
@@ -355,7 +354,7 @@ WHERE (c."white_username" = '${username}' OR c."black_username" = '${username}')
 AND c."rated" = true
 AND c."rules" = '${variant}'
 AND c."time_class" = '${timeClass}';`;
-  logger.info({ username }, `buildMovesByCastlingQuery query=${query}`);
+  console.info({ username }, `buildMovesByCastlingQuery query=${query}`);
   return Prisma.raw(query);
 };
 
@@ -436,7 +435,7 @@ const buildOpponentsQuery = ({
   const limitClause: string = `LIMIT ${limit}`;
   // QUERY
   const query = `${selectClause} ${FROM_CLAUSE} ${whereClause} ${groupByClause} ${orderByClause} ${limitClause};`;
-  logger.info(
+  console.info(
     { username, timeClass, variant },
     `buildOpponentsQuery query=${query}`
   );
@@ -1166,7 +1165,7 @@ export const getInsights = async ({
       })),
     };
   } catch (error) {
-    logger.error(`getInsights error=${error}`);
+    console.error(`getInsights error=${error}`);
     return { username } as Insights;
   }
 };
@@ -1227,7 +1226,7 @@ const buildPlayersWhereClause = (
   if (countryCode) where.push(`p."country_code" = '${countryCode}'`);
   if (days) where.push(`p."last_online" > now() - interval '${days} days'`);
   const whereClause = where.length === 0 ? '' : `WHERE ${where.join(' AND ')}`;
-  logger.info(`whereClause=${whereClause}`);
+  console.info(`whereClause=${whereClause}`);
   return whereClause;
 };
 
@@ -1301,7 +1300,7 @@ ${buildPlayersWhereClause({ days, title, countryCode })};`;
       },
     };
   } catch (error) {
-    logger.error(`getDescriptive error=${error}`);
+    console.error(`getDescriptive error=${error}`);
     return {
       count: {
         total: 0,
@@ -1341,7 +1340,7 @@ export const getDistributionByTimeClass = async ({
     const sql = Prisma.raw(query);
     return prismaClient.$queryRaw(sql);
   } catch (error) {
-    logger.error(`getDistributionByTimeClass error=${error}`);
+    console.error(`getDistributionByTimeClass error=${error}`);
     return [];
   }
 };
@@ -1393,7 +1392,7 @@ ORDER BY p."count" DESC;`;
     const sql = Prisma.raw(query);
     return prismaClient.$queryRaw(sql);
   } catch (error) {
-    logger.error(`getCountries error=${error}`);
+    console.error(`getCountries error=${error}`);
     return [];
   }
 };
@@ -1423,7 +1422,7 @@ export const getLeaderboard = async ({
     const sql = Prisma.raw(query);
     return prismaClient.$queryRaw(sql);
   } catch (error) {
-    logger.error(`getLeaderboard error=${error}`);
+    console.error(`getLeaderboard error=${error}`);
     return [];
   }
 };

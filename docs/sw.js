@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-ZbidNVQbCQb7JbxsUcxe-.js'),
+  importScripts('fallback-MER3jymtifAVpCmGsKiCN.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -39,11 +39,11 @@ define(['./workbox-e9849328'], function (e) {
           revision: 'd751713988987e9331980363e24189ce',
         },
         {
-          url: '/_next/static/ZbidNVQbCQb7JbxsUcxe-/_buildManifest.js',
+          url: '/_next/static/MER3jymtifAVpCmGsKiCN/_buildManifest.js',
           revision: 'f09bf59e57ca75a9b6b6f5fdddb60a41',
         },
         {
-          url: '/_next/static/ZbidNVQbCQb7JbxsUcxe-/_ssgManifest.js',
+          url: '/_next/static/MER3jymtifAVpCmGsKiCN/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
         },
         {
@@ -71,8 +71,8 @@ define(['./workbox-e9849328'], function (e) {
           revision: 'c05220ffe2acaea6',
         },
         {
-          url: '/_next/static/chunks/pages/_app-ab4ce7f4a0757724.js',
-          revision: 'ab4ce7f4a0757724',
+          url: '/_next/static/chunks/pages/_app-954af676dc23bea6.js',
+          revision: '954af676dc23bea6',
         },
         {
           url: '/_next/static/chunks/pages/_error-d8703b516fb812a5.js',

@@ -1,5 +1,4 @@
 import { AppLayout } from '@web/layout/AppLayout';
-import { logger } from '@web/log';
 import Link from 'next/link';
 import { FC, ReactNode, useState } from 'react';
 import {
@@ -502,7 +501,7 @@ export const Grid: FC<{ apps: App[] }> = ({ apps = [] }) => {
   const sm: number = Math.ceil(numberOfApps / 6);
   const md: number = Math.floor(numberOfApps / sm);
   const gridClass: string = `grid grid-cols-${sm} md:grid-cols-${md}`;
-  logger.info({ sm, md, gridClass });
+  console.info({ sm, md, gridClass });
 
   return (
     <>

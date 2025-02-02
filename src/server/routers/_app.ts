@@ -1,6 +1,5 @@
 import { TimeClass, Title, Variant } from '@prisma/client';
 import { LANGUAGES_API } from '@web/constants/languages.constants';
-import { logger } from '@web/log';
 import { Insights } from '@web/services/chess/chess.dto';
 import {
   Days,
@@ -134,9 +133,9 @@ export const appRouter = router({
         return { status };
       } catch (error) {
         if (error instanceof AxiosError) {
-          logger.error(error.cause ?? error.message);
+          console.error(error.cause ?? error.message);
         } else {
-          logger.error(error);
+          console.error(error);
         }
         return { status: 'ERROR' };
       }
@@ -161,9 +160,9 @@ export const appRouter = router({
           return { language };
         } catch (error) {
           if (error instanceof AxiosError) {
-            logger.error(error.cause ?? error.message);
+            console.error(error.cause ?? error.message);
           } else {
-            logger.error(error);
+            console.error(error);
           }
           return { language: 'N/A' };
         }
@@ -193,7 +192,7 @@ export const appRouter = router({
         const main: string = weatherCodes[weather_code] ?? 'N/A';
         return { main, temperature };
       } catch (error) {
-        logger.error(`error=${error}`);
+        console.error(`error=${error}`);
         return { main: '', temperature: 0 };
       }
     }),
@@ -212,7 +211,7 @@ export const appRouter = router({
         const { results } = data;
         return { word, results };
       } catch (error) {
-        logger.error(`error=${error}`);
+        console.error(`error=${error}`);
         return { word, results: [] };
       }
     }),
