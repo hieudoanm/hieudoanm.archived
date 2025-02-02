@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-pGnJeustPK9BMm-rV4c7h.js'),
+  importScripts('fallback-oK0FO9VLjZ5FOMQLmrWgU.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -83,8 +83,8 @@ define(['./workbox-e9849328'], function (e) {
           revision: '8cac0b4b405cede1',
         },
         {
-          url: '/_next/static/css/a1a7f107a0dfa623.css',
-          revision: 'a1a7f107a0dfa623',
+          url: '/_next/static/css/bf8c604c70df7ef0.css',
+          revision: 'bf8c604c70df7ef0',
         },
         {
           url: '/_next/static/media/05d30fccf6dfb4ed-s.woff2',
@@ -111,11 +111,11 @@ define(['./workbox-e9849328'], function (e) {
           revision: '9100886c15016aaff47cb7fbfb203398',
         },
         {
-          url: '/_next/static/pGnJeustPK9BMm-rV4c7h/_buildManifest.js',
+          url: '/_next/static/oK0FO9VLjZ5FOMQLmrWgU/_buildManifest.js',
           revision: '8a2a0aa130283b6be7f79725ccb61d52',
         },
         {
-          url: '/_next/static/pGnJeustPK9BMm-rV4c7h/_ssgManifest.js',
+          url: '/_next/static/oK0FO9VLjZ5FOMQLmrWgU/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
         },
         { url: '/favicon.ico', revision: 'e2cff4502779c8302cd4b493f40fd8d6' },
