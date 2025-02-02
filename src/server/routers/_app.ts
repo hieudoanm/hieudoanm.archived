@@ -1,12 +1,11 @@
 import { TimeClass, Title, Variant } from '@prisma/client';
-import { LANGUAGES_API } from '@web/constants/languages.constants';
 import { Insights } from '@web/services/chess/chess.dto';
 import {
   Days,
   getInsights,
   getTitled,
 } from '@web/services/chess/chess.service';
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import { z } from 'zod';
 import { procedure, router } from '../trpc';
 
@@ -121,52 +120,6 @@ export const appRouter = router({
       unMember: boolean;
     }>(url);
     return countries;
-  }),
-  languages: router({
-    health: procedure.query(async () => {
-      try {
-        const headers = { 'Content-Type': 'application/json' };
-        const url = `${LANGUAGES_API}/health`;
-        const {
-          data: { status },
-        } = await axios.get<{ status: string }>(url, { headers });
-        return { status };
-      } catch (error) {
-        if (error instanceof AxiosError) {
-          console.error(error.cause ?? error.message);
-        } else {
-          console.error(error);
-        }
-        return { status: 'ERROR' };
-      }
-    }),
-    predict: procedure
-      .input(
-        z.object({
-          text: z.string().default(''),
-        })
-      )
-      .mutation(async (options): Promise<{ language: string }> => {
-        try {
-          const text: string = options.input.text;
-          const url: string = `${LANGUAGES_API}/predict`;
-          const {
-            data: { language },
-          } = await axios.post<{ language: string }>(
-            url,
-            { text },
-            { headers: { 'Content-Type': 'application/json' } }
-          );
-          return { language };
-        } catch (error) {
-          if (error instanceof AxiosError) {
-            console.error(error.cause ?? error.message);
-          } else {
-            console.error(error);
-          }
-          return { language: 'N/A' };
-        }
-      }),
   }),
   weather: procedure
     .input(
