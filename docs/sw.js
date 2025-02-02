@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-fZdZjX4MCV9TDmqAwl_Rv.js'),
+  importScripts('fallback-ZbidNVQbCQb7JbxsUcxe-.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -37,6 +37,14 @@ define(['./workbox-e9849328'], function (e) {
         {
           url: '/_next/dynamic-css-manifest.json',
           revision: 'd751713988987e9331980363e24189ce',
+        },
+        {
+          url: '/_next/static/ZbidNVQbCQb7JbxsUcxe-/_buildManifest.js',
+          revision: 'f09bf59e57ca75a9b6b6f5fdddb60a41',
+        },
+        {
+          url: '/_next/static/ZbidNVQbCQb7JbxsUcxe-/_ssgManifest.js',
+          revision: 'b6652df95db52feb4daf4eca35380933',
         },
         {
           url: '/_next/static/chunks/594-d13fc5ebc556d9a4.js',
@@ -83,16 +91,8 @@ define(['./workbox-e9849328'], function (e) {
           revision: '8cac0b4b405cede1',
         },
         {
-          url: '/_next/static/css/9936a178f52da285.css',
-          revision: '9936a178f52da285',
-        },
-        {
-          url: '/_next/static/fZdZjX4MCV9TDmqAwl_Rv/_buildManifest.js',
-          revision: 'f09bf59e57ca75a9b6b6f5fdddb60a41',
-        },
-        {
-          url: '/_next/static/fZdZjX4MCV9TDmqAwl_Rv/_ssgManifest.js',
-          revision: 'b6652df95db52feb4daf4eca35380933',
+          url: '/_next/static/css/15130767d33bfd19.css',
+          revision: '15130767d33bfd19',
         },
         {
           url: '/_next/static/media/05d30fccf6dfb4ed-s.woff2',

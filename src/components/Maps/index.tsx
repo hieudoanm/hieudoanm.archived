@@ -1,6 +1,5 @@
-import { useEffectOnce } from '@web/hooks/use-effect-once';
 import { select } from 'd3';
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 
 type Path = {
   d: string;
@@ -83,9 +82,10 @@ export const SVGMaps: FC<MapsProperties> = ({
 }) => {
   const chartColor = '#000000';
 
-  useEffectOnce(() => {
+  useEffect(() => {
     drawChart(id, svg, data, chartColor);
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div id={`${id}-container`}>

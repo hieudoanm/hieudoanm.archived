@@ -630,6 +630,9 @@
   .sticky {
     position: sticky;
   }
+  .end-1 {
+    inset-inline-end: calc(var(--spacing) * 1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -754,9 +757,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
