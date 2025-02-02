@@ -29,7 +29,7 @@ if (!self.define) {
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-a9EF5onH6GewkXwmAehym.js'),
+  importScripts('fallback-ia22I63_-z2UPY6qeHr25.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -37,14 +37,6 @@ define(['./workbox-e9849328'], function (e) {
         {
           url: '/_next/dynamic-css-manifest.json',
           revision: 'd751713988987e9331980363e24189ce',
-        },
-        {
-          url: '/_next/static/a9EF5onH6GewkXwmAehym/_buildManifest.js',
-          revision: 'f09bf59e57ca75a9b6b6f5fdddb60a41',
-        },
-        {
-          url: '/_next/static/a9EF5onH6GewkXwmAehym/_ssgManifest.js',
-          revision: 'b6652df95db52feb4daf4eca35380933',
         },
         {
           url: '/_next/static/chunks/594-d13fc5ebc556d9a4.js',
@@ -93,6 +85,14 @@ define(['./workbox-e9849328'], function (e) {
         {
           url: '/_next/static/css/fd5ed9f8926b099e.css',
           revision: 'fd5ed9f8926b099e',
+        },
+        {
+          url: '/_next/static/ia22I63_-z2UPY6qeHr25/_buildManifest.js',
+          revision: 'f09bf59e57ca75a9b6b6f5fdddb60a41',
+        },
+        {
+          url: '/_next/static/ia22I63_-z2UPY6qeHr25/_ssgManifest.js',
+          revision: 'b6652df95db52feb4daf4eca35380933',
         },
         {
           url: '/_next/static/media/05d30fccf6dfb4ed-s.woff2',
