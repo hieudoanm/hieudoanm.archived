@@ -25,18 +25,19 @@
                 'flex h-full flex-col items-center justify-center gap-y-8 text-black',
               children: [
                 (0, n.jsx)('p', {
-                  children: (0, n.jsx)(o(), {
-                    href: '/nothing',
-                    target: '_blank',
-                    className:
-                      'text-2xl font-black tracking-wide uppercase underline decoration-dotted underline-offset-6',
-                    children: 'Hieu Doan',
-                  }),
+                  className: 'text-2xl font-black tracking-wide uppercase',
+                  children: 'Hieu Doan',
                 }),
                 (0, n.jsx)('div', {
                   className:
                     'flex flex-col items-center justify-center gap-y-4',
                   children: [
+                    {
+                      id: 'apps',
+                      href: 'https://hieudoanm.github.io/nothing',
+                      name: 'Apps',
+                      icon: (0, n.jsx)(c.agh, {}),
+                    },
                     {
                       id: 'github',
                       href: 'https://github.com/hieudoanm',
