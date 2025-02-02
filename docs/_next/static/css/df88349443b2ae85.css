@@ -1,5 +1,6 @@
-/*! tailwindcss v4.0.0 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 @layer theme {
+  :host,
   :root {
     --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -629,9 +630,6 @@
   .sticky {
     position: sticky;
   }
-  .end-1 {
-    inset-inline-end: calc(var(--spacing) * 1);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -686,12 +684,6 @@
   }
   .mx-auto {
     margin-inline: auto;
-  }
-  .line-clamp-3 {
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
   }
   .block {
     display: block;
@@ -792,9 +784,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -912,14 +901,8 @@
   .bg-contain {
     background-size: contain;
   }
-  .bg-cover {
-    background-size: cover;
-  }
   .bg-center {
     background-position: 50%;
-  }
-  .bg-no-repeat {
-    background-repeat: no-repeat;
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -1137,17 +1120,8 @@
     user-select: none;
   }
   @media (hover: hover) {
-    .hover\:scale-150:hover {
-      --tw-scale-x: 150%;
-      --tw-scale-y: 150%;
-      --tw-scale-z: 150%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
     .hover\:animate-spin:hover {
       animation: var(--animate-spin);
-    }
-    .hover\:cursor-pointer:hover {
-      cursor: pointer;
     }
   }
   @media (width>=48rem) {
@@ -1169,17 +1143,11 @@
     .md\:inline {
       display: inline;
     }
-    .md\:aspect-square {
-      aspect-ratio: 1;
-    }
     .md\:aspect-video {
       aspect-ratio: var(--aspect-video);
     }
     .md\:w-16 {
       width: calc(var(--spacing) * 16);
-    }
-    .md\:w-32 {
-      width: calc(var(--spacing) * 32);
     }
     .md\:grid-cols-1 {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1275,9 +1243,6 @@
     .lg\:hidden {
       display: none;
     }
-    .lg\:grid-cols-6 {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
     .lg\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1289,16 +1254,6 @@
     .lg\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-  @media (width>=80rem) {
-    .xl\:grid-cols-8 {
-      grid-template-columns: repeat(8, minmax(0, 1fr));
-    }
-  }
-  @media (width>=96rem) {
-    .\32 xl\:grid-cols-10 {
-      grid-template-columns: repeat(10, minmax(0, 1fr));
     }
   }
   .text-balance {
@@ -1474,21 +1429,6 @@
 @property --tw-ease {
   syntax: '*';
   inherits: false;
-}
-@property --tw-scale-x {
-  syntax: '*';
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: '*';
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: '*';
-  inherits: false;
-  initial-value: 1;
 }
 @font-face {
   font-family: Roboto Mono;

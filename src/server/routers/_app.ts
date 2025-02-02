@@ -1,12 +1,4 @@
 import { TimeClass, Title, Variant } from '@prisma/client';
-import { getCoins, Tag } from '@web/clients/coinranking/coinranking.client';
-import { Coin } from '@web/clients/coinranking/coinranking.dto';
-import { getLatest } from '@web/clients/forex/frankfurter/frankfurter.client';
-import { FrankfurterLatestResponse } from '@web/clients/forex/frankfurter/frankfurter.dto';
-import { getTrends } from '@web/clients/google/google.client';
-import { Category, Country } from '@web/clients/news';
-import { getTopHeadlines } from '@web/clients/news/news.client';
-import { Article } from '@web/clients/news/news.dto';
 import { LANGUAGES_API } from '@web/constants/languages.constants';
 import { logger } from '@web/log';
 import { Insights } from '@web/services/chess/chess.dto';
@@ -131,31 +123,6 @@ export const appRouter = router({
     }>(url);
     return countries;
   }),
-  crypto: procedure
-    .input(
-      z.object({
-        tag: z.nativeEnum(Tag).optional().default(Tag.LAYER_1),
-      })
-    )
-    .query(async (options): Promise<Coin[]> => {
-      const tag: Tag = options.input.tag;
-      const {
-        data: { coins = [] },
-      } = await getCoins({ tag });
-      return coins;
-    }),
-  forex: procedure
-    .input(
-      z.object({
-        amount: z.number().int().optional().default(1),
-        base: z.string().optional().default('EUR'),
-      })
-    )
-    .query((options): Promise<FrankfurterLatestResponse> => {
-      const amount: number = options.input.amount;
-      const base: string = options.input.base;
-      return getLatest({ amount, base });
-    }),
   languages: router({
     health: procedure.query(async () => {
       try {
@@ -201,37 +168,6 @@ export const appRouter = router({
           return { language: 'N/A' };
         }
       }),
-  }),
-  news: procedure
-    .input(
-      z.object({
-        category: z.nativeEnum(Category).optional().default(Category.GENERAL),
-        country: z
-          .nativeEnum(Country)
-          .optional()
-          .default(Country.UNITED_STATES),
-        page: z.number().int().optional().default(1),
-        pageSize: z.number().int().optional().default(100),
-        query: z.string().optional().default(''),
-      })
-    )
-    .query(async (options): Promise<Article[]> => {
-      const category: Category = options.input.category;
-      const country: Country = options.input.country;
-      const page: number = options.input.page;
-      const pageSize: number = options.input.pageSize;
-      const query: string = options.input.query;
-      const { articles = [] } = await getTopHeadlines({
-        category,
-        country,
-        page,
-        pageSize,
-        query,
-      });
-      return articles;
-    }),
-  trends: procedure.query((): Promise<Record<string, string[]>> => {
-    return getTrends();
   }),
   weather: procedure
     .input(
