@@ -15,21 +15,21 @@ if (!self.define) {
         return e;
       })
   );
-  self.define = (a, i) => {
-    const c =
+  self.define = (a, c) => {
+    const i =
       e ||
       ('document' in self ? document.currentScript.src : '') ||
       location.href;
-    if (s[c]) return;
+    if (s[i]) return;
     let r = {};
-    const t = (e) => n(e, c),
-      d = { module: { uri: c }, exports: r, require: t };
-    s[c] = Promise.all(a.map((e) => d[e] || t(e))).then((e) => (i(...e), r));
+    const t = (e) => n(e, i),
+      d = { module: { uri: i }, exports: r, require: t };
+    s[i] = Promise.all(a.map((e) => d[e] || t(e))).then((e) => (c(...e), r));
   };
 }
 define(['./workbox-e9849328'], function (e) {
   'use strict';
-  importScripts('fallback-Txja2W_GO_tO_uHi41rOp.js'),
+  importScripts('fallback-40xamiPd-ooc_l1N3EOsQ.js'),
     self.skipWaiting(),
     e.clientsClaim(),
     e.precacheAndRoute(
@@ -39,11 +39,11 @@ define(['./workbox-e9849328'], function (e) {
           revision: 'd751713988987e9331980363e24189ce',
         },
         {
-          url: '/_next/static/Txja2W_GO_tO_uHi41rOp/_buildManifest.js',
+          url: '/_next/static/40xamiPd-ooc_l1N3EOsQ/_buildManifest.js',
           revision: '4f701b64e34b4547624f1de0b178512a',
         },
         {
-          url: '/_next/static/Txja2W_GO_tO_uHi41rOp/_ssgManifest.js',
+          url: '/_next/static/40xamiPd-ooc_l1N3EOsQ/_ssgManifest.js',
           revision: 'b6652df95db52feb4daf4eca35380933',
         },
         {
