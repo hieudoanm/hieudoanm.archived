@@ -6,30 +6,23 @@ exports[`NotFoundPage render default 1`] = `
     class="flex h-screen w-screen items-center justify-center"
   >
     <div
-      class="py-8 text-center"
+      class="flex flex-col gap-y-2"
     >
       <h2
-        class="mb-4 text-9xl"
+        class="text-9xl"
       >
         404
       </h2>
-      <p
-        class="mb-4 text-2xl uppercase"
+      <a
+        href="/"
       >
-        Not Found
-      </p>
-      <p>
-        <a
-          href="/"
+        <button
+          class="w-full rounded-full bg-black py-2 text-white"
+          type="button"
         >
-          <button
-            class="btn"
-            type="button"
-          >
-            Back to Home
-          </button>
-        </a>
-      </p>
+          Back to Home
+        </button>
+      </a>
     </div>
   </div>
 </div>

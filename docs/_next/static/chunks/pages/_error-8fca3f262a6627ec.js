@@ -1,29 +1,29 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
   [731],
   {
-    9998: (e, r, s) => {
+    2588: (e, r, s) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
         '/_error',
         function () {
-          return s(8514);
+          return s(9844);
         },
       ]);
     },
-    8514: (e, r, s) => {
+    9844: (e, r, s) => {
       'use strict';
       s.r(r), s.d(r, { ErrorPage: () => n, default: () => c });
       var t = s(5105),
-        l = s(4727);
+        l = s(2606);
       let n = () => (0, t.jsx)(l.L, { code: 500, title: 'Error' }),
         c = n;
     },
-    4727: (e, r, s) => {
+    2606: (e, r, s) => {
       'use strict';
       s.d(r, { L: () => a });
       var t = s(5105),
-        l = s(832),
+        l = s(2542),
         n = s.n(l),
-        c = s(9594),
+        c = s(368),
         i = s.n(c);
       let a = (e) => {
         let { code: r = 500, title: s = 'Error' } = e;
@@ -56,6 +56,6 @@
   },
   (e) => {
     var r = (r) => e((e.s = r));
-    e.O(0, [594, 636, 593, 792], () => r(9998)), (_N_E = e.O());
+    e.O(0, [368, 636, 593, 792], () => r(2588)), (_N_E = e.O());
   },
 ]);

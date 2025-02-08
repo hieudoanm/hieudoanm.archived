@@ -1,21 +1,21 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
   [332],
   {
-    1710: (e, t, r) => {
+    4492: (e, t, r) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
         '/',
         function () {
-          return r(7045);
+          return r(5315);
         },
       ]);
     },
-    7045: (e, t, r) => {
+    5315: (e, t, r) => {
       'use strict';
       r.r(t), r.d(t, { default: () => l, dynamic: () => s });
       var n = r(5105),
-        i = r(9594),
+        i = r(368),
         c = r.n(i),
-        a = r(5899);
+        a = r(9781);
       let s = 'force-static',
         l = () =>
           (0, n.jsx)('div', {
@@ -29,101 +29,118 @@
                   children: 'Hieu Doan',
                 }),
                 (0, n.jsxs)('div', {
-                  className: 'flex flex-col gap-y-4',
+                  className: 'grid grid-cols-1 gap-8 md:grid-cols-2',
                   children: [
-                    (0, n.jsx)('p', {
-                      className:
-                        'text-center text-lg font-black tracking-wide uppercase',
-                      children: 'Apps',
-                    }),
                     (0, n.jsx)('div', {
-                      className:
-                        'flex flex-col items-center justify-center gap-y-2',
-                      children: [
-                        {
-                          id: 'chess',
-                          href: 'https://hieudoanm.github.io/chess',
-                          name: 'chess',
-                          icon: (0, n.jsx)(a.zrC, {}),
-                        },
-                        {
-                          id: 'nothing',
-                          href: 'https://hieudoanm.github.io/nothing',
-                          name: 'nothing',
-                          icon: (0, n.jsx)(a.agh, {}),
-                        },
-                      ].map((e) => {
-                        let { id: t, href: r, name: i, icon: a } = e;
-                        return (0, n.jsxs)(
-                          'div',
-                          {
+                      className: 'col-span-1',
+                      children: (0, n.jsxs)('div', {
+                        className: 'flex flex-col gap-y-4',
+                        children: [
+                          (0, n.jsx)('p', {
                             className:
-                              'flex items-center gap-x-1 border-b border-dotted',
+                              'text-center text-lg font-black tracking-wide uppercase',
+                            children: 'Apps',
+                          }),
+                          (0, n.jsx)('div', {
+                            className:
+                              'flex flex-col items-center justify-center gap-y-2',
                             children: [
-                              a,
-                              (0, n.jsx)(c(), {
-                                href: r,
-                                target: '_blank',
-                                className: 'tracking-wide lowercase',
-                                children: i,
-                              }),
-                            ],
-                          },
-                          t
-                        );
+                              {
+                                id: 'broca',
+                                href: 'https://hieudoanm.github.io/broca',
+                                name: 'broca',
+                                icon: (0, n.jsx)(a.y8Q, {}),
+                              },
+                              {
+                                id: 'chess',
+                                href: 'https://hieudoanm.github.io/chess',
+                                name: 'chess',
+                                icon: (0, n.jsx)(a.zrC, {}),
+                              },
+                              {
+                                id: 'nothing',
+                                href: 'https://hieudoanm.github.io/nothing',
+                                name: 'nothing',
+                                icon: (0, n.jsx)(a.agh, {}),
+                              },
+                            ].map((e) => {
+                              let { id: t, href: r, name: i, icon: a } = e;
+                              return (0, n.jsxs)(
+                                'div',
+                                {
+                                  className:
+                                    'flex items-center gap-x-1 border-b border-dotted',
+                                  children: [
+                                    a,
+                                    (0, n.jsx)(c(), {
+                                      href: r,
+                                      target: '_blank',
+                                      className: 'tracking-wide lowercase',
+                                      children: i,
+                                    }),
+                                  ],
+                                },
+                                t
+                              );
+                            }),
+                          }),
+                        ],
                       }),
                     }),
-                  ],
-                }),
-                (0, n.jsxs)('div', {
-                  className: 'flex flex-col gap-y-4',
-                  children: [
-                    (0, n.jsx)('p', {
-                      className:
-                        'text-center text-lg font-black tracking-wide uppercase',
-                      children: 'Profile',
-                    }),
                     (0, n.jsx)('div', {
-                      className:
-                        'flex flex-col items-center justify-center gap-y-2',
-                      children: [
-                        {
-                          id: 'github',
-                          href: 'https://github.com/hieudoanm',
-                          name: 'GitHub',
-                          icon: (0, n.jsx)(a.UDP, {}),
-                        },
-                        {
-                          id: 'twitter',
-                          href: 'https://x.com/hieudoanm',
-                          name: 'Twitter',
-                          icon: (0, n.jsx)(a.Y28, {}),
-                        },
-                        {
-                          id: 'linkedin',
-                          href: 'https://www.linkedin.com/in/hieudoanm',
-                          name: 'LinkedIn',
-                          icon: (0, n.jsx)(a.QEs, {}),
-                        },
-                      ].map((e) => {
-                        let { id: t, href: r, name: i, icon: a } = e;
-                        return (0, n.jsxs)(
-                          'div',
-                          {
+                      className: 'col-span-1',
+                      children: (0, n.jsxs)('div', {
+                        className: 'flex flex-col gap-y-4',
+                        children: [
+                          (0, n.jsx)('p', {
                             className:
-                              'flex items-center gap-x-1 border-b border-dotted',
+                              'text-center text-lg font-black tracking-wide uppercase',
+                            children: 'Profile',
+                          }),
+                          (0, n.jsx)('div', {
+                            className:
+                              'flex flex-col items-center justify-center gap-y-2',
                             children: [
-                              a,
-                              (0, n.jsx)(c(), {
-                                href: r,
-                                target: '_blank',
-                                className: 'tracking-wide lowercase',
-                                children: i,
-                              }),
-                            ],
-                          },
-                          t
-                        );
+                              {
+                                id: 'github',
+                                href: 'https://github.com/hieudoanm',
+                                name: 'GitHub',
+                                icon: (0, n.jsx)(a.UDP, {}),
+                              },
+                              {
+                                id: 'twitter',
+                                href: 'https://x.com/hieudoanm',
+                                name: 'Twitter',
+                                icon: (0, n.jsx)(a.Y28, {}),
+                              },
+                              {
+                                id: 'linkedin',
+                                href: 'https://www.linkedin.com/in/hieudoanm',
+                                name: 'LinkedIn',
+                                icon: (0, n.jsx)(a.QEs, {}),
+                              },
+                            ].map((e) => {
+                              let { id: t, href: r, name: i, icon: a } = e;
+                              return (0, n.jsxs)(
+                                'div',
+                                {
+                                  className:
+                                    'flex items-center gap-x-1 border-b border-dotted',
+                                  children: [
+                                    a,
+                                    (0, n.jsx)(c(), {
+                                      href: r,
+                                      target: '_blank',
+                                      className: 'tracking-wide lowercase',
+                                      children: i,
+                                    }),
+                                  ],
+                                },
+                                t
+                              );
+                            }),
+                          }),
+                        ],
                       }),
                     }),
                   ],
@@ -132,9 +149,9 @@
             }),
           });
     },
-    5e3: (e, t, r) => {
+    7543: (e, t, r) => {
       'use strict';
-      r.d(t, { k5: () => u });
+      r.d(t, { k5: () => d });
       var n = r(8101),
         i = {
           color: void 0,
@@ -212,10 +229,10 @@
         }
         return e;
       }
-      function u(e) {
+      function d(e) {
         return (t) =>
           n.createElement(
-            f,
+            u,
             s({ attr: o({}, e.attr) }, t),
             (function e(t) {
               return (
@@ -227,11 +244,11 @@
             })(e.child)
           );
       }
-      function f(e) {
+      function u(e) {
         var t = (t) => {
           var r,
             { attr: i, size: c, title: l } = e,
-            u = (function (e, t) {
+            d = (function (e, t) {
               if (null == e) return {};
               var r,
                 n,
@@ -255,7 +272,7 @@
               }
               return i;
             })(e, a),
-            f = c || t.size || '1em';
+            u = c || t.size || '1em';
           return (
             t.className && (r = t.className),
             e.className && (r = (r ? r + ' ' : '') + e.className),
@@ -269,12 +286,12 @@
                 },
                 t.attr,
                 i,
-                u,
+                d,
                 {
                   className: r,
                   style: o(o({ color: e.color || t.color }, t.style), e.style),
-                  height: f,
-                  width: f,
+                  height: u,
+                  width: u,
                   xmlns: 'http://www.w3.org/2000/svg',
                 }
               ),
@@ -291,6 +308,6 @@
   },
   (e) => {
     var t = (t) => e((e.s = t));
-    e.O(0, [433, 594, 636, 593, 792], () => t(1710)), (_N_E = e.O());
+    e.O(0, [433, 368, 636, 593, 792], () => t(4492)), (_N_E = e.O());
   },
 ]);
