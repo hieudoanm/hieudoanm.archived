@@ -3918,11 +3918,11 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
       (window.__NEXT_P = window.__NEXT_P || []).push([
         '/_app',
         function () {
-          return r(6772);
+          return r(5878);
         },
       ]);
     },
-    6772: (e, t, r) => {
+    5878: (e, t, r) => {
       'use strict';
       let n, i;
       r.r(t), r.d(t, { default: () => ao });
@@ -4102,7 +4102,8 @@ If this is unexpected, please open an issue: https://pris.ly/prisma-prisma-bug-r
         (u = Symbol).dispose ?? (u.dispose = Symbol()),
         (l = Symbol).asyncDispose ?? (l.asyncDispose = Symbol()),
         Symbol();
-      Symbol(), Symbol('ping');
+      Symbol('ping');
+      Symbol();
       let M = {
         input: { serialize: (e) => e, deserialize: (e) => e },
         output: { serialize: (e) => e, deserialize: (e) => e },
