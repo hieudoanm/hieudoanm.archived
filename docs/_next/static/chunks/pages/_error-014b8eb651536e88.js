@@ -1,32 +1,31 @@
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-  [421],
+  [731],
   {
-    1242: (e, r, s) => {
+    2755: (e, r, s) => {
       (window.__NEXT_P = window.__NEXT_P || []).push([
-        '/500',
+        '/_error',
         function () {
-          return s(2550);
+          return s(7183);
         },
       ]);
     },
-    2550: (e, r, s) => {
+    7183: (e, r, s) => {
       'use strict';
-      s.r(r), s.d(r, { InternalServerErrorPage: () => n, default: () => c });
+      s.r(r), s.d(r, { ErrorPage: () => n, default: () => c });
       var t = s(5105),
-        l = s(2606);
-      let n = () =>
-          (0, t.jsx)(l.L, { code: 500, title: 'Internal Server Error' }),
+        l = s(3535);
+      let n = () => (0, t.jsx)(l.L, { code: 500, title: 'Error' }),
         c = n;
     },
-    2606: (e, r, s) => {
+    3535: (e, r, s) => {
       'use strict';
-      s.d(r, { L: () => i });
+      s.d(r, { L: () => a });
       var t = s(5105),
-        l = s(2542),
+        l = s(1517),
         n = s.n(l),
-        c = s(368),
-        a = s.n(c);
-      let i = (e) => {
+        c = s(3047),
+        i = s.n(c);
+      let a = (e) => {
         let { code: r = 500, title: s = 'Error' } = e;
         return (0, t.jsxs)(t.Fragment, {
           children: [
@@ -39,7 +38,7 @@
                 className: 'flex flex-col gap-y-2',
                 children: [
                   (0, t.jsx)('h2', { className: 'text-9xl', children: r }),
-                  (0, t.jsx)(a(), {
+                  (0, t.jsx)(i(), {
                     href: '/',
                     children: (0, t.jsx)('button', {
                       className: 'w-full rounded-full bg-black py-2 text-white',
@@ -57,6 +56,6 @@
   },
   (e) => {
     var r = (r) => e((e.s = r));
-    e.O(0, [368, 636, 593, 792], () => r(1242)), (_N_E = e.O());
+    e.O(0, [47, 636, 593, 792], () => r(2755)), (_N_E = e.O());
   },
 ]);
