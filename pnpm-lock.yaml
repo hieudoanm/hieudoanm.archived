@@ -87,8 +87,8 @@ importers:
         specifier: 5.5.0
         version: 5.5.0(react@19.0.0)
       react-scroll:
-        specifier: 1.9.2
-        version: 1.9.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 1.9.3
+        version: 1.9.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       recharts:
         specifier: 2.15.1
         version: 2.15.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -5770,8 +5770,8 @@ packages:
     resolution: {integrity: sha512-reHgQnASWVXwHe0Ibk/EbsEPZhKrmNRf8EUNDmjMi1lzXec+Cj9litKxD0TG2ghAwg5V4sT0wzhiOgZSIefeVg==}
     hasBin: true
 
-  react-scroll@1.9.2:
-    resolution: {integrity: sha512-+TX9qmQiTjE6o3rz3Uxzh2abEKwTxmOMv/HGfsYeQrpwNUj3Md9LSTsg0oMVK1+89o4+g6KkPPpDDJ2g8bg/aQ==}
+  react-scroll@1.9.3:
+    resolution: {integrity: sha512-xv7FXqF3k63aSLNu4/NjFvRNI0ge7DmmmsbeGarP7LZVAlJMSjUuW3dTtLxp1Afijyv0lS2qwC0GiFHvx1KBHQ==}
     peerDependencies:
       react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -13655,7 +13655,7 @@ snapshots:
       mri: 1.2.0
       playwright: 1.49.1
 
-  react-scroll@1.9.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  react-scroll@1.9.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       lodash.throttle: 4.1.1
       prop-types: 15.8.1
