@@ -39,7 +39,7 @@
     "@trpc/react-query": "11.0.0-rc.795",
     "@trpc/server": "11.0.0-rc.795",
     "axios": "1.7.9",
-    "chart.js": "4.4.7",
+    "chart.js": "4.4.8",
     "chess.js": "1.0.0",
     "mathjs": "14.2.1",
     "next": "15.1.7",
