@@ -40,7 +40,7 @@
     "@trpc/server": "11.0.0-rc.802",
     "axios": "1.7.9",
     "chart.js": "4.4.8",
-    "chess.js": "1.0.0",
+    "chess.js": "1.1.0",
     "mathjs": "14.2.1",
     "next": "15.1.7",
     "next-pwa": "5.6.0",

@@ -54,8 +54,8 @@ importers:
         specifier: 4.4.8
         version: 4.4.8
       chess.js:
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.1.0
+        version: 1.1.0
       mathjs:
         specifier: 14.2.1
         version: 14.2.1
@@ -2868,8 +2868,8 @@ packages:
   checkpoint-client@1.1.24:
     resolution: {integrity: sha512-nIOlLhDS7MKs4tUzS3LCm+sE1NgTCVnVrXlD0RRxaoEkkLu8LIWSUNiNWai6a+LK5unLzTyZeTCYX1Smqy0YoA==}
 
-  chess.js@1.0.0:
-    resolution: {integrity: sha512-zHaSRub6xkUXxvX9lqgovwRiBvbOmVCTh47rZ0I/HVyCiNc0T5bVLwzshL5X6JtrP+rN/CTmIxdpFr943eP97Q==}
+  chess.js@1.1.0:
+    resolution: {integrity: sha512-IfdeaJnpdU1LddIenp36O7Fz19nIxk3x4cznwo2Qf25T1XSeP85XRBrjWUsSpk1RpDeXdijraoLxXt3PCaudVg==}
 
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
@@ -10068,7 +10068,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  chess.js@1.0.0: {}
+  chess.js@1.1.0: {}
 
   chokidar@4.0.3:
     dependencies:
