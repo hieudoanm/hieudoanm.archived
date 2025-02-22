@@ -61,7 +61,7 @@
   "devDependencies": {
     "@dotenvx/dotenvx": "1.37.0",
     "@eslint/compat": "1.2.6",
-    "@eslint/eslintrc": "3.2.0",
+    "@eslint/eslintrc": "3.3.0",
     "@eslint/js": "9.21.0",
     "@million/lint": "1.0.14",
     "@next/mdx": "15.1.7",
