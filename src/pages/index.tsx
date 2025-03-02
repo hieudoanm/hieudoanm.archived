@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import {
   FaAppStore,
-  FaChessKnight,
+  FaInstagram,
   FaLinkedin,
   FaRobot,
   FaSquareGithub,
@@ -29,16 +29,16 @@ const HomePage: NextPage = () => {
                     icon: <FaRobot />,
                   },
                   {
-                    id: 'chess',
-                    href: 'https://hieudoanm.github.io/chess',
-                    name: 'chess',
-                    icon: <FaChessKnight />,
-                  },
-                  {
                     id: 'nothing',
                     href: 'https://hieudoanm.github.io/nothing',
                     name: 'nothing',
                     icon: <FaAppStore />,
+                  },
+                  {
+                    id: 'instagram',
+                    href: 'https://hieudoanm.github.io/instagram',
+                    name: 'instagram',
+                    icon: <FaInstagram />,
                   },
                 ].map(({ id, href, name, icon }) => {
                   return (

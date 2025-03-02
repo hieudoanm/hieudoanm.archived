@@ -14,8 +14,8 @@
       r.r(t), r.d(t, { default: () => l, dynamic: () => s });
       var n = r(5105),
         i = r(3047),
-        c = r.n(i),
-        a = r(8610);
+        a = r.n(i),
+        c = r(8610);
       let s = 'force-static',
         l = () =>
           (0, n.jsx)('div', {
@@ -49,30 +49,30 @@
                                 id: 'broca',
                                 href: 'https://hieudoanm.github.io/broca',
                                 name: 'broca',
-                                icon: (0, n.jsx)(a.y8Q, {}),
-                              },
-                              {
-                                id: 'chess',
-                                href: 'https://hieudoanm.github.io/chess',
-                                name: 'chess',
-                                icon: (0, n.jsx)(a.zrC, {}),
+                                icon: (0, n.jsx)(c.y8Q, {}),
                               },
                               {
                                 id: 'nothing',
                                 href: 'https://hieudoanm.github.io/nothing',
                                 name: 'nothing',
-                                icon: (0, n.jsx)(a.agh, {}),
+                                icon: (0, n.jsx)(c.agh, {}),
+                              },
+                              {
+                                id: 'instagram',
+                                href: 'https://hieudoanm.github.io/instagram',
+                                name: 'instagram',
+                                icon: (0, n.jsx)(c.ao$, {}),
                               },
                             ].map((e) => {
-                              let { id: t, href: r, name: i, icon: a } = e;
+                              let { id: t, href: r, name: i, icon: c } = e;
                               return (0, n.jsxs)(
                                 'div',
                                 {
                                   className:
                                     'flex items-center gap-x-1 border-b border-dotted',
                                   children: [
-                                    a,
-                                    (0, n.jsx)(c(), {
+                                    c,
+                                    (0, n.jsx)(a(), {
                                       href: r,
                                       target: '_blank',
                                       className: 'tracking-wide lowercase',
@@ -105,30 +105,30 @@
                                 id: 'github',
                                 href: 'https://github.com/hieudoanm',
                                 name: 'GitHub',
-                                icon: (0, n.jsx)(a.UDP, {}),
+                                icon: (0, n.jsx)(c.UDP, {}),
                               },
                               {
                                 id: 'twitter',
                                 href: 'https://x.com/hieudoanm',
                                 name: 'Twitter',
-                                icon: (0, n.jsx)(a.Y28, {}),
+                                icon: (0, n.jsx)(c.Y28, {}),
                               },
                               {
                                 id: 'linkedin',
                                 href: 'https://www.linkedin.com/in/hieudoanm',
                                 name: 'LinkedIn',
-                                icon: (0, n.jsx)(a.QEs, {}),
+                                icon: (0, n.jsx)(c.QEs, {}),
                               },
                             ].map((e) => {
-                              let { id: t, href: r, name: i, icon: a } = e;
+                              let { id: t, href: r, name: i, icon: c } = e;
                               return (0, n.jsxs)(
                                 'div',
                                 {
                                   className:
                                     'flex items-center gap-x-1 border-b border-dotted',
                                   children: [
-                                    a,
-                                    (0, n.jsx)(c(), {
+                                    c,
+                                    (0, n.jsx)(a(), {
                                       href: r,
                                       target: '_blank',
                                       className: 'tracking-wide lowercase',
@@ -160,8 +160,8 @@
           style: void 0,
           attr: void 0,
         },
-        c = n.createContext && n.createContext(i),
-        a = ['attr', 'size', 'title'];
+        a = n.createContext && n.createContext(i),
+        c = ['attr', 'size', 'title'];
       function s() {
         return (s = Object.assign
           ? Object.assign.bind()
@@ -247,7 +247,7 @@
       function u(e) {
         var t = (t) => {
           var r,
-            { attr: i, size: c, title: l } = e,
+            { attr: i, size: a, title: l } = e,
             d = (function (e, t) {
               if (null == e) return {};
               var r,
@@ -263,16 +263,16 @@
                   return r;
                 })(e, t);
               if (Object.getOwnPropertySymbols) {
-                var c = Object.getOwnPropertySymbols(e);
-                for (n = 0; n < c.length; n++)
-                  (r = c[n]),
+                var a = Object.getOwnPropertySymbols(e);
+                for (n = 0; n < a.length; n++)
+                  (r = a[n]),
                     !(t.indexOf(r) >= 0) &&
                       Object.prototype.propertyIsEnumerable.call(e, r) &&
                       (i[r] = e[r]);
               }
               return i;
-            })(e, a),
-            u = c || t.size || '1em';
+            })(e, c),
+            u = a || t.size || '1em';
           return (
             t.className && (r = t.className),
             e.className && (r = (r ? r + ' ' : '') + e.className),
@@ -300,8 +300,8 @@
             )
           );
         };
-        return void 0 !== c
-          ? n.createElement(c.Consumer, null, (e) => t(e))
+        return void 0 !== a
+          ? n.createElement(a.Consumer, null, (e) => t(e))
           : t(i);
       }
     },
