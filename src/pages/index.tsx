@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import {
   FaAppStore,
-  FaInstagram,
+  FaBook,
   FaLinkedin,
   FaRobot,
   FaSquareGithub,
@@ -35,10 +35,10 @@ const HomePage: NextPage = () => {
                     icon: <FaAppStore />,
                   },
                   {
-                    id: 'instagram',
-                    href: 'https://hieudoanm.github.io/instagram',
-                    name: 'instagram',
-                    icon: <FaInstagram />,
+                    id: 'words',
+                    href: 'https://hieudoanm.github.io/words',
+                    name: 'words',
+                    icon: <FaBook />,
                   },
                 ].map(({ id, href, name, icon }) => {
                   return (
