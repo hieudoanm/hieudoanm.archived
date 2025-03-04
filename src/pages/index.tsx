@@ -2,10 +2,10 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import {
   FaAppStore,
-  FaBook,
   FaLinkedin,
   FaRobot,
   FaSquareGithub,
+  FaSquareInstagram,
   FaSquareTwitter,
 } from 'react-icons/fa6';
 
@@ -33,12 +33,6 @@ const HomePage: NextPage = () => {
                     href: 'https://hieudoanm.github.io/nothing',
                     name: 'nothing',
                     icon: <FaAppStore />,
-                  },
-                  {
-                    id: 'words',
-                    href: 'https://hieudoanm.github.io/words',
-                    name: 'words',
-                    icon: <FaBook />,
                   },
                 ].map(({ id, href, name, icon }) => {
                   return (
@@ -70,6 +64,12 @@ const HomePage: NextPage = () => {
                     href: 'https://github.com/hieudoanm',
                     name: 'GitHub',
                     icon: <FaSquareGithub />,
+                  },
+                  {
+                    id: 'instagram',
+                    href: 'https://instagram.com/hieudoanm',
+                    name: 'Instagram',
+                    icon: <FaSquareInstagram />,
                   },
                   {
                     id: 'twitter',
