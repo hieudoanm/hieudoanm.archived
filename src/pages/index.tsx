@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {
   FaAppStore,
   FaLinkedin,
-  FaRobot,
   FaSquareGithub,
   FaSquareInstagram,
   FaSquareTwitter,
@@ -22,12 +21,6 @@ const HomePage: NextPage = () => {
               </p>
               <div className='flex flex-col items-center justify-center gap-y-2'>
                 {[
-                  {
-                    id: 'broca',
-                    href: 'https://hieudoanm.github.io/broca',
-                    name: 'broca',
-                    icon: <FaRobot />,
-                  },
                   {
                     id: 'nothing',
                     href: 'https://hieudoanm.github.io/nothing',
@@ -66,12 +59,6 @@ const HomePage: NextPage = () => {
                     icon: <FaSquareGithub />,
                   },
                   {
-                    id: 'instagram',
-                    href: 'https://instagram.com/hieudoanm',
-                    name: 'Instagram',
-                    icon: <FaSquareInstagram />,
-                  },
-                  {
                     id: 'twitter',
                     href: 'https://x.com/hieudoanm',
                     name: 'Twitter',
@@ -82,6 +69,12 @@ const HomePage: NextPage = () => {
                     href: 'https://www.linkedin.com/in/hieudoanm',
                     name: 'LinkedIn',
                     icon: <FaLinkedin />,
+                  },
+                  {
+                    id: 'instagram',
+                    href: 'https://instagram.com/hieudoanm',
+                    name: 'Instagram',
+                    icon: <FaSquareInstagram />,
                   },
                 ].map(({ id, href, name, icon }) => {
                   return (
